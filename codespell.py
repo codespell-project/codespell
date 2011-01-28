@@ -6,7 +6,7 @@ import re
 from optparse import OptionParser
 
 USAGE = "%prog [OPTIONS] dict_filename file1 <file2 ... fileN>"
-mispellings = {}
+misspellings = {}
 options = None
 
 #OPTIONS:
@@ -61,7 +61,7 @@ def build_dict(filename):
 
     for line in f:
         [key, data] = line.split('->')
-        mispellings[key] = Mispell(data, data.find(',') + 1)
+        misspellings[key] = Mispell(data, data.find(',') + 1)
 
     if f != sys.stdin:
         f.close()
@@ -71,12 +71,12 @@ def parse_file(filename, colors):
         i = 1
         for line in f:
             for word in re.findall('\w+', line):
-                if word in mispellings:
+                if word in misspellings:
                     cfilename = "%s%s" % (colors.FILE, filename)
                     cline = "%d%s" % (i, colors.DISABLE)
                     cwrongword = "%s%s%s" % (colors.WWORD, word, colors.DISABLE)
                     crightword = "%s%s%s" % (colors.FWORD, \
-                                                mispellings[word].data, \
+                                                misspellings[word].data, \
                                                 colors.DISABLE)
 
                     print ("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "             \
