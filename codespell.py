@@ -44,7 +44,7 @@ def parse_options(args):
     parser.add_option('-d', '--disable-colors',
                         action = 'store_true', default = False,
                         help = 'Disable colors even when printing to terminal')
-    parser.add_option('-r',
+    parser.add_option('-r', '-R',
                         action = 'store_true', default = False,
                         dest = 'recursive',
                         help = 'parse directories recursively')
