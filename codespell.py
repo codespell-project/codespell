@@ -41,7 +41,7 @@ def parse_options(args):
     parser = OptionParser(usage=USAGE)
 
     parser.add_option('-d', '--disable-colors',
-                        action = 'store_false', default = True,
+                        action = 'store_true', default = False,
                         help = 'Disable colors even when printing to terminal')
 
     (options, args) = parser.parse_args()
@@ -92,7 +92,7 @@ def main(*args):
 
     build_dict(args[0])
     colors = TermColors();
-    if not sys.stdout.isatty():
+    if options.disable_colors or not sys.stdout.isatty():
         colors.disable()
 
     for filename in args[1:]:
