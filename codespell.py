@@ -20,10 +20,10 @@ options = None
 #    file1 .. fileN      Files to check spelling
 
 class Mispell:
-    def __init__(self, data, fix):
+    def __init__(self, data, fix, reason):
         self.data = data
         self.fix = fix
-
+        self.reason = reason
 
 class TermColors:
     def __init__(self):
@@ -66,7 +66,18 @@ def build_dict(filename):
     with open(filename, 'r') as f:
         for line in f:
             [key, data] = line.split('->')
-            misspellings[key] = Mispell(data, data.find(',') + 1)
+            fix = data.find(',')
+
+            if fix != (len(data) - 1) and fix > 0:
+                reason = data.split(',')[-1]
+            else:
+                reason = ''
+
+            if fix > 0:
+                fix = True
+                data = "%s\n" % data[:data.rfind(',')]
+
+            misspellings[key] = Mispell(data, fix, reason)
 
 def parse_file(filename, colors):
     if filename == '-':

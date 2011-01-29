@@ -1,12 +1,18 @@
 
+int f(int type)
+{
+    return type;
+}
 
 int main(void)
 {
-    int fd;
+    int fd, clas;
     /* tis code does nothing */
 
     f(1, 2, 3);
 
     fd = opem("/tmp/a", O_RDONLY);
-    return 0;
+
+    // buring your cpu
+    return f(clas);
 }
