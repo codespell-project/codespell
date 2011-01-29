@@ -6,7 +6,9 @@ import re
 from optparse import OptionParser
 import os
 
-USAGE = "%prog [OPTIONS] dict_filename file1 <file2 ... fileN>"
+USAGE = """
+\t%prog [OPTIONS] dict_filename [file1 file2 ... fileN]
+"""
 misspellings = {}
 options = None
 
@@ -50,10 +52,12 @@ def parse_options(args):
                         help = 'parse directories recursively')
 
     (options, args) = parser.parse_args()
-    if (len(args) < 2):
-        print('ERROR: you need to specify a file!', file=sys.stderr)
+    if (len(args) < 1):
+        print('ERROR: you need to specify a dictionary!', file=sys.stderr)
         parser.print_help()
         sys.exit(1)
+    if (len(args) == 1):
+        args.append('-')
 
     return options, args
 
@@ -65,24 +69,38 @@ def build_dict(filename):
             misspellings[key] = Mispell(data, data.find(',') + 1)
 
 def parse_file(filename, colors):
-    with open(filename, 'r') as f:
-        i = 1
-        for line in f:
-            for word in re.findall('\w+', line):
-                if word in misspellings:
-                    cfilename = "%s%s" % (colors.FILE, filename)
-                    cline = "%d%s" % (i, colors.DISABLE)
-                    cwrongword = "%s%s%s" % (colors.WWORD, word, colors.DISABLE)
-                    crightword = "%s%s%s" % (colors.FWORD, \
-                                                misspellings[word].data, \
-                                                colors.DISABLE)
+    if filename == '-':
+        f = sys.stdin
+    else:
+        f = open(filename, 'r')
 
-                    print ("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "             \
-                            " ==> %(RIGHTWORD)s"      \
-                            % {'FILENAME': cfilename, 'LINE': cline,           \
-                               'WRONGWORD': cwrongword,                        \
+    i = 1
+    for line in f:
+        for word in re.findall('\w+', line):
+            if word in misspellings:
+                cfilename = "%s%s" % (colors.FILE, filename)
+                cline = "%d%s" % (i, colors.DISABLE)
+                cwrongword = "%s%s%s" % (colors.WWORD, word, colors.DISABLE)
+                crightword = "%s%s%s" % (colors.FWORD,
+                                            misspellings[word].data,
+                                            colors.DISABLE)
+                if f != sys.stdin:
+                    print("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "       \
+                            " ==> %(RIGHTWORD)s"
+                            % {'FILENAME': cfilename, 'LINE': cline,
+                               'WRONGWORD': cwrongword,
                                'RIGHTWORD': crightword }, end='')
-            i += 1
+                else:
+                    print('%(LINE)s: %(STRLINE)s\n\t%(WRONGWORD)s ' \
+                            '==> %(RIGHTWORD)s'
+                            % { 'LINE': cline, 'STRLINE': line.strip(),
+                                'WRONGWORD': cwrongword,
+                                'RIGHTWORD': crightword }, end='')
+        i += 1
+
+    if f != sys.stdin:
+        f.close()
+
 
 
 def main(*args):
