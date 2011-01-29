@@ -80,7 +80,7 @@ def parse_file(filename, colors):
                                                 colors.DISABLE)
 
                     print ("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "             \
-                            "is misspelled. Fix suggested: %(RIGHTWORD)s"      \
+                            " ==> %(RIGHTWORD)s"      \
                             % {'FILENAME': cfilename, 'LINE': cline,           \
                                'WRONGWORD': cwrongword,                        \
                                'RIGHTWORD': crightword }, end='')
