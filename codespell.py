@@ -78,8 +78,8 @@ def parse_file(filename, colors):
     for line in f:
         for word in re.findall('\w+', line):
             if word in misspellings:
-                cfilename = "%s%s" % (colors.FILE, filename)
-                cline = "%d%s" % (i, colors.DISABLE)
+                cfilename = "%s%s%s" % (colors.FILE, filename, colors.DISABLE)
+                cline = "%s%d%s" % (colors.FILE, i, colors.DISABLE)
                 cwrongword = "%s%s%s" % (colors.WWORD, word, colors.DISABLE)
                 crightword = "%s%s%s" % (colors.FWORD,
                                             misspellings[word].data,
