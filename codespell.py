@@ -4,6 +4,7 @@
 import sys
 import re
 from optparse import OptionParser
+import os
 
 USAGE = "%prog [OPTIONS] dict_filename file1 <file2 ... fileN>"
 misspellings = {}
@@ -43,6 +44,10 @@ def parse_options(args):
     parser.add_option('-d', '--disable-colors',
                         action = 'store_true', default = False,
                         help = 'Disable colors even when printing to terminal')
+    parser.add_option('-r',
+                        action = 'store_true', default = False,
+                        dest = 'recursive',
+                        help = 'parse directories recursively')
 
     (options, args) = parser.parse_args()
     if (len(args) < 2):
@@ -96,6 +101,19 @@ def main(*args):
         colors.disable()
 
     for filename in args[1:]:
+        if len(filename) > 1 and filename[0] == '.':
+            continue
+
+        if not options.recursive and os.path.isdir(filename):
+            continue
+
+        if os.path.isdir(filename):
+            for root, dirs, files in os.walk(filename):
+                for file in files:
+                    parse_file(os.path.join(root, file), colors)
+
+            continue
+
         parse_file(filename, colors)
 
 if __name__ == '__main__':
