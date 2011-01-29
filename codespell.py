@@ -69,7 +69,7 @@ def build_dict(filename):
             fix = data.find(',')
 
             if fix != (len(data) - 1) and fix > 0:
-                reason = data.split(',')[-1]
+                reason = data.split(',')[-1].strip()
             else:
                 reason = ''
 
@@ -93,20 +93,29 @@ def parse_file(filename, colors):
                 cline = "%s%d%s" % (colors.FILE, i, colors.DISABLE)
                 cwrongword = "%s%s%s" % (colors.WWORD, word, colors.DISABLE)
                 crightword = "%s%s%s" % (colors.FWORD,
-                                            misspellings[word].data,
+                                            misspellings[word].data.strip(),
                                             colors.DISABLE)
+                if misspellings[word].reason:
+                    creason = "  | %s%s%s\n" % (colors.FILE,
+                                            misspellings[word].reason,
+                                            colors.DISABLE)
+                else:
+                    creason = '\n'
+
                 if f != sys.stdin:
                     print("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "       \
-                            " ==> %(RIGHTWORD)s"
+                            " ==> %(RIGHTWORD)s%(REASON)s"
                             % {'FILENAME': cfilename, 'LINE': cline,
                                'WRONGWORD': cwrongword,
-                               'RIGHTWORD': crightword }, end='')
+                               'RIGHTWORD': crightword, 'REASON': creason },
+                            end='')
                 else:
                     print('%(LINE)s: %(STRLINE)s\n\t%(WRONGWORD)s ' \
-                            '==> %(RIGHTWORD)s'
+                            '==> %(RIGHTWORD)s%(REASON)s'
                             % { 'LINE': cline, 'STRLINE': line.strip(),
                                 'WRONGWORD': cwrongword,
-                                'RIGHTWORD': crightword }, end='')
+                               'RIGHTWORD': crightword, 'REASON': creason },
+                            end='')
         i += 1
 
     if f != sys.stdin:
