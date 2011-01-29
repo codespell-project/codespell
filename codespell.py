@@ -59,17 +59,10 @@ def parse_options(args):
 
 
 def build_dict(filename):
-    if filename == '-':
-        f = sys.stdin
-    else:
-        f = open(filename, mode='r')
-
-    for line in f:
-        [key, data] = line.split('->')
-        misspellings[key] = Mispell(data, data.find(',') + 1)
-
-    if f != sys.stdin:
-        f.close()
+    with open(filename, 'r') as f:
+        for line in f:
+            [key, data] = line.split('->')
+            misspellings[key] = Mispell(data, data.find(',') + 1)
 
 def parse_file(filename, colors):
     with open(filename, 'r') as f:
