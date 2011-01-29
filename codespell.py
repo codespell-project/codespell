@@ -97,7 +97,7 @@ def main(*args):
 
     build_dict(args[0])
     colors = TermColors();
-    if options.disable_colors or not sys.stdout.isatty():
+    if options.disable_colors:
         colors.disable()
 
     for filename in args[1:]:
