@@ -132,7 +132,10 @@ def main(*args):
         colors.disable()
 
     for filename in args[1:]:
-        if len(filename) > 1 and filename[0] == '.':
+        # ignore hidden files
+        bfilename = os.path.basename(filename)
+        if bfilename != '' and bfilename != '.' and bfilename != '..' \
+                                                 and bfilename[0] == '.':
             continue
 
         if not options.recursive and os.path.isdir(filename):
