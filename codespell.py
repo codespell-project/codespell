@@ -98,6 +98,7 @@ def istextfile(filename):
         return True
 
 def parse_file(filename, colors):
+    lines = None
     if filename == '-':
         f = sys.stdin
     else:
@@ -108,45 +109,47 @@ def parse_file(filename, colors):
 
         f = open(filename, 'r')
 
-    i = 1
     try:
-        for line in f:
-            for word in re.findall('\w+', line):
-                if word in misspellings:
-                    cfilename = "%s%s%s" % (colors.FILE, filename, colors.DISABLE)
-                    cline = "%s%d%s" % (colors.FILE, i, colors.DISABLE)
-                    cwrongword = "%s%s%s" % (colors.WWORD, word, colors.DISABLE)
-                    crightword = "%s%s%s" % (colors.FWORD,
-                                                misspellings[word].data.strip(),
-                                                colors.DISABLE)
-                    if misspellings[word].reason:
-                        creason = "  | %s%s%s\n" % (colors.FILE,
-                                                misspellings[word].reason,
-                                                colors.DISABLE)
-                    else:
-                        creason = '\n'
-
-                    if f != sys.stdin:
-                        print("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "       \
-                                " ==> %(RIGHTWORD)s%(REASON)s"
-                                % {'FILENAME': cfilename, 'LINE': cline,
-                                   'WRONGWORD': cwrongword,
-                                   'RIGHTWORD': crightword, 'REASON': creason },
-                                end='')
-                    else:
-                        print('%(LINE)s: %(STRLINE)s\n\t%(WRONGWORD)s ' \
-                                '==> %(RIGHTWORD)s%(REASON)s'
-                                % { 'LINE': cline, 'STRLINE': line.strip(),
-                                    'WRONGWORD': cwrongword,
-                                   'RIGHTWORD': crightword, 'REASON': creason },
-                                end='')
-            i += 1
+        lines = f.readlines()
+        if f != sys.stdin:
+            f.close()
     except UnicodeDecodeError:
             # just print a warning
             print('Error decoding file: %s' % filename, file=sys.stderr)
+            return
 
-    if f != sys.stdin:
-        f.close()
+    i = 1
+    for line in lines:
+        for word in re.findall('\w+', line):
+            if word in misspellings:
+                cfilename = "%s%s%s" % (colors.FILE, filename, colors.DISABLE)
+                cline = "%s%d%s" % (colors.FILE, i, colors.DISABLE)
+                cwrongword = "%s%s%s" % (colors.WWORD, word, colors.DISABLE)
+                crightword = "%s%s%s" % (colors.FWORD,
+                                            misspellings[word].data.strip(),
+                                            colors.DISABLE)
+                if misspellings[word].reason:
+                    creason = "  | %s%s%s\n" % (colors.FILE,
+                                            misspellings[word].reason,
+                                            colors.DISABLE)
+                else:
+                    creason = '\n'
+
+                if filename != sys.stdin:
+                    print("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "       \
+                            " ==> %(RIGHTWORD)s%(REASON)s"
+                            % {'FILENAME': cfilename, 'LINE': cline,
+                               'WRONGWORD': cwrongword,
+                               'RIGHTWORD': crightword, 'REASON': creason },
+                            end='')
+                else:
+                    print('%(LINE)s: %(STRLINE)s\n\t%(WRONGWORD)s ' \
+                            '==> %(RIGHTWORD)s%(REASON)s'
+                            % { 'LINE': cline, 'STRLINE': line.strip(),
+                                'WRONGWORD': cwrongword,
+                               'RIGHTWORD': crightword, 'REASON': creason },
+                            end='')
+        i += 1
 
 
 def main(*args):
