@@ -50,8 +50,11 @@ def parse_options(args):
                         action = 'store_true', default = False,
                         dest = 'recursive',
                         help = 'parse directories recursively')
+    parser.add_option('-w', '--write-changes',
+                        action = 'store_true', default = False,
+                        help = 'write changes in place if possible')
 
-    (options, args) = parser.parse_args()
+    (o, args) = parser.parse_args()
     if (len(args) < 1):
         print('ERROR: you need to specify a dictionary!', file=sys.stderr)
         parser.print_help()
@@ -59,23 +62,27 @@ def parse_options(args):
     if (len(args) == 1):
         args.append('-')
 
-    return options, args
+    return o, args
 
 
 def build_dict(filename):
     with open(filename, 'r') as f:
         for line in f:
             [key, data] = line.split('->')
-            fix = data.find(',')
+            data = data.strip()
+            fix = data.rfind(',')
 
-            if fix != (len(data) - 1) and fix > 0:
-                reason = data.split(',')[-1].strip()
-            else:
-                reason = ''
-
-            if fix > 0:
+            if fix < 0:
                 fix = True
-                data = "%s\n" % data[:data.rfind(',')]
+                reason = ''
+            elif fix == (len(data) - 1):
+                data = data[:fix]
+                reason = ''
+                fix = False
+            else:
+                data = data[:fix]
+                reason = data[fix + 1:].strip()
+                fix = False
 
             misspellings[key] = Mispell(data, fix, reason)
 
@@ -99,6 +106,10 @@ def istextfile(filename):
 
 def parse_file(filename, colors):
     lines = None
+    changed = False
+    global misspellings
+    global options
+
     if filename == '-':
         f = sys.stdin
     else:
@@ -111,48 +122,71 @@ def parse_file(filename, colors):
 
     try:
         lines = f.readlines()
-        if f != sys.stdin:
-            f.close()
     except UnicodeDecodeError:
             # just print a warning
             print('Error decoding file: %s' % filename, file=sys.stderr)
             return
+    finally:
+        if filename == '-':
+            f.close()
 
     i = 1
     for line in lines:
         for word in re.findall('\w+', line):
-            if word in misspellings:
+            lword = word.lower()
+            if lword in misspellings:
+                if options.write_changes and misspellings[lword].fix:
+                    changed = True
+                    lines[i - 1] = line.replace(word.capitalize(),
+                                        misspellings[lword].data.capitalize())
+                    lines[i - 1] = line.replace(word.upper(),
+                                        misspellings[lword].data.upper())
+                    lines[i - 1] = line.replace(word, misspellings[lword].data)
+
+                    continue
+
                 cfilename = "%s%s%s" % (colors.FILE, filename, colors.DISABLE)
                 cline = "%s%d%s" % (colors.FILE, i, colors.DISABLE)
                 cwrongword = "%s%s%s" % (colors.WWORD, word, colors.DISABLE)
                 crightword = "%s%s%s" % (colors.FWORD,
-                                            misspellings[word].data.strip(),
+                                            misspellings[lword].data,
                                             colors.DISABLE)
-                if misspellings[word].reason:
-                    creason = "  | %s%s%s\n" % (colors.FILE,
-                                            misspellings[word].reason,
+                if misspellings[lword].reason:
+                    creason = "  | %s%s%s" % (colors.FILE,
+                                            misspellings[lword].reason,
                                             colors.DISABLE)
                 else:
-                    creason = '\n'
+                    creason = ''
 
-                if filename != sys.stdin:
+                if filename != '-':
                     print("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "       \
                             " ==> %(RIGHTWORD)s%(REASON)s"
                             % {'FILENAME': cfilename, 'LINE': cline,
                                'WRONGWORD': cwrongword,
-                               'RIGHTWORD': crightword, 'REASON': creason },
-                            end='')
+                               'RIGHTWORD': crightword, 'REASON': creason })
                 else:
                     print('%(LINE)s: %(STRLINE)s\n\t%(WRONGWORD)s ' \
                             '==> %(RIGHTWORD)s%(REASON)s'
                             % { 'LINE': cline, 'STRLINE': line.strip(),
                                 'WRONGWORD': cwrongword,
-                               'RIGHTWORD': crightword, 'REASON': creason },
-                            end='')
+                               'RIGHTWORD': crightword, 'REASON': creason })
         i += 1
+
+    if changed:
+        if filename == '-':
+            print("---")
+            for line in lines:
+                print(line, end='')
+        else:
+            print("%sFIXED:%s %s" % (colors.FWORD, colors.DISABLE, filename),
+                                    file=sys.stderr)
+            f = open(filename, 'w')
+            f.writelines(lines)
+            f.close()
 
 
 def main(*args):
+    global options
     (options, args) = parse_options(args)
 
     build_dict(args[0])
