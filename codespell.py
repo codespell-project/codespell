@@ -79,6 +79,16 @@ def build_dict(filename):
 
             misspellings[key] = Mispell(data, fix, reason)
 
+def ishidden(filename):
+    bfilename = os.path.basename(filename)
+
+    if bfilename != '' and bfilename != '.' and bfilename != '..' \
+                                                 and bfilename[0] == '.':
+        return True
+
+    return False
+
+
 def istextfile(filename):
     with open(filename, mode='rb') as f:
         s = f.read(1024)
@@ -149,9 +159,7 @@ def main(*args):
 
     for filename in args[1:]:
         # ignore hidden files
-        bfilename = os.path.basename(filename)
-        if bfilename != '' and bfilename != '.' and bfilename != '..' \
-                                                 and bfilename[0] == '.':
+        if ishidden(filename):
             continue
 
         if not options.recursive and os.path.isdir(filename):
