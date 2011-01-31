@@ -167,6 +167,13 @@ def main(*args):
 
         if os.path.isdir(filename):
             for root, dirs, files in os.walk(filename):
+                i = 0
+                for d in dirs:
+                    if ishidden(d):
+                        del dirs[i]
+                    else:
+                        i += 1
+
                 for file in files:
                     parse_file(os.path.join(root, file), colors)
 
