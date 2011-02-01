@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+"""
+Copyright (C) 2010 Lucas De Marchi <lucas.de.marchi@gmail.com>
+"""
 
 import sys
 import re
