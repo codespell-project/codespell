@@ -144,9 +144,10 @@ def parse_file(filename, colors):
                     changed = True
                     lines[i - 1] = line.replace(word.capitalize(),
                                         misspellings[lword].data.capitalize())
-                    lines[i - 1] = line.replace(word.upper(),
+                    lines[i - 1] = lines[i - 1].replace(word.upper(),
                                         misspellings[lword].data.upper())
-                    lines[i - 1] = line.replace(word, misspellings[lword].data)
+                    lines[i - 1] = lines[i - 1].replace(word,
+                                                       misspellings[lword].data)
 
                     continue
 
