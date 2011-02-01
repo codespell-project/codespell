@@ -9,6 +9,8 @@ import os
 USAGE = """
 \t%prog [OPTIONS] dict_filename [file1 file2 ... fileN]
 """
+VERSION = '0.x'
+
 misspellings = {}
 options = None
 
@@ -41,7 +43,7 @@ class TermColors:
 # -.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-
 
 def parse_options(args):
-    parser = OptionParser(usage=USAGE)
+    parser = OptionParser(usage=USAGE, version=VERSION)
 
     parser.add_option('-d', '--disable-colors',
                         action = 'store_true', default = False,
