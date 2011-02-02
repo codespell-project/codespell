@@ -218,6 +218,9 @@ def main(*args):
                         i += 1
 
                 for file in files:
+                    if os.path.islink(file):
+                        continue
+
                     parse_file(os.path.join(root, file), colors)
 
             continue
