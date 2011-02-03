@@ -86,8 +86,8 @@ def build_dict(filename):
                 reason = ''
                 fix = False
             else:
-                data = data[:fix]
                 reason = data[fix + 1:].strip()
+                data = data[:fix]
                 fix = False
 
             misspellings[key] = Mispell(data, fix, reason)
