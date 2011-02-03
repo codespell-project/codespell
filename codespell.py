@@ -132,7 +132,7 @@ def parse_file(filename, colors):
             print('Error decoding file: %s' % filename, file=sys.stderr)
             return
     finally:
-        if filename == '-':
+        if filename != '-':
             f.close()
 
     i = 1
