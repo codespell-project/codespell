@@ -123,7 +123,7 @@ def parse_file(filename, colors):
     else:
         # ignore binary files
         if not istextfile(filename):
-            print("Ignoring binary file: %s " % filename, file=sys.stderr)
+            print("WARNING: Binary file: %s " % filename, file=sys.stderr)
             return
 
         curr = 0
