@@ -16,6 +16,7 @@ VERSION = '0.9'
 
 misspellings = {}
 options = None
+encodings = [ 'utf-8', 'iso-8859-1' ]
 
 #OPTIONS:
 #
@@ -114,26 +115,39 @@ def parse_file(filename, colors):
     changed = False
     global misspellings
     global options
+    global encodings
 
     if filename == '-':
         f = sys.stdin
+        lines = f.readlines()
     else:
         # ignore binary files
         if not istextfile(filename):
             print("Ignoring binary file: %s " % filename, file=sys.stderr)
             return
 
-        f = open(filename, 'r')
+        curr = 0
+        while True:
+            try:
+                f = open(filename, 'r', encoding=encodings[curr])
+                lines = f.readlines()
+                break
+            except UnicodeDecodeError:
+                print('WARNING: Decoding file %s' % filename, file=sys.stderr)
+                print('WARNING: using encoding=%s failed. '
+                                            % encodings[curr], file=sys.stderr)
 
-    try:
-        lines = f.readlines()
-    except UnicodeDecodeError:
-            # just print a warning
-            print('Error decoding file: %s' % filename, file=sys.stderr)
+                curr += 1
+                print('WARNING: Trying next encoding: %s' % encodings[curr],
+                                                            file=sys.stderr)
+
+            finally:
+                f.close()
+
+        if not lines:
+            print('ERROR: Could not detect encoding: %s' % filename,
+                                                            file=sys.stderr)
             return
-    finally:
-        if filename != '-':
-            f.close()
 
     i = 1
     for line in lines:
