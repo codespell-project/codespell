@@ -157,11 +157,11 @@ def parse_file(filename, colors):
                 if options.write_changes and misspellings[lword].fix:
                     changed = True
                     lines[i - 1] = line.replace(word.capitalize(),
-                                        misspellings[lword].data.capitalize())
+                                    misspellings[lword].data.capitalize(), 1)
                     lines[i - 1] = lines[i - 1].replace(word.upper(),
-                                        misspellings[lword].data.upper())
+                                    misspellings[lword].data.upper(), 1)
                     lines[i - 1] = lines[i - 1].replace(word,
-                                                       misspellings[lword].data)
+                                    misspellings[lword].data, 1)
 
                     continue
 
