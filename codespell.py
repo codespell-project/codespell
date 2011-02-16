@@ -154,23 +154,25 @@ def parse_file(filename, colors):
         for word in re.findall('\w+', line):
             lword = word.lower()
             if lword in misspellings:
+                if word == word.capitalize():
+                    fixword = misspellings[lword].data.capitalize()
+                elif word == word.upper():
+                    fixword = misspellings[lword].data.upper()
+                else:
+                    # even they are the same lower case or
+                    # or we don't have any idea
+                    fixword = misspellings[lword].data
+
                 if options.write_changes and misspellings[lword].fix:
                     changed = True
-                    lines[i - 1] = line.replace(word.capitalize(),
-                                    misspellings[lword].data.capitalize(), 1)
-                    lines[i - 1] = lines[i - 1].replace(word.upper(),
-                                    misspellings[lword].data.upper(), 1)
-                    lines[i - 1] = lines[i - 1].replace(word,
-                                    misspellings[lword].data, 1)
-
+                    lines[i - 1] = line.replace(word, fixword, 1)
                     continue
 
                 cfilename = "%s%s%s" % (colors.FILE, filename, colors.DISABLE)
                 cline = "%s%d%s" % (colors.FILE, i, colors.DISABLE)
                 cwrongword = "%s%s%s" % (colors.WWORD, word, colors.DISABLE)
-                crightword = "%s%s%s" % (colors.FWORD,
-                                            misspellings[lword].data,
-                                            colors.DISABLE)
+                crightword = "%s%s%s" % (colors.FWORD, fixword, colors.DISABLE)
+
                 if misspellings[lword].reason:
                     creason = "  | %s%s%s" % (colors.FILE,
                                             misspellings[lword].reason,
