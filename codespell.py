@@ -178,7 +178,7 @@ def parse_file(filename, colors):
 
                 if options.write_changes and misspellings[lword].fix:
                     changed = True
-                    lines[i - 1] = line.replace(word, fixword, 1)
+                    lines[i - 1] = lines[i - 1].replace(word, fixword, 1)
                     continue
 
                 cfilename = "%s%s%s" % (colors.FILE, filename, colors.DISABLE)
