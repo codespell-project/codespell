@@ -10,6 +10,3 @@
 
 BUGS
 ====
-
-- ' should not be taken as a word boundary (at least when there is a ' in the
-  replacement. See what it causes:

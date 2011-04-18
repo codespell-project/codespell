@@ -164,8 +164,9 @@ def parse_file(filename, colors):
             return
 
     i = 1
+    rx = re.compile(r"[\w']+")
     for line in lines:
-        for word in re.findall('\w+', line):
+        for word in rx.findall(line):
             lword = word.lower()
             if lword in misspellings:
                 if word == word.capitalize():
