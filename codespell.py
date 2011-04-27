@@ -102,6 +102,8 @@ def parse_options(args):
     if (len(args) == 1):
         args.append('-')
 
+# temporary default
+    o.interactive = 0
     return o, args
 
 
@@ -143,6 +145,9 @@ def istextfile(filename):
             return False
 
         return True
+
+def ask_for_word_fix(line, wrongword, fixword, fix, interactivity):
+    return fix, fixword
 
 def parse_file(filename, colors, summary):
     lines = None
@@ -189,6 +194,8 @@ def parse_file(filename, colors, summary):
         for word in rx.findall(line):
             lword = word.lower()
             if lword in misspellings:
+                fix = misspellings[lword].fix
+
                 if word == word.capitalize():
                     fixword = misspellings[lword].data.capitalize()
                 elif word == word.upper():
@@ -198,10 +205,14 @@ def parse_file(filename, colors, summary):
                     # or we don't have any idea
                     fixword = misspellings[lword].data
 
-                if summary and misspellings[lword].fix:
+                if options.interactive:
+                    fix, fixword = ask_for_word_fix(lines[i - 1], word, fixword,
+                                                    fix, options.interactive)
+
+                if summary and fix:
                     summary.update(lword)
 
-                if options.write_changes and misspellings[lword].fix:
+                if options.write_changes and fix:
                     changed = True
                     lines[i - 1] = lines[i - 1].replace(word, fixword, 1)
                     continue
