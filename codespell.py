@@ -58,6 +58,22 @@ class TermColors:
         self.FWORD = ''
         self.DISABLE = ''
 
+class Summary:
+    def __init__(self):
+        self.summary = {}
+
+    def update(self, wrongword):
+        if wrongword in self.summary:
+            self.summary[wrongword] += 1
+        else:
+            self.summary[wrongword] = 1
+
+    def __str__(self):
+        keys = list(self.summary.keys())
+        keys.sort()
+
+        return "\n".join(["{0}{1:{width}}".format(key, self.summary.get(key), width=15 - len(key)) for key in keys])
+
 # -.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-
 
 def parse_options(args):
@@ -73,6 +89,10 @@ def parse_options(args):
     parser.add_option('-w', '--write-changes',
                         action = 'store_true', default = False,
                         help = 'write changes in place if possible')
+
+    parser.add_option('-s', '--summary',
+                        action = 'store_true', default = False,
+                        help = 'print summary of fixes')
 
     (o, args) = parser.parse_args()
     if (len(args) < 1):
@@ -124,7 +144,7 @@ def istextfile(filename):
 
         return True
 
-def parse_file(filename, colors):
+def parse_file(filename, colors, summary):
     lines = None
     changed = False
     global misspellings
@@ -177,6 +197,9 @@ def parse_file(filename, colors):
                     # even they are the same lower case or
                     # or we don't have any idea
                     fixword = misspellings[lword].data
+
+                if summary and misspellings[lword].fix:
+                    summary.update(lword)
 
                 if options.write_changes and misspellings[lword].fix:
                     changed = True
@@ -231,6 +254,11 @@ def main(*args):
     if options.disable_colors:
         colors.disable()
 
+    if options.summary:
+        summary = Summary()
+    else:
+        summary = None
+
     for filename in args[1:]:
         # ignore hidden files
         if ishidden(filename):
@@ -252,11 +280,15 @@ def main(*args):
                     if os.path.islink(file):
                         continue
 
-                    parse_file(os.path.join(root, file), colors)
+                    parse_file(os.path.join(root, file), colors, summary)
 
             continue
 
-        parse_file(filename, colors)
+        parse_file(filename, colors, summary)
+
+    if summary:
+        print("\nSUMMARY:\n-------8<-------")
+        print(summary)
 
 if __name__ == '__main__':
     sys.exit(main(*sys.argv))

@@ -1,8 +1,6 @@
 - Add option to disable changes to source code, allowing them only on comments
   and text files
 
-- Add option to save stats of the changes
-
 - Add exclusion list
 
 - Add interative mode
