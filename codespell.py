@@ -146,8 +146,53 @@ def istextfile(filename):
 
         return True
 
-def ask_for_word_fix(line, wrongword, fixword, fix, interactivity):
-    return fix, fixword
+def ask_for_word_fix(line, wrongword, misspelling, interactivity):
+    if interactivity <= 0:
+        return misspelling.fix, misspelling.data
+
+    if misspelling.fix and interactivity & 1:
+        r = ''
+        while not r:
+            print("%s\t%s  ==> %s (Y/n) " %  (line, wrongword,
+                                                misspelling.data), end='')
+            r = sys.stdin.readline().strip().upper()
+            if not r: r = 'Y'
+            if r != 'Y' and r != 'N':
+                print("Say 'y' or 'n'")
+                r = ''
+
+        if r == 'N':
+            misspelling.fix = False
+            misspelling.fixword = ''
+
+    elif (interactivity & 2) and not misspelling.reason:
+        # if it is not disabled, i.e. it just has more than one possible fix,
+        # we ask the user which word to use
+
+        r = ''
+        opt = list(map(lambda x: x.strip(), misspelling.data.split(',')))
+        while not r:
+            print("%s Choose an option (blank for none): " % line, end='')
+            for i in range(len(opt)):
+                print(" %d) %s" % (i, opt[i]), end='')
+            print(": ", end='')
+            sys.stdout.flush()
+
+            n = sys.stdin.readline().strip()
+            if not n:
+                break
+
+            try:
+                n = int(n)
+                r = opt[n]
+            except (ValueError, IndexError):
+                print("Not a valid option\n")
+
+        if r:
+            misspelling.fix = True
+            misspelling.data = r
+
+    return misspelling.fix, misspelling.data
 
 def parse_file(filename, colors, summary):
     lines = None
@@ -206,8 +251,9 @@ def parse_file(filename, colors, summary):
                     fixword = misspellings[lword].data
 
                 if options.interactive:
-                    fix, fixword = ask_for_word_fix(lines[i - 1], word, fixword,
-                                                    fix, options.interactive)
+                    fix, fixword = ask_for_word_fix(lines[i - 1], word,
+                                                    misspellings[lword],
+                                                    options.interactive)
 
                 if summary and fix:
                     summary.update(lword)
@@ -215,6 +261,10 @@ def parse_file(filename, colors, summary):
                 if options.write_changes and fix:
                     changed = True
                     lines[i - 1] = lines[i - 1].replace(word, fixword, 1)
+                    continue
+
+                # if not warning was explicitly set by interactive mode
+                if options.interactive & 2 and not fix and not misspellings[lword].reason:
                     continue
 
                 cfilename = "%s%s%s" % (colors.FILE, filename, colors.DISABLE)
