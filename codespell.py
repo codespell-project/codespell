@@ -94,6 +94,14 @@ def parse_options(args):
                         action = 'store_true', default = False,
                         help = 'print summary of fixes')
 
+    parser.add_option('-i', '--interactive',
+                        action='store', type='int', default=0,
+                        help = 'Set interactive mode when writing changes. '  \
+                                '0 is the same of no interactivity; 1 makes ' \
+                                'codespell ask confirmation; 2 ask user to '  \
+                                'choose one fix when more than one is ' \
+                                'available; 3 applies both 1 and 2')
+
     (o, args) = parser.parse_args()
     if (len(args) < 1):
         print('ERROR: you need to specify a dictionary!', file=sys.stderr)
@@ -103,7 +111,7 @@ def parse_options(args):
         args.append('-')
 
 # temporary default
-    o.interactive = 0
+#    o.interactive = 0
     return o, args
 
 
