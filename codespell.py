@@ -110,8 +110,6 @@ def parse_options(args):
     if (len(args) == 1):
         args.append('-')
 
-# temporary default
-#    o.interactive = 0
     return o, args
 
 
