@@ -22,6 +22,7 @@ import sys
 import re
 from optparse import OptionParser
 import os
+import hashlib
 
 USAGE = """
 \t%prog [OPTIONS] dict_filename [file1 file2 ... fileN]
@@ -29,6 +30,7 @@ USAGE = """
 VERSION = '1.0'
 
 misspellings = {}
+xlines = set()
 options = None
 encodings = [ 'utf-8', 'iso-8859-1' ]
 
@@ -94,6 +96,10 @@ def parse_options(args):
                         action = 'store_true', default = False,
                         help = 'print summary of fixes')
 
+    parser.add_option('-x', '--exclude-file',
+                        help = 'FILE with lines that should not be changed',
+                        metavar='FILE')
+
     parser.add_option('-i', '--interactive',
                         action='store', type='int', default=0,
                         help = 'Set interactive mode when writing changes. '  \
@@ -112,6 +118,10 @@ def parse_options(args):
 
     return o, args
 
+def build_exclude_hashes(filename):
+    with open(filename, 'r') as f:
+        for line in f:
+            xlines.add(hashlib.sha1(line.encode()).digest())
 
 def build_dict(filename):
     with open(filename, 'r') as f:
@@ -242,6 +252,10 @@ def parse_file(filename, colors, summary):
     i = 1
     rx = re.compile(r"[\w']+")
     for line in lines:
+        if hashlib.sha1(line.encode()).digest() in xlines:
+            i += 1
+            continue
+
         for word in rx.findall(line):
             lword = word.lower()
             if lword in misspellings:
@@ -325,6 +339,9 @@ def main(*args):
         summary = Summary()
     else:
         summary = None
+
+    if options.exclude_file:
+        build_exclude_hashes(options.exclude_file)
 
     for filename in args[1:]:
         # ignore hidden files
