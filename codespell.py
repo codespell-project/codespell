@@ -22,7 +22,6 @@ import sys
 import re
 from optparse import OptionParser
 import os
-import hashlib
 
 USAGE = """
 \t%prog [OPTIONS] dict_filename [file1 file2 ... fileN]
@@ -30,7 +29,7 @@ USAGE = """
 VERSION = '1.0'
 
 misspellings = {}
-xlines = set()
+exclude_lines = set()
 options = None
 encodings = [ 'utf-8', 'iso-8859-1' ]
 
@@ -121,7 +120,7 @@ def parse_options(args):
 def build_exclude_hashes(filename):
     with open(filename, 'r') as f:
         for line in f:
-            xlines.add(hashlib.sha1(line.encode()).digest())
+            exclude_lines.add(line)
 
 def build_dict(filename):
     with open(filename, 'r') as f:
@@ -252,7 +251,7 @@ def parse_file(filename, colors, summary):
     i = 1
     rx = re.compile(r"[\w']+")
     for line in lines:
-        if hashlib.sha1(line.encode()).digest() in xlines:
+        if line in exclude_lines:
             i += 1
             continue
 
