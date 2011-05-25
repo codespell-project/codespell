@@ -772,7 +772,7 @@ cleareance->clearance
 clera->clear, sclera,
 clincial->clinical
 clinicaly->clinically
-cmo->com
+cmo->com, disabled due to lots of false positives
 cmoputer->computer
 co-incided->coincided
 coctail->cocktail
