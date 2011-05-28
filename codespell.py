@@ -410,7 +410,7 @@ def main(*args):
         parse_file(filename, colors, summary)
 
     if summary:
-        print("\nSUMMARY:\n-------8<-------")
+        print("\n-------8<-------\nSUMMARY:")
         print(summary)
 
 if __name__ == '__main__':
