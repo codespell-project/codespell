@@ -31,6 +31,7 @@ VERSION = '1.0'
 misspellings = {}
 exclude_lines = set()
 options = None
+quiet_level = 0
 encodings = [ 'utf-8', 'iso-8859-1' ]
 
 #OPTIONS:
@@ -39,6 +40,15 @@ encodings = [ 'utf-8', 'iso-8859-1' ]
 #    dict_filename       The file containing the dictionary of misspellings.
 #                        If set to '-', it will be read from stdin
 #    file1 .. fileN      Files to check spelling
+
+class QuietLevels:
+    NONE = 0
+    ENCODING = 1
+    BINARY_FILE = 2
+    DISABLED_FIXES = 4
+    NON_AUTOMATIC_FIXES = 8
+    FIXES = 16
+
 
 class Mispell:
     def __init__(self, data, fix, reason):
@@ -106,6 +116,18 @@ def parse_options(args):
                                 'codespell ask confirmation; 2 ask user to '  \
                                 'choose one fix when more than one is ' \
                                 'available; 3 applies both 1 and 2')
+
+    parser.add_option('-q', '--quiet-level',
+                        action='store', type='int', default=0,
+                        help = 'Bitmask that allows codespell to run quietly.'\
+                                '0: the default, in which all messages are '\
+                                'printed. 1: disable warnings about wrong '\
+                                'encoding. 2: disable warnings about binary'\
+                                ' file. 4: shut down warnings about automatic'\
+                                ' fixes that were disabled in dictionary. '\
+                                '8: don\'t print anything for non-automatic '\
+                                'fixes. 16: don\'t print fixed files.')
+
 
     (o, args) = parser.parse_args()
     if (len(args) < 1):
@@ -215,6 +237,7 @@ def parse_file(filename, colors, summary):
     global misspellings
     global options
     global encodings
+    global quiet_level
 
     if filename == '-':
         f = sys.stdin
@@ -222,7 +245,8 @@ def parse_file(filename, colors, summary):
     else:
         # ignore binary files
         if not istextfile(filename):
-            print("WARNING: Binary file: %s " % filename, file=sys.stderr)
+            if not quiet_level & QuietLevels.BINARY_FILE:
+                print("WARNING: Binary file: %s " % filename, file=sys.stderr)
             return
 
         curr = 0
@@ -232,13 +256,17 @@ def parse_file(filename, colors, summary):
                 lines = f.readlines()
                 break
             except UnicodeDecodeError:
-                print('WARNING: Decoding file %s' % filename, file=sys.stderr)
-                print('WARNING: using encoding=%s failed. '
-                                            % encodings[curr], file=sys.stderr)
+
+                if not quiet_level & QuietLevels.ENCODING:
+                    print('WARNING: Decoding file %s' % filename,
+                                                            file=sys.stderr)
+                    print('WARNING: using encoding=%s failed. '
+                                                            % encodings[curr],
+                                                            file=sys.stderr)
+                    print('WARNING: Trying next encoding: %s' % encodings[curr],
+                                                            file=sys.stderr)
 
                 curr += 1
-                print('WARNING: Trying next encoding: %s' % encodings[curr],
-                                                            file=sys.stderr)
 
             finally:
                 f.close()
@@ -292,10 +320,16 @@ def parse_file(filename, colors, summary):
                 crightword = "%s%s%s" % (colors.FWORD, fixword, colors.DISABLE)
 
                 if misspellings[lword].reason:
+                    if quiet_level & QuietLevels.DISABLED_FIXES:
+                        continue
+
                     creason = "  | %s%s%s" % (colors.FILE,
                                             misspellings[lword].reason,
                                             colors.DISABLE)
                 else:
+                    if quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
+                        continue
+
                     creason = ''
 
                 if filename != '-':
@@ -318,8 +352,9 @@ def parse_file(filename, colors, summary):
             for line in lines:
                 print(line, end='')
         else:
-            print("%sFIXED:%s %s" % (colors.FWORD, colors.DISABLE, filename),
-                                    file=sys.stderr)
+            if not quiet_level & QuietLevels.FIXES:
+                print("%sFIXED:%s %s" % (colors.FWORD, colors.DISABLE, filename),
+                                                                file=sys.stderr)
             f = open(filename, 'w')
             f.writelines(lines)
             f.close()
@@ -327,6 +362,8 @@ def parse_file(filename, colors, summary):
 
 def main(*args):
     global options
+    global quiet_level
+
     (options, args) = parse_options(args)
 
     build_dict(args[0])
@@ -341,6 +378,9 @@ def main(*args):
 
     if options.exclude_file:
         build_exclude_hashes(options.exclude_file)
+
+    if options.quiet_level:
+        quiet_level = options.quiet_level
 
     for filename in args[1:]:
         # ignore hidden files
