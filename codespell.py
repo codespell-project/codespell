@@ -282,7 +282,7 @@ def parse_file(filename, colors, summary):
                     lines[i - 1] = lines[i - 1].replace(word, fixword, 1)
                     continue
 
-                # if not warning was explicitly set by interactive mode
+                # otherwise warning was explicitly set by interactive mode
                 if options.interactive & 2 and not fix and not misspellings[lword].reason:
                     continue
 
