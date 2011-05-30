@@ -239,6 +239,8 @@ def parse_file(filename, colors, summary):
     global encodings
     global quiet_level
 
+    encoding = encodings[0]  # if not defined, use UTF-8
+
     if filename == '-':
         f = sys.stdin
         lines = f.readlines()
@@ -275,6 +277,8 @@ def parse_file(filename, colors, summary):
             print('ERROR: Could not detect encoding: %s' % filename,
                                                             file=sys.stderr)
             return
+
+        encoding = encodings[curr]
 
     i = 1
     rx = re.compile(r"[\w']+")
@@ -355,7 +359,7 @@ def parse_file(filename, colors, summary):
             if not quiet_level & QuietLevels.FIXES:
                 print("%sFIXED:%s %s" % (colors.FWORD, colors.DISABLE, filename),
                                                                 file=sys.stderr)
-            f = open(filename, 'w')
+            f = open(filename, 'w', encoding=encoding)
             f.writelines(lines)
             f.close()
 
