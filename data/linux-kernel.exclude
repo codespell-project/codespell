@@ -70,3 +70,18 @@ S: 1326 De Val-Brillant
 	at91_set_A_periph(AT91_PIN_PC1, 0);		/* [-SMOE-]{+SOME+} */
 
 	_REGISTER_CLOCK(NULL, "ect", ect_clk)
+infinit:
+	bra	infinit
+the read on an 8-byte boundary (e.g., if you seeked an odd number of bytes
+#define ISNT		   12 
+    (Some conversion-factor data were contributed by Jonathan Teh Soon Yew
+ From HWMon.cpp (Copyright 1998-2000 Jonathan Teh Soon Yew):
+ (These conversions were contributed by Jonathan Teh Soon Yew
+/* linear fits from HWMon.cpp (Copyright 1998-2000 Jonathan Teh Soon Yew)
+/* 	__u16 pallete:1; */
+	__be32 pallete;
+	struct diu_addr pallete;
+	int virtualX, virtualY;
+	struct regid		archType;
+		.ident = "Toshiba Satelite S1800-814",
+	at91_set_A_periph(AT91_PIN_PC1, 0);		/* SMOE */
