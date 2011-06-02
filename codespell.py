@@ -26,7 +26,7 @@ import os
 USAGE = """
 \t%prog [OPTIONS] dict_filename [file1 file2 ... fileN]
 """
-VERSION = '1.0'
+VERSION = '1.1-rc1'
 
 misspellings = {}
 exclude_lines = set()
