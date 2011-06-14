@@ -164,8 +164,13 @@ def parse_file(filename, colors):
 
     i = 1
     for line in lines:
+        fixed_words = set()
         for word in re.findall('\w+', line):
             lword = word.lower()
+
+            if lword in fixed_words:
+                continue
+
             if lword in misspellings:
                 if word == word.capitalize():
                     fixword = misspellings[lword].data.capitalize()
@@ -178,7 +183,8 @@ def parse_file(filename, colors):
 
                 if options.write_changes and misspellings[lword].fix:
                     changed = True
-                    lines[i - 1] = lines[i - 1].replace(word, fixword, 1)
+                    lines[i - 1] = re.sub(r'\b%s\b' % word, fixword, lines[i - 1])
+                    fixed_words.add(lword)
                     continue
 
                 cfilename = "%s%s%s" % (colors.FILE, filename, colors.DISABLE)
