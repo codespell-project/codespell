@@ -287,6 +287,8 @@ def parse_file(filename, colors, summary):
             i += 1
             continue
 
+        fixed_words = set()
+
         for word in rx.findall(line):
             lword = word.lower()
             if lword in misspellings:
@@ -301,7 +303,7 @@ def parse_file(filename, colors, summary):
                     # or we don't have any idea
                     fixword = misspellings[lword].data
 
-                if options.interactive:
+                if options.interactive and not lword in fixed_words:
                     fix, fixword = ask_for_word_fix(lines[i - 1], word,
                                                     misspellings[lword],
                                                     options.interactive)
@@ -309,9 +311,13 @@ def parse_file(filename, colors, summary):
                 if summary and fix:
                     summary.update(lword)
 
+                if lword in fixed_words:
+                    continue
+
                 if options.write_changes and fix:
                     changed = True
-                    lines[i - 1] = lines[i - 1].replace(word, fixword, 1)
+                    lines[i - 1] = re.sub(r'\b%s\b' % word, fixword, lines[i - 1])
+                    fixed_words.add(lword)
                     continue
 
                 # otherwise warning was explicitly set by interactive mode
