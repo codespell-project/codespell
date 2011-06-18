@@ -25,7 +25,7 @@ import os
 USAGE = """
 \t%prog [OPTIONS] dict_filename [file1 file2 ... fileN]
 """
-VERSION = '1.0.2'
+VERSION = '1.0.3'
 
 misspellings = {}
 options = None
