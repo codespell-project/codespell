@@ -1,5 +1,10 @@
 - Add option to disable changes to source code, allowing them only on comments
   and text files
 
+- Add option to exclude paths. codespell already ignores .git and .svn
+  subdirectories. It'd be good to give the user to ignore certain paths. E.g:
+  .eps files -- they are not binary files but codespell shouldn't check them
+  whatsoever.
+
 BUGS
 ====
