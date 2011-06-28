@@ -6,7 +6,5 @@
   .eps files -- they are not binary files but codespell shouldn't check them
   whatsoever.
 
-- Add Makefile.
-
 BUGS
 ====
