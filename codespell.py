@@ -231,6 +231,38 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
 
     return misspelling.fix, misspelling.data
 
+def get_encoding(filename):
+    curr = 0
+    while True:
+        try:
+            f = open(filename, 'r', encoding=encodings[curr])
+            lines = f.readlines()
+            break
+        except UnicodeDecodeError:
+
+            if not quiet_level & QuietLevels.ENCODING:
+                print('WARNING: Decoding file %s' % filename,
+                                                        file=sys.stderr)
+                print('WARNING: using encoding=%s failed. '
+                                                        % encodings[curr],
+                                                        file=sys.stderr)
+                print('WARNING: Trying next encoding: %s' % encodings[curr],
+                                                        file=sys.stderr)
+
+            curr += 1
+
+        finally:
+            f.close()
+
+    if not lines:
+        print('ERROR: Could not detect encoding: %s' % filename,
+                                                        file=sys.stderr)
+        raise Exception('Unknown encoding')
+
+    encoding = encodings[curr]
+    return lines, encoding
+
+
 def parse_file(filename, colors, summary):
     lines = None
     changed = False
@@ -250,35 +282,10 @@ def parse_file(filename, colors, summary):
             if not quiet_level & QuietLevels.BINARY_FILE:
                 print("WARNING: Binary file: %s " % filename, file=sys.stderr)
             return
-
-        curr = 0
-        while True:
-            try:
-                f = open(filename, 'r', encoding=encodings[curr])
-                lines = f.readlines()
-                break
-            except UnicodeDecodeError:
-
-                if not quiet_level & QuietLevels.ENCODING:
-                    print('WARNING: Decoding file %s' % filename,
-                                                            file=sys.stderr)
-                    print('WARNING: using encoding=%s failed. '
-                                                            % encodings[curr],
-                                                            file=sys.stderr)
-                    print('WARNING: Trying next encoding: %s' % encodings[curr],
-                                                            file=sys.stderr)
-
-                curr += 1
-
-            finally:
-                f.close()
-
-        if not lines:
-            print('ERROR: Could not detect encoding: %s' % filename,
-                                                            file=sys.stderr)
+        try:
+            lines, encoding = get_encoding(filename)
+        except:
             return
-
-        encoding = encodings[curr]
 
     i = 1
     rx = re.compile(r"[\w']+")
