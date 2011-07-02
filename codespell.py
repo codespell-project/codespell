@@ -31,6 +31,7 @@ VERSION = '1.1'
 misspellings = {}
 exclude_lines = set()
 options = None
+fileopener = None
 quiet_level = 0
 encodings = [ 'utf-8', 'iso-8859-1' ]
 
@@ -85,6 +86,82 @@ class Summary:
 
         return "\n".join(["{0}{1:{width}}".format(key, self.summary.get(key), width=15 - len(key)) for key in keys])
 
+class FileOpener:
+    def __init__(self, use_chardet):
+        self.use_chardet = use_chardet
+        self.init_chardet()
+
+    def init_chardet(self):
+        from chardet.universaldetector import UniversalDetector
+
+        self.encdetector = UniversalDetector()
+
+    def open(self, filename):
+        if self.use_chardet:
+            return self.open_with_chardet(filename)
+        else:
+            return self.open_with_internal(filename)
+
+    def open_with_chardet(self, filename):
+        self.encdetector.reset()
+        with open(filename, 'rb') as f:
+            for line in f:
+                self.encdetector.feed(line)
+                if self.encdetector.done:
+                    break
+        self.encdetector.close()
+        encoding = self.encdetector.result['encoding']
+
+        try:
+            f = open(filename, encoding=encoding)
+            lines = f.readlines()
+        except UnicodeDecodeError:
+            print('ERROR: Could not detect encoding: %s' % filename,
+                                                        file=sys.stderr)
+            raise
+        except LookupError:
+            print('ERROR: %s -- Don\'t know how to handle encoding %s'
+                                % (filename, encoding), file=sys.stderr)
+            raise
+        finally:
+            f.close()
+
+        return lines, encoding
+
+
+    def open_with_internal(self, filename):
+        curr = 0
+        global encodings
+
+        while True:
+            try:
+                f = open(filename, 'r', encoding=encodings[curr])
+                lines = f.readlines()
+                break
+            except UnicodeDecodeError:
+                if not quiet_level & QuietLevels.ENCODING:
+                    print('WARNING: Decoding file %s' % filename,
+                                                        file=sys.stderr)
+                    print('WARNING: using encoding=%s failed. '
+                                                        % encodings[curr],
+                                                        file=sys.stderr)
+                    print('WARNING: Trying next encoding: %s' % encodings[curr],
+                                                        file=sys.stderr)
+
+                curr += 1
+
+            finally:
+                f.close()
+
+        if not lines:
+            print('ERROR: Could not detect encoding: %s' % filename,
+                                                        file=sys.stderr)
+            raise Exception('Unknown encoding')
+
+        encoding = encodings[curr]
+
+        return lines, encoding
+
 # -.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-
 
 def parse_options(args):
@@ -127,6 +204,13 @@ def parse_options(args):
                                 ' fixes that were disabled in dictionary. '\
                                 '8: don\'t print anything for non-automatic '\
                                 'fixes. 16: don\'t print fixed files.')
+
+    parser.add_option('-e', '--hard-encoding-detection',
+                        action='store_true', default = False,
+                        help = 'Use chardet to detect the encoding of each'\
+                        'file. This can slow down codespell, but is more'\
+                        'reliable to detect encodings other than utf-8,'\
+                        'iso8859-1 and ascii.')
 
 
     (o, args) = parser.parse_args()
@@ -231,38 +315,6 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
 
     return misspelling.fix, misspelling.data
 
-def get_encoding(filename):
-    curr = 0
-    while True:
-        try:
-            f = open(filename, 'r', encoding=encodings[curr])
-            lines = f.readlines()
-            break
-        except UnicodeDecodeError:
-
-            if not quiet_level & QuietLevels.ENCODING:
-                print('WARNING: Decoding file %s' % filename,
-                                                        file=sys.stderr)
-                print('WARNING: using encoding=%s failed. '
-                                                        % encodings[curr],
-                                                        file=sys.stderr)
-                print('WARNING: Trying next encoding: %s' % encodings[curr],
-                                                        file=sys.stderr)
-
-            curr += 1
-
-        finally:
-            f.close()
-
-    if not lines:
-        print('ERROR: Could not detect encoding: %s' % filename,
-                                                        file=sys.stderr)
-        raise Exception('Unknown encoding')
-
-    encoding = encodings[curr]
-    return lines, encoding
-
-
 def parse_file(filename, colors, summary):
     lines = None
     changed = False
@@ -283,7 +335,7 @@ def parse_file(filename, colors, summary):
                 print("WARNING: Binary file: %s " % filename, file=sys.stderr)
             return
         try:
-            lines, encoding = get_encoding(filename)
+            lines, encoding = fileopener.open(filename)
         except:
             return
 
@@ -376,10 +428,10 @@ def parse_file(filename, colors, summary):
             f.writelines(lines)
             f.close()
 
-
 def main(*args):
     global options
     global quiet_level
+    global fileopener
 
     (options, args) = parse_options(args)
 
@@ -398,6 +450,8 @@ def main(*args):
 
     if options.quiet_level:
         quiet_level = options.quiet_level
+
+    fileopener = FileOpener(options.hard_encoding_detection)
 
     for filename in args[1:]:
         # ignore hidden files
