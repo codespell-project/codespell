@@ -89,10 +89,16 @@ class Summary:
 class FileOpener:
     def __init__(self, use_chardet):
         self.use_chardet = use_chardet
-        self.init_chardet()
+        if use_chardet:
+            self.init_chardet()
 
     def init_chardet(self):
-        from chardet.universaldetector import UniversalDetector
+        try:
+            from chardet.universaldetector import UniversalDetector
+        except ImportError:
+            raise Exception("There's no chardet installed to import from. "
+                            "Please, install it and check your PYTHONPATH "
+                            "environment variable")
 
         self.encdetector = UniversalDetector()
 
