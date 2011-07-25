@@ -273,15 +273,24 @@ def istextfile(filename):
 
         return True
 
+def fix_case(word, fixword):
+    if word == word.capitalize():
+        return fixword.capitalize()
+    elif word == word.upper():
+        return fixword.upper()
+    # they are both lower case
+    # or we don't have any idea
+    return fixword
+
 def ask_for_word_fix(line, wrongword, misspelling, interactivity):
     if interactivity <= 0:
-        return misspelling.fix, misspelling.data
+        return misspelling.fix, fix_case(wrongword, misspelling.data)
 
     if misspelling.fix and interactivity & 1:
         r = ''
+        fixword = fix_case(wrongword, misspelling.data)
         while not r:
-            print("%s\t%s  ==> %s (Y/n) " %  (line, wrongword,
-                                                misspelling.data), end='')
+            print("%s\t%s  ==> %s (Y/n) " %  (line, wrongword, fixword), end='')
             r = sys.stdin.readline().strip().upper()
             if not r: r = 'Y'
             if r != 'Y' and r != 'N':
@@ -301,7 +310,8 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
         while not r:
             print("%s Choose an option (blank for none): " % line, end='')
             for i in range(len(opt)):
-                print(" %d) %s" % (i, opt[i]), end='')
+                fixword = fix_case(wrongword, opt[i])
+                print(" %d) %s" % (i, fixword), end='')
             print(": ", end='')
             sys.stdout.flush()
 
@@ -319,7 +329,7 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
             misspelling.fix = True
             misspelling.data = r
 
-    return misspelling.fix, misspelling.data
+    return misspelling.fix, fix_case(wrongword, misspelling.data)
 
 def parse_file(filename, colors, summary):
     lines = None
@@ -353,36 +363,30 @@ def parse_file(filename, colors, summary):
             continue
 
         fixed_words = set()
+        asked_for = set()
 
         for word in rx.findall(line):
             lword = word.lower()
             if lword in misspellings:
                 fix = misspellings[lword].fix
+                fixword = fix_case(word, misspellings[lword].data)
 
-                if word == word.capitalize():
-                    fixword = misspellings[lword].data.capitalize()
-                elif word == word.upper():
-                    fixword = misspellings[lword].data.upper()
-                else:
-                    # even they are the same lower case or
-                    # or we don't have any idea
-                    fixword = misspellings[lword].data
-
-                if options.interactive and not lword in fixed_words:
+                if options.interactive and not lword in asked_for:
                     fix, fixword = ask_for_word_fix(lines[i - 1], word,
                                                     misspellings[lword],
                                                     options.interactive)
+                    asked_for.add(lword)
 
                 if summary and fix:
                     summary.update(lword)
 
-                if lword in fixed_words:
+                if word in fixed_words:
                     continue
 
                 if options.write_changes and fix:
                     changed = True
                     lines[i - 1] = re.sub(r'\b%s\b' % word, fixword, lines[i - 1])
-                    fixed_words.add(lword)
+                    fixed_words.add(word)
                     continue
 
                 # otherwise warning was explicitly set by interactive mode
