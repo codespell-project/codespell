@@ -51,7 +51,7 @@ class QuietLevels:
     FIXES = 16
 
 
-class Mispell:
+class Misspell:
     def __init__(self, data, fix, reason):
         self.data = data
         self.fix = fix
@@ -253,7 +253,7 @@ def build_dict(filename):
                 data = data[:fix]
                 fix = False
 
-            misspellings[key] = Mispell(data, fix, reason)
+            misspellings[key] = Misspell(data, fix, reason)
 
 def ishidden(filename):
     bfilename = os.path.basename(filename)
