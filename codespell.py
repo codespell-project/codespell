@@ -202,20 +202,20 @@ def parse_options(args):
 
     parser.add_option('-q', '--quiet-level',
                         action='store', type='int', default=0,
-                        help = 'Bitmask that allows codespell to run quietly.'\
+                        help = 'Bitmask that allows codespell to run quietly. '\
                                 '0: the default, in which all messages are '\
                                 'printed. 1: disable warnings about wrong '\
-                                'encoding. 2: disable warnings about binary'\
-                                ' file. 4: shut down warnings about automatic'\
-                                ' fixes that were disabled in dictionary. '\
+                                'encoding. 2: disable warnings about binary '\
+                                'file. 4: shut down warnings about automatic '\
+                                'fixes that were disabled in dictionary. '\
                                 '8: don\'t print anything for non-automatic '\
                                 'fixes. 16: don\'t print fixed files.')
 
     parser.add_option('-e', '--hard-encoding-detection',
                         action='store_true', default = False,
-                        help = 'Use chardet to detect the encoding of each'\
-                        'file. This can slow down codespell, but is more'\
-                        'reliable to detect encodings other than utf-8,'\
+                        help = 'Use chardet to detect the encoding of each '\
+                        'file. This can slow down codespell, but is more '\
+                        'reliable in detecting encodings other than utf-8, '\
                         'iso8859-1 and ascii.')
 
 
