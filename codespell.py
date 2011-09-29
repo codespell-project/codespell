@@ -22,6 +22,7 @@ import sys
 import re
 from optparse import OptionParser
 import os
+import fnmatch
 
 USAGE = """
 \t%prog [OPTIONS] dict_filename [file1 file2 ... fileN]
@@ -50,6 +51,22 @@ class QuietLevels:
     NON_AUTOMATIC_FIXES = 8
     FIXES = 16
 
+class GlobMatch:
+    def __init__(self, pattern):
+        if pattern:
+            self.pattern_list = pattern.split(',')
+        else:
+            self.pattern_list = None
+
+    def match(self, filename):
+        if self.pattern_list is None:
+            return False
+
+        for p in self.pattern_list:
+            if fnmatch.fnmatch(filename, p):
+                return True
+
+        return False
 
 class Misspell:
     def __init__(self, data, fix, reason):
@@ -187,6 +204,14 @@ def parse_options(args):
     parser.add_option('-s', '--summary',
                         action = 'store_true', default = False,
                         help = 'print summary of fixes')
+
+    parser.add_option('-S', '--skip',
+                        help = 'Comma-separated list of files to skip. It '\
+                               'accepts globs as well. E.g.: if you want '\
+                               'codespell to skip .eps and .txt files, '\
+                               'you\'d give "*.eps,*.txt" to this option. '\
+                               'It is expecially useful if you are using in '\
+                               'conjunction with -r option.')
 
     parser.add_option('-x', '--exclude-file',
                         help = 'FILE with lines that should not be changed',
@@ -463,6 +488,8 @@ def main(*args):
 
     fileopener = FileOpener(options.hard_encoding_detection)
 
+    glob_match = GlobMatch(options.skip)
+
     for filename in args[1:]:
         # ignore hidden files
         if ishidden(filename):
@@ -483,7 +510,8 @@ def main(*args):
                 for file in files:
                     if os.path.islink(file):
                         continue
-
+                    if glob_match.match(file):
+                        continue
                     parse_file(os.path.join(root, file), colors, summary)
 
             continue

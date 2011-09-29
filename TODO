@@ -1,11 +1,6 @@
 - Add option to disable changes to source code, allowing them only on comments
   and text files
 
-- Add option to exclude paths. codespell already ignores .git and .svn
-  subdirectories. It'd be good to give the user to ignore certain paths. E.g:
-  .eps files -- they are not binary files but codespell shouldn't check them
-  whatsoever.
-
 - Add option to ignore big files. The biggest issue is if you try to run
   codespell with a file in the source code tree like cscope.out. I  don't know
   if the best approach is to filter by name or by size
