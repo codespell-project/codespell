@@ -3,6 +3,9 @@ prefix ?= /usr
 bindir ?= ${prefix}/bin
 datadir ?= ${prefix}/share/codespell
 
+all:
+	@echo "Use 'make install' setting prefix and DESTDIR as desired"
+	@echo "E.g.: make prefix=/usr/local DESTDIR=/tmp/test-inst install"
 
 install:
 	install -d ${DESTDIR}${datadir} ${DESTDIR}${bindir}
