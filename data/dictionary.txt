@@ -2295,7 +2295,7 @@ maneouvred->manoeuvred
 maneouvres->manoeuvres
 maneouvring->manoeuvring
 manisfestations->manifestations
-mannor->manner
+mannor->manner, manor,
 manoeuverability->maneuverability
 manouver->maneuver, manoeuvre,
 manouverability->maneuverability, manoeuvrability, manoeuverability,
@@ -3544,6 +3544,7 @@ sovereignity->sovereignty
 soverign->sovereign
 soverignity->sovereignty
 soverignty->sovereignty
+spagetti->spaghetti
 spainish->Spanish
 speach->speech
 specfic->specific
