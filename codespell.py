@@ -260,7 +260,7 @@ def build_exclude_hashes(filename):
             exclude_lines.add(line)
 
 def build_dict(filename):
-    with open(filename, 'r') as f:
+    with open(filename, 'r', 1, 'utf-8') as f:
         for line in f:
             [key, data] = line.split('->')
             data = data.strip()
