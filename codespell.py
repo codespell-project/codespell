@@ -27,7 +27,7 @@ import fnmatch
 USAGE = """
 \t%prog [OPTIONS] dict_filename [file1 file2 ... fileN]
 """
-VERSION = '1.2'
+VERSION = '1.3'
 
 misspellings = {}
 exclude_lines = set()
