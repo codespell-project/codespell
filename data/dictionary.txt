@@ -59,6 +59,7 @@ accredidation->accreditation
 accross->across
 accussed->accused
 acedemic->academic
+acess->access
 acheive->achieve
 acheived->achieved
 acheivement->achievement
@@ -100,6 +101,7 @@ adavanced->advanced
 adbandon->abandon
 additinally->additionally
 additionaly->additionally
+additon->addition
 additonal->additional
 additonally->additionally
 addmission->admission
@@ -282,6 +284,7 @@ annoint->anoint
 annointed->anointed
 annointing->anointing
 annoints->anoints
+annother->another
 annouced->announced
 annualy->annually
 annuled->annulled
@@ -485,6 +488,7 @@ authoritive->authoritative
 authrorities->authorities
 autochtonous->autochthonous
 autoctonous->autochthonous
+autoincrememnt->autoincrement
 automaticly->automatically
 automibile->automobile
 automonomous->autonomous
@@ -750,6 +754,7 @@ charistics->characteristics
 chasr->chaser, chase,
 cheif->chief
 cheifs->chiefs
+chek->check
 chemcial->chemical
 chemcially->chemically
 chemestry->chemistry
@@ -800,6 +805,7 @@ collonies->colonies
 collony->colony
 collosal->colossal
 colonizators->colonizers
+colum->column
 comander->commander, commandeer,
 comando->commando
 comandos->commandos
@@ -869,6 +875,7 @@ compatable->compatible
 compatablities->compatibilities
 compatablity->compatibility
 compatiable->compatible
+compatibilty->compatibility
 compatiblities->compatibilities
 compatiblity->compatibility
 compeitions->competitions
@@ -909,6 +916,7 @@ condidtions->conditions
 conditionsof->conditions of
 conected->connected
 conection->connection
+conectix->connectix
 conesencus->consensus
 confidental->confidential
 confidentally->confidentially
@@ -989,6 +997,7 @@ contibute->contribute
 contibuted->contributed
 contibutes->contributes
 contigent->contingent
+contigious->contiguous
 contined->continued
 continous->continuous
 continously->continuously
@@ -1016,6 +1025,7 @@ convenant->covenant
 convential->conventional
 convertables->convertibles
 convertion->conversion
+convery->convert
 conveyer->conveyor
 conviced->convinced
 convienient->convenient
@@ -1035,6 +1045,7 @@ correponding->corresponding
 correposding->corresponding
 correspondant->correspondent
 correspondants->correspondents
+corresponsing->corresponding
 corridoors->corridors
 corrispond->correspond
 corrispondant->correspondent
@@ -1043,6 +1054,7 @@ corrisponded->corresponded
 corrisponding->corresponding
 corrisponds->corresponds
 costitution->constitution
+cotrol->control
 coucil->council
 coudl->could, cloud,
 councellor->councillor, counselor, councilor,
@@ -1111,6 +1123,7 @@ decribe->describe
 decribed->described
 decribes->describes
 decribing->describing
+decriptor->descriptor
 dectect->detect
 defendent->defendant
 defendents->defendants
@@ -1342,6 +1355,7 @@ eclispe->eclipse
 ecomonic->economic
 ect->etc
 eearly->early
+efect->effect
 efel->evil
 effeciency->efficiency
 effecient->efficient
@@ -1379,6 +1393,7 @@ embarras->embarrass
 embarrased->embarrassed
 embarrasing->embarrassing
 embarrasment->embarrassment
+embeded->embedded
 embezelled->embezzled
 emblamatic->emblematic
 eminate->emanate
@@ -1415,6 +1430,7 @@ encryptiion->encryption
 encylopedia->encyclopedia
 endevors->endeavors
 endevour->endeavour
+endianess->endianness
 endig->ending
 endolithes->endoliths
 enduce->induce
@@ -1475,6 +1491,7 @@ eratic->erratic
 eratically->erratically
 eraticly->erratically
 erested->arrested, erected,
+erronous->erroneous
 errupted->erupted
 esential->essential
 esitmated->estimated
@@ -1529,6 +1546,7 @@ excellance->excellence
 excellant->excellent
 excells->excels
 excercise->exercise
+excerciser->exerciser
 exchanching->exchanging
 excisted->existed
 exculsivly->exclusively
@@ -1778,12 +1796,14 @@ guage->gauge
 guarentee->guarantee
 guarenteed->guaranteed
 guarentees->guarantees
+guarrenteed->guarenteed
 Guatamala->Guatemala
 Guatamalan->Guatemalan
 guerilla->guerrilla
 guerillas->guerrillas
 guerrila->guerrilla
 guerrilas->guerrillas
+gueswork->guesswork
 guidence->guidance
 Guilia->Giulia
 Guilio->Giulio
@@ -1837,6 +1857,7 @@ heared->heard
 heathy->healthy
 Heidelburg->Heidelberg
 heigher->higher
+heirachies->hierarchies
 heirarchy->hierarchy
 heiroglyphics->hieroglyphics
 helment->helmet
@@ -2013,6 +2034,7 @@ indefinately->indefinitely
 indefineable->undefinable
 indefinitly->indefinitely
 indentical->identical
+indentifier->identifier
 indepedantly->independently
 indepedence->independence
 independance->independence
@@ -2086,6 +2108,7 @@ insitution->institution
 insitutions->institutions
 inspite->in spite, inspire,
 instade->instead
+instanciation->instantiation
 instatance->instance
 institue->institute
 instuction->instruction
@@ -2116,6 +2139,7 @@ interm->interim
 internation->international
 interpet->interpret
 interrim->interim
+interrput->interrupt
 interrugum->interregnum
 intertaining->entertaining
 interupt->interrupt
@@ -2126,6 +2150,7 @@ intially->initially
 intrduced->introduced
 intrest->interest
 introdued->introduced
+intruction->instruction
 intruduced->introduced
 intrument->instrument
 intrumental->instrumental
@@ -2180,6 +2205,7 @@ judisuary->judiciary
 juducial->judicial
 juristiction->jurisdiction
 juristictions->jurisdictions
+kenrel->kernel
 kindergarden->kindergarten
 klenex->kleenex
 knifes->knives
@@ -2231,6 +2257,7 @@ libguistic->linguistic
 libguistics->linguistics
 libitarianisn->libertarianism
 lible->libel, liable,
+licenced->licensed"
 lieing->lying
 liek->like
 liekd->liked
@@ -2310,6 +2337,7 @@ manufature->manufacture
 manufatured->manufactured
 manufaturing->manufacturing
 manuver->maneuver
+mapp->map
 mariage->marriage
 marjority->majority
 markes->marks
@@ -2351,6 +2379,7 @@ memeber->member
 menally->mentally
 meranda->veranda, Miranda,
 mercentile->mercantile
+messagin->messaging
 messanger->messenger
 messenging->messaging
 metalic->metallic
@@ -2384,6 +2413,7 @@ millon->million
 miltary->military
 minature->miniature
 minerial->mineral
+MingGW->MinGW
 ministery->ministry
 minstries->ministries
 minstry->ministry
@@ -2417,6 +2447,7 @@ mkae->make
 mkaes->makes
 mkaing->making
 mkea->make
+modeled->modelled
 moderm->modem
 modle->model
 moduel->module
@@ -2457,6 +2488,7 @@ muder->murder
 mudering->murdering
 muhammadan->muslim
 multicultralism->multiculturalism
+multifuction->multifunction
 multipled->multiplied
 multiplers->multipliers
 munbers->numbers
@@ -2698,6 +2730,8 @@ paralell->parallel
 paralelly->parallelly
 paralely->parallelly
 parallely->parallelly
+paramter->parameter
+paramters->parameters
 paranthesis->parenthesis
 paraphenalia->paraphernalia
 parellels->parallels
@@ -2721,6 +2755,7 @@ pasengers->passengers
 passerbys->passersby
 pasttime->pastime
 pastural->pastoral
+pathes->paths
 paticular->particular
 pattented->patented
 pavillion->pavilion
@@ -2823,6 +2858,7 @@ planed->planned
 plantiff->plaintiff
 plateu->plateau
 platfrom->platform
+plathome->platform
 plausable->plausible
 playright->playwright
 playwrite->playwright
@@ -2938,6 +2974,7 @@ prepartion->preparation
 prepatory->preparatory
 preperation->preparation
 preperations->preparations
+prepresent->represent
 preriod->period
 presedential->presidential
 presense->presence
@@ -3209,6 +3246,7 @@ refridgerator->refrigerator
 refromist->reformist
 refusla->refusal
 regardes->regards
+registrs->registers
 regluar->regular
 reguarly->regularly
 regulaion->regulation
@@ -3270,6 +3308,7 @@ repeteadly->repeatedly
 repetion->repetition
 repid->rapid
 reponse->response
+reponses->responses
 reponsible->responsible
 reportadly->reportedly
 represantative->representative
@@ -3341,6 +3380,7 @@ reversable->reversible
 revolutionar->revolutionary
 rewitten->rewritten
 rewriet->rewrite
+rewuired->required
 rference->reference
 rferences->references
 rhymme->rhyme
@@ -3360,6 +3400,7 @@ rucuperate->recuperate
 rudimentatry->rudimentary
 rulle->rule
 runing->running
+runnning->running
 runnung->running
 russina->Russian
 Russion->Russian
@@ -3633,6 +3674,7 @@ submachne->submachine
 subpecies->subspecies
 subsidary->subsidiary
 subsiduary->subsidiary
+subsituting->substituting
 subsquent->subsequent
 subsquently->subsequently
 substace->substance
@@ -3853,6 +3895,7 @@ throrough->thorough
 throughly->thoroughly
 throught->thought, through, throughout,
 througout->throughout
+ths->this
 thsi->this
 thsoe->those
 thta->that
@@ -3901,6 +3944,7 @@ trafficing->trafficking
 trafic->traffic
 trancendent->transcendent
 trancending->transcending
+tranfer->transfer
 tranform->transform
 tranformed->transformed
 transcendance->transcendence
@@ -3991,6 +4035,7 @@ univerity->university
 universtiy->university
 univesities->universities
 univesity->university
+unkonwn->unknown
 unkown->unknown
 unlikey->unlikely
 unmanouverable->unmaneuverable, unmanoeuvrable,
@@ -4008,6 +4053,7 @@ unplease->displease
 unplesant->unpleasant
 unprecendented->unprecedented
 unprecidented->unprecedented
+unregnized->unrecognized
 unrepentent->unrepentant
 unrepetant->unrepentant
 unrepetent->unrepentant
@@ -4057,6 +4103,7 @@ vailidty->validity
 valetta->valletta
 valuble->valuable
 valueable->valuable
+varables->variables
 varations->variations
 varient->variant
 variey->variety
@@ -4085,6 +4132,7 @@ veyr->very
 vigeur->vigueur, vigour, vigor,
 vigilence->vigilance
 vigourous->vigorous
+vill->will
 villian->villain
 villification->vilification
 villify->vilify
