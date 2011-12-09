@@ -998,8 +998,8 @@ contraversy->controversy
 contributer->contributor
 contributers->contributors
 contritutions->contributions
-controler->controller
 controled->controlled
+controler->controller
 controling->controlling
 controll->control
 controlls->controls
@@ -1312,8 +1312,8 @@ dominaton->domination
 dominent->dominant
 dominiant->dominant
 donig->doing
-dosent'->doesn't
 dosen't->doesn't
+dosent'->doesn't
 doub->doubt, daub,
 doulbe->double
 dowloads->downloads
@@ -1802,7 +1802,6 @@ haemorrage->haemorrhage
 haev->have, heave,
 Hallowean->Hallowe'en, Halloween,
 halp->help
-Hatian->Haitian
 hapen->happen
 hapened->happened
 hapening->happening
@@ -1827,6 +1826,7 @@ harrassment->harassment
 harrassments->harassments
 hasnt'->hasn't
 hasnt->hasn't
+Hatian->Haitian
 haviest->heaviest
 headquarer->headquarter
 headquater->headquarter
@@ -2093,7 +2093,6 @@ instuments->instruments
 instutionalized->institutionalized
 instutions->intuitions
 insurence->insurance
-interger->integer
 intelectual->intellectual
 inteligence->intelligence
 inteligent->intelligent
@@ -2110,6 +2109,7 @@ intered->interred, interned,
 interelated->interrelated
 interferance->interference
 interfereing->interfering
+interger->integer
 intergrated->integrated
 intergration->integration
 interm->interim
@@ -2259,6 +2259,7 @@ lmits->limits
 loev->love
 lonelyness->loneliness
 longitudonal->longitudinal
+longuer->longer
 lonley->lonely
 lonly->lonely, only,
 loosing->losing
@@ -2419,7 +2420,6 @@ mkea->make
 moderm->modem
 modle->model
 moduel->module
-longuer->longer
 moduels->modules
 moent->moment
 moeny->money
@@ -2491,7 +2491,6 @@ neccessities->necessities
 necesarily->necessarily
 necesary->necessary
 necessiate->necessitate
-nescessary->necessary
 negitive->negative
 neglible->negligible
 negligable->negligible
@@ -2506,6 +2505,7 @@ neigbourhood->neighbourhood
 neigbouring->neighbouring, neighboring,
 neigbours->neighbours, neighbors,
 neolitic->neolithic
+nescessary->necessary
 nessasarily->necessarily
 nessecary->necessary
 nestin->nesting
@@ -2628,8 +2628,8 @@ omre->more
 onot->note, not,
 onyl->only
 openess->openness
-oponent->opponent
 openin->opening
+oponent->opponent
 oportunity->opportunity
 opose->oppose
 oposite->opposite
