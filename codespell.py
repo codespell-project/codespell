@@ -381,7 +381,7 @@ def parse_file(filename, colors, summary):
             return
 
     i = 1
-    rx = re.compile(r"[\w']+")
+    rx = re.compile(r"[\w\-']+")
     for line in lines:
         if line in exclude_lines:
             i += 1
