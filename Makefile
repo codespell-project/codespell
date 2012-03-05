@@ -1,6 +1,6 @@
 prefix ?= /usr
 bindir ?= ${prefix}/bin
-datadir ?= ${prefix}/share/codesell
+datadir ?= ${prefix}/share/codespell
 
 _VERSION := $(shell grep -e "VERSION = '[0-9]\.[0-9]" codespell.py | cut -f 3 -d ' ')
 VERSION = $(subst ',,$(_VERSION))
