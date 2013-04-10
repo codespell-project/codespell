@@ -206,7 +206,7 @@ def parse_options(args):
                                'accepts globs as well. E.g.: if you want '\
                                'codespell to skip .eps and .txt files, '\
                                'you\'d give "*.eps,*.txt" to this option. '\
-                               'It is expecially useful if you are using in '\
+                               'It is especially useful if you are using in '\
                                'conjunction with -r option.')
 
     parser.add_option('-x', '--exclude-file',
