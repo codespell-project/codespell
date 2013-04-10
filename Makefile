@@ -14,7 +14,7 @@ all:
 install:
 	install -d ${DESTDIR}${datadir} ${DESTDIR}${bindir}
 	install -m644 -t ${DESTDIR}${datadir} data/dictionary.txt data/linux-kernel.exclude
-	install -m755 -t ${DESTDIR}${bindir} codespell.py
+	install -m755 -T codespell.py ${DESTDIR}${bindir}/codespell
 
 git-tag-release:
 	git commit -a -m "codespell $(VERSION)"
