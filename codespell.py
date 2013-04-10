@@ -25,7 +25,7 @@ import os
 import fnmatch
 
 USAGE = """
-\t%prog [OPTIONS] dict_filename [file1 file2 ... fileN]
+\t%prog [OPTIONS] [file1 file2 ... fileN]
 """
 VERSION = '1.5'
 
@@ -196,10 +196,19 @@ def parse_options(args):
     parser.add_option('-r', '-R',
                         action = 'store_true', default = False,
                         dest = 'recursive',
-                        help = 'parse directories recursively')
+                        help = 'Parse directories recursively. If this flag '\
+                               'is set and no files are specified then '\
+                               'codespell will use current directory as '\
+                               'a starting point.')
     parser.add_option('-w', '--write-changes',
                         action = 'store_true', default = False,
                         help = 'write changes in place if possible')
+    parser.add_option('-D', '--dictionary',
+                        action = 'store', metavar='FILE',
+                        default = '/usr/share/codespell/dictionary.txt',
+                        help = 'Custom dictionary file that contains spelling '\
+                               'corrections. If this flag is not specified '\
+                               'then default dictionary is used.')
 
     parser.add_option('-s', '--summary',
                         action = 'store_true', default = False,
@@ -245,11 +254,10 @@ def parse_options(args):
 
 
     (o, args) = parser.parse_args()
-    if (len(args) < 1):
-        print('ERROR: you need to specify a dictionary!', file=sys.stderr)
-        parser.print_help()
-        sys.exit(1)
-    if (len(args) == 1):
+    if not args:
+      if o.recursive:
+        args.append('.')
+      else:
         args.append('-')
 
     return o, args
@@ -470,7 +478,7 @@ def main(*args):
 
     (options, args) = parse_options(args)
 
-    build_dict(args[0])
+    build_dict(options.dictionary)
     colors = TermColors();
     if options.disable_colors:
         colors.disable()
@@ -490,7 +498,7 @@ def main(*args):
 
     glob_match = GlobMatch(options.skip)
 
-    for filename in args[1:]:
+    for filename in args:
         # ignore hidden files
         if ishidden(filename):
             continue
