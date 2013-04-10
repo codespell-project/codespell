@@ -193,10 +193,6 @@ def parse_options(args):
     parser.add_option('-d', '--disable-colors',
                         action = 'store_true', default = False,
                         help = 'Disable colors even when printing to terminal')
-    parser.add_option('-r', '-R',
-                        action = 'store_true', default = False,
-                        dest = 'recursive',
-                        help = 'parse directories recursively')
     parser.add_option('-w', '--write-changes',
                         action = 'store_true', default = False,
                         help = 'write changes in place if possible')
@@ -493,9 +489,6 @@ def main(*args):
     for filename in args[1:]:
         # ignore hidden files
         if ishidden(filename):
-            continue
-
-        if not options.recursive and os.path.isdir(filename):
             continue
 
         if os.path.isdir(filename):
