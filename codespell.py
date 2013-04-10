@@ -246,7 +246,7 @@ def parse_options(args):
         parser.print_help()
         sys.exit(1)
     if (len(args) == 1):
-        args.append('-')
+        args.append('.')
 
     return o, args
 
