@@ -196,7 +196,10 @@ def parse_options(args):
     parser.add_option('-r', '-R',
                         action = 'store_true', default = False,
                         dest = 'recursive',
-                        help = 'parse directories recursively')
+                        help = 'Parse directories recursively. If this flag '\
+                               'is set and no files are specified then '\
+                               'codespell will use current directory as '\
+                               'a starting point.')
     parser.add_option('-w', '--write-changes',
                         action = 'store_true', default = False,
                         help = 'write changes in place if possible')
@@ -252,7 +255,10 @@ def parse_options(args):
 
     (o, args) = parser.parse_args()
     if not args:
-      args.append('-')
+      if o.recursive:
+        args.append('.')
+      else:
+        args.append('-')
 
     return o, args
 
