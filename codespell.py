@@ -213,9 +213,7 @@ def parse_options(args):
                         help = 'Comma-separated list of files to skip. It '\
                                'accepts globs as well. E.g.: if you want '\
                                'codespell to skip .eps and .txt files, '\
-                               'you\'d give "*.eps,*.txt" to this option. '\
-                               'It is especially useful if you are using in '\
-                               'conjunction with -r option.')
+                               'you\'d give "*.eps,*.txt" to this option.')
 
     parser.add_option('-x', '--exclude-file',
                         help = 'FILE with lines that should not be changed',
