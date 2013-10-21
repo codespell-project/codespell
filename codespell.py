@@ -509,11 +509,14 @@ def main(*args):
                         i += 1
 
                 for file in files:
-                    if os.path.islink(file):
+                    fname = os.path.join(root, file)
+                    if not os.path.isfile(fname):
+                        continue
+                    if not os.path.getsize(fname):
                         continue
                     if glob_match.match(file):
                         continue
-                    parse_file(os.path.join(root, file), colors, summary)
+                    parse_file(fname, colors, summary)
 
             continue
 
