@@ -7,15 +7,15 @@ VERSION = $(subst ',,$(_VERSION))
 
 PHONY = all install git-tag-release
 
-all:
-	@echo "Use 'make install' setting prefix and DESTDIR as desired"
-	@echo "E.g.: make prefix=/usr/local DESTDIR=/tmp/test-inst install"
+all: codespell
+
+codespell: codespell.py
+	sed "s|^default_dictionary = .*|default_dictionary = '${datadir}/dictionary.txt'|" < $^ > $@
 
 install:
 	install -d ${DESTDIR}${datadir} ${DESTDIR}${bindir}
 	install -m644 -t ${DESTDIR}${datadir} data/dictionary.txt data/linux-kernel.exclude
-	install -m755 -T codespell.py ${DESTDIR}${bindir}/codespell
-	sed -i "s|^default_dictionary = .*|default_dictionary = '${datadir}/dictionary.txt'|" ${DESTDIR}${bindir}/codespell
+	install -m755 -T codespell ${DESTDIR}${bindir}/codespell
 
 git-tag-release:
 	git commit -a -m "codespell $(VERSION)"
