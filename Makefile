@@ -5,12 +5,15 @@ datadir ?= ${prefix}/share/codespell
 _VERSION := $(shell grep -e "VERSION = '[0-9]\.[0-9]" codespell.py | cut -f 3 -d ' ')
 VERSION = $(subst ',,$(_VERSION))
 
-PHONY = all install git-tag-release
+PHONY = all check install git-tag-release
 
 all: codespell
 
 codespell: codespell.py
 	sed "s|^default_dictionary = .*|default_dictionary = '${datadir}/dictionary.txt'|" < $^ > $@
+
+check:
+	test f66431c66b437c78523bc07b872b9a7b = $$(./codespell.py example/ | md5sum | cut -f1 -d\ )
 
 install:
 	install -d ${DESTDIR}${datadir} ${DESTDIR}${bindir}
