@@ -23,10 +23,10 @@ git-tag-release:
 	git gc --prune=0
 
 codespell-$(VERSION).tar.xz.asc: codespell-$(VERSION).tar.xz
-	gpg --armor --detach-sign --output codespell-$(VERSION).tar.xz.asc codespell-$(VERSION).tar.xz
+	gpg --armor --detach-sign --output $@ $^
 
 codespell-$(VERSION).tar.xz:
-	git archive --format=tar --prefix codespell-$(VERSION)/ v$(VERSION) | xz > codespell-$(VERSION).tar.xz
+	git archive --format=tar --prefix codespell-$(VERSION)/ v$(VERSION) | xz > $@
 
 tar-sync: codespell-$(VERSION).tar.xz codespell-$(VERSION).tar.xz.asc
 	scp $^ packages.profusion.mobi:/var/www/packages/codespell/
