@@ -178,8 +178,6 @@ class FileOpener:
                 f.close()
 
         if not lines:
-            print('ERROR: Could not detect encoding: %s' % filename,
-                                                        file=sys.stderr)
             raise Exception('Unknown encoding')
 
         encoding = encodings[curr]
