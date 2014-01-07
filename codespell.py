@@ -373,7 +373,11 @@ def parse_file(filename, colors, summary):
         lines = f.readlines()
     else:
         # ignore binary files
-        if not istextfile(filename):
+        try:
+            text = istextfile(filename)
+        except FileNotFoundError:
+            return
+        if not text:
             if not quiet_level & QuietLevels.BINARY_FILE:
                 print("WARNING: Binary file: %s " % filename, file=sys.stderr)
             return
