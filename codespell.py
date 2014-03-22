@@ -189,9 +189,13 @@ class FileOpener:
 def parse_options(args):
     parser = OptionParser(usage=USAGE, version=VERSION)
 
+    parser.set_defaults(colors = sys.stdout.isatty())
     parser.add_option('-d', '--disable-colors',
-                        action = 'store_true', default = False,
+                        action = 'store_false', dest = 'colors',
                         help = 'Disable colors even when printing to terminal')
+    parser.add_option('-c', '--enable-colors',
+                        action = 'store_true', dest = 'colors',
+                        help = 'Enable colors even when not printing to terminal')
     parser.add_option('-w', '--write-changes',
                         action = 'store_true', default = False,
                         help = 'write changes in place if possible')
@@ -478,7 +482,7 @@ def main(*args):
 
     build_dict(options.dictionary)
     colors = TermColors();
-    if options.disable_colors:
+    if not options.colors:
         colors.disable()
 
     if options.summary:
