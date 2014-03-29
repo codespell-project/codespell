@@ -137,7 +137,7 @@ class FileOpener:
         encoding = self.encdetector.result['encoding']
 
         try:
-            f = open(filename, encoding=encoding)
+            f = open(filename, 'r', encoding=encoding, newline='')
             lines = f.readlines()
         except UnicodeDecodeError:
             print('ERROR: Could not detect encoding: %s' % filename,
@@ -159,7 +159,7 @@ class FileOpener:
 
         while True:
             try:
-                f = open(filename, 'r', encoding=encodings[curr])
+                f = open(filename, 'r', encoding=encodings[curr], newline='')
                 lines = f.readlines()
                 break
             except UnicodeDecodeError:
