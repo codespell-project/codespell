@@ -1,0 +1,10 @@
+codespell
+*********
+
+1.7
+===
+
+* Update the list of misspellings
+* Only process non-empty regular files
+* Install in /usr/local by default
+* Better support for colour output
