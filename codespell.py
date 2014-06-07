@@ -35,7 +35,9 @@ options = None
 fileopener = None
 quiet_level = 0
 encodings = [ 'utf-8', 'iso-8859-1' ]
-default_dictionary = os.path.join(os.path.dirname(__file__), 'data', 'dictionary.txt')
+# Users might want to link this file into /usr/local/bin, so we resolve the
+# symbolic link path to the real path if necessary.
+default_dictionary = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'data', 'dictionary.txt')
 
 #OPTIONS:
 #
