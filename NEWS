@@ -4,6 +4,7 @@ codespell
 1.7
 ===
 
+* Fix handling foreign newline characters
 * Update the list of misspellings
 * Only process non-empty regular files
 * Install in /usr/local by default
