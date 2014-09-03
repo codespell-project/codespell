@@ -15,7 +15,7 @@ codespell: codespell.py
 check:
 	test f66431c66b437c78523bc07b872b9a7b = $$(./codespell.py example/ | md5sum | cut -f1 -d\ )
 
-install:
+install: codespell
 	install -d ${DESTDIR}${datadir} ${DESTDIR}${bindir}
 	install -m644 -t ${DESTDIR}${datadir} data/dictionary.txt data/linux-kernel.exclude
 	install -m755 -T codespell ${DESTDIR}${bindir}/codespell
