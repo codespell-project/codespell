@@ -32,4 +32,10 @@ codespell-$(VERSION).tar.xz:
 	git archive --format=tar --prefix codespell-$(VERSION)/ v$(VERSION) | xz > $@
 
 tar-sync: codespell-$(VERSION).tar.xz codespell-$(VERSION).tar.xz.asc
-	scp $^ packages.profusion.mobi:/var/www/packages/codespell/
+	github-release release --repo codespell --tag v$(VERSION) --name v$(VERSION)
+	github-release upload  --repo codespell --tag v$(VERSION) \
+		--name codespell-$(VERSION).tar.gz \
+		--file codespell-$(VERSION).tar.gz
+	github-release upload  --repo codespell --tag v$(VERSION) \
+		--name codespell-$(VERSION).tar.gz.asc \
+		--file codespell-$(VERSION).tar.gz.asc
