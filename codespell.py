@@ -171,8 +171,11 @@ class FileOpener:
                     print('WARNING: using encoding=%s failed. '
                                                         % encodings[curr],
                                                         file=sys.stderr)
-                    print('WARNING: Trying next encoding: %s' % encodings[curr],
-                                                        file=sys.stderr)
+                    try:
+                        print('WARNING: Trying next encoding: %s' % encodings[curr+1],
+                                                            file=sys.stderr)
+                    except IndexError:
+                        pass
 
                 curr += 1
 
