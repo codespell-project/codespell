@@ -13,7 +13,7 @@ codespell: codespell.py
 	sed "s|^default_dictionary = .*|default_dictionary = '${datadir}/dictionary.txt'|" < $^ > $@
 
 check:
-	test f66431c66b437c78523bc07b872b9a7b = $$(./codespell.py example/ | md5sum | cut -f1 -d\ )
+	test 1bfb1f089c3c7772f0898f66df089b9e = $$(./codespell.py example/ | md5sum | cut -f1 -d\ )
 
 install: codespell
 	install -d ${DESTDIR}${datadir} ${DESTDIR}${bindir}
