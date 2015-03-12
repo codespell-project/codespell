@@ -34,17 +34,18 @@ exclude_lines = set()
 options = None
 fileopener = None
 quiet_level = 0
-encodings = [ 'utf-8', 'iso-8859-1' ]
+encodings = ['utf-8', 'iso-8859-1']
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
 default_dictionary = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'data', 'dictionary.txt')
 
-#OPTIONS:
+# OPTIONS:
 #
-#ARGUMENTS:
+# ARGUMENTS:
 #    dict_filename       The file containing the dictionary of misspellings.
 #                        If set to '-', it will be read from stdin
 #    file1 .. fileN      Files to check spelling
+
 
 class QuietLevels:
     NONE = 0
@@ -53,6 +54,7 @@ class QuietLevels:
     DISABLED_FIXES = 4
     NON_AUTOMATIC_FIXES = 8
     FIXES = 16
+
 
 class GlobMatch:
     def __init__(self, pattern):
@@ -77,6 +79,7 @@ class Misspelling:
         self.fix = fix
         self.reason = reason
 
+
 class TermColors:
     def __init__(self):
         self.FILE = '\033[33m'
@@ -89,6 +92,7 @@ class TermColors:
         self.WWORD = ''
         self.FWORD = ''
         self.DISABLE = ''
+
 
 class Summary:
     def __init__(self):
@@ -104,7 +108,11 @@ class Summary:
         keys = list(self.summary.keys())
         keys.sort()
 
-        return "\n".join(["{0}{1:{width}}".format(key, self.summary.get(key), width=15 - len(key)) for key in keys])
+        return "\n".join(["{0}{1:{width}}".format(
+                         key,
+                         self.summary.get(key),
+                         width=15 - len(key)) for key in keys])
+
 
 class FileOpener:
     def __init__(self, use_chardet):
@@ -143,17 +151,16 @@ class FileOpener:
             lines = f.readlines()
         except UnicodeDecodeError:
             print('ERROR: Could not detect encoding: %s' % filename,
-                                                        file=sys.stderr)
+                  file=sys.stderr)
             raise
         except LookupError:
             print('ERROR: %s -- Don\'t know how to handle encoding %s'
-                                % (filename, encoding), file=sys.stderr)
+                  % (filename, encoding), file=sys.stderr)
             raise
         finally:
             f.close()
 
         return lines, encoding
-
 
     def open_with_internal(self, filename):
         curr = 0
@@ -167,13 +174,12 @@ class FileOpener:
             except UnicodeDecodeError:
                 if not quiet_level & QuietLevels.ENCODING:
                     print('WARNING: Decoding file %s' % filename,
-                                                        file=sys.stderr)
+                          file=sys.stderr)
                     print('WARNING: using encoding=%s failed. '
-                                                        % encodings[curr],
-                                                        file=sys.stderr)
+                          % encodings[curr], file=sys.stderr)
                     try:
-                        print('WARNING: Trying next encoding: %s' % encodings[curr+1],
-                                                            file=sys.stderr)
+                        print('WARNING: Trying next encoding: %s'
+                              % encodings[curr + 1], file=sys.stderr)
                     except IndexError:
                         pass
 
@@ -191,67 +197,67 @@ class FileOpener:
 
 # -.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-
 
+
 def parse_options(args):
     parser = OptionParser(usage=USAGE, version=VERSION)
 
-    parser.set_defaults(colors = sys.stdout.isatty())
+    parser.set_defaults(colors=sys.stdout.isatty())
     parser.add_option('-d', '--disable-colors',
-                        action = 'store_false', dest = 'colors',
-                        help = 'Disable colors even when printing to terminal')
+                      action='store_false', dest='colors',
+                      help='Disable colors even when printing to terminal')
     parser.add_option('-c', '--enable-colors',
-                        action = 'store_true', dest = 'colors',
-                        help = 'Enable colors even when not printing to terminal')
+                      action='store_true', dest='colors',
+                      help='Enable colors even when not printing to terminal')
     parser.add_option('-w', '--write-changes',
-                        action = 'store_true', default = False,
-                        help = 'write changes in place if possible')
+                      action='store_true', default=False,
+                      help='write changes in place if possible')
     parser.add_option('-D', '--dictionary',
-                        action = 'store', metavar='FILE',
-                        default = default_dictionary,
-                        help = 'Custom dictionary file that contains spelling '\
-                               'corrections. If this flag is not specified '\
-                               'then default dictionary "%s" is used.' %
-                            default_dictionary)
+                      action='store', metavar='FILE',
+                      default=default_dictionary,
+                      help='Custom dictionary file that contains spelling '
+                           'corrections. If this flag is not specified '
+                           'then default dictionary "%s" is used.' %
+                      default_dictionary)
 
     parser.add_option('-s', '--summary',
-                        action = 'store_true', default = False,
-                        help = 'print summary of fixes')
+                      action='store_true', default=False,
+                      help='print summary of fixes')
 
     parser.add_option('-S', '--skip',
-                        help = 'Comma-separated list of files to skip. It '\
-                               'accepts globs as well. E.g.: if you want '\
-                               'codespell to skip .eps and .txt files, '\
-                               'you\'d give "*.eps,*.txt" to this option.')
+                      help='Comma-separated list of files to skip. It '
+                           'accepts globs as well. E.g.: if you want '
+                           'codespell to skip .eps and .txt files, '
+                           'you\'d give "*.eps,*.txt" to this option.')
 
     parser.add_option('-x', '--exclude-file',
-                        help = 'FILE with lines that should not be changed',
-                        metavar='FILE')
+                      help='FILE with lines that should not be changed',
+                      metavar='FILE')
 
     parser.add_option('-i', '--interactive',
-                        action='store', type='int', default=0,
-                        help = 'Set interactive mode when writing changes. '  \
-                                '0 is the same of no interactivity; 1 makes ' \
-                                'codespell ask confirmation; 2 ask user to '  \
-                                'choose one fix when more than one is ' \
-                                'available; 3 applies both 1 and 2')
+                      action='store', type='int', default=0,
+                      help='Set interactive mode when writing changes. '
+                           '0 is the same of no interactivity; 1 makes '
+                           'codespell ask confirmation; 2 ask user to '
+                           'choose one fix when more than one is '
+                           'available; 3 applies both 1 and 2')
 
     parser.add_option('-q', '--quiet-level',
-                        action='store', type='int', default=0,
-                        help = 'Bitmask that allows codespell to run quietly. '\
-                                '0: the default, in which all messages are '\
-                                'printed. 1: disable warnings about wrong '\
-                                'encoding. 2: disable warnings about binary '\
-                                'file. 4: shut down warnings about automatic '\
-                                'fixes that were disabled in dictionary. '\
-                                '8: don\'t print anything for non-automatic '\
-                                'fixes. 16: don\'t print fixed files.')
+                      action='store', type='int', default=0,
+                      help='Bitmask that allows codespell to run quietly. '
+                           '0: the default, in which all messages are '
+                           'printed. 1: disable warnings about wrong '
+                           'encoding. 2: disable warnings about binary '
+                           'file. 4: shut down warnings about automatic '
+                           'fixes that were disabled in dictionary. '
+                           '8: don\'t print anything for non-automatic '
+                           'fixes. 16: don\'t print fixed files.')
 
     parser.add_option('-e', '--hard-encoding-detection',
-                        action='store_true', default = False,
-                        help = 'Use chardet to detect the encoding of each '\
-                        'file. This can slow down codespell, but is more '\
-                        'reliable in detecting encodings other than utf-8, '\
-                        'iso8859-1 and ascii.')
-
+                      action='store_true', default=False,
+                      help='Use chardet to detect the encoding of each '
+                           'file. This can slow down codespell, but is more '
+                           'reliable in detecting encodings other than utf-8, '
+                           'iso8859-1 and ascii.')
 
     (o, args) = parser.parse_args()
 
@@ -265,10 +271,12 @@ def parse_options(args):
 
     return o, args
 
+
 def build_exclude_hashes(filename):
     with open(filename, 'r') as f:
         for line in f:
             exclude_lines.add(line)
+
 
 def build_dict(filename):
     with open(filename, 'r', 1, 'utf-8') as f:
@@ -291,11 +299,12 @@ def build_dict(filename):
 
             misspellings[key] = Misspelling(data, fix, reason)
 
+
 def ishidden(filename):
     bfilename = os.path.basename(filename)
 
     if bfilename != '' and bfilename != '.' and bfilename != '..' \
-                                                 and bfilename[0] == '.':
+                    and bfilename[0] == '.':
         return True
 
     return False
@@ -309,6 +318,7 @@ def istextfile(filename):
 
         return True
 
+
 def fix_case(word, fixword):
     if word == word.capitalize():
         return fixword.capitalize()
@@ -318,6 +328,7 @@ def fix_case(word, fixword):
     # or we don't have any idea
     return fixword
 
+
 def ask_for_word_fix(line, wrongword, misspelling, interactivity):
     if interactivity <= 0:
         return misspelling.fix, fix_case(wrongword, misspelling.data)
@@ -326,9 +337,10 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
         r = ''
         fixword = fix_case(wrongword, misspelling.data)
         while not r:
-            print("%s\t%s  ==> %s (Y/n) " %  (line, wrongword, fixword), end='')
+            print("%s\t%s  ==> %s (Y/n) " % (line, wrongword, fixword), end='')
             r = sys.stdin.readline().strip().upper()
-            if not r: r = 'Y'
+            if not r:
+                r = 'Y'
             if r != 'Y' and r != 'N':
                 print("Say 'y' or 'n'")
                 r = ''
@@ -366,6 +378,7 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
             misspelling.data = r
 
     return misspelling.fix, fix_case(wrongword, misspelling.data)
+
 
 def parse_file(filename, colors, summary):
     lines = None
@@ -411,7 +424,7 @@ def parse_file(filename, colors, summary):
                 fix = misspellings[lword].fix
                 fixword = fix_case(word, misspellings[lword].data)
 
-                if options.interactive and not lword in asked_for:
+                if options.interactive and lword not in asked_for:
                     fix, fixword = ask_for_word_fix(lines[i - 1], word,
                                                     misspellings[lword],
                                                     options.interactive)
@@ -425,12 +438,14 @@ def parse_file(filename, colors, summary):
 
                 if options.write_changes and fix:
                     changed = True
-                    lines[i - 1] = re.sub(r'\b%s\b' % word, fixword, lines[i - 1])
+                    lines[i - 1] = re.sub(r'\b%s\b' % word,
+                                          fixword, lines[i - 1])
                     fixed_words.add(word)
                     continue
 
                 # otherwise warning was explicitly set by interactive mode
-                if options.interactive & 2 and not fix and not misspellings[lword].reason:
+                if (options.interactive & 2 and not fix and not
+                        misspellings[lword].reason):
                     continue
 
                 cfilename = "%s%s%s" % (colors.FILE, filename, colors.DISABLE)
@@ -443,8 +458,8 @@ def parse_file(filename, colors, summary):
                         continue
 
                     creason = "  | %s%s%s" % (colors.FILE,
-                                            misspellings[lword].reason,
-                                            colors.DISABLE)
+                                              misspellings[lword].reason,
+                                              colors.DISABLE)
                 else:
                     if quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
                         continue
@@ -452,17 +467,17 @@ def parse_file(filename, colors, summary):
                     creason = ''
 
                 if filename != '-':
-                    print("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "       \
-                            " ==> %(RIGHTWORD)s%(REASON)s"
-                            % {'FILENAME': cfilename, 'LINE': cline,
-                               'WRONGWORD': cwrongword,
-                               'RIGHTWORD': crightword, 'REASON': creason })
+                    print("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "
+                          " ==> %(RIGHTWORD)s%(REASON)s"
+                          % {'FILENAME': cfilename, 'LINE': cline,
+                             'WRONGWORD': cwrongword,
+                             'RIGHTWORD': crightword, 'REASON': creason})
                 else:
-                    print('%(LINE)s: %(STRLINE)s\n\t%(WRONGWORD)s ' \
-                            '==> %(RIGHTWORD)s%(REASON)s'
-                            % { 'LINE': cline, 'STRLINE': line.strip(),
-                                'WRONGWORD': cwrongword,
-                               'RIGHTWORD': crightword, 'REASON': creason })
+                    print('%(LINE)s: %(STRLINE)s\n\t%(WRONGWORD)s '
+                          '==> %(RIGHTWORD)s%(REASON)s'
+                          % {'LINE': cline, 'STRLINE': line.strip(),
+                             'WRONGWORD': cwrongword,
+                             'RIGHTWORD': crightword, 'REASON': creason})
         i += 1
 
     if changed:
@@ -472,11 +487,13 @@ def parse_file(filename, colors, summary):
                 print(line, end='')
         else:
             if not quiet_level & QuietLevels.FIXES:
-                print("%sFIXED:%s %s" % (colors.FWORD, colors.DISABLE, filename),
-                                                                file=sys.stderr)
+                print("%sFIXED:%s %s"
+                      % (colors.FWORD, colors.DISABLE, filename),
+                      file=sys.stderr)
             f = open(filename, 'w', encoding=encoding)
             f.writelines(lines)
             f.close()
+
 
 def main(*args):
     global options
@@ -486,7 +503,7 @@ def main(*args):
     (options, args) = parse_options(args)
 
     build_dict(options.dictionary)
-    colors = TermColors();
+    colors = TermColors()
     if not options.colors:
         colors.disable()
 
