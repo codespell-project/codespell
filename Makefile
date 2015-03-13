@@ -11,6 +11,7 @@ all: codespell
 
 codespell: codespell.py
 	sed "s|^default_dictionary = .*|default_dictionary = '${datadir}/dictionary.txt'|" < $^ > $@
+	chmod 755 codespell
 
 check:
 	test 1bfb1f089c3c7772f0898f66df089b9e = $$(./codespell.py example/ | md5sum | cut -f1 -d\ )
