@@ -17,10 +17,14 @@ Repository: <https://github.com/lucasdemarchi/codespell>
 
 Releases: <https://github.com/lucasdemarchi/codespell/releases>
 
+Requirements
+------------
+Python 3.0 or above.
+
 Usage
 -----
 
-Check usage with `./codespell -h`. There are a few command line options. We ship
+Check usage with `./codespell.py -h`. There are a few command line options. We ship
 a dictionary that is an improved version of the one available at
 <http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/For_machines>
 after applying them in projects like Linux Kernel, EFL, oFono among others.
