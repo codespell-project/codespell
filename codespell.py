@@ -71,7 +71,7 @@ class GlobMatch:
 
         return False
 
-class Misspell:
+class Misspelling:
     def __init__(self, data, fix, reason):
         self.data = data
         self.fix = fix
@@ -289,7 +289,7 @@ def build_dict(filename):
                 data = data[:fix]
                 fix = False
 
-            misspellings[key] = Misspell(data, fix, reason)
+            misspellings[key] = Misspelling(data, fix, reason)
 
 def ishidden(filename):
     bfilename = os.path.basename(filename)
