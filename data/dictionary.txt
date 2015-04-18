@@ -14,6 +14,7 @@ abreviation->abbreviation
 abritrary->arbitrary
 absail->abseil
 absailing->abseiling
+absance->absence
 absense->absence
 absolutly->absolutely
 absorbsion->absorption
@@ -632,6 +633,7 @@ calaber->caliber
 calander->calendar, calender, colander,
 calculater->calculator
 calculs->calculus
+calender->calendar
 calenders->calendars
 caligraphy->calligraphy
 caluclate->calculate
@@ -644,6 +646,7 @@ calulater->calculator
 Cambrige->Cambridge
 camoflage->camouflage
 campain->campaign
+campaing->campaign
 campains->campaigns
 candadate->candidate
 candiate->candidate
@@ -716,6 +719,8 @@ catterpilars->caterpillars
 catterpillar->caterpillar
 catterpillars->caterpillars
 cattleship->battleship
+caugt->caught
+cauhgt->caught
 causalities->casualties
 Ceasar->Caesar
 Celcius->Celsius
@@ -1332,6 +1337,7 @@ dominaton->domination
 dominent->dominant
 dominiant->dominant
 donig->doing
+dont->don't
 dosen't->doesn't
 dosent'->doesn't
 doub->doubt, daub,
@@ -1725,6 +1731,8 @@ fufilled->fulfilled
 fulfiled->fulfilled
 fullfill->fulfill
 fullfilled->fulfilled
+funciton->function
+functino->function
 fundametal->fundamental
 fundametals->fundamentals
 funguses->fungi
@@ -2018,6 +2026,7 @@ incidently->incidentally
 inclreased->increased
 includ->include
 includng->including
+incomming->incoming
 incompatabilities->incompatibilities
 incompatability->incompatibility
 incompatable->incompatible
@@ -2179,6 +2188,7 @@ intutive->intuitive
 intutively->intuitively
 inudstry->industry
 inumerable->enumerable, innumerable,
+invaild->invalid
 inventer->inventor
 invertibrates->invertebrates
 investingate->investigate
@@ -2309,6 +2319,7 @@ longuer->longer
 lonley->lonely
 lonly->lonely, only,
 loosing->losing
+loose->lose, loose,
 lotharingen->lothringen
 lsat->last
 lukid->likud
@@ -2359,7 +2370,7 @@ manuver->maneuver
 mapp->map
 mariage->marriage
 marjority->majority
-markes->marks
+markes->marks, marked,
 marketting->marketing
 marmelade->marmalade
 marrage->marriage
@@ -2639,6 +2650,7 @@ occurance->occurrence
 occurances->occurrences
 occure->occur
 occured->occurred
+occures->occurs
 occurence->occurrence
 occurences->occurrences
 occuring->occurring
@@ -2707,8 +2719,9 @@ organistion->organisation
 organiztion->organization
 orgin->origin, organ,
 orginal->original
+orginal->orignal
 orginally->originally
-orginize->organise
+orginize->organise, organize,
 oridinarily->ordinarily
 origanaly->originally
 originall->original, originally,
@@ -2999,6 +3012,7 @@ preperation->preparation
 preperations->preparations
 prepresent->represent
 preriod->period
+presance->presence
 presedential->presidential
 presense->presence
 presidenital->presidential
@@ -3077,6 +3091,7 @@ prominant->prominent
 prominantly->prominently
 prominately->prominently, predominately,
 promiscous->promiscuous
+promiss->promise
 promotted->promoted
 pronomial->pronominal
 pronouced->pronounced
@@ -3084,6 +3099,7 @@ pronounched->pronounced
 pronounciation->pronunciation
 proove->prove
 prooved->proved
+propagate->propogate
 prophacy->prophecy
 propietary->proprietary
 propmted->prompted
@@ -3173,12 +3189,14 @@ rarified->rarefied
 reaccurring->recurring
 reacing->reaching
 reacll->recall
+readible->readable
 readmition->readmission
 realitvely->relatively
 realsitic->realistic
 realtions->relations
 realy->really
 realyl->really
+reaons->reasons
 reasearch->research
 rebiulding->rebuilding
 rebllions->rebellions
@@ -3397,6 +3415,7 @@ resurecting->resurrecting
 retalitated->retaliated
 retalitation->retaliation
 retreive->retrieve
+retuns->returns
 returnd->returned
 revaluated->reevaluated
 reveiw->review
@@ -4178,8 +4197,10 @@ violentce->violence
 virtualy->virtually
 virutal->virtual
 virutally->virtually
+visability->visibility
 visable->visible
 visably->visibly
+visibile->visible
 visting->visiting
 vistors->visitors
 vitories->victories
@@ -4262,11 +4283,13 @@ wohle->whole
 wokr->work
 wokring->working
 wonderfull->wonderful
+wont->won't, wont,
 wordlwide->worldwide
 workststion->workstation
 worls->world
 worstened->worsened
 woudl->would
+wouldnt->wouldn't
 wresters->wrestlers
 wriet->write
 writen->written
