@@ -1,0 +1,17 @@
+[NAME]
+codespell \- detect spelling mistakes in source code
+
+[SYNOPSIS]
+\fBcodespell\fR [OPTIONS] [file1 file2 ... fileN]
+
+[DESCRIPTION]
+.PP
+codespell is designed to find and fix common misspellings in text files.
+It is designed primarily for checking misspelled words in source code,
+but it can be used with other files as well.
+
+[AUTHOR]
+Lucas De Marchi <lucas.de.marchi@gmail.com>
+
+[SEE ALSO]
+https://github.com/lucasdemarchi/codespell
