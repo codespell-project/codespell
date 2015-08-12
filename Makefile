@@ -17,7 +17,7 @@ codespell: codespell.py
 manpage: codespell codespell.1.include
 	help2man ./codespell --include codespell.1.include --no-info --output codespell.1
 	sed -i '/\.SS \"Usage/,+2d' codespell.1
-	gzip -9 codespell.1
+	gzip -9 -f codespell.1
 
 check:
 	test 1bfb1f089c3c7772f0898f66df089b9e = $$(./codespell.py example/ | md5sum | cut -f1 -d\ )
