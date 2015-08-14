@@ -1,25 +1,33 @@
 prefix ?= /usr/local
 bindir ?= ${prefix}/bin
 datadir ?= ${prefix}/share/codespell
+mandir ?= ${prefix}/share/man/man1
 
 _VERSION := $(shell grep -e "VERSION = '[0-9]\.[0-9]" codespell.py | cut -f 3 -d ' ')
 VERSION = $(subst ',,$(_VERSION))
 
 PHONY = all check clean install git-tag-release
 
-all: codespell
+all: codespell manpage
 
 codespell: codespell.py
 	sed "s|^default_dictionary = .*|default_dictionary = '${datadir}/dictionary.txt'|" < $^ > $@
 	chmod 755 codespell
 
+manpage: codespell codespell.1.include
+	help2man ./codespell --include codespell.1.include --no-info --output codespell.1
+	sed -i '/\.SS \"Usage/,+2d' codespell.1
+	gzip -9 -f codespell.1
+
 check:
 	test 1bfb1f089c3c7772f0898f66df089b9e = $$(./codespell.py example/ | md5sum | cut -f1 -d\ )
 
-install: codespell
-	install -d ${DESTDIR}${datadir} ${DESTDIR}${bindir}
+install: codespell manpage
+	install -d ${DESTDIR}${datadir} ${DESTDIR}${bindir} ${DESTDIR}${mandir}
 	install -m644 -t ${DESTDIR}${datadir} data/dictionary.txt data/linux-kernel.exclude
 	install -m755 -T codespell ${DESTDIR}${bindir}/codespell
+	install -d ${DESTDIR}${mandir}
+	install -m644 -t ${DESTDIR}${mandir} codespell.1.gz
 
 git-tag-release:
 	git commit -a -m "codespell $(VERSION)"
@@ -43,3 +51,5 @@ tar-sync: codespell-$(VERSION).tar.xz codespell-$(VERSION).tar.xz.asc
 
 clean:
 	rm -rf codespell
+	rm -rf codespell.1
+	rm -rf codespell.1.gz
