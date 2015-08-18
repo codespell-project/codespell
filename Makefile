@@ -6,7 +6,7 @@ mandir ?= ${prefix}/share/man/man1
 _VERSION := $(shell grep -e "VERSION = '[0-9]\.[0-9]" codespell.py | cut -f 3 -d ' ')
 VERSION = $(subst ',,$(_VERSION))
 
-PHONY = all check clean install git-tag-release
+PHONY := all manpage check install git-tag-release tar-sync clean
 
 all: codespell manpage
 
