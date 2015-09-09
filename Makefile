@@ -12,7 +12,7 @@ PHONY := all manpage check check-dictionary sort-dictionary install git-tag-rele
 all: codespell manpage
 
 codespell: codespell.py check-dictionary
-	sed "s|^default_dictionary = .*|default_dictionary = '${datadir}/dictionary.txt'|" < $^ > $@
+	sed "s|^default_dictionary = .*|default_dictionary = '${datadir}/dictionary.txt'|" < $< > $@
 	chmod 755 codespell
 
 manpage: codespell codespell.1.include
