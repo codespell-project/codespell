@@ -5,6 +5,7 @@ mandir ?= ${prefix}/share/man/man1
 
 _VERSION := $(shell grep -e "VERSION = '[0-9]\.[0-9]" codespell.py | cut -f 3 -d ' ')
 VERSION = $(subst ',,$(_VERSION))
+SORT_ARGS=-f
 
 PHONY := all manpage check check-dictionary sort-dictionary install git-tag-release tar-sync clean
 
@@ -29,7 +30,7 @@ check-dictionary:
 	fi
 
 sort-dictionary:
-	LANG=C sort -f -u -o data/dictionary.txt data/dictionary.txt
+	LANG=C sort ${SORT_ARGS} -u -o data/dictionary.txt data/dictionary.txt
 
 install: codespell manpage
 	install -d ${DESTDIR}${datadir} ${DESTDIR}${bindir} ${DESTDIR}${mandir}
