@@ -6,12 +6,14 @@ mandir ?= ${prefix}/share/man/man1
 _VERSION := $(shell grep -e "VERSION = '[0-9]\.[0-9]" codespell.py | cut -f 3 -d ' ')
 VERSION = $(subst ',,$(_VERSION))
 
+SORT_ARGS := -f
+
 PHONY := all manpage check check-dictionary sort-dictionary install git-tag-release tar-sync clean
 
 all: codespell manpage
 
 codespell: codespell.py check-dictionary
-	sed "s|^default_dictionary = .*|default_dictionary = '${datadir}/dictionary.txt'|" < $^ > $@
+	sed "s|^default_dictionary = .*|default_dictionary = '${datadir}/dictionary.txt'|" < $< > $@
 	chmod 755 codespell
 
 manpage: codespell codespell.1.include
@@ -29,7 +31,7 @@ check-dictionary:
 	fi
 
 sort-dictionary:
-	LANG=C sort -f -u -o data/dictionary.txt data/dictionary.txt
+	LANG=C sort ${SORT_ARGS} -u -o data/dictionary.txt data/dictionary.txt
 
 install: codespell manpage
 	install -d ${DESTDIR}${datadir} ${DESTDIR}${bindir} ${DESTDIR}${mandir}
