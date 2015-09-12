@@ -32,7 +32,7 @@ VERSION = '1.8'
 misspellings = {}
 exclude_lines = set()
 options = None
-fileopener = None
+file_opener = None
 quiet_level = 0
 encodings = ['utf-8', 'iso-8859-1']
 # Users might want to link this file into /usr/local/bin, so we resolve the
@@ -72,6 +72,7 @@ class GlobMatch:
                 return True
 
         return False
+
 
 class Misspelling:
     def __init__(self, data, fix, reason):
@@ -300,7 +301,7 @@ def build_dict(filename):
             misspellings[key] = Misspelling(data, fix, reason)
 
 
-def ishidden(filename):
+def is_hidden(filename):
     bfilename = os.path.basename(filename)
 
     if bfilename != '' and bfilename != '.' and bfilename != '..' \
@@ -310,7 +311,7 @@ def ishidden(filename):
     return False
 
 
-def istextfile(filename):
+def is_text_file(filename):
     with open(filename, mode='rb') as f:
         s = f.read(1024)
         if 0 in s:
@@ -396,7 +397,7 @@ def parse_file(filename, colors, summary):
     else:
         # ignore binary files
         try:
-            text = istextfile(filename)
+            text = is_text_file(filename)
         except FileNotFoundError:
             return
         if not text:
@@ -404,7 +405,7 @@ def parse_file(filename, colors, summary):
                 print("WARNING: Binary file: %s " % filename, file=sys.stderr)
             return
         try:
-            lines, encoding = fileopener.open(filename)
+            lines, encoding = file_opener.open(filename)
         except:
             return
 
@@ -498,7 +499,7 @@ def parse_file(filename, colors, summary):
 def main(*args):
     global options
     global quiet_level
-    global fileopener
+    global file_opener
 
     (options, args) = parse_options(args)
 
@@ -518,20 +519,20 @@ def main(*args):
     if options.quiet_level:
         quiet_level = options.quiet_level
 
-    fileopener = FileOpener(options.hard_encoding_detection)
+    file_opener = FileOpener(options.hard_encoding_detection)
 
     glob_match = GlobMatch(options.skip)
 
     for filename in args:
         # ignore hidden files
-        if ishidden(filename):
+        if is_hidden(filename):
             continue
 
         if os.path.isdir(filename):
             for root, dirs, files in os.walk(filename):
                 i = 0
                 for d in dirs:
-                    if ishidden(d):
+                    if is_hidden(d):
                         del dirs[i]
                     else:
                         i += 1
@@ -553,6 +554,7 @@ def main(*args):
     if summary:
         print("\n-------8<-------\nSUMMARY:")
         print(summary)
+
 
 if __name__ == '__main__':
     sys.exit(main(*sys.argv))
