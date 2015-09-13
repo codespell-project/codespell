@@ -22,6 +22,8 @@ Requirements
 
 Python 3.0 or above.
 
+make and help2man packages needed for "make install".
+
 Usage
 -----
 
