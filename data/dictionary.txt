@@ -25,6 +25,7 @@ absense->absence
 absolutly->absolutely
 absorbsion->absorption
 absorbtion->absorption
+absymal->abysmal
 abudance->abundance
 abundacies->abundances
 abundancies->abundances
@@ -220,6 +221,7 @@ alchol->alcohol
 alcholic->alcoholic
 alcohal->alcohol
 alcoholical->alcoholic
+aleady->already
 aledge->allege
 aledged->alleged
 aledges->alleges
@@ -342,6 +344,7 @@ appealling->appealing, appalling,
 appeareance->appearance
 appearence->appearance
 appearences->appearances
+appeneded->appended
 appenines->apennines, Apennines,
 apperance->appearance
 apperances->appearances
@@ -463,6 +466,7 @@ assoicated->associated
 assoicates->associates
 assosication->assassination
 asssassans->assassins
+asssertion->assertion
 assualt->assault
 assualted->assaulted
 assymetric->asymmetric
@@ -563,6 +567,7 @@ beautyfull->beautiful
 becamae->became
 becames->becomes, became,
 becasue->because
+becausee->because
 beccause->because
 becomeing->becoming
 becomming->becoming
@@ -787,6 +792,7 @@ challanged->challenged
 challege->challenge
 Champange->Champagne
 changable->changeable
+characer->character
 charachter->character
 charachters->characters
 charactersistic->characteristic
@@ -912,7 +918,10 @@ commuinications->communications
 communciation->communication
 communiation->communication
 communites->communities
+comonent->component
 compability->compatibility
+compair->compare
+compairs->compares
 comparision->comparison
 comparisions->comparisons
 comparitive->comparative
@@ -1028,6 +1037,7 @@ constituants->constituents
 constituion->constitution
 constituional->constitutional
 constructes->constructs
+construtor->constructor
 consttruction->construction
 constuction->construction
 consulant->consultant
@@ -1146,6 +1156,8 @@ culiminating->culminating
 cumulatative->cumulative
 curch->church
 curcuit->circuit
+curcumstance->circumstance
+curcumstances->circumstances
 currenly->currently
 curriculem->curriculum
 cxan->cyan
@@ -1222,6 +1234,7 @@ derectory->directory
 deriviated->derived
 derivitive->derivative
 derogitory->derogatory
+derprecated->deprecated
 descendands->descendants
 descibed->described
 descision->decision
@@ -1249,6 +1262,7 @@ dessicated->desiccated
 dessigned->designed
 destablized->destabilized
 destory->destroy
+destuction->destruction
 detailled->detailed
 detatched->detached
 deteoriated->deteriorated
@@ -1439,6 +1453,8 @@ electon->election, electron,
 electrial->electrical
 electricly->electrically
 electricty->electricity
+elemenet->element
+elemenets->elements
 elementay->elementary
 eleminated->eliminated
 eleminating->eliminating
@@ -1726,6 +1742,7 @@ firends->friends
 firts->flirts, first,
 fisionable->fissionable
 flaged->flagged
+flakyness->flakiness
 flamable->flammable
 flawess->flawless
 fleed->fled, freed,
@@ -1770,6 +1787,7 @@ fourties->forties
 fourty->forty
 fouth->fourth
 foward->forward
+fragement->fragment
 Fransiscan->Franciscan
 Fransiscans->Franciscans
 freind->friend
@@ -1947,6 +1965,7 @@ hertiage->heritage
 hertzs->hertz
 hesistant->hesitant
 heterogenous->heterogeneous
+hexidecimal->hexadecimal
 hieght->height
 hierachical->hierarchical
 hierachies->hierarchies
@@ -2034,6 +2053,7 @@ imagenary->imaginary
 imagin->imagine
 imaginery->imaginary, imagery,
 imanent->eminent, imminent,
+imcoming->incoming
 imcomplete->incomplete
 imediately->immediately
 imense->immense
@@ -2167,6 +2187,8 @@ inheritence->inheritance
 inital->initial
 initalise->initialise
 initalization->initialization
+initalize->initialize
+initalizer->initializer
 initally->initially
 initation->initiation
 initiaitive->initiative
@@ -2185,6 +2207,7 @@ inprisonment->imprisonment
 inproving->improving
 insectiverous->insectivorous
 insensative->insensitive
+insensetive->insensitive
 inseperable->inseparable
 insistance->insistence
 insitution->institution
@@ -2268,6 +2291,7 @@ isnt'->isn't
 isnt->isn't
 Israelies->Israelis
 issueing->issuing
+itnernal->internal
 itnroduced->introduced
 iunior->junior
 iwll->will
@@ -2619,6 +2643,7 @@ necessiate->necessitate
 negitive->negative
 neglible->negligible
 negligable->negligible
+negligble->negligible
 negociate->negotiate
 negociation->negotiation
 negociations->negotiations
@@ -2648,6 +2673,7 @@ nkow->know
 nkwo->know
 nmae->name
 noncombatents->noncombatants
+nonexistant->nonexistent
 nonsence->nonsense
 nontheless->nonetheless
 noone->no one
@@ -2799,6 +2825,8 @@ oublisher->publisher
 ouevre->oeuvre
 oustanding->outstanding
 oveerun->overrun
+overlayed->overlaid
+overriddden->overridden
 overshaddowed->overshadowed
 overthere->over there
 overwelming->overwhelming
@@ -3062,6 +3090,7 @@ predicitons->predictions
 predomiantly->predominately
 prefered->preferred
 prefering->preferring
+preferrable->preferable
 preferrably->preferably
 pregancies->pregnancies
 preiod->period
@@ -3433,9 +3462,11 @@ reponses->responses
 reponsible->responsible
 reportadly->reportedly
 represantative->representative
+representiative->representative
 representive->representative
 representives->representatives
 represnted->represented
+reproducabely->reproducibly
 reproducable->reproducible
 reprtoire->repertoire
 repsectively->respectively
@@ -3512,6 +3543,8 @@ revaluated->reevaluated
 reveiw->review
 reveral->reversal
 reversable->reversible
+revison->revision
+revisons->revisions
 revolutionar->revolutionary
 rewitten->rewritten
 rewriet->rewrite
@@ -3634,6 +3667,7 @@ shadasloo->shadaloo
 shaddow->shadow
 shadoloo->shadaloo
 shamen->shaman, shamans,
+shashes->slashes
 sheat->sheath, sheet, cheat,
 sheild->shield
 sherif->sheriff
@@ -3706,6 +3740,7 @@ soluable->soluble
 somene->someone
 somtimes->sometimes
 somwhere->somewhere
+sonething->something
 sophicated->sophisticated
 sophmore->sophomore
 sorceror->sorcerer
@@ -3753,6 +3788,7 @@ sprech->speech
 spred->spread
 spriritual->spiritual
 spritual->spiritual
+spurrious->spurious
 sqaure->square
 stablility->stability
 stainlees->stainless
@@ -3827,6 +3863,7 @@ substracted->subtracted
 substracting->subtracting
 substraction->subtraction
 substracts->subtracts
+subsytems->subsystems
 subtances->substances
 subterranian->subterranean
 suburburban->suburban
@@ -3953,6 +3990,7 @@ sypmtoms->symptoms
 syrap->syrup
 sysmatically->systematically
 sytem->system
+sytems->systems
 sytle->style
 tabacco->tobacco
 tahn->than
