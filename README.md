@@ -45,7 +45,7 @@ directly, but instead be manually inspected. E.g:
 
 1. Simple entry: one wrong word / one suggestion
 
-    `calulated->calculated`
+    `calculated->calculated`
 
 2. Entry with more than one suggested fix
 
