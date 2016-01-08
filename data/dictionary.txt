@@ -478,6 +478,7 @@ asthetical->aesthetical
 asthetically->aesthetically
 asume->assume
 aswell->as well
+asychronously->asynchronously
 atain->attain
 atempting->attempting
 atheistical->atheistic
@@ -685,6 +686,7 @@ campagin->campaign
 campain->campaign
 campaing->campaign
 campains->campaigns
+cancelation->cancellation
 candadate->candidate
 candiate->candidate
 candidiate->candidate
@@ -869,6 +871,7 @@ comapany->company
 comback->comeback
 combanations->combinations
 combinatins->combinations
+combinded->combined
 combusion->combustion
 comdemnation->condemnation
 comemmorates->commemorates
@@ -912,6 +915,8 @@ committe->committee
 committment->commitment
 committments->commitments
 commmemorated->commemorated
+commnad->command
+commnads->commands
 commongly->commonly
 commonweath->commonwealth
 commuications->communications
@@ -1060,6 +1065,7 @@ contibutes->contributes
 contigent->contingent
 contigious->contiguous
 contined->continued
+continiously->continuously
 continous->continuous
 continously->continuously
 continueing->continuing
@@ -1107,6 +1113,7 @@ corperations->corporations
 correcters->correctors
 correponding->corresponding
 correposding->corresponding
+correspoinding->corresponding
 correspondant->correspondent
 correspondants->correspondents
 corresponsing->corresponding
@@ -1225,6 +1232,8 @@ densly->densely
 deparment->department
 deparmental->departmental
 deparments->departments
+depdendencies->dependencies
+depdendency->dependency
 dependance->dependence
 dependancies->dependencies
 dependancy->dependency
@@ -1531,12 +1540,14 @@ enlargments->enlargements
 Enlish->English, enlist,
 enourmous->enormous
 enourmously->enormously
+enque->enqueue
 ensconsed->ensconced
 entaglements->entanglements
 enteratinment->entertainment
 enthousiasm->enthusiasm
 enthusiatic->enthusiastic
 entitity->entity
+entitiy->entity
 entitlied->entitled
 entrepeneur->entrepreneur
 entrepeneurs->entrepreneurs
@@ -1687,6 +1698,7 @@ exressed->expressed
 extemely->extremely
 extention->extension
 extentions->extensions
+exteral->external
 extered->exerted
 extermist->extremist
 extint->extinct, extant,
@@ -2079,6 +2091,7 @@ impliment->implement
 implimented->implemented
 imploys->employs
 importamt->important
+impovements->improvements
 impressario->impresario
 imprioned->imprisoned
 imprisonned->imprisoned
@@ -2126,6 +2139,7 @@ incorruptable->incorruptible
 incramentally->incrementally
 increadible->incredible
 incredable->incredible
+incremeantal->incremental
 inctroduce->introduce
 inctroduced->introduced
 incuding->including
@@ -2180,11 +2194,13 @@ informtion->information
 infrantryman->infantryman
 infrigement->infringement
 ingenius->ingenious
+ingration->integration
 ingreediants->ingredients
 inhabitans->inhabitants
 inherantly->inherently
 inheritage->heritage, inheritance,
 inheritence->inheritance
+inifinite->infinite
 inital->initial
 initalise->initialise
 initalization->initialization
@@ -2231,6 +2247,7 @@ intenational->international
 intented->intended, indented,
 intepretation->interpretation
 intepretator->interpretor
+interal->internal, integral,
 interational->international
 interbread->interbreed, interbred,
 interchangable->interchangeable
@@ -2397,6 +2414,7 @@ liuke->like
 livley->lively
 lmits->limits
 loev->love
+loger->logger, longer,
 lonelyness->loneliness
 longitudonal->longitudinal
 longuer->longer
@@ -2919,6 +2937,9 @@ perfomance->performance
 perfomers->performers
 performence->performance
 performes->performed, performs,
+perfrom->perform
+perfromance->performance
+perfroms->performs
 perhasp->perhaps
 perheaps->perhaps
 perhpas->perhaps
@@ -2983,6 +3004,8 @@ pilgrimmages->pilgrimages
 pinapple->pineapple
 pinnaple->pineapple
 pinoneered->pioneered
+plaftorm->platform
+plaftorms->platforms
 plagarism->plagiarism
 planation->plantation
 planed->planned
@@ -3093,6 +3116,9 @@ prefered->preferred
 prefering->preferring
 preferrable->preferable
 preferrably->preferably
+preform->perform
+preformance->performance
+preforms->performs
 pregancies->pregnancies
 preiod->period
 preliferation->proliferation
@@ -3497,6 +3523,7 @@ resignement->resignment
 resistable->resistible
 resistence->resistance
 resistent->resistant
+resopnse->response
 respectivly->respectively
 responce->response
 responibilities->responsibilities
