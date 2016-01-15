@@ -253,6 +253,7 @@ allready->already
 allthough->although
 alltime->all-time
 alltogether->altogether
+allways->always
 almsot->almost
 alochol->alcohol
 alomst->almost
@@ -261,7 +262,7 @@ alotted->allotted
 alowed->allowed
 alowing->allowing
 alreayd->already
-alse->else
+alse->also, else
 alsot->also
 alternitives->alternatives
 altho->although
@@ -510,6 +511,7 @@ auromated->automated
 austrailia->Australia
 austrailian->Australian
 auther->author
+authetication->authentication
 authobiographic->autobiographic
 authobiography->autobiography
 authorative->authoritative
@@ -939,6 +941,7 @@ compatablities->compatibilities
 compatablity->compatibility
 compatiable->compatible
 compatibilty->compatibility
+compatibily->compatibility
 compatiblities->compatibilities
 compatiblity->compatibility
 compeitions->competitions
@@ -1178,6 +1181,8 @@ damenor->demeanor
 dammage->damage
 Dardenelles->Dardanelles
 daugher->daughter
+deamon->daemon
+deamons->daemons
 debateable->debatable
 decendant->descendant
 decendants->descendants
@@ -1268,6 +1273,7 @@ desoriented->disoriented
 desparate->desperate, disparate,
 despict->depict
 despiration->desperation
+desription->description
 dessicated->desiccated
 dessigned->designed
 destablized->destabilized
@@ -1818,6 +1824,7 @@ fullfill->fulfill
 fullfilled->fulfilled
 funciton->function
 functino->function
+functionnality->functionality
 fundametal->fundamental
 fundametals->fundamentals
 funguses->fungi
@@ -2785,6 +2792,7 @@ officialy->officially
 offred->offered
 oftenly->often
 oging->going, ogling,
+olny->only
 omision->omission
 omited->omitted
 omiting->omitting
@@ -3673,6 +3681,7 @@ senarios->scenarios
 sence->sense, since,
 senstive->sensitive
 sensure->censure
+sepcial->special
 seperate->separate
 seperated->separated
 seperately->separately
@@ -4276,7 +4285,7 @@ unregnized->unrecognized
 unrepentent->unrepentant
 unrepetant->unrepentant
 unrepetent->unrepentant
-unsed->unused
+unsed->unused, used
 unsubstanciated->unsubstantiated
 unsuccesful->unsuccessful
 unsuccesfully->unsuccessfully
