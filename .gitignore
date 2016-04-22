@@ -1,0 +1,4 @@
+build
+dist
+codespell.egg-info
+*.pyc
