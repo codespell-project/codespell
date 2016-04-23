@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
 # This program is free software; you can redistribute it and/or modify
@@ -18,6 +18,9 @@ Copyright (C) 2010-2011  Lucas De Marchi <lucas.de.marchi@gmail.com>
 Copyright (C) 2011  ProFUSION embedded systems
 """
 
+from __future__ import print_function
+
+import codecs
 import sys
 import re
 from optparse import OptionParser
@@ -27,7 +30,8 @@ import fnmatch
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
-VERSION = '1.8'
+VERSION = '1.9'
+__version__ = VERSION
 
 misspellings = {}
 exclude_lines = set()
@@ -37,7 +41,8 @@ quiet_level = 0
 encodings = ['utf-8', 'iso-8859-1']
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
-default_dictionary = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'data', 'dictionary.txt')
+default_dictionary = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                  'data', 'dictionary.txt')
 
 # OPTIONS:
 #
@@ -47,7 +52,7 @@ default_dictionary = os.path.join(os.path.dirname(os.path.realpath(__file__)), '
 #    file1 .. fileN      Files to check spelling
 
 
-class QuietLevels:
+class QuietLevels(object):
     NONE = 0
     ENCODING = 1
     BINARY_FILE = 2
@@ -56,7 +61,7 @@ class QuietLevels:
     FIXES = 16
 
 
-class GlobMatch:
+class GlobMatch(object):
     def __init__(self, pattern):
         if pattern:
             self.pattern_list = pattern.split(',')
@@ -74,14 +79,14 @@ class GlobMatch:
         return False
 
 
-class Misspelling:
+class Misspelling(object):
     def __init__(self, data, fix, reason):
         self.data = data
         self.fix = fix
         self.reason = reason
 
 
-class TermColors:
+class TermColors(object):
     def __init__(self):
         self.FILE = '\033[33m'
         self.WWORD = '\033[31m'
@@ -95,7 +100,7 @@ class TermColors:
         self.DISABLE = ''
 
 
-class Summary:
+class Summary(object):
     def __init__(self):
         self.summary = {}
 
@@ -115,7 +120,7 @@ class Summary:
                          width=15 - len(key)) for key in keys])
 
 
-class FileOpener:
+class FileOpener(object):
     def __init__(self, use_chardet):
         self.use_chardet = use_chardet
         if use_chardet:
@@ -139,7 +144,7 @@ class FileOpener:
 
     def open_with_chardet(self, filename):
         self.encdetector.reset()
-        with open(filename, 'rb') as f:
+        with codecs.open(filename, 'rb') as f:
             for line in f:
                 self.encdetector.feed(line)
                 if self.encdetector.done:
@@ -148,8 +153,7 @@ class FileOpener:
         encoding = self.encdetector.result['encoding']
 
         try:
-            f = open(filename, 'r', encoding=encoding, newline='')
-            lines = f.readlines()
+            f = codecs.open(filename, 'r', encoding=encoding)
         except UnicodeDecodeError:
             print('ERROR: Could not detect encoding: %s' % filename,
                   file=sys.stderr)
@@ -158,7 +162,8 @@ class FileOpener:
             print('ERROR: %s -- Don\'t know how to handle encoding %s'
                   % (filename, encoding), file=sys.stderr)
             raise
-        finally:
+        else:
+            lines = f.readlines()
             f.close()
 
         return lines, encoding
@@ -169,9 +174,7 @@ class FileOpener:
 
         while True:
             try:
-                f = open(filename, 'r', encoding=encodings[curr], newline='')
-                lines = f.readlines()
-                break
+                f = codecs.open(filename, 'r', encoding=encodings[curr])
             except UnicodeDecodeError:
                 if not quiet_level & QuietLevels.ENCODING:
                     print('WARNING: Decoding file %s' % filename,
@@ -185,10 +188,10 @@ class FileOpener:
                         pass
 
                 curr += 1
-
-            finally:
+            else:
+                lines = f.readlines()
                 f.close()
-
+                break
         if not lines:
             raise Exception('Unknown encoding')
 
@@ -262,25 +265,20 @@ def parse_options(args):
 
     (o, args) = parser.parse_args()
 
-    if not os.path.exists(o.dictionary):
-        print('ERROR: cannot find dictionary file!', file=sys.stderr)
-        parser.print_help()
-        sys.exit(1)
-
     if not args:
         args.append('.')
 
-    return o, args
+    return o, args, parser
 
 
 def build_exclude_hashes(filename):
-    with open(filename, 'r') as f:
+    with codecs.open(filename, 'r') as f:
         for line in f:
             exclude_lines.add(line)
 
 
 def build_dict(filename):
-    with open(filename, 'r', 1, 'utf-8') as f:
+    with codecs.open(filename, mode='r', buffering=1, encoding='utf-8') as f:
         for line in f:
             [key, data] = line.split('->')
             data = data.strip()
@@ -314,10 +312,9 @@ def is_hidden(filename):
 def is_text_file(filename):
     with open(filename, mode='rb') as f:
         s = f.read(1024)
-        if 0 in s:
-            return False
-
-        return True
+    if b'\x00' in s:
+        return False
+    return True
 
 
 def fix_case(word, fixword):
@@ -396,24 +393,22 @@ def parse_file(filename, colors, summary):
         lines = f.readlines()
     else:
         # ignore binary files
-        try:
-            text = is_text_file(filename)
-        except FileNotFoundError:
-            return
+        if not os.path.isfile(filename):
+            return 0
+        text = is_text_file(filename)
         if not text:
             if not quiet_level & QuietLevels.BINARY_FILE:
                 print("WARNING: Binary file: %s " % filename, file=sys.stderr)
-            return
+            return 0
         try:
             lines, encoding = file_opener.open(filename)
-        except:
-            return
+        except Exception:
+            return 0
 
-    i = 1
+    bad_count = 0
     rx = re.compile(r"[\w\-']+")
-    for line in lines:
+    for i, line in enumerate(lines):
         if line in exclude_lines:
-            i += 1
             continue
 
         fixed_words = set()
@@ -434,7 +429,7 @@ def parse_file(filename, colors, summary):
                 if summary and fix:
                     summary.update(lword)
 
-                if word in fixed_words:
+                if word in fixed_words:  # can skip because of re.sub below
                     continue
 
                 if options.write_changes and fix:
@@ -467,6 +462,10 @@ def parse_file(filename, colors, summary):
 
                     creason = ''
 
+                # If we get to this point (uncorrected error) we should change
+                # our bad_count and thus return value
+                bad_count += 1
+
                 if filename != '-':
                     print("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "
                           " ==> %(RIGHTWORD)s%(REASON)s"
@@ -479,7 +478,6 @@ def parse_file(filename, colors, summary):
                           % {'LINE': cline, 'STRLINE': line.strip(),
                              'WRONGWORD': cwrongword,
                              'RIGHTWORD': crightword, 'REASON': creason})
-        i += 1
 
     if changed:
         if filename == '-':
@@ -491,17 +489,25 @@ def parse_file(filename, colors, summary):
                 print("%sFIXED:%s %s"
                       % (colors.FWORD, colors.DISABLE, filename),
                       file=sys.stderr)
-            f = open(filename, 'w', encoding=encoding)
-            f.writelines(lines)
-            f.close()
+            with codecs.open(filename, 'w', encoding=encoding) as f:
+                f.writelines(lines)
+    return bad_count
 
 
 def main(*args):
+    """Contains flow control and exit calls"""
     global options
     global quiet_level
     global file_opener
 
-    (options, args) = parse_options(args)
+    options, args, parser = parse_options(args)
+
+    if not os.path.exists(options.dictionary):
+        print(default_dictionary)
+        print('ERROR: cannot find dictionary file:\n%s' % options.dictionary,
+              file=sys.stderr)
+        parser.print_help()
+        sys.exit(1)
 
     build_dict(options.dictionary)
     colors = TermColors()
@@ -523,6 +529,7 @@ def main(*args):
 
     glob_match = GlobMatch(options.skip)
 
+    bad_count = 0
     for filename in args:
         # ignore hidden files
         if is_hidden(filename):
@@ -530,31 +537,31 @@ def main(*args):
 
         if os.path.isdir(filename):
             for root, dirs, files in os.walk(filename):
-                i = 0
-                for d in dirs:
-                    if is_hidden(d):
-                        del dirs[i]
-                    else:
-                        i += 1
-
-                for file in files:
-                    fname = os.path.join(root, file)
+                # i = 0
+                # for d in dirs:
+                #     if is_hidden(d):
+                #         del dirs[i]
+                #     else:
+                #         i += 1
+                for file_ in files:
+                    fname = os.path.join(root, file_)
                     if not os.path.isfile(fname):
                         continue
                     if not os.path.getsize(fname):
                         continue
-                    if glob_match.match(file):
+                    if glob_match.match(root):  # skips also match directories
                         continue
-                    parse_file(fname, colors, summary)
+                    if glob_match.match(file_):
+                        continue
+                    bad_count += parse_file(fname, colors, summary)
 
-            continue
-
-        parse_file(filename, colors, summary)
+        else:
+            bad_count += parse_file(filename, colors, summary)
 
     if summary:
         print("\n-------8<-------\nSUMMARY:")
         print(summary)
-
+    sys.exit(bad_count)
 
 if __name__ == '__main__':
-    sys.exit(main(*sys.argv))
+    main(*sys.argv)
