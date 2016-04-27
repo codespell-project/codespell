@@ -129,9 +129,9 @@ class FileOpener(object):
         try:
             from chardet.universaldetector import UniversalDetector
         except ImportError:
-            raise Exception("There's no chardet installed to import from. "
-                            "Please, install it and check your PYTHONPATH "
-                            "environment variable")
+            raise ImportError("There's no chardet installed to import from. "
+                              "Please, install it and check your PYTHONPATH "
+                              "environment variable")
 
         self.encdetector = UniversalDetector()
 
@@ -433,8 +433,7 @@ def parse_file(filename, colors, summary):
 
                 if options.write_changes and fix:
                     changed = True
-                    lines[i - 1] = re.sub(r'\b%s\b' % word,
-                                          fixword, lines[i - 1])
+                    lines[i] = re.sub(r'\b%s\b' % word, fixword, lines[i])
                     fixed_words.add(word)
                     continue
 
@@ -506,7 +505,7 @@ def main(*args):
         print('ERROR: cannot find dictionary file:\n%s' % options.dictionary,
               file=sys.stderr)
         parser.print_help()
-        sys.exit(1)
+        return 1
 
     build_dict(options.dictionary)
     colors = TermColors()
@@ -536,17 +535,9 @@ def main(*args):
 
         if os.path.isdir(filename):
             for root, dirs, files in os.walk(filename):
-                # i = 0
-                # for d in dirs:
-                #     if is_hidden(d):
-                #         del dirs[i]
-                #     else:
-                #         i += 1
                 for file_ in files:
                     fname = os.path.join(root, file_)
-                    if not os.path.isfile(fname):
-                        continue
-                    if not os.path.getsize(fname):
+                    if not os.path.isfile(fname) or not os.path.getsize(fname):
                         continue
                     if glob_match.match(root):  # skips also match directories
                         continue
@@ -561,7 +552,3 @@ def main(*args):
         print("\n-------8<-------\nSUMMARY:")
         print(summary)
     return bad_count
-
-
-if __name__ == '__main__':
-    sys.exit(main(*sys.argv))
