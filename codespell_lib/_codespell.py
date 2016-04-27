@@ -18,6 +18,8 @@ Copyright (C) 2010-2011  Lucas De Marchi <lucas.de.marchi@gmail.com>
 Copyright (C) 2011  ProFUSION embedded systems
 """
 
+from __future__ import print_function
+
 import sys
 import re
 from optparse import OptionParser
@@ -27,7 +29,7 @@ import fnmatch
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
-VERSION = '1.8'
+VERSION = '1.9'
 
 misspellings = {}
 exclude_lines = set()
@@ -37,7 +39,8 @@ quiet_level = 0
 encodings = ['utf-8', 'iso-8859-1']
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
-default_dictionary = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'data', 'dictionary.txt')
+default_dictionary = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                  'data', 'dictionary.txt')
 
 # OPTIONS:
 #
@@ -260,7 +263,7 @@ def parse_options(args):
                            'reliable in detecting encodings other than utf-8, '
                            'iso8859-1 and ascii.')
 
-    (o, args) = parser.parse_args()
+    (o, args) = parser.parse_args(list(args))
 
     if not os.path.exists(o.dictionary):
         print('ERROR: cannot find dictionary file!', file=sys.stderr)
@@ -399,17 +402,18 @@ def parse_file(filename, colors, summary):
         try:
             text = is_text_file(filename)
         except FileNotFoundError:
-            return
+            return 0
         if not text:
             if not quiet_level & QuietLevels.BINARY_FILE:
                 print("WARNING: Binary file: %s " % filename, file=sys.stderr)
-            return
+            return 0
         try:
             lines, encoding = file_opener.open(filename)
         except:
-            return
+            return 0
 
     i = 1
+    bad_count = 0
     rx = re.compile(r"[\w\-']+")
     for line in lines:
         if line in exclude_lines:
@@ -467,6 +471,10 @@ def parse_file(filename, colors, summary):
 
                     creason = ''
 
+                # If we get to this point (uncorrected error) we should change
+                # our bad_count and thus return value
+                bad_count += 1
+
                 if filename != '-':
                     print("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "
                           " ==> %(RIGHTWORD)s%(REASON)s"
@@ -494,6 +502,7 @@ def parse_file(filename, colors, summary):
             f = open(filename, 'w', encoding=encoding)
             f.writelines(lines)
             f.close()
+    return bad_count
 
 
 def main(*args):
@@ -523,6 +532,7 @@ def main(*args):
 
     glob_match = GlobMatch(options.skip)
 
+    bad_count = 0
     for filename in args:
         # ignore hidden files
         if is_hidden(filename):
@@ -545,15 +555,16 @@ def main(*args):
                         continue
                     if glob_match.match(file):
                         continue
-                    parse_file(fname, colors, summary)
+                    bad_count += parse_file(fname, colors, summary)
 
             continue
 
-        parse_file(filename, colors, summary)
+        bad_count += parse_file(filename, colors, summary)
 
     if summary:
         print("\n-------8<-------\nSUMMARY:")
         print(summary)
+    return bad_count
 
 
 if __name__ == '__main__':

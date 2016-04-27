@@ -1,0 +1,42 @@
+# vim ft=yaml
+# Multiple lines can be made a single "virtual line" because of how Travis
+# munges each line before executing it to print out the exit status.  It's okay
+# for it to be on multiple physical lines, so long as you remember: - There
+# can't be any leading "-"s - All newlines will be removed, so use ";"s
+
+language: python
+
+# Run jobs on container-based infrastructure, can be overridden per job
+sudo: false
+
+cache:
+  directories:
+    - $HOME/.cache/pip
+
+python:
+    # 2.7
+    - 3.3
+    - 3.4
+    - 3.5
+
+before_install:
+    - source tools/travis_tools.sh
+    - SRC_DIR=$PWD
+    - cd ~
+    - virtualenv --python=python venv
+    - source venv/bin/activate
+    - python --version  # just to check
+    - pip install -U pip wheel  # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
+    - retry pip install nose flake8 coverage codecov
+    - cd $SRC_DIR
+
+install:
+    - python setup.py install
+
+# command to run tests, e.g. python setup.py test
+script:
+    - flake8
+    - nosetests
+
+after_success:
+    - codecov
