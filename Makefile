@@ -3,7 +3,7 @@ bindir ?= ${prefix}/bin
 datadir ?= ${prefix}/share/codespell
 mandir ?= ${prefix}/share/man/man1
 
-_VERSION := $(shell grep -e "VERSION = '[0-9]\.[0-9]" codespell.py | cut -f 3 -d ' ')
+_VERSION := $(shell grep -e "VERSION = '[0-9]\.[0-9]" codespell_lib/_codespell.py | cut -f 3 -d ' ')
 VERSION = $(subst ',,$(_VERSION))
 
 SORT_ARGS := -f
@@ -25,13 +25,13 @@ check:
 	test 1bfb1f089c3c7772f0898f66df089b9e = $$(./codespell.py example/ | md5sum | cut -f1 -d\ )
 
 check-dictionary:
-	@if ! LANG=C sort ${SORT_ARGS} -c data/dictionary.txt; then \
+	@if ! LANG=C sort ${SORT_ARGS} -c codespell_lib/data/dictionary.txt; then \
 		echo "Dictionary not sorted. Sort with 'make sort-dictionary'"; \
 		exit 1; \
 	fi
 
 sort-dictionary:
-	LANG=C sort ${SORT_ARGS} -u -o data/dictionary.txt data/dictionary.txt
+	LANG=C sort ${SORT_ARGS} -u -o codespell_lib/data/dictionary.txt codespell_lib/data/dictionary.txt
 
 install: codespell manpage
 	install -d ${DESTDIR}${datadir} ${DESTDIR}${bindir} ${DESTDIR}${mandir}
