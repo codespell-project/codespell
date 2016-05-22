@@ -865,6 +865,7 @@ collony->colony
 collosal->colossal
 colonizators->colonizers
 colum->column
+comand->command
 comander->commander, commandeer,
 comando->commando
 comandos->commandos
@@ -888,12 +889,15 @@ comissioned->commissioned
 comissioner->commissioner
 comissioning->commissioning
 comissions->commissions
+comit->commit
 comited->committed
 comiting->committing
+comits->commits
 comitted->committed
 comittee->committee
 comitting->committing
 commandoes->commandos
+commansd->commands
 commedic->comedic
 commemerative->commemorative
 commemmorate->commemorate
@@ -917,6 +921,10 @@ committe->committee
 committment->commitment
 committments->commitments
 commmemorated->commemorated
+commment->comment
+commments->comments
+commmit->commit
+commmits->commits
 commnad->command
 commnads->commands
 commongly->commonly
@@ -1114,6 +1122,7 @@ corosion->corrosion
 corparate->corporate
 corperations->corporations
 correcters->correctors
+correcty->correctly
 correponding->corresponding
 correposding->corresponding
 correspoinding->corresponding
@@ -1180,6 +1189,8 @@ dalmation->dalmatian
 damenor->demeanor
 dammage->damage
 Dardenelles->Dardanelles
+dashbord->dashboard
+dashbords->dashboards
 daugher->daughter
 deamon->daemon
 deamons->daemons
@@ -1319,7 +1330,9 @@ dieties->deities
 diety->deity
 diferent->different
 diferrent->different
+differance->difference
 differentiatiations->differentiations
+differnet->different
 differnt->different
 difficulity->difficulty
 diffrent->different
@@ -1685,12 +1698,15 @@ expalin->explain
 expatriot->expatriate
 expeced->expected
 expecially->especially
+expectatoins->expectations
+expectatons->expectations
 expeditonary->expeditionary
 expeiments->experiments
 expell->expel
 expells->expels
 experiance->experience
 experianced->experienced
+experiement->experiment
 expiditions->expeditions
 expierence->experience
 explaination->explanation
@@ -1698,6 +1714,7 @@ explaning->explaining
 explictly->explicitly
 exploititive->exploitative
 explotation->exploitation
+expresions->expressions
 expropiated->expropriated
 expropiation->expropriation
 exressed->expressed
@@ -2193,6 +2210,7 @@ infilitrate->infiltrate
 infilitrated->infiltrated
 infilitration->infiltration
 infinit->infinite
+infinte->infinite
 inflamation->inflammation
 influencial->influential
 influented->influenced
@@ -2254,6 +2272,7 @@ intenational->international
 intented->intended, indented,
 intepretation->interpretation
 intepretator->interpretor
+intepreter->interpreter
 interal->internal, integral,
 interational->international
 interbread->interbreed, interbred,
@@ -2277,6 +2296,8 @@ interrugum->interregnum
 intertaining->entertaining
 interupt->interrupt
 intervines->intervenes
+inteval->interval
+intevals->intervals
 intevene->intervene
 intial->initial
 intialization->initialization
@@ -2592,6 +2613,7 @@ mkaes->makes
 mkaing->making
 mkea->make
 moderm->modem
+modifed->modified
 modle->model
 moduel->module
 moduels->modules
@@ -2630,6 +2652,7 @@ mucuous->mucous
 muder->murder
 mudering->murdering
 muhammadan->muslim
+mulitple->multiple
 multicultralism->multiculturalism
 multifuction->multifunction
 multipled->multiplied
@@ -2726,6 +2749,7 @@ Novermber->November
 nowdays->nowadays
 nowe->now
 nto->not, disable due to \n
+nubmer->number
 nucular->nuclear
 nuculear->nuclear
 nuisanse->nuisance
@@ -2838,7 +2862,6 @@ organistion->organisation
 organiztion->organization
 orgin->origin, organ,
 orginal->original
-orginal->original
 orginally->originally
 orginize->organise, organize,
 oridinarily->ordinarily
@@ -2857,6 +2880,8 @@ oustanding->outstanding
 oveerun->overrun
 overlayed->overlaid
 overriddden->overridden
+overridding->overriding
+overriden->overridden
 overshaddowed->overshadowed
 overthere->over there
 overwelming->overwhelming
@@ -2886,6 +2911,7 @@ paralelly->parallelly
 paralely->parallelly
 parallell->parallel
 parallely->parallelly
+parametere->parameter
 paramter->parameter
 paramters->parameters
 paranthesis->parenthesis
@@ -2894,6 +2920,7 @@ parellels->parallels
 parisitic->parasitic
 parituclar->particular
 parliment->parliament
+parmaeters->parameters
 parrakeets->parakeets
 parralel->parallel
 parrallel->parallel
@@ -2952,6 +2979,7 @@ performes->performed, performs,
 perfrom->perform
 perfromance->performance
 perfroms->performs
+perhas->perhaps
 perhasp->perhaps
 perheaps->perhaps
 perhpas->perhaps
@@ -2963,6 +2991,8 @@ permanant->permanent
 permenant->permanent
 permenantly->permanently
 permissable->permissible
+permisssion->permission
+permisssions->permissions
 perogative->prerogative
 peronal->personal
 perosnality->personality
@@ -3124,6 +3154,7 @@ predecesors->predecessors
 predicatble->predictable
 predicitons->predictions
 predomiantly->predominately
+prefectly->perfectly
 prefered->preferred
 prefering->preferring
 preferrable->preferable
@@ -3164,6 +3195,7 @@ pretection->protection
 prevelant->prevalent
 preverse->perverse
 previvous->previous
+prexisting->preexisting
 pricipal->principal
 priciple->principle
 priestood->priesthood
@@ -3433,6 +3465,7 @@ refusla->refusal
 regardes->regards
 registrs->registers
 regluar->regular
+regresion->regression
 reguarly->regularly
 regulaion->regulation
 regulaotrs->regulators
@@ -4113,6 +4146,7 @@ thne->then
 thnig->thing
 thnigs->things
 thoughout->throughout
+thow->throw
 threatend->threatened
 threatning->threatening
 threee->three
@@ -4231,6 +4265,7 @@ unballance->unbalance
 unbeknowst->unbeknownst
 unbeleivable->unbelievable
 uncertainity->uncertainty
+unchaged->unchanged
 unchallengable->unchallengeable
 unchangable->unchangeable
 uncompetive->uncompetitive
@@ -4456,6 +4491,7 @@ withh->with
 withing->within
 withold->withhold
 witht->with
+witin->within
 witn->with
 wiull->will
 wnat->want
