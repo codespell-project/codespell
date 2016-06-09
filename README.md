@@ -62,7 +62,7 @@ the suggestions.
     `clas->class, disabled because of name clash in c++`
 
    Note that there isn't a comma in the end of the line. The last argument is
-treated as the reason why a suggestion can not be automatically applied.
+treated as the reason why a suggestion cannot be automatically applied.
 
 License
 -------
