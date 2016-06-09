@@ -30,7 +30,7 @@ import fnmatch
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
-VERSION = '1.9'
+VERSION = '1.9.0'
 
 misspellings = {}
 exclude_lines = set()

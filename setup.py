@@ -20,7 +20,7 @@ MAINTAINER_EMAIL = 'lucas.de.marchi@gmail.com'
 URL = 'https://github.com/lucasdemarchi/codespell/'
 LICENSE = 'GPL v2'
 DOWNLOAD_URL = 'https://github.com/lucasdemarchi/codespell/'
-with open('README.md', 'r') as f:
+with open('README.rst', 'r') as f:
     LONG_DESCRIPTION = f.read()
 
 if __name__ == "__main__":
