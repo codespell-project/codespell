@@ -4,30 +4,34 @@ codespell
 Fix common misspellings in text files. It's designed primarily for checking
 misspelled words in source code, but it can be used with other files as well.
 
-Information
------------
+Useful links
+------------
 
-GitHub project: <https://github.com/lucasdemarchi/codespell>
+* `GitHub project <https://github.com/lucasdemarchi/codespell>`_
 
-Mailing list: <codespell@googlegroups.com> with web archives/interface at
- <https://groups.google.com/forum/?fromgroups#!forum/codespell>
+* Mailing list: <codespell@googlegroups.com> with web archives/interface
+  `here <https://groups.google.com/forum/?fromgroups#!forum/codespell>`_
 
+* `Repository <https://github.com/lucasdemarchi/codespell>`_
 
-Repository: <https://github.com/lucasdemarchi/codespell>
-
-Releases: <https://github.com/lucasdemarchi/codespell/releases>
+* `Releases <https://github.com/lucasdemarchi/codespell/releases>`_
 
 Requirements
 ------------
 
-Python 3.0 or above.
+Python 2.7 or above.
 
-make and help2man packages needed for "make install".
+Installation
+------------
+
+You can use ``pip`` to install codespell with e.g.::
+
+    pip install codespell
 
 Usage
 -----
 
-Check usage with `./codespell.py -h`. There are a few command line options.
+Check usage with ``./codespell.py -h``. There are a few command line options.
 Note that upon installation with "make install" we don't have the "py" suffix.
 We ship a dictionary that is an improved version of the one available at
 <http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/For_machines>
@@ -43,31 +47,31 @@ i.e. from Wikipedia. The difference is how multiple options are treated and
 that the last argument is the reason why a certain entry could not be applied
 directly, but instead be manually inspected. E.g:
 
-1. Simple entry: one wrong word / one suggestion
+1. Simple entry: one wrong word / one suggestion::
 
-    `calulated->calculated`
+        calulated->calculated
 
-2. Entry with more than one suggested fix
+2. Entry with more than one suggested fix::
 
-    `fiel->feel, field, file, phial,`
+       fiel->feel, field, file, phial,
 
-    Note the last comma! You need to use it, otherwise the last suggestion
-will be discarded (see below for why). When there are more than one
-suggestion, automatically fix is not possible and the best we can do is
-to give the user the file and line where the error occurred as well as
-the suggestions.
+   Note the last comma! You need to use it, otherwise the last suggestion
+   will be discarded (see below for why). When there are more than one
+   suggestion, automatically fix is not possible and the best we can do is
+   to give the user the file and line where the error occurred as well as
+   the suggestions.
 
-3. Entry with one word, but with automatically fix disabled
+3. Entry with one word, but with automatically fix disabled::
 
-    `clas->class, disabled because of name clash in c++`
+       clas->class, disabled because of name clash in c++
 
    Note that there isn't a comma in the end of the line. The last argument is
-treated as the reason why a suggestion cannot be automatically applied.
+   treated as the reason why a suggestion cannot be automatically applied.
 
 License
 -------
 
-The Python script `codespell.py` is available with the following terms:
+The Python script ``codespell.py`` is available with the following terms:
 (*tl;dr*: [GPL v2][])
 
 > Copyright (C) 2010-2011  Lucas De Marchi <lucas.de.marchi@gmail.com>

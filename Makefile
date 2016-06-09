@@ -60,6 +60,9 @@ tar-sync: codespell-$(VERSION).tar.xz codespell-$(VERSION).tar.xz.asc
 		--name codespell-$(VERSION).tar.xz.asc \
 		--file codespell-$(VERSION).tar.xz.asc
 
+pypi:
+	python setup.py sdist register upload
+
 clean:
 	rm -rf codespell
 	rm -rf codespell.1
