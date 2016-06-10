@@ -45,7 +45,7 @@ Dictionary format
 The format of the dictionary was influenced by the one it originally came from,
 i.e. from Wikipedia. The difference is how multiple options are treated and
 that the last argument is the reason why a certain entry could not be applied
-directly, but instead be manually inspected. E.g:
+directly, but instead be manually inspected. E.g.:
 
 1. Simple entry: one wrong word / one suggestion::
 
