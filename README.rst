@@ -33,8 +33,8 @@ Usage
 
 Check usage with ``./codespell.py -h``. There are a few command line options.
 Note that upon installation with "make install" we don't have the "py" suffix.
-We ship a dictionary that is an improved version of the one available at
-<https://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/For_machines>
+We ship a dictionary that is an improved version of the one available
+`on Wikipedia <https://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/For_machines>`_
 after applying them in projects like Linux Kernel, EFL, oFono among others.
 You can provide your own version of the dictionary, but patches for
 new/different entries are very welcome.
