@@ -1,0 +1,4 @@
+include codespell_lib/__init__.py
+recursive-include codespell_lib *.py
+include codespell_lib/data/dictionary.txt
+include codespell_lib/data/linux-kernel.exclude
