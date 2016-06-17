@@ -5,6 +5,7 @@ from __future__ import print_function
 import contextlib
 import os
 import os.path as op
+import subprocess
 import sys
 import tempfile
 import warnings
@@ -12,6 +13,23 @@ import warnings
 from nose.tools import assert_equal, assert_true
 
 from codespell_lib import main
+
+
+def run_codespell(args=(), cwd=None):
+    """Helper to run codespell"""
+    return subprocess.Popen(
+        ['codespell.py'] + list(args), cwd=cwd,
+        stdout=subprocess.PIPE, stderr=subprocess.PIPE).wait()
+
+
+def test_command():
+    """Test running codespell.py"""
+    # With no arguments does "."
+    with TemporaryDirectory() as d:
+        assert_equal(run_codespell(cwd=d), 0)
+        with open(op.join(d, 'bad.txt'), 'w') as f:
+            f.write('abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd')
+        assert_equal(run_codespell(cwd=d), 4)
 
 
 def test_basic():
