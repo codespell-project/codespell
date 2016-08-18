@@ -55,4 +55,4 @@ if __name__ == "__main__":
               op.join('data', 'dictionary.txt'),
               op.join('data', 'linux-kernel.exclude'),
           ]},
-          scripts=['bin/codespell.py'])
+          scripts=['bin/codespell'])

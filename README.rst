@@ -31,7 +31,7 @@ You can use ``pip`` to install codespell with e.g.::
 Usage
 -----
 
-Check usage with ``./codespell.py -h``. There are a few command line options.
+Check usage with ``codespell -h``. There are a few command line options.
 Note that upon installation with "make install" we don't have the "py" suffix.
 We ship a dictionary that is an improved version of the one available
 `on Wikipedia <https://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/For_machines>`_
@@ -71,7 +71,7 @@ directly, but instead be manually inspected. E.g.:
 License
 -------
 
-The Python script ``codespell.py`` is available with the following terms:
+The Python script ``codespell`` is available with the following terms:
 (*tl;dr*: `GPL v2`_)
 
    Copyright (C) 2010-2011  Lucas De Marchi <lucas.de.marchi@gmail.com>
