@@ -443,7 +443,7 @@ def parse_file(filename, colors, summary):
                     continue
 
                 cfilename = "%s%s%s" % (colors.FILE, filename, colors.DISABLE)
-                cline = "%s%d%s" % (colors.FILE, i+1, colors.DISABLE)
+                cline = "%s%d%s" % (colors.FILE, i + 1, colors.DISABLE)
                 cwrongword = "%s%s%s" % (colors.WWORD, word, colors.DISABLE)
                 crightword = "%s%s%s" % (colors.FWORD, fixword, colors.DISABLE)
 
