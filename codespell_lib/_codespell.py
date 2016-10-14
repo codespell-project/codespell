@@ -420,7 +420,7 @@ def parse_file(filename, colors, summary):
                 fixword = fix_case(word, misspellings[lword].data)
 
                 if options.interactive and lword not in asked_for:
-                    fix, fixword = ask_for_word_fix(lines[i - 1], word,
+                    fix, fixword = ask_for_word_fix(lines[i], word,
                                                     misspellings[lword],
                                                     options.interactive)
                     asked_for.add(lword)
