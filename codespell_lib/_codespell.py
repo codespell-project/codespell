@@ -38,6 +38,7 @@ options = None
 file_opener = None
 quiet_level = 0
 encodings = ['utf-8', 'iso-8859-1']
+regex = re.compile(r"[\w\-']+")
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
 default_dictionary = os.path.join(os.path.dirname(os.path.realpath(__file__)),
@@ -405,7 +406,6 @@ def parse_file(filename, colors, summary):
             return 0
 
     bad_count = 0
-    rx = re.compile(r"[\w\-']+")
     for i, line in enumerate(lines):
         if line in exclude_lines:
             continue
@@ -413,7 +413,7 @@ def parse_file(filename, colors, summary):
         fixed_words = set()
         asked_for = set()
 
-        for word in rx.findall(line):
+        for word in regex.findall(line):
             lword = word.lower()
             if lword in misspellings:
                 fix = misspellings[lword].fix
