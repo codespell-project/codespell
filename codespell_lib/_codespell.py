@@ -215,11 +215,11 @@ def parse_options(args):
                       action='store_true', default=False,
                       help='write changes in place if possible')
     parser.add_option('-D', '--dictionary',
-                      action='store', metavar='FILE',
-                      default=default_dictionary,
+                      action='append', metavar='FILE',
                       help='Custom dictionary file that contains spelling '
-                           'corrections. If this flag is not specified '
-                           'then default dictionary "%s" is used.' %
+                           'corrections. If this flag is not specified or '
+                           'equals "-" then default dictionary "%s" is used. '
+                           'This option can be specified multiple times.' %
                       default_dictionary)
 
     parser.add_option('-s', '--summary',
@@ -500,14 +500,17 @@ def main(*args):
 
     options, args, parser = parse_options(args)
 
-    if not os.path.exists(options.dictionary):
-        print(default_dictionary)
-        print('ERROR: cannot find dictionary file:\n%s' % options.dictionary,
-              file=sys.stderr)
-        parser.print_help()
-        return 1
-
-    build_dict(options.dictionary)
+    dictionaries = options.dictionary or [default_dictionary]
+    for dictionary in dictionaries:
+        if dictionary is "-":
+            dictionary = default_dictionary
+        if not os.path.exists(dictionary):
+            print('ERROR: cannot find dictionary file: %s' % dictionary,
+                  file=sys.stderr)
+            parser.print_help()
+            return 1
+        build_dict(dictionary)
+        
     colors = TermColors()
     if not options.colors:
         colors.disable()
