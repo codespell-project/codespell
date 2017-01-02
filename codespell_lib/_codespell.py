@@ -38,7 +38,7 @@ options = None
 file_opener = None
 quiet_level = 0
 encodings = ['utf-8', 'iso-8859-1']
-regex = re.compile(r"[\w\-']+")
+word_regex = re.compile(r"[\w\-']+")
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
 default_dictionary = os.path.join(os.path.dirname(os.path.realpath(__file__)),
@@ -222,7 +222,14 @@ def parse_options(args):
                            'equals "-" then default dictionary "%s" is used. '
                            'This option can be specified multiple times.' %
                       default_dictionary)
-
+    parser.add_option('-r', '--regex',
+                      action='store', type='string',
+                      help='Regular expression which is used to find words. '
+                           'By default any alphanumeric character, the '
+                           'underscore, the hyphen, and the apostrophe is '
+                           'used to build words (i.e. %s). This option cannot '
+                           'be specified together with the write-changes '
+                           'functionality. ' % word_regex.pattern)
     parser.add_option('-s', '--summary',
                       action='store_true', default=False,
                       help='print summary of fixes')
@@ -413,7 +420,7 @@ def parse_file(filename, colors, summary):
         fixed_words = set()
         asked_for = set()
 
-        for word in regex.findall(line):
+        for word in word_regex.findall(line):
             lword = word.lower()
             if lword in misspellings:
                 fix = misspellings[lword].fix
@@ -499,6 +506,19 @@ def main(*args):
     global file_opener
 
     options, args, parser = parse_options(args)
+
+    if options.regex:
+        if options.write_changes:
+            parser.error('--write-changes cannot be used together with '
+                         '--regex')
+        global word_regex
+        try:
+            word_regex = re.compile(options.regex)
+        except re.error as err:
+            print('ERROR: invalid regular expression "%s" (%s)' %
+                  (options.regex, err), file=sys.stderr)
+            parser.print_help()
+            return 1
 
     dictionaries = options.dictionary or [default_dictionary]
     for dictionary in dictionaries:
