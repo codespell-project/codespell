@@ -18,12 +18,12 @@ from codespell_lib import main
 def run_codespell(args=(), cwd=None):
     """Helper to run codespell"""
     return subprocess.Popen(
-        ['codespell.py'] + list(args), cwd=cwd,
+        ['codespell'] + list(args), cwd=cwd,
         stdout=subprocess.PIPE, stderr=subprocess.PIPE).wait()
 
 
 def test_command():
-    """Test running codespell.py"""
+    """Test running the codespell executable"""
     # With no arguments does "."
     with TemporaryDirectory() as d:
         assert_equal(run_codespell(cwd=d), 0)
