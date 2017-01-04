@@ -510,7 +510,6 @@ def main(*args):
             parser.print_help()
             return 1
         build_dict(dictionary)
-        
     colors = TermColors()
     if not options.colors:
         colors.disable()
