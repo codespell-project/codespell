@@ -1451,7 +1451,6 @@ documenatry->documentary
 doens->does
 doesnt'->doesn't
 doesnt->doesn't
-dosn't->doesn't
 doign->doing
 dominaton->domination
 dominent->dominant
@@ -1460,6 +1459,7 @@ donig->doing
 dont->don't
 dosen't->doesn't
 dosent'->doesn't
+dosn't->doesn't
 doub->doubt, daub,
 doulbe->double
 dowloads->downloads
@@ -2343,8 +2343,8 @@ intevals->intervals
 intevene->intervene
 intial->initial
 intialise->initialise
-intialize->initialize
 intialization->initialization
+intialize->initialize
 intialized->initialized
 intially->initially
 intrduced->introduced
@@ -2861,8 +2861,8 @@ octohedral->octahedral
 octohedron->octahedron
 ocuntries->countries
 ocuntry->country
-ocurr->occur
 ocur->occur
+ocurr->occur
 ocurrance->occurrence
 ocurred->occurred
 ocurrence->occurrence
@@ -3691,6 +3691,7 @@ reversable->reversible
 revison->revision
 revisons->revisions
 revolutionar->revolutionary
+revrese->reverse
 rewitten->rewritten
 rewriet->rewrite
 rewuired->required
