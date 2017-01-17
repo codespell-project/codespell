@@ -71,7 +71,8 @@ directly, but instead be manually inspected. E.g.:
 License
 -------
 
-The Python script ``codespell`` is available with the following terms:
+The Python script ``codespell`` with its library ``codespell_lib`` is available
+with the following terms:
 (*tl;dr*: `GPL v2`_)
 
    Copyright (C) 2010-2011  Lucas De Marchi <lucas.de.marchi@gmail.com>
