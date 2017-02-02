@@ -93,3 +93,7 @@ with the following terms:
    <http://www.gnu.org/licenses/old-licenses/gpl-2.0.html>.
 
 .. _GPL v2: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+
+dictionary.txt is a derived work of English Wikipedia and is released under the
+Creative Commons Attribution-Share-Alike License 3.0
+http://creativecommons.org/licenses/by-sa/3.0/
