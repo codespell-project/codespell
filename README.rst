@@ -56,8 +56,8 @@ directly, but instead be manually inspected. E.g.:
        fiel->feel, field, file, phial,
 
    Note the last comma! You need to use it, otherwise the last suggestion
-   will be discarded (see below for why). When there are more than one
-   suggestion, automatically fix is not possible and the best we can do is
+   will be discarded (see below for why). When there is more than one
+   suggestion, an automatic fix is not possible and the best we can do is
    to give the user the file and line where the error occurred as well as
    the suggestions.
 
