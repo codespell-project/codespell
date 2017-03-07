@@ -33,6 +33,7 @@ USAGE = """
 VERSION = '1.10.0.dev0'
 
 misspellings = {}
+ignore_words = set()
 exclude_lines = set()
 options = None
 file_opener = None
@@ -222,6 +223,10 @@ def parse_options(args):
                            'equals "-" then default dictionary "%s" is used. '
                            'This option can be specified multiple times.' %
                       default_dictionary)
+    parser.add_option('-I', '--ignore-words',
+                      action='append', metavar='FILE',
+                      help='File that contains words which will be ignored '
+                           'by codespell.')
     parser.add_option('-r', '--regex',
                       action='store', type='string',
                       help='Regular expression which is used to find words. '
@@ -284,10 +289,18 @@ def build_exclude_hashes(filename):
             exclude_lines.add(line)
 
 
+def build_ignore_words(filename):
+    with codecs.open(filename, mode='r', buffering=1, encoding='utf-8') as f:
+        for line in f:
+            ignore_words.add(line.strip())
+
+
 def build_dict(filename):
     with codecs.open(filename, mode='r', buffering=1, encoding='utf-8') as f:
         for line in f:
             [key, data] = line.split('->')
+            if key in ignore_words:
+                continue
             data = data.strip()
             fix = data.rfind(',')
 
@@ -519,6 +532,15 @@ def main(*args):
                   (options.regex, err), file=sys.stderr)
             parser.print_help()
             return 1
+
+    ignore_words_files = options.ignore_words or []
+    for ignore_words_file in ignore_words_files:
+        if not os.path.exists(ignore_words_file):
+            print('ERROR: cannot find ignore-words file: %s' %
+                  ignore_words_file, file=sys.stderr)
+            parser.print_help()
+            return 1
+        build_ignore_words(ignore_words_file)
 
     dictionaries = options.dictionary or [default_dictionary]
     for dictionary in dictionaries:
