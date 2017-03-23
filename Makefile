@@ -1,6 +1,6 @@
 SORT_ARGS := -f
 
-PHONY := all check check-dictionary sort-dictionary clean
+PHONY := all check check-dictionary sort-dictionary test clean
 
 all: check-dictionary codespell.1
 
@@ -19,6 +19,9 @@ sort-dictionary:
 
 pypi:
 	python setup.py sdist register upload
+
+test:
+	PYTHONPATH=`pwd` PATH=`pwd`/bin:$$PATH nosetests --with-coverage --cover-erase
 
 clean:
 	rm -rf codespell.1
