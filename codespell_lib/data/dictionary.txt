@@ -1304,6 +1304,7 @@ dependancies->dependencies
 dependancy->dependency
 dependant->dependent
 deployement->deployment
+depracated->deprecated
 depricated->deprecated
 deram->dram, dream,
 derectory->directory
