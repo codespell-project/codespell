@@ -374,6 +374,7 @@ appologies->apologies
 appology->apology
 apprearance->appearance
 apprieciate->appreciate
+appriopriate->appropriate
 approachs->approaches
 appropiate->appropriate
 appropiately->appropriately
@@ -490,6 +491,7 @@ assocation->association
 assoicate->associate
 assoicated->associated
 assoicates->associates
+assosiated->associated
 assosication->assassination
 asssassans->assassins
 asssertion->assertion
@@ -549,6 +551,7 @@ authoritive->authoritative
 authrorities->authorities
 autochtonous->autochthonous
 autoctonous->autochthonous
+autoformating->autoformatting
 autoincrememnt->autoincrement
 automaitc->automatic
 automaitcally->automatically
@@ -741,6 +744,7 @@ cannister->canister
 cannisters->canisters
 cannnot->cannot
 cannonical->canonical
+cannonicalize->canonicalize
 cannotation->connotation
 cannotations->connotations
 cant'->can't
@@ -947,6 +951,7 @@ combusion->combustion
 comdemnation->condemnation
 comemmorates->commemorates
 comemoretion->commemoration
+coment->comment
 comision->commission
 comisioned->commissioned
 comisioner->commissioner
@@ -1159,6 +1164,7 @@ contians->contains
 contibute->contribute
 contibuted->contributed
 contibutes->contributes
+contibutor->contributor
 contigent->contingent
 contigious->contiguous
 contined->continued
@@ -1218,6 +1224,7 @@ correposding->corresponding
 correspoinding->corresponding
 correspondant->correspondent
 correspondants->correspondents
+corresponing->corresponding
 corresponsing->corresponding
 corridoors->corridors
 corrispond->correspond
@@ -1345,6 +1352,7 @@ delerious->delirious
 delevopment->development
 delevopp->develop
 deliberatly->deliberately
+delimeter->delimiter
 delivative->derivative
 delivatives->derivatives
 delusionally->delusively
@@ -1366,6 +1374,7 @@ dependance->dependence
 dependancies->dependencies
 dependancy->dependency
 dependant->dependent
+dependecies->dependencies
 deployement->deployment
 depracated->deprecated
 depricated->deprecated
@@ -1379,6 +1388,7 @@ derogitory->derogatory
 derprecated->deprecated
 descendands->descendants
 descibed->described
+desciption->description
 descision->decision
 descisions->decisions
 descriibes->describes
@@ -1433,6 +1443,7 @@ devolopement->development
 diablical->diabolical
 diagnotic->diagnostic
 diamons->diamonds
+diangose->diagnose
 diaster->disaster
 dichtomy->dichotomy
 diconnects->disconnects
@@ -1900,6 +1911,7 @@ faciliated->facilitated
 faciliates->facilitates
 facilites->facilities
 facillitate->facilitate
+facilties->facilities
 facinated->fascinated
 facist->fascist
 familes->families
@@ -1968,6 +1980,7 @@ formallize->formalize
 formallized->formalized
 formaly->formally, formerly,
 formated->formatted
+formating->formating
 formelly->formerly
 formidible->formidable
 formost->foremost
@@ -2422,6 +2435,7 @@ initally->initially
 initation->initiation
 initiaitive->initiative
 initializiation->initialization
+initialy->initially
 initilize->initialize
 initliaze->initialize
 initliazed->initialized
@@ -2451,6 +2465,10 @@ insitutions->institutions
 inspite->in spite, inspire,
 instad->instead
 instade->instead
+instal->install
+instalation->installation
+instaled->installed
+instaling->installing
 installe->installer
 instanciation->instantiation
 instatance->instance
@@ -2574,6 +2592,7 @@ juducial->judicial
 juristiction->jurisdiction
 juristictions->jurisdictions
 kenrel->kernel
+keybaord->keyboard
 keyowrd->keyword
 keyworkd->keyword
 keyworkds->keywords
@@ -2613,6 +2632,7 @@ legitmate->legitimate
 leibnitz->leibniz
 lengh->length
 lenght->length
+leniant->lenient
 leran->learn
 lerans->learns
 leutenant->lieutenant
@@ -3279,6 +3299,7 @@ perpindicular->perpendicular
 perseverence->perseverance
 persistance->persistence
 persistant->persistent
+persisten->persistent
 personel->personnel, personal,
 personell->personnel
 personnell->personnel
@@ -3324,6 +3345,7 @@ pinapple->pineapple
 pinnaple->pineapple
 pinoneered->pioneered
 piority->priority
+plaform->platform
 plaftorm->platform
 plaftorms->platforms
 plagarism->plagiarism
@@ -3435,6 +3457,7 @@ preceed->precede
 preceeded->preceded
 preceeding->preceding
 preceeds->precedes
+precendence->precedence
 precentage->percentage
 precice->precise
 precisly->precisely
@@ -3484,6 +3507,7 @@ presumibly->presumably
 pretection->protection
 prevelant->prevalent
 preverse->perverse
+preverses->preserves
 previlege->privilege
 previvous->previous
 prexisting->preexisting
@@ -3569,6 +3593,7 @@ pronounched->pronounced
 pronounciation->pronunciation
 proove->prove
 prooved->proved
+propertise->properties
 prophacy->prophecy
 propietary->proprietary
 propmted->prompted
@@ -3846,6 +3871,7 @@ reponses->responses
 reponsible->responsible
 reporitory->repository
 reportadly->reportedly
+reposoitory->repository
 repport->report
 represantative->representative
 representiative->representative
@@ -4185,6 +4211,7 @@ specidic->specific
 specif->specific, specify,
 specifiying->specifying
 specifyied->specified
+specifyinhg->specifying
 speciman->specimen
 spectauclar->spectacular
 spectaulars->spectaculars
@@ -4241,6 +4268,7 @@ storise->stories
 stornegst->strongest
 stoyr->story
 stpo->stop
+strack->stack
 stradegies->strategies
 stradegy->strategy
 strat->start, strata,
@@ -4275,6 +4303,7 @@ subconsiously->subconsciously
 subjudgation->subjugation
 submachne->submachine
 subpecies->subspecies
+subract->subtract
 subsidary->subsidiary
 subsiduary->subsidiary
 subsituting->substituting
@@ -4636,6 +4665,7 @@ uncertainity->uncertainty
 unchaged->unchanged
 unchallengable->unchallengeable
 unchangable->unchangeable
+uncoment->uncoment
 uncompetive->uncompetitive
 unconcious->unconscious
 unconciousness->unconsciousness
@@ -4698,6 +4728,7 @@ unrepentent->unrepentant
 unrepetant->unrepentant
 unrepetent->unrepentant
 unsed->unused, used
+unsettin->unsetting
 unsubstanciated->unsubstantiated
 unsuccesful->unsuccessful
 unsuccesfully->unsuccessfully
@@ -4756,6 +4787,7 @@ varables->variables
 varations->variations
 varient->variant
 variey->variety
+varified->verified
 varing->varying
 varities->varieties
 varity->variety
@@ -4843,6 +4875,7 @@ weilded->wielded
 wendsay->Wednesday
 wensday->Wednesday
 wereabouts->whereabouts
+wether->whether
 whant->want
 whants->wants
 whcih->which
@@ -4854,6 +4887,7 @@ whereever->wherever
 whic->which
 whihc->which
 whiped->wiped
+whitespaces->whitespace
 whith->with
 whlch->which
 whn->when
