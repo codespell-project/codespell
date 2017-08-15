@@ -583,9 +583,7 @@ def main(*args):
                     fname = os.path.join(root, file_)
                     if not os.path.isfile(fname) or not os.path.getsize(fname):
                         continue
-                    if glob_match.match(root):  # skips also match directories
-                        continue
-                    if glob_match.match(file_):
+                    if glob_match.match(fname):
                         continue
                     bad_count += parse_file(fname, colors, summary)
 
