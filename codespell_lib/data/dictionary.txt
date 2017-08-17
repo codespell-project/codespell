@@ -4081,7 +4081,7 @@ seceeded->succeeded, seceded,
 secratary->secretary
 secretery->secretary
 sedereal->sidereal
-seeked->sought
+seeked->sought, disabled because of "seeked" JS event
 segementation->segmentation
 segmentaion->segmentation
 seguoys->segues
