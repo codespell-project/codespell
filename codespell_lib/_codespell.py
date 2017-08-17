@@ -590,6 +590,9 @@ def main(*args):
                         continue
                     bad_count += parse_file(fname, colors, summary)
 
+                # skip (relative) directories
+                dirs[:] = [dir_ for dir_ in dirs if not glob_match.match(dir_)]
+
         else:
             bad_count += parse_file(filename, colors, summary)
 
