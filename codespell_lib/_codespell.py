@@ -579,15 +579,19 @@ def main(*args):
 
         if os.path.isdir(filename):
             for root, dirs, files in os.walk(filename):
+                if glob_match.match(root):  # skip (absolute) directories
+                    del dirs[:]
+                    continue
                 for file_ in files:
+                    if glob_match.match(file_):
+                        continue
                     fname = os.path.join(root, file_)
                     if not os.path.isfile(fname) or not os.path.getsize(fname):
                         continue
-                    if glob_match.match(root):  # skips also match directories
-                        continue
-                    if glob_match.match(file_):
-                        continue
                     bad_count += parse_file(fname, colors, summary)
+
+                # skip (relative) directories
+                dirs[:] = [dir_ for dir_ in dirs if not glob_match.match(dir_)]
 
         else:
             bad_count += parse_file(filename, colors, summary)

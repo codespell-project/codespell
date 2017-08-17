@@ -245,6 +245,7 @@ def test_ignore():
         assert_equal(cs.main(d), 2)
         assert_equal(cs.main('--skip=bad*', d), 0)
         assert_equal(cs.main('--skip=*ignoredir*', d), 1)
+        assert_equal(cs.main('--skip=ignoredir', d), 1)
 
 
 class TemporaryDirectory(object):
