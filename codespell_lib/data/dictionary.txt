@@ -861,6 +861,7 @@ charachters->characters
 charactersistic->characteristic
 charactor->character
 charactors->characters
+charcters->characters
 charasmatic->charismatic
 charaterized->characterized
 chariman->chairman
@@ -921,6 +922,9 @@ clincial->clinical
 clinicaly->clinically
 cmo->com, disabled due to lots of false positives
 cmoputer->computer
+cna->can
+cnat'->can't
+cnat->can't
 co-incided->coincided
 Coca Cola->Coca-Cola
 coctail->cocktail
@@ -2177,6 +2181,9 @@ harrassments->harassments
 hasnt'->hasn't
 hasnt->hasn't
 Hatian->Haitian
+havent'->haven't
+havent->haven't
+havnt->haven't
 haviest->heaviest
 hazzle->hassle
 headquarer->headquarter
