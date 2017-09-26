@@ -53,7 +53,7 @@ if __name__ == "__main__":
           ]},
           entry_points={
               'console_scripts': [
-                  'codespell = codespell_lib:main'
+                  'codespell = codespell_lib:_script_main'
               ],
           }
           )

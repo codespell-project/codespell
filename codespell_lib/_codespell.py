@@ -552,6 +552,11 @@ def parse_file(filename, colors, summary):
     return bad_count
 
 
+def _script_main():
+    """Wrap to main() for setuptools."""
+    return main(*sys.argv[1:])
+
+
 def main(*args):
     """Contains flow control"""
     global options
