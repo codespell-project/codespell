@@ -18,6 +18,7 @@ python:
     - 3.3
     - 3.4
     - 3.5
+    - 3.6
 
 before_install:
     - source tools/travis_tools.sh
@@ -27,7 +28,7 @@ before_install:
     - source venv/bin/activate
     - python --version  # just to check
     - pip install -U pip wheel  # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
-    - retry pip install nose flake8 coverage codecov chardet
+    - retry pip install nose flake8 coverage codecov chardet setuptools
     - cd $SRC_DIR
 
 install:

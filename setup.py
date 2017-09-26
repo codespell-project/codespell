@@ -5,11 +5,7 @@
 import os
 from os import path as op
 
-try:
-    import setuptools  # noqa to allow --develop
-except Exception:
-    pass
-from distutils.core import setup
+from setuptools import setup
 
 from codespell_lib import __version__
 
@@ -55,4 +51,9 @@ if __name__ == "__main__":
               op.join('data', 'dictionary.txt'),
               op.join('data', 'linux-kernel.exclude'),
           ]},
-          scripts=['bin/codespell'])
+          entry_points={
+              'console_scripts': [
+                  'codespell = codespell_lib:main'
+              ],
+          }
+          )
