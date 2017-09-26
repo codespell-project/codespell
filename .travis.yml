@@ -43,8 +43,9 @@ before_install:
 install:
     - python setup.py install
 
-# command to run tests, e.g. python setup.py test
 script:
+    - codespell --help
+    - ! codespell codespell_lib/tests/test_basic.py  # this file has an error
     - flake8
     - nosetests
 

@@ -209,7 +209,8 @@ def parse_options(args):
     parser.set_defaults(colors=sys.stdout.isatty())
     parser.add_option('-d', '--disable-colors',
                       action='store_false', dest='colors',
-                      help='disable colors even when printing to terminal')
+                      help='disable colors even when printing to terminal '
+                      '(always on for Windows)')
     parser.add_option('-c', '--enable-colors',
                       action='store_true', dest='colors',
                       help='enable colors even when not printing to terminal')
@@ -598,7 +599,7 @@ def main(*args):
             return 1
         build_dict(dictionary)
     colors = TermColors()
-    if not options.colors:
+    if not options.colors or sys.platform == 'win32':
         colors.disable()
 
     if options.summary:
