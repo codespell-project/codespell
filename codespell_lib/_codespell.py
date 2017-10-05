@@ -275,6 +275,10 @@ def parse_options(args):
                            'reliable in detecting encodings other than utf-8, '
                            'iso8859-1 and ascii.')
 
+    parser.add_option('-f', '--check-filenames',
+                      action='store_true', default=False,
+                      help='Check file names as well.')
+
     (o, args) = parser.parse_args(list(args))
 
     if not args:
@@ -399,6 +403,7 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
 
 
 def parse_file(filename, colors, summary):
+    bad_count = 0
     lines = None
     changed = False
     global misspellings
@@ -415,6 +420,40 @@ def parse_file(filename, colors, summary):
         # ignore binary files
         if not os.path.isfile(filename):
             return 0
+        if options.check_filenames:
+            for word in word_regex.findall(filename):
+                lword = word.lower()
+                if lword not in misspellings:
+                    continue
+                fix = misspellings[lword].fix
+                fixword = fix_case(word, misspellings[lword].data)
+
+                if summary and fix:
+                    summary.update(lword)
+
+                cfilename = "%s%s%s" % (colors.FILE, filename, colors.DISABLE)
+                cwrongword = "%s%s%s" % (colors.WWORD, word, colors.DISABLE)
+                crightword = "%s%s%s" % (colors.FWORD, fixword, colors.DISABLE)
+
+                if misspellings[lword].reason:
+                    if quiet_level & QuietLevels.DISABLED_FIXES:
+                        continue
+                    creason = "  | %s%s%s" % (colors.FILE,
+                                              misspellings[lword].reason,
+                                              colors.DISABLE)
+                else:
+                    if quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
+                        continue
+                    creason = ''
+
+                bad_count += 1
+
+                print("%(FILENAME)s: %(WRONGWORD)s "
+                      " ==> %(RIGHTWORD)s%(REASON)s"
+                      % {'FILENAME': cfilename,
+                         'WRONGWORD': cwrongword,
+                         'RIGHTWORD': crightword, 'REASON': creason})
+
         text = is_text_file(filename)
         if not text:
             if not quiet_level & QuietLevels.BINARY_FILE:
@@ -425,7 +464,6 @@ def parse_file(filename, colors, summary):
         except Exception:
             return 0
 
-    bad_count = 0
     for i, line in enumerate(lines):
         if line in exclude_lines:
             continue
