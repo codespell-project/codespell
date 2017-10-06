@@ -28,11 +28,41 @@ You can use ``pip`` to install codespell with e.g.::
 
     pip install codespell
 
+**Note:** that upon installation with "make install" we don't have the "py" suffix.
+
 Usage
 -----
 
-Check usage with ``codespell -h``. There are a few command line options.
-Note that upon installation with "make install" we don't have the "py" suffix.
+For more in depth info please check usage with ``codespell -h``. 
+
+Some noteworthy flags::
+
+    codespell -w, --write-changes
+
+The -w flag will actually implement the changes recommended by codespell. Not running with ``-w`` flag is the same as with doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.:: 
+
+    codespell -S, --skip=
+
+Comma-separated list of files to skip. It accepts globs as well.  Examples:
+ 
+* to skip .eps & .txt files, invoke ``codespell --skip="*.eps,*.txt"``  
+
+* to skip directories, invoke ``codespell --skip="./src/3rd-Party,./src/Test"`` ::
+
+    codespell -I FILE, --ignore-words=FILE
+
+This flag can be used to whitelist certain words that are in the ``codespell_lib/data/dictionary.txt``. The format of the whitelist file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said whitelist. **Important note:** The whitelist passed to ``-I`` is case-sensitive based on how it is listed in dictionary.txt.
+
+Useful commands::
+
+    codespell -d -q 3 --skip="\*.po,*.ts,./src/3rdParty,./src/Test"
+
+List all typos found except translation files and some directories. Display them without terminal colors and with a quiet level of 3. ::
+
+    codespell -i 3 -w
+
+Run interactive mode level 3 and write changes to file.
+
 We ship a dictionary that is an improved version of the one available
 `on Wikipedia <https://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/For_machines>`_
 after applying them in projects like Linux Kernel, EFL, oFono among others.
@@ -67,6 +97,22 @@ directly, but instead be manually inspected. E.g.:
 
    Note that there isn't a comma in the end of the line. The last argument is
    treated as the reason why a suggestion cannot be automatically applied.
+
+Updating
+--------
+
+To stay current with codespell developments it is possible to build codespell from GitHub via::
+
+    pip install --upgrade git+https://github.com/lucasdemarchi/codespell.github
+
+**Important Notes:**
+
+* Sometimes installing via ``pip`` will complain about permissions. If this is the case then run with ::
+
+    pip install --user --upgrade git+https://github.com/lucasdemarchi/codespell.git
+
+* It has been reported that after installing from ``pip``, codespell can't be located. Please check the $PATH variable to see if ``~/.local/bin`` is present. If it isn't then add it to your path. 
+* If you decide to install via ``pip`` then be sure to remove any previously installed versions of codespell (via you OSs preferred app mananger). 
 
 License
 -------
