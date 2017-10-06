@@ -321,6 +321,7 @@ androgenous->androgynous
 androgeny->androgyny
 anihilation->annihilation
 aniversary->anniversary
+anly->only
 annoint->anoint
 annointed->anointed
 annointing->anointing
@@ -337,6 +338,7 @@ anomoly->anomaly
 anonimity->anonymity
 anounced->announced
 anouncement->announcement
+ans->and
 ansalisation->nasalisation
 ansalization->nasalization
 ansestors->ancestors
@@ -734,6 +736,7 @@ calculs->calculus
 calender->calendar
 calenders->calendars
 caligraphy->calligraphy
+calld->called
 caluclate->calculate
 caluclated->calculated
 caluculate->calculate
@@ -922,6 +925,7 @@ clasic->classic
 clasical->classical
 clasically->classically
 clasified->classified
+classe->class, classes
 cleanpu->cleanup
 cleanpus->cleanups
 cleareance->clearance
@@ -929,6 +933,7 @@ cleean->clean
 clera->clear, sclera,
 clincial->clinical
 clinicaly->clinically
+clos->close
 cmo->com, disabled due to lots of false positives
 cmoputer->computer
 cna->can
@@ -1332,6 +1337,7 @@ deamon->daemon
 deamons->daemons
 debateable->debatable
 Debiab->Debian
+debugg->debug
 debugginf->debugging
 debuging->debugging
 decendant->descendant
@@ -1789,6 +1795,7 @@ envrionments->environments
 enxt->next
 epidsodes->episodes
 epsiode->episode
+equel->equal
 equialent->equivalent
 equilibium->equilibrium
 equilibrum->equilibrium
@@ -1969,9 +1976,12 @@ fatc->fact
 faught->fought
 favoutrable->favourable
 feasable->feasible
+featur->feature
 Febuary->February
 Feburary->February
 fedreally->federally
+feetur->feature
+feeture->feature
 femminist->feminist
 feromone->pheromone
 fertily->fertility
@@ -2097,6 +2107,7 @@ gaurd->guard, gourd,
 gaurentee->guarantee
 gaurenteed->guaranteed
 gaurentees->guarantees
+gemetrical->geometrical
 geneological->genealogical
 geneologies->genealogies
 geneology->genealogy
@@ -2254,6 +2265,7 @@ hieroglphs->hieroglyphs
 higeine->hygiene
 higer->higher
 higest->highest
+hightest->highest
 higway->highway
 hillarious->hilarious
 himselv->himself
@@ -2514,6 +2526,7 @@ inofficial->unofficial
 inoquous->innocuous
 inot->into
 inpeach->impeach
+inplemented->implemented
 inpolite->impolite
 inprisonment->imprisonment
 inproving->improving
@@ -3078,6 +3091,8 @@ normaly->normally
 northen->northern
 northereastern->northeastern
 notabley->notably
+notaion->notation
+notasion->notation
 noteable->notable
 noteably->notably
 noteriety->notoriety
@@ -3610,6 +3625,7 @@ principaly->principality
 principial->principal
 principlaity->principality
 principly->principally
+prind->print
 prinicipal->principal
 printting->printing
 privalege->privilege
@@ -3759,6 +3775,7 @@ quantaty->quantity
 quantitiy->quantity
 quarantaine->quarantine
 quarentine->quarantine
+qudrangles->quadrangles
 que->queue
 Queenland->Queensland
 questionaire->questionnaire
@@ -3891,6 +3908,7 @@ regardes->regards
 registeres->registers
 registrs->registers
 regluar->regular
+regon->region
 regresion->regression
 reguarly->regularly
 regulaion->regulation
@@ -4007,6 +4025,7 @@ resignement->resignment
 resistable->resistible
 resistence->resistance
 resistent->resistant
+reslut->result
 resopnse->response
 resore->restore
 respectivly->respectively
@@ -4053,6 +4072,9 @@ resurecting->resurrecting
 retalitated->retaliated
 retalitation->retaliation
 retreive->retrieve
+retreiving->retrieving
+retrive->retrieve
+retriving->retrieving
 retuns->returns
 returnd->returned
 reuest->request
@@ -4153,6 +4175,7 @@ seaches->searches
 secceeded->seceded, succeeded,
 seceed->succeed, secede,
 seceeded->succeeded, seceded,
+secound->second
 secratary->secretary
 secretery->secretary
 sedereal->sidereal
@@ -4295,6 +4318,7 @@ soundard->soundcard
 sountrack->soundtrack
 soure->source
 soures->sources
+sourt->sort, south,
 sourth->south
 sourthern->southern
 southbrige->southbridge
@@ -4389,6 +4413,7 @@ strengtened->strengthened
 strenous->strenuous
 strictist->strictest
 strikely->strikingly
+stript->stripped
 strnad->strand
 stroy->story, destroy,
 structered->structured
@@ -4564,6 +4589,8 @@ tage->stage
 tahn->than
 taht->that
 talekd->talked
+tangensial->tangential
+tangetial->tangential
 targetted->targeted
 targetting->targeting
 tast->taste
@@ -4653,6 +4680,7 @@ threee->three
 threshhold->threshold
 thrid->third
 throrough->thorough
+throug->through
 throughly->thoroughly
 throught->thought, through, throughout,
 througout->throughout
@@ -4690,6 +4718,7 @@ tommorow->tomorrow
 tommorrow->tomorrow
 tomorrrow->tomorrow
 tongiht->tonight
+topologie->topology
 toriodal->toroidal
 tormenters->tormentors
 tornadoe->tornado
@@ -4851,6 +4880,7 @@ unsucesfuly->unsuccessfully
 unsucessful->unsuccessful
 unsucessfull->unsuccessful
 unsucessfully->unsuccessfully
+unsuported->unsupported
 unsuprised->unsurprised
 unsuprising->unsurprising
 unsuprisingly->unsurprisingly
@@ -4912,6 +4942,7 @@ varius->various
 vasall->vassal
 vasalls->vassals
 vebrose->verbose
+vectores->vectors
 vegatarian->vegetarian
 vegitable->vegetable
 vegitables->vegetables
