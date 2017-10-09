@@ -14,6 +14,7 @@ abotu->about
 abouta->about a
 aboutit->about it
 aboutthe->about the
+abouve->above
 abreviate->abbreviate
 abreviated->abbreviated
 abreviation->abbreviation
@@ -885,6 +886,8 @@ checkums->checksums
 cheif->chief
 cheifs->chiefs
 chek->check
+chekd->checked
+cheked->checked
 cheksum->checksum
 cheksums->checksums
 chemcial->chemical
@@ -1460,6 +1463,7 @@ dessigned->designed
 destablized->destabilized
 destory->destroy
 destuction->destruction
+detaild->detailed
 detailled->detailed
 detatched->detached
 detction->detection
@@ -1510,7 +1514,7 @@ diferently->differently
 diferrent->different
 differance->difference
 differentiatiations->differentiations
-differents->different
+differents->different, difference,
 differnet->different
 differnt->different
 differrent->different
@@ -1611,6 +1615,8 @@ doccumented->documented
 doccuments->documents
 docrines->doctrines
 doctines->doctrines
+documant->document
+documants->documents
 documemt->document
 documenatry->documentary
 documetnation->documentation
@@ -1635,6 +1641,7 @@ downgrated->downgraded
 downlod->download
 downloding->downloading
 downlods->downloads
+dowt->doubt
 dramtic->dramatic
 draughtman->draughtsman
 Dravadian->Dravidian
@@ -2009,6 +2016,9 @@ firey->fiery
 firmwware->firmware
 firts->first
 firts->flirts, first,
+fisical->physical, fiscal,
+fisist->physicist
+fisisist->physicist
 fisionable->fissionable
 flaged->flagged
 flakyness->flakiness
@@ -2088,6 +2098,9 @@ furuther->further
 futher->further
 futhermore->furthermore
 futhroc->futhark, futhorc,
+fysical->physical
+fysisit->physicist
+fysisist->physicist
 gae->game, Gael, gale,
 galatic->galactic
 Galations->Galatians
@@ -2166,7 +2179,9 @@ greatfully->gratefully
 greif->grief
 gridles->griddles
 gropu->group
+groupd->grouped
 gruop->group
+gruopd->grouped
 gruops->groups
 grwo->grow
 Guaduloupe->Guadalupe, Guadeloupe,
@@ -2246,6 +2261,7 @@ heigher->higher
 heirachies->hierarchies
 heirarchy->hierarchy
 heiroglyphics->hieroglyphics
+hel->help, hell, heal,
 helment->helmet
 helpfull->helpful
 helpped->helped
@@ -2888,6 +2904,7 @@ menue->menu
 menues->menus
 meranda->veranda, Miranda,
 mercentile->mercantile
+mermory->memory
 merory->memory
 messagin->messaging
 messanger->messenger
@@ -2904,6 +2921,7 @@ meterologist->meteorologist
 meterology->meteorology
 methaphor->metaphor
 methaphors->metaphors
+methode->method
 methos->methods
 metods->methods
 Michagan->Michigan
@@ -3134,6 +3152,8 @@ nuturing->nurturing
 obediance->obedience
 obediant->obedient
 obession->obsession
+obgect->object
+objekt->object
 objump->objdump
 obselete->obsolete
 obssessed->obsessed
@@ -3141,6 +3161,8 @@ obstacal->obstacle
 obstancles->obstacles
 obstruced->obstructed
 obsure->obscure
+obyect->object
+obyekt->object
 ocasion->occasion
 ocasional->occasional
 ocasionally->occasionally
@@ -3258,6 +3280,7 @@ orignally->originally
 orignially->originally
 ot->to
 otehr->other
+otherwice->otherwise
 oublisher->publisher
 ouevre->oeuvre
 ouput->output
@@ -3449,6 +3472,7 @@ phsyically->physically
 phylosophical->philosophical
 physcial->physical
 physicaly->physically
+physisist->physicist
 piblisher->publisher
 pich->pitch
 pilgrimmage->pilgrimage
@@ -3707,6 +3731,7 @@ pronounciation->pronunciation
 proove->prove
 prooved->proved
 propertise->properties
+propery->property, properly
 prophacy->prophecy
 propietary->proprietary
 propmted->prompted
@@ -3801,6 +3826,7 @@ racaus->raucous
 radiactive->radioactive
 radify->ratify
 raelly->really
+raisedd->raised
 rarified->rarefied
 reaccurring->recurring
 reacing->reaching
@@ -4312,6 +4338,7 @@ soley->solely
 soliders->soldiers
 soliliquy->soliloquy
 soluable->soluble
+som->some
 somene->someone
 somtimes->sometimes
 somwhere->somewhere
@@ -4344,9 +4371,11 @@ spagetti->spaghetti
 spainish->Spanish
 speach->speech
 specfic->specific
+specialiced->specialised, specialized,
 speciallized->specialised, specialized,
 specidic->specific
 specif->specific, specify,
+specifc->specific
 specifiying->specifying
 specifyied->specified
 specifyinhg->specifying
@@ -4360,6 +4389,7 @@ spectum->spectrum
 speices->species
 spendour->splendour
 spermatozoan->spermatozoon
+spezified->specified
 spoace->space
 sponser->sponsor
 sponsered->sponsored
@@ -5024,6 +5054,7 @@ wardobe->wardrobe
 waring->warning
 warrent->warrant
 warrriors->warriors
+warnig->warning
 was't->wasn't
 wasnt'->wasn't
 wasnt->wasn't
@@ -5076,6 +5107,7 @@ withh->with
 withing->within
 withold->withhold
 witht->with
+withs->with, widths,
 witin->within
 witn->with
 wiull->will
