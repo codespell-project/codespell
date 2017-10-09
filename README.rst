@@ -55,7 +55,7 @@ This flag can be used to whitelist certain words that are in the ``codespell_lib
 
 Useful commands::
 
-    codespell -d -q 3 --skip="\*.po,*.ts,./src/3rdParty,./src/Test"
+    codespell -d -q 3 --skip="*.po,*.ts,./src/3rdParty,./src/Test"
 
 List all typos found except translation files and some directories. Display them without terminal colors and with a quiet level of 3. ::
 
