@@ -248,6 +248,14 @@ def test_ignore():
         assert_equal(cs.main('--skip=ignoredir', d), 1)
 
 
+def test_check_filename():
+    """Test filename check"""
+    with TemporaryDirectory() as d:
+        with open(op.join(d, 'abandonned.txt'), 'w') as f:
+            f.write('.')
+        assert_equal(cs.main('-f', d), 1)
+
+
 class TemporaryDirectory(object):
     """Backport for 2.7"""
 
