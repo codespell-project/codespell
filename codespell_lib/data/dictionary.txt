@@ -1701,6 +1701,7 @@ electon->election, electron,
 electrial->electrical
 electricly->electrically
 electricty->electricity
+elegible->eligible
 elemenet->element
 elemenets->elements
 elementay->elementary
@@ -2157,6 +2158,7 @@ Godounov->Godunov
 gogin->going, Gauguin,
 goign->going
 gonig->going
+gonna->going to, disabled because one might want to allow informal spelling
 Gothenberg->Gothenburg
 Gottleib->Gottlieb
 gouvener->governor
@@ -3669,6 +3671,7 @@ primarly->primarily
 primative->primitive
 primatively->primitively
 primatives->primitives
+primeter->perimeter
 primordal->primordial
 principaly->principality
 principial->principal
