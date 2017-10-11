@@ -2022,9 +2022,9 @@ firmwware->firmware
 firts->first
 firts->flirts, first,
 fisical->physical, fiscal,
-fisist->physicist
-fisisist->physicist
 fisionable->fissionable
+fisisist->physicist
+fisist->physicist
 flaged->flagged
 flakyness->flakiness
 flamable->flammable
@@ -2104,8 +2104,8 @@ futher->further
 futhermore->furthermore
 futhroc->futhark, futhorc,
 fysical->physical
-fysisit->physicist
 fysisist->physicist
+fysisit->physicist
 gae->game, Gael, gale,
 galatic->galactic
 Galations->Galatians
@@ -2566,6 +2566,7 @@ insistance->insistence
 insitution->institution
 insitutions->institutions
 inspite->in spite, inspire,
+instaciate->instantiate
 instad->instead
 instade->instead
 instal->install
@@ -2573,7 +2574,6 @@ instalation->installation
 instaled->installed
 instaling->installing
 installe->installer
-instaciate->instantiate
 instanciate->instantiate
 instanciated->instantiated
 instanciation->instantiation
@@ -5065,9 +5065,9 @@ wanna->want to, disabled because one might want to allow informal spelling
 warantee->warranty
 wardobe->wardrobe
 waring->warning
+warnig->warning
 warrent->warrant
 warrriors->warriors
-warnig->warning
 was't->wasn't
 wasnt'->wasn't
 wasnt->wasn't
@@ -5119,8 +5119,8 @@ witheld->withheld
 withh->with
 withing->within
 withold->withhold
-witht->with
 withs->with, widths,
+witht->with
 witin->within
 witn->with
 wiull->will
