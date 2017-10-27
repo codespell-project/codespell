@@ -256,6 +256,15 @@ def test_check_filename():
         assert_equal(cs.main('-f', d), 1)
 
 
+def test_c_escapes():
+    """Test c-esacpes option"""
+    with TemporaryDirectory() as d:
+        with open(op.join(d, 'test.txt'), 'w') as f:
+            f.write('\\nabandonned')
+        assert_equal(cs.main(d), 0)
+        assert_equal(cs.main('--c-escapes', d), 1)
+
+
 class TemporaryDirectory(object):
     """Backport for 2.7"""
 

@@ -40,6 +40,7 @@ file_opener = None
 quiet_level = 0
 encodings = ['utf-8', 'iso-8859-1']
 word_regex = re.compile(r"[\w\-']+")
+c_escape_regex = re.compile(r'\\\w')
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
 default_dictionary = os.path.join(os.path.dirname(os.path.realpath(__file__)),
@@ -281,6 +282,12 @@ def parse_options(args):
                       action='store_true', default=False,
                       help='Check file names as well.')
 
+    parser.add_option('--c-escapes',
+                      action='store_true', default=False,
+                      help='Treats files as if they contain C-style character '
+                           'escapes. So for example "\\nHello" is parsed as '
+                           '"hello" instead of "nhallo".')
+
     (o, args) = parser.parse_args(list(args))
 
     if not args:
@@ -472,6 +479,9 @@ def parse_file(filename, colors, summary):
 
         fixed_words = set()
         asked_for = set()
+
+        if options.c_escapes:
+            line = c_escape_regex.sub(' ', line)
 
         for word in word_regex.findall(line):
             lword = word.lower()
