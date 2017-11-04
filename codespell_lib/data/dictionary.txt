@@ -99,6 +99,7 @@ acknoledge->acknowledge
 acknoledged->acknowledged
 acknowldeged->acknowledged
 acknowledgeing->acknowledging
+acknowleding->acknowledging
 ackward->awkward, backward,
 acommodate->accommodate
 acomplish->accomplish
@@ -231,6 +232,7 @@ aircrafts->aircraft
 airporta->airports
 airrcraft->aircraft
 aisian->asian
+aks->ask
 albiet->albeit
 alchohol->alcohol
 alchoholic->alcoholic
@@ -352,6 +354,7 @@ anual->annual
 anulled->annulled
 anwsered->answered
 anyhwere->anywhere
+anymore->any more
 anyother->any other
 anytying->anything
 aparent->apparent
@@ -945,6 +948,8 @@ cleean->clean
 clera->clear, sclera,
 clincial->clinical
 clinicaly->clinically
+cloack->cloak
+cloacks->cloaks
 clos->close
 cmo->com, disabled due to lots of false positives
 cmoputer->computer
@@ -1373,6 +1378,8 @@ decieved->deceived
 decison->decision
 decleration->declaration
 decomissioned->decommissioned
+decommissionn->decommission
+decommissionned->decommissioned
 decomposit->decompose
 decomposited->decomposed
 decompositing->decomposing
@@ -1414,6 +1421,7 @@ degrate->degrade
 dekstop->desktop
 delagates->delegates
 delapidated->dilapidated
+delate->delete
 delerious->delirious
 delevopment->development
 delevopp->develop
@@ -1969,6 +1977,8 @@ expiditions->expeditions
 expierence->experience
 explaination->explanation
 explaning->explaining
+explicite->explicit
+explicitely->explicitly
 explictly->explicitly
 explizit->explicit
 explizitly->explicitly
@@ -2175,6 +2185,7 @@ geometrician->geometer
 geometricians->geometers
 geometrie->geometry
 gerat->great
+german->German
 gettetx->gettext
 Ghandi->Gandhi
 glight->flight
@@ -2488,6 +2499,9 @@ incomptable->incompatible
 incomptetent->incompetent
 inconsistant->inconsistent
 inconsitent->inconsistent
+incoporate->incorporate
+incoporated->incorporated
+incoporates->incorporates
 incoroporated->incorporated
 incorperation->incorporation
 incorportaed->incorporated
@@ -2855,6 +2869,7 @@ lvoe->love
 Lybia->Libya
 maching->machine, marching, matching,
 mackeral->mackerel
+macpakge->package
 magasine->magazine
 magincian->magician
 magisine->magazine
@@ -3371,6 +3386,7 @@ paide->paid
 paitience->patience
 pakage->package
 pakages->packages
+pakge->package
 palce->place, palace,
 paleolitic->paleolithic
 paliamentarian->parliamentarian
@@ -3416,6 +3432,7 @@ particuarly->particularly
 particularily->particularly
 particulary->particularly
 partion->partition, portion,
+partitial->partial
 partiton->partition
 pary->party
 pased->passed
@@ -3801,6 +3818,7 @@ propertise->properties
 propery->property, properly
 prophacy->prophecy
 propietary->proprietary
+propigation->propagation
 propmted->prompted
 propoganda->propaganda
 propogate->propagate
@@ -3900,6 +3918,7 @@ rarified->rarefied
 reaccurring->recurring
 reacing->reaching
 reacll->recall
+readapted->re-adapted
 readible->readable
 readmition->readmission
 realitime->realtime
@@ -4149,6 +4168,7 @@ responsibilites->responsibilities
 responsiblities->responsibilities
 responsiblity->responsibility
 responsing->responding
+respository->repository
 ressemblance->resemblance
 ressemble->resemble
 ressembled->resembled
@@ -4174,6 +4194,7 @@ resteraunt->restaurant
 resteraunts->restaurants
 resticted->restricted
 restraunt->restraint, restaurant,
+restriced->restricted
 resturant->restaurant
 resturants->restaurants
 resturaunt->restaurant
@@ -4224,6 +4245,7 @@ rulle->rule
 runing->running
 runnning->running
 runnung->running
+russian->Russian
 russina->Russian
 Russion->Russian
 rwite->write
@@ -4765,6 +4787,7 @@ testomony->testimony
 tghe->the
 thant->than
 thast->that, that's,
+thats->that's
 theather->theater
 theese->these
 theif->thief
@@ -5057,6 +5080,7 @@ valuble->valuable
 valueable->valuable
 varables->variables
 varaiance->variance
+varaible->variable
 varations->variations
 variabele->variable
 varient->variant
@@ -5141,6 +5165,7 @@ warnig->warning
 warrent->warrant
 warrriors->warriors
 was't->wasn't
+wasn->was
 wasnt'->wasn't
 wasnt->wasn't
 wass->was
