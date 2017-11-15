@@ -218,12 +218,13 @@ def test_custom_regex():
 def test_exclude_file():
     """Test exclude file functionality"""
     with TemporaryDirectory() as d:
-        assert_equal(cs.main(d), 0)
         with open(op.join(d, 'bad.txt'), 'w') as f:
-            f.write('abandonned\n')
-        assert_equal(cs.main(d), 1)
-        with open(op.join(d, 'bad2.txt'), 'w') as f:
-            f.write('ackward\n')
+            f.write('abandonned 1\nabandonned 2\n')
+        assert_equal(cs.main(d), 2)
+        with tempfile.NamedTemporaryFile('w') as f:
+            pass
+        with open(f.name, 'w') as f:
+            f.write('abandonned 1\n')
         assert_equal(cs.main(d), 2)
         assert_equal(cs.main('-x', f.name, d), 1)
 
