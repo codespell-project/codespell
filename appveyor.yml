@@ -6,7 +6,6 @@ environment:
   matrix:
       - PYTHON_VERSION: "2.7"
         PYTHON_ARCH: "32"
-  matrix:
       - PYTHON_VERSION: "3.6"
         PYTHON_ARCH: "64"
 
