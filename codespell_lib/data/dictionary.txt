@@ -23,7 +23,9 @@ absail->abseil
 absailing->abseiling
 absance->absence
 abscence->absence
+abselutely->absolutely
 absense->absence
+absoulute->absolute
 absolutly->absolutely
 absorbsion->absorption
 absorbtion->absorption
@@ -315,6 +317,7 @@ amunition->ammunition
 analagous->analogous
 analitic->analytic
 analogeous->analogous
+analysy->analysis
 anarchim->anarchism
 anarchistm->anarchism
 anbd->and
@@ -501,6 +504,8 @@ assemple->assemble
 assertation->assertion
 assesment->assessment
 asside->aside
+assignalble->assignable
+assignement->assignment
 assisnate->assassinate
 assit->assist
 assitant->assistant
@@ -933,6 +938,7 @@ ciruits->circuits
 civillian->civilian
 claaes->classes
 claculate->calculate
+claculation->calculation
 claer->clear
 claerer->clearer
 claerly->clearly
@@ -1455,6 +1461,7 @@ dependancies->dependencies
 dependancy->dependency
 dependant->dependent
 dependecies->dependencies
+dependencis->dependencies
 dependend->dependent, depended,
 deployement->deployment
 depracated->deprecated
@@ -1475,9 +1482,11 @@ desciption->description
 descision->decision
 descisions->decisions
 descriibes->describes
+descripes->describes
 descripters->descriptors
 descripton->description
 descritpion->description
+descrptor->descriptor
 desctiption->description
 desctruction->destruction
 descuss->discuss
@@ -1651,6 +1660,7 @@ divice->device
 divinition->definition,divination,
 divison->division
 divisons->divisions
+doas->does
 doccument->document
 doccumented->documented
 doccuments->documents
@@ -1715,6 +1725,7 @@ ecidious->deciduous
 eclispe->eclipse
 ecomonic->economic
 ect->etc
+ede->edge
 eearly->early
 efect->effect
 efective->effective
@@ -1831,6 +1842,8 @@ enthousiasm->enthusiasm
 enthusiatic->enthusiastic
 entitity->entity
 entitiy->entity
+entitiys->entities
+entitys->entities
 entitlied->entitled
 entrepeneur->entrepreneur
 entrepeneurs->entrepreneurs
@@ -1939,6 +1952,7 @@ execising->exercising
 exection->execution
 exectued->executed
 executablble->executable
+executiong->execution, executing,
 exeedingly->exceedingly
 exelent->excellent
 exellent->excellent
@@ -1952,6 +1966,7 @@ exerpt->excerpt
 exerpts->excerpts
 exersize->exercise
 exerternal->external
+exeution->execution
 exhalted->exalted
 exhibtion->exhibition
 exibition->exhibition
@@ -2063,6 +2078,7 @@ finacial->financial
 finalle->finale, finally,
 finaly->finally, finale,
 financialy->financially
+finsihed->finished
 finnished->finished
 firends->friends
 firey->fiery
@@ -2240,6 +2256,7 @@ greif->grief
 gridles->griddles
 gropu->group
 groupd->grouped
+groupt->grouped
 gruop->group
 gruopd->grouped
 gruops->groups
@@ -2279,6 +2296,7 @@ haev->have, heave,
 halarious->hilarious
 Hallowean->Hallowe'en, Halloween,
 halp->help
+hanling->handling
 hanshake->handshake
 hapen->happen
 hapened->happened
@@ -2360,6 +2378,7 @@ hinderance->hindrance
 hinderence->hindrance
 hindrence->hindrance
 hipopotamus->hippopotamus
+hirarchy->hierarchy
 hismelf->himself
 hisory->history
 histocompatability->histocompatibility
@@ -2385,6 +2404,7 @@ hounour->honour
 housr->hours, house,
 hove->hove, have, hover, love,
 howver->however
+hrough->through
 hsitorians->historians
 hstory->history
 hten->then, hen, the,
@@ -2512,6 +2532,7 @@ incompetance->incompetence
 incompetant->incompetent
 incomptable->incompatible
 incomptetent->incompetent
+inconvienience->inconvenience
 inconsistant->inconsistent
 inconsitent->inconsistent
 incoporate->incorporate
@@ -2535,6 +2556,7 @@ indefineable->undefinable
 indefinitly->indefinitely
 indentical->identical
 indentifier->identifier
+indentifies->identifies
 indepedantly->independently
 indepedence->independence
 independance->independence
@@ -3737,6 +3759,8 @@ pres->press
 presance->presence
 presedential->presidential
 presense->presence
+preseverance->perseverance
+preseverence->perseverance
 presidenital->presidential
 presidental->presidential
 presist->persist
@@ -3838,6 +3862,8 @@ pronounched->pronounced
 pronounciation->pronunciation
 proove->prove
 prooved->proved
+propeties->properties
+propertie->property, properties,
 propertise->properties
 propertys->properties
 propery->property, properly
@@ -4020,6 +4046,7 @@ recuiting->recruiting
 recuring->recurring
 recurrance->recurrence
 recusion->recursion
+redction->reduction, redaction,	
 redeable->readable
 rediculous->ridiculous
 reedeming->redeeming
@@ -4231,6 +4258,7 @@ resulution->resolution
 resurecting->resurrecting
 retalitated->retaliated
 retalitation->retaliation
+retourned->returned
 retreive->retrieve
 retreiving->retrieving
 retrive->retrieve
@@ -4390,6 +4418,7 @@ shadoloo->shadaloo
 shamen->shaman, shamans,
 shashes->slashes
 sheat->sheath, sheet, cheat,
+sheduled->scheduled
 sheild->shield
 sherif->sheriff
 shineing->shining
@@ -5226,6 +5255,7 @@ wheras->whereas
 wherease->whereas
 whereever->wherever
 whic->which
+whichs->which's
 whihc->which
 whiped->wiped
 whith->with
