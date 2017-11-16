@@ -47,19 +47,23 @@ def test_basic():
     """Test some basic functionality"""
     assert_equal(cs.main('_does_not_exist_'), 0)
     with tempfile.NamedTemporaryFile('w') as f:
-        with CaptureStdout() as sio:
-            assert_equal(cs.main('-D', 'foo', f.name), 1)  # missing dictionary
+        pass
+    with CaptureStdout() as sio:
+        assert_equal(cs.main('-D', 'foo', f.name), 1)  # missing dictionary
+    try:
         assert_true('cannot find dictionary' in sio[1])
         assert_equal(cs.main(f.name), 0)  # empty file
-        f.write('this is a test file\n')
-        f.flush()
+        with open(f.name, 'a') as f:
+            f.write('this is a test file\n')
         assert_equal(cs.main(f.name), 0)  # good
-        f.write('abandonned\n')
-        f.flush()
+        with open(f.name, 'a') as f:
+            f.write('abandonned\n')
         assert_equal(cs.main(f.name), 1)  # bad
-        f.write('abandonned\n')
-        f.flush()
+        with open(f.name, 'a') as f:
+            f.write('abandonned\n')
         assert_equal(cs.main(f.name), 2)  # worse
+    finally:
+        os.remove(f.name)
     with TemporaryDirectory() as d:
         with open(op.join(d, 'bad.txt'), 'w') as f:
             f.write('abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd')
@@ -94,10 +98,14 @@ def test_basic():
 
 def test_interactivity():
     """Test interaction"""
+    # Windows can't read a currently-opened file, so here we use
+    # NamedTemporaryFile just to get a good name
     with tempfile.NamedTemporaryFile('w') as f:
+        pass
+    try:
         assert_equal(cs.main(f.name), 0)  # empty file
-        f.write('abandonned\n')
-        f.flush()
+        with open(f.name, 'w') as f:
+            f.write('abandonned\n')
         assert_equal(cs.main('-i', '-1', f.name), 1)  # bad
         with FakeStdin('y\n'):
             assert_equal(cs.main('-i', '3', f.name), 1)
@@ -109,18 +117,30 @@ def test_interactivity():
             with FakeStdin('x\ny\n'):
                 assert_equal(cs.main('-w', '-i', '3', f.name), 0)
         assert_equal(cs.main(f.name), 0)
+    finally:
+        os.remove(f.name)
+
+    # New example
     with tempfile.NamedTemporaryFile('w') as f:
-        f.write('abandonned\n')
-        f.flush()
+        pass
+    try:
+        with open(f.name, 'w') as f:
+            f.write('abandonned\n')
         assert_equal(cs.main(f.name), 1)
         with CaptureStdout():
             with FakeStdin(' '):  # blank input -> Y
                 assert_equal(cs.main('-w', '-i', '3', f.name), 0)
         assert_equal(cs.main(f.name), 0)
+    finally:
+        os.remove(f.name)
+
     # multiple options
     with tempfile.NamedTemporaryFile('w') as f:
-        f.write('ackward\n')
-        f.flush()
+        pass
+    try:
+        with open(f.name, 'w') as f:
+            f.write('ackward\n')
+
         assert_equal(cs.main(f.name), 1)
         with CaptureStdout():
             with FakeStdin(' \n'):  # blank input -> nothing
@@ -132,9 +152,8 @@ def test_interactivity():
         assert_equal(cs.main(f.name), 0)
         with open(f.name, 'r') as f_read:
             assert_equal(f_read.read(), 'awkward\n')
-        f.seek(0)
-        f.write('ackward\n')
-        f.flush()
+        with open(f.name, 'w') as f:
+            f.write('ackward\n')
         assert_equal(cs.main(f.name), 1)
         with CaptureStdout() as sio:
             with FakeStdin('x\n1\n'):  # blank input -> nothing
@@ -143,11 +162,15 @@ def test_interactivity():
         assert_equal(cs.main(f.name), 0)
         with open(f.name, 'r') as f:
             assert_equal(f.read(), 'backward\n')
+    finally:
+        os.remove(f.name)
 
 
 def test_summary():
     """Test summary functionality"""
     with tempfile.NamedTemporaryFile('w') as f:
+        pass
+    try:
         with CaptureStdout() as sio:
             cs.main(f.name)
         for ii in range(2):
@@ -157,14 +180,16 @@ def test_summary():
         assert_equal(sio[1], '')  # stderr
         assert_true('SUMMARY' in sio[0])
         assert_equal(len(sio[0].split('\n')), 5)  # no output
-        f.write('abandonned\nabandonned')
-        f.flush()
+        with open(f.name, 'w') as f:
+            f.write('abandonned\nabandonned')
         with CaptureStdout() as sio:
             cs.main(f.name, '--summary')
         assert_equal(sio[1], '')  # stderr
         assert_true('SUMMARY' in sio[0])
         assert_equal(len(sio[0].split('\n')), 7)
         assert_true('abandonned' in sio[0].split()[-2])
+    finally:
+        os.remove(f.name)
 
 
 @with_setup(reload_codespell_lib, reload_codespell_lib)
@@ -174,9 +199,10 @@ def test_ignore_dictionary():
         with open(op.join(d, 'bad.txt'), 'w') as f:
             f.write('abandonned\nabondon\n')
         with tempfile.NamedTemporaryFile('w') as f:
+            pass
+        with open(f.name, 'w') as f:
             f.write('abandonned\n')
-            f.flush()
-            assert_equal(cs.main('-I', f.name, d), 1)
+        assert_equal(cs.main('-I', f.name, d), 1)
 
 
 @with_setup(reload_codespell_lib, reload_codespell_lib)
@@ -192,39 +218,43 @@ def test_custom_regex():
 def test_exclude_file():
     """Test exclude file functionality"""
     with TemporaryDirectory() as d:
-        with open(op.join(d, 'bad.txt'), 'w') as f:
-            f.write('abandonned 1\nabandonned 2\n')
+        with open(op.join(d, 'bad.txt'), 'wb') as f:
+            f.write('abandonned 1\nabandonned 2\n'.encode('utf-8'))
+        assert_equal(cs.main(d), 2)
         with tempfile.NamedTemporaryFile('w') as f:
-            f.write('abandonned 1\n')
-            f.flush()
-            assert_equal(cs.main(d), 2)
-            assert_equal(cs.main('-x', f.name, d), 1)
+            pass
+        with open(f.name, 'wb') as f:
+            f.write('abandonned 1\n'.encode('utf-8'))
+        assert_equal(cs.main(d), 2)
+        assert_equal(cs.main('-x', f.name, d), 1)
 
 
 def test_encoding():
     """Test encoding handling"""
     # Some simple Unicode things
     with tempfile.NamedTemporaryFile('wb') as f:
-        # with CaptureStdout() as sio:
-        assert_equal(cs.main(f.name), 0)
-        f.write(u'naïve\n'.encode('utf-8'))
-        f.flush()
+        pass
+    # with CaptureStdout() as sio:
+    assert_equal(cs.main(f.name), 0)
+    try:
+        with open(f.name, 'wb') as f:
+            f.write(u'naïve\n'.encode('utf-8'))
         assert_equal(cs.main(f.name), 0)
         assert_equal(cs.main('-e', f.name), 0)
-        f.write(u'naieve\n'.encode('utf-8'))
-        f.flush()
+        with open(f.name, 'ab') as f:
+            f.write(u'naieve\n'.encode('utf-8'))
         assert_equal(cs.main(f.name), 1)
-    # Binary file warning
-    with tempfile.NamedTemporaryFile('wb') as f:
-        assert_equal(cs.main(f.name), 0)
-        f.write(b'\x00\x00naiive\x00\x00')
-        f.flush()
+        # Binary file warning
+        with open(f.name, 'wb') as f:
+            f.write(b'\x00\x00naiive\x00\x00')
         with CaptureStdout() as sio:
             assert_equal(cs.main(f.name), 0)
         assert_true('WARNING: Binary file' in sio[1])
         with CaptureStdout() as sio:
             assert_equal(cs.main('-q', '2', f.name), 0)
         assert_equal(sio[1], '')
+    finally:
+        os.remove(f.name)
 
 
 def test_ignore():

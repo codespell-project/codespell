@@ -4,4 +4,4 @@ dist
 ld
 codespell.egg-info
 *.pyc
-
+.cache/
