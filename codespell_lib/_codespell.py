@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 # This program is free software; you can redistribute it and/or modify
@@ -209,7 +208,8 @@ def parse_options(args):
     parser.set_defaults(colors=sys.stdout.isatty())
     parser.add_option('-d', '--disable-colors',
                       action='store_false', dest='colors',
-                      help='disable colors even when printing to terminal')
+                      help='disable colors even when printing to terminal '
+                      '(always on for Windows)')
     parser.add_option('-c', '--enable-colors',
                       action='store_true', dest='colors',
                       help='enable colors even when not printing to terminal')
@@ -552,6 +552,11 @@ def parse_file(filename, colors, summary):
     return bad_count
 
 
+def _script_main():
+    """Wrap to main() for setuptools."""
+    return main(*sys.argv[1:])
+
+
 def main(*args):
     """Contains flow control"""
     global options
@@ -593,7 +598,7 @@ def main(*args):
             return 1
         build_dict(dictionary)
     colors = TermColors()
-    if not options.colors:
+    if not options.colors or sys.platform == 'win32':
         colors.disable()
 
     if options.summary:

@@ -5,19 +5,31 @@
 # can't be any leading "-"s - All newlines will be removed, so use ";"s
 
 language: python
-
-# Run jobs on container-based infrastructure, can be overridden per job
 sudo: false
+dist: trusty
 
 cache:
   directories:
     - $HOME/.cache/pip
 
-python:
-    - 2.7
-    - 3.3
-    - 3.4
-    - 3.5
+matrix:
+    include:
+        - os: linux
+          python: 2.7
+        - os: linux
+          python: 3.3
+        - os: linux
+          python: 3.4
+        - os: linux
+          python: 3.5
+        - os: linux
+          python: 3.6
+        # OSX commented out for now because it's slow and a bit buggy as of
+        # 2017/11/15
+        # - os: osx
+        #   python: 2.7
+        # - os: osx
+        #   python: 3.6
 
 before_install:
     - source tools/travis_tools.sh
@@ -27,14 +39,16 @@ before_install:
     - source venv/bin/activate
     - python --version  # just to check
     - pip install -U pip wheel  # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
-    - retry pip install nose flake8 coverage codecov chardet
+    - retry pip install nose flake8 coverage codecov chardet setuptools
     - cd $SRC_DIR
 
 install:
     - python setup.py install
 
-# command to run tests, e.g. python setup.py test
 script:
+    - codespell --help
+    # this file has an error
+    - "! codespell codespell_lib/tests/test_basic.py"
     - flake8
     - nosetests
 

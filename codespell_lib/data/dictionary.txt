@@ -1271,6 +1271,7 @@ coorperation->cooperation, corporation,
 coorperations->corporations
 copmetitors->competitors
 coputer->computer
+copys->copies
 copywrite->copyright
 corerct->correct
 corerctly->correctly
@@ -1461,6 +1462,7 @@ dependancy->dependency
 dependant->dependent
 dependecies->dependencies
 dependencis->dependencies
+dependend->dependent, depended,
 deployement->deployment
 depracated->deprecated
 depricated->deprecated
@@ -2073,7 +2075,8 @@ fightings->fighting
 filiament->filament
 fimilies->families
 finacial->financial
-finaly->finally
+finalle->finale, finally,
+finaly->finally, finale,
 financialy->financially
 finsihed->finished
 finnished->finished
@@ -2760,6 +2763,7 @@ isssue->issue
 issueing->issuing
 itnernal->internal
 itnroduced->introduced
+itterations->iterations
 iunior->junior
 iwll->will
 iwth->with
@@ -2989,6 +2993,7 @@ medievel->medieval
 mediterainnean->mediterranean
 Mediteranean->Mediterranean
 meerkrat->meerkat
+meganism->mechanism
 melieux->milieux
 membranaphone->membranophone
 memeber->member
@@ -3193,6 +3198,7 @@ neolitic->neolithic
 nescessary->necessary
 nessasarily->necessarily
 nessecary->necessary
+nesseccary->necessary
 nestin->nesting
 netwplit->netsplit
 neverthless->nevertheless
@@ -3367,6 +3373,7 @@ optinal->optional
 optio->option
 optionnal->optional
 optionnaly->optionally
+optmize->optimize
 optmizations->optimizations
 optomism->optimism
 orded->ordered
@@ -3854,6 +3861,7 @@ prooved->proved
 propeties->properties
 propertie->property, properties,
 propertise->properties
+propertys->properties
 propery->property, properly
 prophacy->prophecy
 propietary->proprietary
@@ -4779,6 +4787,7 @@ sytems->systems
 sytle->style
 tabacco->tobacco
 tage->stage
+taged->tagged
 tahn->than
 taht->that
 talekd->talked
@@ -5321,3 +5330,4 @@ yrea->year
 ytou->you
 yuo->you
 zeebra->zebra
+zoon->zoom, zoon,
