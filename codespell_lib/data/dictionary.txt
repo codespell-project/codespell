@@ -287,9 +287,9 @@ alochol->alcohol
 alomst->almost
 alot->a lot, allot,
 alotted->allotted
-alows->allows
 alowed->allowed
 alowing->allowing
+alows->allows
 alreayd->already
 alse->also, else
 alsot->also
@@ -330,10 +330,10 @@ anarchistm->anarchism
 anbd->and
 ancestory->ancestry
 ancilliary->ancillary
-andthe->and the
 andd->and
 androgenous->androgynous
 androgeny->androgyny
+andthe->and the
 anihilation->annihilation
 aniversary->anniversary
 anly->only
@@ -515,8 +515,8 @@ assertation->assertion
 assesment->assessment
 asside->aside
 assignalble->assignable
-assignemnt->assignment
 assignement->assignment
+assignemnt->assignment
 assignend->assigned
 assisnate->assassinate
 assit->assist
@@ -1276,8 +1276,8 @@ controvery->controversy
 contruction->construction
 contstruction->construction
 conveinent->convenient
-conveinient->convenient
 conveinience->convenience
+conveinient->convenient
 convenant->covenant
 convential->conventional
 converion->conversion
@@ -1507,19 +1507,19 @@ desactivated->deactivated
 desallocated->deallocated
 descendands->descendants
 descibed->described
-descriped->described
 desciption->description
 descision->decision
 descisions->decisions
 descriibes->describes
+descriped->described
 descripes->describes
 descripters->descriptors
 descripton->description
 descritpion->description
 descrptor->descriptor
 desctiption->description
-desctructor->destructor
 desctruction->destruction
+desctructor->destructor
 descuss->discuss
 desgined->designed
 deside->decide
@@ -2671,13 +2671,12 @@ inheritence->inheritance
 inifinite->infinite
 inital->initial
 initalise->initialise
-initalize->initialize
 initalising->initialising
-initalizing->initializing
 initalization->initialization
 initalize->initialize
 initalized->initialized
 initalizer->initializer
+initalizing->initializing
 initally->initially
 initation->initiation
 initiaitive->initiative
