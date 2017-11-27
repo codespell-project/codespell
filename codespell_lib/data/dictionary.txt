@@ -24,6 +24,7 @@ absailing->abseiling
 absance->absence
 abscence->absence
 abselutely->absolutely
+abselutly->absolutely
 absense->absence
 absolutly->absolutely
 absorbsion->absorption
@@ -71,7 +72,7 @@ accompagnied->accompanied
 accompanyed->accompanied
 accordeon->accordion
 accordian->accordion
-accoring->according
+accoring->according, occurring,
 accoustic->acoustic
 accquainted->acquainted
 accrediation->accreditation
@@ -79,6 +80,7 @@ accredidation->accreditation
 accross->across
 accussed->accused
 acedemic->academic
+aceptable->acceptable
 acerage->acreage
 acess->access
 acheive->achieve
@@ -518,6 +520,7 @@ assignalble->assignable
 assignement->assignment
 assignemnt->assignment
 assignend->assigned
+assignes->assigns
 assisnate->assassinate
 assit->assist
 assitant->assistant
@@ -693,6 +696,7 @@ beseiging->besieging
 beteen->between
 bettery->better
 betwen->between
+bever->never
 bevore->before
 beween->between
 bewteen->between
@@ -765,6 +769,8 @@ calaber->caliber
 calander->calendar, calender, colander,
 calcualte->calculate
 calcualting->calculating
+calculatable->calculatable, calculable,
+calculatble->calculatable, calculable,
 calculater->calculator
 calculs->calculus
 calender->calendar
@@ -1304,6 +1310,8 @@ corerctly->correctly
 coresponding->corresponding
 coridal->cordial
 cornmitted->committed
+corordinate->coordinate
+corordinates->coordinates
 corosbonding->corresponding
 corosion->corrosion
 corparate->corporate
@@ -1739,6 +1747,7 @@ droppend->dropped
 druming->drumming
 drummless->drumless
 dstination->destination
+dublicate->duplicate
 dulicate->duplicate
 dum->dumb
 dupicate->duplicate
@@ -1786,6 +1795,7 @@ electricty->electricity
 elegible->eligible
 elemenet->element
 elemenets->elements
+elemens->elements
 elementay->elementary
 elemente->element, elements,
 elemetn->element
@@ -2389,6 +2399,7 @@ healthercare->healthcare
 heared->heard
 heathy->healthy
 Heidelburg->Heidelberg
+heigest->highest
 heigher->higher
 heirachies->hierarchies
 heirarchy->hierarchy
@@ -2797,6 +2808,7 @@ introdued->introduced
 introsepection->introspection
 intruction->instruction
 intruduced->introduced
+intruducing->introducing
 intrument->instrument
 intrumental->instrumental
 intruments->instruments
@@ -3333,6 +3345,7 @@ nusance->nuisance
 nutritent->nutrient
 nutritents->nutrients
 nuturing->nurturing
+obect->object
 obediance->obedience
 obediant->obedient
 obession->obsession
@@ -3558,6 +3571,7 @@ pasengers->passengers
 pass-thru->pass-through, pass through, passthrough,
 pass-trough->pass-through, pass through, passthrough,
 passerbys->passersby
+passiv->passive
 passtime->pasttime
 pasteing->pasting
 pasttime->pastime
@@ -3920,6 +3934,7 @@ profilic->prolific
 progessed->progressed
 progidy->prodigy
 programable->programmable
+programm->program
 programms->programs
 progrom->pogrom, program,
 progroms->pogroms, programs,
@@ -4561,6 +4576,7 @@ slighly->slightly
 slippy->slippery
 slowy->slowly
 smae->same
+smalles->smallest
 smealting->smelting
 smoe->some
 sneeks->sneaks
@@ -4631,6 +4647,7 @@ spectum->spectrum
 speices->species
 spendour->splendour
 spermatozoan->spermatozoon
+spezialisation->specialization
 spezified->specified
 spoace->space
 sponser->sponsor
