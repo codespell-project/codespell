@@ -923,6 +923,7 @@ charistics->characteristics
 chasr->chaser, chase,
 checg->check
 checged->checked
+checkes->checks
 checkum->checksum
 checkums->checksums
 cheif->chief
@@ -1137,6 +1138,8 @@ compresion->compression
 comprimise->compromise
 compulsary->compulsory
 compulsery->compulsory
+compund->compound
+compunds->compounds
 computarized->computerized
 conainted->contained
 conatining->containing
@@ -1344,6 +1347,8 @@ coucil->council
 coudl->could, cloud,
 couldnt->couldn't
 coult->could
+coumpound->compound
+coumpounds->compounds
 councellor->councillor, counselor, councilor,
 councellors->councillors, counselors, councilors,
 counries->countries
@@ -1462,11 +1467,14 @@ definance->defiance
 definate->definite
 definately->definitely
 definatly->definitely
+defind->defined, defund,
+definded->defined, defunded,
 definetly->definitely
 definining->defining
 definit->definite
 definitly->definitely
 definiton->definition
+defins->defines
 defintion->definition
 defninition->definition
 defninitions->definitions
@@ -1874,6 +1882,7 @@ endianess->endianness
 endig->ending
 endolithes->endoliths
 enduce->induce
+eneables->enables
 ened->need
 enflamed->inflamed
 enforceing->enforcing
@@ -3198,6 +3207,7 @@ modell->model
 moderm->modem
 modifed->modified
 modle->model
+modue->module
 moduel->module
 moduels->modules
 moent->moment
@@ -3494,6 +3504,7 @@ originall->original, originally,
 originaly->originally
 originially->originally
 originnally->originally
+origion->origin
 origional->original
 orignally->originally
 orignially->originally
@@ -3978,6 +3989,10 @@ propertise->properties
 propertys->properties
 propery->property, properly
 propeties->properties
+propetry->property
+propetrys->properties
+propety->property
+propetys->properties
 prophacy->prophecy
 propietary->proprietary
 propigation->propagation
@@ -4198,7 +4213,9 @@ refridgerator->refrigerator
 refromist->reformist
 refusla->refusal
 regardes->regards
+registerd->registered
 registeres->registers
+registert->registered
 registrs->registers
 regluar->regular
 regon->region
@@ -4285,7 +4302,10 @@ represantative->representative
 representiative->representative
 representive->representative
 representives->representatives
+represnt->represent
 represnted->represented
+represnts->representative
+represntative->representative
 reprociblbe->reproducible
 reproducabely->reproducibly
 reproducable->reproducible
@@ -4436,6 +4456,8 @@ santioned->sanctioned
 sargant->sergeant
 sargeant->sergeant
 sasy->says, sassy,
+satandard->standard
+satandards->standards
 satelite->satellite
 satelites->satellites
 Saterday->Saturday
@@ -4517,6 +4539,7 @@ sepulcre->sepulchre, sepulcher,
 serach->search
 sergent->sergeant
 seriuos->serious
+seting->setting
 setted->set
 settelement->settlement
 settlment->settlement
@@ -4689,6 +4712,7 @@ staion->station
 standar->standard
 standars->standards
 standart->standard
+standarts->standards
 stange->strange
 startegic->strategic
 startegies->strategies
@@ -5021,6 +5045,7 @@ thta->that
 thyat->that
 tiem->time, item,
 tiemstamp->timestamp
+tightely->tightly
 tigthly->tightly
 tihkn->think
 tihs->this
