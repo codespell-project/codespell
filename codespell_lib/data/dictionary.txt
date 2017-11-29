@@ -940,6 +940,7 @@ chemicaly->chemically
 childbird->childbirth
 childen->children
 childs->children, child's,
+chooose->choose
 choosed->chose, chosen,
 choosen->chosen
 chould->should, could,
@@ -1137,6 +1138,7 @@ comprimise->compromise
 compulsary->compulsory
 compulsery->compulsory
 computarized->computerized
+conainted->contained
 conatining->containing
 conceed->concede
 concensus->consensus
@@ -1243,6 +1245,7 @@ consumated->consummated
 contaiminate->contaminate
 containes->contains
 containt->contain, content,
+containted->contained
 containts->contains
 contamporaries->contemporaries
 contamporary->contemporary
@@ -1355,6 +1358,7 @@ cpoy->coy, copy,
 crashs->crashes
 creaeted->created
 creat->create
+creats->creates
 creche->crèche
 creedence->credence
 critcial->critical
@@ -1498,6 +1502,7 @@ depency->dependency
 dependance->dependence
 dependancies->dependencies
 dependancy->dependency
+dependand->dependent
 dependant->dependent
 dependecies->dependencies
 dependencis->dependencies
@@ -1746,6 +1751,7 @@ dreasm->dreams
 driectly->directly
 drnik->drink
 droped->dropped
+droping->dropping
 droppend->dropped
 druming->drumming
 drummless->drumless
@@ -2275,8 +2281,11 @@ geometricians->geometers
 geometrie->geometry
 geometrys->geometries
 geomitrically->geometrically
+geomtry->geometry
+geomtrys->geometries
 gerat->great
 german->German
+gess->guess
 get's->gets
 gettetx->gettext
 Ghandi->Gandhi
@@ -2563,6 +2572,7 @@ impliment->implement
 implimented->implemented
 imploys->employs
 importamt->important
+imposible->impossible
 impovements->improvements
 impresive->impressive
 impressario->impresario
@@ -2916,6 +2926,7 @@ leibnitz->leibniz
 lengh->length
 lenght->length
 leniant->lenient
+lentgh->length
 lenth->length
 leran->learn
 lerans->learns
@@ -3489,6 +3500,7 @@ orignially->originally
 ot->to
 otehr->other
 otherwice->otherwise
+otherwize->otherwise
 othewise->otherwise
 oublisher->publisher
 ouevre->oeuvre
@@ -3763,6 +3775,7 @@ posesses->possesses
 posessing->possessing
 posession->possession
 posessions->possessions
+posible->possible
 posion->poison
 positionn->position
 positionned->positioned
@@ -5339,6 +5352,7 @@ waring->warning
 warnig->warning
 warrent->warrant
 warrriors->warriors
+was occured->has occurred
 was occurred->has occurred
 was't->wasn't
 wasn->wasn't, was,
@@ -5418,6 +5432,7 @@ worstened->worsened
 woud->would
 woudl->would
 wouldnt->wouldn't
+wraped->wrapped
 wresters->wrestlers
 wriet->write
 writen->written
