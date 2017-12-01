@@ -1400,7 +1400,8 @@ currenly->currently
 curriculem->curriculum
 currnt->current
 currntly->currently
-custome->custom
+custome->custom, costume,
+cutom->custom 
 cxan->cyan
 cyclinder->cylinder
 dacquiri->daiquiri
@@ -1464,6 +1465,7 @@ deffensively->defensively
 deffered->deferred
 deffine->define
 deffined->defined
+deffinitively->definitively
 definance->defiance
 definate->definite
 definately->definitely
