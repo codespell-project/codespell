@@ -917,8 +917,12 @@ charactersistic->characteristic
 charactor->character
 charactors->characters
 charasmatic->charismatic
+charaterize->characterize
 charaterized->characterized
+charcter->character
 charcters->characters
+charicter->character
+charicters->characters
 chariman->chairman
 charistics->characteristics
 chasr->chaser, chase,
@@ -997,6 +1001,8 @@ co-incided->coincided
 Coca Cola->Coca-Cola
 coctail->cocktail
 codespel->codespell
+coefficent->coefficient
+coefficents->coefficients 
 coform->conform
 cognizent->cognizant
 coincedentally->coincidentally
@@ -1777,6 +1783,8 @@ durring->during
 duting->during
 dyas->dryas
 dynamicaly->dynamically
+eacf->each
+eacg->each
 eahc->each
 ealier->earlier
 earlies->earliest
@@ -2383,6 +2391,7 @@ gutteral->guttural
 habaeus->habeas
 habeus->habeas
 Habsbourg->Habsburg
+hach->hatch, hack, hash,
 hadling->handling
 haemorrage->haemorrhage
 haev->have, heave,
@@ -2685,6 +2694,8 @@ indpendently->independently
 indulgue->indulge
 indutrial->industrial
 indviduals->individuals
+inefficent->inefficient
+inefficenty->inefficiently
 inefficienty->inefficiently
 inevatible->inevitable
 inevitible->inevitable
@@ -2874,6 +2885,7 @@ isnt->isn't
 Israelies->Israelis
 isssue->issue
 issueing->issuing
+ith->with
 itnernal->internal
 itnroduced->introduced
 itterations->iterations
@@ -3446,6 +3458,8 @@ officals->officials
 officaly->officially
 officialy->officially
 offred->offered
+offseting->offsetting
+offsett->offset
 ofo->of
 oftenly->often
 oging->going, ogling,
@@ -3519,9 +3533,18 @@ orignally->originally
 orignially->originally
 ot->to
 otehr->other
+otehrwice->otherwise
+otehrwise->otherwise
+otehrwize->otherwise
+oter->other, otter
+oterwice->otherwise
+oterwise->otherwise
+oterwize->otherwise
 otherwice->otherwise
 otherwize->otherwise
+othewice->otherwise
 othewise->otherwise
+othewize->otherwise
 oublisher->publisher
 ouevre->oeuvre
 ouput->output
@@ -3757,6 +3780,7 @@ poenis->penis
 poeoples->peoples
 poety->poetry
 poisin->poison
+poitn->point
 polical->political
 polinator->pollinator
 polinators->pollinators
@@ -3768,6 +3792,7 @@ poluted->polluted
 polutes->pollutes
 poluting->polluting
 polution->pollution
+polygond->polygons
 polyphonyic->polyphonic
 polysaccaride->polysaccharide
 polysaccharid->polysaccharide
@@ -5014,7 +5039,7 @@ therefor->therefore, therefor,
 therfore->therefore
 theri->their
 theshold->threshold
-thether->whether
+thether->tether, whether,
 thev->the
 theyre->they're,
 thgat->that
@@ -5417,6 +5442,7 @@ whenver->whenever
 wheras->whereas
 wherease->whereas
 whereever->wherever
+wheter->whether
 whic->which
 whichs->which's
 whihc->which
