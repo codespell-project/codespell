@@ -2194,6 +2194,7 @@ flourescent->fluorescent
 flourine->fluorine
 flourishment->flourishing
 fluorish->flourish
+folling->following, falling, 
 followin->following
 follwoing->following
 folowing->following
@@ -2431,6 +2432,7 @@ hasnt->hasn't
 Hatian->Haitian
 havent'->haven't
 havent->haven't
+havew->have
 haviest->heaviest
 havnt->haven't
 hazzle->hassle
@@ -3119,6 +3121,7 @@ meaninful->meaningful
 meaningfull->meaningful
 meaninng->meaning
 mear->wear, mere, mare,
+measurment->measurement
 meatadata->metadata
 meber->member
 mechandise->merchandise
@@ -3150,6 +3153,9 @@ messenging->messaging
 messge->message
 messsage->message
 mesure->measure
+mesured->measured
+mesuring->measuring
+mesurment->measurement
 metalic->metallic
 metalurgic->metallurgic
 metalurgical->metallurgical
@@ -3569,6 +3575,10 @@ overrided->overridden
 overriden->overridden
 overshaddowed->overshadowed
 overthere->over there
+overvise->otherwise
+overvize->otherwise
+overwise->otherwise
+overwize->otherwise
 overwelming->overwhelming
 overwheliming->overwhelming
 owrk->work
@@ -3906,6 +3916,8 @@ premeired->premiered
 premillenial->premillennial
 preminence->preeminence
 premission->permission
+premit->permit
+premits->permits
 Premonasterians->Premonstratensians
 preocupation->preoccupation
 prepair->prepare
@@ -4733,6 +4745,7 @@ spendour->splendour
 spermatozoan->spermatozoon
 spezialisation->specialization
 spezified->specified
+splitted->split
 spoace->space
 sponser->sponsor
 sponsered->sponsored
@@ -5503,9 +5516,9 @@ worstened->worsened
 woud->would
 woudl->would
 wouldnt->wouldn't
-wraped->wrapped
+wraped->wrapped, warped,
 wraper->wrapper
-wraping->wrapping
+wraping->wrapping, warping
 wrapp->wrap
 wrapps->wraps
 wresters->wrestlers
