@@ -242,8 +242,9 @@ def test_encoding(tmpdir, capsys):
             f.write(b'\x00\x00naiive\x00\x00')
         capsys.readouterr()
         assert cs.main(f.name) == 0
+        assert capsys.readouterr() == ('', '')
+        assert cs.main('-q', '0', f.name) == 0
         assert 'WARNING: Binary file' in capsys.readouterr()[1]
-        assert cs.main('-q', '2', f.name) == 0
         assert capsys.readouterr() == ('', '')
     finally:
         os.remove(f.name)

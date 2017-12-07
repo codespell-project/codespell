@@ -281,12 +281,11 @@ def parse_options(args):
                              'is available. 3: both 1 and 2')
 
     parser.add_argument('-q', '--quiet-level',
-                        action='store', type=int, default=0,
+                        action='store', type=int, default=2,
                         help='Bitmask that allows codespell to run quietly. '
-                             '0: the default, in which all messages are '
-                             'printed. 1: disable warnings about wrong '
-                             'encoding. 2: disable warnings about binary '
-                             'file. 4: shut down warnings about automatic '
+                             '0: print all messages. 1: disable warnings about'
+                             ' wrong encoding. 2: disable warnings about '
+                             'binary files. 4: omit warnings about automatic '
                              'fixes that were disabled in dictionary. '
                              '8: don\'t print anything for non-automatic '
                              'fixes. 16: don\'t print fixed files.')
