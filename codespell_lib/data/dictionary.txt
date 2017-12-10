@@ -1002,6 +1002,7 @@ clinicaly->clinically
 cloack->cloak
 cloacks->cloaks
 clos->close
+cmak->cmake
 cmo->com, disabled due to lots of false positives
 cmoputer->computer
 cna->can
@@ -1541,8 +1542,14 @@ deram->dram, dream,
 derectory->directory
 derefencing->dereferencing
 derivaties->derivatives
+derivativ->derivative
+derivativs->derivatives
 deriviated->derived
 derivitive->derivative
+derivitives->derivatives
+derivitivs->derivatives
+derivtive->derivative
+derivtives->derivatives
 derogitory->derogatory
 derprecated->deprecated
 desactivate->deactivate
@@ -2235,6 +2242,8 @@ forunner->forerunner
 foucs->focus
 foudn->found
 fougth->fought
+foult->fault
+foults->faults
 foundaries->foundries
 foundary->foundry
 Foundland->Newfoundland
@@ -4611,6 +4620,9 @@ serach->search
 sergent->sergeant
 seriuos->serious
 seting->setting
+setings->settings
+setitng->setting
+setitngs->settings
 setted->set
 settelement->settlement
 settlment->settlement
