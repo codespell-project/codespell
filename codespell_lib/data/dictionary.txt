@@ -2138,6 +2138,9 @@ extreem->extreme
 extrememly->extremely
 extremeophile->extremophile
 extremly->extremely
+extrime->extreme
+extrimely->extremely
+extrimly->extremely
 extrordinarily->extraordinarily
 extrordinary->extraordinary
 eyar->year, eyas,
@@ -2810,6 +2813,10 @@ installe->installer, installed, install,
 instanciate->instantiate
 instanciated->instantiated
 instanciation->instantiation
+instansiate->instantiate
+instansiates->instantiates
+instansiated->instantiated
+instansiation->instantiation
 instatance->instance
 instert->insert
 insterted->inserted
@@ -2829,12 +2836,20 @@ intenational->international
 intendet->intended
 intented->intended, indented,
 intepretation->interpretation
-intepretator->interpretor
+intepretator->interpreter
+intepretators->interpreters
 intepreter->interpreter
+intepreters->interpreters
+intepretor->interpreter
+intepretors->interpreters
 interacsion->interaction
+interacsions->interactions
 interactionn->interaction
+interactionns->interactions
 interal->internal, integral,
 interational->international
+interation->iteration, interaction,
+interations->iterations, interactions,
 interbread->interbreed, interbred,
 interchangable->interchangeable
 interchangably->interchangeably
@@ -3694,6 +3709,7 @@ pedestrain->pedestrian
 pedning->pending
 peformed->performed
 peice->piece
+peicewise->piecewise
 Peloponnes->Peloponnesus
 penatly->penalty
 penerator->penetrator
@@ -4649,6 +4665,7 @@ shoild->should
 shopkeeepers->shopkeepers
 shorly->shortly
 shortwhile->short while
+shoucl->should
 shoudl->should
 shoudln->should, shouldn't,
 shouldnt'->shouldn't
@@ -5081,6 +5098,9 @@ thats->that's
 theather->theater
 theese->these
 theif->thief
+theifs->thieves
+theiv->thief, they've,
+theive->thief
 theives->thieves
 themselfs->themselves
 themslves->themselves
@@ -5089,11 +5109,13 @@ therafter->thereafter
 therby->thereby
 therefor->therefore, therefor,
 therfore->therefore
-theri->their
+theri->their, there,
 theshold->threshold
+thes->this, these,
+thess->this, these,
 thether->tether, whether,
 thev->the
-theyre->they're,
+theyre->they're
 thgat->that
 thge->the
 thier->their
@@ -5208,6 +5230,7 @@ trasnaction->transaction
 tremelo->tremolo
 tremelos->tremolos
 treshold->threshold
+trianglular->triangular
 triggerd->triggered
 triguered->triggered
 triology->trilogy
