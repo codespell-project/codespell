@@ -33,6 +33,7 @@ absorbtion->absorption
 absoulute->absolute
 absymal->abysmal
 abudance->abundance
+abudances->abundances
 abundacies->abundances
 abundancies->abundances
 abundand->abundant
@@ -2524,7 +2525,11 @@ homogeneized->homogenized
 honory->honorary
 hoook->hook
 hoooks->hooks
+hopefull->hopeful
 hopefuly->hopefully
+hopful->hopeful
+hopfull->hopeful
+hopfully->hopefully
 hoppefully->hopefully
 horphan->orphan
 horrifing->horrifying
@@ -3081,6 +3086,7 @@ mackeral->mackerel
 maco->macro
 macpakge->package
 macrow->macro
+maddness->madness
 magasine->magazine
 magincian->magician
 magisine->magazine
@@ -3583,7 +3589,7 @@ origion->origin
 origional->original
 orignally->originally
 orignially->originally
-ot->to
+ot->to, of,
 otehr->other
 otehrwice->otherwise
 otehrwise->otherwise
@@ -3780,6 +3786,8 @@ pertubation->perturbation
 pertubations->perturbations
 pessiary->pessary
 petetion->petition
+pevent->prevent
+pevents->prevents
 Pharoah->Pharaoh
 phenomenom->phenomenon
 phenomenonal->phenomenal
