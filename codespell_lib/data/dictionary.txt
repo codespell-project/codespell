@@ -969,8 +969,11 @@ chracters->characters
 chuch->church
 churchs->churches
 cicrle->circle
+cilinder->cylinder
+cilinders->cylinders
 cilyndre->cylinder
 cilyndres->cylinders
+cilyndrs->cylinders
 Cincinatti->Cincinnati
 Cincinnatti->Cincinnati
 circulaton->circulation
@@ -1428,6 +1431,9 @@ custome->custom, costume,
 cutom->custom 
 cxan->cyan
 cyclinder->cylinder
+cyclinders->cylinders
+cylnder->cylinder
+cylnders->cylinders
 dacquiri->daiquiri
 daed->dead
 dael->deal, dial, dahl,
@@ -3608,7 +3614,7 @@ origion->origin
 origional->original
 orignally->originally
 orignially->originally
-ot->to, of,
+ot->to, of, or,
 otehr->other
 otehrwice->otherwise
 otehrwise->otherwise
