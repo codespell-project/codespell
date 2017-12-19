@@ -805,6 +805,7 @@ campagin->campaign
 campain->campaign
 campaing->campaign
 campains->campaigns
+can;t->can't
 cancelation->cancellation
 candadate->candidate
 candiate->candidate
@@ -818,9 +819,8 @@ cannonicalize->canonicalize
 cannotation->connotation
 cannotations->connotations
 cant'->can't
-cant;->can't
 cant->can't
-can;t->can't
+cant;->can't
 caost->coast
 caperbility->capability
 Capetown->Cape Town
@@ -1370,10 +1370,10 @@ costitution->constitution
 cotrol->control
 coucil->council
 coudl->could, cloud,
-couldnt'->couldn't
-couldnt;->couldn't
-couldnt->couldn't
 couldn;t->couldn't
+couldnt'->couldn't
+couldnt->couldn't
+couldnt;->couldn't
 coult->could
 coumpound->compound
 coumpounds->compounds
@@ -1647,10 +1647,10 @@ dicovery->discovery
 dictionarys->dictionaries
 dictionnary->dictionary
 dicussed->discussed
-didnt'->didn't
-didnt;->didn't
 didn;t->didn't
+didnt'->didn't
 didnt->didn't
+didnt;->didn't
 diea->idea, die,
 dieing->dying, dyeing,
 dieties->deities
@@ -1771,11 +1771,11 @@ documemt->document
 documenatry->documentary
 documetnation->documentation
 doens->does
-doesnt'->doesn't
-doesnt;->doesn't
-doesnt->doesn't
-doesn;t->doesn't
 does't->doesn't
+doesn;t->doesn't
+doesnt'->doesn't
+doesnt->doesn't
+doesnt;->doesn't
 doign->doing
 domension->dimension
 domensions->dimensions
@@ -2469,13 +2469,13 @@ harrasses->harassed
 harrassing->harassing
 harrassment->harassment
 harrassments->harassments
+hasn;t->hasn't
 hasnt'->hasn't
 hasnt->hasn't
-hasn;t->hasn't
 Hatian->Haitian
+haven;t->haven't
 havent'->haven't
 havent->haven't
-haven;t->haven't
 havew->have
 haviest->heaviest
 havnt->haven't
@@ -2842,8 +2842,8 @@ instanciate->instantiate
 instanciated->instantiated
 instanciation->instantiation
 instansiate->instantiate
-instansiates->instantiates
 instansiated->instantiated
+instansiates->instantiates
 instansiation->instantiation
 instatance->instance
 instert->insert
@@ -2875,8 +2875,8 @@ interacsions->interactions
 interactionn->interaction
 interactionns->interactions
 interal->internal, integral,
-interational->international
 interation->iteration, interaction,
+interational->international
 interations->iterations, interactions,
 interbread->interbreed, interbred,
 interchangable->interchangeable
@@ -2952,8 +2952,8 @@ irresistable->irresistible
 irresistably->irresistibly
 isn;t->isn't
 isnt'->isn't
-isnt;->isn't
 isnt->isn't
+isnt;->isn't
 Israelies->Israelis
 isssue->issue
 issueing->issuing
@@ -4707,8 +4707,8 @@ shoudl->should
 shoudln->should, shouldn't,
 shouldn;t->shouldn't
 shouldnt'->shouldn't
-shouldnt;->shouldn't
 shouldnt->shouldn't
+shouldnt;->shouldn't
 shouls->should
 shreak->shriek
 shrinked->shrunk
@@ -5134,8 +5134,8 @@ tghe->the
 thant->than
 thast->that, that's,
 that;s->that's
-thats->that's
 thats'->that's
+thats->that's
 thats;->that's
 theather->theater
 theese->these
@@ -5152,8 +5152,8 @@ therby->thereby
 therefor->therefore, therefor,
 therfore->therefore
 theri->their, there,
-theshold->threshold
 thes->this, these,
+theshold->threshold
 thess->this, these,
 thether->tether, whether,
 thev->the
@@ -5523,6 +5523,7 @@ vulnerablility->vulnerability
 vyer->very
 vyre->very
 waht->what
+wan;t->wasn't
 wanna->want to, disabled because one might want to allow informal spelling
 warantee->warranty
 wardobe->wardrobe
@@ -5533,12 +5534,11 @@ warrriors->warriors
 was occured->has occurred
 was occurred->has occurred
 was't->wasn't
-wan;t->wasn't
 wasn->wasn't, was,
 wasn;t->wasn't
 wasnt'->wasn't
-wasnt;->wasn't
 wasnt->wasn't
+wasnt;->wasn't
 wass->was
 watn->want
 wayword->wayward
@@ -5615,9 +5615,9 @@ worls->world
 worstened->worsened
 woud->would
 woudl->would
-wouldnt->wouldn't
 wouldn;t->wouldn't
 wouldnt'->wouldn't
+wouldnt->wouldn't
 wouldnt;->wouldn't
 wraped->wrapped, warped,
 wraper->wrapper
