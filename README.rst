@@ -28,8 +28,6 @@ You can use ``pip`` to install codespell with e.g.::
 
     pip install codespell
 
-**Note:** that upon installation with "make install" we don't have the "py" suffix.
-
 Usage
 -----
 
