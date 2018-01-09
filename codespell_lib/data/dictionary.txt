@@ -5765,16 +5765,30 @@ vaccum->vacuum
 vaccume->vacuum
 vacinity->vicinity
 vaguaries->vagaries
+vaiable->variable
+vaiables->variables
 vaieties->varieties
+vaild->valid
 vailidty->validity
 valetta->valletta
+validing->validating
+valied->valid
+valu->value
 valuble->valuable
 valueable->valuable
+varable->variable
 varables->variables
 varaiance->variance
 varaible->variable
+varaibles->variables
 varations->variations
+variabe->variable
+variabel->variable
 variabele->variable
+variabes->variables
+variantions->variations
+varibale->variable
+varibales->variables
 varient->variant
 variey->variety
 varified->verified
@@ -5784,7 +5798,13 @@ varity->variety
 varius->various
 vasall->vassal
 vasalls->vassals
+vaule->value
+vauled->valued
+vaules->values
+vauling->valuing
 vebrose->verbose
+vecotr->vector
+vecotrs->vectors
 vectores->vectors
 vegatarian->vegetarian
 vegitable->vegetable
@@ -5796,19 +5816,37 @@ vell->well
 venemous->venomous
 vengance->vengeance
 vengence->vengeance
+verbse->verbose
 verfication->verification
 verifty->verify
 veriftying->verifying
 verifyied->verified
+verion->version
+verions->versions
+verious->various
 verison->version
 verisons->versions
+veritical->vertical
 vermillion->vermilion
+verry->very
+versionned->versioned
+versionning->versioning
 versitilaty->versatility
 versitlity->versatility
+verson->version
+versoned->versioned
+versons->versions
+vertexes->vertices
+verticaly->vertically
 verticies->vertices
 vertikal->vertical
+veryified->verified
+veryifies->verifies
+veryify->verify
+veryifying->verifying
 vetween->between
 veyr->very
+vicefersa->vice-versa
 vietnamesea->Vietnamese
 vigeur->vigueur, vigour, vigor,
 vigilence->vigilance
@@ -5828,9 +5866,12 @@ visable->visible
 visably->visibly
 visibile->visible
 visious->vicious
+visiter->visitor
+visiters->visitors
 visting->visiting
 vistors->visitors
 vitories->victories
+vitual->virtual
 volcanoe->volcano
 voleyball->volleyball
 volontary->voluntary
@@ -5850,9 +5891,14 @@ vulnerablility->vulnerability
 vyer->very
 vyre->very
 waht->what
-wan;t->wasn't
+wan't->want, wasn't
+wan;t->want, wasn't 
 wanna->want to, disabled because one might want to allow informal spelling
+want's->wants
+want;s->wants
 warantee->warranty
+waranties->warranties
+waranty->warranty
 wardobe->wardrobe
 waring->warning
 warnig->warning
@@ -5860,12 +5906,14 @@ warrent->warrant
 warrriors->warriors
 was occured->has occurred
 was occurred->has occurred
+was'nt->wasn't
 was't->wasn't
+was;t->wasn't
 wasn->wasn't, was,
 wasn;t->wasn't
 wasnt'->wasn't
-wasnt->wasn't
 wasnt;->wasn't
+wasnt->wasn't
 wass->was
 watn->want
 wayword->wayward
@@ -5873,16 +5921,22 @@ weaponary->weaponry
 weas->was
 wege->wedge
 wehn->when
+weigth->weight
 weild->wield, wild,
 weilded->wielded
+weill->will
+weired->weird
 wendsay->Wednesday
 wensday->Wednesday
+were'nt->wasn't
 wereabouts->whereabouts
 wereas->whereas
+werent->weren't
 werever->wherever
 wether->whether
 whant->want
 whants->wants
+whataver->whatever
 whcih->which
 whe->when
 wheigh->weigh
@@ -5891,12 +5945,16 @@ wheras->whereas
 wherease->whereas
 whereever->wherever
 wheter->whether
+whethe->whether
 whic->which
 which;s->which's
 whichs->which's
 whihc->which
 whiped->wiped
+whish->wish
+whitch->which
 whith->with
+whithout->without
 whlch->which
 whn->when
 wholey->wholly
@@ -5905,30 +5963,42 @@ whta->what
 whther->whether
 wich->which
 widesread->widespread
+widht->width
 wief->wife
 wierd->weird
 wiew->view
 wih->with
+wihout->without
 wiht->with
+wiil->will
 wil->will
+wilcard->wildcard
+wilcards->wildcards
 wille->will
 willingless->willingness
 willk->will
+willl->will
 winn->win
 wipoing->wiping
+wirte->write
+wirtes->writes
 wirting->writing
 withdrawl->withdrawal, withdraw,
+withe->with
 witheld->withheld
 withh->with
 withing->within
 withold->withhold
 withs->with, widths,
 witht->with
+withthe->with the
 witin->within
 witn->with
 wiull->will
+wll->will
 wnat->want
 wnated->wanted
+wnating->wanting
 wnats->wants
 wohle->whole
 wokr->work
@@ -5936,15 +6006,19 @@ wokring->working
 wonderfull->wonderful
 wont->won't, wont,
 wordlwide->worldwide
+workaroung->workaround
 workes->works
 workststion->workstation
 worls->world
 worstened->worsened
 woud->would
 woudl->would
+woudn't->wouldn't
+would'nt->wouldn't
+would't->wouldn't
+wouldnt->wouldn't
 wouldn;t->wouldn't
 wouldnt'->wouldn't
-wouldnt->wouldn't
 wouldnt;->wouldn't
 wraped->wrapped, warped,
 wraper->wrapper
@@ -5953,10 +6027,13 @@ wrapp->wrap
 wrapps->wraps
 wresters->wrestlers
 wriet->write
+writeing->writing
 writen->written
+writting->writing
 wroet->wrote
 wrok->work
 wroking->working
+wth->with
 wtih->with
 wupport->support
 xenophoby->xenophobia
@@ -5969,7 +6046,13 @@ yatch->yacht
 yearm->year
 yeasr->years
 yeild->yield
+yeilded->yielded
 yeilding->yielding
+yeilds->yields
+yeld->yield
+yelded->yielded
+yelding->yielding
+yelds->yields
 Yementite->Yemenite, Yemeni,
 yera->year
 yeras->years
@@ -5980,5 +6063,6 @@ youself->yourself
 yrea->year
 ytou->you
 yuo->you
+yur->your
 zeebra->zebra
 zoon->zoom, zoon,
