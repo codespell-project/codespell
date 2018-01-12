@@ -58,6 +58,7 @@ abutts->abuts
 acadamy->academy
 acadimy->academy
 acadmic->academic
+acale->scale
 accademic->academic
 accademy->academy
 accapt->accept
@@ -1042,11 +1043,25 @@ behavoirs->behaviors
 behavour->behavior
 beleagured->beleaguered
 beleif->belief
+beleife->belief, believe,
+beleifed->believed
+beleifes->beliefs, believes,
+beleifing->believing
+beleifable->believable
+beleiv->believe, belief,
+beleivable->believable
 beleive->believe
 beleived->believed
 beleives->believes
 beleiving->believing
+beliefable->believable
+beliefe->believe, belief,
+beliefed->believed
+beliefes->beliefs, believes
+beliefing->believing
 beligum->belgium
+beliv->believe, belief,
+belivable->believable
 belive->believe
 belived->believed, beloved,
 belives->believes, beliefs,
@@ -1086,6 +1101,10 @@ blaimed->blamed
 blessure->blessing
 blindy->blindly
 Blitzkreig->Blitzkrieg
+bload->bloat
+bloaded->bloated
+bloted->bloated
+blohted->bloated
 boaut->bout, boat, about,
 bodydbuilder->bodybuilder
 bofore->before
@@ -2361,19 +2380,25 @@ depdendencies->dependencies
 depdendency->dependency
 depedencies->dependencies
 depedency->dependency
+depedencys->dependencies
 depencies->dependencies
 depency->dependency
 dependance->dependence
 dependancies->dependencies
 dependancy->dependency
+dependancys->dependencies
 dependand->dependent
 dependant->dependent
 dependecies->dependencies
 dependecy->dependency
+dependecys->dependencies
 dependencis->dependencies
+dependencys->dependencies
 dependend->dependent, depended,
 depenencies->dependencies
+depenencis->dependencies
 depenency->dependency
+depenencys->dependencies
 deployement->deployment
 depreacte->deprecate
 depracated->deprecated
@@ -3877,6 +3902,7 @@ harrasses->harassed
 harrassing->harassing
 harrassment->harassment
 harrassments->harassments
+hart->heart, harm,
 harware->hardware
 has'nt->hasn't
 hasnt'->hasn't
@@ -8287,7 +8313,10 @@ unavailabel->unavailable
 unavailible->unavailable
 unballance->unbalance
 unbeknowst->unbeknownst
+unbeleifable->unbelievable
 unbeleivable->unbelievable
+unbeliefable->unbelievable
+unbelivable->unbelievable
 uncertainities->uncertainties
 uncertainity->uncertainty
 unchaged->unchanged
