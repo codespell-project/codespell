@@ -471,7 +471,7 @@ alraedy->already
 alreay->already
 alreayd->already
 als->also
-alse->also, else
+alse->also, else,
 alsot->also
 alterative->alternative
 alteratives->alternatives
@@ -513,7 +513,7 @@ amung->among
 amunition->ammunition
 an other->another
 analagous->analogous
-analises->analysis, analyses
+analises->analysis, analyses,
 analitic->analytic
 analitical->analytical
 analize->analyze
@@ -1057,7 +1057,7 @@ beleiving->believing
 beliefable->believable
 beliefe->believe, belief,
 beliefed->believed
-beliefes->beliefs, believes
+beliefes->beliefs, believes,
 beliefing->believing
 beligum->belgium
 beliv->believe, belief,
@@ -1519,7 +1519,7 @@ clasified->classified
 clasifies->classifies
 clasify->classify
 clasifying->classifying
-classe->class, classes
+classe->class, classes,
 classess->classes
 classs->class
 classses->classes
@@ -3191,7 +3191,7 @@ essense->essence
 essentail->essential
 essentailly->essentially
 essentaily->essentially
-essentiall->essential, essentially
+essentiall->essential, essentially,
 essentialy->essentially
 essentual->essential
 essentually->essentially
@@ -5718,7 +5718,7 @@ otehr->other
 otehrwice->otherwise
 otehrwise->otherwise
 otehrwize->otherwise
-oter->other, otter
+oter->other, otter,
 oterwice->otherwise
 oterwise->otherwise
 oterwize->otherwise
@@ -6217,7 +6217,7 @@ predictible->predictable
 predifined->predefined
 predomiantly->predominately
 prefectly->perfectly
-prefere->prefer, preferred
+prefere->prefer, preferred,
 prefered->preferred
 prefering->preferring
 preferrable->preferable
@@ -6424,7 +6424,7 @@ properies->properties
 propertie->property, properties,
 propertise->properties
 propertys->properties
-propery->property, properly
+propery->property, properly,
 propeties->properties
 propetry->property
 propetrys->properties
@@ -7432,7 +7432,7 @@ sitation->situation
 sitations->situations
 situtation->situation
 situtations->situations
-Sixtin->Sistine, Sixteen
+Sixtin->Sistine, Sixteen,
 Skagerak->Skagerrak
 skateing->skating
 skelton->skeleton
@@ -8520,7 +8520,7 @@ unresgisterd->unregistered
 unresgistered->unregistered
 unresgisters->unregisters
 unresonable->unreasonable
-unsed->unused, used
+unsed->unused, used,
 unselect->deselect
 unsettin->unsetting
 unsinged->unsigned
@@ -8872,7 +8872,7 @@ wouldnt->wouldn't
 wouldnt;->wouldn't
 wraped->wrapped, warped,
 wraper->wrapper
-wraping->wrapping, warping
+wraping->wrapping, warping,
 wrapp->wrap
 wrapps->wraps
 wresters->wrestlers
