@@ -1938,6 +1938,7 @@ constructred->constructed
 construt->construct
 construter->constructor
 construters->constructors
+constrution->construction
 construtor->constructor
 construtors->constructors
 consttruct->construct
@@ -2140,6 +2141,8 @@ coud->could
 coudl->could, cloud,
 coudn't->couldn't
 coudnt->couldn't
+could'nt->couldn't
+could't->couldn't
 couldn;t->couldn't
 couldnt'->couldn't
 couldnt->couldn't
@@ -2588,6 +2591,7 @@ diable->disable
 diabled->disabled
 diables->disables
 diablical->diabolical
+diabling->disabling
 diagnotic->diagnostic
 diamons->diamonds
 diangose->diagnose
@@ -2828,10 +2832,13 @@ documment->document
 documments->documents
 doens't->doesn't
 doens->does
+does'nt->doesn't
 does't->doesn't
+doesen't->doesn't
 doesn;t->doesn't
 doesnot->doesn't, does not,
 doesnt'->doesn't
+doesnt't->doesn't
 doesnt->doesn't
 doesnt;->doesn't
 doign->doing
@@ -3644,6 +3651,8 @@ fowarding->forwarding
 fowards->forwards
 fragement->fragment
 fragements->fragments
+frambuffer->framebuffer
+framebufer->framebuffer
 framwork->framework
 Fransiscan->Franciscan
 Fransiscans->Franciscans
@@ -4067,6 +4076,7 @@ howver->however
 hrough->through
 hsitorians->historians
 hstory->history
+hte->the
 hten->then, hen, the,
 htere->there, here,
 htey->they
@@ -4846,8 +4856,9 @@ konwn->known
 konws->knows
 kwno->know
 labatory->lavatory, laboratory,
-labled->labelled, labeled,
+labled->labeled, labelled,
 lables->labels
+labling->labeling, labelling,
 labour->labor
 labratory->laboratory
 laguage->language
@@ -7392,6 +7403,9 @@ shouldnt->shouldn't
 shouldnt;->shouldn't
 shoule->should
 shouls->should
+shpae->shape
+shpaes->shapes
+shpapes->shapes
 shreak->shriek
 shrinked->shrunk
 shwo->show
@@ -8444,6 +8458,8 @@ unilateraly->unilaterally
 unilatreal->unilateral
 unilatreally->unilaterally
 uninitalized->uninitialized
+uninitialze->uninitialize
+uninitialzed->uninitialized
 unintentially->unintentionally
 uninterruped->uninterrupted
 uninterupted->uninterrupted
