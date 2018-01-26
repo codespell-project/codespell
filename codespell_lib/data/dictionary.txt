@@ -277,6 +277,7 @@ aditionaly->additionally
 adjacentsy->adjacency
 adjasensy->adjacency
 adjasent->adjacent
+adjast->adjust
 admendment->amendment
 admininistrative->administrative
 adminstered->administered
@@ -2225,6 +2226,7 @@ daed->dead
 dael->deal, dial, dahl,
 dafault->default
 dafaut->default
+dake->take
 dalmation->dalmatian
 damenor->demeanor
 damge->damage
@@ -2908,6 +2910,8 @@ dumplicating->duplicating
 dupicate->duplicate
 dupliate->duplicate
 dupliates->duplicates
+duplicat->duplicate
+duplicats->duplicates
 durig->during
 durring->during
 duting->during
@@ -3300,6 +3304,7 @@ excercised->exercised
 excerciser->exerciser
 excercises->exercises
 excercising->exercising
+excetion->exception
 exchanching->exchanging
 exchangable->exchangeable
 excist->exist
@@ -4891,6 +4896,7 @@ layed->laid
 lazyness->laziness
 leage->league
 leanr->lean, learn, leaner,
+leas->least, lease,
 leathal->lethal
 leats->least
 lefted->left
@@ -4901,6 +4907,7 @@ leightweight->lightweight
 lengh->length
 lenghs->lengths
 lenght->length
+lenghten->lengthen
 lenghtening->lengthening
 lenghts->lengths
 lenghty->lengthy
@@ -7147,6 +7154,9 @@ rised->raised, rose,
 rmeove->remove
 rmeoved->removed
 rmeoves->removes
+roataion->rotation
+roatation->rotation
+roation->rotation
 Rockerfeller->Rockefeller
 rococco->rococo
 rocord->record
