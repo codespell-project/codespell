@@ -1257,7 +1257,6 @@ campagin->campaign
 campain->campaign
 campaing->campaign
 campains->campaigns
-cancelation->cancellation
 candadate->candidate
 candiate->candidate
 candidiate->candidate
@@ -2253,7 +2252,6 @@ deatching->detaching
 debain->Debian
 debateable->debatable
 debiab->Debian
-Debiab->Debian
 debians->Debian's
 debth->depth
 debths->depths
@@ -3618,8 +3616,8 @@ foppy->floppy
 forbad->forbade
 forbiden->forbidden
 foreing->foreign
-forewarded->forwarded
 foreward->foreword, forward,
+forewarded->forewarded, forwarded,
 forfiet->forfeit
 forground->foreground
 forhead->forehead
