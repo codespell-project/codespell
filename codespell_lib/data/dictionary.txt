@@ -444,6 +444,7 @@ allopones->allophones
 allowd->allowed
 allpication->application
 allready->already
+allso->also
 allthough->although
 alltime->all-time
 alltogether->altogether
@@ -634,6 +635,7 @@ appropiate->appropriate
 appropiately->appropriately
 appropraite->appropriate
 appropraitely->appropriately
+appropriatedly->appropriately
 appropriatly->appropriately
 appropriatness->appropriateness
 approproate->appropriate
@@ -1387,6 +1389,7 @@ certainity->certainty
 certficate->certificate
 certficates->certificates
 certian->certain
+certianly->certainly
 certicate->certificate
 certicates->certificates
 certifcate->certificate
@@ -2248,7 +2251,7 @@ deatches->detaches
 deatching->detaching
 debain->Debian
 debateable->debatable
-Debiab->Debian
+debiab->Debian
 debians->Debian's
 debth->depth
 debths->depths
@@ -2291,7 +2294,12 @@ decribe->describe
 decribed->described
 decribes->describes
 decribing->describing
+decription->description
+decriptions->descriptions
 decriptor->descriptor
+decriptors->descriptors
+decsriptor->descriptor
+decsriptors->descriptors
 decstiption->description
 decstiptions->descriptions
 dectect->detect
@@ -2412,12 +2420,16 @@ dependancy->dependency
 dependancys->dependencies
 dependand->dependent
 dependant->dependent
+dependcies->dependencies
+dependcy->dependency
 dependecies->dependencies
 dependecy->dependency
 dependecys->dependencies
 dependencis->dependencies
 dependencys->dependencies
 dependend->dependent, depended,
+dependncies->dependencies
+dependncy->dependency
 depenencies->dependencies
 depenencis->dependencies
 depenency->dependency
@@ -2633,6 +2645,7 @@ differenciates->differentiates
 differenciating->differentiating
 differentiatiations->differentiations
 differents->different, difference,
+differnce->difference
 differnet->different
 differnt->different
 differrent->different
@@ -3118,6 +3131,7 @@ enteties->entities
 entety->entity
 enthousiasm->enthusiasm
 enthusiatic->enthusiastic
+entireity->entirety
 entitee->entity
 entitees->entities
 entites->entities
@@ -3601,6 +3615,7 @@ forbad->forbade
 forbiden->forbidden
 foreing->foreign
 foreward->foreword, forward,
+forewarded->forewarded, forwarded,
 forfiet->forfeit
 forground->foreground
 forhead->forehead
@@ -3688,10 +3703,13 @@ fuctions->functions
 fufill->fulfill
 fufilled->fulfilled
 fulfiled->fulfilled
+fullfiled->fulfilled
+fullfiling->fulfilling
 fullfill->fulfill
 fullfilled->fulfilled
 fullfilling->fulfilling
 fullfills->fulfills
+fullfils->fulfils
 funcion->function
 funcions->functions
 funciton->function
@@ -3985,6 +4003,7 @@ heiroglyphics->hieroglyphics
 hel->help, hell, heal,
 helment->helmet
 helpfull->helpful
+helpfuly->helpfully
 helpped->helped
 hemmorhage->hemorrhage
 herad->heard, Hera,
@@ -4095,6 +4114,7 @@ humerous->humorous, humerus,
 huminoid->humanoid
 humoural->humoral
 humurous->humorous
+hundrets->hundreds
 husban->husband
 hvae->have
 hvaing->having
@@ -4400,6 +4420,7 @@ indipendently->independently
 indispensible->indispensable
 indisputible->indisputable
 indisputibly->indisputably
+indistiguishable->indistinguishable
 indite->indict
 indivdual->individual
 indivdually->individually
@@ -4674,6 +4695,7 @@ interpeting->interpreting
 interpets->interprets
 interprate->interpret
 interpretes->interprets
+interpretter->interpreter
 interract->interact
 interracting->interacting
 interractive->interactive
@@ -4812,7 +4834,7 @@ itterations->iterations
 iunior->junior
 iwll->will
 iwth->with
-Janurary->January
+janurary->january
 Januray->January
 Japanes->Japanese
 japanses->Japanese
@@ -5545,6 +5567,7 @@ numberals->numerals
 numberous->numerous
 numebr->number
 numebrs->numbers
+numerial->numeral
 numering->numbering
 numner->number
 numners->numbers
@@ -5770,9 +5793,9 @@ othwerwise->otherwise
 oublisher->publisher
 ouevre->oeuvre
 ouptut->output
-ouptuts->outputs
 ouptuted->outputted
 ouptuting->outputting
+ouptuts->outputs
 ouput->output
 ouputs->outputs
 ouputted->outputted
@@ -6056,7 +6079,7 @@ philisopher->philosopher
 philisophical->philosophical
 philisophy->philosophy
 Phillipine->Philippine
-Phillipines->Philippines
+phillipines->philippines
 Phillippines->Philippines
 phillosophically->philosophically
 philospher->philosopher
@@ -6739,6 +6762,7 @@ redefintions->redefinitions
 rediculous->ridiculous
 redircet->redirect
 redirectrion->redirection
+redunant->redundant
 reduse->reduce
 reedeming->redeeming
 reenable->re-enable
@@ -7029,6 +7053,7 @@ resignement->resignment
 resistable->resistible
 resistence->resistance
 resistent->resistant
+resizeable->resizable
 resizeble->resizable
 reslove->resolve
 resloved->resolved
@@ -7443,6 +7468,8 @@ signficantly->significantly
 signficiant->significant
 signfies->signifies
 signifantly->significantly
+signifcant->significant
+signifcantly->significantly
 significently->significantly
 signifigant->significant
 signifigantly->significantly
@@ -7472,6 +7499,7 @@ simplier->simpler
 simpliest->simplest
 simulantaneous->simultaneous
 simulantaneously->simultaneously
+simulataneous->simultaneous
 simultanous->simultaneous
 simultanously->simultaneously
 sincerley->sincerely
@@ -7504,6 +7532,7 @@ sligth->slight
 sligthly->slightly
 slippy->slippery
 slowy->slowly
+sluggify->slugify
 smae->same
 smalles->smallest
 smaple->sample
@@ -7627,6 +7656,7 @@ spendour->splendour
 spermatozoan->spermatozoon
 spezialisation->specialization
 spezified->specified
+spliting->splitting
 splitted->split
 spoace->space
 sponser->sponsor
@@ -8379,6 +8409,7 @@ tyrranies->tyrannies
 tyrrany->tyranny
 ubiquitious->ubiquitous
 ublisher->publisher
+ubutunu->Ubuntu
 udpate->update
 udpated->updated
 udpates->updates
@@ -8625,6 +8656,7 @@ unwarrented->unwarranted
 unweildly->unwieldy
 unwieldly->unwieldy
 unwrritten->unwritten
+unziped->unzipped
 upate->update
 upated->updated
 upates->updates
@@ -8701,6 +8733,8 @@ variabes->variables
 variantions->variations
 varibale->variable
 varibales->variables
+varible->variable
+varibles->variables
 varient->variant
 variey->variety
 varified->verified
@@ -8977,4 +9011,5 @@ ytou->you
 yuo->you
 yur->your
 zeebra->zebra
+ziped->zipped
 zoon->zoom, zoon,
