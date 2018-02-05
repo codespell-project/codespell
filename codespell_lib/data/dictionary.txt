@@ -8553,8 +8553,8 @@ univesities->universities
 univesity->university
 unknonw->unknown
 unknonws->unknowns
-unknow->unknown
-unknowns->unknowns
+unknow->unknown, unknow,
+unknows->unknowns, unknows,
 unknwon->unknown
 unknwons->unknowns
 unkonwn->unknown
