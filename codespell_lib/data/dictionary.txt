@@ -714,6 +714,7 @@ archvie->archive
 archvies->archives
 are'nt->aren't
 aready->already
+aren's->aren't
 aren;t->aren't
 arent'->aren't
 arent->aren't
@@ -2242,6 +2243,8 @@ dashbords->dashboards
 databas->database
 databse->database
 daugher->daughter
+de-actived->deactivated
+deactived->deactivated
 deaemon->daemon
 deafault->default
 deafult->default
@@ -7513,6 +7516,7 @@ simpliest->simplest
 simulantaneous->simultaneous
 simulantaneously->simultaneously
 simulataneous->simultaneous
+simulataneously->simultaneously
 simultanous->simultaneous
 simultanously->simultaneously
 sincerley->sincerely
@@ -8953,6 +8957,7 @@ witheld->withheld
 withh->with
 withing->within
 withold->withhold
+withour->without, with our,
 withs->with, widths,
 witht->with
 withthe->with the
