@@ -1769,9 +1769,12 @@ compontents->components
 comprable->comparable
 compres->compress
 compresed->compressed
+compreser->compressor
 compreses->compresses
 compresing->compressing
 compresion->compression
+compresor->compressor
+compresser->compressor
 comprimise->compromise
 comptible->compatible
 compulsary->compulsory
@@ -2291,8 +2294,11 @@ decompositing->decomposing
 decomposits->decomposes
 decompres->decompress
 decompresed->decompressed
+decompreser->decompressor
 decompreses->decompresses
 decompresing->decompressing
+decompresor->decompressor
+decompresser->decompressor
 decoraded->decorated
 decress->decrees
 decribe->describe
@@ -4987,6 +4993,7 @@ ligth->light
 lik->like, lick, link,
 likelyhood->likelihood
 likewis->likewise
+lileral->literal
 limted->limited
 linnaena->linnaean
 lintain->lintian
@@ -6753,6 +6760,12 @@ reconized->recognized
 reconnaisance->reconnaissance
 reconnaissence->reconnaissance
 recontructed->reconstructed
+recontructing->reconstructing
+recontruction->reconstruction
+recontructions->reconstructions
+recontructor->reconstructor
+recontructors->reconstructors
+recontructs->reconstructs
 recordproducer->record producer
 recquired->required
 recrational->recreational
@@ -8369,6 +8382,7 @@ transmiter->transmitter
 transmiters->transmitters
 transmiting->transmitting
 transmition->transmission
+transmitsion->transmission
 transmittion->transmission
 transorm->transform
 transormed->transformed
@@ -8477,6 +8491,10 @@ uncompetive->uncompetitive
 uncomplete->incomplete
 uncompleteness->incompleteness
 uncompletness->incompleteness
+uncompres->uncompress
+uncompresed->uncompressed
+uncompreses->uncompresses
+uncompresing->uncompressing
 unconcious->unconscious
 unconciousness->unconsciousness
 uncondisional->>unconditional
