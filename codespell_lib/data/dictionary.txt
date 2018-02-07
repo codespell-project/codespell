@@ -1093,6 +1093,7 @@ beteen->between
 bettery->better
 betweeen->between
 betwen->between
+betwene->between
 bever->never
 bevore->before
 beween->between
@@ -2450,6 +2451,7 @@ depenencis->dependencies
 depenency->dependency
 depenencys->dependencies
 deployement->deployment
+depnds->depends
 depracated->deprecated
 depreacte->deprecate
 depreacted->deprecated
@@ -2493,6 +2495,7 @@ descide->decide
 descided->decided
 descides->decides
 desciding->deciding
+desciminate->descriminate, disseminate, decimate,
 desciption->description
 desciptor->descriptor
 desciptors->descriptors
@@ -2579,6 +2582,7 @@ detemining->determining
 deteoriated->deteriorated
 deteriate->deteriorate
 deterioriating->deteriorating
+determenant->determinant
 determin->determine
 determing->determining
 determinining->determining
@@ -2869,7 +2873,7 @@ doesn;t->doesn't
 doesnot->doesn't, does not,
 doesnt'->doesn't
 doesnt't->doesn't
-doesnt->doesn't
+doesnt->doesn't, does not,
 doesnt;->doesn't
 doign->doing
 doman->domain
@@ -2980,6 +2984,7 @@ effeciency->efficiency
 effecient->efficient
 effeciently->efficiently
 effectly->effectively
+efficencty->efficiency
 efficency->efficiency
 efficent->efficient
 efficently->efficiently
@@ -5744,6 +5749,7 @@ opthalmic->ophthalmic
 opthalmologist->ophthalmologist
 opthalmology->ophthalmology
 opthamologist->ophthalmologist
+optimiality->optimality
 optin->option
 optinal->optional
 optinally->optionally
@@ -5759,6 +5765,7 @@ optomism->optimism
 or or->or
 orded->ordered
 orderd->ordered
+orgamise->organise
 organim->organism
 organistion->organisation
 organiztion->organization
