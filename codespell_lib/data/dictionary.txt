@@ -499,6 +499,7 @@ ambigous->ambiguous
 amendmant->amendment
 Amercia->America
 amerliorate->ameliorate
+amiguous->ambiguous
 amin->main, disabled because of var names
 amke->make
 amking->making
@@ -589,6 +590,7 @@ anyhwere->anywhere
 anyother->any other
 anyting->anything
 anytying->anything
+aovid->avoid
 aparent->apparent
 aparment->apartment
 apendix->appendix
@@ -2073,6 +2075,7 @@ conveting->converting
 convets->converts
 conveyer->conveyor
 conviced->convinced
+convience->convince, convenience,
 convienience->convenience
 convienient->convenient
 convieniently->conveniently
@@ -2667,13 +2670,18 @@ differenciating->differentiating
 differentiatiations->differentiations
 differents->different, difference,
 differnce->difference
+differnces->differences
 differnet->different
 differnt->different
 differrent->different
 difficulity->difficulty
+diffreences->differences
 diffreent->different
+diffreents->different, difference,
 diffrence->difference
+diffrences->differences
 diffrent->different
+diffrents->different, difference,
 dificulties->difficulties
 dificulty->difficulty
 difinition->definition
@@ -8364,6 +8372,7 @@ tranfers->transfers
 tranform->transform
 tranformation->transformation
 tranformations->transformations
+tranformative->transformative
 tranformed->transformed
 tranforming->transforming
 tranforms->transforms
