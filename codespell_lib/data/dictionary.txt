@@ -1192,6 +1192,8 @@ buliding->building
 bulids->builds
 bulit->built
 bulletted->bulleted
+bult->built
+bult-in->built-in
 bultin->builtin
 bumpded->bumped
 buoancy->buoyancy
@@ -1578,6 +1580,7 @@ cofigures->configures
 cofiguring->configuring
 coform->conform
 cognizent->cognizant
+coice->choice
 coincedentally->coincidentally
 colaboration->collaboration
 colaborations->collaborations
@@ -4298,6 +4301,11 @@ implmenting->implementing
 implments->implements
 imploys->employs
 importamt->important
+imporv->improve, improv,
+imporve->improve
+imporvement->improvement
+imporving->improving
+imporvment->improvement
 imposible->impossible
 impove->improve
 impoved->improved
@@ -5090,6 +5098,8 @@ maintainence->maintenance
 maintaing->maintaining
 maintan->maintain
 maintance->maintenance
+maintane->maintain
+maintanence->maintenance
 maintenence->maintenance
 maintinaing->maintaining
 maintioned->mentioned
