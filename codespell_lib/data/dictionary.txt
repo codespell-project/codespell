@@ -2382,6 +2382,8 @@ defninitions->definitions
 defualt->default
 defult->default
 degrate->degrade
+degreee->degree
+degreees->degrees
 deimiter->delimiter
 deivce->device
 deivces->devices
@@ -4299,6 +4301,8 @@ implemeting->implementing
 implemets->implements
 implemntation->implementation
 implemntations->implementations
+implenment->implement
+implenmentation->implementation
 implentation->implementation
 implentations->implementations
 implicitely->implicitly
@@ -5867,6 +5871,7 @@ ouput->output
 ouputs->outputs
 ouputted->outputted
 ouputting->outputting
+our our->our
 ourselfs->ourselves
 ourselve->ourselves
 ourselvs->ourselves
@@ -7981,6 +7986,8 @@ sufficently->sufficiently
 sugestion->suggestion
 sugestions->suggestions
 sugests->suggests
+suggesttion->suggestion
+suggesttions->suggestions
 sumary->summary
 sunglases->sunglasses
 suop->soup
@@ -8264,6 +8271,7 @@ theshold->threshold
 thess->this, these,
 thether->tether, whether,
 thev->the
+they they->they
 theyre->they're
 thgat->that
 thge->the
@@ -8971,6 +8979,7 @@ wass->was
 wathc->watch
 watn->want
 wayword->wayward
+we we->we
 weaponary->weaponry
 weas->was
 wege->wedge
