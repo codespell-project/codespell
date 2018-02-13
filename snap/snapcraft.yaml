@@ -1,0 +1,19 @@
+name: codespell
+version: git
+summary: Check code for common misspellings
+description: |
+  Codespell fixes common mispellings in text files.It's designed
+  primarily for checking misspelled words in source code, but it can
+  be used with other files as well.
+grade: stable
+confinement: strict
+
+apps:
+  codespell:
+    command: codespell
+    plugs: [home, removable-media]
+
+parts:
+  codespell:
+    source: .
+    plugin: python
