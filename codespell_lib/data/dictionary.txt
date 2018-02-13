@@ -117,6 +117,7 @@ accordeon->accordion
 accordian->accordion
 accordint->according
 accoring->according, occurring,
+accound->account
 accoustic->acoustic
 accout->account
 accquainted->acquainted
@@ -2175,7 +2176,10 @@ coumpound->compound
 coumpounds->compounds
 councellor->councillor, counselor, councilor,
 councellors->councillors, counselors, councilors,
-cound->could
+cound->could, count,
+counding->counting
+coundition->condition
+counds->counts
 counries->countries
 countains->contains
 countires->countries
@@ -2505,13 +2509,17 @@ descide->decide
 descided->decided
 descides->decides
 desciding->deciding
-desciminate->descriminate, disseminate, decimate,
+desciminate->discriminate, disseminate, decimate,
 desciption->description
 desciptor->descriptor
 desciptors->descriptors
 descision->decision
 descisions->decisions
 descriibes->describes
+descriminate->discriminate
+descriminated->discriminated
+descriminates->discriminates
+descriminating->discriminating
 descripe->describe
 descriped->described
 descripes->describes
@@ -3390,6 +3398,8 @@ excute->execute
 excuted->executed
 excutes->executes
 excuting->executing
+execeed->exceed
+execeeds->exceeds
 exeception->exception
 execeptions->exceptions
 execising->exercising
@@ -3571,6 +3581,7 @@ fatser->faster
 fature->feature
 faught->fought
 favoutrable->favourable
+fcound->found
 feasable->feasible
 featre->feature
 featue->feature
@@ -7043,6 +7054,8 @@ repblics->republics
 repeatly->repeatedly
 repective->respective
 repectively->respectively
+repedable->repeatable
+repedability->repeatability
 repeition->repetition
 repentence->repentance
 repentent->repentant
