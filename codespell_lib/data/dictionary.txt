@@ -500,6 +500,8 @@ ambigous->ambiguous
 amendmant->amendment
 Amercia->America
 amerliorate->ameliorate
+amgle->angle
+amgles->angles
 amiguous->ambiguous
 amin->main, disabled because of var names
 amke->make
@@ -1161,6 +1163,7 @@ brige->bridge
 briges->bridges
 brighness->brightness
 brigth->bright
+brigthness->brightness
 briliant->brilliant
 brillant->brilliant
 brimestone->brimstone
@@ -7850,6 +7853,7 @@ stattistic->statistic
 stength->strength
 steriods->steroids
 sterotypes->stereotypes
+stil->still
 stilus->stylus
 stingent->stringent
 stiring->stirring
@@ -8465,6 +8469,8 @@ transending->transcending
 transesxuals->transsexuals
 transfered->transferred
 transfering->transferring
+transfom->transform
+transfomm->transform
 transformaton->transformation
 transfrom->transform
 transfromation->transformation
