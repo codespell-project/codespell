@@ -1101,12 +1101,14 @@ beseiging->besieging
 beteen->between
 bettery->better
 betweeen->between
+betweeness->betweenness
 betwen->between
 betwene->between
 bever->never
 bevore->before
 beween->between
 bewteen->between
+bewteeness->betweenness
 bianries->binaries
 bianry->binary
 bilateraly->bilaterally
@@ -4072,7 +4074,7 @@ heared->heard
 heathy->healthy
 Heidelburg->Heidelberg
 heigest->highest
-heigh->height
+heigh->height, high,
 heigher->higher
 heighest->highest
 heigt->height
@@ -5972,7 +5974,7 @@ pacakges->packages
 pach->patch
 pachage->package
 packacge->package
-packe->packed
+packe->packed, packet,
 packege->package
 packge->package
 packges->packages
