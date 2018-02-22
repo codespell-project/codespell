@@ -943,7 +943,7 @@ automaitc->automatic
 automaitcally->automatically
 automaticall->automatically
 automaticaly->automatically
-automatical->automatically, automatic, automated
+automatical->automatically, automatic, automated,
 automaticly->automatically
 automatize->automate
 automatized->automated
@@ -3798,7 +3798,6 @@ fufill->fulfill
 fufilled->fulfilled
 fulfiled->fulfilled
 fullfiled->fulfilled
-fullfilled->fulfilled
 fullfiling->fulfilling
 fullfill->fulfill
 fullfilled->fulfilled
@@ -6662,8 +6661,8 @@ propogates->propagates
 propogating->propagating
 propogation->propagation
 propostion->proposition
-propotion->proportion, promotion
-propotions->proportions, promotions
+propotion->proportion, promotion,
+propotions->proportions, promotions,
 propper->proper
 propperly->properly
 proprietory->proprietary
