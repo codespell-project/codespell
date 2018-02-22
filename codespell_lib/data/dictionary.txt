@@ -943,6 +943,7 @@ automaitc->automatic
 automaitcally->automatically
 automaticall->automatically
 automaticaly->automatically
+automatical->automatically, automatic, automated,
 automaticly->automatically
 automatize->automate
 automatized->automated
@@ -1767,6 +1768,7 @@ compleating->completing
 compleatly->completely
 complet->complete
 completedthe->completed the
+completelly->completely
 completelyl->completely
 completetion->completion
 completition->completion
@@ -2247,6 +2249,7 @@ curch->church
 curcuit->circuit
 curcumstance->circumstance
 curcumstances->circumstances
+curent->current
 curently->currently
 currenly->currently
 curriculem->curriculum
@@ -3962,6 +3965,7 @@ grapics->graphics
 grat->great
 gratefull->grateful
 gratuitious->gratuitous
+grbber->grabber
 greatful->grateful
 greatfully->gratefully
 greif->grief
@@ -4157,6 +4161,7 @@ hipopotamus->hippopotamus
 hirarchy->hierarchy
 hismelf->himself
 hisory->history
+histgram->histogram
 histocompatability->histocompatibility
 historicians->historians
 hitogram->histogram
@@ -5884,6 +5889,7 @@ origionally->originally
 orignal->original
 orignally->originally
 orignially->originally
+origninal->original
 orthagonal->orthogonal
 orthagonalize->orthogonalize
 osbscure->obscure
@@ -6585,6 +6591,7 @@ procuded->produced
 proejction->projection
 proeprties->properties
 proeprty->property
+proerties->properties
 profesion->profusion, profession,
 profesor->professor
 professer->professor
@@ -6654,7 +6661,8 @@ propogates->propagates
 propogating->propagating
 propogation->propagation
 propostion->proposition
-propotions->proportions
+propotion->proportion, promotion,
+propotions->proportions, promotions,
 propper->proper
 propperly->properly
 proprietory->proprietary
@@ -6800,6 +6808,7 @@ reasonnably->reasonably
 rebiulding->rebuilding
 rebllions->rebellions
 rebounce->rebound
+rebuilded->rebuilt
 rebulid->rebuild
 rebuliding->rebuilding
 rebulids->rebuilds
