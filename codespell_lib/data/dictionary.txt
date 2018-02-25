@@ -547,6 +547,7 @@ androgeny->androgyny
 andthe->and the
 ang->and
 anihilation->annihilation
+anitialising->antialiasing
 aniversary->anniversary
 anlge->angle
 anly->only
@@ -582,6 +583,7 @@ antartic->antarctic
 anthromorphization->anthropomorphization
 anthropolgist->anthropologist
 anthropolgy->anthropology
+antialising->antialiasing
 anual->annual
 anulled->annulled
 anway->anyway
@@ -652,6 +654,8 @@ appropropriate->appropriate
 approproximate->approximate
 approriate->appropriate
 approriately->appropriately
+approrpriate->appropriate
+approrpriately->appropriately
 approxamately->approximately
 approxiamtion->approximation
 approxiately->approximately
@@ -743,6 +747,7 @@ arival->arrival
 armamant->armament
 armistace->armistice
 arne't->aren't
+arn't->aren't
 arogant->arrogant
 arogent->arrogant
 aroud->around
@@ -937,6 +942,7 @@ autoformating->autoformatting
 autoincrememnt->autoincrement
 automaitc->automatic
 automaitcally->automatically
+automatical->automatically, automatic, automated,
 automaticall->automatically
 automaticaly->automatically
 automaticly->automatically
@@ -992,6 +998,7 @@ avods->avoids
 awared->awarded
 aweful->awful
 awefully->awfully
+awnser->answer
 awya->away
 baceause->because
 backgorund->background
@@ -1085,6 +1092,7 @@ beliving->believing
 belligerant->belligerent
 bellow->below
 bellweather->bellwether
+belond->belong
 bemusemnt->bemusement
 beneficary->beneficiary
 beng->being
@@ -1100,17 +1108,20 @@ beseiging->besieging
 beteen->between
 bettery->better
 betweeen->between
+betweeness->betweenness
 betwen->between
 betwene->between
 bever->never
 bevore->before
 beween->between
 bewteen->between
+bewteeness->betweenness
 bianries->binaries
 bianry->binary
 bilateraly->bilaterally
 billingualism->bilingualism
 binominal->binomial
+bistream->bitstream
 bitwise-orring->bitwise-oring
 bizzare->bizarre
 blaim->blame
@@ -1370,7 +1381,6 @@ catterpillars->caterpillars
 cattleship->battleship
 caugt->caught
 cauhgt->caught
-causalities->casualties
 Ceasar->Caesar
 ceate->create
 ceated->created
@@ -1614,6 +1624,7 @@ coloumn->column
 coloumns->columns
 coloums->columns
 colum->column
+colummn->column
 colums->columns
 comamnd->command
 comamnds->commands
@@ -1760,6 +1771,7 @@ compleating->completing
 compleatly->completely
 complet->complete
 completedthe->completed the
+completelly->completely
 completelyl->completely
 completetion->completion
 completition->completion
@@ -1857,6 +1869,8 @@ conection->connection
 conections->connections
 conectix->connectix
 conects->connects
+coneect->connect
+coneected->connected
 conenction->connection
 conenctions->connections
 conent->content
@@ -2238,6 +2252,7 @@ curch->church
 curcuit->circuit
 curcumstance->circumstance
 curcumstances->circumstances
+curent->current
 curently->currently
 currenly->currently
 curriculem->curriculum
@@ -3153,6 +3168,8 @@ endianess->endianness
 endiannes->endianness
 endig->ending
 endolithes->endoliths
+endpiont->endpoint
+endpionts->endpoints
 endsup->ends up
 enduce->induce
 eneables->enables
@@ -3519,6 +3536,7 @@ expresssions->expressions
 exprimental->experimental
 expropiated->expropriated
 expropiation->expropriation
+exra->extra
 exressed->expressed
 extacy->ecstacy
 extemely->extremely
@@ -3727,6 +3745,7 @@ forwaded->forwarded
 forwading->forwarding
 forwads->forwards
 forwardig->forwarding
+fot->for
 foto->photo
 fotograf->photograph
 fotografic->photographic
@@ -3907,6 +3926,7 @@ glpyh->glyph
 glpyhs->glyphs
 glyphes->glyphs
 gnawwed->gnawed
+gnorung->ignoring
 godess->goddess
 godesses->goddesses
 Godounov->Godunov
@@ -3950,6 +3970,7 @@ grapics->graphics
 grat->great
 gratefull->grateful
 gratuitious->gratuitous
+grbber->grabber
 greatful->grateful
 greatfully->gratefully
 greif->grief
@@ -4068,7 +4089,7 @@ heared->heard
 heathy->healthy
 Heidelburg->Heidelberg
 heigest->highest
-heigh->height
+heigh->height, high,
 heigher->higher
 heighest->highest
 heigt->height
@@ -4145,6 +4166,7 @@ hipopotamus->hippopotamus
 hirarchy->hierarchy
 hismelf->himself
 hisory->history
+histgram->histogram
 histocompatability->histocompatibility
 historicians->historians
 hitogram->histogram
@@ -4651,6 +4673,7 @@ inot->into
 inpeach->impeach
 inplemented->implemented
 inpolite->impolite
+inpossible->impossible
 inprisonment->imprisonment
 inproper->improper
 inproperly->improperly
@@ -5061,7 +5084,7 @@ liesure->leisure
 lieuenant->lieutenant
 lieved->lived
 liftime->lifetime
-lightening->lightning
+lightening->lightening, lightning, lighting,
 lightweigh->lightweight
 lightyear->light year
 lightyears->light years
@@ -5107,6 +5130,7 @@ lonley->lonely
 lonly->lonely, only,
 loosing->losing
 loosly->loosely
+loosy->lossy
 losely->loosely
 losen->loosen
 losened->loosened
@@ -5647,6 +5671,8 @@ notifcations->notifications
 notifed->notified
 notifiy->notify
 notifiying->notifying
+notmalize->normalize
+notmalized->normalized
 nott->not
 notwhithstanding->notwithstanding
 noveau->nouveau
@@ -5720,6 +5746,7 @@ occoured->occurred
 occouring->occurring
 occourring->occurring
 occours->occurs
+occuped->occupied
 occurance->occurrence
 occurances->occurrences
 occure->occur
@@ -5788,6 +5815,7 @@ onot->note, not,
 ons->owns
 onself->oneself
 onthe->on the
+ontrolled->controlled
 onyl->only
 opacy->opacity
 opague->opaque
@@ -5869,6 +5897,7 @@ origionally->originally
 orignal->original
 orignally->originally
 orignially->originally
+origninal->original
 orthagonal->orthogonal
 orthagonalize->orthogonalize
 osbscure->obscure
@@ -5965,7 +5994,7 @@ pacakges->packages
 pach->patch
 pachage->package
 packacge->package
-packe->packed
+packe->packed, packet,
 packege->package
 packge->package
 packges->packages
@@ -5973,6 +6002,7 @@ paide->paid
 paitience->patience
 pakage->package
 pakages->packages
+paket->packet
 pakge->package
 palce->place, palace,
 paleolitic->paleolithic
@@ -6110,6 +6140,8 @@ perfomance->performance
 perfomed->performed
 perfomers->performers
 perfoming->performing
+perfomr->perform
+perfomred->performed
 perfoms->performs
 perfoom->perfume, perform,
 performace->performance
@@ -6210,6 +6242,8 @@ pilgrimmages->pilgrimages
 pinapple->pineapple
 pinnaple->pineapple
 pinoneered->pioneered
+piont->point
+pionts->points
 piority->priority
 pitty->pity
 plaform->platform
@@ -6250,6 +6284,7 @@ poiters->pointers
 poitn->point
 poitner->pointer
 poitning->pointing
+poits->points
 poject->project
 pojecting->projecting
 pojnt->point
@@ -6567,6 +6602,7 @@ procuded->produced
 proejction->projection
 proeprties->properties
 proeprty->property
+proerties->properties
 profesion->profusion, profession,
 profesor->professor
 professer->professor
@@ -6593,6 +6629,8 @@ progrom->pogrom, program,
 progroms->pogroms, programs,
 prohabition->prohibition
 projectio->projection
+prolem->problem
+prolems->problems
 prologomena->prolegomena
 prominance->prominence
 prominant->prominent
@@ -6636,7 +6674,8 @@ propogates->propagates
 propogating->propagating
 propogation->propagation
 propostion->proposition
-propotions->proportions
+propotion->proportion, promotion,
+propotions->proportions, promotions,
 propper->proper
 propperly->properly
 proprietory->proprietary
@@ -6755,6 +6794,8 @@ reacing->reaching
 reacll->recall
 readabilty->readability
 readapted->re-adapted
+readded->readded, read,
+readed->read, readd, readded,
 readible->readable
 readmition->readmission
 readnig->reading
@@ -6782,6 +6823,7 @@ reasonnably->reasonably
 rebiulding->rebuilding
 rebllions->rebellions
 rebounce->rebound
+rebuilded->rebuilt
 rebulid->rebuild
 rebuliding->rebuilding
 rebulids->rebuilds
@@ -7720,6 +7762,8 @@ sophicated->sophisticated
 sophmore->sophomore
 sorceror->sorcerer
 sorrounding->surrounding
+soruce->source
+soruces->sources
 sotry->story
 sotyr->satyr, story,
 souce->source
@@ -8217,13 +8261,21 @@ sytle->style
 tabacco->tobacco
 tage->stage
 taged->tagged
+tagnet->tangent
 tagnetial->tangential
+tagnets->tangents
 tahn->than
 taht->that
 talekd->talked
 tangeant->tangent
+tangeantial->tangential
+tangeants->tangents
 tangensial->tangential
+tangentailly->tangentially
+tanget->tangent
 tangetial->tangential
+tangetially->tangentially
+tangets->tangents
 targetted->targeted
 targetting->targeting
 tast->taste
@@ -8963,6 +9015,8 @@ verson->version
 versoned->versioned
 versons->versions
 vertexes->vertices
+vertextes->vertices
+vertexts->vertices
 verticaly->vertically
 verticies->vertices
 vertikal->vertical
@@ -8970,6 +9024,8 @@ veryified->verified
 veryifies->verifies
 veryify->verify
 veryifying->verifying
+vetex->vertex
+vetexes->vertices
 vetween->between
 veyr->very
 vicefersa->vice-versa
@@ -9010,6 +9066,7 @@ volounteered->volunteered
 volounteering->volunteering
 volounteers->volunteers
 volumne->volume
+voxes->voxels, voxel,
 vreity->variety
 vrey->very
 vriety->variety
@@ -9067,6 +9124,7 @@ whants->wants
 whataver->whatever
 whcih->which
 whe->when
+wheather->whether
 wheigh->weigh
 whenver->whenever
 wheras->whereas
