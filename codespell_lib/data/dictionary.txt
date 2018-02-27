@@ -991,6 +991,10 @@ avengence->a vengeance
 averageed->averaged
 aviable->available
 avilable->available
+aviod->avoid
+avioded->avoided
+avioding->avoiding
+aviods->avoids
 avod->avoid
 avoded->avoided
 avoding->avoiding
@@ -1848,8 +1852,10 @@ concieved->conceived
 concious->conscious
 conciously->consciously
 conciousness->consciousness
+concurence->concurrence
 concurent->concurrent
 concurently->concurrently
+concurents->concurrents, concurrence,
 condamned->condemned
 condemmed->condemned
 condidtion->condition
@@ -3608,6 +3614,8 @@ familliar->familiar
 famoust->famous
 fanatism->fanaticism
 Farenheit->Fahrenheit
+fasade->facade
+fassade->facade
 fatc->fact
 fatser->faster
 fature->feature
@@ -4249,7 +4257,10 @@ hypocrasy->hypocrisy
 hypocricy->hypocrisy
 hypocrit->hypocrite
 hypocrits->hypocrites
+hyposeses->hypotheses
 hyposesis->hypothesis
+hypoteses->hypotheses
+hypotesis->hypothesis
 icluding->including
 iconclastic->iconoclastic
 idaeidae->idea
