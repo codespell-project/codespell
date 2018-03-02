@@ -1222,6 +1222,8 @@ burried->buried
 busines->business
 busineses->business, businesses,
 busness->business
+buss->bus
+busses->buses
 bussiness->business
 cacheing->caching
 cacluate->calculate
@@ -3244,6 +3246,7 @@ entitys->entities
 entrepeneur->entrepreneur
 entrepeneurs->entrepreneurs
 entrys->entries
+enty->entry
 enumarate->enumerate
 enumarated->enumerated
 enumarates->enumerates
@@ -5461,6 +5464,7 @@ misterious->mysterious
 mistery->mystery
 misteryous->mysterious
 mitre->miter
+mixure->mixture
 mkae->make
 mkaes->makes
 mkaing->making
@@ -6500,6 +6504,8 @@ prepatory->preparatory
 preperation->preparation
 preperations->preparations
 prepresent->represent
+prepresented->represented
+prepresents->represents
 preproces->preprocess
 preprocesing->preprocessing
 prerequisit->prerequisite
