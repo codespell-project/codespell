@@ -26,6 +26,8 @@ aboutit->about it
 aboutthe->about the
 abouve->above
 abov->above
+abovemtioned->abovementioned
+abovmentioned->abovementioned
 abreviate->abbreviate
 abreviated->abbreviated
 abreviates->abbreviates
@@ -558,6 +560,8 @@ annointed->anointed
 annointing->anointing
 annoints->anoints
 annoncement->announcement
+annotaion->annotation
+annotaions->annotations
 annother->another
 annouce->announce
 annouced->announced
@@ -1417,6 +1421,7 @@ cerimonious->ceremonious
 cerimony->ceremony
 ceromony->ceremony
 certainity->certainty
+certaion->certain
 certficate->certificate
 certficates->certificates
 certian->certain
@@ -1832,6 +1837,7 @@ conatining->containing
 conatins->contains
 conbination->combination
 conbinations->combinations
+concatentaion->concatenation
 concatentate->concatenate
 concatentated->concatenated
 concatentates->concatenates
@@ -2008,6 +2014,7 @@ consulant->consultant
 consumate->consummate
 consumated->consummated
 consumating->consummating
+contacentaion->concatenation
 contaiminate->contaminate
 contaiminated->contaminated
 contaiminating->contaminating
@@ -2611,6 +2618,8 @@ dessigned->designed
 destablized->destabilized
 destiantion->destination
 destiantions->destinations
+destinataion->destination
+destinataions->destinations
 destory->destroy
 destoryed->destroyed
 destorying->destroying
@@ -2694,6 +2703,8 @@ dicovered->discovered
 dicovering->discovering
 dicovers->discovers
 dicovery->discovery
+dictaionaries->dictionaries
+dictaionary->dictionary
 dictionarys->dictionaries
 dictionay->dictionary
 dictionnary->dictionary
@@ -3256,6 +3267,7 @@ enumarate->enumerate
 enumarated->enumerated
 enumarates->enumerates
 enumarating->enumerating
+enumertaion->enumeration
 envionment->environment
 enviorment->environment
 enviormental->environmental
@@ -4289,6 +4301,7 @@ identation->indentation
 identicial->identical
 identifer->identifier
 identifers->identifiers
+identifictaion->identification
 ideosyncratic->idiosyncratic
 idesa->ideas, ides,
 idicate->indicate
@@ -4349,8 +4362,12 @@ impecabbly->impeccably
 impedence->impedance
 impementation->implementation
 impementations->implementations
+implament->implement
+implamentation->implementation
 implamenting->implementing
 implemantation->implementation
+implemataion->implementation
+implemataions->implementations
 implemement->implement
 implemementation->implementation
 implemementations->implementations
@@ -4523,6 +4540,7 @@ indefinitly->indefinitely
 indempotent->idempotent
 indendation->indentation
 indended->intended, indented,
+indentaion->indentation
 indentical->identical
 indentically->identically
 indentification->identification
@@ -5131,6 +5149,7 @@ lik->like, lick, link,
 likelyhood->likelihood
 likewis->likewise
 lileral->literal
+limitaion->limitation
 limted->limited
 lingth->length
 linnaena->linnaean
@@ -5850,6 +5869,8 @@ ommitted->omitted
 ommitting->omitting
 omniverous->omnivorous
 omniverously->omnivorously
+omplementaion->implementation
+omplementation->implementation
 omre->more
 onces->once
 onot->note, not,
@@ -5926,6 +5947,7 @@ orginates->originates
 orginating->originating
 orginize->organise, organize,
 oridinarily->ordinarily
+orientaion->orientation
 orientatied->orientated
 oriente->oriented
 orientied->oriented
@@ -6533,6 +6555,8 @@ pres->press
 presance->presence
 presedential->presidential
 presense->presence
+presentaion->presentation
+presentaions->presentations
 preseverance->perseverance
 preseverence->perseverance
 presidenital->presidential
@@ -7084,6 +7108,8 @@ reigster->register
 reigstered->registered
 reigstering->registering
 reigsters->registers
+reimplementaion->reimplementation
+reimplementaions->reimplementations
 reimplment->reimplement
 reimplmentation->reimplementation
 reimplmented->reimplemented
@@ -8648,6 +8674,9 @@ tremelo->tremolo
 tremelos->tremolos
 treshold->threshold
 trianglular->triangular
+trianglutaion->triangulation
+triangulataion->triangulation
+triangultaion->triangulation
 trigerring->triggering
 trigers->triggers
 triggerd->triggered
