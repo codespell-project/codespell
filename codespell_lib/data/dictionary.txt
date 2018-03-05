@@ -3266,7 +3266,7 @@ entitys->entities
 entrepeneur->entrepreneur
 entrepeneurs->entrepreneurs
 entrys->entries
-enty->entry
+enty->entry, entity,
 enumarate->enumerate
 enumarated->enumerated
 enumarates->enumerates
@@ -3632,7 +3632,7 @@ facist->fascist
 factorizaiton->factorization
 faild->failed
 faile->failed
-failt->fail
+failt->fail, failed,
 failue->failure
 failuer->failure
 failues->failures
@@ -9229,7 +9229,7 @@ whants->wants
 whataver->whatever
 whcih->which
 whe->when
-wheather->whether
+wheather->weather, whether,
 wheigh->weigh
 whenver->whenever
 wheras->whereas
