@@ -254,8 +254,8 @@ def parse_options(args):
     parser.add_option('-i', '--interactive',
                       action='store', type='int', default=0,
                       help='Set interactive mode when writing changes. '
-                           '0 is the same of no interactivity; 1 makes '
-                           'codespell ask confirmation; 2 ask user to '
+                           '0 is the same as no interactivity; 1 makes '
+                           'codespell ask for confirmation; 2 ask user to '
                            'choose one fix when more than one is '
                            'available; 3 applies both 1 and 2')
 

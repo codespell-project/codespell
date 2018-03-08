@@ -636,6 +636,7 @@ appliction->application
 applictions->applications
 appologies->apologies
 appology->apology
+apppear->appear
 appplication->application
 appplications->applications
 apprearance->appearance
@@ -917,6 +918,7 @@ attrocities->atrocities
 attruibutes->attributes
 atttribute->attribute
 atttributes->attributes
+atuhentication->authentication
 audeince->audience
 auromated->automated
 austrailia->Australia
@@ -1247,6 +1249,7 @@ caculation->calculation
 caculations->calculations
 caculator->calculator
 cacuses->caucuses
+cahcing->caching
 cahracter->character
 cahracters->characters
 calaber->caliber
@@ -1833,6 +1836,8 @@ conains->contains
 conainted->contained
 conatin->contain
 conatined->contained
+conatiner->container
+conatiners->containers
 conatining->containing
 conatins->contains
 conbination->combination
@@ -2123,6 +2128,7 @@ convinient->convenient
 conviniently->conveniently
 coodinate->coordinate
 coodinates->coordinates
+coonstructed->constructed
 coordiante->coordinate
 coordiantion->coordination
 coordonate->coordinate
@@ -2217,12 +2223,14 @@ coundition->condition
 counds->counts
 counries->countries
 countains->contains
+counterfit->counterfeit
 countires->countries
 countour->contour
 countours->contours
 countrie's->countries, countries', country's,
 coururier->courier, couturier,
 couse->course, cause,
+couterpart->counterpart
 coutner->counter
 coutners->counters
 coverted->converted, covered, coveted,
@@ -3053,6 +3061,8 @@ ecspecially->especially
 ect->etc
 edditable->editable
 ede->edge
+edige->edge
+ediges->edges
 editting->editing
 eearly->early
 efect->effect
@@ -3662,6 +3672,7 @@ feautures->features
 Febuary->February
 Feburary->February
 fedreally->federally
+feeback->feedback
 feeded->fed
 feetur->feature
 feeture->feature
@@ -3831,6 +3842,7 @@ frist->first
 fro->for
 frome->from
 fromed->formed
+fron->from
 froniter->frontier
 frontent->frontend
 frontents->frontends
@@ -3915,6 +3927,7 @@ gaurenteed->guaranteed
 gaurentees->guarantees
 gausian->gaussian
 gemetrical->geometrical
+gemoetry->geometry
 geneological->genealogical
 geneologies->genealogies
 geneology->genealogy
@@ -3966,7 +3979,9 @@ gloabal->global
 gloabl->global
 glpyh->glyph
 glpyhs->glyphs
+glyped->glyphed
 glyphes->glyphs
+glyping->glyphing
 gnawwed->gnawed
 gnorung->ignoring
 godess->goddess
@@ -5093,6 +5108,7 @@ leas->least, lease,
 leathal->lethal
 leats->least
 lefted->left
+legac->legacy
 legitamate->legitimate
 legitmate->legitimate
 leibnitz->leibniz
@@ -5575,6 +5591,7 @@ multipe->multiple
 multipes->multiples
 multipled->multiplied
 multiplers->multipliers
+multithreded->multithreaded
 multple->multiple
 multplied->multiplied
 multplies->multiplies
@@ -5856,6 +5873,10 @@ ofthe->of the
 oging->going, ogling,
 ois->is
 ojbect->object
+oject->object
+ojection->objection
+ojective->objective
+ojects->objects
 olny->only
 omision->omission
 omited->omitted
@@ -6224,6 +6245,7 @@ perhas->perhaps
 perhasp->perhaps
 perheaps->perhaps
 perhpas->perhaps
+periodicaly->periodically
 peripathetic->peripatetic
 peristent->persistent
 perjery->perjury
@@ -6728,6 +6750,7 @@ pronunce->pronounce
 proove->prove
 prooved->proved
 properies->properties
+propert->property
 propertie->property, properties,
 propertise->properties
 propertys->properties
@@ -6994,6 +7017,7 @@ recrod->record
 recrods->records
 rectange->rectangle
 rectanges->rectangles
+rectiinear->rectilinear
 recude->reduce
 recuiting->recruiting
 recuring->recurring
@@ -7544,6 +7568,7 @@ saveing->saving
 savely->safely
 savety->safety
 saxaphone->saxophone
+sbsampling->subsampling
 scaleable->scalable
 scalled->scaled
 scandanavia->Scandinavia
@@ -7602,6 +7627,7 @@ seinor->senior
 selction->selection
 selctions->selections
 seldomly->seldom
+selecetd->selected
 selecton->selection
 selectons->selections
 sematic->semantic
@@ -8376,6 +8402,7 @@ tatoos->tattoos
 tattooes->tattoos
 taxanomic->taxonomic
 taxanomy->taxonomy
+taylored->tailored
 te->the
 teached->taught
 techician->technician
@@ -8567,6 +8594,7 @@ toghether->together
 togther->together
 toke->took
 tolerence->tolerance
+tolernce->tolerance
 Tolkein->Tolkien
 tomatos->tomatoes
 tommorow->tomorrow
@@ -9093,6 +9121,7 @@ vengance->vengeance
 vengence->vengeance
 verbse->verbose
 verfication->verification
+verifiaction->verification
 verifty->verify
 veriftying->verifying
 verifyied->verified
@@ -9229,6 +9258,7 @@ wherease->whereas
 whereever->wherever
 wheter->whether
 whethe->whether
+whethter->whether
 whic->which
 which;s->which's
 whichs->which's
