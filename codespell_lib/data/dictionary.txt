@@ -1166,6 +1166,7 @@ borke->broke
 boudaries->boundaries
 boudary->boundary
 bouding->bounding
+boundarys->boundaries
 boundries->boundaries
 boundry->boundary
 bouy->buoy
@@ -1586,6 +1587,7 @@ clinicaly->clinically
 clipoing->clipping
 cloack->cloak
 cloacks->cloaks
+clonning->cloning
 clos->close
 closeing->closing
 cmak->cmake
@@ -2026,6 +2028,7 @@ contaiminating->contaminating
 containes->contains
 containg->containing
 containging->containing
+containig->containing
 containt->contain, content,
 containted->contained
 containting->containing
@@ -2118,6 +2121,7 @@ convet->convert
 conveted->converted
 conveting->converting
 convets->converts
+convexe->convex
 conveyer->conveyor
 conviced->convinced
 convience->convince, convenience,
@@ -3031,6 +3035,7 @@ dupliate->duplicate
 dupliates->duplicates
 duplicat->duplicate
 duplicats->duplicates
+dur->due
 durig->during
 durring->during
 duting->during
@@ -3106,6 +3111,7 @@ elemetn->element
 elemetns->elements
 eleminated->eliminated
 eleminating->eliminating
+elemtary->elementary
 eles->else
 eletricity->electricity
 eletronic->electronic
@@ -5224,6 +5230,8 @@ machinary->machinery
 maching->machine, marching, matching,
 mackeral->mackerel
 maco->macro
+macor->macro
+macors->macros
 macpakge->package
 macrow->macro
 maddness->madness
@@ -5353,6 +5361,8 @@ mecanisms->mechanisms
 mechamism->mechanism
 mechamisms->mechanisms
 mechandise->merchandise
+mechnism->mechanism
+mechnisms->mechanisms
 medacine->medicine
 medeival->medieval
 medevial->medieval
@@ -7254,6 +7264,7 @@ reposoitory->repository
 repostiories->repositories
 repostiory->repository
 repport->report
+represenation->representation
 represantative->representative
 representaion->representation
 representaions->representations
@@ -8555,6 +8566,7 @@ thsoe->those
 tht->the, that,
 thta->that
 thte->the, that,
+thurver->further
 thyat->that
 tiem->time, item,
 tiemstamp->timestamp
@@ -8860,6 +8872,10 @@ unfortunatly->unfortunately
 unforunate->unfortunate
 unforunately->unfortunately
 unfourtunately->unfortunately
+unhilight->unhighlight
+unhilighted->unhighlighted
+unhilights->unhighlights
+unidimensionnal->unidimensional
 unihabited->uninhabited
 unilateraly->unilaterally
 unilatreal->unilateral
@@ -9175,7 +9191,10 @@ virutally->virtually
 visability->visibility
 visable->visible
 visably->visibly
+visiable->visible
+visiably->visibly
 visibile->visible
+visibleable->visible
 visious->vicious
 visiter->visitor
 visiters->visitors
