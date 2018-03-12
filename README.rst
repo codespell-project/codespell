@@ -67,6 +67,13 @@ after applying them in projects like Linux Kernel, EFL, oFono among others.
 You can provide your own version of the dictionary, but patches for
 new/different entries are very welcome.
 
+Does a word you're proposing exist in codespell already? ::
+
+It is possible to test a word against the current dictionary that exists in ``codespell_lib/data/dictionary.txt`` very rapidly via::
+
+    echo "word" | codespell -
+    echo "1stword,2ndword" | codespell -
+
 Dictionary format
 -----------------
 
