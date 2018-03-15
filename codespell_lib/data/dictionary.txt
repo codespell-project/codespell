@@ -1168,6 +1168,7 @@ borke->broke
 boudaries->boundaries
 boudary->boundary
 bouding->bounding
+boundarys->boundaries
 boundries->boundaries
 boundry->boundary
 bouy->buoy
@@ -1486,6 +1487,7 @@ chceking->checking
 chceks->checks
 checg->check
 checged->checked
+chech->check, czech,
 checkes->checks
 checkk->check
 checkstum->checksum
@@ -1588,6 +1590,7 @@ clinicaly->clinically
 clipoing->clipping
 cloack->cloak
 cloacks->cloaks
+clonning->cloning
 clos->close
 closeing->closing
 cmak->cmake
@@ -1999,6 +2002,7 @@ constructer->constructor
 constructers->constructors
 constructes->constructs
 constructred->constructed
+constructued->constructed
 construt->construct
 construter->constructor
 construters->constructors
@@ -2028,6 +2032,7 @@ contaiminating->contaminating
 containes->contains
 containg->containing
 containging->containing
+containig->containing
 containt->contain, content,
 containted->contained
 containting->containing
@@ -2102,6 +2107,7 @@ conveinent->convenient
 conveinience->convenience
 conveinient->convenient
 convenant->covenant
+convenince->convenience
 convential->conventional
 converion->conversion
 converions->conversions
@@ -2119,6 +2125,7 @@ convet->convert
 conveted->converted
 conveting->converting
 convets->converts
+convexe->convex
 conveyer->conveyor
 conviced->convinced
 convience->convince, convenience,
@@ -2670,6 +2677,8 @@ detroy->destroy
 detroyed->destroyed
 detroying->destroying
 detroys->destroys
+deug->debug
+deugging->debugging
 devasted->devastated
 develoment->development
 develoments->developments
@@ -2801,6 +2810,8 @@ directoty->directory
 directoy->directory
 directries->directories
 directry->directory
+directsion->direction
+directsions->directions
 directy->directly
 dirived->derived
 disagreeed->disagreed
@@ -3033,6 +3044,7 @@ dupliate->duplicate
 dupliates->duplicates
 duplicat->duplicate
 duplicats->duplicates
+dur->due
 durig->during
 durring->during
 duting->during
@@ -3108,6 +3120,7 @@ elemetn->element
 elemetns->elements
 eleminated->eliminated
 eleminating->eliminating
+elemtary->elementary
 eles->else
 eletricity->electricity
 eletronic->electronic
@@ -3314,6 +3327,7 @@ enxt->next
 epidsodes->episodes
 epsiode->episode
 eqivalent->equivalent
+equallity->equality
 equel->equal
 equialent->equivalent
 equilibium->equilibrium
@@ -3880,6 +3894,7 @@ functonal->functional
 functonality->functionality
 functoning->functioning
 functons->functions
+functtion->function
 fundametal->fundamental
 fundametals->fundamentals
 fundemental->fundamental
@@ -4175,6 +4190,8 @@ hertzs->hertz
 hesistant->hesitant
 heterogenous->heterogeneous
 hexidecimal->hexadecimal
+hiarchy->hierarchy
+hiarchical->hierarchical
 hiddden->hidden
 hidded->hidden
 hiddin->hidden, hiding,
@@ -4409,6 +4426,7 @@ implementaitons->implementations
 implementated->implemented
 implementatin->implementation
 implementatins->implementations
+implemente->implemented
 implementet->implemented
 implemention->implementation
 implemet->implement
@@ -5120,6 +5138,7 @@ lenghs->lengths
 lenght->length
 lenghten->lengthen
 lenghtening->lengthening
+lenghth->length
 lenghts->lengths
 lenghty->lengthy
 lengthes->lengths
@@ -5217,6 +5236,8 @@ lsat->last
 lsit->list
 lsits->lists
 lukid->likud
+luminose->luminous
+luminousity->luminosity
 lveo->love
 lvoe->love
 Lybia->Libya
@@ -5226,6 +5247,8 @@ machinary->machinery
 maching->machine, marching, matching,
 mackeral->mackerel
 maco->macro
+macor->macro
+macors->macros
 macpakge->package
 macrow->macro
 maddness->madness
@@ -5355,6 +5378,8 @@ mecanisms->mechanisms
 mechamism->mechanism
 mechamisms->mechanisms
 mechandise->merchandise
+mechnism->mechanism
+mechnisms->mechanisms
 medacine->medicine
 medeival->medieval
 medevial->medieval
@@ -6129,10 +6154,15 @@ paramameters->parameters
 paramater->parameter
 paramaters->parameters
 parametere->parameter
+parameterical->parametrical
 parametes->parameters
 parametised->parametrised
 paramter->parameter
+paramteres->parameters
+paramterization->parametrization, parameterization,
+paramterize->parameterize
 paramters->parameters
+paramtrical->parametrical
 parantheses->parentheses
 paranthesis->parenthesis
 paraphenalia->paraphernalia
@@ -6152,6 +6182,7 @@ parrallel->parallel
 parrallell->parallel
 parrallelly->parallelly
 parrallely->parallelly
+parsin->parsing
 partialy->partially
 particually->particularly
 particualr->particular
@@ -6502,6 +6533,8 @@ practicly->practically
 practioner->practitioner
 practioners->practitioners
 prairy->prairie
+prameter->parameter
+prameters->parameters
 prarie->prairie
 praries->prairies
 pratice->practice
@@ -7052,6 +7085,8 @@ refector->refactor
 refectoring->refactoring
 refects->reflects
 refedendum->referendum
+refeinement->refinement
+refeinements->refinements
 refence->reference
 refences->references
 referal->referral
@@ -7255,6 +7290,7 @@ reposoitory->repository
 repostiories->repositories
 repostiory->repository
 repport->report
+represenation->representation
 represantative->representative
 representaion->representation
 representaions->representations
@@ -8468,6 +8504,7 @@ tessleated->tessellated
 tessleating->tessellating
 tessleator->tessellator
 testiclular->testicular
+testof->test of
 testomony->testimony
 texual->textual
 texually->textually
@@ -8513,7 +8550,9 @@ thier->their
 thign->thing
 thigns->things
 thigsn->things
+thik->thick, think,
 thikn->think
+thikness->thickness
 thikning->thinking, thickening,
 thikns->thinks
 this this->this, this is, is this, 
@@ -8554,6 +8593,7 @@ thsoe->those
 tht->the, that,
 thta->that
 thte->the, that,
+thurver->further
 thyat->that
 tiem->time, item,
 tiemstamp->timestamp
@@ -8588,6 +8628,7 @@ tkae->take
 tkaes->takes
 tkaing->taking
 tlaking->talking
+to to->to, to do,
 tobbaco->tobacco
 todays->today's, disable because of var names
 todya->today
@@ -8859,6 +8900,10 @@ unfortunatly->unfortunately
 unforunate->unfortunate
 unforunately->unfortunately
 unfourtunately->unfortunately
+unhilight->unhighlight
+unhilighted->unhighlighted
+unhilights->unhighlights
+unidimensionnal->unidimensional
 unihabited->uninhabited
 unilateraly->unilaterally
 unilatreal->unilateral
@@ -9107,6 +9152,7 @@ vaule->value
 vauled->valued
 vaules->values
 vauling->valuing
+vave->have, valve,
 vebrose->verbose
 vecotr->vector
 vecotrs->vectors
@@ -9174,7 +9220,10 @@ virutally->virtually
 visability->visibility
 visable->visible
 visably->visibly
+visiable->visible
+visiably->visibly
 visibile->visible
+visibleable->visible
 visious->vicious
 visiter->visitor
 visiters->visitors
