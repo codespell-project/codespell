@@ -337,7 +337,7 @@ aforementionned->aforementioned
 aformentioned->aforementioned
 afterall->after all
 againnst->against
-agains->against
+agains->against, again,
 againts->against
 agaisnt->against
 agaist->against
@@ -922,6 +922,8 @@ atttribute->attribute
 atttributes->attributes
 atuhentication->authentication
 audeince->audience
+auhtor->author
+auhtors->authors
 auromated->automated
 austrailia->Australia
 austrailian->Australian
@@ -2467,6 +2469,8 @@ delets->deletes
 delevopment->development
 delevopp->develop
 deliberatly->deliberately
+deliberite-> deliberate
+deliberitely->deliberately
 delimeter->delimiter
 delimeters->delimiters
 delimted->delimited
@@ -5155,6 +5159,7 @@ levetate->levitate
 levetated->levitated
 levetates->levitates
 levetating->levitating
+levl->level
 levle->level
 leyer->layer
 liasion->liaison
@@ -7985,7 +7990,7 @@ specifyinhg->specifying
 speciman->specimen
 spectauclar->spectacular
 spectaulars->spectaculars
-spects->aspects, expects,
+spects->aspects, expects, specs,
 spectular->spectacular
 spectularly->spectacularly
 spectum->spectrum
@@ -8445,6 +8450,7 @@ taxanomy->taxonomy
 taylored->tailored
 te->the
 teached->taught
+teated->treated
 techician->technician
 techicians->technicians
 techiniques->techniques
@@ -8672,6 +8678,9 @@ trafficed->trafficked
 trafficing->trafficking
 trafic->traffic
 trailling->trailing
+tranaction->transaction
+tranactional->transactional
+tranactions->transactions
 tranceiver->transceiver
 tranceivers->transceivers
 trancendent->transcendent
