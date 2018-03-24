@@ -3493,6 +3493,8 @@ excpecting->expecting
 excpects->expects
 excplicit->explicit
 excplicitly->explicitly
+excplict->explicit
+excplictly->explicitly
 exculsivly->exclusively
 excutable->executable
 excutables->executables
@@ -4965,6 +4967,8 @@ intrduced->introduced
 intreface->interface
 intregral->integral
 intrest->interest
+intrisinc->intrinsic
+intrisincs->intrinsics
 introdued->introduced
 introsepection->introspection
 intrrupt->interrupt
@@ -7859,6 +7863,8 @@ simulataneously->simultaneously
 simultanous->simultaneous
 simultanously->simultaneously
 sincerley->sincerely
+sinc->sinc, synch, sink, since,
+sincs->sincs, synchs, sinks, since,
 singal->signal, single,
 singed->signed
 singol->signal, single,
