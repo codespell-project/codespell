@@ -633,6 +633,7 @@ appereance->appearance
 appereances->appearances
 appered->appeared
 appers->appears
+apperture->aperture
 applicaiton->application
 applicaitons->applications
 appliction->application
@@ -767,6 +768,7 @@ arrangments->arrangements
 arrengement->arrangement
 arrengements->arrangements
 arround->around
+arrtibute->attribute
 artcile->article
 artefact->artifact
 artefacts->artifacts
@@ -2428,6 +2430,7 @@ deffering->differing
 deffers->differs, defers,
 deffine->define
 deffined->defined
+deffinition->definition
 deffinitively->definitively
 defiend->defined
 defin->define
@@ -2661,6 +2664,8 @@ destroi->destroy
 destroied->destroyed
 destroing->destroying
 destrois->destroys
+destrutor->destructor
+destrutors->destructors
 destuction->destruction
 detabase->database
 detaild->detailed
@@ -2783,6 +2788,10 @@ dificulties->difficulties
 dificulty->difficulty
 difinition->definition
 difinitions->definitions
+difract->diffract
+difracted->diffracted
+difraction->diffraction
+difractive->diffractive
 digitalise->digitize
 digitalising->digitizing
 digitalize->digitize
@@ -5456,7 +5465,7 @@ meterology->meteorology
 methaphor->metaphor
 methaphors->metaphors
 methode->method
-methos->methods
+methos->methods, method,
 metod->method
 metods->methods
 metres->meters
@@ -6096,6 +6105,7 @@ overiding->overriding
 overlaped->overlapped
 overlaping->overlapping
 overlayed->overlaid
+overlodaded->overloaded
 overriddden->overridden
 overridded->overridden
 overridding->overriding
@@ -6162,6 +6172,7 @@ panicing->panicking
 pantomine->pantomime
 Papanicalou->Papanicolaou
 paralel->parallel
+paralelising->parallelizing
 paralelism->parallelism
 paralell->parallel
 paralellism->parallelism
@@ -8762,6 +8773,7 @@ transiton->transition
 transitons->transitions
 translater->translator
 translaters->translators
+transmisive->transmissive
 transmissable->transmissible
 transmited->transmitted
 transmiter->transmitter
@@ -9096,6 +9108,7 @@ unviersity->university
 unwarrented->unwarranted
 unweildly->unwieldy
 unwieldly->unwieldy
+unwraped->unwrapped
 unwrritten->unwritten
 unziped->unzipped
 upate->update
@@ -9316,6 +9329,8 @@ wasnt;->wasn't
 wass->was
 wathc->watch
 watn->want
+wavelenght->wavelength
+wavelenghts->wavelengths
 wayword->wayward
 we we->we
 weaponary->weaponry
