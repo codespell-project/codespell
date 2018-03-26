@@ -50,6 +50,7 @@ if __name__ == "__main__":
           package_data={'codespell_lib': [
               op.join('data', 'dictionary.txt'),
               op.join('data', 'linux-kernel.exclude'),
+              op.join('data', 'mozilla.exclude'),
           ]},
           entry_points={
               'console_scripts': [
