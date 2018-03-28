@@ -38,7 +38,7 @@ options = None
 file_opener = None
 quiet_level = 0
 encodings = ['utf-8', 'iso-8859-1']
-word_regex = re.compile(r"[\w\-']+")
+word_regex = re.compile(r"[\w\-'’]+")
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
 default_dictionary = os.path.join(os.path.dirname(os.path.realpath(__file__)),
