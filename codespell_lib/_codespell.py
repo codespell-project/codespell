@@ -220,9 +220,8 @@ def parse_options(args):
                       action='append', metavar='FILE',
                       help='Custom dictionary file that contains spelling '
                            'corrections. If this flag is not specified or '
-                           'equals "-" then default dictionary "%s" is used. '
-                           'This option can be specified multiple times.' %
-                      default_dictionary)
+                           'equals "-" then the default dictionary is used. '
+                           'This option can be specified multiple times.')
     parser.add_option('-I', '--ignore-words',
                       action='append', metavar='FILE',
                       help='File that contains words which will be ignored '
