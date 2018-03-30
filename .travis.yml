@@ -15,8 +15,6 @@ cache:
 matrix:
     include:
         - os: linux
-          python: 2.7
-        - os: linux
           python: 3.3
         - os: linux
           python: 3.4

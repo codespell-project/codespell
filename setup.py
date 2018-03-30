@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 # adapted from mne-python
 
@@ -56,5 +56,6 @@ if __name__ == "__main__":
               'console_scripts': [
                   'codespell = codespell_lib:_script_main'
               ],
-          }
+          },
+          python_requires='>=3.3'
           )
