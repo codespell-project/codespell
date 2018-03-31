@@ -2012,6 +2012,10 @@ constituant->constituent
 constituants->constituents
 constituion->constitution
 constituional->constitutional
+constract->construct
+constracted->constructed
+constractor->constructor
+constractors->constructors
 constrast->contrast
 constructer->constructor
 constructers->constructors
@@ -2393,6 +2397,8 @@ decompreses->decompresses
 decompresing->decompressing
 decompresor->decompressor
 decompresser->decompressor
+deconstract->deconstruct
+deconstracted->deconstructed
 decoraded->decorated
 decress->decrees
 decribe->describe
