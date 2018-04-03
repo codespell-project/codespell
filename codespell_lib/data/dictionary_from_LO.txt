@@ -37,7 +37,7 @@ acessing->accessing
 acessor->accessor
 achor->Anchor
 ACII->ASCII
-Acitivate->Activate
+acitivate->activate
 acitivation->activation
 acitvate->activate
 acivate->activate
@@ -97,7 +97,7 @@ alignmant->alignment
 alignmen->alignment
 alignmnet->alignment
 alising->aliasing
-aliver->alive
+aliver->liver
 alled->called
 alloced->allocated
 alloed->allowed
@@ -167,7 +167,7 @@ apeends->appends
 apllicatin->application
 apllication->application
 appedn->append
-appendent->appendend
+appendent->appended
 appendign->appending
 appens->appends
 appied->applied
@@ -178,7 +178,7 @@ applicaten->application
 applicatin->application
 applicationevnet->applicationevent
 applikation->application
-applyable->applycable
+applyable->applicable
 applycable->applicable
 applyied->applied
 applys->applies
@@ -379,7 +379,7 @@ bufferent->buffered
 buffor->buffer
 buffors->buffers
 bugous->bogus
-buguous->bugous
+buguous->bogus
 buld->build
 bulle->bullet
 bult->built
@@ -553,7 +553,7 @@ compreser->compressor
 compresor->compressor
 compresser->compressor
 compromize->compromise
-compsite->composit
+compsite->composite
 comptue->compute
 comsuming->consuming
 comute->commute
@@ -643,7 +643,7 @@ continure->continue
 contnt->content
 contolls->controls
 contols->controls
-contorls->conrtols
+contorls->controls
 contradically->contradictally
 contrl->control
 contro->control
@@ -743,7 +743,7 @@ custumized->customized
 cuurently->currently
 cyrptoapi->cryptoapi
 cyrpto->crypto
-cyrto->cryto
+cyrto->crypto
 dabase->database
 dadlock->deadlock
 dafaults->defaults
@@ -862,7 +862,6 @@ dermines->determines
 dervived->derived
 desaster->disaster
 desccription->description
-desciminate->descriminate, disseminate, decimate,
 desciminate->discriminate, disseminate, decimate,
 describ->describe
 descriminated->discriminated
@@ -1015,13 +1014,12 @@ dsiplayinfo->displayinfo
 dsplays->displays
 dthe->the
 dtoring->storing
-dublicat->duplicat
+dublicat->duplicate
 dublicates->duplicates
 ducment->document
 dummp->dummy
 duoblequote->doublequote
 duplicat->duplicate
-duplicat->duplicated
 duplicats->duplicates
 durationm->duration
 dureing->during
@@ -1110,7 +1108,7 @@ epty->empty
 eqaul->equal
 eqaulity->equality
 eqivalents->equivalents
-erliear->earliear
+erliear->earlier
 ermergency->emergency
 errornously->erroneously
 errros->errors
@@ -1149,7 +1147,7 @@ exceution->execution
 exclusiv->exclusive
 excpeption->exception
 excract->extract
-exctacted->exctracted
+exctacted->extracted
 exctracted->extracted
 exctract->extract
 excution->execution
@@ -1569,7 +1567,7 @@ interfernce->interference
 interlly->internally
 internatinal->international
 internface->interface
-interperated->interpretated
+interperated->interpreted
 interpreation->interpretation
 interpretated->interpreted
 interpretet->interpreted
@@ -1725,7 +1723,7 @@ maped->mapped
 mape->map
 marging->margin
 masquarade->masquerade
-masqurade->masquarade
+masqurade->masquerade
 massages->messages
 masster->master
 matchies->matches
@@ -1765,7 +1763,6 @@ microsofot->microsoft
 midified->modified
 milimeters->millimeters
 milimiters->millimiters
-millimiters->millimeters
 mimimun->minimum
 minimial->minimal
 minimumm->minimum
@@ -2230,10 +2227,10 @@ rathern->rather
 rceating->creating
 readble->readable
 readby->read
-readded->readded, read,
+readded->read
 readd->read
 readeable->readable
-readed->read, readd, readded,
+readed->read
 reaeched->reached
 reaise->raise
 realeased->released
@@ -2340,8 +2337,8 @@ repaitnt->repaint
 repant->repaint
 repedability->repeatability
 repedable->repeatable
-reperesent->rapresent
-repersentation->rapresentation
+reperesent->represent
+repersentation->representation
 repertoir->repertoire
 repesentation->representation
 repesented->rapresented
@@ -2579,7 +2576,7 @@ soource->source
 sortings->sorting
 sortlst->sortlist
 sortner->sorter
-sortnr->sortner
+sortnr->sorter
 soruce->source
 soruces->sources
 sotred->sorted
