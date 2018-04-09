@@ -387,6 +387,7 @@ airrcraft->aircraft
 aisian->asian
 aizmuth->azimuth
 aks->ask
+alaready->already
 albiet->albeit
 albumns->albums
 alchohol->alcohol
@@ -1083,6 +1084,7 @@ begginings->beginnings
 beggins->begins
 begining->beginning
 beginnig->beginning
+beginnin->beginning
 behaivior->behavior
 behavoir->behavior
 behavoirs->behaviors
@@ -1974,6 +1976,7 @@ consentrates->concentrates
 consept->concept
 consequentually->consequently
 consequeseces->consequences
+consequetive->consecutive
 consequtive->consecutive
 consequtively->consecutively
 consern->concern
@@ -2314,6 +2317,7 @@ curcumstance->circumstance
 curcumstances->circumstances
 curent->current
 curently->currently
+curernt->current
 currenly->currently
 curriculem->curriculum
 currnt->current
@@ -2879,6 +2883,7 @@ disbaled->disabled
 disbales->disables
 disbaling->disabling
 discernable->discernible
+disconecting->disconnecting
 disconnet->disconnect
 disconneted->disconnected
 disconneting->disconnecting
@@ -3062,6 +3067,7 @@ dreasm->dreams
 driectly->directly
 drnik->drink
 drop down->drop-down
+dropable->droppable
 droped->dropped
 droping->dropping
 droppend->dropped
@@ -3168,6 +3174,7 @@ elicided->elicited
 eligable->eligible
 elimentary->elementary
 eliminetaion->elimination
+elimintate->eliminate
 elimnated->eliminated
 ellected->elected
 elliminate->eliminate
@@ -4982,6 +4989,7 @@ interupt->interrupt
 interupted->interrupted
 interupting->interrupting
 interupts->interrupts
+interveening->intervening
 intervines->intervenes
 inteval->interval
 intevals->intervals
@@ -5675,6 +5683,7 @@ mucuous->mucous
 muder->murder
 mudering->murdering
 muhammadan->muslim
+mulithread->multithread
 mulitple->multiple
 mulitplied->multiplied
 multible->multiple
@@ -5924,6 +5933,7 @@ occouring->occurring
 occourring->occurring
 occours->occurs
 occuped->occupied
+occupided->occupied
 occurance->occurrence
 occurances->occurrences
 occure->occur
@@ -6005,6 +6015,7 @@ opague->opaque
 opbjects->objects
 opeation->operation
 opeations->operations
+openend->opened
 openened->opened
 openess->openness
 openin->opening
@@ -6255,6 +6266,7 @@ parrallel->parallel
 parrallell->parallel
 parrallelly->parallelly
 parrallely->parallelly
+parrent->parent
 parsin->parsing
 partialy->partially
 particually->particularly
@@ -6588,6 +6600,7 @@ potenial->potential
 potenially->potentially
 potental->potential
 potentally->potentially
+potentialy->potentially
 potrait->portrait
 potrayed->portrayed
 poulations->populations
@@ -6626,6 +6639,7 @@ preceision->precision
 precendence->precedence
 precentage->percentage
 precice->precise
+precidence->precedence
 precisly->precisely
 precison->precision
 precission->precision
@@ -7011,6 +7025,7 @@ readning->reading
 realise->realize
 realitime->realtime
 realitvely->relatively
+reallize->realize
 realsitic->realistic
 realtions->relations
 realy->really
@@ -7272,6 +7287,7 @@ relases->releases
 relasing->releasing
 relatiopnship->relationship
 relativly->relatively
+relavant->relevant
 relavent->relevant
 releasse->release
 releated->related
@@ -8198,6 +8214,7 @@ strored->stored
 strores->stores
 stroring->storing
 stroy->story, destroy,
+strucrure->structure
 structered->structured
 structre->structure
 structres->structures
@@ -8245,6 +8262,7 @@ substitude->substitute
 substituded->substituted
 substitudes->substitutes
 substituding->substituting
+substitue->substitute
 substituion->substitution
 substituions->substitutions
 substiution->substitution
@@ -8568,6 +8586,7 @@ tendancies->tendencies
 tendancy->tendency
 tennisplayer->tennis player
 tepmorarily->temporarily
+terimnate->terminate
 terminater->terminator
 terminaters->terminators
 terrestial->terrestrial
