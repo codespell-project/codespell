@@ -3,3 +3,4 @@ recursive-include codespell_lib *.py
 include codespell_lib/data/dictionary.txt
 include codespell_lib/data/linux-kernel.exclude
 include codespell_lib/data/mozilla.exclude
+include codespell_lib/data/llvm-toolchain.exclude

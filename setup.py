@@ -51,6 +51,7 @@ if __name__ == "__main__":
               op.join('data', 'dictionary.txt'),
               op.join('data', 'linux-kernel.exclude'),
               op.join('data', 'mozilla.exclude'),
+              op.join('data', 'llvm-toolchain.exclude'),
           ]},
           entry_points={
               'console_scripts': [
