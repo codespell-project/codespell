@@ -9,13 +9,13 @@ codespell.1: codespell.1.include bin/codespell
 	sed -i '/\.SS \"Usage/,+2d' codespell.1
 
 check-dictionary:
-	@if ! LANG=C sort ${SORT_ARGS} -c codespell_lib/data/dictionary.txt; then \
+	@if ! LC_ALL=C sort ${SORT_ARGS} -c codespell_lib/data/dictionary.txt; then \
 		echo "Dictionary not sorted. Sort with 'make sort-dictionary'"; \
 		exit 1; \
 	fi
 
 sort-dictionary:
-	LANG=C sort ${SORT_ARGS} -u -o codespell_lib/data/dictionary.txt codespell_lib/data/dictionary.txt
+	LC_ALL=C sort ${SORT_ARGS} -u -o codespell_lib/data/dictionary.txt codespell_lib/data/dictionary.txt
 
 pypi:
 	python setup.py sdist register upload
