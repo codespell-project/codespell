@@ -2480,6 +2480,10 @@ defninition->definition
 defninitions->definitions
 defualt->default
 defult->default
+degenarate->degenerate
+degenarated->degenerated
+degenarating->degenerating
+degenaration->degeneration
 degrate->degrade
 degreee->degree
 degreees->degrees
@@ -4007,7 +4011,9 @@ gausian->gaussian
 gemetrical->geometrical
 gemoetry->geometry
 genarate->generate
+genarated->generated
 genarating->generating
+genaration->generation
 geneological->genealogical
 geneologies->genealogies
 geneology->genealogy
