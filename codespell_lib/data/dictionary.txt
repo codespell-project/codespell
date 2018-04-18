@@ -649,6 +649,7 @@ applicaiton->application
 applicaitons->applications
 appliction->application
 applictions->applications
+appling->applying, appalling,
 appologies->apologies
 appology->apology
 apppear->appear
@@ -1605,6 +1606,8 @@ cleean->clean
 cleint->client
 cleints->clients
 clera->clear, sclera,
+clese->close
+cleses->closes
 clincial->clinical
 clinicaly->clinically
 clipoing->clipping
@@ -2239,6 +2242,8 @@ corrispondants->correspondents
 corrisponded->corresponded
 corrisponding->corresponding
 corrisponds->corresponds
+corrleation->correlation
+corrleations->correlations
 costitution->constitution
 cotrol->control
 cotrolled->controlled
@@ -2410,6 +2415,8 @@ decompreses->decompresses
 decompresing->decompressing
 decompresor->decompressor
 decompresser->decompressor
+decond->decode
+deconding->decoding
 deconstract->deconstruct
 deconstracted->deconstructed
 decoraded->decorated
@@ -4932,6 +4939,7 @@ interactivly->interactively
 interal->internal, integral,
 interally->internally
 interals->internals
+interaly->internally
 interanl->internal
 interanlly->internally
 interation->iteration, interaction,
@@ -4966,6 +4974,8 @@ intergration->integration
 interm->interim
 intermidiate->intermediate
 intermittant->intermittent
+internall->internal, internally,
+internaly->internally
 internation->international
 internel->internal
 internels->internals
@@ -5360,7 +5370,9 @@ maintioned->mentioned
 majoroty->majority
 maked->marked, made,
 makeing->making
+maks->mask
 makse->makes
+makss->masks
 Malcom->Malcolm
 malicous->malicious
 malicously->maliciously
@@ -5430,6 +5442,7 @@ massmedia->mass media
 masterbation->masturbation
 mataphysical->metaphysical
 matchin->matching
+matchs->matches
 matcing->matching
 mateiral->material
 mateirals->materials
@@ -5520,6 +5533,8 @@ meterologist->meteorologist
 meterology->meteorology
 methaphor->metaphor
 methaphors->metaphors
+methid->method
+methids->methods
 methode->method
 methos->methods, method,
 metod->method
@@ -5682,6 +5697,7 @@ morroccan->moroccan
 morrocco->morocco
 morroco->morocco
 mortage->mortgage
+mose->mouse
 mosture->moisture
 motiviated->motivated
 mounth->month
@@ -7556,6 +7572,7 @@ resturants->restaurants
 resturaunt->restaurant
 resturaunts->restaurants
 resuction->reduction
+resul->result
 resultion->resolution
 resultions->resolutions
 resulution->resolution
@@ -8564,6 +8581,10 @@ teated->treated
 techician->technician
 techicians->technicians
 techiniques->techniques
+technic->technique
+technics->techniques
+technik->technique
+techniks->techniques
 technitian->technician
 technlogy->technology
 technnology->technology
@@ -9380,6 +9401,7 @@ vyer->very
 vyre->very
 waht->what
 wan't->want, wasn't
+wan->want
 wan;t->want, wasn't 
 wanna->want to, disabled because one might want to allow informal spelling
 want's->wants
