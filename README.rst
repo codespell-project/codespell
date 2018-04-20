@@ -103,6 +103,28 @@ directly, but instead be manually inspected. E.g.:
    Note that there isn't a comma in the end of the line. The last argument is
    treated as the reason why a suggestion cannot be automatically applied.
 
+Sending Pull Requests
+---------------------
+
+If you have a suggested typo that you'd like to see merged please follow these steps:
+
+1. Make sure you read the instructions mentioned in the ``Dictionary format`` section above to submit correctly formatted entries.
+
+2. Sort the dictionary. This is done by invoking (in the top level directory of ``codespell/``)::
+
+      make check-dictionary
+
+  If the make script finds that you need to sort the dictionary, please then run::
+
+      make sort-dictionary
+
+3. Only after this process is complete do we recommend you submit the PR.
+
+**Important Notes:**
+
+* If the dictionary is submitted without being pre-sorted the PR will fail via TravisCI.
+* Not all PRs will be merged. This is pending on the discretion of the devs, maintainers, and the community.
+
 Updating
 --------
 
