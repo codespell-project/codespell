@@ -499,6 +499,7 @@ alternitives->alternatives
 altho->although
 althought->although
 altitide->altitude
+altitute->altitude
 altough->although
 alusion->allusion, illusion,
 alwasy->always
@@ -5201,6 +5202,8 @@ larg->large
 largst->largest
 larrry->larry
 lastr->last
+latitide->latitude
+latitute->latitude
 lattitude->latitude
 lauch->launch
 lauched->launched
@@ -5317,6 +5320,7 @@ lokale->locale
 lonelyness->loneliness
 longers->longer
 longitudonal->longitudinal
+longitute->longitude
 longuer->longer
 lonley->lonely
 lonly->lonely, only,
@@ -6116,6 +6120,9 @@ orientatied->orientated
 oriente->oriented
 orientied->oriented
 origanaly->originally
+origianal->orginal
+origianally->orginally
+origianaly->orginally
 originall->original, originally,
 originaly->originally
 originial->original
@@ -6589,6 +6596,7 @@ posioning->poisoning
 positionn->position
 positionned->positioned
 positionning->positioning
+positiv->positive
 positon->position
 positons->positions
 positve->positive
@@ -6599,6 +6607,8 @@ possabilties->possibilities
 possabily->possibly
 possable->possible
 possably->possibly
+possble->possible
+possbly->possibly
 posseses->possesses
 possesing->possessing
 possesion->possession
@@ -6613,6 +6623,7 @@ possiblility->possibility
 possiblilty->possibility
 possiblities->possibilities
 possiblity->possibility
+possiblly->possibly
 possition->position
 possobily->possibly
 possoble->possible
@@ -8031,6 +8042,7 @@ soliders->soldiers
 soliliquy->soliloquy
 soluable->soluble
 som->some
+somehting->something
 somehwat->somewhat
 somehwere->somewhere
 somehwo->somehow
@@ -9281,6 +9293,7 @@ varables->variables
 varaiance->variance
 varaible->variable
 varaibles->variables
+varation->variation
 varations->variations
 variabe->variable
 variabel->variable
