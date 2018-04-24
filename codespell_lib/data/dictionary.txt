@@ -1674,6 +1674,7 @@ coloumns->columns
 coloums->columns
 colum->column
 colummn->column
+colummns->columns
 colums->columns
 comamnd->command
 comamnds->commands
@@ -2772,6 +2773,8 @@ diagnotic->diagnostic
 diamons->diamonds
 diangose->diagnose
 dianostic->diagnostic
+diaplay->display
+diaplays->displays
 diaster->disaster
 dicergence->divergence
 dichtomy->dichotomy
@@ -3423,8 +3426,10 @@ erronous->erroneous
 erronously->erroneously
 errorneous->erroneous
 errorneously->erroneously
+errro->error
 errror->error
 errrors->errors
+errros->errors
 errupted->erupted
 esential->essential
 esentially->essentially
@@ -3831,6 +3836,8 @@ flter->filter
 fluorish->flourish
 fluroescent->fluorescent
 flusing->flushing
+focuss->focus
+focussed->focused
 foget->forget
 fogot->forgot
 fogotten->forgotten
@@ -3962,6 +3969,7 @@ functionallity->functionality
 functionaly->functionally
 functionnality->functionality
 functionning->functioning
+functionss->functions
 functios->functions
 functiosn->functions
 functon->function
@@ -5288,6 +5296,7 @@ limted->limited
 lincese->license
 lincesed->licensed
 linceses->licenses
+linearily->linearly, linearity,
 lingth->length
 linnaena->linnaean
 lintain->lintian
@@ -5497,6 +5506,7 @@ meganism->mechanism
 melieux->milieux
 membranaphone->membranophone
 memeber->member
+memmory->memory
 memroy->memory
 menally->mentally
 ment->meant
@@ -7257,6 +7267,8 @@ reffered->referred
 refference->reference
 reffering->referring
 refinment->refinement
+refocuss->refocus
+refocussed->refocused
 refrence->reference
 refrenced->referenced
 refrences->references
@@ -7626,6 +7638,7 @@ reuqest->request
 reuqested->requested
 reuqesting->requesting
 reuqests->requests
+reussing->reusing
 revaluated->reevaluated
 reveiw->review
 reveiwed->reviewed
@@ -8933,12 +8946,15 @@ trucate->truncate
 trucated->truncated
 trucates->truncates
 trucating->truncating
+truelly->truly
 truely->truly
+trully->truly
 trustworthyness->trustworthiness
 tryed->tried
 trys->tries
 tupple->tuple
 tupples->tuples
+turly->truly
 turnk->turnkey, trunk,
 Tuscon->Tucson
 tust->trust
