@@ -1318,30 +1318,43 @@ awefully->awfully
 awnser->answer
 awya->away
 axises->axes
+bacause->because
 baceause->because
+bacic->basic
+backbround->background
 backgorund->background
 backgroud->background
 backrounds->backgrounds
+backsapce->backspace
 backslashs->backslashes
 backupped->backed-up
 backword->backward, backword,
 backwords->backwards, backwords,
+backwrad->backward
 bacup->backup
+bage->bag
 bahaving->behaving
 bahavior->behavior
 bahavioral->behavioral
 bahaviors->behaviors
+baisc->basic
 bakc->back
 bakup->backup
 bakups->backups
+balacing->balancing
 baloon->balloon
 baloons->balloons
+balse->false
 banannas->bananas
+bandaid->band-aid
 bandwidht->bandwidth
 bandwith->bandwidth
 bankrupcy->bankruptcy
 banruptcy->bankruptcy
 baout->about, bout,
+barbedos->barbados
+basci->basic
+basf->base
 basicaly->basically
 basicly->basically
 batery->battery
@@ -1356,18 +1369,23 @@ beaurocracy->bureaucracy
 beaurocratic->bureaucratic
 beause->because
 beautyfull->beautiful
+beaviour->behaviour
 becamae->became
 becames->becomes, became,
 becase->because
 becasue->because
+becasuse->because
 becaue->because
 becaus->because
 becausee->because
+becauses->because
 beccause->because
+bechmark->benchmark
 becomeing->becoming
 becomming->becoming
 becouse->because
 becuase->because
+beding->bedding, begging,
 bedore->before
 beeing->being
 beetween->between
@@ -1379,14 +1397,27 @@ begginer->beginner
 begginers->beginners
 beggining->beginning
 begginings->beginnings
+begginning->beginning
 beggins->begins
+begines->begins
 begining->beginning
+beginn->begin
 beginnig->beginning
 beginnin->beginning
+behabviour->behaviour
 behaivior->behavior
+behavious->behaviour, behaviours,
+behavioutr->behaviour
+behaviuor->behaviour
 behavoir->behavior
 behavoirs->behaviors
-behavour->behavior
+behavour->behaviour
+behinde->behind
+behing->behind
+behvaiour->behaviour
+beind->behind
+beinning->beginning
+bejond->beyond
 beleagured->beleaguered
 beleif->belief
 beleifable->believable
@@ -1418,7 +1449,10 @@ bellweather->bellwether
 belog->belong
 beloging->belonging
 belond->belong
+beloning->belonging
 bemusemnt->bemusement
+benchamarked->benchmarked
+beneeth->beneath
 beneficary->beneficiary
 beng->being
 benificial->beneficial
@@ -1438,19 +1472,29 @@ betwen->between
 betwene->between
 bever->never
 bevore->before
+beweeen->between
 beween->between
 bewteen->between
 bewteeness->betweenness
+beyound->beyond
+bginning->beginning
 bianries->binaries
 bianry->binary
 bilateraly->bilaterally
 billingualism->bilingualism
+billon->billion
+binairy->binary
+binanary->binary
 binominal->binomial
 bistream->bitstream
+bitamps->bitmaps
 bitwise-orring->bitwise-oring
+bizare->bizarre
+bizarely->bizarrely
 bizzare->bizarre
 blaim->blame
 blaimed->blamed
+blak->blank
 blcok->block
 blcoks->blocks
 blessure->blessing
@@ -1459,8 +1503,12 @@ Blitzkreig->Blitzkrieg
 bload->bloat
 bloaded->bloated
 blohted->bloated
+blokcer->blocker
 bloted->bloated
+blured->blurred
 boaut->bout, boat, about,
+boddy->body
+bodgy->body
 bodydbuilder->bodybuilder
 bofore->before
 bolean->boolean
@@ -1471,19 +1519,30 @@ bondary->boundary
 Bonnano->Bonanno
 bood->boot
 bookeeping->bookkeeping
+bookmar->bookmark
+boold->bold, bool,
 booleamn->boolean
+booleanss->booleans
 booleen->boolean
+boolen->boolean
+booolean->boolean
 bootsrap->bootstrap
 bootstap->bootstrap
 bootstapped->bootstrapped
 bootstapping->bootstrapping
 bootstaps->bootstraps
 boradcast->broadcast
+bordrelines->borderline
+bordrelines->borderlines
 borke->broke
+bothe->both
+botifies->notifies
+botton->bottom, button,
 botttom->bottom
 boudaries->boundaries
 boudary->boundary
 bouding->bounding
+boundaryi->boundary
 boundarys->boundaries
 boundries->boundaries
 boundry->boundary
@@ -1493,7 +1552,13 @@ bouyancy->buoyancy
 bouyant->buoyant
 boyant->buoyant
 bracese->braces
+brach->branch
+brackeds->brackets
+brackground->background
+brance->branch, branches,
+braodcasted->broadcasted
 Brasillian->Brazilian
+breakes->breaks
 breakthough->breakthrough
 breakthroughts->breakthroughs
 breef->brief, beef,
@@ -1501,6 +1566,7 @@ breif->brief
 breifly->briefly
 brethen->brethren
 bretheren->brethren
+brfore->before
 brige->bridge
 briges->bridges
 brighness->brightness
@@ -1514,6 +1580,7 @@ Brittish->British
 broacasted->broadcast
 broadacasting->broadcasting
 broady->broadly
+broblematic->problematic
 brokeness->brokenness
 broser->browser
 brower->browser
@@ -1522,10 +1589,14 @@ Buddah->Buddha
 Buddist->Buddhist
 bufer->buffer
 bufers->buffers
+buffereed->buffered
+bufferent->buffered
 bufffer->buffer
 bufffers->buffers
 buffor->buffer
 buffors->buffers
+bugous->bogus
+buguous->bugous
 bugus->bogus
 buid->build
 buil->build, built,
@@ -1534,17 +1605,18 @@ buipd->build
 buisness->business
 buisnessman->businessman
 buld->build
-buld->building
 bulding->building
 bulds->builds
 bulid->build
 buliding->building
 bulids->builds
 bulit->built
+bulle->bullet
 bulletted->bulleted
 bult->built
 bult-in->built-in
 bultin->builtin
+bumb->bump
 bumpded->bumped
 buoancy->buoyancy
 buring->burying, burning, burin, during,
@@ -1555,6 +1627,9 @@ busness->business
 buss->bus
 busses->buses
 bussiness->business
+buttosn->buttons
+butttons->buttons
+buuild->build
 cach->catch, cache,
 cacheing->caching
 cachse->cache, caches,
