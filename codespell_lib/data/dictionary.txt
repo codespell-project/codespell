@@ -1992,8 +1992,8 @@ commedic->comedic
 commemerative->commemorative
 commemmorate->commemorate
 commemmorating->commemorating
-commend->comment, command,
-commends->comments, commands,
+commend->commend, comment, command,
+commends->commends, comments, commands,
 commerical->commercial
 commerically->commercially
 commericial->commercial
@@ -5896,13 +5896,14 @@ mimatching->mismatching
 mimicing->mimicking
 mimick->mimic
 mimicks->mimics
-mimimise->minimise
+mimimise->minimise, minimize,
+mimimize->minimize, minimise,
 mimimum->minimum
 mimimun->minimum
 minature->miniature
 minerial->mineral
 MingGW->MinGW
-minimise->minimize
+minimise->minimise, minimize,
 minimun->minimum
 mininum->minimum
 miniscule->minuscule
@@ -6427,7 +6428,6 @@ organistion->organisation
 organiztion->organization
 orgin->origin, organ,
 orginal->original
-orginal->orignal
 orginally->originally
 orginate->originate
 orginated->originated
@@ -6652,7 +6652,7 @@ pass-thru->pass-through, pass through, passthrough,
 pass-trough->pass-through, pass through, passthrough,
 passerbys->passersby
 passiv->passive
-passtime->pasttime
+passtime->pastime
 pasteing->pasting
 pasttime->pastime
 pastural->pastoral
@@ -9186,7 +9186,7 @@ trancendent->transcendent
 trancending->transcending
 tranfer->transfer
 tranfered->transferred
-tranfering->transfering
+tranfering->transferring
 tranfers->transfers
 tranform->transform
 tranformation->transformation
