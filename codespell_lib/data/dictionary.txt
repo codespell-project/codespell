@@ -1680,7 +1680,9 @@ cartilidge->cartilage
 cartrige->cartridge
 cas->case
 case-insenstive->case-insensitive
-casesensitve->casesensitive
+case-sensitve->case-sensitive
+caseinsenstive->case-insensitive
+casesensitve->case-sensitive
 casette->cassette
 cashe->cache
 casion->caisson
@@ -1718,7 +1720,7 @@ catterpilars->caterpillars
 catterpillar->caterpillar
 catterpillars->caterpillars
 cattleship->battleship
-cauched->catched
+cauched->caught
 caugt->caught
 cauhgt->caught
 ccahe->cache
@@ -1776,8 +1778,8 @@ certifice->certificate
 certifificates->certificates
 certiticate->certificate
 cervial->cervical, servile, serval,
-chaecking->checking
 chached->cached
+chaecking->checking
 chage->change
 chaged->changed
 chages->changes
@@ -1973,7 +1975,7 @@ clera->clear, sclera,
 clese->close
 cleses->closes
 clevely->cleverly
-cliensite->clientside
+cliensite->client-side
 clincial->clinical
 clinicaly->clinically
 clipoing->clipping
@@ -2171,7 +2173,7 @@ communcation->communication
 communciation->communication
 communiation->communication
 communites->communities
-comobobox->combobox
+comobobox->combo-box
 comon->common
 comonent->component
 compability->compatibility
@@ -2276,7 +2278,7 @@ compresor->compressor
 compresser->compressor
 comprimise->compromise
 compromize->compromise
-compsite->composit
+compsite->composite
 comptible->compatible
 comptue->compute
 compulsary->compulsory
@@ -2300,7 +2302,8 @@ conaining->containing
 conains->contains
 conainted->contained
 conatain->contain
-conatainer->conaitner
+conatainer->container
+conatainers->containers
 conatains->contains
 conatin->contain
 conatined->contained
@@ -2617,7 +2620,7 @@ contoller->controller
 contollers->controllers
 contolls->controls
 contols->controls
-contorls->conrtols
+contorls->controls
 contradically->contradictory
 contraints->constraints
 contravercial->controversial
