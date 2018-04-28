@@ -29,7 +29,7 @@ import fnmatch
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
-VERSION = '1.12.0.dev0'
+VERSION = '1.13.0.dev0'
 
 misspellings = {}
 ignore_words = set()
@@ -38,7 +38,7 @@ options = None
 file_opener = None
 quiet_level = 0
 encodings = ['utf-8', 'iso-8859-1']
-word_regex = re.compile(r"[\w\-']+")
+word_regex = re.compile(u"[\w\-'’`]+")
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
 default_dictionary = os.path.join(os.path.dirname(os.path.realpath(__file__)),
@@ -220,9 +220,8 @@ def parse_options(args):
                       action='append', metavar='FILE',
                       help='Custom dictionary file that contains spelling '
                            'corrections. If this flag is not specified or '
-                           'equals "-" then default dictionary "%s" is used. '
-                           'This option can be specified multiple times.' %
-                      default_dictionary)
+                           'equals "-" then the default dictionary is used. '
+                           'This option can be specified multiple times.')
     parser.add_option('-I', '--ignore-words',
                       action='append', metavar='FILE',
                       help='File that contains words which will be ignored '
@@ -254,8 +253,8 @@ def parse_options(args):
     parser.add_option('-i', '--interactive',
                       action='store', type='int', default=0,
                       help='Set interactive mode when writing changes. '
-                           '0 is the same of no interactivity; 1 makes '
-                           'codespell ask confirmation; 2 ask user to '
+                           '0 is the same as no interactivity; 1 makes '
+                           'codespell ask for confirmation; 2 ask user to '
                            'choose one fix when more than one is '
                            'available; 3 applies both 1 and 2')
 
