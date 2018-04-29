@@ -5215,16 +5215,20 @@ gaurenteed->guaranteed
 gaurentees->guarantees
 gausian->gaussian
 gemetrical->geometrical
+gemetry->geometry
 gemoetry->geometry
 genarate->generate
 genarated->generated
 genarating->generating
 genaration->generation
+geneic->generic
 geneological->genealogical
 geneologies->genealogies
 geneology->genealogy
 generaates->generates
+generall->generally, general,
 generaly->generally
+generat->generate
 generater->generator
 generaters->generators
 generaton->generation, generator,
@@ -5240,6 +5244,7 @@ genrate->generate
 genrated->generated
 genrates->generates
 genrating->generating
+genration->generation
 genreate->generate
 genreated->generated
 genreates->generates
@@ -5250,6 +5255,9 @@ geoemtries->geometries
 geoemtry->geometry
 geographich->geographic
 geographicial->geographical
+geomery->geometry
+geometites->geometries
+geometrc->geometry
 geometrician->geometer
 geometricians->geometers
 geometrie->geometry
@@ -5257,34 +5265,47 @@ geometrys->geometries
 geomitrically->geometrically
 geomtry->geometry
 geomtrys->geometries
+geraphics->graphics
 gerat->great
+gererate->generate
+gererated->generated
+gernerate->generate
 gess->guess
 get's->gets
 get;s->gets
 geting->getting
 gettetx->gettext
 Ghandi->Gandhi
+ghraphic->graphic
+gioen->given
 gird->grid, gird,
 girds->grids, girds,
 gived->given
+givem->given, give them, give 'em,
 glight->flight
 gloab->globe
 gloabal->global
 gloabl->global
+globbal->global
 glpyh->glyph
 glpyhs->glyphs
+glyh->glyph
+glyhs->glyphs
 glyped->glyphed
 glyphes->glyphs
 glyping->glyphing
 gnawwed->gnawed
 gnerate->generate
 gnorung->ignoring
+gobal->global
 godess->goddess
 godesses->goddesses
 Godounov->Godunov
 goemetries->geometries
+gogether->together
 gogin->going, Gauguin,
 goign->going
+goin->going
 goind->going
 gonig->going
 gonna->going to, disabled because one might want to allow informal spelling
@@ -5303,19 +5324,26 @@ governmnet->government
 govorment->government
 govormental->governmental
 govornment->government
+grabage->garbage
 grabed->grabbed
 grabing->grabbing
 gracefull->graceful
 graet->great
+grafics->graphics
 grafitti->graffiti
+grahic->graphic
 grahical->graphical
+grahics->graphics
 grahpical->graphical
 gramar->grammar
 gramatically->grammatically
 grammaticaly->grammatically
 grammer->grammar
 grammers->grammars
+granchildren->grandchildren
 granulatiry->granularity
+grapgics->graphics
+graphcis->graphics
 grapic->graphic
 grapical->graphical
 grapics->graphics
@@ -5323,12 +5351,16 @@ grat->great
 gratefull->grateful
 gratuitious->gratuitous
 grbber->grabber
+greate->greater
 greatful->grateful
 greatfully->gratefully
 greather->greater
 greif->grief
+grephic->graphic
+greysacles->greyscales
 gridles->griddles
 grometry->geometry
+grop->drop
 gropu->group
 groupd->grouped
 groupt->grouped
