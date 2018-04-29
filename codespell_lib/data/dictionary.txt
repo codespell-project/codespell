@@ -4814,29 +4814,38 @@ facilties->facilities
 facinated->fascinated
 facist->fascist
 factorizaiton->factorization
+factorys->factories
+fadind->fading
 faild->failed
 faile->failed
 failt->fail, failed,
+failture->failure
 failue->failure
 failuer->failure
 failues->failures
 falg->flag
 falgs->flags
+falied->failed
 faliure->failure
 faliures->failures
+fallabck->fallback
+falure->failure
 familar->familiar
 familes->families
 familiies->families
 familliar->familiar
+familly->family
 famoust->famous
 fanatism->fanaticism
 Farenheit->Fahrenheit
 fasade->facade
 fassade->facade
+fastr->faster
 fatc->fact
 fatser->faster
 fature->feature
 faught->fought
+faund->found
 favoutrable->favourable
 fcound->found
 feasable->feasible
@@ -4848,11 +4857,13 @@ feauture->feature
 feautures->features
 Febuary->February
 Feburary->February
+fedality->fidelity
 fedreally->federally
 feeback->feedback
 feeded->fed
 feetur->feature
 feeture->feature
+feld->field
 femminist->feminist
 fempto->femto
 feromone->pheromone
@@ -4860,15 +4871,22 @@ fertily->fertility
 fetaure->feature
 fetaures->features
 feture->feature
+fhurter->further
+fials->fails
 fianite->finite
 fianlly->finally
 ficticious->fictitious
 fictious->fictitious
+fidality->fidelity
 fidn->find
 fiel->feel, field, file, phial,
+fieldlst->fieldlist
+fieled->field
 fiels->feels, fields, files, phials,
 fiercly->fiercely
 fightings->fighting
+filal->final
+fileds->fields
 filesytem->filesystem
 filesytems->filesystems
 fileystem->filesystem
@@ -4877,21 +4895,30 @@ filiament->filament
 fille->file, fill,
 filles->files, fills,
 fillowing->following
+fillung->filling
 filnal->final
+filname->filename
+fime->fixme, time,
 fimilies->families
 finacial->financial
 finalle->finale, finally,
 finaly->finally, finale,
 financialy->financially
+fincally->finally
 findout->find out
+finialization->finalization
+finishs->finishes
 finnished->finished
 finsih->finish
 finsihed->finished
 finsihes->finishes
 finsihing->finishing
+fiorget->forget
+firdt->first, third,
 firends->friends
 firey->fiery
 firmwware->firmware
+firsr->first
 firt->first, flirt,
 firts->first, flirts, 
 fisical->physical, fiscal,
@@ -4901,10 +4928,14 @@ fisist->physicist
 fisrt->first
 fitler->filter
 fitlers->filters
+fixeme->fixme
+flage->flags
 flaged->flagged
+flages->flags
 flakyness->flakiness
 flamable->flammable
 flass->class, flask,
+flate->flat
 flatened->flattened
 flawess->flawless
 fleed->fled, freed,
@@ -4920,19 +4951,29 @@ flourishment->flourishing
 flter->filter
 fluorish->flourish
 fluroescent->fluorescent
+flushs->flushes
 flusing->flushing
+flyes->flies, flyers,
+focuse->focus
+focusf->focus
 focuss->focus
 focussed->focused
 foget->forget
 fogot->forgot
 fogotten->forgotten
+folde->folder, fold,
 folling->following, falling, 
 folllow->follow
 folllowed->followed
 folllowing->following
 folllows->follows
+follod->followed
+folloeing->following
 folloing->following
+followig->following
 followin->following
+followind->following
+followings->following
 followng->following
 follwing->following
 follwoing->following
@@ -4941,16 +4982,26 @@ fomed->formed
 fomr->from, form,
 fonction->function
 fonetic->phonetic
+fontain->fountain, contain,
+fontains->fountains, contains,
 fontier->frontier
 fontrier->frontier
+foontnotes->footnotes
 foootball->football
+foorter->footer
+footnoes->footnotes
 foppy->floppy
+foramatting->formatting
+foramt->format
 forbad->forbade
+forbbiden->forbidden
 forbiden->forbidden
 foreing->foreign
 foreward->foreword, forward,
 forewarded->forewarded, forwarded,
 forfiet->forfeit
+forgeround->foreground
+forgoten->forgotten
 forground->foreground
 forhead->forehead
 foriegn->foreign
@@ -4958,25 +5009,36 @@ Formalhaut->Fomalhaut
 formallize->formalize
 formallized->formalized
 formaly->formally, formerly,
+formate->format
 formated->formatted
+formates->formats
 formating->formatting
+formattind->formatting
 formattting->formatting
 formelly->formerly
+formely->formerly
 formend->formed
 formidible->formidable
+formmatted->formatted
 formost->foremost
-formule->formula, formule, 
+formt->format
+formua->formula
+formule->formula, formulas, formule,
 formules->formulas
+forr->for
 forsaw->foresaw
 forse->force
 forseeable->foreseeable
 fortan->fortran
+fortat->format
 fortelling->foretelling
 fortunatly->fortunately
 forula->formula
 forulas->formulas
 forumla->formula
 forumlas->formulas
+forumula->formula
+forumulas->formulas
 forunate->fortunate
 forunately->fortunately
 forunner->forerunner
@@ -4985,6 +5047,7 @@ forwaded->forwarded
 forwading->forwarding
 forwads->forwards
 forwardig->forwarding
+forwared->forwarded
 forwwarded->forwarded
 fot->for
 foto->photo
@@ -5009,10 +5072,14 @@ foward->forward
 fowarded->forwarded
 fowarding->forwarding
 fowards->forwards
+fracional->fractional
 fragement->fragment
 fragements->fragments
 frambuffer->framebuffer
 framebufer->framebuffer
+framei->frame
+frametyp->frametype
+framlayout->framelayout
 framwork->framework
 Fransiscan->Franciscan
 Fransiscans->Franciscans
@@ -5029,17 +5096,24 @@ frequentily->frequently
 frequncies->frequencies
 frequncy->frequency
 frist->first
+frmat->format
 fro->for
+fromat->format
 frome->from
 fromed->formed
+froms->forms
 fron->from
 froniter->frontier
 frontent->frontend
 frontents->frontends
+froward->forward
+frowarded->forwarded
+frozee->frozen
 fucntion->function
 fucntioning->functioning
 fucntions->functions
 fuction->function
+fuctionoid->functionoid
 fuctions->functions
 fufill->fulfill
 fufilled->fulfilled
@@ -5058,6 +5132,7 @@ funcitons->functions
 functin->function
 functino->function
 functins->functions
+functionailty->functionality
 functionallity->functionality
 functionaly->functionally
 functionnality->functionality
@@ -5071,6 +5146,7 @@ functonality->functionality
 functoning->functioning
 functons->functions
 functtion->function
+funczion->function
 fundametal->fundamental
 fundametals->fundamentals
 fundemental->fundamental
@@ -5082,14 +5158,19 @@ funtionalities->functionalities
 funtionality->functionality
 funtioning->functioning
 funtions->functions
+furher->further
 furter->further
+furthemore->furthermore
 furthermor->furthermore
 furthur->further
 furture->future
+furure->future
 furuther->further
+futer->further
 futher->further
 futhermore->furthermore
 futhroc->futhark, futhorc,
+futture->future
 fysical->physical
 fysisist->physicist
 fysisit->physicist
