@@ -1,8 +1,8 @@
 environment:
   global:
       PYTHON: "C:\\conda"
-      CONDA_DEPENDENCIES: "nose setuptools flake8 coverage chardet"
-      PIP_DEPENDENCIES: "codecov"
+      CONDA_DEPENDENCIES: "pytest pytest-cov setuptools flake8 coverage chardet"
+      PIP_DEPENDENCIES: "codecov pytest-sugar"
   matrix:
       - PYTHON_VERSION: "2.7"
         PYTHON_ARCH: "32"
@@ -21,7 +21,7 @@ build: false  # Not a C# project, build stuff at the test step instead.
 test_script:
   - "codespell --help"
   - "flake8"
-  - "nosetests"
+  - "pytest codespell_lib"
 
 on_success:
   - "codecov"

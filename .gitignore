@@ -5,3 +5,4 @@ ld
 codespell.egg-info
 *.pyc
 .cache/
+.pytest_cache/
