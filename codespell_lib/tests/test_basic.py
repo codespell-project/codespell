@@ -394,8 +394,15 @@ def test_case_dictionary():
         for line in fid:
             err, rep = line.decode('utf-8').split('->')
             err = err.lower()
-            assert err not in err_dict
+            assert err not in err_dict, 'entry already exists'
             err_dict[err] = rep
+            reps = [r.strip() for r in rep.lower().split(',')]
+            reps = [r for r in reps if len(r)]
+            unique = list()
+            for r in reps:
+                if r not in unique:
+                    unique.append(r)
+            assert reps == unique, 'entries are not (lower-case) unique'
 
 
 def test_case_handling(reload_codespell_lib):
