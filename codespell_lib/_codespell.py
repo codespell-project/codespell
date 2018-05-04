@@ -562,6 +562,9 @@ def main(*args):
     global quiet_level
     global file_opener
 
+    if sys.version_info[0] == 2:
+        sys.exit("Python 2 is no longer supported")
+
     options, args, parser = parse_options(args)
 
     if options.regex:
