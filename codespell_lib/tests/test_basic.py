@@ -388,12 +388,14 @@ def FakeStdin(text):
 
 def test_case_dictionary():
     """Test that all dictionary entries are in lower case."""
+    err_dict = dict()
     with open(op.join(op.dirname(__file__), '..', 'data',
                       'dictionary.txt'), 'rb') as fid:
         for line in fid:
             err, rep = line.decode('utf-8').split('->')
-            assert err == err.lower()
-            assert rep == rep.lower()
+            err = err.lower()
+            assert err not in err_dict
+            err_dict[err] = rep
 
 
 def test_case_handling(reload_codespell_lib):

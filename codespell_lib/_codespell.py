@@ -304,6 +304,10 @@ def build_dict(filename):
     with codecs.open(filename, mode='r', buffering=1, encoding='utf-8') as f:
         for line in f:
             [key, data] = line.split('->')
+            # For now, convert both to lower. Someday we can maybe add support
+            # for fixing caps.
+            key = key.lower()
+            data = data.lower()
             if key in ignore_words:
                 continue
             data = data.strip()
@@ -588,7 +592,7 @@ def main(*args):
 
     dictionaries = options.dictionary or [default_dictionary]
     for dictionary in dictionaries:
-        if dictionary is "-":
+        if dictionary == "-":
             dictionary = default_dictionary
         if not os.path.exists(dictionary):
             print('ERROR: cannot find dictionary file: %s' % dictionary,
