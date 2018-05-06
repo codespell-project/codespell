@@ -881,11 +881,11 @@ apropiately->appropriately
 apropriate->appropriate
 apropriately->appropriately
 aproval->approval
-aprrovement->approval
 aproximate->approximate
 aproximately->approximately
 aproximation->approximation
 aproximations->approximations
+aprrovement->approval
 aprtment->apartment
 aqcuire->acquire
 aqcuired->acquired
@@ -2155,6 +2155,7 @@ collorscheme->colorscheme
 collosal->colossal
 collumn->column
 collumns->columns
+colmn->column
 colmns->columns
 colmuned->columned
 colomns->columns
@@ -2914,6 +2915,7 @@ corrresponds->corresponds
 corrspond->corresponds
 costitution->constitution
 costruct->construct
+costructor->constructor
 cotain->contain
 cotained->contained
 cotainer->container
@@ -3066,9 +3068,8 @@ dadlock->deadlock
 daed->dead
 dael->deal, dial, dahl,
 dafault->default
-dafaut->default
-dafault->default
 dafaults->defaults
+dafaut->default
 dake->take
 dalmation->dalmatian
 damenor->demeanor
@@ -5117,6 +5118,7 @@ fron->from
 froniter->frontier
 frontent->frontend
 frontents->frontends
+fropm->from
 froward->forward
 frowarded->forwarded
 frozee->frozen
@@ -6447,6 +6449,8 @@ langage->language
 langauage->language
 langauge->language
 langauges->languages
+langeuage->language
+langeuagesection->languagesection
 langugage->language
 languge->language
 languges->languages
@@ -7132,6 +7136,7 @@ noncombatents->noncombatants
 nonexistant->nonexistent
 nonsence->nonsense
 nontheless->nonetheless
+noo->no
 noone->no one
 norhern->northern
 normailzation->normalization
@@ -8658,6 +8663,7 @@ relitavely->relatively
 relized->realised, realized,
 relocateable->relocatable
 relpacement->replacement
+reltive->relative
 relys->relies
 remaing->remaining
 remeber->remember
@@ -8797,6 +8803,7 @@ requrested->requested
 requresting->requesting
 requrests->requests
 requried->required
+requrired->required
 requrirement->requirement
 requrirements->requirements
 requsite->requisite
@@ -8901,6 +8908,7 @@ resurce->resource
 resurecting->resurrecting
 resursive->recursive
 resursively->recursively
+resuts->results
 resycn->resync
 retalitated->retaliated
 retalitation->retaliation
@@ -8922,6 +8930,8 @@ retriving->retrieving
 retrun->return
 retruned->returned
 retun->return
+retunr->return
+retunrs->returns
 retuns->returns
 retur->return
 retured->returned
@@ -9200,6 +9210,8 @@ settlment->settlement
 setts->sets
 settting->setting
 setttings->settings
+seuence->sequence
+seuences->sequences
 severeal->several
 severley->severely
 severly->severely
@@ -9227,6 +9239,7 @@ shoucl->should
 shoud->should
 shoudl->should
 shoudln->should, shouldn't,
+shoudn't->shouldn't
 should'nt->shouldn't
 should't->shouldn't
 shouldn;t->shouldn't
@@ -9427,6 +9440,7 @@ speciefied->specified
 specif->specific, specify,
 specifc->specific
 specifed->specified
+specifically->specifically
 specificatin->specification
 specificaton->specification
 specificed->specified
@@ -9459,7 +9473,6 @@ speling->spelling
 spendour->splendour
 spermatozoan->spermatozoon
 spesify->specify
-specifically->specifically
 spezialisation->specialization
 spezified->specified
 spliting->splitting
@@ -9518,6 +9531,7 @@ statisfied->satisfied
 statisfies->satisfies
 statisfy->satisfy
 statisfying->satisfying
+statmenmt->statement
 statment->statement
 statments->statements
 stattistic->statistic
@@ -10398,11 +10412,13 @@ unforetunately->unfortunately
 unforgetable->unforgettable
 unforgiveable->unforgivable
 unfortunatelly->unfortunately
+unfortunatetly->unfortunately
 unfortunatley->unfortunately
 unfortunatly->unfortunately
 unforunate->unfortunate
 unforunately->unfortunately
 unfourtunately->unfortunately
+unhandeled->unhandled
 unhilight->unhighlight
 unhilighted->unhighlighted
 unhilights->unhighlights
@@ -10845,6 +10861,7 @@ wich->which
 widesread->widespread
 widht->width
 wief->wife
+wieh->view
 wierd->weird
 wiew->view
 wih->with
@@ -10889,7 +10906,9 @@ wokring->working
 wonderfull->wonderful
 wont->won't, wont,
 wordlwide->worldwide
+workaraound->workaround
 workaroung->workaround
+workarund->workaround
 workbanch->workbench
 workes->works
 workststion->workstation
