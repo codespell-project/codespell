@@ -949,6 +949,7 @@ archtypes->archetypes
 archvie->archive
 archvies->archives
 arcticle->article
+Ardiuno->Arduino
 are'nt->aren't
 aready->already
 aren's->aren't
@@ -10998,7 +10999,7 @@ wereabouts->whereabouts
 wereas->whereas
 werent->weren't
 werever->wherever
-wether->whether
+wether->weather, whether,
 whant->want
 whants->wants
 whataver->whatever
