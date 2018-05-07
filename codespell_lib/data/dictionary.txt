@@ -6388,6 +6388,8 @@ Januray->January
 Japanes->Japanese
 japanses->Japanese
 jaques->jacques
+javasript->javascript
+javasrript->javascript
 jave->java, have,
 jeapardy->jeopardy
 jewllery->jewellery
@@ -6397,6 +6399,7 @@ Jospeh->Joseph
 jouney->journey
 journied->journeyed
 journies->journeys
+jscipt->jscript
 jstu->just
 jsut->just
 Juadaism->Judaism
@@ -6404,42 +6407,61 @@ Juadism->Judaism
 judical->judicial
 judisuary->judiciary
 juducial->judicial
+jumpt->jumped, jump,
 juristiction->jurisdiction
 juristictions->jurisdictions
+justfied->justified
+justication->justification
+kake->cake, take,
+kazakstan->kazakhstan
+keep-alives->keep-alive
 kenrel->kernel
 kepps->keeps
+kerenl->kernel
 keybaord->keyboard
 keyboad->keyboard
 keyboads->keyboards
 keybord->keyboard
 keybords->keyboards
+keyords->keywords
 keyowrd->keyword
+keystokes->keystrokes
 keywork->keyword
 keyworkd->keyword
 keyworkds->keywords
+keywors->keywords
 kindergarden->kindergarten
 klenex->kleenex
 knifes->knives
 knive->knife
+knowlegde->knowledge
 knowlege->knowledge
 knowlegeable->knowledgeable
 knwo->know
 knwon->known
 knwos->knows
+kocalized->localized
 konw->know
 konwn->known
 konws->knows
 koordinate->coordinate
 koordinates->coordinates
 kwno->know
+kyrillic->cyrillic
 labatory->lavatory, laboratory,
+labeld->labelled
 lable->label
 labled->labeled, labelled,
+lablels->labels
 lables->labels
 labling->labeling, labelling,
+labouriously->laboriously
 labratory->laboratory
 laguage->language
 laguages->languages
+laiter->later
+lanaguage->language
+lanauge->language
 langage->language
 langauage->language
 langauge->language
@@ -6449,14 +6471,19 @@ langeuagesection->languagesection
 langugage->language
 languge->language
 languges->languages
+lanuage->language
 laod->load
 laoded->loaded
 laoding->loading
 laods->loads
+laout->layout
 larg->large
+largets->largest
 largst->largest
 larrry->larry
 lastr->last
+lates->later
+lating->latin
 latitide->latitude
 latitute->latitude
 lattitude->latitude
@@ -6470,15 +6497,20 @@ launhed->launched
 lavae->larvae
 layed->laid
 lazyness->laziness
+leaast->least
+leace->leave
 leaded->led, lead, leaded,
 leage->league
 leanr->lean, learn, leaner,
+leapyear->leap year
+leapyears->leap years
 leas->least, lease,
 leathal->lethal
 leats->least
 lefted->left
 legac->legacy
 legitamate->legitimate
+legitimiately->legitimately
 legitmate->legitimate
 leibnitz->leibniz
 leightweight->lightweight
@@ -6493,6 +6525,7 @@ lenghty->lengthy
 lengthes->lengths
 lengthh->length
 leniant->lenient
+leninent->lenient
 lentgh->length
 lentghs->lengths
 lenth->length
@@ -6500,6 +6533,8 @@ lenths->lengths
 leran->learn
 lerans->learns
 lesstiff->lesstif
+letgitimate->legitimate
+letmost->leftmost
 leutenant->lieutenant
 levetate->levitate
 levetated->levitated
@@ -6515,12 +6550,17 @@ libaries->libraries
 libary->library
 libell->libel
 liberry->library
+libgng->libpng
 libguistic->linguistic
 libguistics->linguistics
 libitarianisn->libertarianism
 lible->libel, liable,
 librairies->libraries
 libraris->libraries
+libray->library
+libreoffie->libreoffice
+libreoficekit->libreofficekit
+libstc++->libstdc++
 licenceing->licencing
 licese->license
 lieing->lying
@@ -6529,23 +6569,30 @@ liekd->liked
 liesure->leisure
 lieuenant->lieutenant
 lieved->lived
+lifecyle->lifecycle
 liftime->lifetime
+ligh->light, lie, lye,
 lightening->lightening, lightning, lighting,
 lightweigh->lightweight
 lightyear->light year
 lightyears->light years
 ligth->light
 lik->like, lick, link,
+likeley->likely
 likelyhood->likelihood
 likewis->likewise
 lileral->literal
 limitaion->limitation
+limite->limit
+limitiation->limitation
+limitied->limited
 limted->limited
 lincese->license
 lincesed->licensed
 linceses->licenses
 linearily->linearly, linearity,
 lingth->length
+linheight->lineheight
 linnaena->linnaean
 lintain->lintian
 lippizaner->lipizzaner
@@ -6553,6 +6600,12 @@ liquify->liquefy
 liscense->license, licence,
 lisence->license, licence,
 lisense->license, licence,
+listbbox->listbox
+listeing->listening
+listenes->listens
+listensers->listeners
+listernes->listeners
+listner->listener
 listners->listeners
 litature->literature
 literaly->literally
@@ -6562,12 +6615,24 @@ litte->little
 littel->little
 litterally->literally
 liuke->like
+livel->level
+livetime->lifetime
 livley->lively
 lke->like
 lmits->limits
+loaader->loader
+loacation->location
 loaction->location
 loactions->locations
+loadig->loading
+loadin->loading
+loadning->loading
+locahost->localhost
 localation->location
+localed->located
+localzation->localization
+loccked->locked
+lockingf->locking
 lod->load
 loev->love
 loger->logger, longer,
@@ -6576,8 +6641,10 @@ loggin->login, logging,
 logile->logfile
 loging->logging, lodging,
 logitude->longitude
+logwritter->logwriter
 lokal->local
 lokale->locale
+lolal->total
 lonelyness->loneliness
 longers->longer
 longitudonal->longitudinal
@@ -6585,14 +6652,20 @@ longitute->longitude
 longuer->longer
 lonley->lonely
 lonly->lonely, only,
+looknig->looking
+loopup->lookup
+loos->loose, lose,
 loosing->losing
 loosly->loosely
 loosy->lossy
 losely->loosely
 losen->loosen
 losened->loosened
+lotation->rotation
 lotharingen->lothringen
+lousily->lousily, loosely,
 lowd->load
+lowercased->lowercase
 lsat->last
 lsit->list
 lsits->lists
