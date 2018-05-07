@@ -386,8 +386,8 @@ def FakeStdin(text):
         sys.stdin = oldin
 
 
-def test_case_dictionary():
-    """Test that all dictionary entries are in lower case."""
+def test_dictionary_formatting():
+    """Test that all dictionary entries are in lower case and non-empty."""
     err_dict = dict()
     with open(op.join(op.dirname(__file__), '..', 'data',
                       'dictionary.txt'), 'rb') as fid:
@@ -395,6 +395,14 @@ def test_case_dictionary():
             err, rep = line.decode('utf-8').split('->')
             err = err.lower()
             assert err not in err_dict, 'entry already exists'
+            rep = rep.rstrip('\n')
+            assert len(rep) > 0, 'corrections must be non-empty'
+            if rep.count(','):
+                if not rep.endswith(','):
+                    assert 'disabled' in rep.split(',')[-1], \
+                        ('currently corrections must end with trailing "," (if'
+                         ' multiple corrections are available) or '
+                         'have "disabled" in the comment')
             err_dict[err] = rep
             reps = [r.strip() for r in rep.lower().split(',')]
             reps = [r for r in reps if len(r)]

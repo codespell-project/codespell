@@ -6662,7 +6662,6 @@ mamalian->mammalian
 mamory->memory
 managable->manageable, manageably,
 managment->management
-(??)
 manangement->management
 mandetory->mandatory
 maneouvre->manoeuvre
@@ -7049,18 +7048,17 @@ mordern->modern
 moreso->more, more so,
 morever->moreover
 morgage->mortgage
-(??)morisette->morissette
-(??)morrisette->morissette
+morisette->morissette
+morrisette->morissette
 morroccan->moroccan
 morrocco->morocco
 morroco->morocco
 mortage->mortgage
-mose->more
-mose->mouse
+mose->more, mouse,
 moslty->mostly
 mosture->moisture
 motiviated->motivated
-mould->mold, mould, module
+mould->mold, mould, module,
 mounth->month
 mouspointer->mousepointer
 movebackwrd->movebackward
@@ -7274,7 +7272,7 @@ noveau->nouveau
 Novermber->November
 nowdays->nowadays
 nowe->now
-nto->not, disable due to \n
+nto->not, disabled due to \n
 nubmer->number
 nubmers->numbers
 nucular->nuclear
@@ -9545,7 +9543,7 @@ specificed->specified
 specificiation->specification
 specificiations->specifications
 specificly->specifically
-specificy->specify, specificity, specifically
+specificy->specify, specificity, specifically,
 specifing->specifying
 specifiy->specify
 specifiying->specifying
@@ -10234,7 +10232,7 @@ tkaing->taking
 tlaking->talking
 to to->to, to do,
 tobbaco->tobacco
-todays->today's, disable because of var names
+todays->today's, disabled because of var names
 todya->today
 togehter->together
 toghether->together
@@ -10880,9 +10878,9 @@ vulnerablility->vulnerability
 vyer->very
 vyre->very
 waht->what
-wan't->want, wasn't
+wan't->want, wasn't,
 wan->want
-wan;t->want, wasn't
+wan;t->want, wasn't,
 wanna->want to, disabled because one might want to allow informal spelling
 want's->wants
 want;s->wants
