@@ -192,7 +192,6 @@ achievment->achievement
 achievments->achievements
 achitecture->architecture
 achitectures->architectures
-achive->achieve
 achive->achieve, archive,
 achived->achieved, archived,
 achivement->achievement
@@ -784,7 +783,7 @@ aparment->apartment
 apear->appear
 apeends->appends
 apendix->appendix
-apenines->apennines, Apennines,
+apenines->Apennines
 aplication->application
 aplied->applied
 apllicatin->application
@@ -809,7 +808,7 @@ appedn->append
 appendent->appended
 appendign->appending
 appeneded->appended
-appenines->apennines, Apennines,
+appenines->Apennines
 appens->appends
 apperance->appearance
 apperances->appearances
@@ -1533,7 +1532,7 @@ bootstapped->bootstrapped
 bootstapping->bootstrapping
 bootstaps->bootstraps
 boradcast->broadcast
-bordrelines->borderline
+bordreline->borderline
 bordrelines->borderlines
 borke->broke
 bothe->both
@@ -1903,8 +1902,7 @@ chanel->channel
 changable->changeable
 changuing->changing
 chanined->chained
-chaning->chaining
-chaning->changing
+chaning->chaining, changing,
 channle->channel
 channles->channels
 channnel->channel
@@ -2114,7 +2112,7 @@ codepoitn->codepoint
 codespel->codespell
 coditions->conditions
 coefficent->coefficient
-coefficents->coefficients 
+coefficents->coefficients
 coeficent->coefficient
 coeficents->coefficients
 cofigure->configure
@@ -2326,7 +2324,6 @@ competance->competence
 competant->competent
 competative->competitive
 competion->competition, completion,
-competion->completion
 competions->completions
 competitiion->competition
 competive->competitive
@@ -2971,7 +2968,6 @@ covnert->convert
 coyp->copy
 coypright->copyright
 cpation->caption
-cpoy->copy
 cpoy->coy, copy,
 craete->create
 crahses->crashes
@@ -3052,7 +3048,7 @@ cursro->cursor
 customable->customizable
 custome->custom, costume,
 custumized->customized
-cutom->custom 
+cutom->custom
 cuurently->currently
 cxan->cyan
 cycic->cyclic
@@ -3125,8 +3121,7 @@ decalratiosn->declarations
 deccelerate->decelerate
 decendant->descendant
 decendants->descendants
-decendent->descendant
-decendent->descendent
+decendent->descendent, descendant,
 decendents->descendants
 decideable->decidable
 decidely->decidedly
@@ -4197,7 +4192,7 @@ emegrency->emergency
 eminate->emanate
 eminated->emanated
 emision->emission
-emiss->remiss, amiss, amass, 
+emiss->remiss, amiss, amass,
 emissed->amassed, amiss,
 emited->emitted
 emiting->emitting
@@ -4744,7 +4739,7 @@ explitly->explicitly
 explizit->explicit
 explizitly->explicitly
 exploititive->exploitative
-explot->exploit, explore, 
+explot->exploit, explore,
 explotation->exploitation, exploration,
 exploting->exploiting, exploring,
 exponetial->exponential
@@ -4934,7 +4929,7 @@ firey->fiery
 firmwware->firmware
 firsr->first
 firt->first, flirt,
-firts->first, flirts, 
+firts->first, flirts,
 fisical->physical, fiscal,
 fisionable->fissionable
 fisisist->physicist
@@ -4976,7 +4971,7 @@ foget->forget
 fogot->forgot
 fogotten->forgotten
 folde->folder, fold,
-folling->following, falling, 
+folling->following, falling,
 folllow->follow
 folllowed->followed
 folllowing->following
@@ -5704,7 +5699,6 @@ imigrated->emigrated, immigrated,
 imigration->emigration, immigration,
 imilar->similar
 iminent->eminent, imminent, immanent,
-iminent->imminent
 immeadiately->immediately
 immedate->immediate
 immedately->immediately
@@ -6281,7 +6275,6 @@ intiailises->initialises
 intiailize->initialize
 intiailized->initialized
 intiailizes->initializes
-intiailizing->initialising
 intiailizing->initializing
 intial->initial
 intialisation->initialisation
@@ -6669,7 +6662,6 @@ mamalian->mammalian
 mamory->memory
 managable->manageable, manageably,
 managment->management
-mananged->managed
 manangement->management
 mandetory->mandatory
 maneouvre->manoeuvre
@@ -7030,8 +7022,7 @@ moent->moment
 moeny->money
 mofdified->modified
 mohammedans->muslims
-moil->mohel
-moil->soil
+moil->soil, mohel,
 moint->mount
 moleclues->molecules
 momemtn->moment
@@ -7057,19 +7048,17 @@ mordern->modern
 moreso->more, more so,
 morever->moreover
 morgage->mortgage
-Morisette->Morissette
-morover->moreover
-Morrisette->Morissette
+morisette->morissette
+morrisette->morissette
 morroccan->moroccan
 morrocco->morocco
 morroco->morocco
 mortage->mortgage
-mose->more
-mose->mouse
+mose->more, mouse,
 moslty->mostly
 mosture->moisture
 motiviated->motivated
-mould->mold, mould, module
+mould->mold, mould, module,
 mounth->month
 mouspointer->mousepointer
 movebackwrd->movebackward
@@ -7283,7 +7272,7 @@ noveau->nouveau
 Novermber->November
 nowdays->nowadays
 nowe->now
-nto->not, disable due to \n
+nto->not, disabled due to \n
 nubmer->number
 nubmers->numbers
 nucular->nuclear
@@ -9245,7 +9234,6 @@ sempahore->semaphore
 sempahores->semaphores
 senario->scenario
 senarios->scenarios
-sence->sense
 sence->sense, since,
 sensistive->sensitive
 sensistively->sensitively
@@ -9555,7 +9543,7 @@ specificed->specified
 specificiation->specification
 specificiations->specifications
 specificly->specifically
-specificy->specify, specificity, specifically
+specificy->specify, specificity, specifically,
 specifing->specifying
 specifiy->specify
 specifiying->specifying
@@ -10167,7 +10155,7 @@ thikn->think
 thikness->thickness
 thikning->thinking, thickening,
 thikns->thinks
-this this->this, this is, is this, 
+this this->this, this is, is this,
 thiunk->think
 thn->then
 thna->than
@@ -10244,7 +10232,7 @@ tkaing->taking
 tlaking->talking
 to to->to, to do,
 tobbaco->tobacco
-todays->today's, disable because of var names
+todays->today's, disabled because of var names
 todya->today
 togehter->together
 toghether->together
@@ -10890,9 +10878,9 @@ vulnerablility->vulnerability
 vyer->very
 vyre->very
 waht->what
-wan't->want, wasn't
+wan't->want, wasn't,
 wan->want
-wan;t->want, wasn't 
+wan;t->want, wasn't,
 wanna->want to, disabled because one might want to allow informal spelling
 want's->wants
 want;s->wants
