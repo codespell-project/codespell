@@ -5863,7 +5863,7 @@ inablility->inability
 inacccessible->inaccessible
 inaccesible->inaccessible
 inaccessable->inaccessible
-inactivate->inactive
+inactivate->inactivate, deactivate,
 inacurracies->inaccuracies
 inacurrate->inaccurate
 inadiquate->inadequate
@@ -5927,7 +5927,7 @@ inconsistant->inconsistent
 inconsisten->inconsistent
 inconsistenly->inconsistently
 inconsitent->inconsistent
-inconstent->inconsistent
+inconstent->inconsistent, inconstant,
 inconvertable->inconvertible
 inconvienience->inconvenience
 inconvienient->inconvenient
@@ -6139,7 +6139,7 @@ initally->initially
 initation->initiation
 initators->initiators
 initiaitive->initiative
-initiales->initialize, initializes
+initiales->initialize, initializes, initials, initialise, initialises,
 initialialize->initialize
 initialiase->initialise, initialize,
 initialiation->initialization
@@ -6211,7 +6211,7 @@ inmplementation->implementation
 innacurate->inaccurate
 innacurately->inaccurately
 inneffectual->ineffectual
-innitialize->initializes
+innitialize->initialize, initializes,
 innoculate->inoculate
 innoculated->inoculated
 inocence->innocence
@@ -6526,7 +6526,6 @@ invidually->individually
 invisiable->invisible
 invlaid->invalid
 invlisible->invisible
-invokable->invocable
 invokation->invocation
 invokations->invocations
 invokee->invoked
