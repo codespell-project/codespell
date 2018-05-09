@@ -13,9 +13,9 @@ DISTNAME = 'codespell'
 DESCRIPTION = """Codespell"""
 MAINTAINER = 'Lucas De Marchi'
 MAINTAINER_EMAIL = 'lucas.de.marchi@gmail.com'
-URL = 'https://github.com/lucasdemarchi/codespell/'
+URL = 'https://github.com/codespell-project/codespell/'
 LICENSE = 'GPL v2'
-DOWNLOAD_URL = 'https://github.com/lucasdemarchi/codespell/'
+DOWNLOAD_URL = 'https://github.com/codespell-project/codespell/'
 with open('README.rst', 'r') as f:
     LONG_DESCRIPTION = f.read()
 
