@@ -10433,8 +10433,16 @@ sytems->systems
 sythesis->synthesis
 sytle->style
 tabacco->tobacco
+tabe->table
+tabel->table
+tabeles->tables
+tabels->tables
+tabeview->tabview
+tabke->table
+tablle->table
 tage->stage
 taged->tagged
+taget->target
 tagnet->tangent
 tagnetial->tangential
 tagnets->tangents
@@ -10450,17 +10458,23 @@ tanget->tangent
 tangetial->tangential
 tangetially->tangentially
 tangets->tangents
+tansfomed->transformed
+targer->target
 targetted->targeted
 targetting->targeting
+targt->target
+targte->target
 tast->taste
 tath->that
 tatoos->tattoos
 tattooes->tattoos
+tavelling->travelling
 taxanomic->taxonomic
 taxanomy->taxonomy
 taylored->tailored
 te->the
 teached->taught
+teamplate->template
 teated->treated
 techician->technician
 techicians->technicians
@@ -10477,21 +10491,37 @@ teh->the
 tehy->they
 telelevision->television
 televsion->television
+telocom->telecom
 telphony->telephony
 temerature->temperature
+teminated->terminated
+teminating->terminating
+temlate->template
 temmporary->temporary, temporarily,
+temorarily->temporarily
 temorary->temporary
 tempalte->template
 tempaltes->templates
 tempararily->temporarily
 temparary->temporary
 temparate->temperate
+tempdate->template
 temperarily->temporarily
 temperment->temperament
 tempertaure->temperature
 temperture->temperature
+templaet->template
+templat->template
+templateas->templates
+tempoaray->temporary
+tempopary->temporary
+temporaere->temporary
 temporafy->temporary
+temporalily->temporarily
+temporarilu->temporary
+temporarirly->temporarily
 temporarly->temporarily, temporary,
+tempory->temporary
 temprary->temporary, temporarily,
 temproary->temporary
 tenacle->tentacle
@@ -10507,12 +10537,15 @@ terimnate->terminate
 terminater->terminator
 terminaters->terminators
 terminats->terminates
+terminte->terminate
 terrestial->terrestrial
 terriories->territories
 terriory->territory
 territorist->terrorist
 territoy->territory
 terroist->terrorist
+tese->these
+tesed->used, teased,
 tesellate->tessellate
 tesellated->tessellated
 tesellation->tessellation
@@ -10531,21 +10564,30 @@ tessleator->tessellator
 testiclular->testicular
 testof->test of
 testomony->testimony
+tetry->retry
+tetss->tests
+tetxture->texture
+texline->textline
+textfrme->textframe
 texual->textual
 texually->textually
+tey->they
 tghe->the
 thansk->thanks
 thant->than
+thare->there
 thast->that, that's,
 that that->that that, that, that the, that they, that this,
 that;s->that's
 thats'->that's
 thats->that's
 thats;->that's
+thck->thick
 the the->the
 theather->theater
 theer->there
 theese->these
+thefore->therefore
 theif->thief
 theifs->thieves
 theiv->thief, they've,
@@ -10557,13 +10599,19 @@ theoreticall->theoretically
 ther->there, their, the, other,
 therafter->thereafter
 therby->thereby
+thereads->threads
+therefor->therefore
 therefor->therefore, therefor,
+therem->there
+thererin->therein
 theres->there's
 therfore->therefore
 theri->their, there,
+thes->these
 thes->this, these,
 theshold->threshold
 thess->this, these,
+thest->test
 thether->tether, whether,
 thev->the
 they they->they
@@ -10580,52 +10628,72 @@ thikn->think
 thikness->thickness
 thikning->thinking, thickening,
 thikns->thinks
+thimngs->things
+thinn->thin
 this this->this, this is, is this,
+thise->these
 thiunk->think
+thjese->these
 thn->then
 thna->than
 thne->then
 thnig->thing
 thnigs->things
+thos->those, this,
 thoses->those
 thoughout->throughout
 thow->throw
+thrad->thread
+thre->three, there,
+threadsave->threadsafe
 threashold->threshold
 threasholds->thresholds
 threatend->threatened
+threatment->treatment
+threatments->treatments
 threatning->threatening
 thred->thread
 threds->threads
 threee->three
 threhold->threshold
+threrefore->therefore
 threshhold->threshold
 threshholds->thresholds
 thresshold->threshold
 thrid->third
+throen->thrown
+throgh->through
+thron->thrown, throne,
 throrough->thorough
 throug->through
 through out->throughout
 throughly->thoroughly
 throught->thought, through, throughout,
 througout->throughout
+througt->through
+througth->through
 throuth->through
+throwgh->through
 thru->through
 thruout->throughout
 ths->the, this,
 thses->these
 thsi->this
 thsoe->those
+thsose->those
 tht->the, that,
 thta->that
 thte->the, that,
 thurver->further
 thyat->that
 tiem->time, item,
+tiemout->timeout
 tiemstamp->timestamp
 tigger->trigger
 tiggered->triggered
 tiggering->triggering
 tiggers->triggers
+tighly->tightly
 tightely->tightly
 tigth->tight
 tigthen->tighten
@@ -10635,6 +10703,7 @@ tigthens->tightens
 tigthly->tightly
 tihkn->think
 tihs->this
+tim->time
 timeing->timing
 timestan->timespan
 timestemp->timestamp
@@ -10642,12 +10711,15 @@ timestemps->timestamps
 timestmap->timestamp
 timetamp->timestamp
 timetamps->timestamps
+timmestamp->timestamp
 timming->timing
 timne->time
 timout->timeout
 tiome->time, tome,
 tipe->type, tip,
 tipically->typically
+titel->title
+titels->titles
 tje->the
 tjhe->the
 tjpanishad->upanishad
@@ -10657,12 +10729,16 @@ tkaing->taking
 tlaking->talking
 to to->to, to do,
 tobbaco->tobacco
+toches->touches
 todays->today's, disabled because of var names
 todya->today
 togehter->together
+toggel->toggle
 toghether->together
 togther->together
 toke->took
+tolarable->tolerable
+toleranz->tolerance
 tolerence->tolerance
 tolernce->tolerance
 Tolkein->Tolkien
@@ -10671,13 +10747,21 @@ tommorow->tomorrow
 tommorrow->tomorrow
 tomorrrow->tomorrow
 tongiht->tonight
+tood->todo
 toogle->toggle
+toogling->toggling
+tookits->toolkits
+toolar->toolbar
+toolsbox->toolbox
+tooo->todo
+toos->tools
 topologie->topology
 toriodal->toroidal
 tormenters->tormentors
 tornadoe->tornado
 torpeados->torpedoes
 torpedos->torpedoes
+totation->rotation
 tothe->to the
 touble->trouble
 toubles->troubles
@@ -10688,6 +10772,7 @@ tourch->torch, touch,
 towords->towards
 towrad->toward
 trabsform->transform
+trackign->tracking
 tradionally->traditionally
 traditiona->traditional
 traditionaly->traditionally
@@ -10716,6 +10801,7 @@ tranformative->transformative
 tranformed->transformed
 tranforming->transforming
 tranforms->transforms
+tranient->transient
 tranlate->translate
 tranlated->translated
 tranlates->translates
@@ -10725,6 +10811,7 @@ tranlations->translations
 tranparent->transparent
 tranparently->transparently
 tranport->transport
+transacion->transaction
 transalte->translate
 transation->transaction
 transations->transactions
@@ -10738,7 +10825,10 @@ transesxuals->transsexuals
 transfered->transferred
 transfering->transferring
 transfom->transform
+transfomed->transformed
 transfomm->transform
+transfoprmation->transformation
+transformated->transformed
 transformaton->transformation
 transfrom->transform
 transfromation->transformation
@@ -10755,6 +10845,8 @@ transiton->transition
 transitons->transitions
 translater->translator
 translaters->translators
+translteration->transliteration
+transmision->transmission
 transmisive->transmissive
 transmissable->transmissible
 transmited->transmitted
@@ -10764,6 +10856,7 @@ transmiting->transmitting
 transmition->transmission
 transmitsion->transmission
 transmittion->transmission
+transmitts->transmits
 transorm->transform
 transormed->transformed
 transorming->transforming
@@ -10771,34 +10864,52 @@ transorms->transforms
 transparancy->transparency
 transparant->transparent
 transparantly->transparently
+transparecy->transparency
+transpeorted->transported
 transporation->transportation
+transportatin->transportation
 transtion->transition
 transtions->transitions
 transtition->transition
 transtitions->transitions
 transtorm->transform
 transtormed->transformed
+transverse->traverse
+tranversing->traversing
 trasaction->transaction
 trascation->transaction
 traslates->translates
 trasmission->transmission
 trasnaction->transaction
 traveral->traversal
+travese->traverse
+tread->thread
+treak->treat
 tremelo->tremolo
 tremelos->tremolos
 treshold->threshold
+trgistration->registration
+trhe->the
+triange->triangle
 trianglular->triangular
 trianglutaion->triangulation
 triangulataion->triangulation
 triangultaion->triangulation
+trigerred->triggered
 trigerring->triggering
 trigers->triggers
 triggerd->triggered
+triggeres->triggers
 triggerred->triggered
 triguered->triggered
+trimed->trimmed
+tring->trying
+trings->strings
 triology->trilogy
 trival->trivial
 trivally->trivially
+trivias->trivia
+trnsfered->transferred
 troling->trolling
 troup->troupe
 troups->troupes, troops,
@@ -10809,9 +10920,13 @@ trucating->truncating
 truelly->truly
 truely->truly
 trully->truly
+truncat->truncate
 trustworthyness->trustworthiness
 tryed->tried
+tryes->tries
+tryig->trying
 trys->tries
+tuhmbnail->thumbnail
 tupple->tuple
 tupples->tuples
 turly->truly
@@ -10825,10 +10940,14 @@ tye->type, tie,
 tyes->types, ties,
 tyhat->that
 tyhe->they
+tyies->tries
+tyope->type
 typcial->typical
+typicall->typically
 typicaly->typically
 typle->tuple
 typles->tuples
+typographc->typographic
 tyranies->tyrannies
 tyrany->tyranny
 tyrranies->tyrannies
