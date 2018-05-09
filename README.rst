@@ -7,14 +7,14 @@ misspelled words in source code, but it can be used with other files as well.
 Useful links
 ------------
 
-* `GitHub project <https://github.com/lucasdemarchi/codespell>`_
+* `GitHub project <https://github.com/codespell-project/codespell>`_
 
 * Mailing list: <codespell@googlegroups.com> with web archives/interface
   `here <https://groups.google.com/forum/?fromgroups#!forum/codespell>`_
 
-* `Repository <https://github.com/lucasdemarchi/codespell>`_
+* `Repository <https://github.com/codespell-project/codespell>`_
 
-* `Releases <https://github.com/lucasdemarchi/codespell/releases>`_
+* `Releases <https://github.com/codespell-project/codespell/releases>`_
 
 Requirements
 ------------
@@ -130,13 +130,13 @@ Updating
 
 To stay current with codespell developments it is possible to build codespell from GitHub via::
 
-    pip install --upgrade git+https://github.com/lucasdemarchi/codespell.github
+    pip install --upgrade git+https://github.com/codespell-project/codespell.github
 
 **Important Notes:**
 
 * Sometimes installing via ``pip`` will complain about permissions. If this is the case then run with ::
 
-    pip install --user --upgrade git+https://github.com/lucasdemarchi/codespell.git
+    pip install --user --upgrade git+https://github.com/codespell-project/codespell.git
 
 * It has been reported that after installing from ``pip``, codespell can't be located. Please check the $PATH variable to see if ``~/.local/bin`` is present. If it isn't then add it to your path. 
 * If you decide to install via ``pip`` then be sure to remove any previously installed versions of codespell (via you OSs preferred app mananger). 
