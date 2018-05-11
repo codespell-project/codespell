@@ -8109,7 +8109,7 @@ paramterize->parameterize
 paramterless->parameterless
 paramters->parameters
 paramtrical->parametrical
-paranthes->parentheses
+paranthes->parentheses, parenthesis,
 parantheses->parentheses
 paranthesis->parenthesis
 paraphenalia->paraphernalia
@@ -8352,7 +8352,7 @@ piont->point
 pionter->pointer
 pionts->points
 piority->priority
-pitmap->pixmap
+pitmap->pixmap, bitmap,
 pitty->pity
 pixelx->pixels, pixel,
 plaform->platform
@@ -8593,13 +8593,13 @@ precendence->precedence
 precense->presence
 precent->percent, prescient,
 precentage->percentage
-precessor->predecessor
+precessor->predecessor, processor,
 precice->precise
 precidence->precedence
 preciding->preceding, presiding,
 precisly->precisely
 precison->precision
-precission->precision, percussion,
+precission->precision, percussion, precession,
 precomuted->precomputed
 precondtion->precondition
 precondtioner->preconditioner
