@@ -288,6 +288,7 @@ acutual->actual
 adapated->adapted
 adapater->adapter
 adapaters->adapters
+adapdive->adaptive
 adapive->adaptive
 adaptee->adapted
 adatper->adapter
@@ -326,7 +327,7 @@ addjusts->adjusts
 addmission->admission
 addopt->adopt
 addopted->adopted
-addoptive->adoptive
+addoptive->adoptive, adaptive,
 addreess->address
 addres->address
 addresable->addressable
@@ -2131,6 +2132,8 @@ cognizent->cognizant
 coice->choice
 coincedentally->coincidentally
 coinitailize->coinitialize
+coinside->coincide
+coinsident->coincident
 cointain->contain
 cointained->contained
 cointains->contains
@@ -2694,6 +2697,8 @@ contan->contain
 contaned->contained
 contaning->containing
 contans->contains
+contant->constant, content,
+contants->constants, contents,
 contast->contrast, contest,
 contatenated->concatenated
 contating->contacting, containing,
@@ -5019,6 +5024,9 @@ folowing->following
 fomed->formed
 fomr->from, form,
 fonction->function
+fonctional->functional
+fonctioning->functioning
+fonctions->functions
 fonetic->phonetic
 fontain->fountain, contain,
 fontains->fountains, contains,
@@ -7916,6 +7924,7 @@ orginates->originates
 orginating->originating
 orginize->organise, organize,
 oridinarily->ordinarily
+orienation->orientation
 orientaion->orientation
 orientatied->orientated
 oriente->oriented
@@ -9713,6 +9722,8 @@ reslut->result
 resluts->results
 reson->reason
 resonable->reasonable
+resoource->resource
+resoources->resources
 resopnse->response
 resorce->resource
 resorces->resources
