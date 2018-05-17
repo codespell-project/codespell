@@ -9991,7 +9991,7 @@ sargeant->sergeant
 sasy->says, sassy,
 satandard->standard
 satandards->standards
-sate->state
+sate->state, sate,
 satelite->satellite
 satelites->satellites
 Saterday->Saturday
@@ -10030,7 +10030,7 @@ scaning->scanning
 scaricity->scarcity
 scavanged->scavenged
 scecified->specified
-sceme->scheme
+sceme->scheme, scene,
 scenarion->scenario
 sceond->second
 schedual->schedule
@@ -10190,7 +10190,7 @@ sequencial->sequential
 sequencially->sequentially
 sequencies->sequences
 sequenzes->sequences
-sequeze->sequence
+sequeze->squeeze, sequence,
 sequnces->sequences
 serach->search
 serached->searched
@@ -10609,7 +10609,7 @@ staement->statement
 staically->statically
 stainlees->stainless
 staion->station
-stamement's->statement
+stamement's->statement's, statements, statement,
 standalown->standalone
 standar->standard
 standarad->standard
@@ -10685,7 +10685,7 @@ straighforward->straightforward
 straightfoward->straightforward
 straigt->straight
 straigth->straight
-strangly->strange
+strangly->strangely, strange,
 strat->start, strata,
 stratagically->strategically
 streatched->stretched
@@ -10975,8 +10975,8 @@ surrundering->surrendering
 surveilence->surveillance
 surveill->surveil
 surveyer->surveyor
-survice->survive
-survices->survives
+survice->service, survive,
+survices->services, survives,
 surviver->survivor
 survivers->survivors
 survivied->survived
@@ -11017,7 +11017,6 @@ swithing->switching
 swown->shown
 swtich->switch
 swtichs->switches
-sxl->xsl
 syas->says
 sychronisly->synchronously
 sychronmode->synchronmode
