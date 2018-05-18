@@ -1350,6 +1350,7 @@ bakc->back
 bakup->backup
 bakups->backups
 balacing->balancing
+balck->black, balk,
 baloon->balloon
 baloons->balloons
 balse->false
@@ -1554,6 +1555,7 @@ boundarys->boundaries
 boundries->boundaries
 boundry->boundary
 bouning->bounding
+bouqet->bouquet
 bouy->buoy
 bouyancy->buoyancy
 bouyant->buoyant
@@ -1695,6 +1697,7 @@ caligraphy->calligraphy
 calld->called
 callef->called
 callibri->calibri
+callled->called
 calss->calls
 calsses->classes
 caluclate->calculate
@@ -3851,6 +3854,7 @@ displacment->displacement
 displacments->displacements
 displayes->displays
 dispode->dispose
+disporue->disparue
 disposel->disposal
 dispostion->disposition
 dispprove->disapprove
@@ -6986,6 +6990,9 @@ mamal->mammal
 mamalian->mammalian
 mamory->memory
 managable->manageable, manageably,
+managament->management
+manageed->managed
+managenment->management
 managment->management
 manangement->management
 mandetory->mandatory
@@ -7969,6 +7976,8 @@ otherwhise->otherwise
 otherwice->otherwise
 otherwis->otherwise
 otherwize->otherwise
+otherwse->otherwise
+otherwsie->otherwise
 othewice->otherwise
 othewise->otherwise
 othewize->otherwise
@@ -9845,6 +9854,7 @@ retrives->retrieves
 retriving->retrieving
 retrun->return
 retruned->returned
+retruns->returns
 retun->return
 retuned->retuned, returned,
 retunr->return, retune,
@@ -9853,6 +9863,7 @@ retunrs->returns
 retuns->returns
 retur->return
 retured->returned
+returend->returned
 returing->returning
 returnd->returned
 returnes->returns
@@ -11789,6 +11800,7 @@ uniquness->uniqueness
 UnitesStates->UnitedStates
 unitialize->uninitialize
 unitialized->uninitialized
+unititialized->uninitialized
 unitss->units
 univeral->universal
 univeristies->universities
