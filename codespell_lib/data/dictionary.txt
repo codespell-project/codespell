@@ -5468,6 +5468,7 @@ hander->handler
 handfull->handful
 handleer->handler
 handlig->handling
+handlling->handling
 hanel->handle
 hangig->hanging
 hanlder->handler
@@ -6734,7 +6735,8 @@ laoding->loading
 laods->loads
 laout->layout
 larg->large
-largets->largest
+larget->larger, target,
+largets->largest, targets,
 largst->largest
 larrry->larry
 lastr->last
@@ -7345,6 +7347,7 @@ modifes->modifies
 modifid->modified
 modifing->modifying
 modifiy->modify
+modifyable->modifiable
 modle->model
 modue->module
 moduel->module
@@ -10780,6 +10783,7 @@ subexpresssion->subexpression
 subexpresssions->subexpressions
 subfroms->subforms
 subjudgation->subjugation
+sublass->subclass
 suble->subtle
 submachne->submachine
 submision->submission
@@ -11333,7 +11337,8 @@ thnigs->things
 thos->those, this,
 thoses->those
 thoughout->throughout
-thow->throw
+thow->throw, tow,
+thown->thrown, town,
 thrad->thread
 thre->three, there,
 threadsave->threadsafe
@@ -12281,6 +12286,7 @@ wereas->whereas
 werent->weren't
 werever->wherever
 wether->weather, whether,
+whan->want, when,
 whant->want
 whants->wants
 whataver->whatever
