@@ -2413,7 +2413,8 @@ comsumer->consumer
 comsumers->consumers
 comsuming->consuming
 comunication->communication
-comute->commute
+comute->commute, compute,
+comuted->commuted, computed,
 conain->contain
 conained->contained
 conainer->container
@@ -12149,6 +12150,8 @@ veriftying->verifying
 verifyied->verified
 verion->version
 verions->versions
+veriosn->version
+veriosns->versions
 verious->various
 verison->version
 verisons->versions
