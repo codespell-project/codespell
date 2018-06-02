@@ -7,14 +7,14 @@ misspelled words in source code, but it can be used with other files as well.
 Useful links
 ------------
 
-* `GitHub project <https://github.com/lucasdemarchi/codespell>`_
+* `GitHub project <https://github.com/codespell-project/codespell>`_
 
 * Mailing list: <codespell@googlegroups.com> with web archives/interface
   `here <https://groups.google.com/forum/?fromgroups#!forum/codespell>`_
 
-* `Repository <https://github.com/lucasdemarchi/codespell>`_
+* `Repository <https://github.com/codespell-project/codespell>`_
 
-* `Releases <https://github.com/lucasdemarchi/codespell/releases>`_
+* `Releases <https://github.com/codespell-project/codespell/releases>`_
 
 Requirements
 ------------
@@ -31,19 +31,19 @@ You can use ``pip`` to install codespell with e.g.::
 Usage
 -----
 
-For more in depth info please check usage with ``codespell -h``. 
+For more in depth info please check usage with ``codespell -h``.
 
 Some noteworthy flags::
 
     codespell -w, --write-changes
 
-The -w flag will actually implement the changes recommended by codespell. Not running with ``-w`` flag is the same as with doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.:: 
+The -w flag will actually implement the changes recommended by codespell. Not running with ``-w`` flag is the same as with doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.::
 
     codespell -S, --skip=
 
 Comma-separated list of files to skip. It accepts globs as well.  Examples:
- 
-* to skip .eps & .txt files, invoke ``codespell --skip="*.eps,*.txt"``  
+
+* to skip .eps & .txt files, invoke ``codespell --skip="*.eps,*.txt"``
 
 * to skip directories, invoke ``codespell --skip="./src/3rd-Party,./src/Test"`` ::
 
@@ -67,9 +67,7 @@ after applying them in projects like Linux Kernel, EFL, oFono among others.
 You can provide your own version of the dictionary, but patches for
 new/different entries are very welcome.
 
-Does a word you're proposing exist in codespell already? ::
-
-It is possible to test a word against the current dictionary that exists in ``codespell_lib/data/dictionary.txt`` very rapidly via::
+Want to know if a word you're proposing exists in codespell already? It is possible to test a word against the current dictionary that exists in ``codespell_lib/data/dictionary.txt`` via:
 
     echo "word" | codespell -
     echo "1stword,2ndword" | codespell -
@@ -130,16 +128,16 @@ Updating
 
 To stay current with codespell developments it is possible to build codespell from GitHub via::
 
-    pip install --upgrade git+https://github.com/lucasdemarchi/codespell.github
+    pip install --upgrade git+https://github.com/codespell-project/codespell.github
 
 **Important Notes:**
 
 * Sometimes installing via ``pip`` will complain about permissions. If this is the case then run with ::
 
-    pip install --user --upgrade git+https://github.com/lucasdemarchi/codespell.git
+    pip install --user --upgrade git+https://github.com/codespell-project/codespell.git
 
-* It has been reported that after installing from ``pip``, codespell can't be located. Please check the $PATH variable to see if ``~/.local/bin`` is present. If it isn't then add it to your path. 
-* If you decide to install via ``pip`` then be sure to remove any previously installed versions of codespell (via you OSs preferred app mananger). 
+* It has been reported that after installing from ``pip``, codespell can't be located. Please check the $PATH variable to see if ``~/.local/bin`` is present. If it isn't then add it to your path.
+* If you decide to install via ``pip`` then be sure to remove any previously installed versions of codespell (via you OSs preferred app mananger).
 
 License
 -------
