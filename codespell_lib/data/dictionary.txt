@@ -4669,8 +4669,8 @@ exeception->exception
 execeptions->exceptions
 execising->exercising
 execption->exception
-exected->executed
-execting->executing
+exected->executed, expected,
+execting->executing, expecting,
 exection->execution
 exections->executions
 exectuable->executable
@@ -10158,7 +10158,7 @@ seleced->selected
 selecetd->selected
 selecing->selecting
 selecte->selected
-selectin->selection
+selectin->selection, selecting,
 selecton->selection
 selectons->selections
 seledted->sekected
