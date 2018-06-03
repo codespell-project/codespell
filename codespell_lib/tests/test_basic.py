@@ -193,7 +193,7 @@ def test_summary():
         os.remove(f.name)
 
 
-def test_ignore_dictionary(reload_codespell_lib):
+def test_ignore_dictionary(r=reload_codespell_lib):
     """Test ignore dictionary functionality"""
     with TemporaryDirectory() as d:
         with open(op.join(d, 'bad.txt'), 'w') as f:
@@ -205,7 +205,7 @@ def test_ignore_dictionary(reload_codespell_lib):
         assert cs.main('-I', f.name, d) == 1
 
 
-def test_custom_regex(reload_codespell_lib):
+def test_custom_regex(r=reload_codespell_lib):
     """Test custom word regex"""
     with TemporaryDirectory() as d:
         with open(op.join(d, 'bad.txt'), 'w') as f:
@@ -413,7 +413,7 @@ def test_dictionary_formatting():
             assert reps == unique, 'entries are not (lower-case) unique'
 
 
-def test_case_handling(reload_codespell_lib):
+def test_case_handling(r=reload_codespell_lib):
     """Test that capitalized entries get detected properly."""
     # Some simple Unicode things
     with tempfile.NamedTemporaryFile('wb') as f:
