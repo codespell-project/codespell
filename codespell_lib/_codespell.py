@@ -225,7 +225,7 @@ def parse_options(args):
     parser.add_option('-I', '--ignore-words',
                       action='append', metavar='FILE',
                       help='File that contains words which will be ignored '
-                           'by codespell. File must contain 1 word per line.'
+                           'by codespell. File must contain 1 word per line. '
                            'Words are case sensitive based on how they are '
                            'written in codespell_lib/data/dictionary.txt')
     parser.add_option('-r', '--regex',
