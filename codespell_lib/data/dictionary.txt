@@ -973,6 +973,7 @@ arguement->argument
 arguements->arguments
 argumant->argument
 argumants->arguments
+argumens->arguments
 argumentents->arguments
 aribitary->arbitrary
 aribtrarily->arbitrarily
@@ -2617,6 +2618,7 @@ consituency->constituency
 consituted->constituted
 consitution->constitution
 consitutional->constitutional
+consol->console
 consolodate->consolidate
 consolodated->consolidated
 consonent->consonant
@@ -3228,7 +3230,8 @@ dedly->deadly
 defailt->default
 defalt->default
 defalut->default
-defaulst->default
+defaul->default
+defaulst->defaults, default,
 defaultet->defaulted
 defaut->default
 defautl->default
@@ -4536,6 +4539,8 @@ ethnocentricm->ethnocentrism
 ethose->those, ethos,
 etsablishment->establishment
 etsbalishment->establishment
+etst->test
+etsts->tests
 euivalent->equivalent
 euivalents->equivalents
 euqivalent->equivalent
@@ -5772,6 +5777,7 @@ idicated->indicated
 idicates->indicates
 idicating->indicating
 idiosyncracy->idiosyncrasy
+idividual->individual
 if if->if
 iff->if, disabled due to valid mathematical concept
 ignonre->ignore
@@ -6162,6 +6168,7 @@ inforation->information
 inforce->enforce
 inforced->enforced
 informaion->information
+informaiton->information
 informatikon->information
 informatiom->information
 informations->information
@@ -6583,6 +6590,7 @@ inudstry->industry
 inumerable->enumerable, innumerable,
 invaid->invalid
 invaild->invalid
+invald->invalid
 invaldates->invalidates
 invalidatiopn->invalidation
 invalide->invalid
@@ -6846,6 +6854,7 @@ libguistic->linguistic
 libguistics->linguistics
 libitarianisn->libertarianism
 lible->libel, liable,
+libraies->libraries
 librairies->libraries
 libraris->libraries
 libray->library
@@ -7659,6 +7668,7 @@ notfication->notification
 notfications->notifications
 noth->north
 nothern->northern
+nothign->nothing
 nothihg->nothing
 nothin->nothing
 nothind->nothing
