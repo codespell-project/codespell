@@ -128,7 +128,7 @@ Updating
 
 To stay current with codespell developments it is possible to build codespell from GitHub via::
 
-    pip install --upgrade git+https://github.com/codespell-project/codespell.github
+    pip install --upgrade git+https://github.com/codespell-project/codespell.git
 
 **Important Notes:**
 
