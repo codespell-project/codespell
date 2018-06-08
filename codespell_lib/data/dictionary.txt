@@ -1678,6 +1678,9 @@ cahracters->characters
 calaber->caliber
 calander->calendar, colander,
 calcable->calculable
+calcluate->calculate
+calcluated->calculated
+calcluates->calculates
 calcualte->calculate
 calcualted->calculated
 calcualter->calculator
@@ -3204,7 +3207,9 @@ decopose->decompose
 decoposes->decomposes
 decoraded->decorated
 decoratrion->decoration
-decresing->decreasing
+decraesing->decreasing, deceasing,
+decrasing-> decreasing, deceasing,
+decresing->decreasing, deceasing,
 decress->decrees
 decribe->describe
 decribed->described
@@ -3754,6 +3759,8 @@ dimemsions->dimensions
 dimenions->dimensions
 dimenison->dimension
 dimensinoal->dimensional
+dimenstion->dimension
+dimenstions->dimensions
 dimention->dimension
 dimentional->dimensional
 dimentions->dimensions
@@ -5821,6 +5828,7 @@ iminent->eminent, imminent, immanent,
 immeadiately->immediately
 immedate->immediate
 immedately->immediately
+immediantely->immediately
 immediatelly->immediately
 immediatley->immediately
 immediatlly->immediately
@@ -5842,6 +5850,8 @@ impecabbly->impeccably
 impedence->impedance
 impementation->implementation
 impementations->implementations
+impemented->implemented
+impements->implements
 implace->inplace
 implament->implement
 implamentation->implementation
@@ -6784,7 +6794,7 @@ largets->largest, targets,
 largst->largest
 larrry->larry
 lastr->last
-lates->later
+lates->later, latest,
 lating->latin
 latitide->latitude
 latitute->latitude
@@ -10672,6 +10682,7 @@ sructures->structures
 srunk->shrunk
 srunken->shrunken
 srunkn->shrunken
+stabalization->stabilization
 stablility->stability
 stach->stack
 stae->state
@@ -11123,6 +11134,8 @@ symetry->symmetry
 symettric->symmetric
 symmetral->symmetric
 symmetricaly->symmetrically
+symnol->symbol
+symnols->symbols
 symobl->symbol
 synagouge->synagogue
 synax->syntax
@@ -11631,7 +11644,10 @@ transtormed->transformed
 tranversing->traversing
 trasaction->transaction
 trascation->transaction
+traslate->translate
+traslated->translated
 traslates->translates
+traslating->translating
 trasmission->transmission
 trasnaction->transaction
 traveral->traversal
@@ -11706,6 +11722,8 @@ tyranies->tyrannies
 tyrany->tyranny
 tyrranies->tyrannies
 tyrrany->tyranny
+ubelieveble->unbelievable
+ubelievebly->unbelievably
 ubiquitious->ubiquitous
 ubiquituously->ubiquitously
 ublisher->publisher
