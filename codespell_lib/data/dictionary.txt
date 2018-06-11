@@ -1467,6 +1467,7 @@ belog->belong
 beloging->belonging
 belond->belong
 beloning->belonging
+belwo->below
 bemusemnt->bemusement
 benchamarked->benchmarked
 beneeth->beneath
@@ -3887,7 +3888,7 @@ dispicable->despicable
 dispite->despite
 displacment->displacement
 displacments->displacements
-displayes->displays
+displayes->displays, displayed,
 dispode->dispose
 disporue->disparue
 disposel->disposal
@@ -4710,7 +4711,7 @@ exension->extension
 exensions->extensions
 exent->extent
 exepected->expected
-exept->except
+exept->except, exempt,
 exeption->exception
 exeptional->exceptional
 exeptions->exceptions
@@ -6686,6 +6687,7 @@ itializing->initializing
 itnernal->internal
 itnervals->intervals
 itnroduced->introduced
+its is-> it is, it's,
 itsef->itself
 itselfs->itself
 itselt->itself
@@ -10497,6 +10499,7 @@ sohw->show
 soilders->soldiers
 solarmutx->solarmutex
 solatary->solitary
+soler->solver, solar, solely,
 soley->solely
 soliders->soldiers
 soliliquy->soliloquy
@@ -11861,6 +11864,7 @@ unfortunatelly->unfortunately
 unfortunatetly->unfortunately
 unfortunatley->unfortunately
 unfortunatly->unfortunately
+unfortuntaly->unfortunately
 unforunate->unfortunate
 unforunately->unfortunately
 unfourtunately->unfortunately
@@ -12087,7 +12091,9 @@ useage->usage
 usefule->useful
 usefull->useful
 usefullness->usefulness
+usefult->useful
 usefuly->usefully
+usefutl->useful
 usege->usage
 useing->using
 usera->users
