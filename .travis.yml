@@ -17,19 +17,13 @@ matrix:
         - os: linux
           python: 2.7
         - os: linux
-          python: 3.3
-        - os: linux
           python: 3.4
         - os: linux
           python: 3.5
         - os: linux
           python: 3.6
-        # OSX commented out for now because it's slow and a bit buggy as of
-        # 2017/11/15
-        # - os: osx
-        #   python: 2.7
-        # - os: osx
-        #   python: 3.6
+        - os: osx
+          python: 3.6
 
 before_install:
     - source tools/travis_tools.sh
