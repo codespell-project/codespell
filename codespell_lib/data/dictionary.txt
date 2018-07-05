@@ -669,6 +669,8 @@ amounds->amounts
 amoung->among
 amoungst->amongst
 amout->amount
+amoutn->amount
+amoutns->amounts
 amuch->much
 amung->among
 amunition->ammunition
@@ -6683,6 +6685,8 @@ isn;t->isn't
 isnt'->isn't
 isnt->isn't
 isnt;->isn't
+isntallation->installation
+isntallations->installations
 isntance->instance
 isntances->instances
 isotrophically->isotropically
@@ -7481,6 +7485,12 @@ motiviated->motivated
 mould->mold, mould, module,
 mounth->month
 mouspointer->mousepointer
+moutn->moutn
+moutned->mounted
+moutning->mounting
+moutnpoint->mountpoint
+moutnpoints->mountpoints
+moutns->moutns
 movebackwrd->movebackward
 moveble->movable
 movei->movie, disabled due to assembly code
@@ -11796,6 +11806,7 @@ umambiguous->unambiguous
 umark->unmark
 umarked->unmarked
 ummark->unmark
+umoutn->umount
 unabailable->unavailable
 unabale->unable
 unabel->unable
@@ -11962,6 +11973,7 @@ unlikey->unlikely
 unlimitied->unlimited
 unmanouverable->unmaneuverable, unmanoeuvrable,
 unmistakeably->unmistakably
+unmoutned->unmounted
 unncessary->unnecessary
 unneccecarily->unnecessarily
 unneccecary->unnecessary
