@@ -8695,6 +8695,7 @@ opproximate->approximate
 opps->oops
 oppsofite->opposite
 opration->operation
+opreation->operation
 opression->oppression
 opressive->oppressive
 optet->opted
@@ -8740,6 +8741,7 @@ orginated->originated
 orginates->originates
 orginating->originating
 orginize->organise, organize,
+orhpan->orphan
 oridinarily->ordinarily
 orienation->orientation
 orientaion->orientation
@@ -8763,9 +8765,11 @@ orignal->original
 orignally->originally
 orignially->originally
 origninal->original
+orriginal->original
 orthagonal->orthogonal
 orthagonalize->orthogonalize
 osbscure->obscure
+osciallator->oscillator
 oscilate->oscillate
 oscilated->oscillated
 oscilating->oscillating
@@ -8792,10 +8796,12 @@ otherwsie->otherwise
 othewice->otherwise
 othewise->otherwise
 othewize->otherwise
+otho->otoh
 othwerwise->otherwise
 othwhise->otherwise
 otiginal->original
 otion->option
+otions->options
 otput->output
 oublisher->publisher
 ouevre->oeuvre
@@ -8816,6 +8822,7 @@ ourselfs->ourselves
 ourselve->ourselves
 ourselvs->ourselves
 oustanding->outstanding
+out-of-bound->out-of-band
 outout->output
 outputed->outputted
 outputing->outputting
@@ -8831,6 +8838,8 @@ oveflowing->overflowing
 oveflows->overflows
 overaall->overall
 overfl->overflow
+overfow->overflow
+overhread->overhead
 overiddden->overridden
 overidden->overridden
 overide->override
@@ -8840,6 +8849,7 @@ overiding->overriding
 overlaped->overlapped
 overlaping->overlapping
 overlayed->overlaid
+overlflow->overflow
 overlodaded->overloaded
 overloded->overloaded
 overriabled->overridable
@@ -8871,6 +8881,7 @@ overwriten->overwritten
 overwritren->overwritten
 overwrittes->overwrites
 overwrittin->overwriting
+overwritting->overwriting
 ovrwrt->overwrite
 ovservation->observation
 ovveride->override
@@ -8884,6 +8895,7 @@ owership->ownership
 owful->awful
 ownder->owner
 ownerhsip->ownership
+ownner->owner
 owrk->work
 owudl->would
 oxigen->oxygen
@@ -8900,6 +8912,7 @@ packe->packed, packet,
 packege->package
 packge->package
 packges->packages
+packtes->packets
 pading->padding
 paeth->path
 paide->paid
@@ -8925,6 +8938,7 @@ pallete->palette
 pallette->palette
 palletted->paletted
 paltette->palette
+paltform->platform
 pamflet->pamphlet
 pamplet->pamphlet
 paniced->panicked
@@ -8961,6 +8975,7 @@ parallizing->parallelizing
 paramameters->parameters
 paramater->parameter
 paramaters->parameters
+paramenters->parameters
 parametere->parameter
 parameterical->parametrical
 parameterizes->parametrizes
@@ -8982,6 +8997,7 @@ pararaph->paragraph
 parargaph->paragraph
 parargaphs->paragraphs
 pararmeters->parameters
+paratmers->parameters
 parctically->pratically
 parellels->parallels
 paremeter->parameter
@@ -8994,10 +9010,12 @@ parisitic->parasitic
 paritial->partial
 parition->partition
 paritioning->partitioning
+parititions->partitions
 parituclar->particular
 parliment->parliament
 parmaeter->parameter
 parmaeters->parameters
+parmeter->parameter
 parnoia->paranoia
 parrakeets->parakeets
 parralel->parallel
@@ -9019,8 +9037,10 @@ particulary->particularly
 partifular->particular
 partion->partition, portion,
 partioning->partitioning
+partision->partition
 partitial->partial
 partiton->partition
+partitoning->partitioning
 pary->party, parry,
 pase->pass, pace,
 pased->passed
