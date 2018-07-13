@@ -5395,6 +5395,8 @@ faield->failed
 faild->failed
 faile->failed
 faill->fail
+failled->failed
+failre->failure
 failt->fail, failed,
 failture->failure
 failue->failure
@@ -5406,30 +5408,37 @@ falied->failed
 faliure->failure
 faliures->failures
 fallabck->fallback
+falltrough->fallthrough
 falure->failure
 familar->familiar
 familes->families
 familiies->families
+familiy->family
 familliar->familiar
 familly->family
 famoust->famous
 fanatism->fanaticism
 Farenheit->Fahrenheit
 fasade->facade
+fasion->fashion
 fassade->facade
 fastr->faster
 fatc->fact
 fatser->faster
 fature->feature
 faught->fought
+fauilures->failures
 faund->found
 favoutrable->favourable
 fcound->found
 feasable->feasible
 featre->feature
 featue->feature
+featued->featured
 featues->features
 featur->feature
+featurs->features
+feautre->feature
 feauture->feature
 feautures->features
 Febuary->February
@@ -5443,6 +5452,7 @@ feeture->feature
 feld->field
 femminist->feminist
 fempto->femto
+fequency->frequency
 feromone->pheromone
 fertily->fertility
 fetaure->feature
@@ -5456,6 +5466,7 @@ ficticious->fictitious
 fictious->fictitious
 fidality->fidelity
 fidn->find
+fieid->field
 fiel->feel, field, file, phial,
 fieldlst->fieldlist
 fieled->field
@@ -5464,6 +5475,7 @@ fiercly->fiercely
 fightings->fighting
 filal->final
 fileds->fields
+filesysems->filesystems
 filesytem->filesystem
 filesytems->filesystems
 fileystem->filesystem
@@ -5475,12 +5487,16 @@ fillowing->following
 fillung->filling
 filnal->final
 filname->filename
+filsystem->filesystem
+filterring->filtering
 fime->fixme, time,
 fimilies->families
 finacial->financial
 finalle->finale, finally,
 finaly->finally, finale,
 financialy->financially
+finanize->finalize
+finanlize->finalize
 fincally->finally
 findout->find out
 finialization->finalization
@@ -5494,6 +5510,10 @@ fiorget->forget
 firdt->first, third,
 firends->friends
 firey->fiery
+firmare->firmware
+firmeare->firmware
+firmwart->firmware
+firmwqre->firmware
 firmwware->firmware
 firsr->first
 firt->first, flirt,
