@@ -2075,6 +2075,7 @@ ceated->created
 ceates->creates
 ceating->creating
 ceation->creation
+ceding->cedeing
 cehck->check
 cehcked->checked
 cehcking->checking
@@ -2084,6 +2085,7 @@ celles->cells
 cellpading->cellpadding
 cellst->cells
 cellxs->cells
+celsuis->celsius
 cementary->cemetery
 cemetarey->cemetery
 cemetaries->cemeteries
@@ -2139,7 +2141,10 @@ Champange->Champagne
 chaned->changed, chained,
 chaneged->changed
 chanel->channel
+chanels->channels
+chang->change
 changable->changeable
+changged->changed
 changuing->changing
 chanined->chained
 chaning->chaining, changing,
@@ -2147,6 +2152,7 @@ channle->channel
 channles->channels
 channnel->channel
 channnels->channels
+chanses->chances
 chaper->chapter
 characer->character
 characers->characters
@@ -2180,12 +2186,14 @@ charcter->character
 charcters->characters
 charctor->character
 charctors->characters
+charecters->characters
 charicter->character
 charicters->characters
 charictor->character
 charictors->characters
 chariman->chairman
 charistics->characteristics
+chasnge->change
 chasr->chaser, chase,
 chatacter->character
 chatacters->characters
@@ -2221,6 +2229,7 @@ chemcial->chemical
 chemcially->chemically
 chemestry->chemistry
 chemicaly->chemically
+chenged->changed
 childbird->childbirth
 childen->children
 childern->children
@@ -2228,7 +2237,11 @@ childres->children
 childs->children, child's,
 chiledren->children
 chineese->chinese
+chipet->chipset
+chipslect->chipselect
+chipstes->chipsets
 chiuldren->children
+chked->checked
 chnage->change
 chnages->changes
 chnge->change
@@ -2248,6 +2261,7 @@ chractor->character
 chractors->characters
 chrashed->crashed
 chuch->church
+chuks->chunks
 chuncks->chunks
 churchs->churches
 cicrle->circle
@@ -2286,9 +2300,11 @@ claculation->calculation
 claer->clear
 claerer->clearer
 claerly->clearly
+claibscale->calibscale
 claime->claim
 claimes->claims
 clame->claim
+clared->cleared
 clarety->clarity
 clas->class, disabled because of name clash in c++
 clasic->classic
@@ -2302,7 +2318,9 @@ classe->class, classes,
 classess->classes
 classs->class
 classses->classes
+clcoksource->clocksource
 clcosed->closed
+cleancache->cleancacne
 cleanpu->cleanup
 cleanpus->cleanups
 cleantup->cleanup
@@ -2312,8 +2330,10 @@ clearified->clarified
 clearifies->clarifies
 clearify->clarify
 clearifying->clarifying
+clearted->cleared
 cleck->check
 cleean->clean
+cleint's->client's
 cleint->client
 cleints->clients
 clera->clear, sclera,
