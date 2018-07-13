@@ -2336,6 +2336,7 @@ cleean->clean
 cleint's->client's
 cleint->client
 cleints->clients
+cler->clear
 clera->clear, sclera,
 clese->close
 cleses->closes
@@ -2356,6 +2357,7 @@ closeing->closing
 clsoe->close
 cluase->clause
 clumn->column
+clustred->clustered
 cmak->cmake
 cmo->com, disabled due to lots of false positives
 cmobination->combination
@@ -2366,16 +2368,26 @@ cnat'->can't
 cnat->can't
 cnter->center
 co-incided->coincided
+coalessing->coalescing
+coallesced->coalesced
 cobvers->covers
 Coca Cola->Coca-Cola
+coccinele->coccinelle
 coctail->cocktail
 codepoitn->codepoint
+codesc->codecs
 codespel->codespell
 coditions->conditions
+coeffcients->coefficients
+coefficeints->coefficients
 coefficent->coefficient
 coefficents->coefficients
 coeficent->coefficient
 coeficents->coefficients
+coeficient->coefficient
+coelesce->coalesce
+coexsiting->coexisting
+cofiguration->configuration
 cofigure->configure
 cofigured->configured
 cofigures->configures
@@ -2389,6 +2401,7 @@ coinside->coincide
 coinsident->coincident
 cointain->contain
 cointained->contained
+cointaining->containing
 cointains->contains
 colaboration->collaboration
 colaborations->collaborations
@@ -2443,11 +2456,14 @@ comando->commando
 comandos->commandos
 comany->company
 comapany->company
+comapared->compared
+comapre->compare
 comaptible->compatible
 comback->comeback
 combained->combined
 combanations->combinations
 combatibility->compatibility
+combatible->compatible
 combiantion->combination
 combinatins->combinations
 combinatorical->combinatorial
@@ -2463,6 +2479,7 @@ comented->commented
 comenting->commenting
 coments->comments
 comilers->compilers
+comination->combination
 comision->commission
 comisioned->commissioned
 comisioner->commissioner
@@ -2481,6 +2498,8 @@ comitte->committed, committee,
 comitted->committed
 comittee->committee
 comitting->committing
+comlete->complete
+comleted->completed
 commad->command
 commads->commands
 comman->command, common,
@@ -2526,6 +2545,7 @@ commments->comments
 commmit->commit
 commmits->commits
 commmon->common
+commmunicating->communicating
 commnad->command
 commnads->commands
 commnent->comment
