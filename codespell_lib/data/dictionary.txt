@@ -6613,6 +6613,7 @@ incorruptable->incorruptible
 incosistent->inconsistent
 incramentally->incrementally
 increadible->incredible
+increament->increment
 increas->increase
 incredable->incredible
 incremeantal->incremental
@@ -6637,7 +6638,9 @@ incvalid->invalid
 indeces->indices
 indefinately->indefinitely
 indefineable->undefinable
+indefinitiley->indefinitely
 indefinitly->indefinitely
+indefintly->indefinitely
 indempotent->idempotent
 indendation->indentation
 indended->intended, indented,
@@ -6650,10 +6653,12 @@ indentifier->identifier
 indentifies->identifies
 indentify->identify
 indentifying->identifying
+indentity->identity
 indenx->index
 indepedantly->independently
 indepedence->independence
 indepedent->independent
+independ->independent
 independance->independence
 independant->independent
 independantly->independently
@@ -6668,11 +6673,15 @@ inderect->indirect
 indes->index
 indespensable->indispensable
 indespensible->indispensable
+indexig->indexing
+indexs->indexes
 indiactor->indicator
 indiate->indicate
 indiated->indicated
 indiates->indicates
 indiating->indicating
+indicaite->indicate
+indicat->indicate
 indicateds->indicated, indicates,
 indicatee->indicates, indicated,
 indicees->indices
@@ -6722,8 +6731,10 @@ inefficieny->inefficiency, inefficiently,
 ineffient->inefficient
 ineffiently->inefficiently
 inernal->internal
+inerrupt->interrupt
 inertion->insertion
 inestart->linestart
+inetrrupts->interrupts
 inevatible->inevitable
 inevitible->inevitable
 inevititably->inevitably
@@ -6753,6 +6764,7 @@ influented->influenced
 infoemation->information
 infomation->information
 infor->info
+inforamtion->information
 inforation->information
 inforce->enforce
 inforced->enforced
@@ -6761,10 +6773,12 @@ informaiton->information
 informatikon->information
 informatiom->information
 informations->information
+informaton->information
 informtion->information
 inforrmation->information
 infrantryman->infantryman
 infrasctructure->infrastructure
+infrastruture->infrastructure
 infrigement->infringement
 infromation->information
 infromatoin->information
@@ -6785,7 +6799,9 @@ inhabitans->inhabitants
 inherantly->inherently
 inheritage->heritage, inheritance,
 inheritence->inheritance
+inidicates->indicates
 inifinite->infinite
+inifinte->infinite
 inintialization->initialization
 initailize->initialize
 inital->initial
@@ -6801,6 +6817,7 @@ initalizer->initializer
 initalizes->initializes
 initalizing->initializing
 initally->initially
+initate->initiate
 initation->initiation
 initators->initiators
 initiaitive->initiative
@@ -6808,6 +6825,8 @@ initiales->initialize, initializes, initials, initialise, initialises,
 initialialize->initialize
 initialiase->initialise, initialize,
 initialiation->initialization
+initialiaze->initialize
+initialiazed->initialized
 initialied->initialized
 initialilzing->initializing
 initialisiert->initialised, initialized,
@@ -6822,6 +6841,7 @@ initialse->initialise, initialize,
 initialsed->initialised, initialized,
 initialses->initialises, initializes,
 initialy->initially
+initialyl->initially
 initialyse->initialise, initialize,
 initialysed->initialised, initialized,
 initialyses->initialises, initializes,
