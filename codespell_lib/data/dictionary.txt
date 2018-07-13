@@ -3197,6 +3197,7 @@ copyritght->copyright
 copyritghted->copyrighted
 copyritghts->copyrights
 copys->copies
+copytight->copyright
 copywrite->copyright
 corecct->correct
 corecctly->correctly
@@ -3252,6 +3253,7 @@ correspondant->correspondent
 correspondants->correspondents
 correspondes->corresponds
 correspondig->corresponding
+corresponging->corresponding
 corresponing->corresponding
 corresponsing->corresponding
 corret->correct
@@ -3267,8 +3269,11 @@ corrisponds->corresponds
 corrleation->correlation
 corrleations->correlations
 corrrected->corrected
+corrresponding->corresponding
 corrresponds->corresponds
+corrrupted->corrupted
 corrspond->corresponds
+corruptiuon->corruption
 costitution->constitution
 costruct->construct
 costructer->constructor
@@ -3281,6 +3286,7 @@ cotrol->control
 cotrolled->controlled
 cotrolling->controlling
 cotrols->controls
+couarpoint->cougarpoint
 coucil->council
 coud->could
 coudl->could, cloud,
@@ -3317,16 +3323,19 @@ couse->course, cause,
 couses->courses, causes,
 cousing->cousin
 couted->counted
+couter->counter
 couterpart->counterpart
 coutner->counter
 coutners->counters
 covere->cover
 coveres->covers
+coverred->covered
 coverted->converted, covered, coveted,
 coverting->converting
 covnert->convert
 coyp->copy
 coypright->copyright
+coyright->copyright
 cpation->caption
 cpoy->coy, copy,
 craete->create
@@ -3335,8 +3344,10 @@ crasher->crash
 crashers->crashes
 crashs->crashes
 crated->created, crated,
+crates->creates
 creaed->created
 creaeted->created
+creastor->creator
 creat->create
 creatation->creation
 createable->creatable
@@ -3347,15 +3358,18 @@ creche->crèche
 credate->created
 creditted->credited
 creedence->credence
+cresits->credits
 cretae->create
 critcial->critical
 critera->criteria
 critereon->criterion
 criterias->criteria
 criteriom->criterion
+criticall->critical
 criticial->critical
 criticially->critically
 criticists->critics
+critiera->criteria
 critising->criticising, criticizing,
 critisising->criticising
 critisism->criticism
@@ -3381,10 +3395,12 @@ crystalisation->crystallisation
 cryto->crypto
 crytpo->crypto
 ctificates->certificates
+cuase->cause
 culiminating->culminating
 cummulative->cumulative
 cummunicate->communicate
 cumulatative->cumulative
+cuncurency->concurrency
 curch->church
 curcuit->circuit
 curcumstance->circumstance
@@ -3394,7 +3410,11 @@ curentfilter->currentfilter
 curently->currently
 curernt->current
 currect->correct, current,
+currenlty->currently
 currenly->currently
+currentl->currently
+currentlly->currently
+currentry->currently
 currenty->currently
 curretly->currently
 curriculem->curriculum
