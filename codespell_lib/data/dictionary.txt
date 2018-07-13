@@ -2551,6 +2551,7 @@ commnads->commands
 commnent->comment
 commoditiy->commodity
 commom->common
+commond->command
 commongly->commonly
 commonweath->commonwealth
 commparisons->comparisons
@@ -2568,6 +2569,7 @@ comon->common
 comonent->component
 compability->compatibility
 compabillity->compatibility
+compain->complain
 compair->compare
 compairs->compares
 comparaison->comparison
@@ -2589,9 +2591,11 @@ compatabilty->compatibility
 compatable->compatible
 compatablities->compatibilities
 compatablity->compatibility
+compatbile->compatible
 compatbility->compatibility
 compatiability->compatibility
 compatiable->compatible
+compatiablity->compatibility
 compatibiliy->compatibility
 compatibilty->compatibility
 compatibily->compatibility
@@ -2602,6 +2606,7 @@ compaytibility->compatibility
 compeitions->competitions
 compeletely->completely
 compelte->complete
+compeltion->completion
 compenent->component, competent,
 compensantion->compensation
 competance->competence
@@ -2636,6 +2641,7 @@ completly->completely
 completness->completeness
 complettly->completely
 complianse->compliance
+complied-in->compiled-in
 complient->compliant
 complier->compiler
 compliers->compilers
@@ -2644,14 +2650,18 @@ compliled->compiled
 compliles->compiles
 compliling->compiling
 compling->compiling
+compnent->component
+compnents->components
 compoennt->component
 compoent->component
+compoments->components
 componant->component
 componbents->components
 componding->compounding
 componentes->components
 componet->component
 componets->components
+componsites->composites
 compontent->component
 compontents->components
 composit->composite
@@ -2665,6 +2675,7 @@ compresing->compressing
 compresion->compression
 compresor->compressor
 compresser->compressor
+compresssion->compression
 comprimise->compromise
 compromize->compromise
 compsite->composite
@@ -2674,16 +2685,23 @@ compulsary->compulsory
 compulsery->compulsory
 compund->compound
 compunds->compounds
+computaion->computation
 computarized->computerized
 computtaion->computation
 computtaions->computations
+comress->compress
 comression->compression
+comsume->consume
+comsumed->consumed
 comsumer->consumer
 comsumers->consumers
 comsuming->consuming
+comsumption->consumption
+comunicate->communicate
 comunication->communication
 comute->commute, compute,
 comuted->commuted, computed,
+comverted->converted
 conain->contain
 conained->contained
 conainer->container
@@ -2772,6 +2790,7 @@ conent->content
 conents->contents
 conesencus->consensus
 conetxt->context
+conexant->connexant
 conext->context, connect, connects,
 confict->conflict
 conficted->conflicted
@@ -2779,6 +2798,7 @@ conficts->conflicts
 confidental->confidential
 confidentally->confidentially
 confids->confides
+configer->configure
 configire->configure
 configration->configuration
 configrations->configurations
