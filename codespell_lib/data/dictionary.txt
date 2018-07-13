@@ -4235,6 +4235,7 @@ disappers->disappears
 disaproval->disapproval
 disassebled->disassembled
 disassocation->disassociation
+disasssembler->disassembler
 disasterous->disastrous
 disatisfaction->dissatisfaction
 disatisfied->dissatisfied
@@ -4243,13 +4244,17 @@ disbale->disable
 disbaled->disabled
 disbales->disables
 disbaling->disabling
+disble->disable
 disbled->disabled
 discernable->discernible
+disclamer->disclaimer
+disconect->disconnect
 disconecting->disconnecting
 disconnet->disconnect
 disconneted->disconnected
 disconneting->disconnecting
 disconnets->disconnects
+disconnnect->disconnect
 discontentment->discontent
 discontigous->discontiguous
 discontinous->discontinuous
@@ -4281,15 +4286,18 @@ disobediant->disobedient
 disokay->display
 disolve->dissolve
 disolved->dissolved
+disonnect->disconnect
 disover->discover
 dispair->despair
 dispaly->display
 disparingly->disparagingly
+disparite->disparate
 dispatcgh->dispatch
 dispath->dispatch
 dispathed->dispatched
 dispathes->dispatches
 dispathing->dispatching
+dispbibute->distribute
 dispence->dispense
 dispenced->dispensed
 dispencing->dispensing
@@ -4324,6 +4332,7 @@ dissobedience->disobedience
 dissobedient->disobedient
 distantce->distance
 distarct->distract
+distengish->distinguish
 distibute->distribute
 distibuted->distributed
 distibutes->distributes
@@ -4351,6 +4360,7 @@ distribtuions->distributions
 distribure->distribute
 distrobution->distribution
 distrub->disturb
+distrubite->distribute
 distrubution->distribution
 distrubutions->distributions
 distruction->destruction
@@ -4423,6 +4433,7 @@ doesnt;->doesn't
 doestn't->doesn't
 doign->doing
 dollor->dollar
+domait->domain
 doman->domain
 domans->domains
 domension->dimension
@@ -4473,6 +4484,7 @@ downlods->downloads
 dows->does
 dowt->doubt
 doxgen->doxygen
+dpeends->depends
 draging->dragging
 draing->drawing
 dramtic->dramatic
@@ -4485,6 +4497,8 @@ drawm->drawn
 dreasm->dreams
 dreawn->drawn
 driectly->directly
+drity->dirty
+drivr->driver
 drnik->drink
 drop down->drop-down
 dropable->droppable
@@ -4492,8 +4506,10 @@ droped->dropped
 droping->dropping
 droppend->dropped
 droppped->dropped
+druing->during
 druming->drumming
 drummless->drumless
+drvier->driver
 drwaing->drawing
 dscrete->discrete
 dsiable->disable
@@ -4508,6 +4524,7 @@ dublicated->duplicated
 dublicates->duplicates
 dublication->duplication
 ducment->document
+ducument->document
 dueing->doing, during, dueling,
 dulicate->duplicate
 dum->dumb
@@ -4530,11 +4547,14 @@ durig->during
 durning->during
 durring->during
 duting->during
+dyanmic->dynamic
 dyanmically->dynamically
 dyas->dryas
+dymamically->dynamically
 dynamicaly->dynamically
 dynamiclly->dynamically
 dynamicly->dynamically
+dynically->dynamically
 dynmaic->dynamic
 dynmaically->dynamically
 eacf->each
