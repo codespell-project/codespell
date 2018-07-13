@@ -2871,6 +2871,7 @@ conquerers->conquerors
 conqured->conquered
 conrol->control
 conroller->controller
+conrrol->control
 conrtib->contrib
 conscent->consent
 consciencious->conscientious
@@ -2905,12 +2906,15 @@ considred->considered
 consifer->consider
 consifered->considered
 consious->conscious
+consisant->consistent
 consisent->consistent
 consisently->consistently
 consistancy->consistency
 consistant->consistent
 consistantly->consistently
+consisten->consistent
 consistenly->consistently
+consitant->consistent
 consitency->consistency
 consitent->consistent
 consitently->consistently
@@ -2943,6 +2947,7 @@ constituant->constituent
 constituants->constituents
 constituion->constitution
 constituional->constitutional
+constly->costly
 constract->construct
 constracted->constructed
 constractor->constructor
@@ -3030,6 +3035,7 @@ conten->contain
 contence->contents
 contendor->contender
 contens->contents, contains,
+contentn->content
 contet->contest, content, context,
 contexta->context
 contexual->contextual
@@ -3041,12 +3047,18 @@ contibutes->contributes
 contibutor->contributor
 contigent->contingent
 contigious->contiguous
+contigiously->contiguously
+contignuous->contiguous
 contigous->contiguous
 contiguious->contiguous
 contiguos->contiguous
+contiguous-non->non-contigous
+continaing->containing
 contination->continuation
 contined->continued
 continging->containing
+contingous->contiguous
+continguous->contiguous
 continiously->continuously
 continoue->continue
 continous->continuous
@@ -3063,6 +3075,7 @@ contollers->controllers
 contolls->controls
 contols->controls
 contorls->controls
+contoroller->controller
 contradically->contradictory
 contraint->constraint
 contraints->constraints
@@ -3075,6 +3088,7 @@ contritutions->contributions
 contrl->control
 contro->control
 controled->controlled
+controlelrs->controllers
 controler->controller
 controlers->controllers
 controling->controlling
@@ -3136,6 +3150,7 @@ convexe->convex
 conveyer->conveyor
 conviced->convinced
 convience->convince, convenience,
+convienence->convenience
 convienience->convenience
 convienient->convenient
 convieniently->conveniently
@@ -3158,16 +3173,21 @@ coordonates->coordinates
 cooridates->coordinates
 cooridnate->coordinate
 coorinates->coordinates
+coorination->coordination
 coorperation->cooperation, corporation,
 coorperations->corporations
+copletely->completely
 copmetitors->competitors
 copmonent->component
 coponent->component
 coppied->copied
 coppy->copy
+copright->copyright
 coprright->copyright
 copstruction->construction
+copuright->copyright
 coputer->computer
+copver->cover
 copyed->copied
 copyied->copied
 copyrigth->copyright
