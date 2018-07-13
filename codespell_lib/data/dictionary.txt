@@ -13015,7 +13015,9 @@ universtal->universal
 universtiy->university
 univesities->universities
 univesity->university
+unknon->unknown
 unknonw->unknown
+unknonwn->unknown
 unknonws->unknowns
 unknow->unknown, unknow,
 unknows->unknowns, unknows,
@@ -13028,7 +13030,9 @@ unkowns->unknowns
 unles->unless
 unlikey->unlikely
 unlimitied->unlimited
+unline->unlike
 unmanouverable->unmaneuverable, unmanoeuvrable,
+unmaping->unmapping
 unmistakeably->unmistakably
 unmoutned->unmounted
 unncessary->unnecessary
@@ -13047,6 +13051,7 @@ unnecessarilly->unnecessarily
 unnecesserily->unnecessarily
 unnecessery->unnecessary
 unnedded->unneeded
+unneded->unneeded
 unneedingly->unnecessarily
 unnescessarily->unnecessarily
 unnescessary->unnecessary
@@ -13065,6 +13070,7 @@ unorderd->unordered
 unorotated->unrotated
 unoticeable->unnoticeable
 unpacke->unpacked
+unpacket->unpacked
 unplease->displease
 unpleasent->unpleasant
 unplesant->unpleasant
@@ -13100,6 +13106,7 @@ unregster->unregister
 unregstered->unregistered
 unregstering->unregistering
 unregsters->unregisters
+unreigister->unregister
 unreigster->unregister
 unreigstered->unregistered
 unreigstering->unregistering
@@ -13116,6 +13123,7 @@ unroated->unrotated
 unsed->unused, used,
 unselect->deselect
 unsettin->unsetting
+unsiged->unsigned
 unsinged->unsigned
 unspported->unsupported
 unsual->unusual
@@ -13131,6 +13139,7 @@ unsucessfull->unsuccessful
 unsucessfully->unsuccessfully
 unsued->unused
 unsufficient->insufficient
+unsuportable->unsupportable
 unsuported->unsupported
 unsupport->unsupported
 unsuprised->unsurprised
@@ -13150,10 +13159,12 @@ untranslateable->untranslatable
 untypically->atypically
 unued->unused
 ununsed->unused
+ununsual->unusual
 unusal->unusual
 unusally->unusually
 unuseable->unusable
 unuseful->useless
+unusre->unsure
 unusuable->unusable
 unvailable->unavailable
 unversionned->unversioned
@@ -13166,6 +13177,7 @@ unwraped->unwrapped
 unwrritten->unwritten
 unxpected->unexpected
 unziped->unzipped
+upadted->updated
 upate->update
 upated->updated
 upater->updater
@@ -13193,6 +13205,7 @@ upstread->upstream
 upstreamedd->upstreamed
 upstrema->upstream
 uptadeable->updatable
+uptions->options
 upto->up to
 uptream->upstream
 usal->usual
@@ -13200,6 +13213,7 @@ usally->usually
 uscaled->unscaled
 useable->usable
 useage->usage
+usees->uses
 usefule->useful
 usefull->useful
 usefullness->usefulness
@@ -13209,8 +13223,13 @@ usefutl->useful
 usege->usage
 useing->using
 usera->users
+userapace->userspace
 userful->useful
+userpace->userspace
+usersapce->userspace
+userspase->userspace
 usesfull->useful
+usespace->userspace
 usetnet->Usenet
 usibility->usability
 usig->using
@@ -13224,6 +13243,7 @@ ussually->usually
 usuable->usable
 usuage->usage
 usuall->usually, usual,
+usuallly->usually
 usualy->usually
 ususal->usual
 ususally->usually
