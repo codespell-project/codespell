@@ -1153,7 +1153,9 @@ assasinations->assassinations
 assasined->assassinated
 assasins->assassins
 assassintation->assassination
+asscciated->associated
 asscoitaed->associated
+assember->assembler
 assemple->assemble
 assertation->assertion
 assesment->assessment
@@ -1176,8 +1178,12 @@ assignemnt->assignment
 assignemnts->assignments
 assignend->assigned
 assignes->assigns
+assignmens->assignments
 assing->assign
+assinged->assigned
+assingment->assignment
 assisnate->assassinate
+assistence->assistance
 assistent->assistant
 assit->assist
 assitant->assistant
@@ -1194,14 +1200,17 @@ associcates->associates
 associcating->associating
 associdated->associated
 associeted->associated
+assoiated->associated
 assoicate->associate
 assoicated->associated
 assoicates->associates
+assoication->association
 assoiciative->associative
 assosciate->associate
 assosciated->associated
 assosciates->associates
 assosciating->associating
+assosiacted->associated
 assosiate->associate
 assosiated->associated
 assosiates->associates
@@ -1209,7 +1218,10 @@ assosiating->associating
 assosication->assassination
 assotiated->associated
 asssassans->assassins
+asssembler->assembler
+asssembly->assembly
 asssertion->assertion
+asssociated->associated
 asssuming->assuming
 assualt->assault
 assualted->assaulted
@@ -1217,8 +1229,11 @@ assumme->assume
 assummed->assumed
 assummes->assumes
 assumtions->assumption
+assuption->assumption
+assuptions->assumptions
 assymetric->asymmetric
 assymetrical->asymmetrical
+assymetries->asymmetries
 assymmetric->asymmetric
 assymmetrical->asymmetrical
 asteriks->asterisk, asterisks,
@@ -1234,9 +1249,12 @@ asycronous->asynchronous
 asymetric->asymmetric
 asymetrical->asymmetrical
 asymetricaly->asymmetrically
+asymmetri->asymmetric
+asynchnous->asynchronous
 asynchonous->asynchronous
 asynchonously->asynchronously
 asynchornous->asynchronous
+asynchrnous->asynchronous
 asynchroneously->asynchronously
 asynchrons->asynchronous
 asynchrounous->asynchronous
@@ -1256,6 +1274,7 @@ atleast->at least
 atomatically->automatically
 atomical->atomic
 atomicly->atomically
+atomiticity->atomicity
 atorecovery->autorecovery
 atorney->attorney
 atribs->attribs
@@ -1264,6 +1283,7 @@ atribute->attribute
 atributed->attributed
 atributes->attributes
 atrributes->attributes
+atrtribute->attribute
 atrtributes->attributes
 attache->attaché, attached, attach,
 attachement->attachment
