@@ -8309,7 +8309,9 @@ nees->needs
 neesd->needs
 neesds->needs
 neet->need
+negaive->negative
 negatve->negative
+negible->negligible
 negitive->negative
 neglible->negligible
 negligable->negligible
@@ -8321,6 +8323,7 @@ negociating->negotiating
 negociation->negotiation
 negociations->negotiations
 negotation->negotiation
+negtive->negative
 neice->niece, nice,
 neigborhood->neighborhood
 neigbour->neighbour, neighbor,
@@ -8371,15 +8374,18 @@ nineth->ninth
 ninteenth->nineteenth
 ninties->1990s
 ninty->ninety
+nknown->unknown
 nkow->know
 nkwo->know
 nmae->name
 nned->need
 nodel->model
 nodels->models
+nodess->nodes
 noe->not, no, node, know,
 nofified->notified
 nohypen->nohyphen
+non-assiged->non-assigned
 non-inreractive->non-interactive
 noncombatents->noncombatants
 nonexistant->nonexistent
@@ -8387,6 +8393,7 @@ nonsence->nonsense
 nontheless->nonetheless
 noo->no
 noone->no one
+noral->normal
 noralize->normalize
 noralized->normalized
 noraml->normal
@@ -8426,6 +8433,7 @@ notifcations->notifications
 notifed->notified
 notifer->notifier
 notificaction->notification
+notificiation->notification
 notifiy->notify
 notifiying->notifying
 notifycation->notification
@@ -8441,6 +8449,7 @@ nowadys->nowadays
 nowdays->nowadays
 nowe->now
 nto->not, disabled due to \n
+nuber->number
 nubering->numbering
 nubmer->number
 nubmers->numbers
@@ -8456,6 +8465,7 @@ numberous->numerous
 numbert->number
 numebr->number
 numebrs->numbers
+numer->number
 numerbering->numbering
 numerial->numeral
 numering->numbering
@@ -8480,7 +8490,9 @@ obeserve->observe
 obession->obsession
 obgect->object
 objectss->objects
+objejct->object
 objekt->object
+objet->object
 objetcs->objects
 objext->object
 objump->objdump
@@ -8498,6 +8510,7 @@ obstancles->obstacles
 obstruced->obstructed
 obsure->obscure
 obtaiend->obtained
+obtaion->obtain
 obyect->object
 obyekt->object
 ocasion->occasion
@@ -8519,6 +8532,7 @@ occassionally->occasionally
 occassionaly->occasionally
 occassioned->occasioned
 occassions->occasions
+occational->occasional
 occationally->occasionally
 occour->occur
 occoured->occurred
@@ -8541,6 +8555,7 @@ occurrances->occurrences
 occurrs->occurs
 oclock->o'clock
 ocntext->context
+octect->octet
 octohedra->octahedra
 octohedral->octahedral
 octohedron->octahedron
@@ -8557,10 +8572,13 @@ ocurred->occurred
 ocurrence->occurrence
 ocurrences->occurrences
 oder->order, odor,
+oen->one
 of of->of
 offcers->officers
 offcially->officially
 offereings->offerings
+offest->offset
+offests->offsets
 offet->offset
 offets->offsets
 offic->office
@@ -8615,6 +8633,7 @@ ond->one
 onece->once
 oneyway->oneway
 ongly->only
+onl->only
 onot->note, not,
 ons->owns
 onself->oneself
@@ -8648,6 +8667,7 @@ operaton->operation
 opertaion->operation
 opertaions->operations
 opertion->operation
+opertional->operational
 opion->option
 opionally->optionally
 opions->options
