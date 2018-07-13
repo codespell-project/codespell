@@ -9262,6 +9262,7 @@ pitmap->pixmap, bitmap,
 pitty->pity
 pixelx->pixels, pixel,
 pixes->pixels
+placehoder->placeholder
 plaform->platform
 plaforms->platforms
 plaftorm->platform
@@ -9285,16 +9286,21 @@ playble->playable
 playright->playwright
 playwrite->playwright
 playwrites->playwrights
+pleacing->placing
 pleaes->please
 pleasent->pleasant
 plebicite->plebiscite
+plent->plenty
+plesae->please
 plesant->pleasant
 plian->plain
 pllatforms->platforms
 ploting->plotting
 pluign->plugin
 pluigns->plugins
+pluse->pulse
 pocessed->processed, possessed,
+podule->module
 poenis->penis
 poeoples->peoples
 poety->poetry
@@ -9336,8 +9342,10 @@ polysaccaride->polysaccharide
 polysaccharid->polysaccharide
 pomegranite->pomegranate
 pomotion->promotion
+poninter->pointer
 pont->point
 pontential->potential
+ponter->pointer
 ponting->pointing
 ponts->points
 pontuation->punctuation
@@ -9378,6 +9386,7 @@ posibilities->possibilities
 posibility->possibility
 posibilties->possibilities
 posible->possible
+posiitive->positive
 posion->poison
 posioned->positioned, poisoned,
 posioning->poisoning
@@ -9389,10 +9398,12 @@ positionned->positioned
 positionning->positioning
 positionof->position, position of,
 positiv->positive
+positivies->positives
 positon->position
 positons->positions
 positve->positive
 positves->positives
+posponed->postponed
 posption->position
 possabilites->possibilities
 possabilities->possibilities
@@ -9426,6 +9437,7 @@ possitive->positive
 possobily->possibly
 possoble->possible
 possobly->possibly
+posssible->possible
 post-morten->post-mortem
 post-proces->post-process
 post-procesing->post-processing
@@ -9454,6 +9466,7 @@ potental->potential
 potentally->potentially
 potententially->potentially
 potentialy->potentially
+potentiomenter->potentiometer
 potition->position
 potrait->portrait
 potrayed->portrayed
@@ -9489,7 +9502,9 @@ preambule->preamble
 preample->preamble
 preaorocessing->preprocessing
 preapared->prepared
+preapre->prepare
 prebious->previous
+preced->precede
 precedessor->predecessor
 preceds->precedes
 preceed->precede
@@ -9528,6 +9543,8 @@ predictible->predictable
 predifined->predefined
 predomiantly->predominately
 preeceding->preceding
+prefectches->prefetches
+prefecth->prefetch
 prefectly->perfectly
 prefere->prefer, preferred,
 prefered->preferred
@@ -9556,6 +9573,7 @@ premission->permission
 premit->permit
 premits->permits
 Premonasterians->Premonstratensians
+premption->preemption
 preocupation->preoccupation
 preoperty->property
 prepair->prepare
@@ -9570,6 +9588,7 @@ prepresented->represented
 prepresents->represents
 preproces->preprocess
 preprocesing->preprocessing
+prequisites->prerequisites
 prerequesites->prerequisites
 prerequisit->prerequisite
 prerequisits->prerequisites
@@ -9577,6 +9596,7 @@ prerequiste->prerequisite
 prerequsite->prerequisite
 prerequsites->prerequisites
 preriod->period
+preriodic->periodic
 pres->press
 presance->presence
 presedential->presidential
