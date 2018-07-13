@@ -11554,8 +11554,10 @@ spaw->spawn
 spawed->spawned
 spawing->spawning
 spaws->spawns
+spcial->special
 spcifies->specifies
 speach->speech
+speacial->special
 spearator->separator
 spearators->separators
 specail->special
@@ -11588,6 +11590,7 @@ specifices->specifies
 specificially->specifically
 specificiation->specification
 specificiations->specifications
+specificied->specified
 specificl->specific
 specificly->specifically
 specificy->specify, specificity, specifically,
@@ -11599,6 +11602,7 @@ specifyig->specifying
 specifyinhg->specifying
 specilized->specialized
 speciman->specimen
+specivied->specified
 spectauclar->spectacular
 spectaulars->spectaculars
 spects->aspects, expects, specs,
@@ -11614,6 +11618,7 @@ spefixic->specific
 spefixied->specified
 speices->species
 speicfied->specified
+speicify->specify
 speling->spelling
 spendour->splendour
 speparator->separator
@@ -11623,6 +11628,8 @@ spesify->specify
 spezialisation->specialization
 spezified->specified
 spiltting->splitting
+spinock->spinlock
+spliitting->splitting
 splite->split
 spliting->splitting
 splitted->split
@@ -11633,6 +11640,7 @@ sponsered->sponsored
 spontanous->spontaneous
 sponzored->sponsored
 spoonfulls->spoonfuls
+sporious->spurious
 sppeches->speeches
 spport->support
 spported->supported
@@ -11649,6 +11657,8 @@ spritual->spiritual
 spurios->spurious
 spurrious->spurious
 sqaure->square
+sqeuence->sequence
+squence->sequence
 srcipt->script
 srcipts->scripts
 sreturns->returns
@@ -11668,6 +11678,8 @@ srunken->shrunken
 srunkn->shrunken
 stabalization->stabilization
 stablility->stability
+stablilization->stabilization
+stablize->stabilize
 stach->stack
 stae->state
 staement->statement
@@ -11685,6 +11697,7 @@ standarts->standards
 standtard->standard
 stange->strange
 stanp->stamp
+staration->starvation
 stard->start
 startegic->strategic
 startegies->strategies
@@ -11695,6 +11708,7 @@ startting->starting
 stateman->statesman
 statememts->statements
 statemet->statement
+statemnts->statements
 staticly->statically
 statictic->statistic
 statictics->statistics
@@ -11702,16 +11716,21 @@ statisfied->satisfied
 statisfies->satisfies
 statisfy->satisfy
 statisfying->satisfying
+statisitics->statistics
 statmenmt->statement
 statment->statement
 statments->statements
 statrt->start
 stattistic->statistic
 statubar->statusbar
+statustics->statistics
 staus->status
 stcokbrush->stockbrush
+stdanard->standard
 steams->streams
 stength->strength
+steram->stream
+sterio->stereo
 steriods->steroids
 sterotypes->stereotypes
 stil->still
@@ -11750,6 +11769,7 @@ straighforward->straightforward
 straightfoward->straightforward
 straigt->straight
 straigth->straight
+straming->streaming
 strangly->strangely, strange,
 strat->start, strata,
 stratagically->strategically
