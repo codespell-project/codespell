@@ -4774,10 +4774,12 @@ encrcypt->encrypt
 encripted->encrypted
 encrupted->encrypted
 encryptiion->encryption
+encryptiong->encryption
 encrytion->encryption
 encrytped->encrypted
 encylopedia->encyclopedia
 encyption->encryption
+endding->ending
 endevors->endeavors
 endevour->endeavour
 endianes->endianness
@@ -4786,14 +4788,17 @@ endiannes->endianness
 endig->ending
 endnoden->endnode
 endolithes->endoliths
+endpints->endpoints
 endpiont->endpoint
 endpionts->endpoints
 endsup->ends up
 enduce->induce
 eneables->enables
+eneble->enable
 ened->need
 enegeries->energies
 enegery->energy
+enery->energy
 eneter->enter
 enetered->entered
 enflamed->inflamed
@@ -4807,6 +4812,7 @@ engery->energy
 engieneer->engineer
 engieneers->engineers
 enginge->engine
+enginin->engine
 enhace->enhance
 enhaced->enhanced
 enhacement->enhancement
@@ -4830,12 +4836,14 @@ enmpty->empty
 enmum->enum
 enntries->entries
 enocded->encoded
+enoght->enough
 enoguh->enough
 enought->enough
 enougth->enough
 enourmous->enormous
 enourmously->enormously
 enouth->enough
+enpoint->endpoint
 enque->enqueue
 enrties->entries
 enrty->entry
@@ -4849,7 +4857,9 @@ enteties->entities
 entety->entity
 enthousiasm->enthusiasm
 enthusiatic->enthusiastic
+entired->entered
 entireity->entirety
+entires->entries
 entirey->entirely
 entite->entire, entity,
 entitee->entity
@@ -4870,6 +4880,7 @@ entrepeneurs->entrepreneurs
 entrie->entry, entries,
 entrys->entries
 enty->entry, entity,
+enulation->emulation
 enumarate->enumerate
 enumarated->enumerated
 enumarates->enumerates
@@ -4915,9 +4926,11 @@ epsiode->episode
 epty->empty
 eqaul->equal
 eqaulity->equality
+eqaulizer->equalizer
 eqivalent->equivalent
 eqivalents->equivalents
 equallity->equality
+equaly->equally
 equel->equal
 equialent->equivalent
 equilibium->equilibrium
@@ -4938,6 +4951,7 @@ eratic->erratic
 eratically->erratically
 eraticly->erratically
 erested->arrested, erected,
+erformance->performance
 erliear->earlier
 ermergency->emergency
 eroneous->erroneous
@@ -4969,6 +4983,8 @@ esle->else
 espacially->especially
 especailly->especially
 especialy->especially
+especiially->especially
+espect->expect
 essencial->essential
 essense->essence
 essentail->essential
@@ -4983,6 +4999,7 @@ essesital->essential
 essesitally->essentially
 essesitaly->essentially
 esssential->essential
+estabilish->establish
 estabish->establish
 estabishd->established
 estabished->established
@@ -5027,6 +5044,7 @@ evaluted->evaluated
 evalutes->evaluates
 evaluting->evaluating
 evenhtually->eventually
+evenpoll->eventpoll
 eventally->eventually
 eventhough->even though
 eventially->eventually
@@ -5044,6 +5062,7 @@ everythin->everything
 everythings->everything
 everytime->every time
 everyting->everything
+eveyone->everyone
 eveyr->every
 evidentally->evidently
 evironment->environment
@@ -5053,6 +5072,7 @@ evry->every
 evrything->everything
 evrywhere->everywhere
 evyrthing->everything
+exaclty->exactly
 exacly->exactly
 exacty->exactly
 exagerate->exaggerate
