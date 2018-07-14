@@ -2843,6 +2843,8 @@ converstion->conversion
 converstions->conversions
 convertable->convertible
 convertables->convertibles
+convertation->conversation, conversion,
+convertations->conversations, conversions,
 convertet->converted
 convertion->conversion
 convertions->conversions
@@ -3048,6 +3050,7 @@ credate->created
 creditted->credited
 creedence->credence
 cretae->create
+cristal->crystal, cristal,
 critcial->critical
 critera->criteria
 critereon->criterion
@@ -3963,6 +3966,8 @@ distingushes->distinguishes
 distingushing->distinguishing
 distingusih->distinguish
 distirted->distorted
+distnace->distance
+distnaces->distances
 distory->destroy, distort, history,
 distribtion->distribution
 distribtions->distributions
@@ -3971,6 +3976,7 @@ distribtuions->distributions
 distribure->distribute
 distrobution->distribution
 distrub->disturb
+distrubted->distributed, disrupted,
 distrubution->distribution
 distrubutions->distributions
 distruction->destruction
@@ -4350,6 +4356,7 @@ encose->enclose
 encosed->enclosed
 encoses->encloses
 encosing->enclosing
+encosure->enclosure
 encounterd->encountered
 encouraing->encouraging
 encripted->encrypted
@@ -5960,6 +5967,7 @@ implments->implements
 imploys->employs
 imporing->importing
 importamt->important
+importd->imported
 imporv->improve, improv,
 imporve->improve
 imporvement->improvement
@@ -6059,6 +6067,7 @@ incoporate->incorporate
 incoporated->incorporated
 incoporates->incorporates
 incoporating->incorporating
+incorect->incorrect
 incoroporated->incorporated
 incorperate->incorporate
 incorperated->incorporated
@@ -6448,6 +6457,9 @@ integreated->integrated
 integrety->integrity
 integrey->integrity
 intelectual->intellectual
+intelegence->intelligence
+intelegent->intelligent
+intelegently->intelligently
 inteligence->intelligence
 inteligent->intelligent
 intenational->international
@@ -6899,6 +6911,7 @@ leyer->layer
 liasion->liaison
 liason->liaison
 liasons->liaisons
+libarary->library
 libaries->libraries
 libary->library
 libell->libel
@@ -7168,6 +7181,8 @@ matcing->matching
 mateiral->material
 mateirals->materials
 mater->matter, master, mother, mater,
+materaial->material
+materaials->materials
 materail->material
 materails->materials
 materalists->materialist
@@ -7692,6 +7707,7 @@ nineth->ninth
 ninteenth->nineteenth
 ninties->1990s
 ninty->ninety
+nither->neither
 nkow->know
 nkwo->know
 nmae->name
@@ -9257,6 +9273,7 @@ readeable->readable
 readed->read, readd, readded,
 readibility->readability
 readible->readable
+readius->radius
 readmition->readmission
 readnig->reading
 readning->reading
@@ -12567,6 +12584,7 @@ workaroung->workaround
 workarround->workaround
 workarund->workaround
 workbanch->workbench
+workboos->workbooks
 workes->works
 workststion->workstation
 world-reknown->world renown
