@@ -6,6 +6,7 @@ import contextlib
 import os
 import os.path as op
 import subprocess
+import re
 import sys
 import tempfile
 import warnings
@@ -396,7 +397,11 @@ def test_dictionary_formatting():
             err = err.lower()
             assert err not in err_dict, 'entry already exists'
             rep = rep.rstrip('\n')
-            assert len(rep) > 0, 'corrections must be non-empty'
+            assert len(rep) > 0, ('%s: correction %r must be non-empty'
+                                  % (err, rep))
+            assert not re.match('^\s.*', rep), ('%s: correction %r cannot '
+                                                'start with whitespace'
+                                                % (err, rep))
             if rep.count(','):
                 if not rep.endswith(','):
                     assert 'disabled' in rep.split(',')[-1], \
