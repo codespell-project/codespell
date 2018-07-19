@@ -8218,6 +8218,7 @@ packe->packed, packet,
 packege->package
 packge->package
 packges->packages
+packtes->packets
 pading->padding
 paeth->path
 paide->paid
@@ -8243,6 +8244,7 @@ pallete->palette
 pallette->palette
 palletted->paletted
 paltette->palette
+paltform->platform
 pamflet->pamphlet
 pamplet->pamphlet
 paniced->panicked
@@ -8279,6 +8281,7 @@ parallizing->parallelizing
 paramameters->parameters
 paramater->parameter
 paramaters->parameters
+paramenters->parameters
 parametere->parameter
 parameterical->parametrical
 parameterizes->parametrizes
@@ -8300,6 +8303,7 @@ pararaph->paragraph
 parargaph->paragraph
 parargaphs->paragraphs
 pararmeters->parameters
+paratmers->parameters
 parctically->pratically
 parellels->parallels
 paremeter->parameter
@@ -8312,10 +8316,12 @@ parisitic->parasitic
 paritial->partial
 parition->partition
 paritioning->partitioning
+parititions->partitions
 parituclar->particular
 parliment->parliament
 parmaeter->parameter
 parmaeters->parameters
+parmeter->parameter
 parnoia->paranoia
 parrakeets->parakeets
 parralel->parallel
@@ -8337,8 +8343,10 @@ particulary->particularly
 partifular->particular
 partion->partition, portion,
 partioning->partitioning
+partision->partition
 partitial->partial
 partiton->partition
+partitoning->partitioning
 pary->party, parry,
 pase->pass, pace,
 pased->passed
@@ -8347,14 +8355,18 @@ pash->hash
 pass-thru->pass-through, pass through, passthrough,
 pass-trough->pass-through, pass through, passthrough,
 passerbys->passersby
+passin->passing
 passiv->passive
 passowrd->password
 passtime->pastime
+passtrough->passthrough
 pasteing->pasting
 pasttime->pastime
 pastural->pastoral
 pasword->password
+patckets->packets
 patern->pattern
+pathced->patched
 pathes->paths
 pathnme->pathname
 paticular->particular
@@ -8374,8 +8386,10 @@ pecularities->peculiarities
 pecularity->peculiarity
 peculure->peculiar
 pedestrain->pedestrian
+peding->pending
 pedning->pending
 peference->preference
+peform->perform
 peformance->performance
 peformed->performed
 pege->page
@@ -8408,10 +8422,12 @@ percentil->percentile
 percepted->perceived
 percieve->perceive
 percieved->perceived
+percision->precision
 perenially->perennially
 perference->preference
 perferences->preferences
 perferred->preferred
+perfmormance->performance
 perfom->perform
 perfomance->performance
 perfomed->performed
@@ -8422,6 +8438,8 @@ perfomred->performed
 perfoms->performs
 perfoom->perfume, perform,
 performace->performance
+performamce->performance
+performane->performance
 performence->performance
 performes->performed, performs,
 performnace->performance
@@ -8435,8 +8453,12 @@ perhas->perhaps
 perhasp->perhaps
 perheaps->perhaps
 perhpas->perhaps
+peridic->periodic
 periodicaly->periodically
+periodioc->periodic
 peripathetic->peripatetic
+peripherial->peripheral
+peripherials->peripherals
 perisist->persist
 peristent->persistent
 perjery->perjury
@@ -8444,6 +8466,7 @@ perjorative->pejorative
 permanant->permanent
 permanantly->permanently
 permanentely->permanently
+permanenty->permanently
 permantly->permanently
 permenant->permanent
 permenantly->permanently
@@ -8454,6 +8477,7 @@ permissons->permissions
 permisssion->permission
 permisssions->permissions
 permited->permitted
+permormance->performance
 permuation->permutation
 permuations->permutations
 permutaion->permutation
@@ -8470,6 +8494,7 @@ perpindicular->perpendicular
 perseverence->perseverance
 persistance->persistence
 persistant->persistent
+persistantly->persistently
 persisten->persistent
 persited->persisted
 personaly->personally
@@ -8501,6 +8526,7 @@ phenomenonly->phenomenally
 phenomonenon->phenomenon
 phenomonon->phenomenon
 phenonmena->phenomena
+pheriparials->peripherals
 Philipines->Philippines
 philisopher->philosopher
 philisophical->philosophical
@@ -8526,6 +8552,7 @@ phylosophical->philosophical
 physcial->physical
 physicaly->physically
 physisist->physicist
+phy_interace->phy_interface
 piblisher->publisher
 pich->pitch
 pilgrimmage->pilgrimage
@@ -8540,6 +8567,8 @@ piority->priority
 pitmap->pixmap, bitmap,
 pitty->pity
 pixelx->pixels, pixel,
+pixes->pixels
+placehoder->placeholder
 plaform->platform
 plaforms->platforms
 plaftorm->platform
@@ -8563,16 +8592,21 @@ playble->playable
 playright->playwright
 playwrite->playwright
 playwrites->playwrights
+pleacing->placing
 pleaes->please
 pleasent->pleasant
 plebicite->plebiscite
+plent->plenty
+plesae->please
 plesant->pleasant
 plian->plain
 pllatforms->platforms
 ploting->plotting
 pluign->plugin
 pluigns->plugins
+pluse->pulse
 pocessed->processed, possessed,
+podule->module
 poenis->penis
 poeoples->peoples
 poety->poetry
@@ -8614,8 +8648,10 @@ polysaccaride->polysaccharide
 polysaccharid->polysaccharide
 pomegranite->pomegranate
 pomotion->promotion
+poninter->pointer
 pont->point
 pontential->potential
+ponter->pointer
 ponting->pointing
 ponts->points
 pontuation->punctuation
@@ -8656,6 +8692,7 @@ posibilities->possibilities
 posibility->possibility
 posibilties->possibilities
 posible->possible
+posiitive->positive
 posion->poison
 posioned->positioned, poisoned,
 posioning->poisoning
@@ -8667,10 +8704,12 @@ positionned->positioned
 positionning->positioning
 positionof->position, position of,
 positiv->positive
+positivies->positives
 positon->position
 positons->positions
 positve->positive
 positves->positives
+posponed->postponed
 posption->position
 possabilites->possibilities
 possabilities->possibilities
@@ -8704,6 +8743,7 @@ possitive->positive
 possobily->possibly
 possoble->possible
 possobly->possibly
+posssible->possible
 post-morten->post-mortem
 post-proces->post-process
 post-procesing->post-processing
@@ -8732,6 +8772,7 @@ potental->potential
 potentally->potentially
 potententially->potentially
 potentialy->potentially
+potentiomenter->potentiometer
 potition->position
 potrait->portrait
 potrayed->portrayed
@@ -8767,7 +8808,9 @@ preambule->preamble
 preample->preamble
 preaorocessing->preprocessing
 preapared->prepared
+preapre->prepare
 prebious->previous
+preced->precede
 precedessor->predecessor
 preceds->precedes
 preceed->precede
@@ -8806,6 +8849,8 @@ predictible->predictable
 predifined->predefined
 predomiantly->predominately
 preeceding->preceding
+prefectches->prefetches
+prefecth->prefetch
 prefectly->perfectly
 prefere->prefer, preferred,
 prefered->preferred
@@ -8834,6 +8879,7 @@ premission->permission
 premit->permit
 premits->permits
 Premonasterians->Premonstratensians
+premption->preemption
 preocupation->preoccupation
 preoperty->property
 prepair->prepare
@@ -8848,6 +8894,7 @@ prepresented->represented
 prepresents->represents
 preproces->preprocess
 preprocesing->preprocessing
+prequisites->prerequisites
 prerequesites->prerequisites
 prerequisit->prerequisite
 prerequisits->prerequisites
@@ -8855,6 +8902,7 @@ prerequiste->prerequisite
 prerequsite->prerequisite
 prerequsites->prerequisites
 preriod->period
+preriodic->periodic
 pres->press
 presance->presence
 presedential->presidential
@@ -8865,6 +8913,7 @@ presentaion->presentation
 presentaions->presentations
 presernt->present
 preserv->preserve
+preset->present
 preseverance->perseverance
 preseverence->perseverance
 presidenital->presidential
@@ -8924,6 +8973,7 @@ priorty->priority
 prirority->priority
 privalege->privilege
 privaleges->privileges
+privde->provide
 priveledges->privileges
 privelege->privilege
 priveleged->privileged
@@ -8932,6 +8982,7 @@ privelige->privilege
 priveliged->privileged
 priveliges->privileges
 privelleges->privileges
+priviate->private
 privide->provide
 privilage->privilege
 privilaged->privileged
@@ -8954,8 +9005,11 @@ probalibity->probability
 probaly->probably
 probelm->problem
 probelms->problems
+probem->problem
 proberly->properly
 problably->probably
+problamatic->problematic
+proble->probe
 problimatic->problematic
 problme->problem
 problmes->problems
@@ -8978,6 +9032,8 @@ proceeeded->proceeded
 proceeeding->proceeding
 proceeeds->proceeds
 procees->process
+proceesed->processed
+proceesor->processor
 procentual->percentual
 proces->process
 procesed->processed
@@ -8990,11 +9046,14 @@ processess->processes
 processessing->processing
 processig->processing
 processinf->processing
+processore->processor
 processpr->processor
 processs->process
 processsed->processed
 processses->processes
 processsing->processing
+processsors->processors
+procides->provides
 proclaimation->proclamation
 proclamed->proclaimed
 proclaming->proclaiming
@@ -9006,6 +9065,7 @@ proctecting->protecting
 proctects->protects
 procude->produce
 procuded->produced
+prodecure->procedure
 produceds->produces, produced,
 proejction->projection
 proeprties->properties
@@ -9041,8 +9101,10 @@ progrom->pogrom, program,
 progroms->pogroms, programs,
 progrss->progress
 prohabition->prohibition
+prohibt->prohibit
 proirity->priority
 projectio->projection
+prolbems->problems
 prolem->problem
 prolems->problems
 prologomena->prolegomena
@@ -9111,6 +9173,7 @@ propvider->provider
 prority->priority
 proseletyzing->proselytizing
 prosess->process
+prosessor->processor
 protable->portable
 protaganist->protagonist
 protaganists->protagonists
@@ -9121,9 +9184,11 @@ protential->potential
 protext->protect
 protocal->protocol
 protocals->protocols
+protocl->protocol
 protoco->protocol
 protocoll->protocol
 protoganist->protagonist
+prototyes->prototypes
 protoype->prototype
 protoypes->prototypes
 protrayed->portrayed
@@ -9145,10 +9210,12 @@ provisonal->provisional
 provode->provide
 proximty->proximity
 prpeparations->preparations
+prrottypes->prototypes
 prufe->proof
 psaswd->passwd
 pseudononymous->pseudonymous
 pseudonyn->pseudonym
+pseuo-palette->pseudo-palette
 pssed->passed
 pssibility->possibility
 psuedo->pseudo
@@ -9184,6 +9251,7 @@ pulisher->publisher
 pumkin->pumpkin
 punctation->punctuation
 puplisher->publisher
+pupulated->populated
 puritannical->puritanical
 purportive->supportive, purportive,
 purposedly->purposely
