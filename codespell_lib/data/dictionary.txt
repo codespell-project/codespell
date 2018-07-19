@@ -4933,15 +4933,22 @@ faciliating->facilitating
 facilites->facilities
 facilitiate->facilitate
 facilitiates->facilitates
+facilititate->facilitate
 facillitate->facilitate
+faciltate->facilitate
 facilties->facilities
 facinated->fascinated
 facist->fascist
 factorizaiton->factorization
 factorys->factories
 fadind->fading
+faied->failed
+faield->failed
 faild->failed
 faile->failed
+faill->fail
+failled->failed
+failre->failure
 failt->fail, failed,
 failture->failure
 failue->failure
@@ -4953,30 +4960,37 @@ falied->failed
 faliure->failure
 faliures->failures
 fallabck->fallback
+falltrough->fallthrough
 falure->failure
 familar->familiar
 familes->families
 familiies->families
+familiy->family
 familliar->familiar
 familly->family
 famoust->famous
 fanatism->fanaticism
 Farenheit->Fahrenheit
 fasade->facade
+fasion->fashion
 fassade->facade
 fastr->faster
 fatc->fact
 fatser->faster
 fature->feature
 faught->fought
+fauilures->failures
 faund->found
 favoutrable->favourable
 fcound->found
 feasable->feasible
 featre->feature
 featue->feature
+featued->featured
 featues->features
 featur->feature
+featurs->features
+feautre->feature
 feauture->feature
 feautures->features
 Febuary->February
@@ -4990,6 +5004,7 @@ feeture->feature
 feld->field
 femminist->feminist
 fempto->femto
+fequency->frequency
 feromone->pheromone
 fertily->fertility
 fetaure->feature
@@ -5003,6 +5018,7 @@ ficticious->fictitious
 fictious->fictitious
 fidality->fidelity
 fidn->find
+fieid->field
 fiel->feel, field, file, phial,
 fieldlst->fieldlist
 fieled->field
@@ -5011,6 +5027,7 @@ fiercly->fiercely
 fightings->fighting
 filal->final
 fileds->fields
+filesysems->filesystems
 filesytem->filesystem
 filesytems->filesystems
 fileystem->filesystem
@@ -5022,12 +5039,16 @@ fillowing->following
 fillung->filling
 filnal->final
 filname->filename
+filsystem->filesystem
+filterring->filtering
 fime->fixme, time,
 fimilies->families
 finacial->financial
 finalle->finale, finally,
 finaly->finally, finale,
 financialy->financially
+finanize->finalize
+finanlize->finalize
 fincally->finally
 findout->find out
 finialization->finalization
@@ -5041,10 +5062,15 @@ fiorget->forget
 firdt->first, third,
 firends->friends
 firey->fiery
+firmare->firmware
+firmeare->firmware
+firmwart->firmware
+firmwqre->firmware
 firmwware->firmware
 firsr->first
 firt->first, flirt,
 firts->first, flirts,
+firware->firmware
 fisical->physical, fiscal,
 fisionable->fissionable
 fisisist->physicist
@@ -5061,7 +5087,9 @@ flamable->flammable
 flass->class, flask,
 flate->flat
 flatened->flattened
+flattend->flattened
 flawess->flawless
+fle->file
 fleed->fled, freed,
 Flemmish->Flemish
 flexability->flexibility
@@ -5086,6 +5114,7 @@ focussed->focused
 foget->forget
 fogot->forgot
 fogotten->forgotten
+fointers->pointers
 folde->folder, fold,
 folling->following, falling,
 folllow->follow
@@ -5095,6 +5124,7 @@ folllows->follows, followings,
 follod->followed
 folloeing->following
 folloing->following
+folloiwng->following
 followig->following
 followin->following
 followind->following
@@ -5126,6 +5156,7 @@ foramt->format
 forbad->forbade
 forbbiden->forbidden
 forbiden->forbidden
+forcably->forcibly
 foreing->foreign
 foreward->foreword, forward,
 forewarded->forewarded, forwarded,
@@ -5196,6 +5227,7 @@ foults->faults
 foundaries->foundries
 foundary->foundry
 Foundland->Newfoundland
+fount->found
 fourties->forties
 fourty->forty
 fouth->fourth
@@ -5205,13 +5237,16 @@ fowarding->forwarding
 fowards->forwards
 fracional->fractional
 fragement->fragment
+fragementation->fragmentation
 fragements->fragments
+fragmnet->fragment
 frambuffer->framebuffer
 framebufer->framebuffer
 framei->frame
 frametyp->frametype
 framlayout->framelayout
 framwork->framework
+frane->frame
 Fransiscan->Franciscan
 Fransiscans->Franciscans
 freee->free
@@ -5221,6 +5256,7 @@ freind->friend
 freindly->friendly
 freqencies->frequencies
 freqency->frequency
+freqeuncy->frequency
 frequencey->frequency
 frequenct->frequency
 frequentily->frequently
@@ -5229,6 +5265,7 @@ frequncy->frequency
 frist->first
 frmat->format
 fro->for
+froce->force
 fromat->format
 frome->from
 fromed->formed
@@ -5241,6 +5278,7 @@ fropm->from
 froward->forward
 frowarded->forwarded
 frozee->frozen
+fschk->fsck
 fucntion->function
 fucntioning->functioning
 fucntions->functions
@@ -5249,6 +5287,7 @@ fuctionoid->functionoid
 fuctions->functions
 fufill->fulfill
 fufilled->fulfilled
+fulfil->fulfill
 fulfiled->fulfilled
 fullfiled->fulfilled
 fullfiling->fulfilling
@@ -5298,10 +5337,13 @@ furthur->further
 furture->future
 furure->future
 furuther->further
+fushed->flushed
+fushing->flushing
 futer->further
 futher->further
 futhermore->furthermore
 futhroc->futhark, futhorc,
+futrure->future
 futture->future
 fysical->physical
 fysisist->physicist
