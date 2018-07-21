@@ -54,7 +54,7 @@ abscence->absence
 abselutely->absolutely
 abselutly->absolutely
 absense->absence
-absolete->absolute
+absolete->absolute, obsolete,
 absolut->absolute
 absolutly->absolutely
 absorbsion->absorption
@@ -273,7 +273,7 @@ acqured->acquired
 acqures->acquires
 acquring->acquiring
 acrage->acreage
-acses->cases
+acses->cases, access
 acssumed->assumed
 actally->actually
 actaul->actual
@@ -387,7 +387,7 @@ adin->admin
 aditional->additional
 aditionally->additionally
 aditionaly->additionally
-adivce->advise
+adivce->advice, advise,
 adjacentsy->adjacency
 adjascent->adjacent
 adjasensy->adjacency
@@ -449,7 +449,7 @@ aeriel->aerial
 aeriels->aerials
 afair->affair
 afaraid->afraid
-afect->effect
+afect->affect, effect
 afecting->affecting
 afer->after
 afetr->after
@@ -547,6 +547,7 @@ alege->allege
 aleged->alleged
 alegience->allegiance
 alegorical->allegorical
+aleviate->alleviate
 aleviating->alleviating
 algebraical->algebraic
 algined->aligned
@@ -1337,7 +1338,7 @@ attribuite->attribute
 attribures->attributes
 attribut->attribute
 attributei->attribute
-attributen->attriburen
+attributen->attribute
 attributred->attributed
 attributs->attributes
 attriubtes->attributes
@@ -1433,7 +1434,7 @@ availabelity->availability
 availabilty->availability
 availabl->available
 availabled->available
-availablen->availbalen
+availablen->available
 availablity->availability
 availabyl->available
 availaible->available
