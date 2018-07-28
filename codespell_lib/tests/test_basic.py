@@ -276,7 +276,7 @@ def test_ignore():
         assert cs.main('--skip=bad*', d) == 0
         assert cs.main('--skip=*ignoredir*', d) == 1
         assert cs.main('--skip=ignoredir', d) == 1
-        assert cs.main('--skip=*ignoredir/bad*', d) == 1
+        assert cs.main('--skip=*ignoredir/bad*', d) == 1 
 
 
 def test_check_filename():
