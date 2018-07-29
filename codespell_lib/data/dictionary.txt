@@ -2840,8 +2840,8 @@ conveniance->convenience
 convenince->convenience
 convension->convention, conversion,
 convential->conventional
-convered->covered
-convering->covering
+convered->converted, covered,
+convering->converting, covering,
 converion->conversion
 converions->conversions
 converitble->convertible
@@ -3303,6 +3303,7 @@ deffined->defined
 deffinition->definition
 deffinitively->definitively
 deffirent->different
+defien->define
 defiend->defined
 defin->define
 definance->defiance
@@ -3785,6 +3786,8 @@ diffrence->difference
 diffrences->differences
 diffrent->different
 diffrents->different, difference,
+diffrerence->difference
+diffrerences->differences
 diffult->difficult
 dificulties->difficulties
 dificulty->difficulty
@@ -11879,7 +11882,7 @@ tyhe->they
 tyies->tries
 tyope->type
 typcial->typical
-typicall->typically
+typicall->typically, typical,
 typicaly->typically
 typle->tuple
 typles->tuples
@@ -11987,6 +11990,7 @@ uncoverted->unconverted
 uncrypted->unencrypted
 undecideable->undecidable
 undefied->undefined
+undefien->undefine
 undefiend->undefined
 undeflows->underflows
 undefuned->undefined
