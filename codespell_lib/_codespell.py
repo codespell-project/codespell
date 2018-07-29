@@ -631,9 +631,11 @@ def main(*args):
                     del dirs[:]
                     continue
                 for file_ in files:
-                    if glob_match.match(file_):
+                    if glob_match.match(file_):  # skip files
                         continue
                     fname = os.path.join(root, file_)
+                    if glob_match.match(fname):  # skip paths
+                        continue
                     if not os.path.isfile(fname) or not os.path.getsize(fname):
                         continue
                     bad_count += parse_file(fname, colors, summary)
