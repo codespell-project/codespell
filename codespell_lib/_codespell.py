@@ -282,7 +282,8 @@ def parse_options(args):
 
     parser.add_option('-H', '--check-hidden',
                       action='store_true', default=False,
-                      help='Check hidden files as well.')
+                      help='Check hidden files (those starting with ".") as '
+                           'well.')
 
     (o, args) = parser.parse_args(list(args))
 
