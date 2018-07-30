@@ -280,6 +280,10 @@ def parse_options(args):
                       action='store_true', default=False,
                       help='Check file names as well.')
 
+    parser.add_option('-H', '--check-hidden',
+                      action='store_true', default=False,
+                      help='Check hidden files as well.')
+
     (o, args) = parser.parse_args(list(args))
 
     if not args:
@@ -332,7 +336,7 @@ def is_hidden(filename):
     bfilename = os.path.basename(filename)
 
     if bfilename != '' and bfilename != '.' and bfilename != '..' \
-                    and bfilename[0] == '.':
+                    and (not options.check_hidden and bfilename[0] == '.'):
         return True
 
     return False
