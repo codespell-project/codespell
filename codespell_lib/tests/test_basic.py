@@ -293,7 +293,7 @@ def test_check_hidden():
         os.rename(op.join(d, '.test.txt'), op.join(d, '.abandonned.txt'))
         assert cs.main(op.join(d, '.abandonned.txt')) == 0
         assert cs.main('--check-hidden', op.join(d, '.abandonned.txt')) == 1
-        assert cs.main('--check-hidden --check-filenames', op.join(d, '.abandonned.txt')) == 2
+        assert cs.main('--check-hidden', '--check-filenames', op.join(d, '.abandonned.txt')) == 2
 
 
 class TemporaryDirectory(object):
