@@ -5599,7 +5599,7 @@ hapening->happening
 happend->happened
 happended->happened
 happenned->happened
-happing->happening
+happing->happening, happen,
 happnes->happens, happiness,
 harased->harassed
 harases->harasses
@@ -9601,6 +9601,7 @@ regaring->regarding
 regarless->regardless
 regeister->register
 regeistered->registered
+regession->regression
 regestered->registered
 regidstered->registered
 registe->register
