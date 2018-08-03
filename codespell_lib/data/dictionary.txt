@@ -1696,6 +1696,8 @@ cahracters->characters
 calaber->caliber
 calander->calendar, colander,
 calcable->calculable
+calciulate->calculate
+calciulating->calculating
 calcluate->calculate
 calcluated->calculated
 calcluates->calculates
@@ -1926,6 +1928,8 @@ certifice->certificate
 certifificates->certificates
 certiticate->certificate
 cervial->cervical, servile, serval,
+chacacter->character
+chacacters->characters
 chache->cache
 chached->cached
 chaecking->checking
@@ -1955,6 +1959,8 @@ chaper->chapter
 characer->character
 characers->characters
 characetrs->characters
+characher->character
+charachers->characters
 charachter->character
 charachters->characters
 characstyle->charstyle
@@ -2067,6 +2073,7 @@ Cincinnatti->Cincinnati
 cintaner->container
 circularly->circular, circularly,
 circulaton->circulation
+circumferencial->circumferential
 circumsicion->circumcision
 circustances->circumstances
 circut->circuit
@@ -2757,6 +2764,9 @@ contempory->contemporary
 conten->contain
 contence->contents
 contendor->contender
+contened->contained, contend,
+contener->container
+conteners->containers
 contens->contents, contains,
 contet->contest, content, context,
 contexta->context
@@ -7768,6 +7778,7 @@ nodels->models
 noe->not, no, node, know,
 nofified->notified
 nohypen->nohyphen
+nomimal->nominal
 non-inreractive->non-interactive
 noncombatents->noncombatants
 nonexistant->nonexistent
@@ -8662,7 +8673,8 @@ poluting->polluting
 polution->pollution
 polyar->polar
 polygond->polygons
-polylon->polygon
+polygone->polygon
+polylon->polygon, pylon,
 polyphonyic->polyphonic
 polypoygon->polypolygon
 polypoylgons->polypolygons
@@ -8724,6 +8736,7 @@ positionning->positioning
 positionof->position, position of,
 positiv->positive
 positon->position
+positoned->positioned
 positons->positions
 positve->positive
 positves->positives
@@ -10502,6 +10515,8 @@ shpapes->shapes
 shreak->shriek
 shriks->shrinks
 shrinked->shrunk
+shure->sure
+shurely->surely
 shutdownm->shutdown
 shwo->show
 sicne->since
@@ -10824,6 +10839,7 @@ sqaure->square
 srcipt->script
 srcipts->scripts
 sreturns->returns
+srew->screw, shrew,
 srikeout->strikeout
 sring->string
 srings->strings
@@ -11449,6 +11465,7 @@ tempopary->temporary
 temporaere->temporary
 temporafy->temporary
 temporalily->temporarily
+temporaly->temporary, temporarily, temporally,
 temporarilu->temporary
 temporarirly->temporarily
 temporarly->temporarily, temporary,
