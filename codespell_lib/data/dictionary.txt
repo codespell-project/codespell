@@ -3481,6 +3481,7 @@ derectory->directory
 derefenced->dereferenced
 derefencing->dereferencing
 dereferencable->dereferenceable
+deregistartion->deregistration
 deregisted->deregistered
 deregisteres->deregisters
 deregistrated->deregistered
@@ -5312,6 +5313,7 @@ functino->function
 functins->functions
 functionailty->functionality
 functionallity->functionality
+functionaltiy->functionality
 functionaly->functionally
 functionnality->functionality
 functionning->functioning
@@ -5968,6 +5970,8 @@ implememts->implements
 implemenatation->implementation
 implemenation->implementation
 implemenations->implementations
+implemenetation->implementation
+implemenetions->implementations
 implemenrt->implement
 implementaed->implemented
 implementaion->implementation
@@ -6035,6 +6039,7 @@ imprioned->imprisoned
 imprisonned->imprisoned
 improovement->improvement
 improovements->improvements
+impropely->improperly
 improvision->improvisation
 improvment->improvement
 improvments->improvements
@@ -6290,6 +6295,7 @@ infrasctructure->infrastructure
 infrigement->infringement
 infromation->information
 infromatoin->information
+infrormation->information
 infrustructure->infrastructure
 ingegral->integral
 ingenius->ingenious
@@ -6377,6 +6383,11 @@ initilize->initialize
 initilized->initialized
 initilizes->initializes
 initilizing->initializing
+initliasation->initialisation
+initliase->initialise
+initliased->initialised
+initliaser->initialiser
+initliazation->initialization
 initliaze->initialize
 initliazed->initialized
 initliazer->initializer
@@ -7165,7 +7176,10 @@ managament->management
 manageed->managed
 managenment->management
 managment->management
+manange->manage
 manangement->management
+mananger->manager
+manangers->managers
 mandetory->mandatory
 maneouvre->manoeuvre
 maneouvred->manoeuvred
@@ -7304,6 +7318,8 @@ meerkrat->meerkat
 meganism->mechanism
 mege->merge
 mehods->methods
+mehtod->method
+mehtods->methods
 melieux->milieux
 membranaphone->membranophone
 memeber->member
@@ -7356,6 +7372,7 @@ metalurgical->metallurgical
 metalurgy->metallurgy
 metamorphysis->metamorphosis
 metaphoricial->metaphorical
+metdata->metadata
 meterial->material
 meterials->materials
 meterologist->meteorologist
@@ -7366,7 +7383,10 @@ methid->method
 methids->methods
 methode->method
 methoden->methods
+methodss->methods
 methos->methods, method,
+metion->mention
+metioned->mentioned
 metod->method
 metods->methods
 mial->mail
@@ -7784,6 +7804,7 @@ nomimal->nominal
 non-inreractive->non-interactive
 noncombatents->noncombatants
 nonexistant->nonexistent
+nonexisting->nonexistent
 nonsence->nonsense
 nontheless->nonetheless
 noo->no
@@ -7886,6 +7907,8 @@ objectss->objects
 objekt->object
 objetcs->objects
 objext->object
+objtain->obtain
+objtained->obtained
 objump->objdump
 obnject->object
 obscur->obscure
@@ -8528,6 +8551,7 @@ permutaions->permutations
 peroendicular->perpendicular
 perogative->prerogative
 peroid->period
+peroidic->periodic
 peroids->periods
 peronal->personal
 perosnality->personality
@@ -8563,6 +8587,7 @@ pevent->prevent
 pevents->prevents
 pezier->bezier
 Pharoah->Pharaoh
+phasis->phases
 phenomenom->phenomenon
 phenomenonal->phenomenal
 phenomenonly->phenomenally
@@ -8795,6 +8820,9 @@ postprocesing->postprocessing
 postulat->postulate
 potatoe->potato
 potatos->potatoes
+potencial->potential
+potencially->potentially
+potencials->potentials
 potenial->potential
 potenially->potentially
 potentail->potential
@@ -9143,6 +9171,7 @@ prooved->proved
 propably->probably
 propage->propagate
 propbably->probably
+propely->properly
 propeoperties->properties
 properies->properties
 properities->properties
@@ -9381,6 +9410,7 @@ reasearch->research
 reasearcher->researcher
 reasearchers->researchers
 reasnable->reasonable
+reasonabily->reasonably
 reasonble->reasonable
 reasonbly->reasonably
 reasonnable->reasonable
@@ -9619,6 +9649,7 @@ regeistered->registered
 regession->regression
 regestered->registered
 regidstered->registered
+registartion->registration
 registe->register
 registed->registered
 registeing->registering
@@ -9892,6 +9923,7 @@ reqeusting->requesting
 reqeusts->requests
 reqiure->require
 requeried->required
+requeset->request, requisite,
 requierd->required
 requiere->require
 requiered->required
@@ -10304,6 +10336,7 @@ seached->searched
 seaches->searches
 seaching->searching
 seacrchable->searchable
+searcheable->searchable
 searchin->searching
 searchs->searches
 secceeded->seceded, succeeded,
@@ -10330,6 +10363,8 @@ sedereal->sidereal
 seeked->sought
 seelect->select
 seemes->seems
+seemless->seamless
+seemlessly->seamlessly
 segement->segment
 segementation->segmentation
 segements->segments
@@ -10708,8 +10743,10 @@ sortings->sorting
 sortlst->sortlist
 sortner->sorter
 sortnr->sorter
+sortrage->storage, shortage,
 soruce->source
 soruces->sources
+sotrage->storage, shortage,
 sotred->sorted
 sotry->story
 sotyr->satyr, story,
@@ -11429,6 +11466,8 @@ teated->treated
 techician->technician
 techicians->technicians
 techiniques->techniques
+techique->technique
+techiques->techniques
 technic->technique
 technics->techniques
 technik->technique
@@ -11475,6 +11514,7 @@ temporarly->temporarily, temporary,
 tempory->temporary
 temprary->temporary, temporarily,
 temproary->temporary
+temptatation->temptation
 tenacle->tentacle
 tenacles->tentacles
 tenative->tentative
@@ -11882,6 +11922,8 @@ truely->truly
 trully->truly
 truncat->truncate
 trustworthyness->trustworthiness
+trustworty->trustworthy
+trustwortyness->trustworthiness
 tryed->tried
 tryes->tries
 tryig->trying
@@ -12173,6 +12215,7 @@ unqoute->unquote
 unqouted->unquoted
 unqoutes->unquotes
 unqouting->unquoting
+unreasonabily->unreasonably
 unrecogized->unrecognized
 unreconized->unrecognized
 unrecovable->unrecoverable
