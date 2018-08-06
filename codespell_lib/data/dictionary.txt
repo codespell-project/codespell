@@ -3354,10 +3354,16 @@ degenarate->degenerate
 degenarated->degenerated
 degenarating->degenerating
 degenaration->degeneration
+degenrate->degenerate
+degenrated->degenerated
+degenrates->degenerates
+degenrating->degenerating
+degenration->degeneration
 degnerate->degenerate
 degnerated->degenerated
 degnerates->degenerates
-degrate->degrade
+degrate->degrate, degrade,
+degrates->degrates, degrades,
 degreee->degree
 degreees->degrees
 deimiter->delimiter
@@ -6362,7 +6368,8 @@ initalizer->initializer
 initalizes->initializes
 initalizing->initializing
 initally->initially
-initate->initiate
+initate->initiate, imitate,
+initated->initiated, imitated,
 initation->initiation
 initators->initiators
 initiaitive->initiative
@@ -9458,6 +9465,7 @@ pusehd->pushed
 pususading->persuading
 puting->putting
 pwoer->power
+pxoxy->proxy
 pyhsical->physical
 pyramide->pyramid
 pyramides->pyramids
@@ -9537,7 +9545,7 @@ readabilty->readability
 readapted->re-adapted
 readble->readable
 readby->read, read by,
-readd->readd, read,
+readd->readd, re-add, read,
 readded->readded, read,
 readeable->readable
 readed->read, readd, readded,
@@ -11038,7 +11046,7 @@ sqaure->square
 srcipt->script
 srcipts->scripts
 sreturns->returns
-srew->screw, shrew,
+srew->screw, shrew, sew,
 srikeout->strikeout
 sring->string
 srings->strings
