@@ -280,6 +280,11 @@ def parse_options(args):
                       action='store_true', default=False,
                       help='Check file names as well.')
 
+    parser.add_option('-H', '--check-hidden',
+                      action='store_true', default=False,
+                      help='Check hidden files (those starting with ".") as '
+                           'well.')
+
     (o, args) = parser.parse_args(list(args))
 
     if not args:
@@ -332,7 +337,7 @@ def is_hidden(filename):
     bfilename = os.path.basename(filename)
 
     if bfilename != '' and bfilename != '.' and bfilename != '..' \
-                    and bfilename[0] == '.':
+                    and (not options.check_hidden and bfilename[0] == '.'):
         return True
 
     return False
@@ -631,9 +636,11 @@ def main(*args):
                     del dirs[:]
                     continue
                 for file_ in files:
-                    if glob_match.match(file_):
+                    if glob_match.match(file_):  # skip files
                         continue
                     fname = os.path.join(root, file_)
+                    if glob_match.match(fname):  # skip paths
+                        continue
                     if not os.path.isfile(fname) or not os.path.getsize(fname):
                         continue
                     bad_count += parse_file(fname, colors, summary)
