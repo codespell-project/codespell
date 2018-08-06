@@ -90,13 +90,6 @@ def test_basic():
         os.mkdir(op.join(d, 'test'))
         assert cs.main(d) == 0
 
-        # hidden file
-        with open(op.join(d, 'test.txt'), 'w') as f:
-            f.write('abandonned\n')
-        assert cs.main(op.join(d, 'test.txt')) == 1
-        os.rename(op.join(d, 'test.txt'), op.join(d, '.test.txt'))
-        assert cs.main(op.join(d, '.test.txt')) == 0
-
 
 def test_interactivity():
     """Test interaction"""
@@ -276,6 +269,7 @@ def test_ignore():
         assert cs.main('--skip=bad*', d) == 0
         assert cs.main('--skip=*ignoredir*', d) == 1
         assert cs.main('--skip=ignoredir', d) == 1
+        assert cs.main('--skip=*ignoredir/bad*', d) == 1
 
 
 def test_check_filename():
@@ -284,6 +278,23 @@ def test_check_filename():
         with open(op.join(d, 'abandonned.txt'), 'w') as f:
             f.write('.')
         assert cs.main('-f', d) == 1
+
+
+def test_check_hidden():
+    """Test ignoring of hidden files"""
+    with TemporaryDirectory() as d:
+        # hidden file
+        with open(op.join(d, 'test.txt'), 'w') as f:
+            f.write('abandonned\n')
+        assert cs.main(op.join(d, 'test.txt')) == 1
+        os.rename(op.join(d, 'test.txt'), op.join(d, '.test.txt'))
+        assert cs.main(op.join(d, '.test.txt')) == 0
+        assert cs.main('--check-hidden', op.join(d, '.test.txt')) == 1
+        os.rename(op.join(d, '.test.txt'), op.join(d, '.abandonned.txt'))
+        assert cs.main(op.join(d, '.abandonned.txt')) == 0
+        assert cs.main('--check-hidden', op.join(d, '.abandonned.txt')) == 1
+        assert cs.main('--check-hidden', '--check-filenames',
+                       op.join(d, '.abandonned.txt')) == 2
 
 
 class TemporaryDirectory(object):
