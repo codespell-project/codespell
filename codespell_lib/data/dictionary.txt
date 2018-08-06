@@ -7139,6 +7139,7 @@ luminousity->luminosity
 lveo->love
 lvoe->love
 Lybia->Libya
+maake->make
 mabe->maybe
 machanism->mechanism
 machanisms->mechanisms
@@ -7180,6 +7181,7 @@ maintiain->maintain
 maintians->maintains
 maintinaing->maintaining
 maintioned->mentioned
+maitainers->maintainers
 majoroty->majority
 maked->marked, made,
 makeing->making
@@ -7194,6 +7196,7 @@ malicously->maliciously
 malplace->misplace
 malplaced->misplaced
 maltesian->Maltese
+mamagement->management
 mamal->mammal
 mamalian->mammalian
 mamory->memory
@@ -7207,6 +7210,7 @@ manangement->management
 mananger->manager
 manangers->managers
 mandetory->mandatory
+manement->management
 maneouvre->manoeuvre
 maneouvred->manoeuvred
 maneouvres->manoeuvres
@@ -7249,6 +7253,8 @@ manuver->maneuver
 mapable->mappable
 mape->map
 maped->mapped
+maping->mapping
+mapings->mappings
 mapp->map
 mappeds->mapped
 mappping->mapping
@@ -7286,6 +7292,7 @@ materail->material
 materails->materials
 materalists->materialist
 mathamatics->mathematics
+mathces->matches
 mathed->matched
 mathematican->mathematician
 mathematicas->mathematics
@@ -7301,6 +7308,7 @@ mathod->method
 matix->matrix
 matser->master
 maximimum->maximum
+maximun->maximum
 maxinum->maximum
 maxium->maximum
 maxiumum->maximum
@@ -7315,22 +7323,29 @@ meanin->meaning
 meaninful->meaningful
 meaningfull->meaningful
 meanining->meaning
+meaninless->meaningless
 meaninng->meaning
 mear->wear, mere, mare,
 measurment->measurement
 meatadata->metadata
 meatfile->metafile
 meathod->method
+meauring->measuring
 meber->member
 mebmer->member
+mecahnism->mechanism
 mecanism->mechanism
 mecanisms->mechanisms
 mechamism->mechanism
 mechamisms->mechanisms
+mechananism->mechanism
 mechandise->merchandise
+mechansim->mechanism
+mechine->machine
 mechnism->mechanism
 mechnisms->mechanisms
 medacine->medicine
+medai->media
 medeival->medieval
 medevial->medieval
 medhod->method
@@ -7349,11 +7364,13 @@ mehtods->methods
 melieux->milieux
 membranaphone->membranophone
 memeber->member
+memebers->members
 memebr->member
 memember->member
 memeory->memory
 memery->memory
 memmory->memory
+memor->memory
 memorise->memorise, memorize,
 memroy->memory
 menally->mentally
@@ -7388,6 +7405,7 @@ messsage->message
 messsages->messages
 mesure->measure
 mesured->measured
+mesurement->measurement
 mesuring->measuring
 mesurment->measurement
 metacharater->metacharacter
@@ -7398,6 +7416,7 @@ metalurgical->metallurgical
 metalurgy->metallurgy
 metamorphysis->metamorphosis
 metaphoricial->metaphorical
+metatdata->metadata
 metdata->metadata
 meterial->material
 meterials->materials
@@ -7416,9 +7435,12 @@ metioned->mentioned
 metod->method
 metods->methods
 mial->mail
+mices->mice
 Michagan->Michigan
+micorcode->microcode
 micoscopy->microscopy
 microprocesspr->microprocessor
+microship->microchip
 microsofot->microsoft
 midified->modified
 midwifes->midwives
@@ -7435,6 +7457,7 @@ milion->million
 miliraty->military
 milisecond->millisecond
 miliseconds->milliseconds
+milivolts->millivolts
 millenia->millennia
 millenial->millennial
 millenialism->millennialism
@@ -7488,6 +7511,7 @@ mirro->mirror
 mirroed->mirrored
 mirrorn->mirror
 mirrorred->mirrored
+mis-match->mismatch
 misceancellous->miscellaneous
 miscelaneous->miscellaneous
 miscellanious->miscellaneous
@@ -7502,6 +7526,7 @@ misdemenor->misdemeanor
 misdemenors->misdemeanors
 misfourtunes->misfortunes
 misile->missile
+mising->missing
 mismach->mismatch
 mismached->mismatched
 mismaches->mismatches
@@ -7539,6 +7564,7 @@ missuse->misuse
 misterious->mysterious
 mistery->mystery
 misteryous->mysterious
+mistmatches->mismatches
 mitre->miter
 mittigate->mitigate
 mixure->mixture
@@ -7552,13 +7578,16 @@ mmatching->matching
 mmnemonic->mnemonic
 modell->model
 moderm->modem
+modesettting->modesetting
 modfel->model
 modfied->modified
 modfies->modifies
 modfiy->modify
 modfy->modify
 modfying->modifying
+modications->modifications
 modifaction->modification
+modifcation->modification
 modifdied->modified
 modifed->modified
 modifes->modifies
@@ -7566,10 +7595,13 @@ modifid->modified
 modifing->modifying
 modifiy->modify
 modifyable->modifiable
+modiration->moderation
 modle->model
+modlue->module
 modue->module
 moduel->module
 moduels->modules
+modul->module
 modulu->modulo
 modulues->modules
 moent->moment
@@ -7580,11 +7612,14 @@ moil->soil, mohel,
 moint->mount
 moleclues->molecules
 momemtn->moment
+momentarely->momentarily
 momento->memento
+momery->memory
 monestaries->monasteries
 monestary->monastery, monetary,
 monestic->monastic
 monickers->monikers
+moniter->monitor
 monkies->monkeys
 monochorome->monochrome
 monochromo->monochrome
@@ -7594,10 +7629,13 @@ Monserrat->Montserrat
 monstrum->monster
 montains->mountains
 montanous->mountainous
+montly->monthly
 Montnana->Montana
 monts->months
 montypic->monotypic
 moodify->modify
+moounting->mounting
+mopdule->module
 mopre->more
 mor->more
 mordern->modern
@@ -7612,8 +7650,11 @@ morroco->morocco
 mortage->mortgage
 mose->more, mouse,
 moslty->mostly
+mostlky->mostly
 mosture->moisture
 motiviated->motivated
+motoroloa->motorola
+moudle->module
 mould->mold, mould, module,
 mounth->month
 mountian->mountain
@@ -7638,10 +7679,12 @@ mudering->murdering
 muext->mutex
 muhammadan->muslim
 mulithread->multithread
+mulitpath->multipath
 mulitple->multiple
 mulitplicative->multiplicative
 mulitplied->multiplied
 multible->multiple
+multicat->multicast
 multicultralism->multiculturalism
 multidimensinal->multidimensional
 multidimensionnal->multidimensional
@@ -7650,9 +7693,11 @@ multile->multiple
 multilpe->multiple
 multipe->multiple
 multipes->multiples
+multipiler->multiplier
 multipled->multiplied
 multiplers->multipliers
 multipul->multiple
+multipy->multiply
 multithreded->multithreaded
 multitute->multitude
 multliple->multiple
@@ -7677,7 +7722,9 @@ musn't->mustn't
 must aligned->must align, must be aligned,
 mustator->mutator
 muste->must
+mut->must, mutt, moot,
 muti->multi
+muticast->multicast
 mutices->mutexes
 mutiliated->mutilated
 mutimarked->multimarked
@@ -7685,6 +7732,7 @@ mutiple->multiple
 mutiply->multiply
 mutli->multi
 mutliple->multiple
+mutlipler->multiplier
 mutliply->multiply
 mybe->maybe
 mye->may, my,
