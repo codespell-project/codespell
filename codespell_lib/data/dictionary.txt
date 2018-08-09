@@ -754,6 +754,7 @@ annualy->annually
 annuled->annulled
 anohter->another
 anologon->analogon
+anomally->anomaly
 anomolies->anomalies
 anomolous->anomalous
 anomoly->anomaly
@@ -2682,6 +2683,8 @@ constracted->constructed
 constractor->constructor
 constractors->constructors
 constraing->constraint
+constrait->constraint
+constraits->constraints
 constrast->contrast
 constrcuct->construct
 construcor->constructor
@@ -3964,6 +3967,8 @@ dispite->despite
 displacment->displacement
 displacments->displacements
 displayes->displays, displayed,
+disply->display
+displys->displays
 dispode->dispose
 disporue->disparue
 disposel->disposal
@@ -4150,6 +4155,7 @@ drats->drafts
 draughtman->draughtsman
 Dravadian->Dravidian
 draview->drawview
+drawed->drew, drawn, had drawn,
 drawm->drawn
 dreasm->dreams
 dreawn->drawn
@@ -5056,6 +5062,7 @@ fidn->find
 fiel->feel, field, file, phial,
 fieldlst->fieldlist
 fieled->field
+fielesystem->filesystem
 fiels->feels, fields, files, phials,
 fiercly->fiercely
 fightings->fighting
@@ -6945,6 +6952,9 @@ keyworkds->keywords
 keywors->keywords
 kindergarden->kindergarten
 klenex->kleenex
+klick->click
+klicked->clicked
+klicks->clicks
 knifes->knives
 knive->knife
 knowlegde->knowledge
@@ -8241,6 +8251,7 @@ opnegroup->opengroup
 oponent->opponent
 oportunity->opportunity
 opose->oppose
+oposed->opposed
 oposite->opposite
 oposition->opposition
 oppenly->openly
@@ -8285,6 +8296,7 @@ optionaly->optionally
 optionn->option
 optionnal->optional
 optionnaly->optionally
+optionss->options
 optmization->optimization
 optmizations->optimizations
 optmize->optimize
@@ -10879,6 +10891,7 @@ soley->solely
 soliders->soldiers
 soliliquy->soliloquy
 soluable->soluble
+solveable->solvable
 solwed->solved
 som->some
 someboby->somebody
@@ -12117,6 +12130,7 @@ triangultaion->triangulation
 trigerred->triggered
 trigerring->triggering
 trigers->triggers
+trigged->triggered
 triggerd->triggered
 triggeres->triggers
 triggerred->triggered
