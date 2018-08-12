@@ -4,5 +4,6 @@ dist
 ld
 codespell.egg-info
 *.pyc
+*.orig
 .cache/
 .pytest_cache/
