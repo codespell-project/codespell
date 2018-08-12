@@ -12238,6 +12238,9 @@ trucate->truncate
 trucated->truncated
 trucates->truncates
 trucating->truncating
+trucnate->truncate
+trucnated->truncated
+trucnating->truncating
 truelly->truly
 truely->truly
 trully->truly
@@ -12293,6 +12296,7 @@ udpating->updating
 uegister->unregister
 uesd->used
 uglyness->ugliness
+uint->unit, disabled due to being a data type
 uique->unique
 uise->use
 uknown->unknown
