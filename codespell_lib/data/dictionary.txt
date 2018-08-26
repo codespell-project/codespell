@@ -431,6 +431,8 @@ adresses->addresses
 adressing->addressing
 adrress->address
 adusted->adjusted
+advanatage->advantage
+advanatages->advantages
 advandced->advanced
 advane->advance
 advaned->advanced
@@ -671,6 +673,7 @@ alpabets->alphabets
 alpah->alpha
 alpahbetically->alphabetically
 alph->alpha
+alpha-numeric->alphanumeric
 alphabeticly->alphabetical
 alrady->already
 alraedy->already
@@ -2063,6 +2066,7 @@ caugt->caught
 cauhgt->caught
 cauing->causing
 ccahe->cache
+ccale->scale
 ccertificate->certificate
 Ceasar->Caesar
 ceate->create
@@ -2791,6 +2795,8 @@ conesencus->consensus
 conetxt->context
 conexant->connexant
 conext->context, connect, connects,
+confgiuration->configuration
+confgiured->configured
 confict->conflict
 conficted->conflicted
 conficts->conflicts
@@ -2801,6 +2807,7 @@ configer->configure
 configire->configure
 configration->configuration
 configrations->configurations
+configruated->configured, configuration,
 configrued->configured
 configuartion->configuration
 configuartions->configurations
@@ -3346,6 +3353,7 @@ coypright->copyright
 coyright->copyright
 cpation->caption
 cpoy->coy, copy,
+craches->crashes, caches, crutches,
 craete->create
 crahses->crashes
 crasher->crash
@@ -4028,6 +4036,7 @@ dettaching->detaching
 deug->debug
 deugging->debugging
 devasted->devastated
+devation->deviation
 devcie->device
 develoment->development
 develoments->developments
@@ -4134,6 +4143,7 @@ diffenrences->differences
 differance->difference
 differect->different
 differen->different
+differencial->differential
 differenciate->differentiate
 differenciated->differentiated
 differenciates->differentiates
@@ -4216,7 +4226,7 @@ diplaying->displaying
 diplays->displays
 diplomancy->diplomacy
 dipose->dispose, depose,
-diposing->disposing
+diposing->disposing, deposing,
 dipthong->diphthong
 dipthongs->diphthongs
 dircetories->directories
@@ -4645,6 +4655,7 @@ efective->effective
 efectively->effectively
 efel->evil
 eferences->references
+efetivity->effectivity
 effctive->effective
 effeciency->efficiency
 effecient->efficient
@@ -5134,6 +5145,7 @@ exagerrating->exaggerating
 examied->examined
 examin->examine, examining,
 examinated->examined
+examinining->examining
 exampt->exempt
 exand->expand
 exapansion->expansion
@@ -5760,6 +5772,7 @@ freindly->friendly
 freqencies->frequencies
 freqency->frequency
 freqeuncy->frequency
+frequences->frequencies
 frequencey->frequency
 frequenct->frequency
 frequentily->frequently
@@ -6205,6 +6218,7 @@ hemorage->haemorrhage
 hendler->handler
 hepler->helper
 herad->heard, Hera,
+heree->here
 heridity->heredity
 heroe->hero
 heros->heroes
@@ -7115,6 +7129,7 @@ intepreting->interpreting
 intepretor->interpreter
 intepretors->interpreters
 inteprets->interprets
+inter-operability->interoperability
 interace->interface
 interaces->interfaces
 interacsion->interaction
@@ -8352,7 +8367,7 @@ Nazereth->Nazareth
 nclude->include
 nd->and, 2nd,
 nead->need
-neaded->needed
+neaded->needed, kneaded,
 neagtive->negative
 nealy->nearly, newly,
 neares->nearest
@@ -8920,6 +8935,8 @@ outout->output
 outputed->outputted
 outputing->outputting
 outselves->ourselves
+outupt->output
+outupts->outputs
 outut->output
 oututs->outputs
 outweight->outweigh
@@ -9865,6 +9882,9 @@ procude->produce
 procuded->produced
 prodecure->procedure
 produceds->produces, produced,
+proejct->project
+proejcted->projected
+proejcting->projecting
 proejction->projection
 proeprties->properties
 proeprty->property
@@ -9999,6 +10019,9 @@ provate->provide
 provded->provided
 provder->provider
 provdided->provided
+provicde->provide
+provicded->provided
+provicdes->provides
 provicial->provincial
 providfers->providers
 providse->provide
@@ -10225,6 +10248,7 @@ receipients->recipients
 receiption->reception
 receivedfrom->received from
 receiveing->receiving
+receiviing->receiving
 recepient->recipient
 recepients->recipients
 recepion->reception
@@ -10412,6 +10436,7 @@ refeshes->refreshes
 refeshing->refreshing
 reffered->referred
 refference->reference
+refferes->refers, referees,
 reffering->referring
 reffers->refers
 refinment->refinement
@@ -10831,6 +10856,7 @@ resouces->resources
 resourceype->resourcetype
 resoure->resource
 resoures->resources
+resoution->resolution
 resoves->resolves
 respecitve->respective
 respecively->respectively
@@ -11592,6 +11618,7 @@ socalism->socialism
 socities->societies
 soecialize->specialized
 soem->some
+sofisticated->sophisticated
 softwares->software
 sofware->software
 sohw->show
@@ -11650,6 +11677,8 @@ sotry->story
 sotyr->satyr, story,
 souce->source
 souces->sources
+soucre->source
+soucres->sources
 soudn->sound
 soudns->sounds
 sould->could, should, sold,
