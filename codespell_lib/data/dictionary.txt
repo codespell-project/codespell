@@ -1490,6 +1490,7 @@ bacic->basic
 backbround->background
 backgorund->background
 backgroud->background
+backround->background
 backrounds->backgrounds
 backsapce->backspace
 backslase->backslash
@@ -2132,9 +2133,10 @@ chacacters->characters
 chache->cache
 chached->cached
 chaecking->checking
-chage->change
-chaged->changed
-chages->changes
+chage->change, charge,
+chaged->changed, charged,
+chages->changes, charges,
+chaging->changing, charging,
 chahged->changed
 chalenging->challenging
 challanage->challenge
@@ -2254,6 +2256,7 @@ chnge->change
 choise->choice
 choises->choices
 chooose->choose
+choos->choose
 choosed->chose, chosen,
 choosen->chosen
 chopipng->chopping
@@ -5390,6 +5393,7 @@ exressed->expressed
 exression->expression
 exsist->exists, exist,
 exsistent->existent
+exsit->exist, exit,
 exsiting->existing
 exsits->exists, exist,
 extact->extract
@@ -5692,6 +5696,9 @@ forgoten->forgotten
 forground->foreground
 forhead->forehead
 foriegn->foreign
+forld->fold
+forlder->folder
+forlders->folders
 Formalhaut->Fomalhaut
 formallize->formalize
 formallized->formalized
@@ -8702,8 +8709,8 @@ offcially->officially
 offereings->offerings
 offest->offset
 offests->offsets
-offet->offset
-offets->offsets
+offet->offset, offer,
+offets->offsets, offers,
 offic->office
 offical->official
 offically->officially
@@ -8823,6 +8830,8 @@ opration->operation
 opreation->operation
 opression->oppression
 opressive->oppressive
+opten->often, open,
+optening->opening
 optet->opted
 opthalmic->ophthalmic
 opthalmologist->ophthalmologist
@@ -9107,6 +9116,8 @@ parameterical->parametrical
 parameterizes->parametrizes
 parametes->parameters
 parametised->parametrised
+parametter->parameter
+parametters->parameters
 paramter->parameter
 paramteres->parameters
 paramterization->parametrization, parameterization,
@@ -12955,6 +12966,7 @@ triggeres->triggers
 triggerred->triggered
 triguered->triggered
 trimed->trimmed
+triming->trimming, timing,
 tring->trying, string, ring,
 trings->strings, rings,
 triology->trilogy
@@ -13647,6 +13659,8 @@ vistors->visitors
 vitories->victories
 vitual->virtual
 viusualisation->visualisation
+viwer->viewer
+viwers->viewers
 vlaue->value
 vlaues->values
 vlues->values
