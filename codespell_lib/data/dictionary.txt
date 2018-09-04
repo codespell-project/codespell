@@ -1677,6 +1677,7 @@ billingualism->bilingualism
 billon->billion
 binairy->binary
 binanary->binary
+binay->binary
 binominal->binomial
 bistream->bitstream
 bitamps->bitmaps
@@ -3412,6 +3413,7 @@ critisizing->criticising, criticizing,
 critized->criticized
 critizing->criticizing
 crockodiles->crocodiles
+cross-orgin->cross-origin
 crossin->crossing
 crowm->crown
 crrespond->correspond
@@ -8885,11 +8887,29 @@ organiztion->organization
 orgin->origin, organ,
 orginal->original
 orginally->originally
+orginals->originals
 orginate->originate
 orginated->originated
 orginates->originates
 orginating->originating
+orginial->original
+orginially->originally
+orginials->originals
+orginiate->originate
+orginiated->originated
+orginiates->originates
+orgininal->original
+orgininals->originals
+orginisation->organisation
+orginisations->organisations
+orginised->organised
+orginization->organization
+orginizations->organizations
 orginize->organise, organize,
+orginized->organized
+orgins->origins, organs,
+orginx->originx
+orginy->originy
 orhpan->orphan
 oridinarily->ordinarily
 orienation->orientation
@@ -10696,6 +10716,8 @@ reord->record
 reorded->reorder
 reorer->reorder
 reorganision->reorganisation
+reorginised->reorganised
+reorginized->reorganized
 reosurces->resources
 reounded->rounded
 reouted->routed, rerouted,
