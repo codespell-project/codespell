@@ -198,6 +198,14 @@ def test_ignore_dictionary(reload_codespell_lib):
         assert cs.main('-I', f.name, d) == 1
 
 
+def test_ignore_word_list(reload_codespell_lib):
+    """Test ignore word list functionality"""
+    with TemporaryDirectory() as d:
+        with open(op.join(d, 'bad.txt'), 'w') as f:
+            f.write('abandonned\nabondon\nabilty\n')
+        assert cs.main('-Labandonned,someword', '-Labilty', d) == 1
+
+
 def test_custom_regex(reload_codespell_lib):
     """Test custom word regex"""
     with TemporaryDirectory() as d:

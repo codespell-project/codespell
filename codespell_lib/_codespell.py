@@ -228,6 +228,12 @@ def parse_options(args):
                            'by codespell. File must contain 1 word per line. '
                            'Words are case sensitive based on how they are '
                            'written in codespell_lib/data/dictionary.txt')
+    parser.add_option('-L', '--ignore-words-list',
+                      action='append', metavar='WORDS',
+                      help='Comma separated list of words to be ignored '
+                           'by codespell. Words are case sensitive based on '
+                           'how they are written in '
+                           'codespell_lib/data/dictionary.txt')
     parser.add_option('-r', '--regex',
                       action='store', type='string',
                       help='Regular expression which is used to find words. '
@@ -594,6 +600,11 @@ def main(*args):
             parser.print_help()
             return 1
         build_ignore_words(ignore_words_file)
+
+    ignore_words_list = options.ignore_words_list or []
+    for comma_separated_words in ignore_words_list:
+        for word in comma_separated_words.split(','):
+            ignore_words.add(word.strip())
 
     dictionaries = options.dictionary or [default_dictionary]
     for dictionary in dictionaries:
