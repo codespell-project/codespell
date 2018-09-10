@@ -26,19 +26,13 @@ from optparse import OptionParser
 import os
 import fnmatch
 
+word_regex_def = u"[\w\-'’`]+"
+encodings = ('utf-8', 'iso-8859-1')
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
 VERSION = '1.14.0.dev0'
 
-misspellings = {}
-ignore_words = set()
-exclude_lines = set()
-options = None
-file_opener = None
-quiet_level = 0
-encodings = ['utf-8', 'iso-8859-1']
-word_regex = re.compile(u"[\w\-'’`]+")
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
 default_dictionary = os.path.join(os.path.dirname(os.path.realpath(__file__)),
@@ -121,10 +115,11 @@ class Summary(object):
 
 
 class FileOpener(object):
-    def __init__(self, use_chardet):
+    def __init__(self, use_chardet, quiet_level):
         self.use_chardet = use_chardet
         if use_chardet:
             self.init_chardet()
+        self.quiet_level = quiet_level
 
     def init_chardet(self):
         try:
@@ -170,13 +165,11 @@ class FileOpener(object):
 
     def open_with_internal(self, filename):
         curr = 0
-        global encodings
-
         while True:
             try:
                 f = codecs.open(filename, 'r', encoding=encodings[curr])
             except UnicodeDecodeError:
-                if not quiet_level & QuietLevels.ENCODING:
+                if not self.quiet_level & QuietLevels.ENCODING:
                     print('WARNING: Decoding file %s' % filename,
                           file=sys.stderr)
                     print('WARNING: using encoding=%s failed. '
@@ -241,7 +234,7 @@ def parse_options(args):
                            'underscore, the hyphen, and the apostrophe is '
                            'used to build words (i.e. %s). This option cannot '
                            'be specified together with the write-changes '
-                           'functionality. ' % word_regex.pattern)
+                           'functionality. ' % word_regex_def)
     parser.add_option('-s', '--summary',
                       action='store_true', default=False,
                       help='print summary of fixes')
@@ -299,19 +292,19 @@ def parse_options(args):
     return o, args, parser
 
 
-def build_exclude_hashes(filename):
+def build_exclude_hashes(filename, exclude_lines):
     with codecs.open(filename, 'r') as f:
         for line in f:
             exclude_lines.add(line)
 
 
-def build_ignore_words(filename):
+def build_ignore_words(filename, ignore_words):
     with codecs.open(filename, mode='r', buffering=1, encoding='utf-8') as f:
         for line in f:
             ignore_words.add(line.strip())
 
 
-def build_dict(filename):
+def build_dict(filename, misspellings, ignore_words):
     with codecs.open(filename, mode='r', buffering=1, encoding='utf-8') as f:
         for line in f:
             [key, data] = line.split('->')
@@ -339,11 +332,11 @@ def build_dict(filename):
             misspellings[key] = Misspelling(data, fix, reason)
 
 
-def is_hidden(filename):
+def is_hidden(filename, check_hidden):
     bfilename = os.path.basename(filename)
 
     if bfilename != '' and bfilename != '.' and bfilename != '..' \
-                    and (not options.check_hidden and bfilename[0] == '.'):
+                    and (not check_hidden and bfilename[0] == '.'):
         return True
 
     return False
@@ -418,15 +411,11 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
     return misspelling.fix, fix_case(wrongword, misspelling.data)
 
 
-def parse_file(filename, colors, summary):
+def parse_file(filename, colors, summary, misspellings, exclude_lines,
+               file_opener, word_regex, options):
     bad_count = 0
     lines = None
     changed = False
-    global misspellings
-    global options
-    global encodings
-    global quiet_level
-
     encoding = encodings[0]  # if not defined, use UTF-8
 
     if filename == '-':
@@ -452,13 +441,13 @@ def parse_file(filename, colors, summary):
                 crightword = "%s%s%s" % (colors.FWORD, fixword, colors.DISABLE)
 
                 if misspellings[lword].reason:
-                    if quiet_level & QuietLevels.DISABLED_FIXES:
+                    if options.quiet_level & QuietLevels.DISABLED_FIXES:
                         continue
                     creason = "  | %s%s%s" % (colors.FILE,
                                               misspellings[lword].reason,
                                               colors.DISABLE)
                 else:
-                    if quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
+                    if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
                         continue
                     creason = ''
 
@@ -472,7 +461,7 @@ def parse_file(filename, colors, summary):
 
         text = is_text_file(filename)
         if not text:
-            if not quiet_level & QuietLevels.BINARY_FILE:
+            if not options.quiet_level & QuietLevels.BINARY_FILE:
                 print("WARNING: Binary file: %s " % filename, file=sys.stderr)
             return 0
         try:
@@ -494,9 +483,9 @@ def parse_file(filename, colors, summary):
                 fixword = fix_case(word, misspellings[lword].data)
 
                 if options.interactive and lword not in asked_for:
-                    fix, fixword = ask_for_word_fix(lines[i], word,
-                                                    misspellings[lword],
-                                                    options.interactive)
+                    fix, fixword = ask_for_word_fix(
+                        lines[i], word, misspellings[lword],
+                        options.interactive)
                     asked_for.add(lword)
 
                 if summary and fix:
@@ -522,14 +511,14 @@ def parse_file(filename, colors, summary):
                 crightword = "%s%s%s" % (colors.FWORD, fixword, colors.DISABLE)
 
                 if misspellings[lword].reason:
-                    if quiet_level & QuietLevels.DISABLED_FIXES:
+                    if options.quiet_level & QuietLevels.DISABLED_FIXES:
                         continue
 
                     creason = "  | %s%s%s" % (colors.FILE,
                                               misspellings[lword].reason,
                                               colors.DISABLE)
                 else:
-                    if quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
+                    if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
                         continue
 
                     creason = ''
@@ -557,7 +546,7 @@ def parse_file(filename, colors, summary):
             for line in lines:
                 print(line, end='')
         else:
-            if not quiet_level & QuietLevels.FIXES:
+            if not options.quiet_level & QuietLevels.FIXES:
                 print("%sFIXED:%s %s"
                       % (colors.FWORD, colors.DISABLE, filename),
                       file=sys.stderr)
@@ -573,33 +562,31 @@ def _script_main():
 
 def main(*args):
     """Contains flow control"""
-    global options
-    global quiet_level
-    global file_opener
-
     options, args, parser = parse_options(args)
 
-    if options.regex:
-        if options.write_changes:
-            parser.error('--write-changes cannot be used together with '
-                         '--regex')
-        global word_regex
-        try:
-            word_regex = re.compile(options.regex)
-        except re.error as err:
-            print('ERROR: invalid regular expression "%s" (%s)' %
-                  (options.regex, err), file=sys.stderr)
-            parser.print_help()
-            return 1
+    if options.regex and options.write_changes:
+        print('ERROR: --write-changes cannot be used together with '
+              '--regex')
+        parser.print_help()
+        return 1
+    word_regex = options.regex or word_regex_def
+    try:
+        word_regex = re.compile(word_regex)
+    except re.error as err:
+        print('ERROR: invalid regular expression "%s" (%s)' %
+              (word_regex, err), file=sys.stderr)
+        parser.print_help()
+        return 1
 
     ignore_words_files = options.ignore_words or []
+    ignore_words = set()
     for ignore_words_file in ignore_words_files:
         if not os.path.exists(ignore_words_file):
             print('ERROR: cannot find ignore-words file: %s' %
                   ignore_words_file, file=sys.stderr)
             parser.print_help()
             return 1
-        build_ignore_words(ignore_words_file)
+        build_ignore_words(ignore_words_file, ignore_words)
 
     ignore_words_list = options.ignore_words_list or []
     for comma_separated_words in ignore_words_list:
@@ -607,6 +594,7 @@ def main(*args):
             ignore_words.add(word.strip())
 
     dictionaries = options.dictionary or [default_dictionary]
+    misspellings = dict()
     for dictionary in dictionaries:
         if dictionary == "-":
             dictionary = default_dictionary
@@ -615,7 +603,7 @@ def main(*args):
                   file=sys.stderr)
             parser.print_help()
             return 1
-        build_dict(dictionary)
+        build_dict(dictionary, misspellings, ignore_words)
     colors = TermColors()
     if not options.colors or sys.platform == 'win32':
         colors.disable()
@@ -625,20 +613,18 @@ def main(*args):
     else:
         summary = None
 
+    exclude_lines = set()
     if options.exclude_file:
-        build_exclude_hashes(options.exclude_file)
+        build_exclude_hashes(options.exclude_file, exclude_lines)
 
-    if options.quiet_level:
-        quiet_level = options.quiet_level
-
-    file_opener = FileOpener(options.hard_encoding_detection)
-
+    file_opener = FileOpener(options.hard_encoding_detection,
+                             options.quiet_level)
     glob_match = GlobMatch(options.skip)
 
     bad_count = 0
     for filename in args:
         # ignore hidden files
-        if is_hidden(filename):
+        if is_hidden(filename, options.check_hidden):
             continue
 
         if os.path.isdir(filename):
@@ -654,13 +640,17 @@ def main(*args):
                         continue
                     if not os.path.isfile(fname) or not os.path.getsize(fname):
                         continue
-                    bad_count += parse_file(fname, colors, summary)
+                    bad_count += parse_file(
+                        fname, colors, summary, misspellings, exclude_lines,
+                        file_opener, word_regex, options)
 
                 # skip (relative) directories
                 dirs[:] = [dir_ for dir_ in dirs if not glob_match.match(dir_)]
 
         else:
-            bad_count += parse_file(filename, colors, summary)
+            bad_count += parse_file(
+                filename, colors, summary, misspellings, exclude_lines,
+                file_opener, word_regex, options)
 
     if summary:
         print("\n-------8<-------\nSUMMARY:")
