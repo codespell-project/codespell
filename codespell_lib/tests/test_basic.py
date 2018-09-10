@@ -5,8 +5,8 @@ from __future__ import print_function
 import contextlib
 import os
 import os.path as op
-import sys
 import subprocess
+import sys
 
 import codespell_lib as cs
 
