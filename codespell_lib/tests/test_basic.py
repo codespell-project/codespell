@@ -62,7 +62,7 @@ def test_basic(tmpdir, capsys):
 
     with open(op.join(d, 'apostrophe.txt'), 'w') as f:
         f.write("cant'")
-    assert cs.main(d) == 4
+    assert cs.main(d) == 1
     capsys.readouterr()
     assert cs.main('-w', d) == 0
     with open(op.join(d, 'apostrophe.txt')) as f:
