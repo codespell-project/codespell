@@ -5,9 +5,10 @@ import re
 
 
 def test_dictionary_formatting():
-    """Test that all dictionary entries are in lower case and non-empty."""
+    """Test that all dictionary entries are valid."""
     err_dict = dict()
     ws = re.compile(r'.*\s.*')  # whitespace
+    comma = re.compile(r'.*,.*')  # comma
     with open(op.join(op.dirname(__file__), '..', 'data',
                       'dictionary.txt'), 'rb') as fid:
         for line in fid:
@@ -15,6 +16,7 @@ def test_dictionary_formatting():
             err = err.lower()
             assert err not in err_dict, 'error %r already exists' % err
             assert ws.match(err) is None, 'error %r has whitespace' % err
+            assert comma.match(err) is None, 'error %r has a comma' % err
             rep = rep.rstrip('\n')
             assert len(rep) > 0, ('error %s: correction %r must be non-empty'
                                   % (err, rep))
