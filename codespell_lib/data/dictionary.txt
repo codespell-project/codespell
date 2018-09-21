@@ -1192,6 +1192,7 @@ assistence->assistance
 assistent->assistant
 assit->assist
 assitant->assistant
+assmptions->assumptions
 assocaited->associated
 assocate->associate
 assocated->associated
@@ -1915,6 +1916,8 @@ caleed->called
 calender->calendar
 calenders->calendars
 caler->caller
+calibrte->calibrate
+calibrtion->calibration
 caligraphy->calligraphy
 calilng->calling
 callbacl->callback
@@ -5818,7 +5821,7 @@ frequncies->frequencies
 frequncy->frequency
 frist->first
 frmat->format
-fro->for
+fro->for, from,
 froce->force
 fromat->format
 frome->from
@@ -8050,6 +8053,7 @@ messagin->messaging
 messags->messages
 messanger->messenger
 messangers->messengers
+messave->message
 messenging->messaging
 messge->message
 messges->messages
@@ -8538,6 +8542,7 @@ nodulated->modulated
 noe->not, no, node, know, now,
 nofified->notified
 nohypen->nohyphen
+noice->noise, nice, notice,
 nomimal->nominal
 non-assiged->non-assigned
 non-inreractive->non-interactive
@@ -9062,7 +9067,9 @@ overwrittes->overwrites
 overwrittin->overwriting
 overwritting->overwriting
 ovrwrt->overwrite
+ovservable->observable
 ovservation->observation
+ovserve->observe
 ovveride->override
 ovverridden->overridden
 ovverride->override
@@ -11356,7 +11363,7 @@ seldomly->seldom
 seleced->selected
 selecetd->selected
 selecing->selecting
-selecte->selected
+selecte->selected, select,
 selectes->selects
 selectin->selection, selecting,
 selecton->selection
