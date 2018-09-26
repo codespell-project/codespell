@@ -4338,6 +4338,8 @@ discourraged->discouraged
 discovereability->discoverability
 discovr->discover
 discreminates->discriminates
+discrepencies->discrepancies
+discrepicies->discrepancies
 discribe->describe
 discribed->described
 discribes->describes
@@ -8270,6 +8272,9 @@ modulues->modules
 moent->moment
 moeny->money
 mofdified->modified
+mofification->modification
+mofifies->modifies
+mofify->modify
 mohammedans->muslims
 moil->soil, mohel,
 moint->mount
@@ -10100,7 +10105,7 @@ protruberance->protuberance
 protruberances->protuberances
 prouncements->pronouncements
 provacative->provocative
-provate->provide
+provate->private, provide,
 provded->provided
 provder->provider
 provdided->provided
@@ -12532,7 +12537,7 @@ tagnetial->tangential
 tagnets->tangents
 tahn->than
 taht->that
-taks->task
+taks->task, tasks,
 takslet->tasklet
 talekd->talked
 tangeant->tangent
@@ -12734,7 +12739,7 @@ thikns->thinks
 thimngs->things
 thinigs->things
 thinn->thin
-thise->these
+thise->these, this,
 thist->this
 thiunk->think
 thjese->these
@@ -12853,6 +12858,7 @@ togling->toggling
 togther->together
 toke->took
 tolarable->tolerable
+tolelerance->tolerance
 tolen->token
 tolens->tokens
 toleranz->tolerance
