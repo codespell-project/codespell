@@ -321,7 +321,9 @@ acutual->actual
 adapated->adapted
 adapater->adapter
 adapaters->adapters
+adapd->adapt, adapted, adopt, adopted,
 adapdive->adaptive
+adaped->adapted, adapt, adopted, adopt,
 adapive->adaptive
 adaptee->adapted
 adatper->adapter
@@ -3034,7 +3036,7 @@ contaiminate->contaminate
 contaiminated->contaminated
 contaiminating->contaminating
 containa->contain
-containe->contain, contained, container,
+containe->contain, contained, container, contains,
 containees->containers
 containes->contains
 containg->containing
@@ -3432,6 +3434,7 @@ crtical->critical
 crticised->criticised
 crucifiction->crucifixion
 cruncing->crunching
+crurrent->current
 crusies->cruises
 crusor->cursor
 cryptocraphic->cryptographic
@@ -3891,6 +3894,7 @@ desactivate->deactivate
 desactivated->deactivated
 desallocate->deallocate
 desallocated->deallocated
+desallocates->deallocates
 desaster->disaster
 descallocate->deallocate
 descallocated->deallocated
@@ -4665,6 +4669,7 @@ earlies->earliest
 earnt->earned
 easer->easier, eraser,
 easilly->easily
+easyer->easier
 ebale->enable
 ebaled->enabled
 eccessive->excessive
@@ -5582,6 +5587,8 @@ fiercly->fiercely
 fightings->fighting
 filal->final
 fileds->fields
+filesname->filename, filenames,
+filesnames->filenames
 filesysems->filesystems
 filesytem->filesystem
 filesytems->filesystems
@@ -6221,8 +6228,8 @@ hasnt->hasn't
 Hatian->Haitian
 hava->have, have a,
 have'nt->haven't
-havea->have
-havee->have
+havea->have, have a,
+havee->have, have a,
 haven;t->haven't
 havent'->haven't
 havent't->haven't
@@ -7463,6 +7470,7 @@ itselfs->itself
 itselt->itself
 itsems->items
 itslef->itself
+itteration->itteration
 itterations->iterations
 iunior->junior
 ivocation->invocation
@@ -9076,6 +9084,7 @@ overwite->overwrite
 overwites->overwrites
 overwitten->overwritten
 overwize->otherwise
+overwridden->overwritten
 overwriten->overwritten
 overwritren->overwritten
 overwrittes->overwrites
@@ -10795,6 +10804,8 @@ repitition->repetition
 replacable->replaceable
 replacments->replacements
 replaint->repaint
+replcace->replace
+replcaced->replaced
 replys->replies
 reponse->response
 reponses->responses
@@ -12536,7 +12547,7 @@ tabels->tables
 tabeview->tabview
 tabke->table
 tablle->table
-tage->stage
+tage->stage, take, tag, tagged,
 taged->tagged
 taget->target
 tagnet->tangent
@@ -13950,6 +13961,7 @@ wokr->work
 wokring->working
 wollow->follow, wallow,
 wollowing->following, wallowing,
+won;t->won't,
 wonderfull->wonderful
 wont't->won't
 wont->won't, wont,
