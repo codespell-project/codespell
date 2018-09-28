@@ -1902,6 +1902,7 @@ calcualting->calculating
 calcualtion->calculation
 calcualtions->calculations
 calcualtor->calculator
+calcuate->calculate
 calculaion->calculation
 calculatable->calculatable, calculable,
 calculatble->calculatable, calculable,
@@ -2437,6 +2438,7 @@ colateral->collateral
 colelctive->collective
 colerscheme->colorscheme
 colision->collision
+colission->collision
 collaberative->collaborative
 collaction->collection
 collaobrative->collaborative
@@ -3273,6 +3275,8 @@ correclty->correctly
 correcly->correctly
 correcters->correctors
 correctnes->correctness
+correcton->correction
+correctons->corrections
 correctures->correctors
 correcty->correctly
 correcxt->correct
@@ -3396,6 +3400,7 @@ creastor->creator
 creat->create
 creatation->creation
 createable->creatable
+createdd->created
 createing->creating
 creationg->creation, creating,
 creats->creates
@@ -3465,6 +3470,7 @@ currentlly->currently
 currentry->currently
 currenty->currently
 curretly->currently
+curretnly->currently
 curriculem->curriculum
 currnt->current
 currntly->currently
@@ -4554,6 +4560,7 @@ dosent'->doesn't
 dosent;->doesn't
 dosn't->doesn't
 dosn;t->doesn't
+dosnt->doesn't
 dosposing->disposing
 dosument->document
 dosuments->documents
@@ -5618,6 +5625,7 @@ finanlize->finalize
 fincally->finally
 findout->find out
 finialization->finalization
+finishe->finished, finish,
 finishs->finishes
 finnished->finished
 finsih->finish
@@ -6758,6 +6766,7 @@ increament->increment
 increas->increase
 incredable->incredible
 incremeantal->incremental
+incrementall->incremental, incrementally,
 incremet->increment
 incremetal->incremental
 incrment->increment
@@ -6794,6 +6803,7 @@ indentifier->identifier
 indentifies->identifies
 indentify->identify
 indentifying->identifying
+indention->indentation
 indentity->identity
 indenx->index
 indepedantly->independently
@@ -7859,6 +7869,7 @@ maintioned->mentioned
 maitainers->maintainers
 majoroty->majority
 maked->marked, made,
+makefle->makefile
 makeing->making
 makro->macro
 makros->macros
@@ -8512,6 +8523,7 @@ neigbour->neighbour, neighbor,
 neigbourhood->neighbourhood
 neigbouring->neighbouring, neighboring,
 neigbours->neighbours, neighbors,
+neighboor->neighbor, neighbour,
 neighboors->neighbors, neighbours,
 neighbout->neighbor
 neightbour->neighbour
@@ -8782,6 +8794,8 @@ offseting->offsetting
 offsett->offset
 offstets->offsets
 offten->often
+oficial->official
+oficially->officially
 ofo->of
 ofrom->from
 ofsetted->offsetted
@@ -9033,6 +9047,7 @@ ouputting->outputting
 ourselfs->ourselves
 ourselve->ourselves
 ourselvs->ourselves
+ouside->outside
 oustanding->outstanding
 outout->output
 outputed->outputted
@@ -9177,6 +9192,7 @@ paralel->parallel
 paralelising->parallelizing
 paralelism->parallelism
 paralell->parallel
+paralelle->parallel
 paralellism->parallelism
 paralellization->parallelization
 paralelly->parallelly
@@ -9734,6 +9750,7 @@ preaorocessing->preprocessing
 preapared->prepared
 preapre->prepare
 prebious->previous
+precceding->preceding
 preced->precede
 precedessor->predecessor
 preceds->precedes
@@ -10698,6 +10715,7 @@ relesed->released
 releses->releases
 reletive->relative
 reletively->relatively
+releveant->relevant
 relevence->relevance
 relevent->relevant
 reliablity->reliability
@@ -12893,6 +12911,7 @@ toleranz->tolerance
 tolerence->tolerance
 tolernce->tolerance
 Tolkein->Tolkien
+tollerance->tolerance
 tomatos->tomatoes
 tommorow->tomorrow
 tommorrow->tomorrow
@@ -12989,6 +13008,7 @@ transferd->transferred
 transfered->transferred
 transfering->transferring
 transferrd->transferred
+transfert->transfer, transfered,
 transfom->transform
 transfomed->transformed
 transfomm->transform
@@ -13249,6 +13269,10 @@ underrrun->underrun
 undersacn->underscan
 understoon->understood
 understoud->understood
+undertsand->understand
+undertsanding->understanding
+undertsands->understands
+undertsood->understood
 underun->underrun
 underuns->underruns
 undesireable->undesirable
@@ -13615,6 +13639,8 @@ valuse->values, value,
 vanishs->vanishes
 varable->variable
 varables->variables
+varaiable->variable
+varaiables->variables
 varaiance->variance
 varaiation->variation
 varaible->variable
@@ -13956,6 +13982,7 @@ witht->with
 withthe->with the
 witin->within
 witn->with
+witout->without
 witth->with
 wiull->will
 wll->will
