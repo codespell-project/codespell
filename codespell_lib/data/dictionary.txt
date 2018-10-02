@@ -447,6 +447,8 @@ advertice->advertise
 adverticed->advertised
 advertisment->advertisement
 advertisments->advertisements
+advertistment->advertisement
+advertistments->advertisements
 advesary->adversary
 adviced->advised
 adviseable->advisable
@@ -5987,6 +5989,11 @@ genereated->generated
 genereates->generates
 genereating->generating
 genered->generated
+genererate->generate
+genererated->generated
+genererater->generator
+genererating->generating
+genereration->generation
 generiously->generously
 genialia->genitalia
 genrate->generate
