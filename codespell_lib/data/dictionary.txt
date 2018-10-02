@@ -562,6 +562,9 @@ alegorical->allegorical
 aleviate->alleviate
 aleviating->alleviating
 algebraical->algebraic
+alghoritm->algorithm
+alghoritmically->algorithmically
+alghoritms->algorithms
 algined->aligned
 algorhitm->algorithm
 algorhitms->algorithms
@@ -607,6 +610,7 @@ alinments->alignments
 alising->aliasing
 aliver->alive, liver,
 allcate->allocate
+alle->all
 alled->called, allied,
 alledge->allege
 alledged->alleged
@@ -942,6 +946,7 @@ applikation->application
 appling->applying, appalling,
 applyable->applicable
 applycable->applicable
+applyed->applied
 applyied->applied
 applys->applies
 appologies->apologies
@@ -1062,6 +1067,7 @@ architecutres->architectures
 architecuture->architecture
 architeture->architecture
 architetures->architectures
+archiv->archive
 archor->anchor
 archtecture->architecture
 archtectures->architectures
@@ -1577,6 +1583,8 @@ becomeing->becoming
 becomming->becoming
 becouse->because
 becoz->because
+bector->vector
+bectors->vectors
 becuase->because
 beding->bedding, begging,
 bedore->before
@@ -1593,6 +1601,7 @@ beggining->beginning
 begginings->beginnings
 begginning->beginning
 beggins->begins
+begiinning->beginning
 begines->begins
 begining->beginning
 beginn->begin
@@ -2405,6 +2414,9 @@ coallesced->coalesced
 cobvers->covers
 coccinele->coccinelle
 coctail->cocktail
+cocument->document
+cocumentation->documentation
+cocuments->document
 codepoitn->codepoint
 codesc->codecs
 codespel->codespell
@@ -3218,13 +3230,16 @@ coonstructed->constructed
 cooporative->cooperative
 coordiante->coordinate
 coordiantion->coordination
+coordiate->coordinate
 coordiates->coordinates
 coordiinates->coordinates
 coordinte->coordinate
 coordonate->coordinate
 coordonates->coordinates
+cooridate->coordinate
 cooridates->coordinates
 cooridnate->coordinate
+cooridnates->coordinate
 coorinates->coordinates
 coorination->coordination
 coorperation->cooperation, corporation,
@@ -4683,6 +4698,7 @@ earnt->earned
 easer->easier, eraser,
 easilly->easily
 easyer->easier
+eaxct->exact
 ebale->enable
 ebaled->enabled
 eccessive->excessive
@@ -5164,6 +5180,7 @@ evalute->evaluate
 evaluted->evaluated
 evalutes->evaluates
 evaluting->evaluating
+evelope->envelope, envelop,
 evenhtually->eventually
 eventally->eventually
 eventhough->even though
@@ -5247,6 +5264,7 @@ exceutes->executes
 exceution->execution
 exchanching->exchanging
 exchangable->exchangeable
+exciation->excitation
 excist->exist
 excisted->existed
 excisting->existing
@@ -7091,6 +7109,7 @@ inprisonment->imprisonment
 inproper->improper
 inproperly->improperly
 inproving->improving
+inpu->input
 inpust->input, inputs,
 inputsream->inputstream
 inpuut->input
@@ -7616,7 +7635,7 @@ laoding->loading
 laods->loads
 laout->layout
 larg->large
-larget->larger, target,
+larget->larger, largest, target,
 largets->largest, targets,
 largst->largest
 larrry->larry
@@ -8073,6 +8092,7 @@ memery->memory
 memmory->memory
 memor->memory
 memorise->memorise, memorize,
+mempry->memory
 memroy->memory
 menally->mentally
 menas->means
@@ -8517,6 +8537,7 @@ neesd->needs
 neesds->needs
 neet->need, neat,
 negaive->negative
+negarive->negative
 negatve->negative
 negible->negligible
 negitive->negative
@@ -8601,6 +8622,7 @@ non-assiged->non-assigned
 non-inreractive->non-interactive
 noncombatents->noncombatants
 nonexistant->nonexistent
+nonnegarive->nonnegative
 nonsence->nonsense
 nontheless->nonetheless
 noo->no
@@ -9891,6 +9913,7 @@ preven->prevent
 prevend->prevent
 preverse->perverse
 preverses->preserves
+previious->previous
 previlege->privilege
 previos->previous
 previosuly->previously
@@ -9967,6 +9990,7 @@ probelm->problem
 probelms->problems
 probem->problem
 proberly->properly
+proberty->property, properly, 
 problably->probably
 problamatic->problematic
 proble->probe
@@ -11928,6 +11952,9 @@ spectum->spectrum
 specturm->spectrum
 specufies->specifies
 specufy->specify
+spedific->specific
+spedified->specified
+spedify->specify
 spefic->specific
 speficied->specified
 speficy->specify
@@ -12089,6 +12116,7 @@ straighforward->straightforward
 straightfoward->straightforward
 straigt->straight
 straigth->straight
+straines->strains
 straming->streaming
 strangly->strangely, strange,
 strat->start, strata,
@@ -12611,7 +12639,9 @@ tanget->tangent
 tangetial->tangential
 tangetially->tangentially
 tangets->tangents
+tanseint->transient
 tansfomed->transformed
+tansient->transient
 tarbal->tarball
 tarbals->tarballs
 targer->target
@@ -13022,6 +13052,7 @@ transcendentational->transcendental
 transciever->transceiver
 transcievers->transceivers
 transcripting->transcribing, transcription,
+transeint->transient
 transending->transcending
 transer->transfer
 transesxuals->transsexuals
@@ -13290,6 +13321,7 @@ underrrun->underrun
 undersacn->underscan
 understoon->understood
 understoud->understood
+undertable->understandable, understand,
 undertsand->understand
 undertsanding->understanding
 undertsands->understands
@@ -13705,6 +13737,7 @@ vbsrcript->vbscript
 vebrose->verbose
 vecotr->vector
 vecotrs->vectors
+vectore->vector
 vectores->vectors
 vedio->video
 vefiry->verify
@@ -14117,6 +14150,8 @@ yuo->you
 yur->your
 zeebra->zebra
 ziped->zipped
+ziper->zipper
+ziping->zipping
 zlot->slot
 zoon->zoom, zoon,
 zuser->user
