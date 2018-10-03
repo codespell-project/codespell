@@ -7884,9 +7884,9 @@ makefle->makefile
 makeing->making
 makro->macro
 makros->macros
-maks->mask
-makse->makes
-makss->masks
+maks->mask, makes, make,
+makse->makes, masks,
+makss->masks, makes,
 Malcom->Malcolm
 malicous->malicious
 malicously->maliciously
@@ -8844,7 +8844,7 @@ omniverously->omnivorously
 omplementaion->implementation
 omplementation->implementation
 omre->more
-onces->once
+onces->once, ones,
 ond->one
 onece->once
 oneyway->oneway
