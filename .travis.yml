@@ -40,6 +40,7 @@ install:
 script:
     - codespell --help
     - make check-dictionary
+    - codespell --skip="codespell_lib/tests/test_basic.py,codespell_lib/data/*" codespell_lib/
     # this file has an error
     - "! codespell codespell_lib/tests/test_basic.py"
     - flake8
