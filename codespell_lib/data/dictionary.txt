@@ -2975,10 +2975,13 @@ consistantly->consistently
 consisten->consistent
 consistenly->consistently
 consisteny->consistency, consistent,
+consit->consist
 consitant->consistent
+consited->consisted
 consitency->consistency
 consitent->consistent
 consitently->consistently
+consiting->consisting
 consits->consists
 consituencies->constituencies
 consituency->constituency
@@ -4927,6 +4930,7 @@ endianess->endianness
 endiannes->endianness
 endig->ending
 endnoden->endnode
+endoint->endpoint
 endolithes->endoliths
 endpints->endpoints
 endpiont->endpoint
@@ -5766,6 +5770,9 @@ foramt->format
 forbad->forbade
 forbbiden->forbidden
 forbiden->forbidden
+forbit->forbid
+forbiten->forbidden
+forbitten->forbidden
 forcably->forcibly
 foreing->foreign
 foreward->foreword, forward,
@@ -6545,9 +6552,13 @@ illegimacy->illegitimacy
 illegitmate->illegitimate
 illess->illness
 illiegal->illegal
+illustrasion->illustration
 illution->illusion
 ilness->illness
 ilogical->illogical
+ilustrate->illustrate
+ilustrated->illustrated
+ilustration->illustration
 imagenary->imaginary
 imaghe->image
 imagin->imagine
