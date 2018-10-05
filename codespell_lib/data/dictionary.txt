@@ -2518,6 +2518,10 @@ combind->combined
 combinded->combined
 combusion->combustion
 comdemnation->condemnation
+comect->connect
+comected->connected
+comecting->connecting
+comectivity->connectivity
 comemmorates->commemorates
 comemoretion->commemoration
 coment->comment
@@ -2551,6 +2555,10 @@ commads->commands
 comman->command, common,
 commandoes->commandos
 commansd->commands
+commect->connect
+commected->connected
+commecting->connecting
+commectivity->connectivity
 commedic->comedic
 commemerative->commemorative
 commemmorate->commemorate
@@ -3195,8 +3203,8 @@ converion->conversion
 converions->conversions
 converitble->convertible
 conversly->conversely
-converstion->conversion
-converstions->conversions
+converstion->conversion, conversation,
+converstions->conversions, conversations,
 convertable->convertible
 convertables->convertibles
 convertation->conversation, conversion,
@@ -6288,7 +6296,7 @@ headquaters->headquarters
 headrom->headroom, bedroom,
 heaer->header
 healthercare->healthcare
-heared->heard
+heared->heard, header,
 heathy->healthy
 Heidelburg->Heidelberg
 heigest->highest
@@ -8783,6 +8791,8 @@ occuped->occupied
 occupided->occupied
 occurance->occurrence
 occurances->occurrences
+occurd->occurred, occur,
+occurded->occurred
 occure->occur
 occured->occurred
 occurence->occurrence
@@ -9278,6 +9288,7 @@ paremeters->parameters
 paremter->parameter
 parenthese->parentheses
 parenthesed->parenthesized
+parial->partial
 parially->partially
 parisitic->parasitic
 paritial->partial
@@ -12079,6 +12090,7 @@ steram->stream
 sterio->stereo
 steriods->steroids
 sterotypes->stereotypes
+stiffneing->stiffening
 stil->still
 stilus->stylus
 sting->string, sting,
@@ -13011,6 +13023,7 @@ trafficed->trafficked
 trafficing->trafficking
 trafic->traffic
 trailling->trailing
+traker->tracker
 tramsmitted->transmitted
 tranaction->transaction
 tranactional->transactional
@@ -13429,6 +13442,7 @@ unles->unless
 unlikey->unlikely
 unlimitied->unlimited
 unline->unlike
+unloadins->unloading
 unmanouverable->unmaneuverable, unmanoeuvrable,
 unmaping->unmapping
 unmistakeably->unmistakably
@@ -14051,6 +14065,7 @@ wnated->wanted
 wnating->wanting
 wnats->wants
 wohle->whole
+woill->will
 wokr->work
 wokring->working
 wollow->follow, wallow,
