@@ -3281,6 +3281,8 @@ copyritghts->copyrights
 copys->copies
 copytight->copyright
 copywrite->copyright
+cordinate->coordinate
+cordinates->coordinates
 corecct->correct
 corecctly->correctly
 corect->correct
@@ -6531,7 +6533,7 @@ identifer->identifier
 identifers->identifiers
 identifictaion->identification
 identifyable->identifiable
-identiy->identity
+identiy->identify,identity,
 ideosyncratic->idiosyncratic
 idesa->ideas, ides,
 idicate->indicate
@@ -8560,6 +8562,7 @@ neesds->needs
 neet->need, neat,
 negaive->negative
 negarive->negative
+negativ->negative
 negatve->negative
 negible->negligible
 negitive->negative
@@ -9294,6 +9297,8 @@ pararaph->paragraph
 parargaph->paragraph
 parargaphs->paragraphs
 pararmeters->parameters
+parastic->parasitic
+parastics->parasitics
 paratmers->parameters
 parctically->pratically
 parellels->parallels
@@ -9965,6 +9970,7 @@ primatives->primitives
 primay->primary
 primeter->perimeter
 primitve->primitive
+primitves->primitives
 primive->primitive
 primordal->primordial
 principaly->principality
