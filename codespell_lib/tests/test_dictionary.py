@@ -23,6 +23,16 @@ def test_dictionary_formatting():
             assert not re.match(r'^\s.*', rep), ('error %s: correction %r '
                                                  'cannot start with whitespace'
                                                  % (err, rep))
+            for (r, msg) in [
+                (r'^,', 'error %s: correction %r starts with a comma'),
+                (r'\s,', 'error %s: correction %r contains a whitespace '
+                         'character followed by a comma'),
+                (r',\s\s', 'error %s: correction %r contains a comma followed '
+                           'by multiple whitespace characters'),
+                (r',[^ ]', 'error %s: correction %r contains a comma *not* '
+                           'followed by a space')
+            ]:
+                assert not re.search(r, rep), (msg % (err, rep))
             if rep.count(','):
                 if not rep.endswith(','):
                     assert 'disabled' in rep.split(',')[-1], \
