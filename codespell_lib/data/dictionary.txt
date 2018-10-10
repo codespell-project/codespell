@@ -64,6 +64,7 @@ abstact->abstract
 abstaction->abstraction
 abstactions->abstractions
 abstactly->abstractly
+absulute->absolute
 absymal->abysmal
 abtract->abstract
 abudance->abundance
@@ -844,6 +845,7 @@ anomolies->anomalies
 anomolous->anomalous
 anomoly->anomaly
 anonimity->anonymity
+anonymouse->anonymous
 anonymus->anonymous
 anormaly->abnormally
 anoter->another
@@ -983,6 +985,7 @@ appropriatness->appropriateness
 approproate->appropriate
 appropropiate->appropriate
 appropropiately->appropriately
+appropropreate->appropriate
 appropropriate->appropriate
 approproximate->approximate
 approriate->appropriate
@@ -1178,6 +1181,7 @@ asscciated->associated
 asscoitaed->associated
 assember->assembler
 assemple->assemble
+assersion->assertion
 assertation->assertion
 assesment->assessment
 assgin->assign
@@ -2318,6 +2322,7 @@ cilyndrs->cylinders
 Cincinatti->Cincinnati
 Cincinnatti->Cincinnati
 cintaner->container
+circual->circular
 circularly->circular, circularly,
 circulaton->circulation
 circumferencial->circumferential
@@ -4047,6 +4052,7 @@ destiantions->destinations
 destinataion->destination
 destinataions->destinations
 destinatin->destination
+destinguish->distinguish
 destionation->destination
 destionations->destinations
 destoried->destroyed
@@ -6527,6 +6533,7 @@ idealogy->ideology
 idenfifier->identifier
 idenitify->identify
 identation->indentation
+identcial->identical
 identiable->identificable
 identicial->identical
 identifaction->identification
@@ -6547,6 +6554,7 @@ idiosyncracy->idiosyncrasy
 idividual->individual
 iff->if, disabled due to valid mathematical concept
 ignonre->ignore
+ignoreing->ignoring
 ignorence->ignorance
 igoned->ignored
 igore->ignore
@@ -7886,6 +7894,7 @@ mabe->maybe
 machanism->mechanism
 machanisms->mechanisms
 mached->matched
+maches->matches
 machinary->machinery
 maching->machine, marching, matching,
 mackeral->mackerel
@@ -8506,6 +8515,7 @@ Naploeon->Napoleon
 Napolean->Napoleon
 Napoleonian->Napoleonic
 nastyness->nastiness
+natrual->natural
 naturaly->naturally
 naturely->naturally
 naturual->natural
@@ -8581,6 +8591,7 @@ negociations->negotiations
 negotation->negotiation
 negtive->negative
 neice->niece, nice,
+neigbor->neighbor
 neigborhood->neighborhood
 neigbour->neighbour, neighbor,
 neigbourhood->neighbourhood
@@ -10536,8 +10547,10 @@ recrational->recreational
 recreateation->recreation
 recrod->record
 recrods->records
+recrusevly->recursively
 recrusion->recursion
 recrusive->recursive
+recrusivelly->recursively
 recrusively->recursively
 rectange->rectangle
 rectanges->rectangles
@@ -10568,6 +10581,8 @@ redenderer->renderer
 redered->rendered
 redict->redirect
 rediculous->ridiculous
+redifintion->redefinition
+redifintions->redefinitions
 redircet->redirect
 redirectrion->redirection
 redisign->redesign
@@ -10823,6 +10838,7 @@ rememberance->remembrance
 remembrence->remembrance
 rememeber->remember
 rememebr->remember
+rememer->remember
 remenant->remnant
 remenicent->reminiscent
 reminent->remnant
@@ -10855,6 +10871,7 @@ rentime->runtime
 rentors->renters
 reoccurrence->recurrence
 reocurring->recurring
+reoder->reorder
 reonly->read-only
 reopended->reopened
 reoport->report
@@ -12616,7 +12633,7 @@ syncting->syncing
 syndonic->syntonic
 synonomous->synonymous
 synonymns->synonyms
-synopsys->synopsis
+synopsys->synopsis, disabled due to being a company name
 synphony->symphony
 synronous->synchronous
 syntaxg->syntax
@@ -13122,6 +13139,8 @@ transistions->transitions
 transitionned->transitioned
 transiton->transition
 transitons->transitions
+transitor->transistor
+transitors->transistors
 translater->translator
 translaters->translators
 translteration->transliteration
@@ -13558,6 +13577,7 @@ unresgistered->unregistered
 unresgisters->unregisters
 unresonable->unreasonable
 unroated->unrotated
+unsable->unusable, usable,
 unsed->unused, used,
 unselect->deselect
 unsettin->unsetting
@@ -13697,6 +13717,7 @@ utiliza->utilize
 utilizaton->utilization
 utillities->utilities
 utilties->utilities
+utiltities->utilities
 utiltity->utility
 utitlty->utility
 utlities->utilities
@@ -13889,6 +13910,7 @@ visious->vicious
 visisble->visible
 visiter->visitor
 visiters->visitors
+visted->visited
 visting->visiting
 vistors->visitors
 vitories->victories
