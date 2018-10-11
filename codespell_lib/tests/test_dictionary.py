@@ -47,7 +47,7 @@ def test_dictionary_formatting():
                 if r not in unique:
                     unique.append(r)
             assert reps == unique, 'entries are not (lower-case) unique'
-    # check for corrections that are errors (but nit self replacements)
+    # check for corrections that are errors (but not self replacements)
     for err in err_dict:
         for r in err_dict[err]:
             assert (r not in err_dict) or (r in err_dict[r]), \
