@@ -52,4 +52,3 @@ def test_dictionary_formatting():
         for r in err_dict[err]:
             assert (r not in err_dict) or (r in err_dict[r]), \
                 ('error %s: correction %s is an error itself' % (err, r))
-
