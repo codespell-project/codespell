@@ -39,11 +39,16 @@ def test_dictionary_formatting():
                         ('currently corrections must end with trailing "," (if'
                          ' multiple corrections are available) or '
                          'have "disabled" in the comment')
-            err_dict[err] = rep
             reps = [r.strip() for r in rep.lower().split(',')]
             reps = [r for r in reps if len(r)]
+            err_dict[err] = reps
             unique = list()
             for r in reps:
                 if r not in unique:
                     unique.append(r)
             assert reps == unique, 'entries are not (lower-case) unique'
+    # check for corrections that are errors (but not self replacements)
+    for err in err_dict:
+        for r in err_dict[err]:
+            assert (r not in err_dict) or (r in err_dict[r]), \
+                ('error %s: correction %s is an error itself' % (err, r))
