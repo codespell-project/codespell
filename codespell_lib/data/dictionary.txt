@@ -585,7 +585,17 @@ algorthim->algorithm
 algorthims->algorithms
 algorythm->algorithm
 algorythms->algorithms
+alha->alpha
+alhabet->alphabet
+alhabetical->alphabetical
+alhabetically->alphabetically
 alhabeticaly->alphabetically
+alhabets->alphabets
+alhapet->alphabet
+alhapetical->alphabetical
+alhapetically->alphabetically
+alhapeticaly->alphabetically
+alhapets->alphabets
 aliasas->aliases
 alientating->alienating
 alighed->aligned
@@ -689,7 +699,9 @@ alpah->alpha
 alpahbetically->alphabetically
 alph->alpha
 alpha-numeric->alphanumeric
+alphabeticaly->alphabetically
 alphabeticly->alphabetical
+alphapeticaly->alphabetically
 alrady->already
 alraedy->already
 alread->already
@@ -4350,6 +4362,8 @@ disadvantadge->disadvantage
 disagreeed->disagreed
 disalb->disable
 disalbe->disable
+disalbed->disabled
+disalbes->disables
 disale->disable
 disambigouate->disambiguate
 disambiguaiton->disambiguation
@@ -4906,6 +4920,7 @@ enableing->enabling
 enablen->enabled
 enalbe->enable
 enalbed->enabled
+enalbes->enables
 enameld->enameled
 enbale->enable
 enbaled->enabled
