@@ -3908,6 +3908,9 @@ depenencies->dependencies
 depenencis->dependencies
 depenency->dependency
 depenencys->dependencies
+depenendence->dependence
+depenendencies->dependencies
+depenendency->dependency
 depenent->dependent
 depening->depending, deepening,
 deploied->deployed
@@ -11377,7 +11380,11 @@ rountines->routines
 rountrip->roundtrip
 routet->routed
 routins->routines
+rovide->provide
+rovided->provided
 rovider->provider
+rovides->provides
+roviding->providing
 rqeuests->requests
 rquest->request
 rquested->requested
