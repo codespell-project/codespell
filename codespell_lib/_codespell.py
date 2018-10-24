@@ -423,9 +423,9 @@ def print_context(lines, index, context_before, context_after):
     for i in range(index - context_before, index + context_after + 1):
         if 0 <= i < len(lines):
             if i == index:
-                print('> %s' % lines[i], end='')
+                print('> %s' % lines[i].rstrip())
             else:
-                print(': %s' % lines[i], end='')
+                print(': %s' % lines[i].rstrip())
 
 
 def parse_file(filename, colors, summary, misspellings, exclude_lines,
@@ -648,11 +648,11 @@ def main(*args):
         context_before = context_after = max(0, options.context)
     elif (options.before_context is not None) or \
          (options.after_context is not None):
+        context_before = context_after = 0
         if options.before_context is not None:
             context_before = max(0, options.before_context)
         if options.after_context is not None:
             context_after = max(0, options.after_context)
-        context_before = max(0, context_before)
 
     exclude_lines = set()
     if options.exclude_file:
