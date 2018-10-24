@@ -640,7 +640,7 @@ def main(*args):
     context_after = -1
     if options.context is not None:
         if (options.before_context is not None) or \
-            (options.after_context is not None):
+                (options.after_context is not None):
             print('ERROR: --context/-C cannot be used together with '
                   '--context-before/-B or --context-after/-A')
             parser.print_help()
