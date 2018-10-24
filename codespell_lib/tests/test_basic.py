@@ -302,6 +302,68 @@ def test_case_handling(tmpdir, capsys):
         os.remove(f.name)
 
 
+def test_context(tmpdir, capsys):
+    """Test context options."""
+    d = str(tmpdir)
+    with open(op.join(d, 'context.txt'), 'w') as f:
+        f.write('line 1\nline 2\nline 3 abandonned\nline 4\nline 5')
+
+    try:
+        # symmetric context, fully within file
+        cs.main('-C', '1', d)
+        lines = capsys.readouterr()[0].split('\n')
+        assert len(lines) == 5
+        assert lines[0] == ': line 2'
+        assert lines[1] == '> line 3 abandonned'
+        assert lines[2] == ': line 4'
+
+        # requested context is bigger than the file
+        cs.main('-C', '10', d)
+        lines = capsys.readouterr()[0].split('\n')
+        assert len(lines) == 7
+        assert lines[0] == ': line 1'
+        assert lines[1] == ': line 2'
+        assert lines[2] == '> line 3 abandonned'
+        assert lines[3] == ': line 4'
+        assert lines[4] == ': line 5'
+
+        # only before context
+        cs.main('-B', '2', d)
+        lines = capsys.readouterr()[0].split('\n')
+        assert len(lines) == 5
+        assert lines[0] == ': line 1'
+        assert lines[1] == ': line 2'
+        assert lines[2] == '> line 3 abandonned'
+
+        # only after context
+        cs.main('-A', '1', d)
+        lines = capsys.readouterr()[0].split('\n')
+        assert len(lines) == 4
+        assert lines[0] == '> line 3 abandonned'
+        assert lines[1] == ': line 4'
+
+        # asymmetric context
+        cs.main('-B', '2', '-A', '1', d)
+        lines = capsys.readouterr()[0].split('\n')
+        assert len(lines) == 6
+        assert lines[0] == ': line 1'
+        assert lines[1] == ': line 2'
+        assert lines[2] == '> line 3 abandonned'
+        assert lines[3] == ': line 4'
+
+        # both '-C' and '-A' on the command line
+        cs.main('-C', '2', '-A', '1', d)
+        lines = capsys.readouterr()[0].split('\n')
+        assert 'ERROR' in lines[0]
+
+        # both '-C' and '-B' on the command line
+        cs.main('-C', '2', '-B', '1', d)
+        lines = capsys.readouterr()[0].split('\n')
+        assert 'ERROR' in lines[0]
+    finally:
+        os.remove(f.name)
+
+
 @contextlib.contextmanager
 def FakeStdin(text):
     if sys.version[0] == '2':
