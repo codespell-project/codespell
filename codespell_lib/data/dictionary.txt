@@ -9092,6 +9092,8 @@ orgamise->organise
 organim->organism
 organistion->organisation
 organiztion->organization
+organsiation->organisation
+organsiations->organisations
 orgin->origin, organ,
 orginal->original
 orginally->originally
@@ -10768,6 +10770,10 @@ regardlesss->regardless
 regaring->regarding
 regarldess->regardless
 regarless->regardless
+regart->regard
+regarted->regarded
+regarting->regarding
+regartless->regardless
 regeister->register
 regeistered->registered
 regeistration->registration
