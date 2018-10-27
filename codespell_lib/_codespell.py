@@ -417,20 +417,15 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
     return misspelling.fix, fix_case(wrongword, misspelling.data)
 
 
-def print_context(lines, index, context_before, context_after):
-    if context_before < 0:
-        return
-    for i in range(index - context_before, index + context_after + 1):
+def print_context(lines, index, context):
+    # context = (context_before, context_after)
+    for i in range(index - context[0], index + context[1] + 1):
         if 0 <= i < len(lines):
-            if i == index:
-                print('> %s' % lines[i].rstrip())
-            else:
-                print(': %s' % lines[i].rstrip())
+            print('%s %s' % ('>' if i == index else ':', lines[i].rstrip()))
 
 
 def parse_file(filename, colors, summary, misspellings, exclude_lines,
-               file_opener, word_regex, context_before, context_after,
-               options):
+               file_opener, word_regex, context, options):
     bad_count = 0
     lines = None
     changed = False
@@ -502,8 +497,9 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
                 fixword = fix_case(word, misspellings[lword].data)
 
                 if options.interactive and lword not in asked_for:
-                    context_shown = True
-                    print_context(lines, i, context_before, context_after)
+                    if context is not None:
+                        context_shown = True
+                        print_context(lines, i, context)
                     fix, fixword = ask_for_word_fix(
                         lines[i], word, misspellings[lword],
                         options.interactive)
@@ -548,8 +544,8 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
                 # our bad_count and thus return value
                 bad_count += 1
 
-                if not context_shown:
-                    print_context(lines, i, context_before, context_after)
+                if (not context_shown) and (context is not None):
+                    print_context(lines, i, context)
                 if filename != '-':
                     print("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "
                           " ==> %(RIGHTWORD)s%(REASON)s"
@@ -636,8 +632,7 @@ def main(*args):
     else:
         summary = None
 
-    context_before = -1
-    context_after = -1
+    context = None
     if options.context is not None:
         if (options.before_context is not None) or \
                 (options.after_context is not None):
@@ -645,14 +640,16 @@ def main(*args):
                   '--context-before/-B or --context-after/-A')
             parser.print_help()
             return 1
-        context_before = context_after = max(0, options.context)
-    elif (options.before_context is not None) or \
-         (options.after_context is not None):
-        context_before = context_after = 0
+        context_both = max(0, options.context)
+        context = (context_both, context_both)
+    elif (options.before_context is not None):
+        context_before = 0
+        context_after = 0
         if options.before_context is not None:
             context_before = max(0, options.before_context)
         if options.after_context is not None:
             context_after = max(0, options.after_context)
+        context = (context_before, context_after)
 
     exclude_lines = set()
     if options.exclude_file:
@@ -683,8 +680,7 @@ def main(*args):
                         continue
                     bad_count += parse_file(
                         fname, colors, summary, misspellings, exclude_lines,
-                        file_opener, word_regex, context_before, context_after,
-                        options)
+                        file_opener, word_regex, context, options)
 
                 # skip (relative) directories
                 dirs[:] = [dir_ for dir_ in dirs if not glob_match.match(dir_)]
@@ -692,8 +688,7 @@ def main(*args):
         else:
             bad_count += parse_file(
                 filename, colors, summary, misspellings, exclude_lines,
-                file_opener, word_regex, context_before, context_after,
-                options)
+                file_opener, word_regex, context, options)
 
     if summary:
         print("\n-------8<-------\nSUMMARY:")
