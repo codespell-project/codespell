@@ -642,7 +642,8 @@ def main(*args):
             return 1
         context_both = max(0, options.context)
         context = (context_both, context_both)
-    elif (options.before_context is not None):
+    elif (options.before_context is not None) or \
+            (options.after_context is not None):
         context_before = 0
         context_after = 0
         if options.before_context is not None:
