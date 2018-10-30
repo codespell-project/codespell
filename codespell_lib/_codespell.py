@@ -283,6 +283,12 @@ def parse_options(args):
                       action='store_true', default=False,
                       help='Check hidden files (those starting with ".") as '
                            'well.')
+    parser.add_option('-A', '--after-context', metavar='LINES',
+                      help='print LINES of trailing context', type='int')
+    parser.add_option('-B', '--before-context', metavar='LINES',
+                      help='print LINES of leading context', type='int')
+    parser.add_option('-C', '--context', metavar='LINES',
+                      help='print LINES of surrounding context', type='int')
 
     (o, args) = parser.parse_args(list(args))
 
@@ -411,8 +417,15 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
     return misspelling.fix, fix_case(wrongword, misspelling.data)
 
 
+def print_context(lines, index, context):
+    # context = (context_before, context_after)
+    for i in range(index - context[0], index + context[1] + 1):
+        if 0 <= i < len(lines):
+            print('%s %s' % ('>' if i == index else ':', lines[i].rstrip()))
+
+
 def parse_file(filename, colors, summary, misspellings, exclude_lines,
-               file_opener, word_regex, options):
+               file_opener, word_regex, context, options):
     bad_count = 0
     lines = None
     changed = False
@@ -479,10 +492,14 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
         for word in word_regex.findall(line):
             lword = word.lower()
             if lword in misspellings:
+                context_shown = False
                 fix = misspellings[lword].fix
                 fixword = fix_case(word, misspellings[lword].data)
 
                 if options.interactive and lword not in asked_for:
+                    if context is not None:
+                        context_shown = True
+                        print_context(lines, i, context)
                     fix, fixword = ask_for_word_fix(
                         lines[i], word, misspellings[lword],
                         options.interactive)
@@ -527,6 +544,8 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
                 # our bad_count and thus return value
                 bad_count += 1
 
+                if (not context_shown) and (context is not None):
+                    print_context(lines, i, context)
                 if filename != '-':
                     print("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "
                           " ==> %(RIGHTWORD)s%(REASON)s"
@@ -613,6 +632,26 @@ def main(*args):
     else:
         summary = None
 
+    context = None
+    if options.context is not None:
+        if (options.before_context is not None) or \
+                (options.after_context is not None):
+            print('ERROR: --context/-C cannot be used together with '
+                  '--context-before/-B or --context-after/-A')
+            parser.print_help()
+            return 1
+        context_both = max(0, options.context)
+        context = (context_both, context_both)
+    elif (options.before_context is not None) or \
+            (options.after_context is not None):
+        context_before = 0
+        context_after = 0
+        if options.before_context is not None:
+            context_before = max(0, options.before_context)
+        if options.after_context is not None:
+            context_after = max(0, options.after_context)
+        context = (context_before, context_after)
+
     exclude_lines = set()
     if options.exclude_file:
         build_exclude_hashes(options.exclude_file, exclude_lines)
@@ -642,7 +681,7 @@ def main(*args):
                         continue
                     bad_count += parse_file(
                         fname, colors, summary, misspellings, exclude_lines,
-                        file_opener, word_regex, options)
+                        file_opener, word_regex, context, options)
 
                 # skip (relative) directories
                 dirs[:] = [dir_ for dir_ in dirs if not glob_match.match(dir_)]
@@ -650,7 +689,7 @@ def main(*args):
         else:
             bad_count += parse_file(
                 filename, colors, summary, misspellings, exclude_lines,
-                file_opener, word_regex, options)
+                file_opener, word_regex, context, options)
 
     if summary:
         print("\n-------8<-------\nSUMMARY:")
