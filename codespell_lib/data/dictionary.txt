@@ -5477,9 +5477,10 @@ exlicite->explicit
 exlicitely->explicitly
 exlicitly->explicitly
 exliled->exiled
+exlude->exclude, exude,
 exluded->excluded, exuded,
-exludes->excludes
-exluding->excluding
+exludes->excludes, exudes,
+exluding->excluding, exuding,
 exlusive->exclusive
 exlusively->exclusively
 exmaple->example
@@ -14286,6 +14287,10 @@ wieh->view
 wierd->weird
 wieth->width
 wiew->view
+wighed->weighed, wicked,
+wight->weight, white, right, wight,
+wighted->weighted, weighed,
+wights->weights, whites, rights, wights
 wih->with
 wihite->white
 wihout->without
