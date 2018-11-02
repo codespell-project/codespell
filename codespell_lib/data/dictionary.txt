@@ -3645,8 +3645,9 @@ decathalon->decathlon
 deccelerate->decelerate
 decendant->descendant
 decendants->descendants
+decendend->descendent, descendant, descended,
 decendent->descendent, descendant,
-decendents->descendants
+decendents->descendents, descendants,
 deciaml->decimal
 decidated->dedicated
 decideable->decidable
@@ -3991,6 +3992,8 @@ descchedules->deschedules
 desccription->description
 descencing->descending
 descendands->descendants
+descendend->descended, descendent, descendant,
+descentences->decendants, decendents,
 descibe->describe
 descibed->described
 descibes->describes
