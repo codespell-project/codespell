@@ -2,7 +2,7 @@ environment:
   global:
       PYTHON: "C:\\conda"
       CONDA_DEPENDENCIES: "pytest pytest-cov setuptools flake8 coverage chardet"
-      PIP_DEPENDENCIES: "codecov pytest-sugar"
+      PIP_DEPENDENCIES: "codecov"
   matrix:
       - PYTHON_VERSION: "2.7"
         PYTHON_ARCH: "32"
