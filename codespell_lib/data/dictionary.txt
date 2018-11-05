@@ -9257,6 +9257,8 @@ oublisher->publisher
 ouevre->oeuvre
 oultinenodes->outlinenodes
 oultiner->outliner
+oultline->outline
+oultlines->outlines
 ountline->outline
 ouptut->output
 ouptuted->outputted
@@ -13119,7 +13121,7 @@ thouroughly->thoroughly
 thow->throw, tow,
 thown->thrown, town,
 thrad->thread
-thre->three, there,
+thre->three, there, their, the,
 threadsave->threadsafe
 threashold->threshold
 threasholds->thresholds
@@ -13153,6 +13155,7 @@ throuth->through
 throwed->threw, thrown,
 throwgh->through
 thru->through
+thrue->through
 thruout->throughout
 ths->the, this,
 thses->these
@@ -13793,6 +13796,7 @@ unsable->unusable, usable, unstable,
 unsed->unused, used,
 unselect->deselect
 unsettin->unsetting
+unsharable->unshareable
 unsiged->unsigned
 unsinged->unsigned
 unspported->unsupported
@@ -14398,6 +14402,7 @@ wrok->work
 wroked->worked
 wroking->working
 wroks->works
+wron->wrong
 wronf->wrong
 wrtie->write
 wth->with
