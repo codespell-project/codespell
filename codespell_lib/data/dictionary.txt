@@ -11651,8 +11651,8 @@ seacrchable->searchable
 searcheable->searchable
 searchin->searching
 searchs->searches
-secant->second
-secants->seconds
+secant->second, disabled due to valid mathematical concept
+secants->seconds, disabled due to valid mathematical concept
 secceeded->seceded, succeeded,
 secction->section
 seceed->succeed, secede,
