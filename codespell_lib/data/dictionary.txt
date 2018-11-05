@@ -4899,6 +4899,8 @@ elliminate->eliminate
 elliminated->eliminated
 elliminates->eliminates
 elliminating->eliminating
+elmenet->element
+elmenets->elements
 elment->element
 elments->elements
 elminate->eliminate
@@ -5485,9 +5487,10 @@ exlicite->explicit
 exlicitely->explicitly
 exlicitly->explicitly
 exliled->exiled
+exlude->exclude, exude,
 exluded->excluded, exuded,
-exludes->excludes
-exluding->excluding
+exludes->excludes, exudes,
+exluding->excluding, exuding,
 exlusive->exclusive
 exlusively->exclusively
 exmaple->example
@@ -6807,6 +6810,7 @@ implments->implements
 imploys->employs
 imporing->importing
 importamt->important
+importat->important
 importd->imported
 imporv->improve, improv,
 imporve->improve
@@ -14312,6 +14316,10 @@ wieh->view
 wierd->weird
 wieth->width
 wiew->view
+wighed->weighed, wicked,
+wight->weight, white, right, wight,
+wighted->weighted, weighed,
+wights->weights, whites, rights, wights,
 wih->with
 wihite->white
 wihle->while
