@@ -2918,6 +2918,7 @@ conficts->conflicts
 confidental->confidential
 confidentally->confidentially
 confids->confides
+configed->configured
 configer->configure
 configire->configure
 configration->configuration
@@ -3349,6 +3350,9 @@ corect->correct
 corected->corrected
 corectly->correctly
 coreespond->correspond
+corelate->correlate
+corelated->correlated
+corelates->correlates
 corener->corner, coroner,
 corerct->correct
 corerctly->correctly
@@ -3465,7 +3469,7 @@ countour->contour
 countours->contours
 countr->counter
 countrie's->countries, countries', country's,
-cource->course
+cource->course, source,
 coururier->courier, couturier,
 couse->course, cause,
 couses->courses, causes,
@@ -3502,6 +3506,8 @@ createable->creatable
 createdd->created
 createing->creating
 creationg->creation, creating,
+creatre->create
+creatred->created
 creats->creates
 creche->crèche
 credate->created
@@ -4482,6 +4488,8 @@ discriptions->descriptions
 discriptor's->descriptor's
 disctinction->distinction
 disctinctive->distinctive
+disctionaries->dictionaries
+disctionary->dictionary
 discusion->discussion
 disemination->dissemination
 disenchanged->disenchanted
@@ -5524,6 +5532,7 @@ expeditonary->expeditionary
 expeiments->experiments
 expell->expel
 expells->expels
+expendeble->expendable
 expeption->exception
 experiance->experience
 experianced->experienced
@@ -6356,8 +6365,14 @@ hanling->handling
 hanshake->handshake
 hanshakes->handshakes
 hapen->happen
+hapend->happened
 hapened->happened
 hapening->happening
+hapenn->happen
+hapenned->happened
+hapenning->happening
+hapenns->happens
+hapens->happens
 happaned->happened
 happend->happened
 happended->happened
@@ -8239,6 +8254,7 @@ mechananism->mechanism
 mechandise->merchandise
 mechansim->mechanism
 mechine->machine
+mechines->machines
 mechnism->mechanism
 mechnisms->mechanisms
 medacine->medicine
@@ -8429,6 +8445,7 @@ miscelleneous->miscellaneous
 mischeivous->mischievous
 mischevious->mischievous
 mischievious->mischievous
+misconfiged->misconfigured
 misdameanor->misdemeanor
 misdameanors->misdemeanors
 misdemenor->misdemeanor
@@ -8812,6 +8829,7 @@ nohypen->nohyphen
 noice->noise, nice, notice,
 nomimal->nominal
 non-assiged->non-assigned
+non-corelated->correlated
 non-inreractive->non-interactive
 noncombatents->noncombatants
 nonexistant->nonexistent
@@ -9010,6 +9028,7 @@ ocurrence->occurrence
 ocurrences->occurrences
 oder->order, odor,
 oen->one
+ofcource->of course
 offcers->officers
 offcially->officially
 offereings->offerings
@@ -10041,6 +10060,7 @@ precondtioners->preconditioners
 precondtionner->preconditioner
 precondtionners->preconditioners
 precondtions->preconditions
+preconfiged->preconfigured
 precsions->precisions
 precumputed->precomputed
 precurser->precursor
@@ -10726,6 +10746,7 @@ recompence->recompense
 recomputaion->recomputation
 reconaissance->reconnaissance
 reconcilation->reconciliation
+reconfiged->reconfigured
 recongized->recognized
 reconized->recognized
 reconnaisance->reconnaissance
@@ -10739,6 +10760,7 @@ recontructors->reconstructors
 recontructs->reconstructs
 recordproducer->record producer
 recored->recorded
+recource->resource
 recources->resources
 recquired->required
 recrational->recreational
@@ -10889,6 +10911,7 @@ regartless->regardless
 regeister->register
 regeistered->registered
 regeistration->registration
+regenarated->regenerated
 regession->regression
 regestered->registered
 regidstered->registered
@@ -11253,6 +11276,8 @@ rertieves->retrieves
 rerurn->return, rerun,
 resaurant->restaurant
 resaurants->restaurants
+rescource->resource
+rescources->resources
 reselction->reselection
 resembelance->resemblance
 resembes->resembles
@@ -11697,6 +11722,7 @@ secound->second
 secratary->secretary
 secretery->secretary
 secrion->section
+secruity->security
 sectin->section
 sectins->sections
 sectionning->sectioning
@@ -12000,6 +12026,8 @@ singals->signals
 singe->singe, single,
 singed->signed, singled, singed,
 singlton->singleton
+singnal->signal
+singnalled->signalled
 singnals->signals
 singol->signal, single,
 singoolar->singular
@@ -12065,6 +12093,8 @@ snaped->snapped
 snaphot->snapshot
 snaphsot->snapshot
 snaping->snapping
+snapsnot->snapshot
+snapsnots->snapshots
 sneeks->sneaks
 snese->sneeze
 snipet->snippet
@@ -12883,6 +12913,8 @@ synronous->synchronous
 syntaxg->syntax
 syntesis->synthesis
 syntetic->synthetic
+syntetize->synthesize
+syntetized->synthesized
 synthethic->synthetic
 syphyllis->syphilis
 sypmtoms->symptoms
@@ -13613,9 +13645,11 @@ unconditionnal->unconditional
 unconditionnally->unconditionally
 unconditionnaly->unconditionally
 uncondtionally->unconditionally
+unconfiged->unconfigured
 unconfortability->discomfort
 uncontitutional->unconstitutional
 unconvential->unconventional
+uncorelated->uncorrelated
 uncorrect->incorrect
 uncorrectly->incorrectly
 uncoverted->unconverted
