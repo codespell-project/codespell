@@ -1872,6 +1872,8 @@ bugus->bogus
 buid->build
 buiding->building
 buil->build, built,
+build-dependancies->build-dependencies
+build-dependancy->build-dependency
 build-in->built-in
 builded->built
 buillt->built
@@ -5283,6 +5285,7 @@ etablished->established
 etablishing->establishing
 etcp->etc
 ethe->the
+etherenet->ethernet
 ethnocentricm->ethnocentrism
 ethose->those, ethos,
 etsablishment->establishment
@@ -8195,6 +8198,8 @@ Massachussetts->Massachusetts
 massmedia->mass media
 masster->master
 masterbation->masturbation
+matainer->maintainer
+matainers->maintainers
 mataphysical->metaphysical
 matchies->matches
 matchin->matching
@@ -8306,6 +8311,7 @@ menual->manual
 menue->menu
 menues->menus
 menutitems->menuitems
+meny->menu, many,
 meranda->veranda, Miranda,
 mercentile->mercantile
 merget->merge
@@ -10051,7 +10057,7 @@ precceding->preceding
 preced->precede
 precedessor->predecessor
 preceds->precedes
-preceed->precede
+preceed->precede, proceed,
 preceeded->preceded
 preceeding->preceding
 preceeds->precedes
@@ -10532,6 +10538,7 @@ pxoxy->proxy
 pyhsical->physical
 pyramide->pyramid
 pyramides->pyramids
+pyrhon->python
 pyscic->psychic
 pythin->python
 pytnon->python
@@ -11288,6 +11295,8 @@ rerference->reference
 rerpesentation->representation
 rertieves->retrieves
 rerurn->return, rerun,
+resart->restart
+resarts->restarts
 resaurant->restaurant
 resaurants->restaurants
 rescource->resource
@@ -11462,6 +11471,8 @@ retriving->retrieving
 retrun->return
 retruned->returned
 retruns->returns
+retsart->restart
+retsarts->restarts
 retun->return
 retuned->retuned, returned,
 retunr->return, retune,
@@ -12415,6 +12426,8 @@ stiring->stirring
 stirng->string
 stirngs->strings
 stirrs->stirs
+stivk->stick
+stivks->sticks
 stle->style
 stlye->style
 stlyes->styles
@@ -13472,6 +13485,7 @@ trasaction->transaction
 trascation->transaction
 trasfer->transfer
 trasferred->transferred
+trasfers->transfers
 traslate->translate
 traslated->translated
 traslates->translates
