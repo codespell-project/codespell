@@ -39,6 +39,14 @@ Some noteworthy flags::
 
 The -w flag will actually implement the changes recommended by codespell. Not running with ``-w`` flag is the same as with doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.::
 
+    codespell -I FILE, --ignore-words=FILE
+
+The -I flag can be used to whitelist certain words that are in the ``codespell_lib/data/dictionary.txt``. The format of the whitelist file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said whitelist. **Important note:** The whitelist passed to ``-I`` is case-sensitive based on how it is listed in ``dictionary.txt``. ::
+
+    codespell -L word1,word2,word3,word4
+
+The -L flag can be used to whitelist certain words that are comma-separated placed immediately after it. ::
+
     codespell -S, --skip=
 
 Comma-separated list of files to skip. It accepts globs as well.  Examples:
@@ -47,15 +55,13 @@ Comma-separated list of files to skip. It accepts globs as well.  Examples:
 
 * to skip directories, invoke ``codespell --skip="./src/3rd-Party,./src/Test"`` ::
 
-    codespell -I FILE, --ignore-words=FILE
-
-This flag can be used to whitelist certain words that are in the ``codespell_lib/data/dictionary.txt``. The format of the whitelist file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said whitelist. **Important note:** The whitelist passed to ``-I`` is case-sensitive based on how it is listed in ``dictionary.txt``.
 
 Useful commands::
 
     codespell -d -q 3 --skip="*.po,*.ts,./src/3rdParty,./src/Test"
 
-List all typos found except translation files and some directories. Display them without terminal colors and with a quiet level of 3. ::
+| List all typos found except translation files and some directories.
+Display them without terminal colors and with a quiet level of 3. ::
 
     codespell -i 3 -w
 
@@ -67,7 +73,7 @@ after applying them in projects like Linux Kernel, EFL, oFono among others.
 You can provide your own version of the dictionary, but patches for
 new/different entries are very welcome.
 
-Want to know if a word you're proposing exists in codespell already? It is possible to test a word against the current dictionary that exists in ``codespell_lib/data/dictionary.txt`` via:
+Want to know if a word you're proposing exists in codespell already? It is possible to test a word against the current dictionary that exists in ``codespell_lib/data/dictionary.txt`` via::
 
     echo "word" | codespell -
     echo "1stword,2ndword" | codespell -
