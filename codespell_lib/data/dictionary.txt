@@ -8802,6 +8802,8 @@ negtive->negative
 neice->niece, nice,
 neigbor->neighbor
 neigborhood->neighborhood
+neigboring->neighboring
+neigbors->neighbors
 neigbour->neighbour, neighbor,
 neigbourhood->neighbourhood
 neigbouring->neighbouring, neighboring,
@@ -10430,6 +10432,7 @@ propert->property
 propertery->property
 propertie->property, properties,
 propertise->properties
+propertly->properly, property,
 propertys->properties
 propertyst->properties
 propery->property, properly,
@@ -10639,6 +10642,7 @@ rasterise->rasterize
 rathar->rather
 rathern->rather
 rceating->creating
+rduce->reduce
 reaaly->really
 reaccurring->recurring
 reaceive->receive
