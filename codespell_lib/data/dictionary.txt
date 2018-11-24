@@ -863,6 +863,7 @@ anonymouse->anonymous
 anonymus->anonymous
 anormaly->abnormally
 anoter->another
+anothe->another
 anounced->announced
 anouncement->announcement
 anoying->annoying
@@ -1742,6 +1743,7 @@ bizzare->bizarre
 blaim->blame
 blaimed->blamed
 blak->black, blank,
+blanace->balance
 blanck->blank, black,
 blancked->blanked
 blcok->block
@@ -1780,6 +1782,8 @@ booleamn->boolean
 booleanss->booleans
 booleen->boolean
 boolen->boolean
+boomark->bookmark
+boomarks->bookmarks
 booolean->boolean
 boostrap->bootstrap
 bootom->bottom
@@ -2498,6 +2502,7 @@ coeficents->coefficients
 coeficient->coefficient
 coelesce->coalesce
 coexsiting->coexisting
+cofidence->confidence
 cofiguration->configuration
 cofigure->configure
 cofigured->configured
@@ -5899,6 +5904,7 @@ foootball->football
 foorter->footer
 footnoes->footnotes
 foppy->floppy
+foppys->floppies
 foramatting->formatting
 foramt->format
 forbad->forbade
@@ -6124,6 +6130,7 @@ garantee->guarantee
 garanteed->guaranteed
 garantees->guarantees
 garanty->guarantee
+gard->guard
 gardai->gardaí
 garentee->guarantee
 gargage->garbage, garage,
@@ -6785,6 +6792,8 @@ implememts->implements
 implemenatation->implementation
 implemenation->implementation
 implemenations->implementations
+implemend->implement
+implemends->implements
 implemenetation->implementation
 implemenetions->implementations
 implemenrt->implement
@@ -8097,6 +8106,8 @@ maintiain->maintain
 maintians->maintains
 maintinaing->maintaining
 maintioned->mentioned
+maitain->maintain
+maitained->maintained
 maitainers->maintainers
 majoroty->majority
 maked->marked, made,
@@ -10550,6 +10561,7 @@ pususading->persuading
 puting->putting
 pwoer->power
 pxoxy->proxy
+pyhon->python
 pyhsical->physical
 pyhthon->python
 pyhton->python
@@ -11642,6 +11654,7 @@ Sacremento->Sacramento
 sacrifical->sacrificial
 sacrifying->sacrificing
 sade->sad
+safeing->saving
 safequard->safeguard
 safly->safely
 saftey->safety
@@ -11873,6 +11886,7 @@ seperatly->separately
 seperator->separator
 seperators->separators
 sepina->subpoena
+seporate->separate
 sepperate->separate
 seprarate->separate
 seprate->separate
@@ -12508,6 +12522,7 @@ striclty->strictly
 strictist->strictest
 strig->string
 strikely->strikingly
+strinsg->strings
 stript->stripped
 strnad->strand
 stroage->storage
@@ -13469,6 +13484,7 @@ transitor->transistor
 transitors->transistors
 translater->translator
 translaters->translators
+translatied->translated
 translteration->transliteration
 transmision->transmission
 transmisive->transmissive
@@ -13977,6 +13993,7 @@ upates->updates
 upating->updating
 upcomming->upcoming
 updat->update
+updateded->updated
 updateing->updating
 updatig->updating
 updats->updates
@@ -14005,6 +14022,7 @@ upstread->upstream
 upstreamedd->upstreamed
 upstrema->upstream
 uptadeable->updatable
+uptim->uptime
 uptions->options
 upto->up to
 uptream->upstream
@@ -14153,6 +14171,8 @@ vegtable->vegetable
 vehicule->vehicle
 velidate->validate
 vell->well
+vender->vendor
+venders->vendors
 venemous->venomous
 vengance->vengeance
 vengence->vengeance
@@ -14174,6 +14194,7 @@ veriosn->version
 veriosns->versions
 verious->various
 verison->version
+verisoned->versioned
 verisons->versions
 veritcal->vertical
 veritical->vertical
