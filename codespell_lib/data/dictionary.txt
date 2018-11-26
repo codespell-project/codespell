@@ -291,6 +291,7 @@ actived->activated
 activeta->activate
 activete->activate
 activites->activities
+activiti->activity, activities,
 activitis->activities
 activitiy->activity
 activly->actively
@@ -2383,6 +2384,8 @@ cilyndres->cylinders
 cilyndrs->cylinders
 Cincinatti->Cincinnati
 Cincinnatti->Cincinnati
+cinfiguration->configuration
+cinfigurations->configurations
 cintaner->container
 circual->circular
 circularly->circular, circularly,
@@ -2656,6 +2659,7 @@ commited->committed
 commitee->committee
 commiter->committer
 commiters->committers
+commitin->committing
 commiting->committing
 committ->commit
 committe->committee
@@ -4269,6 +4273,8 @@ diabling->disabling
 diagnotic->diagnostic
 diagonale->diagonal
 diagramas->diagrams
+dialgo->dialog
+dialgos->dialogs
 diamon->diamond
 diamons->diamonds
 diangose->diagnose
@@ -4747,6 +4753,7 @@ driectly->directly
 drity->dirty
 drivr->driver
 drnik->drink
+dropabel->droppable
 dropable->droppable
 droped->dropped
 droping->dropping
@@ -7439,6 +7446,12 @@ interactionns->interactions
 interactiv->interactive
 interactivly->interactively
 interafce->interface
+interakt->interact
+interaktion->interaction
+interaktions->interactions
+interaktive->interactively
+interaktively->interactively
+interaktivly->interactively
 interal->internal, integral,
 interally->internally
 interals->internals
@@ -7863,6 +7876,7 @@ lazer->laser
 lazyness->laziness
 leaast->least
 leace->leave
+leack->leak
 leaded->led, lead, leaded,
 leage->league
 leanr->lean, learn, leaner,
@@ -8015,6 +8029,7 @@ loccked->locked
 locgical->logical
 lockingf->locking
 lod->load
+loding->loading
 loev->love
 logcal->logical
 loger->logger, longer,
@@ -8542,6 +8557,8 @@ mmnemonic->mnemonic
 modell->model
 moderm->modem
 modesettting->modesetting
+modeul->module
+modeuls->modules
 modfel->model
 modfied->modified
 modfies->modifies
@@ -8665,6 +8682,7 @@ multipiler->multiplier
 multipl->multiple, multiply,
 multipled->multiplied
 multiplers->multipliers
+multiplicites->multiplicities
 multipul->multiple
 multipy->multiply
 multithreded->multithreaded
@@ -8702,6 +8720,7 @@ mutiply->multiply
 mutli->multi
 mutliple->multiple
 mutlipler->multiplier
+mutliplicites->multiplicities
 mutliply->multiply
 mybe->maybe
 mye->may, my,
@@ -8803,6 +8822,8 @@ negtive->negative
 neice->niece, nice,
 neigbor->neighbor
 neigborhood->neighborhood
+neigboring->neighboring
+neigbors->neighbors
 neigbour->neighbour, neighbor,
 neigbourhood->neighbourhood
 neigbouring->neighbouring, neighboring,
@@ -9523,8 +9544,10 @@ paramenters->parameters
 parametere->parameter
 parameterical->parametrical
 parameterizes->parametrizes
+parameterts->parmeters
 parametes->parameters
 parametised->parametrised
+parametr->parameter
 parametter->parameter
 parametters->parameters
 paramter->parameter
@@ -10127,6 +10150,8 @@ prefectly->perfectly
 prefere->prefer, preferred,
 prefered->preferred
 prefering->preferring
+prefernce->preference
+prefernces->preferences
 preferr->prefer
 preferrable->preferable
 preferrably->preferably
@@ -10431,6 +10456,7 @@ propert->property
 propertery->property
 propertie->property, properties,
 propertise->properties
+propertly->properly, property,
 propertys->properties
 propertyst->properties
 propery->property, properly,
@@ -10506,6 +10532,7 @@ provisiosn->provision
 provisonal->provisional
 provode->provide
 proximty->proximity
+prozess->process
 prpeparations->preparations
 prrottypes->prototypes
 prufe->proof
@@ -10640,6 +10667,7 @@ rasterise->rasterize
 rathar->rather
 rathern->rather
 rceating->creating
+rduce->reduce
 reaaly->really
 reaccurring->recurring
 reaceive->receive
@@ -11584,6 +11612,9 @@ rmeote->remote
 rmeove->remove
 rmeoved->removed
 rmeoves->removes
+rmove->remove
+rmoved->removed
+rmoving->removing
 roataion->rotation
 roatation->rotation
 roated->rotated
@@ -11601,6 +11632,7 @@ rotaiton->rotation
 rotaitons->rotations
 rotataion->rotation
 rotataions->rotations
+rotatio->rotation
 rouding->rounding
 rouge->rogue
 roughtly->roughly
@@ -11916,6 +11948,7 @@ sergent->sergeant
 serialiazation->serialization
 serie->series
 serieses->series
+serios->serious
 seriuos->serious
 serivce->service
 serivces->services
@@ -12417,6 +12450,7 @@ stard->start
 startegic->strategic
 startegies->strategies
 startegy->strategy
+startet->started
 startign->starting
 startlisteneing->startlistening
 startting->starting
