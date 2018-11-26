@@ -11596,6 +11596,9 @@ rmeote->remote
 rmeove->remove
 rmeoved->removed
 rmeoves->removes
+rmove->remove
+rmoved->removed
+rmoving->removing
 roataion->rotation
 roatation->rotation
 roated->rotated
