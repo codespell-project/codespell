@@ -257,6 +257,11 @@ def parse_options(args):
                            'choose one fix when more than one is '
                            'available; 3 applies both 1 and 2')
 
+    parser.add_option('-n', '--no-context',
+                      action='store_true', default=False,
+                      help='(when reading stdin) Do not print the line '
+                           'above the correction')
+
     parser.add_option('-q', '--quiet-level',
                       action='store', type='int', default=0,
                       help='Bitmask that allows codespell to run quietly. '
@@ -551,6 +556,11 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
                           " ==> %(RIGHTWORD)s%(REASON)s"
                           % {'FILENAME': cfilename, 'LINE': cline,
                              'WRONGWORD': cwrongword,
+                             'RIGHTWORD': crightword, 'REASON': creason})
+                elif options.no_context:
+                    print('%(LINE)s: %(WRONGWORD)s '
+                          '==> %(RIGHTWORD)s%(REASON)s'
+                          % {'LINE': cline, 'WRONGWORD': cwrongword,
                              'RIGHTWORD': crightword, 'REASON': creason})
                 else:
                     print('%(LINE)s: %(STRLINE)s\n\t%(WRONGWORD)s '
