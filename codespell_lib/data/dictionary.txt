@@ -2108,9 +2108,13 @@ cartrige->cartridge
 cas->case
 cascace->cascade
 case-insenstive->case-insensitive
+case-insesitive->case-insensitive
 case-sensitve->case-sensitive
+case-sesitive->case-sensitive
 caseinsenstive->case-insensitive
+caseinsesitive->case-insensitive
 casesensitve->case-sensitive
+casesesitive->case-sensitive
 casette->cassette
 cashe->cache
 casion->caisson
@@ -7339,6 +7343,7 @@ inseperable->inseparable
 insering->inserting
 insertin->inserting
 insertino->inserting
+insesitive->insensitive
 insetad->instead
 inseted->inserted
 insided->inside
@@ -11975,6 +11980,7 @@ servce->service
 servces->services
 serveice->service
 serveral->several
+sesitive->sensitive
 sesssion->session
 sesssions->sessions
 seting->setting
