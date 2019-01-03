@@ -907,6 +907,7 @@ anythimng->anything
 anyting->anything
 anytying->anything
 aond->and
+aother->another, other, mother,
 aovid->avoid
 apapted->adapted
 aparent->apparent
@@ -1214,6 +1215,7 @@ assemple->assemble
 assersion->assertion
 assertation->assertion
 assesment->assessment
+assessmant->assessment
 assgin->assign
 assgined->assigned
 assgining->assigning
@@ -1314,6 +1316,7 @@ asynchonous->asynchronous
 asynchonously->asynchronously
 asynchornous->asynchronous
 asynchrnous->asynchronous
+asynchron->asynchronous
 asynchroneously->asynchronously
 asynchronious->asynchronous
 asynchrons->asynchronous
@@ -1563,7 +1566,7 @@ backsapce->backspace
 backslase->backslash
 backslases->backslashes
 backslashs->backslashes
-backupped->backed-up
+backupped->backed-up, backed up,
 backware->backward
 backword->backward, backword,
 backwords->backwards, backwords,
@@ -1821,6 +1824,7 @@ boudary->boundary
 bouding->bounding
 boundaryi->boundary
 boundarys->boundaries
+bounderies->boundaries
 boundries->boundaries
 boundry->boundary
 bouning->bounding
@@ -1930,6 +1934,7 @@ buttton->button
 butttons->buttons
 buuild->build
 bwtween->between
+byteorder->byte order
 cace->cache
 cach->catch, cache,
 cacheing->caching
@@ -3025,6 +3030,7 @@ connot->cannot
 conntents->contents
 conntroller->controller
 conotations->connotations
+conpares->compares
 conquerd->conquered
 conquerer->conqueror
 conquerers->conquerors
@@ -4470,6 +4476,7 @@ diretory->directory
 dirived->derived
 dirver->driver
 disabe->disable
+disabels->disables
 disabl->disable
 disabler->disabled
 disadvantadge->disadvantage
@@ -4844,6 +4851,7 @@ dynically->dynamically
 dynmaic->dynamic
 dynmaically->dynamically
 dynmically->dynamically
+eabled->enabled
 eacf->each
 eacg->each
 eachother->each other
@@ -4926,6 +4934,7 @@ electon->election, electron,
 electrial->electrical
 electricly->electrically
 electricty->electricity
+electrinics->electronics
 electrnoics->electronics
 eleent->element
 elegible->eligible
@@ -5640,6 +5649,7 @@ explotation->exploitation, exploration,
 exploting->exploiting, exploring,
 expolde->explode
 exponetial->exponential
+exportet->exported, exporter,
 exppressed->expressed
 expresion->expression
 expresions->expressions
@@ -5990,6 +6000,7 @@ formattting->formatting
 formelly->formerly
 formely->formerly
 formend->formed
+formes->forms, formed,
 formidible->formidable
 formmatted->formatted
 formost->foremost
@@ -6111,6 +6122,7 @@ fullfilled->fulfilled
 fullfilling->fulfilling
 fullfills->fulfills
 fullfils->fulfils
+fulsh->flush
 funcion->function
 funcions->functions
 funciton->function
@@ -7156,6 +7168,7 @@ inefficienty->inefficiently
 inefficieny->inefficiency, inefficiently,
 ineffient->inefficient
 ineffiently->inefficiently
+inequalitiy->inequality
 inernal->internal
 inerrupt->interrupt
 inertion->insertion
@@ -7191,6 +7204,7 @@ influeced->influenced
 influeces->influences
 influecing->influencing
 influencial->influential
+influencin->influencing
 influented->influenced
 infoemation->information
 infomation->information
@@ -7507,7 +7521,7 @@ interaktions->interactions
 interaktive->interactively
 interaktively->interactively
 interaktivly->interactively
-interal->internal, integral,
+interal->internal, interval, integral,
 interally->internally
 interals->internals
 interaly->internally
@@ -7944,7 +7958,7 @@ leapyear->leap year
 leapyears->leap years
 leas->least, lease,
 leaset->least
-leat->lead, leak, least,
+leat->lead, leak, least, leaf,
 leathal->lethal
 leats->least
 lefted->left
@@ -9061,6 +9075,7 @@ obejct->object
 obeserve->observe
 obession->obsession
 obgect->object
+objec->object
 objectss->objects
 objejct->object
 objekt->object
@@ -9252,8 +9267,10 @@ openin->opening
 openned->opened
 openning->opening
 operaion->operation
+operaror->operator
 operatation->operation
 operatations->operations
+operater->operator
 operatio->operation
 operatng->operating
 operaton->operation
@@ -9481,6 +9498,7 @@ overlayed->overlaid
 overlflow->overflow
 overlodaded->overloaded
 overloded->overloaded
+overlodes->overloads
 overriabled->overridable
 overriddden->overridden
 overridded->overridden
@@ -9616,7 +9634,8 @@ paramerters->parameters
 parametere->parameter
 parameterical->parametrical
 parameterizes->parametrizes
-parameterts->parmeters
+parameterset->parameter set
+parameterts->parameters
 parametes->parameters
 parametic->parametric, paramedic,
 parametised->parametrised
@@ -9662,6 +9681,7 @@ parliment->parliament
 parmaeter->parameter
 parmaeters->parameters
 parmeter->parameter
+parmeters->parameters
 parnoia->paranoia
 parrakeets->parakeets
 parralel->parallel
@@ -9981,6 +10001,7 @@ poiters->pointers
 poitn->point
 poitner->pointer
 poitning->pointing
+poit->point
 poits->points
 poject->project
 pojecting->projecting
@@ -10625,6 +10646,7 @@ psaswd->passwd
 pseudononymous->pseudonymous
 pseudonyn->pseudonym
 pseuo-palette->pseudo-palette
+psrameter->parameter
 pssed->passed
 pssibility->possibility
 psuedo->pseudo
@@ -10824,6 +10846,7 @@ rebulit->rebuilt
 recalcuated->recalculated
 recalcution->recalculation
 recalulate->recalculate
+recalulation->recalculation
 reccomend->recommend
 reccomendations->recommendations
 reccomended->recommended
@@ -11010,6 +11033,7 @@ referemce->reference
 referemces->references
 referenc->reference
 referencs->references
+referenct->referenced
 referene->reference
 referenece->reference
 refereneced->referenced
@@ -11677,6 +11701,7 @@ rewriten->rewritten
 rewuired->required
 rference->reference
 rferences->references
+rfeturned->returned
 rgister->register
 rhymme->rhyme
 rhythem->rhythm
@@ -12093,6 +12118,7 @@ shiped->shipped
 shiping->shipping
 shoftware->software
 shoild->should
+shold->should, hold,
 shopkeeepers->shopkeepers
 shorly->shortly
 short-cicruit->short-circuit
@@ -13352,6 +13378,7 @@ thgat->that
 thge->the
 thicking->thinking, thickening,
 thicknes->thickness, thickens,
+thid->this
 thie->the, this,
 thier->their
 thign->thing
@@ -13784,6 +13811,7 @@ umambiguous->unambiguous
 umark->unmark
 umarked->unmarked
 umbrealla->umbrella
+umit->unit
 ummark->unmark
 umoutn->umount
 unabailable->unavailable
@@ -14554,6 +14582,7 @@ whichs->which's
 whicht->which
 whihc->which
 whilest->whilst
+whilw->while
 whioch->which
 whiped->wiped
 whis->this
