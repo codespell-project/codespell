@@ -1938,7 +1938,7 @@ buttton->button
 butttons->buttons
 buuild->build
 bwtween->between
-byteorder->byte order
+byteorder->byte order, disabled due to Java class
 cace->cache
 cach->catch, cache,
 cacheing->caching
