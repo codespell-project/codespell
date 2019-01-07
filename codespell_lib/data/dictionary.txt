@@ -653,7 +653,8 @@ alllocate->allocate
 alllow->allow
 alllows->allows
 allmost->almost
-alloate->allocate
+alloate->allocate, allotted, allot,
+alloated->allocated, allotted,
 allocal->allocate
 allocat->allocate
 alloced->allocated
@@ -1529,6 +1530,7 @@ avaluating->evaluating
 avaoid->avoid
 avaoided->avoided
 avarage->average
+avarageing->averaging
 avarege->average
 avary->every, aviary,
 avation->aviation
@@ -2786,6 +2788,7 @@ compleates->completes
 compleating->completing
 compleatly->completely
 complelely->completely
+compleness->completeness
 complet->complete
 completedthe->completed the
 completelly->completely
@@ -2812,6 +2815,7 @@ compnent->component
 compnents->components
 compoennt->component
 compoent->component
+compoents->components
 compoments->components
 componant->component
 componbents->components
@@ -3111,6 +3115,7 @@ constantsm->constants
 constarnation->consternation
 constatn->constant
 constcurts->constructs
+consting->consisting
 constinually->continually
 constistency->consistency
 constists->consists
@@ -4768,10 +4773,17 @@ dowloads->downloads
 downgrate->downgrade
 downgrated->downgraded
 downlad->download
+downladed->downloaded
+downlading->downloading
 downlads->downloads
 downlod->download
+downloded->downloaded
 downloding->downloading
 downlods->downloads
+downlowd->download
+downlowded->downloaded
+downlowding->downloading
+downlowds->downloads
 dows->does
 dowt->doubt
 doxgen->doxygen
@@ -5266,6 +5278,7 @@ equivelent->equivalent
 equivilant->equivalent
 equivilent->equivalent
 equivlalent->equivalent
+equivqlent->equivalent
 equvalent->equivalent
 erally->orally, really,
 erasuer->erasure, eraser,
@@ -5386,6 +5399,8 @@ eventially->eventually
 eventuall->eventually
 eventualy->eventually
 evenually->eventually
+everage->average
+everaged->averaged
 everbody->everybody
 everone->everyone
 everthing->everything
@@ -7412,6 +7427,7 @@ instaces->instances
 instaciate->instantiate
 instad->instead
 instade->instead
+instaed->instead
 instal->install
 instalation->installation
 instalations->installations
@@ -9096,6 +9112,8 @@ obselete->obsolete
 observered->observed
 obsevrer->observer
 obsevrers->observers
+obsolite->obsolete
+obsolited->obsoleted
 obsolte->obsolete
 obsolted->obsoleted
 obssessed->obsessed
@@ -9713,6 +9731,8 @@ partioned->partitioned
 partioning->partitioning
 partision->partition
 partitial->partial
+partitioing->partitioning
+partitiones->partitions
 partiton->partition
 partitoning->partitioning
 pary->party, parry,
@@ -10233,6 +10253,8 @@ precison->precision
 precission->precision, percussion, precession,
 precize->precise
 precomuted->precomputed
+preconditoner->preconditioner
+preconditoners->preconditioners
 precondtion->precondition
 precondtioner->preconditioner
 precondtioners->preconditioners
@@ -12343,6 +12365,7 @@ solatary->solitary
 soler->solver, solar, solely,
 soley->solely
 soliders->soldiers
+solification->solidification
 soliliquy->soliloquy
 soluable->soluble
 solveable->solvable
@@ -13264,6 +13287,7 @@ tempelate->template
 temperarily->temporarily
 temperarure->temperature
 temperatur->temperature
+tempereature->temperature
 temperment->temperament
 tempertaure->temperature
 temperture->temperature
@@ -13710,6 +13734,7 @@ tremelo->tremolo
 tremelos->tremolos
 trempoline->trampoline
 treshold->threshold
+treting->treating
 trgistration->registration
 trhe->the
 triange->triangle
