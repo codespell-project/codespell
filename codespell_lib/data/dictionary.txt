@@ -264,6 +264,7 @@ acoording->according
 acoordingly->accordingly
 acording->according
 acordingly->accordingly
+acordinng->according
 acorss->across
 acount->account
 acounts->accounts
@@ -495,6 +496,7 @@ agaisnt->against
 agaist->against
 aganist->against
 aggaravates->aggravates
+aggegate->aggregate
 aggessive->aggressive
 aggessively->aggressively
 aggreate->aggregate
@@ -1165,6 +1167,7 @@ arraival->arrival
 arrance->arrange
 arrangment->arrangement
 arrangments->arrangements
+arraows->arrows
 arrary->array
 arre->are
 arrengement->arrangement
@@ -1844,6 +1847,7 @@ brach->branch
 brackeds->brackets
 brackground->background
 bradcast->broadcast
+brakpoint->breakpoint
 brance->branch, branches,
 brane->brain
 braodcasted->broadcasted
@@ -3004,6 +3008,7 @@ conig->config
 conitinue->continue
 conived->connived
 conjecutre->conjecture
+conjonctive->conjunctive
 conjuction->conjunction
 conjuctions->conjunctions
 conmnection->connection
@@ -3423,6 +3428,7 @@ corrcect->correct
 corrct->correct
 correclty->correctly
 correcly->correctly
+correctely->correctly
 correcters->correctors
 correctnes->correctness
 correcton->correction
@@ -3720,6 +3726,7 @@ debians->Debian's
 debth->depth
 debths->depths
 debufs->debugfs
+debugee->debuggee
 debugg->debug
 debugginf->debugging
 debuging->debugging
@@ -3784,6 +3791,7 @@ decoraded->decorated
 decoratrion->decoration
 decraesing->decreasing, deceasing,
 decrasing->decreasing, deceasing,
+decreace->decrease
 decresing->decreasing, deceasing,
 decress->decrees
 decribe->describe
@@ -3997,6 +4005,7 @@ dependecies->dependencies
 dependecy->dependency
 dependecys->dependencies
 dependeing->depending
+dependencie->dependency
 dependencis->dependencies
 dependencys->dependencies
 dependend->dependent, depended,
@@ -4086,6 +4095,7 @@ desccription->description
 descencing->descending
 descendands->descendants
 descendend->descended, descendent, descendant,
+descendents->descendants
 descentences->descendants, descendents,
 descibe->describe
 descibed->described
@@ -5096,6 +5106,8 @@ encosing->enclosing
 encosure->enclosure
 encounterd->encountered
 encouraing->encouraging
+encouter->encounter
+encoutered->encountered
 encoutner->encounter
 encoutners->encounters
 encrcypt->encrypt
@@ -5364,6 +5376,7 @@ etsablishment->establishment
 etsbalishment->establishment
 etst->test
 etsts->tests
+etxt->text
 euivalent->equivalent
 euivalents->equivalents
 euqivalent->equivalent
@@ -5559,7 +5572,9 @@ exerternal->external
 exeution->execution
 exhalted->exalted
 exhanged->exchanged
+exhautivity->exhaustivity
 exhibtion->exhibition
+exhustiveness->exhaustiveness
 exibition->exhibition
 exibitions->exhibitions
 exicting->exciting
@@ -5676,6 +5691,7 @@ expresso->espresso
 expresss->express
 expresssion->expression
 expresssions->expressions
+exprience->experience
 exprimental->experimental
 expropiated->expropriated
 expropiation->expropriation
@@ -6004,6 +6020,7 @@ foriegn->foreign
 forld->fold
 forlder->folder
 forlders->folders
+forma->format, from,
 Formalhaut->Fomalhaut
 formallize->formalize
 formallized->formalized
@@ -6212,6 +6229,7 @@ garantee->guarantee
 garanteed->guaranteed
 garantees->guarantees
 garanty->guarantee
+garbagge->garbage
 gard->guard
 gardai->gardaí
 garentee->guarantee
@@ -6242,7 +6260,7 @@ geneology->genealogy
 generaates->generates
 generall->generally, general,
 generaly->generally
-generat->generate
+generat->generate, general,
 generater->generator
 generaters->generators
 generaton->generation, generator,
@@ -6768,6 +6786,7 @@ identifeir->identifier
 identifer->identifier
 identifers->identifiers
 identifictaion->identification
+identifing->identifying
 identifyable->identifiable
 identiy->identify, identity,
 ideosyncratic->idiosyncratic
@@ -7062,6 +7081,7 @@ incorprates->incorporates
 incorreclty->incorrectly
 incorreect->incorrect
 incorreectly->incorrectly
+incorret->incorrect
 incorruptable->incorruptible
 incosistent->inconsistent
 incramentally->incrementally
@@ -8571,6 +8591,7 @@ ministery->ministry
 miniture->miniature
 minium->minimum
 miniums->minimums
+minmal->minimal
 minsitry->ministry
 minstries->ministries
 minstry->ministry
@@ -8997,6 +9018,7 @@ noncombatents->noncombatants
 nonexistant->nonexistent
 nonnegarive->nonnegative
 nonsence->nonsense
+nonte->note
 nontheless->nonetheless
 noo->no
 noone->no one
@@ -9069,6 +9091,7 @@ numberal->numeral
 numberals->numerals
 numberous->numerous
 numbert->number
+numbres->numbers
 numebr->number
 numebrs->numbers
 numer->number
@@ -9359,6 +9382,7 @@ optioanl->optional
 optionalliy->optionally
 optionallly->optionally
 optionaly->optionally
+optionel->optional
 optionn->option
 optionnal->optional
 optionnaly->optionally
@@ -9469,6 +9493,7 @@ othwerwise->otherwise
 othwhise->otherwise
 otiginal->original
 otion->option
+otional->optional
 otions->options
 otput->output
 oublisher->publisher
@@ -9719,6 +9744,7 @@ parrent->parent
 parseing->parsing
 parsering->parsing
 parsin->parsing
+parstree->parsetree
 partialy->partially
 particually->particularly
 particualr->particular
@@ -9890,6 +9916,7 @@ perpertrated->perpetrated
 perphas->perhaps
 perpindicular->perpendicular
 perserverance->perseverance
+persevered->preserved
 perseverence->perseverance
 persistance->persistence
 persistant->persistent
@@ -10194,6 +10221,7 @@ potentally->potentially
 potententially->potentially
 potentiallly->potentially
 potentialy->potentially
+potentiel->potential
 potentiomenter->potentiometer
 potition->position
 potrait->portrait
@@ -10358,6 +10386,7 @@ presumely->presumably
 presumibly->presumably
 pretection->protection
 pretendend->pretended
+pretty-printter->pretty-printer
 prevelant->prevalent
 preven->prevent
 prevend->prevent
@@ -12897,6 +12926,7 @@ sucessor->successor
 sucessot->successor
 sucide->suicide
 sucidial->suicidal
+sudmobules->submodules
 sufface->surface
 sufferage->suffrage
 sufferred->suffered
@@ -13401,6 +13431,7 @@ theres->there's
 therfore->therefore
 theri->their, there,
 thes->this, these,
+theses->these
 theshold->threshold
 thesholds->thresholds
 thess->this, these,
@@ -13808,6 +13839,7 @@ tyhe->they
 tyies->tries
 tyope->type
 typcial->typical
+typecheking->typechecking
 typicall->typically, typical,
 typicaly->typically
 typle->tuple
@@ -14092,6 +14124,7 @@ unqoute->unquote
 unqouted->unquoted
 unqoutes->unquotes
 unqouting->unquoting
+unreacheable->unreachable
 unreasonabily->unreasonably
 unrechable->unreachable
 unrecogized->unrecognized
