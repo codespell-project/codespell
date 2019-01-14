@@ -5281,6 +5281,7 @@ equialent->equivalent
 equilibium->equilibrium
 equilibrum->equilibrium
 equiped->equipped
+equipmentd->equipment
 equipments->equipment
 equippment->equipment
 equitorial->equatorial
@@ -7322,6 +7323,7 @@ initializaing->initializing
 initializeing->initializing
 initializiation->initialization
 initializong->initializing
+initializs->initialize, initializes,
 initialse->initialise, initialize,
 initialsed->initialised, initialized,
 initialses->initialises, initializes,
@@ -9550,6 +9552,7 @@ overridded->overridden
 overridding->overriding
 overrided->overridden
 overriden->overridden
+overrite->overwrite, override, overrate,
 overrriddden->overridden
 overrridden->overridden
 overrride->override
@@ -11066,6 +11069,7 @@ refcound->refcount
 refect->reflect
 refected->reflected
 refecting->reflecting
+refectiv->reflective
 refector->refactor
 refectoring->refactoring
 refects->reflects
