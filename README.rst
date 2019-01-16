@@ -53,11 +53,11 @@ The -S (--skip) flag is used to skip over comma-separated files and/or directori
 
 Examples:
 
-1. Skip .eps & .txt files, invoke:
+* Skip .eps & .txt files, invoke::
     ``codespell --skip="*.eps,*.txt"`` OR
     ``codespell -S *.eps,*.txt``
 
-2. Skip directories, invoke:
+* Skip directories, invoke::
     ``codespell --skip="./src/3rd-Party,./src/Test"`` OR
     ``codespell -S /src/3rd-Party,./src/Test``
 
