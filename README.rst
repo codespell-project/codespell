@@ -49,13 +49,17 @@ The -L flag can be used to whitelist certain words that are comma-separated plac
 
     codespell -S, --skip=
 
-Comma-separated list of files to skip. It accepts globs as well.  Examples:
+The -S (--skip) flag is used to skip over comma-separated files and/or directories. It accepts globs as well. **Important note:** do not append a '/' to a directory you want to skip. This currently renders the entry ineffective.
 
-* to skip .eps & .txt files, invoke ``codespell --skip="*.eps,*.txt"`` OR ``codespell -S *.eps,*.txt``
+Examples:
 
-* to skip directories, invoke ``codespell --skip="./src/3rd-Party,./src/Test"`` OR ``codespell -S /src/3rd-Party,./src/Test ::
+* Skip .eps & .txt files, invoke:
+    ``codespell --skip="*.eps,*.txt"`` OR
+    ``codespell -S *.eps,*.txt``
 
-   Note: do not append a '/' to a directory you want to skip. This currently renders the entry ineffective. 
+* Skip directories, invoke:
+    ``codespell --skip="./src/3rd-Party,./src/Test"`` OR
+    ``codespell -S /src/3rd-Party,./src/Test``
 
 Useful commands::
 
