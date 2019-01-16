@@ -1848,6 +1848,7 @@ brackeds->brackets
 brackground->background
 bradcast->broadcast
 brakpoint->breakpoint
+brakpoints->breakpoints
 brance->branch, branches,
 brane->brain
 braodcasted->broadcasted
@@ -5108,6 +5109,7 @@ encounterd->encountered
 encouraing->encouraging
 encouter->encounter
 encoutered->encountered
+encouters->encounters
 encoutner->encounter
 encoutners->encounters
 encrcypt->encrypt
@@ -6020,7 +6022,6 @@ foriegn->foreign
 forld->fold
 forlder->folder
 forlders->folders
-forma->format, from,
 Formalhaut->Fomalhaut
 formallize->formalize
 formallized->formalized
@@ -9493,7 +9494,7 @@ othwerwise->otherwise
 othwhise->otherwise
 otiginal->original
 otion->option
-otional->optional
+otional->optional, notional,
 otions->options
 otput->output
 oublisher->publisher
@@ -9744,7 +9745,7 @@ parrent->parent
 parseing->parsing
 parsering->parsing
 parsin->parsing
-parstree->parsetree
+parstree->parse tree
 partialy->partially
 particually->particularly
 particualr->particular
@@ -12925,6 +12926,7 @@ sucessor->successor
 sucessot->successor
 sucide->suicide
 sucidial->suicidal
+sudmobule->submodule
 sudmobules->submodules
 sufface->surface
 sufferage->suffrage
@@ -13430,7 +13432,7 @@ theres->there's
 therfore->therefore
 theri->their, there,
 thes->this, these,
-theses->these
+theses->these, thesis,
 theshold->threshold
 thesholds->thresholds
 thess->this, these,
@@ -13838,6 +13840,7 @@ tyhe->they
 tyies->tries
 tyope->type
 typcial->typical
+typechek->typecheck
 typecheking->typechecking
 typicall->typically, typical,
 typicaly->typically
