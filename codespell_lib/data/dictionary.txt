@@ -94,7 +94,8 @@ acccess->access
 acccessed->accessed
 acccesses->accesses
 acccessible->accessible
-acccessor->accessors
+acccessor->accessor
+acccessors->accessors
 acccused->accused
 accecpted->accepted
 accees->access
@@ -8815,12 +8816,12 @@ mountian->mountain
 mountpiont->mountpoint
 mountpionts->mountpoints
 mouspointer->mousepointer
-moutn->moutn
+moutn->mount
 moutned->mounted
 moutning->mounting
 moutnpoint->mountpoint
 moutnpoints->mountpoints
-moutns->moutns
+moutns->mounts
 movebackwrd->movebackward
 moveble->movable
 movei->movie, disabled due to assembly code
