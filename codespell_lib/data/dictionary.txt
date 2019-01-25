@@ -94,7 +94,8 @@ acccess->access
 acccessed->accessed
 acccesses->accesses
 acccessible->accessible
-acccessor->accessors
+acccessor->accessor
+acccessors->accessors
 acccused->accused
 accecpted->accepted
 accees->access
@@ -1221,7 +1222,10 @@ assasins->assassins
 assassintation->assassination
 asscciated->associated
 asscoitaed->associated
+assebly->assembly
 assember->assembler
+assemby->assembly
+assemnly->assembly
 assemple->assemble
 assersion->assertion
 assertation->assertion
@@ -1560,6 +1564,7 @@ avod->avoid
 avoded->avoided
 avoding->avoiding
 avods->avoids
+avoinding->avoiding
 avtive->active
 awared->awarded
 aways->always
@@ -2057,6 +2062,7 @@ can;t->can't
 canadan->canadian
 canbe->can be
 cancelability->cancellability
+cancelaltion->cancellation
 cancelles->cancels
 cancled->canceled
 candadate->candidate
@@ -2546,6 +2552,7 @@ coeficent->coefficient
 coeficents->coefficients
 coeficient->coefficient
 coelesce->coalesce
+coersion->coercion
 coexsiting->coexisting
 cofidence->confidence
 cofiguration->configuration
@@ -3151,6 +3158,8 @@ constraing->constraining, constraint,
 constraintes->constraints
 constrait->constraint
 constraits->constraints
+constrant->constraint
+constrants->constraints
 constrast->contrast
 constrasts->contrasts
 constrcuct->construct
@@ -4075,6 +4084,7 @@ deregistartion->deregistration
 deregisted->deregistered
 deregisteres->deregisters
 deregistrated->deregistered
+deregistred->deregistered
 derevative->derivative
 derevatives->derivatives
 dergeistered->deregistered
@@ -4362,6 +4372,7 @@ dicovers->discovers
 dicovery->discovery
 dicrectory->directory
 dicretionary->discretionary
+dicsriminated->discriminated
 dictaionaries->dictionaries
 dictaionary->dictionary
 dictinary->dictionary
@@ -4414,6 +4425,8 @@ differnce->difference
 differnces->differences
 differnet->different
 differnt->different
+differntiates->differentiates
+differntly->differently
 differrence->difference
 differrent->different
 diffferent->different
@@ -4478,6 +4491,7 @@ diplaying->displaying
 diplays->displays
 diplomancy->diplomacy
 dipose->dispose, depose,
+diposed->disposed, deposed,
 diposing->disposing, deposing,
 dipthong->diphthong
 dipthongs->diphthongs
@@ -4689,6 +4703,7 @@ distrubutions->distributions
 distruction->destruction
 distructive->destructive
 distuingish->distinguish
+disuade->dissuade
 ditance->distance
 ditinguishes->distinguishes
 ditributed->distributed
@@ -4869,6 +4884,7 @@ dumplicates->duplicates
 dumplicating->duplicating
 duoblequote->doublequote
 dupicate->duplicate
+duplciate->duplicate
 dupliate->duplicate
 dupliates->duplicates
 duplicat->duplicate
@@ -6126,6 +6142,7 @@ frambuffer->framebuffer
 framebufer->framebuffer
 framei->frame
 frametyp->frametype
+frameworkk->framework
 framlayout->framelayout
 framwork->framework
 frane->frame
@@ -7407,6 +7424,7 @@ inivisible->invisible
 inizialize->initialize
 inizialized->initialized
 inizializes->initializes
+inlalid->invalid
 inlcude->include
 inlcuded->included
 inlcudes->includes
@@ -7556,6 +7574,7 @@ intelegent->intelligent
 intelegently->intelligently
 inteligence->intelligence
 inteligent->intelligent
+intelisense->intellisense
 intenational->international
 intendet->intended
 inteneded->intended
@@ -8018,6 +8037,7 @@ lavae->larvae
 layed->laid
 lazer->laser
 lazyness->laziness
+lcoation->location
 leaast->least
 leace->leave
 leack->leak
@@ -8122,6 +8142,7 @@ limite->limit
 limitiation->limitation
 limitiations->limitations
 limitied->limited
+limitted->limited
 limted->limited
 lincese->license
 lincesed->licensed
@@ -8559,6 +8580,7 @@ micorcode->microcode
 Micorsoft->Microsoft
 micoscopy->microscopy
 Micosoft->Microsoft
+Microfost->Microsoft
 microprocesspr->microprocessor
 Microsft->Microsoft
 microship->microchip
@@ -8792,20 +8814,21 @@ moslty->mostly
 mostlky->mostly
 mosture->moisture
 motiviated->motivated
+motiviation->motivation
 motoroloa->motorola
 moudle->module
 mould->mold, mould, module,
-mounth->month
+mounth->month, mouth,
 mountian->mountain
 mountpiont->mountpoint
 mountpionts->mountpoints
 mouspointer->mousepointer
-moutn->moutn
+moutn->mount
 moutned->mounted
 moutning->mounting
 moutnpoint->mountpoint
 moutnpoints->mountpoints
-moutns->moutns
+moutns->mounts
 movebackwrd->movebackward
 moveble->movable
 movei->movie, disabled due to assembly code
@@ -9206,6 +9229,7 @@ occassioned->occasioned
 occassions->occasions
 occational->occasional
 occationally->occasionally
+occcur->occur
 occour->occur
 occoured->occurred
 occouring->occurring
@@ -9390,6 +9414,7 @@ oppsofite->opposite
 oppurtunity->opportunity
 opration->operation
 opreation->operation
+opreations->operations
 opression->oppression
 opressive->oppressive
 opten->often, open,
@@ -10821,6 +10846,7 @@ que->queue
 Queenland->Queensland
 queing->queueing
 queiried->queried
+queisce->quiesce
 queriable->queryable
 quering->querying
 querries->queries
@@ -11466,6 +11492,8 @@ repostiories->repositories
 repostiory->repository
 repport->report
 repraesentation->representation
+repreesnt->represent
+repreesnts->represents
 reprensent->represent
 reprensentation->representation
 represantative->representative
@@ -11485,7 +11513,7 @@ represnets->represents
 represnt->represent
 represntative->representative
 represnted->represented
-represnts->representative
+represnts->represents
 reprociblbe->reproducible
 reproducabely->reproducibly
 reproducable->reproducible
@@ -11584,6 +11612,7 @@ resembes->resembles
 resemblence->resemblance
 reseration->reservation
 reserverd->reserved
+reservered->reserved
 resest->reset, recessed,
 resetable->resettable
 reseted->reset
@@ -12106,6 +12135,7 @@ sentinal->sentinel
 sentinals->sentinels
 sentive->sensitive
 sentively->sensitively, sensitivity,
+sepaate->separate
 separat->separate
 separater->separator
 separatly->separately
@@ -13446,6 +13476,7 @@ texline->textline
 textfrme->textframe
 texual->textual
 texually->textually
+texxt->text
 tey->they
 tghe->the
 tha->than, that, the,
@@ -13961,6 +13992,8 @@ unbeleivable->unbelievable
 unbeliefable->unbelievable
 unbelivable->unbelievable
 unce->once
+uncehck->uncheck
+uncehcked->unchecked
 uncertainities->uncertainties
 uncertainity->uncertainty
 unchache->uncache
@@ -14780,6 +14813,7 @@ wither->wither, either, whether, weather,
 withh->with
 withih->within
 withing->within
+withinn->within
 withion->within
 witho->with
 withold->withhold
@@ -14811,6 +14845,7 @@ wont't->won't
 wont->won't, wont,
 worarounds->workarounds
 wordlwide->worldwide
+worfklow->workflow
 workaorund->workaround
 workaraound->workaround
 workarbound->workaround
