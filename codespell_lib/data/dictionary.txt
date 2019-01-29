@@ -190,6 +190,7 @@ accumlate->accumulate
 accumlated->accumulated
 accumlates->accumulates
 accumlating->accumulating
+accumualtion->accumulation
 accurable->accurate
 accurancy->accuracy
 accurary->accuracy, actuary,
@@ -577,6 +578,7 @@ alegorical->allegorical
 aleviate->alleviate
 aleviating->alleviating
 algebraical->algebraic
+algebrra->algebra
 alghoritm->algorithm
 alghoritmically->algorithmically
 alghoritms->algorithms
@@ -613,6 +615,7 @@ alhapets->alphabets
 aliasas->aliases
 alientating->alienating
 alighed->aligned
+alighnment->alignment
 aligment->alignment
 aligments->alignments
 alignation->alignment
@@ -1041,6 +1044,7 @@ approximatly->approximately
 approximitely->approximately
 approxmation->approximation
 appy->apply
+appying->applying
 aprehensive->apprehensive
 aproach->approach
 apropiate->appropriate
@@ -2518,6 +2522,7 @@ clodes->closed
 clonning->cloning
 clos->close
 closeing->closing
+clousre->closure
 clsoe->close
 cluase->clause
 clumn->column
@@ -2867,6 +2872,7 @@ compromize->compromise
 compsite->composite
 comptible->compatible
 comptue->compute
+compuation->computation
 compulsary->compulsory
 compulsery->compulsory
 compund->compound
@@ -3401,6 +3407,7 @@ coorinates->coordinates
 coorination->coordination
 coorperation->cooperation, corporation,
 coorperations->corporations
+copiler->compiler
 copletely->completely
 copmetitors->competitors
 copmonent->component
@@ -3718,6 +3725,7 @@ databae->database
 databas->database
 databse->database
 datastrem->datastream
+datatstructures->datastructures
 datea->date, data,
 daty->data, date,
 daugher->daughter
@@ -3952,6 +3960,7 @@ deivces->devices
 deklaration->declaration
 dekstop->desktop
 dekstops->desktops
+delagate->delegate
 delagates->delegates
 delapidated->dilapidated
 delarations->declarations
@@ -4283,6 +4292,7 @@ determinstic->deterministic
 determinstically->deterministically
 determintes->determines
 determnine->determine
+detet->detect
 deteted->detected
 detetmine->determine
 detination->destination
@@ -5271,6 +5281,7 @@ enumarated->enumerated
 enumarates->enumerates
 enumarating->enumerating
 enumation->enumeration
+enumerble->enumerable
 enumertaion->enumeration
 envionment->environment
 enviorment->environment
@@ -5688,6 +5699,7 @@ expermiental->experimental
 experssion->expression
 experssions->expressions
 expeted->expected
+expicit->explicit
 expidition->expedition
 expiditions->expeditions
 expierence->experience
@@ -6618,6 +6630,7 @@ heirarchies->hierarchies
 heirarchy->hierarchy
 heiroglyphics->hieroglyphics
 hel->help, hell, heal,
+helerps->helpers
 helment->helmet
 helpfull->helpful
 helpfuly->helpfully
@@ -6648,6 +6661,7 @@ hidded->hidden
 hiddin->hidden, hiding,
 hidding->hiding, hidden,
 hided->hidden, hid,
+hiden->hidden
 hiearchies->hierarchies
 hiearchy->hierarchy
 hieght->height
@@ -7160,6 +7174,7 @@ incuding->including
 incunabla->incunabula
 incure->incur
 incvalid->invalid
+indcates->indicates
 indeces->indices
 indefinately->indefinitely
 indefineable->undefinable
@@ -7334,6 +7349,7 @@ inhabitans->inhabitants
 inherantly->inherently
 inheritage->heritage, inheritance,
 inheritence->inheritance
+inheritted->inherited
 inialized->initialized
 inidicates->indicates
 inifinite->infinite
@@ -7526,6 +7542,7 @@ instansiate->instantiate
 instansiated->instantiated
 instansiates->instantiates
 instansiation->instantiation
+instantation->instantiation
 instantations->instantiations
 instantiaties->instantiates
 instanze->instance
@@ -7564,6 +7581,7 @@ intall->install
 intance->instance, intense,
 intances->instances
 intantiate->instantiate
+intantiating->instantiating
 inteaction->interaction
 intead->instead
 inted->inetd, intend,
@@ -8790,6 +8808,7 @@ monochorome->monochrome
 monochromo->monochrome
 monocrome->monochrome
 monolite->monolithic
+monontonicity->monotonicity
 Monserrat->Montserrat
 monstrum->monster
 montains->mountains
@@ -8841,6 +8860,7 @@ mozila->Mozilla
 mroe->more
 mssing->missing
 mthod->method
+mtuually->mutually
 mucuous->mucous
 muder->murder
 mudering->murdering
@@ -9433,6 +9453,7 @@ optimasation->optimization
 optimazation->optimization
 optimiality->optimality
 optimitation->optimization
+optimizaing->optimizing
 optimyze->optimize
 optimze->optimize
 optimzie->optimize
@@ -9667,6 +9688,7 @@ oximoron->oxymoron
 p0enis->penis
 pacakge->package
 pacakges->packages
+pacakging->packaging
 paceholder->placeholder
 pach->patch
 pachage->package
@@ -9745,7 +9767,7 @@ paramater->parameter
 paramaters->parameters
 paramenters->parameters
 paramerters->parameters
-parametere->parameter
+parametere->parameter, parameters,
 parameterical->parametrical
 parameterizes->parametrizes
 parameterset->parameter set
@@ -11346,6 +11368,7 @@ releasse->release
 releated->related
 releation->relation
 releative->relative
+relecant->relevant
 relected->reelected
 releive->relieve
 releived->relieved
@@ -11402,6 +11425,7 @@ remmove->remove
 remoce->remove
 remoote->remote
 remore->remote
+remorted->reported
 removeable->removable
 removeing->removing
 removerd->removed
@@ -12012,6 +12036,7 @@ sceond->second
 schdule->schedule
 schedual->schedule
 schedulier->scheduler
+schme->scheme
 scholarhip->scholarship
 scholarstic->scholastic, scholarly,
 schould->should
@@ -12113,6 +12138,7 @@ sematic->semantic
 sematical->semantical
 sematically->semantically
 sematics->semantics
+sematnics->semantics
 semgent->segment
 semicolor->semicolon
 semicolumn->semicolon
@@ -12187,6 +12213,7 @@ seqence->sequence
 seqences->sequences
 seqeuental->sequential
 seqeunce->sequence
+seqeuntials->sequentials
 sequcne->sequence
 sequece->sequence
 sequeces->sequences
@@ -12416,6 +12443,7 @@ skiped->skipped, skyped,
 skiping->skipping
 skipp->skip, skipped,
 skippd->skipped
+skipt->skip
 slase->slash
 slases->slashes
 slashs->slashes
@@ -13308,6 +13336,8 @@ sytled->styled
 sytles->styles
 sytlesheet->stylesheet
 sytling->styling
+sytnax->syntax
+sytntax->syntax
 szenario->scenario
 szenarios->scenarios
 szes->sizes
@@ -14109,6 +14139,7 @@ unforunate->unfortunate
 unforunately->unfortunately
 unfourtunately->unfortunately
 unfurtunately->unfortunately
+ungeneralizeable->ungeneralizable
 unhandeled->unhandled
 unhilight->unhighlight
 unhilighted->unhighlighted
@@ -14387,6 +14418,7 @@ usibility->usability
 usig->using
 usign->using, unsign,
 usin->using
+usinging->using
 usinng->using
 uspported->supported, unsupported,
 ussual->usual
@@ -14720,6 +14752,7 @@ wereas->whereas
 werent->weren't
 werever->wherever
 wether->weather, whether,
+wew->we
 whan->want, when,
 whant->want
 whants->wants
