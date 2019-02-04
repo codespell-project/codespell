@@ -44,6 +44,7 @@ abreviated->abbreviated
 abreviates->abbreviates
 abreviating->abbreviating
 abreviation->abbreviation
+abreviations->abbreviations
 abritrarily->arbitrarily
 abritrary->arbitrary
 absail->abseil
@@ -1186,6 +1187,7 @@ arround->around
 arrrays->arrays
 arrrives->arrives
 arrtibute->attribute
+arry->array, carry,
 arrys->arrays
 artcile->article
 artical->article
@@ -2750,6 +2752,7 @@ communciation->communication
 communiation->communication
 communicaton->communication
 communites->communities
+communuication->communication
 comobobox->combo-box
 comon->common
 comonent->component
@@ -5137,6 +5140,7 @@ enalbe->enable
 enalbed->enabled
 enalbes->enables
 enameld->enameled
+enaugh->enough
 enbale->enable
 enbaled->enabled
 enbales->enables
@@ -7832,7 +7836,7 @@ invarient->invariant
 inventer->inventor
 inverion->inversion
 inverions->inversions
-invers->inverse
+invers->inverse, invert,
 invertibrates->invertebrates
 inverval->interval
 investingate->investigate
@@ -8008,6 +8012,7 @@ koordinate->coordinate
 koordinates->coordinates
 kown->known
 kwno->know
+kwoledgebase->knowledge base
 kyrillic->cyrillic
 labatory->lavatory, laboratory,
 labed->labeled
@@ -9105,6 +9110,7 @@ noncombatents->noncombatants
 nonexistant->nonexistent
 nonnegarive->nonnegative
 nonsence->nonsense
+nonsens->nonsense
 nonte->note
 nontheless->nonetheless
 noo->no
@@ -9661,6 +9667,7 @@ overvize->otherwise
 overwelm->overwhelm
 overwelming->overwhelming
 overwheliming->overwhelming
+overwiew->overview
 overwise->otherwise
 overwite->overwrite
 overwites->overwrites
@@ -14200,6 +14207,7 @@ unkonwn->unknown
 unkonwns->unknowns
 unkown->unknown
 unkowns->unknowns
+unkwown->unknown
 unles->unless
 unlikey->unlikely
 unlimitied->unlimited
