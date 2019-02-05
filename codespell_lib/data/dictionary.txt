@@ -766,6 +766,7 @@ alue->value
 alusion->allusion, illusion,
 alvorithm->algorithm
 alwasy->always
+alwauys->always
 alway->always
 alwyas->always
 alyways->always
@@ -898,6 +899,7 @@ ansestors->ancestors
 ansynchronous->asynchronous
 antaliasing->antialiasing
 antartic->antarctic
+antecedant->antecedent
 anthor->another
 anthromorphization->anthropomorphization
 anthropolgist->anthropologist
@@ -1143,6 +1145,7 @@ argments->arguments
 argubly->arguably
 arguement->argument
 arguements->arguments
+arguemnts->arguments
 argumant->argument
 argumants->arguments
 argumemnt->argument
@@ -1227,6 +1230,7 @@ assasined->assassinated
 assasins->assassins
 assassintation->assassination
 asscciated->associated
+asscociated->associated
 asscoitaed->associated
 assebly->assembly
 assember->assembler
@@ -1307,6 +1311,7 @@ asssociated->associated
 asssuming->assuming
 assualt->assault
 assualted->assaulted
+assuembly->assembly
 assumme->assume
 assummed->assumed
 assummes->assumes
@@ -1843,6 +1848,7 @@ bostom->boston, bottom,
 bothe->both
 botifies->notifies
 bottlenect->bottleneck
+bottome->bottom
 botton->bottom, button,
 botttom->bottom
 boudaries->boundaries
@@ -2140,6 +2146,7 @@ Carnigie->Carnegie
 Carnigie-Mellon->Carnegie-Mellon
 carniverous->carnivorous
 carreer->career
+carreid->carried
 carrers->careers
 Carribbean->Caribbean
 Carribean->Caribbean
@@ -2582,6 +2589,7 @@ cointains->contains
 colaboration->collaboration
 colaborations->collaborations
 colateral->collateral
+colelction->collection
 colelctive->collective
 colerscheme->colorscheme
 colision->collision
@@ -2744,6 +2752,7 @@ commonweath->commonwealth
 commparisons->comparisons
 commpessed->compressed
 commpn->common
+commputing->computing
 commuication->communication
 commuications->communications
 commuinications->communications
@@ -3075,6 +3084,7 @@ conquerd->conquered
 conquerer->conqueror
 conquerers->conquerors
 conqured->conquered
+conrete->concrete
 conrol->control
 conroller->controller
 conrrol->control
@@ -3144,6 +3154,7 @@ consonents->consonants
 consorcium->consortium
 conspiracys->conspiracies
 conspiriator->conspirator
+consructor->constructor
 constaints->constraints
 constallation->constellation
 constanly->constantly
@@ -3466,6 +3477,7 @@ corosbonding->corresponding
 corosion->corrosion
 corparate->corporate
 corperations->corporations
+corpration->corporation
 corrcect->correct
 corrct->correct
 correclty->correctly
@@ -3523,6 +3535,7 @@ corrrupted->corrupted
 corrspond->correspond
 corrsponds->corresponds
 corruptiuon->corruption
+cosntructor->constructor
 costitution->constitution
 costruct->construct
 costructer->constructor
@@ -3927,6 +3940,7 @@ defininitions->definitions
 definintion->definition
 definit->definite
 definitian->definition
+definitio->definition
 definitivly->definitively
 definitly->definitely
 definitoin->definition
@@ -5633,6 +5647,7 @@ exerternal->external
 exeution->execution
 exhalted->exalted
 exhanged->exchanged
+exhaused->exhausted
 exhautivity->exhaustivity
 exhibtion->exhibition
 exhustiveness->exhaustiveness
@@ -7167,6 +7182,7 @@ incremeantal->incremental
 incrementall->incremental, incrementally,
 incremet->increment
 incremetal->incremental
+incrfemental->incremental
 incrment->increment
 incrmental->incremental
 incrmentally->incrementally
@@ -7688,6 +7704,7 @@ interger->integer
 intergers->integers
 intergrated->integrated
 intergration->integration
+interliveing->interleaving
 interlly->internally
 interm->interim
 intermidiate->intermediate
@@ -8244,6 +8261,7 @@ logwritter->logwriter
 lokal->local
 lokale->locale
 lolal->total
+lond->long
 lonelyness->loneliness
 longe->longer
 longers->longer
@@ -8481,6 +8499,7 @@ mdoel->model
 meachnisms->mechanism
 meading->meaning
 meanigfull->meaningful
+meanign->meaning
 meanin->meaning
 meaninful->meaningful
 meaningfull->meaningful
@@ -8782,6 +8801,8 @@ modifcation->modification
 modifdied->modified
 modifed->modified
 modifes->modifies
+modifiation->modification
+modifiations->modifications
 modifid->modified
 modifing->modifying
 modifiy->modify
@@ -8915,6 +8936,7 @@ muncipalities->municipalities
 muncipality->municipality
 municiple->municipal
 munnicipality->municipality
+munute->minute
 muscels->mussels, muscles,
 muscial->musical
 muscician->musician
@@ -8923,6 +8945,8 @@ musn't->mustn't
 mustator->mutator
 muste->must
 mut->must, mutt, moot,
+mutablity->mutability
+mutbale->mutable
 muti->multi
 muticast->multicast
 mutices->mutexes
@@ -8936,6 +8960,7 @@ mutliple->multiple
 mutlipler->multiplier
 mutliplicites->multiplicities
 mutliply->multiply
+mutully->mutually
 mybe->maybe
 mye->may, my,
 myraid->myriad
@@ -9066,6 +9091,7 @@ nestin->nesting
 netacpe->netscape
 netcape->netscape
 nethods->methods
+netiher->neither
 netowrk->network
 netowrks->networks
 netscpe->netscape
@@ -9574,6 +9600,7 @@ othe->other
 othere->other
 otherewise->otherwise
 otherise->otherwise
+otheriwse->otherwise
 otherwhise->otherwise
 otherwice->otherwise
 otherwis->otherwise
@@ -10303,6 +10330,7 @@ postition->position
 postive->positive
 postives->positives
 postphoned->postponed
+postpocessing->postprocessing
 postprocesing->postprocessing
 postulat->postulate
 potatoe->potato
@@ -10670,6 +10698,7 @@ programmetically->programmatically
 programms->programs
 progres->progress
 progresss->progress
+progrewss->progress
 progrmae->program
 progrom->pogrom, program,
 progroms->pogroms, programs,
@@ -10972,6 +11001,7 @@ realy->really
 realyl->really
 ream->ream, stream,
 reamde->README
+reampping->remapping, revamping,
 reander->render
 reaons->reasons
 reappeares->reappears
@@ -12385,6 +12415,7 @@ signular->singular
 signularity->singularity
 silentely->silently
 silenty->silently
+simialr->similar
 simiar->similar
 similarily->similarly
 similary->similarly
@@ -12891,6 +12922,7 @@ structire->structure
 structre->structure
 structred->structured
 structres->structures
+structrual->structural
 structual->structural
 structue->structure
 structur->structure
@@ -13205,6 +13237,7 @@ sustem->system
 sustitution->substitution
 sustitutions->substitutions
 susupend->suspend
+sutable->suitable
 sutdown->shutdown
 suuport->support
 suuported->supported
@@ -13609,6 +13642,7 @@ thourough->thorough
 thouroughly->thoroughly
 thow->throw, tow,
 thown->thrown, town,
+thq->the
 thrad->thread
 thre->three, there, their, the,
 threadsave->threadsafe
@@ -14272,6 +14306,7 @@ unrechable->unreachable
 unrecogized->unrecognized
 unreconized->unrecognized
 unrecovable->unrecoverable
+unrecoverd->unrecovered
 unregiste->unregister
 unregisted->unregistered
 unregisteing->registering
@@ -14760,6 +14795,7 @@ weired->weird
 weitght->weight
 well-reknown->well-renowned, well renown,
 well-reknowned->well-renowned, well renowned,
+wen->we, when,
 wendesday->wednesday
 wendsay->Wednesday
 wensday->Wednesday
