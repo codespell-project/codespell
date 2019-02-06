@@ -1087,6 +1087,7 @@ arays->arrays
 arbitarily->arbitrarily
 arbitary->arbitrary
 arbitrariy->arbitrarily, arbitrary,
+arbitrarly->arbitrarily, arbitrary,
 arbitraryly->arbitrary
 arbitraty->arbitrary
 arbitray->arbitrary
@@ -1280,6 +1281,7 @@ assocates->associates
 assocating->associating
 assocation->association
 assocations->associations
+associatated->associated
 associcate->associate
 associcated->associated
 associcates->associates
@@ -2182,6 +2184,7 @@ catagories->categories
 catagorized->categorized
 catagory->category
 Cataline->Catiline, Catalina,
+catalogue->catalog
 catapillar->caterpillar
 catapillars->caterpillars
 catapiller->caterpillar
@@ -6232,6 +6235,7 @@ fufill->fulfill
 fufilled->fulfilled
 fulfil->fulfill
 fulfiled->fulfilled
+fulfilment->fulfillment
 fullfiled->fulfilled
 fullfiling->fulfilling
 fullfill->fulfill
@@ -9466,6 +9470,7 @@ opperations->operations
 oppinion->opinion
 opponant->opponent
 oppononent->opponent
+opportunistly->opportunistically
 opportunties->opportunities
 oppositition->opposition
 oppossed->opposed
@@ -10173,6 +10178,7 @@ poing->point
 poinits->points
 poinnter->pointer
 poins->points
+pointes->points
 pointzer->pointer
 poisin->poison
 poistion->position
@@ -12454,6 +12460,7 @@ singals->signals
 singe->singe, single,
 singed->signed, singled, singed,
 singelton->singleton
+singificand->significand, significant,
 singlton->singleton
 singlular->singular
 singlularly->singularly
@@ -13423,6 +13430,7 @@ tansfomed->transformed
 tansient->transient
 tarbal->tarball
 tarbals->tarballs
+targed->target
 targer->target
 targetted->targeted
 targetting->targeting
@@ -14787,6 +14795,7 @@ webiste->website
 wege->wedge
 wehere->where
 wehn->when
+wehther->whether
 weigth->weight
 weild->wield, wild,
 weilded->wielded
