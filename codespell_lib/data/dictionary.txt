@@ -474,6 +474,7 @@ aeriel->aerial
 aeriels->aerials
 afair->affair
 afaraid->afraid
+afe->safe
 afect->affect, effect,
 afecting->affecting
 afer->after
@@ -4557,6 +4558,8 @@ directorys->directories
 directoty->directory
 directoy->directory
 directries->directories
+directroies->directories
+directroy->directory
 directry->directory
 directsion->direction
 directsions->directions
