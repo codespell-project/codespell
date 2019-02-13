@@ -6,7 +6,7 @@
 
 language: python
 sudo: false
-dist: trusty
+dist: xenial
 
 cache:
   directories:
