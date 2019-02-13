@@ -6,7 +6,7 @@
 
 language: python
 sudo: false
-dist: trusty
+dist: xenial
 
 cache:
   directories:
@@ -17,11 +17,11 @@ matrix:
         - os: linux
           python: 2.7
         - os: linux
-          python: 3.4
-        - os: linux
           python: 3.5
         - os: linux
           python: 3.6
+        - os: linux
+          python: 3.7
 
 before_install:
     - source tools/travis_tools.sh
