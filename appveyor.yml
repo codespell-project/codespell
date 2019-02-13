@@ -35,9 +35,3 @@ on_success:
   - C:\cygwin\bin\find "%LOCALAPPDATA%\pip" -empty -delete
   # Show size of cache
   - C:\cygwin\bin\du -hs "%LOCALAPPDATA%\pip\Cache"
-  - ps: |
-      (new-object net.webclient).UploadFile(
-        "https://ci.appveyor.com/api/testresults/junit/$($env:APPVEYOR_JOB_ID)",
-        (Resolve-Path .\junit-results.xml)
-      )
-      $LastExitCode = 0
