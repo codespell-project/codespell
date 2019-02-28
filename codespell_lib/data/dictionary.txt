@@ -447,6 +447,8 @@ adresse->address
 adressed->addressed
 adresses->addresses
 adressing->addressing
+adresss->address
+adressses->addresses
 adrress->address
 adusted->adjusted
 advanatage->advantage
@@ -3810,6 +3812,8 @@ decendant->descendant
 decendants->descendants
 decendend->descendent, descendant, descended,
 decendent->descendent, descendant,
+decendentant->descendant
+decendentants->descendants
 decendents->descendents, descendants,
 deciaml->decimal
 decidate->dedicate
@@ -4240,6 +4244,8 @@ desintegrated->disintegrated
 desintegration->disintegration
 desipite->despite
 desireable->desirable
+desision->decision
+desisions->decisions
 desitned->destined
 deskop->desktop
 deskops->desktops
@@ -4389,10 +4395,13 @@ dezibel->decibel
 dezine->design
 diable->disable
 diabled->disabled
+diabler->disabler
+diablers->disablers
 diables->disables
 diablical->diabolical
 diabling->disabling
 diagnotic->diagnostic
+diagnotics->diagnostics
 diagonale->diagonal
 diagramas->diagrams
 diagramm->diagram
@@ -4574,7 +4583,6 @@ dirver->driver
 disabe->disable
 disabels->disables
 disabl->disable
-disabler->disabled
 disadvantadge->disadvantage
 disagreeed->disagreed
 disalb->disable
@@ -4995,6 +5003,7 @@ ecxept->except
 ecxtracted->extracted
 edditable->editable
 ede->edge
+ediable->editable
 edige->edge
 ediges->edges
 editedt->edited
@@ -6957,6 +6966,7 @@ immediatelly->immediately
 immediatley->immediately
 immediatlly->immediately
 immediatly->immediately
+immediatlye->immediately
 immeditaly->immediately
 immeditately->immediately
 immidately->immediately
@@ -7830,12 +7840,14 @@ intiailizing->initializing
 intial->initial
 intialisation->initialisation
 intialise->initialise
-intialised->initialized
-intialises->initializes
+intialised->initialised
+intialiser->initialiser
+intialises->initialises
 intialising->initialising
 intialization->initialization
 intialize->initialize
 intialized->initialized
+intializer->initializer
 intializes->initializes
 intializing->initializing
 intially->initially
@@ -7965,9 +7977,10 @@ iterface->interface
 iterfaces->interfaces
 iterrupt->interrupt
 ith->with
-itialise->initialize
-itialised->initialized
+itialise->initialise
+itialised->initialised
 itialises->initialises
+itialising->initialising
 itialize->initialize
 itialized->initialized
 itializes->initializes
@@ -10728,8 +10741,12 @@ profilic->prolific
 progam->program
 progams->programs
 progess->progress
+progessbar->progressbar
 progessed->progressed
+progesses->progresses
 progessive->progressive
+progessor->progressor
+progesss->progress
 progidy->prodigy
 programable->programmable
 programatic->programmatic
@@ -11025,6 +11042,7 @@ readd->readd, re-add, read,
 readded->readded, read,
 readeable->readable
 readed->read, readd, readded,
+readiable->readable
 readibility->readability
 readible->readable
 readius->radius
@@ -11938,6 +11956,8 @@ reveiwed->reviewed
 revelent->relevant
 reveokes->revokes
 reveral->reversal
+reverce->reverse
+reverced->reversed
 revered->revered, reversed,
 reversable->reversible
 reviewsectio->reviewsection
@@ -14266,7 +14286,7 @@ unintented->unintended
 unintentially->unintentionally
 uninterruped->uninterrupted
 uninterupted->uninterrupted
-unintialised->uninitialized
+unintialised->uninitialised
 unintialized->uninitialized
 uniqe->unique
 uniqu->unique
