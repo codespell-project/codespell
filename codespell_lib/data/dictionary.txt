@@ -1286,6 +1286,7 @@ assistence->assistance
 assistent->assistant
 assit->assist
 assitant->assistant
+assmption->assumption
 assmptions->assumptions
 assocaited->associated
 assocate->associate
@@ -1347,6 +1348,7 @@ astiimate->estimate
 astiimation->estimation
 asume->assume
 asuming->assuming
+asure->assure
 aswell->as well
 asychronously->asynchronously
 asycronous->asynchronous
@@ -2395,6 +2397,8 @@ chasnge->change, changes,
 chasr->chaser, chase,
 chatacter->character
 chatacters->characters
+chatch->catch
+chatched->caught
 chcek->check
 chceked->checked
 chceking->checking
@@ -4601,6 +4605,7 @@ direcories->directories
 direcory->directory
 direcotries->directories
 direcotry->directory
+direcoty->directory
 directes->directs
 directoies->directories
 directores->directories
@@ -5703,6 +5708,10 @@ executbale->executable
 executeable->executable
 executeables->executables
 executiong->execution, executing,
+executs->executes
+executute->execute
+execututed->executed
+execututes->executes
 exeeding->exceeding
 exeedingly->exceedingly
 exeeds->exceeds
@@ -5777,6 +5786,8 @@ exort->export
 exorted->exported, extorted, exerted,
 exoskelaton->exoskeleton
 expalin->explain
+expanation->explanation
+expanations->explanations
 expaning->expanding
 expanion->expansion
 expanions->expansions
@@ -8367,6 +8378,7 @@ livley->lively
 lke->like
 lmits->limits
 loaader->loader
+loacally->locally
 loacation->location
 loaction->location
 loactions->locations
@@ -8397,6 +8409,7 @@ logitude->longitude
 logwritter->logwriter
 lokal->local
 lokale->locale
+lokaly->locally
 lolal->total
 lond->long
 lonelyness->loneliness
@@ -10351,6 +10364,7 @@ poits->points
 poject->project
 pojecting->projecting
 pojnt->point
+polariy->polarity
 polical->political
 policie->policies, policy, police,
 polinator->pollinator
@@ -12999,6 +13013,7 @@ startlisteneing->startlistening
 startting->starting
 stateman->statesman
 statememts->statements
+statemen->statement
 statemet->statement
 statemnts->statements
 stati->statuses
@@ -13573,6 +13588,7 @@ syntetic->synthetic
 syntetize->synthesize
 syntetized->synthesized
 synthethic->synthetic
+synthtic->synthetic
 syphyllis->syphilis
 sypmtoms->symptoms
 sypport->support
@@ -13586,6 +13602,8 @@ syste->system
 systemwindiow->systemwindow
 systen->system
 systens->systems
+sysyem->system
+sysyems->systems
 sytem->system
 sytematic->systematic
 sytemd->systemd
@@ -15015,6 +15033,8 @@ weant->want, wean,
 weaponary->weaponry
 weas->was
 webiste->website
+wedensday->wednesday
+wednesdaay->wednesday
 wege->wedge
 wehere->where
 wehn->when
@@ -15117,6 +15137,7 @@ wille->will
 willingless->willingness
 willk->will
 willl->will
+windo->window
 windos->windows
 windwo->window
 winn->win
