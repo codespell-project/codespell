@@ -1758,6 +1758,7 @@ benificial->beneficial
 benifit->benefit
 benifits->benefits
 bergamont->bergamot
+Berkley->Berkeley
 Bernouilli->Bernoulli
 besed->based
 beseige->besiege
@@ -8316,7 +8317,6 @@ lotation->rotation
 lotharingen->lothringen
 lousily->lousily, loosely,
 lowd->load
-lowercased->lowercase
 lpatform->platform
 lsat->last
 lsit->list
@@ -8924,6 +8924,7 @@ movei->movie, disabled due to assembly code
 movment->movement
 mozila->Mozilla
 mroe->more
+MSDOS->MS-DOS
 mssing->missing
 mthod->method
 mtuually->mutually
@@ -9163,7 +9164,7 @@ nohypen->nohyphen
 noice->noise, nice, notice,
 nomimal->nominal
 non-assiged->non-assigned
-non-corelated->correlated
+non-corelated->non-correlated
 non-inreractive->non-interactive
 noncombatents->noncombatants
 nonexistant->nonexistent
