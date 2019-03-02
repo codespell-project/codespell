@@ -49,7 +49,7 @@ The -L flag can be used to whitelist certain words that are comma-separated plac
 
     codespell -S, --skip=
 
-The -S (--skip) flag is used to skip over a comma-separated list of files and/or directories. It accepts globs as well. **Important note:** Do not append a '/' to a directory you want to skip. This currently renders the entry ineffective.
+The -S (--skip) flag is used to skip over a comma-separated list of files and/or directories. It accepts globs as well. **Important notes:** Do not append a '/' to a directory you want to skip. This renders the entry for that particular directory ineffective. Also 
 
 Examples:
 
@@ -60,12 +60,12 @@ Examples:
 
 * Skip directories, invoke one of::
 
-      codespell --skip="./src/3rd-Party,./src/Test"
-      codespell -S /src/3rd-Party,./src/Test
+      codespell --skip="src/3rd-Party,src/Test"
+      codespell -S src/3rd-Party,src/Test
 
 Useful commands::
 
-    codespell -d -q 3 --skip="*.po,*.ts,./src/3rdParty,./src/Test"
+    codespell -d -q 3 --skip="*.po,*.ts,src/3rdParty,src/Test"
 
 List all typos found except translation files and some directories.
 Display them without terminal colors and with a quiet level of 3. ::
