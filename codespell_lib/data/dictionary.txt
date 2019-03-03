@@ -1507,6 +1507,9 @@ automatical->automatically, automatic, automated,
 automaticall->automatically
 automaticallly->automatically
 automaticaly->automatically
+automaticalyl->automatically
+automaticalyy->automatically
+automaticlly->automatically
 automaticly->automatically
 automatize->automate
 automatized->automated
@@ -3884,6 +3887,9 @@ decriptions->descriptions
 decriptor->descriptor
 decriptors->descriptors
 decroation->decoration
+decrpt->decrypt
+decrpted->decrypted
+decrption->decryption
 decrytion->decryption
 decsiptors->descriptors
 decsriptor->descriptor
@@ -5217,6 +5223,9 @@ encoutner->encounter
 encoutners->encounters
 encrcypt->encrypt
 encripted->encrypted
+encrpt->encrypt
+encrpted->encrypted
+encrption->encryption
 encrupted->encrypted
 encryptiion->encryption
 encryptiong->encryption
@@ -6975,6 +6984,7 @@ imigrated->emigrated, immigrated,
 imigration->emigration, immigration,
 imilar->similar
 iminent->eminent, imminent, immanent,
+immeadiate->immediate
 immeadiately->immediately
 immedate->immediate
 immedately->immediately
@@ -8280,6 +8290,7 @@ liquify->liquefy
 liscense->license, licence,
 lisence->license, licence,
 lisense->license, licence,
+lising->listing
 listbbox->listbox
 listeing->listening
 listenes->listens
@@ -8477,6 +8488,8 @@ mantanined->maintained
 mantatory->mandatory
 mantenance->maintenance
 manualy->manually
+manualyl->manually
+manualyy->manually
 manuell->manual
 manuever->maneuver, manoeuvre,
 manuevers->maneuvers, manoeuvres,
@@ -9223,6 +9236,12 @@ normailzation->normalization
 normale->normal
 normales->normals
 normaly->normally
+normalyl->normally
+normalyly->normally
+normalysed->normalised
+normalyy->normally
+normalyzed->normalized
+normlly->normally
 normnal->normal
 northen->northern
 northereastern->northeastern
@@ -9927,6 +9946,7 @@ paremter->parameter
 paremters->parameters
 parenthese->parentheses
 parenthesed->parenthesized
+parenthsis->parenthesis
 parial->partial
 parially->partially
 parisitic->parasitic
@@ -12645,6 +12665,7 @@ socities->societies
 soecialize->specialized
 soem->some
 sofisticated->sophisticated
+softend->softened
 softwares->software
 sofware->software
 sofwtare->software
@@ -14276,6 +14297,8 @@ unecessary->unnecessary
 uneeded->unneeded, needed,
 uneforceable->unenforceable
 uneform->uniform
+unencrpt->unencrypt
+unencrpted->unencrypted
 unequalities->inequalities
 uner->under
 unexcpected->unexpected
