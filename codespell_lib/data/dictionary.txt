@@ -785,7 +785,7 @@ ambigious->ambiguous
 ambigous->ambiguous
 ambiguious->ambiguous
 amendmant->amendment
-amened->amend
+amened->amended, amend,
 Amercia->America
 amerliorate->ameliorate
 amgle->angle
@@ -826,6 +826,7 @@ analizer->analyzer
 analizes->analyzes
 analizing->analyzing
 analogeous->analogous
+analoguous->analogous
 analoguously->analogously
 analyis->analysis
 analysator->analyzer
@@ -1160,6 +1161,7 @@ arguemnts->arguments
 argumant->argument
 argumants->arguments
 argumement->argument
+argumements->arguments
 argumemnt->argument
 argumemnts->arguments
 argumeng->argument
@@ -1578,7 +1580,9 @@ avcoid->avoid
 avcoids->avoids
 avengence->a vengeance
 averageed->averaged
+averload->overload
 averloaded->overloaded
+averloads->overloads
 avgerage->average
 aviable->available
 avilable->available
@@ -2039,6 +2043,7 @@ calculatable->calculatable, calculable,
 calculatble->calculatable, calculable,
 calculater->calculator
 calculatted->calculated
+calculatter->calculator
 calculaution->calculation
 calculautions->calculations
 calculcation->calculation
@@ -2229,6 +2234,8 @@ caugt->caught
 cauhgt->caught
 cauing->causing
 causion->caution
+causioned->cautioned
+causions->cautions
 ccahe->cache
 ccale->scale
 ccertificate->certificate
@@ -2554,7 +2561,7 @@ closeing->closing
 clousre->closure
 clsoe->close
 cluase->clause
-clude->clue
+clude->clued, clue,
 clumn->column
 clustred->clustered
 cmak->cmake
@@ -2771,7 +2778,7 @@ commom->common
 commond->command
 commongly->commonly
 commonweath->commonwealth
-commpand->command
+commpand->command, compand,
 commparisons->comparisons
 commpessed->compressed
 commpn->common
@@ -3212,6 +3219,7 @@ constrants->constraints
 constrast->contrast
 constrasts->contrasts
 constrcuct->construct
+constrcut->construct
 constrcutor->constructor
 construcor->constructor
 constructcor->constructor
@@ -3390,7 +3398,7 @@ conveinent->convenient
 conveinience->convenience
 conveinient->convenient
 convenant->covenant
-convenction->convention
+convenction->convention, convection,
 conveneince->convenience
 conveniance->convenience
 convenince->convenience
@@ -6558,7 +6566,7 @@ gridles->griddles
 grometry->geometry
 grop->group, drop,
 gropu->group
-gropus->groups
+gropus->groups, gropes,
 groupd->grouped
 groupt->grouped
 gruop->group
@@ -7015,6 +7023,7 @@ immediatly->immediately
 immediatlye->immediately
 immeditaly->immediately
 immeditately->immediately
+immeidate->immediate
 immeidately->immediately
 immidately->immediately
 immidatly->immediately
@@ -7108,6 +7117,7 @@ implents->implements
 implicite->implicit, implicitly,
 implicitely->implicitly
 implicity->implicitly
+implict->implicit
 implictly->implicitly
 impliment->implement
 implimented->implemented
@@ -7187,6 +7197,7 @@ inaugures->inaugurates
 inavlid->invalid
 inbalance->imbalance
 inbalanced->imbalanced
+inbed->embed
 inbedded->embedded
 inbetween->between, in between,
 inbility->inability
@@ -10718,6 +10729,7 @@ privleges->privileges
 privte->private
 prmitive->primitive
 prmitives->primitives
+proable->probable
 proably->probably
 probabilaty->probability
 probabilty->probability
@@ -11040,6 +11052,7 @@ qouting->quoting
 qtuie->quite, quiet,
 quadranle->quadrangle
 qualfied->qualified
+qualfy->qualify
 qualifer->qualifier
 quantaty->quantity
 quantitiy->quantity
@@ -11376,6 +11389,8 @@ referenece->reference
 refereneced->referenced
 refereneces->references
 referenence->reference
+referenenced->referenced
+referenences->references
 referenes->references
 referense->reference
 referensed->referenced
@@ -14236,7 +14251,6 @@ unanimuous->unanimous
 unanymous->unanimous
 unaquired->unacquired
 unathorised->unauthorised
-unattained->untended
 unavaible->unavailable
 unavailabel->unavailable
 unavailible->unavailable
