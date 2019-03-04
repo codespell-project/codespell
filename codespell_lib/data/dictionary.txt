@@ -2398,7 +2398,7 @@ chasr->chaser, chase,
 chatacter->character
 chatacters->characters
 chatch->catch
-chatched->caught
+chatched->caught, chatted,
 chcek->check
 chceked->checked
 chceking->checking
@@ -15038,8 +15038,8 @@ weant->want, wean,
 weaponary->weaponry
 weas->was
 webiste->website
-wedensday->wednesday
-wednesdaay->wednesday
+wedensday->Wednesday
+wednesdaay->Wednesday
 wege->wedge
 wehere->where
 wehn->when
@@ -15054,7 +15054,7 @@ weitght->weight
 well-reknown->well-renowned, well renown,
 well-reknowned->well-renowned, well renowned,
 wen->we, when,
-wendesday->wednesday
+wendesday->Wednesday
 wendsay->Wednesday
 wensday->Wednesday
 were'nt->wasn't
