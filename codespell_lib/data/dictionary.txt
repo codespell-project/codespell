@@ -2561,10 +2561,12 @@ cliuents->clients
 cloack->cloak
 cloacks->cloaks
 clockwíse->clockwise
-clodes->closed
+clodes->closed, clothes,
 clonning->cloning
 clos->close
 closeing->closing
+clossed->closed
+clossing->closing
 clousre->closure
 clsoe->close
 cluase->clause
@@ -8983,6 +8985,7 @@ modul->module
 modulie->module
 modulu->modulo
 modulues->modules
+modyfy->modify
 moent->moment
 moeny->money
 mofdified->modified
