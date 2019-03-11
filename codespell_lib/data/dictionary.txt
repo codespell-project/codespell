@@ -5143,7 +5143,6 @@ effctive->effective
 effeciency->efficiency
 effecient->efficient
 effeciently->efficiently
-effecting->affecting
 effectly->effectively
 effekt->effect
 effexts->effects
@@ -9802,7 +9801,7 @@ optiional->optional
 optimasation->optimization
 optimazation->optimization
 optimiality->optimality
-optimier->optimiser
+optimier->optimizer, optimiser,
 optimitation->optimization
 optimizaing->optimizing
 optimizier->optimizer
@@ -10165,7 +10164,6 @@ paremeter->parameter
 paremeters->parameters
 paremter->parameter
 paremters->parameters
-paren->parent
 parenthese->parentheses
 parenthesed->parenthesized
 parenthsis->parenthesis
@@ -12483,6 +12481,7 @@ scolling->scrolling
 scrao->scrap
 screenwrighter->screenwriter
 screnn->screen
+scriopts->scripts
 scriping->scripting
 scriptype->scripttype
 scritpt->script
@@ -12667,7 +12666,6 @@ sergent->sergeant
 serialiazation->serialization
 serie->series
 serieses->series
-seriopts->scripts
 serios->serious
 seriuos->serious
 serivce->service
