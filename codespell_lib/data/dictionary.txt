@@ -1697,6 +1697,7 @@ baout->about, bout,
 barbedos->barbados
 bariier->barrier
 barriors->barriers
+barycentic->barycentric
 basci->basic
 bascktrack->backtrack
 basf->base
@@ -2742,6 +2743,8 @@ comandos->commandos
 comany->company
 comapany->company
 comapared->compared
+comapnies->companies
+comapny->company
 comapre->compare
 comaptible->compatible
 comback->comeback
@@ -3055,6 +3058,7 @@ concatonating->concatenating
 conceed->concede
 concensors->consensus
 concensus->consensus
+concentic->concentric
 concentraze->concentrate
 concered->concerned
 concerntrating->concentrating
@@ -3908,6 +3912,9 @@ deativation->deactivation
 debain->Debian
 debateable->debatable
 debbuger->debugger
+debgu->debug
+debgug->debug
+debguging->debugging
 debiab->Debian
 debians->Debian's
 debth->depth
@@ -4390,6 +4397,7 @@ deslects->deselects
 desorder->disorder
 desoriented->disoriented
 desparate->desperate, disparate,
+desparately->desperately
 despict->depict
 despiration->desperation
 desribe->describe
@@ -5813,6 +5821,7 @@ execting->executing, expecting,
 exection->execution
 exections->executions
 exectuable->executable
+exectuableness->executableness
 exectuables->executables
 exectued->executed
 exectution->execution
@@ -6289,6 +6298,7 @@ followng->following
 follwing->following
 follwoing->following
 folowing->following
+folx->folks
 fomed->formed
 fomr->from, form,
 fonction->function
@@ -6609,6 +6619,7 @@ genreates->generates
 genreating->generating
 genric->generic
 gental->gentle
+geocentic->geocentric
 geoemtries->geometries
 geoemtry->geometry
 geographich->geographic
@@ -8777,6 +8788,8 @@ Massachussetts->Massachusetts
 massmedia->mass media
 masster->master
 masterbation->masturbation
+mata-data->meta-data
+matadata->metadata
 matainer->maintainer
 matainers->maintainers
 mataphysical->metaphysical
@@ -9041,6 +9054,9 @@ minumum->minimum
 minuts->minutes
 miplementation->implementation
 mirconesia->micronesia
+mirgate->migrate
+mirgated->migrated
+mirgates->migrates
 mirro->mirror
 mirroed->mirrored
 mirrorn->mirror
@@ -10018,6 +10034,7 @@ outpupt->output
 outputed->outputted
 outputing->outputting
 outselves->ourselves
+outter->outer
 outupt->output
 outupts->outputs
 outut->output
@@ -10109,6 +10126,10 @@ pach->patch
 pachage->package
 paches->patches
 packacge->package
+packaeg->package
+packaege->package
+packaeges->packages
+packaegs->packages
 packages'->package's
 packe->packed, packet,
 packege->package
@@ -10428,6 +10449,7 @@ perosnality->personality
 perpertrated->perpetrated
 perphas->perhaps
 perpindicular->perpendicular
+persepctive->perspective
 perserverance->perseverance
 perseverence->perseverance
 persistance->persistence
@@ -11398,6 +11420,8 @@ rathern->rather
 rceate->create
 rceating->creating
 rduce->reduce
+re-negociated->re-negotiated
+re-negociation->re-negotiation
 reaaly->really
 reaasigned->reassigned
 reaccurring->recurring
@@ -11931,6 +11955,8 @@ renderering->rendering
 rendevous->rendezvous
 rendezous->rendezvous
 renedered->rende
+renegociated->renegotiated
+renegociation->renegotiation
 renegotation->renegotiation
 renewl->renewal
 rennovate->renovate
@@ -12702,7 +12728,11 @@ separting->separating
 sepatae->separate
 sepcial->special
 sepcific->specific
+sepcifically->specifically
+sepcification->specification
+sepcifications->specifications
 sepcified->specified
+sepcifier->specifier
 sepcifies->specifies
 sepcify->specify
 sepcifying->specifying
@@ -13118,6 +13148,7 @@ spagetti->spaghetti
 spainish->Spanish
 spaning->spanning
 sparate->separate
+sparately->separately
 spaw->spawn
 spawed->spawned
 spawing->spawning
@@ -13202,6 +13233,8 @@ spendour->splendour
 speparated->separated
 speparator->separator
 spepc->spec
+sperate->separate
+sperately->separately
 spermatozoan->spermatozoon
 spesify->specify
 spezialisation->specialization
@@ -14910,6 +14943,7 @@ unsable->unusable, usable, unstable,
 unsccessful->unsuccessful
 unsed->unused, used,
 unselect->deselect
+unsepcified->unspecified
 unsettin->unsetting
 unsharable->unshareable
 unsiged->unsigned
