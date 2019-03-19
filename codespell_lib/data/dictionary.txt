@@ -111,6 +111,8 @@ accelaration->acceleration
 acceleratoin->acceleration
 accelleration->acceleration
 accension->accession, ascension,
+accepect->accept
+accepected->accepted
 acceppt->accept
 acceptence->acceptance
 acceptible->acceptable
@@ -2176,7 +2178,6 @@ canadan->canadian
 canbe->can be
 cancelability->cancellability
 cancelaltion->cancellation
-cancelled->canceled
 cancelles->cancels
 cancled->canceled
 candadate->candidate
@@ -2198,6 +2199,7 @@ canonalize->canonicalize
 canonalized->canonicalized
 canonalizes->canonicalizes
 canonalizing->canonicalizing
+canot->cannot
 cant'->can't
 cant->can't
 cant;->can't
@@ -2489,6 +2491,8 @@ chceks->checks
 checg->check
 checged->checked
 chech->check, czech,
+checheckpoit->checkpoint
+checheckpoits->checkpoints
 cheching->checking
 chechs->checks
 checkd->checked
@@ -3483,6 +3487,7 @@ contries->countries
 contritutions->contributions
 contrl->control
 contro->control
+controlable->controllable
 controle->control, controlled, controller,
 controled->controlled
 controlelrs->controllers
@@ -5587,6 +5592,11 @@ envrionment->environment
 envrionments->environments
 envrironment->environment
 enxt->next
+epect->expect
+epected->expected
+epectedly->expectedly
+epecting->expecting
+epects->expects
 epidsodes->episodes
 epsiode->episode
 epty->empty
@@ -5909,7 +5919,13 @@ exemple->example
 exension->extension
 exensions->extensions
 exent->extent
+exepect->expect
+exepectation->expectation
+exepectations->expectations
 exepected->expected
+exepectedly->expectedly
+exepecting->expecting
+exepects->expects
 exepriment->experiment
 exeprimental->experimental
 exept->except, exempt,
@@ -6000,6 +6016,8 @@ expeiments->experiments
 expell->expel
 expells->expels
 expendeble->expendable
+expepected->expected
+expepectedly->expectedly
 expeption->exception
 experiance->experience
 experianced->experienced
@@ -6094,6 +6112,9 @@ extenstions->extensions
 extented->extended
 extention->extension
 extentions->extensions
+extepect->expect
+extepecting->expecting
+extepects->expects
 exteral->external
 extered->exerted
 extermist->extremist
@@ -6246,6 +6267,7 @@ fileds->fields
 files'->file's
 filesname->filename, filenames,
 filesnames->filenames
+fileststem->filesystem
 filesysems->filesystems
 filesytem->filesystem
 filesytems->filesystems
@@ -7122,7 +7144,9 @@ howver->however
 hrough->through
 hsell->shell
 hsitorians->historians
+hsould'nt->shouldn't
 hsould->should
+hsouldn't->shouldn't
 hstory->history
 hte->the
 hten->then, hen, the,
@@ -7915,6 +7939,7 @@ insensistive->insensitive
 insensistively->insensitively
 insensitve->insensitive
 insenstively->insensitively
+insepection->inspection
 inseperable->inseparable
 insering->inserting
 insertin->inserting
@@ -8089,6 +8114,8 @@ interesects->intersects
 intereset->interest
 intereseted->interested
 intereseting->interesting
+interesst->interest
+interessted->interested
 interessting->interesting
 interfave->interface
 interferance->interference
@@ -8292,6 +8319,7 @@ irrelavent->irrelevant
 irrelevent->irrelevant
 irrelvant->irrelevant
 irreplacable->irreplaceable
+irresepective->irrespective
 irresistable->irresistible
 irresistably->irresistibly
 irreversable->irreversible
@@ -8884,6 +8912,7 @@ matadata->metadata
 matainer->maintainer
 matainers->maintainers
 mataphysical->metaphysical
+matc->match
 matchies->matches
 matchin->matching
 matchs->matches
@@ -9312,6 +9341,7 @@ mose->more, mouse,
 moslty->mostly
 mostlky->mostly
 mosture->moisture
+mosty->mostly
 motiviated->motivated
 motiviation->motivation
 motoroloa->motorola
@@ -9400,6 +9430,7 @@ muticast->multicast
 mutices->mutexes
 mutiliated->mutilated
 mutimarked->multimarked
+mutipath->multipath
 mutipl->multiple, multiply,
 mutiple->multiple
 mutiply->multiply
@@ -10548,6 +10579,8 @@ perpertrated->perpetrated
 perphas->perhaps
 perpindicular->perpendicular
 persepctive->perspective
+persepective->perspective
+persepectives->perspectives
 perserverance->perseverance
 perseverence->perseverance
 persistance->persistence
@@ -12105,8 +12138,13 @@ repblican->republican
 repblicans->republicans
 repblics->republics
 repeatly->repeatedly
+repect->respect
+repectable->respectable
+repected->respected
+repecting->respecting
 repective->respective
 repectively->respectively
+repects->respects
 repedability->repeatability
 repedable->repeatable
 repeition->repetition
@@ -12278,6 +12316,12 @@ resembelance->resemblance
 resembes->resembles
 resemblence->resemblance
 resently->recently
+resepect->respect
+resepected->respected
+resepecting->respecting
+resepective->respective
+resepectively->respectively
+resepects->respects
 reseration->reservation
 reserverd->reserved
 reservered->reserved
@@ -12504,6 +12548,7 @@ revison->revision
 revisons->revisions
 revolutionar->revolutionary
 revrese->reverse
+rewitable->rewritable
 rewitten->rewritten
 rewriet->rewrite
 rewrited->rewrote, rewritten,
@@ -12857,6 +12902,7 @@ sepcifying->specifying
 sepecial->special
 sepecific->specific
 sepecified->specified
+sepectral->spectral
 sepend->depend, suspend,
 sependent->dependent
 seperate->separate
@@ -12937,6 +12983,7 @@ severley->severely
 severly->severely
 sevice->service
 sgadow->shadow
+sh1sum->sha1sum
 shadasloo->shadaloo
 shaddow->shadow
 shadhow->shadow
@@ -13243,7 +13290,9 @@ soucre->source
 soucres->sources
 soudn->sound
 soudns->sounds
+sould'nt->shouldn't
 sould->could, should, sold,
+souldn't->shouldn't
 soundard->soundcard
 sountrack->soundtrack
 sourcedrectory->sourcedirectory
@@ -13395,6 +13444,8 @@ sqeuence->sequence
 squence->sequence
 srcipt->script
 srcipts->scripts
+sreenshot->screenshot
+sreenshots->screenshots
 sreturns->returns
 srew->screw, shrew, sew,
 srikeout->strikeout
@@ -13639,6 +13690,8 @@ submachne->submachine
 submision->submission
 submisson->submission
 submited->submitted
+submition->submission
+submitions->submissions
 submittted->submitted
 submti->submit
 subpecies->subspecies
@@ -14843,6 +14896,7 @@ unconfiged->unconfigured
 unconfortability->discomfort
 unconsistent->inconsistent
 uncontitutional->unconstitutional
+uncontrolable->uncontrollable
 unconvential->unconventional
 uncorelated->uncorrelated
 uncorrect->incorrect
@@ -14883,6 +14937,8 @@ uneforceable->unenforceable
 uneform->uniform
 unencrpt->unencrypt
 unencrpted->unencrypted
+unepected->unexpected
+unepectedly->unexpectedly
 unequalities->inequalities
 uner->under
 unexcpected->unexpected
@@ -14890,6 +14946,7 @@ unexecpted->unexpected
 unexected->unexpected
 unexepcted->unexpected
 unexepected->unexpected
+unexepectedly->unexpectedly
 unexpcted->unexpected
 unexpectdly->unexpectedly
 unexpecte->unexpected
@@ -14935,6 +14992,7 @@ uninstatiated->uninstantiated
 unintelligable->unintelligible
 unintented->unintended
 unintentially->unintentionally
+uninteressting->uninteresting
 uninterruped->uninterrupted
 uninterupted->uninterrupted
 unintialised->uninitialised
@@ -15139,6 +15197,8 @@ unweildly->unwieldy
 unwieldly->unwieldy
 unwraped->unwrapped
 unwrritten->unwritten
+unxepected->unexpected
+unxepectedly->unexpectedly
 unxpected->unexpected
 unziped->unzipped
 upadted->updated
@@ -15661,6 +15721,7 @@ wirte->write
 wirtes->writes
 wirting->writing
 wit->wit, with,
+witable->writeable
 witdh->width
 witha->with a, with,
 withdrawl->withdrawal, withdraw,
@@ -15763,6 +15824,11 @@ wuold->would
 wupport->support
 xdpf->xpdf
 xenophoby->xenophobia
+xepect->expect
+xepected->expected
+xepectedly->expectedly
+xepecting->expecting
+xepects->expects
 xinitiazlize->xinitialize
 xmdoel->xmodel
 xour->your
