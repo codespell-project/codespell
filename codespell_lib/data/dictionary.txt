@@ -5406,6 +5406,7 @@ defind->defined, defund,
 definded->defined, defunded,
 define'd->defined, disabled due to #define
 defineed->defined
+defineable->definable
 definend->defined
 definetely->definitely
 definetly->definitely
