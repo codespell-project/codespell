@@ -2185,6 +2185,7 @@ canonalize->canonicalize
 canonalized->canonicalized
 canonalizes->canonicalizes
 canonalizing->canonicalizing
+canot->cannot
 cant'->can't
 cant->can't
 cant;->can't
@@ -2476,6 +2477,8 @@ chceks->checks
 checg->check
 checged->checked
 chech->check, czech,
+checheckpoit->checkpoint
+checheckpoits->checkpoints
 cheching->checking
 chechs->checks
 checkd->checked
@@ -5950,6 +5953,7 @@ expanations->explanations, expansions,
 expaning->expanding
 expanion->expansion
 expanions->expansions
+expanssion->expansion
 expasion->expansion
 expatriot->expatriate
 expeced->expected
@@ -6211,6 +6215,7 @@ fileds->fields
 files'->file's
 filesname->filename, filenames,
 filesnames->filenames
+fileststem->filesystem
 filesysems->filesystems
 filesytem->filesystem
 filesytems->filesystems
@@ -8837,6 +8842,7 @@ matadata->metadata
 matainer->maintainer
 matainers->maintainers
 mataphysical->metaphysical
+matc->match
 matchies->matches
 matchin->matching
 matchs->matches
@@ -9265,6 +9271,7 @@ mose->more, mouse,
 moslty->mostly
 mostlky->mostly
 mosture->moisture
+mosty->mostly
 motiviated->motivated
 motiviation->motivation
 motoroloa->motorola
@@ -9353,6 +9360,7 @@ muticast->multicast
 mutices->mutexes
 mutiliated->mutilated
 mutimarked->multimarked
+mutipath->multipath
 mutipl->multiple, multiply,
 mutiple->multiple
 mutiply->multiply
@@ -12877,6 +12885,7 @@ severley->severely
 severly->severely
 sevice->service
 sgadow->shadow
+sh1sum->sha1sum
 shadasloo->shadaloo
 shaddow->shadow
 shadhow->shadow
