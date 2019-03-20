@@ -566,12 +566,11 @@ ahve->have
 aicraft->aircraft
 aiffer->differ
 aiport->airport
-air->heir
 airator->aerator
 airbourne->airborne
 aircaft->aircraft
 aircrafts->aircraft
-airial->aerial
+airial->aerial, arial,
 airloom->heirloom
 airporta->airports
 airrcraft->aircraft
