@@ -12952,6 +12952,11 @@ servce->service
 servces->services
 serveice->service
 serveral->several
+serverite->severity
+serverites->severities
+serveritie->severity, severities,
+serverities->severities
+serverity->severity
 servie->service
 servies->services
 sesitive->sensitive
@@ -12973,6 +12978,9 @@ seuence->sequence
 seuences->sequences
 seve->save
 severeal->several
+severite->severity
+severites->severities
+severitie->severity, severities,
 severley->severely
 severly->severely
 sevice->service
