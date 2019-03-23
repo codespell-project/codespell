@@ -1219,6 +1219,7 @@ arithemtic->arithmetic
 arithmatic->arithmetic
 arithmentic->arithmetic
 arithmetics->arithmetic
+arithmitic->arithmetic
 aritmetic->arithmetic
 arival->arrival
 arive->arrive
@@ -1834,6 +1835,7 @@ benifite->benefit
 benifited->benefited
 benifitial->beneficial
 benifits->benefits
+benig->being
 bergamont->bergamot
 Berkley->Berkeley
 Bernouilli->Bernoulli
@@ -2405,6 +2407,7 @@ changlog->changelog
 changuing->changing
 chanined->chained
 chaning->chaining, changing,
+chaninging->changing
 channes->channels, chances, changes,
 channle->channel
 channles->channels
@@ -3261,6 +3264,10 @@ conservitive->conservative
 consestently->consistently
 consiciousness->consciousness
 consicousness->consciousness
+considder->consider
+considderation->consideration
+considdered->considered
+considdering->considering
 considerd->considered
 considere->considered
 consideren->considered
@@ -4599,6 +4606,8 @@ diagramas->diagrams
 diagramm->diagram
 dialgo->dialog
 dialgos->dialogs
+dialig->dialog
+dialigs->dialogs
 diamon->diamond
 diamons->diamonds
 diangose->diagnose
@@ -4673,8 +4682,15 @@ differnce->difference
 differnces->differences
 differnet->different
 differnt->different
+differntiable->differentiable
+differntial->differential
+differntials->differentials
+differntiate->differentiate
+differntiated->differentiated
 differntiates->differentiates
+differntiating->differentiating
 differntly->differently
+differnty->different
 differrence->difference
 differrent->different
 diffferent->different
@@ -5215,6 +5231,9 @@ ebaled->enabled
 eccessive->excessive
 ecclectic->eclectic
 eceonomy->economy
+ecept->except
+eception->exception
+eceptions->exceptions
 ecidious->deciduous
 eclispe->eclipse
 ecomonic->economic
@@ -5239,6 +5258,7 @@ efel->evil
 eferences->references
 efetivity->effectivity
 effctive->effective
+effctively->effectively
 effeciency->efficiency
 effecient->efficient
 effeciently->efficiently
@@ -5561,6 +5581,7 @@ enumation->enumeration
 enumerble->enumerable
 enumertaion->enumeration
 enusre->ensure
+envaluation->evaluation
 envionment->environment
 enviorment->environment
 enviormental->environmental
@@ -5603,6 +5624,8 @@ epectedly->expectedly
 epecting->expecting
 epects->expects
 epidsodes->episodes
+eploit->exploit
+eploits->exploits
 epsiode->episode
 epty->empty
 eqaul->equal
@@ -5850,6 +5873,7 @@ exceutes->executes
 exceution->execution
 exchanching->exchanging
 exchangable->exchangeable
+exchaning->exchanging
 exciation->excitation
 excist->exist
 excisted->existed
@@ -6535,6 +6559,7 @@ frequenct->frequency
 frequentily->frequently
 frequncies->frequencies
 frequncy->frequency
+fricton->friction
 frist->first
 frmat->format
 fro->for, from,
@@ -6904,8 +6929,13 @@ handlig->handling
 handlling->handling
 hanel->handle
 hangig->hanging
+hanlde->handle
+hanlded->handled
 hanlder->handler
+hanlders->handlers
+hanldes->handles
 hanlding->handling
+hanldle->handle
 hanle->handle
 hanled->handled
 hanles->handles
@@ -8048,12 +8078,15 @@ intepolate->interpolate
 intepolated->interpolated
 intepolates->interpolates
 intepret->interpret
+intepretable->interpretable
 intepretation->interpretation
+intepretations->interpretations
 intepretator->interpreter
 intepretators->interpreters
 intepreted->interpreted
 intepreter->interpreter
 intepreters->interpreters
+intepretes->interprets
 intepreting->interpreting
 intepretor->interpreter
 intepretors->interpreters
@@ -8152,6 +8185,7 @@ interprete->interpret
 interpretes->interprets
 interpretet->interpreted
 interpretion->interpretation
+interpretor->interpreter
 interprett->interpret
 interpretted->interpreted
 interpretter->interpreter
@@ -8280,6 +8314,10 @@ inverions->inversions
 invers->inverse, invert,
 invertibrates->invertebrates
 inverval->interval
+invesitgated->investigated
+invesitgating->investigating
+invesitgation->investigation
+invesitgations->investigations
 investingate->investigate
 inviation->invitation
 invididual->individual
@@ -8660,6 +8698,8 @@ literture->literature
 litle->little
 litte->little
 littel->little
+littel-endian->little-endian
+littele->little
 litterally->literally
 liuke->like
 livel->level
@@ -8738,6 +8778,7 @@ lvoe->love
 Lybia->Libya
 maake->make
 mabe->maybe
+mabye->maybe
 machanism->mechanism
 machanisms->mechanisms
 mached->matched
@@ -9180,6 +9221,8 @@ mirro->mirror
 mirroed->mirrored
 mirrorn->mirror
 mirrorred->mirrored
+mis-intepret->mis-interpret
+mis-intepreted->mis-interpreted
 mis-match->mismatch
 misceancellous->miscellaneous
 miscelaneous->miscellaneous
@@ -9198,6 +9241,8 @@ misdemenors->misdemeanors
 misfourtunes->misfortunes
 misile->missile
 mising->missing
+misintepret->misinterpret
+misintepreted->misinterpreted
 misinterprett->misinterpret
 misinterpretted->misinterpreted
 mismach->mismatch
@@ -9271,6 +9316,7 @@ modifer->modifier
 modifes->modifies
 modifiation->modification
 modifiations->modifications
+modificatioon->modification
 modifid->modified
 modifing->modifying
 modifiy->modify
@@ -9868,6 +9914,8 @@ oftenly->often
 ofthe->of the
 oging->going, ogling,
 oherwise->otherwise
+ohter->other
+ohters->others
 ohterwise->otherwise
 oints->points, pints,
 ois->is
@@ -10782,6 +10830,11 @@ porcesses->processes
 porcessing->processing
 porcessor->processor
 porcessors->processors
+porgram->program
+porgrammeer->programmer
+porgrammeers->programmers
+porgramming->programming
+porgrams->programs
 porject->project
 porjection->projection
 porjects->projects
@@ -10799,6 +10852,7 @@ portraing->portraying
 portugese->Portuguese
 portuguease->portuguese
 portugues->Portuguese
+poseesions->possessions
 posess->possess
 posessed->possessed
 posesses->possesses
@@ -11167,6 +11221,7 @@ probalby->probably
 probalibity->probability
 probaly->probably
 probelm->problem
+probelmatic->problematic
 probelms->problems
 probem->problem
 proberly->properly
@@ -11737,6 +11792,7 @@ recongized->recognized
 reconized->recognized
 reconnaisance->reconnaissance
 reconnaissence->reconnaissance
+reconsidder->reconsider
 recontructed->reconstructed
 recontructing->reconstructing
 recontruction->reconstruction
@@ -11985,6 +12041,8 @@ reimplments->reimplements
 reinitalize->reinitialize
 reinitilize->reinitialize
 reinitilized->reinitialized
+reintepret->reinterpret
+reintepreted->reinterpreted
 reister->register
 reivison->revision
 reknown->renown
@@ -12802,6 +12860,8 @@ seelect->select
 seemes->seems
 seemless->seamless
 seemlessly->seamlessly
+seesion->session
+seesions->sessions
 segement->segment
 segementation->segmentation
 segements->segments
@@ -13684,6 +13744,7 @@ submitions->submissions
 submittted->submitted
 submti->submit
 subpecies->subspecies
+subporgram->subprogram
 subproccese->subprocess
 subprocess'->subprocess's
 subquue->subqueue
@@ -15693,6 +15754,7 @@ wight->weight, white, right, wight,
 wighted->weighted, weighed,
 wights->weights, whites, rights, wights,
 wih->with
+wihich->which
 wihite->white
 wihle->while
 wihout->without
@@ -15733,6 +15795,9 @@ withion->within
 witho->with
 withold->withhold
 withoud->without
+withoug->without
+withough->without
+withought->without
 withour->without, with our,
 withouth->without
 withs->with, widths,
