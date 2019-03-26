@@ -1111,6 +1111,7 @@ aproximation->approximation
 aproximations->approximations
 aprrovement->approval
 aprtment->apartment
+aqain->again
 aqcuire->acquire
 aqcuired->acquired
 aqcuires->acquires
@@ -2342,6 +2343,7 @@ cementary->cemetery
 cemetarey->cemetery
 cemetaries->cemeteries
 cemetary->cemetery
+cenario->scenario
 cencus->census
 censur->censor, censure,
 centain->certain
@@ -2552,7 +2554,11 @@ chractors->characters
 chrashed->crashed
 chuch->church
 chuks->chunks
+chunck->chunk
+chuncked->chunked
+chuncking->chunking
 chuncks->chunks
+chuncksize->chunksize
 churchs->churches
 cicrle->circle
 cicruit->circuit
@@ -3655,6 +3661,8 @@ correcty->correctly
 correcxt->correct
 correect->correct
 correectly->correctly
+correllation->correlation
+correllations->correlations
 correnspond->correspond
 corrensponded->corresponded
 corrensponding->corresponding
@@ -3790,6 +3798,8 @@ creatred->created
 creats->creates
 creche->crèche
 credate->created
+credintial->credential
+credintials->credentials
 creditted->credited
 creedence->credence
 cresits->credits
@@ -4027,6 +4037,7 @@ decopose->decompose
 decoposes->decomposes
 decoraded->decorated
 decoratrion->decoration
+decorrellation->decorrelation
 decraesing->decreasing, deceasing,
 decrasing->decreasing, deceasing,
 decreace->decrease
@@ -4963,6 +4974,7 @@ distirted->distorted
 distnace->distance
 distnaces->distances
 distory->destroy, distort, history,
+distrebuted->distributed
 distribtion->distribution
 distribtions->distributions
 distribtuion->distribution
@@ -5709,6 +5721,7 @@ especialy->especially
 especialyl->especially
 especiially->especially
 espect->expect
+esseintially->essentially
 essencial->essential
 essense->essence
 essentail->essential
@@ -6007,6 +6020,9 @@ exludes->excludes, exudes,
 exluding->excluding, exuding,
 exlusive->exclusive
 exlusively->exclusively
+exmaine->examine
+exmained->examined
+exmaines->examines
 exmaple->example
 exmaples->examples
 exmple->example
@@ -6089,6 +6105,8 @@ exploititive->exploitative
 explot->exploit, explore,
 explotation->exploitation, exploration,
 exploting->exploiting, exploring,
+expoential->exponential
+expoentially->exponentially
 expolde->explode
 exponentation->exponentiation
 exponetial->exponential
@@ -7380,6 +7398,8 @@ implememting->implementing
 implememts->implements
 implemenatation->implementation
 implemenation->implementation
+implemenationa->implementation
+implemenationd->implementation
 implemenations->implementations
 implemencted->implemented
 implemend->implement
@@ -8246,20 +8266,41 @@ intiailized->initialized
 intiailizes->initializes
 intiailizing->initializing
 intial->initial
+intiale->initial
 intialisation->initialisation
 intialise->initialise
 intialised->initialised
 intialiser->initialiser
+intialisers->initialisers
 intialises->initialises
 intialising->initialising
+intialistion->initialisation
 intialization->initialization
+intializaze->initialize
 intialize->initialize
 intialized->initialized
 intializer->initializer
+intializers->initializers
 intializes->initializes
 intializing->initializing
+intializtion->initialization
+intiallisation->initialisation
+intiallisations->initialisations
+intiallised->initialised
+intiallization->initialization
+intiallizations->initializations
+intiallized->initialized
+intiallly->initially
 intially->initially
 intials->initials
+intialse->initialise
+intialsed->initialised
+intialsing->initialising
+intialte->initialise
+intialy->initially
+intialze->initialize
+intialzed->initialized
+intialzing->initializing
 intimite->intimate
 intitialization->initialization
 intitialize->initialize
@@ -8804,6 +8845,7 @@ magnatiude->magnitude
 magnatude->magnitude
 magnificient->magnificent
 magolia->magnolia
+mahcine->machine
 mailling->mailing
 maillinglist->mailing list
 maillinglists->mailing lists
@@ -9488,6 +9530,7 @@ mutliplicites->multiplicities
 mutliply->multiply
 mutully->mutually
 muyst->must
+myabe->maybe
 mybe->maybe
 mye->may, my,
 myraid->myriad
@@ -10059,6 +10102,9 @@ optinal->optional
 optinally->optionally
 optio->option
 optioanl->optional
+optioin->option
+optioinal->optional
+optioins->options
 optionall->optional, optionally,
 optionalliy->optionally
 optionallly->optionally
@@ -10298,6 +10344,8 @@ paceholder->placeholder
 pach->patch
 pachage->package
 paches->patches
+pacjage->package
+pacjages->packages
 packacge->package
 packaeg->package
 packaege->package
@@ -10758,6 +10806,9 @@ pobularity->popularity
 pocessed->processed, possessed,
 podule->module
 poenis->penis
+poential->potential
+poentially->potentially
+poentials->potentials
 poeoples->peoples
 poety->poetry
 pogress->progress
@@ -10811,9 +10862,14 @@ ponter->pointer
 ponting->pointing
 ponts->points
 pontuation->punctuation
+pooint->point
+poointed->pointed
+poointer->pointer
+pooints->points
 poperly->properly, property,
 poperty->property, properly,
 poping->popping
+popoen->popen
 poportional->proportional
 popoulation->population
 popoup->popup
@@ -11476,6 +11532,8 @@ prufe->proof
 psaswd->passwd
 pseudononymous->pseudonymous
 pseudonyn->pseudonym
+pseudopoential->pseudopotential
+pseudopoentials->pseudopotentials
 pseuo-palette->pseudo-palette
 psrameter->parameter
 pssed->passed
@@ -12311,6 +12369,10 @@ reqeusts->requests
 reqiure->require
 requeried->required
 requeset->request, requisite,
+requestes->requests
+requestesd->requested
+requestested->requested
+requestests->requests
 requied->required
 requierd->required
 requiere->require
@@ -12716,7 +12778,11 @@ Sacremento->Sacramento
 sacrifical->sacrificial
 sacrifying->sacrificing
 sade->sad
+safe-pooint->safe-point
+safe-pooints->safe-points
 safeing->saving
+safepooint->safepoint
+safepooints->safepoints
 safequard->safeguard
 safly->safely
 saftey->safety
@@ -12797,6 +12863,7 @@ scientifc->scientific
 scientis->scientist
 scince->science
 scinece->science
+scintiallation->scintillation
 scipt->script
 scirpt->script
 scirpts->scripts
@@ -13436,6 +13503,8 @@ specufy->specify
 spedific->specific
 spedified->specified
 spedify->specify
+speeak->speak
+speeaking->speaking
 speep->sleep
 speep-up->speed-up
 speeped->sped
@@ -13768,6 +13837,7 @@ subsquent->subsequent
 subsquently->subsequently
 substace->substance
 substact->subtract
+substaintially->substantially
 substancial->substantial
 substatial->substantial
 substition->substitution
@@ -13964,7 +14034,13 @@ supresion->suppression
 supress->suppress
 supressed->suppressed
 supresses->suppresses
+supressible->suppressible
 supressing->suppressing
+supression->suppression
+supressions->suppressions
+supressor->suppressor
+supressors->suppressors
+supresssion->suppression
 suprious->spurious
 suprise->surprise
 suprised->surprised
@@ -14882,6 +14958,7 @@ unabailable->unavailable
 unabale->unable
 unabel->unable
 unacceptible->unacceptable
+unaccesible->unaccessible
 unacompanied->unaccompanied
 unahppy->unhappy
 unambigious->unambiguous
@@ -15036,6 +15113,7 @@ Unicde->Unicode
 unidentifiedly->unidentified
 unidimensionnal->unidimensional
 unifiy->unify
+uniformely->uniformly
 unihabited->uninhabited
 unilateraly->unilaterally
 unilatreal->unilateral
@@ -15052,6 +15130,10 @@ uninterruped->uninterrupted
 uninterupted->uninterrupted
 unintialised->uninitialised
 unintialized->uninitialized
+unintiallised->uninitialised
+unintiallized->uninitialized
+unintialsied->uninitialised
+unintialzied->uninitialized
 uniqe->unique
 uniqu->unique
 uniquness->uniqueness
@@ -15221,6 +15303,9 @@ unsufficient->insufficient
 unsuportable->unsupportable
 unsuported->unsupported
 unsupport->unsupported
+unsupress->unsuppress
+unsupressed->unsuppressed
+unsupresses->unsuppresses
 unsuprised->unsurprised
 unsuprising->unsurprising
 unsuprisingly->unsurprisingly
@@ -15350,6 +15435,7 @@ usualy->usually
 ususal->usual
 ususally->usually
 utiilties->utilities
+utilies->utilities
 utilis->utilise
 utilites->utilities
 utiliz->utilize
