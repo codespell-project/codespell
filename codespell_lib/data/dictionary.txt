@@ -5853,6 +5853,8 @@ exausted->exhausted
 excact->exact
 excactly->exactly
 excange->exchange
+excat->exact
+excating->exacting
 excatly->exactly
 excecutable->executable
 excecute->execute
@@ -6658,6 +6660,7 @@ funtionality->functionality
 funtioning->functioning
 funtions->functions
 furher->further
+furneture->furniture
 furter->further
 furthemore->furthermore
 furthermor->furthermore
@@ -6888,6 +6891,7 @@ Guadulupe->Guadalupe, Guadeloupe,
 guage->gauge
 guaranted->guaranteed
 guarantie->guarantee
+guarantied->guaranteed
 guarentee->guarantee
 guarenteed->guaranteed
 guarenteeing->guaranteeing
@@ -9359,6 +9363,7 @@ modifcation->modification
 modifdied->modified
 modifed->modified
 modifer->modifier
+modifers->modifiers
 modifes->modifies
 modifiation->modification
 modifiations->modifications
@@ -14347,6 +14352,8 @@ technoloiges->technologies
 tecnic->technique
 teh->the
 tehy->they
+tekst->text
+teksts->texts
 telegramm->telegram
 telelevision->television
 televsion->television
@@ -15122,9 +15129,18 @@ unihabited->uninhabited
 unilateraly->unilaterally
 unilatreal->unilateral
 unilatreally->unilaterally
+uninitalise->uninitialise
+uninitalised->uninitialised
+uninitalises->uninitialises
+uninitalize->uninitialize
 uninitalized->uninitialized
+uninitalizes->uninitializes
+uninitialse->uninitialise
+uninitialsed->uninitialised
+uninitialses->uninitialises
 uninitialze->uninitialize
 uninitialzed->uninitialized
+uninitialzes->uninitializes
 uninstatiated->uninstantiated
 unintelligable->unintelligible
 unintented->unintended
@@ -15506,6 +15522,8 @@ variabes->variables
 varialbles->variables
 varian->variant
 variantions->variations
+variatoin->variation
+variatoins->variations
 varibale->variable
 varibales->variables
 varible->variable
