@@ -2375,6 +2375,7 @@ censur->censor, censure,
 centain->certain
 cententenial->centennial
 centerd->centered
+centrifugeable->centrifugable
 centruies->centuries
 centruy->century
 centuties->centuries
@@ -2686,6 +2687,7 @@ clese->close
 cleses->closes
 clevely->cleverly
 cliensite->client-side
+clik->click
 clincial->clinical
 clinicaly->clinically
 clipoing->clipping
@@ -3702,6 +3704,7 @@ corordinate->coordinate
 corordinates->coordinates
 corosbonding->corresponding
 corosion->corrosion
+corousel->carousel
 corparate->corporate
 corperations->corporations
 corpration->corporation
@@ -5265,6 +5268,7 @@ dur->due
 durationm->duration
 dureing->during
 durig->during
+durining->during
 durning->during
 durring->during
 duting->during
@@ -7640,6 +7644,7 @@ inclinaison->inclination
 inclode->include
 inclreased->increased
 includ->include
+includea->include
 includee->include
 includied->included
 includig->including
@@ -8249,6 +8254,7 @@ intereested->interested
 intereference->interference
 intereferences->interferences
 interelated->interrelated
+interelaved->interleaved
 interepreted->interpreted
 interept->intercept
 interesect->intersect
@@ -9126,6 +9132,7 @@ maximun->maximum
 maxinum->maximum
 maxium->maximum
 maxiumum->maximum
+maxumum->maximum
 mayu->may
 mazilla->Mozilla
 mccarthyst->mccarthyist
@@ -10145,6 +10152,7 @@ operaton->operation
 operatons->operations
 operattion->operation
 operattions->operations
+opereation->operation
 opertaion->operation
 opertaions->operations
 opertion->operation
@@ -11131,6 +11139,8 @@ poweful->powerful
 powerfull->powerful
 ppolygons->polygons
 ppublisher->publisher
+praameter->parameter
+praameters->parameters
 pracitcal->practical
 practial->practical
 practially->practically
@@ -13267,6 +13277,7 @@ shotdown->shutdown
 shoucl->should
 shoud->should
 shoudl->should
+shoudle->should
 shoudln->should, shouldn't,
 shoudn't->shouldn't
 shoudt->should, shouldn't,
@@ -13416,7 +13427,8 @@ skiped->skipped, skyped,
 skiping->skipping
 skipp->skip, skipped,
 skippd->skipped
-skipt->skip
+skipt->skip, Skype, skipped,
+skyp->skip, Skype,
 slase->slash
 slases->slashes
 slashs->slashes
@@ -13808,6 +13820,7 @@ stoped->stopped
 stoping->stopping
 stopp->stop
 stoppped->stopped
+stoppping->stopping
 stopps->stops
 stopry->story
 storag->storage
@@ -14919,6 +14932,8 @@ translteration->transliteration
 transmision->transmission
 transmisive->transmissive
 transmissable->transmissible
+transmissione->transmission
+transmist->transmit
 transmited->transmitted
 transmiter->transmitter
 transmiters->transmitters
@@ -16016,6 +16031,7 @@ wirting->writing
 wit->wit, with,
 witable->writeable
 witdh->width
+wite->write, white,
 witha->with a, with,
 withdrawl->withdrawal, withdraw,
 withe->with
@@ -16107,6 +16123,7 @@ writingm->writing
 writting->writing
 writtten->written
 wroet->wrote
+wrog->wrong
 wrok->work
 wroked->worked
 wroking->working
