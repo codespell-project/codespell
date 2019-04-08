@@ -4732,6 +4732,11 @@ dezert->dessert
 dezibel->decibel
 dezine->design
 dezinens->denizens
+dfine->define
+dfined->defined
+dfines->defines
+dfinition->definition
+dfinitions->definitions
 diable->disable
 diabled->disabled
 diabler->disabler
@@ -5213,6 +5218,7 @@ doesnt'->doesn't
 doesnt't->doesn't
 doesnt->doesn't, does not,
 doesnt;->doesn't
+doess->does
 doestn't->doesn't
 doign->doing
 doiuble->double
@@ -5598,7 +5604,8 @@ encapsualtes->encapsulates
 encapsulatzion->encapsulation
 encapsultion->encapsulation
 enchanced->enhanced
-enchancement->enhancement
+enchancement->enhancement, enchantment,
+enchancements->enhancements, enchantments,
 encluding->including
 encocded->encoded
 enconding->encoding
@@ -8338,6 +8345,7 @@ inter-operability->interoperability
 interace->interface
 interaces->interfaces
 interacive->interactive
+interacively->interactively
 interacsion->interaction
 interacsions->interactions
 interactionn->interaction
@@ -13528,6 +13536,7 @@ simliar->similar
 simlified->simplified
 simmilar->similar
 simpified->simplified
+simplei->simply
 simpley->simply
 simplier->simpler
 simplies->implies, simplifies,
@@ -15406,6 +15415,9 @@ undesireable->undesirable
 undestand->understand
 undestood->understood
 undetecable->undetectable
+undfine->undefine
+undfined->undefined
+undfines->undefines
 undistinghable->indistinguishable
 undoubtely->undoubtedly
 undreground->underground
@@ -15945,6 +15957,8 @@ verrical->vertical
 verry->very
 versin->version
 versiom->version
+versionm->version
+versionms->versions
 versionned->versioned
 versionning->versioning
 versitilaty->versatility
