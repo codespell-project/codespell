@@ -150,6 +150,7 @@ accessintg->accessing
 accessisble->accessible
 accessort->accessor
 accesss->access
+accesssing->accessing
 accesssor->accessor
 accesssors->accessors
 accet->accept
@@ -710,6 +711,7 @@ alligns->aligns
 alliviate->alleviate
 alllocate->allocate
 alllow->allow
+alllowed->allowed
 alllows->allows
 allmost->almost
 alloate->allocate, allotted, allot,
@@ -915,6 +917,7 @@ anly->only
 anlysis->analysis
 anlyzing->analyzing
 anniversery->anniversary
+annnounce->announce
 annoation->annotation
 annoint->anoint
 annointed->anointed
@@ -1275,7 +1278,9 @@ arre->are
 arrengement->arrangement
 arrengements->arrangements
 arround->around
+arrray->array
 arrrays->arrays
+arrrive->arrive
 arrrives->arrives
 arrtibute->attribute
 arry->array, carry,
@@ -1399,7 +1404,9 @@ asssassans->assassins
 asssembler->assembler
 asssembly->assembly
 asssertion->assertion
+asssociate->associated
 asssociated->associated
+asssociation->association
 asssume->assume
 asssumes->assumes
 asssuming->assuming
@@ -1812,6 +1819,7 @@ begining->beginning
 beginn->begin
 beginnig->beginning
 beginnin->beginning
+beginnning->beginning
 behabviour->behaviour
 behaivior->behavior
 behavious->behaviour, behaviours,
@@ -2958,6 +2966,7 @@ commments->comments
 commmit->commit
 commmits->commits
 commmon->common
+commmunicate->communicate
 commmunicating->communicating
 commnad->command
 commnads->commands
@@ -3113,6 +3122,8 @@ compresion->compression
 compresor->compressor
 compressable->compressible
 compresser->compressor
+compresss->compress
+compresssed->compressed
 compresssion->compression
 comprimise->compromise
 compromize->compromise
@@ -3171,6 +3182,7 @@ concatentates->concatenates
 concatentating->concatenating
 concatentation->concatenation
 concatentations->concatenations
+concatinate->concatenate
 concatinated->concatenated
 concatination->concatenation
 concatinations->concatenations
@@ -3819,6 +3831,7 @@ corrresponding->corresponding
 corrresponds->corresponds
 corrrupt->corrupt
 corrrupted->corrupted
+corrruption->corruption
 corrspond->correspond
 corrsponds->corresponds
 corruptiuon->corruption
@@ -4163,6 +4176,7 @@ decompreses->decompresses
 decompresing->decompressing
 decompresor->decompressor
 decompresser->decompressor
+decompresssion->decompression
 decompse->decompose
 decond->decode
 deconding->decoding
@@ -6073,6 +6087,7 @@ excecuting->executing
 excecution->execution
 excedded->exceeded
 exceded->exceeded
+exceeed->exceed
 excelent->excellent
 excell->excel
 excellance->excellence
@@ -6954,6 +6969,7 @@ gaurentee->guarantee
 gaurenteed->guaranteed
 gaurentees->guarantees
 gausian->gaussian
+geeneric->generic
 geeoteen->guillotine
 geeral->general
 gemetrical->geometrical
@@ -9750,6 +9766,7 @@ mozila->Mozilla
 mroe->more
 MSDOS->MS-DOS
 mssing->missing
+msssge->message
 mthod->method
 mtuually->mutually
 mucuous->mucous
@@ -10602,6 +10619,7 @@ overrride->override
 overrriden->overridden
 overrrides->overrides
 overrriding->overriding
+overrrun->overrun
 overshaddowed->overshadowed
 overthere->over there
 overun->overrun
@@ -10847,6 +10865,9 @@ passerbys->passersby
 passin->passing
 passiv->passive
 passowrd->password
+passs->pass
+passsed->passed
+passsing->passing
 passtime->pastime
 passtrough->passthrough
 passwrod->password
@@ -11606,6 +11627,7 @@ proable->probable
 proably->probably
 probabilaty->probability
 probabilty->probability
+probablay->probably
 probablistic->probabilistic
 probablly->probably
 probaby->probably
@@ -16224,6 +16246,7 @@ wayword->wayward
 weant->want, wean,
 weaponary->weaponry
 weas->was
+webage->webpage
 webiste->website
 wedensday->Wednesday
 wednesdaay->Wednesday
@@ -16412,6 +16435,7 @@ workststion->workstation
 world-reknown->world renown
 world-reknowned->world renowned
 worls->world
+worrry->worry
 worser->worse
 worstened->worsened
 worthing->worth, meriting,
