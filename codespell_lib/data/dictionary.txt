@@ -214,6 +214,7 @@ accssible->accessible
 accssor->accessor
 acctual->actual
 accumalate->accumulate
+accumalates->accumulates
 accumilated->accumulated
 accumlate->accumulate
 accumlated->accumulated
@@ -2767,6 +2768,7 @@ coctail->cocktail
 cocument->document
 cocumentation->documentation
 cocuments->document
+codde->code
 codepoitn->codepoint
 codesc->codecs
 codespel->codespell
@@ -5035,6 +5037,7 @@ discourrage->discourage
 discourraged->discouraged
 discovereability->discoverability
 discovr->discover
+discreet->discrete, discreet,
 discreminates->discriminates
 discrepencies->discrepancies
 discrepicies->discrepancies
@@ -6934,6 +6937,7 @@ ganes->games
 ganster->gangster
 garantee->guarantee
 garanteed->guaranteed
+garanteeed->guaranteed
 garantees->guarantees
 garantied->guaranteed
 garanty->guarantee
@@ -7404,6 +7408,7 @@ histroy->history
 hitogram->histogram
 hitsingles->hit singles
 hiygeine->hygiene
+hmdi->hdmi
 hnalder->handler
 hokay->okay
 holf->hold
@@ -9538,7 +9543,7 @@ minmal->minimal
 minsitry->ministry
 minstries->ministries
 minstry->ministry
-mintor->mentor, monitor,
+mintor->mentor, monitor, minor,
 mintored->mentored, monitored,
 mintoring->mentoring, monitoring,
 mintors->mentors, monitors,
@@ -9763,6 +9768,7 @@ mulitpath->multipath
 mulitple->multiple
 mulitplicative->multiplicative
 mulitplied->multiplied
+mulitply->multiply
 multible->multiple
 multicat->multicast
 multicultralism->multiculturalism
@@ -9906,6 +9912,7 @@ neeeded->needed
 neeeding->needing
 neeedn't->needn't
 neeeds->needs
+neees->needs
 nees->needs
 neesd->needs
 neesds->needs
@@ -10817,6 +10824,7 @@ parsin->parsing
 parstree->parse tree
 partaining->pertaining
 partialy->partially
+partical->partial
 particually->particularly
 particualr->particular
 particuar->particular
@@ -11442,6 +11450,7 @@ prefernces->preferences
 preferr->prefer
 preferrable->preferable
 preferrably->preferably
+preferrred->preferred
 prefferable->preferable
 prefferably->preferably
 preffered->preferred
@@ -11715,6 +11724,7 @@ progesses->progresses
 progessive->progressive
 progessor->progressor
 progesss->progress
+progesssive->progressive
 progidy->prodigy
 programable->programmable
 programatic->programmatic
@@ -11726,6 +11736,7 @@ programm->program
 programmaticaly->programmatically
 programmend->programmed
 programmetically->programmatically
+programmming->programming
 programms->programs
 progres->progress
 progresss->progress
@@ -12232,6 +12243,7 @@ recurively->recursively
 recurrance->recurrence
 recursivion->recursion
 recursivly->recursively
+recuse->recuse, recurse,
 recusion->recursion, reclusion,
 recusive->recursive, reclusive,
 recusively->recursively, reclusively,
@@ -12721,6 +12733,7 @@ repulics->republics
 reqest->request
 reqested->requested
 reqests->requests
+reqeuest->request
 reqeust->request
 reqeusted->requested
 reqeusting->requesting
@@ -14831,6 +14844,7 @@ terminats->terminates
 termindate->terminate
 termine->determine
 terminte->terminate
+termintor->terminator
 termperature->temperature
 terrestial->terrestrial
 terriories->territories
@@ -16263,6 +16277,7 @@ wheather->weather, whether,
 whehter->whether
 wheigh->weigh
 whell->wheel, well,
+whem->when
 whenevery->whenever
 whenver->whenever
 wher->where
@@ -16305,6 +16320,7 @@ whta->what
 whther->whether
 wich->which
 widesread->widespread
+widgect->widget
 widged->widget
 widgit->widget
 widht->width
