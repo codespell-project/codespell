@@ -8213,6 +8213,7 @@ files'->file's
 filesname->filename, filenames,
 filesnames->filenames
 filess->files
+filesstem->filesystem
 filessytem->filesystem
 filessytems->filesystems
 fileststem->filesystem
