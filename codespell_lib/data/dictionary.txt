@@ -2536,8 +2536,8 @@ bood->boot
 bookeeping->bookkeeping
 bookkeeing->bookkeeping
 bookkeeiping->bookkeeping
-bookkepp->bookkeep
 bookkeepping->bookkeeping
+bookkepp->bookkeep
 bookmar->bookmark
 boold->bold, bool,
 booleamn->boolean
@@ -3352,10 +3352,10 @@ ciruclar->circular
 ciruclation->circulation
 ciruclator->circulator
 cirucmflex->circumflex
+cirucmstances->circumstances
 cirucular->circular
 cirucumstance->circumstance
 cirucumstances->circumstances
-cirucmstances->circumstances
 ciruit->circuit
 ciruits->circuits
 cirumflex->circumflex
@@ -3707,7 +3707,6 @@ commnd->command
 commnd-line->command-line
 commndline->commandline
 commnds->commands
-commnd->command
 commnent->comment
 commnents->comments
 commnetary->commentary
@@ -3852,8 +3851,8 @@ compaytibility->compatibility
 compeitions->competitions
 compeletely->completely
 compelte->complete
-compeltelyt->completely
 compeltely->completely
+compeltelyt->completely
 compeltion->completion
 compeltly->completely
 compenent->component, competent,
@@ -5071,7 +5070,6 @@ cuestion->question
 cuestioned->questioned
 cuestions->questions
 cuileoga->cuileog
-cuases->causes
 culiminating->culminating
 cummulative->cumulative
 cummunicate->communicate
@@ -5122,8 +5120,8 @@ custome->custom, costume,
 customicable->customisable, customizable,
 customie->customize
 customied->customized
-customsied->customised
 customizeable->customizable
+customsied->customised
 customzied->customized
 custumised->customised
 custumized->customized
@@ -5163,8 +5161,8 @@ dameon->daemon, demon, Damien,
 damge->damage
 dammage->damage
 dammages->damages
-daplicating->duplicating
 dangerouse->dangerous
+daplicating->duplicating
 Dardenelles->Dardanelles
 dasdot->dashdot
 dashbord->dashboard
@@ -7061,8 +7059,8 @@ emedded->embedded
 emegrency->emergency
 emenet->element
 emenets->elements
-emiited->emitted
 emeregency->emergency
+emiited->emitted
 eminate->emanate
 eminated->emanated
 emision->emission
@@ -7443,6 +7441,7 @@ erorneusly->erroneously
 erorr->error
 erorrs->errors
 erors->errors
+erport->report
 erraneously->erroneously
 erro->error
 erroneus->erroneous
