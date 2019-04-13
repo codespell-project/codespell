@@ -8579,10 +8579,10 @@ froward->forward
 frowarded->forwarded
 frozee->frozen
 fschk->fsck
-fualt->fault
-fualts->faults
 fsk->fsck
 fsprosg->fsprogs
+fualt->fault
+fualts->faults
 fucntion->function
 fucntioning->functioning
 fucntions->functions
@@ -8835,6 +8835,7 @@ getttext->gettext
 getttime->gettime
 getttimeofday->gettimeofday
 gettting->getting
+ggroupe->groupe
 Ghandi->Gandhi
 ghostscritp->ghostscript
 ghraphic->graphic
