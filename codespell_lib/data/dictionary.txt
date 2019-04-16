@@ -3598,10 +3598,10 @@ coment->comment
 comented->commented
 comenting->commenting
 coments->comments
-comformance->conformance
 comf->conf
 comfigured->configured
 comfirm->confirm
+comformance->conformance
 comilers->compilers
 comination->combination
 comision->commission
@@ -4169,6 +4169,7 @@ confimred->confirmed
 confiugred->configured
 confort->comfort
 confortable->comfortable
+confrim->confirm
 confucing->confusing
 confucion->confusion
 confuction->conjunction
@@ -4224,7 +4225,6 @@ congifurable->configurable
 congifuration->configuration
 congifure->configure
 congifured->configured
-confrim->confirm
 congradulations->congratulations
 congresional->congressional
 conhesive->cohesive
@@ -5086,10 +5086,10 @@ curch->church
 curcuit->circuit
 curcumstance->circumstance
 curcumstances->circumstances
+curcumvent->circumvent
 cureful->careful
 curefully->carefully
 curefuly->carefully
-curcumvent->circumvent
 curent->current
 curentfilter->currentfilter
 curently->currently
@@ -5398,11 +5398,11 @@ defaulst->defaults, default,
 defaultet->defaulted
 defaut->default
 defautl->default
+defautldev->defaultdev
 defautled->defaulted
 defautling->defaulting
 defautls->defaults
 defautlt->default
-defautldev->defaultdev
 defautly->defaultly
 defauts->defaults
 defecit->deficit
@@ -5523,8 +5523,8 @@ delared->declared
 delares->declares
 delaring->declaring
 delate->delete
-delcarations->declarations
 delcaration->declaration
+delcarations->declarations
 delcare->declare
 delcared->declared
 delcares->declares
@@ -6051,6 +6051,7 @@ dfines->defines
 dfinition->definition
 dfinitions->definitions
 dgetttext->dgettext
+dhcpcd->dhcpd
 diable->disable
 diabled->disabled
 diabler->disabler
