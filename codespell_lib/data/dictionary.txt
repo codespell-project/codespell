@@ -1438,7 +1438,6 @@ appication->application
 appication-specific->application-specific
 appications->applications
 appicative->applicative
-appication->application
 appied->applied
 appies->applies
 applay->apply
@@ -2264,9 +2263,9 @@ backgournd->background
 backgroud->background
 backgroung->background
 backgrount->background
-backpsace->backspace
 backgrund->background
 backound->background
+backpsace->backspace
 backrefence->backreference
 backround->background
 backrounds->backgrounds
@@ -2495,10 +2494,10 @@ bianries->binaries
 bianry->binary
 biappicative->biapplicative
 bidimentionnal->bidimensional
+bidnings->bindings
 bigining->beginning
 biginning->beginning
 bilangual->bilingual
-bidnings->bindings
 bilateraly->bilaterally
 billingualism->bilingualism
 billon->billion
@@ -3962,7 +3961,6 @@ completly->completely
 completness->completeness
 complette->complete
 complettly->completely
-compliancy->compliance
 compliace->compliance
 compliancy->compliance
 complianse->compliance
@@ -6118,9 +6116,9 @@ dialgo->dialog
 dialgos->dialogs
 dialig->dialog
 dialigs->dialogs
+dialoge->dialog
 diamater->diameter
 diamaters->diameters
-dialoge->dialog
 diamon->diamond
 diamons->diamonds
 diangose->diagnose
@@ -6282,11 +6280,11 @@ dimentions->dimensions
 dimesions->dimensions
 dimesnional->dimensional
 diminuitive->diminutive
+dimissed->dismissed
 dimmension->dimension
 dimmensioned->dimensioned
 dimmensioning->dimensioning
 dimmensions->dimensions
-dimissed->dismissed
 dimnension->dimension
 dimnention->dimension
 dimunitive->diminutive
@@ -7763,8 +7761,8 @@ excpecting->expecting
 excpects->expects
 excpeption->exception
 excpet->except
-excpetions->exceptions
 excpetion->exception
+excpetions->exceptions
 excplicit->explicit
 excplicitly->explicitly
 excplict->explicit
@@ -8192,6 +8190,7 @@ failes->fails
 faill->fail
 failled->failed
 failre->failure
+failrue->failure
 failsave->fail-safe, failsafe,
 failsaves->fail-safes, failsafes,
 failt->fail, failed,
