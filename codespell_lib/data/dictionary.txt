@@ -13208,10 +13208,9 @@ overriddable->overridable
 overriddden->overridden
 overridded->overrode, overridden,
 overridding->overriding
-overrided->overrode, overridden,
-overrided->overridden
 overrideable->overridable
 overrided->overridden
+overrided->overrode, overridden,
 overriden->overridden
 overrident->overridden
 overridiing->overriding
@@ -15933,8 +15932,8 @@ resposibility->responsibility
 resposible->responsible
 respositories->repositories
 respository->repository
-ressapee->recipe
 resrved->reserved
+ressapee->recipe
 ressemblance->resemblance
 ressemble->resemble
 ressembled->resembled
@@ -16288,6 +16287,7 @@ sargant->sergeant
 sargeant->sergeant
 sargent->sergeant, argent,
 sarting->starting, sorting,
+sastisfies->satisfies
 sasy->says, sassy,
 satandard->standard
 satandards->standards
