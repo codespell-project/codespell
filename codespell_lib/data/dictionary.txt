@@ -1181,8 +1181,8 @@ ambigious->ambiguous
 ambigous->ambiguous
 ambiguious->ambiguous
 ambiguos->ambiguous
-amendement->amendment
 ambuguity->ambiguity
+amendement->amendment
 amendmant->amendment
 amened->amended, amend,
 Amercia->America
@@ -2944,9 +2944,9 @@ canonalize->canonicalize
 canonalized->canonicalized
 canonalizes->canonicalizes
 canonalizing->canonicalizing
-canonival->canonical
 canoncial->canonical
 canonicalizations->canonicalization
+canonival->canonical
 canot->cannot
 cant'->can't
 cant->can't
@@ -3003,6 +3003,7 @@ carrers->careers
 Carribbean->Caribbean
 Carribean->Caribbean
 carridge->carriage, cartridge,
+carrige->carriage
 carryintg->carrying
 cartdridge->cartridge
 Carthagian->Carthaginian
