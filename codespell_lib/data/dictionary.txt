@@ -5285,8 +5285,8 @@ deaktivate->deactivate
 deaktivated->deactivated
 dealed->dealt
 dealign->dealing, dealign,
-dealloacte->deallocate
 dealilng->dealing
+dealloacte->deallocate
 dealocate->deallocate
 dealte->delete
 deamon->daemon
@@ -8602,9 +8602,9 @@ fracional->fractional
 fragement->fragment
 fragementation->fragmentation
 fragements->fragments
+fragmants->fragments
 fragmenet->fragment
 fragmenets->fragments
-fragmants->fragments
 fragmnet->fragment
 frambuffer->framebuffer
 framebufer->framebuffer
@@ -8933,6 +8933,7 @@ giser->geyser
 gisers->geysers
 gitar->guitar
 gitars->guitars
+gitatributes->gitattributes
 gived->given
 givem->given, give them, give 'em,
 glight->flight
