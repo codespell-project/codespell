@@ -480,6 +480,7 @@ admitedly->admittedly
 adn->and
 adobted->adopted
 adolecent->adolescent
+adpapted->adapted
 adpater->adapter
 adquire->acquire
 adquired->acquired
@@ -916,6 +917,7 @@ andd->and
 andlers->handlers, antlers,
 androgenous->androgynous
 androgeny->androgyny
+androidextra->androidextras
 androind->Android
 andthe->and the
 ane->and
@@ -1753,7 +1755,9 @@ baceause->because
 bacic->basic
 backbround->background
 backgorund->background
+backgound->background
 backgroud->background
+backgroung->background
 backpsace->backspace
 backrefence->backreference
 backround->background
@@ -2177,6 +2181,8 @@ busness->business
 buss->bus
 busses->buses
 bussiness->business
+butons->buttons
+butterly->butterfly
 buttosn->buttons
 buttton->button
 butttons->buttons
@@ -2594,6 +2600,7 @@ charactors->characters
 charactristics->characteristics
 characture->character
 chararacter->character
+chararcter->character
 charas->chars
 charascters->characters
 charasmatic->charismatic
@@ -2790,6 +2797,7 @@ clearifying->clarifying
 clearted->cleared
 cleck->check
 cleean->clean
+cleff->clef
 cleint's->client's
 cleint->client
 cleints->clients
@@ -3063,6 +3071,7 @@ comnmand->command
 comobobox->combo-box
 comon->common
 comonent->component
+comor->color
 compability->compatibility
 compabillity->compatibility
 compain->complain
@@ -4106,6 +4115,7 @@ cryto->crypto
 crytpo->crypto
 ctificates->certificates
 cuase->cause
+cuileoga->cuileog
 culiminating->culminating
 cummulative->cumulative
 cummunicate->communicate
@@ -5267,6 +5277,7 @@ dispath->dispatch
 dispathed->dispatched
 dispathes->dispatches
 dispathing->dispatching
+dispay->display
 dispbibute->distribute
 dispell->dispel
 dispence->dispense
@@ -7172,6 +7183,7 @@ Galations->Galatians
 gallaxies->galaxies
 galvinized->galvanized
 Gameboy->Game Boy
+ganbia->gambia
 ganerate->generate
 ganes->games
 ganster->gangster
@@ -7254,6 +7266,7 @@ genuin->genuine
 geocentic->geocentric
 geoemtries->geometries
 geoemtry->geometry
+geogcountry->geocountry
 geographich->geographic
 geographicial->geographical
 geomery->geometry
@@ -7551,6 +7564,7 @@ heigest->highest
 heigh->height, high,
 heigher->higher
 heighest->highest
+heighteen->eighteen
 heigt->height
 heigth->height
 heirachies->hierarchies
@@ -11173,6 +11187,7 @@ parastics->parasitics
 paratmers->parameters
 parctically->practically
 pard->part
+parellelogram->parallelogram
 parellels->parallels
 paremeter->parameter
 paremeters->parameters
@@ -12431,6 +12446,7 @@ quroum->quorum
 qutie->quite, quiet,
 rabinnical->rabbinical
 racaus->raucous
+ractise->practise
 rade->read, raid,
 radiactive->radioactive
 radify->ratify
@@ -14103,6 +14119,7 @@ simlarlity->similarity
 simlarly->similarly
 simliar->similar
 simlified->simplified
+simmetry->symmetry
 simmilar->similar
 simpified->simplified
 simplei->simply
@@ -15448,6 +15465,7 @@ tetrahedrans->tetrahedrons
 tetry->retry
 tetss->tests
 tetxture->texture
+texchnically->technically
 texline->textline
 textfrme->textframe
 texual->textual
@@ -15638,6 +15656,7 @@ tihkn->think
 tihs->this
 tim->time, Tim, disabled due to being a person's name
 timeing->timing
+timere->timer
 timestan->timespan
 timestemp->timestamp
 timestemps->timestamps
