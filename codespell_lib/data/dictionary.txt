@@ -10994,9 +10994,9 @@ overreide->override
 overreides->overrides
 overriabled->overridable
 overriddden->overridden
-overridded->overridden
+overridded->overrode. overridden,
 overridding->overriding
-overrided->overridden
+overrided->overrode, overridden,
 overriden->overridden
 overrite->overwrite, override, overrate,
 overrriddden->overridden
@@ -12390,6 +12390,7 @@ pyrhon->python
 pyscic->psychic
 pythin->python
 pytnon->python
+pytohn->python
 pyton->python
 qeueue->queue
 qoute->quote
