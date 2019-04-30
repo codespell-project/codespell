@@ -1905,7 +1905,7 @@ bectors->vectors
 becuase->because
 beding->bedding, begging,
 bedore->before
-beeing->being
+beeing->being, been,
 beeings->beings
 beetween->between
 beetwen->between
@@ -7642,6 +7642,8 @@ greif->grief
 grephic->graphic
 greysacles->greyscales
 gridles->griddles
+grobal->global
+grobally->globally
 grometry->geometry
 grop->group, drop,
 gropu->group
@@ -8120,7 +8122,9 @@ imapcted->impacted
 imapcting->impacting
 imapcts->impacts
 imapge->image
+imbed->embed
 imbedded->embedded
+imbedding->embedding
 imcoming->incoming
 imcomming->incoming
 imcomplete->incomplete
@@ -10046,7 +10050,7 @@ merrors->mirrors
 mesage->message
 mesages->messages
 mesaureed->measured
-meshe->mesh, meshed,
+meshe->mesh, meshed, meshes,
 messag->message
 messagin->messaging
 messags->messages
@@ -10322,6 +10326,7 @@ moent->moment
 moeny->money
 mofdified->modified
 mofification->modification
+mofified->modified
 mofifies->modifies
 mofify->modify
 mohammedans->muslims
@@ -11234,6 +11239,8 @@ ouside->outside
 oustanding->outstanding
 outbut->output
 outbuts->outputs
+outgoign->outgoing
+outoign->outgoing
 outout->output
 outpupt->output
 outputed->outputted
@@ -15640,6 +15647,7 @@ targt->target
 targte->target
 tarmigan->ptarmigan
 tarpolin->tarpaulin
+tasbar->taskbar
 tast->taste
 tath->that
 tatoos->tattoos
