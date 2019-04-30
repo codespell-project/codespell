@@ -996,6 +996,7 @@ anomolies->anomalies
 anomolous->anomalous
 anomoly->anomaly
 anonimity->anonymity
+anononymous->anonymous
 anonymouse->anonymous
 anonyms->anonymous
 anonymus->anonymous
@@ -2869,6 +2870,7 @@ classe->class, classes,
 classess->classes
 classs->class
 classses->classes
+claus->clause
 clcoksource->clocksource
 clcosed->closed
 cleaer->clear, clearer,
@@ -11584,6 +11586,7 @@ penalities->penalties
 penality->penalty
 penatly->penalty
 pendantic->pedantic
+pendning->pending
 penerator->penetrator
 penisula->peninsula
 penisular->peninsular
@@ -12280,6 +12283,7 @@ prferables->preferables
 prference->preference
 prferred->preferred
 prgram->program
+priave->private
 pricipal->principal
 priciple->principle
 priciples->principles
@@ -12306,6 +12310,7 @@ prinicipal->principal
 printting->printing
 priorty->priority
 prirority->priority
+priting->printing
 privalege->privilege
 privaleges->privileges
 privde->provide
@@ -14058,6 +14063,8 @@ searchs->searches
 secant->second, disabled due to valid mathematical concept
 secants->seconds, disabled due to valid mathematical concept
 secceeded->seceded, succeeded,
+seccond->second
+secconds->seconds
 secction->section
 seceed->succeed, secede,
 seceeded->succeeded, seceded,
@@ -16216,6 +16223,7 @@ traslate->translate
 traslated->translated
 traslates->translates
 traslating->translating
+traslucency->translucency
 trasmission->transmission
 trasnaction->transaction
 trasnlate->translate
@@ -16251,6 +16259,7 @@ trigged->triggered
 triggerd->triggered
 triggeres->triggers
 triggerred->triggered
+triggger->trigger
 triguered->triggered
 trimed->trimmed
 triming->trimming, timing,
@@ -16977,6 +16986,7 @@ variabes->variables
 varialbles->variables
 varian->variant
 variantions->variations
+variatinos->variations
 variatoin->variation
 variatoins->variations
 varibale->variable
