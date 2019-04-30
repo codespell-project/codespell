@@ -1061,6 +1061,7 @@ appeciate->appreciate
 appedn->append
 appendent->appended
 appendign->appending
+appened->appended, happened,
 appeneded->appended
 appenines->Apennines
 appens->appends
@@ -1070,6 +1071,7 @@ apperances->appearances
 appereance->appearance
 appereances->appearances
 appered->appeared
+apperent->apparent
 apperently->apparently
 appers->appears
 apperture->aperture
@@ -1599,6 +1601,7 @@ auotmatic->automatic
 auromated->automated
 austrailia->Australia
 austrailian->Australian
+Australien->Australian
 Austrlaian->Australian
 autenticate->authenticate
 autenticated->authenticated
@@ -2127,6 +2130,7 @@ brutaly->brutally
 buad->baud
 Buddah->Buddha
 Buddist->Buddhist
+bufefr->buffer
 bufer->buffer
 bufers->buffers
 buffereed->buffered
@@ -2399,6 +2403,7 @@ case-sesitive->case-sensitive
 case-unsensitive->case-insensitive
 caseinsenstive->case-insensitive
 caseinsesitive->case-insensitive
+caselessely->caselessly
 casesensitve->case-sensitive
 casesesitive->case-sensitive
 casette->cassette
@@ -2445,6 +2450,7 @@ cauched->caught
 caugt->caught
 cauhgt->caught
 cauing->causing
+causees->causes
 causion->caution
 causioned->cautioned
 causions->cautions
@@ -2862,6 +2868,7 @@ coeficient->coefficient
 coelesce->coalesce
 coersion->coercion
 coexsiting->coexisting
+cofeee->coffee
 cofidence->confidence
 cofiguration->configuration
 cofigure->configure
@@ -3068,6 +3075,8 @@ communicaton->communication
 communites->communities
 communuication->communication
 comnmand->command
+comnpresion->compression
+comnpress->compress
 comobobox->combo-box
 comon->common
 comonent->component
@@ -3238,6 +3247,7 @@ computarized->computerized
 computtaion->computation
 computtaions->computations
 comress->compress
+comressed->compressed
 comression->compression
 comsume->consume
 comsumed->consumed
@@ -3839,6 +3849,7 @@ copstruction->construction
 copuright->copyright
 coputer->computer
 copver->cover
+copyable->copiable
 copyed->copied
 copyied->copied
 copyrigth->copyright
@@ -4293,6 +4304,7 @@ decomissioned->decommissioned
 decommissionn->decommission
 decommissionned->decommissioned
 decomoposition->decomposition
+decomposion->decomposition
 decomposit->decompose
 decomposited->decomposed
 decompositing->decomposing
@@ -4859,6 +4871,7 @@ determintes->determines
 determnine->determine
 detet->detect
 deteted->detected
+detetion->detection
 detetmine->determine
 detination->destination
 detremental->detrimental
@@ -5207,6 +5220,7 @@ disbales->disables
 disbaling->disabling
 disble->disable
 disbled->disabled
+disccuss->discuss
 discernable->discernible
 discimenation->dissemination
 disclamer->disclaimer
@@ -5354,6 +5368,7 @@ distribtuions->distributions
 distribuion->distribution
 distribure->distribute
 distrobution->distribution
+distroname->distro name
 distrub->disturb
 distrubite->distribute
 distrubted->distributed, disrupted,
@@ -5522,6 +5537,8 @@ drats->drafts
 draughtman->draughtsman
 Dravadian->Dravidian
 draview->drawview
+drawack->drawback
+drawacks->drawbacks
 drawed->drew, drawn, had drawn,
 drawm->drawn
 dreasm->dreams
@@ -5545,6 +5562,7 @@ drwaing->drawing
 drwawing->drawing
 drwawings->drawings
 dscrete->discrete
+dscribed->described
 dsiable->disable
 dsiabled->disabled
 dsplays->displays
@@ -6036,8 +6054,10 @@ epectedly->expectedly
 epecting->expecting
 epects->expects
 epidsodes->episodes
+epigramic->epigrammatic
 eploit->exploit
 eploits->exploits
+epmty->empty
 epsiode->episode
 epty->empty
 epxected->expected
@@ -6094,8 +6114,10 @@ erronous->erroneous
 erronously->erroneously
 errorneous->erroneous
 errorneously->erroneously
+errorneus->erroneous
 errornous->erroneous
 errornously->erroneously
+errorprone->error-prone
 errro->error
 errror->error
 errrors->errors
@@ -6406,6 +6428,7 @@ exercize->exercise
 exerpt->excerpt
 exerpts->excerpts
 exersize->exercise
+exersizes->exercises
 exerternal->external
 exeution->execution
 exhalted->exalted
@@ -6871,6 +6894,8 @@ flexability->flexibility
 flexable->flexible
 flexibilty->flexibility
 flie->file
+floading->floating, flooding,
+floading-add->floating-add
 floatation->flotation
 florescent->fluorescent
 floresent->fluorescent
@@ -7441,6 +7466,7 @@ guranteeing->guaranteeing
 gurantees->guarantees
 guttaral->guttural
 gutteral->guttural
+gziped->gzipped
 haa->has
 habaeus->habeas
 habeus->habeas
@@ -7598,6 +7624,7 @@ hertzs->hertz
 hesistant->hesitant
 heterogenous->heterogeneous
 hetrogenous->heterogeneous
+heuristical->heuristic
 heursitics->heuristics
 hexademical->hexadecimal
 hexidecimal->hexadecimal
@@ -8710,6 +8737,7 @@ intemediary->intermediary
 intenational->international
 intendet->intended
 inteneded->intended
+intension->intention
 intensitive->insensitive, intensive,
 intentation->indentation
 intented->intended, indented,
@@ -8725,6 +8753,7 @@ intepretator->interpreter
 intepretators->interpreters
 intepreted->interpreted
 intepreter->interpreter
+intepreter-based->interpreter-based
 intepreters->interpreters
 intepretes->interprets
 intepreting->interpreting
@@ -9148,6 +9177,8 @@ keybords->keyboards
 keyords->keywords
 keyoutch->keytouch
 keyowrd->keyword
+keyserver->key server
+keyservers->key servers
 keystokes->keystrokes
 keywork->keyword
 keyworkd->keyword
@@ -9214,6 +9245,7 @@ larget->larger, largest, target,
 largets->largest, targets,
 largst->largest
 larrry->larry
+laso->also, lasso,
 lastes->latest
 lastest->latest
 lastr->last
@@ -9685,6 +9717,7 @@ mdoel->model
 meachanism->mechanism
 meachnisms->mechanism
 meading->meaning
+meaing->meaning
 meanigfull->meaningful
 meanign->meaning
 meanin->meaning
@@ -11248,6 +11281,7 @@ pase->pass, pace, parse,
 pased->passed
 pasengers->passengers
 pash->hash
+pasing->passing, posing,
 pasive->passive
 pass-thru->pass-through, pass through, passthrough,
 pass-trough->pass-through, pass through, passthrough,
@@ -11781,6 +11815,7 @@ practicly->practically
 practicval->practical
 practioner->practitioner
 practioners->practitioners
+pragam->pragma
 pragmato->pragma to
 prairy->prairie
 prameter->parameter
@@ -12331,6 +12366,7 @@ psrameter->parameter
 pssed->passed
 pssibility->possibility
 psuedo->pseudo
+psuedolayer->pseudolayer
 psuh->push
 psychadelic->psychedelic
 psycology->psychology
@@ -12717,6 +12753,7 @@ recyles->recycles
 recyling->recycling
 redction->reduction, redaction,
 redeable->readable
+redeclaation->redeclaration
 redefiend->redefined
 redefiende->redefined
 redefintion->redefinition
@@ -13043,6 +13080,7 @@ remved->removed
 remvoe->remove
 remvoed->removed
 remvoved->removed
+renabled->re-enabled
 rendereing->rendering
 renderering->rendering
 rendevous->rendezvous
@@ -13639,6 +13677,7 @@ safeing->saving
 safepooint->safepoint
 safepooints->safepoints
 safequard->safeguard
+safetly->safely
 safly->safely
 saftey->safety
 safty->safety
@@ -14178,6 +14217,7 @@ sitaution->situation
 sitautions->situations
 sitck->stick
 sitll->still
+situatution->situation
 siturations->situations
 situtation->situation
 situtations->situations
@@ -14290,6 +14330,7 @@ somethiong->something
 sometiems->sometimes
 sometihng->something
 sometims->sometimes
+sometines->sometimes
 someting->something
 somewho->somehow
 somthing->something
@@ -14937,6 +14978,7 @@ sunglases->sunglasses
 suntask->subtask
 suop->soup
 supeblock->superblock
+supercalifragilisticexpialidoceous->supercalifragilisticexpialidocious
 supercede->supersede
 superceded->superseded
 supercedes->supersedes
@@ -15430,6 +15472,7 @@ terminaters->terminators
 terminats->terminates
 termindate->terminate
 termine->determine
+termined->terminated
 terminte->terminate
 termperature->temperature
 ternament->tournament
@@ -15565,6 +15608,7 @@ thne->then
 thnig->thing
 thnigs->things
 tho->to
+thoe->those
 thonic->chthonic
 thorugh->through, thorough,
 thorwn->thrown
@@ -16104,6 +16148,9 @@ uncompres->uncompress
 uncompresed->uncompressed
 uncompreses->uncompresses
 uncompresing->uncompressing
+uncompresor->uncompressor
+uncompresors->uncompressors
+uncomprss->uncompress
 unconcious->unconscious
 unconciousness->unconsciousness
 uncondisional->unconditional
@@ -16331,6 +16378,7 @@ unnessessary->unnecessary
 unning->running
 unocde->Unicode
 unoffical->unofficial
+unompress->uncompress
 unoperational->nonoperational
 unorderd->unordered
 unorotated->unrotated
@@ -16502,6 +16550,7 @@ upgade->upgrade
 upgarde->upgrade
 upgarte->upgrade
 upgradded->upgraded
+upgradei->upgrade
 upgradingn->upgrading
 upgrate->upgrade
 upholstry->upholstery
@@ -16526,6 +16575,8 @@ uptadeable->updatable
 uptim->uptime
 uptions->options
 upto->up to
+uptodate->up-to-date
+uptodateness->up-to-dateness
 uptream->upstream
 usal->usual
 usally->usually
@@ -16575,6 +16626,7 @@ usuallly->usually
 usualy->usually
 ususal->usual
 ususally->usually
+UTF8ness->UTF-8-ness
 utiilties->utilities
 utilies->utilities
 utilis->utilise
@@ -16910,6 +16962,7 @@ wehn->when
 wehther->whether
 weigth->weight
 weigthed->weighted
+weigths->weights
 weild->wield, wild,
 weilded->wielded
 weill->will
