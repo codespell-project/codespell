@@ -72,6 +72,7 @@ abselutly->absolutely
 absense->absence
 absolete->absolute, obsolete,
 absolut->absolute
+absolutelly->absolutely
 absolutly->absolutely
 absorbant->absorbent
 absorbsion->absorption
@@ -165,6 +166,7 @@ accesssor->accessor
 accesssors->accessors
 accet->accept
 accets->accepts
+acchiev->achieve
 accidant->accident
 accidentaly->accidentally
 accidential->accidental
@@ -1562,6 +1564,7 @@ athenean->athenian
 atheneans->athenians
 athiesm->atheism
 athiest->atheist
+athough->although
 atleast->at least
 atomatically->automatically
 atomical->atomic
@@ -5412,6 +5415,10 @@ dimentions->dimensions
 dimesions->dimensions
 dimesnional->dimensional
 diminuitive->diminutive
+dimmension->dimension
+dimmensioned->dimensioned
+dimmensioning->dimensioning
+dimmensions->dimensions
 dimnension->dimension
 dimnention->dimension
 dimunitive->diminutive
@@ -5965,6 +5972,7 @@ earliear->earlier
 earlies->earliest
 earnt->earned
 easer->easier, eraser,
+easili->easily
 easilly->easily
 easyer->easier
 eaxct->exact
@@ -8088,6 +8096,7 @@ hismelf->himself
 hisory->history
 histgram->histogram
 histocompatability->histocompatibility
+histori->history, historic,
 historicians->historians
 histroy->history
 hitogram->histogram
@@ -8813,6 +8822,8 @@ ineqality->inequality
 inequalitiy->inequality
 inernal->internal
 inerrupt->interrupt
+inershia->inertia
+inershial->inertial
 inertion->insertion
 inestart->linestart
 inetrrupts->interrupts
@@ -9373,6 +9384,8 @@ intersted->interested
 intersting->interesting
 intersts->interests
 intertaining->entertaining
+intertia->inertia
+intertial->inertial
 interupt->interrupt
 interupted->interrupted
 interupting->interrupting
@@ -11001,6 +11014,7 @@ noticably->noticeably
 notication->notification
 notications->notifications
 noticeing->noticing
+noticiable->noticeable
 noticible->noticeable
 notifcation->notification
 notifcations->notifications
@@ -11107,6 +11121,7 @@ obtaiend->obtained
 obtaion->obtain
 obtrain->obtain
 obtrained->obtained
+obvisious->obvious
 obvisous->obvious
 obvisously->obviously
 obyect->object
@@ -11896,6 +11911,7 @@ pensle->pencil
 peom->poem
 peoms->poems
 peopel->people
+peopl->people
 peotry->poetry
 pepare->prepare
 peported->reported, purported,
@@ -15389,6 +15405,7 @@ stucture->structure
 stuctured->structured
 stuctures->structures
 studdy->study
+studi->study
 studing->studying
 stuggling->struggling
 stuill->still
@@ -17474,6 +17491,7 @@ vesions->versions
 vetex->vertex
 vetexes->vertices
 vetween->between
+vew->view
 veyr->very
 vhild->child
 viatnamese->vietnamese
@@ -17724,6 +17742,8 @@ widesread->widespread
 widged->widget
 widgit->widget
 widht->width
+widhtpoint->widthpoint
+widhtpoints->widthpoints
 widthn->width
 wief->wife
 wieh->view
