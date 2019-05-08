@@ -24,7 +24,7 @@ sort-dictionary:
 	LC_ALL=C sort ${SORT_ARGS} -u -o ${DICTIONARY} ${DICTIONARY}
 
 trim-dictionary:
-	sed -E -i.bak -e 's/^[[:space:]]+//; s/[[:space:]]+$$//; /^$$/d' ${DICTIONARY} && rm ${DICTIONARY}.bak
+	ex -u NONE -s -c '%s/^[[:space:]]\+//|%s/[[:space:]]\+$$//|g/^$$/d|x' -c 'q' ${DICTIONARY} || true
 
 pypi:
 	python setup.py sdist register upload
