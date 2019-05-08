@@ -4155,7 +4155,7 @@ copstruction->construction
 copuright->copyright
 coputer->computer
 copver->cover
-copyable->copiable
+copyable->copyable, copiable,
 copyed->copied
 copyied->copied
 copyrigth->copyright
@@ -16051,7 +16051,7 @@ suppported->supported
 suppporting->supporting
 suppports->supports
 suppres->suppress
-suppressable->suppressible
+suppressable->suppressable, suppressible,
 suppressingd->suppressing
 supprt->support
 suppy->supply
@@ -18079,7 +18079,7 @@ weant->want, wean,
 weaponary->weaponry
 weas->was
 webiste->website
-webp->web
+webp->webp, web,
 wedensday->Wednesday
 wednesdaay->Wednesday
 wege->wedge
