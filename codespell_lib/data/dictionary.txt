@@ -4502,11 +4502,12 @@ cursro->cursor
 curvelinear->curvilinear
 customable->customizable
 custome->custom, costume,
-customicable->customizable
+customicable->customisable, customizable,
 customie->customize
 customied->customized
-customising->customizing
+customsied->customised
 customzied->customized
+custumised->customised
 custumized->customized
 cutom->custom
 cuurently->currently
@@ -10712,7 +10713,6 @@ minerial->mineral
 MingGW->MinGW
 minimial->minimal
 minimise->minimise, minimize,
-minimising->minimizing
 minimumm->minimum
 minimun->minimum
 mininal->minimal
@@ -12004,8 +12004,9 @@ paragraphy->paragraph
 paragrphs->paragraphs
 parahaps->perhaps
 paralel->parallel
-paralelising->parallelizing
+paralelising->parallelising
 paralelism->parallelism
+paralelizing->parallelizing
 paralell->parallel
 paralelle->parallel
 paralellism->parallelism
@@ -13399,7 +13400,6 @@ rarelly->rarely
 rarified->rarefied
 rasberry->raspberry
 raspoberry->raspberry
-rasterise->rasterize
 rathar->rather
 rathern->rather
 rceate->create
