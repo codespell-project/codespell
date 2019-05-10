@@ -483,6 +483,7 @@ adge->edge, badge, adage,
 adges->edges, badges, adages,
 adhearing->adhering
 adherance->adherence
+adiditon->addition
 adin->admin
 aditional->additional
 aditionally->additionally
@@ -895,6 +896,7 @@ altready->already
 alue->value
 alusion->allusion, illusion,
 alvorithm->algorithm
+alwais->always
 alwas->always
 alwast->always
 alwasy->always
@@ -1885,6 +1887,7 @@ backgound->background
 backgournd->background
 backgroud->background
 backgroung->background
+backgrount->background
 backpsace->backspace
 backrefence->backreference
 backround->background
@@ -3013,6 +3016,7 @@ cloacks->cloaks
 clockwíse->clockwise
 clodes->closed, clothes,
 clonning->cloning
+clory->glory
 clos->close
 closeing->closing
 clossed->closed
@@ -4172,7 +4176,7 @@ copstruction->construction
 copuright->copyright
 coputer->computer
 copver->cover
-copyable->copiable
+copyable->copyable, copiable,
 copyed->copied
 copyied->copied
 copyrigth->copyright
@@ -14373,6 +14377,7 @@ responser->responder
 responsers->responders
 responsibile->responsible
 responsibilites->responsibilities
+responsibilty->responsibility
 responsiblities->responsibilities
 responsiblity->responsibility
 responsing->responding
@@ -16093,7 +16098,7 @@ suppports->supports
 suppres->suppress
 suppresion->suppression
 suppresions->suppression
-suppressable->suppressible
+suppressable->suppressable, suppressible,
 suppressingd->suppressing
 supprt->support
 suppy->supply
@@ -18123,7 +18128,7 @@ weaponary->weaponry
 weas->was
 webage->webpage
 webiste->website
-webp->web
+webp->webp, web,
 wedensday->Wednesday
 wednesdaay->Wednesday
 wege->wedge
