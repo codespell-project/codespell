@@ -1,0 +1,9 @@
+-   id: codespell
+    name: codespell
+    description: Checks for common misspellings in text files.
+    entry: codespell
+    language: python
+    types: [text]
+    args: []
+    require_serial: false
+    additional_dependencies: []
