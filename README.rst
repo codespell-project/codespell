@@ -53,14 +53,14 @@ Comma-separated list of files to skip. It accepts globs as well.  Examples:
 
 * to skip .eps & .txt files, invoke ``codespell --skip="*.eps,*.txt"``
 
-* to skip directories, invoke ``codespell --skip="./src/3rd-Party,./src/Test"`` ::
+* to skip directories, invoke ``codespell --skip="./src/3rd-Party,./src/Test"``
 
 
 Useful commands::
 
     codespell -d -q 3 --skip="*.po,*.ts,./src/3rdParty,./src/Test"
 
-| List all typos found except translation files and some directories.
+List all typos found except translation files and some directories.
 Display them without terminal colors and with a quiet level of 3. ::
 
     codespell -i 3 -w
@@ -151,10 +151,10 @@ Updating the dictionary
 In the scenario where the user prefers not to follow the development version of codespell yet still opts to benefit from the frequently updated `dictionary.txt` file, we recommend running a simple set of commands to achieve this ::
 
     wget https://raw.githubusercontent.com/codespell-project/codespell/master/codespell_lib/data/dictionary.txt
-    codespell -D dictionary.txt    
+    codespell -D dictionary.txt
 
-The above simply downloads the latest ``dictionary.txt`` file and then by utilizing the -D flag allows the user to specify the freshly downloaded ``dictionary.txt`` as the custom dictionary instead of the default one. 
-  
+The above simply downloads the latest ``dictionary.txt`` file and then by utilizing the -D flag allows the user to specify the freshly downloaded ``dictionary.txt`` as the custom dictionary instead of the default one.
+
 License
 -------
 
