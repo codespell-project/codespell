@@ -5393,6 +5393,8 @@ dialgos->dialogs
 dialig->dialog
 dialigs->dialogs
 dialogbox->dialog box
+diamater->diameter
+diamaters->diameters
 diamon->diamond
 diamons->diamonds
 diangose->diagnose
@@ -8038,6 +8040,7 @@ Guaduloupe->Guadalupe, Guadeloupe,
 Guadulupe->Guadalupe, Guadeloupe,
 guage->gauge
 guaranted->guaranteed
+guarantes->guarantees
 guarantie->guarantee
 guarantied->guaranteed
 guarentee->guarantee
@@ -10154,11 +10157,13 @@ linearily->linearly, linearity,
 linerisation->linearisation
 linerisations->linearisations
 linewdith->linewidth
+linez->lines
 lingth->length
 linheight->lineheight
 linkfy->linkify
 linnaena->linnaean
 lintain->lintian
+linz->lines
 lippizaner->lipizzaner
 liquify->liquefy
 liscense->license, licence,
@@ -13165,6 +13170,7 @@ propely->properly
 propeoperties->properties
 properies->properties
 properities->properties
+properrt->property
 propert->property
 properteis->properties
 propertery->property
@@ -15146,6 +15152,8 @@ simlarly->similarly
 simliar->similar
 simlicity->simplicity
 simlified->simplified
+simmetric->symmetric
+simmetrical->symmetrical
 simmetry->symmetry
 simmilar->similar
 simpified->simplified
@@ -15386,6 +15394,7 @@ sovereignity->sovereignty
 soverign->sovereign
 soverignity->sovereignty
 soverignty->sovereignty
+sowe->sow, so we,
 spacific->specific
 spacifics->specifics
 spacified->specified
@@ -15527,6 +15536,8 @@ spported->supported
 spporting->supporting
 spports->supports
 spreaded->spread
+spreadhseet->spreadsheet
+spreadhseets->spreadsheets
 spreasheets->spreadsheets
 sprech->speech
 spred->spread
@@ -15597,6 +15608,7 @@ stange->strange
 stanp->stamp
 staration->starvation
 stard->start
+startd->started
 startegic->strategic
 startegies->strategies
 startegy->strategy
@@ -16907,8 +16919,8 @@ transacion->transaction
 transaction-spacific->transaction-specific
 transactoin->transaction
 transalte->translate
-transation->transaction
-transations->transactions
+transation->transaction, translation,
+transations->transactions, translations,
 transcendance->transcendence
 transcendant->transcendent
 transcendentational->transcendental
