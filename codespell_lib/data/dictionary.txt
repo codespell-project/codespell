@@ -73,6 +73,7 @@ abselutely->absolutely
 abselutly->absolutely
 absense->absence
 absolete->absolute, obsolete,
+absoloute->absolute
 absolut->absolute
 absolutelly->absolutely
 absolutly->absolutely
@@ -1379,6 +1380,7 @@ argumens->arguments
 argumentents->arguments
 argumeny->argument
 argumetn->argument
+argumetns->arguments
 argumnet->argument
 aribitary->arbitrary
 aribtrarily->arbitrarily
@@ -1567,7 +1569,8 @@ assumme->assume
 assummed->assumed
 assummes->assumes
 assumpation->assumption
-assumtions->assumption
+assumtion->assumption
+assumtions->assumptions
 assupmption->assumption
 assuption->assumption
 assuptions->assumptions
@@ -12262,6 +12265,7 @@ paravirutalised->paravirtualised
 paravirutalization->paravirtualization
 paravirutalize->paravirtualize
 paravirutalized->paravirtualized
+parctical->practical
 parctically->practically
 pard->part
 parellelogram->parallelogram
@@ -12976,6 +12980,7 @@ predefiend->predefined
 predefiened->predefined
 predefiined->predefined
 predefineds->predefined
+predessor->predecessor
 predicatble->predictable
 predicitons->predictions
 predictible->predictable
@@ -14270,7 +14275,7 @@ rennovation->renovation
 rentime->runtime
 rentors->renters
 reoccurrence->recurrence
-reocurring->recurring
+reocurring->reoccurring, recurring,
 reoder->reorder
 reonly->read-only
 reopended->reopened
