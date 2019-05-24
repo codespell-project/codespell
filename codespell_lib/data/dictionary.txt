@@ -2746,7 +2746,7 @@ busses->buses
 bussiness->business
 butons->buttons
 butterly->butterfly
-buttom->button
+buttom->button, bottom,
 buttosn->buttons
 buttton->button
 butttons->buttons
@@ -3055,7 +3055,6 @@ caterpiller->caterpillar
 caterpillers->caterpillars
 cathlic->catholic
 catholocism->catholicism
-catlink->taglink
 catory->factory
 catpture->capture
 catpure->capture
@@ -6117,6 +6116,7 @@ dialgos->dialogs
 dialig->dialog
 dialigs->dialogs
 dialoge->dialog
+dialoge->dialog, dialogue,
 diamater->diameter
 diamaters->diameters
 diamon->diamond
@@ -6959,7 +6959,7 @@ eclise->eclipse
 eclispe->eclipse
 ecognized->recognized
 ecomonic->economic
-ecret->secret
+ecret->secret, erect,
 ecspecially->especially
 ect->etc
 ecxept->except
@@ -7467,7 +7467,7 @@ equiped->equipped
 equipmentd->equipment
 equipments->equipment
 equippment->equipment
-equire->require
+equire->require, enquire,
 equitorial->equatorial
 equivalance->equivalence
 equivalant->equivalent
@@ -11052,7 +11052,7 @@ jouney->journey
 journied->journeyed
 journies->journeys
 joystik->joystick
-jpng->png
+jpng->png, jpg,
 jscipt->jscript
 jstu->just
 jsut->just
@@ -11733,7 +11733,7 @@ meanining->meaning
 meaninless->meaningless
 meaninng->meaning
 mear->wear, mere, mare,
-mearly->merely
+mearly->merely, nearly,
 measuremenet->measurement
 measuremenets->measurements
 measurmenet->measurement
@@ -12589,7 +12589,7 @@ notications->notifications
 noticeing->noticing
 noticiable->noticeable
 noticible->noticeable
-notidy->notify
+notidy->notify, not tidy,
 notifcation->notification
 notifcations->notifications
 notifed->notified
@@ -13419,7 +13419,7 @@ paremeter->parameter
 paremeters->parameters
 paremter->parameter
 paremters->parameters
-parentesis->parentheses
+parentesis->parentheses, parenthesis,
 parenthese->parentheses
 parenthesed->parenthesized
 parenthises->parentheses
@@ -14356,7 +14356,7 @@ principlaity->principality
 principly->principally
 princliple->principle
 prind->print
-pring->print
+pring->print, bring, ping,
 pringing->printing
 prinicipal->principal
 printting->printing
@@ -15161,7 +15161,7 @@ rectange->rectangle
 rectanges->rectangles
 rectanglar->rectangular
 rectiinear->rectilinear
-rects->rect
+rects->rect, rectangles,
 recude->reduce
 recuiting->recruiting
 reculrively->recursively
@@ -17502,6 +17502,7 @@ sturctures->structures
 sturucture->structure
 stutus->status
 styhe->style
+stype->style
 stypes->styles
 sub-lcuase->sub-clause
 subcatagories->subcategories
@@ -18585,7 +18586,6 @@ tomorrrow->tomorrow
 tongiht->tonight
 tood->todo
 toogle->toggle
-tooglecomparetwocheckbox->togglecomparetwocheckbox
 toogling->toggling
 tookits->toolkits
 toolar->toolbar
@@ -18640,7 +18640,6 @@ trafficing->trafficking
 trafic->traffic
 tragectory->trajectory
 traiing->trailing, training,
-trailingshashit->trailingslashit
 trailling->trailing
 traker->tracker
 trama->trauma
@@ -19013,7 +19012,7 @@ unabale->unable
 unabel->unable
 unacceptible->unacceptable
 unaccesible->unaccessible
-unaccurate->inaccurate
+unaccurate->inaccurate, unaccurate,
 unacompanied->unaccompanied
 unahppy->unhappy
 unalllowed->unallowed
@@ -19581,7 +19580,6 @@ upto->up to
 uptodate->up-to-date
 uptodateness->up-to-dateness
 uptream->upstream
-uris->urls
 usal->usual
 usally->usually
 uscaled->unscaled
@@ -20352,7 +20350,7 @@ yhe->the
 yieldin->yielding
 ymbols->symbols
 yotube->youtube
-youn->your
+youn->your, you, young,
 youre->your, you're,
 youseff->yourself, yousef,
 youself->yourself
