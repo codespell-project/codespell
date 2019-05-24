@@ -11914,6 +11914,7 @@ orientaion->orientation
 orientatied->orientated
 oriente->oriented
 orientied->oriented
+orientned->oriented
 origanaly->originally
 origianal->original
 origianally->originally
@@ -12096,6 +12097,7 @@ overwritren->overwritten
 overwrittes->overwrites
 overwrittin->overwriting
 overwritting->overwriting
+ovrlapped->overlapped
 ovrwrt->overwrite
 ovservable->observable
 ovservation->observation
@@ -12918,6 +12920,7 @@ pre-proces->pre-process
 pre-procesing->pre-processing
 pre-realease->pre-release
 pre-registeres->pre-registers
+preallocationg->preallocating
 preambule->preamble
 preample->preamble
 preaorocessing->preprocessing
@@ -13847,6 +13850,8 @@ reconaissance->reconnaissance
 reconcilation->reconciliation
 reconfiged->reconfigured
 recongized->recognized
+recongnises->recognises
+recongnizes->recognizes
 reconized->recognized
 reconnaisance->reconnaissance
 reconnaissence->reconnaissance
@@ -14055,6 +14060,7 @@ registed->registered
 registeing->registering
 registeration->registration
 registerd->registered, registers,
+registerered->registered
 registeres->registers
 registeresd->registered
 registert->registered
@@ -14067,6 +14073,7 @@ registred->registered
 registrer->register
 registring->registering
 registrs->registers
+registy->registry
 regiter->register
 regitered->registered
 regitering->registering
@@ -14136,7 +14143,9 @@ reister->register
 reivison->revision
 reknown->renown
 reknowned->renowned
+rekursed->recursed
 rekursion->recursion
+rekursive->recursive
 rela->real, disabled due to lots of false positives
 relaative->relative
 relaease->release
@@ -14380,6 +14389,7 @@ representaions->representations
 representaiton->representation
 representated->represented
 representating->representing
+representd->represented
 represente->represents, represented,
 representiative->representative
 representive->representative
