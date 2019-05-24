@@ -1300,6 +1300,7 @@ arbitarily->arbitrarily
 arbitary->arbitrary
 arbitrariy->arbitrarily, arbitrary,
 arbitrarly->arbitrarily, arbitrary,
+arbitraryily->arbitrarily
 arbitraryly->arbitrary
 arbitraty->arbitrary
 arbitray->arbitrary
@@ -6076,6 +6077,7 @@ doesing->doing, does, does in, dosing, dozing,
 doesits->does its
 doesn'->doesn't
 doesn;t->doesn't
+doesnexist->doesn't exist
 doesnot->doesn't, does not,
 doesnt'->doesn't
 doesnt't->doesn't
@@ -7024,6 +7026,7 @@ excempt->exempt
 excepetion->exception
 excepions->exceptions
 exceptation->expectation
+exceptins->exceptions, excepting,
 exceptionnal->exceptional
 exceptionss->exceptions
 exceptionts->exceptions
@@ -8634,6 +8637,7 @@ identty->identity
 ideosyncracies->ideosyncrasies
 ideosyncratic->idiosyncratic
 idesa->ideas, ides,
+idetifies->identifies
 idicate->indicate
 idicated->indicated
 idicates->indicates
@@ -8656,6 +8660,7 @@ igores->ignores
 igoring->ignoring
 Ihaca->Ithaca
 iif->if
+iinclude->include
 ilegal->illegal
 illegimacy->illegitimacy
 illegitmate->illegitimate
@@ -13049,6 +13054,7 @@ prepresented->represented
 prepresents->represents
 preproces->preprocess
 preprocesing->preprocessing
+preprocesor->preprocessor
 preprocesssing->preprocessing
 prequisites->prerequisites
 prerequesites->prerequisites
@@ -15101,6 +15107,7 @@ sematical->semantical
 sematically->semantically
 sematics->semantics
 sematnics->semantics
+semding->sending
 semgent->segment
 semicolor->semicolon
 semicolumn->semicolon
@@ -15887,6 +15894,8 @@ statisfies->satisfies
 statisfy->satisfy
 statisfying->satisfying
 statisitics->statistics
+statitic->statistic
+statitics->statistics
 statmenet->statement
 statmenmt->statement
 statment->statement
