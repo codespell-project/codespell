@@ -1948,7 +1948,7 @@ atheneans->athenians
 athiesm->atheism
 athiest->atheist
 athough->although
-athron->athlon
+athron->Athlon
 atleast->at least
 atomatically->automatically
 atomical->atomic
@@ -3474,7 +3474,7 @@ clockwíse->clockwise
 clock_getttime->clock_gettime
 clodes->closed, clothes,
 cloneable->clonable
-clonez->cloner
+clonez->cloner, clones,
 clonning->cloning
 clory->glory
 clos->close
@@ -4213,7 +4213,7 @@ configurtion->configuration
 configury->configurable
 configutration->configuration
 confimred->confirmed
-conflictd->conflicts
+conflictd->conflicts, conflicted
 confort->comfort
 confortable->comfortable
 confucing->confusing
@@ -4558,7 +4558,7 @@ contentended->contended
 contentn->content
 contentss->contents
 contet->contest, content, context,
-contets->contents
+contets->contents, contexts,
 contexta->context
 contexual->contextual
 contian->contain
@@ -5987,7 +5987,6 @@ detction->detection
 detecs->detects, deters, detect,
 detectected->detected
 detectetd->detected
-detectrename->detectrenames
 detemine->determine
 detemined->determined
 detemines->determines
@@ -16990,7 +16989,6 @@ soilders->soldiers
 soiurce->source
 soket->socket
 sokets->sockets
-solang->solange
 solarmutx->solarmutex
 solatary->solitary
 soler->solver, solar, solely,
@@ -17327,7 +17325,6 @@ startegy->strategy
 startet->started
 startign->starting
 startlisteneing->startlistening
-startls->starttls
 startting->starting
 statamenet->statement
 statamenets->statements
@@ -19336,7 +19333,6 @@ unloadins->unloading
 unmainted->unmaintained
 unmanouverable->unmaneuverable, unmanoeuvrable,
 unmaping->unmapping
-unmerged->unmerge
 unmistakeably->unmistakably
 unmodifable->unmodifiable
 unmodifed->unmodified
@@ -19412,7 +19408,6 @@ unrecognixed->unrecognized
 unreconized->unrecognized
 unrecovable->unrecoverable
 unrecoverd->unrecovered
-unreferenzierte->unreferenziertes
 unregiste->unregister
 unregisted->unregistered
 unregisteing->registering
