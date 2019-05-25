@@ -12421,7 +12421,7 @@ overwite->overwrite
 overwites->overwrites
 overwitten->overwritten
 overwize->otherwise
-overwridden->overwritten
+overwridden->overwritten, overridden,
 overwriteable->overwritable
 overwriten->overwritten
 overwritren->overwritten
@@ -16626,6 +16626,8 @@ subsytem->subsystem
 subsytems->subsystems
 subtabels->subtables
 subtances->substances
+subtarger->subtarget
+subtargers->subtargets
 subterranian->subterranean
 subtitute->substitute
 subtituted->substituted
@@ -17401,6 +17403,7 @@ thiks->thinks
 thimngs->things
 thinigs->things
 thinn->thin
+thirs->third, thirst,
 thirtyth->thirtieth
 this'd->this would
 thise->these, this,
