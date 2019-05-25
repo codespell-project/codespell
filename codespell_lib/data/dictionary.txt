@@ -7467,7 +7467,7 @@ equiped->equipped
 equipmentd->equipment
 equipments->equipment
 equippment->equipment
-equire->require, enquire,
+equire->require, enquire, equine, esquire,
 equitorial->equatorial
 equivalance->equivalence
 equivalant->equivalent
@@ -11052,7 +11052,7 @@ jouney->journey
 journied->journeyed
 journies->journeys
 joystik->joystick
-jpng->png, jpg,
+jpng->png, jpg, jpeg,
 jscipt->jscript
 jstu->just
 jsut->just
@@ -15161,7 +15161,6 @@ rectange->rectangle
 rectanges->rectangles
 rectanglar->rectangular
 rectiinear->rectilinear
-rects->rect, rectangles,
 recude->reduce
 recuiting->recruiting
 reculrively->recursively
@@ -16244,8 +16243,6 @@ sanaty->sanity
 sanctionning->sanctioning
 sandwhich->sandwich
 Sanhedrim->Sanhedrin
-sanitiation->sanitisation
-sanitised->sanitized
 sanitizisation->sanitization
 santioned->sanctioned
 santize->sanitize
@@ -17503,7 +17500,7 @@ sturucture->structure
 stutus->status
 styhe->style
 stype->style
-stypes->styles
+stypes->styles, types,
 sub-lcuase->sub-clause
 subcatagories->subcategories
 subcatagory->subcategory
@@ -19012,7 +19009,6 @@ unabale->unable
 unabel->unable
 unacceptible->unacceptable
 unaccesible->unaccessible
-unaccurate->inaccurate, unaccurate,
 unacompanied->unaccompanied
 unahppy->unhappy
 unalllowed->unallowed
