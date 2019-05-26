@@ -11174,7 +11174,10 @@ moreso->more, more so,
 morever->moreover
 morgage->mortgage
 morisette->morissette
+mormalise->normalise
+mormalize->normalize
 mormalized->normalized
+mormalizes->normalizes
 morrisette->morissette
 morroccan->moroccan
 morrocco->morocco
@@ -11950,6 +11953,7 @@ orgamise->organise
 organim->organism
 organisaion->organisation
 organistion->organisation
+organizaion->organization
 organiztion->organization
 organsiation->organisation
 organsiations->organisations
@@ -12232,6 +12236,7 @@ packhage->package
 packhages->packages
 packtes->packets
 pading->padding
+paermission->permission
 paermissions->permissions
 paeth->path
 pagagraph->paragraph
@@ -13098,6 +13103,7 @@ preferr->prefer
 preferrable->preferable
 preferrably->preferably
 preferrence->preference
+preferrences->preferences
 prefferable->preferable
 prefferably->preferably
 preffered->preferred
@@ -13486,7 +13492,6 @@ propertise->properties
 propertly->properly, property,
 propertys->properties
 propertyst->properties
-propertyvlaue->propertyvalue
 propery->property, properly,
 propeties->properties
 propetry->property
