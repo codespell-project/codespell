@@ -12558,7 +12558,7 @@ owerwrite->overwrite
 owful->awful
 ownder->owner
 ownerhsip->ownership
-ownes->owns
+ownes->owns, one,
 ownner->owner
 ownward->onward
 ownwer->owner
@@ -13974,7 +13974,7 @@ provdided->provided
 provicde->provide
 provicded->provided
 provicdes->provides
-provice->provide
+provice->provide, province,
 provicial->provincial
 provid->provide
 providewd->provided
@@ -14200,15 +14200,15 @@ realiable->reliable
 realitime->realtime
 realitvely->relatively
 realiy->really
-reall->real
+reall->real, really,
 realling->really
 reallize->realize
 reallllly->really
 realsitic->realistic
 realted->related
-realtion->relation
-realtions->relations
-realtive->relative
+realtion->relation, reaction,
+realtions->relations, reactions,
+realtive->relative, reactive,
 realy->really
 realyl->really
 ream->ream, stream,
@@ -14490,7 +14490,7 @@ refences->references
 refenence->reference
 refenrenced->referenced
 referal->referral
-refere->refer
+refere->refer, referee,
 referebces->references
 referece->reference
 referecence->reference
@@ -14521,7 +14521,7 @@ referer->referrer
 refererd->referred
 refererence->reference
 referers->referrer, referrers,
-referes->refers
+referes->refers, referees,
 referiang->referring
 refering->referring
 refernce->reference
@@ -17494,8 +17494,6 @@ thefore->therefore
 theif->thief
 theifs->thieves
 theire->their, they're,
-theire->they're
-theire->they're, their,
 theiv->thief, they've,
 theive->thief
 theives->thieves
