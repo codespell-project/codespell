@@ -892,6 +892,7 @@ alltogetrher->altogether, all together,
 alltogther->altogether, all together,
 alltough->although
 allways->always
+allwo->allow
 allwos->allows
 allws->allows
 almostly->almost
@@ -7034,6 +7035,7 @@ errornous->erroneous
 errornously->erroneously
 errorprone->error-prone
 errorstring->error string
+erros->errors
 errro->error
 errror->error
 errrors->errors
@@ -8011,7 +8013,7 @@ forr->for
 forsaw->foresaw
 forse->force
 forseeable->foreseeable
-forst->first
+forst->first, forced,
 fortan->fortran
 fortat->format
 forteen->fourteen
@@ -15875,7 +15877,7 @@ sheduling->scheduling
 sheepherd->shepherd
 sheepherds->shepherds
 sheild->shield
-sheme->scheme
+sheme->scheme, shame,
 shepe->shape
 sherif->sheriff
 shif->shift
@@ -17493,6 +17495,7 @@ theif->thief
 theifs->thieves
 theire->their, they're,
 theire->they're
+theire->they're, their,
 theiv->thief, they've,
 theive->thief
 theives->thieves
@@ -17567,7 +17570,7 @@ tho->to
 thoe->those
 thonic->chthonic
 thorugh->through, thorough,
-thorwn->thrown
+thorwn->thrown, thorn,
 thos->those, this,
 thoses->those
 thoughout->throughout
@@ -17636,7 +17639,7 @@ thur->their
 thurough->thorough
 thurrow->thorough
 thurver->further
-thw->the
+thw->the, thaw,
 thyat->that
 tieing->tying
 tiem->time, item,
@@ -19169,6 +19172,7 @@ wholey->wholly
 wholy->wholly, holy,
 whoose->whose
 whos->whose
+whos->whose, who's,
 whould->would
 whta->what
 whther->whether
@@ -19394,4 +19398,5 @@ ziping->zipping
 zlot->slot
 zoon->zoom, zoon,
 zuser->user
+||||||| merged common ancestors
 évaluate->evaluate
