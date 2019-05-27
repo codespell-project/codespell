@@ -10190,7 +10190,9 @@ intot->into
 intpreter->interpreter
 intputs->inputs
 intrduced->introduced
-intreeg->intrigue, intrigued, intriguing,
+intreeg->intrigue
+intreegued->intrigued
+intreeguing->intriguing
 intreface->interface
 intregral->integral
 intrest->interest, insert,
