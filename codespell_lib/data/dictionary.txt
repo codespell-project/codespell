@@ -5737,7 +5737,7 @@ diposed->disposed, deposed,
 diposing->disposing, deposing,
 dipthong->diphthong
 dipthongs->diphthongs
-dircet->dircet
+dircet->direct
 dircetories->directories
 dircetory->directory
 dirctly->directly
@@ -5748,6 +5748,7 @@ direclty->directly
 direcly->directly
 direcories->directories
 direcory->directory
+direcotories->directories
 direcotory->directory
 direcotries->directories
 direcotry->directory
@@ -10367,7 +10368,6 @@ liasons->liaisons
 libarary->library
 libaries->libraries
 libary->library
-libatomic-ops->libatomic_ops
 libell->libel
 liberoffice->libreoffice
 liberry->library
@@ -15114,7 +15114,7 @@ santizes->sanitizes
 santizing->sanitizing
 sargant->sergeant
 sargeant->sergeant
-sarting->starting
+sarting->starting, sorting,
 sasy->says, sassy,
 satandard->standard
 satandards->standards
