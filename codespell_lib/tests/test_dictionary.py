@@ -14,6 +14,7 @@ def test_dictionary_formatting():
         for line in fid:
             err, rep = line.decode('utf-8').split('->')
             err = err.lower()
+            assert err != rep, 'error %r corrects to itself' % err
             assert err not in err_dict, 'error %r already exists' % err
             assert ws.match(err) is None, 'error %r has whitespace' % err
             assert comma.match(err) is None, 'error %r has a comma' % err
