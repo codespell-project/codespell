@@ -2647,10 +2647,17 @@ cancelaltion->cancellation
 cancelation->cancellation
 cancelations->cancellations
 cancelles->cancels
+cancl->cancel
+cancle->cancel
 cancled->canceled
 candadate->candidate
+candadates->candidates
 candiate->candidate
+candiates->candidates
 candidiate->candidate
+candidiates->candidates
+candinate->candidate
+candinates->candidates
 cange->change
 canidate->candidate
 canidates->candidates
@@ -10313,6 +10320,7 @@ invidual->individual
 invidually->individually
 invisiable->invisible
 invisibile->invisible
+invisivble->invisible
 invlaid->invalid
 invlisible->invisible
 invlove->involve
@@ -16930,9 +16938,11 @@ sufficent->sufficient
 sufficently->sufficiently
 suffisticated->sophisticated
 suficcient->sufficient
+sugested->suggested
 sugestion->suggestion
 sugestions->suggestions
 sugests->suggests
+suggestsed->suggested
 suggesttion->suggestion
 suggesttions->suggestions
 suh->such
@@ -17295,6 +17305,8 @@ sytntax->syntax
 szenario->scenario
 szenarios->scenarios
 szes->sizes
+szie->size
+szies->sizes
 tabacco->tobacco
 tabbaray->taboret
 tabblow->tableau
