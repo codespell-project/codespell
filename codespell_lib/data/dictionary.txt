@@ -4056,6 +4056,7 @@ contendor->contender
 contened->contained, contend,
 contener->container
 conteners->containers
+contenht->content
 contens->contents, contains,
 contentended->contended
 contentn->content
@@ -5541,6 +5542,7 @@ diagnotics->diagnostics
 diagonale->diagonal
 diagramas->diagrams
 diagramm->diagram
+dialaog->dialog
 dialate->dilate
 dialgo->dialog
 dialgos->dialogs
@@ -5735,6 +5737,7 @@ diposed->disposed, deposed,
 diposing->disposing, deposing,
 dipthong->diphthong
 dipthongs->diphthongs
+dircet->direct
 dircetories->directories
 dircetory->directory
 dirctly->directly
@@ -5745,6 +5748,8 @@ direclty->directly
 direcly->directly
 direcories->directories
 direcory->directory
+direcotories->directories
+direcotory->directory
 direcotries->directories
 direcotry->directory
 direcoty->directory
@@ -6118,6 +6123,7 @@ doesnt;->doesn't
 doess->does
 doestn't->doesn't
 doign->doing
+doiing->doing
 doiuble->double
 doiubled->doubled
 dollor->dollar
@@ -12295,6 +12301,7 @@ paiting->painting
 pakage->package
 pakageimpl->packageimpl
 pakages->packages
+pakcage->package
 paket->packet
 pakge->package
 pakvage->package
@@ -15017,6 +15024,7 @@ rougly->roughly
 rouine->routine
 rouines->routines
 round-robbin->round-robin
+roundign->rounding
 rountine->routine
 rountines->routines
 rountrip->roundtrip
@@ -15106,6 +15114,7 @@ santizes->sanitizes
 santizing->sanitizing
 sargant->sergeant
 sargeant->sergeant
+sarting->starting, sorting,
 sasy->says, sassy,
 satandard->standard
 satandards->standards
@@ -16239,6 +16248,7 @@ structres->structures
 structrual->structural
 structual->structural
 structue->structure
+structued->structured
 structues->structures
 structur->structure
 strucutre->structure
