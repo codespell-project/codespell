@@ -11199,6 +11199,12 @@ moreso->more, more so,
 morever->moreover
 morgage->mortgage
 morisette->morissette
+mormalise->normalise
+mormalised->normalised
+mormalises->normalises
+mormalize->normalize
+mormalized->normalized
+mormalizes->normalizes
 morrisette->morissette
 morroccan->moroccan
 morrocco->morocco
@@ -11760,6 +11766,7 @@ od->of
 oder->order, odor,
 odly->oddly
 oen->one
+oerflow->overflow
 ofcource->of course
 offcers->officers
 offcially->officially
@@ -11887,6 +11894,7 @@ opertaions->operations
 opertion->operation
 opertional->operational
 opertions->operations
+opetional->optional
 opion->option
 opionally->optionally
 opions->options
@@ -11970,8 +11978,14 @@ orderd->ordered
 ordner->order
 orgamise->organise
 organim->organism
+organisaion->organisation
+organisaions->organisations
 organistion->organisation
+organistions->organisations
+organizaion->organization
+organizaions->organizations
 organiztion->organization
+organiztions->organizations
 organsiation->organisation
 organsiations->organisations
 organziation->organization
@@ -12009,6 +12023,7 @@ orienation->orientation
 orientaion->orientation
 orientatied->orientated
 oriente->oriented
+orientiation->orientation
 orientied->oriented
 orientned->oriented
 origanaly->originally
@@ -12252,6 +12267,8 @@ packhage->package
 packhages->packages
 packtes->packets
 pading->padding
+paermission->permission
+paermissions->permissions
 paeth->path
 pagagraph->paragraph
 pahses->phases
@@ -12269,6 +12286,7 @@ pakge->package
 pakvage->package
 palatte->palette
 palce->place, palace,
+palces->places, pales,
 paleolitic->paleolithic
 palete->palette
 paliamentarian->parliamentarian
@@ -13115,6 +13133,8 @@ prefernces->preferences
 preferr->prefer
 preferrable->preferable
 preferrably->preferably
+preferrence->preference
+preferrences->preferences
 prefferable->preferable
 prefferably->preferably
 preffered->preferred
@@ -15941,6 +15961,7 @@ spports->supports
 spreaded->spread
 spreadhseet->spreadsheet
 spreadhseets->spreadsheets
+spreasheet->spreadsheet
 spreasheets->spreadsheets
 sprech->speech
 spred->spread
