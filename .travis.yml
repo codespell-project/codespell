@@ -13,7 +13,6 @@ addons:
     packages:
       - libaspell-dev
       - aspell-en
-      - aspell-dictionary
 
 cache:
   directories:
