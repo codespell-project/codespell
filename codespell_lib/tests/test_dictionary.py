@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 
 import os.path as op
+import aspell
 import re
 
 
 def test_dictionary_formatting():
     """Test that all dictionary entries are valid."""
+    speller = aspell.Speller('lang', 'en')
     err_dict = dict()
     ws = re.compile(r'.*\s.*')  # whitespace
     comma = re.compile(r'.*,.*')  # comma
@@ -18,6 +20,7 @@ def test_dictionary_formatting():
             assert err not in err_dict, 'error %r already exists' % err
             assert ws.match(err) is None, 'error %r has whitespace' % err
             assert comma.match(err) is None, 'error %r has a comma' % err
+            assert err not in speller, 'error %r is in the aspell dictionary' % err
             rep = rep.rstrip('\n')
             assert len(rep) > 0, ('error %s: correction %r must be non-empty'
                                   % (err, rep))
