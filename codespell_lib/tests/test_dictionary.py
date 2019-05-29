@@ -22,11 +22,11 @@ def test_dictionary_formatting(recwarn):
             assert ws.match(err) is None, 'error %r has whitespace' % err
             assert comma.match(err) is None, 'error %r has a comma' % err
             if not speller.check(
-                unicode(err, 'utf-8').encode(speller.ConfigKeys()['encoding'][2])):
+                    err.encode(speller.ConfigKeys()['encoding'][2])):
                 warnings.warn(('warning %r is in the aspell dictionary'
                                % err), UserWarning)
-            #assert err not in speller, ('error %r is in the aspell dictionary'
-            #                            % err)
+            # assert err not in speller, ('error %r is in the aspell dictionary'
+            #                             % err)
             rep = rep.rstrip('\n')
             assert len(rep) > 0, ('error %s: correction %r must be non-empty'
                                   % (err, rep))
