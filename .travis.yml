@@ -8,6 +8,13 @@ language: python
 sudo: false
 dist: xenial
 
+addons:
+  apt:
+    packages:
+      - libaspell-dev
+      - aspell-en
+      - aspell-dictionary
+
 cache:
   directories:
     - $HOME/.cache/pip
