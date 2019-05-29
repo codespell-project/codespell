@@ -4,6 +4,7 @@ import aspell
 import os.path as op
 import re
 import warnings
+import pprint
 
 
 def test_dictionary_formatting():
@@ -21,7 +22,8 @@ def test_dictionary_formatting():
             assert err not in err_dict, 'error %r already exists' % err
             assert ws.match(err) is None, 'error %r has whitespace' % err
             assert comma.match(err) is None, 'error %r has a comma' % err
-            warnings.warn(speller.ConfigKeys()['encoding'])
+            pp = pprint.PrettyPrinter(indent=4)
+            warnings.warn(pp.pprint(speller.ConfigKeys()['encoding']))
             #if not speller.check(
             #        err.encode(speller.ConfigKeys()['encoding'][2])):
             #    warnings.warn(('warning %r is in the aspell dictionary'
