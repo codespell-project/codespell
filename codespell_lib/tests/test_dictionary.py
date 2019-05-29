@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 
-import os.path as op
 import aspell
+import os.path as op
 import re
+import warnings
 
 
-def test_dictionary_formatting():
+def test_dictionary_formatting(recwarn):
     """Test that all dictionary entries are valid."""
     speller = aspell.Speller('lang', 'en')
     err_dict = dict()
@@ -20,8 +21,11 @@ def test_dictionary_formatting():
             assert err not in err_dict, 'error %r already exists' % err
             assert ws.match(err) is None, 'error %r has whitespace' % err
             assert comma.match(err) is None, 'error %r has a comma' % err
-            assert err not in speller, ('error %r is in the aspell dictionary'
-                                        % err)
+            if err in speller:
+                warnings.warn(('warning %r is in the aspell dictionary'
+                               % err), UserWarning)
+            #assert err not in speller, ('error %r is in the aspell dictionary'
+            #                            % err)
             rep = rep.rstrip('\n')
             assert len(rep) > 0, ('error %s: correction %r must be non-empty'
                                   % (err, rep))
@@ -52,6 +56,10 @@ def test_dictionary_formatting():
                 if r not in unique:
                     unique.append(r)
             assert reps == unique, 'entries are not (lower-case) unique'
+            
+    assert len(recwarn) == 0, ('error found %d error entries in the aspell '
+                               'dictionary' % len(recwarn))
+            
     # check for corrections that are errors (but not self replacements)
     for err in err_dict:
         for r in err_dict[err]:
