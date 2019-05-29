@@ -21,7 +21,8 @@ def test_dictionary_formatting(recwarn):
             assert err not in err_dict, 'error %r already exists' % err
             assert ws.match(err) is None, 'error %r has whitespace' % err
             assert comma.match(err) is None, 'error %r has a comma' % err
-            if err in speller:
+            if not speller.check(
+                unicode(err, 'utf-8').encode(speller.ConfigKeys()['encoding'][2])):
                 warnings.warn(('warning %r is in the aspell dictionary'
                                % err), UserWarning)
             #assert err not in speller, ('error %r is in the aspell dictionary'
@@ -56,10 +57,8 @@ def test_dictionary_formatting(recwarn):
                 if r not in unique:
                     unique.append(r)
             assert reps == unique, 'entries are not (lower-case) unique'
-            
     assert len(recwarn) == 0, ('error found %d error entries in the aspell '
                                'dictionary' % len(recwarn))
-            
     # check for corrections that are errors (but not self replacements)
     for err in err_dict:
         for r in err_dict[err]:
