@@ -6,7 +6,7 @@ import re
 import warnings
 
 
-def test_dictionary_formatting(recwarn):
+def test_dictionary_formatting():
     """Test that all dictionary entries are valid."""
     speller = aspell.Speller('lang', 'en')
     err_dict = dict()
@@ -58,7 +58,7 @@ def test_dictionary_formatting(recwarn):
                 if r not in unique:
                     unique.append(r)
             assert reps == unique, 'entries are not (lower-case) unique'
-    # Loop through warnings here, so we can see them, as we don't get them with assert
+    # Loop through warnings here, so we can see them, as we don't get them with recwarn
     #assert len(recwarn) == 0, ('error found %d error entries in the aspell '
     #                           'dictionary' % len(recwarn))
     # check for corrections that are errors (but not self replacements)
