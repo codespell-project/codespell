@@ -21,8 +21,7 @@ def test_dictionary_formatting():
             assert err not in err_dict, 'error %r already exists' % err
             assert ws.match(err) is None, 'error %r has whitespace' % err
             assert comma.match(err) is None, 'error %r has a comma' % err
-            if not speller.check(
-                    err.encode(speller.ConfigKeys()['encoding'][1])):
+            if speller.check(err.encode(speller.ConfigKeys()['encoding'][1])):
                 warnings.warn(('warning %r is in the aspell dictionary'
                                % err), UserWarning)
             # assert err not in speller, ('error %r is in the aspell dictionary'
