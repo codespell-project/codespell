@@ -23,7 +23,8 @@ def test_dictionary_formatting():
             assert ws.match(err) is None, 'error %r has whitespace' % err
             assert comma.match(err) is None, 'error %r has a comma' % err
             pp = pprint.PrettyPrinter(indent=4)
-            warnings.warn(pp.pprint(speller.ConfigKeys()['encoding']))
+            warnings.warn(pp.pprint(speller.ConfigKeys()['encoding']), UserWarning)
+            pp.pprint(speller.ConfigKeys()['encoding'])
             #if not speller.check(
             #        err.encode(speller.ConfigKeys()['encoding'][2])):
             #    warnings.warn(('warning %r is in the aspell dictionary'
