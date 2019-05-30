@@ -2647,10 +2647,17 @@ cancelaltion->cancellation
 cancelation->cancellation
 cancelations->cancellations
 cancelles->cancels
+cancl->cancel
+cancle->cancel
 cancled->canceled
 candadate->candidate
+candadates->candidates
 candiate->candidate
+candiates->candidates
 candidiate->candidate
+candidiates->candidates
+candinate->candidate
+candinates->candidates
 cange->change
 canidate->candidate
 canidates->candidates
@@ -3629,6 +3636,13 @@ compiliers->compilers
 compitable->compatible
 compitent->competent
 complaing->complaining
+complate->complete
+complated->completed
+complates->completes
+complating->completing
+complatly->completely
+complatness->completeness
+complats->completes
 compleate->complete
 compleated->completed
 compleates->completes
@@ -6418,6 +6432,7 @@ dstination->destination
 dthe->the
 dtoring->storing
 dubios->dubious
+dublicade->duplicate
 dublicat->duplicate
 dublicate->duplicate
 dublicated->duplicated
@@ -6839,6 +6854,7 @@ enmpty->empty
 enmum->enum
 enntries->entries
 enocded->encoded
+enogh->enough
 enoght->enough
 enoguh->enough
 enouch->enough
@@ -6894,7 +6910,7 @@ entired->entered, entire,
 entireity->entirety
 entires->entries
 entirey->entirely
-entirity->entirely
+entirity->entirety
 entirly->entirely
 entite->entire, entity,
 entitee->entity
@@ -8164,6 +8180,10 @@ fullfills->fulfills
 fullfils->fulfils
 fullly->fully
 fulsh->flush
+funchtion->function
+funchtional->functional
+funchtioned->functioned
+funchtions->functions
 funcion->function
 funcions->functions
 funciton->function
@@ -9056,6 +9076,7 @@ immeadiately->immediately
 immedate->immediate
 immedately->immediately
 immediantely->immediately
+immediated->immediate, immediately,
 immediatelly->immediately
 immediatley->immediately
 immediatlly->immediately
@@ -10313,6 +10334,7 @@ invidual->individual
 invidually->individually
 invisiable->invisible
 invisibile->invisible
+invisivble->invisible
 invlaid->invalid
 invlisible->invisible
 invlove->involve
@@ -12710,6 +12732,7 @@ paramenet->parameter
 paramenets->parameters
 paramenters->parameters
 paramerters->parameters
+parameteras->parameters
 parametere->parameter, parameters,
 parameterical->parametrical
 parameterizes->parametrizes
@@ -16930,9 +16953,11 @@ sufficent->sufficient
 sufficently->sufficiently
 suffisticated->sophisticated
 suficcient->sufficient
+sugested->suggested
 sugestion->suggestion
 sugestions->suggestions
 sugests->suggests
+suggestsed->suggested
 suggesttion->suggestion
 suggesttions->suggestions
 suh->such
@@ -17295,6 +17320,9 @@ sytntax->syntax
 szenario->scenario
 szenarios->scenarios
 szes->sizes
+szie->size
+szied->sized
+szies->sizes
 tabacco->tobacco
 tabbaray->taboret
 tabblow->tableau
