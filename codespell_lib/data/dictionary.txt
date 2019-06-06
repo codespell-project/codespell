@@ -5178,6 +5178,7 @@ delcarations->declarations
 delcare->declare
 delcared->declared
 delcares->declares
+delection->detection, deletion,
 delele->delete
 delelte->delete
 delemeter->delimiter
@@ -5346,6 +5347,7 @@ dequed->dequeued
 derageable->dirigible
 deram->dram, dream,
 derectory->directory
+derefence->dereference
 derefenced->dereferenced
 derefencing->dereferencing
 dereferencable->dereferenceable
@@ -10523,8 +10525,11 @@ klicked->clicked
 klicks->clicks
 knifes->knives
 knive->knife
+knowlage->knowledge
+knowlageable->knowledgeable
 knowlegde->knowledge
 knowlege->knowledge
+knowlegeabel->knowledgeable
 knowlegeable->knowledgeable
 knwo->know
 knwon->known
@@ -11071,6 +11076,8 @@ matchign->matching
 matchin->matching
 matchs->matches
 matcing->matching
+mateial->material, metal,
+mateials->materials, metals,
 mateiral->material
 mateirals->materials
 matemathical->mathematical
@@ -17921,7 +17928,9 @@ transfomm->transform
 transfoprmation->transformation
 transformated->transformed
 transformaton->transformation
+transformatted->transformed
 transfrom->transform
+transfromate->transform, transformed,
 transfromation->transformation
 transfromations->transformations
 transfromed->transformed
@@ -18836,6 +18845,7 @@ vaild->valid
 vailidity->validity
 vailidty->validity
 vairous->various
+valailable->available
 valetta->valletta
 valiator->validator
 validaterelase->validaterelease
@@ -19333,6 +19343,7 @@ withs->with, widths,
 witht->with
 withthe->with the
 witin->within
+witk->with
 witn->with
 witout->without
 witth->with
