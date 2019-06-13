@@ -15003,7 +15003,7 @@ referensed->referenced
 referenses->references
 referenz->reference
 referenzes->references
-referer->referrer
+referer->referrer, disabled as in http 1.0 spec
 refererd->referred
 refererence->reference
 referers->referrer, referrers,
