@@ -16561,6 +16561,7 @@ singe->singe, single,
 singed->signed, singled, singed,
 singelton->singleton
 singificand->significand, significant,
+singlar->singular
 single-threded->single-threaded
 singls->single
 singlton->singleton
@@ -16725,6 +16726,11 @@ somwhere->somewhere
 somwho->somehow
 somwhow->somehow
 sonething->something
+songlar->singular
+songle->single, dongle,
+songled->singled, dongled,
+songles->singles, dongles,
+songling->singling, dongling,
 sooaside->suicide
 soodonim->pseudonym
 sooit->suet, suit,
