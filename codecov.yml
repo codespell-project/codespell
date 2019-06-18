@@ -1,6 +1,8 @@
 comment: off
 coverage:
   status:
+    project: yes
+    patch: yes
     project:
       default: true  # disable the default status that measures entire project
       tests:  # declare a new status context "tests"
