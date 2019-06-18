@@ -2061,11 +2061,11 @@ autimatically->automatically
 autmatically->automatically
 auto-dependancies->auto-dependencies
 auto-destrcut->auto-destruct
-auto-detet->auto-detect, auto-delete,
-auto-deteted->auto-detected, auto-deleted,
-auto-detetes->auto-detects, auto-deletes,
-auto-detetion->auto-detection, auto-deletion,
-auto-detets->auto-detects, auto-deletes,
+auto-detet->auto-delete, auto-detect,
+auto-deteted->auto-deleted, auto-detected,
+auto-detetes->auto-deletes, auto-detects,
+auto-detetion->auto-deletion, auto-detection,
+auto-detets->auto-deletes, auto-detects,
 auto-realease->auto-release
 auto-realeased->auto-released
 autochtonous->autochthonous
