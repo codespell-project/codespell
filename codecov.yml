@@ -1,7 +1,6 @@
-comment: off
+comment: on
 coverage:
   status:
-    project: yes
     patch: yes
     project:
       default: true  # disable the default status that measures entire project
