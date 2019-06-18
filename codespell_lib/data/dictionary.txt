@@ -2553,7 +2553,7 @@ bottlneck->bottleneck
 bottomborde->bottomborder
 bottome->bottom
 botton->bottom, button,
-bottons->buttons
+bottons->bottoms, buttons,
 botttom->bottom
 boudaries->boundaries
 boudary->boundary
@@ -6224,6 +6224,7 @@ dirctories->directories
 dirctory->directory
 direccion->direction
 direcctory->directory
+direcctorys->directories
 direcctries->directories
 direclty->directly
 direcly->directly
