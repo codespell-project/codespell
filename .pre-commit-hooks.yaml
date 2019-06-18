@@ -4,6 +4,3 @@
     entry: codespell
     language: python
     types: [text]
-    args: []
-    require_serial: false
-    additional_dependencies: []
