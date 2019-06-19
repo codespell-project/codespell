@@ -2553,6 +2553,7 @@ bottlneck->bottleneck
 bottomborde->bottomborder
 bottome->bottom
 botton->bottom, button,
+bottons->bottoms, buttons,
 botttom->bottom
 boudaries->boundaries
 boudary->boundary
@@ -2663,6 +2664,8 @@ builters->builders
 buipd->build
 buisness->business
 buisnessman->businessman
+buissiness->business
+buissinesses->businesses
 buit->built
 buitin->builtin
 buitins->builtins
@@ -3097,7 +3100,11 @@ chacacters->characters
 chache->cache
 chached->cached
 chack->check, chalk,
+chaeck->check
+chaecked->checked
+chaecker->checker
 chaecking->checking
+chaecks->checks
 chage->change, charge,
 chaged->changed, charged,
 chages->changes, charges,
@@ -6216,6 +6223,9 @@ dirctly->directly
 dirctories->directories
 dirctory->directory
 direccion->direction
+direcctory->directory
+direcctorys->directories
+direcctries->directories
 direclty->directly
 direcly->directly
 direcories->directories
@@ -7744,8 +7754,11 @@ exibitions->exhibitions
 exicting->exciting
 exinct->extinct
 exising->existing
+exisit->exist
+exisited->existed
 exisitent->existent
 exisiting->existing
+exisitng->existing
 exisits->exists
 existance->existence
 existant->existent
@@ -8936,8 +8949,13 @@ halp->help
 halpoints->halfpoints
 hammmer->hammer
 hampster->hamster
+handel->handle
 handeld->handled, handheld,
 handeled->handled, handheld,
+handeler->handler
+handeles->handles
+handeling->handling
+handels->handles
 hander->handler
 handfull->handful
 handhake->handshake
@@ -10024,6 +10042,8 @@ inforce->enforce
 inforced->enforced
 informaion->information
 informaiton->information
+informatation->information
+informatations->information
 informatikon->information
 informatiom->information
 informations->information
@@ -16179,6 +16199,9 @@ selctions->selections
 seldomly->seldom
 seleced->selected
 selecetd->selected
+selecgt->select
+selecgted->selected
+selecgting->selecting
 selecing->selecting
 selectd->selected
 selecte->selected, select,
@@ -16458,6 +16481,7 @@ shreak->shriek
 shreshold->threshold
 shriks->shrinks
 shrinked->shrunk
+shuld->should
 shure->sure
 shurely->surely
 shutdownm->shutdown
@@ -19118,7 +19142,15 @@ unsable->unusable, usable, unstable,
 unsccessful->unsuccessful
 unsearcahble->unsearchable
 unsed->unused, used,
-unselect->deselect
+unselcted->unselected
+unselctes->unselects
+unselcting->unselecting
+unselcts->unselects
+unselecgt->unselect
+unselecgted->unselected
+unselecgtes->unselects
+unselecgting->unselecting
+unselecgts->unselects
 unsepcified->unspecified
 unser->under, unset, user,
 unsettin->unsetting
@@ -19875,6 +19907,8 @@ workarround->workaround
 workarrounds->workarounds
 workarund->workaround
 workbanch->workbench
+workbennch->workbench
+workbennches->workbenches
 workboos->workbooks
 workes->works
 workpsace->workspace
