@@ -2061,6 +2061,12 @@ autimatically->automatically
 autmatically->automatically
 auto-dependancies->auto-dependencies
 auto-destrcut->auto-destruct
+auto-detet->auto-detect, auto-delete,
+auto-deteted->auto-detected, auto-deleted,
+auto-detetes->auto-deletes, auto-detects,
+auto-deteting->auto-detecting, auto-deleting,
+auto-detetion->auto-detection, auto-deletion,
+auto-detets->auto-detects, auto-deletes,
 auto-realease->auto-release
 auto-realeased->auto-released
 autochtonous->autochthonous
@@ -5919,10 +5925,13 @@ determinstic->deterministic
 determinstically->deterministically
 determintes->determines
 determnine->determine
-detet->detect
-deteted->detected
-detetion->detection
+detet->detect, delete,
+deteted->detected, deleted,
+detetes->deletes, detects,
+deteting->detecting, deleting,
+detetion->detection, deletion,
 detetmine->determine
+detets->detects, deletes,
 detination->destination
 detremental->detrimental
 detremining->determining
