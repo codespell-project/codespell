@@ -15552,7 +15552,6 @@ remoote->remote
 remore->remote
 remorted->reported
 removeable->removable
-removedchild->removechild
 removefromat->removeformat
 removeing->removing
 removerd->removed
@@ -16681,6 +16680,7 @@ shortcomming->shortcoming
 shortcommings->shortcomings
 shortend->shortened, short end,
 shortern->shorten
+shortkut->shortcut
 shortkuts->shortcuts
 shortwhile->short while
 shotcut->shortcut
@@ -16776,7 +16776,7 @@ signular->singular
 signularity->singularity
 silentely->silently
 silenty->silently
-siliently->silently
+siliently->silently, saliently,
 simialr->similar
 simiar->similar
 similarily->similarly
@@ -19419,7 +19419,6 @@ unrestrcited->unrestricted
 unroated->unrotated
 unsable->unusable, usable, unstable,
 unsccessful->unsuccessful
-unschedule->unschedules
 unsearcahble->unsearchable
 unsed->unused, used,
 unselcted->unselected
@@ -19453,6 +19452,7 @@ unsual->unusual
 unsubscibe->unsubscribe
 unsubscibed->unsubscribed
 unsubscibing->unsubscribing
+unsubscritpion->unsubscription
 unsubscritpions->unsubscriptions
 unsubscritpiton->unsubscription
 unsubscritpitons->unsubscriptions
@@ -19592,7 +19592,7 @@ usefullness->usefulness
 usefult->useful
 usefuly->usefully
 usefutl->useful
-useg->user
+useg->user, usage,
 usege->usage
 useing->using
 user-defiend->user-defined
@@ -19628,7 +19628,6 @@ usueful->useful
 ususal->usual
 ususally->usually
 UTF8ness->UTF-8-ness
-uti->uri
 utiilties->utilities
 utilies->utilities
 utilis->utilise
@@ -20107,7 +20106,7 @@ whitepsaces->whitespaces
 whith->with
 whithin->within
 whithout->without
-whitout->without
+whitout->without, whiteout,
 whitre->white
 whitspace->whitespace
 whlch->which
@@ -20233,7 +20232,6 @@ wonderfull->wonderful
 wont't->won't
 wont->won't, wont,
 worarounds->workarounds
-wordcamps->wordcamp
 wordlwide->worldwide
 wordpres->wordpress
 worfklow->workflow
@@ -20273,7 +20271,6 @@ wouldn;t->wouldn't
 wouldnt'->wouldn't
 wouldnt->wouldn't
 wouldnt;->wouldn't
-wpb->wpdb
 wpdialod->wpdialog
 wqs->was
 wraped->wrapped, warped,
