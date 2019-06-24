@@ -4380,6 +4380,7 @@ constraing->constraining, constraint,
 constraintes->constraints
 constrait->constraint
 constraits->constraints
+constrans->constrains
 constrant->constraint
 constrants->constraints
 constrast->contrast
@@ -4869,6 +4870,10 @@ corruptiuon->corruption
 corse->course
 corsor->cursor
 corus->chorus
+cosntrain->constrain
+cosntrains->constrains, constraints,
+cosntraint->constraint
+cosntraints->constraints
 cosntructed->constructed
 cosntructor->constructor
 costant->constant
@@ -6410,6 +6415,7 @@ displacments->displacements
 displayes->displays, displayed,
 disply->display
 displyed->displayed
+displying->displaying
 displys->displays
 dispode->dispose
 disporue->disparue
@@ -12901,6 +12907,9 @@ osciallator->oscillator
 oscilate->oscillate
 oscilated->oscillated
 oscilating->oscillating
+osffset->offset
+osffsets->offsets
+osffsetting->offsetting
 osicllations->oscillations
 ot->to, of, or,
 otains->obtains
