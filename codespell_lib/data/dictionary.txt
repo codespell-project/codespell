@@ -9624,6 +9624,7 @@ immuniy->immunity
 immunosupressant->immunosuppressant
 imolicit->implicit
 imolicitly->implicitly
+imovable->immovable
 impcat->impact
 impcated->impacted
 impcating->impacting
@@ -14492,7 +14493,7 @@ programers->programmers
 programing->programming
 programm->program
 programmaticaly->programmatically
-programme->program, programmed, programmer
+programme->program, programmed, programmer,
 programmend->programmed
 programmetically->programmatically
 programms->programs
@@ -15539,8 +15540,8 @@ renderadble->renderable
 rendereing->rendering
 rendererers->renderers
 renderering->rendering
-renderring->rendering
 renderr->render
+renderring->rendering
 rendevous->rendezvous
 rendezous->rendezvous
 renedered->rende
