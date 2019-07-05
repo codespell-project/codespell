@@ -1261,6 +1261,10 @@ anlge->angle
 anly->only
 anlysis->analysis
 anlyzing->analyzing
+annay->annoy, any,
+annayed->annoyed
+annaying->annoying
+annays->annoys, any,
 anniversery->anniversary
 annoation->annotation
 annoint->anoint
@@ -1889,6 +1893,7 @@ asure->assure
 aswell->as well
 asychronously->asynchronously
 asycronous->asynchronous
+asymetri->assymetry
 asymetric->asymmetric
 asymetrical->asymmetrical
 asymetricaly->asymmetrically
@@ -3288,6 +3293,7 @@ choos->choose
 choosed->chose, chosen,
 choosen->chosen
 chopipng->chopping
+chopy->choppy
 chosed->chose
 choser->chooser
 chosing->choosing
@@ -3400,6 +3406,8 @@ clearified->clarified
 clearifies->clarifies
 clearify->clarify
 clearifying->clarifying
+clearnance->clearance
+clearnances->clearances
 clearted->cleared
 cleck->check
 cleean->clean
@@ -4740,7 +4748,7 @@ copmonent->component
 copmutations->computations
 coponent->component
 coppied->copied
-coppy->copy
+coppy->copy, choppy,
 copright->copyright
 coprright->copyright
 copstruction->construction
@@ -8503,6 +8511,10 @@ freindly->friendly
 freqencies->frequencies
 freqency->frequency
 freqeuncy->frequency
+frequancies->frequencies
+frequancy->frequency
+frequant->frequent
+frequantly->frequently
 frequences->frequencies
 frequencey->frequency
 frequenct->frequency
@@ -10067,6 +10079,15 @@ inforrmation->information
 infrantryman->infantryman
 infrasctructure->infrastructure
 infrastruture->infrastructure
+infreqency->infrequency
+infreqentcy->infrequency
+infreqeuncy->infrequency
+infreqeuntcy->infrequency
+infrequancies->infrequencies
+infrequancy->infrequency
+infrequantcies->infrequencies
+infrequantcy->infrequency
+infrequentcies->infrequencies
 infrigement->infringement
 infromation->information
 infromatoin->information
@@ -17739,6 +17760,7 @@ symboll->symbol
 symbsol->symbol
 symbsols->symbols
 symemetric->symmetric
+symetri->symmetry
 symetric->symmetric
 symetrical->symmetrical
 symetrically->symmetrically
@@ -17746,6 +17768,7 @@ symetry->symmetry
 symettric->symmetric
 symmetic->symmetric
 symmetral->symmetric
+symmetri->symmetry
 symmetricaly->symmetrically
 symnol->symbol
 symnols->symbols
@@ -19192,6 +19215,13 @@ unsignificant->insignificant
 unsinged->unsigned
 unspecificed->unspecified
 unspported->unsupported
+unstall->install, uninstall,
+unstallation->installation, uninstallation,
+unstalled->installed, uninstalled,
+unstaller->installer, uninstaller,
+unstalles->installs, uninstalls,
+unstalling->installing, uninstalling,
+unstalls->installs, uninstalls,
 unsual->unusual
 unsubscibe->unsubscribe
 unsubscibed->unsubscribed
@@ -19519,7 +19549,10 @@ veresions->versions
 verfication->verification
 verfy->verify
 verfying->verifying
+verifi->verify, verified,
 verifiaction->verification
+verifie->verify, verified,
+verifing->verifying
 verifty->verify
 veriftying->verifying
 verifyied->verified
