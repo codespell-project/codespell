@@ -3618,9 +3618,9 @@ comman->command, common,
 commandoes->commandos
 commans->commands
 commansd->commands
-commant->command
-commants->commands
-commanted->commanded
+commant->command, comment,
+commants->commands, comments,
+commanted->commanded, commented,
 commect->connect
 commected->connected
 commecting->connecting
@@ -7967,6 +7967,8 @@ extarnally->externally
 extatic->ecstatic
 extedn->extend
 extedned->extended
+extedner->extender
+extedners->extenders
 extedns->extends
 extemely->extremely
 exten->extent
