@@ -4382,6 +4382,7 @@ constraing->constraining, constraint,
 constraintes->constraints
 constrait->constraint
 constraits->constraints
+constrans->constrains
 constrant->constraint
 constrants->constraints
 constrast->contrast
@@ -4871,6 +4872,10 @@ corruptiuon->corruption
 corse->course
 corsor->cursor
 corus->chorus
+cosntrain->constrain
+cosntrains->constrains, constraints,
+cosntraint->constraint
+cosntraints->constraints
 cosntructed->constructed
 cosntructor->constructor
 costant->constant
@@ -6412,6 +6417,7 @@ displacments->displacements
 displayes->displays, displayed,
 disply->display
 displyed->displayed
+displying->displaying
 displys->displays
 dispode->dispose
 disporue->disparue
@@ -7859,7 +7865,14 @@ experession->expression
 experessions->expressions
 experiance->experience
 experianced->experienced
+experiances->experiences
+experiancial->experiential
+experiancing->experiencing
+experiansial->experiential
+experiantial->experiential
 experiement->experiment
+experienshial->experiential
+experiensial->experiential
 experimet->experiment
 experimetal->experimental
 experimeted->experimented
@@ -12903,6 +12916,9 @@ osciallator->oscillator
 oscilate->oscillate
 oscilated->oscillated
 oscilating->oscillating
+osffset->offset
+osffsets->offsets
+osffsetting->offsetting
 osicllations->oscillations
 ot->to, of, or,
 otains->obtains
@@ -19853,6 +19869,8 @@ whos->whose, who's,
 whould->would
 whta->what
 whther->whether
+whyth->with
+whythout->without
 wich->which
 widesread->widespread
 widged->widget
@@ -19935,6 +19953,9 @@ witn->with
 witout->without
 witth->with
 wiull->will
+wiyh->with
+wiyhout->without
+wiyth->with
 wizzard->wizard
 wll->will
 wnat->want, what,
@@ -20027,6 +20048,8 @@ wth->with
 wtih->with
 wuold->would
 wupport->support
+wyth->with
+wythout->without
 xdescribe->describe
 xdpf->xpdf
 xenophoby->xenophobia
