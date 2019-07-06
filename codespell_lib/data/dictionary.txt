@@ -237,6 +237,8 @@ accleration->acceleration
 acclimitization->acclimatization
 accoding->according
 accodingly->accordingly
+accoird->accord
+accoirding->according
 accomadate->accommodate
 accomadated->accommodated
 accomadates->accommodates
@@ -11555,7 +11557,11 @@ mccarthyst->mccarthyist
 mchanics->mechanics
 mdoel->model
 meachanism->mechanism
-meachnisms->mechanism
+meachanisms->mechanisms
+meachinism->mechanism
+meachinisms->mechanisms
+meachnism->mechanism
+meachnisms->mechanisms
 meading->meaning
 meaing->meaning
 meanigfull->meaningful
@@ -11595,6 +11601,7 @@ mechandise->merchandise
 mechansim->mechanism
 mechine->machine
 mechines->machines
+mechinism->mechanism
 mechnanism->mechanism
 mechnism->mechanism
 mechnisms->mechanisms
@@ -14410,7 +14417,10 @@ propely->properly
 propeoperties->properties
 properies->properties
 properities->properties
+properries->properties
 properrt->property
+properry->property, properly,
+properrys->properties
 propert->property
 properteis->properties
 propertery->property
@@ -19550,6 +19560,9 @@ verticlealign->verticalalign
 vertiece->vertex
 vertieces->vertices
 vertikal->vertical
+vertix->vertex
+vertixes->vertices
+vertixs->vertices
 veryfieng->verifying
 veryified->verified
 veryifies->verifies
