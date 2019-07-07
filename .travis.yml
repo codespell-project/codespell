@@ -6,7 +6,7 @@
 
 language: python
 sudo: false
-dist: trusty
+dist: xenial
 
 cache:
   directories:
@@ -17,19 +17,11 @@ matrix:
         - os: linux
           python: 2.7
         - os: linux
-          python: 3.3
-        - os: linux
-          python: 3.4
-        - os: linux
           python: 3.5
         - os: linux
           python: 3.6
-        # OSX commented out for now because it's slow and a bit buggy as of
-        # 2017/11/15
-        # - os: osx
-        #   python: 2.7
-        # - os: osx
-        #   python: 3.6
+        - os: linux
+          python: 3.7
 
 before_install:
     - source tools/travis_tools.sh
@@ -39,7 +31,7 @@ before_install:
     - source venv/bin/activate
     - python --version  # just to check
     - pip install -U pip wheel  # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
-    - retry pip install pytest pytest-cov pytest-sugar flake8 coverage codecov chardet setuptools
+    - retry pip install pytest pytest-cov flake8 coverage codecov chardet setuptools docutils
     - cd $SRC_DIR
 
 install:
@@ -48,9 +40,11 @@ install:
 script:
     - codespell --help
     - make check-dictionary
+    - codespell --skip="codespell_lib/tests/test_basic.py,codespell_lib/data/*" codespell_lib/
     # this file has an error
     - "! codespell codespell_lib/tests/test_basic.py"
     - flake8
+    - python setup.py check --restructuredtext --strict
     - pytest codespell_lib
 
 after_success:
