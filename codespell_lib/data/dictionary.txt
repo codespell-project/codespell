@@ -1775,6 +1775,7 @@ assignmens->assignments
 assignmnet->assignment
 assing->assign
 assinged->assigned
+assinging->assigning
 assingment->assignment
 assings->assigns
 assinment->assignment
@@ -3628,6 +3629,9 @@ comman->command, common,
 commandoes->commandos
 commans->commands
 commansd->commands
+commant->command, comment,
+commanted->commanded, commented,
+commants->commands, comments,
 commect->connect
 commected->connected
 commecting->connecting
@@ -7988,6 +7992,11 @@ extacy->ecstasy
 extarnal->external
 extarnally->externally
 extatic->ecstatic
+extedn->extend
+extedned->extended
+extedner->extender
+extedners->extenders
+extedns->extends
 extemely->extremely
 exten->extent
 extenal->external
@@ -8192,6 +8201,7 @@ fertil->fertile
 fertily->fertility
 fetaure->feature
 fetaures->features
+fetchs->fetches
 feture->feature
 fewd->few, feud,
 fewg->few, fugue,
@@ -11026,6 +11036,8 @@ labouriously->laboriously
 labratory->laboratory
 laguage->language
 laguages->languages
+laguague->language
+laguagues->languages
 laiter->later
 lanaguage->language
 lanauge->language
@@ -13703,6 +13715,8 @@ poket->pocket
 polariy->polarity
 polical->political
 policie->policies, policy, police,
+poligon->polygon
+poligons->polygons
 polinator->pollinator
 polinators->pollinators
 politican->politician
@@ -13710,6 +13724,8 @@ politicans->politicians
 politicing->politicking
 pollenate->pollinate
 polltry->poultry
+pologon->polygon
+pologons->polygons
 poltical->political
 poltry->poultry
 polute->pollute
@@ -14049,6 +14065,7 @@ preferrable->preferable
 preferrably->preferably
 preferrence->preference
 preferrences->preferences
+prefetchs->prefetches
 prefferable->preferable
 prefferably->preferably
 preffered->preferred
