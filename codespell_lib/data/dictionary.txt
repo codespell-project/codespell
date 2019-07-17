@@ -1314,6 +1314,12 @@ ans->and
 ansalisation->nasalisation
 ansalization->nasalization
 ansestors->ancestors
+answhare->answer
+answhared->answered
+answhareing->answering
+answhares->answers
+answharing->answering
+answhars->answers
 ansynchronous->asynchronous
 antaliasing->antialiasing
 antartic->antarctic
@@ -1603,6 +1609,7 @@ architecuture->architecture
 architeture->architecture
 architetures->architectures
 archiv->archive
+archivel->archival
 archor->anchor
 archtecture->architecture
 archtectures->architectures
@@ -2063,7 +2070,12 @@ authoritiers->authorities
 authorititive->authoritative
 authoritive->authoritative
 authos->authors, autos,
+authror->author
+authrored->authored
+authrorisation->authorisation
 authrorities->authorities
+authrorization->authorization
+authrors->authors
 autimatic->automatic
 autimatically->automatically
 autmatically->automatically
@@ -2270,6 +2282,7 @@ bakc->back
 bakcrefs->backrefs
 bakup->backup
 bakups->backups
+bakwards->backwards
 balacing->balancing
 balck->black, balk,
 balence->balance
@@ -5089,6 +5102,8 @@ curiousity->curiosity
 currect->correct, current,
 currenlty->currently
 currenly->currently
+currennt->current
+currenntly->currently
 currentl->currently
 currentlly->currently
 currentry->currently
@@ -8117,6 +8132,7 @@ facour->favour, favor,
 facourite->favourite, favorite,
 facourites->favuourites, favorites,
 facours->favours, favors,
+factization->factorization
 factorizaiton->factorization
 factorys->factories
 fadind->fading
@@ -13858,6 +13874,9 @@ positionning->positioning
 positionof->position, position of,
 positiv->positive
 positivies->positives
+positoin->position
+positoined->positioned
+positoins->positions
 positon->position
 positoned->positioned
 positons->positions
@@ -14618,6 +14637,9 @@ pseudonyn->pseudonym
 pseudopoential->pseudopotential
 pseudopoentials->pseudopotentials
 pseuo-palette->pseudo-palette
+psitoin->position
+psitoined->positioned
+psitoins->positions
 psrameter->parameter
 pssed->passed
 pssibility->possibility
@@ -15339,6 +15361,9 @@ relasing->releasing
 relatated->related
 relatd->related
 relatdness->relatedness
+relatib->relative, relatable,
+relatibe->relative
+relatibely->relatively
 relatievly->relatively
 relatiopnship->relationship
 relativ->relative
