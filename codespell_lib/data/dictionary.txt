@@ -758,6 +758,7 @@ aleged->alleged
 alegience->allegiance
 alegorical->allegorical
 aleviate->alleviate
+aleviates->alleviates
 aleviating->alleviating
 algebraical->algebraic
 algebric->algebraic
@@ -1233,6 +1234,8 @@ anarquism->anarchism
 anarquist->anarchist
 anbd->and
 ancapsulate->encapsulate
+ancesetor->ancestor
+ancesetors->ancestors
 ancestory->ancestry
 anchord->anchored
 ancilliary->ancillary
@@ -2558,8 +2561,10 @@ boomark->bookmark
 boomarks->bookmarks
 booolean->boolean
 boostrap->bootstrap
+boostrapping->bootstrapping
 booteek->boutique
 bootom->bottom
+bootraping->bootstrapping
 bootsrap->bootstrap
 bootstap->bootstrap
 bootstapped->bootstrapped
@@ -3586,6 +3591,7 @@ combatibility->compatibility
 combatible->compatible
 combiantion->combination
 combinatins->combinations
+combinaton->combination
 combinatorical->combinatorial
 combinbe->combined
 combind->combined
@@ -6069,6 +6075,7 @@ diables->disables
 diablical->diabolical
 diabling->disabling
 diagnol->diagonal
+diagnosics->diagnostics
 diagnositc->diagnostic
 diagnotic->diagnostic
 diagnotics->diagnostics
@@ -6119,6 +6126,7 @@ dictionnaries->dictionaries
 dictionnary->dictionary
 dictoinaries->dictionaries
 dicussed->discussed
+dicussions->discussions
 did'nt->didn't
 didn;t->didn't
 didnt'->didn't
@@ -7374,6 +7382,7 @@ environent->environment
 environmane->environment
 environmenet->environment
 environmenets->environments
+environmnet->environment
 environnement->environment
 environtment->environment
 envolutionary->evolutionary
@@ -8119,6 +8128,7 @@ facilitiate->facilitate
 facilitiates->facilitates
 facilititate->facilitate
 facillitate->facilitate
+facillities->facilities
 faciltate->facilitate
 facilties->facilities
 facinated->fascinated
@@ -8697,6 +8707,7 @@ furure->future
 furuther->further
 furutre->future
 furzzer->fuzzer
+fuschia->fuchsia
 fushed->flushed
 fushing->flushing
 futer->further
@@ -9245,6 +9256,7 @@ higlight->highlight
 higlighted->highlighted
 higlighting->highlighting
 higlights->highlights
+higly->highly
 higth->height
 higway->highway
 hilight->highlight
@@ -9790,6 +9802,7 @@ inaccessable->inaccessible
 inaccuraccies->inaccuracies
 inaccuraccy->inaccuracy
 inactivate->inactivate, deactivate,
+inacurate->inaccurate
 inacurracies->inaccuracies
 inacurrate->inaccurate
 inadiquate->inadequate
@@ -10845,6 +10858,7 @@ inverions->inversions
 invers->inverse, invert,
 invertibrates->invertebrates
 inverval->interval
+inveryed->inverted
 invesitgated->investigated
 invesitgating->investigating
 invesitgation->investigation
@@ -15564,6 +15578,7 @@ replcace->replace
 replcaced->replaced
 repling->replying
 replys->replies
+reponding->responding
 reponse->response
 reponses->responses
 reponsibilities->responsibilities
@@ -15617,6 +15632,7 @@ repressentation->representation
 repressenting->representing
 repressents->represents
 reprociblbe->reproducible
+reprocible->reproducible
 reprocuce->reproduce, reprocure,
 reprocuced->reproduced, reprocured,
 reprocuces->reproduces, reprocures,
@@ -17018,6 +17034,7 @@ specifcation->specification
 specifcations->specifications
 specifcied->specified
 specifed->specified
+specifially->specifically
 specificallly->specifically
 specificaly->specifically
 specificated->specified
@@ -17559,6 +17576,7 @@ successfullt->successfully
 successfuly->successfully
 successing->successive
 successs->success
+successsfully->successfully
 successsion->succession
 successul->successful
 successully->successfully
@@ -17900,6 +17918,7 @@ synchroneous->synchronous
 synchroneously->synchronously
 synchronious->synchronous
 synchroniously->synchronously
+synchronizaton->synchronization
 synchronuous->synchronous
 synchronus->synchronous
 syncrhonise->sychronise
@@ -18943,6 +18962,7 @@ uncoment->uncomment
 uncomented->uncommented
 uncomenting->uncommenting
 uncoments->uncomments
+uncomitted->uncommitted
 uncommited->uncommitted
 uncommment->uncomment
 uncommmented->uncommented
@@ -19147,15 +19167,19 @@ unititialized->uninitialized
 unitss->units
 univeral->universal
 univerally->universally
+univeriality->universality
 univeristies->universities
 univeristy->university
 univerities->universities
 univerity->university
+universial->universal
+universiality->universality
 universirty->university
 universtal->universal
 universtiy->university
 univesities->universities
 univesity->university
+univrsal->universal
 unknon->unknown
 unknonw->unknown
 unknonwn->unknown
