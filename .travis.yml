@@ -44,7 +44,9 @@ script:
     # this file has an error
     - "! codespell codespell_lib/tests/test_basic.py"
     - flake8
-    - python setup.py check --restructuredtext --strict
+    - if [ "$TRAVIS_PYTHON_VERSION" != "2.7" ]; then
+        python setup.py check --restructuredtext --strict;
+      fi;
     - pytest codespell_lib
 
 after_success:
