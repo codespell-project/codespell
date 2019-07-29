@@ -629,6 +629,8 @@ aequidistant->equidistant
 aequivalent->equivalent
 aeriel->aerial
 aeriels->aerials
+aesily->easily
+aesy->easy
 afair->affair
 afaraid->afraid
 afe->safe
@@ -1222,6 +1224,7 @@ analoguously->analogously
 analyis->analysis
 analysator->analyzer
 analysies->analyzes
+analysus->analysis
 analysy->analysis
 analyticall->analytical, analytically,
 analyticaly->analytically
@@ -5778,6 +5781,11 @@ descirption->description
 descision->decision
 descisions->decisions
 descize->disguise
+descized->disguised
+descover->discover
+descovered->discovered
+descovering->discovering
+descovery->discovery
 describ->describe
 describibg->describing
 describng->describing
@@ -6476,6 +6484,7 @@ dissalow->disallow
 dissalowed->disallowed
 dissapear->disappear
 dissapearance->disappearance
+dissapeard->disappeared
 dissapeared->disappeared
 dissapearing->disappearing
 dissapears->disappears
@@ -6789,6 +6798,7 @@ drawack->drawback
 drawacks->drawbacks
 drawed->drew, drawn, had drawn,
 drawm->drawn
+drawng->drawing
 dreasm->dreams
 dreawn->drawn
 driectly->directly
@@ -10186,6 +10196,8 @@ inherithed->inherited
 inherithing->inheriting
 inheriths->inherits
 inheritted->inherited
+inhertig->inheriting, inherited,
+inherting->inheriting
 inhomogenous->inhomogeneous
 inialized->initialized
 inidicates->indicates
@@ -14898,7 +14910,10 @@ rebiulding->rebuilding
 rebllions->rebellions
 reboto->reboot
 rebounce->rebound
+rebuil->rebuild, rebuilt,
 rebuilded->rebuilt
+rebuillt->rebuilt
+rebuils->rebuilds
 rebuilts->rebuilds, rebuilt, rebuild,
 rebuit->rebuilt
 rebuld->rebuild
@@ -20105,9 +20120,11 @@ won;t->won't,
 wonderfull->wonderful
 wont't->won't
 wont->won't, wont,
+woraround->workaround
 worarounds->workarounds
 wordlwide->worldwide
 worfklow->workflow
+worfklows->workflows
 workaorund->workaround
 workaraound->workaround
 workarbound->workaround
@@ -20116,7 +20133,10 @@ workaroung->workaround
 workarround->workaround
 workarrounds->workarounds
 workarund->workaround
+workarunds->workarounds
 workbanch->workbench
+workbanches->workbenches
+workbanchs->workbenches
 workbennch->workbench
 workbennches->workbenches
 workboos->workbooks
