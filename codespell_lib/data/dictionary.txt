@@ -9393,9 +9393,9 @@ harases->harasses
 harasment->harassment
 harasments->harassments
 harassement->harassment
-harcode->hardcode
+harcode->hardcode, charcode,
 harcoded->hardcoded
-harcodes->hardcodes
+harcodes->hardcodes, charcodes,
 harcoding->hardcoding
 hard-wirted->hard-wired
 hardare->hardware
@@ -20805,12 +20805,16 @@ vermillion->vermilion
 verndor->vendor
 verrical->vertical
 verry->very
+vershin->version
 versin->version
+versioed->versioned
+versioing->versioning
 versiom->version
 versionm->version
 versionms->versions
 versionned->versioned
 versionning->versioning
+versios->versions
 versitilaty->versatility
 versitlity->versatility
 versoin->version
