@@ -4912,15 +4912,19 @@ coordintates->coordinates
 coordinte->coordinate
 coordintes->coordinates
 coordonate->coordinate
+coordonated->coordinated
 coordonates->coordinates
 cooridate->coordinate
+cooridated->coordinated
 cooridates->coordinates
 cooridnate->coordinate
-cooridnates->coordinate
+cooridnated->coordinated
+cooridnates->coordinates
+coorinate->coordinate
 coorinates->coordinates
 coorination->coordination
 coorperation->cooperation, corporation,
-coorperations->corporations
+coorperations->cooperations, corporations,
 cootdinate->coordinate
 cootdinated->coordinated
 cootdinates->coordinates
@@ -12034,6 +12038,8 @@ materails->materials
 materalists->materialist
 materil->material
 materils->materials
+materla->material
+materlas->materials
 mathamatics->mathematics
 mathces->matches
 mathcing->matching
@@ -17479,6 +17485,8 @@ seige->siege
 seing->seeing
 seinor->senior
 selcetion->selection
+selctable->selectable
+selctables->selectables
 selcted->selected
 selcting->selecting
 selction->selection
@@ -18363,6 +18371,7 @@ startegy->strategy
 startet->started
 startign->starting
 startlisteneing->startlistening
+startnig->starting
 startting->starting
 starup->startup
 starups->startups
@@ -18807,7 +18816,10 @@ sucsede->succeed
 sudmobule->submodule
 sudmobules->submodules
 sueful->useful
+suface->surface
+sufaces->surfaces
 sufface->surface
+suffaces->surfaces
 sufferage->suffrage
 sufferred->suffered
 sufferring->suffering
