@@ -325,6 +325,7 @@ accurancy->accuracy
 accurarcy->accuracy
 accurary->accuracy, actuary,
 accuray->accuracy, actuary,
+accurs->accurse, occurs,
 accussed->accused
 acditionally->additionally
 acedemic->academic
@@ -2025,6 +2026,7 @@ attributen->attribute
 attributred->attributed
 attributs->attributes
 attriubtes->attributes
+attriubute->attribute
 attrocities->atrocities
 attrribute->attribute
 attrubite->attribute
@@ -2220,6 +2222,7 @@ autonegotitions->autonegotiations
 autonegoziation->autonegotiation
 autonegoziations->autonegotiations
 autonymous->autonomous
+autopsec->autospec
 autor->author
 autorealease->autorelease
 autorisation->authorization
@@ -2338,6 +2341,7 @@ aways->always
 aweful->awful
 awefully->awfully
 awnser->answer
+awoid->avoid
 awya->away
 axises->axes
 axpressed->expressed
@@ -2382,6 +2386,7 @@ bakc->back
 bakcrefs->backrefs
 bakup->backup
 bakups->backups
+bakward->backward
 bakwards->backwards
 balacing->balancing
 balck->black, balk,
@@ -2773,6 +2778,7 @@ bufer->buffer
 bufers->buffers
 buffereed->buffered
 bufferent->buffered
+bufferred->buffered
 bufffer->buffer
 bufffers->buffers
 buffor->buffer
@@ -3022,6 +3028,7 @@ cann->can
 cannister->canister
 cannisters->canisters
 cannnot->cannot
+cannobt->cannot
 cannonical->canonical
 cannonicalize->canonicalize
 cannotation->connotation
@@ -3128,6 +3135,7 @@ catapiller->caterpillar
 catapillers->caterpillars
 catastropically->catastrophically
 catched->caught
+catchs->catches
 catepillar->caterpillar
 catepillars->caterpillars
 catergorize->categorize
@@ -3383,6 +3391,7 @@ chek->check
 chekc->check
 chekd->checked
 cheked->checked
+chekers->checkers
 cheking->checking
 cheks->checks
 cheksum->checksum
@@ -3452,6 +3461,8 @@ Cincinnatti->Cincinnati
 cinfiguration->configuration
 cinfigurations->configurations
 cintaner->container
+ciper->cipher
+cipers->ciphers
 circomvent->circumvent
 circomvented->circumvented
 circomvents->circumvents
@@ -3555,10 +3566,16 @@ cloacks->cloaks
 clockwíse->clockwise
 clock_getttime->clock_gettime
 clodes->closed, clothes,
+cloding->closing
+cloes->close
+cloesd->closed
+cloesed->closed
+cloesing->closing
 clonning->cloning
 clory->glory
 clos->close
 closeing->closing
+closests->closest, closets,
 clossed->closed
 clossing->closing
 clousre->closure
@@ -3666,6 +3683,7 @@ colon-seperated->colon-separated
 colonizators->colonizers
 colorfull->colorful
 coloringh->coloring
+colorizoer->colorizer
 colorpsace->colorspace
 colorpsaces->colorspaces
 coloum->column
@@ -3711,6 +3729,7 @@ combind->combined
 combinded->combined
 combinine->combine
 combusion->combustion
+comceptually->conceptually
 comdemnation->condemnation
 comect->connect
 comected->connected
@@ -3923,6 +3942,7 @@ comonent->component
 comor->color
 compability->compatibility
 compabillity->compatibility
+compabitility->compatibility
 compagnion->companion
 compagny->company
 compain->complain
@@ -4117,6 +4137,7 @@ comsume->consume
 comsumed->consumed
 comsumer->consumer
 comsumers->consumers
+comsumes->consumes
 comsuming->consuming
 comsumption->consumption
 comunicate->communicate
@@ -4205,6 +4226,7 @@ condifurable->configurable
 condifuration->configuration
 condifure->configure
 condifured->configured
+condigdialog->configdialog
 condionally->conditionally
 conditionaly->conditionally
 conditionnaly->conditionally
@@ -5535,6 +5557,7 @@ dedidated->dedicated
 dedly->deadly
 dedupliate->deduplicate
 dedupliated->deduplicated
+deecorator->decorator
 deeep->deep
 deelte->delete
 deendencies->dependencies
@@ -6256,6 +6279,7 @@ diaresis->diaeresis
 diarhea->diarrhoea, diarrhea,
 diaspra->diaspora
 diaster->disaster
+dicard->discard
 dicergence->divergence
 dichtomy->dichotomy
 dicipline->discipline
@@ -6382,6 +6406,7 @@ difract->diffract
 difracted->diffracted
 difraction->diffraction
 difractive->diffractive
+digesty->digest
 digial->digital
 digitalise->digitize
 digitalising->digitizing
@@ -6626,6 +6651,7 @@ disposel->disposal
 dispostion->disposition
 dispprove->disapprove
 disproportiate->disproportionate
+disproportionatly->disproportionately
 disputandem->disputandum
 disregrad->disregard
 disribution->distribution
@@ -6747,9 +6773,11 @@ distruction->destruction
 distructive->destructive
 distuingish->distinguish
 disuade->dissuade
+disutils->distutils
 ditance->distance
 ditinguishes->distinguishes
 ditributed->distributed
+ditribution->distribution
 diversed->diverse, diverged,
 divertion->diversion
 divertions->diversions
@@ -6812,6 +6840,7 @@ documments->documents
 documnet->document
 documument->document
 docunment->document
+doed->does
 doen't->doesn't
 doen->done
 doens't->doesn't
@@ -7341,6 +7370,7 @@ encrytped->encrypted
 encupsulates->encapsulates
 encylopedia->encyclopedia
 encyption->encryption
+endcoding->encoding
 endding->ending
 ende->end
 endevors->endeavors
@@ -8096,6 +8126,7 @@ experiantial->experiential
 experiement->experiment
 experienshial->experiential
 experiensial->experiential
+experimentatin->experimentation, experimenting,
 experimet->experiment
 experimetal->experimental
 experimeted->experimented
@@ -8138,6 +8169,7 @@ explicilt->explicit
 explicilty->explicitly
 explicite->explicit, explicitly,
 explicited->explicitly
+explicitelly->explicitly
 explicitely->explicitly
 explicitily->explicitly
 explicity->explicitly
@@ -8146,6 +8178,7 @@ explictely->explicitly
 explictily->explicitly
 explictly->explicitly
 explit->explicit
+explitit->explicit
 explitly->explicitly
 explizit->explicit
 explizitly->explicitly
@@ -8480,6 +8513,7 @@ finanlize->finalize
 fincally->finally
 finde->find
 findout->find out
+finelly->finally
 finess->finesse
 finialization->finalization
 finishe->finished, finish,
@@ -8733,6 +8767,7 @@ framei->frame
 frametyp->frametype
 frameworkk->framework
 framlayout->framelayout
+framwework->framework
 framwork->framework
 framworks->frameworks
 frane->frame
@@ -8998,6 +9033,7 @@ genreated->generated
 genreates->generates
 genreating->generating
 genric->generic
+genrics->generics
 gental->gentle
 genuin->genuine
 geocentic->geocentric
@@ -9327,6 +9363,7 @@ habeus->habeas
 Habsbourg->Habsburg
 hace->have
 hach->hatch, hack, hash,
+haders->headers, haters,
 hadling->handling
 haeder->header
 haemorrage->haemorrhage
@@ -9875,6 +9912,7 @@ imediately->immediately
 imediatly->immediately
 imense->immense
 imfamus->infamous
+imgage->image
 imidiately->immediately
 imigrant->immigrant, emigrant,
 imigrate->immigrate, emigrate,
@@ -9901,6 +9939,7 @@ immeadiate->immediate
 immeadiately->immediately
 immedate->immediate
 immedately->immediately
+immedialty->immediately
 immediantely->immediately
 immediated->immediate, immediately,
 immediatelly->immediately
@@ -9983,6 +10022,7 @@ implemenations->implementations
 implemencted->implemented
 implemend->implement
 implemends->implements
+implemened->implemented
 implemenet->implement
 implemenetaion->implementation
 implemenetaions->implementations
@@ -10192,6 +10232,7 @@ includng->including
 inclue->include
 inclued->included
 inclues->includes
+incluging->including
 incluide->include
 incluing->including
 inclused->included
@@ -10225,6 +10266,7 @@ incompatatble->incompatible
 incompatatible->incompatible
 incompatbility->incompatibility
 incompatiability->incompatibility
+incompatibilies->incompatibilities
 incompatiblities->incompatibilities
 incompatiblity->incompatibility
 incompetance->incompetence
@@ -10350,6 +10392,7 @@ independant->independent
 independantly->independently
 independece->independence
 independed->independent
+independedly->independently
 independend->independent
 independendet->independent
 independly->independently
@@ -11027,6 +11070,7 @@ interpolar->interpolator
 interpolayed->interpolated
 interprate->interpret
 interpreation->interpretation
+interprerter->interpreter
 interpretated->interpreted
 interprete->interpret
 interpretes->interprets
@@ -11047,6 +11091,7 @@ interresting->interesting
 interrim->interim
 interript->interrupt
 interrput->interrupt
+interrputed->interrupted
 interrrupt->interrupt
 interrrupted->interrupted
 interrrupting->interrupting
@@ -11266,6 +11311,7 @@ isntallations->installations
 isntance->instance
 isntances->instances
 isotrophically->isotropically
+isplay->display
 Israelies->Israelis
 isssue->issue
 isssued->issued
