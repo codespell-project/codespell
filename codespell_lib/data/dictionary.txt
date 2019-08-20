@@ -17481,6 +17481,7 @@ sanctionning->sanctioning
 sandobx->sandbox
 sandwhich->sandwich
 Sanhedrim->Sanhedrin
+sanitizisation->sanitization
 sanizer->sanitizer
 santioned->sanctioned
 santize->sanitize
@@ -17587,6 +17588,7 @@ screenwrighter->screenwriter
 screnn->screen
 scriopts->scripts
 scriping->scripting
+scripst->scripts
 scriptype->scripttype
 scritp->script
 scritps->scripts
@@ -17761,6 +17763,7 @@ separted->separated
 separtes->separates
 separting->separating
 sepatae->separate
+sepatate->separate
 sepcial->special
 sepcific->specific
 sepcifically->specifically
@@ -17858,6 +17861,7 @@ setitngs->settings
 setted->set
 settelement->settlement
 settinga->settings
+settingss->settings
 settins->settings
 settlment->settlement
 settng->setting
@@ -17930,6 +17934,7 @@ shoing->showing
 shold->should, hold, sold,
 sholder->shoulder
 shopkeeepers->shopkeepers
+shorcuts->shortcuts
 shorly->shortly
 short-cicruit->short-circuit
 short-cicruits->short-circuits
@@ -17939,6 +17944,8 @@ shortcomming->shortcoming
 shortcommings->shortcomings
 shortend->shortened, short end,
 shortern->shorten
+shortkut->shortcut
+shortkuts->shortcuts
 shortwhile->short while
 shotcut->shortcut
 shotdown->shutdown
@@ -17979,6 +17986,7 @@ shreak->shriek
 shreshold->threshold
 shriks->shrinks
 shrinked->shrunk
+shttp->https
 shuld->should
 shure->sure
 shurely->surely
@@ -18035,6 +18043,7 @@ signular->singular
 signularity->singularity
 silentely->silently
 silenty->silently
+siliently->silently, saliently,
 simialr->similar
 simiar->similar
 similarily->similarly
@@ -18127,6 +18136,7 @@ sitations->situations
 sitaution->situation
 sitautions->situations
 sitck->stick
+siteu->site
 sitll->still
 situatution->situation
 siturations->situations
@@ -18392,6 +18402,7 @@ specifices->specifies
 specificially->specifically
 specificiation->specification
 specificiations->specifications
+specificically->specifically
 specificied->specified
 specificl->specific
 specificly->specifically
@@ -18400,6 +18411,7 @@ specifid->specified
 specifing->specifying
 specifiy->specify
 specifiying->specifying
+specifric->specific
 specifyed->specified
 specifyied->specified
 specifyig->specifying
@@ -18469,6 +18481,7 @@ spliitting->splitting
 splite->split
 spliting->splitting
 splitted->split
+splittng->splitting
 spllitting->splitting
 spoace->space
 sponser->sponsor
@@ -18499,6 +18512,7 @@ spritual->spiritual
 sproon->spoon
 spsace->space
 spsaces->spaces
+sptintf->sprintf
 spurios->spurious
 spurrious->spurious
 sqaure->square
@@ -18526,6 +18540,7 @@ sructures->structures
 srunk->shrunk
 srunken->shrunken
 srunkn->shrunken
+ssee->see
 ssome->some
 stabalization->stabilization
 stabilty->stability
@@ -18635,6 +18650,7 @@ stocahstic->stochastic
 stocastic->stochastic
 stoer->store
 stoers->stores
+stoll->still
 stomache->stomach
 stompted->stomped
 stong->strong
@@ -18715,6 +18731,7 @@ strippen->stripped
 stript->stripped
 strirngification->stringification
 strnad->strand
+strng->string
 stroage->storage
 stroing->storing
 stronlgy->strongly
@@ -18749,6 +18766,7 @@ strucutres->structures
 struttural->structural
 strutture->structure
 struture->structure
+ststr->strstr
 sttetings->settings
 stting->string
 stubborness->stubbornness
@@ -19332,6 +19350,7 @@ synchroneously->synchronously
 synchronious->synchronous
 synchroniously->synchronously
 synchronizaton->synchronization
+synchronsouly->synchronously
 synchronuous->synchronous
 synchronus->synchronous
 syncrhonise->sychronise
@@ -19473,6 +19492,7 @@ targettting->targeting
 targt->target
 targte->target
 tarmigan->ptarmigan
+tarnsparent->transparent
 tarpolin->tarpaulin
 tasbar->taskbar
 tast->taste
@@ -19483,6 +19503,10 @@ tavelling->travelling
 tawk->talk
 taxanomic->taxonomic
 taxanomy->taxonomy
+taxnomy->taxonomy
+taxomonmy->taxonomy
+taxonmy->taxonomy
+taxonoy->taxonomy
 taylored->tailored
 tbe->the
 tbey->they
@@ -19660,6 +19684,7 @@ tghe->the
 tha->than, that, the,
 thann->than, thank,
 thansk->thanks
+thansparent->transparent
 thant->than
 thare->there
 thast->that, that's,
@@ -19682,10 +19707,12 @@ theire->their, they're,
 theiv->thief, they've,
 theive->thief
 theives->thieves
+themplate->template
 themselces->themselves
 themselfs->themselves
 themselve->themselves
 themslves->themselves
+thenes->themes
 thenn->then
 theorectical->theoretical
 theoreticall->theoretically
@@ -20240,6 +20267,7 @@ truely->truly
 truied->tried
 trully->truly
 trun->turn
+trunacted->truncated
 truncat->truncate
 trunctation->truncation
 truncted->truncated
@@ -20325,6 +20353,7 @@ uknown->unknown
 uknowns->unknowns
 ukowns->unknowns, unknown,
 Ukranian->Ukrainian
+ulimited->unlimited
 ulter->alter
 ulteration->alteration
 ulterations->alterations
@@ -20481,6 +20510,7 @@ underuns->underruns
 undesireable->undesirable
 undestand->understand
 undestood->understood
+undet->under
 undetecable->undetectable
 undfine->undefine
 undfined->undefined
@@ -20722,6 +20752,7 @@ unqoute->unquote
 unqouted->unquoted
 unqoutes->unquotes
 unqouting->unquoting
+unque->unique
 unreacahable->unreachable
 unreacahble->unreachable
 unreacheable->unreachable
@@ -20792,6 +20823,7 @@ unselecgted->unselected
 unselecgtes->unselects
 unselecgting->unselecting
 unselecgts->unselects
+unselectabe->unselectable
 unsepcified->unspecified
 unser->under, unset, unsure, user,
 unseting->unsetting
@@ -20856,6 +20888,7 @@ unswithced->unswitched
 untargetted->untargeted
 unter->under
 untill->until
+untintuitive->unintuitive
 untoched->untouched
 untrached->untracked
 untranslateable->untranslatable
@@ -20954,6 +20987,7 @@ usefullness->usefulness
 usefult->useful
 usefuly->usefully
 usefutl->useful
+useg->user, usage,
 usege->usage
 useing->using
 user-defiend->user-defined
@@ -21006,6 +21040,7 @@ utlities->utilities
 utlity->utility
 utput->output
 utputs->outputs
+uupload->upload
 vaalues->values
 vaccum->vacuum
 vaccume->vacuum
@@ -21024,6 +21059,7 @@ vailidity->validity
 vailidty->validity
 vairous->various
 valailable->available
+valdate->validate
 valetta->valletta
 valiator->validator
 validaterelase->validaterelease
@@ -21255,6 +21291,7 @@ visiable->visible
 visiably->visibly
 visibale->visible
 visibile->visible
+visibilty->visibility
 visibleable->visible
 visibles->visible
 visiblities->visibilities
@@ -21276,6 +21313,7 @@ viusally->visually
 viusualisation->visualisation
 viwer->viewer
 viwers->viewers
+vlarge->large
 vlaue->value
 vlaues->values
 vlues->values
@@ -21475,11 +21513,14 @@ whitepsaces->whitespaces
 whith->with
 whithin->within
 whithout->without
+whitout->without, whiteout,
+whitre->white
 whitspace->whitespace
 whlch->which
 whle->while
 whlie->while
 whn->when
+whne->when
 whoes->whose
 whoknows->who knows
 wholey->wholly
@@ -21602,6 +21643,7 @@ wont->won't, wont,
 woraround->workaround
 worarounds->workarounds
 wordlwide->worldwide
+wordpres->wordpress
 worfklow->workflow
 worfklows->workflows
 workaorund->workaround
@@ -21674,6 +21716,7 @@ wron->wrong
 wronf->wrong
 wront->wrong
 wrtie->write
+wsee->see
 wth->with
 wtih->with
 wuold->would
@@ -21716,6 +21759,7 @@ yhe->the
 yieldin->yielding
 ymbols->symbols
 yotube->youtube
+youn->your, you, young,
 youre->your, you're,
 youseff->yourself, yousef,
 youself->yourself
