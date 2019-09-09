@@ -26977,7 +26977,8 @@ memacess->memaccess
 micocode->microcode
 microcod->microcode
 mirocode->microcode
-mismactch->misactch
+mismactch->mismatch
+misactch->mismatch
 mismactch->mismatch
 modefied->modified
 mororola->motorola
