@@ -1083,6 +1083,7 @@ allways->always
 allwo->allow
 allwos->allows
 allws->allows
+allwys->always
 almostly->almost
 almsot->almost
 alo->also
@@ -2735,7 +2736,7 @@ bootstapping->bootstrapping
 bootstaps->bootstraps
 boquet->bouquet
 boradcast->broadcast
-bord->board, bored,
+bord->board, bored, border,
 borded->boarded, border,
 bording->boarding
 bordreline->borderline
@@ -2827,8 +2828,12 @@ broady->broadly
 broblematic->problematic
 brocher->brochure
 brocken->broken
+brockend->broken
+brockened->broken
 brocolee->broccoli
 brodcast->broadcast
+brokend->broken
+brokened->broken
 brokeness->brokenness
 broser->browser
 brower->browser
@@ -2906,13 +2911,16 @@ busness->business
 buss->bus
 busses->buses
 bussiness->business
+buton->button
 butons->buttons
 butterly->butterfly
 buttom->button, bottom,
+buttoms->buttons, bottom,
 buttosn->buttons
 buttton->button
 butttons->buttons
 buuild->build
+buuilds->builds
 bwtween->between
 byteoder->byte order
 cacahe->cache
@@ -4408,7 +4416,7 @@ configuerd->configured
 configues->configures
 configuraion->configuration
 configuraiton->configuration
-configuratin->configurating
+configuratin->configuration, configurating,
 configuratiom->configuration
 configuratioon->configuration
 configuratoin->configuration
@@ -5223,6 +5231,8 @@ couldnt->couldn't
 couldnt;->couldn't
 couln't->couldn't
 coult->could
+coummunities->communities
+coummunity->community
 coumpound->compound
 coumpounds->compounds
 councellor->councillor, counselor, councilor,
@@ -5242,10 +5252,11 @@ counterintuive->counter intuitive
 counterpar->counterpart
 counterpoart->counterpart
 countires->countries
-countour->contour
-countours->contours
-countr->counter
+countour->contour, counter,
+countours->contours, counters,
+countr->counter, contour, country,
 countrie's->countries, countries', country's,
+countrs->counters, contours, countries,
 cource->course, source,
 coururier->courier, couturier,
 couse->course, cause,
@@ -5511,6 +5522,10 @@ datee->date
 daty->data, date,
 daugher->daughter
 DCHP->DHCP
+dcument->document
+dcumented->documented
+dcumenting->documenting
+dcuments->documents
 de-actived->deactivated
 de-fualt->default
 de-fualts->defaults
@@ -7521,6 +7536,7 @@ encrpt->encrypt
 encrpted->encrypted
 encrption->encryption
 encrupted->encrypted
+encrypte->encrypted, encrypt,
 encryptiion->encryption
 encryptiong->encryption
 encrytion->encryption
@@ -8471,6 +8487,7 @@ extreamly->extremely
 extreams->extremes
 extreem->extreme
 extrem->extremum, extreme,
+extremaly->extremely
 extremelly->extremely
 extrememe->extreme
 extrememely->extremely
@@ -8863,6 +8880,7 @@ formallized->formalized
 formaly->formally, formerly,
 formate->format
 formated->formatted
+formater->formatter
 formates->formats
 formating->formatting
 formattind->formatting
@@ -10700,6 +10718,7 @@ inetrrupts->interrupts
 inevatible->inevitable
 inevitible->inevitable
 inevititably->inevitably
+inexistant->inexistent
 inexperiance->inexperience
 inexperianced->inexperienced
 inexpierence->inexperience
@@ -12602,6 +12621,7 @@ mirrorred->mirrored
 mis-intepret->mis-interpret
 mis-intepreted->mis-interpreted
 mis-match->mismatch
+misalignement->misalignment
 misbehaive->misbehave
 misceancellous->miscellaneous
 miscelaneous->miscellaneous
@@ -13610,7 +13630,7 @@ occurances->occurrences
 occurately->accurately
 occurd->occurred, occur,
 occurded->occurred
-occure->occur
+occure->occur, occurred,
 occured->occurred
 occurence->occurrence
 occurences->occurrences
@@ -13793,6 +13813,9 @@ oppenly->openly
 opperation->operation
 opperational->operational
 opperations->operations
+oppertunist->opportunist
+oppertunities->opportunities
+oppertunity->opportunity
 oppinion->opinion
 oppinions->opinions
 opponant->opponent
@@ -14692,6 +14715,7 @@ pleaee->please
 pleaes->please
 pleasent->pleasant
 plebicite->plebiscite
+plecing->placing
 plent->plenty
 plesae->please
 plesant->pleasant
@@ -15092,6 +15116,7 @@ prefecth->prefetch
 prefectly->perfectly
 prefere->prefer, preferred,
 prefered->preferred
+preferend->preferred, preference,
 prefering->preferring
 prefernce->preference
 prefernces->preferences
@@ -15210,6 +15235,7 @@ prevelance->prevalence
 prevelant->prevalent
 preven->prevent
 prevend->prevent
+prevente->prevented, prevent,
 preverse->perverse
 preverses->preserves
 preverve->preserve
@@ -15703,6 +15729,9 @@ Pucini->Puccini
 Puertorrican->Puerto Rican
 Puertorricans->Puerto Ricans
 pulisher->publisher
+pullrequenst->pull requests, pull request,
+pullrequest->pull request
+pullrequests->pull requests
 puls->pulse, plus,
 pumkin->pumpkin
 punctation->punctuation
@@ -16246,6 +16275,7 @@ recommpile->recompile
 recommpiled->recompiled
 recompence->recompense
 recomplie->recompile, recomply,
+recomput->recompute
 recomputaion->recomputation
 recompuute->recompute
 recompuuted->recomputed
@@ -19929,6 +19959,8 @@ thiunk->think
 thjese->these
 thn->then
 thna->than
+thnak->thank
+thnaks->thanks
 thne->then
 thnig->thing
 thnigs->things
@@ -21649,6 +21681,7 @@ whetehr->whether
 wheter->whether
 whethe->whether
 whethter->whether
+whheel->wheel
 whic->which
 whicg->which
 which;s->which's
@@ -21923,6 +21956,7 @@ youseff->yourself, yousef,
 youself->yourself
 ypes->types
 yrea->year
+yse->yes, use,
 ytou->you
 yugoslac->yugoslav
 yuo->you
