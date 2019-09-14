@@ -275,6 +275,9 @@ accompained->accompanied
 accompanyed->accompanied
 accompt->account
 accont->account
+accontant->accountant
+acconted->accounted
+acconting->accounting
 accoording->according
 accoordingly->accordingly
 accordeon->accordion
@@ -580,6 +583,8 @@ adjustement->adjustment
 adjustements->adjustments
 adjustificat->justification
 adjustification->justification
+adjustmant->adjustment
+adjustmants->adjustments
 adjustmenet->adjustment
 admendment->amendment
 admininistrative->administrative
@@ -2867,6 +2872,7 @@ bugus->bogus
 buid->build
 buiding->building
 buidling->building
+buiild->build
 buik->bulk
 buil->build, built,
 build-dependancies->build-dependencies
@@ -3716,6 +3722,10 @@ codepoitn->codepoint
 codesc->codecs
 codespel->codespell
 coditions->conditions
+coduct->conduct
+coducted->conducted
+coducting->conducting
+coducts->conducts
 coeffcients->coefficients
 coefficeints->coefficients
 coefficent->coefficient
@@ -5615,6 +5625,7 @@ decendentants->descendants
 decendents->descendents, descendants,
 decending->descending
 deciaml->decimal
+deciamls->decimals
 decidate->dedicate
 decidated->dedicated
 decidates->dedicates
@@ -5709,12 +5720,16 @@ dectecting->detecting
 dectection->detection
 dectector->detector
 dectivate->deactivate
+decutable->deductible
+decutables->deductibles
 decypher->decipher
 decyphered->deciphered
 ded->dead
 dedection->detection
 dedidated->dedicated
 dedly->deadly
+deductable->deductible
+deductables->deductibles
 dedupliate->deduplicate
 dedupliated->deduplicated
 deecorator->decorator
@@ -7311,7 +7326,11 @@ ediges->edges
 editedt->edited
 editiing->editing
 editoro->editor
+editt->edit
+editted->edited
+editter->editor
 editting->editing
+edittor->editor
 edxpected->expected
 eearly->early
 eescription->description
@@ -9202,6 +9221,11 @@ gaurentee->guarantee
 gaurenteed->guaranteed
 gaurentees->guarantees
 gausian->gaussian
+geenrate->generate
+geenrated->generated
+geenrates->generates
+geenration->generation
+geenrational->generational
 geeoteen->guillotine
 geeral->general
 gemetrical->geometrical
@@ -11039,6 +11063,8 @@ insallation->installation
 insalled->installed
 insance->instance, insane,
 inscpeting->inspecting
+insctuction->instruction
+insctuctions->instructions
 insde->inside
 insectiverous->insectivorous
 insensative->insensitive
@@ -11165,6 +11191,7 @@ instutions->intuitions
 insue->ensue, insure,
 insufficent->insufficient
 insuffiency->insufficiency
+insurasnce->insurance
 insurence->insurance
 intaces->instance
 intack->intact
@@ -12476,6 +12503,9 @@ mercahnt->merchant
 mercentile->mercantile
 merchantibility->merchantability
 merget->merge
+mergge->merge
+mergged->merged
+mergging->merging
 merly->merely
 mermory->memory
 merory->memory
@@ -14176,7 +14206,7 @@ ovverridden->overridden
 ovverride->override
 ovverrides->overrides
 ovverriding->overriding
-ower->lower
+ower->lower, owner,
 owerflow->overflow
 owership->ownership
 owerwrite->overwrite
@@ -14229,6 +14259,7 @@ paeth->path
 pagagraph->paragraph
 pahses->phases
 paide->paid
+paied->paid, paired,
 painiting->painting
 paintile->painttile
 paintin->painting
@@ -16795,8 +16826,9 @@ renabled->re-enabled
 rende->render, rend,
 renderadble->renderable
 rendereing->rendering
-rendererers->renderers
+rendererers->renderers, renderer's,
 renderering->rendering
+renderes->renders, renderers, renderer's,
 renderr->render
 renderring->rendering
 rendevous->rendezvous
@@ -17195,10 +17227,10 @@ reqiure->require
 requeried->required
 requeset->request, requisite,
 requestd->requested
-requestes->requests
+requestes->requests, requested,
 requestesd->requested
 requestested->requested
-requestests->requests
+requestests->requests, requested,
 requeum->requiem
 requied->required
 requierd->required
@@ -17689,6 +17721,7 @@ safly->safely
 saftey->safety
 safty->safety
 sais->says
+saleries->salaries
 salery->salary
 samll->small
 samller->smaller
@@ -19698,6 +19731,10 @@ tanget->tangent
 tangetial->tangential
 tangetially->tangentially
 tangets->tangents
+tansact->transact
+tansaction->transaction
+tansactional->transactional
+tansactions->transactions
 tanseint->transient
 tansfomed->transformed
 tansient->transient
@@ -20243,6 +20280,7 @@ tranformed->transformed
 tranforming->transforming
 tranforms->transforms
 tranient->transient
+tranlatable->translatable
 tranlate->translate
 tranlated->translated
 tranlates->translates
@@ -20259,7 +20297,11 @@ tranport->transport
 transacion->transaction
 transaction-spacific->transaction-specific
 transactoin->transaction
+transalt->translate
 transalte->translate
+transalted->translated
+transaltes->translates
+transaltion->translation
 transation->transaction, translation,
 transations->transactions, translations,
 transcendance->transcendence
@@ -21994,6 +22036,7 @@ ymbols->symbols
 yotube->youtube
 youn->your, you, young,
 youre->your, you're,
+yourr->your, you're
 youseff->yourself, yousef,
 youself->yourself
 ypes->types
