@@ -3724,7 +3724,9 @@ codespel->codespell
 coditions->conditions
 coduct->conduct
 coducted->conducted
+coducter->conductor
 coducting->conducting
+coductor->conductor 
 coducts->conducts
 coeffcients->coefficients
 coefficeints->coefficients
@@ -4712,6 +4714,11 @@ constructers->constructors
 constructes->constructs
 constructred->constructed
 constructt->construct
+constructted->constructed
+constructting->constructing
+constructtor->constructor
+constructtors->constructors
+constructts->constructs
 constructued->constructed
 constructure->constructor
 construktor->constructor
@@ -5375,11 +5382,13 @@ cronological->chronological
 cros->cross
 croshet->crochet
 crosreference->cross-reference
+crosreferenced->cross-referenced
 crosreferences->cross-references
 cross-commpilation->cross-compilation
 cross-orgin->cross-origin
 crossin->crossing
 crossreference->cross-reference
+crossreferenced->cross-referenced
 crossreferences->cross-references
 crowdsigna->crowdsignal
 crowkay->croquet
@@ -14217,7 +14226,7 @@ ovverridden->overridden
 ovverride->override
 ovverrides->overrides
 ovverriding->overriding
-ower->lower, owner,
+ower->lower, owner, over,
 owerflow->overflow
 owership->ownership
 owerwrite->overwrite
