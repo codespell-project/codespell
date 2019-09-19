@@ -1722,7 +1722,7 @@ arithemtic->arithmetic
 arithmatic->arithmetic
 arithmentic->arithmetic
 arithmethic->arithmetic
-arithmetics->arithmetic
+arithmetics->arithmetic, arithmetics,
 arithmitic->arithmetic
 aritmetic->arithmetic
 aritst->artist
@@ -2694,9 +2694,9 @@ blindy->blindly
 Blitzkreig->Blitzkrieg
 bload->bloat
 bloaded->bloated
-bloc->block
+bloc->block, bloc,
 bloccks->blocks
-blocs->blocks
+blocs->blocks, blocs,
 blohted->bloated
 blokcer->blocker
 bloking->blocking
@@ -3134,7 +3134,7 @@ canonicalizations->canonicalization
 canonival->canonical
 canot->cannot
 cant'->can't
-cant->can't
+cant->can't, cant,
 cant;->can't
 canvase->canvas
 caost->coast
@@ -3200,7 +3200,7 @@ carthographer->cartographer
 cartilege->cartilage
 cartilidge->cartilage
 cartrige->cartridge
-cas->case
+cas->case, disabled because of common abbreviations
 cascace->cascade
 case-insensitivy->case-insensitivity
 case-insenstive->case-insensitive
@@ -5026,7 +5026,7 @@ convovled->convolved
 convovling->convolving
 convserion->conversion
 conyak->cognac
-coo->coup
+coo->coup, coo,
 coodinate->coordinate
 coodinates->coordinates
 coodrinate->coordinate
@@ -5102,7 +5102,7 @@ copstruction->construction
 copuright->copyright
 coputer->computer
 copver->cover
-copyable->copyable, copiable,
+copyable->copyable, copiable, disabled because of name clash in C++
 copyed->copied
 copyied->copied
 copyrigth->copyright
@@ -5321,8 +5321,8 @@ craches->crashes, caches, crutches,
 craete->create
 craeting->creating, crating,
 crahses->crashes
-crasher->crash
-crashers->crashes
+crasher->crash, disabled because it denotes something that crashes
+crashers->crashes, disabled because it denotes things that crash
 crashs->crashes
 crated->created, crated,
 creaed->created
@@ -7093,7 +7093,7 @@ doesnt->doesn't, does not,
 doesnt;->doesn't
 doess->does
 doestn't->doesn't
-dof->of, doff,
+dof->of, doff, disabled because it's a common abbreviation
 doign->doing
 doiing->doing
 doiuble->double
@@ -7116,7 +7116,7 @@ donn->done, don,
 donnot->do not
 dont'->don't
 dont't->don't
-dont->don't
+dont->don't, disabled because of var names
 donwload->download
 donwloaded->downloaded
 donwloading->downloading
@@ -9083,7 +9083,7 @@ frezes->freezes
 fricton->friction
 frist->first
 frmat->format
-fro->for, from,
+fro->for, from, fro,
 froce->force
 fromat->format
 frome->from
@@ -11674,7 +11674,7 @@ iterm->term, intern,
 iterpreter->interpreter
 iterrupt->interrupt
 iteself->itself
-ith->with
+ith->with, disabled because of ordinal form of i like nth
 itialise->initialise
 itialised->initialised
 itialises->initialises
@@ -13037,7 +13037,7 @@ muscicians->musicians
 musn't->mustn't
 mustator->mutator
 muste->must
-mut->must, mutt, moot,
+mut->must, mutt, moot, disabled because of Rust keyword
 mutablity->mutability
 mutbale->mutable
 mutch->much
@@ -17648,7 +17648,7 @@ rigt->right
 rigth->right
 rigths->rights
 rigurous->rigorous
-rime->rhyme
+rime->rhyme, rime,
 riminder->reminder
 riminders->reminders
 riminding->reminding
@@ -17689,7 +17689,7 @@ rotataion->rotation
 rotataions->rotations
 rotatio->rotation
 rouding->rounding
-rouge->rogue
+rouge->rogue, rouge,
 roughtly->roughly
 rougly->roughly
 rouine->routine
@@ -17954,7 +17954,7 @@ securty->security
 sedereal->sidereal
 seeem->seem
 seeen->seen
-seeked->sought
+seeked->sought, disabled because of JS event name
 seelect->select
 seemes->seems
 seemless->seamless
@@ -18401,7 +18401,7 @@ simultanous->simultaneous
 simultanously->simultaneously
 simutaneously->simultaneously
 sinature->signature
-sinc->sinc, synch, sync, sink, since,
+sinc->sinc, synch, sync, sink, since, disabled due to valid mathematical concept
 sincerley->sincerely
 sincerly->sincerely
 sincs->sincs, syncs, sinks, since,
@@ -20093,7 +20093,7 @@ thnaks->thanks
 thne->then
 thnig->thing
 thnigs->things
-tho->though, to, thou,
+tho->though, to, thou, tho,
 thoe->those, though,
 thonic->chthonic
 thorugh->through, thorough,
@@ -20147,7 +20147,7 @@ throuh->through
 throuth->through
 throwed->threw, thrown,
 throwgh->through
-thru->through
+thru->through, thru,
 thrue->through
 thruout->throughout
 ths->the, this,
@@ -22012,7 +22012,7 @@ wouldn;t->wouldn't
 wouldnt'->wouldn't
 wouldnt->wouldn't
 wouldnt;->wouldn't
-wounder->wonder
+wounder->wonder, wounder,
 wounderful->wonderful
 wqs->was
 wraped->wrapped, warped,
