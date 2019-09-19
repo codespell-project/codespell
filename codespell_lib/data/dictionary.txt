@@ -2955,6 +2955,10 @@ cacluating->calculating
 cacluation->calculation
 cacluations->calculations
 cacluator->calculator
+caclucate->calculate
+caclucation->calculation
+caclucations->calculations
+caclucator->calculator
 caclulated->calculated
 caclulating->calculating
 caculate->calculate
@@ -4366,6 +4370,7 @@ condifured->configured
 condigdialog->configdialog
 condionally->conditionally
 conditionaly->conditionally
+conditionnal->conditional
 conditionnaly->conditionally
 conditionsof->conditions of
 conditoinal->conditional
@@ -6417,6 +6422,12 @@ devirutalized->devirtualized
 devision->division
 devistating->devastating
 devive->device
+devleop->develop
+devleoped->developed
+devleoper->developer
+devleopers->developers
+devleopper->developer
+devleoppers->developers
 devlop->develop
 devloped->developed
 devloper's->developer's
@@ -6854,6 +6865,7 @@ dispite->despite
 displa->display
 displacment->displacement
 displacments->displacements
+displayd->displayed
 displayes->displays, displayed,
 displayied->displayed
 disply->display
@@ -8781,6 +8793,10 @@ finishs->finishes
 finitel->finite
 finness->finesse
 finnished->finished
+finsh->finish, finch,
+finshed->finished
+finshes->finishes, finches,
+finshing->finishing
 finsih->finish
 finsihed->finished
 finsihes->finishes
@@ -9110,6 +9126,7 @@ fulsh->flush
 funchtion->function
 funchtional->functional
 funchtioned->functioned
+funchtioning->functioning
 funchtions->functions
 funcion->function
 funcions->functions
@@ -9613,6 +9630,8 @@ guarunty->guaranty
 guassian->gaussian
 Guatamala->Guatemala
 Guatamalan->Guatemalan
+gud->good
+gude->guide, good,
 guerilla->guerrilla
 guerillas->guerrillas
 guerrila->guerrilla
@@ -10195,6 +10214,7 @@ imcoming->incoming
 imcomming->incoming
 imcomplete->incomplete
 imedatly->immediately
+imedialy->immediately
 imediate->immediate
 imediately->immediately
 imediatly->immediately
@@ -10826,6 +10846,7 @@ infomation->information
 infor->info
 inforamtion->information
 inforation->information
+inforational->informational
 inforce->enforce
 inforced->enforced
 informaion->information
@@ -11634,7 +11655,7 @@ isssue->issue
 isssued->issued
 isssues->issues
 issueing->issuing
-ist->is, it, its,
+ist->is, it, its, it's, list,
 istalling->installing
 istance->instance
 istead->instead
@@ -13746,7 +13767,9 @@ oen->one
 oerflow->overflow
 ofcource->of course
 offcers->officers
+offcial->official
 offcially->officially
+offcials->officials
 offerd->offered
 offereings->offerings
 offest->offset
@@ -14130,6 +14153,7 @@ outpupt->output
 outputed->outputted
 outputing->outputting
 outputof->output-of
+outrside->outside, other side,
 outselves->ourselves
 outter->outer
 outupt->output
@@ -15854,6 +15878,7 @@ pytnon->python
 pytohn->python
 pyton->python
 qeueue->queue
+qith->with
 qoute->quote
 qouted->quoted
 qoutes->quotes
@@ -15899,6 +15924,7 @@ quicly->quickly
 quiessent->quiescent
 quinessential->quintessential
 quitely->quite, quietly,
+quith->quit, with,
 quiting->quitting
 quitt->quit
 quitted->quit
@@ -16792,6 +16818,10 @@ remainging->remaining
 remainst->remains
 remaning->remaining
 remaping->remapping
+rembember->remember
+rembembered->remembered
+rembembering->remembering
+rembembers->remembers
 rember->remember
 remeber->remember
 remebered->remembered
@@ -17492,6 +17522,7 @@ rether->rather
 retieve->retrieve
 retieved->retrieved
 retieves->retrieves
+retieving->retrieving
 retinew->retinue
 retireving->retrieving
 retore->restore
@@ -18283,6 +18314,7 @@ siezed->seized, sized,
 siezing->seizing, sizing,
 siezure->seizure
 siezures->seizures
+sigal->signal, sigil,
 sigaled->signaled
 sigen->sign
 sightly->slightly
