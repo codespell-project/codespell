@@ -18959,7 +18959,7 @@ stocahstic->stochastic
 stocastic->stochastic
 stoer->store
 stoers->stores
-stoll->still
+stoll->still, disabled because of name clash in C++
 stomache->stomach
 stompted->stomped
 stong->strong
