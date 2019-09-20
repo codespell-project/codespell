@@ -1219,6 +1219,8 @@ ammending->amending
 ammendment->amendment
 ammendments->amendments
 ammends->amends
+ammong->among
+ammongst->amongst
 ammortizes->amortizes
 ammount->amount
 ammused->amused
@@ -6114,6 +6116,7 @@ dermine->determine
 dermines->determines
 derogitory->derogatory
 derprecated->deprecated
+derrivatives->derivatives
 derrive->derive
 derrived->derived
 derth->dearth
@@ -7753,6 +7756,7 @@ entitees->entities
 entites->entities
 entiti->entity
 entitie->entity
+entitites->entities
 entitities->entities
 entitity->entity
 entitiy->entity
@@ -11217,6 +11221,8 @@ instrcutions->instructions
 instrcuts->instructs
 instread->instead
 instrinsic->intrinsic
+instruccion->instruction
+instruccions->instructions
 instrucion->instruction
 instruciton->instruction
 instrucitons->instructions
@@ -11977,6 +11983,7 @@ levl->level
 levle->level
 lexial->lexical
 leyer->layer
+liares->liars
 liasion->liaison
 liason->liaison
 liasons->liaisons
@@ -12013,6 +12020,8 @@ lifecyle->lifecycle
 lifes->lives
 liftime->lifetime
 ligh->light, lie, lye,
+ligher->lighter, liar, liger,
+lighers->lighters, liars, ligers,
 lightening->lightening, lightning, lighting,
 lightsensor->light sensor,
 lightweigh->lightweight
@@ -13957,6 +13966,10 @@ optimation->optimization, optimisation,
 optimazation->optimization
 optimiality->optimality
 optimier->optimizer, optimiser,
+optimisim->optimism
+optimisitc->optimistic
+optimisitic->optimistic
+optimissm->optimism
 optimitation->optimization
 optimizaing->optimizing
 optimizier->optimizer
@@ -14624,6 +14637,7 @@ perfoom->perfume, perform,
 performace->performance
 performamce->performance
 performane->performance
+performe->perform, performed,
 performence->performance
 performes->performed, performs,
 performnace->performance
@@ -18115,7 +18129,15 @@ Septemer->September
 sepulchure->sepulchre, sepulcher,
 sepulcre->sepulchre, sepulcher,
 seqence->sequence
+seqenced->sequenced
 seqences->sequences
+seqencing->sequencing
+seqense->sequence
+seqensed->sequenced
+seqenses->sequences
+seqensing->sequencing
+seqenstial->sequential
+seqential->sequential
 seqeuental->sequential
 seqeunce->sequence
 seqeuntials->sequentials
@@ -18129,6 +18151,11 @@ sequemces->sequences
 sequencial->sequential
 sequencially->sequentially
 sequencies->sequences
+sequense->sequence
+sequensed->sequenced
+sequenses->sequences
+sequensing->sequencing
+sequenstial->sequential
 sequenzes->sequences
 sequeze->squeeze, sequence,
 sequnces->sequences
@@ -19438,7 +19465,8 @@ suppor->support
 suppored->supported
 supporession->suppression
 supportd->supported
-supporte->supported
+supporte->supported, supporter,
+supportet->supporter, supported,
 supportin->supporting
 supportted->supported
 supposeded->supposed
@@ -20115,6 +20143,7 @@ thorwn->thrown, thorn,
 thos->those, this,
 thoses->those
 thoughout->throughout
+thougt->thought, though,
 thougth->thought
 thounsands->thousands
 thourough->thorough
