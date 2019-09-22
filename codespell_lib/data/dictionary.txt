@@ -3839,6 +3839,8 @@ comandos->commandos
 comany->company
 comapany->company
 comapared->compared
+comapatibility->compatibility
+comapatible->compatible
 comapnies->companies
 comapny->company
 comapre->compare
@@ -6701,6 +6703,7 @@ direcotries->directories
 direcotry->directory
 direcoty->directory
 directd->directed
+directely->directly
 directes->directs
 directgories->directories
 directgory->directory
@@ -10216,6 +10219,8 @@ imbedding->embedding
 imbrase->embrace
 imcoming->incoming
 imcomming->incoming
+imcompatibility->incompatibility
+imcompatible->incompatible
 imcomplete->incomplete
 imedatly->immediately
 imedialy->immediately
@@ -10553,6 +10558,8 @@ incluing->including
 inclused->included
 inclusinve->inclusive
 incmrement->increment
+incomapatibility->incompatibility
+incomapatible->incompatible
 incomaptible->incompatible
 incombatibilities->incompatibilities
 incombatibility->incompatibility
@@ -13820,6 +13827,7 @@ ojects->objects
 ojekts->objects
 oldes->oldest
 olny->only
+olt->old
 oly->only
 omision->omission
 omited->omitted
@@ -13838,7 +13846,7 @@ omniverously->omnivorously
 omplementaion->implementation
 omplementation->implementation
 omre->more
-onces->once, ones,
+onces->ounces, once, ones,
 ond->one
 onece->once
 oneliners->one-liners
@@ -16882,6 +16890,7 @@ rendereing->rendering
 rendererers->renderers, renderer's,
 renderering->rendering
 renderes->renders, renderers, renderer's,
+renderning->rendering
 renderr->render
 renderring->rendering
 rendevous->rendezvous
@@ -22000,6 +22009,8 @@ workbanches->workbenches
 workbanchs->workbenches
 workbennch->workbench
 workbennches->workbenches
+workbnech->workbench
+workbneches->workbenches
 workboos->workbooks
 workes->works
 workign->working
