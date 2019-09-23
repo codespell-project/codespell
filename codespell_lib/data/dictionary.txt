@@ -1581,6 +1581,14 @@ aprehensive->apprehensive
 apreteate->appreciate
 apreteated->appreciated
 aproach->approach
+aproached->approached
+aproaches->approaches
+aproaching->approaching
+aproch->approach
+aproched->approached
+aproches->approaches
+aproching->approaching
+aproove->approve
 aprooved->approved
 apropiate->appropriate
 apropiately->appropriately
@@ -1843,7 +1851,9 @@ assignmnet->assignment
 assing->assign
 assinged->assigned
 assinging->assigning
+assingled->assigned
 assingment->assignment
+assingned->assigned
 assings->assigns
 assinment->assignment
 assisnate->assassinate
@@ -5239,6 +5249,9 @@ costitution->constitution
 costruct->construct
 costructer->constructor
 costructor->constructor
+costum->custom, costume,
+costumary->customary
+costums->customs, costumes,
 cotain->contain
 cotained->contained
 cotainer->container
@@ -19742,6 +19755,9 @@ sypport->support
 syrap->syrup
 sysbols->symbols
 syschronize->synchronize
+sysem->system
+sysematic->systematic
+sysems->systems
 sysmatically->systematically
 sysmbol->symbol
 sysmograph->seismograph
