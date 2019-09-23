@@ -17353,6 +17353,8 @@ rescource->resource
 rescources->resources
 rescrition->restriction
 rescritions->restrictions
+reseach->research
+reseached->researched
 reselction->reselection
 resembelance->resemblance
 resembes->resembles
@@ -17891,7 +17893,10 @@ scientis->scientist
 scince->science
 scinece->science
 scintiallation->scintillation
-scipt->script
+scipt->script, skipped,
+scipted->scripted
+scipting->scripting
+scipts->scripts, skips,
 scirpt->script
 scirpts->scripts
 sclar->scalar
