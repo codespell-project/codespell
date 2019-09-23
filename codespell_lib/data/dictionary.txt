@@ -474,8 +474,10 @@ acually->actually
 acuired->acquired
 acuires->acquires
 acumulate->accumulate
+acumulated->accumulated
 acumulates->accumulates
 acumulating->accumulating
+acumulator->accumulator
 acuqire->acquire
 acuracy->accuracy
 acurate->accurate
@@ -639,6 +641,7 @@ advertisment->advertisement
 advertisments->advertisements
 advertistment->advertisement
 advertistments->advertisements
+advertize->advertise
 advesary->adversary
 adviced->advised
 adviseable->advisable
@@ -3054,6 +3057,7 @@ calibrte->calibrate
 calibrtion->calibration
 caligraphy->calligraphy
 calilng->calling
+caling->calling, scaling, culling,
 callack->callback
 callbacl->callback
 callbakc->callback
@@ -3271,6 +3275,7 @@ ccale->scale
 ccertificate->certificate
 ccordinate->coordinate
 ccordinates->coordinates
+ccordinats->coordinates
 ccoutant->accountant
 Ceasar->Caesar
 ceate->create
@@ -3314,6 +3319,7 @@ cerimonious->ceremonious
 cerimony->ceremony
 ceromony->ceremony
 certaily->certainly
+certaincy->certainty
 certainity->certainty
 certaion->certain
 certan->certain
@@ -3665,8 +3671,11 @@ cliensite->client-side
 cliente->client, clientele,
 clientelle->clientele
 clik->click
+cliks->clicks
 clincial->clinical
 clinicaly->clinically
+clipoard->clipboard
+clipoards->clipboards
 clipoing->clipping
 cliuent->client
 cliuents->clients
@@ -3712,6 +3721,8 @@ cntain->contain
 cntains->contains
 cnter->center
 co-incided->coincided
+co-ordinate->coordinate
+co-ordinates->coordinates
 coalesed->coalesced
 coalessing->coalescing
 coallesced->coalesced
@@ -4711,8 +4722,14 @@ constrcutor->constructor
 constrcutors->constructors
 constrcuts->constructs
 constriants->constraints
+construc->construct
+construced->construtced
+construces->constructs
+construcing->constructing
+construcion->construction
 construciton->construction
 construcor->constructor
+construcs->constructs
 constructcor->constructor
 constructer->constructor
 constructers->constructors
@@ -5045,6 +5062,7 @@ coordiantion->coordination
 coordiate->coordinate
 coordiates->coordinates
 coordiinates->coordinates
+coordinats->coordinates
 coordindate->coordinate
 coordindates->coordinates
 coordine->coordinate
@@ -6055,7 +6073,10 @@ depreacte->deprecate
 depreacted->deprecated
 depreacts->deprecates
 deprecatedf->deprecated
-depreceated->deprecated
+depreceate->deprecate, depreciate,
+depreceated->deprecated, depreciated,
+depreceating->depreciating, deprecating,
+depreceation->depreciation, deprecation,
 deprectaed->deprecated
 deprectat->deprecate
 deprectate->deprecate
@@ -6316,6 +6337,7 @@ detachs->detaches
 detahced->detached
 detaild->detailed
 detailled->detailed
+detais->details
 detatch->detach
 detatched->detached
 detatches->detaches
@@ -8381,6 +8403,10 @@ experiantial->experiential
 experiement->experiment
 experienshial->experiential
 experiensial->experiential
+experimant->experiment
+experimantal->experimental
+experimantally->experimentally
+experimantation->experimentation
 experimentatin->experimentation, experimenting,
 experimet->experiment
 experimetal->experimental
@@ -9675,6 +9701,7 @@ halp->help
 halpoints->halfpoints
 hammmer->hammer
 hampster->hamster
+hande->handle, hand,
 handel->handle
 handeld->handled, handheld,
 handeled->handled, handheld,
@@ -10546,6 +10573,7 @@ inclues->includes
 incluging->including
 incluide->include
 incluing->including
+incluse->include, incluse,
 inclused->included
 inclusinve->inclusive
 incmrement->increment
@@ -10577,6 +10605,7 @@ incompatatble->incompatible
 incompatatible->incompatible
 incompatbility->incompatibility
 incompatiability->incompatibility
+incompatiable->incompatible
 incompatibilies->incompatibilities
 incompatiblities->incompatibilities
 incompatiblity->incompatibility
@@ -12152,6 +12181,7 @@ looop->loop
 loopup->lookup
 loos->loose, lose,
 loosing->losing
+loosley->loosely
 loosly->loosely
 loosy->lossy
 losely->loosely
@@ -12316,6 +12346,10 @@ manufaturing->manufacturing
 manulally->manually
 manully->manually
 manupilations->manipulations
+manupulate->manipulate
+manupulated->manipulated
+manupulates->manipulates
+manupulating->manipulating
 manupulation->manipulation
 manupulations->manipulations
 manuver->maneuver
@@ -14040,6 +14074,8 @@ orientiation->orientation
 orientied->oriented
 orientned->oriented
 origanaly->originally
+origial->original
+origially->originally
 origianal->original
 origianally->originally
 origianaly->originally
@@ -15717,6 +15753,10 @@ proprietory->proprietary
 proproable->probable
 proproably->probably
 proproties->properties
+proprotion->proportion
+proprotional->proportional
+proprotionally->proportionally
+proprotions->proportions
 propt->prompt
 propteries->properties
 propvider->provider
@@ -17274,6 +17314,7 @@ reqeusting->requesting
 reqeusts->requests
 reqiure->require
 requeried->required
+reques->request
 requeset->request, requisite,
 requestd->requested
 requestes->requests, requested,
@@ -17539,6 +17580,7 @@ retreivable->retrievable
 retreival->retrieval
 retreive->retrieve
 retreived->retrieved
+retreives->retrieves
 retreiving->retrieving
 retrict->restrict
 retricted->restricted
@@ -18370,6 +18412,7 @@ simlarly->similarly
 simliar->similar
 simlicity->simplicity
 simlified->simplified
+simly->simply
 simmetric->symmetric
 simmetrical->symmetrical
 simmetry->symmetry
@@ -19362,6 +19405,7 @@ sugested->suggested
 sugestion->suggestion
 sugestions->suggestions
 sugests->suggests
+suggestes->suggests
 suggestsed->suggested
 suggesttion->suggestion
 suggesttions->suggestions
@@ -19699,6 +19743,7 @@ syntak->syntax
 syntaks->syntax
 syntakt->syntax
 syntakts->syntax
+syntatic->syntactic
 syntaxg->syntax
 syntehsise->synthesise
 syntehsised->synthesised
@@ -20371,7 +20416,10 @@ transfering->transferring
 transferrd->transferred
 transfert->transfer, transferred,
 transfom->transform
+transfomation->transformation
+transfomational->transformational
 transfomed->transformed
+transfomer->transformer
 transfomm->transform
 transfoprmation->transformation
 transformated->transformed
@@ -20382,6 +20430,7 @@ transfromate->transform, transformed,
 transfromation->transformation
 transfromations->transformations
 transfromed->transformed
+transfromer->transformer
 transfroming->transforming
 transfroms->transforms
 transision->transition
@@ -20735,6 +20784,7 @@ uncahnged->unchanged
 unce->once
 uncehck->uncheck
 uncehcked->unchecked
+uncertaincy->uncertainty
 uncertainities->uncertainties
 uncertainity->uncertainty
 unchache->uncache
