@@ -1772,6 +1772,8 @@ articat->artifact
 articats->artifacts
 artice->article
 articel->article
+artifcat->artifact
+artifcats->artifacts
 artifical->artificial
 artifically->artificially
 artihmetic->arithmetic
@@ -3228,6 +3230,7 @@ casues->causes
 casuing->causing
 casulaties->casualties
 casulaty->casualty
+catagorie->category, categories,
 catagories->categories
 catagorized->categorized
 catagory->category
@@ -3240,6 +3243,7 @@ catastropically->catastrophically
 catched->caught
 catchi->catch
 catchs->catches
+categorie->category, categories,
 catepillar->caterpillar
 catepillars->caterpillars
 catergorize->categorize
@@ -4381,8 +4385,10 @@ condifured->configured
 condigdialog->configdialog
 condionally->conditionally
 conditionaly->conditionally
+conditionn->condition
 conditionnal->conditional
 conditionnaly->conditionally
+conditionned->conditioned
 conditionsof->conditions of
 conditoinal->conditional
 conditon->condition
@@ -5140,7 +5146,10 @@ corecct->correct
 corecctly->correctly
 corect->correct
 corected->corrected
+corecting->correcting
+corection->correction
 corectly->correctly
+corects->corrects
 coreespond->correspond
 coregated->corrugated
 corelate->correlate
@@ -7508,6 +7517,7 @@ emable->enable
 emailling->emailing
 embarass->embarrass
 embarassed->embarrassed
+embarasses->embarrasses
 embarassing->embarrassing
 embarassment->embarrassment
 embargos->embargoes
@@ -8020,6 +8030,7 @@ etsbalishment->establishment
 etst->test
 etsts->tests
 etxt->text
+euclidian->euclidean
 euivalent->equivalent
 euivalents->equivalents
 euqivalent->equivalent
@@ -9119,6 +9130,7 @@ frist->first
 frmat->format
 fro->for, from, fro,
 froce->force
+fromal->formal
 fromat->format
 frome->from
 fromed->formed
@@ -9245,6 +9257,7 @@ futhroc->futhark, futhorc,
 futrure->future
 futture->future
 fwirte->fwrite
+fxed->fixed
 fysical->physical
 fysisist->physicist
 fysisit->physicist
@@ -10625,6 +10638,8 @@ incompleete->incomplete
 incomptable->incompatible
 incomptetent->incompetent
 incomptible->incompatible
+inconditional->unconditional
+inconditionally->unconditionally
 inconisistent->inconsistent
 inconsisent->inconsistent
 inconsisently->inconsistently
@@ -12738,6 +12753,7 @@ miniture->miniature
 minium->minimum
 miniums->minimums
 minmal->minimal
+minmum->minimum
 minsitry->ministry
 minstries->ministries
 minstry->ministry
@@ -14959,11 +14975,11 @@ poointed->pointed
 poointer->pointer
 pooints->points
 poost->post
-poped->popped
+poped->popped, pooped,
 poperee->potpourri
 poperly->properly, property,
 poperty->property, properly,
-poping->popping
+poping->popping, pooping,
 popoen->popen
 poportional->proportional
 popoulation->population
@@ -16005,6 +16021,11 @@ rapresents->represents
 rarelly->rarely
 rarified->rarefied
 rasberry->raspberry
+rasie->raise
+rasied->raised
+rasies->raises
+rasiing->raising
+rasing->raising
 raspoberry->raspberry
 rathar->rather
 rathern->rather
@@ -17521,6 +17542,7 @@ restes->reset
 resticted->restricted
 restoding->restoring
 restoiring->restoring
+restor->restore
 restorated->restored
 restors->restores
 restouration->restoration
@@ -19361,6 +19383,7 @@ succesion->succession
 succesive->successive
 succesor->successor
 succesors->successors
+successed->succeeded, success, successful,
 successfule->successful
 successfull->successful
 successfullies->successfully
@@ -19419,6 +19442,8 @@ sufficent->sufficient
 sufficently->sufficiently
 suffisticated->sophisticated
 suficcient->sufficient
+suficient->sufficient
+suficiently->sufficiently
 sugested->suggested
 sugestion->suggestion
 sugestions->suggestions
@@ -20102,6 +20127,7 @@ thenes->themes
 thenn->then
 theorectical->theoretical
 theoreticall->theoretically
+theoritical->theoretical
 ther->there, their, the, other,
 therafter->thereafter
 therapudic->therapeutic
