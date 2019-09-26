@@ -1586,6 +1586,14 @@ aprehensive->apprehensive
 apreteate->appreciate
 apreteated->appreciated
 aproach->approach
+aproached->approached
+aproaches->approaches
+aproaching->approaching
+aproch->approach
+aproched->approached
+aproches->approaches
+aproching->approaching
+aproove->approve
 aprooved->approved
 apropiate->appropriate
 apropiately->appropriately
@@ -1850,7 +1858,9 @@ assignmnet->assignment
 assing->assign
 assinged->assigned
 assinging->assigning
+assingled->assigned
 assingment->assignment
+assingned->assigned
 assings->assigns
 assinment->assignment
 assisnate->assassinate
@@ -3856,6 +3866,8 @@ comandos->commandos
 comany->company
 comapany->company
 comapared->compared
+comapatibility->compatibility
+comapatible->compatible
 comapnies->companies
 comapny->company
 comapre->compare
@@ -5271,6 +5283,9 @@ costitution->constitution
 costruct->construct
 costructer->constructor
 costructor->constructor
+costum->custom, costume,
+costumary->customary
+costums->customs, costumes,
 cotain->contain
 cotained->contained
 cotainer->container
@@ -6739,6 +6754,7 @@ direcotries->directories
 direcotry->directory
 direcoty->directory
 directd->directed
+directely->directly
 directes->directs
 directgories->directories
 directgory->directory
@@ -10267,6 +10283,8 @@ imbedding->embedding
 imbrase->embrace
 imcoming->incoming
 imcomming->incoming
+imcompatibility->incompatibility
+imcompatible->incompatible
 imcomplete->incomplete
 imedatly->immediately
 imedialy->immediately
@@ -10605,6 +10623,8 @@ incluse->include, incluse,
 inclused->included
 inclusinve->inclusive
 incmrement->increment
+incomapatibility->incompatibility
+incomapatible->incompatible
 incomaptible->incompatible
 incombatibilities->incompatibilities
 incombatibility->incompatibility
@@ -13881,6 +13901,7 @@ ojects->objects
 ojekts->objects
 oldes->oldest
 olny->only
+olt->old
 oly->only
 omision->omission
 omited->omitted
@@ -13899,7 +13920,7 @@ omniverously->omnivorously
 omplementaion->implementation
 omplementation->implementation
 omre->more
-onces->once, ones,
+onces->ounces, once, ones,
 ond->one
 onece->once
 oneliners->one-liners
@@ -16956,6 +16977,7 @@ rendereing->rendering
 rendererers->renderers, renderer's,
 renderering->rendering
 renderes->renders, renderers, renderer's,
+renderning->rendering
 renderr->render
 renderring->rendering
 rendevous->rendezvous
@@ -17421,6 +17443,8 @@ rescource->resource
 rescources->resources
 rescrition->restriction
 rescritions->restrictions
+reseach->research
+reseached->researched
 reselction->reselection
 resembelance->resemblance
 resembes->resembles
@@ -17961,7 +17985,10 @@ scientis->scientist
 scince->science
 scinece->science
 scintiallation->scintillation
-scipt->script
+scipt->script, skipped,
+scipted->scripted
+scipting->scripting
+scipts->scripts, skips,
 scirpt->script
 scirpts->scripts
 sclar->scalar
@@ -19820,6 +19847,9 @@ sypport->support
 syrap->syrup
 sysbols->symbols
 syschronize->synchronize
+sysem->system
+sysematic->systematic
+sysems->systems
 sysmatically->systematically
 sysmbol->symbol
 sysmograph->seismograph
@@ -22104,6 +22134,8 @@ workbanches->workbenches
 workbanchs->workbenches
 workbennch->workbench
 workbennches->workbenches
+workbnech->workbench
+workbneches->workbenches
 workboos->workbooks
 workes->works
 workign->working
