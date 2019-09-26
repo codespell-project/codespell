@@ -527,11 +527,13 @@ additinally->additionally
 additioanlly->additionally
 additionallly->additionally
 additionaly->additionally
+additionalyy->additionally
 additionnal->additional
 additionnally->additionally
 additon->addition
 additonal->additional
 additonally->additionally
+additonaly->additionally
 addjust->adjust
 addjusted->adjusted
 addjusting->adjusting
@@ -5259,6 +5261,11 @@ cosntraint->constraint
 cosntraints->constraints
 cosntructed->constructed
 cosntructor->constructor
+cosolation->consolation
+cosole->console
+cosoled->consoled
+cosoles->consoles
+cosoling->consoling
 costant->constant
 costitution->constitution
 costruct->construct
@@ -14835,6 +14842,8 @@ pitmap->pixmap, bitmap,
 pitty->pity
 pixelx->pixels, pixel,
 pixes->pixels
+placeemnt->placement
+placeemnts->placements
 placehoder->placeholder
 placeholde->placeholder
 placeholdes->placeholders
@@ -17228,6 +17237,8 @@ repetive->repetitive
 repid->rapid
 repitition->repetition
 replacable->replicable, replaceable,
+replaceemnt->replacement
+replaceemnts->replacements
 replacemenet->replacement
 replacmenet->replacement
 replacment->replacement
@@ -19131,6 +19142,7 @@ struc->struct
 strucrure->structure
 strucrured->structured
 strucrures->structures
+structed->structured
 structer->structure
 structere->structure
 structered->structured
@@ -21577,6 +21589,8 @@ vecotr->vector
 vecotrs->vectors
 vectore->vector
 vectores->vectors
+vecvtor->vector
+vecvtors->vectors
 vedio->video
 vefiry->verify
 vegatarian->vegetarian
