@@ -7632,7 +7632,11 @@ emties->empties
 emtpy->empty
 emty->empty
 emtying->emptying
+enabe->enable
+enabel->enable
+enabeled->enabled
 enabeling->enabling
+enabing->enabling
 enableing->enabling
 enablen->enabled
 enalbe->enable
@@ -8176,6 +8180,8 @@ examin->examine, examining,
 examinated->examined
 examing->examining
 examinining->examining
+exampel->example
+exampels->examples
 exampt->exempt
 exand->expand
 exapansion->expansion
@@ -8261,6 +8267,10 @@ excract->extract
 exctacted->extracted
 exctract->extract
 exctracted->extracted
+exculde->exclude
+exculding->excluding
+exculsive->exclusive
+exculsively->exclusively
 exculsivly->exclusively
 excutable->executable
 excutables->executables
@@ -8309,7 +8319,10 @@ exeedingly->exceedingly
 exeeds->exceeds
 exelent->excellent
 exellent->excellent
+exempel->example
+exempels->examples
 exemple->example
+exemples->examples
 exended->extended
 exension->extension
 exensions->extensions
@@ -10379,7 +10392,11 @@ impcats->impacts
 impecabbly->impeccably
 impedence->impedance
 impeed->impede
+impelement->implement
 impelementation->implementation
+impelemented->implemented
+impelementing->implementing
+impelements->implements
 impelment->implement
 impement->implement
 impementaion->implementation
@@ -11645,6 +11662,10 @@ intriduction->introduction
 intrisinc->intrinsic
 intrisincs->intrinsics
 introdued->introduced
+introduse->introduce
+introdused->introduced
+introduses->introduces
+introdusing->introducing
 introsepection->introspection
 intrrupt->interrupt
 intrrupted->interrupted
@@ -12688,9 +12709,17 @@ messge->message
 messges->messages
 messsage->message
 messsages->messages
+messure->measure
+messured->measurd
+messurement->measurement
+messures->measure
+messuring->measuring
+messurment->measurement
 mesure->measure
 mesured->measured
 mesurement->measurement
+mesurements->measurements
+mesures->measures
 mesuring->measuring
 mesurment->measurement
 meta-attrubute->meta-attribute
@@ -13938,6 +13967,7 @@ ojection->objection
 ojective->objective
 ojects->objects
 ojekts->objects
+okat->okay
 oldes->oldest
 olny->only
 olt->old
@@ -14299,6 +14329,7 @@ oveflow->overflow
 oveflowed->overflowed
 oveflowing->overflowing
 oveflows->overflows
+ovelap->overlap
 over-engeneer->over-engineer
 over-engeneering->over-engineering
 overaall->overall
@@ -14789,6 +14820,7 @@ permision->permission
 permisions->permissions
 permissable->permissible
 permissiosn->permissions
+permisson->permission
 permissons->permissions
 permisssion->permission
 permisssions->permissions
@@ -14820,10 +14852,13 @@ persepective->perspective
 persepectives->perspectives
 perserverance->perseverance
 perseverence->perseverance
+persisit->persist
+persisited->persisted
 persistance->persistence
 persistant->persistent
 persistantly->persistently
 persisten->persistent
+persistence->persistence
 persistented->persisted
 persited->persisted
 personalitie->personality
@@ -14896,6 +14931,8 @@ piblisher->publisher
 pich->pitch
 pilgrimmage->pilgrimage
 pilgrimmages->pilgrimages
+pimxap->pixmap
+pimxaps->pixmaps
 pinapple->pineapple
 pinnaple->pineapple
 pinoneered->pioneered
@@ -15052,6 +15089,7 @@ poost->post
 poped->popped, pooped,
 poperee->potpourri
 poperly->properly, property,
+poperties->properties
 poperty->property, properly,
 poping->popping, pooping,
 popoen->popen
@@ -15435,8 +15473,11 @@ presentaions->presentations
 presernt->present
 preserv->preserve
 presetation->presentation
+preseve->preserve
+preseved->preserved
 preseverance->perseverance
 preseverence->perseverance
+preseves->preserves
 preseving->preserving
 presicion->precision
 presidenital->presidential
@@ -15858,6 +15899,8 @@ proprotionally->proportionally
 proprotions->proportions
 propt->prompt
 propteries->properties
+propterties->properties
+propterty->property
 propvider->provider
 prority->priority
 proseletyzing->proselytizing
@@ -18192,6 +18235,8 @@ sensisble->sensible
 sensistive->sensitive
 sensistively->sensitively, sensitivity,
 sensitiv->sensitive
+sensitivties->sensitivities
+sensitivty->sensitivity
 sensitivy->sensitivity, sensitively,
 sensitve->sensitive
 sensivity->sensitivity, sensitively,
@@ -20211,6 +20256,10 @@ thats->that's
 thats;->that's
 thay->they
 thck->thick
+theard->thread
+thearding->threading
+theards->threads
+theared->threaded
 theather->theater
 theef->thief
 theer->there
@@ -20477,6 +20526,8 @@ torpeados->torpedoes
 torpedos->torpedoes
 tortilini->tortellini
 tortise->tortoise
+torward->toward
+torwards->towards
 totation->rotation
 tothe->to the
 tothiba->toshiba
@@ -21274,6 +21325,7 @@ unplesent->unpleasant
 unprecendented->unprecedented
 unprecidented->unprecedented
 unprecise->imprecise
+unpredicatable->unpredictable
 unpredictablity->unpredictability
 unpredictible->unpredictable
 unpriviliged->unprivileged
@@ -21436,6 +21488,8 @@ unuseful->useless
 unusre->unsure
 unusuable->unusable
 unvailable->unavailable
+unvalid->invalid
+unvalidate->invalidate
 unversionned->unversioned
 unversoned->unversioned
 unviersity->university
@@ -21513,6 +21567,7 @@ upto->up to
 uptodate->up-to-date
 uptodateness->up-to-dateness
 uptream->upstream
+ure->sure
 urrlib->urllib
 usal->usual
 usally->usually
@@ -22093,6 +22148,8 @@ wierd->weird
 wierdness->weirdness
 wieth->width
 wiew->view
+wigdet->widget
+wigdets->widgets
 wighed->weighed, wicked,
 wight->weight, white, right, wight,
 wighted->weighted, weighed,
