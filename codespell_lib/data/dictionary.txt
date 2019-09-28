@@ -48,8 +48,12 @@ abondoning->abandoning
 abondons->abandons
 aborigene->aborigine
 abortificant->abortifacient
+aboslute->absolute
+aboslutely->absolutely
 abosulte->absolute
+abosultely->absolutely
 abosulute->absolute
+abosulutely->absolutely
 abotu->about
 abourt->abort, about,
 abouta->about a
@@ -342,6 +346,16 @@ accurs->accurse, occurs,
 accussed->accused
 acditionally->additionally
 acedemic->academic
+acend->ascend
+acendance->ascendance
+acendancey->ascendancy
+acended->ascended
+acendence->ascendance
+acendencey->ascendancy
+acendency->ascendancy
+acender->ascender
+acending->ascending
+acent->ascent
 aceptable->acceptable
 acerage->acreage
 acess->access
@@ -574,12 +588,21 @@ aditionnal->additional
 adivce->advice, advise,
 adivsories->advisories
 adivsory->advisory
+adjacentcy->adjacence
 adjacentsy->adjacency
 adjactend->adjacent
 adjascent->adjacent
+adjasence->adjacence
+adjasencies->adjacencies
 adjasensy->adjacency
 adjasent->adjacent
 adjast->adjust
+adjcence->adjacence
+adjcencies->adjacencies
+adjcent->adjacent
+adjcentcy->adjacency
+adjsence->adjacence
+adjsencies->adjacencies
 adjsuted->adjusted
 adjuscent->adjacent
 adjusment->adjustment
@@ -757,8 +780,16 @@ airporta->airports
 airrcraft->aircraft
 aisian->asian
 aizmuth->azimuth
+ajacence->adjacence
+ajacencies->adjacencies
+ajacency->adjacency
 ajacent->adjacent
+ajacentcy->adjacency
+ajasence->adjacence
+ajasencies->adjacencies
 ajative->adjective
+ajcencies->adjacencies
+ajsencies->adjacencies
 ajurnment->adjournment
 ajust->adjust
 ajusted->adjusted
@@ -1810,6 +1841,17 @@ asbolutelly->absolutely
 asbolutely->absolutely
 asbtraction->abstraction
 asceding->ascending
+asend->ascend
+asendance->ascendance
+asendancey->ascendancy
+asendancy->ascendancy
+asended->ascended
+asendence->ascendance
+asendencey->ascendancy
+asendency->ascendancy
+asender->ascender
+asending->ascending
+asent->ascent
 asetic->ascetic
 asfar->as far
 asign->assign
@@ -2063,7 +2105,11 @@ attatches->attaches
 attatching->attaching
 attatchment->attachment
 attatchments->attachments
+attch->attach
 attched->attached
+attches->attaches
+attching->attaching
+attchment->attachment
 attemp->attempt
 attemped->attempted
 attemping->attempting
@@ -2850,6 +2896,10 @@ breefly->briefly
 brefore->before
 breif->brief
 breifly->briefly
+bresh->brush
+breshed->brushed
+breshes->brushes
+breshing->brushing
 brethen->brethren
 bretheren->brethren
 brfore->before
@@ -3453,8 +3503,12 @@ characteor->character
 characteors->characters
 characterclasses->character classes
 characteres->characters
+characterisic->characteristic
+characterisically->characteristically
+characterisicly->characteristically
 characterisitic->characteristic
 characterisitics->characteristics
+characteristicly->characteristically
 charactersistic->characteristic
 charactersm->characters
 characterstic->characteristic
@@ -3837,6 +3891,7 @@ collegue->colleague
 collegues->colleagues
 collektion->collection
 colletion->collection
+collison->collision
 collission->collision
 colllapses->collapses
 collocalized->colocalized
@@ -4335,6 +4390,10 @@ comsumers->consumers
 comsumes->consumes
 comsuming->consuming
 comsumption->consumption
+comtain->contain
+comtained->contained
+comtainer->container
+comtains->contains
 comunicate->communicate
 comunication->communication
 comute->commute, compute,
@@ -4600,6 +4659,8 @@ conjonction->conjunction
 conjonctive->conjunctive
 conjuction->conjunction
 conjuctions->conjunctions
+conjuntion->conjunction
+conjuntions->conjunctions
 conmnection->connection
 conmpress->compress
 conmpression->compression
@@ -4937,6 +4998,8 @@ continously->continuously
 continueing->continuing
 continuely->continually
 continuem->continuum
+continuos->continuous
+continuosly->continuously
 continure->continue
 continus->continue, continuous,
 continuse->continues
@@ -6071,15 +6134,19 @@ deparmental->departmental
 deparments->departments
 depdencies->dependencies
 depdency->dependency
-depdendence->dependence
+depdend->depend
 depdendencies->dependencies
 depdendency->dependency
+depdending->depending
 depecated->deprecated
 depedencies->dependencies
 depedency->dependency
 depedencys->dependencies
 depedent->dependent
 depeding->depending
+depencencies->dependencies
+depencency->dependency
+depencent->dependent
 depencies->dependencies
 depency->dependency
 dependance->dependence
@@ -6598,6 +6665,8 @@ dictionay->dictionary
 dictionnaries->dictionaries
 dictionnary->dictionary
 dictoinaries->dictionaries
+dictonaries->dictionaries
+dictonary->dictionary
 dicussed->discussed
 dicussions->discussions
 did'nt->didn't
@@ -6809,6 +6878,10 @@ directsions->directions
 directtories->directories
 directtory->directory
 directy->directly
+direrctor->director
+direrctories->directories
+direrctors->directors
+direrctory->directory
 diretive->directive
 diretories->directories
 diretory->directory
@@ -6882,6 +6955,7 @@ discovereability->discoverability
 discovr->discover
 discreminates->discriminates
 discrepencies->discrepancies
+discrepency->discrepancy
 discrepicies->discrepancies
 discribe->describe
 discribed->described
@@ -7041,6 +7115,8 @@ distingushed->distinguished
 distingushes->distinguishes
 distingushing->distinguishing
 distingusih->distinguish
+distinquish->distinguish
+distinquishable->distinguishable
 distintions->distinctions
 distirted->distorted
 distnace->distance
@@ -10841,6 +10917,8 @@ indention->indentation
 indentit->identity
 indentity->identity
 indenx->index
+indepdendance->independence
+indepdendency->independency
 indepedantly->independently
 indepedence->independence
 indepedent->independent
