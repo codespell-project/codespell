@@ -51,7 +51,7 @@ The ``-L`` flag can be used to whitelist certain words that are comma-separated 
 
 The ``-S`` (``--skip``) flag is used to skip over a comma-separated list of files and/or directories. It accepts globs as well. **Important note:** Do not append a ``/`` (forward-slash) to a directory you want to skip, this renders the entry for that particular directory ineffective. ::
 
-The ``-i <number>`` flag is used to invoke 'interactive mode' when writing changes. 0: no interactivity. 1: ask for confirmation. 2 ask user to choose one fix when more than one is available. 3: will combine both options 1 and 2 together.
+The ``-i <number>`` flag is used to invoke 'interactive mode' when writing changes. 0: no interactivity. 1: ask for confirmation. 2: ask user to choose one fix when more than one is available. 3: will combine both options 1 and 2 together.
 
 Examples:
 
