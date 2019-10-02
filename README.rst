@@ -37,28 +37,30 @@ Some noteworthy flags::
 
     codespell -w, --write-changes
 
-The -w flag will actually implement the changes recommended by codespell. Not running with ``-w`` flag is the same as with doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.::
+The ``-w`` flag will actually implement the changes recommended by codespell. Not running with ``-w`` flag is the same as with doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.::
 
     codespell -I FILE, --ignore-words=FILE
 
-The -I flag can be used to whitelist certain words that are in the ``codespell_lib/data/dictionary.txt``. The format of the whitelist file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said whitelist. **Important note:** The whitelist passed to ``-I`` is case-sensitive based on how it is listed in ``dictionary.txt``. ::
+The ``-I`` flag can be used to whitelist certain words that are in the ``codespell_lib/data/dictionary.txt``. The format of the whitelist file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said whitelist. **Important note:** The whitelist passed to ``-I`` is case-sensitive based on how it is listed in ``dictionary.txt``. ::
 
     codespell -L word1,word2,word3,word4
 
-The -L flag can be used to whitelist certain words that are comma-separated placed immediately after it. ::
+The ``-L`` flag can be used to whitelist certain words that are comma-separated placed immediately after it. ::
 
     codespell -S, --skip=
 
-The -S (--skip) flag is used to skip over a comma-separated list of files and/or directories. It accepts globs as well. **Important notes:** Do not append a '/' to a directory you want to skip. This renders the entry for that particular directory ineffective. Also 
+The ``-S`` (``--skip``) flag is used to skip over a comma-separated list of files and/or directories. It accepts globs as well. **Important note:** Do not append a ``/`` (forward-slash) to a directory you want to skip, this renders the entry for that particular directory ineffective. ::
+
+The ``-i <number>`` flag is used to invoke 'interactive mode' when writing changes. 0: no interactivity. 1: ask for confirmation. 2 ask user to choose one fix when more than one is available. 3: will combine both options 1 and 2 together.
 
 Examples:
 
-* Skip .eps & .txt files, invoke one of::
+* Skip .eps & .txt files, can be invoked either way::
 
     codespell --skip="*.eps,*.txt"
     codespell -S *.eps,*.txt
 
-* Skip directories, invoke one of::
+* Skip directories, can be invoked either way::
 
       codespell --skip="src/3rd-Party,src/Test"
       codespell -S src/3rd-Party,src/Test
@@ -68,11 +70,12 @@ Useful commands::
     codespell -d -q 3 --skip="*.po,*.ts,src/3rdParty,src/Test"
 
 List all typos found except translation files and some directories.
-Display them without terminal colors and with a quiet level of 3. ::
+Display the results without terminal colors (``-d``). 
+The ``-q 3`` means we're running codespell with a quiet level of 3, which represents not to notify us that it's skipping binary files ::
 
     codespell -i 3 -w
 
-Run interactive mode level 3 and write changes to file.
+Run ``-i 3`` is interactive mode level 3 (see explanation above) and ``-w`` will write changes to file. **Note**: Omitting the ``-w`` flag will mean that your changes will not be saved!  
 
 We ship a dictionary that is an improved version of the one available
 `on Wikipedia <https://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/For_machines>`_
