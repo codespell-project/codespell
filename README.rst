@@ -71,7 +71,7 @@ Useful commands::
 
 List all typos found except translation files and some directories.
 Display the results without terminal colors (``-d``). 
-The ``-q 3`` means we're running codespell with a quiet level of 3, which represents not to notify us that it's skipping binary files ::
+The ``-q 3`` means we're running codespell with a quiet level of 3, which represents not to notify us that it's skipping binary files. ::
 
     codespell -i 3 -w
 
