@@ -31,7 +31,7 @@ before_install:
     - source venv/bin/activate
     - python --version  # just to check
     - pip install -U pip wheel  # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
-    - retry pip install pytest pytest-cov flake8 coverage codecov chardet setuptools
+    - retry pip install pytest pytest-cov flake8 coverage codecov chardet setuptools docutils
     - cd $SRC_DIR
 
 install:
@@ -44,6 +44,9 @@ script:
     # this file has an error
     - "! codespell codespell_lib/tests/test_basic.py"
     - flake8
+    - if [ "$TRAVIS_PYTHON_VERSION" != "2.7" ]; then
+        python setup.py check --restructuredtext --strict;
+      fi;
     - pytest codespell_lib
 
 after_success:
