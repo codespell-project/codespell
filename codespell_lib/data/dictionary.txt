@@ -1679,6 +1679,7 @@ architecturs->architectures
 architecturse->architectures
 architecure->architecture
 architecures->architectures
+architecutre->architecture
 architecutres->architectures
 architecuture->architecture
 architeture->architecture
@@ -1800,6 +1801,9 @@ artillary->artillery
 arugment->argument
 arugments->arguments
 arund->around
+asbolute->absolute
+asbolutelly->absolutely
+asbolutely->absolutely
 asbtraction->abstraction
 asceding->ascending
 asetic->ascetic
@@ -4132,6 +4136,8 @@ comparare->compare
 comparation->comparison
 comparations->comparisons
 compareable->comparable
+compareison->comparison
+compareisons->comparisons
 compariable->comparable
 comparisation->comparison
 comparisations->comparisons
@@ -7257,6 +7263,10 @@ downladed->downloaded
 downlading->downloading
 downlads->downloads
 downlaod->download
+downlaoded->downloaded
+downlaodes->downloads
+downlaoding->downloading
+downlaods->downloads
 downloadmanger->downloadmanager
 downlod->download
 downloded->downloaded
@@ -7455,6 +7465,10 @@ effctively->effectively
 effeciency->efficiency
 effecient->efficient
 effeciently->efficiently
+effeck->effect
+effecked->effected
+effecks->effects
+effeckt->effect
 effectiviness->effectiveness
 effectly->effectively
 effekt->effect
@@ -10011,6 +10025,7 @@ hipotetical->hypothetical
 hirarchies->hierarchies
 hirarchy->hierarchy
 hirarcies->hierarchies
+hirearchy->hierarchy
 hirearcy->hierarchy
 hismelf->himself
 hisory->history
@@ -11046,6 +11061,7 @@ initailze->initialize
 initailzed->initialized
 initailziation->initialization
 inital->initial
+initalialization->initialization
 initalisation->initialisation
 initalise->initialise
 initalised->initialised
@@ -12011,6 +12027,11 @@ launchs->launch, launches,
 launck->launch
 launhed->launched
 lavae->larvae
+lavel->level, laravel,
+laveled->leveled
+laveling->leveling
+lavelling->levelling
+lavels->levels
 layed->laid
 lazer->laser
 lazyness->laziness
@@ -12576,6 +12597,10 @@ meausure->measure
 meausures->measures
 meber->member
 mebmer->member
+mebrain->membrane
+mebrains->membranes
+mebran->membrane
+mebrans->membranes
 mecahinsm->mechanism
 mecahinsms->mechanisms
 mecahnic->mechanic
@@ -12615,7 +12640,9 @@ mehods->methods
 mehtod->method
 mehtods->methods
 melieux->milieux
+membran->membrane
 membranaphone->membranophone
+membrans->membranes
 memcahe->memcache
 memcahed->memcached
 memeasurement->measurement
@@ -12802,6 +12829,7 @@ minerial->mineral
 MingGW->MinGW
 minimial->minimal
 minimise->minimise, minimize,
+minimium->minimum
 minimumm->minimum
 minimumn->minimum
 minimun->minimum
@@ -15441,6 +15469,7 @@ presetation->presentation
 preseverance->perseverance
 preseverence->perseverance
 preseving->preserving
+presicion->precision
 presidenital->presidential
 presidental->presidential
 presist->persist
@@ -18405,6 +18434,8 @@ sheepherds->shepherds
 sheild->shield
 sheme->scheme, shame,
 shepe->shape
+shepre->sphere
+shepres->spheres
 sherif->sheriff
 shicane->chicane
 shif->shift
@@ -20016,6 +20047,8 @@ targte->target
 tarmigan->ptarmigan
 tarnsparent->transparent
 tarpolin->tarpaulin
+tarvis->Travis
+tarvisci->TravisCI
 tasbar->taskbar
 tast->taste
 tath->that
@@ -20287,6 +20320,7 @@ thikns->thinks
 thiks->thinks
 thimngs->things
 thinigs->things
+thinkabel->thinkable
 thinn->thin
 thirs->third, thirst,
 thirtyth->thirtieth
@@ -21487,6 +21521,11 @@ upgradei->upgrade
 upgradingn->upgrading
 upgrate->upgrade
 upholstry->upholstery
+uplaod->upload
+uplaoded->uploaded
+uplaodes->uploads
+uplaoding->uploading
+uplaods->uploads
 upliad->upload
 uppon->upon
 upported->supported
@@ -22243,6 +22282,7 @@ wouldnt->wouldn't
 wouldnt;->wouldn't
 wounder->wonder, wounder,
 wounderful->wonderful
+wouold->would
 wqs->was
 wraped->wrapped, warped,
 wraper->wrapper
@@ -22327,6 +22367,7 @@ yugoslac->yugoslav
 yuo->you
 yur->your
 zeebra->zebra
+zick-zack->zig-zag
 ziped->zipped
 ziper->zipper
 ziping->zipping
