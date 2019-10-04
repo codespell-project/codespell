@@ -53,14 +53,14 @@ Comma-separated list of files to skip. It accepts globs as well.  Examples:
 
 * to skip .eps & .txt files, invoke ``codespell --skip="*.eps,*.txt"``
 
-* to skip directories, invoke ``codespell --skip="./src/3rd-Party,./src/Test"`` ::
+* to skip directories, invoke ``codespell --skip="./src/3rd-Party,./src/Test"``
 
 
 Useful commands::
 
     codespell -d -q 3 --skip="*.po,*.ts,./src/3rdParty,./src/Test"
 
-| List all typos found except translation files and some directories.
+List all typos found except translation files and some directories.
 Display them without terminal colors and with a quiet level of 3. ::
 
     codespell -i 3 -w
@@ -143,7 +143,7 @@ To stay current with codespell developments it is possible to build codespell fr
     pip install --user --upgrade git+https://github.com/codespell-project/codespell.git
 
 * It has been reported that after installing from ``pip``, codespell can't be located. Please check the $PATH variable to see if ``~/.local/bin`` is present. If it isn't then add it to your path.
-* If you decide to install via ``pip`` then be sure to remove any previously installed versions of codespell (via you OSs preferred app mananger).
+* If you decide to install via ``pip`` then be sure to remove any previously installed versions of codespell (via you OSs preferred app manager).
 
 Updating the dictionary
 -----------------------
@@ -151,10 +151,10 @@ Updating the dictionary
 In the scenario where the user prefers not to follow the development version of codespell yet still opts to benefit from the frequently updated `dictionary.txt` file, we recommend running a simple set of commands to achieve this ::
 
     wget https://raw.githubusercontent.com/codespell-project/codespell/master/codespell_lib/data/dictionary.txt
-    codespell -D dictionary.txt    
+    codespell -D dictionary.txt
 
-The above simply downloads the latest ``dictionary.txt`` file and then by utilizing the -D flag allows the user to specify the freshly downloaded ``dictionary.txt`` as the custom dictionary instead of the default one. 
-  
+The above simply downloads the latest ``dictionary.txt`` file and then by utilizing the -D flag allows the user to specify the freshly downloaded ``dictionary.txt`` as the custom dictionary instead of the default one.
+
 License
 -------
 
