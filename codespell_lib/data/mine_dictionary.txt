@@ -1873,7 +1873,6 @@ ulocking->unlocking
 undocuented->undocumented
 unfinyshed->unfinished
 unknowm->unknown
-unpredicatable->unpredictable
 unspecifed->unspecified
 unsupportted->unsupported
 untermintated->unterminated
@@ -1936,7 +1935,6 @@ scrubbe->scrubber
 santiy->sanity
 courrpted->corrupted
 sequenze->sequence
-propterty->property
 contanis->contains
 fragmetation->fragmentation
 consitutes->constitutes
@@ -9846,12 +9844,8 @@ excpetionally->exceptionally
 excrept->excerpt
 excrusiating->excruciating
 exculded->excluded
-exculde->exclude
 exculdes->excludes
-exculding->excluding
 exculsion->exclusion
-exculsive->exclusive
-exculsively->exclusively
 exculsives->exclusives
 exculsivity->exclusivity
 excurciating->excruciating
@@ -13427,8 +13421,6 @@ introductiory->introductory
 introductury->introductory
 introdue->introduces
 introduktion->introduction
-introdused->introduces
-introduse->introduces
 introdus->introduces
 introspeccion->introspection
 introspectin->introspection
@@ -17248,7 +17240,6 @@ permissiable->permissible
 permissibe->permissible
 permissie->permissible
 permissin->permissions
-permisson->permission
 permitas->permits
 permites->permits
 permitis->permits
@@ -17335,7 +17326,6 @@ perserving->preserving
 persets->presets
 persicuted->persecuted
 persicution->persecution
-persisit->persist
 persistante->persistent
 persistense->persistence
 persistens->persists
@@ -20706,7 +20696,6 @@ sensibilites->sensibilities
 sensitivety->sensitivity
 sensitivitiy->sensitivity
 sensitiviy->sensitivity
-sensitivty->sensitivity
 sensores->sensors
 sentamental->sentimental
 sentaments->sentiments
@@ -21028,8 +21017,6 @@ simulato->simulation
 simultaenously->simultaneously
 simultaenous->simultaneous
 simultainously->simultaneously
-simultaneosly->simultaneously
-simultaneos->simultaneous
 simultaneoulsy->simultaneously
 simultaneuos->simultaneous
 simultaneuous->simultaneous
@@ -24525,7 +24512,6 @@ widgetas->widgets
 wieghted->weighted
 wieghtlifting->weightlifting
 wieghts->weights
-wigdets->widgets
 wikileakers->wikileaks
 wikileakes->wikileaks
 wilderniss->wilderness
@@ -24706,7 +24692,6 @@ xcalibrare->xcalibrate
 calibrare->calibrate
 ansiotropic->anisotropic
 maxmium->maximum
-pimxap->pixmap
 sturct->struct
 tirgger->trigger
 toggleling->toggling
@@ -24979,7 +24964,6 @@ unluky->unlucky
 unnnecessarily->unnecessarily
 unpickleable->unpicklable
 unsatisified->unsatisfied
-unvalid->invalid
 uploadded->uploaded
 uruguai->uruguay
 ussing->using
@@ -25242,7 +25226,6 @@ djagno->django
 djanog->django
 eixst->exist
 environnemnt->environment
-exampel->example
 exbit->exhibit
 exceutable->executable
 execuatble->executable
@@ -26274,7 +26257,6 @@ eletrically->electrically
 embeeded->embedded
 emough->enough
 emplemented->implemented
-enabing->enabling
 enabledi->enabled
 enalbled->enabled
 enble->enable
@@ -26730,7 +26712,6 @@ preamle->preamble
 premble->preamble
 prepapre->prepare
 prepres->prepares
-preseve->preserve
 pressre->pressure
 pressue->pressure
 pretect->protect
@@ -26804,7 +26785,6 @@ telgram->telegram
 teturns->returns
 theremal->thermal
 thowing->throwing
-torwards->towards
 traking->tracking
 trasmit->transmit
 trigget->trigger
@@ -27091,7 +27071,6 @@ klling->killing
 latecy->latency
 numnber->number
 optins->options
-ovelap->overlap
 overal->overall
 returun->return
 scisor->scissor
@@ -27108,3 +27087,4 @@ indoe->inode
 functioname->function name
 sourrounds->surrounds
 sourround->surround
+alhpabetically->alphabetically
