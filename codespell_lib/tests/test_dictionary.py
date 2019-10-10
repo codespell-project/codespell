@@ -14,11 +14,11 @@ def test_dictionary_formatting():
         for line in fid:
             err, rep = line.decode('utf-8').split('->')
             err = err.lower()
-            assert err != rep, 'error %r corrects to itself' % err
+            rep = rep.rstrip('\n')
+            assert err != rep.lower(), 'error %r corrects to itself' % err
             assert err not in err_dict, 'error %r already exists' % err
             assert ws.match(err) is None, 'error %r has whitespace' % err
             assert comma.match(err) is None, 'error %r has a comma' % err
-            rep = rep.rstrip('\n')
             assert len(rep) > 0, ('error %s: correction %r must be non-empty'
                                   % (err, rep))
             assert not re.match(r'^\s.*', rep), ('error %s: correction %r '
@@ -31,7 +31,8 @@ def test_dictionary_formatting():
                 (r',\s\s', 'error %s: correction %r contains a comma followed '
                            'by multiple whitespace characters'),
                 (r',[^ ]', 'error %s: correction %r contains a comma *not* '
-                           'followed by a space')
+                           'followed by a space'),
+                (r'\s+$', 'error %s: correction %r has a trailing space')
             ]:
                 assert not re.search(r, rep), (msg % (err, rep))
             if rep.count(','):
