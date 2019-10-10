@@ -14218,8 +14218,14 @@ orgins->origins, organs,
 orginx->originx
 orginy->originy
 orhpan->orphan
+oriant->orient
+oriantate->orientate
+oriantation->orientation
 oridinal->ordinal, original,
 oridinarily->ordinarily
+orienatate->orientate
+orienatation->orientation
+orienate->orientate, orient, ornate,
 orienation->orientation
 orientaion->orientation
 orientatied->orientated
