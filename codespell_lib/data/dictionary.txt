@@ -2998,6 +2998,8 @@ Caesarian->Caesarean
 cahacter->character
 cahacters->characters
 cahange->change
+cahanged->changed
+cahanges->changes
 cahanging->changing
 cahannel->channel
 caharacter->character
@@ -3017,7 +3019,10 @@ cahdidate->candidate
 cahdidates->candidates
 cahe->cache
 cahes->caches
-cahgne->cahgne
+cahgne->change
+cahgned->changed
+cahgnes->changes
+cahgning->changing
 cahhel->channel
 cahhels->channels
 cahined->chained
@@ -3026,6 +3031,7 @@ cahining->chaining
 cahnge->change
 cahnged->changed
 cahnges->changes
+cahnging->changing
 cahnnel->channel
 cahnnels->channels
 cahr->char
