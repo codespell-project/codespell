@@ -18519,7 +18519,8 @@ shutdownm->shutdown
 shuting->shutting
 shwo->show
 shystem->system
-shystemerror->systemerror
+shystemerror->systemerror, system error,
+shystemmemory->systemmemory, system memory,
 shystems->systems
 shystemwindow->systemwindow, system window,
 sibiling->sibling
@@ -19969,7 +19970,8 @@ systemwindiow->systemwindow, system window,
 systen->system
 systens->systems
 systhem->system
-systhemerror->systemerror
+systhemerror->systemerror, system error,
+systhemmemory->systemmemory, system memory,
 systhems->systems
 systhemwindow->systemwindow, system window,
 systme->system
@@ -19981,9 +19983,10 @@ sysyems->systems
 sytem->system
 sytematic->systematic
 sytemd->systemd
-sytemerror->systemerror
-sytemmemory->systemmemory
+sytemerror->systemerror, system error,
+sytemmemory->systemmemory, system memory,
 sytems->systems
+sytemwindow->systemwindow, system window,
 sythesis->synthesis
 sytle->style
 sytled->styled
