@@ -18442,7 +18442,7 @@ shuting->shutting
 shwo->show
 shystem->system
 shystemerror->systemerror, system error,
-shystemerror->systemmemory, system memory,
+shystemmemory->systemmemory, system memory,
 shystems->systems
 shystemwindow->systemwindow, system window,
 sibiling->sibling
