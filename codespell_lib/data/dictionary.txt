@@ -5293,11 +5293,15 @@ corrspond->correspond
 corrsponds->corresponds
 corruptiuon->corruption
 cors-site->cross-site
+cors-sute->cross-site
 corse->course
 corsor->cursor
 corss-site->cross-site
+corss-sute->cross-site
 corssite->cross-site
 corsssite->cross-site
+corsssute->cross-site
+corssute->cross-site
 corus->chorus
 cosntrain->constrain
 cosntrains->constrains, constraints,
@@ -5467,6 +5471,7 @@ crockodiles->crocodiles
 cronological->chronological
 cros->cross
 cros-site->cross-site
+cros-sute->cross-site
 croshet->crochet
 crosreference->cross-reference
 crosreferenced->cross-referenced
@@ -5479,6 +5484,8 @@ crossreference->cross-reference
 crossreferenced->cross-referenced
 crossreferences->cross-references
 crosssite->cross-site
+crosssute->cross-site
+crossute->cross-site
 crowdsigna->crowdsignal
 crowkay->croquet
 crowm->crown
