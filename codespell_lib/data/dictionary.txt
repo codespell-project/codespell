@@ -3587,11 +3587,11 @@ chracter->character
 chracters->characters
 chractor->character
 chractors->characters
-chrash->crash, trash,
-chrashed->crashed, trashed,
-chrashes->crashes, trashes,
-chrashing->crashing, trashing,
-chrashs->crashes, trashes,
+chrash->crash, thrash, trash,
+chrashed->crashed, thrashed, trashed,
+chrashes->crashes, thrashes, trashes,
+chrashing->crashing, thrashing, trashing,
+chrashs->crashes, thrashes, trashes,
 chuch->church
 chuks->chunks
 chunck->chunk
