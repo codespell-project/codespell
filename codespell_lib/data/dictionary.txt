@@ -2147,7 +2147,7 @@ auospacing->autospacing
 auot->auto
 auotmatic->automatic
 auromated->automated
-aussian->gaussian
+aussian->gaussian, russian,
 austrailia->Australia
 austrailian->Australian
 Australien->Australian
@@ -8803,7 +8803,7 @@ fcound->found
 feasabile->feasible
 feasability->feasibility
 feasable->feasible
-featch->fetch
+featch->fetch, each,
 featchd->fetched
 featched->fetched
 featcher->feather, feature, fetcher,
