@@ -1231,6 +1231,8 @@ ammends->amends
 ammong->among
 ammongst->amongst
 ammortizes->amortizes
+ammoung->among
+ammoungst->amongst
 ammount->amount
 ammused->amused
 amny->many
@@ -6326,6 +6328,7 @@ desination->destination
 desinations->destinations
 desine->design
 desing->design
+desingable->designable
 desinged->designed
 desinger->designer
 desinging->designing
@@ -6480,6 +6483,9 @@ devcent->decent
 devcie->device
 develoment->development
 develoments->developments
+develompent->development
+develompental->developmental
+develompents->developments
 develope->develop
 developement->development
 developements->developments
@@ -11060,6 +11066,7 @@ inherithed->inherited
 inherithing->inheriting
 inheriths->inherits
 inheritted->inherited
+inhertiance->inheritance
 inhertig->inheriting, inherited,
 inherting->inheriting
 inhomogenous->inhomogeneous
@@ -19353,6 +19360,9 @@ strenth->strength
 strerrror->strerror
 striaghtforward->straightforward
 striclty->strictly
+stricteir->stricter
+strictier->stricter
+strictiest->strictest
 strictist->strictest
 strig->string
 strigification->stringification
