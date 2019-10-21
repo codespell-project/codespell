@@ -1053,6 +1053,8 @@ alignmant->alignment
 alignmen->alignment
 alignmenet->alignment
 alignmenets->alignments
+alignmment->alignment
+alignmments->alignments
 alignmnet->alignment
 alignmnt->alignment
 alignrigh->alignright
@@ -7939,8 +7941,10 @@ enhencements->enhancements
 enhencment->enhancement
 enhencments->enhancements
 enironment->environment
+enities->entities
 enitities->entities
 enitity->entity
+enity->entity
 enivornment->environment
 enlargment->enlargement
 enlargments->enlargements
@@ -8211,7 +8215,11 @@ esiest->easiest
 esitmate->estimate
 esitmated->estimated
 esle->else
+espace->escape
+espaced->escaped
+espaces->escapes
 espacially->especially
+espacing->escaping
 espcially->especially
 especailly->especially
 especally->especially
@@ -11708,6 +11716,11 @@ intergers->integers
 intergrated->integrated
 intergrating->integrating
 intergration->integration
+interit->inherit
+interitance->inheritance
+interited->inherited
+interiting->inheriting
+interits->inherits
 interliveing->interleaving
 interlly->internally
 interm->interim, intern,
@@ -13895,6 +13908,8 @@ non-priviliged->non-privileged
 non-referenced-counted->non-reference-counted
 non-reproducable->non-reproducible
 non-trasparent->non-transparent
+non-useful->useless
+non-usefull->useless
 non-virutal->non-virtual
 nonbloking->non-blocking
 noncombatents->noncombatants
@@ -17559,12 +17574,14 @@ reouted->routed, rerouted,
 repace->replace
 repaced->replaced
 repacement->replacement
+repacements->replacements
 repaces->replaces
 repacing->replacing
 repackge->repackage
 repackged->repackaged
 repaitnt->repaint
 repant->repaint, repent,
+repants->repaints, repents,
 repatition->repetition, repartition,
 repblic->republic
 repblican->republican
@@ -18081,6 +18098,7 @@ rewitten->rewritten
 rewriet->rewrite
 rewrited->rewrote, rewritten,
 rewriten->rewritten
+rewritting->rewriting
 rewuired->required
 rference->reference
 rferences->references
@@ -22591,6 +22609,8 @@ wont't->won't
 wont->won't, wont,
 woraround->workaround
 worarounds->workarounds
+worbench->workbench
+worbenches->workbenches
 wordlwide->worldwide
 wordpres->wordpress
 worfklow->workflow
