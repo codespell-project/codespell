@@ -937,7 +937,6 @@ docuemts->documents
 foldnig->folding
 correpsonding->corresponding
 nec->neg
-interitance->inheritance
 enlargening->enlarging
 belarussian->belarusian
 tablre->table
@@ -1061,7 +1060,6 @@ decompressiion->decompression
 determint->determine
 differece->difference
 differemt->different
-discrepency->discrepancy
 dismatch->mismatch
 drammatically->dramatically
 enahced->enhanced
@@ -1267,7 +1265,6 @@ easilty->easily
 effeect->effect
 empted->emptied
 esily->easily
-espaced->escaped
 expaned->expanded
 expexted->expected
 explicits->explicit
@@ -1770,7 +1767,6 @@ capbabilities->capabilities
 capitabl->capital
 conntected->connected
 consisits->consists
-continuosly->continuously
 coount->count
 correcponding->corresponding
 creeate->create
@@ -1950,7 +1946,6 @@ indrect->indirect
 instantianted->instantiated
 guesssing->guessing
 increamental->incremental
-constain->constrain
 unprivilaged->unprivileged
 confim->confirm
 freeg->free
@@ -2071,8 +2066,6 @@ aborigional->aboriginal
 aborignial->aboriginal
 aborigonal->aboriginal
 aboroginal->aboriginal
-aboslute->absolute
-aboslutely->absolutely
 aboslutes->absolutes
 aboslve->absolve
 abosrbed->absorbed
@@ -5068,7 +5061,6 @@ charactarize->characterize
 charactarized->characterized
 characterazation->characterization
 charactere->characterize
-characterisic->characteristic
 characterisics->characteristics
 characterisitc->characteristics
 characterisitcs->characteristics
@@ -5789,11 +5781,8 @@ comparement->compartment
 comparemos->compares
 comparetive->comparative
 comparetively->comparatively
-comparions->comparison
 compariosn->comparisons
 comparisen->compares
-comparisn->comparisons
-comparission->comparisons
 comparitave->comparative
 comparitavely->comparatively
 comparitve->comparative
@@ -6747,7 +6736,6 @@ continunes->continents
 continuning->continuing
 continunity->continuity
 continuons->continuous
-continuos->continuous
 continut->continuity
 continute->continue
 continutity->continuity
@@ -7919,11 +7907,8 @@ depciting->depicting
 depcition->depiction
 depcitions->depictions
 depcits->depicts
-depdending->depending
 depection->deception
 depelted->depleted
-depencencies->dependencies
-depencency->dependency
 dependancey->dependency
 dependandt->dependant
 dependat->dependant
@@ -8177,7 +8162,6 @@ devasteted->devastated
 develepmont->developments
 develepors->developers
 develoeprs->developers
-develompent->developments
 developemnt->developments
 developmant->developmental
 developmenet->developments
@@ -8714,7 +8698,6 @@ distinguise->distinguished
 distinguising->distinguishing
 distingusihing->distinguishing
 distinktion->distinction
-distinquish->distinguish
 distinquished->distinguished
 distinquishing->distinguishing
 distintcly->distinctly
@@ -11540,7 +11523,6 @@ historiens->histories
 historietas->histories
 historinhas->historians
 historisch->historic
-histroic->historic
 hitboxers->hitboxes
 hitboxs->hitboxes
 hodlings->holdings
@@ -12703,7 +12685,6 @@ inheriet->inherit
 inherint->inherit
 inherintly->inherently
 inhernetly->inherently
-inhertiance->inheritance
 inhertied->inherited
 inhumaan->inhuman
 inhumain->inhuman
@@ -23047,7 +23028,6 @@ trannsexual->transsexual
 tranpshobic->transphobic
 transaccion->transaction
 transalting->translating
-transaltions->translations
 transaltor->translator
 transaprency->transparency
 transational->transitional
@@ -25000,7 +24980,6 @@ compler->compiler
 comtributor->contributor
 condiction->condition
 confing->config
-conjuntion->conjunction
 containin->containing
 contentypes->contenttypes
 contettypes->contenttypes
@@ -25030,8 +25009,6 @@ deseralize->deserialize
 devisible->divisible
 dfferent->different
 dicionary->dictionary
-dictonaries->dictionaries
-dictonary->dictionary
 djangorproject->djangoproject
 djanjo->django
 djano->django
@@ -25815,7 +25792,6 @@ colflicts->conflicts
 collaped->collapsed
 collecction->collection
 coller->caller
-collison->collision
 collsion->collision
 comandline->commandline
 comapare->compare
@@ -25844,7 +25820,6 @@ comppatible->compatible
 comptibility->compatibility
 compuate->compute
 compuations->computations
-comtains->contains
 comunicating->communicating
 concolidate->consolidate
 concrurrent->concurrent
@@ -26268,7 +26243,6 @@ endiad->endian
 endpint->endpoint
 endpioint->endpoint
 enfore->enforce
-enity->entity
 enocoded->encoded
 enoding->encoding
 enqeue->enqueue
@@ -27210,3 +27184,46 @@ frational->fractional
 guaranntee->guarantee
 handhakes->handshakes
 happenning->happening
+tnis->this
+hnown->known
+wanrs->wants
+conmmit->commit
+deetect->detect
+passess->passes
+suppot->support
+paojects->projects
+instanbul->istanbul
+shareabe->shareable
+basbranch->basebranch
+comercial->commercial
+hieararchy->hierarchy
+hierarhcy->hierarchcy
+histograpm->histogram
+historial->historical
+identiacal->identical
+impediance->impedance
+includeing->including
+increment->incrementl
+incrementq->increment
+inerrupts->interrupts
+infterface->interface
+initiaive->initiative
+insititute->institute
+instrusive->intrusive
+intefaces->interfaces
+intergrity->integrity
+interrface->interface
+interrpts->interrupts
+intiating->initiating
+intrerrupt->interrupt
+intrinscs->intrinsics
+intterrupt->interrupt
+ipwireles->ipwireless
+knowledege->knowledge
+limiation->limitation
+linearaize->linearize
+listseners->listeners
+mailformed->malformed
+mandantory->mandatory
+mandattory->mandatory
+martinikua->martinika
