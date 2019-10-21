@@ -17984,6 +17984,7 @@ rquested->requested
 rquesting->requesting
 rquests->requests
 rranslation->translation
+rranslations->translations
 rrase->erase
 rsizing->resizing
 rsource->resource
@@ -20719,6 +20720,7 @@ transalte->translate
 transalted->translated
 transaltes->translates
 transaltion->translation
+transaltions->translations
 transation->transaction, translation,
 transations->transactions, translations,
 transcendance->transcendence
@@ -20869,12 +20871,15 @@ traslate->translate
 traslated->translated
 traslates->translates
 traslating->translating
+traslation->translation
+traslations->translations
 traslucency->translucency
 trasmission->transmission
 trasnaction->transaction
 trasnlate->translate
 trasnlated->translated
 trasnlation->translation
+trasnlations->translations
 trasnport->transport
 trasnports->transports
 trasparency->transparency
