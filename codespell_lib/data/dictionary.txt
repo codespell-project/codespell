@@ -5140,6 +5140,10 @@ contstruction->construction
 contur->contour
 contzains->contains
 convaless->convalesce
+convax->convex
+convaxiity->convexity
+convaxly->convexly
+convaxness->convexness
 conveinent->convenient
 conveinience->convenience
 conveinient->convenient
@@ -5182,6 +5186,7 @@ conveted->converted
 conveting->converting
 convets->converts
 convexe->convex
+convexes->convex
 conveyer->conveyor
 conviced->convinced
 convience->convince, convenience,
@@ -16212,7 +16217,6 @@ provicded->provided
 provicdes->provides
 provice->provide, province,
 provicial->provincial
-provid->provide
 provid->provide, prove, proved, proves,
 providewd->provided
 providfers->providers
