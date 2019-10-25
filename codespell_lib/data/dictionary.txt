@@ -13915,8 +13915,8 @@ non-priviliged->non-privileged
 non-referenced-counted->non-reference-counted
 non-reproducable->non-reproducible
 non-trasparent->non-transparent
-non-useful->useless
-non-usefull->useless
+non-useful->unuseful, useless,
+non-usefull->unuseful, useless,
 non-virutal->non-virtual
 nonbloking->non-blocking
 noncombatents->noncombatants
