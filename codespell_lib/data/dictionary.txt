@@ -1237,6 +1237,7 @@ amacingly->amazingly
 amalgomated->amalgamated
 amatuer->amateur
 amature->armature, amateur,
+amazaing->amazing
 ambedded->embedded
 ambibuity->ambiguity
 ambigious->ambiguous
@@ -4809,6 +4810,7 @@ considerd->considered
 considere->considered
 consideren->considered
 consideres->considered, considers,
+considert->considered, consider,
 considred->considered
 consier->consider
 consiers->considers
@@ -6480,6 +6482,8 @@ desipite->despite
 desireable->desirable
 desision->decision
 desisions->decisions
+desition->decision
+desitions->decisions
 desitned->destined
 deskop->desktop
 deskops->desktops
@@ -12727,6 +12731,7 @@ marter->martyr
 masakist->masochist
 mashetty->machete
 mashine->machine
+mashined->machined
 mashines->machines
 masia->messiah
 masicer->massacre
@@ -16410,6 +16415,14 @@ raisedd->raised
 raison->reason, raisin,
 ralation->relation
 randmom->random
+raotat->rotate
+raotate->rotate
+raotated->rotated
+raotates->rotates
+raotating->rotating
+raotation->rotation
+raotations->rotations
+raotats->rotates
 raplace->replace
 raplacing->replacing
 rapresent->represent
@@ -18165,9 +18178,13 @@ rotaion->rotation
 rotaions->rotations
 rotaiton->rotation
 rotaitons->rotations
+rotat->rotate
 rotataion->rotation
 rotataions->rotations
+rotatd->rotated
 rotatio->rotation
+rotatios->rotations
+rotats->rotates
 rouding->rounding
 rouge->rogue, rouge,
 roughtly->roughly
