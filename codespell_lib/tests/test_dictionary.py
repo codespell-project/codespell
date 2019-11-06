@@ -41,6 +41,8 @@ def test_dictionary_formatting():
                         ('currently corrections must end with trailing "," (if'
                          ' multiple corrections are available) or '
                          'have "disabled" in the comment')
+            if rep.count(',') == 1 and rep.split(',')[-1].strip() == '':
+                raise AssertionError('simple entry contains trailing comma')
             reps = [r.strip() for r in rep.lower().split(',')]
             reps = [r for r in reps if len(r)]
             err_dict[err] = reps
