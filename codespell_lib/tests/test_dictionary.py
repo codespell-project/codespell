@@ -41,6 +41,7 @@ def test_dictionary_formatting():
                  '%s has a single entry but contains a trailing comma'),
             ]:
                 assert not re.search(r, rep), (msg % (prefix,))
+            del msg
             rep_count = rep.count(',')
             if rep_count and not rep.endswith(','):
                 assert 'disabled' in rep.split(',')[-1], \
