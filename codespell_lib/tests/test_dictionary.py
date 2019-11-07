@@ -24,25 +24,29 @@ def test_dictionary_formatting():
             assert not re.match(r'^\s.*', rep), ('error %s: correction %r '
                                                  'cannot start with whitespace'
                                                  % (err, rep))
+            prefix = 'error %s: correction %r' % (err, rep)
             for (r, msg) in [
-                (r'^,', 'error %s: correction %r starts with a comma'),
-                (r'\s,', 'error %s: correction %r contains a whitespace '
-                         'character followed by a comma'),
-                (r',\s\s', 'error %s: correction %r contains a comma followed '
-                           'by multiple whitespace characters'),
-                (r',[^ ]', 'error %s: correction %r contains a comma *not* '
-                           'followed by a space'),
-                (r'\s+$', 'error %s: correction %r has a trailing space')
+                (r'^,',
+                 '%s starts with a comma'),
+                (r'\s,',
+                 '%s contains a whitespace character followed by a comma'),
+                (r',\s\s',
+                 '%s contains a comma followed by multiple whitespace '
+                 'characters'),
+                (r',[^ ]',
+                 '%s contains a comma *not* followed by a space'),
+                (r'\s+$',
+                 '%s has a trailing space'),
+                (r'^[^,]*,\s*$',
+                 '%s has a single entry but contains a trailing comma'),
             ]:
-                assert not re.search(r, rep), (msg % (err, rep))
-            if rep.count(','):
-                if not rep.endswith(','):
-                    assert 'disabled' in rep.split(',')[-1], \
-                        ('currently corrections must end with trailing "," (if'
-                         ' multiple corrections are available) or '
-                         'have "disabled" in the comment')
-            if rep.count(',') == 1 and rep.split(',')[-1].strip() == '':
-                raise AssertionError('simple entry contains trailing comma')
+                assert not re.search(r, rep), (msg % (prefix,))
+            rep_count = rep.count(',')
+            if rep_count and not rep.endswith(','):
+                assert 'disabled' in rep.split(',')[-1], \
+                    ('currently corrections must end with trailing "," (if '
+                     ' multiple corrections are available) or have "disabled" '
+                     'in the comment')
             reps = [r.strip() for r in rep.lower().split(',')]
             reps = [r for r in reps if len(r)]
             err_dict[err] = reps
