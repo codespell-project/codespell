@@ -3854,6 +3854,11 @@ clipoards->clipboards
 clipoing->clipping
 cliuent->client
 cliuents->clients
+clloud->cloud
+cllouded->clouded
+clloudes->clouds
+cllouding->clouding
+cllouds->clouds
 cloack->cloak
 cloacks->cloaks
 cloberring->clobbering
@@ -7040,7 +7045,9 @@ digitial->digital
 digitis->digits
 dignostics->diagnostics
 dilema->dilemma
+dilemas->dilemmas
 dillema->dilemma
+dillemas->dilemmas
 dimemsions->dimensions
 dimenion->dimension, dominion,
 dimenional->dimensional
@@ -7822,6 +7829,7 @@ easer->easier, eraser,
 easili->easily
 easiliy->easily
 easilly->easily
+easly->easily
 easyer->easier
 eaturn->return, saturn,
 eaxct->exact
@@ -9708,10 +9716,16 @@ funchtions->functions
 funcion->function
 funcions->functions
 funciton->function
+funcitonal->functional
+funcitonality->functionality
+funcitoned->functioned
+funcitoning->functioning
 funcitons->functions
 functin->function
 functino->function
 functins->functions
+functionability->functionality
+functionable->functional, functioning,
 functionailty->functionality
 functionallity->functionality
 functionaltiy->functionality
@@ -10887,6 +10901,11 @@ immutible->immutable
 imolicit->implicit
 imolicitly->implicitly
 imort->import
+imortable->importable
+imorted->imported
+imortes->imports
+imorting->importing
+imorts->imports
 imovable->immovable
 impcat->impact
 impcated->impacted
@@ -13228,6 +13247,7 @@ menally->mentally
 menas->means
 menetion->mention
 menetioned->mentioned
+menetioning->mentioning
 menetions->mentions
 menion->mention, minion,
 menioned->mentioned
@@ -15606,12 +15626,18 @@ pleacing->placing
 pleae->please
 pleaee->please
 pleaes->please
+pleas->please
+pleasd->pleased
 pleasent->pleasant
+pleasently->pleasantly
+pleass->pleases, bless,
 plebicite->plebiscite
 plecing->placing
 plent->plenty
 plesae->please
 plesant->pleasant
+plesently->pleasantly
+plesing->pleasing, blessing,
 plian->plain
 pllatforms->platforms
 ploting->plotting
@@ -16426,9 +16452,12 @@ prominance->prominence
 prominant->prominent
 prominantly->prominently
 prominately->prominently, predominately,
+promis->promise
 promiscous->promiscuous
 promiss->promise
-promisse->promise, promised,
+promisse->promise, promises, promised,
+promissed->promised
+promisses->promises
 promissing->promising
 promixity->proximity
 prommpt->prompt
@@ -16659,14 +16688,21 @@ publlisher->publisher
 publsh->publish
 publshed->published
 publsher->publisher
+publshers->publishers
 publshing->publishing
 publsih->publish
 publsihed->published
 publsiher->publisher
+publsihers->publishers
+publsihes->publishes
 publsihing->publishing
 publuc->public
 publucation->publication
+publush->publish
 publusher->publisher
+publushers->publishers
+publushes->publishes
+publushing->publishing
 puchasing->purchasing
 Pucini->Puccini
 Puertorrican->Puerto Rican
@@ -19299,6 +19335,15 @@ shreak->shriek
 shreshold->threshold
 shriks->shrinks
 shrinked->shrunk
+shtop->stop, shop,
+shtoped->stopped, shopped,
+shtopes->stops, shops,
+shtoping->stopping, shopping,
+shtopp->stop, shop,
+shtopped->stopped, shopped,
+shtoppes->stops, shops,
+shtopping->stopping, shopping,
+shtops->stops, shops,
 shttp->https
 shuld->should
 shure->sure
@@ -19392,6 +19437,7 @@ simplicty->simplicity
 simplier->simpler
 simplies->implies, simplifies,
 simpliest->simplest
+simplifiy->simplify
 simplifys->simplifies
 simpliifcation->simplification
 simpliifcations->simplifications
@@ -21762,6 +21808,7 @@ ublisher->publisher
 ubunut->Ubuntu
 ubutunu->Ubuntu
 udno->undo, uno,
+udpatable->updatable
 udpate->update
 udpated->updated
 udpater->updater
