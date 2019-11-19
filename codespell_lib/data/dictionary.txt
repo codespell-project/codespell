@@ -21276,7 +21276,7 @@ thats->that's
 thats;->that's
 thay->they
 thck->thick
-thead->thread
+thead->thread, disabled due to the HTML tag
 theard->thread
 thearding->threading
 theards->threads
