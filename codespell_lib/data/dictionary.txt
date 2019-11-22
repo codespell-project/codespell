@@ -3754,6 +3754,7 @@ circomvents->circumvents
 circual->circular
 circularly->circular, circularly,
 circulaton->circulation
+circumferance->circumference
 circumferencial->circumferential
 circumsicion->circumcision
 circumvernt->circumvent
@@ -5248,6 +5249,12 @@ contributer->contributor
 contributers->contributors
 contries->countries
 contritutions->contributions
+contriubte->contribute
+contriubted->contributed
+contriubtes->contributes
+contriubting->contributing
+contriubtion->contribution
+contriubtions->contributions
 contrl->control
 contro->control
 controlable->controllable
@@ -5416,6 +5423,10 @@ coordintes->coordinates
 coordonate->coordinate
 coordonated->coordinated
 coordonates->coordinates
+coorespond->correspond
+cooresponded->corresponded
+cooresponding->corresponding
+cooresponds->corresponds
 cooridate->coordinate
 cooridated->coordinated
 cooridates->coordinates
@@ -6783,6 +6794,7 @@ determinne->determine
 determins->determines
 determinstic->deterministic
 determinstically->deterministically
+determinte->determine, determined,
 determintes->determines
 determnine->determine
 detet->detect, delete,
@@ -6936,6 +6948,8 @@ dicards->discards
 dicates->dictates
 dicergence->divergence
 dichtomy->dichotomy
+dicionaries->dictionaries
+dicionary->dictionary
 dicipline->discipline
 dicline->decline
 diconnects->disconnects
@@ -12348,6 +12362,8 @@ iomaped->iomapped
 ionde->inode
 iound->round, wound,
 iplementation->implementation
+ipmrovement->improvement
+ipmrovements->improvements
 iput->input
 ireelevant->irrelevant
 irelevent->irrelevant
@@ -14210,6 +14226,7 @@ neighbout->neighbor
 neightbour->neighbour
 neightbours->neighbours
 neighter->neither
+neiter->neither
 nenviroment->environment
 neolitic->neolithic
 nerver->never
@@ -18496,6 +18513,8 @@ resorces->resources
 resore->restore
 resouce->resource
 resouces->resources
+resoultion->resolutions
+resoultions->resolutions
 resourceype->resourcetype
 resoure->resource
 resoures->resources
@@ -21825,6 +21844,7 @@ traspose->transpose
 trasposed->transposed
 trasposition->transposition
 traspositions->transpositions
+travelling->traveling
 traveral->traversal
 travese->traverse
 tre->tree
