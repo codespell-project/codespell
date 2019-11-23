@@ -3107,6 +3107,7 @@ booleamn->boolean
 booleanss->booleans
 booleen->boolean
 boolen->boolean
+booltloader->bootloader
 boomark->bookmark
 boomarks->bookmarks
 booolean->boolean
