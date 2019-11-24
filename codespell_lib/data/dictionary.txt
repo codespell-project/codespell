@@ -21115,7 +21115,10 @@ tast->taste
 tath->that
 tatoos->tattoos
 tattooes->tattoos
-tavelling->travelling
+taveled->traveled, travelled,
+taveling->traveling, travelling,
+tavelled->travelled, traveled,
+tavelling->travelling, traveling,
 tawk->talk
 taxanomic->taxonomic
 taxanomy->taxonomy
@@ -21851,7 +21854,6 @@ traspose->transpose
 trasposed->transposed
 trasposition->transposition
 traspositions->transpositions
-travelling->traveling
 traveral->traversal
 travese->traverse
 tre->tree
