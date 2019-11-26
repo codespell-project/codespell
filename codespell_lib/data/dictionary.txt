@@ -8255,8 +8255,10 @@ doign->doing
 doiing->doing
 doiuble->double
 doiubled->doubled
-doller->dollars
+doller->dollar
+dollers->dollars
 dollor->dollar
+dollors->dollars
 domait->domain
 doman->domain
 domans->domains
@@ -13404,10 +13406,12 @@ lible->libel, liable,
 libraies->libraries
 librairies->libraries
 libraris->libraries
+librarries->libraries
 librarry->library
 libray->library
 libreoffie->libreoffice
 libreoficekit->libreofficekit
+libreries->libraries
 librery->library
 libries->libraries
 libstc++->libstdc++
@@ -17439,6 +17443,7 @@ psitoin->position
 psitoined->positioned
 psitoins->positions
 psot->post
+psots->posts
 psrameter->parameter
 pssed->passed
 pssibility->possibility
