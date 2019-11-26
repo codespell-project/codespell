@@ -36,6 +36,7 @@ abbriviations->abbreviations
 aberation->aberration
 abigious->ambiguous
 abiguity->ambiguity
+abilityes->abilities
 abilties->abilities
 abilty->ability
 abiss->abyss
@@ -850,6 +851,8 @@ agressor->aggressor
 agresssive->aggressive
 agrgument->argument
 agrguments->arguments
+agricultue->agriculture
+agriculure->agriculture
 agricuture->agriculture
 agrieved->aggrieved
 agrresive->aggressive
@@ -867,6 +870,7 @@ aiport->airport
 airator->aerator
 airbourne->airborne
 aircaft->aircraft
+aircrafts'->aircraft's
 aircrafts->aircraft
 airial->aerial, arial,
 airloom->heirloom
@@ -890,6 +894,7 @@ ajusted->adjusted
 ajustement->adjustment
 ajusting->adjusting
 ajustment->adjustment
+aka->a.k.a.
 ake->ache
 aks->ask
 aktivate->activate
@@ -1571,6 +1576,7 @@ anthropolgist->anthropologist
 anthropolgy->anthropology
 antialialised->antialiased
 antialising->antialiasing
+antiapartheid->anti-apartheid
 anticpate->anticipate
 antry->entry
 anual->annual
@@ -3066,6 +3072,7 @@ binairy->binary
 binanary->binary
 binay->binary
 bindins->bindings
+binominal->binomial
 bion->bio
 biridectionality->bidirectionality
 bistream->bitstream
@@ -3148,6 +3155,7 @@ boolen->boolean
 booltloader->bootloader
 boomark->bookmark
 boomarks->bookmarks
+boook->book
 booolean->boolean
 boostrap->bootstrap
 boostrapping->bootstrapping
@@ -3683,6 +3691,7 @@ carrien->carrier
 carrige->carriage
 carrrier->carrier
 carryintg->carrying
+carryng->carrying
 cartdridge->cartridge
 Carthagian->Carthaginian
 carthographer->cartographer
@@ -3755,6 +3764,7 @@ cauched->caught
 caugt->caught
 cauhgt->caught
 cauing->causing
+causalities->casualties
 causees->causes
 causion->caution
 causioned->cautioned
@@ -4055,6 +4065,7 @@ chnage->change
 chnages->changes
 chnge->change
 chnnel->channel
+choclate->chocolate
 choicing->choosing
 choise->choice
 choises->choices
@@ -9074,9 +9085,11 @@ eqaulity->equality
 eqaulizer->equalizer
 eqivalent->equivalent
 eqivalents->equivalents
+equalibrium->equilibrium
 equallity->equality
 equaly->equally
 equel->equal
+equelibrium->equilibrium
 equialent->equivalent
 equilavalent->equivalent
 equilibium->equilibrium
@@ -10694,6 +10707,7 @@ gitars->guitars
 gitatributes->gitattributes
 gived->given
 givem->given, give them, give 'em,
+glamourous->glamorous
 glight->flight
 gloab->globe
 gloabal->global
@@ -11361,6 +11375,8 @@ hygeine->hygiene
 hygene->hygiene
 hygenic->hygienic
 hygine->hygiene
+hyjack->hijack
+hyjacking->hijacking
 hypen->hyphen
 hypenate->hyphenate
 hypenated->hyphenated
@@ -12426,6 +12442,8 @@ inpacted->impacted
 inpacting->impacting
 inpacts->impacts
 inpeach->impeach
+inpending->impending
+inpenetrable->impenetrable
 inplementation->implementation
 inplementations->implementations
 inplemented->implemented
@@ -14116,6 +14134,7 @@ millioniare->millionaire
 millisencond->millisecond
 millisenconds->milliseconds
 milliseonds->milliseconds
+millitant->militant
 millitary->military
 millon->million
 millsencond->millisecond
@@ -15314,6 +15333,7 @@ oldes->oldest
 oll->all, ole, old, Olly, oil,
 olny->only
 olt->old
+olther->other
 oly->only
 omision->omission
 omited->omitted
@@ -15624,6 +15644,7 @@ otherwhise->otherwise
 otherwice->otherwise
 otherwis->otherwise
 otherwize->otherwise
+otherwordly->otherworldly
 otherwse->otherwise
 otherwsie->otherwise
 othewice->otherwise
@@ -16079,6 +16100,8 @@ peacd->peace
 peacefuland->peaceful and
 peacify->pacify
 peageant->pageant
+peaple->people
+peaples->peoples
 pecentage->percentage
 pecified->specified, pacified,
 pecularities->peculiarities
@@ -16118,6 +16141,7 @@ pensle->pencil
 peom->poem
 peoms->poems
 peopel->people
+peopels->peoples
 peopl->people
 peotry->poetry
 pepare->prepare
@@ -16133,6 +16157,7 @@ percieved->perceived
 percision->precision
 perenially->perennially
 peresent->present, presents, presence, percent,
+peretrator->perpetrator
 perfec->perfect
 perfecct->perfect
 perfecctly->perfectly
@@ -16250,6 +16275,7 @@ perperty->property
 perphas->perhaps
 perpindicular->perpendicular
 perrror->perror
+persan->person
 persepctive->perspective
 persepective->perspective
 persepectives->perspectives
@@ -21028,6 +21054,7 @@ subcribing->subscribing
 subdirectoires->subdirectories
 subdirectorys->subdirectories
 subdirecty->subdirectory
+subdivisio->subdivision
 subdivisiond->subdivisioned
 subelemet->subelement
 subelemets->subelements
@@ -21270,6 +21297,8 @@ sucide->suicide
 sucidial->suicidal
 sucome->succumb
 sucsede->succeed
+sudent->student
+sudents->students
 sudmobule->submodule
 sudmobules->submodules
 sueful->useful
@@ -21385,6 +21414,7 @@ suppressingd->suppressing
 supprt->support
 suppy->supply
 suppying->supplying
+suprassing->surpassing
 supres->suppress
 supresed->suppressed
 supreses->suppresses
@@ -21769,6 +21799,7 @@ tasbar->taskbar
 taskelt->tasklet
 tast->taste
 tath->that
+tatoo->tattoo
 tatoos->tattoos
 tattooes->tattoos
 taveled->traveled, travelled,
@@ -22166,6 +22197,7 @@ tim->time, Tim, disabled due to being a person's name
 timedlta->timedelta
 timeing->timing
 timere->timer
+timeschedule->time schedule
 timestan->timespan
 timestemp->timestamp
 timestemps->timestamps
@@ -22532,6 +22564,7 @@ trianglular->triangular
 trianglutaion->triangulation
 triangulataion->triangulation
 triangultaion->triangulation
+trigered->triggered
 trigerred->triggered
 trigerring->triggering
 trigers->triggers
@@ -22614,6 +22647,7 @@ turtorial->tutorial
 turtorials->tutorials
 Tuscon->Tucson
 tust->trust
+tution->tuition
 tutoriel->tutorial
 tutoriels->tutorials
 twelth->twelfth
