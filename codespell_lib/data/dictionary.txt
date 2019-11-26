@@ -2102,6 +2102,7 @@ asscociated->associated
 asscoitaed->associated
 assebly->assembly
 assember->assembler
+assemblys->assemblies
 assemby->assembly
 assemnly->assembly
 assemple->assemble
@@ -4121,6 +4122,7 @@ circual->circular
 circuitery->circuitry
 circularly->circular, circularly,
 circulaton->circulation
+circumferance->circumference
 circumferencial->circumferential
 circumsicion->circumcision
 circumvernt->circumvent
@@ -5703,6 +5705,12 @@ contributer->contributor
 contributers->contributors
 contries->countries
 contritutions->contributions
+contriubte->contribute
+contriubted->contributed
+contriubtes->contributes
+contriubting->contributing
+contriubtion->contribution
+contriubtions->contributions
 contrl->control
 contrller->controller
 contro->control
@@ -5886,6 +5894,10 @@ coorditate->coordinate
 coordonate->coordinate
 coordonated->coordinated
 coordonates->coordinates
+coorespond->correspond
+cooresponded->corresponded
+cooresponding->corresponding
+cooresponds->corresponds
 cooridate->coordinate
 cooridated->coordinated
 cooridates->coordinates
@@ -7353,6 +7365,7 @@ determinne->determine
 determins->determines
 determinstic->deterministic
 determinstically->deterministically
+determinte->determine, determined,
 determintes->determines
 determnine->determine
 deternine->determine
@@ -7515,6 +7528,8 @@ dicards->discards
 dicates->dictates
 dicergence->divergence
 dichtomy->dichotomy
+dicionaries->dictionaries
+dicionary->dictionary
 dicipline->discipline
 dicline->decline
 diconnection->disconnection
@@ -9612,7 +9627,11 @@ expermiental->experimental
 experssion->expression
 experssions->expressions
 expession->expression
+expet->expect, expat,
+expetancy->expectancy
+expetation->expectation
 expeted->expected
+expets->expects
 expicit->explicit
 expicitly->explicitly
 expidition->expedition
@@ -10589,6 +10608,13 @@ generilized->generalized
 generilizes->generalizes
 generiously->generously
 genialia->genitalia
+genral->general
+genralisation->generalisation
+genralisations->generalizations
+genralization->generalization
+genralizations->generalizations
+genrally->generally
+genrals->generals
 genrate->generate
 genrated->generated
 genrates->generates
@@ -12715,6 +12741,7 @@ interits->inherits
 interliveing->interleaving
 interlly->internally
 interm->interim, intern,
+intermeidate->intermediate
 intermidiate->intermediate
 intermittant->intermittent
 internall->internal, internally,
@@ -12968,6 +12995,8 @@ iomaped->iomapped
 ionde->inode
 iound->round, wound,
 iplementation->implementation
+ipmrovement->improvement
+ipmrovements->improvements
 iput->input
 ireelevant->irrelevant
 irelevent->irrelevant
@@ -14836,6 +14865,7 @@ neighbout->neighbor
 neightbour->neighbour
 neightbours->neighbours
 neighter->neither
+neiter->neither
 nelink->netlink
 nenviroment->environment
 neolitic->neolithic
@@ -19129,6 +19159,8 @@ resorces->resources
 resore->restore
 resouce->resource
 resouces->resources
+resoultion->resolutions
+resoultions->resolutions
 resourceype->resourcetype
 resoure->resource
 resoures->resources
@@ -21728,7 +21760,10 @@ tast->taste
 tath->that
 tatoos->tattoos
 tattooes->tattoos
-tavelling->travelling
+taveled->traveled, travelled,
+taveling->traveling, travelling,
+tavelled->travelled, traveled,
+tavelling->travelling, traveling,
 tawk->talk
 taxanomic->taxonomic
 taxanomy->taxonomy
@@ -24082,6 +24117,7 @@ wouldnt;->wouldn't
 wounder->wonder, wounder,
 wounderful->wonderful
 wouold->would
+wouuld->would
 wqs->was
 wraped->wrapped, warped,
 wraper->wrapper
