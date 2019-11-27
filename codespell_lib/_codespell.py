@@ -58,7 +58,8 @@ class QuietLevels(object):
 class GlobMatch(object):
     def __init__(self, pattern):
         if pattern:
-            self.pattern_list = pattern.split(',')
+            # Pattern might be a list of comma-delimited strings
+            self.pattern_list = ','.join(pattern).split(',')
         else:
             self.pattern_list = None
 
@@ -243,6 +244,7 @@ def parse_options(args):
                         help='print summary of fixes')
 
     parser.add_argument('-S', '--skip',
+                        action='append',
                         help='Comma-separated list of files to skip. It '
                              'accepts globs as well. E.g.: if you want '
                              'codespell to skip .eps and .txt files, '
