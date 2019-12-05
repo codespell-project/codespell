@@ -4182,6 +4182,9 @@ cirumstance->circumstance
 cirumstances->circumstances
 civillian->civilian
 civillians->civilians
+cjange->change
+cjanged->changed
+cjanges->changes
 cjoice->choice
 cjoices->choices
 ckecksum->checksum
@@ -16207,6 +16210,9 @@ paticularly->particularly
 patren->patron, pattern,
 patrens->patron, patterns,
 patrent->parent, patent, patron,
+patten->pattern, patent,
+pattened->patterned, patented,
+pattens->patterns, patents,
 pattented->patented
 pattersn->patterns
 pattren->pattern, patron,
@@ -24149,6 +24155,7 @@ widht->width
 widhtpoint->widthpoint
 widhtpoints->widthpoints
 widthn->width
+widthout->without
 wief->wife
 wieh->view
 wierd->weird
