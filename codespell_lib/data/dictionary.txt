@@ -8228,6 +8228,10 @@ dne->done
 do'nt->don't
 doalog->dialog
 doas->does
+doble->double
+dobled->doubled
+dobles->doubles
+dobling->doubling
 doccument->document
 doccumented->documented
 doccuments->documents
@@ -23127,6 +23131,8 @@ unintiallised->uninitialised
 unintiallized->uninitialized
 unintialsied->uninitialised
 unintialzied->uninitialized
+unio->union
+unios->unions
 uniqe->unique
 uniqu->unique
 uniquness->uniqueness
