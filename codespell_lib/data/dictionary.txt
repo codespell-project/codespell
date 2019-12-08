@@ -3159,6 +3159,8 @@ biridectionality->bidirectionality
 bistream->bitstream
 bitamps->bitmaps
 bitap->bitmap
+bitfileld->bitfield
+bitfilelds->bitfields
 bitis->bits
 bitmast->bitmask
 bitnaps->bitmaps
@@ -4564,6 +4566,8 @@ colunn->column, colon,
 colunns->columns
 comammand->command
 comamnd->command
+comamnd-line->command-line
+comamndline->commandline
 comamnds->commands
 comand->command
 comand-line->command-line
@@ -6944,10 +6948,38 @@ defargkey->defragkey
 defatult->default
 defaukt->default
 defaul->default
+defaulat->default
+defaulats->defaults
 defauld->default
-defauls->default
+defaulds->defaults
+defaule->default
+defauled->default, defaulted,
+defaules->defaults
+defaulf->default
+defaulfs->defaults
+defaulg->default
+defaulgs->defaults
+defaulh->default
+defaulhs->defaults
+defauling->defaulting
+defaulit->default
+defaulits->defaults
+defaulkt->default
+defaulkts->defaults
+defaull->default
+defaulls->defaults
+defaullt->default
+defaullts->defaults
+defaulr->default
+defaulrs->defaults
+defaulrt->default
+defaulrts->defaults
+defauls->default, defaults,
 defaulst->defaults, default,
 defaultet->defaulted
+defauly->default
+defaulys->defaults
+defaulz->default, defaults,
 defaut->default
 defautl->default
 defautled->defaulted
@@ -7310,6 +7342,15 @@ derefenced->dereferenced
 derefencing->dereferencing
 derefenrence->dereference
 dereferencable->dereferenceable
+derefernce->dereference
+derefernced->dereferenced
+dereferncence->dereference
+dereferncencer->dereferencer
+dereferncencers->dereferencers
+dereferncences->dereferences
+dereferncer->dereferencer
+dereferncers->dereferencers
+derefernces->dereferences
 dereferncing->dereferencing
 derefernece->dereference
 derefrencable->dereferenceable
@@ -7685,6 +7726,10 @@ deviece->device
 devied->device
 devined->defined
 devired->derived
+devirtualisaion->devirtualisation
+devirtualisaiton->devirtualisation
+devirtualizaion->devirtualization
+devirtualizaiton->devirtualization
 devirutalisation->devirtualisation
 devirutalise->devirtualise
 devirutalised->devirtualised
@@ -10326,6 +10371,8 @@ fightings->fighting
 figurestyle->figurestyles
 filal->final
 fileds->fields
+fileld->field
+filelds->fields
 filenae->filename
 files'->file's
 fileshystem->filesystem
@@ -10986,6 +11033,7 @@ geometyr->geometry
 geomitrically->geometrically
 geomtry->geometry
 geomtrys->geometries
+georeferncing->georeferencing
 geraff->giraffe
 geraphics->graphics
 gerat->great
@@ -16875,6 +16923,12 @@ plantext->plaintext
 plantiff->plaintiff
 plase->please
 plateu->plateau
+platfarm->platform
+platfarms->platforms
+platfform->platform
+platfforms->platforms
+platflorm->platform
+platflorms->platforms
 platfoem->platform
 platfom->platform
 platform-spacific->platform-specific
@@ -16882,7 +16936,14 @@ platformt->platforms
 platfrom->platform
 platfroms->platforms
 plathome->platform
+platofmr->platform
+platofmrs->platforms
 platofms->platforms
+platofmss->platforms
+platoform->platform
+platoforms->platforms
+platofrm->platform
+platofrms->platforms
 plattform->platform
 plattforms->platforms
 plausability->plausibility
@@ -17330,6 +17391,7 @@ predifined->predefined
 predomiantly->predominately
 preeceding->preceding
 preemptable->preemptible
+preesnt->present
 prefectches->prefetches
 prefecth->prefetch
 prefectly->perfectly
@@ -18843,7 +18905,10 @@ referiang->referring
 refering->referring
 refernce->reference
 refernced->referenced
+referncence->reference
+referncences->references
 refernces->references
+referncial->referential
 referncing->referencing
 refernece->reference
 referneced->referenced
@@ -19489,6 +19554,7 @@ repraesentation->representation
 reprecussion->repercussion
 reprecussions->repercussions
 repreesnt->represent
+repreesnted->represented
 repreesnts->represents
 reprensent->represent
 reprensentation->representation
@@ -21044,11 +21110,15 @@ somethign->something
 somethimes->sometimes
 somethimg->something
 somethiong->something
+sometiem->sometime, sometimes,
 sometiems->sometimes
+sometihing->something
 sometihng->something
+sometiles->some tiles, sometimes,
 sometims->sometimes
 sometines->sometimes
 someting->something
+sometinhg->something
 somewere->somewhere
 somewho->somehow
 somthign->something
@@ -24319,9 +24389,17 @@ vinrator->vibrator
 vioalte->violate
 vioaltion->violation
 violentce->violence
+violoated->violated
+violoating->violating
+violoation->violation
+violoations->violations
 virtal->virtual
 virtaul->virtual
 virtiual->virtual
+virtualisaion->virtualisation
+virtualisaiton->virtualisation
+virtualizaion->virtualization
+virtualizaiton->virtualization
 virtualiziation->virtualization
 virtualy->virtually
 virtuell->virtual
@@ -24443,6 +24521,8 @@ vulerable->vulnerable
 vulerabuilities->vulnerabilities
 vulerabuility->vulnerability
 vulerabule->vulnerable
+vulnarabilities->vulnerabilities
+vulnarability->vulnerability
 vulnearable->vulnerable
 vulnearabule->vulnerable
 vulnearbilities->vulnerabilities
