@@ -5542,6 +5542,12 @@ constrast->contrast
 constrasts->contrasts
 constratints->constraints
 constraucts->constructs
+constrct->construct, constrict,
+constrcted->constructed, constricted,
+constrcting->constructing, constricting,
+constrction->construction, constriction,
+constrctions->constructions, constrictions,
+constrcts->constructs, constricts,
 constrcuct->construct
 constrcut->construct
 constrcuted->constructed
@@ -20487,11 +20493,17 @@ singaled->signaled
 singals->signals
 singe->singe, single,
 singed->signed, singled, singed,
+singel->single, signal,
+singelar->singular
+singelarity->singularity
+singelarly->singularly
+singeled->singled, signaled,
+singeles->singles, signals,
 singelton->singleton
 singificand->significand, significant,
 singlar->singular
 single-threded->single-threaded
-singls->single
+singls->singles, single,
 singlton->singleton
 singlular->singular
 singlularly->singularly
@@ -20499,10 +20511,19 @@ singnal->signal
 singnalled->signalled
 singnals->signals
 singol->signal, single,
+singolar->singular
+singoled->signaled, singled,
+singols->signals, singles,
+singool->single, signal,
 singoolar->singular
+singoolarity->singularity
+singoolarly->singularly
+singooled->singled, signaled,
+singools->singles, signals,
 singsog->singsong
 singuarity->singularity
 singuarl->singular
+sinlge->single
 sinlges->singles
 sinply->simply
 sinse->sines, since,
@@ -24266,6 +24287,8 @@ wnat->want, what,
 wnated->wanted
 wnating->wanting
 wnats->wants
+wnidow->window, widow,
+wnidows->windows, widows,
 woh->who
 wohle->whole
 woill->will
