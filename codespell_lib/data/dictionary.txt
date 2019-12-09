@@ -866,6 +866,8 @@ agument->argument
 aguments->arguments
 aheared->adhered
 ahev->have
+ahlpa->alpha
+ahlpas->alphas
 ahppen->happen
 ahve->have
 aicraft->aircraft
@@ -3901,7 +3903,8 @@ chancel->cancel
 chanceled->canceled
 chanceling->canceling
 chancels->cancels
-chancnel->channel
+chanched->changed
+chancnel->channel, cancel,
 chane->change, chain,
 chaned->changed, chained,
 chaneged->changed
@@ -6254,7 +6257,13 @@ crace->grace, crate,
 craches->crashes, caches, crutches,
 craete->create
 craeting->creating, crating,
+crahed->crashed
+crahes->crashes
+crahs->crash, crass,
 crahses->crashes
+crashaes->crashes
+crasheed->crashed
+crashees->crashess
 crasher->crash, disabled because it denotes something that crashes
 crashers->crashes, disabled because it denotes things that crash
 crashs->crashes
@@ -9414,7 +9423,9 @@ examin->examine, examining,
 examinated->examined
 examing->examining
 examinining->examining
+examles->examples
 exampel->example
+exampeles->examples
 exampels->examples
 exampt->exempt
 exand->expand
@@ -9922,6 +9933,7 @@ eyasr->years, eyas,
 eyt->yet
 ezdrop->eavesdrop
 facedrwaing->facedrawing, face drawing,
+faceis->faces, face is,
 faciliate->facilitate
 faciliated->facilitated
 faciliates->facilitates
@@ -13045,6 +13057,9 @@ intreeguing->intriguing
 intreface->interface
 intregral->integral
 intrerrupt->interrupt
+intresst->interest
+intressted->interested
+intressting->interesting
 intrest->interest, insert,
 intrested->interested
 intresting->interesting
@@ -13490,9 +13505,12 @@ lenghthy->lengthy
 lenghtly->lengthy
 lenghts->lengths
 lenghty->lengthy
+lengt->length
+lengten->lengthen
 lengtext->longtext
 lengthes->lengths
 lengthh->length
+lengts->lengths
 leniant->lenient
 leninent->lenient
 lentgh->length
