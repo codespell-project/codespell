@@ -572,6 +572,7 @@ adaptaion->adaptation
 adapte->adapter
 adaptee->adapted
 adaptibe->adaptive
+adaptove->adaptive, adoptive,
 adaquate->adequate
 adaquately->adequately
 adatper->adapter
@@ -867,6 +868,8 @@ agument->argument
 aguments->arguments
 aheared->adhered
 ahev->have
+ahlpa->alpha
+ahlpas->alphas
 ahppen->happen
 ahve->have
 aicraft->aircraft
@@ -1762,10 +1765,19 @@ apprieciate->appreciate
 appriopriate->appropriate
 appripriate->appropriate
 apprixamate->approximate
+apprixamated->approximated
 apprixamately->approximately
 apprixamates->approximates
+apprixamating->approximating
 apprixamation->approximation
 apprixamations->approximations
+appriximate->approximate
+appriximated->approximated
+appriximately->approximately
+appriximates->approximates
+appriximating->approximating
+appriximation->approximation
+appriximations->approximations
 approachs->approaches
 approbiate->appropriate
 approch->approach
@@ -3903,7 +3915,8 @@ chancel->cancel
 chanceled->canceled
 chanceling->canceling
 chancels->cancels
-chancnel->channel
+chanched->changed
+chancnel->channel, cancel,
 chane->change, chain,
 chaned->changed, chained,
 chaneged->changed
@@ -4162,11 +4175,15 @@ circumferance->circumference
 circumferencial->circumferential
 circumsicion->circumcision
 circumstancial->circumstantial
+circumstansial->circumstantial
 circumstnce->circumstance
 circumstnces->circumstances
 circumstncial->circumstantial
 circumstntial->circumstantial
 circumvernt->circumvent
+circunstance->circumstance
+circunstances->circumstances
+circunstantial->circumstantial
 circustances->circumstances
 circut->circuit
 circuts->circuits
@@ -4492,6 +4509,8 @@ combatibility->compatibility
 combatible->compatible
 combiantion->combination
 combinatins->combinations
+combinatio->combination
+combinatios->combinations
 combinaton->combination
 combinatorical->combinatorial
 combinbe->combined
@@ -5361,6 +5380,12 @@ conjuction->conjunction
 conjuctions->conjunctions
 conjuntion->conjunction
 conjuntions->conjunctions
+conlcude->conclude
+conlcuded->concluded
+conlcudes->concludes
+conlcuding->concluding
+conlcusion->conclusion
+conlcusions->conclusions
 conly->only
 conmnection->connection
 conmpress->compress
@@ -6264,9 +6289,16 @@ crace->grace, crate,
 craches->crashes, caches, crutches,
 craete->create
 craeting->creating, crating,
+crahed->crashed
+crahes->crashes
+crahs->crash, crass,
 crahses->crashes
+crashaes->crashes
+crasheed->crashed
+crashees->crashes
 crasher->crash, disabled because it denotes something that crashes
 crashers->crashes, disabled because it denotes things that crash
+crashess->crashes
 crashs->crashes
 crated->created, crated,
 creaed->created
@@ -9426,7 +9458,9 @@ examin->examine, examining,
 examinated->examined
 examing->examining
 examinining->examining
+examles->examples
 exampel->example
+exampeles->examples
 exampels->examples
 exampt->exempt
 exand->expand
@@ -9935,6 +9969,7 @@ eyasr->years, eyas,
 eyt->yet
 ezdrop->eavesdrop
 facedrwaing->facedrawing, face drawing,
+faceis->faces, face is,
 faciliate->facilitate
 faciliated->facilitated
 faciliates->facilitates
@@ -13062,6 +13097,9 @@ intreeguing->intriguing
 intreface->interface
 intregral->integral
 intrerrupt->interrupt
+intresst->interest
+intressted->interested
+intressting->interesting
 intrest->interest, insert,
 intrested->interested
 intresting->interesting
@@ -13130,6 +13168,8 @@ inviation->invitation
 invididual->individual
 invidual->individual
 invidually->individually
+invisble->invisible
+invisblity->invisibility
 invisiable->invisible
 invisibile->invisible
 invisivble->invisible
@@ -13507,9 +13547,12 @@ lenghthy->lengthy
 lenghtly->lengthy
 lenghts->lengths
 lenghty->lengthy
+lengt->length
+lengten->lengthen
 lengtext->longtext
 lengthes->lengths
 lengthh->length
+lengts->lengths
 leniant->lenient
 leninent->lenient
 lentgh->length
@@ -23878,6 +23921,10 @@ verticle->vertical
 verticlealign->verticalalign
 vertiece->vertex
 vertieces->vertices
+vertifiable->verifiable
+vertification->verification
+vertifications->verifications
+vertify->verify
 vertikal->vertical
 vertix->vertex
 vertixes->vertices
@@ -23938,7 +23985,9 @@ virutals->virtuals
 visability->visibility
 visable->visible
 visably->visibly
+visble->visible
 visblie->visible
+visbly->visibly
 vise->vice, vise,
 visiable->visible
 visiably->visibly
