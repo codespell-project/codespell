@@ -369,6 +369,7 @@ accumlating->accumulating
 accumlator->accumulator
 accummulating->accumulating
 accummulators->accumulators
+accumualte->accumulate
 accumualtion->accumulation
 accupied->occupied
 accupts->accepts
@@ -1550,6 +1551,7 @@ anomolous->anomalous
 anomoly->anomaly
 anonimity->anonymity
 anononymous->anonymous
+anonther->another
 anonymouse->anonymous
 anonyms->anonymous
 anonymus->anonymous
@@ -4174,6 +4176,10 @@ circumferencial->circumferential
 circumsicion->circumcision
 circumstancial->circumstantial
 circumstansial->circumstantial
+circumstnce->circumstance
+circumstnces->circumstances
+circumstncial->circumstantial
+circumstntial->circumstantial
 circumvernt->circumvent
 circunstance->circumstance
 circunstances->circumstances
@@ -5288,6 +5294,7 @@ confiugure->configure
 conflictd->conflicts, conflicted,
 conflictin->conflicting
 conflift->conflict
+conflit->conflict
 confoguration->configuration
 confort->comfort
 confortable->comfortable
@@ -5402,12 +5409,14 @@ connectino->connection
 connectinos->connections
 connectioms->connections
 connectionas->connections
+connecton->connection, connector,
 connectted->connected
 connecttion->connection
 conneection->connection
 conneiction->connection
 connektors->connectors
 connetced->connected
+connetcion->connection
 Conneticut->Connecticut
 connetion->connection
 connetor->connector
@@ -6472,6 +6481,7 @@ custumised->customised
 custumized->customized
 cutom->custom
 cuurently->currently
+cvignore->cvsignore
 cxan->cyan
 cycic->cyclic
 cyclinder->cylinder
@@ -7730,6 +7740,7 @@ differntiates->differentiates
 differntiating->differentiating
 differntly->differently
 differnty->different, differently,
+differred->differed
 differrence->difference
 differrent->different
 diffferent->different
@@ -9517,6 +9528,7 @@ excisted->existed
 excisting->existing
 excitment->excitement
 exclamantion->exclamation
+excludde->exclude
 excludind->excluding
 exclusiv->exclusive
 excluslvely->exclusively
@@ -10143,12 +10155,14 @@ fileshystems->filesystems
 filesname->filename, filenames,
 filesnames->filenames
 filess->files
+filesstem->filesystem
 filessytem->filesystem
 filessytems->filesystems
 fileststem->filesystem
 filesysems->filesystems
 filesysthem->filesystem
 filesysthems->filesystems
+filesystmes->filesystems
 filesystyem->filesystem
 filesystyems->filesystems
 filesytem->filesystem
@@ -12347,6 +12361,7 @@ infilitrate->infiltrate
 infilitrated->infiltrated
 infilitration->infiltration
 infinately->infinitely
+infininte->infinite
 infinit->infinite
 infinitly->infinitely
 infinte->infinite
@@ -12645,6 +12660,7 @@ insensistive->insensitive
 insensistively->insensitively
 insensitivy->insensitivity
 insensitve->insensitive
+insenstive->insensitive
 insenstively->insensitively
 insepection->inspection
 inseperable->inseparable
@@ -14603,6 +14619,7 @@ mostlky->mostly
 mosture->moisture
 mosty->mostly
 mot->not
+motation->notation, rotation, motivation,
 motiviated->motivated
 motiviation->motivation
 motoroloa->motorola
@@ -14636,6 +14653,7 @@ movemnet->movement
 movemnets->movements
 movemnt->movement
 movemnts->movements
+movied->moved, movie,
 movment->movement
 mozila->Mozilla
 mozzilla->mozilla
@@ -15399,6 +15417,8 @@ ocassionaly->occasionally
 ocassioned->occasioned
 ocassions->occasions
 occaison->occasion
+occasinal->occasional
+occasinally->occasionally
 occasionaly->occasionally
 occassion->occasion
 occassional->occasional
@@ -15524,6 +15544,7 @@ omiting->omitting
 omitt->omit
 omlette->omelette
 ommision->omission
+ommission->omission
 ommit->omit
 ommited->omitted
 ommiting->omitting
@@ -16278,6 +16299,7 @@ pathnme->pathname
 patial->spatial
 paticular->particular
 paticularly->particularly
+patition->partition
 patren->patron, pattern,
 patrens->patron, patterns,
 patrent->parent, patent, patron,
@@ -16915,6 +16937,7 @@ pounts->points
 poverful->powerful
 poweful->powerful
 powerfull->powerful
+powerppc->powerpc
 ppolygons->polygons
 ppublisher->publisher
 praameter->parameter
@@ -17155,6 +17178,7 @@ presisting->persisting
 presistion->precision
 presists->persists
 presitgious->prestigious
+presmissions->permissions
 prespective->perspective
 presreved->preserved
 presse->pressed, press,
@@ -18506,6 +18530,7 @@ refences->references
 refenence->reference
 refenrenced->referenced
 referal->referral
+referant->referent
 refere->refer, referee,
 referebces->references
 referece->reference
@@ -20583,6 +20608,7 @@ sintakts->syntax
 sintax->syntax
 Sionist->Zionist
 Sionists->Zionists
+sise->size, sisal,
 sitation->situation
 sitations->situations
 sitaution->situation
@@ -20623,11 +20649,14 @@ slected->selected
 slecting->selecting
 slection->selection
 sleeped->slept
+sleepp->sleep
 slient->silent
 sliently->silently
 slighlty->slightly
 slighly->slightly
 slighty->slightly
+slignt->slight
+sligntly->slightly
 sligth->slight
 sligthly->slightly
 sligtly->slightly
@@ -20880,6 +20909,7 @@ specifyied->specified
 specifyig->specifying
 specifyinhg->specifying
 speciied->specified
+speciifed->specified
 specilized->specialized
 speciman->specimen
 specivied->specified
@@ -21563,6 +21593,7 @@ sumary->summary
 sumbitted->submitted
 sumed-up->summed-up
 summay->summary
+summerised->summarised
 summerized->summarized
 summersalt->somersault
 sumodules->submodules
@@ -22442,6 +22473,7 @@ timetamps->timestamps
 timmestamp->timestamp
 timming->timing
 timne->time
+timoeut->timeout
 timout->timeout
 timtout->timeout
 tinterrupts->interrupts
@@ -23073,6 +23105,7 @@ unconsistent->inconsistent
 uncontitutional->unconstitutional
 uncontrolable->uncontrollable
 unconvential->unconventional
+uncorectly->incorrectly
 uncorelated->uncorrelated
 uncorrect->incorrect
 uncorrectly->incorrectly
@@ -23142,6 +23175,7 @@ unexepected->unexpected
 unexepectedly->unexpectedly
 unexpacted->unexpected
 unexpcted->unexpected
+unexpecetd->unexpected
 unexpect->unexpected
 unexpectd->unexpected
 unexpectdly->unexpectedly
@@ -23185,6 +23219,7 @@ unifrom->uniform
 unifromed->uniformed
 unifromity->uniformity
 unifroms->uniforms
+unigned->unsigned
 unihabited->uninhabited
 unilateraly->unilaterally
 unilatreal->unilateral
@@ -23454,6 +23489,7 @@ unstaller->installer, uninstaller,
 unstalles->installs, uninstalls,
 unstalling->installing, uninstalling,
 unstalls->installs, uninstalls,
+unsuable->unusable
 unsual->unusual
 unsubscibe->unsubscribe
 unsubscibed->unsubscribed
@@ -23514,7 +23550,6 @@ ununsed->unused
 ununsual->unusual
 unusal->unusual
 unusally->unusually
-unuseable->unusable
 unuseful->useless
 unusre->unsure
 unusuable->unusable
@@ -23626,7 +23661,6 @@ usal->usual
 usally->usually
 uscaled->unscaled
 useability->usability
-useable->usable
 useage->usage
 usebility->usability
 useble->usable
@@ -23860,6 +23894,7 @@ verrical->vertical
 verry->very
 vershin->version
 versin->version
+versio->version
 versioed->versioned
 versioing->versioning
 versiom->version
@@ -24312,6 +24347,7 @@ withinn->within
 withion->within
 witho->with
 withold->withhold
+withou->without
 withoud->without
 withoug->without
 withough->without
