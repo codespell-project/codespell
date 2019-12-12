@@ -10,6 +10,8 @@ aaggregation->aggregation
 aanother->another
 aapply->apply
 aare->are
+aautomatic->automatic
+aautomatically->automatically
 abailable->available
 abanden->abandon
 abandonded->abandoned
@@ -385,6 +387,7 @@ accuray->accuracy, actuary,
 accurring->occurring
 accurs->accurse, occurs,
 accussed->accused
+acdept->accept, adept,
 acditionally->additionally
 acecess->access
 acedemic->academic
@@ -1152,7 +1155,13 @@ aliase->aliases, alias,
 aliasses->aliases
 alientating->alienating
 alighed->aligned
+alighned->aligned
 alighnment->alignment
+aligin->align
+aligined->aligned
+aligining->aligning
+aliginment->alignment
+aligins->aligns
 aligment->alignment
 aligments->alignments
 alignation->alignment
@@ -1434,6 +1443,7 @@ amung->among
 amunition->ammunition
 amunt->amount
 analagous->analogous
+analagus->analogous
 analaog->analog
 analgous->analogous
 analig->analog
@@ -1454,6 +1464,7 @@ analizing->analyzing
 analogeous->analogous
 analoguous->analogous
 analoguously->analogously
+analogus->analogous
 analsyis->analysis
 analyis->analysis
 analysator->analyser
@@ -2029,6 +2040,7 @@ arithemetic->arithmetic
 arithemtic->arithmetic
 arithmatic->arithmetic
 arithmentic->arithmetic
+arithmetc->arithmetic
 arithmethic->arithmetic
 arithmetics->arithmetic, arithmetics,
 arithmitic->arithmetic
@@ -3239,8 +3251,12 @@ bostom->boston, bottom,
 bothe->both
 boths->both
 botifies->notifies
+bottlenck->bottleneck
+bottlencks->bottlenecks
 bottlenect->bottleneck
+bottlenects->bottlenecks
 bottlneck->bottleneck
+bottlnecks->bottlenecks
 bottomborde->bottomborder
 bottome->bottom
 botton->bottom, button,
@@ -3796,6 +3812,10 @@ catched->caught
 catchi->catch
 catchs->catches
 categorie->category, categories,
+cateogrical->categorical
+cateogrically->categorically
+cateogries->categories
+cateogry->category
 catepillar->caterpillar
 catepillars->caterpillars
 catergorize->categorize
@@ -3804,6 +3824,9 @@ caterpilar->caterpillar
 caterpilars->caterpillars
 caterpiller->caterpillar
 caterpillers->caterpillars
+catgorical->categorical
+catgorically->categorically
+catgories->categories
 catgory->category
 cathlic->catholic
 catholocism->catholicism
@@ -3848,6 +3871,8 @@ cecked->checked
 cecker->checker
 cecking->checking
 cecks->checks
+cedential->credential
+cedentials->credentials
 cehck->check
 cehcked->checked
 cehcker->checker
@@ -4284,6 +4309,7 @@ cleaing->cleaning
 cleancacne->cleancache
 cleaness->cleanness
 cleanning->cleaning
+cleannup->cleanup
 cleanpu->cleanup
 cleanpus->cleanups
 cleantup->cleanup
@@ -4418,7 +4444,11 @@ coeficents->coefficients
 coeficient->coefficient
 coeficients->coefficients
 coelesce->coalesce
+coercable->coercible
+coerceion->coercion
 coersion->coercion
+coexinst->coexist
+coexinstence->coexistence
 coexistance->coexistence
 coexsiting->coexisting
 cofeee->coffee
@@ -4530,6 +4560,8 @@ comapletion->completion
 comapnies->companies
 comapny->company
 comapre->compare
+comapring->comparing
+comaprison->comparison
 comaptible->compatible
 comarators->comparators
 comback->comeback
@@ -4538,6 +4570,9 @@ combanations->combinations
 combatibility->compatibility
 combatible->compatible
 combiantion->combination
+combinate->combine
+combinateion->combination
+combinateions->combinations
 combinatins->combinations
 combinatio->combination
 combinatios->combinations
@@ -5103,6 +5138,11 @@ concatonating->concatenating
 conceed->concede
 concensors->consensus
 concensus->consensus
+concentate->concentrate
+concentated->concentrated
+concentates->concentrates
+concentating->concentrating
+concentation->concentration
 concentic->concentric
 concentraze->concentrate
 concered->concerned
@@ -5411,6 +5451,7 @@ conjonction->conjunction
 conjonctive->conjunctive
 conjuction->conjunction
 conjuctions->conjunctions
+conjuncion->conjunction
 conjuntion->conjunction
 conjuntions->conjunctions
 conlcude->conclude
@@ -5537,6 +5578,7 @@ consired->conspired, considered,
 consisant->consistent
 consisent->consistent
 consisently->consistently
+consisntency->consistency
 consistancy->consistency
 consistant->consistent
 consistantly->consistently
@@ -5571,6 +5613,8 @@ consrtucted->constructed
 consrtuctor->constructor
 consrtuctors->constructors
 consrtucts->constructs
+consruction->construction
+consructions->constructions
 consructor->constructor
 consructors->constructors
 constain->constrain, contain,
@@ -5694,6 +5738,7 @@ containg->containing
 containging->containing
 containig->containing
 containings->containing
+containining->containing
 containint->containing
 containn->contain
 containner->container
@@ -6313,6 +6358,8 @@ couterpart->counterpart
 couting->counting
 coutner->counter
 coutners->counters
+couuld->could
+couuldn't->couldn't
 covarage->coverage
 covarege->coverage
 covention->convention
@@ -7423,6 +7470,8 @@ desription->description
 desriptions->descriptions
 desriptor->descriptor
 desriptors->descriptors
+desrire->desire
+desrired->desired
 desroyer->destroyer
 desscribe->describe
 desscribing->describing
@@ -7792,7 +7841,10 @@ differnty->different, differently,
 differred->differed
 differrence->difference
 differrent->different
+difffered->differed
 diffferent->different
+diffferently->differently
+difffers->differs
 difficault->difficult
 difficaulties->difficulties
 difficaulty->difficulty
@@ -7853,6 +7905,7 @@ dimenionsalities->dimensionalities
 dimenionsality->dimensionality
 dimenison->dimension
 dimensinoal->dimensional
+dimensionaility->dimensionality
 dimensonal->dimensional
 dimenstion->dimension
 dimenstions->dimensions
@@ -8271,6 +8324,7 @@ distibutions->distributions
 distiction->distinction
 distictly->distinctly
 distiguish->distinguish
+distiguished->distinguished
 distingish->distinguish
 distingished->distinguished
 distingishes->distinguishes
@@ -8468,6 +8522,8 @@ doorjam->doorjamb
 dorce->force
 dorced->forced
 dorceful->forceful
+dorder->order, disorder,
+dordered->ordered
 dorment->dormant
 dorp->drop
 dosen't->doesn't
@@ -8817,6 +8873,9 @@ elemant->element
 elemantary->elementary
 elememt->element
 elemen->element
+elemenent->element
+elemenental->elemental
+elemenents->elements
 elemenet->element
 elemenets->elements
 elemens->elements
@@ -9294,6 +9353,7 @@ equire->require, enquire, equine, esquire,
 equitorial->equatorial
 equivalance->equivalence
 equivalant->equivalent
+equivalentsly->equivalently, equivalency,
 equivelant->equivalent
 equivelent->equivalent
 equivelents->equivalents
@@ -9301,6 +9361,7 @@ equivilant->equivalent
 equivilent->equivalent
 equivivalent->equivalent
 equivlalent->equivalent
+equivlantly->equivalently
 equivqlent->equivalent
 equvalent->equivalent
 erally->orally, really,
@@ -10909,6 +10970,8 @@ getlael->getlabel
 getoe->ghetto
 getoject->getobject
 gettetx->gettext
+gettitem->getitem, get item,
+gettitems->getitems, get items,
 gettter->getter
 gettters->getters
 getttext->gettext
@@ -11038,6 +11101,7 @@ grometry->geometry
 grop->group, drop,
 gropu->group
 gropus->groups, gropes,
+groubpy->groupby
 groupd->grouped
 groupt->grouped
 grranted->granted
@@ -11543,6 +11607,8 @@ horphan->orphan
 horrable->horrible
 horrifing->horrifying
 horyzontally->horizontally
+horziontal->horizontal
+horziontally->horizontally
 horzontal->horizontal
 horzontally->horizontally
 hosited->hoisted
@@ -11696,6 +11762,8 @@ idices->indices
 idiosyncracies->idiosyncrasies
 idiosyncracy->idiosyncrasy
 idividual->individual
+idividually->individually
+idividuals->individuals
 iechart->piechart
 iff->if, disabled due to valid mathematical concept
 ifself->itself
@@ -12195,11 +12263,15 @@ incompleete->incomplete
 incomptable->incompatible
 incomptetent->incompetent
 incomptible->incompatible
+inconcistencies->inconsistencies
+inconcistency->inconsistency
+inconcistent->inconsistent
 inconditional->unconditional
 inconditionally->unconditionally
 inconisistent->inconsistent
 inconsisent->inconsistent
 inconsisently->inconsistently
+inconsisntency->inconsistency
 inconsistancy->inconsistency
 inconsistant->inconsistent
 inconsisten->inconsistent
@@ -12241,6 +12313,7 @@ incorportaed->incorporated
 incorported->incorporated
 incorprates->incorporates
 incorreclty->incorrectly
+incorrecly->incorrectly
 incorreect->incorrect
 incorreectly->incorrectly
 incorrent->incorrect
@@ -12388,6 +12461,9 @@ individualy->individually
 individuel->individual
 individuelly->individually
 individuely->individually
+indiviual->individual
+indiviually->individually
+indiviuals->individuals
 indivual->individual
 indivudual->individual
 indivudually->individually
@@ -13605,6 +13681,7 @@ leace->leave
 leack->leak
 leaded->led, lead, leaded,
 leagal->legal
+leagcy->legacy
 leage->league
 leanr->lean, learn, leaner,
 leapyear->leap year
