@@ -19829,6 +19829,7 @@ retquirement->requirement
 retquirements->requirements
 retquireseek->requireseek
 retquiresgpos->requiresgpos
+retquiresgsub->requiresgsub
 retransmited->retransmitted
 retransmition->retransmission
 retreivable->retrievable
