@@ -928,8 +928,13 @@ akkumulation->accumulation
 akkumulative->accumulative
 akkumulator->accumulator
 aks->ask
+aksed->asked
+akss->asks
 aktivate->activate
 aktivated->activated
+aktivates->activates
+aktivating->activating
+aktivation->activation
 akumulate->accumulate
 akumulated->accumulated
 akumulates->accumulates
@@ -3214,6 +3219,10 @@ blaim->blame
 blaimed->blamed
 blak->black, blank,
 blanace->balance
+blance->balance, glance,
+blanced->balanced, glanced,
+blances->balances, glances,
+blancing->balancing, glancing,
 blanck->blank, black,
 blancked->blanked
 blatent->blatant
@@ -11749,10 +11758,17 @@ happaned->happened
 happend->happened, happens,
 happended->happened
 happenned->happened
+happenning->happening
+happennings->happenings
+happenns->happens
 happing->happening, happen,
 happne->happen
 happnes->happens, happiness,
 happpen->happen
+happpened->happened
+happpening->happening
+happpenings->happenings
+happpens->happens
 harased->harassed
 harases->harasses
 harasment->harassment
@@ -13562,6 +13578,11 @@ interpeter->interpreter
 interpeters->interpreters
 interpeting->interpreting
 interpets->interprets
+interploate->interpolate
+interploated->interpolated
+interploates->interpolates
+interploatin->interpolating
+interploation->interpolation
 interpolaed->interpolated
 interpolaion->interpolation
 interpolaiton->interpolation
@@ -14217,6 +14238,9 @@ levl->level
 levle->level
 lexial->lexical
 leyer->layer
+leyered->layered
+leyering->layering
+leyers->layers
 liares->liars
 liasion->liaison
 liason->liaison
@@ -19985,6 +20009,11 @@ rentors->renters
 reoccurrence->recurrence
 reocurring->reoccurring, recurring,
 reoder->reorder
+reomvable->removable
+reomve->remove
+reomved->removed
+reomves->removes
+reomving->removing
 reonly->read-only
 reopended->reopened
 reoport->report
@@ -24230,11 +24259,17 @@ underlow->underflow
 underrrun->underrun
 undersacn->underscan
 understadn->understand
+understadnable->understandable
 understadning->understanding
+understadns->understands
 understoon->understood
 understoud->understood
 undertable->understandable, understand,
 undertand->understand
+undertandable->understandable
+undertanded->understood
+undertanding->understanding
+undertands->understands
 undertsand->understand
 undertsanding->understanding
 undertsands->understands
@@ -25590,6 +25625,7 @@ workbennches->workbenches
 workbnech->workbench
 workbneches->workbenches
 workboos->workbooks
+workd->worked
 workes->works
 workign->working
 workpsace->workspace
