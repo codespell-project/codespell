@@ -5297,6 +5297,7 @@ concatonated->concatenated
 concatonates->concatenates
 concatonating->concatenating
 conceed->concede
+conceedd->conceded
 concensors->consensus
 concensus->consensus
 concentate->concentrate
@@ -5706,15 +5707,21 @@ consdidered->considered
 consdiered->considered
 consdired->considered
 conseat->conceit
+conseated->conceited
 consective->consecutive
+consectively->consecutively
 consectutive->consecutive
 consecuitively->consecutively
 conseed->concede
+conseedd->conceded
+conseeded->conceded
+conseeds->concedes
 consenquently->consequently
 consentrate->concentrate
 consentrated->concentrated
 consentrates->concentrates
 consept->concept
+consepts->concepts
 consequentely->consequently
 consequentially->consequently
 consequentually->consequently
@@ -6731,12 +6738,17 @@ curiousities->curiosities
 curiousity's->curiosity's
 curiousity->curiosity
 currect->correct, current,
-currectly->correctly
+currected->corrected
+currecting->correcting
+currectly->correctly, currently,
+currects->corrects, currents,
 curremt->current
+curremts->currents
 currenlty->currently
 currenly->currently
 currennt->current
 currenntly->currently
+currennts->currents
 currentl->currently
 currentlly->currently
 currentry->currently
@@ -21523,13 +21535,14 @@ similiarity->similarity
 similiarly->similarly
 similiarty->similarity
 similiary->similarity
+simily->simile, smiley, similarly, simply,
 simlar->similar
 simlarlity->similarity
 simlarly->similarly
 simliar->similar
 simlicity->simplicity
 simlified->simplified
-simly->simply
+simly->simply, smiley, simile,
 simmetric->symmetric
 simmetrical->symmetrical
 simmetry->symmetry
