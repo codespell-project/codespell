@@ -547,6 +547,7 @@ actullay->actually
 actully->actually
 acturally->actually
 actusally->actually
+actzal->actual
 acual->actual
 acually->actually
 acuired->acquired
@@ -5537,8 +5538,15 @@ conrete->concrete
 conrol->control
 conroller->controller
 conrrol->control
+conrrupt->corrupt
+conrruptable->corruptible
+conrrupted->corrupted
+conrruptible->corruptible
 conrruption->corruption
+conrruptions->corruptions
+conrrupts->corrupts
 conrtib->contrib
+conrtibs->contribs
 consants->constants
 conscent->consent
 consciencious->conscientious
@@ -6266,9 +6274,11 @@ corrresponding->corresponding
 corrresponds->corresponds
 corrrupt->corrupt
 corrrupted->corrupted
+corrruption->corruption
 corrspond->correspond
 corrsponds->corresponds
 corrupeted->corrupted
+corruptable->corruptible
 corruptiuon->corruption
 cors-site->cross-site
 cors-sute->cross-site
@@ -6570,9 +6580,12 @@ currrent->current
 currrently->currently
 curruent->current
 currupt->corrupt
+curruptable->corruptible
 currupted->corrupted
+curruptible->corruptible
 curruption->corruption
 curruptions->corruptions
+currupts->corrupts
 currus->cirrus
 curser->cursor
 cursot->cursor
@@ -11755,6 +11768,7 @@ identidier->identifier
 identifaction->identification
 identifcation->identification
 identifeir->identifier
+identifeirs->identifiers
 identifer->identifier
 identifers->identifiers
 identifictaion->identification
@@ -12372,6 +12386,8 @@ incuding->including
 inculde->include
 incunabla->incunabula
 incure->incur
+incurruptable->incorruptible
+incurruptible->incorruptible
 incvalid->invalid
 indcates->indicates
 inddex->index
@@ -13074,7 +13090,12 @@ intereference->interference
 intereferences->interferences
 interelated->interrelated
 interelaved->interleaved
+interepret->interpret
+interepretation->interpretation
+interepretations->interpretations
 interepreted->interpreted
+interepreting->interpreting
+intereprets->interprets
 interept->intercept
 interesect->intersect
 interesected->intersected
@@ -14970,6 +14991,7 @@ myu->my
 nadly->badly
 nagivation->navigation
 naieve->naive
+namd->named, name,
 namemespace->namespace
 namepace->namespace
 namepsace->namespace
@@ -15908,6 +15930,7 @@ optionalliy->optionally
 optionallly->optionally
 optionaly->optionally
 optionel->optional
+optionial->optional
 optionn->option
 optionnal->optional
 optionnaly->optionally
@@ -19661,6 +19684,7 @@ respectivley->respectively
 respectivly->respectively
 respnse->response
 respoduce->reproduce
+responc->response, respond,
 responce->response
 responces->responses
 responde->respond, response, responds, responded, responder,
@@ -22649,6 +22673,7 @@ threedimenional->three-dimensional
 threedimenionsal->three-dimensional
 threee->three
 threhold->threshold
+threre->there, three,
 threrefore->therefore
 threshhold->threshold
 threshholds->thresholds
