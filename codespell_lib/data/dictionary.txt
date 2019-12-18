@@ -3324,6 +3324,8 @@ bre->be, brie,
 breakes->breaks
 breakthough->breakthrough
 breakthroughts->breakthroughs
+breakthruogh->breakthrough
+breakthruoghs->breakthroughs
 breal->break
 breef->brief, beef,
 breefly->briefly
@@ -10181,6 +10183,7 @@ fallhrough->fallthrough
 fallowed->followed, fallowed,
 fallowing->following, fallowing,
 fallows->follows, fallows,
+fallthruogh->fallthrough
 falltrough->fallthrough
 falt->fault
 falure->failure
@@ -16485,6 +16488,7 @@ passin->passing
 passiv->passive
 passowrd->password
 passthrought->passthrough
+passthruogh->passthrough
 passtime->pastime
 passtrough->passthrough
 passwrod->password
@@ -22617,6 +22621,7 @@ tho->though, to, thou, tho,
 thoe->those, though,
 thonic->chthonic
 thorugh->through, thorough,
+thoruoghly->thoroughly
 thorwn->thrown, thorn,
 thos->those, this,
 thoses->those
@@ -22674,6 +22679,9 @@ throwed->threw, thrown,
 throwgh->through
 thru->through, thru,
 thrue->through
+thruogh->through
+thruoghout->throughout
+thruoghput->throughput
 thruout->throughout
 ths->the, this,
 thses->these
