@@ -15171,7 +15171,7 @@ mutecies->mutexes
 muti->multi
 muticast->multicast
 mutices->mutexes
-mutiindex->multiindex, multi index,
+mutiindex->multi index, multi-index, multiindex,
 mutilcast->multicast
 mutiliated->mutilated
 mutimarked->multimarked
@@ -20407,8 +20407,8 @@ sate->state, sate,
 satelite->satellite
 satelites->satellites
 satelitte->satellite
-saterday->saturday
-saterdays->saturdays
+saterday->Saturday
+saterdays->Saturdays
 satified->satisfied
 satifies->satisfies
 satify->satisfy
