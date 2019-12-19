@@ -20739,12 +20739,15 @@ shystemmemory->systemmemory, system memory,
 shystems->systems
 shystemwindow->systemwindow, system window,
 sibiling->sibling
+sicinct->succinct
 sicinctly->succinctly
 sicne->since
 sidde->side
 sideral->sidereal
 siduction->seduction
-siez->size
+sie->size, sigh,
+sies->size, sighs,
+siez->size, seize,
 sieze->seize, size,
 siezed->seized, sized,
 siezing->seizing, sizing,
@@ -20752,6 +20755,7 @@ siezure->seizure
 siezures->seizures
 sigal->signal, sigil,
 sigaled->signaled
+sigals->signals, sigils,
 sigen->sign
 sightly->slightly
 sigificance->significance
@@ -20759,9 +20763,11 @@ siginificant->significant
 siginificantly->significantly
 siginify->signify
 sigit->digit
-sigle->single
+sigits->digits
+sigle->single, sigil,
+sigles->singles, sigils,
 sigleton->singleton
-signabl->signal
+signabl->signable, signal,
 signales->signals
 signall->signal
 signatue->signature
@@ -22925,6 +22931,7 @@ tranfering->transferring
 tranferred->transferred
 tranfers->transfers
 tranform->transform
+tranformable->transformable
 tranformation->transformation
 tranformations->transformations
 tranformative->transformative
