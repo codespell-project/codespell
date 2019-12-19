@@ -1768,6 +1768,7 @@ applyes->applies
 applyied->applied
 applys->applies
 applyting->applying
+appned->append
 appologies->apologies
 appology->apology
 appon->upon
@@ -3773,6 +3774,7 @@ carniverous->carnivorous
 carreer->career
 carreid->carried
 carrers->careers
+carriadge->carriage
 Carribbean->Caribbean
 Carribean->Caribbean
 carridge->carriage, cartridge,
@@ -4587,6 +4589,8 @@ combanations->combinations
 combatibility->compatibility
 combatible->compatible
 combiantion->combination
+combiation->combination
+combiations->combinations
 combinate->combine
 combinateion->combination
 combinateions->combinations
@@ -4646,6 +4650,7 @@ comlete->complete
 comleted->completed
 comletely->completely
 comletion->completion
+comlex->complex
 comlexity->complexity
 comma-separeted->comma-separated
 commad->command
@@ -7030,6 +7035,7 @@ defintition->definition
 defintivly->definitively
 defition->definition
 defitions->definitions
+deflaut->default
 defninition->definition
 defninitions->definitions
 defnitions->definitions
@@ -7297,6 +7303,7 @@ depricating->deprecating
 dequed->dequeued
 derageable->dirigible
 deram->dram, dream,
+derective->directive
 derectory->directory
 derefence->dereference
 derefenced->dereferenced
@@ -7587,6 +7594,7 @@ determenant->determinant
 determenistic->deterministic
 determimnes->determines
 determin->determine
+determinated->determined
 determind->determined
 determinded->determined
 determinee->determine
@@ -8011,6 +8019,7 @@ directpries->directories
 directpry->directory
 directries->directories
 directrive->directive
+directrives->directives
 directrly->directly
 directroies->directories
 directrories->directories
@@ -8415,6 +8424,7 @@ ditance->distance
 ditinguishes->distinguishes
 ditributed->distributed
 ditribution->distribution
+divde->divide
 diversed->diverse, diverged,
 divertion->diversion
 divertions->diversions
@@ -9359,6 +9369,7 @@ eptier->emptier
 epties->empties
 epty->empty
 epxected->expected
+epxiressions->expressions
 epxlicit->explicit
 eqaul->equal
 eqaulity->equality
@@ -9993,6 +10004,7 @@ expolde->explode
 exponentation->exponentiation
 exponentialy->exponentially
 exponetial->exponential
+exporession->expression
 exportet->exported, exporter,
 exppressed->expressed
 expresion->expression
@@ -10961,6 +10973,7 @@ geoemtry->geometry
 geogcountry->geocountry
 geographich->geographic
 geographicial->geographical
+geoio->geoip
 geomery->geometry
 geometites->geometries
 geometrc->geometric, geometry,
@@ -10995,6 +11008,7 @@ gess->guess
 get's->gets
 get;s->gets
 getfastproperyvalue->getfastpropertyvalue
+getimezone->gettimezone
 geting->getting
 getlael->getlabel
 getoe->ghetto
@@ -11125,6 +11139,7 @@ grephic->graphic
 grestest->greatest
 greysacles->greyscales
 gridles->griddles
+grigorian->Gregorian
 grobal->global
 grobally->globally
 grometry->geometry
@@ -11312,6 +11327,7 @@ hach->hatch, hack, hash,
 hachish->hackish
 haders->headers, shaders, haters,
 hadling->handling
+hadnler->handler
 haeder->header
 haemorrage->haemorrhage
 haev->have, heave,
@@ -12716,6 +12732,7 @@ initializs->initialize, initializes,
 initialse->initialise, initialize,
 initialsed->initialised, initialized,
 initialses->initialises, initializes,
+initialsing->initialising
 initialy->initially
 initialyl->initially
 initialyse->initialise, initialize,
@@ -12733,6 +12750,8 @@ initialzes->initializes
 initialzing->initializing
 initiialise->initialise
 initiialize->initialize
+initilialised->initialised
+initilialized->initialized
 initiliase->initialise, initialize,
 initiliased->initialised, initialized,
 initiliases->initialises, initializes,
@@ -12772,6 +12791,7 @@ inlcude->include
 inlcuded->included
 inlcudes->includes
 inlcuding->including
+inlcusion->inclusion
 inlin->inline
 inlude->include
 inluded->included
@@ -13968,6 +13988,7 @@ logitude->longitude
 logoic->logic
 logrithm->logarithm
 logwritter->logwriter
+loign->login
 lokal->local
 lokale->locale
 lokaly->locally
@@ -14962,6 +14983,7 @@ mutablity->mutability
 mutbale->mutable
 mutch->much
 mutches->matches
+mutecies->mutexes
 muti->multi
 muticast->multicast
 mutices->mutexes
@@ -14974,6 +14996,7 @@ mutiple->multiple
 mutiply->multiply
 mutli->multi
 mutli-threaded->multi-threaded
+mutlipart->multipart
 mutliple->multiple
 mutlipler->multiplier
 mutliplicites->multiplicities
@@ -15378,7 +15401,7 @@ nmae->name
 nned->need
 nnumber->number
 no-overide->no-override
-nodel->model
+nodel->model, nodal,
 nodels->models
 nodess->nodes
 nodulated->modulated
@@ -16175,6 +16198,7 @@ overlflow->overflow
 overlodaded->overloaded
 overloded->overloaded
 overlodes->overloads
+overlow->overflow
 overreidden->overridden
 overreide->override
 overreides->overrides
@@ -17516,6 +17540,7 @@ privelleges->privileges
 priviate->private
 privide->provide
 privided->provided
+privides->provides
 prividing->providing
 priview->preview
 privilage->privilege
@@ -18828,6 +18853,7 @@ referr->refer
 referrence->reference
 referrenced->referenced
 referrences->references
+referreres->referrers
 referres->refers
 referrs->refers
 refertence->reference
@@ -20874,6 +20900,7 @@ sintax->syntax
 Sionist->Zionist
 Sionists->Zionists
 sise->size, sisal,
+sisnce->since
 sitation->situation
 sitations->situations
 sitaution->situation
@@ -20949,6 +20976,7 @@ smooting->smoothing
 smouth->smooth
 smouthness->smoothness
 smove->move
+smpt->SMTP, SMTPE,
 snaped->snapped
 snaphot->snapshot
 snaphsot->snapshot
@@ -22403,6 +22431,7 @@ telphony->telephony
 temerature->temperature
 teminated->terminated
 teminating->terminating
+temination->termination
 temlate->template
 temmporary->temporary, temporarily,
 temorarily->temporarily
@@ -24470,6 +24499,7 @@ waranty->warranty
 wardobe->wardrobe
 waring->warning
 warinigs->warnings
+warinings->warnings
 warks->works
 warlking->walking
 warnig->warning
