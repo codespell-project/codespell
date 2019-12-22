@@ -1743,6 +1743,7 @@ anbd->and
 ancapsulate->encapsulate
 ancesetor->ancestor
 ancesetors->ancestors
+ancester->ancestor
 ancestore->ancestor
 ancestores->ancestors
 ancestory->ancestry
