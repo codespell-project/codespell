@@ -9273,6 +9273,11 @@ entitlied->entitled
 entitys->entities
 entoties->entities
 entoty->entity
+entquire->enquire, inquire,
+entquired->enquired, inquired,
+entquires->enquires, inquires,
+entquiries->enquiries, inquiries,
+entquiry->enquiry, inquiry,
 entrepeneur->entrepreneur
 entrepeneurs->entrepreneurs
 entrie->entry, entries,
@@ -13317,6 +13322,11 @@ intot->into
 intpreter->interpreter
 intput->input
 intputs->inputs
+intquire->inquire, enquire,
+intquired->inquired, enquired,
+intquires->inquires, enquires,
+intquiries->inquiries, enquiries,
+intquiry->inquiry, enquiry,
 intrduced->introduced
 intreeg->intrigue
 intreeged->intrigued
@@ -22428,6 +22438,8 @@ telelevision->television
 televsion->television
 telocom->telecom
 telphony->telephony
+temaplate->template
+temaplates->templates
 temerature->temperature
 teminated->terminated
 teminating->terminating
