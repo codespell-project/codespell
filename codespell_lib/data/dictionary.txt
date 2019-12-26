@@ -1529,6 +1529,7 @@ animaitor->animator
 animaitors->animators
 animatior->animator, animation,
 animaton->animation
+animatonic->animatronic
 animore->anymore
 aninate->animate
 anination->animation
@@ -3166,6 +3167,8 @@ bitwise-orring->bitwise-oring
 bizare->bizarre
 bizarely->bizarrely
 bizzare->bizarre
+bject->object
+bjects->objects
 blackslashes->backslashes
 blaclist->blacklist
 blaim->blame
@@ -11682,6 +11685,12 @@ hovewer->however
 howerver->however
 howeverm->however
 howver->however
+hrlp->help
+hrlped->helped
+hrlper->helper
+hrlpers->helpers
+hrlping->helping
+hrlps->helps
 hrough->through
 hsa->has
 hsell->shell
@@ -14295,11 +14304,16 @@ mathematicaly->mathematically
 mathematican->mathematician
 mathematicas->mathematics
 mathes->matches
+mathetician->mathematician
 matheticians->mathematicians
 mathimatic->mathematic
 mathimatical->mathematical
+mathimatically->mathematically
+mathimatician->mathematician
+mathimaticians->mathematicians
 mathimatics->mathematics
 mathing->matching
+mathmatical->mathematical
 mathmatically->mathematically
 mathmatician->mathematician
 mathmaticians->mathematicians
@@ -14821,12 +14835,19 @@ moil->soil, mohel,
 moint->mount
 moleclues->molecules
 momement->moment
+momementarily->momentarily
+momements->moments
 momemtarily->momentarily
 momemtary->momentary
 momemtn->moment
 momentarely->momentarily
 momento->memento
 momery->memory
+momoment->moment
+momomentarily->momentarily
+momomento->memento, moment,
+momomentos->mementos, moments,
+momoments->moments
 mone->mono, money,
 monestaries->monasteries
 monestary->monastery, monetary,
@@ -16054,6 +16075,10 @@ origially->originally
 origianal->original
 origianally->originally
 origianaly->originally
+origigin->origin
+origiginal->original
+origiginally->originally
+origiginals->originals
 originall->original, originally,
 originaly->originally
 originial->original
@@ -20227,7 +20252,11 @@ scatches->catches, scratches, sketches,
 scatching->catching, scratching, sketching,
 scatchs->catches, scratches, sketches,
 scatchss->catches, scratches, sketches,
+scavange->scavenge
 scavanged->scavenged
+scavanger->scavenger
+scavangers->scavengers
+scavanges->scavenges
 scecified->specified
 sceen->scene, seen, screen, scheme,
 sceens->scenes, screens, schemes,
@@ -20750,12 +20779,15 @@ shystemmemory->systemmemory, system memory,
 shystems->systems
 shystemwindow->systemwindow, system window,
 sibiling->sibling
+sicinct->succinct
 sicinctly->succinctly
 sicne->since
 sidde->side
 sideral->sidereal
 siduction->seduction
-siez->size
+sie->size, sigh,
+sies->size, sighs,
+siez->size, seize,
 sieze->seize, size,
 siezed->seized, sized,
 siezing->seizing, sizing,
@@ -20763,6 +20795,7 @@ siezure->seizure
 siezures->seizures
 sigal->signal, sigil,
 sigaled->signaled
+sigals->signals, sigils,
 sigen->sign
 sightly->slightly
 sigificance->significance
@@ -20770,9 +20803,11 @@ siginificant->significant
 siginificantly->significantly
 siginify->signify
 sigit->digit
-sigle->single
+sigits->digits
+sigle->single, sigil,
+sigles->singles, sigils,
 sigleton->singleton
-signabl->signal
+signabl->signable, signal,
 signales->signals
 signall->signal
 signatue->signature
@@ -22938,6 +22973,7 @@ tranfering->transferring
 tranferred->transferred
 tranfers->transfers
 tranform->transform
+tranformable->transformable
 tranformation->transformation
 tranformations->transformations
 tranformative->transformative
