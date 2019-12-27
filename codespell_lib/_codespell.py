@@ -347,19 +347,13 @@ def build_dict(filename, misspellings, ignore_words):
 def is_hidden(filename, check_hidden):
     bfilename = os.path.basename(filename)
 
-    if bfilename != '' and bfilename != '.' and bfilename != '..' \
-                    and (not check_hidden and bfilename[0] == '.'):
-        return True
-
-    return False
+    return (bfilename not in ('', '.', '..')
+            and (not check_hidden and bfilename[0] == '.'))
 
 
 def is_text_file(filename):
     with open(filename, mode='rb') as f:
-        s = f.read(1024)
-    if b'\x00' in s:
-        return False
-    return True
+        return b'\x00' not in f.read()
 
 
 def fix_case(word, fixword):
