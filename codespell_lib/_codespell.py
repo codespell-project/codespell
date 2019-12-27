@@ -347,8 +347,8 @@ def build_dict(filename, misspellings, ignore_words):
 def is_hidden(filename, check_hidden):
     bfilename = os.path.basename(filename)
 
-    return (bfilename not in ('', '.', '..') and
-            (not check_hidden and bfilename[0] == '.'))
+    return bfilename not in ('', '.', '..') and \
+           (not check_hidden and bfilename[0] == '.')
 
 
 def is_text_file(filename):
