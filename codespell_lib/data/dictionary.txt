@@ -17364,9 +17364,9 @@ post-procesing->post-processing
 postcondtion->postcondition
 postcondtions->postconditions
 Postdam->Potsdam
-postgress->postgresql
+postgress->PostgreSQL
 postgressql->PostgreSQL
-postgrsql->postgresql
+postgrsql->PostgreSQL
 posthomous->posthumous
 postiional->positional
 postiive->positive
@@ -20283,10 +20283,16 @@ rouine->routine
 rouines->routines
 round-robbin->round-robin
 roundign->rounding
-roundtriped->roundtripped
+roundtriped->roundtripped, round-tripped, round tripped,
+roundtriping->roundtripping, round-tripping, round tripping,
+roundtripp->roundtrip
 rountine->routine
 rountines->routines
-rountrip->roundtrip
+rountrip->roundtrip, round-trip, round trip,
+rountriped->roundtripped, round-tripped, round tripped,
+rountriping->roundtripping, round-tripping, round tripping,
+rountripped->roundtripped, round-tripped, round tripped,
+rountripping->roundtripping, round-tripping, round tripping,
 routet->routed
 routins->routines
 rovide->provide
