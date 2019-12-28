@@ -11033,9 +11033,9 @@ getttext->gettext
 getttime->gettime
 getttimeofday->gettimeofday
 gettting->getting
-ggogle->goggle, google,
-ggogled->googled
-ggogles->goggles, googles,
+ggogle->goggle, Google,
+ggogled->Googled
+ggogles->goggles, Googles,
 Ghandi->Gandhi
 ghostscritp->ghostscript
 ghraphic->graphic
@@ -14275,7 +14275,7 @@ massmedia->mass media
 masster->master
 masteer->master
 masterbation->masturbation
-mata->meta
+mata->meta, mater,
 mata-data->meta-data
 matadata->metadata
 matainer->maintainer
