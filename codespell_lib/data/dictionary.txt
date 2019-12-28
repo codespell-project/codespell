@@ -20434,8 +20434,8 @@ sattelite->satellite
 sattelites->satellites
 sattellite->satellite
 sattellites->satellites
-satuaday->saturday
-satuadays->saturdays
+satuaday->Saturday
+satuadays->Saturdays
 saught->sought
 sav->save
 savable->saveable
@@ -23248,8 +23248,8 @@ tranport->transport
 transacion->transaction
 transaction-spacific->transaction-specific
 transactoin->transaction
-transaition->translation, transition,
-transaitions->translations, transitions,
+transaition->translation, transition, transaction,
+transaitions->translations, transitions, transactions,
 transalt->translate
 transalte->translate
 transalted->translated
