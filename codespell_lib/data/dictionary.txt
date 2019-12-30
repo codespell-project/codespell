@@ -6211,14 +6211,22 @@ coppermines->coppermine
 coppied->copied
 coppy->copy, choppy,
 copright->copyright
+coprighted->copyrighted
+coprights->copyrights
 coprright->copyright
+coprrighted->copyrighted
+coprrights->copyrights
 copstruction->construction
 copuright->copyright
+copurighted->copyrighted
+copurights->copyrights
 coputer->computer
 copver->cover
 copyable->copyable, copiable, disabled because of name clash in C++
 copyed->copied
 copyeight->copyright
+copyeighted->copyrighted
+copyeights->copyrights
 copyied->copied
 copyrigth->copyright
 copyrigthed->copyrighted
@@ -6226,8 +6234,13 @@ copyrigths->copyrights
 copyritght->copyright
 copyritghted->copyrighted
 copyritghts->copyrights
+copyrught->copyright
+copyrughted->copyrighted
+copyrughts->copyrights
 copys->copies
 copytight->copyright
+copytighted->copyrighted
+copytights->copyrights
 copyting->copying
 copywrite->copyright
 corale->chorale
@@ -6471,7 +6484,11 @@ coverting->converting
 covnert->convert
 coyp->copy
 coypright->copyright
+coyprighted->copyrighted
+coyprights->copyrights
 coyright->copyright
+coyrighted->copyrighted
+coyrights->copyrights
 cpation->caption
 cpoy->coy, copy,
 crace->grace, crate,
