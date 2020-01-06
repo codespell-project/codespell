@@ -4434,11 +4434,70 @@ cnter->center
 co-incided->coincided
 co-ordinate->coordinate
 co-ordinates->coordinates
+coalace->coalesce
+coalacece->coalesce, coalescence,
+coalaced->coalesced
+coalacence->coalescence
+coalacing->coalescing
+coalaesce->coalesce
+coalaesced->coalesced
+coalaescence->coalescence
+coalaescing->coalescing
+coalascece->coalescence
+coalascence->coalescence
+coalase->coalesce
+coalasece->coalescence
+coalased->coalesced
+coalasence->coalescence
+coalases->coalesces
+coalasing->coalescing
+coalcece->coalescence
+coalcence->coalescence
 coalescsing->coalescing
 coalesed->coalesced
 coalesence->coalescence
 coalessing->coalescing
+coallate->collate
+coallates->collates
+coallating->collating
+coallece->coalesce
+coalleced->coalesced
+coallecence->coalescence
+coalleces->coalesces
+coallecing->coalescing
+coallee->coalesce
+coalleed->coalesced
+coalleence->coalescence
+coallees->coalesces
+coalleing->coalescing
+coallesce->coalesce
 coallesced->coalesced
+coallesceing->coalescing
+coallescence->coalescence
+coallesces->coalesces
+coallescing->coalescing
+coallese->coalesce
+coallesed->coalesced
+coallesence->coalescence
+coalleses->coalesces
+coallesing->coalescing
+coallesse->coalesce
+coallessed->coalesced
+coallessence->coalescence
+coallesses->coalesces
+coallessing->coalescing
+coallision->collision
+coallisions->collisions
+coallition->coalition, collation,
+coalsce->coalesce
+coalscece->coalescence
+coalsced->coalesced
+coalscence->coalescence
+coalscing->coalescing
+coalsece->coalescence
+coalseced->coalesced
+coalsecense->coalescence
+coalsence->coalescence
 coaslescing->coalescing
 cobining->combining
 cobvers->covers
@@ -6823,12 +6882,34 @@ declaratinos->declarations
 declaratiom->declaration
 declaraton->declaration
 declaratons->declarations
+declard->declared
+declarded->declared
 declaritive->declarative
 declaritively->declaratively
+declarnig->declaring
+declars->declares, declared,
+declartated->declared
+declartation->declaration
+declartations->declarations
+declartative->declarative
+declartator->declarator
+declartators->declarators
+declarted->declared
 declartion->declaration
+declartions->declarations
+declartiuon->declaration
+declartiuons->declarations
+declartiuve->declarative
+declartive->declarative
+declartor->declarator
+declartors->declarators
 declataions->declarations
+declatation->declaration
+declatations->declarations
+declated->declared
 declation->declaration
 declations->declarations
+declatory->declaratory
 decleration->declaration
 declerations->declarations
 declration->declaration
@@ -10575,7 +10656,10 @@ fonction->function
 fonctional->functional
 fonctionalities->functionalities
 fonctioning->functioning
+fonctionnalies->functionalities
 fonctionnalities->functionalities
+fonctionnality->functionality
+fonctionnaly->functionally, functionality,
 fonctions->functions
 fonetic->phonetic
 fontain->fountain, contain,
@@ -13808,6 +13892,8 @@ lavels->levels
 layed->laid
 lazer->laser
 lazyness->laziness
+lcoal->local, coal,
+lcoally->locally
 lcoation->location
 lcuase->clause
 leaast->least
@@ -17422,6 +17508,7 @@ precumputed->precomputed
 precurser->precursor
 predecesor->predecessor
 predecesors->predecessors
+predeclarnig->predeclaring
 predefiend->predefined
 predefiened->predefined
 predefiined->predefined
@@ -18690,6 +18777,8 @@ recipiant->recipient
 recipiants->recipients
 recipie->recipe
 recipies->recipes
+reciprocoal->reciprocal
+reciprocoals->reciprocals
 recive->receive
 recived->received
 recivership->receivership
@@ -20456,10 +20545,18 @@ sectins->sections
 sectionis->sections, section is,
 sectionning->sectioning
 sectiont->sectioned, section,
+secue->secure
+secuely->securely
+secuity->security
 secund->second
+securly->securely
+securre->secure
+securrely->securely
+securrly->securely
 securtity->security
 securtiy->security
 securty->security
+securuity->security
 sedereal->sidereal
 seeem->seem
 seeen->seen
@@ -25061,4 +25158,6 @@ zombe->zombie
 zomebie->zombie
 zoon->zoom, zoon,
 zuser->user
+__cpluspus->__cplusplus
+__cpusplus->__cplusplus
 évaluate->evaluate
