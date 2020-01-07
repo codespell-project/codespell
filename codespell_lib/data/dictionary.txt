@@ -2751,6 +2751,8 @@ avaialbility->availability
 avaialble->available
 avaiblable->available
 avaible->available
+avaiiability->availability
+avaiiable->available
 avaiilable->available
 availaable->available
 availabable->available
@@ -3914,6 +3916,7 @@ cemetarey->cemetery
 cemetaries->cemeteries
 cemetary->cemetery
 cenario->scenario
+cenarios->scenarios
 cencter->center
 cencus->census
 cengter->center
@@ -20437,6 +20440,7 @@ sceens->scenes, screens, schemes,
 sceme->scheme, scene,
 scemes->schemes, scenes,
 scenarion->scenario
+scenarions->scenarios
 scenegraaph->scenegraph
 scenegraaphs->scenegraphs
 sceond->second
@@ -20481,6 +20485,8 @@ scipts->scripts, skips,
 scirpt->script
 scirpts->scripts
 sclar->scalar
+scneario->scenario
+scnearios->scenarios
 scoket->socket
 scoll->scroll
 scolling->scrolling
