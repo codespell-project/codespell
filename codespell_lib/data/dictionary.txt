@@ -14745,6 +14745,8 @@ milliseonds->milliseconds
 millitant->militant
 millitary->military
 millon->million
+millsecond->millisecond
+millseconds->milliseconds
 millsencond->millisecond
 millsenconds->milliseconds
 miltary->military
@@ -15049,6 +15051,7 @@ mot->not
 motation->notation, rotation, motivation,
 motiviated->motivated
 motiviation->motivation
+motononic->monotonic
 motoroloa->motorola
 moudle->module
 moue->mouse
@@ -15168,6 +15171,7 @@ mutecies->mutexes
 muti->multi
 muticast->multicast
 mutices->mutexes
+mutiindex->multi index, multi-index, multiindex,
 mutilcast->multicast
 mutiliated->mutilated
 mutimarked->multimarked
@@ -16017,8 +16021,11 @@ onyl->only
 oommits->commits
 opacy->opacity
 opague->opaque
+opbject->object
+opbjective->objective
 opbjects->objects
 opeartion->operation
+opeartions->operations
 opeation->operation
 opeations->operations
 opeing->opening
@@ -16783,6 +16790,10 @@ peice->piece
 peicemeal->piecemeal
 peices->pieces
 peicewise->piecewise
+peirod->period
+peirodical->periodical
+peirodicals->periodicals
+peirods->periods
 Peloponnes->Peloponnesus
 penalities->penalties
 penality->penalty
@@ -17035,6 +17046,8 @@ pionts->points
 piority->priority
 pitmap->pixmap, bitmap,
 pitty->pity
+pivott->pivot
+pivotting->pivoting
 pixelx->pixels, pixel,
 pixes->pixels
 placeemnt->placement
@@ -17351,9 +17364,11 @@ post-procesing->post-processing
 postcondtion->postcondition
 postcondtions->postconditions
 Postdam->Potsdam
-postgress->postgresql
+postgress->PostgreSQL
 postgressql->PostgreSQL
+postgrsql->PostgreSQL
 posthomous->posthumous
+postiional->positional
 postiive->positive
 postincremend->postincrement
 postion->position
@@ -17572,6 +17587,8 @@ premit->permit
 premits->permits
 Premonasterians->Premonstratensians
 premption->preemption
+premptive->preemptive
+premptively->preemptively
 preocupation->preoccupation
 preoperty->property
 prepair->prepare
@@ -17618,6 +17635,7 @@ presense->presence
 presentaion->presentation
 presentaions->presentations
 presernt->present
+preserrved->preserved
 preserv->preserve
 presetation->presentation
 preseve->preserve
@@ -18648,6 +18666,10 @@ reamde->README
 reamins->remains
 reampping->remapping, revamping,
 reander->render
+reanme->rename
+reanmed->renamed
+reanmes->renames
+reanming->renaming
 reaon->reason
 reaons->reasons
 reappeares->reappears
@@ -19153,7 +19175,10 @@ regluar->regular
 regon->region
 regorded->recorded
 regresion->regression
+regresssion->regression
 regrigerator->refrigerator
+regsion->region
+regsions->regions
 regsiter->register
 regsitered->registered
 regsitering->registering
@@ -19218,6 +19243,7 @@ reintepret->reinterpret
 reintepreted->reinterpreted
 reister->register
 reivison->revision
+rejplace->replace
 reknown->renown
 reknowned->renowned
 rekursed->recursed
@@ -19725,6 +19751,7 @@ represneted->represented
 represneting->representing
 represnets->represents
 represnt->represent
+represntation->representation
 represntative->representative
 represnted->represented
 represnts->represents
@@ -20098,6 +20125,7 @@ returming->returning
 returms->returns
 returnd->returned
 returnes->returns
+returnig->returning
 returnn->return
 returnning->returning
 returs->returns
@@ -20105,6 +20133,10 @@ retursn->returns
 retutning->returning
 retying->retrying
 reudce->reduce
+reudced->reduced
+reudces->reduces
+reudction->reduction
+reudctions->reductions
 reuest->request
 reuests->requests
 reulator->regulator
@@ -20251,9 +20283,16 @@ rouine->routine
 rouines->routines
 round-robbin->round-robin
 roundign->rounding
+roundtriped->roundtripped, round-tripped, round tripped,
+roundtriping->roundtripping, round-tripping, round tripping,
+roundtripp->roundtrip, round-trip, round trip,
 rountine->routine
 rountines->routines
-rountrip->roundtrip
+rountrip->roundtrip, round-trip, round trip,
+rountriped->roundtripped, round-tripped, round tripped,
+rountriping->roundtripping, round-tripping, round tripping,
+rountripped->roundtripped, round-tripped, round tripped,
+rountripping->roundtripping, round-tripping, round tripping,
 routet->routed
 routins->routines
 rovide->provide
@@ -20374,8 +20413,8 @@ sate->state, sate,
 satelite->satellite
 satelites->satellites
 satelitte->satellite
-Saterday->Saturday
-Saterdays->Saturdays
+saterday->Saturday
+saterdays->Saturdays
 satified->satisfied
 satifies->satisfies
 satify->satisfy
@@ -20395,6 +20434,8 @@ sattelite->satellite
 sattelites->satellites
 sattellite->satellite
 sattellites->satellites
+satuaday->Saturday
+satuadays->Saturdays
 saught->sought
 sav->save
 savable->saveable
@@ -20431,6 +20472,7 @@ scavanged->scavenged
 scavanger->scavenger
 scavangers->scavengers
 scavanges->scavenges
+sccope->scope
 scecified->specified
 sceen->scene, seen, screen, scheme,
 sceens->scenes, screens, schemes,
@@ -20536,6 +20578,7 @@ seciton->section
 secitons->sections
 secod->second
 seconadry->secondary
+seconcary->secondary
 seconday->secondary
 secondy->secondly, secondary,
 seconf->second
@@ -20596,6 +20639,7 @@ seh->she
 seige->siege
 seing->seeing
 seinor->senior
+seires->series
 selcetion->selection
 selctable->selectable
 selctables->selectables
@@ -20784,6 +20828,7 @@ seriouly->seriously
 seriuos->serious
 serivce->service
 serivces->services
+sersies->series
 sertificate->certificate
 sertificates->certificates
 servce->service
@@ -20888,6 +20933,9 @@ shoild->should
 shoing->showing
 shold->should, hold, sold,
 sholder->shoulder
+sholdn't->shouldn't
+sholuld->should
+sholuldn't->shouldn't
 shopkeeepers->shopkeepers
 shorcuts->shortcuts
 shorly->shortly
@@ -21175,6 +21223,7 @@ slection->selection
 sleect->select
 sleeped->slept
 sleepp->sleep
+slicable->sliceable
 slient->silent
 sliently->silently
 slighlty->slightly
@@ -21286,6 +21335,7 @@ sometines->sometimes
 someting->something
 sometinhg->something
 somewere->somewhere
+somewher->somewhere
 somewho->somehow
 somthign->something
 somthing->something
@@ -22189,6 +22239,7 @@ suppied->supplied
 suppier->supplier
 suppies->supplies
 supplamented->supplemented
+suppliad->supplied
 suppliementing->supplementing
 suppliment->supplement
 suppoed->supposed
@@ -22196,6 +22247,8 @@ suppoert->support
 suppoort->support
 suppoorts->supports
 suppopose->suppose
+suppoprt->support
+suppoprted->supported
 suppor->support
 suppored->supported
 supporession->suppression
@@ -22303,6 +22356,7 @@ susbsytems->subsystems
 suscribe->subscribe
 suscribed->subscribed
 suscribes->subscribes
+suscript->subscript
 suseptable->susceptible
 suseptible->susceptible
 susinctly->succinctly
@@ -23023,13 +23077,18 @@ timeot->timeout
 timere->timer
 timeschedule->time schedule
 timestan->timespan
+timestanp->timespanp
+timestanps->timespanps
+timestans->timespans
 timestemp->timestamp
 timestemps->timestamps
 timestmap->timestamp
+timestmaps->timestamps
 timetamp->timestamp
 timetamps->timestamps
 timmestamp->timestamp
-timming->timing
+timmestamps->timestamps
+timming->timing, trimming,
 timne->time
 timoeut->timeout
 timout->timeout
@@ -23189,6 +23248,8 @@ tranport->transport
 transacion->transaction
 transaction-spacific->transaction-specific
 transactoin->transaction
+transaition->translation, transition, transaction,
+transaitions->translations, transitions, transactions,
 transalt->translate
 transalte->translate
 transalted->translated
@@ -23377,6 +23438,7 @@ treadet->treated
 treak->treat, tweak,
 treate->treat
 treatement->treatment
+treatements->treatments
 treates->treats
 tremelo->tremolo
 tremelos->tremolos
@@ -23444,6 +23506,8 @@ trully->truly
 trun->turn
 trunacted->truncated
 truncat->truncate
+trunctate->truncate
+trunctating->truncating
 trunctation->truncation
 truncted->truncated
 truned->turned
@@ -23607,6 +23671,7 @@ uncehcked->unchecked
 uncertaincy->uncertainty
 uncertainities->uncertainties
 uncertainity->uncertainty
+uncessarily->unnecessarily
 unchache->uncache
 unchached->uncached
 unchaged->unchanged
@@ -23650,6 +23715,9 @@ uncompresors->uncompressors
 uncomprss->uncompress
 unconcious->unconscious
 unconciousness->unconsciousness
+unconcistencies->inconsistencies
+unconcistency->inconsistency
+unconcistent->inconsistent
 uncondisional->unconditional
 uncondisionaly->unconditionally
 uncondisionnal->unconditional
@@ -23663,6 +23731,7 @@ uncondtional->unconditional
 uncondtionally->unconditionally
 unconfiged->unconfigured
 unconfortability->discomfort
+unconsisntency->inconsistency
 unconsistent->inconsistent
 uncontitutional->unconstitutional
 uncontrolable->uncontrollable
@@ -23700,6 +23769,7 @@ undertsood->understood
 underun->underrun
 underuns->underruns
 underware->underwear
+underyling->underlying
 undesireable->undesirable
 undestand->understand
 undestood->understood
@@ -23713,11 +23783,14 @@ undfined->undefined
 undfines->undefines
 undistinghable->indistinguishable
 undoed->undone
+undorder->unorder
+undordered->unordered
 undoubtely->undoubtedly
 undreground->underground
 undupplicated->unduplicated
 uneccesary->unnecessary
 uneccessarily->unnecessarily
+unecessarily->unnecessarily
 unecessary->unnecessary
 uneeded->unneeded, needed,
 uneforceable->unenforceable
