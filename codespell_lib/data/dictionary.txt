@@ -9104,6 +9104,10 @@ eliminetaion->elimination
 elimintate->eliminate
 eliminte->eliminate
 elimnated->eliminated
+elipse->ellipse, eclipse,
+elipses->ellipses, eclipses, ellipsis,
+elipsis->ellipsis, eclipses,
+elipsises->ellipses, ellipsis,
 ellapsed->elapsed
 ellected->elected
 elliminate->eliminate
@@ -13668,12 +13672,13 @@ iteratons->iterations
 itereating->iterating
 iterface->interface
 iterfaces->interfaces
-iterm->term, intern,
+iterm->term, item, intern,
 iternations->iterations
 iterpreter->interpreter
 iterrupt->interrupt
 itertation->iteration
 iteself->itself
+itesm->items
 ith->with, disabled because of ordinal form of i like nth
 itialise->initialise
 itialised->initialised
