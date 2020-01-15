@@ -311,13 +311,13 @@ def build_exclude_hashes(filename, exclude_lines):
 
 
 def build_ignore_words(filename, ignore_words):
-    with codecs.open(filename, mode='r', buffering=1, encoding='utf-8') as f:
+    with codecs.open(filename, mode='r', encoding='utf-8') as f:
         for line in f:
             ignore_words.add(line.strip())
 
 
 def build_dict(filename, misspellings, ignore_words):
-    with codecs.open(filename, mode='r', buffering=1, encoding='utf-8') as f:
+    with codecs.open(filename, mode='r', encoding='utf-8') as f:
         for line in f:
             [key, data] = line.split('->')
             # TODO for now, convert both to lower. Someday we can maybe add
@@ -347,11 +347,8 @@ def build_dict(filename, misspellings, ignore_words):
 def is_hidden(filename, check_hidden):
     bfilename = os.path.basename(filename)
 
-    if bfilename != '' and bfilename != '.' and bfilename != '..' \
-                    and (not check_hidden and bfilename[0] == '.'):
-        return True
-
-    return False
+    return bfilename not in ('', '.', '..') and \
+        (not check_hidden and bfilename[0] == '.')
 
 
 def is_text_file(filename):
