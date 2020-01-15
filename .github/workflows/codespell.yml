@@ -10,4 +10,4 @@ jobs:
       - uses: actions/setup-python@v1
       - run: pip install codespell
       # When using this Action in other repos, the --skip option below can be removed
-      - run: codespell --skip=./.*,./codespell_lib,./example/code.c
+      - run: codespell --skip=./.*,./codespell_lib/data,./example/code.c,./test_basic.py,*.pyc
