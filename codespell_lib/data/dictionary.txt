@@ -16488,6 +16488,8 @@ overrriding->overriding
 overshaddowed->overshadowed
 oversubscibe->oversubscribe
 oversubscibed->oversubscribed
+oversubscirbe->oversubscribe
+oversubscirbed->oversubscribed
 overthere->over there
 overun->overrun
 overvise->otherwise
@@ -22112,6 +22114,15 @@ subscibe->subscribe
 subscibed->subscribed
 subsciber->subscriber
 subscibers->subscribers
+subscirbe->subscribe
+subscirbed->subscribed
+subscirber->subscriber
+subscirbers->subscribers
+subscirbes->subscribes
+subscirbing->subscribing
+subscirpt->subscript
+subscirption->subscription
+subscirptions->subscriptions
 subscritpion->subscription
 subscritpions->subscriptions
 subscritpiton->subscription
@@ -24264,6 +24275,11 @@ unsual->unusual
 unsubscibe->unsubscribe
 unsubscibed->unsubscribed
 unsubscibing->unsubscribing
+unsubscirbe->unsubscribe
+unsubscirbed->unsubscribed
+unsubscirbing->unsubscribing
+unsubscirption->unsubscription
+unsubscirptions->unsubscriptions
 unsubscritpion->unsubscription
 unsubscritpions->unsubscriptions
 unsubscritpiton->unsubscription
