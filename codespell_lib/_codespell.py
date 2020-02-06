@@ -33,6 +33,8 @@ USAGE = """
 """
 VERSION = '1.17.0.dev0'
 
+SUB_DICT = {'\\n': ' ', r"\'": "'"}
+
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
 default_dictionary = os.path.join(os.path.dirname(os.path.realpath(__file__)),
@@ -369,6 +371,38 @@ def fix_case(word, fixword):
     return fixword
 
 
+def multiple_replace(find_dict, text):
+    """Multiple find and replace based on a dictionary
+
+    Parameters
+    ----------
+    find_dict : dict
+        Dictionary containing values to find and replace.  For example
+        ``{'\\n': ' ', r"\'": "'"}``
+
+    text : str
+        Text to perform substitution on.
+
+    Returns
+    -------
+    sub_text : str
+        Text with substitutions.
+
+    Examples
+    --------
+    >>> line = r'this was a cat meow meow\nWhere don\'t'
+    >>> find_dict = {'\\n': ' ', r"\'": "'"}
+    >>> multiple_replace(find_dict, text)
+    this was a cat meow meow Where don't
+
+    """
+    # Create a regular expression from all of the dictionary keys
+    regex = re.compile("|".join(map(re.escape, find_dict.keys())))
+
+    # For each match, look up the corresponding value in the dictionary
+    return regex.sub(lambda match: find_dict[match.group(0)], text)
+
+
 def ask_for_word_fix(line, wrongword, misspelling, interactivity):
     if interactivity <= 0:
         return misspelling.fix, fix_case(wrongword, misspelling.data)
@@ -491,6 +525,9 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
 
         fixed_words = set()
         asked_for = set()
+
+        # escape valid characters
+        line = multiple_replace(SUB_DICT, line)
 
         for word in word_regex.findall(line):
             lword = word.lower()

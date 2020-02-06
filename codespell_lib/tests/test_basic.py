@@ -73,6 +73,17 @@ def test_basic(tmpdir, capsys):
     assert cs.main(d) == 0
 
 
+def test_escaped(tmpdir, capsys):
+    """Test escaping characters"""
+    assert cs.main('_does_not_exist_') == 0
+    with open(op.join(str(tmpdir), 'tmp'), 'w') as f:
+        pass
+    d = str(tmpdir)
+    with open(op.join(d, 'escaped_char.txt'), 'w') as f:
+        f.write(r"\n\nWe can")
+    assert cs.main(d) == 0
+
+
 def test_interactivity(tmpdir, capsys):
     """Test interaction"""
     # Windows can't read a currently-opened file, so here we use
