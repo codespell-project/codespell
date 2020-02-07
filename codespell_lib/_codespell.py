@@ -396,11 +396,10 @@ def multiple_replace(find_dict, text):
     this was a cat meow meow Where don't
 
     """
-    # Create a regular expression from all of the dictionary keys
-    regex = re.compile("|".join(map(re.escape, find_dict.keys())))
-
-    # For each match, look up the corresponding value in the dictionary
-    return regex.sub(lambda match: find_dict[match.group(0)], text)
+    # replace for each match
+    for key, rep in find_dict.items():
+        text = text.replace(key, rep)
+    return text
 
 
 def ask_for_word_fix(line, wrongword, misspelling, interactivity):
