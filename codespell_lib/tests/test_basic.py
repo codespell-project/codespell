@@ -8,6 +8,8 @@ import os.path as op
 import subprocess
 import sys
 
+import pytest
+
 import codespell_lib as cs
 
 
@@ -75,13 +77,24 @@ def test_basic(tmpdir, capsys):
 
 def test_escaped(tmpdir, capsys):
     """Test escaping characters"""
-    assert cs.main('_does_not_exist_') == 0
-    with open(op.join(str(tmpdir), 'tmp'), 'w') as f:
-        pass
     d = str(tmpdir)
     with open(op.join(d, 'escaped_char.txt'), 'w') as f:
         f.write(r"\n\nWe can")
     assert cs.main(d) == 0
+
+
+def test_escaped_sub_file(tmpdir, capsys):
+    """Test escaping characters using substituion file"""
+    d = str(tmpdir)
+    with open(op.join(d, 'escaped_text.txt'), 'w') as f:
+        f.write(r"We can\'t")
+
+    sub_pair_filename = op.join(d, 'sub_pairs.txt')
+    with open(sub_pair_filename, 'w') as f:
+        f.write(r"\'->'")
+    with pytest.raises(Exception):
+        cs.main(d, '-P', 'notafile')
+    assert cs.main(d, '-P', sub_pair_filename) == 0
 
 
 def test_interactivity(tmpdir, capsys):

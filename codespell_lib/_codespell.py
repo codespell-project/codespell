@@ -33,8 +33,6 @@ USAGE = """
 """
 VERSION = '1.17.0.dev0'
 
-SUB_DICT = {'\\n': ' ', r"\'": "'"}
-
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
 default_dictionary = os.path.join(os.path.dirname(os.path.realpath(__file__)),
@@ -234,6 +232,10 @@ def parse_options(args):
                         help='Comma separated list of words to be ignored '
                              'by codespell. Words are case sensitive based on '
                              'how they are written in the dictionary file')
+    parser.add_argument('-P', '--sub-pairs', type=str, metavar='FILE',
+                        help='Custom substitution text file that contains '
+                             'substituions key value pairs.  Can be used to '
+                             'substitute escaped characters.')
     parser.add_argument('-r', '--regex',
                         action='store', type=str,
                         help='Regular expression which is used to find words. '
@@ -346,6 +348,25 @@ def build_dict(filename, misspellings, ignore_words):
             misspellings[key] = Misspelling(data, fix, reason)
 
 
+def build_sub_pairs(filename):
+    """Parse substitution pairs from a text file.
+
+    Notes
+    -----
+    File expected to be in the following format
+    tobesubstituted->substituted
+    """
+    if not os.path.isfile(filename):
+        raise Exception('Unable to find sub pair file "{}"'.format(filename))
+
+    sub_pairs = {}
+    with codecs.open(filename, mode='r', encoding='utf-8') as f:
+        for line in f:
+            [key, data] = line.split('->')
+            sub_pairs[key] = data
+    return sub_pairs
+
+
 def is_hidden(filename, check_hidden):
     bfilename = os.path.basename(filename)
 
@@ -372,7 +393,7 @@ def fix_case(word, fixword):
 
 
 def multiple_replace(find_dict, text):
-    """Multiple find and replace based on a dictionary
+    """Multiple find and replace based on a dictionary.
 
     Parameters
     ----------
@@ -461,7 +482,7 @@ def print_context(lines, index, context):
 
 
 def parse_file(filename, colors, summary, misspellings, exclude_lines,
-               file_opener, word_regex, context, options):
+               file_opener, word_regex, context, sub_pairs, options):
     bad_count = 0
     lines = None
     changed = False
@@ -525,8 +546,8 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
         fixed_words = set()
         asked_for = set()
 
-        # escape valid characters
-        line = multiple_replace(SUB_DICT, line)
+        # escape valid characters or perform general substitutions
+        line = multiple_replace(sub_pairs, line)
 
         for word in word_regex.findall(line):
             lword = word.lower()
@@ -695,6 +716,13 @@ def main(*args):
     if options.exclude_file:
         build_exclude_hashes(options.exclude_file, exclude_lines)
 
+    # build substitution dictionary
+    if options.sub_pairs:
+        sub_pairs = build_sub_pairs(options.sub_pairs)
+    else:
+        # default escape substitution dictionary
+        sub_pairs = {'\\n': ' ', r"\'": "'"}
+
     file_opener = FileOpener(options.hard_encoding_detection,
                              options.quiet_level)
     glob_match = GlobMatch(options.skip)
@@ -720,7 +748,7 @@ def main(*args):
                         continue
                     bad_count += parse_file(
                         fname, colors, summary, misspellings, exclude_lines,
-                        file_opener, word_regex, context, options)
+                        file_opener, word_regex, context, sub_pairs, options)
 
                 # skip (relative) directories
                 dirs[:] = [dir_ for dir_ in dirs if not glob_match.match(dir_)]
@@ -728,7 +756,7 @@ def main(*args):
         else:
             bad_count += parse_file(
                 filename, colors, summary, misspellings, exclude_lines,
-                file_opener, word_regex, context, options)
+                file_opener, word_regex, context, sub_pairs, options)
 
     if summary:
         print("\n-------8<-------\nSUMMARY:")
