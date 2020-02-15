@@ -84,7 +84,7 @@ def test_escaped(tmpdir, capsys):
 
 
 def test_escaped_sub_file(tmpdir, capsys):
-    """Test escaping characters using substituion file"""
+    """Test escaping characters using substitution file"""
     d = str(tmpdir)
     with open(op.join(d, 'escaped_text.txt'), 'w') as f:
         f.write(r"We can\'t")

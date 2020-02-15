@@ -234,7 +234,7 @@ def parse_options(args):
                              'how they are written in the dictionary file')
     parser.add_argument('-P', '--sub-pairs', type=str, metavar='FILE',
                         help='Custom substitution text file that contains '
-                             'substituions key value pairs.  Can be used to '
+                             'substitutions key value pairs.  Can be used to '
                              'substitute escaped characters.')
     parser.add_argument('-r', '--regex',
                         action='store', type=str,
