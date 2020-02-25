@@ -1429,7 +1429,7 @@ amerliorate->ameliorate
 amgle->angle
 amgles->angles
 amiguous->ambiguous
-amin->main, disabled because of var names
+amin->main, disabled because amin might be a var name
 amke->make
 amking->making
 ammend->amend
@@ -3658,6 +3658,7 @@ calilng->calling
 caliming->claiming
 caling->calling, scaling, culling,
 callabck->callback
+callabcks->callbacks
 callack->callback
 callbacl->callback
 callbacsk->callback
@@ -15957,6 +15958,8 @@ notifed->notified
 notifer->notifier
 notifes->notifies
 notificaction->notification
+notificaiton->notification
+notificaitons->notifications
 notificaton->notification
 notificiation->notification
 notifiy->notify
@@ -21073,6 +21076,7 @@ seporate->separate
 sepperate->separate
 seprarate->separate
 seprate->separate
+seprated->separated
 seprator->separator
 seprators->separators
 Septemer->September
@@ -21118,6 +21122,8 @@ serached->searched
 serailisation->serialisation
 serailization->serialization
 serailized->serialized
+serailze->serialize
+serailzed->serialized
 sergent->sergeant
 serialiazation->serialization
 serie->series
