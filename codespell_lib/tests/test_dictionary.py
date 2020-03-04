@@ -53,6 +53,8 @@ def test_dictionary_formatting():
             err_dict[err] = reps
             unique = list()
             for r in reps:
+                assert err != r.lower(), ('error %r corrects to itself amongst '
+                                         'others' % err)
                 if r not in unique:
                     unique.append(r)
             assert reps == unique, 'entries are not (lower-case) unique'
