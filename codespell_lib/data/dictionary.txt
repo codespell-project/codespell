@@ -2215,6 +2215,7 @@ assigment->assignment
 assigments->assignments
 assigmnent->assignment
 assignalble->assignable
+assigne->assign, assigned,
 assignement->assignment
 assignements->assignments
 assignemnt->assignment
@@ -3330,6 +3331,7 @@ bounbdary->boundary
 boundares->boundaries
 boundaryi->boundary
 boundarys->boundaries
+bounday->boundary
 bounderies->boundaries
 boundery->boundary
 boundrary->boundary
@@ -5654,6 +5656,9 @@ connnection->connection
 connnections->connections
 connnects->connects
 connot->cannot
+connstrain->constrain
+connstrained->constrained
+connstraint->constraint
 conntents->contents
 conntroller->controller
 conosuer->connoisseur
@@ -6574,6 +6579,7 @@ crashers->crashes, disabled because it denotes things that crash
 crashess->crashes
 crashs->crashes
 crated->created, crated,
+creaate->create
 creaed->created
 creaeted->created
 creasoat->creosote
@@ -10763,7 +10769,9 @@ fisionable->fissionable
 fisisist->physicist
 fisist->physicist
 fisrt->first
+fiter->filter, fighter,
 fitering->filtering
+fiters->filters, fighters,
 fitler->filter
 fitlers->filters
 fivety->fifty
@@ -16658,6 +16666,7 @@ ourselve->ourselves
 ourselvs->ourselves
 ouside->outside
 oustanding->outstanding
+oustide->outside
 outbut->output
 outbuts->outputs
 outgoign->outgoing
@@ -19688,6 +19697,7 @@ remainer->remainder
 remaines->remains
 remaing->remaining
 remainging->remaining
+remainig->remaining
 remainst->remains
 remaning->remaining
 remaping->remapping
@@ -21084,6 +21094,7 @@ sencondary->secondary
 senconds->seconds
 sendign->sending
 sendinging->sending
+sendinng->sending
 senfile->sendfile
 senintels->sentinels
 senitnel->sentinel
@@ -21852,6 +21863,7 @@ speciafied->specified
 specialiced->specialised, specialized,
 specialitzed->specialised, specialized,
 speciallized->specialised, specialized,
+specialties->specialities
 specialy->specially
 specic->specific
 specication->specification
@@ -21918,6 +21930,8 @@ spedified->specified
 spedify->specify
 speeak->speak
 speeaking->speaking
+speeling->spelling
+speelling->spelling
 speep->sleep
 speep-up->speed-up
 speeped->sped
