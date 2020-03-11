@@ -282,13 +282,19 @@ def parse_options(args):
 
     parser.add_argument('-q', '--quiet-level',
                         action='store', type=int, default=2,
-                        help='Bitmask that allows codespell to run quietly. '
-                             '0: print all messages. 1: disable warnings about'
-                             ' wrong encoding. 2: disable warnings about '
-                             'binary files. 4: omit warnings about automatic '
-                             'fixes that were disabled in dictionary. '
+                        help='Bitmask that allows suppressing messages. '
+                             '0: print all messages. '
+                             '1: disable warnings about wrong encoding. '
+                             '2: disable warnings about binary files. '
+                             '4: omit warnings about automatic fixes that were'
+                             ' disabled in the dictionary. '
                              '8: don\'t print anything for non-automatic '
-                             'fixes. 16: don\'t print fixed files.')
+                             'fixes. '
+                             '16: don\'t print the list of fixed files. '
+                             'As usual with bitmasks, these levels can be '
+                             'combined; e.g. use 3 for levels 1+2, 7 for '
+                             '1+2+4, 23 for 1+2+4+16, etc. '
+                             'The default mask is %(default)s.')
 
     parser.add_argument('-e', '--hard-encoding-detection',
                         action='store_true', default=False,
