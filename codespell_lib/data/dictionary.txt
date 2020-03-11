@@ -5998,6 +5998,7 @@ content-negoziation->content-negotiation
 contentended->contended
 contentn->content
 contentss->contents
+contermporaneous->contemporaneous
 contet->contest, content, context,
 contets->contents, contexts,
 contexta->context
@@ -10455,6 +10456,7 @@ exteral->external
 extered->exerted
 extereme->extreme
 extermist->extremist
+extermporaneous->extemporaneous
 externaly->externally
 extesion->extension
 extesions->extensions
@@ -10988,6 +10990,8 @@ forumulas->formulas
 forunate->fortunate
 forunately->fortunately
 forunner->forerunner
+forutunate->fortunate
+forutunately->fortunately
 forver->forever
 forwad->forward
 forwaded->forwarded
@@ -13590,6 +13594,7 @@ interm->interim, intern,
 intermeidate->intermediate
 intermidiate->intermediate
 intermittant->intermittent
+intermperance->intemperance
 internall->internal, internally,
 internaly->internally
 internatinal->international
@@ -22099,6 +22104,7 @@ spurios->spurious
 spurrious->spurious
 sqaure->square
 sqeuence->sequence
+squashgin->squashing
 squence->sequence
 squirel->squirrel
 squirl->squirrel
@@ -22656,16 +22662,31 @@ sucesfuly->successfully
 sucesion->succession
 sucesive->successive
 sucess->success
+sucesscient->sufficient
 sucessed->succeeded
+sucesseding->succeeding, seceding,
+sucessefully->successfully
 sucesses->successes
+sucessess->success
+sucessflly->successfully
+sucessfually->successfully
+sucessfukk->successful
 sucessful->successful
 sucessfull->successful
 sucessfully->successfully
 sucessfuly->successfully
 sucession->succession
+sucessiv->successive
 sucessive->successive
+sucessively->successively
 sucessor->successor
 sucessot->successor
+sucesss->success
+sucessses->successes
+sucesssfully->successfully
+sucessufll->successful
+sucessuflly->successfully
+sucessully->successfully
 sucide->suicide
 sucidial->suicidal
 sucome->succumb
@@ -23353,7 +23374,17 @@ termine->determine
 termined->terminated
 terminte->terminate
 termostat->thermostat
+termperatue->temperature
+termperatues->temperatures
 termperature->temperature
+termperatures->temperatures
+termplate->template
+termplated->templated
+termplates->templates
+termporal->temporal
+termporaries->temporaries
+termporarily->temporarily
+termporary->temporary
 ternament->tournament
 ternimate->terminate
 terrable->terrible
@@ -23493,6 +23524,8 @@ thiks->thinks
 thimngs->things
 thinigs->things
 thinkabel->thinkable
+thinkg->think, thing, things,
+thinkgs->thinks, things,
 thinn->thin
 thirs->third, thirst,
 thirtyth->thirtieth
@@ -24416,6 +24449,8 @@ unfortunetly->unfortunately
 unfortuntaly->unfortunately
 unforunate->unfortunate
 unforunately->unfortunately
+unforutunate->unfortunate
+unforutunately->unfortunately
 unfourtunately->unfortunately
 unfourtunetly->unfortunately
 unfurtunately->unfortunately
@@ -24734,9 +24769,16 @@ unsuccessfull->unsuccessful
 unsuccessfullly->unsuccessfully
 unsucesful->unsuccessful
 unsucesfuly->unsuccessfully
+unsucessefully->unsuccessfully
+unsucessflly->unsuccessfully
+unsucessfually->unsuccessfully
 unsucessful->unsuccessful
 unsucessfull->unsuccessful
 unsucessfully->unsuccessfully
+unsucessfuly->unsuccessfully
+unsucesssfully->unsuccessfully
+unsucessuflly->unsuccessfully
+unsucessully->unsuccessfully
 unsued->unused
 unsufficient->insufficient
 unsuportable->unsupportable
