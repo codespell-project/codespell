@@ -928,8 +928,13 @@ akkumulation->accumulation
 akkumulative->accumulative
 akkumulator->accumulator
 aks->ask
+aksed->asked
+akss->asks, ass,
 aktivate->activate
 aktivated->activated
+aktivates->activates
+aktivating->activating
+aktivation->activation
 akumulate->accumulate
 akumulated->accumulated
 akumulates->accumulates
@@ -1691,6 +1696,7 @@ aplha->alpha
 aplication->application
 aplications->applications
 aplied->applied
+aplitude->amplitude, aptitude,
 apllicatin->application
 apllication->application
 apllied->applied
@@ -3214,6 +3220,10 @@ blaim->blame
 blaimed->blamed
 blak->black, blank,
 blanace->balance
+blance->balance, glance, lance,
+blanced->balanced, glanced, lanced,
+blances->balances, glances, lances,
+blancing->balancing, glancing, lancing,
 blanck->blank, black,
 blancked->blanked
 blatent->blatant
@@ -3332,6 +3342,7 @@ boundares->boundaries
 boundaryi->boundary
 boundarys->boundaries
 bounday->boundary
+boundays->boundaries
 bounderies->boundaries
 boundery->boundary
 boundrary->boundary
@@ -5287,6 +5298,7 @@ concatonated->concatenated
 concatonates->concatenates
 concatonating->concatenating
 conceed->concede
+conceedd->conceded
 concensors->consensus
 concensus->consensus
 concentate->concentrate
@@ -5696,15 +5708,21 @@ consdidered->considered
 consdiered->considered
 consdired->considered
 conseat->conceit
+conseated->conceited
 consective->consecutive
+consectively->consecutively
 consectutive->consecutive
 consecuitively->consecutively
 conseed->concede
+conseedd->conceded
+conseeded->conceded
+conseeds->concedes
 consenquently->consequently
 consentrate->concentrate
 consentrated->concentrated
 consentrates->concentrates
 consept->concept
+consepts->concepts
 consequentely->consequently
 consequentially->consequently
 consequentually->consequently
@@ -6721,12 +6739,17 @@ curiousities->curiosities
 curiousity's->curiosity's
 curiousity->curiosity
 currect->correct, current,
-currectly->correctly
+currected->corrected
+currecting->correcting
+currectly->correctly, currently,
+currects->corrects, currents,
 curremt->current
+curremts->currents
 currenlty->currently
 currenly->currently
 currennt->current
 currenntly->currently
+currennts->currents
 currentl->currently
 currentlly->currently
 currentry->currently
@@ -7468,6 +7491,8 @@ dependendent->dependent
 dependenies->dependencies
 dependening->depending
 dependeny->dependency
+dependices->dependencies
+dependicy->dependency
 dependig->depending
 dependncies->dependencies
 dependncy->dependency
@@ -11749,10 +11774,17 @@ happaned->happened
 happend->happened, happens,
 happended->happened
 happenned->happened
+happenning->happening
+happennings->happenings
+happenns->happens
 happing->happening, happen,
 happne->happen
 happnes->happens, happiness,
 happpen->happen
+happpened->happened
+happpening->happening
+happpenings->happenings
+happpens->happens
 harased->harassed
 harases->harasses
 harasment->harassment
@@ -11975,6 +12007,7 @@ hitsingles->hit singles
 hiygeine->hygiene
 hnalder->handler
 hoeks->hoax
+hoever->however
 hokay->okay
 holf->hold
 holliday->holiday
@@ -12008,6 +12041,7 @@ hoppefully->hopefully
 hopyfully->hopefully
 horicontal->horizontal
 horicontally->horizontally
+horinzontal->horizontal
 horizntal->horizontal
 horizonal->horizontal
 horizontale->horizontal
@@ -13562,6 +13596,11 @@ interpeter->interpreter
 interpeters->interpreters
 interpeting->interpreting
 interpets->interprets
+interploate->interpolate
+interploated->interpolated
+interploates->interpolates
+interploatin->interpolating
+interploation->interpolation
 interpolaed->interpolated
 interpolaion->interpolation
 interpolaiton->interpolation
@@ -14217,6 +14256,9 @@ levl->level
 levle->level
 lexial->lexical
 leyer->layer
+leyered->layered
+leyering->layering
+leyers->layers
 liares->liars
 liasion->liaison
 liason->liaison
@@ -19985,6 +20027,11 @@ rentors->renters
 reoccurrence->recurrence
 reocurring->reoccurring, recurring,
 reoder->reorder
+reomvable->removable
+reomve->remove
+reomved->removed
+reomves->removes
+reomving->removing
 reonly->read-only
 reopended->reopened
 reoport->report
@@ -20957,6 +21004,7 @@ seaching->searching
 seachkey->searchkey
 seacrchable->searchable
 searcahble->searchable
+searche->search, searched,
 searcheable->searchable
 searchin->searching
 searchs->searches
@@ -21493,13 +21541,14 @@ similiarity->similarity
 similiarly->similarly
 similiarty->similarity
 similiary->similarity
+simily->simile, smiley, simply, similarly,
 simlar->similar
 simlarlity->similarity
 simlarly->similarly
 simliar->similar
 simlicity->simplicity
 simlified->simplified
-simly->simply
+simly->simply, simile, smiley,
 simmetric->symmetric
 simmetrical->symmetrical
 simmetry->symmetry
@@ -23860,6 +23909,11 @@ transtition->transition
 transtitions->transitions
 transtorm->transform
 transtormed->transformed
+transvorm->transform
+transvormation->transformation
+transvormed->transformed
+transvorming->transforming
+transvorms->transforms
 tranversing->traversing
 trasaction->transaction
 trascation->transaction
@@ -24230,11 +24284,17 @@ underlow->underflow
 underrrun->underrun
 undersacn->underscan
 understadn->understand
+understadnable->understandable
 understadning->understanding
+understadns->understands
 understoon->understood
 understoud->understood
 undertable->understandable, understand,
 undertand->understand
+undertandable->understandable
+undertanded->understood
+undertanding->understanding
+undertands->understands
 undertsand->understand
 undertsanding->understanding
 undertsands->understands
@@ -24305,6 +24365,7 @@ unforgetable->unforgettable
 unforgiveable->unforgivable
 unformated->unformatted
 unforseen->unforeseen
+unforttunately->unfortunately
 unfortuante->unfortunate
 unfortuantely->unfortunately
 unfortunatelly->unfortunately
@@ -25590,6 +25651,7 @@ workbennches->workbenches
 workbnech->workbench
 workbneches->workbenches
 workboos->workbooks
+workd->worked
 workes->works
 workign->working
 workpsace->workspace
