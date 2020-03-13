@@ -929,7 +929,7 @@ akkumulative->accumulative
 akkumulator->accumulator
 aks->ask
 aksed->asked
-akss->asks
+akss->asks, ass,
 aktivate->activate
 aktivated->activated
 aktivates->activates
@@ -3220,10 +3220,10 @@ blaim->blame
 blaimed->blamed
 blak->black, blank,
 blanace->balance
-blance->balance, glance,
-blanced->balanced, glanced,
-blances->balances, glances,
-blancing->balancing, glancing,
+blance->balance, glance, lance,
+blanced->balanced, glanced, lanced,
+blances->balances, glances, lances,
+blancing->balancing, glancing, lancing,
 blanck->blank, black,
 blancked->blanked
 blatent->blatant
@@ -21004,6 +21004,7 @@ seaching->searching
 seachkey->searchkey
 seacrchable->searchable
 searcahble->searchable
+searche->search, searched,
 searcheable->searchable
 searchin->searching
 searchs->searches
@@ -21540,14 +21541,14 @@ similiarity->similarity
 similiarly->similarly
 similiarty->similarity
 similiary->similarity
-simily->simile, smiley, similarly, simply,
+simily->simile, smiley, simply, similarly,
 simlar->similar
 simlarlity->similarity
 simlarly->similarly
 simliar->similar
 simlicity->simplicity
 simlified->simplified
-simly->simply, smiley, simile,
+simly->simply, simile, smiley,
 simmetric->symmetric
 simmetrical->symmetrical
 simmetry->symmetry
@@ -23909,9 +23910,10 @@ transtitions->transitions
 transtorm->transform
 transtormed->transformed
 transvorm->transform
-transvormation->tranformation
+transvormation->transformation
 transvormed->transformed
 transvorming->transforming
+transvorms->transforms
 tranversing->traversing
 trasaction->transaction
 trascation->transaction
