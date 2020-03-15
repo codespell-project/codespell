@@ -4654,7 +4654,7 @@ collegues->colleagues
 collektion->collection
 colletion->collection
 collison->collision, collusion,
-collisons->collisions
+collisons->collisions, collusion, collusions,
 collission->collision, collusion,
 colllapses->collapses
 collocalized->colocalized
@@ -11946,8 +11946,8 @@ higeine->hygiene
 higer->higher
 higest->highest
 high-affort->high-effort
-highe->high, higher,
-highes->highest
+highe->high, higher, highs,
+highes->highest, highs,
 highjack->hijack
 highlighing->highlighting
 highlightning->highlighting
@@ -14769,7 +14769,7 @@ materaials->materials
 materail->material
 materails->materials
 materalists->materialist
-materiasl->materials
+materiasl->materials, material,
 materil->material
 materils->materials
 materla->material
@@ -21096,6 +21096,7 @@ segfualt->segfault
 segfualts->segfaults
 segmantation->segmentation
 segmend->segment
+segmended->segmented
 segmendation->segmentation
 segmends->segments
 segmenet->segment
@@ -21671,11 +21672,13 @@ sitautions->situations
 sitck->stick
 siteu->site
 sitll->still
-situationals->situations, situational,
-situationly->situational
+situationals->situational, situations,
+situationly->situationally, situational
 situationnal->situational
 situatuion->situation
+situatuions->situations
 situatution->situation
+situatutions->situations
 situbbornness->stubbornness
 situdio->studio
 siturations->situations
