@@ -3431,6 +3431,7 @@ brockened->broken
 brocolee->broccoli
 brodcast->broadcast
 broked->broken
+brokem->broken
 brokend->broken
 brokened->broken
 brokeness->brokenness
@@ -12421,6 +12422,7 @@ impementling->implementing
 impementor->implementer
 impements->implements
 imperiaal->imperial
+imperitive->imperative
 impiled->implied
 implace->inplace
 implament->implement
@@ -14626,6 +14628,7 @@ manifacturer->manufacturer
 manifacturers->manufacturers
 manifect->manifest
 manipluate->manipulate
+manipluated->manipulated
 manipulatin->manipulating
 manipulaton->manipulation
 manisfestations->manifestations
@@ -14660,6 +14663,7 @@ manualy->manually
 manualyl->manually
 manualyy->manually
 manuell->manual
+manuelly->manually
 manuever->maneuver, manoeuvre,
 manuevers->maneuvers, manoeuvres,
 manufacturedd->manufactured
@@ -17722,6 +17726,7 @@ possiable->possible
 possibbe->possible
 possibe->possible
 possibile->possible
+possibilies->possibilities
 possibilites->possibilities
 possibilitities->possibilities
 possibillity->possibility
@@ -23303,6 +23308,9 @@ tendacy->tendency
 tendancies->tendencies
 tendancy->tendency
 tennisplayer->tennis player
+teplmate->template
+teplmated->templated
+teplmates->templates
 tepmorarily->temporarily
 teridactyl->pterodactyl
 terific->terrific
@@ -23762,6 +23770,8 @@ transaction-spacific->transaction-specific
 transactoin->transaction
 transaition->translation, transition, transaction,
 transaitions->translations, transitions, transactions,
+transalation->translation
+transalations->translations
 transalt->translate
 transalte->translate
 transalted->translated
