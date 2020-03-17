@@ -2898,6 +2898,7 @@ backgorund->background
 backgound->background
 backgournd->background
 backgrond->background
+backgronds->backgrounds
 backgroud->background
 backgroung->background
 backgrount->background
@@ -4653,6 +4654,7 @@ collegues->colleagues
 collektion->collection
 colletion->collection
 collison->collision, collusion,
+collisons->collisions, collusion, collusions,
 collission->collision, collusion,
 colllapses->collapses
 collocalized->colocalized
@@ -5519,6 +5521,11 @@ configuratuion->configuration
 configureable->configurable
 configureing->configuring
 configuretion->configuration
+configurres->configures
+configurring->configuring
+configurses->configures
+configurtation->configuration
+configurting->configuring
 configurtion->configuration
 configury->configurable
 configutation->configuration
@@ -5950,6 +5957,7 @@ contary->contrary
 contast->contrast, contest,
 contatenated->concatenated
 contating->contacting, containing,
+contect->contact, context, connect,
 contein->contain
 conteined->contained
 conteining->containing
@@ -11938,7 +11946,8 @@ higeine->hygiene
 higer->higher
 higest->highest
 high-affort->high-effort
-highes->highest
+highe->high, higher, highs,
+highes->highest, highs,
 highjack->hijack
 highlighing->highlighting
 highlightning->highlighting
@@ -13240,6 +13249,7 @@ inofficial->unofficial
 inofrmation->information
 inoquous->innocuous
 inot->into
+inout->input, in out,
 inouts->inputs
 inpact->impact
 inpacted->impacted
@@ -13272,6 +13282,7 @@ inpsection->inspection
 inpterpreter->interpreter
 inpu->input
 inpust->input, inputs,
+inputed->inputted
 inputsream->inputstream
 inpuut->input
 inreractive->interactive
@@ -13972,6 +13983,8 @@ jelusey->jealousy
 jepordize->jeopardize
 jewl->Jew, jewel,
 jewllery->jewellery
+jitterr->jitter
+jitterring->jittering
 jodpers->jodhpurs
 Johanine->Johannine
 joineable->joinable
@@ -14756,6 +14769,7 @@ materaials->materials
 materail->material
 materails->materials
 materalists->materialist
+materiasl->materials, material,
 materil->material
 materils->materials
 materla->material
@@ -16680,6 +16694,7 @@ othewice->otherwise
 othewise->otherwise
 othewize->otherwise
 otho->otoh
+othographic->orthographic
 othwerwise->otherwise
 othwhise->otherwise
 otification->notification
@@ -21080,6 +21095,10 @@ segemnts->segments
 segfualt->segfault
 segfualts->segfaults
 segmantation->segmentation
+segmend->segment
+segmendation->segmentation
+segmended->segmented
+segmends->segments
 segmenet->segment
 segmenetd->segmented
 segmeneted->segmented
@@ -21653,7 +21672,15 @@ sitautions->situations
 sitck->stick
 siteu->site
 sitll->still
+situationals->situational, situations,
+situationly->situationally, situational,
+situationnal->situational
+situatuion->situation
+situatuions->situations
 situatution->situation
+situatutions->situations
+situbbornness->stubbornness
+situdio->studio
 siturations->situations
 situtation->situation
 situtations->situations
