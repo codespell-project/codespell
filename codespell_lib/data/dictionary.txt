@@ -1,4 +1,5 @@
 1nd->1st
+2st->2nd
 a-diaerers->a-diaereses
 aaccessibility->accessibility
 aaccession->accession
@@ -1913,6 +1914,12 @@ apprpriate->appropriate
 apprpriately->appropriately
 appy->apply
 appying->applying
+apreciate->appreciate
+apreciated->appreciated
+apreciates->appreciates
+apreciating->appreciating
+apreciation->appreciation
+apreciative->appreciative
 aprehensive->apprehensive
 apreteate->appreciate
 apreteated->appreciated
@@ -7978,7 +7985,7 @@ determind->determined
 determinded->determined
 determinee->determine
 determineing->determining
-determing->determining
+determing->determining, determine,
 determinining->determining
 deterministinc->deterministic
 determinne->determine
@@ -9657,6 +9664,7 @@ engieneer->engineer
 engieneers->engineers
 enginge->engine
 enginin->engine
+engoug->enough
 enhabce->enhance
 enhabced->enhanced
 enhabces->enhances
@@ -14480,6 +14488,7 @@ invisiable->invisible
 invisibile->invisible
 invisivble->invisible
 invlaid->invalid
+invlid->invalid
 invlisible->invisible
 invlove->involve
 invloved->involved
@@ -24380,6 +24389,9 @@ thurrow->thorough
 thurver->further
 thw->the, thaw,
 thyat->that
+tich->thick, tick,
+tichened->thickened
+tichness->thickness
 tieing->tying
 tiem->time, item,
 tiemout->timeout
