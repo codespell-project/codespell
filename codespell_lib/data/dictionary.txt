@@ -19909,6 +19909,8 @@ recivership->receivership
 recives->receives
 reciving->receiving
 reclaimation->reclamation
+recnt->recent
+recntly->recently
 recod->record
 recofig->reconfig
 recoginizing-->recognizing
@@ -20868,6 +20870,10 @@ reprocuce->reproduce, reprocure,
 reprocuced->reproduced, reprocured,
 reprocuces->reproduces, reprocures,
 reprocucing->reproducing, reprocuring,
+reprodice->reproduce
+reprodiced->reproduced
+reprodicing->reproducing
+reprodiction->reproduction
 reproducabely->reproducibly
 reproducability->reproducibility
 reproducable->reproducible
