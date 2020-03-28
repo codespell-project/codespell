@@ -1,5 +1,7 @@
 1nd->1st
 2st->2nd
+3nd->3rd
+3st->3rd
 a-diaerers->a-diaereses
 aaccessibility->accessibility
 aaccession->accession
@@ -13213,7 +13215,7 @@ imporvment->improvement
 imposible->impossible
 impot->import
 impotr->import, importer,
-impotrt->imported, importer, import,
+impotrt->import, imported, importer,
 impove->improve
 impoved->improved
 impovements->improvements
@@ -19918,7 +19920,7 @@ recivership->receivership
 recives->receives
 reciving->receiving
 reclaimation->reclamation
-recnt->recent
+recnt->recent, recant,
 recntly->recently
 recod->record
 recofig->reconfig
@@ -20881,6 +20883,8 @@ reprocuces->reproduces, reprocures,
 reprocucing->reproducing, reprocuring,
 reprodice->reproduce
 reprodiced->reproduced
+reprodicible->reproducible
+reprodicibly->reproducibly
 reprodicing->reproducing
 reprodiction->reproduction
 reproducabely->reproducibly
@@ -21675,6 +21679,7 @@ scirpt->script
 scirpts->scripts
 scketch->sketch
 scketched->sketched
+scketches->sketches
 scketching->sketching
 sclar->scalar
 scneario->scenario
