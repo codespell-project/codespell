@@ -4602,6 +4602,10 @@ coelesce->coalesce
 coercable->coercible
 coerceion->coercion
 coersion->coercion
+coexhist->coexist
+coexhisted->coexisted
+coexhisting->coexisting
+coexhists->coexists
 coexinst->coexist
 coexinstence->coexistence
 coexistance->coexistence
@@ -8045,6 +8049,8 @@ diaresis->diaeresis
 diarhea->diarrhoea, diarrhea,
 diaspra->diaspora
 diaster->disaster
+diatance->distance
+diatancing->distancing
 dicard->discard
 dicarded->discarded
 dicarding->discarding
@@ -11135,6 +11141,7 @@ funchtion->function
 funchtional->functional
 funchtioned->functioned
 funchtioning->functioning
+funchtionning->functioning
 funchtions->functions
 funcion->function
 funcions->functions
