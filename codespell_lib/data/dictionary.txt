@@ -6366,7 +6366,7 @@ coponent->component
 copoying->copying
 coppermines->coppermine
 coppied->copied
-copping->coping, copying,
+copping->coping, copying, cropping,
 coppy->copy, choppy,
 copright->copyright
 coprighted->copyrighted
@@ -6864,8 +6864,8 @@ custumised->customised
 custumized->customized
 cutom->custom
 cuurently->currently
-cuve->curve
-cuves->curves
+cuve->curve, cube, cave,
+cuves->curves, cubes, caves,
 cvignore->cvsignore
 cxan->cyan
 cycic->cyclic
@@ -24220,7 +24220,7 @@ theer->there
 theery->theory
 theese->these
 thefore->therefore
-thei->their
+thei->their, they,
 theif->thief
 theifs->thieves
 theire->their, they're,
@@ -25589,7 +25589,7 @@ unsychronised->unsynchronised
 untargetted->untargeted
 unter->under
 untill->until
-untils->until
+untils->until, utils,
 untintuitive->unintuitive
 untoched->untouched
 untqueue->unqueue
