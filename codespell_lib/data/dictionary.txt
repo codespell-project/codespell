@@ -4602,14 +4602,22 @@ coelesce->coalesce
 coercable->coercible
 coerceion->coercion
 coersion->coercion
-coexhist->coexist
-coexhisted->coexisted
-coexhisting->coexisting
-coexhists->coexists
-coexinst->coexist
-coexinstence->coexistence
-coexistance->coexistence
-coexsiting->coexisting
+coexhist->coexist, co-exist,
+coexhistance->coexistence, co-existence,
+coexhisted->coexisted, co-existed,
+coexhistence->coexistence, co-existence,
+coexhisting->coexisting, co-existing,
+coexhists->coexists, co-exists,
+coexinst->coexist, co-existence,
+coexinstence->coexistence, co-existence,
+coexinsts->coexists, co-existence,
+coexistance->coexistence, co-existence,
+coexsit->coexist, co-exist,
+coexsitance->coexistence, co-existence,
+coexsited->coexisted, co-existed,
+coexsitence->coexistence, co-existence,
+coexsiting->coexisting, co-existing,
+coexsits->coexists, co-exists,
 cofeee->coffee
 cofidence->confidence
 cofiguration->configuration
@@ -11141,7 +11149,11 @@ funchtion->function
 funchtional->functional
 funchtioned->functioned
 funchtioning->functioning
+funchtionn->function
+funchtionnal->functional
+funchtionned->functioned
 funchtionning->functioning
+funchtionns->functions
 funchtions->functions
 funcion->function
 funcions->functions
