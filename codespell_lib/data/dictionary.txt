@@ -2193,6 +2193,7 @@ assciated->associated
 asscociated->associated
 asscoitaed->associated
 assebly->assembly
+assebmly->assembly
 assember->assembler
 assemblys->assemblies
 assemby->assembly
@@ -7749,6 +7750,7 @@ desicions->decisions
 deside->decide
 desided->decided
 desides->decides
+desig->design
 desigining->designing
 designd->designed
 desination->destination
@@ -13223,6 +13225,8 @@ incomapatible->incompatible
 incomaptible->incompatible
 incombatibilities->incompatibilities
 incombatibility->incompatibility
+incomfort->discomfort, uncomfortable, in comfort,
+incomfortable->uncomfortable
 incomming->incoming
 incommplete->incomplete
 incompatabable->incompatible
@@ -13266,6 +13270,8 @@ inconcistency->inconsistency
 inconcistent->inconsistent
 inconditional->unconditional
 inconditionally->unconditionally
+inconfort->discomfort, uncomfortable, in comfort,
+inconfortable->uncomfortable
 inconisistent->inconsistent
 inconsisent->inconsistent
 inconsisently->inconsistently
@@ -14600,6 +14606,7 @@ klicked->clicked
 klicks->clicks
 knifes->knives
 knive->knife
+kno->know
 knowlage->knowledge
 knowlageable->knowledgeable
 knowlegde->knowledge
