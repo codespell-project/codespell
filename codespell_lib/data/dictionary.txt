@@ -387,8 +387,12 @@ accuraccy->accuracy
 accurancy->accuracy
 accurarcy->accuracy
 accurary->accuracy, actuary,
+accuratelly->accurately
+accuratley->accurately
 accuratly->accurately
 accuray->accuracy, actuary,
+accurences->occurrences
+accurracy->accuracy
 accurring->occurring
 accurs->accurse, occurs,
 accussed->accused
@@ -5548,6 +5552,14 @@ configutations->configurations
 configutration->configuration
 confimred->confirmed
 confiramtion->confirmation
+confirmacion->confirmation
+confirmaed->confirmed
+confirmas->confirms
+confirmatino->confirmation
+confirmatinon->confirmation
+confirmd->confirmed
+confirmedd->confirmed
+confirmeed->confirmed
 confirmming->confirming
 confiug->config
 confiugure->configure
@@ -8853,6 +8865,8 @@ distruction->destruction
 distructive->destructive
 distuingish->distinguish
 disuade->dissuade
+disussion->discussion
+disussions->discussions
 disutils->distutils
 ditance->distance
 ditinguishes->distinguishes
@@ -11111,6 +11125,8 @@ factization->factorization
 factorizaiton->factorization
 factorys->factories
 fadind->fading
+faeture->feature
+faetures->features
 Fahrenheight->Fahrenheit
 faied->failed, fade,
 faield->failed
@@ -15826,6 +15842,7 @@ mnay->many
 mobify->modify
 mocule->module
 mocules->modules
+moddels->models
 modell->model
 moderm->modem
 modernination->modernization
@@ -21266,8 +21283,12 @@ rewirtable->rewritable
 rewirte->rewrite
 rewirtten->rewritten
 rewitable->rewritable
+rewite->rewrite
 rewitten->rewritten
+reworkd->reworked
+rewriable->rewritable, reliable,
 rewriet->rewrite
+rewriite->rewrite
 rewrited->rewrote, rewritten,
 rewriten->rewritten
 rewritting->rewriting
