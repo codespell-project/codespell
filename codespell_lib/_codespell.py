@@ -19,19 +19,19 @@ Copyright (C) 2011  ProFUSION embedded systems
 
 from __future__ import print_function
 
+import argparse
 import codecs
-import sys
-import re
-from optparse import OptionParser
-import os
 import fnmatch
+import os
+import re
+import sys
 
 word_regex_def = u"[\\w\\-'’`]+"
 encodings = ('utf-8', 'iso-8859-1')
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
-VERSION = '1.16.0.dev0'
+VERSION = '1.17.0.dev0'
 
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
@@ -67,7 +67,8 @@ class QuietLevels(object):
 class GlobMatch(object):
     def __init__(self, pattern):
         if pattern:
-            self.pattern_list = pattern.split(',')
+            # Pattern might be a list of comma-delimited strings
+            self.pattern_list = ','.join(pattern).split(',')
         else:
             self.pattern_list = None
 
@@ -205,25 +206,30 @@ class FileOpener(object):
 
 
 def parse_options(args):
-    parser = OptionParser(usage=USAGE, version=VERSION)
+    parser = argparse.ArgumentParser()
 
     parser.set_defaults(colors=sys.stdout.isatty())
-    parser.add_option('-d', '--disable-colors',
-                      action='store_false', dest='colors',
-                      help='disable colors even when printing to terminal '
-                      '(always on for Windows)')
-    parser.add_option('-c', '--enable-colors',
-                      action='store_true', dest='colors',
-                      help='enable colors even when not printing to terminal')
-    parser.add_option('-w', '--write-changes',
-                      action='store_true', default=False,
-                      help='write changes in place if possible')
-    parser.add_option('-D', '--dictionary',
-                      action='append', metavar='FILE',
-                      help='Custom dictionary file that contains spelling '
-                           'corrections. If this flag is not specified or '
-                           'equals "-" then the default dictionary is used. '
-                           'This option can be specified multiple times.')
+    parser.add_argument('--version', action='version', version=VERSION)
+
+    parser.add_argument('-d', '--disable-colors',
+                        action='store_false', dest='colors',
+                        help='disable colors, even when printing to terminal '
+                             '(always set for Windows)')
+    parser.add_argument('-c', '--enable-colors',
+                        action='store_true', dest='colors',
+                        help='enable colors, even when not printing to '
+                             'terminal')
+
+    parser.add_argument('-w', '--write-changes',
+                        action='store_true', default=False,
+                        help='write changes in place if possible')
+
+    parser.add_argument('-D', '--dictionary',
+                        action='append', metavar='FILE',
+                        help='Custom dictionary file that contains spelling '
+                             'corrections. If this flag is not specified or '
+                             'equals "-" then the default dictionary is used. '
+                             'This option can be specified multiple times.')
     builtin_opts = ', '.join(
         '%r %s' % (d[0], d[1]) for d in _builtin_dictionaries)
     parser.add_option('--builtin',
@@ -232,87 +238,87 @@ def parse_options(args):
                       'to use (when "-D -" or no "-D" is passed). Current '
                       'options are:\n%s. The default is %r.'
                       % (builtin_opts, _builtin_default))
-    parser.add_option('-I', '--ignore-words',
-                      action='append', metavar='FILE',
-                      help='File that contains words which will be ignored '
-                           'by codespell. File must contain 1 word per line. '
-                           'Words are case sensitive based on how they are '
-                           'written in codespell_lib/data/dictionary.txt')
-    parser.add_option('-L', '--ignore-words-list',
-                      action='append', metavar='WORDS',
-                      help='Comma separated list of words to be ignored '
-                           'by codespell. Words are case sensitive based on '
-                           'how they are written in '
-                           'codespell_lib/data/dictionary.txt')
-    parser.add_option('-r', '--regex',
-                      action='store', type='string',
-                      help='Regular expression which is used to find words. '
-                           'By default any alphanumeric character, the '
-                           'underscore, the hyphen, and the apostrophe is '
-                           'used to build words (i.e. %s). This option cannot '
-                           'be specified together with the write-changes '
-                           'functionality. ' % word_regex_def)
-    parser.add_option('-s', '--summary',
-                      action='store_true', default=False,
-                      help='print summary of fixes')
+    parser.add_argument('-I', '--ignore-words',
+                        action='append', metavar='FILE',
+                        help='File that contains words which will be ignored '
+                             'by codespell. File must contain 1 word per line.'
+                             ' Words are case sensitive based on how they are '
+                             'written in the dictionary file')
+    parser.add_argument('-L', '--ignore-words-list',
+                        action='append', metavar='WORDS',
+                        help='Comma separated list of words to be ignored '
+                             'by codespell. Words are case sensitive based on '
+                             'how they are written in the dictionary file')
+    parser.add_argument('-r', '--regex',
+                        action='store', type=str,
+                        help='Regular expression which is used to find words. '
+                             'By default any alphanumeric character, the '
+                             'underscore, the hyphen, and the apostrophe is '
+                             'used to build words. This option cannot be '
+                             'specified together with --write-changes.')
+    parser.add_argument('-s', '--summary',
+                        action='store_true', default=False,
+                        help='print summary of fixes')
 
-    parser.add_option('-S', '--skip',
-                      help='Comma-separated list of files to skip. It '
-                           'accepts globs as well. E.g.: if you want '
-                           'codespell to skip .eps and .txt files, '
-                           'you\'d give "*.eps,*.txt" to this option.')
+    parser.add_argument('-S', '--skip',
+                        action='append',
+                        help='Comma-separated list of files to skip. It '
+                             'accepts globs as well. E.g.: if you want '
+                             'codespell to skip .eps and .txt files, '
+                             'you\'d give "*.eps,*.txt" to this option.')
 
-    parser.add_option('-x', '--exclude-file',
-                      help='FILE with lines that should not be changed',
-                      metavar='FILE')
+    parser.add_argument('-x', '--exclude-file', type=str, metavar='FILE',
+                        help='FILE with lines that should not be changed')
 
-    parser.add_option('-i', '--interactive',
-                      action='store', type='int', default=0,
-                      help='Set interactive mode when writing changes. '
-                           '0 is the same as no interactivity; 1 makes '
-                           'codespell ask for confirmation; 2 ask user to '
-                           'choose one fix when more than one is '
-                           'available; 3 applies both 1 and 2')
+    parser.add_argument('-i', '--interactive',
+                        action='store', type=int, default=0,
+                        help='Set interactive mode when writing changes. '
+                             '0: no interactivity. 1: ask for confirmation. '
+                             '2 ask user to choose one fix when more than one '
+                             'is available. 3: both 1 and 2')
 
-    parser.add_option('-q', '--quiet-level',
-                      action='store', type='int', default=0,
-                      help='Bitmask that allows codespell to run quietly. '
-                           '0: the default, in which all messages are '
-                           'printed. 1: disable warnings about wrong '
-                           'encoding. 2: disable warnings about binary '
-                           'file. 4: shut down warnings about automatic '
-                           'fixes that were disabled in dictionary. '
-                           '8: don\'t print anything for non-automatic '
-                           'fixes. 16: don\'t print fixed files.')
+    parser.add_argument('-q', '--quiet-level',
+                        action='store', type=int, default=0,
+                        help='Bitmask that allows codespell to run quietly. '
+                             '0: the default, in which all messages are '
+                             'printed. 1: disable warnings about wrong '
+                             'encoding. 2: disable warnings about binary '
+                             'file. 4: shut down warnings about automatic '
+                             'fixes that were disabled in dictionary. '
+                             '8: don\'t print anything for non-automatic '
+                             'fixes. 16: don\'t print fixed files.')
 
-    parser.add_option('-e', '--hard-encoding-detection',
-                      action='store_true', default=False,
-                      help='Use chardet to detect the encoding of each '
-                           'file. This can slow down codespell, but is more '
-                           'reliable in detecting encodings other than utf-8, '
-                           'iso8859-1 and ascii.')
+    parser.add_argument('-e', '--hard-encoding-detection',
+                        action='store_true', default=False,
+                        help='Use chardet to detect the encoding of each '
+                             'file. This can slow down codespell, but is more '
+                             'reliable in detecting encodings other than '
+                             'utf-8, iso8859-1, and ascii.')
 
-    parser.add_option('-f', '--check-filenames',
-                      action='store_true', default=False,
-                      help='Check file names as well.')
+    parser.add_argument('-f', '--check-filenames',
+                        action='store_true', default=False,
+                        help='check file names as well')
 
-    parser.add_option('-H', '--check-hidden',
-                      action='store_true', default=False,
-                      help='Check hidden files (those starting with ".") as '
-                           'well.')
-    parser.add_option('-A', '--after-context', metavar='LINES',
-                      help='print LINES of trailing context', type='int')
-    parser.add_option('-B', '--before-context', metavar='LINES',
-                      help='print LINES of leading context', type='int')
-    parser.add_option('-C', '--context', metavar='LINES',
-                      help='print LINES of surrounding context', type='int')
+    parser.add_argument('-H', '--check-hidden',
+                        action='store_true', default=False,
+                        help='check hidden files (those starting with ".") as '
+                             'well')
+    parser.add_argument('-A', '--after-context', type=int, metavar='LINES',
+                        help='print LINES of trailing context')
+    parser.add_argument('-B', '--before-context', type=int, metavar='LINES',
+                        help='print LINES of leading context')
+    parser.add_argument('-C', '--context', type=int, metavar='LINES',
+                        help='print LINES of surrounding context')
 
-    (o, args) = parser.parse_args(list(args))
+    parser.add_argument('files', nargs='*',
+                        help='files or directories to check')
 
-    if not args:
-        args.append('.')
+    options = parser.parse_args(list(args))
 
-    return o, args, parser
+    if not options.files:
+        options.files.append('.')
+
+    return options, parser
 
 
 def build_exclude_hashes(filename, exclude_lines):
@@ -322,13 +328,13 @@ def build_exclude_hashes(filename, exclude_lines):
 
 
 def build_ignore_words(filename, ignore_words):
-    with codecs.open(filename, mode='r', buffering=1, encoding='utf-8') as f:
+    with codecs.open(filename, mode='r', encoding='utf-8') as f:
         for line in f:
             ignore_words.add(line.strip())
 
 
 def build_dict(filename, misspellings, ignore_words):
-    with codecs.open(filename, mode='r', buffering=1, encoding='utf-8') as f:
+    with codecs.open(filename, mode='r', encoding='utf-8') as f:
         for line in f:
             [key, data] = line.split('->')
             # TODO for now, convert both to lower. Someday we can maybe add
@@ -358,11 +364,8 @@ def build_dict(filename, misspellings, ignore_words):
 def is_hidden(filename, check_hidden):
     bfilename = os.path.basename(filename)
 
-    if bfilename != '' and bfilename != '.' and bfilename != '..' \
-                    and (not check_hidden and bfilename[0] == '.'):
-        return True
-
-    return False
+    return bfilename not in ('', '.', '..') and \
+        (not check_hidden and bfilename[0] == '.')
 
 
 def is_text_file(filename):
@@ -598,7 +601,7 @@ def _script_main():
 
 def main(*args):
     """Contains flow control"""
-    options, args, parser = parse_options(args)
+    options, parser = parse_options(args)
 
     if options.regex and options.write_changes:
         print('ERROR: --write-changes cannot be used together with '
@@ -697,7 +700,7 @@ def main(*args):
     glob_match = GlobMatch(options.skip)
 
     bad_count = 0
-    for filename in args:
+    for filename in options.files:
         # ignore hidden files
         if is_hidden(filename, options.check_hidden):
             continue

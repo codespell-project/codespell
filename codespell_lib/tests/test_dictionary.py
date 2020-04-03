@@ -47,27 +47,39 @@ def test_dictionary_formatting(fname, in_aspell):
 
 
 def _check_err_rep(err, rep, in_aspell, fname):
+    assert err != rep.lower(), 'error %r corrects to itself' % err
+    assert err not in err_dict, 'error %r already exists' % err
     assert ws.match(err) is None, 'error %r has whitespace' % err
     assert comma.match(err) is None, 'error %r has a comma' % err
-    this_in_aspell = speller.check(
-        err.encode(speller.ConfigKeys()['encoding'][1]))
-    if not in_aspell:
-        assert not this_in_aspell, ('error %r should not be in aspell '
-                                    'for dictionary %s' % (err, fname))
     assert len(rep) > 0, ('error %s: correction %r must be non-empty'
                           % (err, rep))
     assert not re.match(r'^\s.*', rep), ('error %s: correction %r '
                                          'cannot start with whitespace'
                                          % (err, rep))
+    this_in_aspell = speller.check(
+        err.encode(speller.ConfigKeys()['encoding'][1]))
+    if not in_aspell:
+        assert not this_in_aspell, ('error %r should not be in aspell '
+                                    'for dictionary %s' % (err, fname))
+    prefix = 'error %s: correction %r' % (err, rep)
     for (r, msg) in [
-            (r'^,', 'error %s: correction %r starts with a comma'),
-            (r'\s,', 'error %s: correction %r contains a whitespace '
-             'character followed by a comma'),
-            (r',\s\s', 'error %s: correction %r contains a comma followed '
-             'by multiple whitespace characters'),
-            (r',[^ ]', 'error %s: correction %r contains a comma *not* '
-             'followed by a space')]:
-        assert not re.search(r, rep), (msg % (err, rep))
+            (r'^,',
+             '%s starts with a comma'),
+            (r'\s,',
+             '%s contains a whitespace character followed by a comma'),
+            (r',\s\s',
+             '%s contains a comma followed by multiple whitespace '
+             'characters'),
+            (r',[^ ]',
+             '%s contains a comma *not* followed by a space'),
+            (r'\s+$',
+             '%s has a trailing space'),
+            (r'^[^,]*,\s*$',
+             '%s has a single entry but contains a trailing comma'),
+            ]:
+        assert not re.search(r, rep), (msg % (prefix,))
+    del msg
+    rep_count = rep.count(',')
     if rep.count(','):
         assert rep.endswith(','), ('error %s: multiple corrections must end '
                                    'with trailing ","' % (err,))
@@ -75,7 +87,6 @@ def _check_err_rep(err, rep, in_aspell, fname):
     reps = [r for r in reps if len(r)]
     unique = list()
     for r in reps:
-        assert err != r.lower(), 'error %r corrects to itself' % err
         if r not in unique:
             unique.append(r)
     assert reps == unique, 'entries are not (lower-case) unique'

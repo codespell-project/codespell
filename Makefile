@@ -19,6 +19,9 @@ check-dictionary:
 		echo "Dictionary contains leading/trailing whitespace and/or blank lines.  Trim with 'make trim-dictionary'"; \
 		exit 1; \
 	fi
+	@if command -v pytest > /dev/null; then \
+		pytest codespell_lib/tests/test_dictionary.py; \
+	fi
 
 sort-dictionary:
 	LC_ALL=C sort ${SORT_ARGS} -u -o ${DICTIONARY} ${DICTIONARY}
