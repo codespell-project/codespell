@@ -48,7 +48,7 @@ if __name__ == "__main__":
               'codespell_lib.data',
           ],
           package_data={'codespell_lib': [
-              op.join('data', 'dictionary.txt'),
+              op.join('data', 'dictionary*.txt'),
               op.join('data', 'linux-kernel.exclude'),
           ]},
           entry_points={

@@ -1,64 +1,99 @@
 # -*- coding: utf-8 -*-
 
 import aspell
+import glob
 import os.path as op
 import re
-import warnings
+import pytest
+from codespell_lib._codespell import _builtin_dictionaries
 
 
-def test_dictionary_formatting():
+speller = aspell.Speller('lang', 'en')
+ws = re.compile(r'.*\s.*')  # whitespace
+comma = re.compile(r'.*,.*')  # comma
+
+
+# Filename, should be seen as errors in aspell or not
+_data_dir = op.join(op.dirname(__file__), '..', 'data')
+_fnames_in_aspell = [
+    (op.join(_data_dir, 'dictionary%s.txt' % d[2]), d[3])
+    for d in _builtin_dictionaries]
+fname_params = pytest.mark.parametrize('fname, in_aspell', _fnames_in_aspell)
+
+
+def test_dictionaries_exist():
+    """Test consistency of dictionaries."""
+    doc_fnames = set(op.basename(f[0]) for f in _fnames_in_aspell)
+    got_fnames = set(op.basename(f)
+                     for f in glob.glob(op.join(_data_dir, '*.txt')))
+    assert doc_fnames == got_fnames
+
+
+@fname_params
+def test_dictionary_formatting(fname, in_aspell):
     """Test that all dictionary entries are valid."""
-    speller = aspell.Speller('lang', 'en')
-    err_dict = dict()
-    ws = re.compile(r'.*\s.*')  # whitespace
-    comma = re.compile(r'.*,.*')  # comma
-    with open(op.join(op.dirname(__file__), '..', 'data',
-                      'dictionary.txt'), 'rb') as fid:
+    errors = list()
+    with open(fname, 'rb') as fid:
         for line in fid:
             err, rep = line.decode('utf-8').split('->')
             err = err.lower()
-            assert err != rep, 'error %r corrects to itself' % err
-            assert err not in err_dict, 'error %r already exists' % err
-            assert ws.match(err) is None, 'error %r has whitespace' % err
-            assert comma.match(err) is None, 'error %r has a comma' % err
-            if speller.check(err.encode(speller.ConfigKeys()['encoding'][1])):
-                warnings.warn(('warning %r is in the aspell dictionary'
-                               % err), UserWarning)
-            # assert err not in speller, ('error %r is in the aspell dictionary'
-            #                             % err)
             rep = rep.rstrip('\n')
-            assert len(rep) > 0, ('error %s: correction %r must be non-empty'
-                                  % (err, rep))
-            assert not re.match(r'^\s.*', rep), ('error %s: correction %r '
-                                                 'cannot start with whitespace'
-                                                 % (err, rep))
-            for (r, msg) in [
-                (r'^,', 'error %s: correction %r starts with a comma'),
-                (r'\s,', 'error %s: correction %r contains a whitespace '
-                         'character followed by a comma'),
-                (r',\s\s', 'error %s: correction %r contains a comma followed '
-                           'by multiple whitespace characters'),
-                (r',[^ ]', 'error %s: correction %r contains a comma *not* '
-                           'followed by a space')
-            ]:
-                assert not re.search(r, rep), (msg % (err, rep))
-            if rep.count(','):
-                if not rep.endswith(','):
-                    assert 'disabled' in rep.split(',')[-1], \
-                        ('currently corrections must end with trailing "," (if'
-                         ' multiple corrections are available) or '
-                         'have "disabled" in the comment')
+            try:
+                _check_err_rep(err, rep, in_aspell, fname)
+            except Exception as exp:
+                errors.append(str(exp).split('\n')[0])
+    if len(errors):
+        raise AssertionError('\n' + '\n'.join(errors))
+
+
+def _check_err_rep(err, rep, in_aspell, fname):
+    assert ws.match(err) is None, 'error %r has whitespace' % err
+    assert comma.match(err) is None, 'error %r has a comma' % err
+    this_in_aspell = speller.check(
+        err.encode(speller.ConfigKeys()['encoding'][1]))
+    if not in_aspell:
+        assert not this_in_aspell, ('error %r should not be in aspell '
+                                    'for dictionary %s' % (err, fname))
+    assert len(rep) > 0, ('error %s: correction %r must be non-empty'
+                          % (err, rep))
+    assert not re.match(r'^\s.*', rep), ('error %s: correction %r '
+                                         'cannot start with whitespace'
+                                         % (err, rep))
+    for (r, msg) in [
+            (r'^,', 'error %s: correction %r starts with a comma'),
+            (r'\s,', 'error %s: correction %r contains a whitespace '
+             'character followed by a comma'),
+            (r',\s\s', 'error %s: correction %r contains a comma followed '
+             'by multiple whitespace characters'),
+            (r',[^ ]', 'error %s: correction %r contains a comma *not* '
+             'followed by a space')]:
+        assert not re.search(r, rep), (msg % (err, rep))
+    if rep.count(','):
+        assert rep.endswith(','), ('error %s: multiple corrections must end '
+                                   'with trailing ","' % (err,))
+    reps = [r.strip() for r in rep.lower().split(',')]
+    reps = [r for r in reps if len(r)]
+    unique = list()
+    for r in reps:
+        assert err != r.lower(), 'error %r corrects to itself' % err
+        if r not in unique:
+            unique.append(r)
+    assert reps == unique, 'entries are not (lower-case) unique'
+
+
+@fname_params
+def test_dictionary_looping(fname, in_aspell):
+    """Test that all dictionary entries are valid."""
+    err_dict = dict()
+    with open(fname, 'rb') as fid:
+        for line in fid:
+            err, rep = line.decode('utf-8').split('->')
+            err = err.lower()
+            assert err not in err_dict, 'error %r already exists' % err
+            rep = rep.rstrip('\n')
             reps = [r.strip() for r in rep.lower().split(',')]
             reps = [r for r in reps if len(r)]
             err_dict[err] = reps
-            unique = list()
-            for r in reps:
-                if r not in unique:
-                    unique.append(r)
-            assert reps == unique, 'entries are not (lower-case) unique'
-    # Loop through warnings here, so we can see them, as we don't get them with recwarn
-    #assert len(recwarn) == 0, ('error found %d error entries in the aspell '
-    #                           'dictionary' % len(recwarn))
     # check for corrections that are errors (but not self replacements)
     for err in err_dict:
         for r in err_dict[err]:
