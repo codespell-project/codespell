@@ -1,14 +1,17 @@
 # -*- coding: utf-8 -*-
 
-import aspell
 import glob
 import os.path as op
 import re
 import pytest
 from codespell_lib._codespell import _builtin_dictionaries
 
+try:
+    import aspell
+    speller = aspell.Speller('lang', 'en')
+except Exception:  # probably ImportError, but maybe also language
+    speller = None
 
-speller = aspell.Speller('lang', 'en')
 ws = re.compile(r'.*\s.*')  # whitespace
 comma = re.compile(r'.*,.*')  # comma
 
@@ -48,7 +51,6 @@ def test_dictionary_formatting(fname, in_aspell):
 
 def _check_err_rep(err, rep, in_aspell, fname):
     assert err != rep.lower(), 'error %r corrects to itself' % err
-    assert err not in err_dict, 'error %r already exists' % err
     assert ws.match(err) is None, 'error %r has whitespace' % err
     assert comma.match(err) is None, 'error %r has a comma' % err
     assert len(rep) > 0, ('error %s: correction %r must be non-empty'
@@ -56,11 +58,12 @@ def _check_err_rep(err, rep, in_aspell, fname):
     assert not re.match(r'^\s.*', rep), ('error %s: correction %r '
                                          'cannot start with whitespace'
                                          % (err, rep))
-    this_in_aspell = speller.check(
-        err.encode(speller.ConfigKeys()['encoding'][1]))
-    if not in_aspell:
-        assert not this_in_aspell, ('error %r should not be in aspell '
-                                    'for dictionary %s' % (err, fname))
+    if speller is not None:
+        this_in_aspell = speller.check(
+            err.encode(speller.ConfigKeys()['encoding'][1]))
+        if not in_aspell:
+            assert not this_in_aspell, ('error %r should not be in aspell '
+                                        'for dictionary %s' % (err, fname))
     prefix = 'error %s: correction %r' % (err, rep)
     for (r, msg) in [
             (r'^,',
@@ -75,11 +78,9 @@ def _check_err_rep(err, rep, in_aspell, fname):
             (r'\s+$',
              '%s has a trailing space'),
             (r'^[^,]*,\s*$',
-             '%s has a single entry but contains a trailing comma'),
-            ]:
+             '%s has a single entry but contains a trailing comma')]:
         assert not re.search(r, rep), (msg % (prefix,))
     del msg
-    rep_count = rep.count(',')
     if rep.count(','):
         assert rep.endswith(','), ('error %s: multiple corrections must end '
                                    'with trailing ","' % (err,))

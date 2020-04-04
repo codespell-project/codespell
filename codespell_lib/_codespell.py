@@ -232,12 +232,12 @@ def parse_options(args):
                              'This option can be specified multiple times.')
     builtin_opts = ', '.join(
         '%r %s' % (d[0], d[1]) for d in _builtin_dictionaries)
-    parser.add_option('--builtin',
-                      dest='builtin', default=_builtin_default,
-                      help='Comma-separated list of builtin dictionaries '
-                      'to use (when "-D -" or no "-D" is passed). Current '
-                      'options are:\n%s. The default is %r.'
-                      % (builtin_opts, _builtin_default))
+    parser.add_argument('--builtin',
+                        dest='builtin', default=_builtin_default,
+                        help='Comma-separated list of builtin dictionaries '
+                        'to use (when "-D -" or no "-D" is passed). Current '
+                        'options are:\n%s. The default is %r.'
+                        % (builtin_opts, _builtin_default))
     parser.add_argument('-I', '--ignore-words',
                         action='append', metavar='FILE',
                         help='File that contains words which will be ignored '

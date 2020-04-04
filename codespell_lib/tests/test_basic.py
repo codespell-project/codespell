@@ -31,23 +31,27 @@ def test_command(tmpdir):
 def test_basic(tmpdir, capsys):
     """Test some basic functionality"""
     assert cs.main('_does_not_exist_') == 0
-    with open(op.join(str(tmpdir), 'tmp'), 'w') as f:
+    fname = op.join(str(tmpdir), 'tmp')
+    with open(fname, 'w') as f:
         pass
     assert cs.main('-D', 'foo', f.name) == 1, 'missing dictionary'
-    try:
-        assert 'cannot find dictionary' in capsys.readouterr()[1]
-        assert cs.main(f.name) == 0, 'empty file'
-        with open(f.name, 'a') as f:
-            f.write('this is a test file\n')
-        assert cs.main(f.name) == 0, 'good'
-        with open(f.name, 'a') as f:
-            f.write('abandonned\n')
-        assert cs.main(f.name) == 1, 'bad'
-        with open(f.name, 'a') as f:
-            f.write('abandonned\n')
-        assert cs.main(f.name) == 2, 'worse'
-    finally:
-        os.remove(f.name)
+    assert 'cannot find dictionary' in capsys.readouterr()[1]
+    assert cs.main(fname) == 0, 'empty file'
+    with open(fname, 'a') as f:
+        f.write('this is a test file\n')
+    assert cs.main(fname) == 0, 'good'
+    with open(fname, 'a') as f:
+        f.write('abandonned\n')
+    assert cs.main(fname) == 1, 'bad'
+    with open(fname, 'a') as f:
+        f.write('abandonned\n')
+    assert cs.main(fname) == 2, 'worse'
+    with open(fname, 'a') as f:
+        f.write('tim\ngonna\n')
+    assert cs.main(fname) == 2, 'with a name'
+    assert cs.main(fname, '--builtin', 'clear,rare,names,informal') == 4
+    os.remove(fname)
+
     d = str(tmpdir)
     with open(op.join(d, 'bad.txt'), 'w') as f:
         f.write('abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd')

@@ -3845,7 +3845,6 @@ cartilege->cartilage
 cartilidge->cartilage
 cartrige->cartridge
 caryy->carry
-cas->case, disabled because of common abbreviations
 cascace->cascade
 case-insensitivy->case-insensitivity
 case-insenstive->case-insensitive
@@ -6635,8 +6634,6 @@ crahses->crashes
 crashaes->crashes
 crasheed->crashed
 crashees->crashes
-crasher->crash, disabled because it denotes something that crashes
-crashers->crashes, disabled because it denotes things that crash
 crashess->crashes
 crashs->crashes
 creaate->create
@@ -8974,7 +8971,6 @@ doesnt->doesn't, does not,
 doesnt;->doesn't
 doess->does
 doestn't->doesn't
-dof->of, doff, disabled because it's a common abbreviation
 doign->doing
 doiing->doing
 doiuble->double
@@ -9000,7 +8996,6 @@ donn->done, don,
 donnot->do not
 dont'->don't
 dont't->don't
-dont->don't, disabled because of var names
 donwload->download
 donwloaded->downloaded
 donwloading->downloading
@@ -14505,7 +14500,6 @@ iterrupt->interrupt
 itertation->iteration
 iteself->itself
 itesm->items
-ith->with, disabled because of ordinal form of i like nth
 itialise->initialise
 itialised->initialised
 itialises->initialises
@@ -16063,7 +16057,6 @@ muscicians->musicians
 musn't->mustn't
 mustator->mutator
 muste->must
-mut->must, mutt, moot, disabled because of Rust keyword
 mutablity->mutability
 mutbale->mutable
 mutch->much
@@ -21642,7 +21635,6 @@ securuity->security
 sedereal->sidereal
 seeem->seem
 seeen->seen
-seeked->sought, disabled because of JS event name
 seelect->select
 seemes->seems
 seemless->seamless
@@ -22876,7 +22868,6 @@ stocahstic->stochastic
 stocastic->stochastic
 stoer->store
 stoers->stores
-stoll->still, disabled because of name clash in C++
 stomache->stomach
 stompted->stomped
 stong->strong
@@ -24077,7 +24068,6 @@ thats->that's
 thats;->that's
 thay->they
 thck->thick
-thead->thread, disabled due to the HTML tag
 theard->thread
 thearding->threading
 theards->threads
