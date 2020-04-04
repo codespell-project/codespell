@@ -36,13 +36,13 @@ VERSION = '1.17.0.dev0'
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
 _data_root = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'data')
-_builtin_dictionaries = (  # name, desc, name, should be in aspell
-    ('clear', 'for unambiguous errors', '', True),
-    ('rare', 'for rare but valid words', '_rare', True),
-    ('informal', 'for informal words', '_informal', True),
-    ('code', 'for words common to code and/or mathematics', '_code', True),
-    ('names', 'for proper names', '_names', False),
-    ('gb_to_us', 'for corrections from GB to US', '_gb_to_us', True),
+_builtin_dictionaries = (  # name, desc, name, err in aspell, correction in aspell  # noqa: E501
+    ('clear', 'for unambiguous errors', '', None, None),
+    ('rare', 'for rare but valid words', '_rare', None, None),
+    ('informal', 'for informal words', '_informal', True, False),
+    ('code', 'for words common to code and/or mathematics', '_code', None, False),  # noqa: E501
+    ('names', 'for valid proper names that might be typos', '_names', None, False),  # noqa: E501
+    ('en-GB_to_en-US', 'for corrections from en-GB to en-US', '_en-GB_to_en-US', True, False),  # noqa: E501
 )
 _builtin_default = 'clear,rare'
 

@@ -1,4 +1,5 @@
 ans->and
+arithmetics->arithmetic
 attache->attaché, attached, attach,
 automatize->automate
 automatized->automated
@@ -7,6 +8,7 @@ backword->backward
 backwords->backwards
 bloc->block
 blocs->blocks
+bodgy->body
 buss->bus
 busses->buses
 calculatable->calculable
@@ -51,6 +53,7 @@ hided->hidden, hid,
 hist->heist, his,
 hove->have, hover, love,
 inactivate->deactivate
+incluse->include
 indention->indentation
 indite->indict
 inly->only
@@ -69,7 +72,6 @@ mater->matter, master, mother,
 medias->media, mediums,
 memorise->memorize
 midwifes->midwives
-mitre->miter
 moil->soil, mohel,
 mot->not
 moue->mouse
@@ -104,8 +106,6 @@ suppressable->suppressible
 therefor->therefore
 therefrom->there from
 theses->these, thesis,
-tho->to
-thru->through
 toke->took
 unknow->unknown
 unknows->unknowns
@@ -125,4 +125,5 @@ wit->with
 withe->with
 withing->within
 wont->won't
+wounder->wonder
 zoon->zoom
