@@ -35,8 +35,7 @@ VERSION = '1.17.0.dev0'
 
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
-_data_root = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                          'data', '')
+_data_root = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'data')
 _builtin_dictionaries = (  # name, desc, name, should be in aspell
     ('clear', 'for unambiguous errors', '', True),
     ('rare', 'for rare but valid words', '_rare', True),
@@ -225,7 +224,7 @@ def parse_options(args):
                         help='write changes in place if possible')
 
     parser.add_argument('-D', '--dictionary',
-                        action='append', metavar='FILE',
+                        action='append',
                         help='Custom dictionary file that contains spelling '
                              'corrections. If this flag is not specified or '
                              'equals "-" then the default dictionary is used. '
@@ -234,9 +233,11 @@ def parse_options(args):
         '%r %s' % (d[0], d[1]) for d in _builtin_dictionaries)
     parser.add_argument('--builtin',
                         dest='builtin', default=_builtin_default,
+                        metavar='BUILTIN-LIST',
                         help='Comma-separated list of builtin dictionaries '
-                        'to use (when "-D -" or no "-D" is passed). Current '
-                        'options are:\n%s. The default is %r.'
+                        'to include (when "-D -" or no "-D" is passed). '
+                        'Current options are:\n%s. The default is '
+                        '"--builtin %s".'
                         % (builtin_opts, _builtin_default))
     parser.add_argument('-I', '--ignore-words',
                         action='append', metavar='FILE',
@@ -620,7 +621,7 @@ def main(*args):
     ignore_words_files = options.ignore_words or []
     ignore_words = set()
     for ignore_words_file in ignore_words_files:
-        if not os.path.exists(ignore_words_file):
+        if not os.path.isfile(ignore_words_file):
             print('ERROR: cannot find ignore-words file: %s' %
                   ignore_words_file, file=sys.stderr)
             parser.print_help()
@@ -639,7 +640,7 @@ def main(*args):
     use_dictionaries = list()
     for dictionary in dictionaries:
         if dictionary == "-":
-            # figure out which default dictionaries to use
+            # figure out which builtin dictionaries to use
             use = sorted(set(options.builtin.split(',')))
             for u in use:
                 for builtin in _builtin_dictionaries:
@@ -649,11 +650,12 @@ def main(*args):
                                          % (builtin[2],)))
                         break
                 else:
-                    print('ERROR: Unknown builtin dictionary: %s' % (u,))
+                    print('ERROR: Unknown builtin dictionary: %s' % (u,),
+                          file=sys.stderr)
                     parser.print_help()
                     return 1
         else:
-            if not os.path.exists(dictionary):
+            if not os.path.isfile(dictionary):
                 print('ERROR: cannot find dictionary file: %s' % dictionary,
                       file=sys.stderr)
                 parser.print_help()

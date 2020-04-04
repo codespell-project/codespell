@@ -49,10 +49,17 @@ def test_basic(tmpdir, capsys):
     with open(fname, 'a') as f:
         f.write('tim\ngonna\n')
     assert cs.main(fname) == 2, 'with a name'
-    assert cs.main(fname, '--builtin', 'clear,rare,names,informal') == 4
+    assert cs.main('--builtin', 'clear,rare,names,informal', fname) == 4
+    capsys.readouterr()
+    assert cs.main(fname, '--builtin', 'foo') == 1  # bad type sys.exit(1)
+    stdout = capsys.readouterr()[1]
+    assert 'Unknown builtin dictionary' in stdout
+    d = str(tmpdir)
+    assert cs.main(fname, '-D', op.join(d, 'foo')) == 1  # bad dict
+    stdout = capsys.readouterr()[1]
+    assert 'cannot find dictionary' in stdout
     os.remove(fname)
 
-    d = str(tmpdir)
     with open(op.join(d, 'bad.txt'), 'w') as f:
         f.write('abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd')
     assert cs.main(d) == 4
