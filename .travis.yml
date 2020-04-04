@@ -4,6 +4,7 @@
 # for it to be on multiple physical lines, so long as you remember: - There
 # can't be any leading "-"s - All newlines will be removed, so use ";"s
 
+dist: bionic
 language: python
 cache: pip
 python:
