@@ -1,4 +1,7 @@
 1nd->1st
+2st->2nd
+3nd->3rd
+3st->3rd
 a-diaerers->a-diaereses
 aaccessibility->accessibility
 aaccession->accession
@@ -1911,6 +1914,12 @@ apprpriate->appropriate
 apprpriately->appropriately
 appy->apply
 appying->applying
+apreciate->appreciate
+apreciated->appreciated
+apreciates->appreciates
+apreciating->appreciating
+apreciation->appreciation
+apreciative->appreciative
 aprehensive->apprehensive
 apreteate->appreciate
 apreteated->appreciated
@@ -3434,6 +3443,7 @@ brokem->broken
 brokend->broken
 brokened->broken
 brokeness->brokenness
+bronken->broken
 broser->browser
 brouter->router
 brower->browser
@@ -6037,6 +6047,7 @@ contentss->contents
 contermporaneous->contemporaneous
 contet->contest, content, context,
 contets->contents, contexts,
+contex->context
 contexta->context
 contexual->contextual
 contiains->contains
@@ -6108,6 +6119,7 @@ contraining->constraining
 contraint->constraint
 contraints->constraints
 contraitns->constraints
+contraveining->contravening
 contravercial->controversial
 contraversy->controversy
 contributer->contributor
@@ -7946,7 +7958,7 @@ determind->determined
 determinded->determined
 determinee->determine
 determineing->determining
-determing->determining
+determing->determining, determine,
 determinining->determining
 deterministinc->deterministic
 determinne->determine
@@ -9622,6 +9634,7 @@ engieneer->engineer
 engieneers->engineers
 enginge->engine
 enginin->engine
+engoug->enough
 enhabce->enhance
 enhabced->enhanced
 enhabces->enhances
@@ -9980,6 +9993,14 @@ etablishd->established
 etablished->established
 etablishing->establishing
 etcp->etc
+etend->extend, attend,
+etended->extended, attended,
+etender->extender, attender,
+etenders->extenders, attenders,
+etends->extends, attends,
+etensible->extensible
+etension->extension
+etensions->extensions
 ethe->the
 etherenet->Ethernet
 ethnocentricm->ethnocentrism
@@ -11059,6 +11080,9 @@ extration->extraction
 extrator->extractor
 extrators->extractors
 extravagent->extravagant
+extraversion->extroversion
+extravert->extrovert
+extraverts->extroverts
 extraxt->extract
 extraxted->extracted
 extraxting->extracting
@@ -11334,6 +11358,11 @@ finailse->finalise
 finailze->finalize
 finalle->finale, finally,
 finaly->finally, finale,
+finanace->finance
+finanaced->financed
+finanaces->finances
+finanacially->financially
+finanacier->financier
 financialy->financially
 finanize->finalize
 finanlize->finalize
@@ -13105,7 +13134,6 @@ impletment->implement
 implicite->implicit, implicitly,
 implicitely->implicitly
 implicitley->implicitly
-implicity->implicitly
 implict->implicit
 implictly->implicitly
 impliment->implement
@@ -13146,6 +13174,9 @@ imporvement->improvement
 imporving->improving
 imporvment->improvement
 imposible->impossible
+impot->import
+impotr->import, importer,
+impotrt->import, imported, importer,
 impove->improve
 impoved->improved
 impovements->improvements
@@ -14332,6 +14363,9 @@ intquired->inquired, enquired,
 intquires->inquires, enquires,
 intquiries->inquiries, enquiries,
 intquiry->inquiry, enquiry,
+intraversion->introversion
+intravert->introvert
+intraverts->introverts
 intrduced->introduced
 intreeg->intrigue
 intreeged->intrigued
@@ -14421,6 +14455,7 @@ invisiable->invisible
 invisibile->invisible
 invisivble->invisible
 invlaid->invalid
+invlid->invalid
 invlisible->invisible
 invlove->involve
 invloved->involved
@@ -17101,6 +17136,7 @@ optionalliy->optionally
 optionallly->optionally
 optionaly->optionally
 optionel->optional
+optiones->options
 optionial->optional
 optionn->option
 optionnal->optional
@@ -17472,6 +17508,8 @@ paermissions->permissions
 paeth->path
 pagagraph->paragraph
 pahses->phases
+paht->path, pat, part,
+pahts->paths, pats, parts,
 paide->paid
 paied->paid, paired,
 painiting->painting
@@ -18113,6 +18151,8 @@ poeple->people
 poer->power
 poety->poetry
 pogress->progress
+poind->point
+poindcloud->pointcloud
 poiner->pointer
 poing->point
 poinits->points
@@ -19808,6 +19848,8 @@ recivership->receivership
 recives->receives
 reciving->receiving
 reclaimation->reclamation
+recnt->recent, recant, rent,
+recntly->recently
 recod->record
 recofig->reconfig
 recoginizing-->recognizing
@@ -20765,6 +20807,13 @@ reprocuce->reproduce, reprocure,
 reprocuced->reproduced, reprocured,
 reprocuces->reproduces, reprocures,
 reprocucing->reproducing, reprocuring,
+reprodice->reproduce
+reprodiced->reproduced
+reprodicibility->reproducibility
+reprodicible->reproducible
+reprodicibly->reproducibly
+reprodicing->reproducing
+reprodiction->reproduction
 reproducabely->reproducibly
 reproducability->reproducibility
 reproducable->reproducible
@@ -21504,6 +21553,10 @@ scenegraaph->scenegraph
 scenegraaphs->scenegraphs
 sceond->second
 sceonds->seconds
+scetch->sketch
+scetched->sketched
+scetches->sketches
+scetching->sketching
 schdule->schedule
 schduled->scheduled
 schduleing->scheduling
@@ -21544,6 +21597,10 @@ scipting->scripting
 scipts->scripts, skips,
 scirpt->script
 scirpts->scripts
+scketch->sketch
+scketched->sketched
+scketches->sketches
+scketching->sketching
 sclar->scalar
 scneario->scenario
 scnearios->scenarios
@@ -21583,6 +21640,11 @@ scrollin->scrolling
 scroolbar->scrollbar
 scrren->screen
 scrutinity->scrutiny
+sction->section, suction,
+sctional->sectional, suctional,
+sctioned->sectioned, suctioned,
+sctioning->sectioning, suctioning,
+sctions->sections, suctions,
 scuccessully->successfully
 scuptures->sculptures
 seach->search
@@ -22999,6 +23061,9 @@ strucutred->structured
 strucutres->structures
 strucuture->structure
 struggel->struggle
+struggeled->struggled
+struggeling->struggling
+struggels->struggles
 struttural->structural
 strutture->structure
 struture->structure
@@ -23964,11 +24029,37 @@ temporarilu->temporary
 temporarirly->temporarily
 temporarly->temporarily, temporary,
 temporay->temporary
+tempories->temporaries
 temporily->temporarily
+tempororaries->temporaries
+tempororarily->temporarily
+tempororary->temporary
+temporories->temporaries
+tempororily->temporarily
+temporory->temporary
+temporraies->temporaries
+temporraily->temporarily
+temporraries->temporaries
+temporrarily->temporarily
+temporrary->temporary
+temporray->temporary
+temporries->temporaries
+temporrily->temporarily
+temporry->temporary
+temportal->temporal
+temportaries->temporaries
+temportarily->temporarily
+temportary->temporary
 tempory->temporary
+temporyries->temporaries
+temporyrily->temporarily
+temporyry->temporary
 temprarily->temporarily
 temprary->temporary, temporarily,
 temprature->temperature
+tempratures->temperatures
+tempreature->temperature
+tempreatures->temperatures
 temproarily->temporarily
 temproary->temporary
 temproraily->temporarily
@@ -24259,6 +24350,9 @@ thurrow->thorough
 thurver->further
 thw->the, thaw,
 thyat->that
+tich->thick, tick, titch, stitch,
+tichened->thickened
+tichness->thickness
 tieing->tying
 tiem->time, item,
 tiemout->timeout
@@ -24647,8 +24741,33 @@ traspose->transpose
 trasposed->transposed
 trasposition->transposition
 traspositions->transpositions
+traved->traversed
+traveersal->traversal
+traveerse->traverse
+traveersed->traversed
+traveerses->traverses
+traveersing->traversing
 traveral->traversal
+travercal->traversal
+traverce->traverse
+traverced->traversed
+traverces->traverses
+travercing->traversing
+travere->traverse
+travered->traversed
+traveres->traverse
+traveresal->traversal
+traverese->traverse, traverses,
+traveresed->traversed
+travereses->traverses
+traveresing->traversing
+travering->traversing
+traverls->travels, traversals,
+travesal->traversal
 travese->traverse
+travesed->traversed
+traveses->traverses
+travesing->traversing
 tre->tree
 treadet->treated
 treak->treat, tweak,
@@ -26288,14 +26407,25 @@ withih->within
 withinn->within
 withion->within
 witho->with
+withoit->without
 withold->withhold
+witholding->withholding
+withon->within
+withoout->without
+withot->without
+withotu->without
 withou->without
 withoud->without
 withoug->without
 withough->without
 withought->without
+withouht->without
+withount->without
 withour->without, with our,
+withourt->without
+withous->without
 withouth->without
+withouyt->without
 withs->with, widths,
 witht->with
 withthe->with the
