@@ -2882,6 +2882,7 @@ awnser->answer
 awoid->avoid
 awya->away
 axises->axes
+axix->axis
 axpressed->expressed
 aysnc->async
 ayway->anyway, away,
@@ -3312,6 +3313,8 @@ borgwasy->bourgeoisie
 borke->broke
 borken->broken
 borow->borrow
+borwser->browsers
+borwsers->browsers
 bostom->boston, bottom,
 bothe->both
 boths->both
@@ -6338,6 +6341,7 @@ coponent->component
 copoying->copying
 coppermines->coppermine
 coppied->copied
+copping->coping, copying, cropping, disabled due to being a legit word
 coppy->copy, choppy,
 copright->copyright
 coprighted->copyrighted
@@ -6829,6 +6833,8 @@ custumised->customised
 custumized->customized
 cutom->custom
 cuurently->currently
+cuve->curve, cube, cave,
+cuves->curves, cubes, caves,
 cvignore->cvsignore
 cxan->cyan
 cycic->cyclic
@@ -7337,9 +7343,9 @@ definiton->definition
 definitons->definitions
 definned->defined
 definnition->definition
-defins->defines
-defint->definite
-definte->definite
+defins->defines, define,
+defint->definite, define,
+definte->definite, define,
 defintian->definition
 defintion->definition
 defintions->definitions
@@ -11167,6 +11173,8 @@ familiies->families
 familiy->family
 familliar->familiar
 familly->family
+famlilies->families
+famlily->family
 famoust->famous
 fanatism->fanaticism
 fancyness->fanciness
@@ -11183,6 +11191,8 @@ fasing->fazing, phasing,
 fasion->fashion
 fassade->facade
 fassinate->fascinate
+fasterner->fastener
+fasterners->fasteners
 fastr->faster
 fatc->fact
 fater->faster
@@ -13792,6 +13802,7 @@ inmediatelly->immediately
 inmediately->immediately
 inmediatily->immediately
 inmediatly->immediately
+inmense->immense
 inmigrant->immigrant
 inmigrants->immigrants
 inmmediately->immediately
@@ -15271,7 +15282,7 @@ margings->margins
 mariabd->MariaDB
 mariage->marriage
 marjority->majority
-markes->marks, marked,
+markes->marks, marked, markers,
 marketting->marketing
 marmelade->marmalade
 marrage->marriage
@@ -15694,6 +15705,7 @@ mircosoft->Microsoft
 mirgate->migrate
 mirgated->migrated
 mirgates->migrates
+mirorr->mirror
 mirro->mirror
 mirroed->mirrored
 mirrorn->mirror
@@ -16110,6 +16122,7 @@ namnes->names
 namnespace->namespace
 namnespaces->namespaces
 nams->names
+nane->name
 nanosencond->nanosecond
 nanosenconds->nanoseconds
 Naploeon->Napoleon
@@ -16149,6 +16162,7 @@ neccessarily->necessarily
 neccessarry->necessary
 neccessary->necessary
 neccessities->necessities
+neccisary->necessary
 neccsessary->necessary
 necesarily->necessarily
 necesarrily->necessarily
@@ -18546,6 +18560,7 @@ Premonasterians->Premonstratensians
 premption->preemption
 premptive->preemptive
 premptively->preemptively
+preocess->process
 preocupation->preoccupation
 preoperty->property
 prepair->prepare
@@ -24075,6 +24090,7 @@ theer->there
 theery->theory
 theese->these
 thefore->therefore
+thei->their, they,
 theif->thief
 theifs->thieves
 theire->their, they're,
@@ -25431,6 +25447,7 @@ unsychronised->unsynchronised
 untargetted->untargeted
 unter->under
 untill->until
+untils->until, utils,
 untintuitive->unintuitive
 untoched->untouched
 untqueue->unqueue
