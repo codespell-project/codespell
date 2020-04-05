@@ -1,4 +1,7 @@
 1nd->1st
+2st->2nd
+3nd->3rd
+3st->3rd
 a-diaerers->a-diaereses
 aaccessibility->accessibility
 aaccession->accession
@@ -1913,6 +1916,12 @@ apprpriate->appropriate
 apprpriately->appropriately
 appy->apply
 appying->applying
+apreciate->appreciate
+apreciated->appreciated
+apreciates->appreciates
+apreciating->appreciating
+apreciation->appreciation
+apreciative->appreciative
 aprehensive->apprehensive
 apreteate->appreciate
 apreteated->appreciated
@@ -3446,6 +3455,7 @@ brokem->broken
 brokend->broken
 brokened->broken
 brokeness->brokenness
+bronken->broken
 broser->browser
 brouter->router
 brower->browser
@@ -6061,6 +6071,7 @@ contentss->contents
 contermporaneous->contemporaneous
 contet->contest, content, context,
 contets->contents, contexts,
+contex->context
 contexta->context
 contexual->contextual
 contiains->contains
@@ -7985,7 +7996,7 @@ determind->determined
 determinded->determined
 determinee->determine
 determineing->determining
-determing->determining
+determing->determining, determine,
 determinining->determining
 deterministinc->deterministic
 determinne->determine
@@ -9664,6 +9675,7 @@ engieneer->engineer
 engieneers->engineers
 enginge->engine
 enginin->engine
+engoug->enough
 enhabce->enhance
 enhabced->enhanced
 enhabces->enhances
@@ -13215,6 +13227,9 @@ imporvement->improvement
 imporving->improving
 imporvment->improvement
 imposible->impossible
+impot->import
+impotr->import, importer,
+impotrt->import, imported, importer,
 impove->improve
 impoved->improved
 impovements->improvements
@@ -14498,6 +14513,7 @@ invisiable->invisible
 invisibile->invisible
 invisivble->invisible
 invlaid->invalid
+invlid->invalid
 invlisible->invisible
 invlove->involve
 invloved->involved
@@ -17203,6 +17219,7 @@ optionalliy->optionally
 optionallly->optionally
 optionaly->optionally
 optionel->optional
+optiones->options
 optionial->optional
 optionn->option
 optionnal->optional
@@ -17574,6 +17591,8 @@ paermissions->permissions
 paeth->path
 pagagraph->paragraph
 pahses->phases
+paht->path, pat, part,
+pahts->paths, pats, parts,
 paide->paid
 paied->paid, paired,
 painiting->painting
@@ -18218,6 +18237,8 @@ poeple->people
 poer->power
 poety->poetry
 pogress->progress
+poind->point
+poindcloud->pointcloud
 poiner->pointer
 poing->point
 poinits->points
@@ -19922,6 +19943,8 @@ recivership->receivership
 recives->receives
 reciving->receiving
 reclaimation->reclamation
+recnt->recent, recant, rent,
+recntly->recently
 recod->record
 recofig->reconfig
 recoginizing-->recognizing
@@ -20881,6 +20904,13 @@ reprocuce->reproduce, reprocure,
 reprocuced->reproduced, reprocured,
 reprocuces->reproduces, reprocures,
 reprocucing->reproducing, reprocuring,
+reprodice->reproduce
+reprodiced->reproduced
+reprodicibility->reproducibility
+reprodicible->reproducible
+reprodicibly->reproducibly
+reprodicing->reproducing
+reprodiction->reproduction
 reproducabely->reproducibly
 reproducability->reproducibility
 reproducable->reproducible
@@ -21627,6 +21657,10 @@ scenegraaph->scenegraph
 scenegraaphs->scenegraphs
 sceond->second
 sceonds->seconds
+scetch->sketch
+scetched->sketched
+scetches->sketches
+scetching->sketching
 schdule->schedule
 schduled->scheduled
 schduleing->scheduling
@@ -21667,6 +21701,10 @@ scipting->scripting
 scipts->scripts, skips,
 scirpt->script
 scirpts->scripts
+scketch->sketch
+scketched->sketched
+scketches->sketches
+scketching->sketching
 sclar->scalar
 scneario->scenario
 scnearios->scenarios
@@ -21706,6 +21744,11 @@ scrollin->scrolling
 scroolbar->scrollbar
 scrren->screen
 scrutinity->scrutiny
+sction->section, suction,
+sctional->sectional, suctional,
+sctioned->sectioned, suctioned,
+sctioning->sectioning, suctioning,
+sctions->sections, suctions,
 scuccessully->successfully
 scuptures->sculptures
 seach->search
@@ -23135,6 +23178,9 @@ strucutred->structured
 strucutres->structures
 strucuture->structure
 struggel->struggle
+struggeled->struggled
+struggeling->struggling
+struggels->struggles
 struttural->structural
 strutture->structure
 struture->structure
@@ -24426,6 +24472,9 @@ thurrow->thorough
 thurver->further
 thw->the, thaw,
 thyat->that
+tich->thick, tick, titch, stitch,
+tichened->thickened
+tichness->thickness
 tieing->tying
 tiem->time, item,
 tiemout->timeout
@@ -26448,7 +26497,7 @@ wiew->view
 wigdet->widget
 wigdets->widgets
 wighed->weighed, wicked,
-wight->weight, white, right, wight,
+wight->weight, white, right, write, wight,
 wighted->weighted, weighed,
 wights->weights, whites, rights, wights,
 wih->with
