@@ -13,6 +13,8 @@ python:
   - 3.6
   - 3.7
   - 3.8
+env:
+  REQUIRE_ASPELL=true
 
 addons:
   apt:

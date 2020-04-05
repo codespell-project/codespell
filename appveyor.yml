@@ -5,11 +5,9 @@ environment:
     - PYTHON: C:\Python37-x64
       PYTHON_VERSION: 3.7
       PYTHON_ARCH: 64
-      ALLOW_NO_ASPELL: true
     - PYTHON: C:\Python27
       PYTHON_VERSION: 2.7
       PYTHON_ARCH: 32
-      ALLOW_NO_ASPELL: true
 
 cache:
   # Cache downloaded pip packages and built wheels.

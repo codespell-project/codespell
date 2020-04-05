@@ -14,10 +14,10 @@ try:
     speller = aspell.Speller('lang', 'en')
 except Exception as exp:  # probably ImportError, but maybe also language
     speller = None
-    if os.getenv('ALLOW_NO_ASPELL', 'false').lower() != 'true':
+    if os.getenv('REQUIRE_ASPELL', 'false').lower() == 'true':
         raise RuntimeError(
-            'Cannot run complete tests without aspell, consider installing '
-            'it, or set ALLOW_NO_ASPELL=true. Got error during import:\n%s'
+            'Cannot run complete tests without aspell when '
+            'REQUIRE_ASPELL=true. Got error during import:\n%s'
             % (exp,))
 
 ws = re.compile(r'.*\s.*')  # whitespace
