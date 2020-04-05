@@ -105,7 +105,7 @@ def _check_err_rep(err, rep, in_aspell, fname):
     reps = [r for r in reps if len(r)]
     for r in reps:
         assert err != r.lower(), ('error %r corrects to itself amongst others'
-				                  % (err))
+				  % (err))
         _check_aspell(
             r, 'error %s: correction %r' % (err, r), in_aspell[1], fname)
     assert len(set(reps)) == len(reps), 'entries are not (lower-case) unique'
