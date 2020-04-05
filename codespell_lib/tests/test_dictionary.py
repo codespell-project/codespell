@@ -100,11 +100,12 @@ def _check_err_rep(err, rep, in_aspell, fname):
     del msg
     if rep.count(','):
         assert rep.endswith(','), ('error %s: multiple corrections must end '
-                                   'with trailing ","' % (err,))
+                                   'with trailing ","' % (err))
     reps = [r.strip() for r in rep.lower().split(',')]
     reps = [r for r in reps if len(r)]
     for r in reps:
-        assert err != r.lower(), 'error %r corrects to itself' % err
+        assert err != r.lower(), ('error %r corrects to itself amongst others'
+				                  % (err))
         _check_aspell(
             r, 'error %s: correction %r' % (err, r), in_aspell[1], fname)
     assert len(set(reps)) == len(reps), 'entries are not (lower-case) unique'
@@ -121,7 +122,7 @@ def _check_err_rep(err, rep, in_aspell, fname):
     ('a', 'b ,ar', 'contains a whitespace.*followed by a comma'),
     ('a', 'bar,', 'single entry.*comma'),
     ('a', 'bar, bat', 'must end with trailing ","'),
-    ('a', 'a, bar,', 'corrects to itself'),
+    ('a', 'a, bar,', 'corrects to itself amongst others'),
     ('a', 'a', 'corrects to itself'),
     ('a', 'bar, bar,', 'unique'),
     pytest.param('a', 'ist, bar,', 'in aspell', marks=[
