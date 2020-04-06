@@ -19,6 +19,9 @@ except Exception as exp:  # probably ImportError, but maybe also language
             'Cannot run complete tests without aspell when '
             'REQUIRE_ASPELL=true. Got error during import:\n%s'
             % (exp,))
+    else:
+        print 'aspell not found, but not required, skipping aspell tests. Got '
+              'error during import:\n%s' % (exp,)
 
 ws = re.compile(r'.*\s.*')  # whitespace
 comma = re.compile(r'.*,.*')  # comma
