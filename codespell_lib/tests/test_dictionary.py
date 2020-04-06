@@ -153,7 +153,7 @@ def test_error_checking(err, rep, match):
         pytest.mark.skipif(speller is None, reason='requires aspell')]),
     pytest.param('a', 'bar, back,', None, False, 'should not be in aspell', marks=[  # noqa: E501
         pytest.mark.skipif(speller is None, reason='requires aspell')]),
-    pytest.param('abc', 'uvw, xyz,', True, False, 'should be in aspell', marks=[
+    pytest.param('abc', 'uvw, xyz,', True, False, 'should be in aspell', marks=[  # noqa: E501
         pytest.mark.skipif(speller is None, reason='requires aspell')]),
     pytest.param('abc', 'uvw, bar,', False, False, 'should not be in aspell', marks=[  # noqa: E501
         pytest.mark.skipif(speller is None, reason='requires aspell')]),
