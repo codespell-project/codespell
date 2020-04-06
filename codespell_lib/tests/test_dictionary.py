@@ -105,12 +105,12 @@ def _check_err_rep(err, rep, in_aspell, fname):
     del msg
     if rep.count(','):
         assert rep.endswith(','), ('error %s: multiple corrections must end '
-                                   'with trailing ","' % (err))
+                                   'with trailing ","' % (err,))
     reps = [r.strip() for r in rep.lower().split(',')]
     reps = [r for r in reps if len(r)]
     for r in reps:
         assert err != r.lower(), ('error %r corrects to itself amongst others'
-                                  % (err))
+                                  % (err,))
         _check_aspell(
             r, 'error %s: correction %r' % (err, r), in_aspell[1], fname)
     assert len(set(reps)) == len(reps), 'entries are not (lower-case) unique'
