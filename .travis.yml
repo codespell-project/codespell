@@ -4,6 +4,7 @@
 # for it to be on multiple physical lines, so long as you remember: - There
 # can't be any leading "-"s - All newlines will be removed, so use ";"s
 
+dist: bionic
 language: python
 cache: pip
 python:
@@ -12,6 +13,14 @@ python:
   - 3.6
   - 3.7
   - 3.8
+env:
+  REQUIRE_ASPELL=true
+
+addons:
+  apt:
+    packages:
+      - libaspell-dev
+      - aspell-en
 
 before_install:
     - source tools/travis_tools.sh
@@ -22,6 +31,8 @@ before_install:
     - python --version  # just to check
     - pip install -U pip wheel  # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
     - retry pip install pytest pytest-cov flake8 coverage codecov chardet setuptools docutils
+    - if [ ${TRAVIS_PYTHON_VERSION:0:1} == "2" ]; then retry pip install aspell-python-py2; fi
+    - if [ ${TRAVIS_PYTHON_VERSION:0:1} == "3" ]; then retry pip install aspell-python-py3; fi
     - cd $SRC_DIR
 
 install:

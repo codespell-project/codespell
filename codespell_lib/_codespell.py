@@ -35,8 +35,18 @@ VERSION = '1.17.0.dev0'
 
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
-default_dictionary = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                  'data', 'dictionary.txt')
+_data_root = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'data')
+_builtin_dictionaries = (  # name, desc, name, err in aspell, correction in aspell  # noqa: E501
+# The aspell tests here aren't the ideal state, but the None's are realistic
+# for obscure words
+    ('clear', 'for unambiguous errors', '', False, None),
+    ('rare', 'for rare but valid words', '_rare', None, None),
+    ('informal', 'for informal words', '_informal', True, True),
+    ('code', 'for words common to code and/or mathematics', '_code', None, None),  # noqa: E501
+    ('names', 'for valid proper names that might be typos', '_names', None, None),  # noqa: E501
+    ('en-GB_to_en-US', 'for corrections from en-GB to en-US', '_en-GB_to_en-US', True, True),  # noqa: E501
+)
+_builtin_default = 'clear,rare'
 
 # OPTIONS:
 #
@@ -216,11 +226,21 @@ def parse_options(args):
                         help='write changes in place if possible')
 
     parser.add_argument('-D', '--dictionary',
-                        action='append', metavar='FILE',
+                        action='append',
                         help='Custom dictionary file that contains spelling '
                              'corrections. If this flag is not specified or '
                              'equals "-" then the default dictionary is used. '
                              'This option can be specified multiple times.')
+    builtin_opts = ', '.join(
+        '%r %s' % (d[0], d[1]) for d in _builtin_dictionaries)
+    parser.add_argument('--builtin',
+                        dest='builtin', default=_builtin_default,
+                        metavar='BUILTIN-LIST',
+                        help='Comma-separated list of builtin dictionaries '
+                        'to include (when "-D -" or no "-D" is passed). '
+                        'Current options are:\n%s. The default is '
+                        '"--builtin %s".'
+                        % (builtin_opts, _builtin_default))
     parser.add_argument('-I', '--ignore-words',
                         action='append', metavar='FILE',
                         help='File that contains words which will be ignored '
@@ -603,7 +623,7 @@ def main(*args):
     ignore_words_files = options.ignore_words or []
     ignore_words = set()
     for ignore_words_file in ignore_words_files:
-        if not os.path.exists(ignore_words_file):
+        if not os.path.isfile(ignore_words_file):
             print('ERROR: cannot find ignore-words file: %s' %
                   ignore_words_file, file=sys.stderr)
             parser.print_help()
@@ -615,16 +635,36 @@ def main(*args):
         for word in comma_separated_words.split(','):
             ignore_words.add(word.strip())
 
-    dictionaries = options.dictionary or [default_dictionary]
-    misspellings = dict()
+    if options.dictionary:
+        dictionaries = options.dictionary
+    else:
+        dictionaries = ['-']
+    use_dictionaries = list()
     for dictionary in dictionaries:
         if dictionary == "-":
-            dictionary = default_dictionary
-        if not os.path.exists(dictionary):
-            print('ERROR: cannot find dictionary file: %s' % dictionary,
-                  file=sys.stderr)
-            parser.print_help()
-            return 1
+            # figure out which builtin dictionaries to use
+            use = sorted(set(options.builtin.split(',')))
+            for u in use:
+                for builtin in _builtin_dictionaries:
+                    if builtin[0] == u:
+                        use_dictionaries.append(
+                            os.path.join(_data_root, 'dictionary%s.txt'
+                                         % (builtin[2],)))
+                        break
+                else:
+                    print('ERROR: Unknown builtin dictionary: %s' % (u,),
+                          file=sys.stderr)
+                    parser.print_help()
+                    return 1
+        else:
+            if not os.path.isfile(dictionary):
+                print('ERROR: cannot find dictionary file: %s' % dictionary,
+                      file=sys.stderr)
+                parser.print_help()
+                return 1
+            use_dictionaries.append(dictionary)
+    misspellings = dict()
+    for dictionary in use_dictionaries:
         build_dict(dictionary, misspellings, ignore_words)
     colors = TermColors()
     if not options.colors or sys.platform == 'win32':
