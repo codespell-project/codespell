@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import print_function
-
 import glob
 import os.path as op
 import os
 import re
+import warnings
 
 import pytest
 
@@ -22,8 +21,9 @@ except Exception as exp:  # probably ImportError, but maybe also language
             'REQUIRE_ASPELL=true. Got error during import:\n%s'
             % (exp,))
     else:
-        print('aspell not found, but not required, skipping aspell tests. Got '
-              'error during import:\n%s' % (exp,))
+        warnings.warn(
+            'aspell not found, but not required, skipping aspell tests. Got '
+            'error during import:\n%s' % (exp,))
 
 ws = re.compile(r'.*\s.*')  # whitespace
 comma = re.compile(r'.*,.*')  # comma
@@ -137,26 +137,18 @@ def test_error_checking(err, rep, match):
         _check_err_rep(err, rep, (None, None), 'dummy')
 
 
+@pytest.mark.skipif(speller is None, reason='requires aspell')
 @pytest.mark.parametrize('err, rep, err_aspell, rep_aspell, match', [
-# This doesn't raise any exceptions, so skip for now
-#    pytest.param('a', 'uvw, bar,', None, None, 'should be in aspell', marks=[
-#        pytest.mark.skipif(speller is None, reason='requires aspell')]),
-    pytest.param('abc', 'uvw, bar,', True, None, 'should be in aspell', marks=[
-        pytest.mark.skipif(speller is None, reason='requires aspell')]),
-    pytest.param('a', 'uvw, bar,', False, None, 'should not be in aspell', marks=[  # noqa: E501
-        pytest.mark.skipif(speller is None, reason='requires aspell')]),
-    pytest.param('a', 'abc, uvw,', None, True, 'should be in aspell', marks=[  # noqa: E501
-        pytest.mark.skipif(speller is None, reason='requires aspell')]),
-    pytest.param('abc', 'uvw, bar,', True, True, 'should be in aspell', marks=[
-        pytest.mark.skipif(speller is None, reason='requires aspell')]),
-    pytest.param('abc', 'uvw, bar,', False, True, 'should be in aspell', marks=[  # noqa: E501
-        pytest.mark.skipif(speller is None, reason='requires aspell')]),
-    pytest.param('a', 'bar, back,', None, False, 'should not be in aspell', marks=[  # noqa: E501
-        pytest.mark.skipif(speller is None, reason='requires aspell')]),
-    pytest.param('abc', 'uvw, xyz,', True, False, 'should be in aspell', marks=[  # noqa: E501
-        pytest.mark.skipif(speller is None, reason='requires aspell')]),
-    pytest.param('abc', 'uvw, bar,', False, False, 'should not be in aspell', marks=[  # noqa: E501
-        pytest.mark.skipif(speller is None, reason='requires aspell')]),
+    # This doesn't raise any exceptions, so skip for now:
+    # pytest.param('a', 'uvw, bar,', None, None, 'should be in aspell'),
+    ('abc', 'uvw, bar,', True, None, 'should be in aspell'),
+    ('a', 'uvw, bar,', False, None, 'should not be in aspell'),
+    ('a', 'abc, uvw,', None, True, 'should be in aspell'),
+    ('abc', 'uvw, bar,', True, True, 'should be in aspell'),
+    ('abc', 'uvw, bar,', False, True, 'should be in aspell'),
+    ('a', 'bar, back,', None, False, 'should not be in aspell'),
+    ('abc', 'uvw, xyz,', True, False, 'should be in aspell'),
+    ('abc', 'uvw, bar,', False, False, 'should not be in aspell'),
 ])
 def test_error_checking_in_aspell(err, rep, err_aspell, rep_aspell, match):
     """Test that our error checking works with aspell."""
