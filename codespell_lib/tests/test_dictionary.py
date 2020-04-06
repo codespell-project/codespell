@@ -75,7 +75,7 @@ def _check_aspell(word, msg, in_aspell, fname):
     if in_aspell:  # should be an error in aspell
         assert this_in_aspell, '%s should %s' % (msg, end)
     else:  # shouldn't be
-        assert this_in_aspell, '%s should not %s' % (msg, end)
+        assert not this_in_aspell, '%s should not %s' % (msg, end)
 
 
 def _check_err_rep(err, rep, in_aspell, fname):
@@ -147,7 +147,7 @@ def test_error_checking(err, rep, match):
         pytest.mark.skipif(speller is None, reason='requires aspell')]),
     pytest.param('a', 'ist, bar,', False, None, 'should not be in aspell', marks=[  # noqa: E501
         pytest.mark.skipif(speller is None, reason='requires aspell')]),
-    pytest.param('a', 'ist, bar,', None, True, 'should be in aspell', marks=[  # noqa: E501
+    pytest.param('a', 'abc, ist,', None, True, 'should be in aspell', marks=[  # noqa: E501
         pytest.mark.skipif(speller is None, reason='requires aspell')]),
     pytest.param('abc', 'ist, bar,', True, True, 'should be in aspell', marks=[
         pytest.mark.skipif(speller is None, reason='requires aspell')]),
@@ -155,9 +155,9 @@ def test_error_checking(err, rep, match):
         pytest.mark.skipif(speller is None, reason='requires aspell')]),
     pytest.param('a', 'bar, back,', None, False, 'should not be in aspell', marks=[  # noqa: E501
         pytest.mark.skipif(speller is None, reason='requires aspell')]),
-    pytest.param('abc', 'bar, back,', True, False, 'should be in aspell', marks=[
+    pytest.param('abc', 'ist, xyz,', True, False, 'should be in aspell', marks=[
         pytest.mark.skipif(speller is None, reason='requires aspell')]),
-    pytest.param('a', 'bar, back,', False, False, 'should not be in aspell', marks=[  # noqa: E501
+    pytest.param('abc', 'ist, bar,', False, False, 'should not be in aspell', marks=[  # noqa: E501
         pytest.mark.skipif(speller is None, reason='requires aspell')]),
 ])
 def test_error_checking_in_aspell(err, rep, err_aspell, rep_aspell, match):
