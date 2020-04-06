@@ -130,13 +130,39 @@ def _check_err_rep(err, rep, in_aspell, fname):
     ('a', 'a, bar,', 'corrects to itself amongst others'),
     ('a', 'a', 'corrects to itself'),
     ('a', 'bar, bar,', 'unique'),
-    pytest.param('a', 'ist, bar,', 'in aspell', marks=[
+    pytest.param('a', 'ist, bar,', 'should be in aspell', marks=[
         pytest.mark.skipif(speller is None, reason='requires aspell')]),
 ])
 def test_error_checking(err, rep, match):
     """Test that our error checking works."""
     with pytest.raises(AssertionError, match=match):
         _check_err_rep(err, rep, (False, False), 'dummy')
+
+
+@pytest.mark.parametrize('err, rep, err_aspell, rep_aspell, match', [
+    pytest.param('a', 'ist, bar,', None, None, 'should be in aspell', marks=[
+        pytest.mark.skipif(speller is None, reason='requires aspell')]),
+    pytest.param('a', 'ist, bar,', true, None, 'should be in aspell', marks=[
+        pytest.mark.skipif(speller is None, reason='requires aspell')]),
+    pytest.param('abc', 'ist, bar,', false, None, 'should not be in aspell', marks=[
+        pytest.mark.skipif(speller is None, reason='requires aspell')]),
+    pytest.param('abc', 'bar, back,', None, true, 'should be in aspell', marks=[
+        pytest.mark.skipif(speller is None, reason='requires aspell')]),
+    pytest.param('a', 'bar, back,', true, true, 'should be in aspell', marks=[
+        pytest.mark.skipif(speller is None, reason='requires aspell')]),
+    pytest.param('abc', 'bar, back,', false, true, 'should be in aspell', marks=[
+        pytest.mark.skipif(speller is None, reason='requires aspell')]),
+    pytest.param('abc', 'ist, xyz,', None, false, 'should not be in aspell', marks=[
+        pytest.mark.skipif(speller is None, reason='requires aspell')]),
+    pytest.param('a', 'ist, xyz,', true, false, 'should be in aspell', marks=[
+        pytest.mark.skipif(speller is None, reason='requires aspell')]),
+    pytest.param('abc', 'ist, xyz,', false, false, 'should not be in aspell', marks=[
+        pytest.mark.skipif(speller is None, reason='requires aspell')]),
+])
+def test_error_checking_in_aspell(err, rep, err_aspell, rep_aspell, match):
+    """Test that our error checking works with aspell."""
+    with pytest.raises(AssertionError, match=match):
+        _check_err_rep(err, rep, (err_aspell, rep_aspell), 'dummy')
 
 
 @fname_params
