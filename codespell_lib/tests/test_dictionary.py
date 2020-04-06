@@ -130,13 +130,11 @@ def _check_err_rep(err, rep, in_aspell, fname):
     ('a', 'a, bar,', 'corrects to itself amongst others'),
     ('a', 'a', 'corrects to itself'),
     ('a', 'bar, bar,', 'unique'),
-    pytest.param('a', 'ist, bar,', 'in aspell', marks=[
-        pytest.mark.skipif(speller is None, reason='requires aspell')]),
 ])
 def test_error_checking(err, rep, match):
     """Test that our error checking works."""
     with pytest.raises(AssertionError, match=match):
-        _check_err_rep(err, rep, (False, False), 'dummy')
+        _check_err_rep(err, rep, (None, None), 'dummy')
 
 
 @pytest.mark.parametrize('err, rep, err_aspell, rep_aspell, match', [
