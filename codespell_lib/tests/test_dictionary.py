@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+from __future__ import print_function
+
 import glob
 import os.path as op
 import os
@@ -20,8 +22,8 @@ except Exception as exp:  # probably ImportError, but maybe also language
             'REQUIRE_ASPELL=true. Got error during import:\n%s'
             % (exp,))
     else:
-        print 'aspell not found, but not required, skipping aspell tests. Got '
-              'error during import:\n%s' % (exp,)
+        print('aspell not found, but not required, skipping aspell tests. Got '
+              'error during import:\n%s' % (exp,))
 
 ws = re.compile(r'.*\s.*')  # whitespace
 comma = re.compile(r'.*,.*')  # comma
