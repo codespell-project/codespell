@@ -37,8 +37,8 @@ VERSION = '1.17.0.dev0'
 # symbolic link path to the real path if necessary.
 _data_root = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'data')
 _builtin_dictionaries = (  # name, desc, name, err in aspell, correction in aspell  # noqa: E501
-# The aspell tests here aren't the ideal state, but the None's are realistic for
-# obscure words
+# The aspell tests here aren't the ideal state, but the None's are realistic
+# for obscure words
     ('clear', 'for unambiguous errors', '', False, None),
     ('rare', 'for rare but valid words', '_rare', None, None),
     ('informal', 'for informal words', '_informal', True, True),
