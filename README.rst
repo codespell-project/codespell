@@ -116,11 +116,11 @@ If you have a suggested typo that you'd like to see merged please follow these s
 
 2. Sort the dictionary. This is done by invoking (in the top level directory of ``codespell/``)::
 
-       make check-dictionary
+       make check-dictionaries
 
    If the make script finds that you need to sort the dictionary, please then run::
 
-       make sort-dictionary
+       make sort-dictionaries
 
 3. Only after this process is complete do we recommend you submit the PR.
 
