@@ -2,15 +2,19 @@ SORT_ARGS := -f -b
 
 DICTIONARIES := codespell_lib/data/dictionary*.txt
 
-PHONY := all check check-dictionary sort-dictionary trim-dictionary clean
+PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dictionary sort-dictionary trim-dictionary clean
 
-all: check-dictionary codespell.1
+all: check-dictionaries codespell.1
+
+check-dictionary: check-dictionaries
+sort-dictionary: sort-dictionaries
+trim-dictionary: trim-dictionaries
 
 codespell.1: codespell.1.include bin/codespell
 	PYTHONPATH=. help2man ./bin/codespell --include codespell.1.include --no-info --output codespell.1
 	sed -i '/\.SS \"Usage/,+2d' codespell.1
 
-check-dictionary:
+check-dictionaries:
 	@for dictionary in ${DICTIONARIES}; do \
 		if ! LC_ALL=C sort ${SORT_ARGS} -c $$dictionary; then \
 			echo "Dictionary $$dictionary not sorted. Sort with 'make sort-dictionary'"; \
@@ -25,12 +29,12 @@ check-dictionary:
 		pytest codespell_lib/tests/test_dictionary.py; \
 	fi
 
-sort-dictionary:
+sort-dictionaries:
 	@for dictionary in ${DICTIONARIES}; do \
 		LC_ALL=C sort ${SORT_ARGS} -u -o $$dictionary $$dictionary; \
 	done
 
-trim-dictionary:
+trim-dictionaries:
 	@for dictionary in ${DICTIONARIES}; do \
 		sed -E -i.bak -e 's/^[[:space:]]+//; s/[[:space:]]+$$//; /^$$/d' $$dictionary && rm $$dictionary.bak; \
 	done
