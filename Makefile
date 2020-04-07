@@ -26,10 +26,14 @@ check-dictionary:
 	fi
 
 sort-dictionary:
-	LC_ALL=C sort ${SORT_ARGS} -u -o ${DICTIONARY} ${DICTIONARY}
+	@for dictionary in ${DICTIONARIES}; do \
+		LC_ALL=C sort ${SORT_ARGS} -u -o $$dictionary $$dictionary; \
+	done
 
 trim-dictionary:
-	sed -E -i.bak -e 's/^[[:space:]]+//; s/[[:space:]]+$$//; /^$$/d' ${DICTIONARY} && rm ${DICTIONARY}.bak
+	@for dictionary in ${DICTIONARIES}; do \
+		sed -E -i.bak -e 's/^[[:space:]]+//; s/[[:space:]]+$$//; /^$$/d' $$dictionary && rm $$dictionary.bak; \
+	done
 
 pypi:
 	python setup.py sdist register upload
