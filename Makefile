@@ -17,15 +17,15 @@ codespell.1: codespell.1.include bin/codespell
 check-dictionaries:
 	@for dictionary in ${DICTIONARIES}; do \
 		if ! LC_ALL=C sort ${SORT_ARGS} -c $$dictionary; then \
-			echo "Dictionary $$dictionary not sorted. Sort with 'make sort-dictionary'"; \
+			echo "Dictionary $$dictionary not sorted. Sort with 'make sort-dictionaries'"; \
 			exit 1; \
 		fi; \
 		if egrep -n "^\s*$$|\s$$|^\s" $$dictionary; then \
-			echo "Dictionary $$dictionary contains leading/trailing whitespace and/or blank lines.  Trim with 'make trim-dictionary'"; \
+			echo "Dictionary $$dictionary contains leading/trailing whitespace and/or blank lines.  Trim with 'make trim-dictionaries'"; \
 			exit 1; \
 		fi; \
 	done
-	@if command -v pytest4 > /dev/null; then \
+	@if command -v pytest > /dev/null; then \
 		pytest codespell_lib/tests/test_dictionary.py; \
 	fi
 

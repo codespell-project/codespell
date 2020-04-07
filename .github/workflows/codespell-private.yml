@@ -4,8 +4,8 @@
 name: codespell
 on: [push, pull_request]
 jobs:
-  make-check-dictionary:
+  make-check-dictionaries:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: make check-dictionary
+      - run: make check-dictionaries
