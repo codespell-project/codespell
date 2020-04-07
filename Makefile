@@ -1,6 +1,6 @@
 SORT_ARGS := -f -b
 
-DICTIONARY := codespell_lib/data/dictionary.txt
+DICTIONARIES := codespell_lib/data/dictionary*.txt
 
 PHONY := all check check-dictionary sort-dictionary trim-dictionary clean
 
@@ -11,15 +11,17 @@ codespell.1: codespell.1.include bin/codespell
 	sed -i '/\.SS \"Usage/,+2d' codespell.1
 
 check-dictionary:
-	@if ! LC_ALL=C sort ${SORT_ARGS} -c ${DICTIONARY}; then \
-		echo "Dictionary not sorted. Sort with 'make sort-dictionary'"; \
-		exit 1; \
-	fi
-	@if egrep -n "^\s*$$|\s$$|^\s" ${DICTIONARY}; then \
-		echo "Dictionary contains leading/trailing whitespace and/or blank lines.  Trim with 'make trim-dictionary'"; \
-		exit 1; \
-	fi
-	@if command -v pytest > /dev/null; then \
+	@for dictionary in ${DICTIONARIES}; do \
+		if ! LC_ALL=C sort ${SORT_ARGS} -c $$dictionary; then \
+			echo "Dictionary $$dictionary not sorted. Sort with 'make sort-dictionary'"; \
+			exit 1; \
+		fi; \
+		if egrep -n "^\s*$$|\s$$|^\s" $$dictionary; then \
+			echo "Dictionary $$dictionary contains leading/trailing whitespace and/or blank lines.  Trim with 'make trim-dictionary'"; \
+			exit 1; \
+		fi; \
+	done
+	@if command -v pytest4 > /dev/null; then \
 		pytest codespell_lib/tests/test_dictionary.py; \
 	fi
 
