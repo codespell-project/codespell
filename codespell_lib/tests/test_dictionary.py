@@ -70,7 +70,7 @@ def _check_aspell(phrase, msg, in_aspell, fname):
     if ' ' in phrase:
         for word in phrase.split():
             _check_aspell(word, msg, in_aspell, fname)
-        return # stop normal checking as we've done each word above
+        return  # stop normal checking as we've done each word above
     this_in_aspell = speller.check(
         phrase.encode(speller.ConfigKeys()['encoding'][1]))
     end = 'be in aspell for dictionary %s' % (fname,)
@@ -157,7 +157,7 @@ def test_error_checking(err, rep, match):
     ('a', 'bar back', None, False, 'should not be in aspell'),
     # Second multi-word, both parts
     ('a', 'bar back, abcdef uvwxyz, bar,', None, True, 'should be in aspell'),
-    ('a', 'abcdef uvwxyz, bar back, ghijkl,', None, False, 'should not be in aspell'),
+    ('a', 'abcdef uvwxyz, bar back, ghijkl,', None, False, 'should not be in aspell'),  # noqa: E501
     # One multi-word, second part
     ('a', 'bar abcdef', None, True, 'should be in aspell'),
     ('a', 'abcdef back', None, False, 'should not be in aspell'),
