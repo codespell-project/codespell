@@ -143,24 +143,24 @@ def test_error_checking(err, rep, match):
 @pytest.mark.parametrize('err, rep, err_aspell, rep_aspell, match', [
     # This doesn't raise any exceptions, so skip for now:
     # pytest.param('a', 'uvw, bar,', None, None, 'should be in aspell'),
-    ('abc', 'uvw, bar,', True, None, 'should be in aspell'),
-    ('a', 'uvw, bar,', False, None, 'should not be in aspell'),
-    ('a', 'abc, uvw,', None, True, 'should be in aspell'),
-    ('abc', 'uvw, bar,', True, True, 'should be in aspell'),
-    ('abc', 'uvw, bar,', False, True, 'should be in aspell'),
+    ('abcdef', 'uvwxyz, bar,', True, None, 'should be in aspell'),
+    ('a', 'uvwxyz, bar,', False, None, 'should not be in aspell'),
+    ('a', 'abcdef, uvwxyz,', None, True, 'should be in aspell'),
+    ('abcdef', 'uvwxyz, bar,', True, True, 'should be in aspell'),
+    ('abcdef', 'uvwxyz, bar,', False, True, 'should be in aspell'),
     ('a', 'bar, back,', None, False, 'should not be in aspell'),
-    ('abc', 'uvw, xyz,', True, False, 'should be in aspell'),
-    ('abc', 'uvw, bar,', False, False, 'should not be in aspell'),
+    ('abcdef', 'ghijkl, uvwxyz,', True, False, 'should be in aspell'),
+    ('abcdef', 'uvwxyz, bar,', False, False, 'should not be in aspell'),
     # Multi-word corrections
     # One multi-word, both parts
-    ('a', 'abc def', None, True, 'should be in aspell'),
+    ('a', 'abcdef uvwxyz', None, True, 'should be in aspell'),
     ('a', 'bar back', None, False, 'should not be in aspell'),
     # Second multi-word, both parts
-    ('a', 'bar back, abc def, bar,', None, True, 'should be in aspell'),
-    ('a', 'abc def, bar back, xyz,', None, False, 'should not be in aspell'),
+    ('a', 'bar back, abcdef uvwxyz, bar,', None, True, 'should be in aspell'),
+    ('a', 'abcdef uvwxyz, bar back, ghijkl,', None, False, 'should not be in aspell'),
     # One multi-word, second part
-    ('a', 'bar def', None, True, 'should be in aspell'),
-    ('a', 'abc back', None, False, 'should not be in aspell'),
+    ('a', 'bar abcdef', None, True, 'should be in aspell'),
+    ('a', 'abcdef back', None, False, 'should not be in aspell'),
 ])
 def test_error_checking_in_aspell(err, rep, err_aspell, rep_aspell, match):
     """Test that our error checking works with aspell."""
