@@ -62,15 +62,16 @@ def test_dictionary_formatting(fname, in_aspell):
         raise AssertionError('\n' + '\n'.join(errors))
 
 
-def _check_aspell(word, msg, in_aspell, fname):
+def _check_aspell(phrase, msg, in_aspell, fname):
     if speller is None:
         return  # cannot check
     if in_aspell is None:
         return  # don't check
-    if ' ' in word:
-        return  # can't check (easily)
+    if ' ' in phrase:
+        for word in phrase.split():
+            _check_aspell(word, msg, in_aspell, fname)
     this_in_aspell = speller.check(
-        word.encode(speller.ConfigKeys()['encoding'][1]))
+        phrase.encode(speller.ConfigKeys()['encoding'][1]))
     end = 'be in aspell for dictionary %s' % (fname,)
     if in_aspell:  # should be an error in aspell
         assert this_in_aspell, '%s should %s' % (msg, end)
@@ -150,10 +151,15 @@ def test_error_checking(err, rep, match):
     ('abc', 'uvw, xyz,', True, False, 'should be in aspell'),
     ('abc', 'uvw, bar,', False, False, 'should not be in aspell'),
     # Multi-word corrections
+    # One multi-word, both parts
     ('a', 'abc def', None, True, 'should be in aspell'),
-    ('a', 'bar back, abc def, bar,', None, True, 'should be in aspell'),
     ('a', 'bar back', None, False, 'should not be in aspell'),
+    # Second multi-word, both parts
+    ('a', 'bar back, abc def, bar,', None, True, 'should be in aspell'),
     ('a', 'abc def, bar back, xyz,', None, False, 'should not be in aspell'),
+    # One multi-word, second part
+    ('a', 'bar def', None, True, 'should be in aspell'),
+    ('a', 'abc back', None, False, 'should not be in aspell'),
 ])
 def test_error_checking_in_aspell(err, rep, err_aspell, rep_aspell, match):
     """Test that our error checking works with aspell."""
