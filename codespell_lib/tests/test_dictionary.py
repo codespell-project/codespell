@@ -70,6 +70,7 @@ def _check_aspell(phrase, msg, in_aspell, fname):
     if ' ' in phrase:
         for word in phrase.split():
             _check_aspell(word, msg, in_aspell, fname)
+        return # stop normal checking as we've done each word above
     this_in_aspell = speller.check(
         phrase.encode(speller.ConfigKeys()['encoding'][1]))
     end = 'be in aspell for dictionary %s' % (fname,)
