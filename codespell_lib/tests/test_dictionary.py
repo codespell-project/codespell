@@ -149,6 +149,11 @@ def test_error_checking(err, rep, match):
     ('a', 'bar, back,', None, False, 'should not be in aspell'),
     ('abc', 'uvw, xyz,', True, False, 'should be in aspell'),
     ('abc', 'uvw, bar,', False, False, 'should not be in aspell'),
+    # Multi-word corrections
+    ('a', 'abc def', None, True, 'should be in aspell'),
+    ('a', 'bar back, abc def, bar,', None, True, 'should be in aspell'),
+    ('a', 'bar back', None, False, 'should not be in aspell'),
+    ('a', 'abc def, bar back, xyz,', None, False, 'should not be in aspell'),
 ])
 def test_error_checking_in_aspell(err, rep, err_aspell, rep_aspell, match):
     """Test that our error checking works with aspell."""
