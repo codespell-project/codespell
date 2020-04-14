@@ -59,7 +59,7 @@ The ``-r`` flag can be used to change the regular expression which is used to fi
 
     codespell -r, --regex=
 
-* to restore previous behavior of including `_` in words, invoke ``codespell --regex="[\w\-'’\`]+"``
+* to restore previous behavior of including `_` in words (v1.16.0 and earlier), invoke ``codespell --regex="[\w\-'’\`]+"``
 
 Useful commands::
 
