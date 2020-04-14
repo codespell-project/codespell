@@ -26,7 +26,7 @@ import os
 import re
 import sys
 
-word_regex_def = u"[\\w\\-'’`]+"
+word_regex_def = u"[a-zA-Z0-9\\-'’`]+"
 encodings = ('utf-8', 'iso-8859-1')
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]

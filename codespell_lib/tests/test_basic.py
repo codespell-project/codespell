@@ -198,7 +198,7 @@ def test_custom_regex(tmpdir, capsys):
     """Test custom word regex."""
     d = str(tmpdir)
     with open(op.join(d, 'bad.txt'), 'w') as f:
-        f.write('abandonned_abondon\n')
+        f.write('abandonned-abondon\n')
     assert cs.main(d) == 0
     assert cs.main('-r', "[a-z]+", d) == 2
     capsys.readouterr()
