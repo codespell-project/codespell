@@ -4475,7 +4475,6 @@ cloacks->cloaks
 cloberring->clobbering
 clocksourc->clocksource
 clockwíse->clockwise
-clock_getttime->clock_gettime
 clodes->closed, clothes,
 cloding->closing
 cloes->close
@@ -6630,8 +6629,10 @@ coyright->copyright
 coyrighted->copyrighted
 coyrights->copyrights
 cpation->caption
+cpluspus->cplusplus
 cpoy->coy, copy,
 cppp->cpp
+cpusplus->cplusplus
 crace->grace, crate,
 craches->crashes, caches, crutches,
 craete->create
@@ -18232,7 +18233,6 @@ physicaly->physically
 physisist->physicist
 phython->python
 phyton->python
-phy_interace->phy_interface
 piblisher->publisher
 pich->pitch
 pilgrimmage->pilgrimage
@@ -26832,6 +26832,4 @@ zlot->slot
 zombe->zombie
 zomebie->zombie
 zuser->user
-__cpluspus->__cplusplus
-__cpusplus->__cplusplus
 évaluate->evaluate
