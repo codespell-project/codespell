@@ -62,15 +62,17 @@ def test_dictionary_formatting(fname, in_aspell):
         raise AssertionError('\n' + '\n'.join(errors))
 
 
-def _check_aspell(word, msg, in_aspell, fname):
+def _check_aspell(phrase, msg, in_aspell, fname):
     if speller is None:
         return  # cannot check
     if in_aspell is None:
         return  # don't check
-    if ' ' in word:
-        return  # can't check (easily)
+    if ' ' in phrase:
+        for word in phrase.split():
+            _check_aspell(word, msg, in_aspell, fname)
+        return  # stop normal checking as we've done each word above
     this_in_aspell = speller.check(
-        word.encode(speller.ConfigKeys()['encoding'][1]))
+        phrase.encode(speller.ConfigKeys()['encoding'][1]))
     end = 'be in aspell for dictionary %s' % (fname,)
     if in_aspell:  # should be an error in aspell
         assert this_in_aspell, '%s should %s' % (msg, end)
@@ -141,14 +143,24 @@ def test_error_checking(err, rep, match):
 @pytest.mark.parametrize('err, rep, err_aspell, rep_aspell, match', [
     # This doesn't raise any exceptions, so skip for now:
     # pytest.param('a', 'uvw, bar,', None, None, 'should be in aspell'),
-    ('abc', 'uvw, bar,', True, None, 'should be in aspell'),
-    ('a', 'uvw, bar,', False, None, 'should not be in aspell'),
-    ('a', 'abc, uvw,', None, True, 'should be in aspell'),
-    ('abc', 'uvw, bar,', True, True, 'should be in aspell'),
-    ('abc', 'uvw, bar,', False, True, 'should be in aspell'),
+    ('abcdef', 'uvwxyz, bar,', True, None, 'should be in aspell'),
+    ('a', 'uvwxyz, bar,', False, None, 'should not be in aspell'),
+    ('a', 'abcdef, uvwxyz,', None, True, 'should be in aspell'),
+    ('abcdef', 'uvwxyz, bar,', True, True, 'should be in aspell'),
+    ('abcdef', 'uvwxyz, bar,', False, True, 'should be in aspell'),
     ('a', 'bar, back,', None, False, 'should not be in aspell'),
-    ('abc', 'uvw, xyz,', True, False, 'should be in aspell'),
-    ('abc', 'uvw, bar,', False, False, 'should not be in aspell'),
+    ('abcdef', 'ghijkl, uvwxyz,', True, False, 'should be in aspell'),
+    ('abcdef', 'uvwxyz, bar,', False, False, 'should not be in aspell'),
+    # Multi-word corrections
+    # One multi-word, both parts
+    ('a', 'abcdef uvwxyz', None, True, 'should be in aspell'),
+    ('a', 'bar back', None, False, 'should not be in aspell'),
+    # Second multi-word, both parts
+    ('a', 'bar back, abcdef uvwxyz, bar,', None, True, 'should be in aspell'),
+    ('a', 'abcdef uvwxyz, bar back, ghijkl,', None, False, 'should not be in aspell'),  # noqa: E501
+    # One multi-word, second part
+    ('a', 'bar abcdef', None, True, 'should be in aspell'),
+    ('a', 'abcdef back', None, False, 'should not be in aspell'),
 ])
 def test_error_checking_in_aspell(err, rep, err_aspell, rep_aspell, match):
     """Test that our error checking works with aspell."""
