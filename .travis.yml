@@ -34,6 +34,11 @@ before_install:
     - if [ ${TRAVIS_PYTHON_VERSION:0:1} == "2" ]; then retry pip install aspell-python-py2; fi
     - if [ ${TRAVIS_PYTHON_VERSION:0:1} == "3" ]; then retry pip install aspell-python-py3; fi
     - cd $SRC_DIR
+    - wget "http://app.aspell.net/create?max_size=95&spelling=US&spelling=GBs&spelling=GBz&spelling=CA&spelling=AU&max_variant=2&diacritic=both&special=hacker&special=roman-numerals&encoding=utf-8&format=inline&download=aspell" -O customdict.tar.bz2
+    - tar xjf customdict.tar.bz2
+    - cd aspell6-en-custom
+    - ./configure
+    - make
 
 install:
     - python setup.py install
