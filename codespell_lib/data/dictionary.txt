@@ -2529,6 +2529,9 @@ attributei->attribute
 attributen->attribute
 attributred->attributed
 attributs->attributes
+attriebute->attribute
+attriebuted->attributed
+attriebutes->attributes
 attriubtes->attributes
 attriubute->attribute
 attrocities->atrocities
@@ -3350,6 +3353,7 @@ binidng->binding
 binominal->binomial
 bion->bio
 biridectionality->bidirectionality
+bisct->bisect
 bistream->bitstream
 bitamps->bitmaps
 bitap->bitmap
@@ -7988,6 +7992,11 @@ deskys->disguise
 deslected->deselected
 deslects->deselects
 desn't->doesn't
+desogn->design
+desogned->designed
+desogner->designer
+desogning->designing
+desogns->designs
 desolve->dissolve
 desorder->disorder
 desoriented->disoriented
@@ -9061,6 +9070,8 @@ doccumented->documented
 doccuments->documents
 dockson->dachshund
 docmenetation->documentation
+docmunet-document
+docmunets->documents
 docrines->doctrines
 docstatistik->docstatistic
 docsund->dachshund
@@ -13087,6 +13098,7 @@ hypvervisor->hypervisor
 hypvervisors->hypervisors
 hypvisor->hypervisor
 hypvisors->hypervisors
+I'sd->I'd
 i;ll->I'll
 iam->I am, aim,
 iamge->image
@@ -16446,6 +16458,7 @@ myitereator->myiterator
 myraid->myriad
 mysef->myself
 mysefl->myself
+mysekf->myself
 myslef->myself
 mysogynist->misogynist
 mysogyny->misogyny
@@ -17977,6 +17990,7 @@ owudl->would
 oxigen->oxygen
 oximoron->oxymoron
 oxzillary->auxiliary
+oyu->you
 p0enis->penis
 paackage->package
 pacakge->package
@@ -19567,6 +19581,7 @@ propertery->property
 propertie->property, properties,
 propertise->properties
 propertly->properly, property,
+propertu->property
 propertys->properties
 propertyst->properties
 propery->property, properly,
@@ -21850,6 +21865,8 @@ roduceer->producer
 roomate->roommate
 ropeat->repeat
 rorated->rotated
+rosponse->response
+rosponsive-responsive
 rotaion->rotation
 rotaions->rotations
 rotaiton->rotation
@@ -22131,6 +22148,8 @@ scraches->scratches
 scraching->scratching
 scrachs->scratches
 scrao->scrap
+screenchot->screenshot
+screenchots->screenshots
 screenwrighter->screenwriter
 screnn->screen
 scriopted->scripted
@@ -23134,6 +23153,7 @@ spaws->spawns
 spcae->space
 spcecified->specified
 spcial->special
+spcific->specific
 spcifies->specifies
 speach->speech
 speacial->special, spacial,
@@ -23589,6 +23609,7 @@ sttetings->settings
 stting->string
 stubborness->stubbornness
 stucked->stuck
+stuckt->stuck
 stuct->struct
 stucts->structs
 stucture->structure
@@ -24922,6 +24943,8 @@ tipically->typically
 titel->title
 titels->titles
 titile->title
+tittle->title
+tittles->titles
 tje->the
 tjhe->the
 tjpanishad->upanishad
@@ -25984,6 +26007,7 @@ unresposive->unresponsive
 unrestrcited->unrestricted
 unrgesiter->unregister
 unroated->unrotated
+unrosponsive->unresponsive
 unsable->unusable, usable, unstable,
 unsccessful->unsuccessful
 unsearcahble->unsearchable
@@ -26121,6 +26145,7 @@ unxpected->unexpected
 unziped->unzipped
 upadate->update
 upadated->updated
+upadating->updating
 upadte->update
 upadted->updated
 upadter->updater
