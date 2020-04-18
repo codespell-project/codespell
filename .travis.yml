@@ -39,6 +39,7 @@ before_install:
     - cd aspell6-en-custom
     - ./configure
     - make
+    - cd $SRC_DIR
 
 install:
     - python setup.py install
