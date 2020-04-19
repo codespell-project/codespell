@@ -13,7 +13,7 @@ from codespell_lib._codespell import _builtin_dictionaries
 try:
     import aspell
     #speller = aspell.Speller('lang', 'en')
-    speller = aspell.Speller([('lang', 'en-custom'), ('data-dir', '/home/travis/build/codespell-project/codespell/aspell6-en-custom/')])
+    speller = aspell.Speller((('lang', 'en-custom'), ('data-dir', '/home/travis/build/codespell-project/codespell/aspell6-en-custom/')))
 except Exception as exp:  # probably ImportError, but maybe also language
     speller = None
     if os.getenv('REQUIRE_ASPELL', 'false').lower() == 'true':
