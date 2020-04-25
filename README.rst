@@ -143,7 +143,7 @@ To stay current with codespell developments it is possible to build codespell fr
     pip install --user --upgrade git+https://github.com/codespell-project/codespell.git
 
 * It has been reported that after installing from ``pip``, codespell can't be located. Please check the $PATH variable to see if ``~/.local/bin`` is present. If it isn't then add it to your path.
-* If you decide to install via ``pip`` then be sure to remove any previously installed versions of codespell (via you OSs preferred app manager).
+* If you decide to install via ``pip`` then be sure to remove any previously installed versions of codespell (via your platform's preferred app manager).
 
 Updating the dictionary
 -----------------------
