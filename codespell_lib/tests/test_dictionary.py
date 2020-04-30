@@ -115,7 +115,8 @@ def _check_err_rep(err, rep, in_aspell, fname):
                                   % (err,))
         _check_aspell(
             r, 'error %s: correction %r' % (err, r), in_aspell[1], fname)
-    assert len(set(reps)) == len(reps), 'entries are not (lower-case) unique'
+    assert len(set(reps)) == len(reps), ('error %s: corrections "%s" are not '
+                                         '(lower-case) unique' % (err, rep))
 
 
 @pytest.mark.parametrize('err, rep, match', [
