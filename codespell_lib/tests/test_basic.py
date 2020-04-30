@@ -7,24 +7,8 @@ import os
 import os.path as op
 import subprocess
 import sys
-import tempfile
-import warnings
-
-import pytest
 
 import codespell_lib as cs
-
-
-@pytest.fixture(scope='function')
-def reload_codespell_lib():
-    try:
-        reload  # Python 2.7
-    except NameError:
-        try:
-            from importlib import reload  # Python 3.4+
-        except ImportError:
-            from imp import reload  # Python 3.0 - 3.3
-    reload(cs._codespell)
 
 
 def run_codespell(args=(), cwd=None):
@@ -34,74 +18,77 @@ def run_codespell(args=(), cwd=None):
         stdout=subprocess.PIPE, stderr=subprocess.PIPE).wait()
 
 
-def test_command():
+def test_command(tmpdir):
     """Test running the codespell executable"""
     # With no arguments does "."
-    with TemporaryDirectory() as d:
-        assert run_codespell(cwd=d) == 0
-        with open(op.join(d, 'bad.txt'), 'w') as f:
-            f.write('abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd')
-        assert run_codespell(cwd=d) == 4
+    d = str(tmpdir)
+    assert run_codespell(cwd=d) == 0
+    with open(op.join(d, 'bad.txt'), 'w') as f:
+        f.write('abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd')
+    assert run_codespell(cwd=d) == 4
 
 
-def test_basic():
+def test_basic(tmpdir, capsys):
     """Test some basic functionality"""
     assert cs.main('_does_not_exist_') == 0
-    with tempfile.NamedTemporaryFile('w') as f:
+    fname = op.join(str(tmpdir), 'tmp')
+    with open(fname, 'w') as f:
         pass
-    with CaptureStdout() as sio:
-        assert cs.main('-D', 'foo', f.name) == 1, 'missing dictionary'
-    try:
-        assert 'cannot find dictionary' in sio[1]
-        assert cs.main(f.name) == 0, 'empty file'
-        with open(f.name, 'a') as f:
-            f.write('this is a test file\n')
-        assert cs.main(f.name) == 0, 'good'
-        with open(f.name, 'a') as f:
-            f.write('abandonned\n')
-        assert cs.main(f.name) == 1, 'bad'
-        with open(f.name, 'a') as f:
-            f.write('abandonned\n')
-        assert cs.main(f.name) == 2, 'worse'
-    finally:
-        os.remove(f.name)
-    with TemporaryDirectory() as d:
-        with open(op.join(d, 'bad.txt'), 'w') as f:
-            f.write('abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd')
-        assert cs.main(d) == 4
-        with CaptureStdout() as sio:
-            assert cs.main('-w', d) == 0
-        assert 'FIXED:' in sio[1]
-        with open(op.join(d, 'bad.txt')) as f:
-            new_content = f.read()
-        assert cs.main(d) == 0
-        assert new_content == 'abandoned\nAbandoned\nABANDONED\nabandoned'
+    assert cs.main('-D', 'foo', f.name) == 1, 'missing dictionary'
+    assert 'cannot find dictionary' in capsys.readouterr()[1]
+    assert cs.main(fname) == 0, 'empty file'
+    with open(fname, 'a') as f:
+        f.write('this is a test file\n')
+    assert cs.main(fname) == 0, 'good'
+    with open(fname, 'a') as f:
+        f.write('abandonned\n')
+    assert cs.main(fname) == 1, 'bad'
+    with open(fname, 'a') as f:
+        f.write('abandonned\n')
+    assert cs.main(fname) == 2, 'worse'
+    with open(fname, 'a') as f:
+        f.write('tim\ngonna\n')
+    assert cs.main(fname) == 2, 'with a name'
+    assert cs.main('--builtin', 'clear,rare,names,informal', fname) == 4
+    capsys.readouterr()
+    assert cs.main(fname, '--builtin', 'foo') == 1  # bad type sys.exit(1)
+    stdout = capsys.readouterr()[1]
+    assert 'Unknown builtin dictionary' in stdout
+    d = str(tmpdir)
+    assert cs.main(fname, '-D', op.join(d, 'foo')) == 1  # bad dict
+    stdout = capsys.readouterr()[1]
+    assert 'cannot find dictionary' in stdout
+    os.remove(fname)
 
-        with open(op.join(d, 'bad.txt'), 'w') as f:
-            f.write('abandonned abandonned\n')
-        assert cs.main(d) == 2
-        with CaptureStdout() as sio:
-            assert cs.main('-q', '16', '-w', d) == 0
-        assert sio[0] == ''
-        assert cs.main(d) == 0
+    with open(op.join(d, 'bad.txt'), 'w') as f:
+        f.write('abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd')
+    assert cs.main(d) == 4
+    capsys.readouterr()
+    assert cs.main('-w', d) == 0
+    assert 'FIXED:' in capsys.readouterr()[1]
+    with open(op.join(d, 'bad.txt')) as f:
+        new_content = f.read()
+    assert cs.main(d) == 0
+    assert new_content == 'abandoned\nAbandoned\nABANDONED\nabandoned'
 
-        # empty directory
-        os.mkdir(op.join(d, 'test'))
-        assert cs.main(d) == 0
+    with open(op.join(d, 'bad.txt'), 'w') as f:
+        f.write('abandonned abandonned\n')
+    assert cs.main(d) == 2
+    capsys.readouterr()
+    assert cs.main('-q', '16', '-w', d) == 0
+    assert capsys.readouterr() == ('', '')
+    assert cs.main(d) == 0
 
-        # hidden file
-        with open(op.join(d, 'test.txt'), 'w') as f:
-            f.write('abandonned\n')
-        assert cs.main(op.join(d, 'test.txt')) == 1
-        os.rename(op.join(d, 'test.txt'), op.join(d, '.test.txt'))
-        assert cs.main(op.join(d, '.test.txt')) == 0
+    # empty directory
+    os.mkdir(op.join(d, 'test'))
+    assert cs.main(d) == 0
 
 
-def test_interactivity():
+def test_interactivity(tmpdir, capsys):
     """Test interaction"""
     # Windows can't read a currently-opened file, so here we use
     # NamedTemporaryFile just to get a good name
-    with tempfile.NamedTemporaryFile('w') as f:
+    with open(op.join(str(tmpdir), 'tmp'), 'w') as f:
         pass
     try:
         assert cs.main(f.name) == 0, 'empty file'
@@ -110,56 +97,51 @@ def test_interactivity():
         assert cs.main('-i', '-1', f.name) == 1, 'bad'
         with FakeStdin('y\n'):
             assert cs.main('-i', '3', f.name) == 1
-        with CaptureStdout() as sio:
-            with FakeStdin('n\n'):
-                assert cs.main('-w', '-i', '3', f.name) == 0
-        assert '==>' in sio[0]
-        with CaptureStdout():
-            with FakeStdin('x\ny\n'):
-                assert cs.main('-w', '-i', '3', f.name) == 0
+        with FakeStdin('n\n'):
+            assert cs.main('-w', '-i', '3', f.name) == 0
+        assert '==>' in capsys.readouterr()[0]
+        with FakeStdin('x\ny\n'):
+            assert cs.main('-w', '-i', '3', f.name) == 0
         assert cs.main(f.name) == 0
     finally:
         os.remove(f.name)
 
     # New example
-    with tempfile.NamedTemporaryFile('w') as f:
+    with open(op.join(str(tmpdir), 'tmp2'), 'w') as f:
         pass
     try:
         with open(f.name, 'w') as f:
             f.write('abandonned\n')
         assert cs.main(f.name) == 1
-        with CaptureStdout():
-            with FakeStdin(' '):  # blank input -> Y
-                assert cs.main('-w', '-i', '3', f.name) == 0
+        with FakeStdin(' '):  # blank input -> Y
+            assert cs.main('-w', '-i', '3', f.name) == 0
         assert cs.main(f.name) == 0
     finally:
         os.remove(f.name)
 
     # multiple options
-    with tempfile.NamedTemporaryFile('w') as f:
+    with open(op.join(str(tmpdir), 'tmp3'), 'w') as f:
         pass
     try:
         with open(f.name, 'w') as f:
             f.write('ackward\n')
 
         assert cs.main(f.name) == 1
-        with CaptureStdout():
-            with FakeStdin(' \n'):  # blank input -> nothing
-                assert cs.main('-w', '-i', '3', f.name) == 0
+        with FakeStdin(' \n'):  # blank input -> nothing
+            assert cs.main('-w', '-i', '3', f.name) == 0
         assert cs.main(f.name) == 1
-        with CaptureStdout():
-            with FakeStdin('0\n'):  # blank input -> nothing
-                assert cs.main('-w', '-i', '3', f.name) == 0
+        with FakeStdin('0\n'):  # blank input -> nothing
+            assert cs.main('-w', '-i', '3', f.name) == 0
         assert cs.main(f.name) == 0
         with open(f.name, 'r') as f_read:
             assert f_read.read() == 'awkward\n'
         with open(f.name, 'w') as f:
             f.write('ackward\n')
         assert cs.main(f.name) == 1
-        with CaptureStdout() as sio:
-            with FakeStdin('x\n1\n'):  # blank input -> nothing
-                assert cs.main('-w', '-i', '3', f.name) == 0
-        assert 'a valid option' in sio[0]
+        capsys.readouterr()
+        with FakeStdin('x\n1\n'):  # blank input -> nothing
+            assert cs.main('-w', '-i', '3', f.name) == 0
+        assert 'a valid option' in capsys.readouterr()[0]
         assert cs.main(f.name) == 0
         with open(f.name, 'r') as f:
             assert f.read() == 'backward\n'
@@ -167,71 +149,80 @@ def test_interactivity():
         os.remove(f.name)
 
 
-def test_summary():
+def test_summary(tmpdir, capsys):
     """Test summary functionality"""
-    with tempfile.NamedTemporaryFile('w') as f:
+    with open(op.join(str(tmpdir), 'tmp'), 'w') as f:
         pass
     try:
-        with CaptureStdout() as sio:
-            cs.main(f.name)
-        for ii in range(2):
-            assert sio[ii] == '', 'no output'
-        with CaptureStdout() as sio:
-            cs.main(f.name, '--summary')
-        assert sio[1] == '', 'stderr'
-        assert 'SUMMARY' in sio[0]
-        assert len(sio[0].split('\n')) == 5, 'no output'
+        cs.main(f.name)
+        assert capsys.readouterr() == ('', ''), 'no output'
+        cs.main(f.name, '--summary')
+        stdout, stderr = capsys.readouterr()
+        assert stderr == ''
+        assert 'SUMMARY' in stdout
+        assert len(stdout.split('\n')) == 5
         with open(f.name, 'w') as f:
             f.write('abandonned\nabandonned')
-        with CaptureStdout() as sio:
-            cs.main(f.name, '--summary')
-        assert sio[1] == '', 'stderr'
-        assert 'SUMMARY' in sio[0]
-        assert len(sio[0].split('\n')) == 7
-        assert 'abandonned' in sio[0].split()[-2]
+        cs.main(f.name, '--summary')
+        stdout, stderr = capsys.readouterr()
+        assert stderr == ''
+        assert 'SUMMARY' in stdout
+        assert len(stdout.split('\n')) == 7
+        assert 'abandonned' in stdout.split()[-2]
     finally:
         os.remove(f.name)
 
 
-def test_ignore_dictionary(reload_codespell_lib):
-    """Test ignore dictionary functionality"""
-    with TemporaryDirectory() as d:
-        with open(op.join(d, 'bad.txt'), 'w') as f:
-            f.write('abandonned\nabondon\n')
-        with tempfile.NamedTemporaryFile('w') as f:
-            pass
-        with open(f.name, 'w') as f:
-            f.write('abandonned\n')
-        assert cs.main('-I', f.name, d) == 1
+def test_ignore_dictionary(tmpdir):
+    """Test ignore dictionary functionality."""
+    d = str(tmpdir)
+    with open(op.join(d, 'bad.txt'), 'w') as f:
+        f.write('1 abandonned 1\n2 abandonned 2\nabondon\n')
+    bad_name = f.name
+    assert cs.main(bad_name) == 3
+    with open(op.join(d, 'ignore.txt'), 'w') as f:
+        f.write('abandonned\n')
+    assert cs.main('-I', f.name, bad_name) == 1
 
 
-def test_custom_regex(reload_codespell_lib):
-    """Test custom word regex"""
-    with TemporaryDirectory() as d:
-        with open(op.join(d, 'bad.txt'), 'w') as f:
-            f.write('abandonned_abondon\n')
-        assert cs.main(d) == 0
-        assert cs.main('-r', "[a-z]+", d) == 2
+def test_ignore_word_list(tmpdir):
+    """Test ignore word list functionality"""
+    d = str(tmpdir)
+    with open(op.join(d, 'bad.txt'), 'w') as f:
+        f.write('abandonned\nabondon\nabilty\n')
+    assert cs.main(d) == 3
+    assert cs.main('-Labandonned,someword', '-Labilty', d) == 1
 
 
-def test_exclude_file():
-    """Test exclude file functionality"""
-    with TemporaryDirectory() as d:
-        with open(op.join(d, 'bad.txt'), 'wb') as f:
-            f.write('abandonned 1\nabandonned 2\n'.encode('utf-8'))
-        assert cs.main(d) == 2
-        with tempfile.NamedTemporaryFile('w') as f:
-            pass
-        with open(f.name, 'wb') as f:
-            f.write('abandonned 1\n'.encode('utf-8'))
-        assert cs.main(d) == 2
-        assert cs.main('-x', f.name, d) == 1
+def test_custom_regex(tmpdir, capsys):
+    """Test custom word regex."""
+    d = str(tmpdir)
+    with open(op.join(d, 'bad.txt'), 'w') as f:
+        f.write('abandonned_abondon\n')
+    assert cs.main(d) == 0
+    assert cs.main('-r', "[a-z]+", d) == 2
+    capsys.readouterr()
+    assert cs.main('-r', '[a-z]+', '--write-changes', d) == 1
+    assert 'ERROR:' in capsys.readouterr()[0]
 
 
-def test_encoding():
-    """Test encoding handling"""
+def test_exclude_file(tmpdir):
+    """Test exclude file functionality."""
+    d = str(tmpdir)
+    with open(op.join(d, 'bad.txt'), 'wb') as f:
+        f.write('1 abandonned 1\n2 abandonned 2\n'.encode('utf-8'))
+    bad_name = f.name
+    assert cs.main(bad_name) == 2
+    with open(op.join(d, 'tmp.txt'), 'wb') as f:
+        f.write('1 abandonned 1\n'.encode('utf-8'))
+    assert cs.main(bad_name) == 2
+    assert cs.main('-x', f.name, bad_name) == 1
+
+
+def test_encoding(tmpdir, capsys):
+    """Test encoding handling."""
     # Some simple Unicode things
-    with tempfile.NamedTemporaryFile('wb') as f:
+    with open(op.join(str(tmpdir), 'tmp'), 'w') as f:
         pass
     # with CaptureStdout() as sio:
     assert cs.main(f.name) == 0
@@ -246,129 +237,139 @@ def test_encoding():
         # Binary file warning
         with open(f.name, 'wb') as f:
             f.write(b'\x00\x00naiive\x00\x00')
-        with CaptureStdout() as sio:
-            assert cs.main(f.name) == 0
-        assert 'WARNING: Binary file' in sio[1]
-        with CaptureStdout() as sio:
-            assert cs.main('-q', '2', f.name) == 0
-        assert sio[1] == ''
+        capsys.readouterr()
+        assert cs.main(f.name) == 0
+        assert 'WARNING: Binary file' in capsys.readouterr()[1]
+        assert cs.main('-q', '2', f.name) == 0
+        assert capsys.readouterr() == ('', '')
     finally:
         os.remove(f.name)
 
 
-def test_ignore():
-    """Test ignoring of files and directories"""
-    with TemporaryDirectory() as d:
-        with open(op.join(d, 'good.txt'), 'w') as f:
-            f.write('this file is okay')
-        assert cs.main(d) == 0
-        with open(op.join(d, 'bad.txt'), 'w') as f:
-            f.write('abandonned')
-        assert cs.main(d) == 1
-        assert cs.main('--skip=bad*', d) == 0
-        assert cs.main('--skip=bad.txt', d) == 0
-        subdir = op.join(d, 'ignoredir')
-        os.mkdir(subdir)
-        with open(op.join(subdir, 'bad.txt'), 'w') as f:
-            f.write('abandonned')
-        assert cs.main(d) == 2
-        assert cs.main('--skip=bad*', d) == 0
-        assert cs.main('--skip=*ignoredir*', d) == 1
-        assert cs.main('--skip=ignoredir', d) == 1
+def test_ignore(tmpdir):
+    """Test ignoring of files and directories."""
+    d = str(tmpdir)
+    with open(op.join(d, 'good.txt'), 'w') as f:
+        f.write('this file is okay')
+    assert cs.main(d) == 0
+    with open(op.join(d, 'bad.txt'), 'w') as f:
+        f.write('abandonned')
+    assert cs.main(d) == 1
+    assert cs.main('--skip=bad*', d) == 0
+    assert cs.main('--skip=bad.txt', d) == 0
+    subdir = op.join(d, 'ignoredir')
+    os.mkdir(subdir)
+    with open(op.join(subdir, 'bad.txt'), 'w') as f:
+        f.write('abandonned')
+    assert cs.main(d) == 2
+    assert cs.main('--skip=bad*', d) == 0
+    assert cs.main('--skip=*ignoredir*', d) == 1
+    assert cs.main('--skip=ignoredir', d) == 1
+    assert cs.main('--skip=*ignoredir/bad*', d) == 1
 
 
-def test_check_filename():
-    """Test filename check"""
-    with TemporaryDirectory() as d:
-        with open(op.join(d, 'abandonned.txt'), 'w') as f:
-            f.write('.')
-        assert cs.main('-f', d) == 1
+def test_check_filename(tmpdir):
+    """Test filename check."""
+    d = str(tmpdir)
+    with open(op.join(d, 'abandonned.txt'), 'w') as f:
+        f.write('.')
+    assert cs.main('-f', d) == 1
 
 
-class TemporaryDirectory(object):
-    """Backport for 2.7"""
-
-    def __init__(self, suffix="", prefix="tmp", dir=None):
-        self._closed = False
-        self.name = None
-        self.name = tempfile.mkdtemp(suffix, prefix, dir)
-
-    def __enter__(self):
-        return self.name
-
-    def cleanup(self, _warn=False):
-        if self.name and not self._closed:
-            try:
-                self._rmtree(self.name)
-            except (TypeError, AttributeError) as ex:
-                # Issue #10188: Emit a warning on stderr
-                # if the directory could not be cleaned
-                # up due to missing globals
-                if "None" not in str(ex):
-                    raise
-                print("ERROR: {!r} while cleaning up {!r}".format(ex, self,),
-                      file=sys.stderr)
-                return
-            self._closed = True
-            if _warn:
-                self._warn("Implicitly cleaning up {!r}".format(self))
-
-    def __exit__(self, exc, value, tb):
-        self.cleanup()
-
-    def __del__(self):
-        # Issue a ResourceWarning if implicit cleanup needed
-        self.cleanup(_warn=True)
-
-    # XXX (ncoghlan): The following code attempts to make
-    # this class tolerant of the module nulling out process
-    # that happens during CPython interpreter shutdown
-    # Alas, it doesn't actually manage it. See issue #10188
-    _listdir = staticmethod(os.listdir)
-    _path_join = staticmethod(os.path.join)
-    _isdir = staticmethod(os.path.isdir)
-    _islink = staticmethod(os.path.islink)
-    _remove = staticmethod(os.remove)
-    _rmdir = staticmethod(os.rmdir)
-    _warn = warnings.warn
-
-    def _rmtree(self, path):
-        # Essentially a stripped down version of shutil.rmtree.  We can't
-        # use globals because they may be None'ed out at shutdown.
-        for name in self._listdir(path):
-            fullname = self._path_join(path, name)
-            try:
-                isdir = self._isdir(fullname) and not self._islink(fullname)
-            except OSError:
-                isdir = False
-            if isdir:
-                self._rmtree(fullname)
-            else:
-                try:
-                    self._remove(fullname)
-                except OSError:
-                    pass
-        try:
-            self._rmdir(path)
-        except OSError:
-            pass
+def test_check_hidden(tmpdir):
+    """Test ignoring of hidden files."""
+    d = str(tmpdir)
+    # hidden file
+    with open(op.join(d, 'test.txt'), 'w') as f:
+        f.write('abandonned\n')
+    assert cs.main(op.join(d, 'test.txt')) == 1
+    os.rename(op.join(d, 'test.txt'), op.join(d, '.test.txt'))
+    assert cs.main(op.join(d, '.test.txt')) == 0
+    assert cs.main('--check-hidden', op.join(d, '.test.txt')) == 1
+    os.rename(op.join(d, '.test.txt'), op.join(d, '.abandonned.txt'))
+    assert cs.main(op.join(d, '.abandonned.txt')) == 0
+    assert cs.main('--check-hidden', op.join(d, '.abandonned.txt')) == 1
+    assert cs.main('--check-hidden', '--check-filenames',
+                   op.join(d, '.abandonned.txt')) == 2
 
 
-@contextlib.contextmanager
-def CaptureStdout():
-    if sys.version[0] == '2':
-        from StringIO import StringIO
-    else:
-        from io import StringIO
-    oldout, olderr = sys.stdout, sys.stderr
+def test_case_handling(tmpdir, capsys):
+    """Test that capitalized entries get detected properly."""
+    # Some simple Unicode things
+    with open(op.join(str(tmpdir), 'tmp'), 'w') as f:
+        pass
+    # with CaptureStdout() as sio:
+    assert cs.main(f.name) == 0
     try:
-        out = [StringIO(), StringIO()]
-        sys.stdout, sys.stderr = out
-        yield out
+        with open(f.name, 'wb') as f:
+            f.write('this has an ACII error'.encode('utf-8'))
+        assert cs.main(f.name) == 1
+        assert 'ASCII' in capsys.readouterr()[0]
+        assert cs.main('-w', f.name) == 0
+        assert 'FIXED' in capsys.readouterr()[1]
+        with open(f.name, 'rb') as f:
+            assert f.read().decode('utf-8') == 'this has an ASCII error'
     finally:
-        sys.stdout, sys.stderr = oldout, olderr
-        out[0] = out[0].getvalue()
-        out[1] = out[1].getvalue()
+        os.remove(f.name)
+
+
+def test_context(tmpdir, capsys):
+    """Test context options."""
+    d = str(tmpdir)
+    with open(op.join(d, 'context.txt'), 'w') as f:
+        f.write('line 1\nline 2\nline 3 abandonned\nline 4\nline 5')
+
+    # symmetric context, fully within file
+    cs.main('-C', '1', d)
+    lines = capsys.readouterr()[0].split('\n')
+    assert len(lines) == 5
+    assert lines[0] == ': line 2'
+    assert lines[1] == '> line 3 abandonned'
+    assert lines[2] == ': line 4'
+
+    # requested context is bigger than the file
+    cs.main('-C', '10', d)
+    lines = capsys.readouterr()[0].split('\n')
+    assert len(lines) == 7
+    assert lines[0] == ': line 1'
+    assert lines[1] == ': line 2'
+    assert lines[2] == '> line 3 abandonned'
+    assert lines[3] == ': line 4'
+    assert lines[4] == ': line 5'
+
+    # only before context
+    cs.main('-B', '2', d)
+    lines = capsys.readouterr()[0].split('\n')
+    assert len(lines) == 5
+    assert lines[0] == ': line 1'
+    assert lines[1] == ': line 2'
+    assert lines[2] == '> line 3 abandonned'
+
+    # only after context
+    cs.main('-A', '1', d)
+    lines = capsys.readouterr()[0].split('\n')
+    assert len(lines) == 4
+    assert lines[0] == '> line 3 abandonned'
+    assert lines[1] == ': line 4'
+
+    # asymmetric context
+    cs.main('-B', '2', '-A', '1', d)
+    lines = capsys.readouterr()[0].split('\n')
+    assert len(lines) == 6
+    assert lines[0] == ': line 1'
+    assert lines[1] == ': line 2'
+    assert lines[2] == '> line 3 abandonned'
+    assert lines[3] == ': line 4'
+
+    # both '-C' and '-A' on the command line
+    cs.main('-C', '2', '-A', '1', d)
+    lines = capsys.readouterr()[0].split('\n')
+    assert 'ERROR' in lines[0]
+
+    # both '-C' and '-B' on the command line
+    cs.main('-C', '2', '-B', '1', d)
+    lines = capsys.readouterr()[0].split('\n')
+    assert 'ERROR' in lines[0]
 
 
 @contextlib.contextmanager
@@ -384,52 +385,3 @@ def FakeStdin(text):
         yield
     finally:
         sys.stdin = oldin
-
-
-def test_dictionary_formatting():
-    """Test that all dictionary entries are in lower case and non-empty."""
-    err_dict = dict()
-    with open(op.join(op.dirname(__file__), '..', 'data',
-                      'dictionary.txt'), 'rb') as fid:
-        for line in fid:
-            err, rep = line.decode('utf-8').split('->')
-            err = err.lower()
-            assert err not in err_dict, 'entry already exists'
-            rep = rep.rstrip('\n')
-            assert len(rep) > 0, 'corrections must be non-empty'
-            if rep.count(','):
-                if not rep.endswith(','):
-                    assert 'disabled' in rep.split(',')[-1], \
-                        ('currently corrections must end with trailing "," (if'
-                         ' multiple corrections are available) or '
-                         'have "disabled" in the comment')
-            err_dict[err] = rep
-            reps = [r.strip() for r in rep.lower().split(',')]
-            reps = [r for r in reps if len(r)]
-            unique = list()
-            for r in reps:
-                if r not in unique:
-                    unique.append(r)
-            assert reps == unique, 'entries are not (lower-case) unique'
-
-
-def test_case_handling(reload_codespell_lib):
-    """Test that capitalized entries get detected properly."""
-    # Some simple Unicode things
-    with tempfile.NamedTemporaryFile('wb') as f:
-        pass
-    # with CaptureStdout() as sio:
-    assert cs.main(f.name) == 0
-    try:
-        with open(f.name, 'wb') as f:
-            f.write('this has an ACII error'.encode('utf-8'))
-        with CaptureStdout() as sio:
-            assert cs.main(f.name) == 1
-        assert 'ASCII' in sio[0]
-        with CaptureStdout() as sio:
-            assert cs.main('-w', f.name) == 0
-        assert 'FIXED' in sio[1]
-        with open(f.name, 'rb') as f:
-            assert f.read().decode('utf-8') == 'this has an ASCII error'
-    finally:
-        os.remove(f.name)

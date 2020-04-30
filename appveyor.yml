@@ -1,19 +1,22 @@
+clone_depth: 50
+
 environment:
-  global:
-      PYTHON: "C:\\conda"
-      CONDA_DEPENDENCIES: "pytest pytest-cov setuptools flake8 coverage chardet"
-      PIP_DEPENDENCIES: "codecov pytest-sugar"
   matrix:
-      - PYTHON_VERSION: "2.7"
-        PYTHON_ARCH: "32"
-      - PYTHON_VERSION: "3.6"
-        PYTHON_ARCH: "64"
+    - PYTHON: C:\Python37-x64
+      PYTHON_VERSION: 3.7
+      PYTHON_ARCH: 64
+    - PYTHON: C:\Python27
+      PYTHON_VERSION: 2.7
+      PYTHON_ARCH: 32
+
+cache:
+  # Cache downloaded pip packages and built wheels.
+  - '%LOCALAPPDATA%\pip\Cache\http'
+  - '%LOCALAPPDATA%\pip\Cache\wheels'
 
 install:
-  - "git clone git://github.com/astropy/ci-helpers.git"
-  - "powershell ci-helpers/appveyor/install-miniconda.ps1"
   - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
-  - "activate test"
+  - "pip install pytest pytest-cov setuptools flake8 coverage chardet codecov"
   - "python setup.py develop"
 
 build: false  # Not a C# project, build stuff at the test step instead.
@@ -25,3 +28,10 @@ test_script:
 
 on_success:
   - "codecov"
+  # Remove old or huge cache files to hopefully not exceed the 1GB cache limit.
+  # (adapted from PyInstaller)
+  - C:\cygwin\bin\find "%LOCALAPPDATA%\pip" -type f -mtime +360 -delete
+  - C:\cygwin\bin\find "%LOCALAPPDATA%\pip" -type f -size +10M -delete
+  - C:\cygwin\bin\find "%LOCALAPPDATA%\pip" -empty -delete
+  # Show size of cache
+  - C:\cygwin\bin\du -hs "%LOCALAPPDATA%\pip\Cache"

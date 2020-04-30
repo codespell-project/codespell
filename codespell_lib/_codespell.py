@@ -19,30 +19,34 @@ Copyright (C) 2011  ProFUSION embedded systems
 
 from __future__ import print_function
 
+import argparse
 import codecs
-import sys
-import re
-from optparse import OptionParser
-import os
 import fnmatch
+import os
+import re
+import sys
 
+word_regex_def = u"[\\w\\-'’`]+"
+encodings = ('utf-8', 'iso-8859-1')
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
-VERSION = '1.14.0.dev0'
+VERSION = '1.17.0.dev0'
 
-misspellings = {}
-ignore_words = set()
-exclude_lines = set()
-options = None
-file_opener = None
-quiet_level = 0
-encodings = ['utf-8', 'iso-8859-1']
-word_regex = re.compile(u"[\w\-'’`]+")
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
-default_dictionary = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                  'data', 'dictionary.txt')
+_data_root = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'data')
+_builtin_dictionaries = (  # name, desc, name, err in aspell, correction in aspell  # noqa: E501
+# The aspell tests here aren't the ideal state, but the None's are realistic
+# for obscure words
+    ('clear', 'for unambiguous errors', '', False, None),
+    ('rare', 'for rare but valid words', '_rare', None, None),
+    ('informal', 'for informal words', '_informal', True, True),
+    ('code', 'for words common to code and/or mathematics', '_code', None, None),  # noqa: E501
+    ('names', 'for valid proper names that might be typos', '_names', None, None),  # noqa: E501
+    ('en-GB_to_en-US', 'for corrections from en-GB to en-US', '_en-GB_to_en-US', True, True),  # noqa: E501
+)
+_builtin_default = 'clear,rare'
 
 # OPTIONS:
 #
@@ -64,7 +68,8 @@ class QuietLevels(object):
 class GlobMatch(object):
     def __init__(self, pattern):
         if pattern:
-            self.pattern_list = pattern.split(',')
+            # Pattern might be a list of comma-delimited strings
+            self.pattern_list = ','.join(pattern).split(',')
         else:
             self.pattern_list = None
 
@@ -121,10 +126,11 @@ class Summary(object):
 
 
 class FileOpener(object):
-    def __init__(self, use_chardet):
+    def __init__(self, use_chardet, quiet_level):
         self.use_chardet = use_chardet
         if use_chardet:
             self.init_chardet()
+        self.quiet_level = quiet_level
 
     def init_chardet(self):
         try:
@@ -170,13 +176,11 @@ class FileOpener(object):
 
     def open_with_internal(self, filename):
         curr = 0
-        global encodings
-
         while True:
             try:
                 f = codecs.open(filename, 'r', encoding=encodings[curr])
             except UnicodeDecodeError:
-                if not quiet_level & QuietLevels.ENCODING:
+                if not self.quiet_level & QuietLevels.ENCODING:
                     print('WARNING: Decoding file %s' % filename,
                           file=sys.stderr)
                     print('WARNING: using encoding=%s failed. '
@@ -203,105 +207,137 @@ class FileOpener(object):
 
 
 def parse_options(args):
-    parser = OptionParser(usage=USAGE, version=VERSION)
+    parser = argparse.ArgumentParser()
 
     parser.set_defaults(colors=sys.stdout.isatty())
-    parser.add_option('-d', '--disable-colors',
-                      action='store_false', dest='colors',
-                      help='disable colors even when printing to terminal '
-                      '(always on for Windows)')
-    parser.add_option('-c', '--enable-colors',
-                      action='store_true', dest='colors',
-                      help='enable colors even when not printing to terminal')
-    parser.add_option('-w', '--write-changes',
-                      action='store_true', default=False,
-                      help='write changes in place if possible')
-    parser.add_option('-D', '--dictionary',
-                      action='append', metavar='FILE',
-                      help='Custom dictionary file that contains spelling '
-                           'corrections. If this flag is not specified or '
-                           'equals "-" then the default dictionary is used. '
-                           'This option can be specified multiple times.')
-    parser.add_option('-I', '--ignore-words',
-                      action='append', metavar='FILE',
-                      help='File that contains words which will be ignored '
-                           'by codespell. File must contain 1 word per line. '
-                           'Words are case sensitive based on how they are '
-                           'written in codespell_lib/data/dictionary.txt')
-    parser.add_option('-r', '--regex',
-                      action='store', type='string',
-                      help='Regular expression which is used to find words. '
-                           'By default any alphanumeric character, the '
-                           'underscore, the hyphen, and the apostrophe is '
-                           'used to build words (i.e. %s). This option cannot '
-                           'be specified together with the write-changes '
-                           'functionality. ' % word_regex.pattern)
-    parser.add_option('-s', '--summary',
-                      action='store_true', default=False,
-                      help='print summary of fixes')
+    parser.add_argument('--version', action='version', version=VERSION)
 
-    parser.add_option('-S', '--skip',
-                      help='Comma-separated list of files to skip. It '
-                           'accepts globs as well. E.g.: if you want '
-                           'codespell to skip .eps and .txt files, '
-                           'you\'d give "*.eps,*.txt" to this option.')
+    parser.add_argument('-d', '--disable-colors',
+                        action='store_false', dest='colors',
+                        help='disable colors, even when printing to terminal '
+                             '(always set for Windows)')
+    parser.add_argument('-c', '--enable-colors',
+                        action='store_true', dest='colors',
+                        help='enable colors, even when not printing to '
+                             'terminal')
 
-    parser.add_option('-x', '--exclude-file',
-                      help='FILE with lines that should not be changed',
-                      metavar='FILE')
+    parser.add_argument('-w', '--write-changes',
+                        action='store_true', default=False,
+                        help='write changes in place if possible')
 
-    parser.add_option('-i', '--interactive',
-                      action='store', type='int', default=0,
-                      help='Set interactive mode when writing changes. '
-                           '0 is the same as no interactivity; 1 makes '
-                           'codespell ask for confirmation; 2 ask user to '
-                           'choose one fix when more than one is '
-                           'available; 3 applies both 1 and 2')
+    parser.add_argument('-D', '--dictionary',
+                        action='append',
+                        help='Custom dictionary file that contains spelling '
+                             'corrections. If this flag is not specified or '
+                             'equals "-" then the default dictionary is used. '
+                             'This option can be specified multiple times.')
+    builtin_opts = ', '.join(
+        '%r %s' % (d[0], d[1]) for d in _builtin_dictionaries)
+    parser.add_argument('--builtin',
+                        dest='builtin', default=_builtin_default,
+                        metavar='BUILTIN-LIST',
+                        help='Comma-separated list of builtin dictionaries '
+                        'to include (when "-D -" or no "-D" is passed). '
+                        'Current options are:\n%s. The default is '
+                        '"--builtin %s".'
+                        % (builtin_opts, _builtin_default))
+    parser.add_argument('-I', '--ignore-words',
+                        action='append', metavar='FILE',
+                        help='File that contains words which will be ignored '
+                             'by codespell. File must contain 1 word per line.'
+                             ' Words are case sensitive based on how they are '
+                             'written in the dictionary file')
+    parser.add_argument('-L', '--ignore-words-list',
+                        action='append', metavar='WORDS',
+                        help='Comma separated list of words to be ignored '
+                             'by codespell. Words are case sensitive based on '
+                             'how they are written in the dictionary file')
+    parser.add_argument('-r', '--regex',
+                        action='store', type=str,
+                        help='Regular expression which is used to find words. '
+                             'By default any alphanumeric character, the '
+                             'underscore, the hyphen, and the apostrophe is '
+                             'used to build words. This option cannot be '
+                             'specified together with --write-changes.')
+    parser.add_argument('-s', '--summary',
+                        action='store_true', default=False,
+                        help='print summary of fixes')
 
-    parser.add_option('-q', '--quiet-level',
-                      action='store', type='int', default=0,
-                      help='Bitmask that allows codespell to run quietly. '
-                           '0: the default, in which all messages are '
-                           'printed. 1: disable warnings about wrong '
-                           'encoding. 2: disable warnings about binary '
-                           'file. 4: shut down warnings about automatic '
-                           'fixes that were disabled in dictionary. '
-                           '8: don\'t print anything for non-automatic '
-                           'fixes. 16: don\'t print fixed files.')
+    parser.add_argument('-S', '--skip',
+                        action='append',
+                        help='Comma-separated list of files to skip. It '
+                             'accepts globs as well. E.g.: if you want '
+                             'codespell to skip .eps and .txt files, '
+                             'you\'d give "*.eps,*.txt" to this option.')
 
-    parser.add_option('-e', '--hard-encoding-detection',
-                      action='store_true', default=False,
-                      help='Use chardet to detect the encoding of each '
-                           'file. This can slow down codespell, but is more '
-                           'reliable in detecting encodings other than utf-8, '
-                           'iso8859-1 and ascii.')
+    parser.add_argument('-x', '--exclude-file', type=str, metavar='FILE',
+                        help='FILE with lines that should not be changed')
 
-    parser.add_option('-f', '--check-filenames',
-                      action='store_true', default=False,
-                      help='Check file names as well.')
+    parser.add_argument('-i', '--interactive',
+                        action='store', type=int, default=0,
+                        help='Set interactive mode when writing changes. '
+                             '0: no interactivity. 1: ask for confirmation. '
+                             '2 ask user to choose one fix when more than one '
+                             'is available. 3: both 1 and 2')
 
-    (o, args) = parser.parse_args(list(args))
+    parser.add_argument('-q', '--quiet-level',
+                        action='store', type=int, default=0,
+                        help='Bitmask that allows codespell to run quietly. '
+                             '0: the default, in which all messages are '
+                             'printed. 1: disable warnings about wrong '
+                             'encoding. 2: disable warnings about binary '
+                             'file. 4: shut down warnings about automatic '
+                             'fixes that were disabled in dictionary. '
+                             '8: don\'t print anything for non-automatic '
+                             'fixes. 16: don\'t print fixed files.')
 
-    if not args:
-        args.append('.')
+    parser.add_argument('-e', '--hard-encoding-detection',
+                        action='store_true', default=False,
+                        help='Use chardet to detect the encoding of each '
+                             'file. This can slow down codespell, but is more '
+                             'reliable in detecting encodings other than '
+                             'utf-8, iso8859-1, and ascii.')
 
-    return o, args, parser
+    parser.add_argument('-f', '--check-filenames',
+                        action='store_true', default=False,
+                        help='check file names as well')
+
+    parser.add_argument('-H', '--check-hidden',
+                        action='store_true', default=False,
+                        help='check hidden files (those starting with ".") as '
+                             'well')
+    parser.add_argument('-A', '--after-context', type=int, metavar='LINES',
+                        help='print LINES of trailing context')
+    parser.add_argument('-B', '--before-context', type=int, metavar='LINES',
+                        help='print LINES of leading context')
+    parser.add_argument('-C', '--context', type=int, metavar='LINES',
+                        help='print LINES of surrounding context')
+
+    parser.add_argument('files', nargs='*',
+                        help='files or directories to check')
+
+    options = parser.parse_args(list(args))
+
+    if not options.files:
+        options.files.append('.')
+
+    return options, parser
 
 
-def build_exclude_hashes(filename):
+def build_exclude_hashes(filename, exclude_lines):
     with codecs.open(filename, 'r') as f:
         for line in f:
             exclude_lines.add(line)
 
 
-def build_ignore_words(filename):
-    with codecs.open(filename, mode='r', buffering=1, encoding='utf-8') as f:
+def build_ignore_words(filename, ignore_words):
+    with codecs.open(filename, mode='r', encoding='utf-8') as f:
         for line in f:
             ignore_words.add(line.strip())
 
 
-def build_dict(filename):
-    with codecs.open(filename, mode='r', buffering=1, encoding='utf-8') as f:
+def build_dict(filename, misspellings, ignore_words):
+    with codecs.open(filename, mode='r', encoding='utf-8') as f:
         for line in f:
             [key, data] = line.split('->')
             # TODO for now, convert both to lower. Someday we can maybe add
@@ -328,14 +364,11 @@ def build_dict(filename):
             misspellings[key] = Misspelling(data, fix, reason)
 
 
-def is_hidden(filename):
+def is_hidden(filename, check_hidden):
     bfilename = os.path.basename(filename)
 
-    if bfilename != '' and bfilename != '.' and bfilename != '..' \
-                    and bfilename[0] == '.':
-        return True
-
-    return False
+    return bfilename not in ('', '.', '..') and \
+        (not check_hidden and bfilename[0] == '.')
 
 
 def is_text_file(filename):
@@ -407,15 +440,18 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
     return misspelling.fix, fix_case(wrongword, misspelling.data)
 
 
-def parse_file(filename, colors, summary):
+def print_context(lines, index, context):
+    # context = (context_before, context_after)
+    for i in range(index - context[0], index + context[1] + 1):
+        if 0 <= i < len(lines):
+            print('%s %s' % ('>' if i == index else ':', lines[i].rstrip()))
+
+
+def parse_file(filename, colors, summary, misspellings, exclude_lines,
+               file_opener, word_regex, context, options):
     bad_count = 0
     lines = None
     changed = False
-    global misspellings
-    global options
-    global encodings
-    global quiet_level
-
     encoding = encodings[0]  # if not defined, use UTF-8
 
     if filename == '-':
@@ -441,13 +477,13 @@ def parse_file(filename, colors, summary):
                 crightword = "%s%s%s" % (colors.FWORD, fixword, colors.DISABLE)
 
                 if misspellings[lword].reason:
-                    if quiet_level & QuietLevels.DISABLED_FIXES:
+                    if options.quiet_level & QuietLevels.DISABLED_FIXES:
                         continue
                     creason = "  | %s%s%s" % (colors.FILE,
                                               misspellings[lword].reason,
                                               colors.DISABLE)
                 else:
-                    if quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
+                    if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
                         continue
                     creason = ''
 
@@ -461,7 +497,7 @@ def parse_file(filename, colors, summary):
 
         text = is_text_file(filename)
         if not text:
-            if not quiet_level & QuietLevels.BINARY_FILE:
+            if not options.quiet_level & QuietLevels.BINARY_FILE:
                 print("WARNING: Binary file: %s " % filename, file=sys.stderr)
             return 0
         try:
@@ -479,13 +515,17 @@ def parse_file(filename, colors, summary):
         for word in word_regex.findall(line):
             lword = word.lower()
             if lword in misspellings:
+                context_shown = False
                 fix = misspellings[lword].fix
                 fixword = fix_case(word, misspellings[lword].data)
 
                 if options.interactive and lword not in asked_for:
-                    fix, fixword = ask_for_word_fix(lines[i], word,
-                                                    misspellings[lword],
-                                                    options.interactive)
+                    if context is not None:
+                        context_shown = True
+                        print_context(lines, i, context)
+                    fix, fixword = ask_for_word_fix(
+                        lines[i], word, misspellings[lword],
+                        options.interactive)
                     asked_for.add(lword)
 
                 if summary and fix:
@@ -511,14 +551,14 @@ def parse_file(filename, colors, summary):
                 crightword = "%s%s%s" % (colors.FWORD, fixword, colors.DISABLE)
 
                 if misspellings[lword].reason:
-                    if quiet_level & QuietLevels.DISABLED_FIXES:
+                    if options.quiet_level & QuietLevels.DISABLED_FIXES:
                         continue
 
                     creason = "  | %s%s%s" % (colors.FILE,
                                               misspellings[lword].reason,
                                               colors.DISABLE)
                 else:
-                    if quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
+                    if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
                         continue
 
                     creason = ''
@@ -527,6 +567,8 @@ def parse_file(filename, colors, summary):
                 # our bad_count and thus return value
                 bad_count += 1
 
+                if (not context_shown) and (context is not None):
+                    print_context(lines, i, context)
                 if filename != '-':
                     print("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "
                           " ==> %(RIGHTWORD)s%(REASON)s"
@@ -546,7 +588,7 @@ def parse_file(filename, colors, summary):
             for line in lines:
                 print(line, end='')
         else:
-            if not quiet_level & QuietLevels.FIXES:
+            if not options.quiet_level & QuietLevels.FIXES:
                 print("%sFIXED:%s %s"
                       % (colors.FWORD, colors.DISABLE, filename),
                       file=sys.stderr)
@@ -562,44 +604,68 @@ def _script_main():
 
 def main(*args):
     """Contains flow control"""
-    global options
-    global quiet_level
-    global file_opener
+    options, parser = parse_options(args)
 
-    options, args, parser = parse_options(args)
-
-    if options.regex:
-        if options.write_changes:
-            parser.error('--write-changes cannot be used together with '
-                         '--regex')
-        global word_regex
-        try:
-            word_regex = re.compile(options.regex)
-        except re.error as err:
-            print('ERROR: invalid regular expression "%s" (%s)' %
-                  (options.regex, err), file=sys.stderr)
-            parser.print_help()
-            return 1
+    if options.regex and options.write_changes:
+        print('ERROR: --write-changes cannot be used together with '
+              '--regex')
+        parser.print_help()
+        return 1
+    word_regex = options.regex or word_regex_def
+    try:
+        word_regex = re.compile(word_regex)
+    except re.error as err:
+        print('ERROR: invalid regular expression "%s" (%s)' %
+              (word_regex, err), file=sys.stderr)
+        parser.print_help()
+        return 1
 
     ignore_words_files = options.ignore_words or []
+    ignore_words = set()
     for ignore_words_file in ignore_words_files:
-        if not os.path.exists(ignore_words_file):
+        if not os.path.isfile(ignore_words_file):
             print('ERROR: cannot find ignore-words file: %s' %
                   ignore_words_file, file=sys.stderr)
             parser.print_help()
             return 1
-        build_ignore_words(ignore_words_file)
+        build_ignore_words(ignore_words_file, ignore_words)
 
-    dictionaries = options.dictionary or [default_dictionary]
+    ignore_words_list = options.ignore_words_list or []
+    for comma_separated_words in ignore_words_list:
+        for word in comma_separated_words.split(','):
+            ignore_words.add(word.strip())
+
+    if options.dictionary:
+        dictionaries = options.dictionary
+    else:
+        dictionaries = ['-']
+    use_dictionaries = list()
     for dictionary in dictionaries:
         if dictionary == "-":
-            dictionary = default_dictionary
-        if not os.path.exists(dictionary):
-            print('ERROR: cannot find dictionary file: %s' % dictionary,
-                  file=sys.stderr)
-            parser.print_help()
-            return 1
-        build_dict(dictionary)
+            # figure out which builtin dictionaries to use
+            use = sorted(set(options.builtin.split(',')))
+            for u in use:
+                for builtin in _builtin_dictionaries:
+                    if builtin[0] == u:
+                        use_dictionaries.append(
+                            os.path.join(_data_root, 'dictionary%s.txt'
+                                         % (builtin[2],)))
+                        break
+                else:
+                    print('ERROR: Unknown builtin dictionary: %s' % (u,),
+                          file=sys.stderr)
+                    parser.print_help()
+                    return 1
+        else:
+            if not os.path.isfile(dictionary):
+                print('ERROR: cannot find dictionary file: %s' % dictionary,
+                      file=sys.stderr)
+                parser.print_help()
+                return 1
+            use_dictionaries.append(dictionary)
+    misspellings = dict()
+    for dictionary in use_dictionaries:
+        build_dict(dictionary, misspellings, ignore_words)
     colors = TermColors()
     if not options.colors or sys.platform == 'win32':
         colors.disable()
@@ -609,20 +675,38 @@ def main(*args):
     else:
         summary = None
 
+    context = None
+    if options.context is not None:
+        if (options.before_context is not None) or \
+                (options.after_context is not None):
+            print('ERROR: --context/-C cannot be used together with '
+                  '--context-before/-B or --context-after/-A')
+            parser.print_help()
+            return 1
+        context_both = max(0, options.context)
+        context = (context_both, context_both)
+    elif (options.before_context is not None) or \
+            (options.after_context is not None):
+        context_before = 0
+        context_after = 0
+        if options.before_context is not None:
+            context_before = max(0, options.before_context)
+        if options.after_context is not None:
+            context_after = max(0, options.after_context)
+        context = (context_before, context_after)
+
+    exclude_lines = set()
     if options.exclude_file:
-        build_exclude_hashes(options.exclude_file)
+        build_exclude_hashes(options.exclude_file, exclude_lines)
 
-    if options.quiet_level:
-        quiet_level = options.quiet_level
-
-    file_opener = FileOpener(options.hard_encoding_detection)
-
+    file_opener = FileOpener(options.hard_encoding_detection,
+                             options.quiet_level)
     glob_match = GlobMatch(options.skip)
 
     bad_count = 0
-    for filename in args:
+    for filename in options.files:
         # ignore hidden files
-        if is_hidden(filename):
+        if is_hidden(filename, options.check_hidden):
             continue
 
         if os.path.isdir(filename):
@@ -631,18 +715,24 @@ def main(*args):
                     del dirs[:]
                     continue
                 for file_ in files:
-                    if glob_match.match(file_):
+                    if glob_match.match(file_):  # skip files
                         continue
                     fname = os.path.join(root, file_)
+                    if glob_match.match(fname):  # skip paths
+                        continue
                     if not os.path.isfile(fname) or not os.path.getsize(fname):
                         continue
-                    bad_count += parse_file(fname, colors, summary)
+                    bad_count += parse_file(
+                        fname, colors, summary, misspellings, exclude_lines,
+                        file_opener, word_regex, context, options)
 
                 # skip (relative) directories
                 dirs[:] = [dir_ for dir_ in dirs if not glob_match.match(dir_)]
 
         else:
-            bad_count += parse_file(filename, colors, summary)
+            bad_count += parse_file(
+                filename, colors, summary, misspellings, exclude_lines,
+                file_opener, word_regex, context, options)
 
     if summary:
         print("\n-------8<-------\nSUMMARY:")
