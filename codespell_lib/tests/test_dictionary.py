@@ -28,6 +28,7 @@ except Exception as exp:  # probably ImportError, but maybe also language
 ws = re.compile(r'.*\s.*')  # whitespace
 comma = re.compile(r'.*,.*')  # comma
 
+global_err_dict = dict()
 
 # Filename, should be seen as errors in aspell or not
 _data_dir = op.join(op.dirname(__file__), '..', 'data')
@@ -172,18 +173,27 @@ def test_error_checking_in_aspell(err, rep, err_aspell, rep_aspell, match):
 @fname_params
 def test_dictionary_looping(fname, in_aspell):
     """Test that all dictionary entries are valid."""
-    err_dict = dict()
+    file_err_dict = dict()
     with open(fname, 'rb') as fid:
         for line in fid:
             err, rep = line.decode('utf-8').split('->')
             err = err.lower()
-            assert err not in err_dict, 'error %r already exists' % err
+            assert err not in file_err_dict, 'error %r already exists in %s' % (err, fname)
+            # We check if it's in file_err_dict too, so we don't throw two errors when it is
+            assert (err in file_err_dict) or (err not in global_err_dict), 'error %r already exists in another dictionary file' % (err)
             rep = rep.rstrip('\n')
             reps = [r.strip() for r in rep.lower().split(',')]
             reps = [r for r in reps if len(r)]
-            err_dict[err] = reps
-    # check for corrections that are errors (but not self replacements)
-    for err in err_dict:
-        for r in err_dict[err]:
-            assert (r not in err_dict) or (r in err_dict[r]), \
-                ('error %s: correction %s is an error itself' % (err, r))
+            file_err_dict[err] = reps
+            global_err_dict[err] = reps
+    # check for corrections that are themselves errors
+    for err in file_err_dict:
+        for r in file_err_dict[err]:
+            assert r not in file_err_dict, \
+                ('error %s: correction %s is an error itself in %s' % (err, r, fname))
+    # check for corrections that are themselves errors in other dictionaries
+    for err in global_err_dict:
+        for r in global_err_dict[err]:
+            assert r not in global_err_dict, \
+                ('error %s: correction %s is an error itself in a dictionary file (possibly this one)' % (err, r))
+            
