@@ -13,5 +13,6 @@ jobs:
   flake8-annotation:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Flake8 with annotations
         uses: TrueBrain/actions-flake8@v1.2
