@@ -3099,6 +3099,9 @@ baloon->balloon
 baloons->balloons
 balse->false
 banannas->bananas
+banch->branch, bench,
+banched->branched, benched,
+banches->branches, benches,
 bandwidht->bandwidth
 bandwidthm->bandwidth
 bandwitdh->bandwidth
@@ -3272,6 +3275,8 @@ benchmkar->benchmark
 benchmkared->benchmarked
 benchmkaring->benchmarking
 benchmkars->benchmarks
+benchs->benches
+branchs->branches
 benckmark->benchmark
 benckmarked->benchmarked
 benckmarking->benchmarking
