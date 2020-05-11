@@ -1433,6 +1433,8 @@ ambiguious->ambiguous
 ambiguos->ambiguous
 ambitous->ambitious
 ambuguity->ambiguity
+ambulence->ambulance
+ambulences->ambulances
 amdgput->amdgpu
 amendement->amendment
 amendmant->amendment
@@ -3276,7 +3278,6 @@ benchmkared->benchmarked
 benchmkaring->benchmarking
 benchmkars->benchmarks
 benchs->benches
-branchs->branches
 benckmark->benchmark
 benckmarked->benchmarked
 benckmarking->benchmarking
@@ -3533,9 +3534,10 @@ brackground->background
 bradcast->broadcast
 brakpoint->breakpoint
 brakpoints->breakpoints
-brance->branch, branches,
+brance->branch, brace, branches,
 branchs->branches
 branck->branch
+branckes->branches
 brancket->bracket
 branckets->brackets
 brane->brain
