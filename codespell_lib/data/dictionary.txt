@@ -1,4 +1,5 @@
 1nd->1st
+2rd->2nd
 2st->2nd
 3nd->3rd
 3st->3rd
@@ -1368,6 +1369,7 @@ alreayd->already
 alredy->already
 alrelady->already
 alrms->alarms
+alrogithm->algorithm
 alrteady->already
 als->also
 alse->also, else,
@@ -3204,6 +3206,7 @@ begginnig->beginning
 begginning->beginning
 beggins->begins
 begiinning->beginning
+beginer->beginner
 begines->begins
 begining->beginning
 beginn->begin
@@ -3860,6 +3863,7 @@ caluclate->calculate
 caluclated->calculated
 caluclater->calculator
 caluclates->calculates
+caluclating->calculating
 caluclator->calculator
 caluculate->calculate
 caluculated->calculated
@@ -6532,6 +6536,7 @@ coppy->copy, choppy,
 copright->copyright
 coprighted->copyrighted
 coprights->copyrights
+coprocesor->coprocessor
 coprright->copyright
 coprrighted->copyrighted
 coprrights->copyrights
@@ -9307,6 +9312,7 @@ draing->drawing
 drammatic->dramatic
 dramtic->dramatic
 dran->drawn
+drastical->drastically
 drasticaly->drastically
 drats->drafts
 draughtman->draughtsman
@@ -15069,6 +15075,7 @@ kyrillic->cyrillic
 labatory->lavatory, laboratory,
 labed->labeled
 labeld->labelled
+labirinth->labyrinth
 lable->label
 labled->labeled, labelled,
 lablels->labels
@@ -16517,6 +16524,7 @@ mystql->mysql
 Mythraic->Mithraic
 myu->my
 nadly->badly
+naerly->nearly, gnarly,
 nagivation->navigation
 naieve->naive
 namd->named, name,
@@ -19439,6 +19447,7 @@ procesed->processed
 proceses->processes
 proceshandler->processhandler
 procesing->processing
+procesor->processor
 process'->process's
 processeed->processed
 processees->processes
@@ -21508,6 +21517,7 @@ resart->restart
 resarts->restarts
 resaurant->restaurant
 resaurants->restaurants
+rescaned->rescanned
 rescource->resource
 rescources->resources
 rescrition->restriction
@@ -23355,6 +23365,7 @@ spoonfulls->spoonfuls
 sporatic->sporadic
 sporious->spurious
 sppeches->speeches
+spped->speed, sped, sapped,
 spport->support
 spported->supported
 spporting->supporting
@@ -24837,6 +24848,7 @@ thiknesses->thicknesses
 thikning->thinking, thickening,
 thikns->thinks
 thiks->thinks
+thime->time, theme, thyme, thine,
 thimngs->things
 thinigs->things
 thinkabel->thinkable
@@ -25604,6 +25616,7 @@ unbelivebly->unbelievably
 unborned->unborn
 unbunded->unbundled, unbounded,
 uncahnged->unchanged
+uncalcualted->uncalculated
 unce->once
 uncehck->uncheck
 uncehcked->unchecked
