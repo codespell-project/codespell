@@ -194,6 +194,6 @@ def test_dictionary_looping(fname, in_aspell):
     # check for corrections that are themselves errors in other dictionaries
     for err in global_err_dict:
         for r in global_err_dict[err]:
-            assert r not in global_err_dict, \
-                ('error %s: correction %s is an error itself in a dictionary file (possibly this one)' % (err, r))
+            assert (r in file_err_dict) or (r not in global_err_dict), \
+                ('error %s: correction %s is an error itself in another dictionary file (not %s)' % (err, r, fname))
             
