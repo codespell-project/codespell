@@ -28,7 +28,7 @@ except Exception as exp:  # probably ImportError, but maybe also language
 ws = re.compile(r'.*\s.*')  # whitespace
 comma = re.compile(r'.*,.*')  # comma
 
-global_err_dict = dict()
+global_err_dicts = dict()
 
 # Filename, should be seen as errors in aspell or not
 _data_dir = op.join(op.dirname(__file__), '..', 'data')
@@ -173,6 +173,7 @@ def test_error_checking_in_aspell(err, rep, err_aspell, rep_aspell, match):
 @fname_params
 def test_dictionary_looping(fname, in_aspell):
     """Test that all dictionary entries are valid."""
+    global_err_dicts[fname] = dict()
     file_err_dict = dict()
     with open(fname, 'rb') as fid:
         for line in fid:
@@ -185,15 +186,16 @@ def test_dictionary_looping(fname, in_aspell):
             reps = [r.strip() for r in rep.lower().split(',')]
             reps = [r for r in reps if len(r)]
             file_err_dict[err] = reps
-            global_err_dict[err] = reps
+            global_err_dicts[fname][err] = reps
     # check for corrections that are themselves errors
     for err in file_err_dict:
         for r in file_err_dict[err]:
             assert r not in file_err_dict, \
                 ('error %s: correction %s is an error itself in %s' % (err, r, fname))
     # check for corrections that are themselves errors in other dictionaries
-    for err in global_err_dict:
-        for r in global_err_dict[err]:
-            assert (r in file_err_dict) or (r not in global_err_dict), \
-                ('error %s: correction %s is an error itself in another dictionary file (not %s)' % (err, r, fname))
+    for other_fname, global_err_dict in global_err_dicts.items():
+        for err in global_err_dict:
+            for r in global_err_dict[err]:
+                assert (r in file_err_dict) or (r not in global_err_dict), \
+                    ('error %s: correction %s is an error itself in %s' % (err, r, other_fname))
             
