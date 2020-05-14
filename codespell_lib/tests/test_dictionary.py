@@ -180,8 +180,10 @@ def test_dictionary_looping(fname, in_aspell):
             err, rep = line.decode('utf-8').split('->')
             err = err.lower()
             assert err not in file_err_dict, 'error %r already exists in %s' % (err, fname)
-            # We check if it's in file_err_dict too, so we don't throw two errors when it is
-            assert (err in file_err_dict) or (err not in global_err_dict), 'error %r already exists in another dictionary file' % (err)
+            for other_fname, global_err_dict in global_err_dicts.items():
+                # We check if it's in file_err_dict too, so we don't throw two errors when it is
+                assert (err in file_err_dict) or (err not in global_err_dict), \
+                    'error %r already exists in dictionary file %s' % (err, other_fname)
             rep = rep.rstrip('\n')
             reps = [r.strip() for r in rep.lower().split(',')]
             reps = [r for r in reps if len(r)]
@@ -191,11 +193,8 @@ def test_dictionary_looping(fname, in_aspell):
     for err in file_err_dict:
         for r in file_err_dict[err]:
             assert r not in file_err_dict, \
-                ('error %s: correction %s is an error itself in %s' % (err, r, fname))
-    # check for corrections that are themselves errors in other dictionaries
-    for other_fname, global_err_dict in global_err_dicts.items():
-        for err in global_err_dict:
-            for r in global_err_dict[err]:
-                assert (r in file_err_dict) or (r not in global_err_dict), \
-                    ('error %s: correction %s is an error itself in %s' % (err, r, other_fname))
-            
+                ('error %s: correction %s is an error itself within the same dictionary %s' % (err, r, fname))
+        # check for corrections that are themselves errors in other dictionaries
+        for other_fname, global_err_dict in global_err_dicts.items():
+            assert (r in file_err_dict) or (r not in global_err_dict), \
+                ('error %s: correction %s is an error itself in another dictionary %s' % (err, r, other_fname))
