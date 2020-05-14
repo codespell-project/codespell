@@ -189,12 +189,15 @@ def test_dictionary_looping(fname, in_aspell):
             reps = [r for r in reps if len(r)]
             file_err_dict[err] = reps
             global_err_dicts[fname][err] = reps
-    # check for corrections that are themselves errors
-    for err in file_err_dict:
-        for r in file_err_dict[err]:
-            assert r not in file_err_dict, \
-                ('error %s: correction %s is an error itself within the same dictionary %s' % (err, r, fname))
-        # check for corrections that are themselves errors in other dictionaries
-        for other_fname, global_err_dict in global_err_dicts.items():
-            assert (r in file_err_dict) or (r not in global_err_dict), \
-                ('error %s: correction %s is an error itself in another dictionary %s' % (err, r, other_fname))
+    for dict_fname, global_err_dict in global_err_dicts.items():
+        for err in global_err_dict:
+            for r in global_err_dict[err]:
+                for other_dict_fname, global_err_dict in global_err_dicts.items():
+                    if dict_fname == other_dict_fname:
+                        # check for corrections that are themselves errors in the same dictionary
+                        assert r not in global_err_dict, \
+                            ('error %s: correction %s is an error itself within the same dictionary %s' % (err, r, dict_fname))
+                    else:
+                        # check for corrections that are themselves errors in other dictionaries
+                        assert r not in global_err_dict, \
+                            ('error %s: correction %s is an error itself in another dictionary %s' % (err, r, other_dict_fname))
