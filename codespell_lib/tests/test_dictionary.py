@@ -29,6 +29,7 @@ ws = re.compile(r'.*\s.*')  # whitespace
 comma = re.compile(r'.*,.*')  # comma
 
 global_err_dicts = dict()
+global_pairs = set()
 
 # Filename, should be seen as errors in aspell or not
 _data_dir = op.join(op.dirname(__file__), '..', 'data')
@@ -170,34 +171,78 @@ def test_error_checking_in_aspell(err, rep, err_aspell, rep_aspell, match):
         _check_err_rep(err, rep, (err_aspell, rep_aspell), 'dummy')
 
 
+# allow some duplicates, like "m-i-n-i-m-i-s-e", or "c-a-l-c-u-l-a-t-a-b-l-e"
+allowed_dups = {
+    ('dictionary.txt', 'dictionary_en-GB_to_en-US.txt'),
+    ('dictionary.txt', 'dictionary_rare.txt'),
+}
+
+
 @fname_params
+@pytest.mark.dependency(name='dictionary loop')
 def test_dictionary_looping(fname, in_aspell):
     """Test that all dictionary entries are valid."""
-    global_err_dicts[fname] = dict()
-    file_err_dict = dict()
+    this_err_dict = dict()
+    short_fname = op.basename(fname)
     with open(fname, 'rb') as fid:
         for line in fid:
             err, rep = line.decode('utf-8').split('->')
             err = err.lower()
-            assert err not in file_err_dict, 'error %r already exists in %s' % (err, fname)
-            for other_fname, global_err_dict in global_err_dicts.items():
-                # We check if it's in file_err_dict too, so we don't throw two errors when it is
-                assert (err in file_err_dict) or (err not in global_err_dict), \
-                    'error %r already exists in dictionary file %s' % (err, other_fname)
+            assert err not in this_err_dict, \
+                'error %r already exists in %s' % (err, short_fname)
             rep = rep.rstrip('\n')
             reps = [r.strip() for r in rep.lower().split(',')]
             reps = [r for r in reps if len(r)]
-            file_err_dict[err] = reps
-            global_err_dicts[fname][err] = reps
-    for dict_fname, global_err_dict in global_err_dicts.items():
-        for err in global_err_dict:
-            for r in global_err_dict[err]:
-                for other_dict_fname, global_err_dict in global_err_dicts.items():
-                    if dict_fname == other_dict_fname:
-                        # check for corrections that are themselves errors in the same dictionary
-                        assert r not in global_err_dict, \
-                            ('error %s: correction %s is an error itself within the same dictionary %s' % (err, r, dict_fname))
-                    else:
-                        # check for corrections that are themselves errors in other dictionaries
-                        assert r not in global_err_dict, \
-                            ('error %s: correction %s is an error itself in another dictionary %s' % (err, r, other_dict_fname))
+            this_err_dict[err] = reps
+    # 1. check the dict against itself (diagonal)
+    for err in this_err_dict:
+        for r in this_err_dict[err]:
+            assert r not in this_err_dict, \
+                ('error %s: correction %s is an error itself in the same '
+                 'dictionary file %s' % (short_fname, err, r))
+    pair = (short_fname, short_fname)
+    assert pair not in global_pairs
+    global_pairs.add(pair)
+    for other_fname, other_err_dict in global_err_dicts.items():
+        # error duplication (eventually maybe we should just merge?)
+        for err in this_err_dict:
+            assert err not in other_err_dict, \
+                ('error %r in dictionary %s already exists in dictionary '
+                 '%s' % (err, short_fname, other_fname))
+        # 2. check corrections in this dict against other dicts (upper)
+        pair = (short_fname, other_fname)
+        if pair not in allowed_dups:
+            for err in this_err_dict:
+                assert err not in other_err_dict, \
+                    ('error %r in dictionary %s already exists in dictionary '
+                     '%s' % (err, short_fname, other_fname))
+                for r in this_err_dict[err]:
+                    assert r not in other_err_dict, \
+                        ('error %s: correction %s from dictionary %s is an '
+                         'error itself in dictionary %s'
+                         % (err, r, short_fname, other_fname))
+        assert pair not in global_pairs
+        global_pairs.add(pair)
+        # 3. check corrections in other dicts against this dict (lower)
+        pair = (other_fname, short_fname)
+        if pair not in allowed_dups:
+            for err in other_err_dict:
+                for r in other_err_dict[err]:
+                    assert r not in this_err_dict, \
+                        ('error %s: correction %s from dictionary %s is an '
+                         'error itself in dictionary %s'
+                         % (err, r, other_fname, short_fname))
+        assert pair not in global_pairs
+        global_pairs.add(pair)
+    global_err_dicts[short_fname] = this_err_dict
+
+
+@pytest.mark.dependency(depends=['dictionary loop'])
+def test_ran_all():
+    """Test that all pairwise tests ran."""
+    for f1, _ in _fnames_in_aspell:
+        f1 = op.basename(f1)
+        for f2, _ in _fnames_in_aspell:
+            f2 = op.basename(f2)
+            assert (f1, f2) in global_pairs
+    assert len(global_pairs) == len(_fnames_in_aspell) ** 2

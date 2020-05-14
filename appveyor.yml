@@ -16,7 +16,7 @@ cache:
 
 install:
   - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
-  - "pip install pytest pytest-cov setuptools flake8 coverage chardet codecov"
+  - "pip install pytest pytest-cov pytest-dependency setuptools flake8 coverage chardet codecov"
   - "python setup.py develop"
 
 build: false  # Not a C# project, build stuff at the test step instead.
