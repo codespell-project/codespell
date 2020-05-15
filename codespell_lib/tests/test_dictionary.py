@@ -199,7 +199,7 @@ def test_dictionary_looping(fname, in_aspell):
         for r in this_err_dict[err]:
             assert r not in this_err_dict, \
                 ('error %s: correction %s is an error itself in the same '
-                 'dictionary file %s' % (short_fname, err, r))
+                 'dictionary file %s' % (err, r, short_fname))
     pair = (short_fname, short_fname)
     assert pair not in global_pairs
     global_pairs.add(pair)
