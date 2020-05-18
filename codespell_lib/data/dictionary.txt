@@ -2908,7 +2908,7 @@ autoritative->authoritative
 autority->authority
 autorization->authorization
 autoropeat->autorepeat
-autors->authors
+autors->authorsenforncing
 autosae->autosave
 autosavegs->autosaves
 autosaveperodical->autosaveperiodical
@@ -8399,7 +8399,7 @@ differantiate->differentiate
 differantiation->differentiation
 differantiator->differentiator
 differantion->differentiation
-differate->differentiate
+differate->differentiateenforncing
 differect->different
 differen->different
 differencial->differential
@@ -9835,6 +9835,7 @@ enforcable->enforceable
 enforceing->enforcing
 enforcmement->enforcement
 enforcment->enforcement
+enforncing->enforcing
 engagment->engagement
 engeneer->engineer
 engeneering->engineering
