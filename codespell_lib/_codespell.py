@@ -398,7 +398,7 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
         r = ''
         fixword = fix_case(wrongword, misspelling.data)
         while not r:
-            print("%s\t%s  ==> %s (Y/n) " % (line, wrongword, fixword), end='')
+            print("%s\t%s ==> %s (Y/n) " % (line, wrongword, fixword), end='')
             r = sys.stdin.readline().strip().upper()
             if not r:
                 r = 'Y'
@@ -490,7 +490,7 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
 
                 bad_count += 1
 
-                print("%(FILENAME)s: %(WRONGWORD)s "
+                print("%(FILENAME)s: %(WRONGWORD)s"
                       " ==> %(RIGHTWORD)s%(REASON)s"
                       % {'FILENAME': cfilename,
                          'WRONGWORD': cwrongword,
@@ -572,13 +572,13 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
                     print_context(lines, i, context)
                 if filename != '-':
                     print("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "
-                          " ==> %(RIGHTWORD)s%(REASON)s"
+                          "==> %(RIGHTWORD)s%(REASON)s"
                           % {'FILENAME': cfilename, 'LINE': cline,
                              'WRONGWORD': cwrongword,
                              'RIGHTWORD': crightword, 'REASON': creason})
                 else:
-                    print('%(LINE)s: %(STRLINE)s\n\t%(WRONGWORD)s '
-                          '==> %(RIGHTWORD)s%(REASON)s'
+                    print("%(LINE)s: %(STRLINE)s\n\t%(WRONGWORD)s "
+                          "==> %(RIGHTWORD)s%(REASON)s"
                           % {'LINE': cline, 'STRLINE': line.strip(),
                              'WRONGWORD': cwrongword,
                              'RIGHTWORD': crightword, 'REASON': creason})
