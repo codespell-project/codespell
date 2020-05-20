@@ -36,9 +36,10 @@ VERSION = '1.17.0.dev0'
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
 _data_root = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'data')
-_builtin_dictionaries = (  # name, desc, name, err in aspell, correction in aspell  # noqa: E501
-# The aspell tests here aren't the ideal state, but the None's are realistic
-# for obscure words
+_builtin_dictionaries = (
+    # name, desc, name, err in aspell, correction in aspell
+    # The aspell tests here aren't the ideal state, but the None's are
+    # realistic for obscure words
     ('clear', 'for unambiguous errors', '', False, None),
     ('rare', 'for rare but valid words', '_rare', None, None),
     ('informal', 'for informal words', '_informal', True, True),
@@ -397,7 +398,7 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
         r = ''
         fixword = fix_case(wrongword, misspelling.data)
         while not r:
-            print("%s\t%s  ==> %s (Y/n) " % (line, wrongword, fixword), end='')
+            print("%s\t%s ==> %s (Y/n) " % (line, wrongword, fixword), end='')
             r = sys.stdin.readline().strip().upper()
             if not r:
                 r = 'Y'
@@ -489,7 +490,7 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
 
                 bad_count += 1
 
-                print("%(FILENAME)s: %(WRONGWORD)s "
+                print("%(FILENAME)s: %(WRONGWORD)s"
                       " ==> %(RIGHTWORD)s%(REASON)s"
                       % {'FILENAME': cfilename,
                          'WRONGWORD': cwrongword,
@@ -571,13 +572,13 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
                     print_context(lines, i, context)
                 if filename != '-':
                     print("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "
-                          " ==> %(RIGHTWORD)s%(REASON)s"
+                          "==> %(RIGHTWORD)s%(REASON)s"
                           % {'FILENAME': cfilename, 'LINE': cline,
                              'WRONGWORD': cwrongword,
                              'RIGHTWORD': crightword, 'REASON': creason})
                 else:
-                    print('%(LINE)s: %(STRLINE)s\n\t%(WRONGWORD)s '
-                          '==> %(RIGHTWORD)s%(REASON)s'
+                    print("%(LINE)s: %(STRLINE)s\n\t%(WRONGWORD)s "
+                          "==> %(RIGHTWORD)s%(REASON)s"
                           % {'LINE': cline, 'STRLINE': line.strip(),
                              'WRONGWORD': cwrongword,
                              'RIGHTWORD': crightword, 'REASON': creason})

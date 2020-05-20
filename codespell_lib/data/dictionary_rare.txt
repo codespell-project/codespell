@@ -13,8 +13,7 @@ buss->bus
 busses->buses
 calculatable->calculable
 cant->can't
-catalogue->catalog
-chack->check, cheque,
+chack->check, chalk, cheque,
 chancel->cancel
 chancels->cancels
 circularly->circular
@@ -79,7 +78,6 @@ manger->manager
 marge->merge
 mater->matter, master, mother,
 medias->media, mediums,
-memorise->memorize
 midwifes->midwives
 moil->soil, mohel,
 mot->not
@@ -120,6 +118,8 @@ suppressable->suppressible
 therefor->therefore
 therefrom->there from
 theses->these, thesis,
+tittle->title
+tittles->title
 toke->took
 tread->thread, treat,
 unknow->unknown
@@ -131,12 +131,11 @@ vise->vice
 wan->want
 want's->wants
 wee->we
-wen->we, when,
 whats->what's
 whet->when, what, wet,
 whiling->while
-wight->weight, white, right,
-wights->weights, whites, rights,
+wight->weight, white, right, write,
+wights->weights, whites, rights, writes,
 wit->with
 withe->with
 wither->either, whether, weather,
