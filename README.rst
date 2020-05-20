@@ -55,6 +55,11 @@ Comma-separated list of files to skip. It accepts globs as well.  Examples:
 
 * to skip directories, invoke ``codespell --skip="./src/3rd-Party,./src/Test"``
 
+The ``-r`` flag can be used to change the regular expression which is used to find words. ::
+
+    codespell -r, --regex=
+
+* to restore previous behavior of including `_` in words (v1.16.0 and earlier), invoke ``codespell --regex="[\w\-'’\`]+"``
 
 Useful commands::
 
