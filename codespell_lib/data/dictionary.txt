@@ -1540,6 +1540,7 @@ androind->Android
 andthe->and the
 ane->and
 anevironment->environment
+anevironments->environments
 anhoter->another
 anid->and
 anihilation->annihilation
@@ -2576,6 +2577,10 @@ attributei->attribute
 attributen->attribute
 attributred->attributed
 attributs->attributes
+attribye->attribute
+attribyes->attributes
+attribyte->attribute
+attribytes->attributes
 attriebute->attribute
 attriebuted->attributed
 attriebutes->attributes
@@ -3075,6 +3080,8 @@ avoding->avoiding
 avods->avoids
 avoidence->avoidance
 avoinding->avoiding
+avriant->variant
+avriants->variants
 avtive->active
 awared->awarded
 aways->always
@@ -3267,6 +3274,8 @@ behaviuor->behaviour
 behavoir->behavior
 behavoirs->behaviors
 behavour->behaviour
+behavriour->behaviour
+behavriours->behaviours
 behinde->behind
 behing->behind, being,
 behvaiour->behaviour
@@ -6101,6 +6110,8 @@ constists->consists
 constitently->consistently
 constituant->constituent
 constituants->constituents
+constitue->constitute
+constitues->constitutes
 constituion->constitution
 constituional->constitutional
 constly->costly
@@ -6859,6 +6870,9 @@ coverred->covered
 coverted->converted, covered, coveted,
 coverting->converting
 covnert->convert
+covriance->covariance
+covriate->covariate
+covriates->covariates
 coyp->copy
 coypright->copyright
 coyprighted->copyrighted
@@ -8041,6 +8055,8 @@ desctruction->destruction
 desctructive->destructive
 desctructor->destructor
 descuss->discuss
+descvription->description
+descvriptions->descriptions
 desepears->disappears
 deserailize->deserialize
 deserializazion->deserialization
@@ -8319,6 +8335,8 @@ devlopper->developer
 devloppers->developers
 devlops->develops
 devolopement->development
+devritualisation->devirtualisation
+devritualization->devirtualization
 devuce->device
 dewrapping->unwrapping
 dezert->dessert
@@ -8804,6 +8822,9 @@ discovereability->discoverability
 discoveribility->discoverability
 discovey->discovery
 discovr->discover
+discovred->discovered
+discovring->discovering
+discovrs->discovers
 discrards->discards
 discreminates->discriminates
 discrepencies->discrepancies
@@ -9906,11 +9927,13 @@ enhencements->enhancements
 enhencment->enhancement
 enhencments->enhancements
 enironment->environment
+enironments->environments
 enities->entities
 enitities->entities
 enitity->entity
 enity->entity
 enivornment->environment
+enivornments->environments
 enlargment->enlargement
 enlargments->enlargements
 enlightnment->enlightenment
@@ -10073,9 +10096,16 @@ environtment->environment
 envolutionary->evolutionary
 envolved->involved
 envorce->enforce
+envrion->environ
 envrionment->environment
+envrionmental->environmental
 envrionments->environments
+envrions->environs
+envriron->environ
 envrironment->environment
+envrironmental->environmental
+envrironments->environments
+envrirons->environs
 envvironment->environment
 enxt->next
 epecifica->especifica
@@ -10344,6 +10374,7 @@ evoluates->evaluates
 evoluation->evaluations
 evovler->evolver
 evovling->evolving
+evrithing->everything
 evry->every
 evrythign->everything
 evrything->everything
@@ -10497,9 +10528,56 @@ exceutors->executors
 excewption->exception
 excewptional->exceptional
 excewptions->exceptions
+exchage->exchange
+exchaged->exchanged
+exchages->exchanges
+exchaging->exchanging
+exchagne->exchange
+exchagned->exchanged
+exchagnes->exchanges
+exchagnge->exchange
+exchagnged->exchanged
+exchagnges->exchanges
+exchagnging->exchanging
+exchagning->exchanging
+exchanage->exchange
+exchanaged->exchanged
+exchanages->exchanges
+exchanaging->exchanging
+exchance->exchange
+exchanced->exchanged
+exchances->exchanges
+exchanche->exchange
+exchanched->exchanged
+exchanches->exchanges
 exchanching->exchanging
+exchancing->exchanging
+exchane->exchange
+exchaned->exchanged
+exchanes->exchanges
 exchangable->exchangeable
 exchaning->exchanging
+exchaust->exhaust
+exchausted->exhausted
+exchausting->exhausting
+exchaustive->exhaustive
+exchausts->exhausts
+exchenge->exchange
+exchenged->exchanged
+exchenges->exchanges
+exchenging->exchanging
+exchnage->exchange
+exchnaged->exchanged
+exchnages->exchanges
+exchnaging->exchanging
+exchng->exchange
+exchngd->exchanged
+exchnge->exchange
+exchnged->exchanged
+exchnges->exchanges
+exchnging->exchanging
+exchngng->exchanging
+exchngs->exchanges
 exciation->excitation
 excist->exist
 excisted->existed
@@ -12792,6 +12870,30 @@ handleing->handling
 handlig->handling
 handlling->handling
 handsake->handshake
+handshacke->handshake
+handshackes->handshakes
+handshacking->handshaking
+handshage->handshake
+handshages->handshakes
+handshaging->handshaking
+handshak->handshake
+handshakng->handshaking
+handshakre->handshake
+handshakres->handshakes
+handshakring->handshaking
+handshaks->handshakes
+handshale->handshake
+handshales->handshakes
+handshaling->handshaking
+handshare->handshake
+handshares->handshakes
+handsharing->handshaking
+handshk->handshake
+handshke->handshake
+handshkes->handshakes
+handshking->handshaking
+handshkng->handshaking
+handshks->handshakes
 handskake->handshake
 handwirting->handwriting
 hanel->handle
@@ -15716,6 +15818,7 @@ mannually->manually
 mannualy->manually
 manoeuverability->maneuverability
 manoeuvering->maneuvering
+manouevring->manoeuvring
 manouver->maneuver, manoeuvre,
 manouverability->maneuverability, manoeuvrability,
 manouverable->maneuverable, manoeuvrable,
@@ -15854,6 +15957,7 @@ mathod->method
 matix->matrix
 matser->master
 matzch->match
+mavrick->maverick
 maximim->maximum
 maximimum->maximum
 maximium->maximum
@@ -16538,6 +16642,7 @@ multipy->multiply
 multipyling->multiplying
 multithreded->multithreaded
 multitute->multitude
+multivriate->multivariate
 multixsite->multisite
 multliple->multiple
 multple->multiple
@@ -18078,6 +18183,10 @@ overthere->over there
 overun->overrun
 overvise->otherwise
 overvize->otherwise
+overvride->override
+overvrides->overrides
+overvrite->overwrite
+overvrites->overwrites
 overwelm->overwhelm
 overwelming->overwhelming
 overwheliming->overwhelming
@@ -18091,12 +18200,15 @@ overwites->overwrites
 overwitten->overwritten
 overwize->otherwise
 overwridden->overridden, overwritten,
+overwride->overwrite
 overwriteable->overwritable
 overwriten->overwritten
 overwritren->overwritten
 overwrittes->overwrites
 overwrittin->overwriting
 overwritting->overwriting
+ovride->override
+ovrides->overrides
 ovrlapped->overlapped
 ovrridable->overridable
 ovrridables->overridables
@@ -18112,7 +18224,10 @@ ovverriding->overriding
 ower->lower, owner, over,
 owerflow->overflow
 owership->ownership
+owervrite->overwrite
+owervrites->overwrites
 owerwrite->overwrite
+owerwrites->overwrites
 owful->awful
 ownder->owner
 ownerhsip->ownership
@@ -21991,6 +22106,8 @@ reviwing->reviewing
 revoluion->revolution
 revolutionar->revolutionary
 revrese->reverse
+revrieve->retrieve
+revrieves->retrieves
 revsion->revision
 rewirtable->rewritable
 rewirte->rewrite
@@ -22790,6 +22907,7 @@ severl->several
 severley->severely
 severly->severely
 sevice->service
+sevrity->severity
 sewdonim->pseudonym
 sewdonims->pseudonyms
 sewrvice->service
@@ -25563,6 +25681,7 @@ trnsfered->transferred
 trnsfers->transfers
 troling->trolling
 trottle->throttle
+troublshooting->troubleshooting
 troughput->throughput
 trought->through
 troup->troupe
@@ -26860,7 +26979,19 @@ voxes->voxels, voxel,
 vreity->variety
 vresion->version
 vrey->very
+vriable->variable
+vriables->variables
 vriety->variety
+vrifies->verifies
+vrify->verify
+vrilog->Verilog
+vritual->virtual
+vritualenv->virtualenv
+vritualisation->virtualisation
+vritualise->virtualise
+vritualization->virtualization
+vritualize->virtualize
+vrituoso->virtuoso
 vrsion->version
 vrsions->versions
 vulbearable->vulnerable
@@ -27389,6 +27520,7 @@ zlot->slot
 zombe->zombie
 zomebie->zombie
 zuser->user
+__attribyte__->__attribute__
 __cpluspus->__cplusplus
 __cpusplus->__cplusplus
 évaluate->evaluate
