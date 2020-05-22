@@ -29,8 +29,8 @@ before_install:
     - virtualenv --python=python venv
     - source venv/bin/activate
     - python --version  # just to check
-    - pip install -U pip wheel  # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
-    - retry pip install pytest pytest-cov pytest-dependency flake8 coverage codecov chardet setuptools docutils
+    - pip install -U pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
+    - retry pip install pytest pytest-cov pytest-dependency flake8 coverage codecov chardet setuptools docutils check-manifest
     - if [ ${TRAVIS_PYTHON_VERSION:0:1} == "2" ]; then retry pip install aspell-python-py2; fi
     - if [ ${TRAVIS_PYTHON_VERSION:0:1} == "3" ]; then retry pip install aspell-python-py3; fi
     - cd $SRC_DIR
@@ -49,6 +49,7 @@ script:
         python setup.py check --restructuredtext --strict;
       fi;
     - pytest codespell_lib
+    - make check-manifest
 
 after_success:
     - codecov

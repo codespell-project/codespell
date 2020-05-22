@@ -39,6 +39,9 @@ trim-dictionaries:
 		sed -E -i.bak -e 's/^[[:space:]]+//; s/[[:space:]]+$$//; /^$$/d' $$dictionary && rm $$dictionary.bak; \
 	done
 
+check-manifest:
+	check-manifest
+
 pypi:
 	python setup.py sdist register upload
 
