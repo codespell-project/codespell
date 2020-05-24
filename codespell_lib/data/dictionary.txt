@@ -4250,6 +4250,11 @@ certifciated->certificated
 certifciates->certificates
 certifciation->certification
 certifiate->certificate
+certifiated->certificated
+certifiates->certificates
+certifiating->certificating
+certifiation->certification
+certifiations->certifications
 certificat->certificate
 certificatd->certificated
 certificatin->certificating, certification,
@@ -6919,6 +6924,7 @@ creatred->created
 creats->creates
 credate->created
 credetial->credential
+credetials->credentials
 credintial->credential
 credintials->credentials
 credis->credits
@@ -24857,6 +24863,7 @@ telphony->telephony
 temaplate->template
 temaplates->templates
 temeprature->temperature
+temepratures->temperatures
 temerature->temperature
 teminate->terminate
 teminated->terminated
