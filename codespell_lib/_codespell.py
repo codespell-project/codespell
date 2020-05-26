@@ -162,12 +162,12 @@ class FileOpener(object):
         try:
             f = codecs.open(filename, 'r', encoding=encoding)
         except UnicodeDecodeError:
-            print('ERROR: Could not detect encoding: %s' % filename,
+            print("ERROR: Could not detect encoding: %s" % filename,
                   file=sys.stderr)
             raise
         except LookupError:
-            print('ERROR: %s -- Don\'t know how to handle encoding %s'
-                  % (filename, encoding), file=sys.stderr)
+            print("ERROR: Don't know how to handle encoding %s: %s"
+                  % (encoding, filename,), file=sys.stderr)
             raise
         else:
             lines = f.readlines()
@@ -182,12 +182,10 @@ class FileOpener(object):
                 f = codecs.open(filename, 'r', encoding=encodings[curr])
             except UnicodeDecodeError:
                 if not self.quiet_level & QuietLevels.ENCODING:
-                    print('WARNING: Decoding file %s' % filename,
-                          file=sys.stderr)
-                    print('WARNING: using encoding=%s failed. '
-                          % encodings[curr], file=sys.stderr)
+                    print("WARNING: Decoding file using encoding=%s failed: %s"
+                          % (encodings[curr], filename,), file=sys.stderr)
                     try:
-                        print('WARNING: Trying next encoding: %s'
+                        print("WARNING: Trying next encoding %s"
                               % encodings[curr + 1], file=sys.stderr)
                     except IndexError:
                         pass
@@ -499,7 +497,7 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
         text = is_text_file(filename)
         if not text:
             if not options.quiet_level & QuietLevels.BINARY_FILE:
-                print("WARNING: Binary file: %s " % filename, file=sys.stderr)
+                print("WARNING: Binary file: %s" % filename, file=sys.stderr)
             return 0
         try:
             lines, encoding = file_opener.open(filename)
@@ -608,15 +606,15 @@ def main(*args):
     options, parser = parse_options(args)
 
     if options.regex and options.write_changes:
-        print('ERROR: --write-changes cannot be used together with '
-              '--regex')
+        print("ERROR: --write-changes cannot be used together with "
+              "--regex")
         parser.print_help()
         return 1
     word_regex = options.regex or word_regex_def
     try:
         word_regex = re.compile(word_regex)
     except re.error as err:
-        print('ERROR: invalid regular expression "%s" (%s)' %
+        print("ERROR: invalid regular expression \"%s\" (%s)" %
               (word_regex, err), file=sys.stderr)
         parser.print_help()
         return 1
@@ -625,7 +623,7 @@ def main(*args):
     ignore_words = set()
     for ignore_words_file in ignore_words_files:
         if not os.path.isfile(ignore_words_file):
-            print('ERROR: cannot find ignore-words file: %s' %
+            print("ERROR: cannot find ignore-words file: %s" %
                   ignore_words_file, file=sys.stderr)
             parser.print_help()
             return 1
@@ -653,13 +651,13 @@ def main(*args):
                                          % (builtin[2],)))
                         break
                 else:
-                    print('ERROR: Unknown builtin dictionary: %s' % (u,),
+                    print("ERROR: Unknown builtin dictionary: %s" % (u,),
                           file=sys.stderr)
                     parser.print_help()
                     return 1
         else:
             if not os.path.isfile(dictionary):
-                print('ERROR: cannot find dictionary file: %s' % dictionary,
+                print("ERROR: cannot find dictionary file: %s" % dictionary,
                       file=sys.stderr)
                 parser.print_help()
                 return 1
@@ -680,8 +678,8 @@ def main(*args):
     if options.context is not None:
         if (options.before_context is not None) or \
                 (options.after_context is not None):
-            print('ERROR: --context/-C cannot be used together with '
-                  '--context-before/-B or --context-after/-A')
+            print("ERROR: --context/-C cannot be used together with "
+                  "--context-before/-B or --context-after/-A")
             parser.print_help()
             return 1
         context_both = max(0, options.context)
