@@ -15163,6 +15163,7 @@ irrelavent->irrelevant
 irrelevent->irrelevant
 irrelvant->irrelevant
 irreplacable->irreplaceable
+irreplacalbe->irreplaceable
 irreproducable->irreproducible
 irresepective->irrespective
 irresistable->irresistible
@@ -17475,6 +17476,8 @@ non-negoziable->non-negotiable
 non-negoziated->non-negotiated
 non-priviliged->non-privileged
 non-referenced-counted->non-reference-counted
+non-replacable->non-replaceable
+non-replacalbe->non-replaceable
 non-reproducable->non-reproducible
 non-seperable->non-separable
 non-trasparent->non-transparent
@@ -21685,13 +21688,34 @@ repetions->repetitions
 repetive->repetitive
 repid->rapid
 repitition->repetition
+replaca->replica, replace,
+replacability->replaceability
 replacable->replicable, replaceable,
+replacables->replaceables
+replacacing->replacing
+replacaiblity->replaceability, replicability,
+replacalbe->replaceable
+replacalbes->replaceables
+replacament->replacement
+replacaments->replacements
+replacas->replicas, replaces,
+replacate->replicate
+replacated->replicated
+replacates->replicates
+replacating->replicating
+replacation->replication
+replacd->replaced
 replaceemnt->replacement
 replaceemnts->replacements
 replacemenet->replacement
 replacmenet->replacement
 replacment->replacement
 replacments->replacements
+replacong->replacing
+replacte->replace, replicate,
+replacted->replaced, replicated,
+replactes->replaces, replicates,
+replacting->replacing, replicating,
 replaint->repaint
 replcace->replace
 replcaced->replaced
@@ -25044,15 +25068,44 @@ tempory->temporary
 temporyries->temporaries
 temporyrily->temporarily
 temporyry->temporary
+tempraaily->temporarily
+tempraal->temporal
+tempraarily->temporarily
+tempraarly->temporarily
+tempraary->temporary
+tempraay->temporary
+tempraily->temporarily
+tempral->temporal
+temprament->temperament
+tempramental->temperamental
+tempraraily->temporarily
+tempraral->temporal
+tempraraly->temporarily, temporally,
+temprararily->temporarily
+temprararly->temporarily
+temprarary->temporary
+tempraray->temporary
 temprarily->temporarily
 temprary->temporary, temporarily,
 temprature->temperature
 tempratures->temperatures
+tempray->temporary
 tempreature->temperature
 tempreatures->temperatures
+temprement->temperament
+tempremental->temperamental
+temproaily->temporarily
+temproal->temporal
 temproarily->temporarily
+temproarly->temporarily
 temproary->temporary
+temproay->temporary
+temproily->temporarily, temporally,
+temprol->temporal
+temproment->temperament
+tempromental->temperamental
 temproraily->temporarily
+temproral->temporal
 temproraly->temporarily
 temprorarily->temporarily
 temprorarly->temporarily
@@ -25060,6 +25113,7 @@ temprorary->temporary
 temproray->temporary
 temprorily->temporarily
 temprory->temporary
+temproy->temporary
 temptatation->temptation
 tempurature->temperature
 tempurture->temperature
@@ -26450,6 +26504,8 @@ unrelying->underlying
 unrepentent->unrepentant
 unrepetant->unrepentant
 unrepetent->unrepentant
+unreplacable->unreplaceable
+unreplacalbe->unreplaceable
 unreproducable->unreproducible
 unresgister->unregister
 unresgisterd->unregistered
