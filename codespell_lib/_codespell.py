@@ -714,6 +714,9 @@ def main(*args):
                     del dirs[:]
                     continue
                 for file_ in files:
+                    # ignore hidden files in directories
+                    if is_hidden(file_, options.check_hidden):
+                        continue
                     if glob_match.match(file_):  # skip files
                         continue
                     fname = os.path.join(root, file_)
