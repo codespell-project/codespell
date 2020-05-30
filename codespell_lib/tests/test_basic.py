@@ -279,18 +279,26 @@ def test_check_filename(tmpdir):
 def test_check_hidden(tmpdir):
     """Test ignoring of hidden files."""
     d = str(tmpdir)
-    # hidden file
+    # visible file
     with open(op.join(d, 'test.txt'), 'w') as f:
         f.write('abandonned\n')
     assert cs.main(op.join(d, 'test.txt')) == 1
+    assert cs.main(d) == 1
+    # hidden file
     os.rename(op.join(d, 'test.txt'), op.join(d, '.test.txt'))
     assert cs.main(op.join(d, '.test.txt')) == 0
+    assert cs.main(d) == 0
     assert cs.main('--check-hidden', op.join(d, '.test.txt')) == 1
+    assert cs.main('--check-hidden', d) == 1
+    # hidden file with typo in name
     os.rename(op.join(d, '.test.txt'), op.join(d, '.abandonned.txt'))
     assert cs.main(op.join(d, '.abandonned.txt')) == 0
+    assert cs.main(d) == 0
     assert cs.main('--check-hidden', op.join(d, '.abandonned.txt')) == 1
+    assert cs.main('--check-hidden', d) == 1
     assert cs.main('--check-hidden', '--check-filenames',
                    op.join(d, '.abandonned.txt')) == 2
+    assert cs.main('--check-hidden', '--check-filenames', d) == 2
 
 
 def test_case_handling(tmpdir, capsys):
