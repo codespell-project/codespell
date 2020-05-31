@@ -3,6 +3,7 @@ codespell
 
 Fix common misspellings in text files. It's designed primarily for checking
 misspelled words in source code, but it can be used with other files as well.
+It is not a general spell checker.
 
 Useful links
 ------------
