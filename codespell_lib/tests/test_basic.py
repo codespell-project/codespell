@@ -271,6 +271,11 @@ def test_ignore(tmpdir):
 def test_check_filename(tmpdir):
     """Test filename check."""
     d = str(tmpdir)
+    # Empty file
+    with open(op.join(d, 'abandonned.txt'), 'w') as f:
+        f.write('')
+    assert cs.main('-f', d) == 1
+    # Normal file with contents
     with open(op.join(d, 'abandonned.txt'), 'w') as f:
         f.write('.')
     assert cs.main('-f', d) == 1
