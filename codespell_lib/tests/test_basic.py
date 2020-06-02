@@ -270,10 +270,6 @@ def test_ignore(tmpdir):
 
 def test_check_filename(tmpdir):
     """Test filename check."""
-    # Irregular file (!isfile())
-    fifodir = str(tmpdir)
-    os.mkfifo(op.join(fifodir, 'abandonned'))
-    assert cs.main('-f', fifodir) == 1
     d = str(tmpdir)
     # Empty file
     with open(op.join(d, 'abandonned.txt'), 'w') as f:
@@ -283,6 +279,15 @@ def test_check_filename(tmpdir):
     with open(op.join(d, 'abandonned.txt'), 'w') as f:
         f.write('.')
     assert cs.main('-f', d) == 1
+
+
+def test_check_filename_irregular_file(tmpdir):
+    """Test irregular file filename check."""
+    # Irregular file (!isfile())
+    d = str(tmpdir)
+    os.mkfifo(op.join(d, 'abandonned'))
+    assert cs.main('-f', d) == 1
+    d = str(tmpdir)
 
 
 def test_check_hidden(tmpdir):
