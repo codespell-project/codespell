@@ -8,6 +8,8 @@ import os.path as op
 import subprocess
 import sys
 
+import pytest
+
 import codespell_lib as cs
 
 
