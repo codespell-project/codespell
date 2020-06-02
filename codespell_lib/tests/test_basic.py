@@ -281,6 +281,8 @@ def test_check_filename(tmpdir):
     assert cs.main('-f', d) == 1
 
 
+@pytest.mark.skipif((hasattr(os, "mkfifo") and callable(os.mkfifo)),
+                    reason='requires os.mkfifo')
 def test_check_filename_irregular_file(tmpdir):
     """Test irregular file filename check."""
     # Irregular file (!isfile())
