@@ -457,9 +457,6 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
         f = sys.stdin
         lines = f.readlines()
     else:
-        # ignore binary files
-        if not os.path.isfile(filename):
-            return 0
         if options.check_filenames:
             for word in word_regex.findall(filename):
                 lword = word.lower()
@@ -494,15 +491,19 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
                          'WRONGWORD': cwrongword,
                          'RIGHTWORD': crightword, 'REASON': creason})
 
+        # ignore irregular files
+        if not os.path.isfile(filename):
+            return bad_count
+
         text = is_text_file(filename)
         if not text:
             if not options.quiet_level & QuietLevels.BINARY_FILE:
                 print("WARNING: Binary file: %s" % filename, file=sys.stderr)
-            return 0
+            return bad_count
         try:
             lines, encoding = file_opener.open(filename)
         except Exception:
-            return 0
+            return bad_count
 
     for i, line in enumerate(lines):
         if line in exclude_lines:
@@ -721,8 +722,6 @@ def main(*args):
                         continue
                     fname = os.path.join(root, file_)
                     if glob_match.match(fname):  # skip paths
-                        continue
-                    if not os.path.isfile(fname) or not os.path.getsize(fname):
                         continue
                     bad_count += parse_file(
                         fname, colors, summary, misspellings, exclude_lines,

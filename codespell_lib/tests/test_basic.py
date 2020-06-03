@@ -8,6 +8,8 @@ import os.path as op
 import subprocess
 import sys
 
+import pytest
+
 import codespell_lib as cs
 
 
@@ -271,9 +273,29 @@ def test_ignore(tmpdir):
 def test_check_filename(tmpdir):
     """Test filename check."""
     d = str(tmpdir)
+    # Empty file
+    with open(op.join(d, 'abandonned.txt'), 'w') as f:
+        f.write('')
+    assert cs.main('-f', d) == 1
+    # Normal file with contents
     with open(op.join(d, 'abandonned.txt'), 'w') as f:
         f.write('.')
     assert cs.main('-f', d) == 1
+    # Normal file with binary contents
+    with open(op.join(d, 'abandonned.txt'), 'wb') as f:
+        f.write(b'\x00\x00naiive\x00\x00')
+    assert cs.main('-f', d) == 1
+
+
+@pytest.mark.skipif((not hasattr(os, "mkfifo") or not callable(os.mkfifo)),
+                    reason='requires os.mkfifo')
+def test_check_filename_irregular_file(tmpdir):
+    """Test irregular file filename check."""
+    # Irregular file (!isfile())
+    d = str(tmpdir)
+    os.mkfifo(op.join(d, 'abandonned'))
+    assert cs.main('-f', d) == 1
+    d = str(tmpdir)
 
 
 def test_check_hidden(tmpdir):
