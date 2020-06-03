@@ -281,6 +281,10 @@ def test_check_filename(tmpdir):
     with open(op.join(d, 'abandonned.txt'), 'w') as f:
         f.write('.')
     assert cs.main('-f', d) == 1
+    # Normal file with binary contents
+    with open(op.join(d, 'abandonned.txt'), 'wb') as f:
+        f.write(b'\x00\x00naiive\x00\x00')
+    assert cs.main('-f', d) == 1
 
 
 @pytest.mark.skipif((not hasattr(os, "mkfifo") or not callable(os.mkfifo)),
