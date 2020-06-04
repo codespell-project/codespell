@@ -72,6 +72,7 @@ abosultely->absolutely
 abosulute->absolute
 abosulutely->absolutely
 abotu->about
+abount->about
 abourt->abort, about,
 abouta->about a
 aboutit->about it
@@ -3575,9 +3576,31 @@ bottome->bottom
 botton->bottom, button,
 bottons->bottoms, buttons,
 botttom->bottom
+bouce->bounce
+bouces->bounces
 boudaries->boundaries
 boudary->boundary
 bouding->bounding
+boudnaries->boundaries
+boudnary->boundary
+bouds->bounds
+bouind->bound
+bouinded->bounded
+bouinding->bounding
+bouinds->bounds
+boun->bound
+bounaaries->boundaries
+bounaary->boundary
+bounad->bound
+bounadaries->boundaries
+bounadary->boundary
+bounaded->bounded
+bounading->bounding
+bounadries->boundaries
+bounadry->boundary
+bounads->bounds
+bounardies->boundaries
+bounardy->boundary
 bounaries->boundaries
 bounary->boundary
 bounbdaries->boundaries
@@ -3593,10 +3616,40 @@ boundrary->boundary
 boundries->boundaries
 boundry->boundary
 bounduaries->boundaries
+bouned->bounded
+boungaries->boundaries
+boungary->boundary
+boungin->bounding
+boungind->bounding
+bounhdaries->boundaries
+bounhdary->boundary
+bounidng->bounding
 bouning->bounding
+bounnd->bound
+bounnded->bounded
+bounnding->bounding
+bounnds->bounds
+bounradies->boundaries
+bounrady->boundary
+bounraies->boundaries
+bounraries->boundaries
+bounrary->boundary
+bounray->boundary
+bouns->bounds
+bounsaries->boundaries
+bounsary->boundary
+bounsd->bounds
 bount->bound
+bountries->boundaries
+bountry->boundary
+bounudaries->boundaries
+bounudary->boundary
 bounus->bonus
 bouqet->bouquet
+bouund->bound
+bouunded->bounded
+bouunding->bounding
+bouunds->bounds
 bouy->buoy
 bouyancy->buoyancy
 bouyant->buoyant
@@ -15401,10 +15454,17 @@ keword->keyword
 kewword->keyword
 kewwords->keywords
 keybaord->keyboard
+keybaords->keyboards
+keyboaard->keyboard
+keyboaards->keyboards
 keyboad->keyboard
 keyboads->keyboards
+keybooard->keyboard
+keybooards->keyboards
 keybord->keyboard
 keybords->keyboards
+keybroad->keyboard
+keybroads->keyboards
 keyevente->keyevent
 keyords->keywords
 keyoutch->keytouch
@@ -18322,6 +18382,9 @@ outllook->outlook
 outoign->outgoing
 outout->output
 outpupt->output
+outpus->output, outputs,
+outpust->output, outputs,
+outpusts->outputs
 outputed->outputted
 outputing->outputting
 outputof->output-of
@@ -26404,6 +26467,16 @@ unbeliveable->unbelievable
 unbeliveably->unbelievably
 unbelivebly->unbelievably
 unborned->unborn
+unbouind->unbound
+unbouinded->unbounded
+unboun->unbound
+unbounad->unbound
+unbounaded->unbounded
+unbouned->unbounded
+unbounnd->unbound
+unbounnded->unbounded
+unbouund->unbound
+unbouunded->unbounded
 unbunded->unbundled, unbounded,
 uncahnged->unchanged
 uncalcualted->uncalculated
