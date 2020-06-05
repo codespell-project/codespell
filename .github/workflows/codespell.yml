@@ -1,4 +1,5 @@
 # GitHub Action to automate the identification of common misspellings in text files.
+# https://github.com/codespell-project/actions-codespell
 # https://github.com/codespell-project/codespell
 name: codespell
 on: [push, pull_request]
@@ -7,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-python@v1
-      - run: pip install codespell
-      # When using this Action in other repos, the --skip option below can be removed
-      - run: codespell --skip=./.*,./codespell_lib/data,./example/code.c,test_basic.py,*.pyc
+      - uses: codespell-project/actions-codespell@master
+        with:
+          # When using this Action in other repos, the --skip option below can be removed
+          skip: ./.*,./codespell_lib/data,./example/code.c,test_basic.py,*.pyc
