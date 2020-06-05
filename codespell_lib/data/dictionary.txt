@@ -62,8 +62,10 @@ abondon->abandon
 abondoned->abandoned
 abondoning->abandoning
 abondons->abandons
+aboout->about
 abord->abort
 aborigene->aborigine
+aborte->aborted
 abortificant->abortifacient
 aboslute->absolute
 aboslutely->absolutely
@@ -2242,6 +2244,10 @@ asistance->assistance
 aske->ask
 askes->asks
 aslo->also
+asnwer->answer
+asnwered->answered
+asnwering->answering
+asnwers->answers
 asny->any
 asnychronoue->asynchronous
 asociated->associated
@@ -2260,6 +2266,7 @@ assasins->assassins
 assassintation->assassination
 asscciated->associated
 assciated->associated
+asscii->ascii
 asscociated->associated
 asscoitaed->associated
 assebly->assembly
@@ -3202,7 +3209,12 @@ bascktrack->backtrack
 basf->base
 basicaly->basically
 basicly->basically
+bateries->batteries
 batery->battery
+battaries->batteries
+battary->battery
+bboolean->boolean
+bbooleans->booleans
 bcak->back
 bcause->because
 beacaon->beacon
@@ -3217,6 +3229,7 @@ beauracracy->bureaucracy
 beaurocracy->bureaucracy
 beaurocratic->bureaucratic
 beause->because
+beauti->beauty
 beautiy->beauty
 beautyfied->beautified
 beautyfull->beautiful
@@ -3440,6 +3453,7 @@ bimillenium->bimillennium
 bimontly->bimonthly
 binairy->binary
 binanary->binary
+binar->binary
 binay->binary
 bindins->bindings
 binidng->binding
@@ -3527,15 +3541,21 @@ bookkepp->bookkeep
 bookmakr->bookmark
 bookmar->bookmark
 boold->bold, bool,
+booleam->boolean
 booleamn->boolean
+booleamns->booleans
+booleams->booleans
 booleanss->booleans
 booleen->boolean
+booleens->booleans
 boolen->boolean
+boolens->booleans
 booltloader->bootloader
 boomark->bookmark
 boomarks->bookmarks
 boook->book
 booolean->boolean
+boooleans->booleans
 boostrap->bootstrap
 boostrapping->bootstrapping
 booteek->boutique
@@ -3668,6 +3688,7 @@ bradcast->broadcast
 brakpoint->breakpoint
 brakpoints->breakpoints
 brance->branch, brace, branches,
+branchces->branches
 branchs->branches
 branck->branch
 branckes->branches
@@ -3690,6 +3711,8 @@ breefly->briefly
 brefore->before
 breif->brief
 breifly->briefly
+brekpoint->breakpoint
+brekpoints->breakpoints
 bresh->brush, fresh,
 breshed->brushed
 breshes->brushes
@@ -3745,6 +3768,8 @@ browing->browsing
 browseable->browsable
 browswer->browser
 brutaly->brutally
+btye->byte
+btyes->bytes
 buad->baud
 Buddah->Buddha
 Buddist->Buddhist
@@ -4620,6 +4645,8 @@ cicruit->circuit
 cicruits->circuits
 cicular->circular
 ciculars->circulars
+cilent->client
+cilents->clients
 cilincer->cylinder
 cilincers->cylinders
 cilinder->cylinder
@@ -4793,6 +4820,7 @@ clory->glory
 clos->close
 closeing->closing
 closests->closest, closets,
+closig->closing
 clossed->closed
 clossing->closing
 cloude->cloud
@@ -7189,6 +7217,9 @@ cylnder->cylinder
 cylnders->cylinders
 cylynders->cylinders
 cymk->CMYK
+cyprt->crypt
+cyprtic->cryptic
+cyprto->crypto
 Cyrllic->Cyrillic
 cyrpto->crypto
 cyrrent->current
@@ -11628,6 +11659,9 @@ extereme->extreme
 extermist->extremist
 extermporaneous->extemporaneous
 externaly->externally
+externel->external
+externelly->externally
+externels->externals
 extesion->extension
 extesions->extensions
 extesnion->extension
@@ -13477,6 +13511,7 @@ hsa->has
 hsell->shell
 hsi->his
 hsitorians->historians
+hsotname->hostname
 hsould'nt->shouldn't
 hsould->should
 hsouldn't->shouldn't
@@ -16615,6 +16650,7 @@ misintepret->misinterpret
 misintepreted->misinterpreted
 misinterprett->misinterpret
 misinterpretted->misinterpreted
+misisng->missing
 mismach->mismatch
 mismached->mismatched
 mismaches->mismatches
@@ -22740,6 +22776,7 @@ scemes->schemes, scenes,
 scenarion->scenario
 scenarions->scenarios
 scence->scene
+scences->scenes
 scenegraaph->scenegraph
 scenegraaphs->scenegraphs
 sceond->second
@@ -23379,6 +23416,7 @@ shure->sure
 shurely->surely
 shutdownm->shutdown
 shuting->shutting
+shutodwn->shutdown
 shwo->show
 shystem->system
 shystemerror->systemerror, system error,
@@ -23550,6 +23588,8 @@ sintakts->syntax
 sintax->syntax
 Sionist->Zionist
 Sionists->Zionists
+sirectories->directories
+sirectory->directory
 sise->size, sisal,
 sisnce->since
 sitation->situation
@@ -24864,6 +24904,12 @@ summay->summary
 summerised->summarised
 summerized->summarized
 summersalt->somersault
+summmaries->summaries
+summmarisation->summarisation
+summmarised->summarised
+summmarization->summarization
+summmarized->summarized
+summmary->summary
 sumodules->submodules
 sunglases->sunglasses
 suntask->subtask
@@ -25100,8 +25146,10 @@ swithing->switching
 switiches->switches
 swown->shown
 swtich->switch
+swtiching->switching
 swtichs->switches
 sxl->xsl
+syantax->syntax
 syas->says
 syatem->system
 syatems->systems
