@@ -65,7 +65,7 @@ abondons->abandons
 aboout->about
 abord->abort
 aborigene->aborigine
-aborte->aborted
+aborte->aborted, abort, aborts,
 abortificant->abortifacient
 aboslute->absolute
 aboslutely->absolutely
@@ -2246,6 +2246,8 @@ askes->asks
 aslo->also
 asnwer->answer
 asnwered->answered
+asnwerer->answerer
+asnwerers->answerers
 asnwering->answering
 asnwers->answers
 asny->any
@@ -2266,7 +2268,7 @@ assasins->assassins
 assassintation->assassination
 asscciated->associated
 assciated->associated
-asscii->ascii
+asscii->ASCII
 asscociated->associated
 asscoitaed->associated
 assebly->assembly
@@ -4645,10 +4647,10 @@ cicruit->circuit
 cicruits->circuits
 cicular->circular
 ciculars->circulars
-cilent->client
-cilents->clients
-cilincer->cylinder
-cilincers->cylinders
+cilent->client, silent,
+cilents->clients, silents, silence,
+cilincer->cylinder, silencer,
+cilincers->cylinders, silencers,
 cilinder->cylinder
 cilinders->cylinders
 cilyndre->cylinder
@@ -22775,8 +22777,8 @@ sceme->scheme, scene,
 scemes->schemes, scenes,
 scenarion->scenario
 scenarions->scenarios
-scence->scene
-scences->scenes
+scence->scene, science,
+scences->scenes, sciences, census,
 scenegraaph->scenegraph
 scenegraaphs->scenegraphs
 sceond->second
@@ -23588,8 +23590,14 @@ sintakts->syntax
 sintax->syntax
 Sionist->Zionist
 Sionists->Zionists
+sirect->direct
+sirected->directed
+sirecting->directing
+sirector->director
 sirectories->directories
+sirectors->directors
 sirectory->directory
+sirects->directs
 sise->size, sisal,
 sisnce->since
 sitation->situation
