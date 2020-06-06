@@ -270,7 +270,8 @@ def parse_options(args):
                              'you\'d give "*.eps,*.txt" to this option.')
 
     parser.add_argument('-x', '--exclude-file', type=str, metavar='FILE',
-                        help='FILE with lines that should not be changed')
+                        help='FILE with lines that should not be checked for '
+                             'errors or changed')
 
     parser.add_argument('-i', '--interactive',
                         action='store', type=int, default=0,
