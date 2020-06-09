@@ -13,4 +13,4 @@ jobs:
         with:
           check_filenames: true
           # When using this Action in other repos, the --skip option below can be removed
-          skip: ./codespell_lib/data,./example/code.c,test_basic.py,*.pyc
+          skip: ./.git,./codespell_lib/data,./example/code.c,test_basic.py,*.pyc
