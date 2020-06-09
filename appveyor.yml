@@ -5,9 +5,6 @@ environment:
     - PYTHON: C:\Python37-x64
       PYTHON_VERSION: 3.7
       PYTHON_ARCH: 64
-    - PYTHON: C:\Python27
-      PYTHON_VERSION: 2.7
-      PYTHON_ARCH: 32
 
 cache:
   # Cache downloaded pip packages and built wheels.

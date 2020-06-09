@@ -19,7 +19,7 @@ Useful links
 Requirements
 ------------
 
-Python 2.7 or above.
+Python 3.5 or above.
 
 Installation
 ------------
