@@ -323,14 +323,15 @@ def test_check_hidden(tmpdir):
                    op.join(d, '.abandonned.txt')) == 2
     assert cs.main('--check-hidden', '--check-filenames', d) == 2
     # hidden directory
+    assert cs.main(d) == 0
     assert cs.main('--check-hidden', d) == 1
     assert cs.main('--check-hidden', '--check-filenames', d) == 2
-    os.mkdir(op.join(d, '.test'))
+    os.mkdir(op.join(d, '.abandonned'))
     copyfile(op.join(d, '.abandonned.txt'),
-             op.join(d, '.test', 'abandonned.txt'))
+             op.join(d, '.abandonned', 'abandonned.txt'))
     assert cs.main(d) == 0
     assert cs.main('--check-hidden', d) == 2
-    assert cs.main('--check-hidden', '--check-filenames', d) == 4
+    assert cs.main('--check-hidden', '--check-filenames', d) == 5
 
 
 def test_case_handling(tmpdir, capsys):

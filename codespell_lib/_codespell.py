@@ -715,7 +715,7 @@ def main(*args):
                 if glob_match.match(root):  # skip (absolute) directories
                     del dirs[:]
                     continue
-                if is_hidden(root, options.check_hidden):
+                if is_hidden(root, options.check_hidden):  # dir itself hidden
                     continue
                 for file_ in files:
                     # ignore hidden files in directories
