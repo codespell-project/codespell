@@ -6,6 +6,7 @@ automatized->automated
 automatizes->automates
 backword->backward
 backwords->backwards
+blacklist->blocklist
 bloc->block
 blocs->blocks
 bodgy->body
@@ -134,6 +135,7 @@ wee->we
 whats->what's
 whet->when, what, wet,
 whiling->while
+whitelist->allowlist
 wight->weight, white, right, write,
 wights->weights, whites, rights, writes,
 wit->with
