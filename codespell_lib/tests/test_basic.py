@@ -5,6 +5,7 @@ from __future__ import print_function
 import contextlib
 import os
 import os.path as op
+from shutil import copyfile
 import subprocess
 import sys
 
@@ -321,6 +322,15 @@ def test_check_hidden(tmpdir):
     assert cs.main('--check-hidden', '--check-filenames',
                    op.join(d, '.abandonned.txt')) == 2
     assert cs.main('--check-hidden', '--check-filenames', d) == 2
+    # hidden directory
+    assert cs.main('--check-hidden', d) == 1
+    assert cs.main('--check-hidden', '--check-filenames', d) == 2
+    os.mkdir(op.join(d, '.test'))
+    copyfile(op.join(d, '.abandonned.txt'),
+             op.join(d, '.test', 'abandonned.txt'))
+    assert cs.main(d) == 0
+    assert cs.main('--check-hidden', d) == 2
+    assert cs.main('--check-hidden', '--check-filenames', d) == 4
 
 
 def test_case_handling(tmpdir, capsys):
