@@ -4,24 +4,22 @@
 # for it to be on multiple physical lines, so long as you remember: - There
 # can't be any leading "-"s - All newlines will be removed, so use ";"s
 
+dist: bionic
 language: python
-sudo: false
-dist: xenial
+cache: pip
+python:
+  - 3.5
+  - 3.6
+  - 3.7
+  - 3.8
+env:
+  REQUIRE_ASPELL=true
 
-cache:
-  directories:
-    - $HOME/.cache/pip
-
-matrix:
-    include:
-        - os: linux
-          python: 2.7
-        - os: linux
-          python: 3.5
-        - os: linux
-          python: 3.6
-        - os: linux
-          python: 3.7
+addons:
+  apt:
+    packages:
+      - libaspell-dev
+      - aspell-en
 
 before_install:
     - source tools/travis_tools.sh
@@ -30,8 +28,9 @@ before_install:
     - virtualenv --python=python venv
     - source venv/bin/activate
     - python --version  # just to check
-    - pip install -U pip wheel  # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
-    - retry pip install pytest pytest-cov flake8 coverage codecov chardet setuptools docutils
+    - pip install -U pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
+    - retry pip install pytest pytest-cov pytest-dependency flake8 coverage codecov chardet setuptools docutils check-manifest
+    - retry pip install aspell-python-py3
     - cd $SRC_DIR
 
 install:
@@ -46,6 +45,7 @@ script:
     - flake8
     - python setup.py check --restructuredtext --strict
     - pytest codespell_lib
+    - make check-manifest
 
 after_success:
     - codecov

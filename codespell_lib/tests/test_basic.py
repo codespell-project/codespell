@@ -5,8 +5,11 @@ from __future__ import print_function
 import contextlib
 import os
 import os.path as op
+from shutil import copyfile
 import subprocess
 import sys
+
+import pytest
 
 import codespell_lib as cs
 
@@ -31,24 +34,35 @@ def test_command(tmpdir):
 def test_basic(tmpdir, capsys):
     """Test some basic functionality"""
     assert cs.main('_does_not_exist_') == 0
-    with open(op.join(str(tmpdir), 'tmp'), 'w') as f:
+    fname = op.join(str(tmpdir), 'tmp')
+    with open(fname, 'w') as f:
         pass
     assert cs.main('-D', 'foo', f.name) == 1, 'missing dictionary'
-    try:
-        assert 'cannot find dictionary' in capsys.readouterr()[1]
-        assert cs.main(f.name) == 0, 'empty file'
-        with open(f.name, 'a') as f:
-            f.write('this is a test file\n')
-        assert cs.main(f.name) == 0, 'good'
-        with open(f.name, 'a') as f:
-            f.write('abandonned\n')
-        assert cs.main(f.name) == 1, 'bad'
-        with open(f.name, 'a') as f:
-            f.write('abandonned\n')
-        assert cs.main(f.name) == 2, 'worse'
-    finally:
-        os.remove(f.name)
+    assert 'cannot find dictionary' in capsys.readouterr()[1]
+    assert cs.main(fname) == 0, 'empty file'
+    with open(fname, 'a') as f:
+        f.write('this is a test file\n')
+    assert cs.main(fname) == 0, 'good'
+    with open(fname, 'a') as f:
+        f.write('abandonned\n')
+    assert cs.main(fname) == 1, 'bad'
+    with open(fname, 'a') as f:
+        f.write('abandonned\n')
+    assert cs.main(fname) == 2, 'worse'
+    with open(fname, 'a') as f:
+        f.write('tim\ngonna\n')
+    assert cs.main(fname) == 2, 'with a name'
+    assert cs.main('--builtin', 'clear,rare,names,informal', fname) == 4
+    capsys.readouterr()
+    assert cs.main(fname, '--builtin', 'foo') == 1  # bad type sys.exit(1)
+    stdout = capsys.readouterr()[1]
+    assert 'Unknown builtin dictionary' in stdout
     d = str(tmpdir)
+    assert cs.main(fname, '-D', op.join(d, 'foo')) == 1  # bad dict
+    stdout = capsys.readouterr()[1]
+    assert 'cannot find dictionary' in stdout
+    os.remove(fname)
+
     with open(op.join(d, 'bad.txt'), 'w') as f:
         f.write('abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd')
     assert cs.main(d) == 4
@@ -260,26 +274,64 @@ def test_ignore(tmpdir):
 def test_check_filename(tmpdir):
     """Test filename check."""
     d = str(tmpdir)
+    # Empty file
+    with open(op.join(d, 'abandonned.txt'), 'w') as f:
+        f.write('')
+    assert cs.main('-f', d) == 1
+    # Normal file with contents
     with open(op.join(d, 'abandonned.txt'), 'w') as f:
         f.write('.')
     assert cs.main('-f', d) == 1
+    # Normal file with binary contents
+    with open(op.join(d, 'abandonned.txt'), 'wb') as f:
+        f.write(b'\x00\x00naiive\x00\x00')
+    assert cs.main('-f', d) == 1
+
+
+@pytest.mark.skipif((not hasattr(os, "mkfifo") or not callable(os.mkfifo)),
+                    reason='requires os.mkfifo')
+def test_check_filename_irregular_file(tmpdir):
+    """Test irregular file filename check."""
+    # Irregular file (!isfile())
+    d = str(tmpdir)
+    os.mkfifo(op.join(d, 'abandonned'))
+    assert cs.main('-f', d) == 1
+    d = str(tmpdir)
 
 
 def test_check_hidden(tmpdir):
     """Test ignoring of hidden files."""
     d = str(tmpdir)
-    # hidden file
+    # visible file
     with open(op.join(d, 'test.txt'), 'w') as f:
         f.write('abandonned\n')
     assert cs.main(op.join(d, 'test.txt')) == 1
+    assert cs.main(d) == 1
+    # hidden file
     os.rename(op.join(d, 'test.txt'), op.join(d, '.test.txt'))
     assert cs.main(op.join(d, '.test.txt')) == 0
+    assert cs.main(d) == 0
     assert cs.main('--check-hidden', op.join(d, '.test.txt')) == 1
+    assert cs.main('--check-hidden', d) == 1
+    # hidden file with typo in name
     os.rename(op.join(d, '.test.txt'), op.join(d, '.abandonned.txt'))
     assert cs.main(op.join(d, '.abandonned.txt')) == 0
+    assert cs.main(d) == 0
     assert cs.main('--check-hidden', op.join(d, '.abandonned.txt')) == 1
+    assert cs.main('--check-hidden', d) == 1
     assert cs.main('--check-hidden', '--check-filenames',
                    op.join(d, '.abandonned.txt')) == 2
+    assert cs.main('--check-hidden', '--check-filenames', d) == 2
+    # hidden directory
+    assert cs.main(d) == 0
+    assert cs.main('--check-hidden', d) == 1
+    assert cs.main('--check-hidden', '--check-filenames', d) == 2
+    os.mkdir(op.join(d, '.abandonned'))
+    copyfile(op.join(d, '.abandonned.txt'),
+             op.join(d, '.abandonned', 'abandonned.txt'))
+    assert cs.main(d) == 0
+    assert cs.main('--check-hidden', d) == 2
+    assert cs.main('--check-hidden', '--check-filenames', d) == 5
 
 
 def test_case_handling(tmpdir, capsys):

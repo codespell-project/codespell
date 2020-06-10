@@ -19,7 +19,7 @@ Useful links
 Requirements
 ------------
 
-Python 2.7 or above.
+Python 3.5 or above.
 
 Installation
 ------------
@@ -37,15 +37,15 @@ Some noteworthy flags::
 
     codespell -w, --write-changes
 
-The -w flag will actually implement the changes recommended by codespell. Not running with ``-w`` flag is the same as with doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.::
+The ``-w`` flag will actually implement the changes recommended by codespell. Not running with ``-w`` flag is the same as with doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.::
 
     codespell -I FILE, --ignore-words=FILE
 
-The -I flag can be used to whitelist certain words that are in the ``codespell_lib/data/dictionary.txt``. The format of the whitelist file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said whitelist. **Important note:** The whitelist passed to ``-I`` is case-sensitive based on how it is listed in ``dictionary.txt``. ::
+The ``-I`` flag can be used to whitelist certain words that are in the ``codespell_lib/data/dictionary.txt``. The format of the whitelist file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said whitelist. **Important note:** The whitelist passed to ``-I`` is case-sensitive based on how it is listed in ``dictionary.txt``. ::
 
     codespell -L word1,word2,word3,word4
 
-The -L flag can be used to whitelist certain words that are comma-separated placed immediately after it. ::
+The ``-L`` flag can be used to whitelist certain words that are comma-separated placed immediately after it. ::
 
     codespell -S, --skip=
 
@@ -116,11 +116,11 @@ If you have a suggested typo that you'd like to see merged please follow these s
 
 2. Sort the dictionary. This is done by invoking (in the top level directory of ``codespell/``)::
 
-       make check-dictionary
+       make check-dictionaries
 
    If the make script finds that you need to sort the dictionary, please then run::
 
-       make sort-dictionary
+       make sort-dictionaries
 
 3. Only after this process is complete do we recommend you submit the PR.
 
@@ -143,7 +143,7 @@ To stay current with codespell developments it is possible to build codespell fr
     pip install --user --upgrade git+https://github.com/codespell-project/codespell.git
 
 * It has been reported that after installing from ``pip``, codespell can't be located. Please check the $PATH variable to see if ``~/.local/bin`` is present. If it isn't then add it to your path.
-* If you decide to install via ``pip`` then be sure to remove any previously installed versions of codespell (via you OSs preferred app mananger).
+* If you decide to install via ``pip`` then be sure to remove any previously installed versions of codespell (via your platform's preferred app manager).
 
 Updating the dictionary
 -----------------------
@@ -153,7 +153,7 @@ In the scenario where the user prefers not to follow the development version of 
     wget https://raw.githubusercontent.com/codespell-project/codespell/master/codespell_lib/data/dictionary.txt
     codespell -D dictionary.txt
 
-The above simply downloads the latest ``dictionary.txt`` file and then by utilizing the -D flag allows the user to specify the freshly downloaded ``dictionary.txt`` as the custom dictionary instead of the default one.
+The above simply downloads the latest ``dictionary.txt`` file and then by utilizing the ``-D`` flag allows the user to specify the freshly downloaded ``dictionary.txt`` as the custom dictionary instead of the default one.
 
 License
 -------

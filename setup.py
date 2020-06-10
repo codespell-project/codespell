@@ -43,12 +43,13 @@ if __name__ == "__main__":
                        'Operating System :: Unix',
                        'Operating System :: MacOS'],
           platforms='any',
+          python_requires='>=3.5',
           packages=[
               'codespell_lib', 'codespell_lib.tests',
               'codespell_lib.data',
           ],
           package_data={'codespell_lib': [
-              op.join('data', 'dictionary.txt'),
+              op.join('data', 'dictionary*.txt'),
               op.join('data', 'linux-kernel.exclude'),
           ]},
           entry_points={
