@@ -304,8 +304,8 @@ def parse_options(args):
 
     parser.add_argument('-H', '--check-hidden',
                         action='store_true', default=False,
-                        help='check hidden files (those starting with ".") as '
-                             'well')
+                        help='Check hidden files and directories (those '
+                             'starting with ".") as well.')
     parser.add_argument('-A', '--after-context', type=int, metavar='LINES',
                         help='print LINES of trailing context')
     parser.add_argument('-B', '--before-context', type=int, metavar='LINES',
@@ -714,6 +714,8 @@ def main(*args):
             for root, dirs, files in os.walk(filename):
                 if glob_match.match(root):  # skip (absolute) directories
                     del dirs[:]
+                    continue
+                if is_hidden(root, options.check_hidden):  # dir itself hidden
                     continue
                 for file_ in files:
                     # ignore hidden files in directories
