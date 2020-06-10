@@ -1,0 +1,4 @@
+master->primary, leader, active, writer, coordinator, parent,
+masters->primaries, leaders, actives, writers, coordinators, parents,
+slave->secondary, follower, standby, replica, reader, worker, helper,
+slaves->secondaries, followers, standbys, replicas, readers, workers, helpers,
