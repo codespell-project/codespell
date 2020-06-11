@@ -25,6 +25,7 @@ import fnmatch
 import os
 import re
 import sys
+import textwrap
 
 word_regex_def = u"[\\w\\-'’`]+"
 encodings = ('utf-8', 'iso-8859-1')
@@ -206,8 +207,31 @@ class FileOpener(object):
 # -.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-
 
 
+class NewlineHelpFormatter(argparse.HelpFormatter):
+    """Help formatter that preserves newlines and deals with lists."""
+
+    def _split_lines(self, text, width):
+        parts = text.split('\n')
+        out = list()
+        for pi, part in enumerate(parts):
+            # Eventually we could allow others...
+            indent_start = '- '
+            if part.startswith(indent_start):
+                offset = len(indent_start)
+            else:
+                offset = 0
+            part = part[offset:]
+            part = self._whitespace_matcher.sub(' ', part).strip()
+            parts = textwrap.wrap(part, width - offset)
+            parts = [' ' * offset + p for p in parts]
+            if offset:
+                parts[0] = indent_start + parts[0][offset:]
+            out.extend(parts)
+        return out
+
+
 def parse_options(args):
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(formatter_class=NewlineHelpFormatter)
 
     parser.set_defaults(colors=sys.stdout.isatty())
     parser.add_argument('--version', action='version', version=VERSION)
@@ -231,14 +255,14 @@ def parse_options(args):
                              'corrections. If this flag is not specified or '
                              'equals "-" then the default dictionary is used. '
                              'This option can be specified multiple times.')
-    builtin_opts = ', '.join(
-        '%r %s' % (d[0], d[1]) for d in _builtin_dictionaries)
+    builtin_opts = '\n- '.join([] + [
+        '%r %s' % (d[0], d[1]) for d in _builtin_dictionaries])
     parser.add_argument('--builtin',
                         dest='builtin', default=_builtin_default,
                         metavar='BUILTIN-LIST',
                         help='Comma-separated list of builtin dictionaries '
                         'to include (when "-D -" or no "-D" is passed). '
-                        'Current options are:\n%s. The default is '
+                        'Current options are:%s\nThe default is '
                         '"--builtin %s".'
                         % (builtin_opts, _builtin_default))
     parser.add_argument('-I', '--ignore-words',
@@ -276,22 +300,21 @@ def parse_options(args):
 
     parser.add_argument('-i', '--interactive',
                         action='store', type=int, default=0,
-                        help='Set interactive mode when writing changes. '
-                             '0: no interactivity. 1: ask for confirmation. '
-                             '2 ask user to choose one fix when more than one '
-                             'is available. 3: both 1 and 2')
+                        help='Set interactive mode when writing changes:\n'
+                             '- 0: no interactivity.\n'
+                             '- 1: ask for confirmation.\n'
+                             '- 2: ask user to choose one fix when more than one is available.\n'  # noqa: E501
+                             '- 3: both 1 and 2')
 
     parser.add_argument('-q', '--quiet-level',
                         action='store', type=int, default=2,
-                        help='Bitmask that allows suppressing messages. '
-                             '0: print all messages. '
-                             '1: disable warnings about wrong encoding. '
-                             '2: disable warnings about binary files. '
-                             '4: omit warnings about automatic fixes that '
-                             'were disabled in the dictionary. '
-                             '8: don\'t print anything for non-automatic '
-                             'fixes. '
-                             '16: don\'t print the list of fixed files. '
+                        help='Bitmask that allows suppressing messages:\n'
+                             '- 0: print all messages.\n'
+                             '- 1: disable warnings about wrong encoding.\n'
+                             '- 2: disable warnings about binary files.\n'
+                             '- 4: omit warnings about automatic fixes that were disabled in the dictionary.\n'  # noqa: E501
+                             '- 8: don\'t print anything for non-automatic fixes.\n'  # noqa: E501
+                             '- 16: don\'t print the list of fixed files.\n'
                              'As usual with bitmasks, these levels can be '
                              'combined; e.g. use 3 for levels 1+2, 7 for '
                              '1+2+4, 23 for 1+2+4+16, etc. '
