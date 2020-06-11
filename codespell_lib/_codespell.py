@@ -43,7 +43,7 @@ _builtin_dictionaries = (
     ('clear', 'for unambiguous errors', '', False, None),
     ('rare', 'for rare but valid words', '_rare', None, None),
     ('informal', 'for informal words', '_informal', True, True),
-    ('usage', 'for recommended terms', '_usage', True, None),
+    ('usage', 'for recommended terms', '_usage', None, None),
     ('code', 'for words common to code and/or mathematics', '_code', None, None),  # noqa: E501
     ('names', 'for valid proper names that might be typos', '_names', None, None),  # noqa: E501
     ('en-GB_to_en-US', 'for corrections from en-GB to en-US', '_en-GB_to_en-US', True, True),  # noqa: E501
