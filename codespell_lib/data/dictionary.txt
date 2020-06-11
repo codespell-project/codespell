@@ -3556,7 +3556,7 @@ bizzare->bizarre
 bject->object
 bjects->objects
 blackslashes->backslashes
-blaclist->blocklist
+blaclist->blacklist
 blaim->blame
 blaimed->blamed
 blak->black, blank,
@@ -28039,10 +28039,10 @@ whicht->which
 whihc->which
 whihch->which
 whilest->whilst
-whiltelist->allowlist
-whiltelisted->allowlisted
-whiltelisting->allowlisting
-whiltelists->allowlists
+whiltelist->whitelist
+whiltelisted->whitelisted
+whiltelisting->whitelisting
+whiltelists->whitelists
 whilw->while
 whioch->which
 whiped->wiped
