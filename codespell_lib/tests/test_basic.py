@@ -3,6 +3,7 @@
 from __future__ import print_function
 
 import contextlib
+import inspect
 import os
 import os.path as op
 from shutil import copyfile
@@ -11,18 +12,45 @@ import sys
 
 import pytest
 
-import codespell_lib as cs
+import codespell_lib as cs_
+
+
+class MainWrapper(object):
+    """Compatibility wrapper for when we used to return the count."""
+
+    def main(self, *args, count=True, std=False, **kwargs):
+        if count:
+            args = ('--count',) + args
+        code = cs_.main(*args, **kwargs)
+        capsys = inspect.currentframe().f_back.f_locals['capsys']
+        stdout, stderr = capsys.readouterr()
+        if code == 1:  # have some misspellings
+            code = int(stderr.split('\n')[-2])
+        elif code == 0 and count:
+            code = int(stderr.split('\n')[-2])
+            assert code == 0
+        if std:
+            return (code, stdout, stderr)
+        else:
+            return code
+
+
+cs = MainWrapper()
 
 
 def run_codespell(args=(), cwd=None):
-    """Helper to run codespell"""
-    return subprocess.Popen(
+    """Run codespell."""
+    args = ('--count',) + args
+    proc = subprocess.Popen(
         ['codespell'] + list(args), cwd=cwd,
-        stdout=subprocess.PIPE, stderr=subprocess.PIPE).wait()
+        stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    stderr = proc.communicate()[1].decode('utf-8')
+    count = int(stderr.split('\n')[-2])
+    return count
 
 
 def test_command(tmpdir):
-    """Test running the codespell executable"""
+    """Test running the codespell executable."""
     # With no arguments does "."
     d = str(tmpdir)
     assert run_codespell(cwd=d) == 0
@@ -32,13 +60,14 @@ def test_command(tmpdir):
 
 
 def test_basic(tmpdir, capsys):
-    """Test some basic functionality"""
+    """Test some basic functionality."""
     assert cs.main('_does_not_exist_') == 0
     fname = op.join(str(tmpdir), 'tmp')
     with open(fname, 'w') as f:
         pass
-    assert cs.main('-D', 'foo', f.name) == 1, 'missing dictionary'
-    assert 'cannot find dictionary' in capsys.readouterr()[1]
+    code, _, stderr = cs.main('-D', 'foo', f.name, std=True)
+    assert code == 2, 'missing dictionary'
+    assert 'cannot find dictionary' in stderr
     assert cs.main(fname) == 0, 'empty file'
     with open(fname, 'a') as f:
         f.write('this is a test file\n')
@@ -53,22 +82,21 @@ def test_basic(tmpdir, capsys):
         f.write('tim\ngonna\n')
     assert cs.main(fname) == 2, 'with a name'
     assert cs.main('--builtin', 'clear,rare,names,informal', fname) == 4
-    capsys.readouterr()
-    assert cs.main(fname, '--builtin', 'foo') == 1  # bad type sys.exit(1)
-    stdout = capsys.readouterr()[1]
-    assert 'Unknown builtin dictionary' in stdout
+    code, _, stderr = cs.main(fname, '--builtin', 'foo', std=True)
+    assert code == 2  # bad type sys.exit(2)
+    assert 'Unknown builtin dictionary' in stderr
     d = str(tmpdir)
-    assert cs.main(fname, '-D', op.join(d, 'foo')) == 1  # bad dict
-    stdout = capsys.readouterr()[1]
-    assert 'cannot find dictionary' in stdout
+    code, _, stderr = cs.main(fname, '-D', op.join(d, 'foo'), std=True)
+    assert code == 2  # bad dict
+    assert 'cannot find dictionary' in stderr
     os.remove(fname)
 
     with open(op.join(d, 'bad.txt'), 'w') as f:
         f.write('abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd')
     assert cs.main(d) == 4
-    capsys.readouterr()
-    assert cs.main('-w', d) == 0
-    assert 'FIXED:' in capsys.readouterr()[1]
+    code, _, stderr = cs.main('-w', d, std=True)
+    assert code == 0
+    assert 'FIXED:' in stderr
     with open(op.join(d, 'bad.txt')) as f:
         new_content = f.read()
     assert cs.main(d) == 0
@@ -77,9 +105,10 @@ def test_basic(tmpdir, capsys):
     with open(op.join(d, 'bad.txt'), 'w') as f:
         f.write('abandonned abandonned\n')
     assert cs.main(d) == 2
-    capsys.readouterr()
-    assert cs.main('-q', '16', '-w', d) == 0
-    assert capsys.readouterr() == ('', '')
+    code, stdout, stderr = cs.main(
+        '-q', '16', '-w', d, count=False, std=True)
+    assert code == 0
+    assert stdout == stderr == ''
     assert cs.main(d) == 0
 
     # empty directory
@@ -101,8 +130,9 @@ def test_interactivity(tmpdir, capsys):
         with FakeStdin('y\n'):
             assert cs.main('-i', '3', f.name) == 1
         with FakeStdin('n\n'):
-            assert cs.main('-w', '-i', '3', f.name) == 0
-        assert '==>' in capsys.readouterr()[0]
+            code, stdout, _ = cs.main('-w', '-i', '3', f.name, std=True)
+            assert code == 0
+        assert '==>' in stdout
         with FakeStdin('x\ny\n'):
             assert cs.main('-w', '-i', '3', f.name) == 0
         assert cs.main(f.name) == 0
@@ -141,10 +171,10 @@ def test_interactivity(tmpdir, capsys):
         with open(f.name, 'w') as f:
             f.write('ackward\n')
         assert cs.main(f.name) == 1
-        capsys.readouterr()
         with FakeStdin('x\n1\n'):  # blank input -> nothing
-            assert cs.main('-w', '-i', '3', f.name) == 0
-        assert 'a valid option' in capsys.readouterr()[0]
+            code, stdout, _ = cs.main('-w', '-i', '3', f.name, std=True)
+            assert code == 0
+        assert 'a valid option' in stdout
         assert cs.main(f.name) == 0
         with open(f.name, 'r') as f:
             assert f.read() == 'backward\n'
@@ -153,30 +183,28 @@ def test_interactivity(tmpdir, capsys):
 
 
 def test_summary(tmpdir, capsys):
-    """Test summary functionality"""
+    """Test summary functionality."""
     with open(op.join(str(tmpdir), 'tmp'), 'w') as f:
         pass
-    try:
-        cs.main(f.name)
-        assert capsys.readouterr() == ('', ''), 'no output'
-        cs.main(f.name, '--summary')
-        stdout, stderr = capsys.readouterr()
-        assert stderr == ''
-        assert 'SUMMARY' in stdout
-        assert len(stdout.split('\n')) == 5
-        with open(f.name, 'w') as f:
-            f.write('abandonned\nabandonned')
-        cs.main(f.name, '--summary')
-        stdout, stderr = capsys.readouterr()
-        assert stderr == ''
-        assert 'SUMMARY' in stdout
-        assert len(stdout.split('\n')) == 7
-        assert 'abandonned' in stdout.split()[-2]
-    finally:
-        os.remove(f.name)
+    code, stdout, stderr = cs.main(f.name, std=True, count=False)
+    assert code == 0
+    assert stdout == stderr == '', 'no output'
+    code, stdout, stderr = cs.main(f.name, '--summary', std=True)
+    assert code == 0
+    assert stderr == '0\n'
+    assert 'SUMMARY' in stdout
+    assert len(stdout.split('\n')) == 5
+    with open(f.name, 'w') as f:
+        f.write('abandonned\nabandonned')
+    assert code == 0
+    code, stdout, stderr = cs.main(f.name, '--summary', std=True)
+    assert stderr == '2\n'
+    assert 'SUMMARY' in stdout
+    assert len(stdout.split('\n')) == 7
+    assert 'abandonned' in stdout.split()[-2]
 
 
-def test_ignore_dictionary(tmpdir):
+def test_ignore_dictionary(tmpdir, capsys):
     """Test ignore dictionary functionality."""
     d = str(tmpdir)
     with open(op.join(d, 'bad.txt'), 'w') as f:
@@ -188,8 +216,8 @@ def test_ignore_dictionary(tmpdir):
     assert cs.main('-I', f.name, bad_name) == 1
 
 
-def test_ignore_word_list(tmpdir):
-    """Test ignore word list functionality"""
+def test_ignore_word_list(tmpdir, capsys):
+    """Test ignore word list functionality."""
     d = str(tmpdir)
     with open(op.join(d, 'bad.txt'), 'w') as f:
         f.write('abandonned\nabondon\nabilty\n')
@@ -204,12 +232,12 @@ def test_custom_regex(tmpdir, capsys):
         f.write('abandonned_abondon\n')
     assert cs.main(d) == 0
     assert cs.main('-r', "[a-z]+", d) == 2
-    capsys.readouterr()
-    assert cs.main('-r', '[a-z]+', '--write-changes', d) == 1
-    assert 'ERROR:' in capsys.readouterr()[0]
+    code, stdout, _ = cs.main('-r', '[a-z]+', '--write-changes', d, std=True)
+    assert code == 2
+    assert 'ERROR:' in stdout
 
 
-def test_exclude_file(tmpdir):
+def test_exclude_file(tmpdir, capsys):
     """Test exclude file functionality."""
     d = str(tmpdir)
     with open(op.join(d, 'bad.txt'), 'wb') as f:
@@ -229,28 +257,25 @@ def test_encoding(tmpdir, capsys):
         pass
     # with CaptureStdout() as sio:
     assert cs.main(f.name) == 0
-    try:
-        with open(f.name, 'wb') as f:
-            f.write(u'naïve\n'.encode('utf-8'))
-        assert cs.main(f.name) == 0
-        assert cs.main('-e', f.name) == 0
-        with open(f.name, 'ab') as f:
-            f.write(u'naieve\n'.encode('utf-8'))
-        assert cs.main(f.name) == 1
-        # Binary file warning
-        with open(f.name, 'wb') as f:
-            f.write(b'\x00\x00naiive\x00\x00')
-        capsys.readouterr()
-        assert cs.main(f.name) == 0
-        assert capsys.readouterr() == ('', '')
-        assert cs.main('-q', '0', f.name) == 0
-        assert 'WARNING: Binary file' in capsys.readouterr()[1]
-        assert capsys.readouterr() == ('', '')
-    finally:
-        os.remove(f.name)
+    with open(f.name, 'wb') as f:
+        f.write(u'naïve\n'.encode('utf-8'))
+    assert cs.main(f.name) == 0
+    assert cs.main('-e', f.name) == 0
+    with open(f.name, 'ab') as f:
+        f.write(u'naieve\n'.encode('utf-8'))
+    assert cs.main(f.name) == 1
+    # Binary file warning
+    with open(f.name, 'wb') as f:
+        f.write(b'\x00\x00naiive\x00\x00')
+    capsys.readouterr()
+    assert cs.main(f.name) == 0
+    assert capsys.readouterr() == ('', '')
+    assert cs.main('-q', '0', f.name) == 0
+    assert 'WARNING: Binary file' in capsys.readouterr()[1]
+    assert capsys.readouterr() == ('', '')
 
 
-def test_ignore(tmpdir):
+def test_ignore(tmpdir, capsys):
     """Test ignoring of files and directories."""
     d = str(tmpdir)
     with open(op.join(d, 'good.txt'), 'w') as f:
@@ -272,7 +297,7 @@ def test_ignore(tmpdir):
     assert cs.main('--skip=*ignoredir/bad*', d) == 1
 
 
-def test_check_filename(tmpdir):
+def test_check_filename(tmpdir, capsys):
     """Test filename check."""
     d = str(tmpdir)
     # Empty file
@@ -291,7 +316,7 @@ def test_check_filename(tmpdir):
 
 @pytest.mark.skipif((not hasattr(os, "mkfifo") or not callable(os.mkfifo)),
                     reason='requires os.mkfifo')
-def test_check_filename_irregular_file(tmpdir):
+def test_check_filename_irregular_file(tmpdir, capsys):
     """Test irregular file filename check."""
     # Irregular file (!isfile())
     d = str(tmpdir)
@@ -300,7 +325,7 @@ def test_check_filename_irregular_file(tmpdir):
     d = str(tmpdir)
 
 
-def test_check_hidden(tmpdir):
+def test_check_hidden(tmpdir, capsys):
     """Test ignoring of hidden files."""
     d = str(tmpdir)
     # visible file
@@ -342,17 +367,16 @@ def test_case_handling(tmpdir, capsys):
         pass
     # with CaptureStdout() as sio:
     assert cs.main(f.name) == 0
-    try:
-        with open(f.name, 'wb') as f:
-            f.write('this has an ACII error'.encode('utf-8'))
-        assert cs.main(f.name) == 1
-        assert 'ASCII' in capsys.readouterr()[0]
-        assert cs.main('-w', f.name) == 0
-        assert 'FIXED' in capsys.readouterr()[1]
-        with open(f.name, 'rb') as f:
-            assert f.read().decode('utf-8') == 'this has an ASCII error'
-    finally:
-        os.remove(f.name)
+    with open(f.name, 'wb') as f:
+        f.write('this has an ACII error'.encode('utf-8'))
+    code, stdout, _ = cs.main(f.name, std=True)
+    assert code == 1
+    assert 'ASCII' in stdout
+    code, _, stderr = cs.main('-w', f.name, std=True)
+    assert code == 0
+    assert 'FIXED' in stderr
+    with open(f.name, 'rb') as f:
+        assert f.read().decode('utf-8') == 'this has an ASCII error'
 
 
 def test_context(tmpdir, capsys):
@@ -362,16 +386,18 @@ def test_context(tmpdir, capsys):
         f.write('line 1\nline 2\nline 3 abandonned\nline 4\nline 5')
 
     # symmetric context, fully within file
-    cs.main('-C', '1', d)
-    lines = capsys.readouterr()[0].split('\n')
+    code, stdout, _ = cs.main('-C', '1', d, std=True)
+    assert code == 1
+    lines = stdout.split('\n')
     assert len(lines) == 5
     assert lines[0] == ': line 2'
     assert lines[1] == '> line 3 abandonned'
     assert lines[2] == ': line 4'
 
     # requested context is bigger than the file
-    cs.main('-C', '10', d)
-    lines = capsys.readouterr()[0].split('\n')
+    code, stdout, _ = cs.main('-C', '10', d, std=True)
+    assert code == 1
+    lines = stdout.split('\n')
     assert len(lines) == 7
     assert lines[0] == ': line 1'
     assert lines[1] == ': line 2'
@@ -380,23 +406,26 @@ def test_context(tmpdir, capsys):
     assert lines[4] == ': line 5'
 
     # only before context
-    cs.main('-B', '2', d)
-    lines = capsys.readouterr()[0].split('\n')
+    code, stdout, _ = cs.main('-B', '2', d, std=True)
+    assert code == 1
+    lines = stdout.split('\n')
     assert len(lines) == 5
     assert lines[0] == ': line 1'
     assert lines[1] == ': line 2'
     assert lines[2] == '> line 3 abandonned'
 
     # only after context
-    cs.main('-A', '1', d)
-    lines = capsys.readouterr()[0].split('\n')
+    code, stdout, _ = cs.main('-A', '1', d, std=True)
+    assert code == 1
+    lines = stdout.split('\n')
     assert len(lines) == 4
     assert lines[0] == '> line 3 abandonned'
     assert lines[1] == ': line 4'
 
     # asymmetric context
-    cs.main('-B', '2', '-A', '1', d)
-    lines = capsys.readouterr()[0].split('\n')
+    code, stdout, _ = cs.main('-B', '2', '-A', '1', d, std=True)
+    assert code == 1
+    lines = stdout.split('\n')
     assert len(lines) == 6
     assert lines[0] == ': line 1'
     assert lines[1] == ': line 2'
@@ -404,13 +433,15 @@ def test_context(tmpdir, capsys):
     assert lines[3] == ': line 4'
 
     # both '-C' and '-A' on the command line
-    cs.main('-C', '2', '-A', '1', d)
-    lines = capsys.readouterr()[0].split('\n')
+    code, stdout, _ = cs.main('-C', '2', '-A', '1', d, std=True)
+    assert code == 2
+    lines = stdout.split('\n')
     assert 'ERROR' in lines[0]
 
     # both '-C' and '-B' on the command line
-    cs.main('-C', '2', '-B', '1', d)
-    lines = capsys.readouterr()[0].split('\n')
+    code, stdout, stderr = cs.main('-C', '2', '-B', '1', d, std=True)
+    assert code == 2
+    lines = stdout.split('\n')
     assert 'ERROR' in lines[0]
 
 

@@ -289,6 +289,11 @@ def parse_options(args):
                         action='store_true', default=False,
                         help='print summary of fixes')
 
+    parser.add_argument('--count',
+                        action='store_true', default=False,
+                        help='print the number of errors as the last line of '
+                             'stderr')
+
     parser.add_argument('-S', '--skip',
                         action='append',
                         help='Comma-separated list of files to skip. It '
@@ -642,7 +647,7 @@ def main(*args):
         print("ERROR: --write-changes cannot be used together with "
               "--regex")
         parser.print_help()
-        return 1
+        return 2
     word_regex = options.regex or word_regex_def
     try:
         word_regex = re.compile(word_regex)
@@ -650,7 +655,7 @@ def main(*args):
         print("ERROR: invalid regular expression \"%s\" (%s)" %
               (word_regex, err), file=sys.stderr)
         parser.print_help()
-        return 1
+        return 2
 
     ignore_words_files = options.ignore_words or []
     ignore_words = set()
@@ -659,7 +664,7 @@ def main(*args):
             print("ERROR: cannot find ignore-words file: %s" %
                   ignore_words_file, file=sys.stderr)
             parser.print_help()
-            return 1
+            return 2
         build_ignore_words(ignore_words_file, ignore_words)
 
     ignore_words_list = options.ignore_words_list or []
@@ -687,13 +692,13 @@ def main(*args):
                     print("ERROR: Unknown builtin dictionary: %s" % (u,),
                           file=sys.stderr)
                     parser.print_help()
-                    return 1
+                    return 2
         else:
             if not os.path.isfile(dictionary):
                 print("ERROR: cannot find dictionary file: %s" % dictionary,
                       file=sys.stderr)
                 parser.print_help()
-                return 1
+                return 2
             use_dictionaries.append(dictionary)
     misspellings = dict()
     for dictionary in use_dictionaries:
@@ -714,7 +719,7 @@ def main(*args):
             print("ERROR: --context/-C cannot be used together with "
                   "--context-before/-B or --context-after/-A")
             parser.print_help()
-            return 1
+            return 2
         context_both = max(0, options.context)
         context = (context_both, context_both)
     elif (options.before_context is not None) or \
@@ -772,4 +777,6 @@ def main(*args):
     if summary:
         print("\n-------8<-------\nSUMMARY:")
         print(summary)
-    return bad_count
+    if options.count:
+        print(bad_count, file=sys.stderr)
+    return int(bool(bad_count))
