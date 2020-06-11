@@ -41,11 +41,11 @@ The ``-w`` flag will actually implement the changes recommended by codespell. No
 
     codespell -I FILE, --ignore-words=FILE
 
-The ``-I`` flag can be used to whitelist certain words that are in the ``codespell_lib/data/dictionary.txt``. The format of the whitelist file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said whitelist. **Important note:** The whitelist passed to ``-I`` is case-sensitive based on how it is listed in ``dictionary.txt``. ::
+The ``-I`` flag can be used for a list of certain words to allow that are in the codespell dictionaries. The format of the file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said list of allowed words. **Important note:** The list passed to ``-I`` is case-sensitive based on how it is listed in the codespell dictionaries. ::
 
     codespell -L word1,word2,word3,word4
 
-The ``-L`` flag can be used to whitelist certain words that are comma-separated placed immediately after it. ::
+The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it. ::
 
     codespell -S, --skip=
 
