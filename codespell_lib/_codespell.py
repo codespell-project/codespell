@@ -51,6 +51,10 @@ _builtin_dictionaries = (
 )
 _builtin_default = 'clear,rare'
 
+# docs say os.EX_USAGE is only available on Unix systems, and it is 64 on
+# macOS, but things like bash and flake8 give 2, so let's just KISS and use:
+EX_USAGE = 2
+
 # OPTIONS:
 #
 # ARGUMENTS:
@@ -647,7 +651,7 @@ def main(*args):
         print("ERROR: --write-changes cannot be used together with "
               "--regex")
         parser.print_help()
-        return 2
+        return EX_USAGE
     word_regex = options.regex or word_regex_def
     try:
         word_regex = re.compile(word_regex)
@@ -655,7 +659,7 @@ def main(*args):
         print("ERROR: invalid regular expression \"%s\" (%s)" %
               (word_regex, err), file=sys.stderr)
         parser.print_help()
-        return 2
+        return EX_USAGE
 
     ignore_words_files = options.ignore_words or []
     ignore_words = set()
@@ -664,7 +668,7 @@ def main(*args):
             print("ERROR: cannot find ignore-words file: %s" %
                   ignore_words_file, file=sys.stderr)
             parser.print_help()
-            return 2
+            return EX_USAGE
         build_ignore_words(ignore_words_file, ignore_words)
 
     ignore_words_list = options.ignore_words_list or []
@@ -692,13 +696,13 @@ def main(*args):
                     print("ERROR: Unknown builtin dictionary: %s" % (u,),
                           file=sys.stderr)
                     parser.print_help()
-                    return 2
+                    return EX_USAGE
         else:
             if not os.path.isfile(dictionary):
                 print("ERROR: cannot find dictionary file: %s" % dictionary,
                       file=sys.stderr)
                 parser.print_help()
-                return 2
+                return EX_USAGE
             use_dictionaries.append(dictionary)
     misspellings = dict()
     for dictionary in use_dictionaries:
@@ -719,7 +723,7 @@ def main(*args):
             print("ERROR: --context/-C cannot be used together with "
                   "--context-before/-B or --context-after/-A")
             parser.print_help()
-            return 2
+            return EX_USAGE
         context_both = max(0, options.context)
         context = (context_both, context_both)
     elif (options.before_context is not None) or \

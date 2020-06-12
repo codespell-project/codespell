@@ -267,12 +267,13 @@ def test_encoding(tmpdir, capsys):
     # Binary file warning
     with open(f.name, 'wb') as f:
         f.write(b'\x00\x00naiive\x00\x00')
-    capsys.readouterr()
-    assert cs.main(f.name) == 0
-    assert capsys.readouterr() == ('', '')
-    assert cs.main('-q', '0', f.name) == 0
-    assert 'WARNING: Binary file' in capsys.readouterr()[1]
-    assert capsys.readouterr() == ('', '')
+    code, stdout, stderr = cs.main(f.name, std=True, count=False)
+    assert code == 0
+    assert stdout == stderr == ''
+    code, stdout, stderr = cs.main('-q', '0', f.name, std=True, count=False)
+    assert code == 0
+    assert stdout == ''
+    assert 'WARNING: Binary file' in stderr
 
 
 def test_ignore(tmpdir, capsys):
