@@ -207,6 +207,9 @@ class FileOpener(object):
 # -.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-
 
 
+# If someday this breaks, we can just switch to using RawTextHelpFormatter,
+# but it has the disadvantage of not wrapping our long lines.
+
 class NewlineHelpFormatter(argparse.HelpFormatter):
     """Help formatter that preserves newlines and deals with lists."""
 
