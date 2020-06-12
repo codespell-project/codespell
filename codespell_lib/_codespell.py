@@ -255,16 +255,15 @@ def parse_options(args):
                              'corrections. If this flag is not specified or '
                              'equals "-" then the default dictionary is used. '
                              'This option can be specified multiple times.')
-    builtin_opts = '\n- '.join([] + [
+    builtin_opts = '\n- '.join([''] + [
         '%r %s' % (d[0], d[1]) for d in _builtin_dictionaries])
     parser.add_argument('--builtin',
                         dest='builtin', default=_builtin_default,
                         metavar='BUILTIN-LIST',
                         help='Comma-separated list of builtin dictionaries '
                         'to include (when "-D -" or no "-D" is passed). '
-                        'Current options are:%s\nThe default is '
-                        '"--builtin %s".'
-                        % (builtin_opts, _builtin_default))
+                        'Current options are:' + builtin_opts + '\n'
+                        'The default is %(default)r.')
     parser.add_argument('-I', '--ignore-words',
                         action='append', metavar='FILE',
                         help='File that contains words which will be ignored '
