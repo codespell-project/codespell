@@ -52,11 +52,8 @@ _builtin_dictionaries = (
 _builtin_default = 'clear,rare'
 
 # docs say os.EX_USAGE is only available on Unix systems, so to be safe we
-# protect and use the value it is on macOS and Linux (64) if not available:
-try:
-    from os import EX_USAGE
-except ImportError:
-    EX_USAGE = 64
+# protect and just use the value it is on macOS and Linux (64)
+EX_USAGE = 64
 
 # OPTIONS:
 #
