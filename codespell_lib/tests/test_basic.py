@@ -13,7 +13,14 @@ import sys
 import pytest
 
 import codespell_lib as cs_
-from codespell_lib._codespell import EX_USAGE
+from codespell_lib._codespell import EX_USAGE, EX_OK, EX_DATAERR
+
+
+def test_constants():
+    """Test our EX constants."""
+    assert EX_OK == 0
+    assert EX_USAGE == 64
+    assert EX_DATAERR == 65
 
 
 class MainWrapper(object):
@@ -25,9 +32,10 @@ class MainWrapper(object):
         code = cs_.main(*args, **kwargs)
         capsys = inspect.currentframe().f_back.f_locals['capsys']
         stdout, stderr = capsys.readouterr()
-        if code == 1:  # have some misspellings
+        assert code in (EX_OK, EX_USAGE, EX_DATAERR)
+        if code == EX_DATAERR:  # have some misspellings
             code = int(stderr.split('\n')[-2])
-        elif code == 0 and count:
+        elif code == EX_OK and count:
             code = int(stderr.split('\n')[-2])
             assert code == 0
         if std:

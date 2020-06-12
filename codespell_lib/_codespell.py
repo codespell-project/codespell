@@ -51,9 +51,11 @@ _builtin_dictionaries = (
 )
 _builtin_default = 'clear,rare'
 
-# docs say os.EX_USAGE is only available on Unix systems, so to be safe we
-# protect and just use the value it is on macOS and Linux (64)
+# docs say os.EX_USAGE et al. are only available on Unix systems, so to be safe
+# we protect and just use the values they are on macOS and Linux
+EX_OK = 0
 EX_USAGE = 64
+EX_DATAERR = 65
 
 # OPTIONS:
 #
@@ -245,11 +247,11 @@ def parse_options(args):
 
     parser.add_argument('-d', '--disable-colors',
                         action='store_false', dest='colors',
-                        help='disable colors, even when printing to terminal '
+                        help='Disable colors, even when printing to terminal '
                              '(always set for Windows)')
     parser.add_argument('-c', '--enable-colors',
                         action='store_true', dest='colors',
-                        help='enable colors, even when not printing to '
+                        help='Enable colors, even when not printing to '
                              'terminal')
 
     parser.add_argument('-w', '--write-changes',
@@ -291,11 +293,11 @@ def parse_options(args):
                              'specified together with --write-changes.')
     parser.add_argument('-s', '--summary',
                         action='store_true', default=False,
-                        help='print summary of fixes')
+                        help='Print summary of fixes')
 
     parser.add_argument('--count',
                         action='store_true', default=False,
-                        help='print the number of errors as the last line of '
+                        help='Print the number of errors as the last line of '
                              'stderr')
 
     parser.add_argument('-S', '--skip',
@@ -340,21 +342,21 @@ def parse_options(args):
 
     parser.add_argument('-f', '--check-filenames',
                         action='store_true', default=False,
-                        help='check file names as well')
+                        help='Check file names as well')
 
     parser.add_argument('-H', '--check-hidden',
                         action='store_true', default=False,
                         help='Check hidden files and directories (those '
                              'starting with ".") as well.')
     parser.add_argument('-A', '--after-context', type=int, metavar='LINES',
-                        help='print LINES of trailing context')
+                        help='Print LINES of trailing context')
     parser.add_argument('-B', '--before-context', type=int, metavar='LINES',
-                        help='print LINES of leading context')
+                        help='Print LINES of leading context')
     parser.add_argument('-C', '--context', type=int, metavar='LINES',
-                        help='print LINES of surrounding context')
+                        help='Print LINES of surrounding context')
 
     parser.add_argument('files', nargs='*',
-                        help='files or directories to check')
+                        help='Files or directories to check')
 
     options = parser.parse_args(list(args))
 
@@ -783,4 +785,4 @@ def main(*args):
         print(summary)
     if options.count:
         print(bad_count, file=sys.stderr)
-    return int(bool(bad_count))
+    return EX_DATAERR if bad_count else EX_OK
