@@ -13,6 +13,7 @@ import sys
 import pytest
 
 import codespell_lib as cs_
+from codespell_lib._codespell import EX_USAGE
 
 
 class MainWrapper(object):
@@ -66,7 +67,7 @@ def test_basic(tmpdir, capsys):
     with open(fname, 'w') as f:
         pass
     code, _, stderr = cs.main('-D', 'foo', f.name, std=True)
-    assert code == 2, 'missing dictionary'
+    assert code == EX_USAGE, 'missing dictionary'
     assert 'cannot find dictionary' in stderr
     assert cs.main(fname) == 0, 'empty file'
     with open(fname, 'a') as f:
@@ -83,11 +84,11 @@ def test_basic(tmpdir, capsys):
     assert cs.main(fname) == 2, 'with a name'
     assert cs.main('--builtin', 'clear,rare,names,informal', fname) == 4
     code, _, stderr = cs.main(fname, '--builtin', 'foo', std=True)
-    assert code == 2  # bad type sys.exit(2)
+    assert code == EX_USAGE  # bad type
     assert 'Unknown builtin dictionary' in stderr
     d = str(tmpdir)
     code, _, stderr = cs.main(fname, '-D', op.join(d, 'foo'), std=True)
-    assert code == 2  # bad dict
+    assert code == EX_USAGE  # bad dict
     assert 'cannot find dictionary' in stderr
     os.remove(fname)
 
@@ -233,7 +234,7 @@ def test_custom_regex(tmpdir, capsys):
     assert cs.main(d) == 0
     assert cs.main('-r', "[a-z]+", d) == 2
     code, stdout, _ = cs.main('-r', '[a-z]+', '--write-changes', d, std=True)
-    assert code == 2
+    assert code == EX_USAGE
     assert 'ERROR:' in stdout
 
 
@@ -435,13 +436,13 @@ def test_context(tmpdir, capsys):
 
     # both '-C' and '-A' on the command line
     code, stdout, _ = cs.main('-C', '2', '-A', '1', d, std=True)
-    assert code == 2
+    assert code == EX_USAGE
     lines = stdout.split('\n')
     assert 'ERROR' in lines[0]
 
     # both '-C' and '-B' on the command line
     code, stdout, stderr = cs.main('-C', '2', '-B', '1', d, std=True)
-    assert code == 2
+    assert code == EX_USAGE
     lines = stdout.split('\n')
     assert 'ERROR' in lines[0]
 

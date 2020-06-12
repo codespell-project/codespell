@@ -51,9 +51,12 @@ _builtin_dictionaries = (
 )
 _builtin_default = 'clear,rare'
 
-# docs say os.EX_USAGE is only available on Unix systems, and it is 64 on
-# macOS, but things like bash and flake8 give 2, so let's just KISS and use:
-EX_USAGE = 2
+# docs say os.EX_USAGE is only available on Unix systems, so to be safe we
+# protect and use the value it is on macOS and Linux (64) if not available:
+try:
+    from os import EX_USAGE
+except ImportError:
+    EX_USAGE = 64
 
 # OPTIONS:
 #
