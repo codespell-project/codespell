@@ -1377,6 +1377,7 @@ alrogithm->algorithm
 alrteady->already
 als->also
 alse->also, else,
+alsmost->almost
 alsot->also
 alsready->already
 altenative->alternative
@@ -1936,6 +1937,7 @@ apreciative->appreciative
 aprehensive->apprehensive
 apreteate->appreciate
 apreteated->appreciated
+apreteating->appreciating
 aproach->approach
 aproached->approached
 aproaches->approaches
@@ -4220,7 +4222,7 @@ caracterized->characterized
 caracters->characters
 carbus->cardbus
 carcas->carcass, Caracas,
-carefull->careful
+carefull->careful, carefully,
 carefuly->carefully
 careing->caring
 carfull->careful
@@ -8315,6 +8317,12 @@ desingable->designable
 desinged->designed
 desinger->designer
 desinging->designing
+desingn->design
+desingned->designed
+desingner->designer
+desingning->designing
+desingns->designs
+desings->designs
 desintaiton->destination
 desintation->destination
 desintations->destinations
@@ -12536,6 +12544,12 @@ frankin->franklin
 Fransiscan->Franciscan
 Fransiscans->Franciscans
 franzise->franchise
+frecuencies->frequencies
+frecuency->frequency
+frecuent->frequent
+frecuented->frequented
+frecuently->frequently
+frecuents->frequents
 freecallrelpy->freecallreply
 freedon->freedom
 freedons->freedoms
@@ -13962,7 +13976,9 @@ impiled->implied
 implace->inplace
 implament->implement
 implamentation->implementation
+implamented->implemented
 implamenting->implementing
+implaments->implements
 implcit->implicit
 implemantation->implementation
 implemataion->implementation
@@ -27894,6 +27910,9 @@ viwers->viewers
 vlarge->large
 vlaue->value
 vlaues->values
+vlone->clone
+vloned->cloned
+vlones->clones
 vlues->values
 volatage->voltage
 volatages->voltages
