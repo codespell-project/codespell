@@ -12,5 +12,6 @@ jobs:
       - uses: codespell-project/actions-codespell@master
         with:
           check_filenames: true
-          # When using this Action in other repos, the --skip option below can be removed
+          # When using this Action in other repos, the options below can be removed or tweaked to suit
           skip: ./.git,./codespell_lib/data,./example/code.c,test_basic.py,*.pyc
+          builtin: clear,rare,usage
