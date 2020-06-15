@@ -29,7 +29,7 @@ before_install:
     - source venv/bin/activate
     - python --version  # just to check
     - pip install -U pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
-    - retry pip install pytest pytest-cov pytest-dependency flake8 coverage codecov chardet setuptools docutils check-manifest
+    - retry pip install pytest pytest-cov pytest-dependency flake8 coverage codecov chardet "setuptools!=47.2.0" docutils check-manifest
     - retry pip install aspell-python-py3
     - cd $SRC_DIR
 
