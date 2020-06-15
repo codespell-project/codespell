@@ -8347,6 +8347,8 @@ desktiop->desktop
 deskys->disguise
 deslected->deselected
 deslects->deselects
+desltop->desktop
+desltops->desktops
 desn't->doesn't
 desogn->design
 desogned->designed
@@ -11187,6 +11189,10 @@ exparation->expiration
 expasion->expansion
 expatriot->expatriate
 expception->exception
+expct->expect
+expcted->expected
+expctedly->expectedly
+expcting->expecting
 expeced->expected
 expeceted->expected
 expecially->especially
@@ -11205,6 +11211,13 @@ expeected->expected
 expeectedly->expectedly
 expeecting->expecting
 expeects->expects
+expeense->expense
+expeenses->expenses
+expeensive->expensive
+expeience->experience
+expeienced->experienced
+expeiences->experiences
+expeiencing->experiencing
 expeiment->experiment
 expeimental->experimental
 expeimentally->experimentally
@@ -11243,10 +11256,16 @@ expementer->experimenter
 expementers->experimenters
 expementing->experimenting
 expements->experiments
+expemplar->exemplar
 expemplars->exemplars
 expemplary->exemplary
 expempt->exempt
 expempted->exempted
+expemt->exempt
+expemted->exempted
+expemtion->exemption
+expemtions->exemptions
+expemts->exempts
 expendeble->expendable
 expepect->expect
 expepected->expected
@@ -11258,6 +11277,7 @@ expepted->expected
 expeptedly->expectedly
 expepting->expecting
 expeption->exception
+expeptions->exceptions
 expepts->expects
 experament->experiment
 experamental->experimental
@@ -11271,10 +11291,15 @@ experamenter->experimenter
 experamenters->experimenters
 experamenting->experimenting
 experaments->experiments
+experation->expiration
 experct->expect, excerpt,
 expercted->expected, excerpted,
+expercting->expecting
+expercts->expects
 expereince->experience
 expereinced->experienced
+expereinces->experiences
+expereincing->experiencing
 experement->experiment
 experemental->experimental
 experementally->experimentally
@@ -11289,6 +11314,7 @@ experementing->experimenting
 experements->experiments
 experence->experience
 experenced->experienced
+experences->experiences
 experencing->experiencing
 experes->express
 experesed->expressed
@@ -11296,6 +11322,8 @@ experesion->expression
 experesions->expressions
 experess->express
 experessed->expressed
+experesses->expresses
+experessing->expressing
 experession's->expression's
 experession->expression
 experessions->expressions
@@ -11307,8 +11335,11 @@ experiancing->experiencing
 experiansial->experiential
 experiantial->experiential
 experiation->expiration
+experiations->expirations
 experice->experience
 expericed->experienced
+experices->experiences
+expericing->experiencing
 experiement->experiment
 experienshial->experiential
 experiensial->experiential
@@ -11547,6 +11578,7 @@ experinementers->experimenters
 experinementing->experimenting
 experinements->experiments
 experiration->expiration
+experirations->expirations
 expermenet->experiment
 expermenetal->experimental
 expermenetally->experimentally
@@ -11595,17 +11627,43 @@ expermimenter->experimenter
 expermimenters->experimenters
 expermimenting->experimenting
 expermiments->experiments
+experminent->experiment
+experminental->experimental
+experminentally->experimentally
+experminentation->experimentation
+experminentations->experimentations
+experminents->experiments
 expernal->external
+expers->express
+experse->expense, express,
+expersed->expressed
+experses->expenses, expresses,
+expersing->expressing
+expersion->expression
+expersions->expressions
+expersive->expensive
 experss->express
 experssed->expressed
+expersses->expresses
+experssing->expressing
 experssion->expression
 experssions->expressions
+expese->expense
+expeses->expenses
 expesive->expensive
 expesnce->expense
+expesnces->expenses
+expesncive->expensive
 expess->express
 expessed->expressed
+expesses->expresses
+expessing->expressing
 expession->expression
 expessions->expressions
+expest->expect
+expested->expected
+expestedly->expectedly
+expesting->expecting
 expet->expect, expat,
 expetancy->expectancy
 expetation->expectation
@@ -11621,6 +11679,7 @@ expetcting->expecting
 expetcts->expects
 expetect->expect
 expetected->expected
+expetectedly->expectedly
 expetecting->expecting
 expetectly->expectedly
 expetects->expects
@@ -11658,6 +11717,7 @@ expexctedly->expectedly
 expexcting->expecting
 expexcts->expects
 expexnasion->expansion
+expexnasions->expansions
 expext->expect
 expexted->expected
 expextedly->expectedly
@@ -11753,6 +11813,8 @@ exsiting->existing
 exsits->exists, exist,
 exspect->expect
 exspected->expected
+exspectedly->expectedly
+exspecting->expecting
 exspects->expects
 exspense->expense
 exspensed->expensed
@@ -24858,6 +24920,8 @@ subexperesion->subexpression
 subexperesions->subexpressions
 subexperession->subexpression
 subexperessions->subexpressions
+subexpersion->subexpression
+subexpersions->subexpressions
 subexperssion->subexpression
 subexperssions->subexpressions
 subexpession->subexpression
@@ -27013,11 +27077,19 @@ unexpepected->unexpected
 unexpepectedly->unexpectedly
 unexpepted->unexpected
 unexpeptedly->unexpectedly
+unexpercted->unexpected
+unexperctedly->unexpectedly
+unexpested->unexpected
+unexpestedly->unexpectedly
 unexpetced->unexpected
 unexpetcedly->unexpectedly
+unexpetct->unexpected
 unexpetcted->unexpected
 unexpetctedly->unexpectedly
+unexpetctly->unexpectedly
 unexpetect->unexpected
+unexpetected->unexpected
+unexpetectedly->unexpectedly
 unexpetectly->unexpectedly
 unexpeted->unexpected
 unexpetedly->unexpectedly
