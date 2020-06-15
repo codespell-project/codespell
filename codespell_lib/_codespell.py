@@ -247,11 +247,11 @@ def parse_options(args):
 
     parser.add_argument('-d', '--disable-colors',
                         action='store_false', dest='colors',
-                        help='Disable colors, even when printing to terminal '
+                        help='disable colors, even when printing to terminal '
                              '(always set for Windows)')
     parser.add_argument('-c', '--enable-colors',
                         action='store_true', dest='colors',
-                        help='Enable colors, even when not printing to '
+                        help='enable colors, even when not printing to '
                              'terminal')
 
     parser.add_argument('-w', '--write-changes',
@@ -260,7 +260,7 @@ def parse_options(args):
 
     parser.add_argument('-D', '--dictionary',
                         action='append',
-                        help='Custom dictionary file that contains spelling '
+                        help='custom dictionary file that contains spelling '
                              'corrections. If this flag is not specified or '
                              'equals "-" then the default dictionary is used. '
                              'This option can be specified multiple times.')
@@ -269,40 +269,40 @@ def parse_options(args):
     parser.add_argument('--builtin',
                         dest='builtin', default=_builtin_default,
                         metavar='BUILTIN-LIST',
-                        help='Comma-separated list of builtin dictionaries '
+                        help='comma-separated list of builtin dictionaries '
                         'to include (when "-D -" or no "-D" is passed). '
                         'Current options are:' + builtin_opts + '\n'
                         'The default is %(default)r.')
     parser.add_argument('-I', '--ignore-words',
                         action='append', metavar='FILE',
-                        help='File that contains words which will be ignored '
+                        help='file that contains words which will be ignored '
                              'by codespell. File must contain 1 word per line.'
                              ' Words are case sensitive based on how they are '
                              'written in the dictionary file')
     parser.add_argument('-L', '--ignore-words-list',
                         action='append', metavar='WORDS',
-                        help='Comma separated list of words to be ignored '
+                        help='comma separated list of words to be ignored '
                              'by codespell. Words are case sensitive based on '
                              'how they are written in the dictionary file')
     parser.add_argument('-r', '--regex',
                         action='store', type=str,
-                        help='Regular expression which is used to find words. '
+                        help='regular expression which is used to find words. '
                              'By default any alphanumeric character, the '
                              'underscore, the hyphen, and the apostrophe is '
                              'used to build words. This option cannot be '
                              'specified together with --write-changes.')
     parser.add_argument('-s', '--summary',
                         action='store_true', default=False,
-                        help='Print summary of fixes')
+                        help='print summary of fixes')
 
     parser.add_argument('--count',
                         action='store_true', default=False,
-                        help='Print the number of errors as the last line of '
+                        help='print the number of errors as the last line of '
                              'stderr')
 
     parser.add_argument('-S', '--skip',
                         action='append',
-                        help='Comma-separated list of files to skip. It '
+                        help='comma-separated list of files to skip. It '
                              'accepts globs as well. E.g.: if you want '
                              'codespell to skip .eps and .txt files, '
                              'you\'d give "*.eps,*.txt" to this option.')
@@ -313,7 +313,7 @@ def parse_options(args):
 
     parser.add_argument('-i', '--interactive',
                         action='store', type=int, default=0,
-                        help='Set interactive mode when writing changes:\n'
+                        help='set interactive mode when writing changes:\n'
                              '- 0: no interactivity.\n'
                              '- 1: ask for confirmation.\n'
                              '- 2: ask user to choose one fix when more than one is available.\n'  # noqa: E501
@@ -321,7 +321,7 @@ def parse_options(args):
 
     parser.add_argument('-q', '--quiet-level',
                         action='store', type=int, default=2,
-                        help='Bitmask that allows suppressing messages:\n'
+                        help='bitmask that allows suppressing messages:\n'
                              '- 0: print all messages.\n'
                              '- 1: disable warnings about wrong encoding.\n'
                              '- 2: disable warnings about binary files.\n'
@@ -335,28 +335,28 @@ def parse_options(args):
 
     parser.add_argument('-e', '--hard-encoding-detection',
                         action='store_true', default=False,
-                        help='Use chardet to detect the encoding of each '
+                        help='use chardet to detect the encoding of each '
                              'file. This can slow down codespell, but is more '
                              'reliable in detecting encodings other than '
                              'utf-8, iso8859-1, and ascii.')
 
     parser.add_argument('-f', '--check-filenames',
                         action='store_true', default=False,
-                        help='Check file names as well')
+                        help='check file names as well')
 
     parser.add_argument('-H', '--check-hidden',
                         action='store_true', default=False,
-                        help='Check hidden files and directories (those '
+                        help='check hidden files and directories (those '
                              'starting with ".") as well.')
     parser.add_argument('-A', '--after-context', type=int, metavar='LINES',
-                        help='Print LINES of trailing context')
+                        help='print LINES of trailing context')
     parser.add_argument('-B', '--before-context', type=int, metavar='LINES',
-                        help='Print LINES of leading context')
+                        help='print LINES of leading context')
     parser.add_argument('-C', '--context', type=int, metavar='LINES',
-                        help='Print LINES of surrounding context')
+                        help='print LINES of surrounding context')
 
     parser.add_argument('files', nargs='*',
-                        help='Files or directories to check')
+                        help='files or directories to check')
 
     options = parser.parse_args(list(args))
 
