@@ -32,7 +32,7 @@ encodings = ('utf-8', 'iso-8859-1')
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
-VERSION = '1.18.dev0'
+VERSION = '2.0.dev0'
 
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
