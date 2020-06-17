@@ -3216,8 +3216,8 @@ backbround->background
 backbrounds->backgrounds
 backedn->backend
 backedns->backends
-backened->backend
-backeneds->backends
+backened->backend, blackened,
+backeneds->backends, blackens,
 backgorund->background
 backgorunds->backgrounds
 backgound->background
@@ -3308,6 +3308,7 @@ bascktrack->backtrack
 basf->base
 basicallly->basically
 basicaly->basically
+basiclly->basically
 basicly->basically
 bassic->basic
 bassically->basically
@@ -3605,12 +3606,14 @@ blocack->blockack
 bloccks->blocks
 blocekd->blocked
 blockhain->blockchain
+blockhains->blockchains
 blockin->blocking
 bloddy->bloody
 blodk->block
 blohted->bloated
 blokcer->blocker
 blokchain->blockchain
+blokchains->blockchains
 bloking->blocking
 bloted->bloated
 bluestooth->bluetooth
@@ -16722,6 +16725,16 @@ midified->modified
 migrateable->migratable
 migt->might, midget,
 migth->might
+miinimisation->minimisation
+miinimise->minimise
+miinimised->minimised
+miinimises->minimises
+miinimising->minimising
+miinimization->minimization
+miinimize->minimize
+miinimized->minimized
+miinimizes->minimizes
+miinimizing->minimizing
 miinimum->minimum
 mikrosecond->microsecond
 mikroseconds->microseconds
@@ -16795,9 +16808,15 @@ MingGW->MinGW
 minimam->minimum
 minimial->minimal
 minimium->minimum
+minimsation->minimisation
+minimse->minimise
+minimsed->minimised
+minimses->minimises
+minimsing->minimising
 minimumm->minimum
 minimumn->minimum
 minimun->minimum
+minimzation->minimization
 minimze->minimize
 minimzed->minimized
 minimzes->minimizes
