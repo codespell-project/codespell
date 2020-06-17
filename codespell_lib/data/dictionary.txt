@@ -10300,7 +10300,8 @@ entquiry->enquiry, inquiry,
 entrepeneur->entrepreneur
 entrepeneurs->entrepreneurs
 entrie->entry, entries,
-entrys->entries
+entriy->entry, entries,
+entrys->entries, entry,
 enty->entry, entity,
 enulation->emulation
 enumarate->enumerate
