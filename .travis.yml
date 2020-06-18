@@ -32,6 +32,12 @@ before_install:
     - retry pip install pytest pytest-cov pytest-dependency flake8 coverage codecov chardet "setuptools!=47.2.0" docutils check-manifest
     - retry pip install aspell-python-py3
     - cd $SRC_DIR
+    - wget "http://app.aspell.net/create?max_size=95&spelling=US&spelling=GBs&spelling=GBz&spelling=CA&spelling=AU&max_variant=2&diacritic=both&special=hacker&special=roman-numerals&encoding=utf-8&format=inline&download=aspell" -O customdict.tar.bz2
+    - tar xjf customdict.tar.bz2
+    - cd aspell6-en-custom
+    - ./configure
+    - make
+    - cd $SRC_DIR
 
 install:
     - python setup.py install

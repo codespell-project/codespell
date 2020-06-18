@@ -42,7 +42,7 @@ _builtin_dictionaries = (
     # The aspell tests here aren't the ideal state, but the None's are
     # realistic for obscure words
     ('clear', 'for unambiguous errors', '', False, None),
-    ('rare', 'for rare but valid words', '_rare', None, None),
+    ('rare', 'for rare but valid words', '_rare', True, None),
     ('informal', 'for informal words', '_informal', True, True),
     ('usage', 'for recommended terms', '_usage', None, None),
     ('code', 'for words common to code and/or mathematics', '_code', None, None),  # noqa: E501
