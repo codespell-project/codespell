@@ -3268,7 +3268,7 @@ baised->raised
 bakc->back
 bakcrefs->backrefs
 bakend->backend, baked,
-bakends->backends, bakes,
+bakends->backends
 bakup->backup
 bakups->backups
 bakward->backward
@@ -4599,6 +4599,7 @@ charactersistic->characteristic
 charactersistically->characteristically
 charactersistics->characteristics
 charactersm->characters
+characterss->characters
 characterstic->characteristic
 characterstically->characteristically
 characterstics->characteristics
@@ -4613,7 +4614,7 @@ characteteristics->characteristics
 characteters->characters
 charactetistic->characteristic
 charactetistics->characteristics
-charactetr->characters
+charactetr->character
 charactetrs->characters
 charactets->characters
 characther->character
