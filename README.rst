@@ -19,7 +19,7 @@ Useful links
 Requirements
 ------------
 
-Python 2.7 or above.
+Python 3.5 or above.
 
 Installation
 ------------
@@ -41,11 +41,11 @@ The ``-w`` flag will actually implement the changes recommended by codespell. No
 
     codespell -I FILE, --ignore-words=FILE
 
-The ``-I`` flag can be used to whitelist certain words that are in the ``codespell_lib/data/dictionary.txt``. The format of the whitelist file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said whitelist. **Important note:** The whitelist passed to ``-I`` is case-sensitive based on how it is listed in ``dictionary.txt``. ::
+The ``-I`` flag can be used for a list of certain words to allow that are in the codespell dictionaries. The format of the file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said list of allowed words. **Important note:** The list passed to ``-I`` is case-sensitive based on how it is listed in the codespell dictionaries. ::
 
     codespell -L word1,word2,word3,word4
 
-The ``-L`` flag can be used to whitelist certain words that are comma-separated placed immediately after it. ::
+The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it. ::
 
     codespell -S, --skip=
 
@@ -143,7 +143,7 @@ To stay current with codespell developments it is possible to build codespell fr
     pip install --user --upgrade git+https://github.com/codespell-project/codespell.git
 
 * It has been reported that after installing from ``pip``, codespell can't be located. Please check the $PATH variable to see if ``~/.local/bin`` is present. If it isn't then add it to your path.
-* If you decide to install via ``pip`` then be sure to remove any previously installed versions of codespell (via you OSs preferred app manager).
+* If you decide to install via ``pip`` then be sure to remove any previously installed versions of codespell (via your platform's preferred app manager).
 
 Updating the dictionary
 -----------------------

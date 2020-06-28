@@ -25,13 +25,14 @@ import fnmatch
 import os
 import re
 import sys
+import textwrap
 
 word_regex_def = u"[\\w\\-'’`]+"
 encodings = ('utf-8', 'iso-8859-1')
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
-VERSION = '1.17.0.dev0'
+VERSION = '2.0.dev0'
 
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
@@ -43,11 +44,18 @@ _builtin_dictionaries = (
     ('clear', 'for unambiguous errors', '', False, None),
     ('rare', 'for rare but valid words', '_rare', None, None),
     ('informal', 'for informal words', '_informal', True, True),
+    ('usage', 'for recommended terms', '_usage', None, None),
     ('code', 'for words common to code and/or mathematics', '_code', None, None),  # noqa: E501
     ('names', 'for valid proper names that might be typos', '_names', None, None),  # noqa: E501
     ('en-GB_to_en-US', 'for corrections from en-GB to en-US', '_en-GB_to_en-US', True, True),  # noqa: E501
 )
 _builtin_default = 'clear,rare'
+
+# docs say os.EX_USAGE et al. are only available on Unix systems, so to be safe
+# we protect and just use the values they are on macOS and Linux
+EX_OK = 0
+EX_USAGE = 64
+EX_DATAERR = 65
 
 # OPTIONS:
 #
@@ -162,12 +170,12 @@ class FileOpener(object):
         try:
             f = codecs.open(filename, 'r', encoding=encoding)
         except UnicodeDecodeError:
-            print('ERROR: Could not detect encoding: %s' % filename,
+            print("ERROR: Could not detect encoding: %s" % filename,
                   file=sys.stderr)
             raise
         except LookupError:
-            print('ERROR: %s -- Don\'t know how to handle encoding %s'
-                  % (filename, encoding), file=sys.stderr)
+            print("ERROR: Don't know how to handle encoding %s: %s"
+                  % (encoding, filename,), file=sys.stderr)
             raise
         else:
             lines = f.readlines()
@@ -182,12 +190,10 @@ class FileOpener(object):
                 f = codecs.open(filename, 'r', encoding=encodings[curr])
             except UnicodeDecodeError:
                 if not self.quiet_level & QuietLevels.ENCODING:
-                    print('WARNING: Decoding file %s' % filename,
-                          file=sys.stderr)
-                    print('WARNING: using encoding=%s failed. '
-                          % encodings[curr], file=sys.stderr)
+                    print("WARNING: Decoding file using encoding=%s failed: %s"
+                          % (encodings[curr], filename,), file=sys.stderr)
                     try:
-                        print('WARNING: Trying next encoding: %s'
+                        print("WARNING: Trying next encoding %s"
                               % encodings[curr + 1], file=sys.stderr)
                     except IndexError:
                         pass
@@ -207,8 +213,34 @@ class FileOpener(object):
 # -.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-
 
 
+# If someday this breaks, we can just switch to using RawTextHelpFormatter,
+# but it has the disadvantage of not wrapping our long lines.
+
+class NewlineHelpFormatter(argparse.HelpFormatter):
+    """Help formatter that preserves newlines and deals with lists."""
+
+    def _split_lines(self, text, width):
+        parts = text.split('\n')
+        out = list()
+        for pi, part in enumerate(parts):
+            # Eventually we could allow others...
+            indent_start = '- '
+            if part.startswith(indent_start):
+                offset = len(indent_start)
+            else:
+                offset = 0
+            part = part[offset:]
+            part = self._whitespace_matcher.sub(' ', part).strip()
+            parts = textwrap.wrap(part, width - offset)
+            parts = [' ' * offset + p for p in parts]
+            if offset:
+                parts[0] = indent_start + parts[0][offset:]
+            out.extend(parts)
+        return out
+
+
 def parse_options(args):
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(formatter_class=NewlineHelpFormatter)
 
     parser.set_defaults(colors=sys.stdout.isatty())
     parser.add_argument('--version', action='version', version=VERSION)
@@ -228,34 +260,33 @@ def parse_options(args):
 
     parser.add_argument('-D', '--dictionary',
                         action='append',
-                        help='Custom dictionary file that contains spelling '
+                        help='custom dictionary file that contains spelling '
                              'corrections. If this flag is not specified or '
                              'equals "-" then the default dictionary is used. '
                              'This option can be specified multiple times.')
-    builtin_opts = ', '.join(
-        '%r %s' % (d[0], d[1]) for d in _builtin_dictionaries)
+    builtin_opts = '\n- '.join([''] + [
+        '%r %s' % (d[0], d[1]) for d in _builtin_dictionaries])
     parser.add_argument('--builtin',
                         dest='builtin', default=_builtin_default,
                         metavar='BUILTIN-LIST',
-                        help='Comma-separated list of builtin dictionaries '
+                        help='comma-separated list of builtin dictionaries '
                         'to include (when "-D -" or no "-D" is passed). '
-                        'Current options are:\n%s. The default is '
-                        '"--builtin %s".'
-                        % (builtin_opts, _builtin_default))
+                        'Current options are:' + builtin_opts + '\n'
+                        'The default is %(default)r.')
     parser.add_argument('-I', '--ignore-words',
                         action='append', metavar='FILE',
-                        help='File that contains words which will be ignored '
+                        help='file that contains words which will be ignored '
                              'by codespell. File must contain 1 word per line.'
                              ' Words are case sensitive based on how they are '
                              'written in the dictionary file')
     parser.add_argument('-L', '--ignore-words-list',
                         action='append', metavar='WORDS',
-                        help='Comma separated list of words to be ignored '
+                        help='comma separated list of words to be ignored '
                              'by codespell. Words are case sensitive based on '
                              'how they are written in the dictionary file')
     parser.add_argument('-r', '--regex',
                         action='store', type=str,
-                        help='Regular expression which is used to find words. '
+                        help='regular expression which is used to find words. '
                              'By default any alphanumeric character, the '
                              'underscore, the hyphen, and the apostrophe is '
                              'used to build words. This option cannot be '
@@ -264,37 +295,47 @@ def parse_options(args):
                         action='store_true', default=False,
                         help='print summary of fixes')
 
+    parser.add_argument('--count',
+                        action='store_true', default=False,
+                        help='print the number of errors as the last line of '
+                             'stderr')
+
     parser.add_argument('-S', '--skip',
                         action='append',
-                        help='Comma-separated list of files to skip. It '
+                        help='comma-separated list of files to skip. It '
                              'accepts globs as well. E.g.: if you want '
                              'codespell to skip .eps and .txt files, '
                              'you\'d give "*.eps,*.txt" to this option.')
 
     parser.add_argument('-x', '--exclude-file', type=str, metavar='FILE',
-                        help='FILE with lines that should not be changed')
+                        help='FILE with lines that should not be checked for '
+                             'errors or changed')
 
     parser.add_argument('-i', '--interactive',
                         action='store', type=int, default=0,
-                        help='Set interactive mode when writing changes. '
-                             '0: no interactivity. 1: ask for confirmation. '
-                             '2 ask user to choose one fix when more than one '
-                             'is available. 3: both 1 and 2')
+                        help='set interactive mode when writing changes:\n'
+                             '- 0: no interactivity.\n'
+                             '- 1: ask for confirmation.\n'
+                             '- 2: ask user to choose one fix when more than one is available.\n'  # noqa: E501
+                             '- 3: both 1 and 2')
 
     parser.add_argument('-q', '--quiet-level',
-                        action='store', type=int, default=0,
-                        help='Bitmask that allows codespell to run quietly. '
-                             '0: the default, in which all messages are '
-                             'printed. 1: disable warnings about wrong '
-                             'encoding. 2: disable warnings about binary '
-                             'file. 4: shut down warnings about automatic '
-                             'fixes that were disabled in dictionary. '
-                             '8: don\'t print anything for non-automatic '
-                             'fixes. 16: don\'t print fixed files.')
+                        action='store', type=int, default=2,
+                        help='bitmask that allows suppressing messages:\n'
+                             '- 0: print all messages.\n'
+                             '- 1: disable warnings about wrong encoding.\n'
+                             '- 2: disable warnings about binary files.\n'
+                             '- 4: omit warnings about automatic fixes that were disabled in the dictionary.\n'  # noqa: E501
+                             '- 8: don\'t print anything for non-automatic fixes.\n'  # noqa: E501
+                             '- 16: don\'t print the list of fixed files.\n'
+                             'As usual with bitmasks, these levels can be '
+                             'combined; e.g. use 3 for levels 1+2, 7 for '
+                             '1+2+4, 23 for 1+2+4+16, etc. '
+                             'The default mask is %(default)s.')
 
     parser.add_argument('-e', '--hard-encoding-detection',
                         action='store_true', default=False,
-                        help='Use chardet to detect the encoding of each '
+                        help='use chardet to detect the encoding of each '
                              'file. This can slow down codespell, but is more '
                              'reliable in detecting encodings other than '
                              'utf-8, iso8859-1, and ascii.')
@@ -305,8 +346,8 @@ def parse_options(args):
 
     parser.add_argument('-H', '--check-hidden',
                         action='store_true', default=False,
-                        help='check hidden files (those starting with ".") as '
-                             'well')
+                        help='check hidden files and directories (those '
+                             'starting with ".") as well.')
     parser.add_argument('-A', '--after-context', type=int, metavar='LINES',
                         help='print LINES of trailing context')
     parser.add_argument('-B', '--before-context', type=int, metavar='LINES',
@@ -459,9 +500,6 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
         f = sys.stdin
         lines = f.readlines()
     else:
-        # ignore binary files
-        if not os.path.isfile(filename):
-            return 0
         if options.check_filenames:
             for word in word_regex.findall(filename):
                 lword = word.lower()
@@ -496,15 +534,19 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
                          'WRONGWORD': cwrongword,
                          'RIGHTWORD': crightword, 'REASON': creason})
 
+        # ignore irregular files
+        if not os.path.isfile(filename):
+            return bad_count
+
         text = is_text_file(filename)
         if not text:
             if not options.quiet_level & QuietLevels.BINARY_FILE:
-                print("WARNING: Binary file: %s " % filename, file=sys.stderr)
-            return 0
+                print("WARNING: Binary file: %s" % filename, file=sys.stderr)
+            return bad_count
         try:
             lines, encoding = file_opener.open(filename)
         except Exception:
-            return 0
+            return bad_count
 
     for i, line in enumerate(lines):
         if line in exclude_lines:
@@ -608,27 +650,27 @@ def main(*args):
     options, parser = parse_options(args)
 
     if options.regex and options.write_changes:
-        print('ERROR: --write-changes cannot be used together with '
-              '--regex')
+        print("ERROR: --write-changes cannot be used together with "
+              "--regex")
         parser.print_help()
-        return 1
+        return EX_USAGE
     word_regex = options.regex or word_regex_def
     try:
         word_regex = re.compile(word_regex)
     except re.error as err:
-        print('ERROR: invalid regular expression "%s" (%s)' %
+        print("ERROR: invalid regular expression \"%s\" (%s)" %
               (word_regex, err), file=sys.stderr)
         parser.print_help()
-        return 1
+        return EX_USAGE
 
     ignore_words_files = options.ignore_words or []
     ignore_words = set()
     for ignore_words_file in ignore_words_files:
         if not os.path.isfile(ignore_words_file):
-            print('ERROR: cannot find ignore-words file: %s' %
+            print("ERROR: cannot find ignore-words file: %s" %
                   ignore_words_file, file=sys.stderr)
             parser.print_help()
-            return 1
+            return EX_USAGE
         build_ignore_words(ignore_words_file, ignore_words)
 
     ignore_words_list = options.ignore_words_list or []
@@ -653,16 +695,16 @@ def main(*args):
                                          % (builtin[2],)))
                         break
                 else:
-                    print('ERROR: Unknown builtin dictionary: %s' % (u,),
+                    print("ERROR: Unknown builtin dictionary: %s" % (u,),
                           file=sys.stderr)
                     parser.print_help()
-                    return 1
+                    return EX_USAGE
         else:
             if not os.path.isfile(dictionary):
-                print('ERROR: cannot find dictionary file: %s' % dictionary,
+                print("ERROR: cannot find dictionary file: %s" % dictionary,
                       file=sys.stderr)
                 parser.print_help()
-                return 1
+                return EX_USAGE
             use_dictionaries.append(dictionary)
     misspellings = dict()
     for dictionary in use_dictionaries:
@@ -680,10 +722,10 @@ def main(*args):
     if options.context is not None:
         if (options.before_context is not None) or \
                 (options.after_context is not None):
-            print('ERROR: --context/-C cannot be used together with '
-                  '--context-before/-B or --context-after/-A')
+            print("ERROR: --context/-C cannot be used together with "
+                  "--context-before/-B or --context-after/-A")
             parser.print_help()
-            return 1
+            return EX_USAGE
         context_both = max(0, options.context)
         context = (context_both, context_both)
     elif (options.before_context is not None) or \
@@ -715,13 +757,16 @@ def main(*args):
                 if glob_match.match(root):  # skip (absolute) directories
                     del dirs[:]
                     continue
+                if is_hidden(root, options.check_hidden):  # dir itself hidden
+                    continue
                 for file_ in files:
+                    # ignore hidden files in directories
+                    if is_hidden(file_, options.check_hidden):
+                        continue
                     if glob_match.match(file_):  # skip files
                         continue
                     fname = os.path.join(root, file_)
                     if glob_match.match(fname):  # skip paths
-                        continue
-                    if not os.path.isfile(fname) or not os.path.getsize(fname):
                         continue
                     bad_count += parse_file(
                         fname, colors, summary, misspellings, exclude_lines,
@@ -738,4 +783,6 @@ def main(*args):
     if summary:
         print("\n-------8<-------\nSUMMARY:")
         print(summary)
-    return bad_count
+    if options.count:
+        print(bad_count, file=sys.stderr)
+    return EX_DATAERR if bad_count else EX_OK
