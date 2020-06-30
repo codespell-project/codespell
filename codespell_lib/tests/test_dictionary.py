@@ -175,6 +175,8 @@ def test_error_checking_in_aspell(err, rep, err_aspell, rep_aspell, match):
 allowed_dups = {
     ('dictionary.txt', 'dictionary_en-GB_to_en-US.txt'),
     ('dictionary.txt', 'dictionary_rare.txt'),
+    ('dictionary.txt', 'dictionary_usage.txt'),
+    ('dictionary_rare.txt', 'dictionary_usage.txt'),
 }
 
 
