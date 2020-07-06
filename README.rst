@@ -45,7 +45,7 @@ The ``-I`` flag can be used for a list of certain words to allow that are in the
 
     codespell -L word1,word2,word3,word4
 
-The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it. ::
+The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it.  **Important note:** The list passed to ``-L`` is case-sensitive based on how it is listed in the codespell dictionaries. ::
 
     codespell -S, --skip=
 
