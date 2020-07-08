@@ -455,6 +455,70 @@ def test_context(tmpdir, capsys):
     assert 'ERROR' in lines[0]
 
 
+def test_uri(tmpdir, capsys):
+    """Test ignore regex functionality for URIs."""
+    d = str(tmpdir)
+
+    # Ignoring text in path.
+    with open(op.join(d, 'uri.txt'), 'w') as f:
+        f.write('# Please see http://example.com/abandonned for info\n')
+    assert cs.main(f.name) == 0
+    # Same is a typo with ignores disabled.
+    assert cs.main(f.name, '--ignore-regex=^$') == 1
+
+    # Test a different protocol.
+    with open(op.join(d, 'uri.txt'), 'w') as f:
+        f.write('# Please see https://example.com/abandonned for info\n')
+    assert cs.main(f.name) == 0
+
+    # Ignoring text in path ending with /.
+    with open(op.join(d, 'uri.txt'), 'w') as f:
+        f.write('# Please see http://example.com/abandonned/ for info\n')
+    assert cs.main(f.name) == 0
+
+    # Ignoring text in domain.
+    with open(op.join(d, 'uri.txt'), 'w') as f:
+        f.write('# Please see http://abandonned.com/example for info\n')
+    assert cs.main(f.name) == 0
+
+    # Ignoring text in anchor.
+    with open(op.join(d, 'uri.txt'), 'w') as f:
+        f.write('# Please see http://example.com/ex#abandonned for info\n')
+    assert cs.main(f.name) == 0
+
+    # Typo because there's no protocol.
+    with open(op.join(d, 'uri.txt'), 'w') as f:
+        f.write('# Please see example.com/abandonned for info\n')
+    assert cs.main(f.name) == 1
+
+    # Typo because there aren't enough domain parts.
+    with open(op.join(d, 'uri.txt'), 'w') as f:
+        f.write('# Please see http://abandonned for info\n')
+    assert cs.main(f.name) == 1
+
+
+def test_email(tmpdir, capsys):
+    """Test ignore regex functionality for emails."""
+    d = str(tmpdir)
+
+    # Ignoring text in username.
+    with open(op.join(d, 'email.txt'), 'w') as f:
+        f.write('# Please contact abandonned@example.com for info\n')
+    assert cs.main(f.name) == 0
+    # Same is a typo with ignores disabled.
+    assert cs.main(f.name, '--ignore-regex=^$') == 1
+
+    # Ignoring text in domain.
+    with open(op.join(d, 'email.txt'), 'w') as f:
+        f.write('# Please contact example@abandonned.com for info\n')
+    assert cs.main(f.name) == 0
+
+    # Typo because there's no TLD for an email.
+    with open(op.join(d, 'email.txt'), 'w') as f:
+        f.write('# Please contact abandonned@example for info\n')
+    assert cs.main(f.name) == 1
+
+
 @contextlib.contextmanager
 def FakeStdin(text):
     if sys.version[0] == '2':

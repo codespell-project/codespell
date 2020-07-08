@@ -28,6 +28,8 @@ import sys
 import textwrap
 
 word_regex_def = u"[\\w\\-'’`]+"
+# Matches common URIs and email addresses, in that order.
+ignore_word_regex_def = r"(?:(?:https?|ftp|smtp):\/\/([\w-]+\.)+\w{2,}(?:/(?:[\w:/?#\[\]@!$&'()*+,;=.~-]*/?)*)?|[\w.%+-]+@[\w.-]+\.[a-z]{2,})"  # noqa: E501
 encodings = ('utf-8', 'iso-8859-1')
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
@@ -273,6 +275,11 @@ def parse_options(args):
                         'to include (when "-D -" or no "-D" is passed). '
                         'Current options are:' + builtin_opts + '\n'
                         'The default is %(default)r.')
+    parser.add_argument('--ignore-regex',
+                        action='store', type=str,
+                        help='regular expression which is used to find words '
+                             'to ignore. Matches URIs and emails by default. '
+                             'Can be disabled by setting to "^$".')
     parser.add_argument('-I', '--ignore-words',
                         action='append', metavar='FILE',
                         help='file that contains words which will be ignored '
@@ -489,8 +496,13 @@ def print_context(lines, index, context):
             print('%s %s' % ('>' if i == index else ':', lines[i].rstrip()))
 
 
+def extract_words(text, word_regex, ignore_word_regex):
+    interesting_text = ignore_word_regex.sub(' ', text)
+    return word_regex.findall(interesting_text)
+
+
 def parse_file(filename, colors, summary, misspellings, exclude_lines,
-               file_opener, word_regex, context, options):
+               file_opener, word_regex, ignore_word_regex, context, options):
     bad_count = 0
     lines = None
     changed = False
@@ -501,7 +513,7 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
         lines = f.readlines()
     else:
         if options.check_filenames:
-            for word in word_regex.findall(filename):
+            for word in extract_words(filename, word_regex, ignore_word_regex):
                 lword = word.lower()
                 if lword not in misspellings:
                     continue
@@ -555,7 +567,7 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
         fixed_words = set()
         asked_for = set()
 
-        for word in word_regex.findall(line):
+        for word in extract_words(line, word_regex, ignore_word_regex):
             lword = word.lower()
             if lword in misspellings:
                 context_shown = False
@@ -660,6 +672,14 @@ def main(*args):
     except re.error as err:
         print("ERROR: invalid regular expression \"%s\" (%s)" %
               (word_regex, err), file=sys.stderr)
+        parser.print_help()
+        return EX_USAGE
+    ignore_word_regex = options.ignore_regex or ignore_word_regex_def
+    try:
+        ignore_word_regex = re.compile(ignore_word_regex)
+    except re.error as err:
+        print("ERROR: invalid regular expression \"%s\" (%s)" %
+              (ignore_word_regex, err), file=sys.stderr)
         parser.print_help()
         return EX_USAGE
 
@@ -770,7 +790,8 @@ def main(*args):
                         continue
                     bad_count += parse_file(
                         fname, colors, summary, misspellings, exclude_lines,
-                        file_opener, word_regex, context, options)
+                        file_opener, word_regex, ignore_word_regex, context,
+                        options)
 
                 # skip (relative) directories
                 dirs[:] = [dir_ for dir_ in dirs if not glob_match.match(dir_)]
@@ -778,7 +799,7 @@ def main(*args):
         else:
             bad_count += parse_file(
                 filename, colors, summary, misspellings, exclude_lines,
-                file_opener, word_regex, context, options)
+                file_opener, word_regex, ignore_word_regex, context, options)
 
     if summary:
         print("\n-------8<-------\nSUMMARY:")
