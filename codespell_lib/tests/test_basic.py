@@ -455,6 +455,26 @@ def test_context(tmpdir, capsys):
     assert 'ERROR' in lines[0]
 
 
+def test_ignore_regex_flag(tmpdir, capsys):
+    """Test ignore regex flag functionality."""
+    d = str(tmpdir)
+
+    # Invalid regex.
+    code, stdout, _ = cs.main('--ignore-regex=(', std=True)
+    assert code == EX_USAGE
+    assert 'usage:' in stdout
+
+    # Empty regex matches everything.
+    with open(op.join(d, 'flag.txt'), 'w') as f:
+        f.write('# Please see http://example.com/abandonned for info\n')
+    assert cs.main(f.name, '--ignore-regex=^$') == 1
+
+    # Custom ignore.
+    with open(op.join(d, 'flag.txt'), 'w') as f:
+        f.write('abandonned\n')
+    assert cs.main(f.name, '--ignore-regex=abandonned') == 0
+
+
 def test_uri(tmpdir, capsys):
     """Test ignore regex functionality for URIs."""
     d = str(tmpdir)
@@ -463,8 +483,6 @@ def test_uri(tmpdir, capsys):
     with open(op.join(d, 'uri.txt'), 'w') as f:
         f.write('# Please see http://example.com/abandonned for info\n')
     assert cs.main(f.name) == 0
-    # Same is a typo with ignores disabled.
-    assert cs.main(f.name, '--ignore-regex=^$') == 1
 
     # Test a different protocol.
     with open(op.join(d, 'uri.txt'), 'w') as f:
@@ -505,8 +523,6 @@ def test_email(tmpdir, capsys):
     with open(op.join(d, 'email.txt'), 'w') as f:
         f.write('# Please contact abandonned@example.com for info\n')
     assert cs.main(f.name) == 0
-    # Same is a typo with ignores disabled.
-    assert cs.main(f.name, '--ignore-regex=^$') == 1
 
     # Ignoring text in domain.
     with open(op.join(d, 'email.txt'), 'w') as f:
