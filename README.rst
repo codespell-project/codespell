@@ -3,7 +3,9 @@ codespell
 
 Fix common misspellings in text files. It's designed primarily for checking
 misspelled words in source code, but it can be used with other files as well.
-It is not a general spell checker.
+It does not check for word membership in a complete dictionary, but instead
+looks for a set of common misspellings. Therefore it might catch errors like
+"adn", but it will not catch "adnasdfasdf".
 
 Useful links
 ------------
