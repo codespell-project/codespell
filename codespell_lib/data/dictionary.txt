@@ -166,15 +166,58 @@ absoute->absolute
 absoutely->absolutely
 absoutly->absolutely
 abstact->abstract
+abstacted->abstracted
+abstacter->abstracter
+abstacting->abstracting
 abstaction->abstraction
 abstactions->abstractions
 abstactly->abstractly
+abstactness->abstractness
+abstactor->abstractor
+abstacts->abstracts
 abstanence->abstinence
+abstrac->abstract
+abstraced->abstracted
+abstracer->abstracter
+abstracing->abstracting
+abstracion->abstraction
+abstracions->abstractions
+abstracly->abstractly
+abstracness->abstractness
+abstracor->abstractor
+abstracs->abstracts
+abstrat->abstract
+abstrated->abstracted
+abstrater->abstracter
+abstrating->abstracting
 abstration->abstraction
+abstrations->abstractions
+abstratly->abstractly
+abstratness->abstractness
+abstrator->abstractor
+abstrats->abstracts
 abstrct->abstract
+abstrcted->abstracted
+abstrcter->abstracter
+abstrcting->abstracting
+abstrction->abstraction
+abstrctions->abstractions
+abstrctly->abstractly
+abstrctness->abstractness
+abstrctor->abstractor
+abstrcts->abstracts
 absulute->absolute
 absymal->abysmal
 abtract->abstract
+abtracted->abstracted
+abtracter->abstracter
+abtracting->abstracting
+abtraction->abstraction
+abtractions->abstractions
+abtractly->abstractly
+abtractness->abstractness
+abtractor->abstractor
+abtracts->abstracts
 abudance->abundance
 abudances->abundances
 abundacies->abundances
@@ -2292,7 +2335,16 @@ arund->around
 asbolute->absolute
 asbolutelly->absolutely
 asbolutely->absolutely
+asbtract->abstract
+asbtracted->abstracted
+asbtracter->abstracter
+asbtracting->abstracting
 asbtraction->abstraction
+asbtractions->abstractions
+asbtractly->abstractly
+asbtractness->abstractness
+asbtractor->abstractor
+asbtracts->abstracts
 asceding->ascending
 asend->ascend, as end,
 asendance->ascendance
@@ -3097,6 +3149,8 @@ avaiblable->available
 avaible->available
 avaiiability->availability
 avaiiable->available
+avaiibility->availability
+avaiible->available
 avaiilable->available
 availaable->available
 availabable->available
@@ -3317,6 +3371,16 @@ basiclly->basically
 basicly->basically
 bassic->basic
 bassically->basically
+bastract->abstract
+bastracted->abstracted
+bastracter->abstracter
+bastracting->abstracting
+bastraction->abstraction
+bastractions->abstractions
+bastractly->abstractly
+bastractness->abstractness
+bastractor->abstractor
+bastracts->abstracts
 bateries->batteries
 batery->battery
 battaries->batteries
@@ -4458,6 +4522,12 @@ centuty->century
 cerate->create
 ceratin->certain, keratin,
 cereates->creates
+cerification->certification, verification,
+cerifications->certifications, verifications,
+cerified->certified, verified,
+cerifies->certifies, verifies,
+cerify->certify, verify,
+cerifying->certifying, verifying,
 cerimonial->ceremonial
 cerimonies->ceremonies
 cerimonious->ceremonious
@@ -4937,6 +5007,9 @@ cliente->client, clientele,
 clientelle->clientele
 clik->click
 cliks->clicks
+climer->climber
+climers->climbers
+climing->climbing
 clincial->clinical
 clinets->clients
 clinicaly->clinically
@@ -7422,10 +7495,17 @@ dashs->dashes
 dasy->daisy
 data-strcuture->data-structure
 data-strcutures->data-structures
+databaase->database
+databaases->databases
 databae->database
 databas->database
+databsae->database
+databsaes->databases
 databse->database
+databses->databases
 datadsir->datadir
+dataet->dataset
+dataets->datasets
 datas->data
 datastrcuture->datastructure
 datastrcutures->datastructures
@@ -7456,10 +7536,14 @@ datatyoe->datatype
 datatyoes->datatypes
 datatytpe->datatype
 datatytpes->datatypes
+datbase->database
+datbases->databases
 datea->date, data,
 datecreatedd->datecreated
 datection->detection
 datee->date
+datset->dataset
+datsets->datasets
 daty->data, date,
 daugher->daughter
 DCHP->DHCP
@@ -9732,6 +9816,8 @@ drawm->drawn
 drawng->drawing
 dreasm->dreams
 dreawn->drawn
+drescription->description
+drescriptions->descriptions
 driagram->diagram
 driagrammed->diagrammed
 driagramming->diagramming
@@ -11171,7 +11257,10 @@ exeptions->exceptions
 exeqution->execution
 exerbate->exacerbate
 exerbated->exacerbated
-exerciese->exercises
+exerciese->exercise
+exerciesed->exercised
+exercieses->exercises
+exerciesing->exercising
 exercize->exercise
 exerpt->excerpt
 exerpts->excerpts
@@ -12072,6 +12161,8 @@ failuer->failure
 failues->failures
 faireness->fairness
 fairoh->pharaoh
+faiway->fairway
+faiways->fairways
 falg->flag
 falgs->flags
 falied->failed
@@ -14761,6 +14852,10 @@ influencin->influencing
 influented->influenced
 infoemation->information
 infomation->information
+infomational->informational
+infomed->informed
+infomer->informer
+infoms->informs
 infor->info
 inforamtion->information
 inforation->information
@@ -15685,7 +15780,10 @@ ist->is, it, its, it's, list,
 istalling->installing
 istance->instance
 istead->instead
-istener->listeners
+istened->listened
+istener->listener
+isteners->listeners
+istening->listening
 ists->its, lists,
 isue->issue
 iteartor->iterator
@@ -20858,26 +20956,48 @@ pthred->pthread
 pthreds->pthreads
 ptorions->portions
 ptrss->press
+pubilsh->publish
+pubilshed->published
 pubilsher->publisher
+pubilshers->publishers
+pubilshing->publishing
+pubish->publish
+pubished->published
 pubisher->publisher
-publc->public
+pubishers->publishers
+pubishing->publishing
+publc->public, pubic,
 publcation->publication
 publcise->publicise
 publcize->publicize
 publiaher->publisher
 publically->publicly
 publicaly->publicly
+publich->publish, public,
+publiched->published
 publicher->publisher
+publichers->publishers
+publiches->publishes
+publiching->publishing
+publihsed->published
 publihser->publisher
+publised->published
+publisehd->published
 publisehr->publisher
+publisehrs->publishers
 publiser->publisher
+publisers->publishers
+publisged->published
 publisger->publisher
+publisgers->publishers
 publishd->published
 publisheed->published
 publisherr->publisher
 publishher->publisher
 publishor->publisher
+publishr->publisher
 publishre->publisher
+publishrs->publishers
 publissher->publisher
 publlisher->publisher
 publsh->publish
@@ -22746,7 +22866,7 @@ resorces->resources
 resore->restore
 resouce->resource
 resouces->resources
-resoultion->resolutions
+resoultion->resolution
 resoultions->resolutions
 resourceype->resourcetype
 resoure->resource
@@ -23250,6 +23370,8 @@ satandards->standards
 satelite->satellite
 satelites->satellites
 satelitte->satellite
+satement->statement
+satements->statements
 saterday->Saturday
 saterdays->Saturdays
 satified->satisfied
@@ -23419,6 +23541,12 @@ sctioned->sectioned, suctioned,
 sctioning->sectioning, suctioning,
 sctions->sections, suctions,
 scuccessully->successfully
+sculpter->sculptor, sculpture,
+sculpters->sculptors, sculptures,
+scupt->sculpt
+scupted->sculpted
+scupting->sculpting
+scupture->sculpture
 scuptures->sculptures
 seach->search
 seached->searched
@@ -24467,6 +24595,7 @@ specificatin->specification
 specificaton->specification
 specificed->specified
 specifices->specifies
+specifich->specify, specific,
 specificially->specifically
 specificiation->specification
 specificiations->specifications
@@ -26814,6 +26943,16 @@ trascation->transaction
 trasfer->transfer
 trasferred->transferred
 trasfers->transfers
+trasform->transform
+trasformable->transformable
+trasformation->transformation
+trasformations->transformations
+trasformative->transformative
+trasformed->transformed
+trasformer->transformer
+trasformers->transformers
+trasforming->transforming
+trasforms->transforms
 traslate->translate
 traslated->translated
 traslates->translates
@@ -27343,6 +27482,7 @@ unforseen->unforeseen
 unforttunately->unfortunately
 unfortuante->unfortunate
 unfortuantely->unfortunately
+unfortunaltely->unfortunately
 unfortunatelly->unfortunately
 unfortunatetly->unfortunately
 unfortunatley->unfortunately
