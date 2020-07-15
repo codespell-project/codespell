@@ -39,7 +39,7 @@ install:
 script:
     - codespell --help
     - make check-dictionary
-    - codespell --check-filenames --skip=".git/*,*.pyc,codespell_lib/tests/test_basic.py,codespell_lib/data/*,example/code.c"
+    - codespell --check-filenames --skip="./.git/*,*.pyc,./codespell_lib/tests/test_basic.py,./codespell_lib/data/*,./example/code.c"
     # this file has an error
     - "! codespell codespell_lib/tests/test_basic.py"
     - flake8
