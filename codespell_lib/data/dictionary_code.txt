@@ -1,10 +1,11 @@
 amin->main
-cas->case
+cas->case, cast,
 clas->class
 cmo->com
 define'd->defined
 dof->of, doff,
 dont->don't
+errorstring->error string
 iff->if
 ith->with
 movei->movie
