@@ -8022,6 +8022,8 @@ definate->definite
 definately->definitely
 defination->definition
 definations->definitions
+defintion->definition
+defintions->definitions
 definatly->definitely
 defind->defined, defund,
 definded->defined, defunded,
@@ -22991,6 +22993,7 @@ reqeusts->requests
 reqiest->request
 reqiure->require
 requeried->required
+requried->required
 reques->request
 requeset->request, requisite,
 requesr->request
