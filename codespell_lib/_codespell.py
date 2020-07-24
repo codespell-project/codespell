@@ -28,8 +28,6 @@ import sys
 import textwrap
 
 word_regex_def = u"[\\w\\-'’`]+"
-# Matches common URIs and email addresses, in that order.
-ignore_word_regex_def = r"(?:(?:https?|ftp|smtp):\/\/([\w-]+\.)+\w{2,}(?:/(?:[\w:/?#\[\]@!$&'()*+,;=.~-]*/?)*)?|[\w.%+-]+@[\w.-]+\.[a-z]{2,})"  # noqa: E501
 encodings = ('utf-8', 'iso-8859-1')
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
@@ -277,9 +275,11 @@ def parse_options(args):
                         'The default is %(default)r.')
     parser.add_argument('--ignore-regex',
                         action='store', type=str,
-                        help='regular expression which is used to find words '
-                             'to ignore. Matches URIs and emails by default. '
-                             'Can be disabled by setting to "^$".')
+                        help='regular expression which is used to find '
+                             'patterns to ignore by treating as whitespace. '
+                             'When writing regexes, consider ensuring there '
+                             'is boundary non-word chars, e.g., '
+                             '"\\Wmatch\\W". Defaults to empty/disabled.')
     parser.add_argument('-I', '--ignore-words',
                         action='append', metavar='FILE',
                         help='file that contains words which will be ignored '
@@ -497,8 +497,9 @@ def print_context(lines, index, context):
 
 
 def extract_words(text, word_regex, ignore_word_regex):
-    interesting_text = ignore_word_regex.sub(' ', text)
-    return word_regex.findall(interesting_text)
+    if ignore_word_regex:
+        text = ignore_word_regex.sub(' ', text)
+    return word_regex.findall(text)
 
 
 def parse_file(filename, colors, summary, misspellings, exclude_lines,
@@ -674,14 +675,17 @@ def main(*args):
               (word_regex, err), file=sys.stderr)
         parser.print_help()
         return EX_USAGE
-    ignore_word_regex = options.ignore_regex or ignore_word_regex_def
-    try:
-        ignore_word_regex = re.compile(ignore_word_regex)
-    except re.error as err:
-        print("ERROR: invalid regular expression \"%s\" (%s)" %
-              (ignore_word_regex, err), file=sys.stderr)
-        parser.print_help()
-        return EX_USAGE
+
+    if options.ignore_regex:
+        try:
+            ignore_word_regex = re.compile(options.ignore_regex)
+        except re.error as err:
+            print("ERROR: invalid regular expression \"%s\" (%s)" %
+                  (options.ignore_regex, err), file=sys.stderr)
+            parser.print_help()
+            return EX_USAGE
+    else:
+        ignore_word_regex = None
 
     ignore_words_files = options.ignore_words or []
     ignore_words = set()
