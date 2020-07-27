@@ -2,6 +2,7 @@
 
 from __future__ import print_function
 
+import argparse
 import contextlib
 import inspect
 import os
@@ -466,6 +467,8 @@ def test_ignore_regex_flag(tmpdir, capsys):
 
     with open(op.join(d, 'flag.txt'), 'w') as f:
         f.write('# Please see http://example.com/abandonned for info\n')
+    # Test file has 1 invalid entry, and it's not ignored by default.
+    assert cs.main(f.name) == 1
     # Non-matching regex results in nothing being ignored.
     assert cs.main(f.name, '--ignore-regex=^$') == 1
     # A word can be ignored.

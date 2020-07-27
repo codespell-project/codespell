@@ -671,7 +671,7 @@ def main(*args):
     try:
         word_regex = re.compile(word_regex)
     except re.error as err:
-        print("ERROR: invalid regular expression \"%s\" (%s)" %
+        print("ERROR: invalid --regex \"%s\" (%s)" %
               (word_regex, err), file=sys.stderr)
         parser.print_help()
         return EX_USAGE
@@ -680,7 +680,7 @@ def main(*args):
         try:
             ignore_word_regex = re.compile(options.ignore_regex)
         except re.error as err:
-            print("ERROR: invalid regular expression \"%s\" (%s)" %
+            print("ERROR: invalid --ignore-regex \"%s\" (%s)" %
                   (options.ignore_regex, err), file=sys.stderr)
             parser.print_help()
             return EX_USAGE
