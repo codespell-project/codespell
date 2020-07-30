@@ -10266,12 +10266,17 @@ enclude->include
 encluding->including
 encocde->encode
 encocded->encoded
+encocdes->encodes
+encocding->encoding
+encocdings->encodings
 enconde->encode
 enconded->encoded
+encondes->encodes
 enconding->encoding
 encondings->encodings
-encorde->encode
+encorde->encode, encore,
 encorded->encoded
+encordes->encodes
 encording->encoding
 encordings->encodings
 encorporating->incorporating
@@ -10396,6 +10401,7 @@ ennpoint->endpoint
 enntries->entries
 enocde->encode
 enocded->encoded
+enocdes->encodes
 enocding->encoding
 enocdings->encodings
 enogh->enough
