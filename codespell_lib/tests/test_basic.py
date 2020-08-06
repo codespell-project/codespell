@@ -468,6 +468,9 @@ def test_ignore_regex_flag(tmpdir, capsys):
         f.write('# Please see http://example.com/abandonned for info\n')
     # Test file has 1 invalid entry, and it's not ignored by default.
     assert cs.main(f.name) == 1
+    # An empty regex is the default value, and nothing is ignored.
+    assert cs.main(f.name, '--ignore-regex=') == 1
+    assert cs.main(f.name, '--ignore-regex=""') == 1
     # Non-matching regex results in nothing being ignored.
     assert cs.main(f.name, '--ignore-regex=^$') == 1
     # A word can be ignored.
