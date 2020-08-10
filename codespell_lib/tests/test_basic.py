@@ -478,6 +478,15 @@ def test_ignore_regex_flag(tmpdir, capsys):
     # Ignoring part of the word can result in odd behavior.
     assert cs.main(f.name, '--ignore-regex=nn') == 0
 
+    with open(op.join(d, 'flag.txt'), 'w') as f:
+        f.write('abandonned donn\n')
+    # Test file has 2 invalid entries.
+    assert cs.main(f.name) == 2
+    # Ignoring donn breaks them both.
+    assert cs.main(f.name, '--ignore-regex=donn') == 0
+    # Adding word breaks causes only one to be ignored.
+    assert cs.main(f.name, r'--ignore-regex=\Wdonn\W') == 1
+
 
 @contextlib.contextmanager
 def FakeStdin(text):

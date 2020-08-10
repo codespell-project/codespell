@@ -278,7 +278,7 @@ def parse_options(args):
                         help='regular expression which is used to find '
                              'patterns to ignore by treating as whitespace. '
                              'When writing regexes, consider ensuring there '
-                             'is boundary non-word chars, e.g., '
+                             'are boundary non-word chars, e.g., '
                              '"\\Wmatch\\W". Defaults to empty/disabled.')
     parser.add_argument('-I', '--ignore-words',
                         action='append', metavar='FILE',
