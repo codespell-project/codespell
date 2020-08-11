@@ -45,7 +45,6 @@ digitise->digitize
 digitising->digitizing
 emphasised->emphasized
 endeavour->endeavor
-exercise->exercize
 finalise->finalize
 flavour->flavor
 flavours->flavors
@@ -55,7 +54,6 @@ generalise->generalize
 generalised->generalized
 generalises->generalizes
 honour->honor
-improvisation->improvization
 initialisation->initialization
 initialisations->initializations
 initialise->initialize
@@ -99,7 +97,6 @@ optimisation->optimization
 optimisations->optimizations
 optimised->optimized
 optimiser->optimizer
-optimization->optimization
 organisation->organization
 organisations->organizations
 organise->organize
@@ -109,7 +106,7 @@ paravirtualisation->paravirtualization
 paravirtualise->paravirtualize
 paravirtualised->paravirtualized
 plagiarise->plagiarize
-practise->practize
+practise->practice
 prioritise->prioritize
 prioritising->prioritizing
 programme->program
