@@ -567,6 +567,7 @@ acquited->acquitted
 acqure->acquire
 acqured->acquired
 acqures->acquires
+acquries->acquires
 acquring->acquiring
 acrage->acreage
 acrued->accured
@@ -2574,6 +2575,7 @@ assurred->assured
 assymetric->asymmetric
 assymetrical->asymmetrical
 assymetries->asymmetries
+assymetry->asymmetry
 assymmetric->asymmetric
 assymmetrical->asymmetrical
 asterices->asterisks
@@ -6537,6 +6539,7 @@ construktor->constructor
 construnctor->constructor
 construrtors->constructors
 construt->construct
+construtced->constructed
 construter->constructor
 construters->constructors
 constrution->construction
@@ -7503,6 +7506,7 @@ dacquiri->daiquiri
 dadlock->deadlock
 daed->dead
 dael->deal, dial, dahl,
+daemonified->daemonized
 dafault->default
 dafaults->defaults
 dafaut->default
@@ -12326,6 +12330,7 @@ fauilure->failure
 fauilures->failures
 faund->found, fund,
 favoutrable->favourable
+favuourites->favourites
 faymus->famous
 fcound->found
 feasabile->feasible
@@ -12557,6 +12562,7 @@ flewant->fluent
 flexability->flexibility
 flexable->flexible
 flexibel->flexible
+flexibele->flexible
 flexibilty->flexibility
 flext->flex
 flie->file
@@ -14151,6 +14157,7 @@ identifeir->identifier
 identifeirs->identifiers
 identifer->identifier
 identifers->identifiers
+identificable->identifiable
 identifictaion->identification
 identifieer->identifier
 identifing->identifying
@@ -17228,6 +17235,7 @@ mintors->mentors, monitors,
 minum->minimum
 minumum->minimum
 minuscle->minuscule
+minusculy->minusculely
 minuts->minutes
 miplementation->implementation
 mirconesia->micronesia
@@ -26066,6 +26074,7 @@ syatems->systems
 sybsystem->subsystem
 sybsystems->subsystems
 sychronisation->synchronisation
+sychronise->synchronise
 sychronisly->synchronously
 sychronization->synchronization
 sychronmode->synchronmode
@@ -26818,6 +26827,8 @@ timeput->timeout, time put,
 timeputs->timeouts, time puts,
 timere->timer
 timeschedule->time schedule
+timespanp->timespan
+timespanps->timespans
 timestan->timespan
 timestanp->timespan
 timestanps->timespans
