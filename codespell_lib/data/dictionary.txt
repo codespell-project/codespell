@@ -2032,7 +2032,7 @@ aquiring->acquiring
 aquisition->acquisition
 aquit->acquit
 aquitted->acquitted
-aquries->acquries
+aquries->acquires
 arameters->parameters
 aranged->arranged
 arangement->arrangement
@@ -2597,7 +2597,7 @@ asychronously->asynchronously
 asycn->async
 asycronous->asynchronous
 asymetic->asymmetric
-asymetri->assymetry
+asymetri->asymmetry
 asymetric->asymmetric
 asymetrical->asymmetrical
 asymetricaly->asymmetrically
@@ -6513,7 +6513,7 @@ constrcuts->constructs
 constriants->constraints
 constrollers->controllers
 construc->construct
-construced->construtced
+construced->constructed
 construces->constructs
 construcing->constructing
 construcion->construction
@@ -9785,7 +9785,7 @@ dordered->ordered
 dorment->dormant
 dorp->drop
 dosen't->doesn't
-dosen->doesn
+dosen->doesn't, dozen,
 dosen;t->doesn't
 dosens->dozens
 dosent'->doesn't
@@ -12239,7 +12239,7 @@ facorites->favorites
 facors->favors, fakers,
 facour->favour, favor,
 facourite->favourite, favorite,
-facourites->favuourites, favorites,
+facourites->favourites, favorites,
 facours->favours, favors,
 factization->factorization
 factorizaiton->factorization
@@ -12556,7 +12556,7 @@ Flemmish->Flemish
 flewant->fluent
 flexability->flexibility
 flexable->flexible
-flexibel->flexibele
+flexibel->flexible
 flexibilty->flexibility
 flext->flex
 flie->file
@@ -14141,7 +14141,7 @@ idenfifier->identifier
 idenitify->identify
 identation->indentation
 identcial->identical
-identiable->identificable
+identiable->identifiable
 idential->identical
 identicial->identical
 identidier->identifier
@@ -17210,7 +17210,7 @@ minimzing->minimizing
 mininal->minimal
 mininum->minimum
 miniscule->minuscule
-miniscully->minusculy
+miniscully->minusculely
 ministery->ministry, minister,
 miniture->miniature
 minium->minimum
@@ -19625,7 +19625,7 @@ peirod->period
 peirodical->periodical
 peirodicals->periodicals
 peirods->periods
-Peloponnes->Peloponnesus
+Peloponnes->Peloponnesus, Pelopennese,
 penalities->penalties
 penality->penalty
 penatly->penalty
@@ -19770,7 +19770,6 @@ permuation->permutation
 permuations->permutations
 permutaion->permutation
 permutaions->permutations
-permuter->permutor
 peroendicular->perpendicular
 perogative->prerogative
 peroid->period
@@ -23009,7 +23008,7 @@ resgister->register
 resgisters->registers
 residental->residential
 resierfs->reiserfs
-resignement->resignment
+resignement->resignment, reassignment,
 resistable->resistible
 resistence->resistance
 resistent->resistant
@@ -26820,8 +26819,8 @@ timeputs->timeouts, time puts,
 timere->timer
 timeschedule->time schedule
 timestan->timespan
-timestanp->timespanp
-timestanps->timespanps
+timestanp->timespan
+timestanps->timespans
 timestans->timespans
 timestemp->timestamp
 timestemps->timestamps
