@@ -118,8 +118,8 @@ def _check_err_rep(err, rep, in_aspell, fname):
         _check_aspell(
             r, 'error %s: correction %r' % (err, r), in_aspell[1], fname)
     # aspell dictionary is case sensitive, so pass the original case into there
-    # we could ignore the case, but that would miss things like days of the week
-    # which we want to be correct
+    # we could ignore the case, but that would miss things like days of the
+    # week which we want to be correct
     reps = [r.lower() for r in reps]
     assert len(set(reps)) == len(reps), ('error %s: corrections "%s" are not '
                                          '(lower-case) unique' % (err, rep))
