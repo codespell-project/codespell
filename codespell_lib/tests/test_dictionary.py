@@ -235,12 +235,13 @@ def test_dictionary_looping(fname, in_aspell):
         # 3. check corrections in other dicts against this dict (lower)
         pair = (other_fname, short_fname)
         if pair not in allowed_dups:
-            for err in other_err_dict:
-                for r in other_err_dict[err]:
-                    assert r not in this_err_dict, \
-                        ('error %s: correction %s from dictionary %s is an '
-                         'error itself in dictionary %s'
-                         % (err, r, other_fname, short_fname))
+            if pair not in allowed_contradictions:
+                for err in other_err_dict:
+                    for r in other_err_dict[err]:
+                        assert r not in this_err_dict, \
+                            ('error %s: correction %s from dictionary %s'
+                             'is an error itself in dictionary %s'
+                             % (err, r, other_fname, short_fname))
         assert pair not in global_pairs
         global_pairs.add(pair)
     global_err_dicts[short_fname] = this_err_dict
