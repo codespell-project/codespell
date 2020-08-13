@@ -48,6 +48,7 @@ _builtin_dictionaries = (
     ('code', 'for words common to code and/or mathematics', '_code', None, None),  # noqa: E501
     ('names', 'for valid proper names that might be typos', '_names', None, None),  # noqa: E501
     ('en-GB_to_en-US', 'for corrections from en-GB to en-US', '_en-GB_to_en-US', True, True),  # noqa: E501
+    ('en-US_to_en-GB', 'for corrections from en-US to en-GB', '_en-US_to_en-GB', True, True),  # noqa: E501
 )
 _builtin_default = 'clear,rare'
 
