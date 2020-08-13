@@ -26829,8 +26829,8 @@ timeschedule->time schedule
 timespanp->timespan
 timespanps->timespans
 timestan->timespan
-timestanp->timespan
-timestanps->timespans
+timestanp->timestamp, timespan,
+timestanps->timestamps, timespans,
 timestans->timespans
 timestemp->timestamp
 timestemps->timestamps
