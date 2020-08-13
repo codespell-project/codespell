@@ -180,6 +180,10 @@ allowed_dups = {
     ('dictionary_rare.txt', 'dictionary_usage.txt'),
 }
 
+allowed_contradictions = {
+    ('dictionary_en-US_to_en-GB.txt', 'dictionary_en-GB_to_en-US.txt'),
+}
+
 
 @fname_params
 @pytest.mark.dependency(name='dictionary loop')
@@ -215,15 +219,17 @@ def test_dictionary_looping(fname, in_aspell):
         # 2. check corrections in this dict against other dicts (upper)
         pair = (short_fname, other_fname)
         if pair not in allowed_dups:
-            for err in this_err_dict:
-                assert err not in other_err_dict, \
-                    ('error %r in dictionary %s already exists in dictionary '
-                     '%s' % (err, short_fname, other_fname))
-                for r in this_err_dict[err]:
-                    assert r not in other_err_dict, \
-                        ('error %s: correction %s from dictionary %s is an '
-                         'error itself in dictionary %s'
-                         % (err, r, short_fname, other_fname))
+            if pair not in allowed_contradictions:
+                for err in this_err_dict:
+                    assert err not in other_err_dict, \
+                        ('error %r in dictionary %s'
+                         'already exists in dictionary '
+                         '%s' % (err, short_fname, other_fname))
+                    for r in this_err_dict[err]:
+                        assert r not in other_err_dict, \
+                            ('error %s: correction %s from dictionary %s'
+                             'is an error itself in dictionary %s'
+                             % (err, r, short_fname, other_fname))
         assert pair not in global_pairs
         global_pairs.add(pair)
         # 3. check corrections in other dicts against this dict (lower)
