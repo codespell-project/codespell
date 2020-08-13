@@ -28,7 +28,8 @@ check-dictionaries: $(eval SHELL:=/bin/bash)
 	@if command -v pytest > /dev/null; then \
 		pytest codespell_lib/tests/test_dictionary.py; \
 	fi
-	diff <(awk -F"->" '{print $2 "->" $1}' codespell_lib/data/dictionary_en-GB_to_en-US.txt) codespell_lib/data/dictionary_en-US_to_en-GB.txt
+	@diff <(awk -F"->" '{print $$2 "->" $$1}' codespell_lib/data/dictionary_en-GB_to_en-US.txt | LC_ALL=C sort -f -b -u) codespell_lib/data/dictionary_en-US_to_en-GB.txt\
+		|| echo "Found differences between dictionary_en-GB_to_en-US and dictionary_en-US_to_en-GB"
 
 sort-dictionaries:
 	@for dictionary in ${DICTIONARIES}; do \
