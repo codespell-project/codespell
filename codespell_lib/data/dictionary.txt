@@ -570,7 +570,7 @@ acqures->acquires
 acquries->acquires
 acquring->acquiring
 acrage->acreage
-acrued->accured
+acrued->accrued, accured,
 acses->cases, access,
 acssumed->assumed
 actally->actually
@@ -738,7 +738,7 @@ adivsories->advisories
 adivsoriy->advisory, advisories,
 adivsoriyes->advisories
 adivsory->advisory
-adjacentcy->adjacence
+adjacentcy->adjacency, adjacence,
 adjacentsy->adjacency
 adjactend->adjacent
 adjancent->adjacent
@@ -861,7 +861,7 @@ afficionados->aficionados
 affilate->affiliate
 affilates->affiliates
 affilliate->affiliate
-affinitied->affinitized
+affinitied->affinities, affinitized,
 affinitze->affinitize
 affintize->affinitize
 affitnity->affinity
