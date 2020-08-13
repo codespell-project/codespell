@@ -8099,6 +8099,7 @@ delcared->declared
 delcares->declares
 delclaration->declaration
 delection->detection, deletion, selection,
+delections->detections, deletions, selections,
 delele->delete
 delelte->delete
 delemeter->delimiter
@@ -23751,7 +23752,9 @@ seige->siege
 seing->seeing
 seinor->senior
 seires->series
+sekect->select
 sekected->selected
+sekects->selects
 selcetion->selection
 selctable->selectable
 selctables->selectables
@@ -23778,6 +23781,7 @@ selektions->selections
 selektor->selector
 seleted->selected, deleted,
 seletion->selection, deletion,
+seletions->selections, deletions,
 self-comparisson->self-comparison
 self-contianed->self-contained
 self-referencial->self-referential
