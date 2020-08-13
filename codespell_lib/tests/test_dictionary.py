@@ -182,6 +182,7 @@ allowed_dups = {
 
 allowed_contradictions = {
     ('dictionary_en-US_to_en-GB.txt', 'dictionary_en-GB_to_en-US.txt'),
+    ('dictionary_en-GB_to_en-US.txt', 'dictionary_en-US_to_en-GB.txt'),
 }
 
 
