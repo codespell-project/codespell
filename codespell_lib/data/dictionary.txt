@@ -7055,10 +7055,6 @@ correnspondent->correspondent
 corrensponding->corresponding
 corrensponds->corresponds
 corrent->correct, current,
-correspomd->correspond
-correspomded->corresponded
-correspomdent->correspondent
-correspomding->corresponding
 correograph->choreograph
 correponding->corresponding
 correponds->corresponds
@@ -7075,6 +7071,10 @@ correspnding->corresponding
 correspodence->correspondence
 correspoding->corresponding
 correspoinding->corresponding
+correspomd->correspond
+correspomded->corresponded
+correspomdent->correspondent
+correspomding->corresponding
 correspondance->correspondence
 correspondances->correspondences
 correspondant->correspondent
@@ -7485,6 +7485,7 @@ Cyrllic->Cyrillic
 cyrpto->crypto
 cyrrent->current
 cyrrilic->Cyrillic
+cyrstal->crystal
 cyrto->crypto
 cywgin->Cygwin
 daa->data
