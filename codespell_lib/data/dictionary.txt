@@ -12991,12 +12991,12 @@ fulfiled->fulfilled
 fullfil->fulfil, fulfill,
 fullfiled->fulfilled
 fullfiling->fulfilling
-fullfill->fulfill
+fullfill->fulfil, fulfill,
 fullfilled->fulfilled
 fullfilling->fulfilling
 fullfills->fulfills
-fullfils->fulfils
-fullill->fulfill
+fullfils->fulfils, fulfills,
+fullill->fulfil, fulfill,
 fullly->fully
 fulsh->flush
 funcation->function
@@ -23757,6 +23757,7 @@ segmeneted->segmented
 segmenets->segments
 segmentaion->segmentation
 segmente->segment
+segmentes->segments
 segmetn->segment
 segmetned->segmented
 segmetns->segments
@@ -23928,6 +23929,7 @@ sepend->depend, suspend,
 sependent->dependent
 sepending->depending
 seperable->separable
+seperad->seperate
 seperaly->separately
 seperaor->separator
 seperaors->separators
@@ -24452,7 +24454,9 @@ skeep->skip
 skelton->skeleton
 skept->skipped
 sketchs->sketches
-skilfull->skillfull, skilful,
+skilfull->skillful, skilful,
+skillfull->skillful, skilful, skillfully, skilfully
+skillfullness->skillfulness, skilfulness,
 skipd->skipped
 skiped->skipped, skyped,
 skiping->skipping
