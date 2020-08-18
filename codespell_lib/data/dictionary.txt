@@ -12991,7 +12991,7 @@ fulfiled->fulfilled
 fullfil->fulfil, fulfill,
 fullfiled->fulfilled
 fullfiling->fulfilling
-fullfill->fulfil, fulfill,
+fullfill->fulfill, fulfil, 
 fullfilled->fulfilled
 fullfilling->fulfilling
 fullfills->fulfills
@@ -24454,7 +24454,7 @@ skeep->skip
 skelton->skeleton
 skept->skipped
 sketchs->sketches
-skilfull->skillful, skilful,
+skilfull->skilful, skillful,
 skillfull->skillful, skilful, skillfully, skilfully,
 skillfullness->skillfulness, skilfulness,
 skipd->skipped
