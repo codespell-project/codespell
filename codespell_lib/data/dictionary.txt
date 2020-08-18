@@ -7224,7 +7224,7 @@ counterintuive->counter intuitive
 counterpar->counterpart
 counterpoart->counterpart
 countie's->counties, counties', county's,
-countinueq->continueq
+countinueq->continueq, continue
 countires->countries, counties,
 countour->contour, counter,
 countours->contours, counters,
@@ -7505,7 +7505,7 @@ dacquiri->daiquiri
 dadlock->deadlock
 daed->dead
 dael->deal, dial, dahl,
-daemonified->daemonized
+daemonified->daemonised, daemonized,
 dafault->default
 dafaults->defaults
 dafaut->default
@@ -7648,17 +7648,17 @@ deamiguate->disambiguate
 deamiguates->disambiguates
 deamiguation->disambiguation
 deamon->daemon
-deamonified->daemonized
-deamonisation->daemonisation
-deamonise->daemonise
-deamonised->daemonised
-deamonises->daemonises
-deamonising->daemonising
-deamonization->daemonization
-deamonize->daemonize
-deamonized->daemonized
-deamonizes->daemonizes
-deamonizing->daemonizing
+deamonified->daemonised, daemonized
+deamonisation->daemonisation, daemonization,
+deamonise->daemonise, daemonize,
+deamonised->daemonised, daemonized,
+deamonises->daemonises, daemonises,
+deamonising->daemonising, daemonizing,
+deamonization->daemonisation, daemonization,
+deamonize->daemonise, daemonize,
+deamonized->daemonised, daemonized,
+deamonizes->daemonises, daemonizes,
+deamonizing->daemonizing, daemonizing,
 deamons->daemons
 deassering->deasserting
 deatch->detach
@@ -9788,7 +9788,7 @@ dordered->ordered
 dorment->dormant
 dorp->drop
 dosen't->doesn't
-dosen->doesn't, dozen,
+dosen->doesn't, dozen, doesn
 dosen;t->doesn't
 dosens->dozens
 dosent'->doesn't
@@ -12329,7 +12329,7 @@ fauilure->failure
 fauilures->failures
 faund->found, fund,
 favoutrable->favourable
-favuourites->favourites
+favuourites->favourites, favorites
 faymus->famous
 fcound->found
 feasabile->feasible
@@ -19632,7 +19632,8 @@ peirod->period
 peirodical->periodical
 peirodicals->periodicals
 peirods->periods
-Peloponnes->Peloponnesus, Peloponnese,
+peloponnes->Peloponnese, Peloponnesus,
+Peloponnes->Peloponnese, Peloponnesus,
 penalities->penalties
 penality->penalty
 penatly->penalty
