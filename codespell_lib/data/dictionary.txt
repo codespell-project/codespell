@@ -7654,11 +7654,11 @@ deamonise->daemonise, daemonize,
 deamonised->daemonised, daemonized,
 deamonises->daemonises, daemonizes,
 deamonising->daemonising, daemonizing,
-deamonization->daemonisation, daemonization,
-deamonize->daemonise, daemonize,
-deamonized->daemonised, daemonized,
-deamonizes->daemonises, daemonizes,
-deamonizing->daemonising, daemonizing,
+deamonization->daemonization, daemonisation,
+deamonize->daemonize, daemonise,
+deamonized->daemonized, daemonised,
+deamonizes->daemonizes, daemonises,
+deamonizing->daemonizing, daemonising,
 deamons->daemons
 deassering->deasserting
 deatch->detach
