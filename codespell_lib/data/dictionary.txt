@@ -569,7 +569,7 @@ acqured->acquired
 acqures->acquires
 acquring->acquiring
 acrage->acreage
-acrued->accured
+acrued->accrued
 acses->cases, access,
 acssumed->assumed
 actally->actually
@@ -2032,7 +2032,7 @@ aquiring->acquiring
 aquisition->acquisition
 aquit->acquit
 aquitted->acquitted
-aquries->acquries
+aquries->acquires
 arameters->parameters
 aranged->arranged
 arangement->arrangement
@@ -2595,7 +2595,7 @@ aswell->as well
 asychronously->asynchronously
 asycronous->asynchronous
 asymetic->asymmetric
-asymetri->assymetry
+asymetri->asymmetry
 asymetric->asymmetric
 asymetrical->asymmetrical
 asymetricaly->asymmetrically
@@ -6501,7 +6501,7 @@ constrcuts->constructs
 constriants->constraints
 constrollers->controllers
 construc->construct
-construced->construtced
+construced->constructed
 construces->constructs
 construcing->constructing
 construcion->construction
@@ -14108,7 +14108,7 @@ idenfifier->identifier
 idenitify->identify
 identation->indentation
 identcial->identical
-identiable->identificable
+identiable->identifiable
 idential->identical
 identicial->identical
 identidier->identifier
@@ -16881,7 +16881,7 @@ medeival->medieval
 medevial->medieval
 medhod->method
 medhods->methods
-mediciney->mediciny
+mediciney->medicine
 medievel->medieval
 mediterainnean->mediterranean
 Mediteranean->Mediterranean
@@ -16980,7 +16980,7 @@ messges->messages
 messsage->message
 messsages->messages
 messure->measure
-messured->measurd
+messured->measured
 messurement->measurement
 messures->measure
 messuring->measuring
@@ -17166,7 +17166,7 @@ minimzing->minimizing
 mininal->minimal
 mininum->minimum
 miniscule->minuscule
-miniscully->minusculy
+miniscully->minusculely
 ministery->ministry
 miniture->miniature
 minium->minimum
@@ -17184,6 +17184,7 @@ mintors->mentors, monitors,
 minum->minimum
 minumum->minimum
 minuscle->minuscule
+minusculy->minusculely
 minuts->minutes
 miplementation->implementation
 mirconesia->micronesia
@@ -26074,9 +26075,9 @@ synchronsouly->synchronously
 synchronuous->synchronous
 synchronuously->synchronously
 synchronus->synchronous
-syncrhonise->sychronise
+syncrhonise->synchronise
 syncrhonised->synchronised
-syncrhonize->sychronize
+syncrhonize->synchronize
 syncrhonized->synchronized
 syncronise->synchronise
 syncronised->synchronised
