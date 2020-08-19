@@ -3603,6 +3603,8 @@ beutiful->beautiful
 beutifully->beautifully
 bever->never
 bevore->before
+bevorehand->beforehand
+bevorhand->beforehand
 beweeen->between
 beween->between
 bewteen->between
@@ -13821,6 +13823,7 @@ heree->here
 heridity->heredity
 heroe->hero
 heros->heroes
+herselv->herself
 hertiage->heritage
 hertically->hectically
 hertzs->hertz
@@ -15930,6 +15933,7 @@ itnroduced->introduced
 itsef->itself
 itselfs->itself
 itselt->itself
+itselv->itself
 itsems->items
 itslef->itself
 itteration->iteration
@@ -16437,6 +16441,8 @@ liveing->living
 livel->level
 livetime->lifetime
 livley->lively
+lizens->license
+lizensing->licensing
 lke->like
 lmits->limits
 loaader->loader
@@ -17650,6 +17656,9 @@ myraid->myriad
 mysef->myself
 mysefl->myself
 mysekf->myself
+myselv->myself
+myselve->myself
+myselves->myself
 myslef->myself
 mysogynist->misogynist
 mysogyny->misogyny
@@ -19078,6 +19087,7 @@ ouputarea->outputarea
 ouputs->outputs
 ouputted->outputted
 ouputting->outputting
+ourselfes->ourselves
 ourselfs->ourselves
 ourselve->ourselves
 ourselvs->ourselves
@@ -26572,6 +26582,7 @@ theive->thief
 theives->thieves
 themplate->template
 themselces->themselves
+themselfes->themselves
 themselfs->themselves
 themselve->themselves
 themslves->themselves
@@ -28093,6 +28104,7 @@ ununsed->unused
 ununsual->unusual
 unusal->unusual
 unusally->unusually
+unuseable->unusable
 unuseful->useless
 unusre->unsure
 unusuable->unusable
@@ -28234,6 +28246,7 @@ usal->usual
 usally->usually
 uscaled->unscaled
 useability->usability
+useable->usable
 useage->usage
 usebility->usability
 useble->usable
@@ -29183,6 +29196,9 @@ yotube->youtube
 youn->your, you, young,
 youre->your, you're,
 yourr->your, you're,
+yourselfe->yourself, yourselves,
+yourselfes->yourselves
+yourselv->yourself, yourselves,
 youseff->yourself, yousef,
 youself->yourself
 ypes->types
