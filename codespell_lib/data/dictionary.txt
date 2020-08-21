@@ -6565,13 +6565,18 @@ contaier->container
 contaiminate->contaminate
 contaiminated->contaminated
 contaiminating->contaminating
+contain->contain
 containa->contain
 containe->contain, contained, container, contains,
+contained->contained
 containees->containers
+container->container
+containers->containers
 containes->contains
 containg->containing
 containging->containing
 containig->containing
+containing->containing
 containings->containing
 containining->containing
 containint->containing
@@ -6579,6 +6584,9 @@ containn->contain
 containner->container
 containners->containers
 containns->contains
+containor->container
+containors->containers
+contains->contains
 containt->contain, content,
 containted->contained
 containter->container
@@ -29208,11 +29216,3 @@ __attribyte__->__attribute__
 __cpluspus->__cplusplus
 __cpusplus->__cplusplus
 évaluate->evaluate
-contain->contain
-contained->contained
-container->container
-containers->containers
-containing->containing
-containor->container
-containors->containers
-contains->contains
