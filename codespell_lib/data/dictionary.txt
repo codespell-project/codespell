@@ -2594,6 +2594,8 @@ asuming->assuming
 asumption->assumption
 asure->assure
 aswell->as well
+asychronize->asynchronize
+asychronized->asynchronized
 asychronous->asynchronous
 asychronously->asynchronously
 asycn->async
@@ -9788,7 +9790,7 @@ dordered->ordered
 dorment->dormant
 dorp->drop
 dosen't->doesn't
-dosen->doesn't, dozen, doesn,
+dosen->doesn't, dozen, dosen, doesn,
 dosen;t->doesn't
 dosens->dozens
 dosent'->doesn't
@@ -17234,7 +17236,7 @@ mintors->mentors, monitors,
 minum->minimum
 minumum->minimum
 minuscle->minuscule
-minusculy->minusculely
+minusculy->minusculely, minuscule,
 minuts->minutes
 miplementation->implementation
 mirconesia->micronesia
@@ -26076,6 +26078,9 @@ sychronisation->synchronisation
 sychronise->synchronise
 sychronisly->synchronously
 sychronization->synchronization
+sychronize->synchronize
+sychronized->synchronized
+sychronizer->synchronizer
 sychronmode->synchronmode
 sychronous->synchronous
 sychronously->synchronously
