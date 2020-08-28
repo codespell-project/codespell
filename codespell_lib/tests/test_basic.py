@@ -526,7 +526,6 @@ def test_uri_ignore_words_list_option_uri(tmpdir, capsys):
                       '# Please see ftp://abandonned for info\n',
                       '# Please see http://example/abandonned for info\n',
                       '# Please see http://example.com/abandonned for info\n',
-                      '# Please see http://example.com/abandonned for info\n',
                       '# Please see http://exam.com/ple#abandonned for info\n',
                       '# Please see http://exam.com/ple?abandonned for info\n',
                       '# Please see http://127.0.0.1/abandonned for info\n',
