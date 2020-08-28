@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: codespell-project/sort-problem-matcher@v1
-      - run: make -d check-dictionaries
+      - run: make check-dictionaries
 
   flake8-annotation:
     runs-on: ubuntu-latest
