@@ -28,6 +28,7 @@ import sys
 import textwrap
 
 word_regex_def = u"[\\w\\-'’`]+"
+uri_regex_def = u"\\b((?:https?|t?ftp|file|git|smb)://[^\\s'\"]*|[\\w.%+-]+@[\\w.-]+)\\b"
 encodings = ('utf-8', 'iso-8859-1')
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
@@ -279,7 +280,7 @@ def parse_options(args):
                              'patterns to ignore by treating as whitespace. '
                              'When writing regexes, consider ensuring there '
                              'are boundary non-word chars, e.g., '
-                             '"\\Wmatch\\W". Defaults to empty/disabled.')
+                             '"\\bmatch\\b". Defaults to empty/disabled.')
     parser.add_argument('-I', '--ignore-words',
                         action='append', metavar='FILE',
                         help='file that contains words which will be ignored '
@@ -291,6 +292,13 @@ def parse_options(args):
                         help='comma separated list of words to be ignored '
                              'by codespell. Words are case sensitive based on '
                              'how they are written in the dictionary file')
+    parser.add_argument('--uri-ignore-words-list',
+                        action='append', metavar='WORDS',
+                        help='comma separated list of words to be ignored '
+                             'by codespell in URIs and emails only. Words are '
+                             'case sensitive based on how they are written in '
+                             'the dictionary file. If set to "*", all '
+                             'misspelling in URIs and emails will be ignored.')
     parser.add_argument('-r', '--regex',
                         action='store', type=str,
                         help='regular expression which is used to find words. '
@@ -371,6 +379,15 @@ def parse_options(args):
         options.files.append('.')
 
     return options, parser
+
+
+def parse_ignore_words_option(ignore_words_option):
+    ignore_words = set()
+    if ignore_words_option:
+        for comma_separated_words in ignore_words_option:
+            for word in comma_separated_words.split(','):
+                ignore_words.add(word.strip())
+    return ignore_words
 
 
 def build_exclude_hashes(filename, exclude_lines):
@@ -502,8 +519,20 @@ def extract_words(text, word_regex, ignore_word_regex):
     return word_regex.findall(text)
 
 
+def apply_uri_ignore_words(check_words, line, word_regex, ignore_word_regex,
+                           uri_regex, uri_ignore_words):
+    if not uri_ignore_words:
+        return
+    for uri in re.findall(uri_regex, line):
+        for uri_word in extract_words(uri, word_regex,
+                                      ignore_word_regex):
+            if "*" in uri_ignore_words or uri_word in uri_ignore_words:
+                check_words.remove(uri_word)
+
+
 def parse_file(filename, colors, summary, misspellings, exclude_lines,
-               file_opener, word_regex, ignore_word_regex, context, options):
+               file_opener, word_regex, ignore_word_regex, uri_regex,
+               uri_ignore_words, context, options):
     bad_count = 0
     lines = None
     changed = False
@@ -568,7 +597,11 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
         fixed_words = set()
         asked_for = set()
 
-        for word in extract_words(line, word_regex, ignore_word_regex):
+        check_words = extract_words(line, word_regex, ignore_word_regex)
+        apply_uri_ignore_words(check_words, line, word_regex, ignore_word_regex,
+                               uri_regex, uri_ignore_words)
+
+        for word in check_words:
             lword = word.lower()
             if lword in misspellings:
                 context_shown = False
@@ -688,7 +721,7 @@ def main(*args):
         ignore_word_regex = None
 
     ignore_words_files = options.ignore_words or []
-    ignore_words = set()
+    ignore_words = parse_ignore_words_option(options.ignore_words_list)
     for ignore_words_file in ignore_words_files:
         if not os.path.isfile(ignore_words_file):
             print("ERROR: cannot find ignore-words file: %s" %
@@ -697,10 +730,8 @@ def main(*args):
             return EX_USAGE
         build_ignore_words(ignore_words_file, ignore_words)
 
-    ignore_words_list = options.ignore_words_list or []
-    for comma_separated_words in ignore_words_list:
-        for word in comma_separated_words.split(','):
-            ignore_words.add(word.strip())
+    uri_regex = re.compile(uri_regex_def)
+    uri_ignore_words = parse_ignore_words_option(options.uri_ignore_words_list)
 
     if options.dictionary:
         dictionaries = options.dictionary
@@ -794,8 +825,8 @@ def main(*args):
                         continue
                     bad_count += parse_file(
                         fname, colors, summary, misspellings, exclude_lines,
-                        file_opener, word_regex, ignore_word_regex, context,
-                        options)
+                        file_opener, word_regex, ignore_word_regex, uri_regex,
+                        uri_ignore_words, context, options)
 
                 # skip (relative) directories
                 dirs[:] = [dir_ for dir_ in dirs if not glob_match.match(dir_)]
@@ -803,7 +834,8 @@ def main(*args):
         else:
             bad_count += parse_file(
                 filename, colors, summary, misspellings, exclude_lines,
-                file_opener, word_regex, ignore_word_regex, context, options)
+                file_opener, word_regex, ignore_word_regex, uri_regex,
+                uri_ignore_words, context, options)
 
     if summary:
         print("\n-------8<-------\nSUMMARY:")

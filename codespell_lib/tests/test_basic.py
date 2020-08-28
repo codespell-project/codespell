@@ -455,8 +455,8 @@ def test_context(tmpdir, capsys):
     assert 'ERROR' in lines[0]
 
 
-def test_ignore_regex_flag(tmpdir, capsys):
-    """Test ignore regex flag functionality."""
+def test_ignore_regex_option(tmpdir, capsys):
+    """Test ignore regex option functionality."""
     d = str(tmpdir)
 
     # Invalid regex.
@@ -485,7 +485,116 @@ def test_ignore_regex_flag(tmpdir, capsys):
     # Ignoring donn breaks them both.
     assert cs.main(f.name, '--ignore-regex=donn') == 0
     # Adding word breaks causes only one to be ignored.
-    assert cs.main(f.name, r'--ignore-regex=\Wdonn\W') == 1
+    assert cs.main(f.name, r'--ignore-regex=\bdonn\b') == 1
+
+
+def test_uri_ignore_words_list_option_uri(tmpdir, capsys):
+    """Test ignore regex option functionality."""
+    d = str(tmpdir)
+
+    with open(op.join(d, 'flag.txt'), 'w') as f:
+        f.write('# Please see http://example.com/abandonned for info\n')
+    # Test file has 1 invalid entry, and it's not ignored by default.
+    assert cs.main(f.name) == 1
+    # An empty list is the default value, and nothing is ignored.
+    assert cs.main(f.name, '--uri-ignore-words-list=') == 1
+    # Non-matching regex results in nothing being ignored.
+    assert cs.main(f.name, '--uri-ignore-words-list=foo,example') == 1
+    # A word can be ignored.
+    assert cs.main(f.name, '--uri-ignore-words-list=abandonned') == 0
+    assert cs.main(f.name, '--uri-ignore-words-list=foo,abandonned,bar') == 0
+    assert cs.main(f.name, '--uri-ignore-words-list=*') == 0
+    # The match must be for the complete word.
+    assert cs.main(f.name, '--uri-ignore-words-list=abandonn') == 1
+
+    with open(op.join(d, 'flag.txt'), 'w') as f:
+        f.write('abandonned http://example.com/abandonned\n')
+    # Test file has 2 invalid entries.
+    assert cs.main(f.name) == 2
+    # Ignoring the value in the URI won't ignore the word completely.
+    assert cs.main(f.name, '--uri-ignore-words-list=abandonned') == 1
+    assert cs.main(f.name, '--uri-ignore-words-list=*') == 1
+    # The regular --ignore-words-list will ignore both.
+    assert cs.main(f.name, '--ignore-words-list=abandonned') == 0
+
+    variation_option = '--uri-ignore-words-list=abandonned'
+
+    # Variations where an error is ignored.
+    for variation in ('# Please see http://abandonned for info\n',
+                      '# Please see "http://abandonned" for info\n',
+                      '# Please see https://abandonned for info\n',
+                      '# Please see ftp://abandonned for info\n',
+                      '# Please see http://example/abandonned for info\n',
+                      '# Please see http://example.com/abandonned for info\n',
+                      '# Please see http://example.com/abandonned for info\n',
+                      '# Please see http://exam.com/ple#abandonned for info\n',
+                      '# Please see http://exam.com/ple?abandonned for info\n',
+                      '# Please see http://127.0.0.1/abandonned for info\n',
+                      '# Please see http://[2001:0db8:85a3:0000:0000:8a2e:0370:'
+                      '7334]/abandonned for info\n'):
+        with open(op.join(d, 'flag.txt'), 'w') as f:
+            f.write(variation)
+        assert cs.main(f.name) == 1, variation
+        assert cs.main(f.name, variation_option) == 0, variation
+
+    # Variations where no error is ignored.
+    for variation in ('# Please see abandonned/ for info\n',
+                      '# Please see http:abandonned for info\n',
+                      '# Please see foo/abandonned for info\n',
+                      '# Please see http://foo abandonned for info\n',
+                      '# Please see "http://foo"abandonned for info\n'):
+        with open(op.join(d, 'flag.txt'), 'w') as f:
+            f.write(variation)
+        assert cs.main(f.name) == 1, variation
+        assert cs.main(f.name, variation_option) == 1, variation
+
+
+def test_uri_ignore_words_list_option_email(tmpdir, capsys):
+    """Test ignore regex option functionality."""
+    d = str(tmpdir)
+
+    with open(op.join(d, 'flag.txt'), 'w') as f:
+        f.write('# Please see example@abandonned.com for info\n')
+    # Test file has 1 invalid entry, and it's not ignored by default.
+    assert cs.main(f.name) == 1
+    # An empty list is the default value, and nothing is ignored.
+    assert cs.main(f.name, '--uri-ignore-words-list=') == 1
+    # Non-matching regex results in nothing being ignored.
+    assert cs.main(f.name, '--uri-ignore-words-list=foo,example') == 1
+    # A word can be ignored.
+    assert cs.main(f.name, '--uri-ignore-words-list=abandonned') == 0
+    assert cs.main(f.name, '--uri-ignore-words-list=foo,abandonned,bar') == 0
+    assert cs.main(f.name, '--uri-ignore-words-list=*') == 0
+    # The match must be for the complete word.
+    assert cs.main(f.name, '--uri-ignore-words-list=abandonn') == 1
+
+    with open(op.join(d, 'flag.txt'), 'w') as f:
+        f.write('abandonned example@abandonned.com\n')
+    # Test file has 2 invalid entries.
+    assert cs.main(f.name) == 2
+    # Ignoring the value in the URI won't ignore the word completely.
+    assert cs.main(f.name, '--uri-ignore-words-list=abandonned') == 1
+    assert cs.main(f.name, '--uri-ignore-words-list=*') == 1
+    # The regular --ignore-words-list will ignore both.
+    assert cs.main(f.name, '--ignore-words-list=abandonned') == 0
+
+    variation_option = '--uri-ignore-words-list=abandonned'
+
+    # Variations where an error is ignored.
+    for variation in ('# Please see example@abandonned for info\n',
+                      '# Please see abandonned@example for info\n'):
+        with open(op.join(d, 'flag.txt'), 'w') as f:
+            f.write(variation)
+        assert cs.main(f.name) == 1, variation
+        assert cs.main(f.name, variation_option) == 0, variation
+
+    # Variations where no error is ignored.
+    for variation in ('# Please see example @ abandonned for info\n',
+                      '# Please see abandonned@ example for info\n'):
+        with open(op.join(d, 'flag.txt'), 'w') as f:
+            f.write(variation)
+        assert cs.main(f.name) == 1, variation
+        assert cs.main(f.name, variation_option) == 1, variation
 
 
 @contextlib.contextmanager
