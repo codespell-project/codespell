@@ -28,7 +28,8 @@ import sys
 import textwrap
 
 word_regex_def = u"[\\w\\-'’`]+"
-uri_regex_def = u"\\b((?:https?|t?ftp|file|git|smb)://[^\\s'\"]*|[\\w.%+-]+@[\\w.-]+)\\b"
+uri_regex_def = (u"\\b((?:https?|t?ftp|file|git|smb)://[^\\s'\"]*|"
+                 u"[\\w.%+-]+@[\\w.-]+)\\b")
 encodings = ('utf-8', 'iso-8859-1')
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
@@ -598,8 +599,8 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
         asked_for = set()
 
         check_words = extract_words(line, word_regex, ignore_word_regex)
-        apply_uri_ignore_words(check_words, line, word_regex, ignore_word_regex,
-                               uri_regex, uri_ignore_words)
+        apply_uri_ignore_words(check_words, line, word_regex,
+                               ignore_word_regex, uri_regex, uri_ignore_words)
 
         for word in check_words:
             lword = word.lower()

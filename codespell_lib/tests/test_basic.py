@@ -530,8 +530,8 @@ def test_uri_ignore_words_list_option_uri(tmpdir, capsys):
                       '# Please see http://exam.com/ple#abandonned for info\n',
                       '# Please see http://exam.com/ple?abandonned for info\n',
                       '# Please see http://127.0.0.1/abandonned for info\n',
-                      '# Please see http://[2001:0db8:85a3:0000:0000:8a2e:0370:'
-                      '7334]/abandonned for info\n'):
+                      '# Please see http://[2001:0db8:85a3:0000:0000:8a2e:0370'
+                      ':7334]/abandonned for info\n'):
         with open(op.join(d, 'flag.txt'), 'w') as f:
             f.write(variation)
         assert cs.main(f.name) == 1, variation
