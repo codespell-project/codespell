@@ -7,6 +7,8 @@ jobs:
   make-check-dictionaries:
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Python
+        uses: actions/setup-python@v2
       - name: Install dependencies
         run: pip install pytest pytest-cov pytest-dependency
       - uses: actions/checkout@v2
