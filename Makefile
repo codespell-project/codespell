@@ -27,6 +27,8 @@ check-dictionaries:
 	done
 	@if command -v pytest > /dev/null; then \
 		pytest codespell_lib/tests/test_dictionary.py; \
+	else \
+		echo "pytest command not present, dictionary tests being skipped"; \
 	fi
 
 sort-dictionaries:
