@@ -7,6 +7,8 @@ jobs:
   make-check-dictionaries:
     runs-on: ubuntu-latest
     steps:
+      - name: Install dependencies
+        run: pip install pytest pytest-cov pytest-dependency
       - uses: actions/checkout@v2
       - uses: codespell-project/sort-problem-matcher@v1
       - run: make check-dictionaries
