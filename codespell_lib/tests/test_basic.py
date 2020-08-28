@@ -455,6 +455,39 @@ def test_context(tmpdir, capsys):
     assert 'ERROR' in lines[0]
 
 
+def test_ignore_regex_flag(tmpdir, capsys):
+    """Test ignore regex flag functionality."""
+    d = str(tmpdir)
+
+    # Invalid regex.
+    code, stdout, _ = cs.main('--ignore-regex=(', std=True)
+    assert code == EX_USAGE
+    assert 'usage:' in stdout
+
+    with open(op.join(d, 'flag.txt'), 'w') as f:
+        f.write('# Please see http://example.com/abandonned for info\n')
+    # Test file has 1 invalid entry, and it's not ignored by default.
+    assert cs.main(f.name) == 1
+    # An empty regex is the default value, and nothing is ignored.
+    assert cs.main(f.name, '--ignore-regex=') == 1
+    assert cs.main(f.name, '--ignore-regex=""') == 1
+    # Non-matching regex results in nothing being ignored.
+    assert cs.main(f.name, '--ignore-regex=^$') == 1
+    # A word can be ignored.
+    assert cs.main(f.name, '--ignore-regex=abandonned') == 0
+    # Ignoring part of the word can result in odd behavior.
+    assert cs.main(f.name, '--ignore-regex=nn') == 0
+
+    with open(op.join(d, 'flag.txt'), 'w') as f:
+        f.write('abandonned donn\n')
+    # Test file has 2 invalid entries.
+    assert cs.main(f.name) == 2
+    # Ignoring donn breaks them both.
+    assert cs.main(f.name, '--ignore-regex=donn') == 0
+    # Adding word breaks causes only one to be ignored.
+    assert cs.main(f.name, r'--ignore-regex=\Wdonn\W') == 1
+
+
 @contextlib.contextmanager
 def FakeStdin(text):
     if sys.version[0] == '2':
