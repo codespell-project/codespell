@@ -2592,7 +2592,9 @@ asuming->assuming
 asumption->assumption
 asure->assure
 aswell->as well
+asychronous->asynchronous
 asychronously->asynchronously
+asycn->async
 asycronous->asynchronous
 asymetic->asymmetric
 asymetri->assymetry
@@ -5226,6 +5228,10 @@ cofrimed->confirmed
 cofriming->confirming
 cofrims->confirms
 cognizent->cognizant
+coherance->coherence
+coherancy->coherency
+coherant->coherent
+coherantly->coherently
 coice->choice
 coincedentally->coincidentally
 coinitailize->coinitialize
@@ -12281,6 +12287,7 @@ fallbck->fallback
 fallhrough->fallthrough
 fallthruogh->fallthrough
 falltrough->fallthrough
+falsly->falsely
 falt->fault
 falure->failure
 familar->familiar
@@ -14621,6 +14628,10 @@ incluing->including
 inclused->included
 inclusinve->inclusive
 incmrement->increment
+incoherance->incoherence
+incoherancy->incoherency
+incoherant->incoherent
+incoherantly->incoherently
 incomapatibility->incompatibility
 incomapatible->incompatible
 incomaptible->incompatible
@@ -26047,8 +26058,13 @@ syatem->system
 syatems->systems
 sybsystem->subsystem
 sybsystems->subsystems
+sychronisation->synchronisation
 sychronisly->synchronously
+sychronization->synchronization
 sychronmode->synchronmode
+sychronous->synchronous
+sychronously->synchronously
+sycn->sync
 sycology->psychology
 sycronise->synchronise
 sycronised->synchronised
