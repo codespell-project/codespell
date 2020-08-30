@@ -666,7 +666,7 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
 
                     creason = "  | %s%s%s" % (colors.FILE,
                                               misspellings[lword].reason,
-                                                  colors.DISABLE)
+                                              colors.DISABLE)
                 else:
                     if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
                         continue
