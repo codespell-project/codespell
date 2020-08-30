@@ -536,17 +536,18 @@ def print_context(lines, index, context):
             print('%s %s' % ('>' if i == index else ':', lines[i].rstrip()))
 
 
-class PairMaker:
-    def __init__(self, word_regex, ignore_word_regex):
-        self.previous = None
-        self.word_regex = word_regex
-        self.ignore_regex = ignore_word_regex
+def extract_pairs(text, word_regex, ignore_word_regex):
+    previous = None
+    final_word = None
+    for word in extract_words(text, word_regex, ignore_word_regex):
+        if previous:
+            yield previous
+            yield previous + " " + word
+        previous = word
+        final_word = previous
 
-    def extract_pairs(self, line):
-        for word in extract_words(line, self.word_regex, self.ignore_regex):
-            if self.previous:
-                yield (self.previous, self.previous + " " + word)
-            self.previous = word
+    if final_word:
+        yield final_word
 
 
 def extract_words(text, word_regex, ignore_word_regex):
@@ -614,7 +615,6 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
         except Exception:
             return bad_count
 
-    pm = PairMaker(word_regex, ignore_word_regex)
     for i, line in enumerate(lines):
         if line in exclude_lines:
             continue
@@ -622,76 +622,75 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
         fixed_words = set()
         asked_for = set()
 
-        for single, pair in pm.extract_pairs(line):
-            for word in [single, pair]:
-                lword = word.lower()
-                if lword in misspellings:
-                    context_shown = False
-                    fix = misspellings[lword].fix
-                    fixword = fix_case(word, misspellings[lword].data)
+        for word in extract_pairs(line, word_regex, ignore_word_regex):
+            lword = word.lower()
+            if lword in misspellings:
+                context_shown = False
+                fix = misspellings[lword].fix
+                fixword = fix_case(word, misspellings[lword].data)
 
-                    if options.interactive and lword not in asked_for:
-                        if context is not None:
-                            context_shown = True
-                            print_context(lines, i, context)
-                        fix, fixword = ask_for_word_fix(
-                            lines[i], word, misspellings[lword],
-                            options.interactive)
-                        asked_for.add(lword)
-
-                    if summary and fix:
-                        summary.update(lword)
-
-                    if word in fixed_words:  # can skip because of re.sub below
-                        continue
-
-                    if options.write_changes and fix:
-                        changed = True
-                        lines[i] = re.sub(r'\b%s\b' % word, fixword, lines[i])
-                        fixed_words.add(word)
-                        continue
-
-                    # otherwise warning was explicitly set by interactive mode
-                    if (options.interactive & 2 and not fix and not
-                            misspellings[lword].reason):
-                        continue
-
-                    cfilename = "%s%s%s" % (colors.FILE, filename, colors.DISABLE)
-                    cline = "%s%d%s" % (colors.FILE, i + 1, colors.DISABLE)
-                    cwrongword = "%s%s%s" % (colors.WWORD, word, colors.DISABLE)
-                    crightword = "%s%s%s" % (colors.FWORD, fixword, colors.DISABLE)
-
-                    if misspellings[lword].reason:
-                        if options.quiet_level & QuietLevels.DISABLED_FIXES:
-                            continue
-
-                        creason = "  | %s%s%s" % (colors.FILE,
-                                                  misspellings[lword].reason,
-                                                  colors.DISABLE)
-                    else:
-                        if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
-                            continue
-
-                        creason = ''
-
-                    # If we get to this point (uncorrected error) we should change
-                    # our bad_count and thus return value
-                    bad_count += 1
-
-                    if (not context_shown) and (context is not None):
+                if options.interactive and lword not in asked_for:
+                    if context is not None:
+                        context_shown = True
                         print_context(lines, i, context)
-                    if filename != '-':
-                        print("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "
-                              "==> %(RIGHTWORD)s%(REASON)s"
-                              % {'FILENAME': cfilename, 'LINE': cline,
-                                 'WRONGWORD': cwrongword,
-                                 'RIGHTWORD': crightword, 'REASON': creason})
-                    else:
-                        print("%(LINE)s: %(STRLINE)s\n\t%(WRONGWORD)s "
-                              "==> %(RIGHTWORD)s%(REASON)s"
-                              % {'LINE': cline, 'STRLINE': line.strip(),
-                                 'WRONGWORD': cwrongword,
-                                 'RIGHTWORD': crightword, 'REASON': creason})
+                    fix, fixword = ask_for_word_fix(
+                        lines[i], word, misspellings[lword],
+                        options.interactive)
+                    asked_for.add(lword)
+
+                if summary and fix:
+                    summary.update(lword)
+
+                if word in fixed_words:  # can skip because of re.sub below
+                    continue
+
+                if options.write_changes and fix:
+                    changed = True
+                    lines[i] = re.sub(r'\b%s\b' % word, fixword, lines[i])
+                    fixed_words.add(word)
+                    continue
+
+                # otherwise warning was explicitly set by interactive mode
+                if (options.interactive & 2 and not fix and not
+                        misspellings[lword].reason):
+                    continue
+
+                cfilename = "%s%s%s" % (colors.FILE, filename, colors.DISABLE)
+                cline = "%s%d%s" % (colors.FILE, i + 1, colors.DISABLE)
+                cwrongword = "%s%s%s" % (colors.WWORD, word, colors.DISABLE)
+                crightword = "%s%s%s" % (colors.FWORD, fixword, colors.DISABLE)
+
+                if misspellings[lword].reason:
+                    if options.quiet_level & QuietLevels.DISABLED_FIXES:
+                        continue
+
+                    creason = "  | %s%s%s" % (colors.FILE,
+                                              misspellings[lword].reason,
+                                                  colors.DISABLE)
+                else:
+                    if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
+                        continue
+
+                    creason = ''
+
+                # If we get to this point (uncorrected error) we should change
+                # our bad_count and thus return value
+                bad_count += 1
+
+                if (not context_shown) and (context is not None):
+                    print_context(lines, i, context)
+                if filename != '-':
+                    print("%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "
+                          "==> %(RIGHTWORD)s%(REASON)s"
+                          % {'FILENAME': cfilename, 'LINE': cline,
+                             'WRONGWORD': cwrongword,
+                             'RIGHTWORD': crightword, 'REASON': creason})
+                else:
+                    print("%(LINE)s: %(STRLINE)s\n\t%(WRONGWORD)s "
+                          "==> %(RIGHTWORD)s%(REASON)s"
+                          % {'LINE': cline, 'STRLINE': line.strip(),
+                             'WRONGWORD': cwrongword,
+                             'RIGHTWORD': crightword, 'REASON': creason})
 
     if changed:
         if filename == '-':
