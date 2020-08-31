@@ -78,6 +78,30 @@ Want to know if a word you're proposing exists in codespell already? It is possi
     echo "word" | codespell -
     echo "1stword,2ndword" | codespell -
 
+Using a config file
+-------------------
+
+Command line options can also be specific in a config file.
+
+When running ``codespell``, it will check in the current directory for a file
+named ``setup.cfg`` (or a file specified via ``--config``), containing an entry
+named ``[tool:codespell]``. Each command line argument can also be specified in
+this file, for example:
+
+.. code-block:: cfg
+
+    [tool:codespell]
+    skip = *.po,*.ts,./src/3rdParty,./src/Test
+    count =
+    quiet-level = 3
+
+This is equivalent to running::
+
+    codespell --quiet-level 3 --count --skip "*.po,*.ts,./src/3rdParty,./src/Test"
+
+Any options specified in the config file will *override* options from the
+command line.
+
 Dictionary format
 -----------------
 

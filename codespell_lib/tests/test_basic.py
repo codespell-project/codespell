@@ -488,6 +488,37 @@ def test_ignore_regex_flag(tmpdir, capsys):
     assert cs.main(f.name, r'--ignore-regex=\Wdonn\W') == 1
 
 
+def test_config(tmpdir, capsys):
+    """
+    Tests loading options from a config file.
+    """
+    d = str(tmpdir)
+
+    # Create sample files.
+    with open(op.join(d, 'bad.c'), 'w') as f:
+        f.write('abandonned donn\n')
+    with open(op.join(d, 'good.c'), 'w') as f:
+        f.write("good")
+
+    # Create a config file.
+    with open(op.join(d, 'config.cfg'), 'w') as f:
+        f.write(
+            '[tool:codespell]\n'
+            'skip = *bad.c\n'
+            'count = \n'
+        )
+
+    # Should fail when checking both.
+    code, stdout, _ = cs.main(count=False, std=True)
+    assert code == EX_DATAERR
+    assert 'bad.c' in stdout
+
+    # Should pass when skipping bad.c
+    code, stdout, _ = cs.main('--config config.cfg', count=False, std=True)
+    assert code == EX_OK
+    assert 'bad.c' in stdout
+
+
 @contextlib.contextmanager
 def FakeStdin(text):
     if sys.version[0] == '2':
