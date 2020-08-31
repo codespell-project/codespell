@@ -372,8 +372,12 @@ def parse_options(args):
     options = parser.parse_args(list(args))
 
     # Load config files and look for ``tool:codespell`` options.
-    if os.path.exists('setup.cfg') or options.config:
-        cfg_files = ['setup.cfg']
+    if (
+        options.config or
+        os.path.exists('setup.cfg') or
+        os.path.exists('.codespellrc')
+    ):
+        cfg_files = ['setup.cfg', '.codespellrc']
         if options.config:
             cfg_files.append(options.config)
         config = configparser.ConfigParser()
