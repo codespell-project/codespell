@@ -495,28 +495,30 @@ def test_config(tmpdir, capsys):
     d = str(tmpdir)
 
     # Create sample files.
-    with open(op.join(d, 'bad.c'), 'w') as f:
+    with open(op.join(d, 'bad.txt'), 'w') as f:
         f.write('abandonned donn\n')
-    with open(op.join(d, 'good.c'), 'w') as f:
+    with open(op.join(d, 'good.txt'), 'w') as f:
         f.write("good")
 
     # Create a config file.
-    with open(op.join(d, 'config.cfg'), 'w') as f:
+    conffile = op.join(d, 'config.cfg')
+    with open(conffile, 'w') as f:
         f.write(
             '[tool:codespell]\n'
-            'skip = *bad.c,*config.cfg\n'
+            'skip = bad.txt\n'
             'count = \n'
         )
 
     # Should fail when checking both.
-    code, stdout, _ = cs.main(count=False, std=True)
-    assert code == EX_DATAERR
-    assert 'bad.c' in stdout
+    code, stdout, _ = cs.main(d, count=True, std=True)
+    # Code in this case is not exit code, but count of misspellings.
+    assert code == 2
+    assert 'bad.txt' in stdout
 
-    # Should pass when skipping bad.c
-    code, stdout, _ = cs.main('--config config.cfg', count=False, std=True)
-    assert code == EX_OK
-    assert 'bad.c' not in stdout
+    # Should pass when skipping bad.txt
+    code, stdout, _ = cs.main('--config', conffile, d, count=True, std=True)
+    assert code == 0
+    assert 'bad.txt' not in stdout
 
 
 @contextlib.contextmanager
