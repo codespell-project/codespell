@@ -504,7 +504,7 @@ def test_config(tmpdir, capsys):
     with open(op.join(d, 'config.cfg'), 'w') as f:
         f.write(
             '[tool:codespell]\n'
-            'skip = *bad.c\n'
+            'skip = *bad.c,*config.cfg\n'
             'count = \n'
         )
 
@@ -516,7 +516,7 @@ def test_config(tmpdir, capsys):
     # Should pass when skipping bad.c
     code, stdout, _ = cs.main('--config config.cfg', count=False, std=True)
     assert code == EX_OK
-    assert 'bad.c' in stdout
+    assert 'bad.c' not in stdout
 
 
 @contextlib.contextmanager
