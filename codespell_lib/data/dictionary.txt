@@ -445,6 +445,7 @@ accuratelly->accurately
 accuratley->accurately
 accuratly->accurately
 accuray->accuracy, actuary,
+accured->accrued, accure, occurred,
 accurences->occurrences
 accurracy->accuracy
 accurring->occurring
@@ -570,7 +571,7 @@ acqures->acquires
 acquries->acquires
 acquring->acquiring
 acrage->acreage
-acrued->accrued, accured,
+acrued->accrued
 acses->cases, access,
 acssumed->assumed
 actally->actually
@@ -862,7 +863,7 @@ affilate->affiliate
 affilates->affiliates
 affilliate->affiliate
 affinitied->affinities
-affinitized->affinity, affinities,
+affinitized->affinities, affinity,
 affinitze->affinitize
 affintize->affinitize
 affitnity->affinity
@@ -2602,12 +2603,12 @@ asychronously->asynchronously
 asycn->async
 asycronous->asynchronous
 asymetic->asymmetric
-asymetri->asymmetry
+asymetri->asymmetry, asymmetric,
 asymetric->asymmetric
 asymetrical->asymmetrical
 asymetricaly->asymmetrically
 asymmeric->asymmetric
-asymmetri->asymmetric
+asymmetri->asymmetric, assymmetry,
 asynchnous->asynchronous
 asynchonous->asynchronous
 asynchonously->asynchronously
@@ -6518,7 +6519,7 @@ constrcuts->constructs
 constriants->constraints
 constrollers->controllers
 construc->construct
-construced->constructed
+construced->constructed, construed,
 construces->constructs
 construcing->constructing
 construcion->construction
@@ -16937,7 +16938,7 @@ medevial->medieval
 medhod->method
 medhods->methods
 mediciney->medicine
-mediciny->medicine
+mediciny->medicine, medicinal,
 medievel->medieval
 mediterainnean->mediterranean
 Mediteranean->Mediterranean
@@ -19638,7 +19639,7 @@ peirod->period
 peirodical->periodical
 peirodicals->periodicals
 peirods->periods
-peloponnes->Peloponnese, Peloponnesus,
+Peloponnes->Peloponnese, Peloponnesus,
 penalities->penalties
 penality->penalty
 penatly->penalty
