@@ -23,7 +23,6 @@ test_script:
   - "codespell --help"
   - "flake8"
   - "pytest codespell_lib"
-  - "make check"
 
 on_success:
   - "codecov"
