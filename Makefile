@@ -2,11 +2,11 @@ SORT_ARGS := -f -b
 
 DICTIONARIES := codespell_lib/data/dictionary*.txt
 
-PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dictionary sort-dictionary trim-dictionary check-manifest flake8 pypi clean
+PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dictionary sort-dictionary trim-dictionary check-manifest check-distutils flake8 pytest pypi clean
 
 all: check-dictionaries codespell.1
 
-check: check-dictionaries check-manifest flake8
+check: check-dictionaries check-manifest check-distutils flake8 pytest
 
 check-dictionary: check-dictionaries
 sort-dictionary: sort-dictionaries
@@ -47,8 +47,14 @@ trim-dictionaries:
 check-manifest:
 	check-manifest
 
+check-distutils:
+	python setup.py check --restructuredtext --strict
+
 flake8:
 	flake8
+
+pytest:
+	pytest codespell_lib
 
 pypi:
 	python setup.py sdist register upload
