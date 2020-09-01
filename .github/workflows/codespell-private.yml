@@ -10,7 +10,9 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
       - uses: actions/checkout@v2
-      - name: Install dependencies
+      - name: Install general dependencies
+        run: pip install -U pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
+      - name: Install codespell dependencies
         run: pip install -e ".[dev]"
       - uses: codespell-project/sort-problem-matcher@v1
       - run: make check-dictionaries
