@@ -114,6 +114,10 @@ You can install required dependencies for development by running the following w
 
        pip install -e ".[dev]"
 
+To run tests against the codebase run::
+
+       make check
+
 Sending Pull Requests
 ---------------------
 
