@@ -110,7 +110,8 @@ directly, but instead be manually inspected. E.g.:
 Development Setup
 -----------------
 
-You can install required dependencies for development by running the following within a checkout of the codespell source:
+You can install required dependencies for development by running the following within a checkout of the codespell source::
+
        pip install -e ".[dev]"
 
 Sending Pull Requests
