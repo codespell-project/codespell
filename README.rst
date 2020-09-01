@@ -81,12 +81,12 @@ Want to know if a word you're proposing exists in codespell already? It is possi
 Using a config file
 -------------------
 
-Command line options can also be specific in a config file.
+Command line options can also be specified in a config file.
 
 When running ``codespell``, it will check in the current directory for a file
 named ``setup.cfg`` or ``.codespellrc`` (or a file specified via ``--config``),
 containing an entry named ``[codespell]``. Each command line argument can
-also be specified in this file, for example::
+be specified in this file (without the preceding dashes), for example::
 
     [codespell]
     skip = *.po,*.ts,./src/3rdParty,./src/Test
