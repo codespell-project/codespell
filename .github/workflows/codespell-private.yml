@@ -9,9 +9,9 @@ jobs:
     steps:
       - name: Set up Python
         uses: actions/setup-python@v2
+      - uses: actions/checkout@v2
       - name: Install dependencies
         run: pip install -e ".[dev]"
-      - uses: actions/checkout@v2
       - uses: codespell-project/sort-problem-matcher@v1
       - run: make check-dictionaries
 
