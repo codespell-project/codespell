@@ -56,7 +56,7 @@ abnormaly->abnormally
 abnornally->abnormally
 abnove->above
 abnrormal->abnormal
-aboce->above
+aboce->above, abode,
 abolute->absolute
 abondon->abandon
 abondoned->abandoned
@@ -20148,10 +20148,10 @@ positivies->positives
 positoin->position
 positoined->positioned
 positoins->positions
-positon->position
+positon->position, positron,
 positoned->positioned
 positoning->positioning
-positons->positions
+positons->positions, positrons,
 positve->positive
 positves->positives
 POSIX-complient->POSIX-compliant
@@ -25317,6 +25317,8 @@ stradegies->strategies
 stradegy->strategy
 stragedy->strategy
 stragegy->strategy
+strageties->strategies
+stragety->strategy
 straigh-forward->straightforward
 straighforward->straightforward
 straightfoward->straightforward
@@ -26941,6 +26943,10 @@ trafficed->trafficked
 trafficing->trafficking
 trafic->traffic
 tragectory->trajectory
+traget->target
+trageted->targeted
+trageting->targeting
+tragets->targets
 traiing->trailing, training,
 trailling->trailing
 traker->tracker
