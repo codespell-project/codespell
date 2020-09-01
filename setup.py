@@ -58,8 +58,8 @@ if __name__ == "__main__":
               ],
           },
           extras_require={
-              "dev": ["pytest", "pytest-cov", "pytest-dependency",
-                      "check-manifest"],
+              "dev": ["check-manifest", "flake8", "pytest", "pytest-cov",
+                      "pytest-dependency"],
               "hard-encoding-detection": ["chardet"],
           }
           )
