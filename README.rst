@@ -81,10 +81,8 @@ Want to know if a word you're proposing exists in codespell already? It is possi
 Dictionary format
 -----------------
 
-The format of the dictionary was influenced by the one it originally came from,
-i.e. from Wikipedia. The difference is how multiple options are treated and
-that the last argument is the reason why a certain entry could not be applied
-directly, but instead be manually inspected. E.g.:
+The format of the dictionaries was influenced by the one it originally came from,
+i.e. from Wikipedia. The difference is how multiple options are treated. E.g.:
 
 1. Simple entry: one wrong word / one suggestion::
 
@@ -95,17 +93,10 @@ directly, but instead be manually inspected. E.g.:
        fiel->feel, field, file, phial,
 
    Note the last comma! You need to use it, otherwise the last suggestion
-   will be discarded (see below for why). When there is more than one
+   will be discarded (for historic reasons). When there is more than one
    suggestion, an automatic fix is not possible and the best we can do is
    to give the user the file and line where the error occurred as well as
    the suggestions.
-
-3. Entry with one word, but with automatically fix disabled::
-
-       clas->class, disabled because of name clash in c++
-
-   Note that there isn't a comma in the end of the line. The last argument is
-   treated as the reason why a suggestion cannot be automatically applied.
 
 Sending Pull Requests
 ---------------------
@@ -114,7 +105,9 @@ If you have a suggested typo that you'd like to see merged please follow these s
 
 1. Make sure you read the instructions mentioned in the ``Dictionary format`` section above to submit correctly formatted entries.
 
-2. Sort the dictionary. This is done by invoking (in the top level directory of ``codespell/``)::
+2. Choose the correct dictionary file to add your typo too. See `codespell --help` for explanations of the different dictionaries.
+
+3. Sort the dictionary. This is done by invoking (in the top level directory of ``codespell/``)::
 
        make check-dictionaries
 
@@ -122,11 +115,11 @@ If you have a suggested typo that you'd like to see merged please follow these s
 
        make sort-dictionaries
 
-3. Only after this process is complete do we recommend you submit the PR.
+4. Only after this process is complete do we recommend you submit the PR.
 
 **Important Notes:**
 
-* If the dictionary is submitted without being pre-sorted the PR will fail via TravisCI.
+* If the dictionaries are submitted without being pre-sorted the PR will fail via our various CI tools.
 * Not all PRs will be merged. This is pending on the discretion of the devs, maintainers, and the community.
 
 Updating
@@ -148,12 +141,15 @@ To stay current with codespell developments it is possible to build codespell fr
 Updating the dictionary
 -----------------------
 
-In the scenario where the user prefers not to follow the development version of codespell yet still opts to benefit from the frequently updated `dictionary.txt` file, we recommend running a simple set of commands to achieve this ::
+In the scenario where the user prefers not to follow the development version of codespell yet still opts to benefit from the frequently updated dictionary files, we recommend running a simple set of commands to achieve this ::
 
     wget https://raw.githubusercontent.com/codespell-project/codespell/master/codespell_lib/data/dictionary.txt
     codespell -D dictionary.txt
 
 The above simply downloads the latest ``dictionary.txt`` file and then by utilizing the ``-D`` flag allows the user to specify the freshly downloaded ``dictionary.txt`` as the custom dictionary instead of the default one.
+
+You can also do the same thing for the other dictionaries listed here:
+    https://github.com/codespell-project/codespell/tree/master/codespell_lib/data
 
 License
 -------
