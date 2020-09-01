@@ -2,15 +2,17 @@ SORT_ARGS := -f -b
 
 DICTIONARIES := codespell_lib/data/dictionary*.txt
 
-PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dictionary sort-dictionary trim-dictionary clean
+PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dictionary sort-dictionary trim-dictionary check-manifest flake8 pypi clean
 
 all: check-dictionaries codespell.1
+
+check: check-dictionaries check-manifest flake8
 
 check-dictionary: check-dictionaries
 sort-dictionary: sort-dictionaries
 trim-dictionary: trim-dictionaries
 
-codespell.1: codespell.1.include bin/codespell
+codespell.1: codespell.1.include bin/codespell Makefile
 	PYTHONPATH=. help2man ./bin/codespell --include codespell.1.include --no-info --output codespell.1
 	sed -i '/\.SS \"Usage/,+2d' codespell.1
 
@@ -44,6 +46,9 @@ trim-dictionaries:
 
 check-manifest:
 	check-manifest
+
+flake8:
+	flake8
 
 pypi:
 	python setup.py sdist register upload
