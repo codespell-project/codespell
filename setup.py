@@ -56,5 +56,8 @@ if __name__ == "__main__":
               'console_scripts': [
                   'codespell = codespell_lib:_script_main'
               ],
+          },
+          extras_require={
+              "dev":  ["pytest", "pytest-cov", "pytest-dependency"],
           }
           )
