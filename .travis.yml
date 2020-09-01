@@ -29,10 +29,10 @@ before_install:
     - source venv/bin/activate
     - python --version  # just to check
     - pip install -U pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
-    - pip install -e ".[dev]" # install the codespell dev packages
-    - retry pip install flake8 coverage codecov chardet "setuptools!=47.2.0" docutils check-manifest
+    - retry pip install flake8 coverage codecov chardet "setuptools!=47.2.0" docutils
     - retry pip install aspell-python-py3
     - cd $SRC_DIR
+    - pip install -e ".[dev]" # install the codespell dev packages
 
 install:
     - python setup.py install
