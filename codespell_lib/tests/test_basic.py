@@ -504,7 +504,7 @@ def test_config(tmpdir, capsys):
     conffile = op.join(d, 'config.cfg')
     with open(conffile, 'w') as f:
         f.write(
-            '[tool:codespell]\n'
+            '[codespell]\n'
             'skip = bad.txt\n'
             'count = \n'
         )

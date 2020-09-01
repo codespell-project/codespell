@@ -371,7 +371,7 @@ def parse_options(args):
     # Parse command line options.
     options = parser.parse_args(list(args))
 
-    # Load config files and look for ``tool:codespell`` options.
+    # Load config files and look for ``codespell`` options.
     if (
         options.config
         or os.path.exists('setup.cfg')
@@ -383,14 +383,14 @@ def parse_options(args):
         config = configparser.ConfigParser()
         config.read(cfg_files)
 
-        if config.has_section('tool:codespell'):
+        if config.has_section('codespell'):
             # Build a "fake" argv list using option name and value.
             cfg_args = []
-            for key in config['tool:codespell']:
+            for key in config['codespell']:
                 # Add option as arg.
                 cfg_args.append("--%s" % key)
                 # If value is blank, skip.
-                val = config['tool:codespell'][key]
+                val = config['codespell'][key]
                 if val != "":
                     cfg_args.append(val)
 
