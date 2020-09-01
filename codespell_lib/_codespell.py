@@ -372,33 +372,28 @@ def parse_options(args):
     options = parser.parse_args(list(args))
 
     # Load config files and look for ``codespell`` options.
-    if (
-        options.config
-        or os.path.exists('setup.cfg')
-        or os.path.exists('.codespellrc')
-    ):
-        cfg_files = ['setup.cfg', '.codespellrc']
-        if options.config:
-            cfg_files.append(options.config)
-        config = configparser.ConfigParser()
-        config.read(cfg_files)
+    cfg_files = ['setup.cfg', '.codespellrc']
+    if options.config:
+        cfg_files.append(options.config)
+    config = configparser.ConfigParser()
+    config.read(cfg_files)
 
-        if config.has_section('codespell'):
-            # Build a "fake" argv list using option name and value.
-            cfg_args = []
-            for key in config['codespell']:
-                # Add option as arg.
-                cfg_args.append("--%s" % key)
-                # If value is blank, skip.
-                val = config['codespell'][key]
-                if val != "":
-                    cfg_args.append(val)
+    if config.has_section('codespell'):
+        # Build a "fake" argv list using option name and value.
+        cfg_args = []
+        for key in config['codespell']:
+            # Add option as arg.
+            cfg_args.append("--%s" % key)
+            # If value is blank, skip.
+            val = config['codespell'][key]
+            if val != "":
+                cfg_args.append(val)
 
-            # Parse config file options.
-            options = parser.parse_args(cfg_args)
+        # Parse config file options.
+        options = parser.parse_args(cfg_args)
 
-            # Re-parse command line options to override config.
-            options = parser.parse_args(list(args), namespace=options)
+        # Re-parse command line options to override config.
+        options = parser.parse_args(list(args), namespace=options)
 
     if not options.files:
         options.files.append('.')
