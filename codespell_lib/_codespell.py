@@ -394,12 +394,11 @@ def parse_options(args):
                 if val != "":
                     cfg_args.append(val)
 
-            # Positional-only args cannot be specified in config file, so pass
-            # through original positional command line args.
-            cfg_args += options.files
+            # Parse config file options.
+            options = parser.parse_args(cfg_args)
 
-            # Parse config file options to override command line options.
-            options = parser.parse_args(cfg_args, namespace=options)
+            # Re-parse command line options to override config.
+            options = parser.parse_args(list(args), namespace=options)
 
     if not options.files:
         options.files.append('.')

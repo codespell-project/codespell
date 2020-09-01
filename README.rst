@@ -97,8 +97,8 @@ This is equivalent to running::
 
     codespell --quiet-level 3 --count --skip "*.po,*.ts,./src/3rdParty,./src/Test"
 
-Any options specified in the config file will *override* options from the
-command line.
+Any options specified in the command line will *override* options from the
+config file.
 
 Dictionary format
 -----------------
