@@ -107,6 +107,17 @@ directly, but instead be manually inspected. E.g.:
    Note that there isn't a comma in the end of the line. The last argument is
    treated as the reason why a suggestion cannot be automatically applied.
 
+Development Setup
+-----------------
+
+You can install required dependencies for development by running the following within a checkout of the codespell source::
+
+       pip install -e ".[dev]"
+
+To run tests against the codebase run::
+
+       make check
+
 Sending Pull Requests
 ---------------------
 
@@ -181,6 +192,7 @@ with the following terms:
 
 .. _GPL v2: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-dictionary.txt is a derived work of English Wikipedia and is released under the
-Creative Commons Attribution-Share-Alike License 3.0
+``dictionary.txt`` and the other ``dictionary_*.txt`` files are a derived work of
+English Wikipedia and are released under the Creative Commons
+Attribution-Share-Alike License 3.0
 http://creativecommons.org/licenses/by-sa/3.0/

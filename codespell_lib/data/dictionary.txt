@@ -56,7 +56,7 @@ abnormaly->abnormally
 abnornally->abnormally
 abnove->above
 abnrormal->abnormal
-aboce->above
+aboce->above, abode,
 abolute->absolute
 abondon->abandon
 abondoned->abandoned
@@ -2592,7 +2592,9 @@ asuming->assuming
 asumption->assumption
 asure->assure
 aswell->as well
+asychronous->asynchronous
 asychronously->asynchronously
+asycn->async
 asycronous->asynchronous
 asymetic->asymmetric
 asymetri->assymetry
@@ -5225,6 +5227,10 @@ cofrimed->confirmed
 cofriming->confirming
 cofrims->confirms
 cognizent->cognizant
+coherance->coherence
+coherancy->coherency
+coherant->coherent
+coherantly->coherently
 coice->choice
 coincedentally->coincidentally
 coinitailize->coinitialize
@@ -12280,6 +12286,7 @@ fallbck->fallback
 fallhrough->fallthrough
 fallthruogh->fallthrough
 falltrough->fallthrough
+falsly->falsely
 falt->fault
 falure->failure
 familar->familiar
@@ -14619,6 +14626,10 @@ incluing->including
 inclused->included
 inclusinve->inclusive
 incmrement->increment
+incoherance->incoherence
+incoherancy->incoherency
+incoherant->incoherent
+incoherantly->incoherently
 incomapatibility->incompatibility
 incomapatible->incompatible
 incomaptible->incompatible
@@ -20132,10 +20143,10 @@ positivies->positives
 positoin->position
 positoined->positioned
 positoins->positions
-positon->position
+positon->position, positron,
 positoned->positioned
 positoning->positioning
-positons->positions
+positons->positions, positrons,
 positve->positive
 positves->positives
 POSIX-complient->POSIX-compliant
@@ -25301,6 +25312,8 @@ stradegies->strategies
 stradegy->strategy
 stragedy->strategy
 stragegy->strategy
+strageties->strategies
+stragety->strategy
 straigh-forward->straightforward
 straighforward->straightforward
 straightfoward->straightforward
@@ -26042,8 +26055,13 @@ syatem->system
 syatems->systems
 sybsystem->subsystem
 sybsystems->subsystems
+sychronisation->synchronisation
 sychronisly->synchronously
+sychronization->synchronization
 sychronmode->synchronmode
+sychronous->synchronous
+sychronously->synchronously
+sycn->sync
 sycology->psychology
 sycronise->synchronise
 sycronised->synchronised
@@ -26920,6 +26938,10 @@ trafficed->trafficked
 trafficing->trafficking
 trafic->traffic
 tragectory->trajectory
+traget->target
+trageted->targeted
+trageting->targeting
+tragets->targets
 traiing->trailing, training,
 trailling->trailing
 traker->tracker
