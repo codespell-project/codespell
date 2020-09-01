@@ -58,6 +58,7 @@ if __name__ == "__main__":
               ],
           },
           extras_require={
-              "dev":  ["pytest", "pytest-cov", "pytest-dependency"],
+              "dev":  ["pytest", "pytest-cov", "pytest-dependency", "check-manifest"],
+              "hard-encoding-detection":  ["chardet"],
           }
           )
