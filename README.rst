@@ -81,7 +81,7 @@ Want to know if a word you're proposing exists in codespell already? It is possi
 Dictionary format
 -----------------
 
-The format of the dictionaries was influenced by the one it originally came from,
+The format of the dictionaries was influenced by the one they originally came from,
 i.e. from Wikipedia. The difference is how multiple options are treated. E.g.:
 
 1. Simple entry: one wrong word / one suggestion::
