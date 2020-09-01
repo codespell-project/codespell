@@ -13,7 +13,7 @@ cache:
 
 install:
   - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
-  - "pip install flake8 coverage codecov chardet setuptools"
+  - "pip install flake8 codecov chardet setuptools"
   - "pip install -e \".[dev]\"" # install the codespell dev packages
   - "python setup.py develop"
 
