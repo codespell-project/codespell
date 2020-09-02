@@ -12322,8 +12322,9 @@ fatig->fatigue
 fatser->faster
 fature->feature
 faught->fought
+fauilure->failure
 fauilures->failures
-faund->found
+faund->found, fund,
 favoutrable->favourable
 faymus->famous
 fcound->found
@@ -12514,15 +12515,25 @@ fisionable->fissionable
 fisisist->physicist
 fisist->physicist
 fisrt->first
-fiter->filter, fighter,
+fiter->filter, fighter, fitter, fiver,
 fitering->filtering
-fiters->filters, fighters,
+fiters->filters, fighters, fitters, fivers,
 fitler->filter
 fitlers->filters
 fivety->fifty
 fixe->fixed, fixes, fix, fixme, fixer,
 fixeme->fixme
 fizeek->physique
+flacor->flavor
+flacored->flavored
+flacoring->flavoring
+flacorings->flavorings
+flacors->flavors
+flacour->flavour
+flacouring->flavouring
+flacourings->flavourings
+flacoured->flavoured
+flacours->flavours
 flage->flags
 flaged->flagged
 flages->flags
@@ -12532,7 +12543,7 @@ flamable->flammable
 flaot->float
 flaoting->floating
 flashflame->flashframe
-flass->class, flask,
+flass->class, glass, flask, flash,
 flate->flat
 flatened->flattened
 flattend->flattened
@@ -17015,7 +17026,7 @@ messsages->messages
 messure->measure
 messured->measurd
 messurement->measurement
-messures->measure
+messures->measures
 messuring->measuring
 messurment->measurement
 mesure->measure
@@ -17200,7 +17211,7 @@ mininal->minimal
 mininum->minimum
 miniscule->minuscule
 miniscully->minusculy
-ministery->ministry
+ministery->ministry, minister,
 miniture->miniature
 minium->minimum
 miniums->minimums
