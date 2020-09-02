@@ -110,13 +110,17 @@ def _check_err_rep(err, rep, in_aspell, fname):
     if rep.count(','):
         assert rep.endswith(','), ('error %s: multiple corrections must end '
                                    'with trailing ","' % (err,))
-    reps = [r.strip() for r in rep.lower().split(',')]
+    reps = [r.strip() for r in rep.split(',')]
     reps = [r for r in reps if len(r)]
     for r in reps:
         assert err != r.lower(), ('error %r corrects to itself amongst others'
                                   % (err,))
         _check_aspell(
             r, 'error %s: correction %r' % (err, r), in_aspell[1], fname)
+    # aspell dictionary is case sensitive, so pass the original case into there
+    # we could ignore the case, but that would miss things like days of the
+    # week which we want to be correct
+    reps = [r.lower() for r in reps]
     assert len(set(reps)) == len(reps), ('error %s: corrections "%s" are not '
                                          '(lower-case) unique' % (err, rep))
 
@@ -134,7 +138,7 @@ def _check_err_rep(err, rep, in_aspell, fname):
     ('a', 'bar, bat', 'must end with trailing ","'),
     ('a', 'a, bar,', 'corrects to itself amongst others'),
     ('a', 'a', 'corrects to itself'),
-    ('a', 'bar, bar,', 'unique'),
+    ('a', 'bar, Bar,', 'unique'),
 ])
 def test_error_checking(err, rep, match):
     """Test that our error checking works."""
@@ -142,7 +146,7 @@ def test_error_checking(err, rep, match):
         _check_err_rep(err, rep, (None, None), 'dummy')
 
 
-@pytest.mark.skipif(speller is None, reason='requires aspell')
+@pytest.mark.skipif(speller is None, reason='requires aspell-en')
 @pytest.mark.parametrize('err, rep, err_aspell, rep_aspell, match', [
     # This doesn't raise any exceptions, so skip for now:
     # pytest.param('a', 'uvw, bar,', None, None, 'should be in aspell'),
@@ -152,12 +156,14 @@ def test_error_checking(err, rep, match):
     ('abcdef', 'uvwxyz, bar,', True, True, 'should be in aspell'),
     ('abcdef', 'uvwxyz, bar,', False, True, 'should be in aspell'),
     ('a', 'bar, back,', None, False, 'should not be in aspell'),
+    ('a', 'bar, back, Wednesday,', None, False, 'should not be in aspell'),
     ('abcdef', 'ghijkl, uvwxyz,', True, False, 'should be in aspell'),
     ('abcdef', 'uvwxyz, bar,', False, False, 'should not be in aspell'),
     # Multi-word corrections
     # One multi-word, both parts
     ('a', 'abcdef uvwxyz', None, True, 'should be in aspell'),
     ('a', 'bar back', None, False, 'should not be in aspell'),
+    ('a', 'bar back Wednesday', None, False, 'should not be in aspell'),
     # Second multi-word, both parts
     ('a', 'bar back, abcdef uvwxyz, bar,', None, True, 'should be in aspell'),
     ('a', 'abcdef uvwxyz, bar back, ghijkl,', None, False, 'should not be in aspell'),  # noqa: E501
