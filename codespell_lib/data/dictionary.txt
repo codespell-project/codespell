@@ -569,7 +569,7 @@ acquited->acquitted
 acqure->acquire
 acqured->acquired
 acqures->acquires
-acquries->acquires
+acquries->acquires, equerries,
 acquring->acquiring
 acrage->acreage
 acrued->accrued
@@ -8662,6 +8662,7 @@ destuction->destruction
 desturcted->destructed
 desturtor->destructor
 desturtors->destructors
+desychronized->desynchronized
 detabase->database
 detachs->detaches
 detahced->detached
