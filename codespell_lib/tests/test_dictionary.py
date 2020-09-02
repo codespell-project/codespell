@@ -183,6 +183,7 @@ allowed_dups = {
     ('dictionary.txt', 'dictionary_rare.txt'),
     ('dictionary.txt', 'dictionary_usage.txt'),
     ('dictionary_rare.txt', 'dictionary_usage.txt'),
+    ('dictionary_rare.txt', 'dictionary_informal.txt'),
 }
 
 
