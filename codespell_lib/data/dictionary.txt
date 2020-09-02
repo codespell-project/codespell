@@ -4845,7 +4845,7 @@ choser->chooser
 chosing->choosing
 chossen->chosen
 chould->should, could,
-chouse->choose, chose,
+chouse->choose, chose, choux,
 chracter->character
 chracters->characters
 chractor->character
@@ -7065,7 +7065,10 @@ correllation->correlation
 correllations->correlations
 correnspond->correspond
 corrensponded->corresponded
+correnspondence->correspondence
+correnspondences->correspondences
 correnspondent->correspondent
+correnspondents->correspondents
 corrensponding->corresponding
 corrensponds->corresponds
 corrent->correct, current,
@@ -7087,8 +7090,12 @@ correspoding->corresponding
 correspoinding->corresponding
 correspomd->correspond
 correspomded->corresponded
+correspomdence->correspondence
+correspomdences->correspondences
 correspomdent->correspondent
+correspomdents->correspondents
 correspomding->corresponding
+correspomds->corresponds
 correspondance->correspondence
 correspondances->correspondences
 correspondant->correspondent
@@ -7371,6 +7378,8 @@ crowkay->croquet
 crowm->crown
 crrespond->correspond
 crsytal->crystal
+crsytallisation->crystallisation
+crsytals->crystals
 crsytallographic->crystallographic
 crtical->critical
 crticised->criticised
@@ -7501,6 +7510,8 @@ cyrpto->crypto
 cyrrent->current
 cyrrilic->Cyrillic
 cyrstal->crystal
+cyrstallisation->crystallisation
+cyrstals->crystals
 cyrto->crypto
 cywgin->Cygwin
 daa->data
@@ -16036,7 +16047,7 @@ jumpt->jumped, jump,
 juristiction->jurisdiction
 juristictions->jurisdictions
 jus->just
-juse->just, juice,
+juse->just, juice, Jude, June,
 justfied->justified
 justication->justification
 justifed->justified
@@ -19349,7 +19360,7 @@ Palistinians->Palestinians
 pallete->palette
 pallette->palette
 palletted->paletted
-paln->plan, pain,
+paln->plan, pain, palm,
 paltette->palette
 paltform->platform
 pamflet->pamphlet
@@ -23689,6 +23700,10 @@ scoll->scroll
 scolling->scrolling
 scopeing->scoping
 scorebord->scoreboard
+scource->source, scouse,
+scourced->sourced, scoured,
+scourcer->scourer, sorcerer, scouser,
+scources->sources
 scrach->scratch
 scrached->scratched
 scraches->scratches
@@ -25224,7 +25239,7 @@ standartized->standardized
 standarts->standards
 standatd->standard
 standtard->standard
-standy->standby, sandy,
+standy->standby, sandy, standee,
 stange->strange
 stanp->stamp
 staration->starvation
