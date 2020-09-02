@@ -446,7 +446,7 @@ accuratley->accurately
 accuratly->accurately
 accuray->accuracy, actuary,
 accure->accrue, occur, acquire,
-accured->accrued, occurred,
+accured->accrued, occurred, acquired,
 accurences->occurrences
 accurracy->accuracy
 accurring->occurring
@@ -7655,16 +7655,16 @@ deamiguates->disambiguates
 deamiguation->disambiguation
 deamon->daemon
 deamonified->daemonised, daemonized,
-deamonisation->daemonisation, daemonization,
-deamonise->daemonise, daemonize,
-deamonised->daemonised, daemonized,
-deamonises->daemonises, daemonizes,
-deamonising->daemonising, daemonizing,
-deamonization->daemonization, daemonisation,
-deamonize->daemonize, daemonise,
-deamonized->daemonized, daemonised,
-deamonizes->daemonizes, daemonises,
-deamonizing->daemonizing, daemonising,
+deamonisation->daemonisation
+deamonise->daemonise
+deamonised->daemonised
+deamonises->daemonises
+deamonising->daemonising
+deamonization->daemonization
+deamonize->daemonize
+deamonized->daemonized
+deamonizes->daemonizes
+deamonizing->daemonizing
 deamons->daemons
 deassering->deasserting
 deatch->detach
@@ -12247,9 +12247,9 @@ facorite->favorite
 facorites->favorites
 facors->favors, fakers,
 facour->favour, favor,
-facourite->favourite, favorite,
-facourites->favourites, favorites,
-facours->favours, favors,
+facourite->favourite
+facourites->favourites
+facours->favours
 factization->factorization
 factorizaiton->factorization
 factorys->factories
@@ -12335,7 +12335,7 @@ fauilure->failure
 fauilures->failures
 faund->found, fund,
 favoutrable->favourable
-favuourites->favourites, favorites,
+favuourites->favourites
 faymus->famous
 fcound->found
 feasabile->feasible
@@ -16938,7 +16938,7 @@ medeival->medieval
 medevial->medieval
 medhod->method
 medhods->methods
-mediciney->medicine
+mediciney->medicine, medicinal,
 mediciny->medicine, medicinal,
 medievel->medieval
 mediterainnean->mediterranean
