@@ -1424,7 +1424,7 @@ alrms->alarms
 alrogithm->algorithm
 alrteady->already
 als->also
-alse->also, else,
+alse->also, else, false,
 alsmost->almost
 alsot->also
 alsready->already
@@ -5044,7 +5044,6 @@ cloes->close
 cloesd->closed
 cloesed->closed
 cloesing->closing
-cloneable->clonable
 clonez->clones, cloner,
 clonning->cloning
 clory->glory
@@ -5704,6 +5703,7 @@ compatbility->compatibility
 compatiability->compatibility
 compatiable->compatible
 compatiablity->compatibility
+compatibel->compatible
 compatibile->compatible
 compatibiliy->compatibility
 compatibilty->compatibility
@@ -7884,7 +7884,6 @@ dedidated->dedicated
 dedly->deadly
 deductable->deductible
 deductables->deductibles
-dedup->dedupe
 deduplacate->deduplicate
 deduplacated->deduplicated
 deduplacates->deduplicates
@@ -13127,7 +13126,6 @@ fysisist->physicist
 fysisit->physicist
 gabage->garbage
 gadged->gadget, gauged,
-gae->game, Gael, gale,
 galatic->galactic
 Galations->Galatians
 gallaries->galleries
@@ -16065,7 +16063,6 @@ keyoutch->keytouch
 keyowrd->keyword
 keypair->key pair
 keypairs->key pairs
-keyserver->key server
 keyservers->key servers
 keystokes->keystrokes
 keyward->keyword
@@ -18502,7 +18499,6 @@ objet->object
 objetc->object
 objetcs->objects
 objets->objects
-objext->object
 objtain->obtain
 objtained->obtained
 objtains->obtains
@@ -18612,7 +18608,6 @@ ocurrance->occurrence
 ocurred->occurred
 ocurrence->occurrence
 ocurrences->occurrences
-od->of
 oder->order, odor,
 odly->oddly
 oen->one
@@ -26330,7 +26325,7 @@ tbey->they
 tcahce->cache
 tcahces->caches
 tcheckout->checkout
-te->the, be,
+te->the, be, we,
 teached->taught
 teachnig->teaching
 teamplate->template
