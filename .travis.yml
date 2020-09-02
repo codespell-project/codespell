@@ -4,7 +4,7 @@
 # for it to be on multiple physical lines, so long as you remember: - There
 # can't be any leading "-"s - All newlines will be removed, so use ";"s
 
-dist: bionic
+dist: focal
 language: python
 cache: pip
 python:
@@ -29,23 +29,20 @@ before_install:
     - source venv/bin/activate
     - python --version  # just to check
     - pip install -U pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
-    - retry pip install pytest pytest-cov pytest-dependency flake8 coverage codecov chardet "setuptools!=47.2.0" docutils check-manifest
+    - retry pip install codecov chardet "setuptools!=47.2.0" docutils
     - retry pip install aspell-python-py3
     - cd $SRC_DIR
+    - pip install -e ".[dev]" # install the codespell dev packages
 
 install:
     - python setup.py install
 
 script:
     - codespell --help
-    - make check-dictionary
-    - codespell --skip="codespell_lib/tests/test_basic.py,codespell_lib/data/*" codespell_lib/
+    - make check
+    - codespell --check-filenames --skip="./.git/*,*.pyc,./codespell_lib/tests/test_basic.py,./codespell_lib/data/*,./example/code.c,./build/lib/codespell_lib/tests/test_basic.py,./build/lib/codespell_lib/data/*"
     # this file has an error
     - "! codespell codespell_lib/tests/test_basic.py"
-    - flake8
-    - python setup.py check --restructuredtext --strict
-    - pytest codespell_lib
-    - make check-manifest
 
 after_success:
     - codecov

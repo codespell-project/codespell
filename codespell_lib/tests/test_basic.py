@@ -455,6 +455,72 @@ def test_context(tmpdir, capsys):
     assert 'ERROR' in lines[0]
 
 
+def test_ignore_regex_flag(tmpdir, capsys):
+    """Test ignore regex flag functionality."""
+    d = str(tmpdir)
+
+    # Invalid regex.
+    code, stdout, _ = cs.main('--ignore-regex=(', std=True)
+    assert code == EX_USAGE
+    assert 'usage:' in stdout
+
+    with open(op.join(d, 'flag.txt'), 'w') as f:
+        f.write('# Please see http://example.com/abandonned for info\n')
+    # Test file has 1 invalid entry, and it's not ignored by default.
+    assert cs.main(f.name) == 1
+    # An empty regex is the default value, and nothing is ignored.
+    assert cs.main(f.name, '--ignore-regex=') == 1
+    assert cs.main(f.name, '--ignore-regex=""') == 1
+    # Non-matching regex results in nothing being ignored.
+    assert cs.main(f.name, '--ignore-regex=^$') == 1
+    # A word can be ignored.
+    assert cs.main(f.name, '--ignore-regex=abandonned') == 0
+    # Ignoring part of the word can result in odd behavior.
+    assert cs.main(f.name, '--ignore-regex=nn') == 0
+
+    with open(op.join(d, 'flag.txt'), 'w') as f:
+        f.write('abandonned donn\n')
+    # Test file has 2 invalid entries.
+    assert cs.main(f.name) == 2
+    # Ignoring donn breaks them both.
+    assert cs.main(f.name, '--ignore-regex=donn') == 0
+    # Adding word breaks causes only one to be ignored.
+    assert cs.main(f.name, r'--ignore-regex=\Wdonn\W') == 1
+
+
+def test_config(tmpdir, capsys):
+    """
+    Tests loading options from a config file.
+    """
+    d = str(tmpdir)
+
+    # Create sample files.
+    with open(op.join(d, 'bad.txt'), 'w') as f:
+        f.write('abandonned donn\n')
+    with open(op.join(d, 'good.txt'), 'w') as f:
+        f.write("good")
+
+    # Create a config file.
+    conffile = op.join(d, 'config.cfg')
+    with open(conffile, 'w') as f:
+        f.write(
+            '[codespell]\n'
+            'skip = bad.txt\n'
+            'count = \n'
+        )
+
+    # Should fail when checking both.
+    code, stdout, _ = cs.main(d, count=True, std=True)
+    # Code in this case is not exit code, but count of misspellings.
+    assert code == 2
+    assert 'bad.txt' in stdout
+
+    # Should pass when skipping bad.txt
+    code, stdout, _ = cs.main('--config', conffile, d, count=True, std=True)
+    assert code == 0
+    assert 'bad.txt' not in stdout
+
+
 @contextlib.contextmanager
 def FakeStdin(text):
     if sys.version[0] == '2':
