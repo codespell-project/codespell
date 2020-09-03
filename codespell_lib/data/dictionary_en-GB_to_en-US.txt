@@ -62,6 +62,7 @@ customisation->customization
 customise->customize
 customised->customized
 customises->customizes
+customiser->customizer
 customising->customizing
 daemonisation->daemonization
 daemonise->daemonize
@@ -81,6 +82,7 @@ digitisation->digitization
 digitise->digitize
 digitised->digitized
 digitises->digitizes
+digitiser->digitizer
 digitising->digitizing
 emphasise->emphasize
 emphasised->emphasized
@@ -218,8 +220,11 @@ regularised->regularized
 regulariser->regularizer
 regularises->regularizes
 regularising->regularizing
+reinitialisation->reinitialization
 reinitialise->reinitialize
 reinitialised->reinitialized
+reinitialises->reinitializes
+reinitialising->reinitializing
 reorganisation->reorganization
 reorganise->reorganize
 reorganised->reorganized
@@ -286,6 +291,8 @@ utilising->utilizing
 virtualisation->virtualization
 virtualise->virtualize
 virtualised->virtualized
+virtualises->virtualizes
+virtualising->virtualizing
 visualisation->visualization
 visualisations->visualizations
 visualise->visualize
