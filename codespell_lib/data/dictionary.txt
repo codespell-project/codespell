@@ -445,6 +445,8 @@ accuratelly->accurately
 accuratley->accurately
 accuratly->accurately
 accuray->accuracy, actuary,
+accure->accrue, occur, acquire,
+accured->accrued, occurred, acquired,
 accurences->occurrences
 accurracy->accuracy
 accurring->occurring
@@ -567,9 +569,10 @@ acquited->acquitted
 acqure->acquire
 acqured->acquired
 acqures->acquires
+acquries->acquires, equerries,
 acquring->acquiring
 acrage->acreage
-acrued->accured
+acrued->accrued
 acses->cases, access,
 acssumed->assumed
 actally->actually
@@ -737,7 +740,7 @@ adivsories->advisories
 adivsoriy->advisory, advisories,
 adivsoriyes->advisories
 adivsory->advisory
-adjacentcy->adjacence
+adjacentcy->adjacency, adjacence,
 adjacentsy->adjacency
 adjactend->adjacent
 adjancent->adjacent
@@ -860,7 +863,8 @@ afficionados->aficionados
 affilate->affiliate
 affilates->affiliates
 affilliate->affiliate
-affinitied->affinitized
+affinitied->affinities
+affinitized->affinities, affinity,
 affinitze->affinitize
 affintize->affinitize
 affitnity->affinity
@@ -2032,7 +2036,7 @@ aquiring->acquiring
 aquisition->acquisition
 aquit->acquit
 aquitted->acquitted
-aquries->acquries
+aquries->acquires, equerries,
 arameters->parameters
 aranged->arranged
 arangement->arrangement
@@ -2574,8 +2578,11 @@ assurred->assured
 assymetric->asymmetric
 assymetrical->asymmetrical
 assymetries->asymmetries
+assymetry->asymmetry
 assymmetric->asymmetric
 assymmetrical->asymmetrical
+assymmetries->asymmetries
+assymmetry->asymmetry
 asterices->asterisks
 asteriks->asterisk, asterisks,
 asteriod->asteroid
@@ -2592,17 +2599,19 @@ asuming->assuming
 asumption->assumption
 asure->assure
 aswell->as well
+asychronize->asynchronize
+asychronized->asynchronized
 asychronous->asynchronous
 asychronously->asynchronously
 asycn->async
 asycronous->asynchronous
 asymetic->asymmetric
-asymetri->assymetry
+asymetri->asymmetric, asymmetry,
 asymetric->asymmetric
 asymetrical->asymmetrical
 asymetricaly->asymmetrically
 asymmeric->asymmetric
-asymmetri->asymmetric
+asymmetri->asymmetric, asymmetry,
 asynchnous->asynchronous
 asynchonous->asynchronous
 asynchonously->asynchronously
@@ -6513,7 +6522,7 @@ constrcuts->constructs
 constriants->constraints
 constrollers->controllers
 construc->construct
-construced->construtced
+construced->constructed, construed,
 construces->constructs
 construcing->constructing
 construcion->construction
@@ -6537,6 +6546,7 @@ construktor->constructor
 construnctor->constructor
 construrtors->constructors
 construt->construct
+construtced->constructed
 construter->constructor
 construters->constructors
 constrution->construction
@@ -6838,8 +6848,7 @@ conveters->converters
 conveting->converting
 convetion->convention
 convets->converts
-convexe->convex
-convexes->convex
+convexe->convex, convexes,
 conveyer->conveyor
 conviced->convinced
 convience->convince, convenience,
@@ -7222,7 +7231,8 @@ counterintuive->counter intuitive
 counterpar->counterpart
 counterpoart->counterpart
 countie's->counties, counties', county's,
-countinueq->continueq
+countinue->continue
+countinueq->continueq, continue,
 countires->countries, counties,
 countour->contour, counter,
 countours->contours, counters,
@@ -7503,6 +7513,7 @@ dacquiri->daiquiri
 dadlock->deadlock
 daed->dead
 dael->deal, dial, dahl,
+daemonified->daemonised, daemonized,
 dafault->default
 dafaults->defaults
 dafaut->default
@@ -7645,7 +7656,7 @@ deamiguate->disambiguate
 deamiguates->disambiguates
 deamiguation->disambiguation
 deamon->daemon
-deamonified->daemonified
+deamonified->daemonised, daemonized,
 deamonisation->daemonisation
 deamonise->daemonise
 deamonised->daemonised
@@ -8653,6 +8664,8 @@ destuction->destruction
 desturcted->destructed
 desturtor->destructor
 desturtors->destructors
+desychronize->desynchronize
+desychronized->desynchronized
 detabase->database
 detachs->detaches
 detahced->detached
@@ -9785,7 +9798,7 @@ dordered->ordered
 dorment->dormant
 dorp->drop
 dosen't->doesn't
-dosen->doesn
+dosen->dozen, dose, doesn,
 dosen;t->doesn't
 dosens->dozens
 dosent'->doesn't
@@ -12238,9 +12251,9 @@ facorite->favorite
 facorites->favorites
 facors->favors, fakers,
 facour->favour, favor,
-facourite->favourite, favorite,
-facourites->favuourites, favorites,
-facours->favours, favors,
+facourite->favourite
+facourites->favourites
+facours->favours
 factization->factorization
 factorizaiton->factorization
 factorys->factories
@@ -12326,6 +12339,7 @@ fauilure->failure
 fauilures->failures
 faund->found, fund,
 favoutrable->favourable
+favuourites->favourites
 faymus->famous
 fcound->found
 feasabile->feasible
@@ -12556,7 +12570,8 @@ Flemmish->Flemish
 flewant->fluent
 flexability->flexibility
 flexable->flexible
-flexibel->flexibele
+flexibel->flexible
+flexibele->flexible
 flexibilty->flexibility
 flext->flex
 flie->file
@@ -14141,7 +14156,7 @@ idenfifier->identifier
 idenitify->identify
 identation->indentation
 identcial->identical
-identiable->identificable
+identiable->identifiable
 idential->identical
 identicial->identical
 identidier->identifier
@@ -14151,6 +14166,7 @@ identifeir->identifier
 identifeirs->identifiers
 identifer->identifier
 identifers->identifiers
+identificable->identifiable
 identifictaion->identification
 identifieer->identifier
 identifing->identifying
@@ -16882,6 +16898,7 @@ meaninless->meaningless
 meaninng->meaning
 mear->wear, mere, mare,
 mearly->merely, nearly,
+measurd->measured, measure,
 measuremenet->measurement
 measuremenets->measurements
 measurmenet->measurement
@@ -16925,7 +16942,8 @@ medeival->medieval
 medevial->medieval
 medhod->method
 medhods->methods
-mediciney->mediciny
+mediciney->medicine, medicinal,
+mediciny->medicine, medicinal,
 medievel->medieval
 mediterainnean->mediterranean
 Mediteranean->Mediterranean
@@ -17024,7 +17042,7 @@ messges->messages
 messsage->message
 messsages->messages
 messure->measure
-messured->measurd
+messured->measured
 messurement->measurement
 messures->measures
 messuring->measuring
@@ -17210,7 +17228,7 @@ minimzing->minimizing
 mininal->minimal
 mininum->minimum
 miniscule->minuscule
-miniscully->minusculy
+miniscully->minusculely
 ministery->ministry, minister,
 miniture->miniature
 minium->minimum
@@ -17228,6 +17246,7 @@ mintors->mentors, monitors,
 minum->minimum
 minumum->minimum
 minuscle->minuscule
+minusculy->minusculely, minuscule,
 minuts->minutes
 miplementation->implementation
 mirconesia->micronesia
@@ -19625,7 +19644,7 @@ peirod->period
 peirodical->periodical
 peirodicals->periodicals
 peirods->periods
-Peloponnes->Peloponnesus
+Peloponnes->Peloponnese, Peloponnesus,
 penalities->penalties
 penality->penalty
 penatly->penalty
@@ -19770,7 +19789,6 @@ permuation->permutation
 permuations->permutations
 permutaion->permutation
 permutaions->permutations
-permuter->permutor
 peroendicular->perpendicular
 perogative->prerogative
 peroid->period
@@ -26073,8 +26091,16 @@ syatems->systems
 sybsystem->subsystem
 sybsystems->subsystems
 sychronisation->synchronisation
+sychronise->synchronise
+sychronised->synchronised
+sychroniser->synchroniser
+sychronises->synchronises
 sychronisly->synchronously
 sychronization->synchronization
+sychronize->synchronize
+sychronized->synchronized
+sychronizer->synchronizer
+sychronizes->synchronizes
 sychronmode->synchronmode
 sychronous->synchronous
 sychronously->synchronously
@@ -26151,9 +26177,9 @@ synchronsouly->synchronously
 synchronuous->synchronous
 synchronuously->synchronously
 synchronus->synchronous
-syncrhonise->sychronise
+syncrhonise->synchronise
 syncrhonised->synchronised
-syncrhonize->sychronize
+syncrhonize->synchronize
 syncrhonized->synchronized
 syncronise->synchronise
 syncronised->synchronised
@@ -26825,9 +26851,11 @@ timeput->timeout, time put,
 timeputs->timeouts, time puts,
 timere->timer
 timeschedule->time schedule
+timespanp->timespan
+timespanps->timespans
 timestan->timespan
-timestanp->timespanp
-timestanps->timespanps
+timestanp->timestamp, timespan,
+timestanps->timestamps, timespans,
 timestans->timespans
 timestemp->timestamp
 timestemps->timestamps
@@ -28142,7 +28170,10 @@ unsurprizing->unsurprising
 unsurprizingly->unsurprisingly
 unsused->unused
 unswithced->unswitched
+unsychronise->unsynchronise
 unsychronised->unsynchronised
+unsychronize->unsynchronize
+unsychronized->unsynchronized
 untargetted->untargeted
 unter->under
 untill->until
