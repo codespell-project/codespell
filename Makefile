@@ -2,9 +2,14 @@ SORT_ARGS := -f -b
 
 DICTIONARIES := codespell_lib/data/dictionary*.txt
 
-PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dictionary sort-dictionary trim-dictionary clean
+PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dictionary sort-dictionary trim-dictionary clean test
 
 all: check-dictionaries codespell.1
+
+test:
+	@if command -v pytest > /dev/null; then \
+		pytest codespell_lib; \
+	fi
 
 check-dictionary: check-dictionaries
 sort-dictionary: sort-dictionaries
