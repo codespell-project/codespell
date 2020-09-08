@@ -28,8 +28,11 @@ import sys
 import textwrap
 
 word_regex_def = u"[\\w\\-'’`]+"
-uri_regex_def = (u"\\b((?:https?|t?ftp|file|git|smb)://[^\\s'\"]*|"
-                 u"[\\w.%+-]+@[\\w.-]+)\\b")
+# While we want to treat characters like ( or " as okay for a starting break,
+# these may occur unescaped in URIs, and so we are more restrictive on the
+# endpoint.  Emails are more restrictive, so the endpoint remains flexible.
+uri_regex_def = (u"(\\b(?:https?|t?ftp|file|git|smb)://[^\\s]+(?=$|\\s)|"
+                 u"\\b[\\w.%+-]+@[\\w.-]+\\b)")
 encodings = ('utf-8', 'iso-8859-1')
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
@@ -307,6 +310,10 @@ def parse_options(args):
                              'underscore, the hyphen, and the apostrophe is '
                              'used to build words. This option cannot be '
                              'specified together with --write-changes.')
+    parser.add_argument('--uri-regex',
+                        action='store', type=str,
+                        help='regular expression which is used to find URIs '
+                             'and emails. A default expression is provided.')
     parser.add_argument('-s', '--summary',
                         action='store_true', default=False,
                         help='print summary of fixes')
@@ -731,7 +738,14 @@ def main(*args):
             return EX_USAGE
         build_ignore_words(ignore_words_file, ignore_words)
 
-    uri_regex = re.compile(uri_regex_def)
+    uri_regex = options.uri_regex or uri_regex_def
+    try:
+        uri_regex = re.compile(uri_regex)
+    except re.error as err:
+        print("ERROR: invalid --uri-regex \"%s\" (%s)" %
+              (uri_regex, err), file=sys.stderr)
+        parser.print_help()
+        return EX_USAGE
     uri_ignore_words = parse_ignore_words_option(options.uri_ignore_words_list)
 
     if options.dictionary:
