@@ -21,6 +21,7 @@ from __future__ import print_function
 
 import argparse
 import codecs
+import configparser
 import fnmatch
 import os
 import re
@@ -362,11 +363,38 @@ def parse_options(args):
                         help='print LINES of leading context')
     parser.add_argument('-C', '--context', type=int, metavar='LINES',
                         help='print LINES of surrounding context')
+    parser.add_argument('--config', type=str,
+                        help='path to config file.')
 
     parser.add_argument('files', nargs='*',
                         help='files or directories to check')
 
+    # Parse command line options.
     options = parser.parse_args(list(args))
+
+    # Load config files and look for ``codespell`` options.
+    cfg_files = ['setup.cfg', '.codespellrc']
+    if options.config:
+        cfg_files.append(options.config)
+    config = configparser.ConfigParser()
+    config.read(cfg_files)
+
+    if config.has_section('codespell'):
+        # Build a "fake" argv list using option name and value.
+        cfg_args = []
+        for key in config['codespell']:
+            # Add option as arg.
+            cfg_args.append("--%s" % key)
+            # If value is blank, skip.
+            val = config['codespell'][key]
+            if val != "":
+                cfg_args.append(val)
+
+        # Parse config file options.
+        options = parser.parse_args(cfg_args)
+
+        # Re-parse command line options to override config.
+        options = parser.parse_args(list(args), namespace=options)
 
     if not options.files:
         options.files.append('.')

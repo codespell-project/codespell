@@ -146,7 +146,7 @@ def test_error_checking(err, rep, match):
         _check_err_rep(err, rep, (None, None), 'dummy')
 
 
-@pytest.mark.skipif(speller is None, reason='requires aspell')
+@pytest.mark.skipif(speller is None, reason='requires aspell-en')
 @pytest.mark.parametrize('err, rep, err_aspell, rep_aspell, match', [
     # This doesn't raise any exceptions, so skip for now:
     # pytest.param('a', 'uvw, bar,', None, None, 'should be in aspell'),

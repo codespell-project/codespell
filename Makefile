@@ -2,20 +2,17 @@ SORT_ARGS := -f -b
 
 DICTIONARIES := codespell_lib/data/dictionary*.txt
 
-PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dictionary sort-dictionary trim-dictionary clean test
+PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dictionary sort-dictionary trim-dictionary check-manifest check-distutils flake8 pytest pypi clean
 
 all: check-dictionaries codespell.1
 
-test:
-	@if command -v pytest > /dev/null; then \
-		pytest codespell_lib; \
-	fi
+check: check-dictionaries check-manifest check-distutils flake8 pytest
 
 check-dictionary: check-dictionaries
 sort-dictionary: sort-dictionaries
 trim-dictionary: trim-dictionaries
 
-codespell.1: codespell.1.include bin/codespell
+codespell.1: codespell.1.include bin/codespell Makefile
 	PYTHONPATH=. help2man ./bin/codespell --include codespell.1.include --no-info --output codespell.1
 	sed -i '/\.SS \"Usage/,+2d' codespell.1
 
@@ -32,6 +29,9 @@ check-dictionaries:
 	done
 	@if command -v pytest > /dev/null; then \
 		pytest codespell_lib/tests/test_dictionary.py; \
+	else \
+		echo "Test dependencies not present, install using 'pip install -e \".[dev]\"'"; \
+		exit 1; \
 	fi
 
 sort-dictionaries:
@@ -46,6 +46,15 @@ trim-dictionaries:
 
 check-manifest:
 	check-manifest
+
+check-distutils:
+	python setup.py check --restructuredtext --strict
+
+flake8:
+	flake8
+
+pytest:
+	pytest codespell_lib
 
 pypi:
 	python setup.py sdist register upload
