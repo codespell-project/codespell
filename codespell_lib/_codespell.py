@@ -28,7 +28,7 @@ import re
 import sys
 import textwrap
 
-# NOTE: flake8 supression due to it not liking \] escape sequence
+# NOTE: flake8 suppression due to it not liking \] escape sequence
 word_regex_def = u"([\\w\\-'’`]+)([.,?!-:;><@#$%^&*()_+=/\]\\[])?"  # noqa W605
 encodings = ('utf-8', 'iso-8859-1')
 USAGE = """
