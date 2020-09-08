@@ -520,6 +520,59 @@ def test_config(tmpdir, capsys):
     assert code == 0
     assert 'bad.txt' not in stdout
 
+def test_two_word_detect(tmpdir, capsys):
+
+    # test simple two word find
+    dictname = str(tmpdir / 'testdict.txt')
+    with open(dictname, 'w') as f:
+        f.write("will not->won't")
+
+    filename = str(tmpdir / 'flag.txt')
+    with open(filename, 'w') as f:
+        f.write('# I will not be corrected!\n')
+
+    code, stdout, stderr = cs.main(filename, "-D%s" % dictname, std=True)
+    assert "won't" in stdout
+    assert code == 1  # one change found
+
+    # test not finding two word match with punctuation between
+    with open(filename, 'w') as f:
+        f.write('# I will. not be corrected!\n')
+        f.write('# I will, not be corrected!\n')
+        f.write('# I will? not be corrected!\n')
+        f.write('# I will! not be corrected!\n')
+        f.write('# I will- not be corrected!\n')
+        f.write('# I will: not be corrected!\n')
+        f.write('# I will; not be corrected!\n')
+        f.write('# I will> not be corrected!\n')
+        f.write('# I will< not be corrected!\n')
+        f.write('# I will@ not be corrected!\n')
+        f.write('# I will# not be corrected!\n')
+        f.write('# I will$ not be corrected!\n')
+        f.write('# I will% not be corrected!\n')
+        f.write('# I will^ not be corrected!\n')
+        f.write('# I will& not be corrected!\n')
+        f.write('# I will* not be corrected!\n')
+        f.write('# I will( not be corrected!\n')
+        f.write('# I will) not be corrected!\n')
+        f.write('# I will_ not be corrected!\n')
+        f.write('# I will+ not be corrected!\n')
+        f.write('# I will= not be corrected!\n')
+        f.write('# I will/ not be corrected!\n')
+        f.write('# I will[ not be corrected!\n')
+        f.write('# I will] not be corrected!\n')
+
+    code, stdout, stderr = cs.main(filename, "-D%s" % dictname, std=True)
+    assert code == 0  # no changes found
+    assert "won't" not in stdout
+
+    # test that it does not match across lines
+    with open(filename, 'w') as f:
+        f.write('# I will\n not be corrected!\n')
+
+    code, stdout, stderr = cs.main(filename, "-D%s" % dictname, std=True)
+    assert code == 0  # no changes found
+    assert "won't" not in stdout
 
 @contextlib.contextmanager
 def FakeStdin(text):
