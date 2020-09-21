@@ -7379,6 +7379,10 @@ crowm->crown
 crrespond->correspond
 crsytal->crystal
 crsytallisation->crystallisation
+crsytallization->crystallization
+crsytalline->crystalline
+crsytallise->crystallise
+crsytallize->crystallize
 crsytallographic->crystallographic
 crsytals->crystals
 crtical->critical
@@ -7510,7 +7514,11 @@ cyrpto->crypto
 cyrrent->current
 cyrrilic->Cyrillic
 cyrstal->crystal
+cyrstalline->crystalline
+cyrstallise->crystallise
+cyrstallize->crystallize
 cyrstallisation->crystallisation
+cyrstallization->crystallization
 cyrstals->crystals
 cyrto->crypto
 cywgin->Cygwin
@@ -17752,7 +17760,9 @@ navagate->navigate
 navagating->navigating
 navagation->navigation
 navagitation->navigation
-nax->max
+nax->max, nad,
+naxima->maxima
+naximal->maximal
 naximum->maximum
 Nazereth->Nazareth
 nclude->include
@@ -18284,13 +18294,15 @@ nighboring->neighboring
 nightfa;;->nightfall
 nightime->nighttime
 nimutes->minutes
-nin->min
+nin->inn, min, bin, nine,
 nineth->ninth
+ninima->minima
+ninimal->minimal
 ninimum->minimum
 ninjs->ninja
 ninteenth->nineteenth
-ninties->1990s
-ninty->ninety
+ninties->nineties, 1990s,
+ninty->ninety, minty,
 nither->neither
 nknown->unknown
 nkow->know
@@ -25132,7 +25144,7 @@ spinock->spinlock
 splig->split, splign,
 spligs->splits
 spliitting->splitting
-splite->split
+splite->split, splits, splice,
 spliting->splitting
 splitted->split
 splittng->splitting
@@ -28839,7 +28851,7 @@ vunerable->vulnerable
 vyer->very
 vyre->very
 waht->what
-wakeus->wakeups, wake us,
+wakeus->wakeups, wake us, walrus,
 wakup->wakeup
 wallthickness->wall thickness
 wan't->want, wasn't,
