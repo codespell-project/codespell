@@ -18,6 +18,7 @@ authorise->authorize
 authorised->authorized
 authorises->authorizes
 authorising->authorizing
+authoriser->authorizer
 behaviour->behavior
 behaviours->behaviors
 cancelled->canceled
