@@ -1569,7 +1569,7 @@ analye->analyse, analyze,
 analyed->analysed, analyzed,
 analyer->analyser, analyzer,
 analyers->analysers, analyzers,
-analyes->analyses, analyzes,
+analyes->analyses, analyzes, analyse, analyze,
 analyis->analysis
 analysator->analyser
 analysies->analyses, analysis,
@@ -17257,7 +17257,9 @@ minuts->minutes
 miplementation->implementation
 mirconesia->micronesia
 mircophone->microphone
+mircophones->microphones
 mircoscope->microscope
+mircoscopes->microscopes
 mircosoft->Microsoft
 mirgate->migrate
 mirgated->migrated
