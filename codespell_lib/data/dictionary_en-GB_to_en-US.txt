@@ -16,6 +16,7 @@ artefacts->artifacts
 authorisation->authorization
 authorise->authorize
 authorised->authorized
+authoriser->authorizer
 authorises->authorizes
 authorising->authorizing
 behaviour->behavior
