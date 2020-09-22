@@ -10050,6 +10050,8 @@ earch->search
 earler->earlier
 earliear->earlier
 earlies->earliest
+earlist->earliest
+earlyer->earlier
 earnt->earned
 earpeice->earpiece
 easer->easier, eraser,
@@ -10081,6 +10083,10 @@ ecret->secret, erect,
 ecspecially->especially
 ect->etc
 ecxept->except
+ecxite->excite
+ecxited->excited
+ecxites->excites
+ecxiting->exciting
 ecxtracted->extracted
 EDCDIC->EBCDIC
 edditable->editable
@@ -11450,6 +11456,9 @@ existsing->existing
 existung->existing
 existy->exist
 existying->existing
+exitation->excitation
+exitations->excitations
+exite->exit, excite, exits,
 exixst->exist
 exixt->exist
 exlamation->exclamation
@@ -14284,6 +14293,11 @@ illustrasion->illustration
 illution->illusion
 ilness->illness
 ilogical->illogical
+iluminate->illuminate
+iluminated->illuminated
+iluminates->illuminates
+ilumination->illumination
+iluminations->illuminations
 ilustrate->illustrate
 ilustrated->illustrated
 ilustration->illustration
@@ -15910,8 +15924,12 @@ iresistably->irresistibly
 iresistible->irresistible
 iresistibly->irresistibly
 iritable->irritable
+iritate->irritate
 iritated->irritated
+iritating->irritating
 ironicly->ironically
+irradate->irradiate
+irradation->irradiation
 irregularties->irregularities
 irregulier->irregular
 irregulierties->irregularities
@@ -16577,7 +16595,7 @@ lpatform->platform
 lsat->last
 lsit->list
 lsits->lists
-lukid->likud
+lukid->lucid, Likud,
 luminose->luminous
 luminousity->luminosity
 lveo->love
@@ -20891,12 +20909,15 @@ programable->programmable
 programatic->programmatic
 programatically->programmatically
 programattically->programmatically
+programd->programmed
+programed->programmed
 programemer->programmer
 programemers->programmers
 programers->programmers
 programing->programming
-programm->program
+programm->program, programme,
 programmaticaly->programmatically
+programmd->programmed, programme,
 programmend->programmed
 programmetically->programmatically
 programmical->programmatical
@@ -21359,8 +21380,10 @@ qutie->quite, quiet,
 rabinnical->rabbinical
 racaus->raucous
 ractise->practise
+radation->radiation
 rade->read, raid,
 radiactive->radioactive
+radiaton->radiation
 radify->ratify
 radiobuttion->radiobutton
 radis->radix
