@@ -35,7 +35,7 @@ USAGE = """
 """
 VERSION = '2.0.dev0'
 
-supported_languages = ('en', 'en_GB-ise', 'en_US', 'en_CA', 'en_AU')
+supported_languages = ('en', 'en_GB-ise', 'en_US')
 
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
