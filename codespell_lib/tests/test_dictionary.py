@@ -17,6 +17,7 @@ try:
     for lang in supported_languages:
         spellers[lang] = aspell.Speller('lang', lang)
 except Exception as exp:  # probably ImportError, but maybe also language
+    spellers = dict()
     if os.getenv('REQUIRE_ASPELL', 'false').lower() == 'true':
         raise RuntimeError(
             'Cannot run complete tests without aspell when '
