@@ -13,7 +13,7 @@ from codespell_lib._codespell import _builtin_dictionaries
 try:
     import aspell
     speller = aspell.Speller('lang', 'en')
-    speller2 = aspell.Speller('lang', 'en_GB-ise')
+    spellerGB = aspell.Speller('lang', 'en_GB-ise')
 except Exception as exp:  # probably ImportError, but maybe also language
     speller = None
     if os.getenv('REQUIRE_ASPELL', 'false').lower() == 'true':
@@ -77,8 +77,8 @@ def _check_aspell(phrase, msg, in_aspell, fname):
     this_in_aspell = speller.check(
         phrase.encode(speller.ConfigKeys()['encoding'][1]))
     if not this_in_aspell:
-        this_in_aspell = speller2.check(
-            phrase.encode(speller2.ConfigKeys()['encoding'][1]))
+        this_in_aspell = spellerGB.check(
+            phrase.encode(spellerGB.ConfigKeys()['encoding'][1]))
     end = 'be in aspell for dictionary %s' % (fname,)
     if in_aspell:  # should be an error in aspell
         assert this_in_aspell, '%s should %s' % (msg, end)
