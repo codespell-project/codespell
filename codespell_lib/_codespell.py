@@ -35,6 +35,8 @@ USAGE = """
 """
 VERSION = '2.0.dev0'
 
+supported_languages = ('en', 'en_GB-ise', 'en_US', 'en_CA', 'en_AU')
+
 # Users might want to link this file into /usr/local/bin, so we resolve the
 # symbolic link path to the real path if necessary.
 _data_root = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'data')
@@ -48,7 +50,7 @@ _builtin_dictionaries = (
     ('usage', 'for recommended terms', '_usage', None, None),
     ('code', 'for words common to code and/or mathematics', '_code', None, None),  # noqa: E501
     ('names', 'for valid proper names that might be typos', '_names', None, None),  # noqa: E501
-    ('en-GB_to_en-US', 'for corrections from en-GB to en-US', '_en-GB_to_en-US', True, True),  # noqa: E501
+    ('en-GB_to_en-US', 'for corrections from en-GB to en-US', '_en-GB_to_en-US', ('en_GB-ise',), ('en_US',)),  # noqa: E501
 )
 _builtin_default = 'clear,rare'
 

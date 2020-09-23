@@ -9,14 +9,14 @@ import warnings
 import pytest
 
 from codespell_lib._codespell import _builtin_dictionaries
+from codespell_lib._codespell import supported_languages
 
 try:
     import aspell
     spellers = dict()
-    for lang in ('en', 'en_GB-ise', 'en_US', 'en_CA', 'en_AU'):
+    for lang in supported_languages:
         spellers[lang] = aspell.Speller('lang', lang)
 except Exception as exp:  # probably ImportError, but maybe also language
-    #speller = None
     if os.getenv('REQUIRE_ASPELL', 'false').lower() == 'true':
         raise RuntimeError(
             'Cannot run complete tests without aspell when '
@@ -66,22 +66,28 @@ def test_dictionary_formatting(fname, in_aspell):
         raise AssertionError('\n' + '\n'.join(errors))
 
 
-def _check_aspell(phrase, msg, in_aspell, fname, language=('en',)):
-    if not bool(spellers): # if no spellcheckers exist
+def _check_aspell(phrase, msg, in_aspell, fname):
+    if not bool(spellers):  # if no spellcheckers exist
         return  # cannot check
     if in_aspell is None:
         return  # don't check
+    elif in_aspell is False:
+        language = supported_languages
+    elif in_aspell is True:
+        language = ('en',)
+    else:
+        language = in_aspell
     if ' ' in phrase:
         for word in phrase.split():
-            _check_aspell(word, msg, in_aspell, fname, language)
+            _check_aspell(word, msg, in_aspell, fname)
         return  # stop normal checking as we've done each word above
     this_in_aspell = any(spellers[lang].check(phrase.encode(
         spellers[lang].ConfigKeys()['encoding'][1])) for lang in language)
     end = 'be in aspell for dictionary %s' % (fname,)
-    if in_aspell:  # should be an error in aspell
-        assert this_in_aspell, '%s should %s' % (msg, end)
-    else:  # shouldn't be
+    if not in_aspell:  # should be an error in aspell
         assert not this_in_aspell, '%s should not %s' % (msg, end)
+    else:  # shouldn't be
+        assert this_in_aspell, '%s should %s' % (msg, end)
 
 
 def _check_err_rep(err, rep, in_aspell, fname):
