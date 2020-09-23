@@ -11,13 +11,13 @@ import pytest
 from codespell_lib._codespell import _builtin_dictionaries
 from codespell_lib._codespell import supported_languages
 
+spellers = dict()
+
 try:
     import aspell
-    spellers = dict()
     for lang in supported_languages:
         spellers[lang] = aspell.Speller('lang', lang)
 except Exception as exp:  # probably ImportError, but maybe also language
-    spellers = dict()
     if os.getenv('REQUIRE_ASPELL', 'false').lower() == 'true':
         raise RuntimeError(
             'Cannot run complete tests without aspell when '
