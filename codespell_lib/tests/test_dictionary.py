@@ -68,7 +68,7 @@ def test_dictionary_formatting(fname, in_aspell):
 
 
 def _check_aspell(phrase, msg, in_aspell, fname):
-    if not bool(spellers):  # if no spellcheckers exist
+    if not spellers:  # if no spellcheckers exist
         return  # cannot check
     if in_aspell is None:
         return  # don't check
@@ -86,10 +86,10 @@ def _check_aspell(phrase, msg, in_aspell, fname):
         spellers[lang].ConfigKeys()['encoding'][1])) for lang in language)
     end = 'be in aspell dictionaries %s for dictionary %s' % (
         ' '.join(map(str, language)), fname,)
-    if not in_aspell:  # should be an error in aspell
-        assert not this_in_aspell, '%s should not %s' % (msg, end)
-    else:  # shouldn't be
+    if in_aspell:  # should be an error in aspell
         assert this_in_aspell, '%s should %s' % (msg, end)
+    else:  # shouldn't be
+        assert not this_in_aspell, '%s should not %s' % (msg, end)
 
 
 def _check_err_rep(err, rep, in_aspell, fname):
@@ -156,7 +156,7 @@ def test_error_checking(err, rep, match):
         _check_err_rep(err, rep, (None, None), 'dummy')
 
 
-@pytest.mark.skipif(not bool(spellers), reason='requires aspell-en')
+@pytest.mark.skipif(not spellers, reason='requires aspell-en')
 @pytest.mark.parametrize('err, rep, err_aspell, rep_aspell, match', [
     # This doesn't raise any exceptions, so skip for now:
     # pytest.param('a', 'uvw, bar,', None, None, 'should be in aspell'),
