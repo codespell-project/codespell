@@ -12,11 +12,11 @@ from codespell_lib._codespell import _builtin_dictionaries
 
 try:
     import aspell
-    speller = aspell.Speller('lang', 'en')
-    spellerGB = aspell.Speller('lang', 'en_GB-ise')
-    speller_array = (speller, spellerGB)
+    spellers = dict()
+    for lang in ('en', 'en_GB-ise', 'en_US', 'en_CA', 'en_AU'):
+        spellers[lang] = aspell.Speller('lang', lang)
 except Exception as exp:  # probably ImportError, but maybe also language
-    speller = None
+    #speller = None
     if os.getenv('REQUIRE_ASPELL', 'false').lower() == 'true':
         raise RuntimeError(
             'Cannot run complete tests without aspell when '
@@ -66,8 +66,8 @@ def test_dictionary_formatting(fname, in_aspell):
         raise AssertionError('\n' + '\n'.join(errors))
 
 
-def _check_aspell(phrase, msg, in_aspell, fname):
-    if speller is None:
+def _check_aspell(phrase, msg, in_aspell, fname, language=('en',)):
+    if not bool(spellers): # if no spellcheckers exist
         return  # cannot check
     if in_aspell is None:
         return  # don't check
@@ -75,8 +75,8 @@ def _check_aspell(phrase, msg, in_aspell, fname):
         for word in phrase.split():
             _check_aspell(word, msg, in_aspell, fname)
         return  # stop normal checking as we've done each word above
-    this_in_aspell = any(sp.check(phrase.encode(
-        sp.ConfigKeys()['encoding'][1])) for sp in speller_array)
+    this_in_aspell = any(spellers[lang].check(phrase.encode(
+        spellers[lang].ConfigKeys()['encoding'][1])) for lang in language)
     end = 'be in aspell for dictionary %s' % (fname,)
     if in_aspell:  # should be an error in aspell
         assert this_in_aspell, '%s should %s' % (msg, end)
@@ -148,7 +148,7 @@ def test_error_checking(err, rep, match):
         _check_err_rep(err, rep, (None, None), 'dummy')
 
 
-@pytest.mark.skipif(speller is None, reason='requires aspell-en')
+@pytest.mark.skipif(not bool(spellers), reason='requires aspell-en')
 @pytest.mark.parametrize('err, rep, err_aspell, rep_aspell, match', [
     # This doesn't raise any exceptions, so skip for now:
     # pytest.param('a', 'uvw, bar,', None, None, 'should be in aspell'),
