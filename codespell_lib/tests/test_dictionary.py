@@ -73,19 +73,19 @@ def _check_aspell(phrase, msg, in_aspell, fname):
     if in_aspell is None:
         return  # don't check
     elif in_aspell is False:
-        language = supported_languages
+        languages = supported_languages
     elif in_aspell is True:
-        language = ('en',)
+        languages = ('en',)
     else:
-        language = in_aspell
+        languages = in_aspell
     if ' ' in phrase:
         for word in phrase.split():
             _check_aspell(word, msg, in_aspell, fname)
         return  # stop normal checking as we've done each word above
     this_in_aspell = any(spellers[lang].check(phrase.encode(
-        spellers[lang].ConfigKeys()['encoding'][1])) for lang in language)
+        spellers[lang].ConfigKeys()['encoding'][1])) for lang in languages)
     end = 'be in aspell dictionaries %s for dictionary %s' % (
-        ' '.join(map(str, language)), fname,)
+        ' '.join(languages), fname,)
     if in_aspell:  # should be an error in aspell
         assert this_in_aspell, '%s should %s' % (msg, end)
     else:  # shouldn't be
