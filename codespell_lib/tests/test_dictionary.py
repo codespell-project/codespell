@@ -75,7 +75,7 @@ def _check_aspell(phrase, msg, in_aspell, fname):
     elif in_aspell is False:
         languages = supported_languages
     elif in_aspell is True:
-        languages = ('en',)
+        languages = supported_languages
     else:
         languages = in_aspell
     if ' ' in phrase:
