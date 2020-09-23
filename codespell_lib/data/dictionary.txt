@@ -2647,6 +2647,10 @@ atain->attain
 atempt->attempt
 atempting->attempting
 atempts->attempts
+atendance->attendance
+atended->attended
+atendee->attendee
+atention->attention
 atheistical->atheistic
 athenean->athenian
 atheneans->athenians
@@ -15506,11 +15510,16 @@ intenational->international
 intendet->intended
 inteneded->intended
 intension->intention
+intensional->intentional
+intensionally->intentionally
+intensionaly->intentionally
 intensitive->insensitive, intensive,
 intentation->indentation
 intented->intended, indented,
 intentended->intended
 intentially->intentionally
+intentialy->intentionally
+intentionaly->intentionally
 intepolate->interpolate
 intepolated->interpolated
 intepolates->interpolates
@@ -15980,6 +15989,10 @@ iteartor->iterator
 iteger->integer
 iten->item
 itens->items
+itention->intention
+itentional->intentional
+itentionally->intentionally
+itentionaly->intentionally
 iterater->iterator
 iteratered->iterated
 iteratons->iterations
@@ -23760,6 +23773,7 @@ scraches->scratches
 scraching->scratching
 scrachs->scratches
 scrao->scrap
+screem->scream, screen,
 screenchot->screenshot
 screenchots->screenshots
 screenwrighter->screenwriter
@@ -26612,6 +26626,7 @@ tendacy->tendency
 tendancies->tendencies
 tendancy->tendency
 tennisplayer->tennis player
+tention->tension
 teplmate->template
 teplmated->templated
 teplmates->templates
