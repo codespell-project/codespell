@@ -73,7 +73,7 @@ def _check_aspell(phrase, msg, in_aspell, fname, language=('en',)):
         return  # don't check
     if ' ' in phrase:
         for word in phrase.split():
-            _check_aspell(word, msg, in_aspell, fname)
+            _check_aspell(word, msg, in_aspell, fname, language)
         return  # stop normal checking as we've done each word above
     this_in_aspell = any(spellers[lang].check(phrase.encode(
         spellers[lang].ConfigKeys()['encoding'][1])) for lang in language)
