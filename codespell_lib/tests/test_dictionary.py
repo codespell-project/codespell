@@ -14,7 +14,7 @@ try:
     import aspell
     speller = aspell.Speller('lang', 'en')
     spellerGB = aspell.Speller('lang', 'en_GB-ise')
-    speller_array= (speller, spellerGB)
+    speller_array = (speller, spellerGB)
 except Exception as exp:  # probably ImportError, but maybe also language
     speller = None
     if os.getenv('REQUIRE_ASPELL', 'false').lower() == 'true':
