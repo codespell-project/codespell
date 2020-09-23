@@ -3276,7 +3276,7 @@ avriant->variant
 avriants->variants
 avtive->active
 awared->awarded
-aways->always
+aways->always, away,
 aweful->awful
 awefully->awfully
 awnser->answer
@@ -26129,6 +26129,7 @@ swalloed->swallowed
 swaped->swapped
 swapiness->swappiness
 swaping->swapping
+swarmin->swarming
 swcloumns->swcolumns
 swepth->swept
 swich->switch
@@ -29135,6 +29136,8 @@ windoes->windows
 windos->windows
 windwo->window
 winn->win
+winndow->window
+winndows->windows
 winodw->window
 wipoing->wiping
 wirded->wired, weird,
