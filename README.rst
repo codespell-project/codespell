@@ -120,12 +120,17 @@ i.e. from Wikipedia. The difference is how multiple options are treated. E.g.:
    to give the user the file and line where the error occurred as well as
    the suggestions.
 
-3. Entry with one word, but with automatically fix disabled::
+3. Entry with one word, but with automatic fix disabled::
 
        clas->class, disabled because of name clash in c++
 
-   Note that there isn't a comma in the end of the line. The last argument is
+   Note that there isn't a comma at the end of the line. The last argument is
    treated as the reason why a suggestion cannot be automatically applied.
+   
+   There can also be multiple suggestions but any automatic fix will again be
+   disabled::
+   
+       clas->class, clash, disabled because of name clash in c++
 
 Development Setup
 -----------------
