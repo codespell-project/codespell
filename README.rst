@@ -67,16 +67,18 @@ Display them without terminal colors and with a quiet level of 3. ::
 
 Run interactive mode level 3 and write changes to file.
 
-We ship a dictionary that is an improved version of the one available
+We ship a collection of dictionaries that are an improved version of the one available
 `on Wikipedia <https://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/For_machines>`_
 after applying them in projects like Linux Kernel, EFL, oFono among others.
 You can provide your own version of the dictionary, but patches for
 new/different entries are very welcome.
 
-Want to know if a word you're proposing exists in codespell already? It is possible to test a word against the current dictionary that exists in ``codespell_lib/data/dictionary.txt`` via::
+Want to know if a word you're proposing exists in codespell already? It is possible to test a word against the current set dictionaries that exists in ``codespell_lib/data/dictionary*.txt`` via::
 
     echo "word" | codespell -
     echo "1stword,2ndword" | codespell -
+
+You can select the optional dictionaries with the ``--builtin` option.
 
 Using a config file
 -------------------
@@ -152,11 +154,11 @@ If you have a suggested typo that you'd like to see merged please follow these s
 
 2. Choose the correct dictionary file to add your typo too. See `codespell --help` for explanations of the different dictionaries.
 
-3. Sort the dictionary. This is done by invoking (in the top level directory of ``codespell/``)::
+3. Sort the dictionaries. This is done by invoking (in the top level directory of ``codespell/``)::
 
        make check-dictionaries
 
-   If the make script finds that you need to sort the dictionary, please then run::
+   If the make script finds that you need to sort a dictionary, please then run::
 
        make sort-dictionaries
 
@@ -183,8 +185,8 @@ To stay current with codespell developments it is possible to build codespell fr
 * It has been reported that after installing from ``pip``, codespell can't be located. Please check the $PATH variable to see if ``~/.local/bin`` is present. If it isn't then add it to your path.
 * If you decide to install via ``pip`` then be sure to remove any previously installed versions of codespell (via your platform's preferred app manager).
 
-Updating the dictionary
------------------------
+Updating the dictionaries
+-------------------------
 
 In the scenario where the user prefers not to follow the development version of codespell yet still opts to benefit from the frequently updated dictionary files, we recommend running a simple set of commands to achieve this ::
 
