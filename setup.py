@@ -56,5 +56,10 @@ if __name__ == "__main__":
               'console_scripts': [
                   'codespell = codespell_lib:_script_main'
               ],
+          },
+          extras_require={
+              "dev": ["check-manifest", "flake8", "pytest", "pytest-cov",
+                      "pytest-dependency"],
+              "hard-encoding-detection": ["chardet"],
           }
           )

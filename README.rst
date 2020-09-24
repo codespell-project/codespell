@@ -78,6 +78,28 @@ Want to know if a word you're proposing exists in codespell already? It is possi
     echo "word" | codespell -
     echo "1stword,2ndword" | codespell -
 
+Using a config file
+-------------------
+
+Command line options can also be specified in a config file.
+
+When running ``codespell``, it will check in the current directory for a file
+named ``setup.cfg`` or ``.codespellrc`` (or a file specified via ``--config``),
+containing an entry named ``[codespell]``. Each command line argument can
+be specified in this file (without the preceding dashes), for example::
+
+    [codespell]
+    skip = *.po,*.ts,./src/3rdParty,./src/Test
+    count =
+    quiet-level = 3
+
+This is equivalent to running::
+
+    codespell --quiet-level 3 --count --skip "*.po,*.ts,./src/3rdParty,./src/Test"
+
+Any options specified in the command line will *override* options from the
+config file.
+
 Dictionary format
 -----------------
 
@@ -97,6 +119,17 @@ i.e. from Wikipedia. The difference is how multiple options are treated. E.g.:
    suggestion, an automatic fix is not possible and the best we can do is
    to give the user the file and line where the error occurred as well as
    the suggestions.
+
+Development Setup
+-----------------
+
+You can install required dependencies for development by running the following within a checkout of the codespell source::
+
+       pip install -e ".[dev]"
+
+To run tests against the codebase run::
+
+       make check
 
 Sending Pull Requests
 ---------------------
@@ -177,6 +210,7 @@ with the following terms:
 
 .. _GPL v2: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-dictionary.txt is a derived work of English Wikipedia and is released under the
-Creative Commons Attribution-Share-Alike License 3.0
+``dictionary.txt`` and the other ``dictionary_*.txt`` files are a derived work of
+English Wikipedia and are released under the Creative Commons
+Attribution-Share-Alike License 3.0
 http://creativecommons.org/licenses/by-sa/3.0/
