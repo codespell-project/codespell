@@ -74,7 +74,7 @@ def _check_aspell(phrase, msg, in_aspell, fname):
         return  # don't check
     elif in_aspell is False or in_aspell is True:
         languages = supported_languages
-    else:  # in_aspell is a costum array of dictionary names
+    else:  # in_aspell is a custom array of dictionary names
         languages = in_aspell
     if ' ' in phrase:
         for word in phrase.split():
