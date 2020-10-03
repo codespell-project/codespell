@@ -60,25 +60,21 @@ def test_dictionary_formatting(fname, in_aspell):
             err = err.lower()
             rep = rep.rstrip('\n')
             try:
-                _check_err_rep(err, rep, in_aspell, fname)
+                _check_err_rep(err, rep, in_aspell, fname, supported_languages)
             except AssertionError as exp:
                 errors.append(str(exp).split('\n')[0])
     if len(errors):
         raise AssertionError('\n' + '\n'.join(errors))
 
 
-def _check_aspell(phrase, msg, in_aspell, fname):
+def _check_aspell(phrase, msg, in_aspell, fname, languages):
     if not spellers:  # if no spellcheckers exist
         return  # cannot check
     if in_aspell is None:
         return  # don't check
-    elif in_aspell is False or in_aspell is True:
-        languages = supported_languages
-    else:  # in_aspell is a custom array of dictionary names
-        languages = in_aspell
     if ' ' in phrase:
         for word in phrase.split():
-            _check_aspell(word, msg, in_aspell, fname)
+            _check_aspell(word, msg, in_aspell, fname, languages)
         return  # stop normal checking as we've done each word above
     this_in_aspell = any(spellers[lang].check(phrase.encode(
         spellers[lang].ConfigKeys()['encoding'][1])) for lang in languages)
@@ -90,7 +86,7 @@ def _check_aspell(phrase, msg, in_aspell, fname):
         assert not this_in_aspell, '%s should not %s' % (msg, end)
 
 
-def _check_err_rep(err, rep, in_aspell, fname):
+def _check_err_rep(err, rep, in_aspell, fname, languages):
     assert ws.match(err) is None, 'error %r has whitespace' % err
     assert comma.match(err) is None, 'error %r has a comma' % err
     assert len(rep) > 0, ('error %s: correction %r must be non-empty'
@@ -98,7 +94,7 @@ def _check_err_rep(err, rep, in_aspell, fname):
     assert not re.match(r'^\s.*', rep), ('error %s: correction %r '
                                          'cannot start with whitespace'
                                          % (err, rep))
-    _check_aspell(err, 'error %r' % (err,), in_aspell[0], fname)
+    _check_aspell(err, 'error %r' % (err,), in_aspell[0], fname, languages)
     prefix = 'error %s: correction %r' % (err, rep)
     for (r, msg) in [
             (r'^,',
@@ -124,7 +120,9 @@ def _check_err_rep(err, rep, in_aspell, fname):
         assert err != r.lower(), ('error %r corrects to itself amongst others'
                                   % (err,))
         _check_aspell(
-            r, 'error %s: correction %r' % (err, r), in_aspell[1], fname)
+            r, 'error %s: correction %r' % (err, r),
+            in_aspell[1], fname, languages)
+
     # aspell dictionary is case sensitive, so pass the original case into there
     # we could ignore the case, but that would miss things like days of the
     # week which we want to be correct
@@ -151,7 +149,7 @@ def _check_err_rep(err, rep, in_aspell, fname):
 def test_error_checking(err, rep, match):
     """Test that our error checking works."""
     with pytest.raises(AssertionError, match=match):
-        _check_err_rep(err, rep, (None, None), 'dummy')
+        _check_err_rep(err, rep, (None, None), 'dummy', supported_languages)
 
 
 @pytest.mark.skipif(not spellers, reason='requires aspell-en')
@@ -182,7 +180,7 @@ def test_error_checking(err, rep, match):
 def test_error_checking_in_aspell(err, rep, err_aspell, rep_aspell, match):
     """Test that our error checking works with aspell."""
     with pytest.raises(AssertionError, match=match):
-        _check_err_rep(err, rep, (err_aspell, rep_aspell), 'dummy')
+        _check_err_rep(err, rep, (err_aspell, rep_aspell), 'dummy', supported_languages)
 
 
 # allow some duplicates, like "m-i-n-i-m-i-s-e", or "c-a-l-c-u-l-a-t-a-b-l-e"
