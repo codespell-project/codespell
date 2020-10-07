@@ -19698,7 +19698,7 @@ pege->page
 peice->piece
 peicemeal->piecemeal
 peices->pieces
-peicewise->piecewise
+peicewise->piecewise, piece wise,
 peirod->period
 peirodical->periodical
 peirodicals->periodicals
@@ -19958,9 +19958,9 @@ piblisher->publisher
 pich->pitch
 picoseond->picosecond
 picoseonds->picoseconds
-pieceweise->piecewise
-piecewiese->piecewise
-piecwise->piecewise
+pieceweise->piecewise, piece wise,
+piecewiese->piecewise, piece wise,
+piecwise->piecewise, piece wise,
 pilgrimmage->pilgrimage
 pilgrimmages->pilgrimages
 pimxap->pixmap
