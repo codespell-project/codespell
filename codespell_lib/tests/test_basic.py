@@ -557,7 +557,7 @@ def test_uri_ignore_words_list_option_uri(tmpdir, capsys):
     # Variations where an error is ignored.
     for variation in ('# Please see http://abandonned for info\n',
                       '# Please see "http://abandonned" for info\n',
-                      # This variation could be rejected, but it'd require a
+                      # This variation could be un-ignored, but it'd require a
                       # more complex regex as " is valid in parts of URIs.
                       '# Please see "http://foo"abandonned for info\n',
                       '# Please see https://abandonned for info\n',
