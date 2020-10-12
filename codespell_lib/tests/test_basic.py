@@ -557,6 +557,8 @@ def test_uri_ignore_words_list_option_uri(tmpdir, capsys):
     # Variations where an error is ignored.
     for variation in ('# Please see http://abandonned for info\n',
                       '# Please see "http://abandonned" for info\n',
+                      # This variation could be rejected, but it'd require a
+                      # more complex regex as " is valid in parts of URIs.
                       '# Please see "http://foo"abandonned for info\n',
                       '# Please see https://abandonned for info\n',
                       '# Please see ftp://abandonned for info\n',
@@ -616,7 +618,10 @@ def test_uri_ignore_words_list_option_email(tmpdir, capsys):
 
     # Variations where an error is ignored.
     for variation in ('# Please see example@abandonned for info\n',
-                      '# Please see abandonned@example for info\n'):
+                      '# Please see abandonned@example for info\n',
+                      '# Please see abandonned@example.com for info\n',
+                      '# Please see mailto:abandonned@example.com?subject=Test'
+                      ' for info\n'):
         with open(op.join(d, 'flag.txt'), 'w') as f:
             f.write(variation)
         assert cs.main(f.name) == 1, variation
