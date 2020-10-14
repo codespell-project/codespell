@@ -28461,8 +28461,8 @@ untoched->untouched
 untqueue->unqueue
 untrached->untracked
 untranslateable->untranslatable
-untrasform->untransform
-untrasformed->untransformed
+untrasform->untransform, undo transform, reverse transform,
+untrasformed->untransformed, undo transformed, reverse transformed,
 untrasposed->untransposed
 untrustworty->untrustworthy
 unued->unused
