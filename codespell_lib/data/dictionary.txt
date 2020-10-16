@@ -1371,7 +1371,7 @@ allwys->always
 almostly->almost
 almsot->almost
 alo->also
-aloable->allowable
+aloable->allowable, available,
 alocatable->allocatable
 alocate->allocate
 alocated->allocated
@@ -3230,6 +3230,7 @@ avalance->avalanche
 avaliable->available
 avalibale->available
 avalible->available
+avaloable->available
 avaluate->evaluate
 avaluated->evaluated
 avaluates->evaluates
@@ -28814,7 +28815,7 @@ vissible->visible
 visted->visited
 visting->visiting
 vistors->visitors
-visualyse->visualize
+visualyse->visualise, visualize,
 vitories->victories
 vitual->virtual
 viusally->visually
