@@ -180,7 +180,8 @@ def test_error_checking(err, rep, match):
 def test_error_checking_in_aspell(err, rep, err_aspell, rep_aspell, match):
     """Test that our error checking works with aspell."""
     with pytest.raises(AssertionError, match=match):
-        _check_err_rep(err, rep, (err_aspell, rep_aspell), 'dummy', supported_languages)
+        _check_err_rep(
+            err, rep, (err_aspell, rep_aspell), 'dummy', supported_languages)
 
 
 # allow some duplicates, like "m-i-n-i-m-i-s-e", or "c-a-l-c-u-l-a-t-a-b-l-e"
