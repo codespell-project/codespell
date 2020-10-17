@@ -39,7 +39,7 @@ _data_dir = op.join(op.dirname(__file__), '..', 'data')
 _fnames_in_aspell = [
     (op.join(_data_dir, 'dictionary%s.txt' % d[2]), d[3:5], d[5:7])
     for d in _builtin_dictionaries]
-fname_params = pytest.mark.parametrize('fname, in_aspell, in_dictionary', _fnames_in_aspell)
+fname_params = pytest.mark.parametrize('fname, in_aspell, in_dictionary', _fnames_in_aspell)  # noqa: E501
 
 
 def test_dictionaries_exist():
@@ -149,7 +149,8 @@ def _check_err_rep(err, rep, in_aspell, fname, languages):
 def test_error_checking(err, rep, match):
     """Test that our error checking works."""
     with pytest.raises(AssertionError, match=match):
-        _check_err_rep(err, rep, (None, None), 'dummy', (supported_languages, supported_languages))
+        _check_err_rep(err, rep, (None, None), 'dummy',
+                       (supported_languages, supported_languages))
 
 
 @pytest.mark.skipif(not spellers, reason='requires aspell-en')
@@ -181,7 +182,8 @@ def test_error_checking_in_aspell(err, rep, err_aspell, rep_aspell, match):
     """Test that our error checking works with aspell."""
     with pytest.raises(AssertionError, match=match):
         _check_err_rep(
-            err, rep, (err_aspell, rep_aspell), 'dummy', (supported_languages, supported_languages))
+            err, rep, (err_aspell, rep_aspell), 'dummy',
+            (supported_languages, supported_languages))
 
 
 # allow some duplicates, like "m-i-n-i-m-i-s-e", or "c-a-l-c-u-l-a-t-a-b-l-e"
