@@ -9115,6 +9115,8 @@ dimentionnals->dimensional
 dimentions->dimensions
 dimesions->dimensions
 dimesnional->dimensional
+diminsh->diminish
+diminshed->diminished
 diminuitive->diminutive
 dimissed->dismissed
 dimmension->dimension
@@ -10065,7 +10067,9 @@ dynamlically->dynamically
 dynically->dynamically
 dynmaic->dynamic
 dynmaically->dynamically
+dynmic->dynamic
 dynmically->dynamically
+dynmics->dynamics
 eabled->enabled
 eacf->each
 eacg->each
@@ -10159,6 +10163,8 @@ effeck->effect
 effecked->effected
 effecks->effects
 effeckt->effect
+effectice->effective
+effecticely->effectively
 effectiviness->effectiveness
 effectivness->effectiveness
 effectly->effectively
@@ -12372,6 +12378,7 @@ famlily->family
 famoust->famous
 fanatism->fanaticism
 fancyness->fanciness
+farction->fraction, faction,
 Farenheight->Fahrenheit
 Farenheit->Fahrenheit
 farest->fairest, farthest,
@@ -16703,6 +16710,7 @@ madantory->mandatory
 madatory->mandatory
 maddness->madness
 magasine->magazine
+magent->magenta, magnet,
 magincian->magician
 magisine->magazine
 magizine->magazine
@@ -19752,7 +19760,7 @@ pege->page
 peice->piece
 peicemeal->piecemeal
 peices->pieces
-peicewise->piecewise
+peicewise->piecewise, piece wise,
 peirod->period
 peirodical->periodical
 peirodicals->periodicals
@@ -20012,6 +20020,9 @@ piblisher->publisher
 pich->pitch
 picoseond->picosecond
 picoseonds->picoseconds
+pieceweise->piecewise, piece wise,
+piecewiese->piecewise, piece wise,
+piecwise->piecewise, piece wise,
 pilgrimmage->pilgrimage
 pilgrimmages->pilgrimages
 pimxap->pixmap
@@ -23949,6 +23960,7 @@ secne->scene
 secod->second
 seconadry->secondary
 seconcary->secondary
+secondaray->secondary
 seconday->secondary
 secondy->secondly, secondary,
 seconf->second
@@ -25630,6 +25642,7 @@ structue->structure
 structued->structured
 structues->structures
 structur->structure
+strucure->structure
 strucutre->structure
 strucutred->structured
 strucutres->structures
@@ -26780,6 +26793,7 @@ termindate->terminate
 termine->determine
 termined->terminated
 terminte->terminate
+termo->thermo
 termostat->thermostat
 termperatue->temperature
 termperatues->temperatures
