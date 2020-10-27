@@ -60,7 +60,7 @@ _builtin_dictionaries = (
     ('names', 'for valid proper names that might be typos', '_names',
         None, None, None, None,),
     ('en-GB_to_en-US', 'for corrections from en-GB to en-US', '_en-GB_to_en-US',  # noqa: E501
-        True, True, ('en_GB',), ('en_US',)),  # noqa: E501
+        True, True, ('en_GB',), ('en_US',)),
 )
 _builtin_default = 'clear,rare'
 
