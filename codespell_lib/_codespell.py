@@ -42,7 +42,9 @@ supported_languages = supported_languages_en
 # symbolic link path to the real path if necessary.
 _data_root = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'data')
 _builtin_dictionaries = (
-    # name, desc, name, err in aspell, correction in aspell
+    # name, desc, name, err in aspell, correction in aspell, \
+    # err dictionary array, rep dictionary array
+    # The arrays must contain the names of aspell dictionaries
     # The aspell tests here aren't the ideal state, but the None's are
     # realistic for obscure words
     ('clear', 'for unambiguous errors', '',
@@ -54,9 +56,9 @@ _builtin_dictionaries = (
     ('usage', 'for recommended terms', '_usage',
         None, None, None, None),
     ('code', 'for words common to code and/or mathematics', '_code',
-        None, None, None, None,),  # noqa: E501
+        None, None, None, None,),
     ('names', 'for valid proper names that might be typos', '_names',
-        None, None, None, None,),  # noqa: E501
+        None, None, None, None,),
     ('en-GB_to_en-US', 'for corrections from en-GB to en-US', '_en-GB_to_en-US',  # noqa: E501
         True, True, ('en_GB',), ('en_US',)),  # noqa: E501
 )

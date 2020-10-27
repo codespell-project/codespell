@@ -84,6 +84,7 @@ def _check_aspell(phrase, msg, in_aspell, fname, languages):
         assert this_in_aspell, '%s should %s' % (msg, end)
     else:  # shouldn't be
         assert not this_in_aspell, '%s should not %s' % (msg, end)
+        return this_in_aspell
 
 
 def _check_err_rep(err, rep, in_aspell, fname, languages):
