@@ -79,12 +79,11 @@ def _check_aspell(phrase, msg, in_aspell, fname, languages):
     this_in_aspell = any(spellers[lang].check(phrase.encode(
         spellers[lang].ConfigKeys()['encoding'][1])) for lang in languages)
     end = 'be in aspell dictionaries (%s) for dictionary %s' % (
-        ', '.join(languages), fname,)
+        ', '.join(languages), fname)
     if in_aspell:  # should be an error in aspell
         assert this_in_aspell, '%s should %s' % (msg, end)
     else:  # shouldn't be
         assert not this_in_aspell, '%s should not %s' % (msg, end)
-        return this_in_aspell
 
 
 def _check_err_rep(err, rep, in_aspell, fname, languages):
