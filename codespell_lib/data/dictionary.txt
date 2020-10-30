@@ -17640,6 +17640,7 @@ multipes->multiples
 multipiler->multiplier
 multipl->multiple, multiply,
 multipled->multiplied
+multipler->multiplier, multiple,
 multiplers->multipliers
 multipliciaton->multiplication
 multiplicites->multiplicities
@@ -17654,6 +17655,7 @@ multitute->multitude
 multivriate->multivariate
 multixsite->multisite
 multliple->multiple
+multliples->multiples
 multple->multiple
 multplied->multiplied
 multplies->multiplies
@@ -17696,8 +17698,11 @@ mutli->multi
 mutli-threaded->multi-threaded
 mutlipart->multipart
 mutliple->multiple
-mutlipler->multiplier
+mutlipler->multiplier, multiple,
+mutliples->multiples
+mutliplication->multiplication
 mutliplicites->multiplicities
+mutliplier->multiplier
 mutliply->multiply
 mutully->mutually
 mutux->mutex
