@@ -4134,6 +4134,8 @@ caclucations->calculations
 caclucator->calculator
 caclulated->calculated
 caclulating->calculating
+caclulation->calculation
+caclulations->calculations
 caculate->calculate
 caculated->calculated
 caculater->calculator
@@ -4216,6 +4218,8 @@ calculatble->calculatable, calculable,
 calculater->calculator
 calculatted->calculated
 calculatter->calculator
+calculattion->calculation
+calculattions->calculations
 calculaution->calculation
 calculautions->calculations
 calculcate->calculate
@@ -6769,6 +6773,8 @@ contollers->controllers
 contolls->controls
 contols->controls
 contongency->contingency
+contorl->control
+contorled->controlled
 contorls->controls
 contoroller->controller
 contraciction->contradiction
@@ -7270,6 +7276,7 @@ cound->could, count,
 counding->counting
 coundition->condition
 counds->counts
+counld->could
 counpound->compound
 counpounds->compounds
 counries->countries, counties,
@@ -8547,6 +8554,8 @@ descriptionm->description
 descriptior->descriptor
 descriptiors->descriptors
 descripto->descriptor
+descriptoin->description
+descriptoins->descriptions
 descripton->description
 descriptons->descriptions
 descriptot->descriptor
@@ -9314,6 +9323,7 @@ discconetions->disconnections
 discconets->disconnects
 disccuss->discuss
 discernable->discernible
+dischare->discharge
 discimenation->dissemination
 disciplins->disciplines
 disclamer->disclaimer
@@ -10242,6 +10252,8 @@ eleent->element
 elegible->eligible
 elemant->element
 elemantary->elementary
+elemement->element
+elemements->elements
 elememt->element
 elemen->element
 elemenent->element
@@ -17582,6 +17594,8 @@ modifiation->modification
 modifiations->modifications
 modificatioon->modification
 modifid->modified
+modifified->modified
+modifify->modify
 modifing->modifying
 modifiy->modify
 modifiyng->modifying
@@ -19202,6 +19216,7 @@ osciallator->oscillator
 oscilate->oscillate
 oscilated->oscillated
 oscilating->oscillating
+oscilator->oscillator
 osffset->offset
 osffsets->offsets
 osffsetting->offsetting
@@ -22384,6 +22399,7 @@ registeres->registers
 registeresd->registered
 registerred->registered
 registert->registered
+registery->registry
 registes->registers
 registing->registering
 registors->registers
@@ -23054,6 +23070,7 @@ represente->represents, represented,
 representiative->representative
 representive->representative
 representives->representatives
+represetation->representation
 represnet->represent
 represneted->represented
 represneting->representing
@@ -25634,6 +25651,7 @@ strirngification->stringification
 strnad->strand
 strng->string
 stroage->storage
+stroe->store
 stroing->storing
 stronlgy->strongly
 stronly->strongly
@@ -26490,8 +26508,10 @@ systhemerror->systemerror, system error,
 systhemmemory->systemmemory, system memory,
 systhems->systems
 systhemwindow->systemwindow, system window,
+systm->system
 systme->system
 systmes->systems
+systms->systems
 systyem->system
 systyems->systems
 sysyem->system
@@ -27221,6 +27241,7 @@ towrad->toward
 toxen->toxin
 tpyo->typo
 trabsform->transform
+traceablity->traceability
 trackign->tracking
 trackling->tracking
 tradgic->tragic
@@ -28598,6 +28619,7 @@ upstreems->upstreams
 upstrema->upstream
 upsupported->unsupported
 uptadeable->updatable
+uptdate->update
 uptim->uptime
 uptions->options
 upto->up to
