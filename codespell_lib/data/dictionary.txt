@@ -28,11 +28,11 @@ abberation->aberration
 abberations->aberrations
 abberivates->abbreviates
 abberration->aberration
-abbort->abort
+abbort->abort, abbot,
 abborted->aborted
 abborting->aborting
-abborts->aborts
-abbout->about
+abborts->aborts, abbots,
+abbout->about, abbot,
 abbrevate->abbreviate
 abbrevation->abbreviation
 abbrevations->abbreviations
@@ -65,7 +65,7 @@ abondoned->abandoned
 abondoning->abandoning
 abondons->abandons
 aboout->about
-abord->abort
+abord->abort, aboard,
 aborigene->aborigine
 aborte->aborted, abort, aborts,
 abortificant->abortifacient
@@ -78,7 +78,7 @@ abosulutely->absolutely
 abotu->about
 abount->about
 abourt->abort, about,
-abouta->about a
+abouta->about a, about,
 aboutit->about it
 aboutthe->about the
 abouve->above
@@ -1250,7 +1250,7 @@ aliasas->aliases
 aliase->aliases, alias,
 aliasses->aliases
 alientating->alienating
-alighed->aligned
+alighed->aligned, alighted,
 alighned->aligned
 alighnment->alignment
 aligin->align
@@ -1278,20 +1278,20 @@ alignmments->alignments
 alignmnet->alignment
 alignmnt->alignment
 alignrigh->alignright
-alikes->alike
-aline->align
+alikes->alike, likes,
+aline->align, a line, line, saline,
 alined->aligned
 alingment->alignment
 alinment->alignment
 alinments->alignments
 alising->aliasing
-aliver->alive, liver,
+aliver->alive, liver, a liver, sliver,
 allcate->allocate
 allcation->allocation
 allcator->allocator
 allcoated->allocated
 allcommnads->allcommands
-alle->all
+alle->all, alley,
 alled->called, allied,
 alledge->allege
 alledged->alleged
@@ -1354,7 +1354,7 @@ allocte->allocate
 allocted->allocated
 alloctions->allocations
 alloctor->allocator
-alloed->allowed
+alloed->allowed, aloud,
 alloews->allows
 allone->alone, all one,
 allong->along
@@ -1362,8 +1362,9 @@ alloocates->allocates
 allopone->allophone
 allopones->allophones
 alloted->allotted
-allowd->allowed
-allowe->allowed, allow,
+alloud->aloud
+allowd->allowed, allow, allows,
+allowe->allowed, allow, allows,
 allpication->application
 allready->already, all ready,
 allredy->already, all ready,
@@ -1371,7 +1372,7 @@ allright->all right, alright,
 alls->all, falls,
 allso->also
 allthough->although
-alltime->all-time
+alltime->all-time, all time,
 alltogeher->altogether, all together,
 alltogehter->altogether, all together,
 alltogether->altogether, all together,
@@ -3692,7 +3693,13 @@ birghtest->brightest
 birghtness->brightness
 biridectionality->bidirectionality
 bisct->bisect
+bisines->business
+bisiness->business
+bisnes->business
+bisness->business
 bistream->bitstream
+bisunes->business
+bisuness->business
 bitamps->bitmaps
 bitap->bitmap
 bitfileld->bitfield
@@ -15669,7 +15676,7 @@ interaktively->interactively
 interaktivly->interactively
 interal->internal, interval, integral,
 interally->internally
-interals->internals
+interals->internals, intervals, integrals,
 interaly->internally
 interanl->internal
 interanlly->internally
@@ -23450,6 +23457,7 @@ restrcuture->restructure
 restriced->restricted
 restroing->restoring
 restuarant->restaurant
+restuarants->restaurants
 restucturing->restructuring
 resturant->restaurant
 resturants->restaurants
@@ -23518,12 +23526,24 @@ retquiresgsub->requiresgsub
 retquiressl->requiressl
 retransmited->retransmitted
 retransmition->retransmission
+retreevable->retrievable
+retreeval->retrieval
+retreeve->retrieve
+retreeved->retrieved
+retreeves->retrieves
+retreeving->retrieving
 retreivable->retrievable
 retreival->retrieval
 retreive->retrieve
 retreived->retrieved
 retreives->retrieves
 retreiving->retrieving
+retrevable->retrievable
+retreval->retrieval
+retreve->retrieve
+retreved->retrieved
+retreves->retrieves
+retreving->retrieving
 retrict->restrict
 retricted->restricted
 retriebe->retrieve
@@ -23531,7 +23551,7 @@ retriece->retrieve
 retrieces->retrieves
 retriev->retrieve
 retrieveds->retrieved
-retrival->retrieval
+retrival->retrieval, retrial,
 retrive->retrieve
 retrived->retrieved
 retrives->retrieves
@@ -25654,12 +25674,13 @@ storeing->storing
 storeis->stories, stores, store is, storeys,
 storise->stories
 stornegst->strongest
+storys->stories, storeys,
 stoyr->story
 stpo->stop
-strack->stack
+strack->stack, track,
 stradegies->strategies
 stradegy->strategy
-stragedy->strategy
+stragedy->strategy, tragedy,
 stragegy->strategy
 strageties->strategies
 stragety->strategy
@@ -25669,9 +25690,11 @@ straightfoward->straightforward
 straigt->straight
 straigth->straight
 straines->strains
-straming->streaming
-stran->strand
-strangly->strangely, strange,
+stram->steam, stream, tram,
+straming->streaming, steaming,
+strams->steams, streams, trams,
+stran->strand, strain,
+strangly->strangely, strange, strangle,
 strangness->strangeness
 strat->start, strata,
 stratagically->strategically
@@ -25773,8 +25796,10 @@ struttural->structural
 strutture->structure
 struture->structure
 ststr->strstr
+stteting->setting
 sttetings->settings
-stting->string
+stting->string, setting, sitting,
+sttings->strings, settings, sittings,
 stuation->situation, station,
 stuations->situations, stations,
 stubborness->stubbornness
@@ -26378,7 +26403,7 @@ sustems->systems
 sustitution->substitution
 sustitutions->substitutions
 susupend->suspend
-sutable->suitable
+sutable->suitable, stable,
 sutdown->shutdown
 sute->site, suite, suit,
 suttle->subtle
