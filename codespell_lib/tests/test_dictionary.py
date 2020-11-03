@@ -9,12 +9,15 @@ import warnings
 import pytest
 
 from codespell_lib._codespell import _builtin_dictionaries
+from codespell_lib._codespell import supported_languages
+
+spellers = dict()
 
 try:
     import aspell
-    speller = aspell.Speller('lang', 'en')
+    for lang in supported_languages:
+        spellers[lang] = aspell.Speller('lang', lang)
 except Exception as exp:  # probably ImportError, but maybe also language
-    speller = None
     if os.getenv('REQUIRE_ASPELL', 'false').lower() == 'true':
         raise RuntimeError(
             'Cannot run complete tests without aspell when '
@@ -34,9 +37,9 @@ global_pairs = set()
 # Filename, should be seen as errors in aspell or not
 _data_dir = op.join(op.dirname(__file__), '..', 'data')
 _fnames_in_aspell = [
-    (op.join(_data_dir, 'dictionary%s.txt' % d[2]), d[3:5])
+    (op.join(_data_dir, 'dictionary%s.txt' % d[2]), d[3:5], d[5:7])
     for d in _builtin_dictionaries]
-fname_params = pytest.mark.parametrize('fname, in_aspell', _fnames_in_aspell)
+fname_params = pytest.mark.parametrize('fname, in_aspell, in_dictionary', _fnames_in_aspell)  # noqa: E501
 
 
 def test_dictionaries_exist():
@@ -48,7 +51,7 @@ def test_dictionaries_exist():
 
 
 @fname_params
-def test_dictionary_formatting(fname, in_aspell):
+def test_dictionary_formatting(fname, in_aspell, in_dictionary):
     """Test that all dictionary entries are valid."""
     errors = list()
     with open(fname, 'rb') as fid:
@@ -57,32 +60,33 @@ def test_dictionary_formatting(fname, in_aspell):
             err = err.lower()
             rep = rep.rstrip('\n')
             try:
-                _check_err_rep(err, rep, in_aspell, fname)
+                _check_err_rep(err, rep, in_aspell, fname, in_dictionary)
             except AssertionError as exp:
                 errors.append(str(exp).split('\n')[0])
     if len(errors):
         raise AssertionError('\n' + '\n'.join(errors))
 
 
-def _check_aspell(phrase, msg, in_aspell, fname):
-    if speller is None:
+def _check_aspell(phrase, msg, in_aspell, fname, languages):
+    if not spellers:  # if no spellcheckers exist
         return  # cannot check
     if in_aspell is None:
         return  # don't check
     if ' ' in phrase:
         for word in phrase.split():
-            _check_aspell(word, msg, in_aspell, fname)
+            _check_aspell(word, msg, in_aspell, fname, languages)
         return  # stop normal checking as we've done each word above
-    this_in_aspell = speller.check(
-        phrase.encode(speller.ConfigKeys()['encoding'][1]))
-    end = 'be in aspell for dictionary %s' % (fname,)
+    this_in_aspell = any(spellers[lang].check(phrase.encode(
+        spellers[lang].ConfigKeys()['encoding'][1])) for lang in languages)
+    end = 'be in aspell dictionaries (%s) for dictionary %s' % (
+        ', '.join(languages), fname)
     if in_aspell:  # should be an error in aspell
         assert this_in_aspell, '%s should %s' % (msg, end)
     else:  # shouldn't be
         assert not this_in_aspell, '%s should not %s' % (msg, end)
 
 
-def _check_err_rep(err, rep, in_aspell, fname):
+def _check_err_rep(err, rep, in_aspell, fname, languages):
     assert ws.match(err) is None, 'error %r has whitespace' % err
     assert comma.match(err) is None, 'error %r has a comma' % err
     assert len(rep) > 0, ('error %s: correction %r must be non-empty'
@@ -90,7 +94,7 @@ def _check_err_rep(err, rep, in_aspell, fname):
     assert not re.match(r'^\s.*', rep), ('error %s: correction %r '
                                          'cannot start with whitespace'
                                          % (err, rep))
-    _check_aspell(err, 'error %r' % (err,), in_aspell[0], fname)
+    _check_aspell(err, 'error %r' % (err,), in_aspell[0], fname, languages[0])
     prefix = 'error %s: correction %r' % (err, rep)
     for (r, msg) in [
             (r'^,',
@@ -116,7 +120,9 @@ def _check_err_rep(err, rep, in_aspell, fname):
         assert err != r.lower(), ('error %r corrects to itself amongst others'
                                   % (err,))
         _check_aspell(
-            r, 'error %s: correction %r' % (err, r), in_aspell[1], fname)
+            r, 'error %s: correction %r' % (err, r),
+            in_aspell[1], fname, languages[1])
+
     # aspell dictionary is case sensitive, so pass the original case into there
     # we could ignore the case, but that would miss things like days of the
     # week which we want to be correct
@@ -143,10 +149,11 @@ def _check_err_rep(err, rep, in_aspell, fname):
 def test_error_checking(err, rep, match):
     """Test that our error checking works."""
     with pytest.raises(AssertionError, match=match):
-        _check_err_rep(err, rep, (None, None), 'dummy')
+        _check_err_rep(err, rep, (None, None), 'dummy',
+                       (supported_languages, supported_languages))
 
 
-@pytest.mark.skipif(speller is None, reason='requires aspell-en')
+@pytest.mark.skipif(not spellers, reason='requires aspell-en')
 @pytest.mark.parametrize('err, rep, err_aspell, rep_aspell, match', [
     # This doesn't raise any exceptions, so skip for now:
     # pytest.param('a', 'uvw, bar,', None, None, 'should be in aspell'),
@@ -174,7 +181,9 @@ def test_error_checking(err, rep, match):
 def test_error_checking_in_aspell(err, rep, err_aspell, rep_aspell, match):
     """Test that our error checking works with aspell."""
     with pytest.raises(AssertionError, match=match):
-        _check_err_rep(err, rep, (err_aspell, rep_aspell), 'dummy')
+        _check_err_rep(
+            err, rep, (err_aspell, rep_aspell), 'dummy',
+            (supported_languages, supported_languages))
 
 
 # allow some duplicates, like "m-i-n-i-m-i-s-e", or "c-a-l-c-u-l-a-t-a-b-l-e"
@@ -188,7 +197,7 @@ allowed_dups = {
 
 @fname_params
 @pytest.mark.dependency(name='dictionary loop')
-def test_dictionary_looping(fname, in_aspell):
+def test_dictionary_looping(fname, in_aspell, in_dictionary):
     """Test that all dictionary entries are valid."""
     this_err_dict = dict()
     short_fname = op.basename(fname)
@@ -248,9 +257,9 @@ def test_dictionary_looping(fname, in_aspell):
 @pytest.mark.dependency(depends=['dictionary loop'])
 def test_ran_all():
     """Test that all pairwise tests ran."""
-    for f1, _ in _fnames_in_aspell:
+    for f1, _, _ in _fnames_in_aspell:
         f1 = op.basename(f1)
-        for f2, _ in _fnames_in_aspell:
+        for f2, _, _ in _fnames_in_aspell:
             f2 = op.basename(f2)
             assert (f1, f2) in global_pairs
     assert len(global_pairs) == len(_fnames_in_aspell) ** 2
