@@ -57,6 +57,8 @@ abnornally->abnormally
 abnove->above
 abnrormal->abnormal
 aboce->above, abode,
+aboluste->absolute
+abolustely->absolutely
 abolute->absolute
 abondon->abandon
 abondoned->abandoned
@@ -7030,7 +7032,10 @@ copstruction->construction
 copuright->copyright
 copurighted->copyrighted
 copurights->copyrights
+copute->compute
+coputed->computed
 coputer->computer
+coputes->computes
 copver->cover
 copyed->copied
 copyeight->copyright
@@ -14981,6 +14986,7 @@ indicaite->indicate
 indicat->indicate
 indicateds->indicated, indicates,
 indicatee->indicates, indicated,
+indicats->indicates, indicate,
 indicees->indices
 indiciate->indicate
 indiciated->indicated
@@ -15065,6 +15071,11 @@ inexpirienced->inexperienced
 infact->in fact
 infalability->infallibility
 infallable->infallible
+infaltable->inflatable, infallible,
+infalte->inflate
+infalted->inflated
+infaltes->inflates
+infalting->inflating
 infectuous->infectious
 infered->inferred
 inferface->interface
@@ -27335,6 +27346,8 @@ transfomed->transformed
 transfomer->transformer
 transfomm->transform
 transfoprmation->transformation
+transforation->transformation
+transforations->transformations
 transformated->transformed
 transformaton->transformation
 transformatted->transformed
@@ -27384,6 +27397,12 @@ transocders->transcoders
 transocdes->transcodes
 transocding->transcoding
 transocdings->transcodings
+transolate->translate
+transolated->translated
+transolates->translates
+transolating->translating
+transolation->translation
+transolations->translations
 transorm->transform
 transormed->transformed
 transorming->transforming
@@ -27485,6 +27504,11 @@ trasformer->transformer
 trasformers->transformers
 trasforming->transforming
 trasforms->transforms
+traslalate->translate
+traslalated->translated
+traslalating->translating
+traslalation->translation
+traslalations->translations
 traslate->translate
 traslated->translated
 traslates->translates
@@ -28439,6 +28463,8 @@ untoched->untouched
 untqueue->unqueue
 untrached->untracked
 untranslateable->untranslatable
+untrasform->untransform, undo transform, reverse transform,
+untrasformed->untransformed
 untrasposed->untransposed
 untrustworty->untrustworthy
 unued->unused
