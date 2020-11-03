@@ -299,6 +299,9 @@ accessiblilty->accessibility
 accessile->accessible
 accessintg->accessing
 accessisble->accessible
+accessoire->accessory
+accessoires->accessories, accessorise,
+accessoirez->accessorize, accessories,
 accessort->accessor
 accesss->access
 accesssor->accessor
@@ -4254,8 +4257,6 @@ calculuations->calculations
 calcurate->calculate
 calcutated->calculated
 caleed->called
-calender->calendar
-calenders->calendars
 caler->caller
 calescing->coalescing
 caliased->aliased
@@ -4871,7 +4872,7 @@ childen->children
 childern->children
 childres->children
 childs->children, child's,
-chiled->child
+chiled->child, chilled,
 chiledren->children
 chilren->children
 chineese->chinese
@@ -4902,7 +4903,7 @@ choser->chooser
 chosing->choosing
 chossen->chosen
 chould->should, could,
-chouse->chose
+chouse->choose, chose, choux,
 chracter->character
 chracters->characters
 chractor->character
@@ -7149,6 +7150,10 @@ correllation->correlation
 correllations->correlations
 correnspond->correspond
 corrensponded->corresponded
+correnspondence->correspondence
+correnspondences->correspondences
+correnspondent->correspondent
+correnspondents->correspondents
 corrensponding->corresponding
 corrensponds->corresponds
 corrent->correct, current,
@@ -7168,6 +7173,14 @@ correspnding->corresponding
 correspodence->correspondence
 correspoding->corresponding
 correspoinding->corresponding
+correspomd->correspond
+correspomded->corresponded
+correspomdence->correspondence
+correspomdences->correspondences
+correspomdent->correspondent
+correspomdents->correspondents
+correspomding->corresponding
+correspomds->corresponds
 correspondance->correspondence
 correspondances->correspondences
 correspondant->correspondent
@@ -7334,6 +7347,7 @@ covarege->coverage
 covention->convention
 covere->cover
 coveres->covers
+coverge->coverage
 coverred->covered
 coverted->converted, covered, coveted,
 coverting->converting
@@ -7452,7 +7466,13 @@ crowkay->croquet
 crowm->crown
 crrespond->correspond
 crsytal->crystal
+crsytalline->crystalline
+crsytallisation->crystallisation
+crsytallise->crystallise
+crsytallization->crystallization
+crsytallize->crystallize
 crsytallographic->crystallographic
+crsytals->crystals
 crtical->critical
 crticised->criticised
 crucialy->crucially
@@ -7582,6 +7602,13 @@ Cyrllic->Cyrillic
 cyrpto->crypto
 cyrrent->current
 cyrrilic->Cyrillic
+cyrstal->crystal
+cyrstalline->crystalline
+cyrstallisation->crystallisation
+cyrstallise->crystallise
+cyrstallization->crystallization
+cyrstallize->crystallize
+cyrstals->crystals
 cyrto->crypto
 cywgin->Cygwin
 daa->data
@@ -10086,7 +10113,6 @@ dupplicates->duplicates
 dupplicating->duplicating
 dupplication->duplication
 dupplications->duplications
-dur->due
 durationm->duration
 durectories->directories
 durectory->directory
@@ -10245,7 +10271,7 @@ ehenever->whenever
 ehough->enough
 ehr->her
 ehternet->Ethernet
-ehther->ether
+ehther->ether, either,
 ehthernet->ethernet
 eighter->either
 eigth->eighth, eight,
@@ -16211,7 +16237,7 @@ jumpt->jumped, jump,
 juristiction->jurisdiction
 juristictions->jurisdictions
 jus->just
-juse->just
+juse->just, juice, Jude, June,
 justfied->justified
 justication->justification
 justifed->justified
@@ -17796,13 +17822,14 @@ mudering->murdering
 mudule->module
 mudules->modules
 muext->mutex
-muhammadan->muslim
 mulithread->multithread
 mulitpart->multipart
 mulitpath->multipath
 mulitple->multiple
 mulitplicative->multiplicative
 mulitplied->multiplied
+mulitplier->multiplier
+mulitpliers->multipliers
 multi-dimenional->multi-dimensional
 multi-dimenionsal->multi-dimensional
 multi-langual->multi-lingual
@@ -17825,8 +17852,10 @@ multilpe->multiple
 multipe->multiple
 multipes->multiples
 multipiler->multiplier
+multipilers->multipliers
 multipl->multiple, multiply,
 multipled->multiplied
+multipler->multiplier, multiple,
 multiplers->multipliers
 multipliciaton->multiplication
 multiplicites->multiplicities
@@ -17841,8 +17870,17 @@ multitute->multitude
 multivriate->multivariate
 multixsite->multisite
 multliple->multiple
+multliples->multiples
+multliplied->multiplied
+multliplier->multiplier
+multlipliers->multipliers
+multliplies->multiplies
+multliply->multiply
+multliplying->multiplying
 multple->multiple
 multplied->multiplied
+multplier->multiplier
+multpliers->multipliers
 multplies->multiplies
 multply->multiply
 multplying->multiplying
@@ -17883,8 +17921,12 @@ mutli->multi
 mutli-threaded->multi-threaded
 mutlipart->multipart
 mutliple->multiple
-mutlipler->multiplier
+mutlipler->multiplier, multiple,
+mutliples->multiples
+mutliplication->multiplication
 mutliplicites->multiplicities
+mutliplier->multiplier
+mutlipliers->multipliers
 mutliply->multiply
 mutully->mutually
 mutux->mutex
@@ -17948,6 +17990,10 @@ navagate->navigate
 navagating->navigating
 navagation->navigation
 navagitation->navigation
+nax->max, nad,
+naxima->maxima
+naximal->maximal
+naximum->maximum
 Nazereth->Nazareth
 nclude->include
 nd->and, 2nd,
@@ -18478,11 +18524,15 @@ nighboring->neighboring
 nightfa;;->nightfall
 nightime->nighttime
 nimutes->minutes
+nin->inn, min, bin, nine,
 nineth->ninth
+ninima->minima
+ninimal->minimal
+ninimum->minimum
 ninjs->ninja
 ninteenth->nineteenth
-ninties->1990s
-ninty->ninety
+ninties->nineties, 1990s,
+ninty->ninety, minty,
 nither->neither
 nknown->unknown
 nkow->know
@@ -19017,6 +19067,8 @@ openess->openness
 openin->opening
 openned->opened
 openning->opening
+openscource->open-source, open source, opensource,
+openscourced->open-sourced, open sourced, opensourced,
 operaand->operand
 operaands->operands
 operaion->operation
@@ -19557,7 +19609,7 @@ Palistinians->Palestinians
 pallete->palette
 pallette->palette
 palletted->paletted
-paln->plan
+paln->plan, pain, palm,
 paltette->palette
 paltform->platform
 pamflet->pamphlet
@@ -20926,6 +20978,8 @@ procedes->proceeds, precedes,
 procedger->procedure
 proceding->proceeding, preceding,
 procedings->proceedings
+procedre->procedure
+procedres->procedures
 proceedure->procedure
 proceedures->procedures
 proceeed->proceed
@@ -24016,6 +24070,10 @@ scoll->scroll
 scolling->scrolling
 scopeing->scoping
 scorebord->scoreboard
+scource->source, scouse,
+scourced->sourced, scoured,
+scourcer->scourer, sorcerer, scouser,
+scources->sources
 scrach->scratch
 scrached->scratched
 scraches->scratches
@@ -25449,8 +25507,10 @@ spile->spite, spiral,
 spiltting->splitting
 spinlcok->spinlock
 spinock->spinlock
+splig->split, splign,
+spligs->splits
 spliitting->splitting
-splite->split
+splite->split, splits, splice,
 spliting->splitting
 splitted->split
 splittng->splitting
@@ -25567,7 +25627,7 @@ standartized->standardized
 standarts->standards
 standatd->standard
 standtard->standard
-standy->standby
+standy->standby, sandy, standee,
 stange->strange
 stanp->stamp
 staration->starvation
@@ -29261,7 +29321,7 @@ vunerable->vulnerable
 vyer->very
 vyre->very
 waht->what
-wakeus->wakeups
+wakeus->wakeups, wake us, walrus,
 wakup->wakeup
 wallthickness->wall thickness
 wan't->want, wasn't,
