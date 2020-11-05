@@ -2676,6 +2676,7 @@ atempts->attempts
 atendance->attendance
 atended->attended
 atendee->attendee
+atends->attends
 atention->attention
 atheistical->atheistic
 athenean->athenian
@@ -3260,6 +3261,10 @@ avaluate->evaluate
 avaluated->evaluated
 avaluates->evaluates
 avaluating->evaluating
+avance->advance
+avanced->advanced
+avances->advances
+avancing->advancing
 avaoid->avoid
 avaoidable->avoidable
 avaoided->avoided
@@ -14186,6 +14191,8 @@ hostanme->hostname
 hostorical->historical
 hostories->histories
 hostory->history
+hostspot->hotspot
+hostspots->hotspots
 hotizontal->horizontal
 hotname->hostname
 hould->hold, should,
@@ -17292,6 +17299,7 @@ metalurgy->metallurgy
 metamorphysis->metamorphosis
 metapackge->metapackage
 metapackges->metapackages
+metaphore->metaphor
 metaphoricial->metaphorical
 metaprogamming->metaprogramming
 metatdata->metadata
