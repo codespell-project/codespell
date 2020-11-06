@@ -5900,6 +5900,9 @@ componnents->components
 componsites->composites
 compontent->component
 compontents->components
+composablity->composability
+composibility->composability
+composiblity->composability
 composit->composite
 compount->compound
 comppatible->compatible
@@ -20438,6 +20441,7 @@ posibilities->possibilities
 posibility->possibility
 posibilties->possibilities
 posible->possible
+posiblity->possibility
 posiitive->positive
 posiitives->positives
 posiitivity->positivity
@@ -20470,6 +20474,7 @@ posponed->postponed
 posption->position
 possabilites->possibilities
 possabilities->possibilities
+possability->possibility
 possabilties->possibilities
 possabily->possibly
 possable->possible
@@ -23468,6 +23473,7 @@ respose->response
 resposes->responses
 resposibility->responsibility
 resposible->responsible
+resposiblity->responsibility
 respositories->repositories
 respository->repository
 resposive->responsive
