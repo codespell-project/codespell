@@ -534,7 +534,7 @@ def apply_uri_ignore_words(check_words, line, word_regex, ignore_word_regex,
     for uri in re.findall(uri_regex, line):
         for uri_word in extract_words(uri, word_regex,
                                       ignore_word_regex):
-            if "*" in uri_ignore_words or uri_word in uri_ignore_words:
+            if uri_word in uri_ignore_words:
                 check_words.remove(uri_word)
 
 
@@ -605,9 +605,17 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
         fixed_words = set()
         asked_for = set()
 
+        # If all URI spelling errors will be ignored, erase any URI before
+        # extracting words. Otherwise, apply ignores after extracting words.
+        # This ensures that if a URI ignore word occurs both inside a URI and
+        # outside, it will still be a spelling error.
+        if "*" in uri_ignore_words:
+            line = uri_regex.sub(' ', line)
         check_words = extract_words(line, word_regex, ignore_word_regex)
-        apply_uri_ignore_words(check_words, line, word_regex,
-                               ignore_word_regex, uri_regex, uri_ignore_words)
+        if "*" not in uri_ignore_words:
+            apply_uri_ignore_words(check_words, line, word_regex,
+                                   ignore_word_regex, uri_regex,
+                                   uri_ignore_words)
 
         for word in check_words:
             lword = word.lower()
