@@ -10557,6 +10557,8 @@ endfi->endif
 endianes->endianness
 endianess->endianness
 endiannes->endianness
+endien->endian, indian,
+endiens->endians, indians,
 endig->ending
 endnoden->endnode
 endoint->endpoint
@@ -14762,8 +14764,10 @@ improovment->improvement
 improovments->improvements
 impropely->improperly
 improtant->important
+improvemen->improvement
 improvemenet->improvement
 improvemenets->improvements
+improvemens->improvements
 improvision->improvisation
 improvmenet->improvement
 improvmenets->improvements
@@ -15094,10 +15098,14 @@ indictement->indictment
 indictes->indicates
 indictor->indicator
 indide->inside
+indien->indian, endian,
+indiens->indians, endians,
 indigineous->indigenous
 indipendence->independence
 indipendent->independent
 indipendently->independently
+indiquate->indicate
+indiquates->indicates
 indirecty->indirectly
 indispensible->indispensable
 indisputible->indisputable
@@ -16688,6 +16696,7 @@ litte->little
 littel->little
 littel-endian->little-endian
 littele->little
+littelry->literally
 litteral->literal
 litterally->literally
 litterals->literals
@@ -22187,9 +22196,12 @@ recomends->recommends
 recommad->recommend
 recommaded->recommended
 recommand->recommend
+recommandation->recommendation
 recommanded->recommended
+recommanding->recommending
 recommands->recommends
 recommd->recommend
+recommdation->recommendation
 recommded->recommended
 recommdend->recommend
 recommdended->recommended
