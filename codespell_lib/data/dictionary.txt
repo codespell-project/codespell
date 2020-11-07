@@ -7286,6 +7286,9 @@ cotnainer->container
 cotnainers->containers
 cotnaining->containing
 cotnains->contains
+cotranser->cotransfer
+cotrasferred->cotransferred
+cotrasfers->cotransfers
 cotrol->control
 cotrolled->controlled
 cotrolling->controlling
@@ -23600,6 +23603,12 @@ retquireseek->requireseek
 retquiresgpos->requiresgpos
 retquiresgsub->requiresgsub
 retquiressl->requiressl
+retranser->retransfer
+retransferd->retransferred
+retransfered->retransferred
+retransfering->retransferring
+retransferrd->retransferred
+retransfert->retransfer, retransferred,
 retransmited->retransmitted
 retransmition->retransmission
 retreevable->retrievable
