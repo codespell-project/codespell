@@ -6366,6 +6366,7 @@ connction->connection
 conncurrent->concurrent
 connecetd->connected
 connecion->connection
+connecions->connections
 conneciton->connection
 connecitons->connections
 connecor->connector
@@ -6377,7 +6378,9 @@ connectet->connected
 connectibity->connectivity
 connectino->connection
 connectinos->connections
+connectiom->connection
 connectioms->connections
+connectiona->connection
 connectionas->connections
 connecto->connect
 connecton->connection, connector,
@@ -24018,6 +24021,7 @@ satisfyied->satisfied
 satisifed->satisfied
 satisified->satisfied
 satisifies->satisfies
+satisfing->satisfying
 satisify->satisfy
 satisifying->satisfying
 satistying->satisfying
