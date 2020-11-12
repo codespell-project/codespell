@@ -16830,7 +16830,6 @@ Lybia->Libya
 maake->make
 mabe->maybe
 mabye->maybe
-maube->maybe, mauve,
 maccro->macro
 maccros->macros
 machanism->mechanism
@@ -17107,6 +17106,7 @@ mathod->method
 matix->matrix
 matser->master
 matzch->match
+maube->maybe, mauve,
 mavrick->maverick
 maximim->maximum
 maximimum->maximum
@@ -25149,15 +25149,15 @@ songles->singles, dongles,
 songling->singling, dongling,
 sooaside->suicide
 soodonim->pseudonym
-sooit->suet, suit,
-soop->soup, scoop, snoop,
+sooit->suet, suit, soot,
+soop->soup, scoop, snoop, soap,
 soource->source
 sophicated->sophisticated
 sophisicated->sophisticated
 sophmore->sophomore
-sorce->source
+sorce->source, force,
 sorceror->sorcerer
-sord->sword, sore, sored, sawed,
+sord->sword, sore, sored, sawed, soared,
 sorrounding->surrounding
 sortig->sorting
 sortings->sorting
@@ -25165,15 +25165,15 @@ sortlst->sortlist
 sortner->sorter
 sortnr->sorter
 sortrage->storage, shortage,
-soruce->source
-soruces->sources
+soruce->source, spruce,
+soruces->sources, spruces,
 soscket->socket
 soterd->stored, sorted,
 sotfware->software
 sotrage->storage, shortage,
 sotred->sorted, stored,
 sotring->storing, sorting,
-sotry->story
+sotry->story, sorry,
 sotyr->satyr, story,
 souce->source
 souces->sources
@@ -25188,8 +25188,8 @@ soundard->soundcard
 sountrack->soundtrack
 sourcedrectory->sourcedirectory
 sourct->source
-soure->source, sure,
-soures->sources
+soure->source, sure, sore,
+soures->sources, sores,
 sourrounding->surrounding
 sourt->sort, south,
 sourth->south
