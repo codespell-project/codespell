@@ -8431,6 +8431,7 @@ dependicy->dependency
 dependig->depending
 dependncies->dependencies
 dependncy->dependency
+depened->depend
 depenedecies->dependencies
 depenedecy->dependency
 depenedent->dependent
@@ -8438,11 +8439,16 @@ depenencies->dependencies
 depenencis->dependencies
 depenency->dependency
 depenencys->dependencies
+depenend->depend
 depenendecies->dependencies
 depenendecy->dependency
 depenendence->dependence
 depenendencies->dependencies
 depenendency->dependency
+depenendencies->dependencies
+depenendency->dependency
+depenendent->dependent
+depenending->depending
 depenent->dependent
 depenently->dependently
 depening->depending, deepening,
@@ -22375,11 +22381,17 @@ redistirbution->redistribution
 redliens->redlines
 rednerer->renderer
 redonly->readonly
+redudancy->redundancy
+redudant->redundant
+redunancy->redundancy
 redunant->redundant
 redundacy->redundancy
+redundat->redundant
+redundency->redundancy
 redundent->redundant
+reduntancy->redundancy
 reduntant->redundant
-reduse->reduce
+reduse->reduce, reuse,
 reedeming->redeeming
 reelation->relation
 reelease->release
