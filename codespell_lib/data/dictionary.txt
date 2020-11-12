@@ -5923,7 +5923,7 @@ compromize->compromise
 compsable->composable
 compsite->composite
 comptabile->compatible
-comptability->compatibility
+comptability->compatibility, computability,
 comptible->compatible
 comptue->compute
 compuatation->computation
@@ -12722,7 +12722,7 @@ flage->flags
 flaged->flagged
 flages->flags
 flagg->flag
-flahs->flash
+flahs->flash, flags,
 flahsed->flashed
 flahses->flashes
 flahsing->flashing
@@ -13158,10 +13158,10 @@ frequant->frequent
 frequantly->frequently
 frequences->frequencies
 frequencey->frequency
-frequenct->frequency
+frequenct->frequency, frequent,
 frequenies->frequencies
 frequentily->frequently
-frequeny->frequency, frequently,
+frequeny->frequency, frequently, frequent,
 frequncies->frequencies
 frequncy->frequency
 freze->freeze
@@ -19891,7 +19891,7 @@ pasttime->pastime
 pastural->pastoral
 pasword->password
 paswords->passwords
-patchs->patches
+patchs->patches, paths,
 patcket->packet
 patckets->packets
 patern->pattern
@@ -27864,7 +27864,7 @@ trianglular->triangular
 trianglutaion->triangulation
 triangulataion->triangulation
 triangultaion->triangulation
-triger->trigger
+triger->trigger, tiger,
 trigered->triggered
 trigerred->triggered
 trigerring->triggering
