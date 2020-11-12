@@ -24541,10 +24541,13 @@ sertificate->certificate
 sertificated->certificated
 sertificates->certificates
 sertification->certification
-servce->service
-servced->serviced
-servces->services
-servcing->servicing
+servce->service, serve,
+servced->serviced, served,
+servces->services, serves,
+servcing->servicing, serving,
+servece->service
+serveced->serviced
+serveces->services
 servecing->servicing
 serveice->service
 serveral->several
