@@ -5042,7 +5042,7 @@ claus->clause
 clcoksource->clocksource
 clcosed->closed
 clea->clean
-cleaer->clear, clearer,
+cleaer->clear, clearer, cleaner,
 cleaered->cleared
 cleaing->cleaning
 cleancacne->cleancache
@@ -5054,7 +5054,7 @@ cleanp->cleanup, clean up,
 cleanpu->cleanup
 cleanpus->cleanups
 cleantup->cleanup
-cleare->cleared
+cleare->cleared, clear,
 cleareance->clearance
 clearified->clarified
 clearifies->clarifies
@@ -22311,7 +22311,7 @@ recontructs->reconstructs
 recordproducer->record producer
 recored->recorded
 recoriding->recording
-recource->resource
+recource->resource, recourse,
 recourced->resourced
 recources->resources
 recourcing->resourcing
@@ -23873,10 +23873,10 @@ rotaitons->rotations
 rotat->rotate
 rotataion->rotation
 rotataions->rotations
-rotatd->rotated
-rotatio->rotation
-rotatios->rotations
-rotats->rotates
+rotatd->rotated, rotate,
+rotatio->rotation, ratio,
+rotatios->rotations, ratios,
+rotats->rotates, rotate,
 rouding->rounding
 roughtly->roughly
 rougly->roughly
@@ -23894,18 +23894,23 @@ rountriped->roundtripped, round-tripped, round tripped,
 rountriping->roundtripping, round-tripping, round tripping,
 rountripped->roundtripped, round-tripped, round tripped,
 rountripping->roundtripping, round-tripping, round tripping,
-routet->routed
+routet->routed, route, router,
+routin->routine, routing,
 routins->routines
 rovide->provide
 rovided->provided
 rovider->provider
 rovides->provides
 roviding->providing
-rqeuests->requests
-rquest->request
+rqeuest->request, quest,
+rqeuested->requested
+rqeuesting->requesting
+rqeuests->requests, quests,
+rquest->request, quest,
 rquested->requested
 rquesting->requesting
-rquests->requests
+rquests->requests, quests,
+rquire->require
 rquired->required
 rquirement->requirement
 rquires->requires
@@ -23913,12 +23918,12 @@ rquiring->requiring
 rranslation->translation
 rranslations->translations
 rrase->erase
-rsizing->resizing
-rsource->resource
-rsourced->resourced
-rsources->resources
-rsourcing->resourcing
-rturns->returns
+rsizing->resizing, sizing,
+rsource->resource, source,
+rsourced->resourced, sourced,
+rsources->resources, sources,
+rsourcing->resourcing, sourcing,
+rturns->returns, turns,
 rubarb->rhubarb
 rucuperate->recuperate
 rudimentally->rudimentary
@@ -23926,9 +23931,9 @@ rudimentatry->rudimentary
 rudimentry->rudimentary
 rulle->rule
 rumatic->rheumatic
-runing->running
-runned->ran, run,
-runnging->running
+runing->running, ruining,
+runned->ran, run, ruined,
+runnging->running, rummaging,
 runnig->running
 runnign->running
 runnigng->running
@@ -23937,7 +23942,7 @@ runnint->running
 runnning->running
 runns->runs
 runnung->running
-runtine->runtime
+runtine->runtime, routine,
 runting->runtime
 rurrent->current
 russina->Russian
@@ -25188,10 +25193,10 @@ soundard->soundcard
 sountrack->soundtrack
 sourcedrectory->sourcedirectory
 sourct->source
-soure->source, sure, sore,
-soures->sources, sores,
+soure->source, sure, sore, sour, soured,
+soures->sources, sores, sours, soured,
 sourrounding->surrounding
-sourt->sort, south,
+sourt->sort, south, sour,
 sourth->south
 sourthern->southern
 southbrige->southbridge
