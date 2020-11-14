@@ -19424,9 +19424,11 @@ ouputarea->outputarea
 ouputs->outputs
 ouputted->outputted
 ouputting->outputting
+ourselfe->ourselves, ourself,
 ourselfes->ourselves
 ourselfs->ourselves
-ourselve->ourselves
+ourselv->ourself, ourselves,
+ourselve->ourself, ourselves,
 ourselvs->ourselves
 ouside->outside
 oustanding->outstanding
@@ -19765,6 +19767,7 @@ paremters->parameters
 parentesis->parentheses, parenthesis,
 parenthese->parentheses
 parenthesed->parenthesized
+refere->refer, referee,
 parenthises->parentheses
 parenthsis->parenthesis
 paret->parent, parrot,
@@ -27168,9 +27171,10 @@ theive->thief
 theives->thieves
 themplate->template
 themselces->themselves
+themselfe->themselves, themself,
 themselfes->themselves
 themselfs->themselves
-themselve->themselves
+themselve->themselves, themself,
 themslves->themselves
 thenes->themes
 thenn->then
@@ -29841,6 +29845,7 @@ yourr->your, you're,
 yourselfe->yourself, yourselves,
 yourselfes->yourselves
 yourselv->yourself, yourselves,
+yourselve-> yourselves, yourself,
 youseff->yourself, yousef,
 youself->yourself
 ypes->types
