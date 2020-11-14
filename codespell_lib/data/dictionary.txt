@@ -2681,8 +2681,8 @@ atendee->attendee
 atends->attends
 atention->attention
 atheistical->atheistic
-athenean->athenian
-atheneans->athenians
+athenean->Athenian
+atheneans->Athenians
 ather->other
 athiesm->atheism
 athiest->atheist
@@ -2835,7 +2835,7 @@ auospacing->autospacing
 auot->auto
 auotmatic->automatic
 auromated->automated
-aussian->gaussian, russian,
+aussian->Gaussian, Russian, Austrian,
 austrailia->Australia
 austrailian->Australian
 Australien->Australian
@@ -3955,7 +3955,7 @@ brane->brain
 braodcasted->broadcasted
 Brasillian->Brazilian
 brazeer->brassiere
-brazillian->brazilian
+brazillian->Brazilian
 bre->be, brie,
 breakes->breaks
 breakthough->breakthrough
@@ -7639,7 +7639,7 @@ dafualted->defaulted
 dafualts->defaults
 daita->data
 dake->take
-dalmation->dalmatian
+dalmation->Dalmatian
 dalta->delta
 damenor->demeanor
 dameon->daemon, demon, Damien,
@@ -13797,7 +13797,7 @@ guas's->Gauss'
 guas->Gauss
 guass'->Gauss'
 guass->Gauss
-guassian->gaussian
+guassian->Gaussian
 Guatamala->Guatemala
 Guatamalan->Guatemalan
 gud->good
@@ -20285,7 +20285,7 @@ plesant->pleasant
 plese->please
 plesently->pleasantly
 plesing->pleasing, blessing,
-plian->plain
+plian->plain, pliant,
 pllatforms->platforms
 ploting->plotting
 plugable->pluggable
