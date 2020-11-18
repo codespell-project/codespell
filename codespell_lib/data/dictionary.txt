@@ -5916,6 +5916,9 @@ componnents->components
 componsites->composites
 compontent->component
 compontents->components
+composablity->composability
+composibility->composability
+composiblity->composability
 composit->composite
 compount->compound
 comppatible->compatible
@@ -20539,6 +20542,7 @@ posibilities->possibilities
 posibility->possibility
 posibilties->possibilities
 posible->possible
+posiblity->possibility
 posibly->possibly
 posiitive->positive
 posiitives->positives
@@ -20572,6 +20576,7 @@ posponed->postponed
 posption->position
 possabilites->possibilities
 possabilities->possibilities
+possability->possibility
 possabilties->possibilities
 possabily->possibly
 possable->possible
@@ -23601,6 +23606,7 @@ respose->response
 resposes->responses
 resposibility->responsibility
 resposible->responsible
+resposiblity->responsibility
 respositories->repositories
 respository->repository
 resposive->responsive
@@ -24665,6 +24671,10 @@ serailization->serialization
 serailized->serialized
 serailze->serialize
 serailzed->serialized
+sercive->service
+sercived->serviced
+sercives->services
+serciving->servicing
 sergent->sergeant
 serialiazation->serialization
 serice->service
@@ -24681,9 +24691,18 @@ sertificate->certificate
 sertificated->certificated
 sertificates->certificates
 sertification->certification
-servce->service
-servces->services
+servce->service, serve,
+servced->serviced, served,
+servces->services, serves,
+servcing->servicing, serving,
+servece->service
+serveced->serviced
+serveces->services
+servecing->servicing
 serveice->service
+serveiced->serviced
+serveices->services
+serveicing->servicing
 serveral->several
 serverite->severity
 serverites->severities
