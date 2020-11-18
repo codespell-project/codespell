@@ -25317,11 +25317,18 @@ speeping->sleeping
 spefally->specially, specifically,
 spefation->separation, specification,
 spefations->separations, specifications,
+spefcifiable->specifiable
+spefcific->specific
+spefcifically->specifically
+spefcification->specification
+spefcifications->specifications
+spefcifics->specifics
 spefcifieid->specified
 spefcifieir->specifier
 spefcifieirs->specifiers
 spefcifieis->specifies
 spefcifiy->specify
+spefcifiying->specifying
 spefeid->specified
 spefeir->specifier
 spefeirs->specifiers
@@ -25329,13 +25336,18 @@ spefeis->specifies
 spefiable->specifiable
 spefial->special
 spefic->specific
+speficable->specifiable
 spefically->specifically
 spefication->specification
 spefications->specifications
+speficed->specified
 speficeid->specified
 speficeir->specifier
 speficeirs->specifiers
 speficeis->specifies
+speficer->specifier
+speficers->specifiers
+spefices->specifies
 speficiable->specifiable
 speficiallally->specifically
 speficiallation->specification
@@ -25377,6 +25389,11 @@ speficies->specifies
 speficifally->specifically
 speficifation->specification
 speficifations->specifications
+speficifc->specific
+speficifcally->specifically
+speficifcation->specification
+speficifcations->specifications
+speficifcs->specifics
 speficifed->specified
 speficifeid->specified
 speficifeir->specifier
@@ -25460,6 +25477,7 @@ speficitifers->specifiers
 speficitifes->specifies
 speficity->specificity
 speficiy->specify
+speficiying->specifying
 spefics->specifics
 speficy->specify
 speficying->specifying
@@ -25494,6 +25512,16 @@ spefififers->specifiers
 spefififes->specifies
 spefify->specify
 spefifying->specifying
+spefiiable->specifiable
+spefiic->specific
+spefiically->specifically
+spefiication->specification
+spefiications->specifications
+spefiics->specifics
+spefiied->specified
+spefiier->specifier
+spefiiers->specifiers
+spefiies->specifies
 spefiifally->specifically
 spefiifation->specification
 spefiifations->specifications
@@ -25539,6 +25567,9 @@ spefixifer->specifier
 spefixifers->specifiers
 spefixifes->specifies
 spefixy->specify
+spefixying->specifying
+spefiy->specify
+spefiying->specifying
 spefy->specify
 spefying->specifying
 speical->special
@@ -28610,6 +28641,7 @@ unsolicted->unsolicited
 unspecificed->unspecified
 unspefcifieid->unspecified
 unspefeid->unspecified
+unspeficed->unspecified
 unspeficeid->unspecified
 unspeficialleid->unspecified
 unspeficiallied->unspecified
@@ -28633,6 +28665,7 @@ unspefifed->unspecified
 unspefifeid->unspecified
 unspefified->unspecified
 unspefififed->unspecified
+unspefiied->unspecified
 unspefiifeid->unspecified
 unspefiified->unspecified
 unspefiififed->unspecified
