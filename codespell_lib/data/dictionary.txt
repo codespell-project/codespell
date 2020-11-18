@@ -3539,6 +3539,8 @@ begining->beginning
 beginn->begin
 beginnig->beginning
 beginnin->beginning
+beginnning->beginning
+beginnnings->beginnings
 behabviour->behaviour
 behaivior->behavior
 behavious->behaviour, behaviours,
@@ -5935,6 +5937,7 @@ compromize->compromise
 compsable->composable
 compsite->composite
 comptabile->compatible
+comptability->compatibility, computability,
 comptible->compatible
 comptue->compute
 compuatation->computation
@@ -12772,6 +12775,10 @@ flage->flags
 flaged->flagged
 flages->flags
 flagg->flag
+flahs->flash, flags,
+flahsed->flashed
+flahses->flashes
+flahsing->flashing
 flakyness->flakiness
 flamable->flammable
 flaot->float
@@ -13204,8 +13211,10 @@ frequant->frequent
 frequantly->frequently
 frequences->frequencies
 frequencey->frequency
-frequenct->frequency
+frequenct->frequency, frequent,
+frequenies->frequencies
 frequentily->frequently
+frequeny->frequency, frequently, frequent,
 frequncies->frequencies
 frequncy->frequency
 freze->freeze
@@ -15054,6 +15063,9 @@ incuded->included
 incudes->includes
 incuding->including
 inculde->include
+inculded->included
+inculdes->includes
+inculding->including
 incunabla->incunabula
 incure->incur
 incurruptable->incorruptible
@@ -18842,6 +18854,10 @@ numerial->numeral, numerical,
 numering->numbering
 numers->numbers
 nummbers->numbers
+numnber->number
+numnbered->numbered
+numnbering->numbering
+numnbers->numbers
 numner->number
 numners->numbers
 numver->number
@@ -19940,6 +19956,7 @@ pasttime->pastime
 pastural->pastoral
 pasword->password
 paswords->passwords
+patchs->patches, paths,
 patcket->packet
 patckets->packets
 patern->pattern
@@ -20522,6 +20539,7 @@ posibilities->possibilities
 posibility->possibility
 posibilties->possibilities
 posible->possible
+posibly->possibly
 posiitive->positive
 posiitives->positives
 posiitivity->positivity
@@ -20918,6 +20936,7 @@ prestigeous->prestigious
 prestigous->prestigious
 presuambly->presumably
 presumabely->presumably
+presumebly->presumably
 presumely->presumably
 presumibly->presumably
 pretection->protection
@@ -24169,6 +24188,7 @@ scetching->sketching
 schdule->schedule
 schduled->scheduled
 schduleing->scheduling
+schduler->scheduler
 schdules->schedules
 schduling->scheduling
 schedual->schedule
@@ -27963,6 +27983,7 @@ trianglular->triangular
 trianglutaion->triangulation
 triangulataion->triangulation
 triangultaion->triangulation
+triger->trigger, tiger,
 trigered->triggered
 trigerred->triggered
 trigerring->triggering
@@ -28331,7 +28352,7 @@ undfine->undefine
 undfined->undefined
 undfines->undefines
 undistinghable->indistinguishable
-undoed->undone
+undoed->undo, undone,
 undorder->unorder
 undordered->unordered
 undoubtely->undoubtedly
