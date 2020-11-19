@@ -966,7 +966,9 @@ airbourne->airborne
 aircaft->aircraft
 aircrafts'->aircraft's
 aircrafts->aircraft
+airfow->airflow
 airial->aerial, arial,
+airlfow->airflow
 airloom->heirloom
 airporta->airports
 airrcraft->aircraft
@@ -1770,6 +1772,7 @@ anytrhing->anything
 anytthing->anything
 anytying->anything
 anywere->anywhere
+aoache->apache
 aond->and
 aother->another, other, mother,
 aovid->avoid
@@ -2268,6 +2271,7 @@ aribitary->arbitrary
 aribiter->arbiter
 aribtrarily->arbitrarily
 aribtrary->arbitrary
+ariflow->airflow
 arised->arose
 arithemetic->arithmetic
 arithemtic->arithmetic
@@ -10511,6 +10515,8 @@ emties->empties
 emtpy->empty
 emty->empty
 emtying->emptying
+emultor->emulator
+emultors->emulators
 enabe->enable
 enabel->enable
 enabeled->enabled
@@ -29882,6 +29888,8 @@ wordlwide->worldwide
 wordpres->wordpress
 worfklow->workflow
 worfklows->workflows
+worflow->workflow
+worflows->workflow
 workaorund->workaround
 workaraound->workaround
 workarbound->workaround
@@ -29902,7 +29910,11 @@ workbneches->workbenches
 workboos->workbooks
 workd->worked
 workes->works
+workfow->workflow
+workfows->workflows
 workign->working
+worklfow->workflow
+worklfows->workflows
 workpsace->workspace
 workpsaces->workspaces
 workspsace->workspace
@@ -29967,6 +29979,8 @@ wroet->wrote
 wrog->wrong
 wrok->work
 wroked->worked
+wrokflow->workflow
+wrokflows->workflows
 wroking->working
 wroks->works
 wron->wrong
