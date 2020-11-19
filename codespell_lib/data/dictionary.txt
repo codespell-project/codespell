@@ -10159,8 +10159,11 @@ dupliacted->duplicated
 dupliactes->duplicates
 dupliagte->duplicate
 dupliate->duplicate
+dupliated->duplicated
 dupliates->duplicates
+dupliating->duplicating
 dupliation->duplication
+dupliations->duplications
 duplicat->duplicate
 duplicatd->duplicated
 duplicats->duplicates
@@ -21557,6 +21560,7 @@ psyhic->psychic
 ptd->pdf
 ptherad->pthread
 ptherads->pthreads
+pthon->python
 pthred->pthread
 pthreds->pthreads
 ptorions->portions
