@@ -4698,6 +4698,9 @@ chage->change, charge,
 chaged->changed, charged,
 chages->changes, charges,
 chaging->changing, charging,
+chagne->change
+chagned->changed
+chagnes->changes
 chahged->changed
 chaied->chained
 chaing->chain
@@ -5560,11 +5563,14 @@ commited->committed
 commitee->committee
 commiter->committer
 commiters->committers
+commiti->committee, committing, commit,
 commitin->committing
 commiting->committing
 commitish->committish
 committ->commit
 committe->committee
+committi->committee
+committis->committees
 committment->commitment
 committments->commitments
 committy->committee
@@ -7582,6 +7588,7 @@ currectly->correctly, currently,
 currects->corrects, currents,
 curremt->current
 curremts->currents
+curren->current
 currenlty->currently
 currenly->currently
 currennt->current
@@ -7631,6 +7638,8 @@ cutted->cut
 cuurently->currently
 cuve->curve, cube, cave,
 cuves->curves, cubes, caves,
+cuvre->curve, cover,
+cuvres->curves, covers,
 cvignore->cvsignore
 cxan->cyan
 cycic->cyclic
@@ -13997,7 +14006,7 @@ hapenning->happening
 hapenns->happens
 hapens->happens
 happaned->happened
-happend->happened, happens,
+happend->happened, happens, happen,
 happended->happened
 happenned->happened
 happenning->happening
@@ -14155,6 +14164,10 @@ hierarachy->hierarchy
 hierarchie->hierarchy
 hierarcical->hierarchical
 hierarcy->hierarchy
+hierarhcical->hierarchical
+hierarhcically->hierarchically
+hierarhcies->hierarchies
+hierarhcy->hierarchy
 hierchy->hierarchy
 hieroglph->hieroglyph
 hieroglphs->hieroglyphs
@@ -19691,7 +19704,7 @@ pacakge->package
 pacakges->packages
 pacakging->packaging
 paceholder->placeholder
-pach->patch
+pach->patch, path,
 pachage->package
 paches->patches
 pacht->patch
@@ -24410,6 +24423,7 @@ seemless->seamless
 seemlessly->seamlessly
 seesion->session
 seesions->sessions
+seeting->seating, setting, seething,
 segement->segment
 segementation->segmentation
 segements->segments
