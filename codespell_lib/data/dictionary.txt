@@ -1913,6 +1913,8 @@ appology->apology
 appon->upon
 appopriate->appropriate
 apporiate->appropriate
+apporoximate->approximate
+apporoximated->approximated
 apporpiate->appropriate
 appove->approve
 appoved->approved
@@ -8665,6 +8667,8 @@ descision->decision
 descisions->decisions
 descize->disguise
 descized->disguised
+descktop->desktop
+descktops->desktops
 desconstructed->deconstructed
 descover->discover
 descovered->discovered
@@ -12705,6 +12709,7 @@ fileds->fields
 fileld->field
 filelds->fields
 filenae->filename
+filenname->filename, file name,
 fileshystem->filesystem
 fileshystems->filesystems
 filesname->filename, filenames,
@@ -12835,7 +12840,7 @@ flacoured->flavoured
 flacouring->flavouring
 flacourings->flavourings
 flacours->flavours
-flage->flags
+flage->flags, flag,
 flaged->flagged
 flages->flags
 flagg->flag
@@ -19884,6 +19889,7 @@ paramter->parameter
 paramterer->parameter
 paramterers->parameters
 paramteres->parameters
+paramterical->parametric, parametrically,
 paramterization->parametrization, parameterization,
 paramterize->parameterize
 paramterless->parameterless
@@ -19945,6 +19951,8 @@ parmaters->parameters
 parmeter->parameter
 parmeters->parameters
 parms->params, prams,
+parmter->parameter
+parmters->parameters
 parnoia->paranoia
 parrakeets->parakeets
 parralel->parallel
@@ -21030,6 +21038,7 @@ pressent->present
 pressentation->presentation
 pressented->presented
 pressre->pressure
+presss->press, presses,
 prestigeous->prestigious
 prestigous->prestigious
 presuambly->presumably
