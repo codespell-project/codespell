@@ -33,7 +33,7 @@ encodings = ('utf-8', 'iso-8859-1')
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
-VERSION = '2.0.dev0'
+VERSION = '2.0.0'
 
 supported_languages_en = ('en', 'en_GB', 'en_US', 'en_CA', 'en_AU')
 supported_languages = supported_languages_en
