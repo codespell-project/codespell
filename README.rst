@@ -73,12 +73,12 @@ after applying them in projects like Linux Kernel, EFL, oFono among others.
 You can provide your own version of the dictionary, but patches for
 new/different entries are very welcome.
 
-Want to know if a word you're proposing exists in codespell already? It is possible to test a word against the current set dictionaries that exists in ``codespell_lib/data/dictionary*.txt`` via::
+Want to know if a word you're proposing exists in codespell already? It is possible to test a word against the current set dictionaries that exist in ``codespell_lib/data/dictionary*.txt`` via::
 
     echo "word" | codespell -
     echo "1stword,2ndword" | codespell -
 
-You can select the optional dictionaries with the ``--builtin` option.
+You can select the optional dictionaries with the ``--builtin`` option.
 
 Using a config file
 -------------------
