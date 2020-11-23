@@ -2261,8 +2261,10 @@ argumengs->arguments
 argumens->arguments
 argumentents->arguments
 argumeny->argument
+argumet->argument
 argumetn->argument
 argumetns->arguments
+argumets->arguments
 argumnet->argument
 argumnets->arguments
 arhive->archive
@@ -4714,6 +4716,8 @@ challange->challenge
 challanged->challenged
 challanges->challenges
 challege->challenge
+chambre->chamber
+chambres->chambers
 Champange->Champagne
 chanceled->canceled
 chanceling->canceling
@@ -7652,6 +7656,7 @@ cyclinders->cylinders
 cycular->circular
 cyle->cycle
 cylic->cyclic
+cylindre->cylinder
 cylnder->cylinder
 cylnders->cylinders
 cylynders->cylinders
@@ -11461,6 +11466,8 @@ exectuable->executable
 exectuableness->executableness
 exectuables->executables
 exectued->executed
+exectuion->execution
+exectuions->executions
 exectution->execution
 exectutions->executions
 execuable->executable
@@ -12292,6 +12299,7 @@ explict->explicit
 explictely->explicitly
 explictily->explicitly
 explictly->explicitly
+explicty->explicitly, explicit,
 explit->explicit
 explitit->explicit
 explitly->explicitly
@@ -13728,6 +13736,7 @@ gratefull->grateful
 gratuitious->gratuitous
 grbber->grabber
 greate->greater, create, grate, great,
+greated->greater, grated, graded,
 greatful->grateful
 greatfull->grateful, gratefully,
 greatfully->gratefully
@@ -14362,6 +14371,7 @@ hunderd->hundred
 hundret->hundred, hundreds,
 hundreths->hundredths
 hundrets->hundreds
+hungs->hangs, hung,
 hunrgy->hungry
 huricane->hurricane
 huristic->heuristic
@@ -16085,6 +16095,7 @@ intiial->initial
 intiialise->initialise
 intiialize->initialize
 intimite->intimate
+intinite->infinite
 intitial->initial
 intitialization->initialization
 intitialize->initialize
@@ -16244,6 +16255,8 @@ irreversable->irreversible
 is'nt->isn't
 isconnection->isconnected
 iscrated->iscreated
+iself->itself
+iselfe->itself
 iserting->inserting
 isimilar->similar
 isloation->isolation
@@ -17295,6 +17308,7 @@ mechamisms->mechanisms
 mechananism->mechanism
 mechancial->mechanical
 mechandise->merchandise
+mechanis->mechanism
 mechansim->mechanism
 mechine->machine
 mechines->machines
@@ -20219,7 +20233,11 @@ persan->person
 persepctive->perspective
 persepective->perspective
 persepectives->perspectives
+perserve->preserve
+perserved->preserved
 perserverance->perseverance
+perserves->preserves
+perserving->preserving
 perseverence->perseverance
 persisit->persist
 persisited->persisted
@@ -21016,6 +21034,7 @@ previosuly->previously
 previou->previous
 previouly->previously
 previouse->previous
+previousl->previously
 previsouly->previously
 previuous->previous
 previus->previous
@@ -21139,6 +21158,8 @@ proberty->property, properly,
 problably->probably
 problamatic->problematic
 proble->probe
+probleme->problem
+problemes->problems
 problimatic->problematic
 problme->problem
 problmes->problems
@@ -25099,6 +25120,7 @@ singools->singles, signals,
 singsog->singsong
 singuarity->singularity
 singuarl->singular
+singulaties->singularities
 sinlge->single
 sinlges->singles
 sinply->simply
@@ -25765,6 +25787,7 @@ speical->special
 speices->species
 speicfied->specified
 speicific->specific
+speicified->specified
 speicify->specify
 speling->spelling
 spellshecking->spellchecking
@@ -26085,6 +26108,7 @@ striaghtens->straightens
 striaghtforward->straightforward
 striaghts->straights
 striclty->strictly
+stricly->strictly
 stricteir->stricter
 strictier->stricter
 strictiest->strictest
@@ -27658,6 +27682,7 @@ tonihgt->tonight
 tood->todo
 toogle->toggle
 toogling->toggling
+tookit->toolkit, took it,
 tookits->toolkits
 toolar->toolbar
 toolsbox->toolbox
@@ -27778,6 +27803,8 @@ transalted->translated
 transaltes->translates
 transaltion->translation
 transaltions->translations
+transaltor->translator
+transaltors->translators
 transation->transaction, translation,
 transations->transactions, translations,
 transcendance->transcendence
@@ -28580,6 +28607,7 @@ uninitalize->uninitialize
 uninitalized->uninitialized
 uninitalizes->uninitializes
 uniniteresting->uninteresting
+uninitializaed->uninitialized
 uninitialse->uninitialise
 uninitialsed->uninitialised
 uninitialses->uninitialises
@@ -29211,6 +29239,9 @@ valies->values
 valif->valid
 valitdity->validity
 valkues->values
+vallid->valid
+vallidation->validation
+vallidity->validity
 vallue->value
 vallues->values
 valtage->voltage
@@ -29470,6 +29501,8 @@ vissible->visible
 visted->visited
 visting->visiting
 vistors->visitors
+visuallisation->visualisation
+visuallization->visualization
 visualyse->visualise, visualize,
 vitories->victories
 vitual->virtual
@@ -29477,6 +29510,10 @@ viusally->visually
 viusualisation->visualisation
 viwer->viewer
 viwers->viewers
+vizualisation->visualisation
+vizualise->visualise
+vizualization->visualization
+vizualize->visualize
 vlarge->large
 vlaue->value
 vlaues->values
