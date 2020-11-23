@@ -718,6 +718,7 @@ addresed->addressed
 addreses->addresses
 addresess->addresses
 addresing->addressing
+addresse->addresses, address,
 addressess->addresses
 addressings->addressing
 addresss->address
@@ -1129,6 +1130,7 @@ algorithems->algorithms
 algorithic->algorithmic
 algorithically->algorithmically
 algorithims->algorithms
+algorithmes->algorithms
 algorithmi->algorithm
 algorithmical->algorithmically
 algorithmm->algorithm
@@ -2817,7 +2819,10 @@ attribues->attributes
 attribuite->attribute
 attribuites->attributes
 attribuition->attribution
+attribure->attribute
+attribured->attributed
 attribures->attributes
+attriburtion->attribution
 attribut->attribute
 attributei->attribute
 attributen->attribute
@@ -4531,6 +4536,7 @@ catapillers->caterpillars
 catastronphic->catastrophic
 catastropically->catastrophically
 catastrphic->catastrophic
+catche->catch
 catched->caught
 catchi->catch
 catchs->catches
@@ -6731,6 +6737,7 @@ contaiminating->contaminating
 containa->contain
 containe->contain, contained, container, contains,
 containees->containers
+containerr->container
 containes->contains
 containg->containing
 containging->containing
@@ -6970,6 +6977,7 @@ converion->conversion
 converions->conversions
 converison->conversion
 converitble->convertible
+convers->converse, converts, convert,
 conversly->conversely
 conversoin->conversion
 converssion->conversion
@@ -7308,6 +7316,8 @@ corrrupt->corrupt
 corrrupted->corrupted
 corrruption->corruption
 corrspond->correspond
+corrsponded->corresponded
+corrsponding->corresponding
 corrsponds->corresponds
 corrupeted->corrupted
 corruptable->corruptible
@@ -8276,6 +8286,7 @@ degreee->degree
 degreeee->degree
 degreeees->degrees
 degreees->degrees
+degres->degrees, digress,
 degress->degrees, digress,
 deimiter->delimiter
 deine->define
@@ -8885,6 +8896,7 @@ detction->detection
 deteced->detected
 detecing->detecting
 detecs->detects, deters, detect,
+detecte->detected, detect, detects,
 detectected->detected
 detectes->detects
 detectetd->detected
@@ -10902,6 +10914,8 @@ environent->environment
 environmane->environment
 environmenet->environment
 environmenets->environments
+environmet->environment
+environmets->environments
 environmnet->environment
 environnement->environment
 environtment->environment
@@ -11313,6 +11327,7 @@ exceotions->exemptions
 excepetion->exception
 excepions->exceptions
 exceptation->expectation
+exceptin->excepting, exception, expecting, accepting,
 exceptins->exceptions, excepting,
 exceptionnal->exceptional
 exceptionss->exceptions
@@ -12344,6 +12359,11 @@ expoitation->exploitation
 expoited->exploited
 expoits->exploits
 expolde->explode
+exponant->exponent
+exponantation->exponentiation
+exponantially->exponentially
+exponantialy->exponentially
+exponants->exponents
 exponentation->exponentiation
 exponentialy->exponentially
 exponentiel->exponential
@@ -12807,6 +12827,7 @@ firmwart->firmware
 firmwqre->firmware
 firmwware->firmware
 firsr->first
+firsth->first
 firt->first, flirt,
 firts->first, flirts,
 firware->firmware
@@ -18147,6 +18168,9 @@ Mythraic->Mithraic
 myu->my
 nadly->badly
 naerly->nearly, gnarly,
+nagative->negative
+nagatively->negatively
+nagatives->negatives
 nagivation->navigation
 naieve->naive
 namd->named, name,
@@ -18710,6 +18734,7 @@ newletters->newsletters
 nework->network
 neworks->networks
 newslines->newlines
+newthon->newton
 newtork->network
 Newyorker->New Yorker
 nighbor->neighbor
@@ -18932,6 +18957,7 @@ numerbering->numbering
 numerial->numeral, numerical,
 numering->numbering
 numers->numbers
+nummber->number
 nummbers->numbers
 numnber->number
 numnbered->numbered
@@ -19181,6 +19207,7 @@ ongly->only
 onl->only
 onlie->online, only,
 onliene->online
+onlly->only
 onoly->only
 onot->note, not,
 ons->owns
@@ -19249,6 +19276,8 @@ opeator->operator
 opeators->operators
 opeatror->operator
 opeatrors->operators
+opeg->open
+opeging->opening
 opeing->opening
 opeinging->opening
 opeings->openings
@@ -19594,6 +19623,7 @@ oustide->outside
 outbut->output
 outbuts->outputs
 outgoign->outgoing
+outher->other, outer,
 outisde->outside
 outllook->outlook
 outoign->outgoing
@@ -20539,6 +20569,7 @@ polutes->pollutes
 poluting->polluting
 polution->pollution
 polyar->polar
+polyedral->polyhedral
 polygond->polygons
 polygone->polygon
 polylon->polygon, pylon,
@@ -21023,6 +21054,8 @@ presistion->precision
 presists->persists
 presitgious->prestigious
 presmissions->permissions
+presntation->presentation
+presntations->presentations
 prespective->perspective
 presreved->preserved
 presse->pressed, press,
@@ -24451,6 +24484,10 @@ sectins->sections
 sectionis->sections, section is,
 sectionning->sectioning
 sectiont->sectioned, section,
+secton->section
+sectoned->sectioned
+sectoning->sectioning
+sectons->sections
 secue->secure
 secuely->securely
 secuity->security
@@ -25925,6 +25962,7 @@ stablility->stability
 stablilization->stabilization
 stablize->stabilize
 stach->stack
+stackk->stack
 stadnard->standard
 stadnardisation->standardisation
 stadnardised->standardised
@@ -27149,6 +27187,7 @@ te->the, be, we,
 teached->taught
 teachnig->teaching
 teamplate->template
+teamplates->templates
 teated->treated
 techical->technical
 techician->technician
@@ -27447,6 +27486,7 @@ thenes->themes
 thenn->then
 theorectical->theoretical
 theoreticall->theoretically
+theoreticaly->theoretically
 theoritical->theoretical
 ther->there, their, the, other,
 therafter->thereafter
@@ -27883,6 +27923,7 @@ transforations->transformations
 transformated->transformed
 transformaton->transformation
 transformatted->transformed
+transforme->transformed, transformer, transform,
 transfrom->transform
 transfromate->transform, transformed,
 transfromation->transformation
@@ -29537,8 +29578,10 @@ viwer->viewer
 viwers->viewers
 vizualisation->visualisation
 vizualise->visualise
+vizualised->visualised
 vizualization->visualization
 vizualize->visualize
+vizualized->visualized
 vlarge->large
 vlaue->value
 vlaues->values
