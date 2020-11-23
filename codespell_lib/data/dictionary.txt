@@ -52,6 +52,8 @@ abitrarily->arbitrarily
 abitrate->arbitrate
 abitration->arbitration
 abizmal->abysmal
+abnoramlly->abnormally
+abnormalty->abnormally
 abnormaly->abnormally
 abnornally->abnormally
 abnove->above
@@ -648,8 +650,10 @@ adapdive->adaptive
 adaped->adapted, adapt, adopted, adopt,
 adapive->adaptive
 adaptaion->adaptation
+adaptare->adapter
 adapte->adapter
 adaptee->adapted
+adaptes->adapters
 adaptibe->adaptive
 adaptove->adaptive, adoptive,
 adaquate->adequate
@@ -796,8 +800,11 @@ admnistrator->administrator
 adn->and
 adobted->adopted
 adolecent->adolescent
+adoptor->adopter, adaptor,
+adoptors->adopters, adaptors,
 adpapted->adapted
 adpater->adapter
+adpaters->adapters
 adpter->adapter
 adquire->acquire
 adquired->acquired
@@ -869,14 +876,17 @@ affilate->affiliate
 affilates->affiliates
 affilliate->affiliate
 affinitied->affinities
+affinitiy->affinity
 affinitized->affinities, affinity,
 affinitze->affinitize
+affintiy->affinity
 affintize->affinitize
 affitnity->affinity
 affort->afford, effort,
 affortable->affordable
 afforts->affords
 affraid->afraid
+afinity->affinity
 afor->for
 aforememtioned->aforementioned
 aforementionned->aforementioned
@@ -1705,7 +1715,9 @@ anonther->another
 anonymouse->anonymous
 anonyms->anonymous
 anonymus->anonymous
+anormal->abnormal, a normal,
 anormalies->anomalies
+anormally->abnormally, a normally,
 anormaly->abnormally
 anoter->another
 anothe->another
@@ -2412,9 +2424,13 @@ asetic->ascetic
 asfar->as far
 asign->assign
 asigned->assigned
+asignee->assignee
+asignees->assignees
 asignment->assignment
+asignor->assignor
 asii->ascii
 asisstant->assistant
+asisstants->assistants
 asistance->assistance
 aske->ask
 askes->asks
@@ -2451,6 +2467,7 @@ assebmly->assembly
 assember->assembler
 assemblys->assemblies
 assemby->assembly
+assemly->assembly
 assemnly->assembly
 assemple->assemble
 assending->ascending
@@ -2518,6 +2535,8 @@ assit->assist
 assitant->assistant
 assition->assertion
 assmbler->assembler
+assmebly->assembly
+assmelber->assembler
 assmption->assumption
 assmptions->assumptions
 assocaited->associated
@@ -4897,9 +4916,12 @@ chemicaly->chemically
 chenged->changed
 chennel->channel
 chescksums->checksums
+chidren->children
 childbird->childbirth
 childen->children
 childern->children
+childlren->children
+childrens->children
 childres->children
 childs->children, child's,
 chiled->child, chilled,
@@ -7755,6 +7777,7 @@ datsets->datasets
 daty->data, date,
 daugher->daughter
 DCHP->DHCP
+dcoker->docker
 dcument->document
 dcumented->documented
 dcumenting->documenting
@@ -14113,6 +14136,8 @@ hel->help, hell, heal,
 helerps->helpers
 hellow->hello
 helment->helmet
+heloer->helper
+heloers->helpers
 helpe->helper
 helpfull->helpful
 helpfuly->helpfully
