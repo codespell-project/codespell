@@ -67,16 +67,18 @@ Display them without terminal colors and with a quiet level of 3. ::
 
 Run interactive mode level 3 and write changes to file.
 
-We ship a dictionary that is an improved version of the one available
+We ship a collection of dictionaries that are an improved version of the one available
 `on Wikipedia <https://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/For_machines>`_
 after applying them in projects like Linux Kernel, EFL, oFono among others.
 You can provide your own version of the dictionary, but patches for
 new/different entries are very welcome.
 
-Want to know if a word you're proposing exists in codespell already? It is possible to test a word against the current dictionary that exists in ``codespell_lib/data/dictionary.txt`` via::
+Want to know if a word you're proposing exists in codespell already? It is possible to test a word against the current set dictionaries that exist in ``codespell_lib/data/dictionary*.txt`` via::
 
     echo "word" | codespell -
     echo "1stword,2ndword" | codespell -
+
+You can select the optional dictionaries with the ``--builtin`` option.
 
 Using a config file
 -------------------
@@ -103,10 +105,8 @@ config file.
 Dictionary format
 -----------------
 
-The format of the dictionary was influenced by the one it originally came from,
-i.e. from Wikipedia. The difference is how multiple options are treated and
-that the last argument is the reason why a certain entry could not be applied
-directly, but instead be manually inspected. E.g.:
+The format of the dictionaries was influenced by the one they originally came from,
+i.e. from Wikipedia. The difference is how multiple options are treated. E.g.:
 
 1. Simple entry: one wrong word / one suggestion::
 
@@ -122,12 +122,17 @@ directly, but instead be manually inspected. E.g.:
    to give the user the file and line where the error occurred as well as
    the suggestions.
 
-3. Entry with one word, but with automatically fix disabled::
+3. Entry with one word, but with automatic fix disabled::
 
        clas->class, disabled because of name clash in c++
 
-   Note that there isn't a comma in the end of the line. The last argument is
+   Note that there isn't a comma at the end of the line. The last argument is
    treated as the reason why a suggestion cannot be automatically applied.
+   
+   There can also be multiple suggestions but any automatic fix will again be
+   disabled::
+   
+       clas->class, clash, disabled because of name clash in c++
 
 Development Setup
 -----------------
@@ -147,19 +152,21 @@ If you have a suggested typo that you'd like to see merged please follow these s
 
 1. Make sure you read the instructions mentioned in the ``Dictionary format`` section above to submit correctly formatted entries.
 
-2. Sort the dictionary. This is done by invoking (in the top level directory of ``codespell/``)::
+2. Choose the correct dictionary file to add your typo too. See `codespell --help` for explanations of the different dictionaries.
+
+3. Sort the dictionaries. This is done by invoking (in the top level directory of ``codespell/``)::
 
        make check-dictionaries
 
-   If the make script finds that you need to sort the dictionary, please then run::
+   If the make script finds that you need to sort a dictionary, please then run::
 
        make sort-dictionaries
 
-3. Only after this process is complete do we recommend you submit the PR.
+4. Only after this process is complete do we recommend you submit the PR.
 
 **Important Notes:**
 
-* If the dictionary is submitted without being pre-sorted the PR will fail via TravisCI.
+* If the dictionaries are submitted without being pre-sorted the PR will fail via our various CI tools.
 * Not all PRs will be merged. This is pending on the discretion of the devs, maintainers, and the community.
 
 Updating
@@ -178,15 +185,18 @@ To stay current with codespell developments it is possible to build codespell fr
 * It has been reported that after installing from ``pip``, codespell can't be located. Please check the $PATH variable to see if ``~/.local/bin`` is present. If it isn't then add it to your path.
 * If you decide to install via ``pip`` then be sure to remove any previously installed versions of codespell (via your platform's preferred app manager).
 
-Updating the dictionary
------------------------
+Updating the dictionaries
+-------------------------
 
-In the scenario where the user prefers not to follow the development version of codespell yet still opts to benefit from the frequently updated `dictionary.txt` file, we recommend running a simple set of commands to achieve this ::
+In the scenario where the user prefers not to follow the development version of codespell yet still opts to benefit from the frequently updated dictionary files, we recommend running a simple set of commands to achieve this ::
 
     wget https://raw.githubusercontent.com/codespell-project/codespell/master/codespell_lib/data/dictionary.txt
     codespell -D dictionary.txt
 
 The above simply downloads the latest ``dictionary.txt`` file and then by utilizing the ``-D`` flag allows the user to specify the freshly downloaded ``dictionary.txt`` as the custom dictionary instead of the default one.
+
+You can also do the same thing for the other dictionaries listed here:
+    https://github.com/codespell-project/codespell/tree/master/codespell_lib/data
 
 License
 -------
