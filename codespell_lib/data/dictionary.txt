@@ -4024,7 +4024,7 @@ breshing->brushing
 brethen->brethren
 bretheren->brethren
 brfore->before
-bridget->bridged
+bridget->bridged, bridge,
 brievely->briefly
 brigde->bridge
 brige->bridge
@@ -7647,6 +7647,8 @@ currected->corrected
 currecting->correcting
 currectly->correctly, currently,
 currects->corrects, currents,
+curreent->current
+curreents->currents
 curremt->current
 curremts->currents
 curren->current
@@ -7681,6 +7683,7 @@ curruptions->corruptions
 currupts->corrupts
 currus->cirrus
 curser->cursor
+cursos->cursors, cursor,
 cursot->cursor
 cursro->cursor
 curvelinear->curvilinear
@@ -8894,6 +8897,7 @@ destroi->destroy
 destroied->destroyed
 destroing->destroying
 destrois->destroys
+destroyes->destroys
 destrutor->destructor
 destrutors->destructors
 destry->destroy
@@ -12516,11 +12520,16 @@ extradiction->extradition
 extraenous->extraneous
 extranous->extraneous
 extrapoliate->extrapolate
+extrat->extract
+extrated->extracted
 extraterrestial->extraterrestrial
 extraterrestials->extraterrestrials
+extrates->extracts
+extrating->exctracting
 extration->extraction
 extrator->extractor
 extrators->extractors
+extrats->extracts
 extravagent->extravagant
 extraversion->extroversion
 extravert->extrovert
@@ -12791,6 +12800,7 @@ fileystem->filesystem
 fileystems->filesystems
 filiament->filament
 fillay->fillet
+filld->filled, filed, fill,
 fille->file, fill, filled,
 fillement->filament
 filles->files, fills, filled,
@@ -13796,6 +13806,7 @@ grabed->grabbed
 grabing->grabbing
 gracefull->graceful
 gracefuly->gracefully
+gradualy->gradually
 graet->great
 grafics->graphics
 grafitti->graffiti
@@ -14019,6 +14030,7 @@ haa->has
 habaeus->habeas
 habbit->habit
 habeus->habeas
+hability->ability
 Habsbourg->Habsburg
 hace->have
 hach->hatch, hack, hash,
@@ -15444,6 +15456,7 @@ informatations->information
 informatikon->information
 informatin->information, informing,
 informatins->information
+informatio->information
 informatiom->information
 informations->information
 informatoin->information
@@ -21883,6 +21896,10 @@ qualifer->qualifier
 qualitification->qualification
 qualitifications->qualifications
 quanitified->quantified
+quanlification->qualification, quantification,
+quanlified->qualified, quantified,
+quanlifies->qualifies, quantifies,
+quanlify->qualify, quantify,
 quantaty->quantity
 quantitiy->quantity
 quarantaine->quarantine
@@ -23500,6 +23517,7 @@ repositiories->repositories
 repositiory->repository
 repositiroes->repositories
 reposititioning->repositioning
+repositorry->repository
 repositry->repository
 reposoitory->repository
 repostiories->repositories
@@ -24875,6 +24893,7 @@ sequensed->sequenced
 sequenses->sequences
 sequensing->sequencing
 sequenstial->sequential
+sequentialy->sequentially
 sequenzes->sequences
 sequetial->sequential
 sequeze->squeeze, sequence,
@@ -30217,6 +30236,8 @@ writen->written
 writet->writes
 writewr->writer
 writingm->writing
+writter->writer
+writters->writers
 writtin->written, writing,
 writting->writing
 writtten->written
