@@ -1980,6 +1980,11 @@ appropiately->appropriately
 approppriately->appropriately
 appropraite->appropriate
 appropraitely->appropriately
+approprate->appropriate
+approprated->appropriated
+approprately->appropriately
+appropration->appropriation
+approprations->appropriations
 appropriage->appropriate
 appropriatedly->appropriately
 appropriatly->appropriately
@@ -7347,8 +7352,12 @@ cors-site->cross-site
 cors-sute->cross-site
 corse->course
 corsor->cursor
+corss->cross, course,
 corss-site->cross-site
 corss-sute->cross-site
+corsses->crosses, courses,
+corsshair->crosshair
+corsshairs->crosshairs
 corssite->cross-site
 corsssite->cross-site
 corsssute->cross-site
@@ -10326,6 +10335,7 @@ earlist->earliest
 earlyer->earlier
 earnt->earned
 earpeice->earpiece
+easely->easily
 easer->easier, eraser,
 easili->easily
 easiliy->easily
@@ -12717,6 +12727,7 @@ feeback->feedback
 feeded->fed
 feek->feel
 feeks->feels
+feets->feet, feats,
 feetur->feature
 feeture->feature
 feild->field
@@ -13427,6 +13438,7 @@ functionable->functional, functioning,
 functionailty->functionality
 functionallity->functionality
 functionaltiy->functionality
+functionalty->functionality
 functionaly->functionally
 functionnal->functional
 functionnalities->functionalities
@@ -16902,6 +16914,7 @@ lising->listing
 listapck->listpack
 listbbox->listbox
 listeing->listening
+listeneres->listeners
 listenes->listens
 listensers->listeners
 listenter->listener
@@ -19493,6 +19506,9 @@ organsiation->organisation
 organsiations->organisations
 organziation->organization
 organziations->organizations
+orgiginal->original
+orgiginally->originally
+orgiginals->originals
 orgin->origin, organ,
 orginal->original
 orginally->originally
@@ -21697,6 +21713,7 @@ providfers->providers
 provids->provides, proves,
 providse->provides, provide,
 provie->provide, prove,
+provied->provide, provided, proved,
 provies->provides, proves,
 provinicial->provincial
 provisioing->provisioning
@@ -24975,6 +24992,7 @@ sevrity->severity
 sewdonim->pseudonym
 sewdonims->pseudonyms
 sewrvice->service
+sfety->safety
 sgadow->shadow
 sh1sum->sha1sum
 shadasloo->shadaloo
@@ -29309,6 +29327,7 @@ usinging->using
 usinng->using
 usng->using
 uspported->supported, unsupported,
+usseful->useful
 ussual->usual
 ussuall->usual
 ussually->usually
@@ -29347,6 +29366,8 @@ vaccum->vacuum
 vaccume->vacuum
 vaccuum->vacuum
 vacinity->vicinity
+vactor->vector
+vactors->vectors
 vacumme->vacuum
 vacuosly->vacuously
 vaguaries->vagaries
@@ -30040,6 +30061,8 @@ willk->will
 willl->will
 windo->window
 windoes->windows
+windoow->window
+windoows->windows
 windos->windows
 windwo->window
 winn->win
