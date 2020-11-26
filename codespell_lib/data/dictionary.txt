@@ -5043,10 +5043,27 @@ circunstantial->circumstantial
 circustances->circumstances
 circut->circuit
 circuts->circuits
+ciricle->circle
+ciricles->circles
 ciricuit->circuit
+ciricuits->circuits
+ciricular->circular
+ciricularise->circularise
+ciricularize->circularize
 ciriculum->curriculum
+cirilic->Cyrillic
+cirillic->Cyrillic
+ciritc->critic
 ciritcal->critical
+ciritcality->criticality
+ciritcals->criticals
+ciritcs->critics
 ciriteria->criteria
+ciritic->critic
+ciritical->critical
+ciriticality->criticality
+ciriticals->criticals
+ciritics->critics
 cirle->circle
 cirles->circles
 cirsumstances->circumstances
@@ -8674,6 +8691,12 @@ desciption->description
 desciptions->descriptions
 desciptor->descriptor
 desciptors->descriptors
+desciribe->describe
+desciribed->described
+desciribes->describes
+desciribing->describing
+desciription->description
+desciriptions->descriptions
 descirption->description
 descirptor->descriptor
 descision->decision
@@ -9068,6 +9091,8 @@ diablers->disablers
 diables->disables
 diablical->diabolical
 diabling->disabling
+diaciritc->diacritic
+diaciritcs->diacritics
 diagnistic->diagnostic
 diagnol->diagonal
 diagnosics->diagnostics
@@ -12544,6 +12569,7 @@ facillities->facilities
 faciltate->facilitate
 facilties->facilities
 facinated->fascinated
+facirity->facility
 facist->fascist
 facor->favor, faker,
 facorite->favorite
@@ -14898,6 +14924,7 @@ imporves->improves
 imporving->improving
 imporvment->improvement
 imposible->impossible
+impossiblble->impossible
 impot->import
 impotr->import, importer,
 impotrt->import, imported, importer,
@@ -16403,6 +16430,7 @@ japanses->Japanese
 jaques->jacques
 javacript->javascript
 javascipt->javascript
+JavaSciript->JavaScript
 javascritp->javascript
 javascropt->javascript
 javasript->javascript
@@ -16482,6 +16510,8 @@ keyboad->keyboard
 keyboads->keyboards
 keybooard->keyboard
 keybooards->keyboards
+keyborad->keyboard
+keyborads->keyboards
 keybord->keyboard
 keybords->keyboards
 keybroad->keyboard
@@ -20256,6 +20286,7 @@ perisist->persist
 peristent->persistent
 perjery->perjury
 perjorative->pejorative
+perlciritc->perlcritic
 permament->permanent
 permanant->permanent
 permanantly->permanently
@@ -20735,6 +20766,7 @@ possibillity->possibility
 possibilties->possibilities
 possibilty->possibility
 possibily->possibly
+possiblble->possible
 possiblec->possible
 possiblely->possibly
 possiblility->possibility
@@ -20840,6 +20872,14 @@ prcess->process
 prcesses->processes
 prcessing->processing
 prctiles->percentiles
+prdpagate->propagate
+prdpagated->propagated
+prdpagates->propagates
+prdpagating->propagating
+prdpagation->propagation
+prdpagations->propagations
+prdpagator->propagator
+prdpagators->propagators
 pre-condifure->pre-configure
 pre-condifured->pre-configured
 pre-confifure->pre-configure
@@ -24384,6 +24424,8 @@ scipt->script, skipped,
 scipted->scripted
 scipting->scripting
 scipts->scripts, skips,
+sciript->script
+sciripts->scripts
 scirpt->script
 scirpts->scripts
 scketch->sketch
@@ -24471,6 +24513,7 @@ secene->scene
 secific->specific
 secion->section
 secions->sections
+secirity->security
 seciton->section
 secitons->sections
 secne->scene
@@ -25573,6 +25616,8 @@ speciifc->specific
 speciifed->specified
 specilized->specialized
 speciman->specimen
+speciries->specifies
+speciry->specify
 specivied->specified
 speciy->specify
 speciyfing->specifying
@@ -29416,6 +29461,8 @@ vektor->vector
 vektors->vectors
 velidate->validate
 vell->well
+velociries->velocities
+velociry->velocity
 vender->vendor
 venders->vendors
 venemous->venomous
@@ -29579,8 +29626,32 @@ vissible->visible
 visted->visited
 visting->visiting
 vistors->visitors
+visuab->visual
+visuabisation->visualisation
+visuabise->visualise
+visuabised->visualised
+visuabises->visualises
+visuabization->visualization
+visuabize->visualize
+visuabized->visualized
+visuabizes->visualizes
+visuable->visual, visible,
+visuables->visuals
+visuably->visually
+visuabs->visuals
+visuaisation->visualisation
+visuaise->visualise
+visuaised->visualised
+visuaises->visualises
+visuaization->visualization
+visuaize->visualize
+visuaized->visualized
+visuaizes->visualizes
+visuale->visual
+visuales->visuals
 visuallisation->visualisation
 visuallization->visualization
+visualy->visually
 visualyse->visualise, visualize,
 vitories->victories
 vitual->virtual
@@ -29642,6 +29713,8 @@ vritualize->virtualize
 vrituoso->virtuoso
 vrsion->version
 vrsions->versions
+Vulacn->Vulcan
+Vulakn->Vulkan
 vulbearable->vulnerable
 vulbearabule->vulnerable
 vulbearbilities->vulnerabilities
