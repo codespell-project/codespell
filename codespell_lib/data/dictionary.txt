@@ -9257,6 +9257,11 @@ difract->diffract
 difracted->diffracted
 difraction->diffraction
 difractive->diffractive
+difuse->diffuse, defuse,
+difused->diffused, defused,
+difuses->diffuses, defused,
+difussion->diffussion
+difussive->diffusive
 digesty->digest
 diggit->digit
 diggital->digital
