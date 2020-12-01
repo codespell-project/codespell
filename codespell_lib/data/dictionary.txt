@@ -2017,6 +2017,8 @@ approxamately->approximately
 approxamates->approximates
 approxamation->approximation
 approxamations->approximations
+approxamatly->approximately
+approxametely->approximately
 approxiamte->approximate
 approxiamtely->approximately
 approxiamtes->approximates
@@ -2029,6 +2031,7 @@ approxiation->approximation
 approxiations->approximations
 approximatly->approximately
 approximed->approximated
+approximetely->approximately
 approximitely->approximately
 approxmate->approximate
 approxmately->approximately
@@ -15170,6 +15173,10 @@ inconviniences->inconveniences
 inconviniency->inconvenience
 inconviniencys->inconveniences
 incooperates->incorporates
+incoperate->incorporate
+incoperated->incorporated
+incoperates->incorporates
+incoperating->incorporating
 incoporate->incorporate
 incoporated->incorporated
 incoporates->incorporates
@@ -20755,6 +20762,10 @@ poperties->properties
 poperty->property, properly,
 poping->popping, pooping,
 popoen->popen
+popolate->populate
+popolated->populated
+popolates->populates
+popolating->populating
 poportional->proportional
 popoulation->population
 popoup->popup
