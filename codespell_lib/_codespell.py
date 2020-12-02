@@ -55,7 +55,7 @@ _builtin_dictionaries = (
         True, True, supported_languages_en, supported_languages_en),
     ('usage', 'for replacing phrasing with recommended terms', '_usage',
         None, None, None, None),
-    ('code', 'for words common to code and/or mathematics that might be typos', '_code',
+    ('code', 'for words common to code and/or mathematics that might be typos', '_code',  # noqa: E501
         None, None, None, None,),
     ('names', 'for valid proper names that might be typos', '_names',
         None, None, None, None,),
