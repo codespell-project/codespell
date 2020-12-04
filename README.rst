@@ -106,7 +106,9 @@ Dictionary format
 -----------------
 
 The format of the dictionaries was influenced by the one they originally came from,
-i.e. from Wikipedia. The difference is how multiple options are treated. E.g.:
+i.e. from Wikipedia. The difference is how multiple options are treated and
+that the last argument is an optional reason why a certain entry could not be
+applied directly, but should instead be manually inspected. E.g.:
 
 1. Simple entry: one wrong word / one suggestion::
 
