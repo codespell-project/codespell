@@ -5,7 +5,9 @@ name: codespell
 on: [push, pull_request]
 jobs:
   test:
-    runs-on: ubuntu-latest
+    env:
+      REQUIRE_ASPELL: true
+    runs-on: ubuntu-20.04
     strategy:
       matrix:
         python-version:
@@ -38,6 +40,7 @@ jobs:
       - run: codespell --check-filenames --skip="./.git/*,*.pyc,./codespell_lib/tests/test_basic.py,./codespell_lib/data/*,./example/code.c,./build/lib/codespell_lib/tests/test_basic.py,./build/lib/codespell_lib/data/*"
       # this file has an error
       - run: "! codespell codespell_lib/tests/test_basic.py"
+      - run: codecov
     
   make-check-dictionaries:
     runs-on: ubuntu-latest
