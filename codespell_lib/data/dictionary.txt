@@ -3357,6 +3357,8 @@ avoding->avoiding
 avods->avoids
 avoidence->avoidance
 avoinding->avoiding
+avriable->variable
+avriables->variables
 avriant->variant
 avriants->variants
 avtive->active
@@ -6636,6 +6638,10 @@ consonents->consonants
 consorcium->consortium
 conspiracys->conspiracies
 conspiriator->conspirator
+consquence->consequence
+consquences->consequences
+consquent->consequent
+consquently->consequently
 consrtuct->construct
 consrtucted->constructed
 consrtuctor->constructor
@@ -10531,6 +10537,9 @@ elipse->ellipse, eclipse,
 elipses->ellipses, eclipses, ellipsis,
 elipsis->ellipsis, eclipses,
 elipsises->ellipses, ellipsis,
+eliptic->elliptic
+eliptical->elliptical
+elipticity->ellipticity
 ellapsed->elapsed
 ellected->elected
 elliminate->eliminate
@@ -29595,7 +29604,10 @@ vauled->valued
 vaules->values
 vauling->valuing
 vave->have, valve,
+vavle->valve
 vavlue->value
+vavriable->variable
+vavriables->variables
 vbsrcript->vbscript
 vebrose->verbose
 vecotr->vector
