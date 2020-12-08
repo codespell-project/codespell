@@ -12712,6 +12712,10 @@ fallbck->fallback
 fallhrough->fallthrough
 fallthruogh->fallthrough
 falltrough->fallthrough
+falsh->flash, false,
+falshed->flashed
+falshes->flashes
+falshing->flashing
 falsly->falsely
 falt->fault
 falure->failure
@@ -12891,6 +12895,7 @@ filtersing->filtering
 filterss->filters
 fime->fixme, time,
 fimilies->families
+fimrware->firmware
 fimware->firmware
 finacial->financial
 finailse->finalise
@@ -12946,14 +12951,18 @@ firmare->firmware
 firmaware->firmware
 firmeare->firmware
 firmeware->firmware
+firmnware->firmware
 firmwart->firmware
+firmwear->firmware
 firmwqre->firmware
+firmwre->firmware
 firmwware->firmware
 firsr->first
 firsth->first
 firt->first, flirt,
 firts->first, flirts,
 firware->firmware
+firwmare->firmware
 fisical->physical, fiscal,
 fisionable->fissionable
 fisisist->physicist
@@ -12992,6 +13001,7 @@ flamable->flammable
 flaot->float
 flaoting->floating
 flashflame->flashframe
+flashig->flashing
 flass->class, glass, flask, flash,
 flate->flat
 flatened->flattened
@@ -13429,6 +13439,7 @@ freze->freeze
 frezes->freezes
 frgament->fragment
 fricton->friction
+frimware->firmware
 frist->first
 frmat->format
 frmo->from
@@ -20139,6 +20150,8 @@ parliment->parliament
 parm->param, pram, Parma,
 parmaeter->parameter
 parmaeters->parameters
+parmameter->parameter
+parmameters->parameters
 parmaters->parameters
 parmeter->parameter
 parmeters->parameters
@@ -20209,13 +20222,17 @@ partitoning->partitioning
 partitons->partitions
 pary->party, parry,
 pase->pass, pace, parse,
-pased->passed
+pased->passed, parsed,
 pasengers->passengers
 paser->parser
+pasesd->passed
 pash->hash
 pasing->passing, posing,
 pasitioning->positioning
 pasive->passive
+pasre->parse
+pasred->parsed
+pasres->parses
 pass-thru->pass-through, pass through, passthrough,
 pass-trough->pass-through, pass through, passthrough,
 passerbys->passersby
@@ -20650,6 +20667,7 @@ placeholers->placeholders
 placematt->placemat, placement,
 placemenet->placement
 placholder->placeholder
+placholders->placeholders
 placmenet->placement
 plaform->platform
 plaforms->platforms
@@ -20657,6 +20675,7 @@ plaftorm->platform
 plaftorms->platforms
 plagarism->plagiarism
 plalform->platform
+plalforms->platforms
 planation->plantation
 plantext->plaintext
 plantiff->plaintiff
@@ -20671,6 +20690,7 @@ platflorms->platforms
 platfoem->platform
 platfom->platform
 platform-spacific->platform-specific
+platforma->platforms
 platformt->platforms
 platfrom->platform
 platfroms->platforms
@@ -20696,6 +20716,7 @@ playright->playwright
 playwrite->playwright
 playwrites->playwrights
 pleaase->please
+pleace->please, place,
 pleacing->placing
 pleae->please
 pleaee->please
@@ -20715,7 +20736,11 @@ plesing->pleasing, blessing,
 plian->plain, pliant,
 pllatforms->platforms
 ploting->plotting
+pltform->platform
+pltforms->platforms
 plugable->pluggable
+pluged->plugged
+pluging->plugging, plugin,
 pluign->plugin
 pluigns->plugins
 pluse->pulse
@@ -21056,6 +21081,10 @@ pratice->practice
 prcess->process
 prcesses->processes
 prcessing->processing
+prcoess->process
+prcoessed->processed
+prcoesses->processes
+prcoessing->processing
 prctiles->percentiles
 prdpagate->propagate
 prdpagated->propagated
@@ -21646,6 +21675,7 @@ programmd->programmed, programme,
 programmend->programmed
 programmetically->programmatically
 programmical->programmatical
+programmign->programming
 programms->programs
 progres->progress
 progresively->progressively
