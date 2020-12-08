@@ -20,6 +20,7 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
+      - run: sudo apt-get install libaspell-dev aspell-en
       - run: |
           #SRC_DIR=$PWD
           #cd ~
