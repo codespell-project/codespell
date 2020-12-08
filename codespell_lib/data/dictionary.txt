@@ -677,7 +677,7 @@ addeed->added
 addersses->addresses
 addert->assert
 adderted->asserted
-addes->adds
+addes->adds, added,
 addess->address
 addessed->addressed
 addesses->addresses
@@ -695,6 +695,7 @@ additionaly->additionally
 additionalyy->additionally
 additionnal->additional
 additionnally->additionally
+additionnaly->additionally
 additon->addition
 additonal->additional
 additonally->additionally
@@ -5575,6 +5576,7 @@ comlete->complete
 comleted->completed
 comletely->completely
 comletion->completion
+comletly->completely
 comlex->complex
 comlexity->complexity
 comlpeter->completer
@@ -6080,6 +6082,7 @@ conatins->contains
 conbination->combination
 conbinations->combinations
 conbtrols->controls
+concaneted->concatenated
 concantenated->concatenated
 concatenaded->concatenated
 concatenaion->concatenation
@@ -9901,6 +9904,7 @@ disssociate->dissociate
 disssociated->dissociated
 disssociates->dissociates
 disssociating->dissociating
+distancef->distanced, distances, distance,
 distantce->distance
 distarct->distract
 distater->disaster
@@ -10242,6 +10246,8 @@ drawm->drawn
 drawng->drawing
 dreasm->dreams
 dreawn->drawn
+dregee->degree
+dregees->degrees
 drescription->description
 drescriptions->descriptions
 driagram->diagram
@@ -19031,6 +19037,8 @@ normalyl->normally
 normalyly->normally
 normalysed->normalised
 normalyy->normally
+normalyzation->normalization
+normalyze->normalize
 normalyzed->normalized
 normlly->normally
 normnal->normal
