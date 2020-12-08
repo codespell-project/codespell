@@ -1303,6 +1303,9 @@ alignrigh->alignright
 alikes->alike, likes,
 aline->align, a line, line, saline,
 alined->aligned
+aling->align
+alinged->aligned
+alinging->aligning
 alingment->alignment
 alinment->alignment
 alinments->alignments
@@ -1341,6 +1344,9 @@ alllocation->allocation
 alllow->allow
 alllows->allows
 allmost->almost
+allcoate->allocate
+allcoated->allocated
+allcoating
 alloacate->allocate
 alloate->allocate, allotted, allot,
 alloated->allocated, allotted,
@@ -3818,6 +3824,10 @@ bloddy->bloody
 blodk->block
 blohted->bloated
 blokcer->blocker
+blokcs->blocks
+blokc->block
+blokcing->blocking
+blokcss->blocks
 blokchain->blockchain
 blokchains->blockchains
 bloking->blocking
@@ -7880,6 +7890,9 @@ daty->data, date,
 daugher->daughter
 DCHP->DHCP
 dcoker->docker
+dokcer->docker
+dokcre->docker
+dockre->docker
 dcument->document
 dcumented->documented
 dcumenting->documenting
@@ -13835,9 +13848,12 @@ gisers->geysers
 gitar->guitar
 gitars->guitars
 gitatributes->gitattributes
-gived->given
+gived->given, gave
 giveing->giving
 givem->given, give them, give 'em,
+givven->given
+givveing->giving
+givving->giving
 glamourous->glamorous
 glight->flight
 gloab->globe
