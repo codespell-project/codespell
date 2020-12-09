@@ -1314,8 +1314,9 @@ alising->aliasing
 aliver->alive, liver, a liver, sliver,
 allcate->allocate
 allcation->allocation
-allcator->allocator
+allcoate->allocate
 allcoated->allocated
+allcoating->allocating
 allcommnads->allcommands
 alle->all, alley,
 alled->called, allied,
@@ -1345,9 +1346,6 @@ alllocation->allocation
 alllow->allow
 alllows->allows
 allmost->almost
-allcoate->allocate
-allcoated->allocated
-allcoating->allocating
 alloacate->allocate
 alloate->allocate, allotted, allot,
 alloated->allocated, allotted,
@@ -3824,13 +3822,13 @@ blockin->blocking
 bloddy->bloody
 blodk->block
 blohted->bloated
-blokcer->blocker
-blokcs->blocks
 blokc->block
-blokcing->blocking
-blokcss->blocks
+blokcer->blocker
 blokchain->blockchain
 blokchains->blockchains
+blokcing->blocking
+blokcs->blocks
+blokcss->blocks
 bloking->blocking
 blong->belong
 blonged->belonged
@@ -7896,17 +7894,6 @@ dcoker->docker
 dcokerd->dockerd
 dcoking->docking
 dcoks->docks
-dockre->docker
-dockred->dockerd
-dokc->dock
-dokced->docked
-dokcer->docker
-dokcerd->dockerd
-dokcing->docking
-dokcre->docker
-dokcred->dockerd
-dokcs->docks
-dcument->document
 dcumented->documented
 dcumenting->documenting
 dcuments->documents
@@ -10133,6 +10120,14 @@ doign->doing
 doiing->doing
 doiuble->double
 doiubled->doubled
+dokc->dock
+dokced->docked
+dokcer->docker
+dokcerd->dockerd
+dokcing->docking
+dokcre->docker
+dokcred->dockerd
+dokcs->docks
 doller->dollar
 dollers->dollars
 dollor->dollar
@@ -13864,8 +13859,8 @@ gitatributes->gitattributes
 gived->given, gave
 giveing->giving
 givem->given, give them, give 'em,
-givven->given
 givveing->giving
+givven->given
 givving->giving
 glamourous->glamorous
 glight->flight
