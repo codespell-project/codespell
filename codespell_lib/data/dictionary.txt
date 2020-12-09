@@ -1303,10 +1303,11 @@ alignrigh->alignright
 alikes->alike, likes,
 aline->align, a line, line, saline,
 alined->aligned
-aling->align
+aling->align, along, a line, ailing, sling, 
 alinged->aligned
 alinging->aligning
 alingment->alignment
+alings->aligns, slings,
 alinment->alignment
 alinments->alignments
 alising->aliasing
@@ -1346,7 +1347,7 @@ alllows->allows
 allmost->almost
 allcoate->allocate
 allcoated->allocated
-allcoating
+allcoating->allocating
 alloacate->allocate
 alloate->allocate, allotted, allot,
 alloated->allocated, allotted,
@@ -7889,10 +7890,22 @@ datsets->datasets
 daty->data, date,
 daugher->daughter
 DCHP->DHCP
+dcok->dock
+dcoked->docked
 dcoker->docker
-dokcer->docker
-dokcre->docker
+dcokerd->dockerd
+dcoking->docking
+dcoks->docks
 dockre->docker
+dockred->dockerd
+dokc->dock
+dokced->docked
+dokcer->docker
+dokcerd->dockerd
+dokcing->docking
+dokcre->docker
+dokcred->dockerd
+dokcs->docks
 dcument->document
 dcumented->documented
 dcumenting->documenting
