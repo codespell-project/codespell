@@ -1313,12 +1313,25 @@ alinments->alignments
 alising->aliasing
 aliver->alive, liver, a liver, sliver,
 allcate->allocate
+allcateing->allocating
+allcater->allocator
+allcaters->allocators
+allcating->allocating
 allcation->allocation
+allcator->allocator
 allcator->allocator
 allcoate->allocate
 allcoated->allocated
+allcoateing->allocating
+allcoateng->allocating
+allcoater->allocator
+allcoaters->allocators
 allcoating->allocating
-allcommnads->allcommands
+allcoation->allocation
+allcoator->allocator
+allcoator->allocator
+allcoators->allocators
+allcommnads->allcommands, all commands,
 alle->all, alley,
 alled->called, allied,
 alledge->allege
@@ -1371,6 +1384,8 @@ allocat->allocate
 allocatbale->allocatable
 allocatedi->allocated
 allocatedp->allocated
+allocateing->allocating
+allocateng->allocating
 allocaton->allocation
 allocatoor->allocator
 allocatote->allocate
@@ -3822,14 +3837,18 @@ blockhains->blockchains
 blockin->blocking
 bloddy->bloody
 blodk->block
+bloek->bloke
+bloeks->blokes
+bloekes->blokes
+bloekss->blokes
 blohted->bloated
-blokc->block
+blokc->block, bloke,
 blokcer->blocker
 blokchain->blockchain
 blokchains->blockchains
 blokcing->blocking
-blokcs->blocks
-blokcss->blocks
+blokcs->blocks, blokes,
+blokcss->blocks, blokes,
 bloking->blocking
 blong->belong
 blonged->belonged
@@ -7892,7 +7911,7 @@ DCHP->DHCP
 dcok->dock
 dcoked->docked
 dcoker->docker
-dcokerd->dockerd
+dcokerd->dockerd, docked, docker,
 dcoking->docking
 dcoks->docks
 dcument->document
