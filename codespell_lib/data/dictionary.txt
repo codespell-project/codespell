@@ -5036,6 +5036,10 @@ ciontrol->control
 ciper->cipher
 cipers->ciphers
 cipherntext->ciphertext
+ciphersute->ciphersuite
+ciphersutes->ciphersuites
+cipheruite->ciphersuite
+cipheruites->ciphersuites
 cips->chips
 circomvent->circumvent
 circomvented->circumvented
