@@ -3838,8 +3838,8 @@ blockin->blocking
 bloddy->bloody
 blodk->block
 bloek->bloke
-bloeks->blokes
 bloekes->blokes
+bloeks->blokes
 bloekss->blokes
 blohted->bloated
 blokc->block, bloke,
@@ -10144,10 +10144,10 @@ doiubled->doubled
 dokc->dock
 dokced->docked
 dokcer->docker
-dokcerd->dockerd
+dokcerd->dockerd, docked, docker,
 dokcing->docking
 dokcre->docker
-dokcred->dockerd
+dokcred->dockerd, docked, docker,
 dokcs->docks
 doller->dollar
 dollers->dollars
