@@ -5036,6 +5036,8 @@ ciontrol->control
 ciper->cipher
 cipers->ciphers
 cipherntext->ciphertext
+ciphersuit->ciphersuite
+ciphersuits->ciphersuites
 ciphersute->ciphersuite
 ciphersutes->ciphersuites
 cipheruite->ciphersuite
@@ -7780,6 +7782,8 @@ cylnder->cylinder
 cylnders->cylinders
 cylynders->cylinders
 cymk->CMYK
+cyphersuite->ciphersuite
+cyphersuites->ciphersuites
 cyphertext->ciphertext
 cyphertexts->ciphertexts
 cyprt->crypt
