@@ -4963,6 +4963,12 @@ chiledren->children
 chilren->children
 chineese->Chinese
 chiop->chip, chop,
+chiper->cipher, chipper, chimer,
+chipers->ciphers, chippers, chimers,
+chipersuite->ciphersuite
+chipersuites->ciphersuites
+chipertext->ciphertext
+chipertexts->ciphertexts
 chipet->chipset
 chipslect->chipselect
 chipstes->chipsets
