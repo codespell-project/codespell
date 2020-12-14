@@ -1506,7 +1506,9 @@ alterative->alternative
 alteratives->alternatives
 alterior->ulterior
 alternaive->alternative
+alternaives->alternatives
 alternarive->alternative
+alternarives->alternatives
 alternatievly->alternatively
 alternativey->alternatively
 alternativly->alternatively
@@ -7539,6 +7541,8 @@ coyprights->copyrights
 coyright->copyright
 coyrighted->copyrighted
 coyrights->copyrights
+cpacities->capacities
+cpacity->capacity
 cpation->caption
 cpoy->coy, copy,
 cppp->cpp
@@ -7706,6 +7710,7 @@ curerntly->currently
 curiousities->curiosities
 curiousity's->curiosity's
 curiousity->curiosity
+curnilinear->curvilinear
 currect->correct, current,
 currected->corrected
 currecting->correcting
@@ -18166,6 +18171,7 @@ monestaries->monasteries
 monestary->monastery, monetary,
 monestic->monastic
 monickers->monikers
+monitary->monetary
 moniter->monitor
 monitoing->monitoring
 monkies->monkeys
@@ -28638,7 +28644,7 @@ tunelled->tunnelled
 tunelling->tunneling
 tunned->tuned
 tunnell->tunnel
-tunning->tuning
+tunning->tuning, running,
 tuotiral->tutorial
 tuotirals->tutorials
 tupel->tuple
