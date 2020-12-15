@@ -1303,16 +1303,33 @@ alignrigh->alignright
 alikes->alike, likes,
 aline->align, a line, line, saline,
 alined->aligned
+aling->align, along, a line, ailing, sling,
+alinged->aligned
+alinging->aligning
 alingment->alignment
+alings->aligns, slings,
 alinment->alignment
 alinments->alignments
 alising->aliasing
 aliver->alive, liver, a liver, sliver,
 allcate->allocate
+allcateing->allocating
+allcater->allocator
+allcaters->allocators
+allcating->allocating
 allcation->allocation
 allcator->allocator
+allcoate->allocate
 allcoated->allocated
-allcommnads->allcommands
+allcoateing->allocating
+allcoateng->allocating
+allcoater->allocator
+allcoaters->allocators
+allcoating->allocating
+allcoation->allocation
+allcoator->allocator
+allcoators->allocators
+allcommnads->allcommands, all commands,
 alle->all, alley,
 alled->called, allied,
 alledge->allege
@@ -1365,6 +1382,8 @@ allocat->allocate
 allocatbale->allocatable
 allocatedi->allocated
 allocatedp->allocated
+allocateing->allocating
+allocateng->allocating
 allocaton->allocation
 allocatoor->allocator
 allocatote->allocate
@@ -3816,10 +3835,18 @@ blockhains->blockchains
 blockin->blocking
 bloddy->bloody
 blodk->block
+bloek->bloke
+bloekes->blokes
+bloeks->blokes
+bloekss->blokes
 blohted->bloated
+blokc->block, bloke,
 blokcer->blocker
 blokchain->blockchain
 blokchains->blockchains
+blokcing->blocking
+blokcs->blocks, blokes,
+blokcss->blocks, blokes,
 bloking->blocking
 blong->belong
 blonged->belonged
@@ -7879,7 +7906,12 @@ datsets->datasets
 daty->data, date,
 daugher->daughter
 DCHP->DHCP
+dcok->dock
+dcoked->docked
 dcoker->docker
+dcokerd->dockerd, docked, docker,
+dcoking->docking
+dcoks->docks
 dcument->document
 dcumented->documented
 dcumenting->documenting
@@ -10107,6 +10139,14 @@ doign->doing
 doiing->doing
 doiuble->double
 doiubled->doubled
+dokc->dock
+dokced->docked
+dokcer->docker
+dokcerd->dockerd, docked, docker,
+dokcing->docking
+dokcre->docker
+dokcred->dockerd, docked, docker,
+dokcs->docks
 doller->dollar
 dollers->dollars
 dollor->dollar
@@ -13835,9 +13875,12 @@ gisers->geysers
 gitar->guitar
 gitars->guitars
 gitatributes->gitattributes
-gived->given
+gived->given, gave,
 giveing->giving
 givem->given, give them, give 'em,
+givveing->giving
+givven->given
+givving->giving
 glamourous->glamorous
 glight->flight
 gloab->globe
