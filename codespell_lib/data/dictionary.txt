@@ -5165,6 +5165,7 @@ claread->cleared
 clared->cleared
 clarety->clarity
 claring->clearing
+clases->classes, clashes, cases,
 clasic->classic
 clasical->classical
 clasically->classically
@@ -5480,6 +5481,7 @@ collegue->colleague
 collegues->colleagues
 collektion->collection
 colletion->collection
+collidies->collides
 collison->collision, collusion,
 collisons->collisions, collusion, collusions,
 collission->collision, collusion,
@@ -11938,6 +11940,7 @@ exoskelaton->exoskeleton
 expalin->explain
 expanation->explanation, expansion,
 expanations->explanations, expansions,
+expaned->expand, expanded, explained,
 expaning->expanding
 expanion->expansion
 expanions->expansions
@@ -20560,6 +20563,8 @@ perfomrnaces->performances
 perfomrs->performs
 perfoms->performs
 perfoom->perfume, perform,
+perfor->perform
+perford->performed
 perforemd->performed
 performace->performance
 performaed->performed
@@ -20569,6 +20574,8 @@ performe->perform, performed,
 performence->performance
 performes->performed, performs,
 performnace->performance
+perfors->performs
+perfro->perform
 perfrom->perform
 perfromance->performance
 perfromed->performed
@@ -21819,6 +21826,12 @@ projctor->projector
 projctors->projectors
 projcts->projects
 projectio->projection
+projecttion->projection
+projet->project
+projetction->projection
+projeted->projected
+projeting->projecting
+projets->projects
 prolbems->problems
 prolem->problem
 prolems->problems
@@ -21892,7 +21905,9 @@ propbably->probably
 propely->properly
 propeoperties->properties
 properies->properties
+properites->properties
 properities->properties
+properity->property, proprietary,
 properries->properties
 properrt->property
 properry->property, properly,
@@ -23459,10 +23474,13 @@ removeable->removable
 removefromat->removeformat
 removeing->removing
 removerd->removed
+remve->remove
 remved->removed
+remves->removes
 remvoe->remove
 remvoed->removed
 remvoved->removed
+remvs->removes
 renabled->re-enabled
 rende->render, rend,
 renderadble->renderable
@@ -25357,8 +25375,17 @@ sheduling->scheduling
 sheepherd->shepherd
 sheepherds->shepherds
 sheild->shield
+sheilded->shielded
+sheilding->shielding
+sheilds->shields
 sheme->scheme, shame,
 shepe->shape
+sheped->shaped, shepherd,
+shepered->shepherd
+sheperedly->shepherdly
+shepereds->shepherds
+shepes->shapes
+sheping->shaping
 shepre->sphere
 shepres->spheres
 sherif->sheriff
@@ -25666,7 +25693,12 @@ sitaution->situation
 sitautions->situations
 sitck->stick
 siteu->site
+sitill->still
+sitirring->stirring
+sitirs->stirs
+sitl->still
 sitll->still
+sitmuli->stimuli
 situationals->situational, situations,
 situationly->situationally, situational,
 situationnal->situational
@@ -28787,8 +28819,10 @@ uggly->ugly
 ugglyness->ugliness
 uglyness->ugliness
 uique->unique
+uis->is, use,
 uise->use
-uite->suite
+uisng->using
+uite->suite, unite,
 uites->suites
 uknown->unknown
 uknowns->unknowns
