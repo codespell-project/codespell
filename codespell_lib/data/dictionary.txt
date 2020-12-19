@@ -5041,6 +5041,9 @@ cintaner->container
 ciontrol->control
 ciper->cipher
 cipers->ciphers
+cipersuite->ciphersuite
+cipersuites->ciphersuites
+ciph->cipher, chip,
 cipherntext->ciphertext
 ciphersuit->ciphersuite
 ciphersuits->ciphersuites
@@ -5048,6 +5051,8 @@ ciphersute->ciphersuite
 ciphersutes->ciphersuites
 cipheruite->ciphersuite
 cipheruites->ciphersuites
+ciphr->cipher
+ciphrs->ciphers
 cips->chips
 circomvent->circumvent
 circomvented->circumvented
