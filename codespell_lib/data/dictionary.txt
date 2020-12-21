@@ -7481,11 +7481,16 @@ counpounds->compounds
 counries->countries, counties,
 countain->contain
 countainer->container
+countainers->containers
 countains->contains
 counterfit->counterfeit
+counterfits->counterfeits
 counterintuive->counter intuitive
+countermeausure->countermeasure
+countermeausures->countermeasures
 counterpar->counterpart
 counterpoart->counterpart
+counterpoarts->counterparts
 countie's->counties, counties', county's,
 countinue->continue
 countinueq->continueq, continue,
@@ -7502,18 +7507,26 @@ couses->courses, causes,
 cousing->cousin
 couted->counted
 couter->counter
+coutermeasuere->countermeasure
+coutermeasueres->countermeasures
+coutermeasure->countermeasure
+coutermeasures->countermeasures
 couterpart->counterpart
+couters->counters
 couting->counting
 coutner->counter
 coutners->counters
 couuld->could
 couuldn't->couldn't
 covarage->coverage
+covarages->coverages
 covarege->coverage
 covention->convention
+coventions->conventions
 covere->cover
 coveres->covers
 coverge->coverage
+coverges->coverages
 coverred->covered
 coverted->converted, covered, coveted,
 coverting->converting
@@ -16668,10 +16681,14 @@ kenrel->kernel
 kepping->keeping
 kepps->keeps
 kerenl->kernel
+kerenls->kernels
 kernal->kernel
 kernals->kernels
+kernerl->kernel
+kernerls->kernels
 ket->kept
 keword->keyword
+kewords->keywords
 kewword->keyword
 kewwords->keywords
 keybaord->keyboard
@@ -20664,6 +20681,8 @@ photografy->photography
 photograpic->photographic
 photograpical->photographical
 phsyically->physically
+phtread->pthread
+phtreads->pthreads
 phyiscal->physical
 phyiscally->physically
 phyiscs->physics
@@ -27873,7 +27892,10 @@ thererin->therein
 theres->there's
 therfore->therefore
 theri->their, there,
+thermisor->thermistor
+thermisors->thermistors
 thermostast->thermostat
+thermostasts->thermostats
 therough->through, thorough,
 therstat->thermostat
 thes->this, these,
