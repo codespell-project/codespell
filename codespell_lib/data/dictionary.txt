@@ -7051,6 +7051,7 @@ contradically->contradictory
 contrained->contained, constrained,
 contraining->constraining
 contraint->constraint
+contrainted->constrained
 contraints->constraints
 contraitns->constraints
 contraveining->contravening
@@ -7948,6 +7949,8 @@ dameon->daemon, demon, Damien,
 damge->damage
 dammage->damage
 dammages->damages
+damon->daemon, demon,
+damons->daemons, demons,
 danceing->dancing
 dandidates->candidates
 daplicating->duplicating
@@ -17537,6 +17540,7 @@ manufaturing->manufacturing
 manufaucturing->manufacturing
 manulally->manually
 manully->manually
+manuly->manually
 manupilations->manipulations
 manupulate->manipulate
 manupulated->manipulated
@@ -19313,7 +19317,9 @@ notificaction->notification
 notificaiton->notification
 notificaitons->notifications
 notificaton->notification
+notificatons->notifications
 notificiation->notification
+notificiations->notifications
 notifiy->notify
 notifiying->notifying
 notifycation->notification
@@ -21459,6 +21465,8 @@ prefere->prefer, preferred,
 preferecne->preference
 preferecnes->preferences
 prefered->preferred
+preferencfe->preference
+preferencfes->preferences
 preferend->preferred, preference,
 prefering->preferring
 prefernce->preference
@@ -24022,6 +24030,8 @@ representating->representing
 representd->represented
 represente->represents, represented,
 representiative->representative
+represention->representation
+representions->representations
 representive->representative
 representives->representatives
 represetation->representation
@@ -24637,6 +24647,7 @@ rmove->remove
 rmoved->removed
 rmoving->removing
 rnage->rage, range,
+ro->to, row,
 roataion->rotation
 roatation->rotation
 roated->rotated
@@ -25867,6 +25878,10 @@ skeep->skip
 skelton->skeleton
 skept->skipped
 sketchs->sketches
+sketck->skate, sketch,
+sketcked->skated, sketched,
+sketckes->skates, sketches,
+sketcking->skating, sketching,
 skilfull->skilful, skillful,
 skillfull->skillful, skilful, skillfully, skilfully,
 skillfullness->skillfulness, skilfulness,
@@ -28340,6 +28355,10 @@ timestan->timespan
 timestanp->timestamp, timespan,
 timestanps->timestamps, timespans,
 timestans->timespans
+timestap->timestamp
+timestaped->timestamped
+timestaping->timestamping
+timestaps->timestamps
 timestemp->timestamp
 timestemps->timestamps
 timestmap->timestamp
