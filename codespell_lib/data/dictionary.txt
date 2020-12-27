@@ -6782,6 +6782,9 @@ constain->constrain, contain,
 constained->constrained, contained,
 constaining->constraining, containing,
 constains->constrains, contains,
+constaint->constraint
+constainte->constraint, constrained, constraints,
+constainted->constrained
 constaints->constraints
 constallation->constellation
 constallations->constellations
@@ -28876,6 +28879,7 @@ trings->strings, rings,
 triniy->trinity
 triology->trilogy
 tripple->triple
+triuangulate->triangulate
 trival->trivial
 trivally->trivially
 trivias->trivia
