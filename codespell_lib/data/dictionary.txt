@@ -4716,6 +4716,10 @@ certficate->certificate
 certficated->certificated
 certficates->certificates
 certfication->certification
+certficiate->certificate
+certficiated->certificated
+certficiates->certificates
+certficiation->certification
 certian->certain
 certianly->certainly
 certicate->certificate
@@ -13671,6 +13675,7 @@ garanteed->guaranteed
 garantees->guarantees
 garantied->guaranteed
 garanty->guarantee
+garbadge->garbage
 garbage-dollected->garbage-collected
 garbagge->garbage
 garbarge->garbage
@@ -16037,6 +16042,8 @@ inted->inetd, intend,
 inteded->intended
 intedned->intended
 inteface->interface
+integarte->integrate
+integarted->integrated
 integeral->integral
 integere->integer
 integreated->integrated
@@ -20815,6 +20822,8 @@ poeple->people
 poer->power
 poety->poetry
 pogress->progress
+poicies->policies
+poicy->policy
 poind->point
 poindcloud->pointcloud
 poiner->pointer
@@ -21394,6 +21403,8 @@ presumibly->presumably
 pretection->protection
 pretendend->pretended
 pretty-printter->pretty-printer
+preveiw->preview
+preveiws->previews
 prevelance->prevalence
 prevelant->prevalent
 preven->prevent
@@ -24326,6 +24337,7 @@ revaluated->reevaluated
 reveive->receive, revive,
 reveiw->review
 reveiwed->reviewed
+reveiwing->reviewing
 revelent->relevant
 reveokes->revokes
 rever->revert, fever,
@@ -26778,6 +26790,9 @@ subsedent->subsequent
 subseqence->subsequence
 subseqent->subsequent
 subsequest->subsequent
+subsequnce->subsequence
+subsequnt->subsequent
+subsequntly->subsequently
 subshystem->subsystem
 subshystems->subsystems
 subsidary->subsidiary
@@ -29792,6 +29807,9 @@ vegitables->vegetables
 vegtable->vegetable
 vehicule->vehicle
 veify->verify
+veiw->view
+veiwer->viewer
+veiwers->viewers
 vektor->vector
 vektors->vectors
 velidate->validate
