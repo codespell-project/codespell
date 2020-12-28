@@ -5024,6 +5024,8 @@ cicruit->circuit
 cicruits->circuits
 cicular->circular
 ciculars->circulars
+cihpher->cipher
+cihphers->ciphers
 cilent->client, silent,
 cilents->clients, silents, silence,
 cilincer->cylinder, silencer,
@@ -5043,7 +5045,10 @@ ciper->cipher
 cipers->ciphers
 cipersuite->ciphersuite
 cipersuites->ciphersuites
+cipertext->ciphertext
+cipertexts->ciphertexts
 ciph->cipher, chip,
+ciphe->ciphe
 cipherntext->ciphertext
 ciphersuit->ciphersuite
 ciphersuits->ciphersuites
@@ -5051,6 +5056,7 @@ ciphersute->ciphersuite
 ciphersutes->ciphersuites
 cipheruite->ciphersuite
 cipheruites->ciphersuites
+ciphes->ciphers
 ciphr->cipher
 ciphrs->ciphers
 cips->chips
