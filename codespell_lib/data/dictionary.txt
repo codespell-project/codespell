@@ -2896,6 +2896,9 @@ attribuition->attribution
 attribure->attribute
 attribured->attributed
 attribures->attributes
+attriburte->attribute
+attriburted->attributed
+attriburtes->attributes
 attriburtion->attribution
 attribut->attribute
 attributei->attribute
@@ -20941,7 +20944,12 @@ plalforms->platforms
 planation->plantation
 plantext->plaintext
 plantiff->plaintiff
-plase->please
+plase->please, place,
+plased->placed, pleased,
+plasement->placement
+plasements->placements
+plases->places, pleases,
+plasing->placing, pleasing,
 plateu->plateau
 platfarm->platform
 platfarms->platforms
@@ -21556,6 +21564,7 @@ presenece->presence
 presener->presenter
 presense->presence
 presentaion->presentation
+presentaional->presentational
 presentaions->presentations
 presernt->present
 preserrved->preserved
@@ -23960,6 +23969,12 @@ replacted->replaced, replicated,
 replactes->replaces, replicates,
 replacting->replacing, replicating,
 replaint->repaint
+replase->replace, relapse,
+replased->replaced, relapsed,
+replasement->replacement
+replasements->replacements
+replases->replaces, relapses,
+replasing->replacing, relapsing,
 replcace->replace
 replcaced->replaced
 replcaof->replicaof
@@ -30236,7 +30251,9 @@ vew->view
 veyr->very
 vhild->child
 viatnamese->vietnamese
+vice-wersa->vice-versa
 vicefersa->vice-versa
+vicewersa->vice-versa
 videostreamming->videostreaming
 vieport->viewport
 vieports->viewports
@@ -30670,6 +30687,11 @@ whtihin->within
 whyth->with
 whythout->without
 wiat->wait
+wice->vice
+wice-versa->vice-versa
+wice-wersa->vice-versa
+wiceversa->vice-versa
+wicewersa->vice-versa
 wich->which
 widesread->widespread
 widged->widget
