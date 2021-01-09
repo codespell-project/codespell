@@ -506,8 +506,9 @@ achive->achieve, archive,
 achived->achieved, archived,
 achivement->achievement
 achivements->achievements
-achives->achieves
-achiving->achieving
+achiver->achiever, archiver,
+achives->achieves, archives,
+achiving->achieving, archiving,
 achor->anchor
 achored->anchored
 achoring->anchoring
@@ -20838,6 +20839,8 @@ poinits->points
 poinnter->pointer
 poins->points
 pointes->points
+pointetr->pointer
+pointetrs->pointers
 pointeur->pointer
 pointseta->poinsettia
 pointss->points
