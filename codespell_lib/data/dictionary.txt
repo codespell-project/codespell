@@ -3840,6 +3840,7 @@ bitis->bits
 bitmast->bitmask
 bitnaps->bitmaps
 bitwise-orring->bitwise-oring
+biult->built, build,
 bizare->bizarre
 bizarely->bizarrely
 bizzare->bizarre
@@ -15425,6 +15426,8 @@ inconsistendtly->inconsistently
 inconsistenly->inconsistently
 inconsistented->inconsistent
 inconsisteny->inconsistency, inconsistent,
+inconsitant->inconsistent
+inconsitency->inconsistency
 inconsitent->inconsistent
 inconstent->inconsistent, inconstant,
 inconvertable->inconvertible
@@ -17307,6 +17310,7 @@ localed->located
 localtion->location
 localtions->locations
 localzation->localization
+locatins->locations
 loccked->locked
 locgical->logical
 lockingf->locking
@@ -23090,6 +23094,10 @@ reconsidder->reconsider
 reconstrcut->reconstruct
 reconstrcuted->reconstructed
 reconstrcution->reconstruction
+reconstuct->reconstruct
+reconstucted->reconstructed
+reconstucting->reconstructing
+reconstucts->reconstructs
 recontructed->reconstructed
 recontructing->reconstructing
 recontruction->reconstruction
@@ -25067,10 +25075,16 @@ seconday->secondary
 secondy->secondly, secondary,
 seconf->second
 seconly->secondly
+secont->second
+secontary->secondary
+secontly->secondly
 seconts->seconds
 secord->second
 secotr->sector
 secound->second
+secoundary->secondary
+secoundly->secondly
+secounds->seconds
 secquence->sequence
 secratary->secretary
 secretery->secretary
@@ -28633,6 +28647,7 @@ transfoprmation->transformation
 transforation->transformation
 transforations->transformations
 transformated->transformed
+transformates->transforms
 transformaton->transformation
 transformatted->transformed
 transforme->transformed, transformer, transform,
