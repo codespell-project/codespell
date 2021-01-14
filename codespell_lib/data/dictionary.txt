@@ -4716,10 +4716,14 @@ certficate->certificate
 certficated->certificated
 certficates->certificates
 certfication->certification
+certfications->certifications
 certficiate->certificate
 certficiated->certificated
 certficiates->certificates
 certficiation->certification
+certficiations->certifications
+certfied->certified
+certfy->certify
 certian->certain
 certianly->certainly
 certicate->certificate
@@ -16044,6 +16048,7 @@ intedned->intended
 inteface->interface
 integarte->integrate
 integarted->integrated
+integartes->integrates
 integeral->integral
 integere->integer
 integreated->integrated
@@ -21404,6 +21409,10 @@ pretection->protection
 pretendend->pretended
 pretty-printter->pretty-printer
 preveiw->preview
+preveiwed->previewed
+preveiwer->previewer
+preveiwers->previewers
+preveiwes->previews, previewers,
 preveiws->previews
 prevelance->prevalence
 prevelant->prevalent
@@ -24337,7 +24346,11 @@ revaluated->reevaluated
 reveive->receive, revive,
 reveiw->review
 reveiwed->reviewed
+reveiwer->reviewer
+reveiwers->reviewers
+reveiwes->reviews, reviewers,
 reveiwing->reviewing
+reveiws->reviews
 revelent->relevant
 reveokes->revokes
 rever->revert, fever,
@@ -29808,8 +29821,12 @@ vegtable->vegetable
 vehicule->vehicle
 veify->verify
 veiw->view
+veiwed->viewed
 veiwer->viewer
 veiwers->viewers
+veiwing->viewing
+veiwings->viewings
+veiws->views
 vektor->vector
 vektors->vectors
 velidate->validate
