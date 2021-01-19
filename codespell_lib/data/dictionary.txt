@@ -2282,6 +2282,8 @@ archtypes->archetypes
 archvie->archive
 archvies->archives
 archving->archiving
+arch-dependet->arch-dependent
+arch-independet->arch-independent
 arcitecture->architecture
 arcitectures->architectures
 arcticle->article
@@ -8257,6 +8259,7 @@ deeep->deep
 deelte->delete
 deendencies->dependencies
 deendency->dependency
+dependet->dependent
 defail->detail
 defailt->default
 defalt->default
@@ -15457,6 +15460,7 @@ independed->independent
 independedly->independently
 independend->independent
 independendet->independent
+independet->independent
 independly->independently
 independnent->independent
 independnet->independent
