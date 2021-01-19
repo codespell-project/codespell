@@ -1896,7 +1896,7 @@ appens->appends
 appent->append
 apperance->appearance
 apperances->appearances
-apperant->apparent
+apperant->apparent, aberrant,
 appereance->appearance
 appereances->appearances
 appered->appeared
@@ -7820,6 +7820,7 @@ cycular->circular
 cyle->cycle
 cylic->cyclic
 cylider->cylinder
+cyliders->cylinders
 cylindre->cylinder
 cylnder->cylinder
 cylnders->cylinders
@@ -10187,6 +10188,9 @@ dominaton->domination
 dominent->dominant
 dominiant->dominant
 domonstrate->demonstrate
+domonstrates->demonstrates
+domonstrating->demonstrating
+domonstration->demonstration
 donain->domain
 donains->domains
 donejun->dungeon
@@ -10520,7 +10524,13 @@ eearly->early
 eeeprom->EEPROM
 eescription->description
 eevery->every
+eeverything->everything
+eeverywhere->everywhere
+eextract->extract
 eextracted->extracted
+eextracting->extracting
+eextraction->extraction
+eextracts->extracts
 efect->effect
 efective->effective
 efectively->effectively
@@ -11419,11 +11429,13 @@ examinated->examined
 examing->examining
 examinining->examining
 examles->examples
+examnple->example
 examnples->examples
 exampel->example
 exampeles->examples
 exampels->examples
-examplee->example
+examplee->example, examples,
+examplees->examples
 exampt->exempt
 exand->expand
 exansive->expansive
@@ -13855,6 +13867,8 @@ geomety->geometry
 geometyr->geometry
 geomitrically->geometrically
 geomoetric->geometric
+geomoetrically->geometrically
+geomoetry->geometry
 geomtry->geometry
 geomtrys->geometries
 georeferncing->georeferencing
@@ -19126,6 +19140,14 @@ noone->no one
 noral->normal, moral,
 noralize->normalize
 noralized->normalized
+noramalise->normalise
+noramalised->normalised
+noramalises->normalises
+noramalising->normalising
+noramalize->normalize
+noramalized->normalized
+noramalizes->normalizes
+noramalizing->normalizing
 noramals->normals
 noraml->normal
 nore->nor, more,
@@ -19265,6 +19287,13 @@ obessions->obsessions
 obgect->object
 obgects->objects
 obhect->object
+obhectification->objectification
+obhectifies->objectifies
+obhectify->objectify
+obhectifying->objectifying
+obhecting->objecting
+obhection->objection
+obhects->objects
 obious->obvious
 obiously->obviously
 objec->object
@@ -28286,6 +28315,10 @@ traiing->trailing, training,
 trailling->trailing
 traingle->triangle
 traingular->triangular
+traingulate->triangulate
+traingulated->triangulated
+traingulates->triangulates
+traingulating->triangulating
 traingulation->triangulation
 traingulations->triangulations
 traker->tracker
@@ -29126,7 +29159,7 @@ unidentifiedly->unidentified
 unidimensionnal->unidimensional
 unifiy->unify
 uniformely->uniformly
-uniformy->uniformly
+uniformy->uniform, uniformly,
 unifrom->uniform
 unifromed->uniformed
 unifromity->uniformity
@@ -29737,7 +29770,10 @@ utilies->utilities
 utililties->utilities
 utilis->utilise
 utilites->utilities
+utilitization->utilization
+utilitize->utilize
 utilitizes->utilizes
+utilitizing->utilizing
 utiliz->utilize
 utiliza->utilize
 utilizaton->utilization
@@ -30433,6 +30469,7 @@ widhtpoints->widthpoints
 widthn->width
 widthout->without
 wief->wife
+wieght->weight
 wieh->view
 wierd->weird
 wierdly->weirdly
