@@ -19140,6 +19140,7 @@ noone->no one
 noral->normal, moral,
 noralize->normalize
 noralized->normalized
+noramal->normal
 noramalise->normalise
 noramalised->normalised
 noramalises->normalises
@@ -29159,7 +29160,7 @@ unidentifiedly->unidentified
 unidimensionnal->unidimensional
 unifiy->unify
 uniformely->uniformly
-uniformy->uniform, uniformly,
+uniformy->uniformly, uniform,
 unifrom->uniform
 unifromed->uniformed
 unifromity->uniformity
@@ -29769,7 +29770,13 @@ utiilties->utilities
 utilies->utilities
 utililties->utilities
 utilis->utilise
+utilisa->utilise
+utilisaton->utilisation
 utilites->utilities
+utilitisation->utilisation
+utilitise->utilise
+utilitises->utilises
+utilitising->utilising
 utilitization->utilization
 utilitize->utilize
 utilitizes->utilizes
@@ -30469,7 +30476,10 @@ widhtpoints->widthpoints
 widthn->width
 widthout->without
 wief->wife
+wieghed->weighed
 wieght->weight
+wieghted->weighted, weighed,
+wieghts->weights
 wieh->view
 wierd->weird
 wierdly->weirdly
