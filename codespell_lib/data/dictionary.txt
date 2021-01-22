@@ -7295,6 +7295,8 @@ coppy->copy, choppy,
 copright->copyright
 coprighted->copyrighted
 coprights->copyrights
+coproccessor->coprocessor
+coproccessors->coprocessors
 coprocesor->coprocessor
 coprright->copyright
 coprrighted->copyrighted
@@ -26542,6 +26544,9 @@ spurrious->spurious
 sqare->square
 sqared->squared
 sqares->squares
+sqash->squash
+sqashed->squashed
+sqashing->squashing
 sqaure->square
 sqaured->squared
 sqaures->squares
