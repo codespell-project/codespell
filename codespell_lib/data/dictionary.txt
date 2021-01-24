@@ -1655,6 +1655,7 @@ anarchim->anarchism
 anarchistm->anarchism
 anarquism->anarchism
 anarquist->anarchist
+anaylsis->analysis
 anbd->and
 ancapsulate->encapsulate
 ancesetor->ancestor
@@ -1895,6 +1896,7 @@ appens->appends
 appent->append
 apperance->appearance
 apperances->appearances
+apperant->apparent, aberrant,
 appereance->appearance
 appereances->appearances
 appered->appeared
@@ -7817,6 +7819,8 @@ cyclinders->cylinders
 cycular->circular
 cyle->cycle
 cylic->cyclic
+cylider->cylinder
+cyliders->cylinders
 cylindre->cylinder
 cylnder->cylinder
 cylnders->cylinders
@@ -10186,6 +10190,10 @@ domians->domains
 dominaton->domination
 dominent->dominant
 dominiant->dominant
+domonstrate->demonstrate
+domonstrates->demonstrates
+domonstrating->demonstrating
+domonstration->demonstration
 donain->domain
 donains->domains
 donejun->dungeon
@@ -10467,6 +10475,7 @@ easer->easier, eraser,
 easili->easily
 easiliy->easily
 easilly->easily
+easiy->easily
 easly->easily
 easyer->easier
 eaturn->return, saturn,
@@ -10517,6 +10526,14 @@ edxpected->expected
 eearly->early
 eeeprom->EEPROM
 eescription->description
+eevery->every
+eeverything->everything
+eeverywhere->everywhere
+eextract->extract
+eextracted->extracted
+eextracting->extracting
+eextraction->extraction
+eextracts->extracts
 efect->effect
 efective->effective
 efectively->effectively
@@ -11415,9 +11432,13 @@ examinated->examined
 examing->examining
 examinining->examining
 examles->examples
+examnple->example
+examnples->examples
 exampel->example
 exampeles->examples
 exampels->examples
+examplee->example, examples,
+examplees->examples
 exampt->exempt
 exand->expand
 exansive->expansive
@@ -13848,6 +13869,9 @@ geometrys->geometries
 geomety->geometry
 geometyr->geometry
 geomitrically->geometrically
+geomoetric->geometric
+geomoetrically->geometrically
+geomoetry->geometry
 geomtry->geometry
 geomtrys->geometries
 georeferncing->georeferencing
@@ -17048,6 +17072,7 @@ ligh->light, lie, lye,
 ligher->lighter, liar, liger,
 lighers->lighters, liars, ligers,
 lightweigh->lightweight
+lightwieght->lightweight
 lightwight->lightweight
 lightyear->light year
 lightyears->light years
@@ -19123,6 +19148,16 @@ noone->no one
 noral->normal, moral,
 noralize->normalize
 noralized->normalized
+noramal->normal
+noramalise->normalise
+noramalised->normalised
+noramalises->normalises
+noramalising->normalising
+noramalize->normalize
+noramalized->normalized
+noramalizes->normalizes
+noramalizing->normalizing
+noramals->normals
 noraml->normal
 nore->nor, more,
 norhern->northern
@@ -19260,6 +19295,14 @@ obession->obsession
 obessions->obsessions
 obgect->object
 obgects->objects
+obhect->object
+obhectification->objectification
+obhectifies->objectifies
+obhectify->objectify
+obhectifying->objectifying
+obhecting->objecting
+obhection->objection
+obhects->objects
 obious->obvious
 obiously->obviously
 objec->object
@@ -19496,10 +19539,12 @@ ontainor->container
 ontainors->containers
 ontains->contains
 onthe->on the
+ontop->on top
 ontrolled->controlled
 ony->only
 onyl->only
 oommits->commits
+opactity->opacity
 opacy->opacity
 opague->opaque
 opatque->opaque
@@ -24701,6 +24746,7 @@ savy->savvy
 saxaphone->saxophone
 sbsampling->subsampling
 scahr->schar
+scalarr->scalar
 scaleability->scalability
 scaleable->scalable
 scaleing->scaling
@@ -25620,6 +25666,7 @@ sintakts->syntax
 sintax->syntax
 Sionist->Zionist
 Sionists->Zionists
+siply->simply
 sirect->direct
 sirected->directed
 sirecting->directing
@@ -27163,6 +27210,7 @@ suppored->supported
 supporession->suppression
 supportd->supported
 supporte->supported, supporter,
+supportes->supports
 supportet->supporter, supported,
 supportin->supporting
 supportted->supported
@@ -28276,6 +28324,14 @@ trageting->targeting
 tragets->targets
 traiing->trailing, training,
 trailling->trailing
+traingle->triangle
+traingular->triangular
+traingulate->triangulate
+traingulated->triangulated
+traingulates->triangulates
+traingulating->triangulating
+traingulation->triangulation
+traingulations->triangulations
 traker->tracker
 traking->tracking
 traling->trailing, trialing,
@@ -29114,6 +29170,7 @@ unidentifiedly->unidentified
 unidimensionnal->unidimensional
 unifiy->unify
 uniformely->uniformly
+uniformy->uniformly, uniform,
 unifrom->uniform
 unifromed->uniformed
 unifromity->uniformity
@@ -29723,7 +29780,17 @@ utiilties->utilities
 utilies->utilities
 utililties->utilities
 utilis->utilise
+utilisa->utilise
+utilisaton->utilisation
 utilites->utilities
+utilitisation->utilisation
+utilitise->utilise
+utilitises->utilises
+utilitising->utilising
+utilitization->utilization
+utilitize->utilize
+utilitizes->utilizes
+utilitizing->utilizing
 utiliz->utilize
 utiliza->utilize
 utilizaton->utilization
@@ -30419,6 +30486,10 @@ widhtpoints->widthpoints
 widthn->width
 widthout->without
 wief->wife
+wieghed->weighed
+wieght->weight
+wieghted->weighted, weighed,
+wieghts->weights
 wieh->view
 wierd->weird
 wierdly->weirdly
