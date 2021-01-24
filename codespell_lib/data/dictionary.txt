@@ -2475,8 +2475,10 @@ asign->assign
 asigned->assigned
 asignee->assignee
 asignees->assignees
+asigning->assigning
 asignment->assignment
 asignor->assignor
+asigns->assigns
 asii->ascii
 asisstant->assistant
 asisstants->assistants
@@ -7536,6 +7538,8 @@ covere->cover
 coveres->covers
 coverge->coverage
 coverred->covered
+coversion->conversion
+coversions->conversions
 coverted->converted, covered, coveted,
 coverting->converting
 covnert->convert
@@ -8420,6 +8424,7 @@ degnerated->degenerated
 degnerates->degenerates
 degrads->degrades
 degration->degradation
+degredation->degradation
 degreee->degree
 degreeee->degree
 degreeees->degrees
@@ -17641,6 +17646,8 @@ mechamisms->mechanisms
 mechananism->mechanism
 mechancial->mechanical
 mechandise->merchandise
+mechanim->mechanism
+mechanims->mechanisms
 mechanis->mechanism
 mechansim->mechanism
 mechansims->mechanisms
@@ -24446,8 +24453,8 @@ reveiwing->reviewing
 reveiws->reviews
 revelent->relevant
 reveokes->revokes
-rever->revert, fever,
-reveral->reversal
+rever->revert, refer, fever,
+reveral->reversal, referral,
 reverce->reverse
 reverced->reversed
 reverece->reference, reverence,
@@ -24798,6 +24805,7 @@ scheduald->scheduled
 schedualed->scheduled
 schedualing->scheduling
 schedulier->scheduler
+schedulling->scheduling
 schme->scheme
 schmea->schema
 schmeas->schemas
@@ -25547,7 +25555,8 @@ signifigant->significant
 signifigantly->significantly
 signitories->signatories
 signitory->signatory
-signle->single
+signle->single, signal,
+signles->singles, signals,
 signol->signal
 signto->sign to
 signul->signal
@@ -25609,6 +25618,8 @@ simulatanously->simultaneously
 simulatation->simulation
 simultaneos->simultaneous
 simultaneosly->simultaneously
+simultanious->simultaneous
+simultaniously->simultaneously
 simultanous->simultaneous
 simultanously->simultaneously
 simutaneously->simultaneously
@@ -28116,6 +28127,10 @@ throen->thrown
 throgh->through
 thron->thrown, throne,
 throrough->thorough
+throtte->throttle, trot,
+throtted->throttled, trotted,
+throttes->throttles, trots,
+throtting->throttling, trotting,
 throttoling->throttling
 throug->through
 througg->through
@@ -28679,6 +28694,8 @@ tressle->trestle
 treting->treating
 trgistration->registration
 trhe->the
+triancle->triangle
+triancles->triangles
 triange->triangle
 trianglular->triangular
 trianglutaion->triangulation
@@ -29267,6 +29284,8 @@ unknon->unknown
 unknonw->unknown
 unknonwn->unknown
 unknonws->unknowns
+unknwn->unknown
+unknwns->unknowns
 unknwoing->unknowing
 unknwoingly->unknowingly
 unknwon->unknown
