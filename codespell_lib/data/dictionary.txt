@@ -5319,6 +5319,7 @@ coalases->coalesces
 coalasing->coalescing
 coalcece->coalescence
 coalcence->coalescence
+coalesc->coalesce
 coalescsing->coalescing
 coalesed->coalesced
 coalesence->coalescence
@@ -21837,6 +21838,7 @@ programing->programming
 programm->program, programme,
 programmaticaly->programmatically
 programmd->programmed, programme,
+programme->program
 programmend->programmed
 programmetically->programmatically
 programmical->programmatical
@@ -24052,6 +24054,8 @@ rerference->reference
 rerferences->references
 rerpesentation->representation
 rertieves->retrieves
+reruirement->requirement
+reruirements->requirements
 reruning->rerunning
 rerurn->return, rerun,
 rerwite->rewrite
@@ -29669,6 +29673,7 @@ uploder->uploader
 uploders->uploaders
 uploding->uploading
 uplods->uploads
+uppler->upper
 uppon->upon
 upported->supported
 upporterd->supported
