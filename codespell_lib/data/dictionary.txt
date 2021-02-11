@@ -1433,7 +1433,7 @@ allopone->allophone
 allopones->allophones
 allos->allows
 alloted->allotted
-alloud->aloud
+alloud->aloud, allowed,
 allowd->allowed, allow, allows,
 allowe->allowed, allow, allows,
 allpication->application
@@ -1456,6 +1456,7 @@ allwo->allow
 allwos->allows
 allws->allows
 allwys->always
+almoast->almost
 almostly->almost
 almsot->almost
 alo->also
@@ -2333,6 +2334,7 @@ arguement->argument
 arguements->arguments
 arguemnt->argument
 arguemnts->arguments
+arguemtn->argument
 arguemtns->arguments
 argumant->argument
 argumants->arguments
@@ -13024,6 +13026,7 @@ fiels->feels, fields, files, phials,
 fiercly->fiercely
 fightings->fighting
 figurestyle->figurestyles
+fike->file
 filal->final
 fileds->fields
 fileld->field
@@ -18164,6 +18167,7 @@ mmatching->matching
 mmbers->members
 mmnemonic->mnemonic
 mnay->many
+moast->most
 mobify->modify
 mocrochip->microchip
 mocrochips->microchips
