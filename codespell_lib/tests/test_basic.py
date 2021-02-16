@@ -125,6 +125,22 @@ def test_basic(tmpdir, capsys):
     assert cs.main(d) == 0
 
 
+def test_capitalization(tmpdir, capsys):
+    """Test capitaliztion functionality."""
+    fname = op.join(str(tmpdir), 'tmp')
+    with open(fname, 'w') as f:
+        f.write('TCP\nip\nAws\nTcp')
+    assert cs.main('--builtin', 'capitalization', fname) == 3
+    code, _, stderr = cs.main(
+        '-w', '--builtin', 'capitalization', fname, std=True)
+    assert code == 0
+    assert 'FIXED:' in stderr
+    with open(fname) as f:
+        new_content = f.read()
+    assert cs.main(fname) == 0
+    assert new_content == 'TCP\nIP\nAWS\nTCP'
+
+
 def test_interactivity(tmpdir, capsys):
     """Test interaction"""
     # Windows can't read a currently-opened file, so here we use

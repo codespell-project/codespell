@@ -61,6 +61,8 @@ _builtin_dictionaries = (
         None, None, None, None,),
     ('en-GB_to_en-US', 'for corrections from en-GB to en-US', '_en-GB_to_en-US',  # noqa: E501
         True, True, ('en_GB',), ('en_US',)),
+    ('capitalization', 'for using uppercase/lowercase properly', '_capitalization',
+        None, None, None, None,),
 )
 _builtin_default = 'clear,rare'
 
@@ -429,10 +431,7 @@ def build_dict(filename, misspellings, ignore_words):
     with codecs.open(filename, mode='r', encoding='utf-8') as f:
         for line in f:
             [key, data] = line.split('->')
-            # TODO for now, convert both to lower. Someday we can maybe add
-            # support for fixing caps.
             key = key.lower()
-            data = data.lower()
             if key in ignore_words:
                 continue
             data = data.strip()
@@ -469,6 +468,9 @@ def is_text_file(filename):
 
 
 def fix_case(word, fixword):
+    if fixword[0] == '!':
+        # Capitalization matters!
+        return fixword[1:]
     if word == word.capitalize():
         return fixword.capitalize()
     elif word == word.upper():
@@ -626,6 +628,9 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
 
                 if summary and fix:
                     summary.update(lword)
+
+                if word == fixword:  # skip if capitalization was not fixed
+                    continue
 
                 if word in fixed_words:  # can skip because of re.sub below
                     continue
