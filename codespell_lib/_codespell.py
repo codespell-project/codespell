@@ -61,8 +61,8 @@ _builtin_dictionaries = (
         None, None, None, None,),
     ('en-GB_to_en-US', 'for corrections from en-GB to en-US', '_en-GB_to_en-US',  # noqa: E501
         True, True, ('en_GB',), ('en_US',)),
-    ('capitalization', 'for using uppercase/lowercase properly', '_capitalization',
-        None, None, None, None,),
+    ('capitalization', 'for using uppercase/lowercase properly',
+        '_capitalization', None, None, None, None,),
 )
 _builtin_default = 'clear,rare'
 
