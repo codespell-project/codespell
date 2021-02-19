@@ -1525,7 +1525,9 @@ alterative->alternative
 alteratives->alternatives
 alterior->ulterior
 alternaive->alternative
+alternaives->alternatives
 alternarive->alternative
+alternarives->alternatives
 alternatievly->alternatively
 alternativey->alternatively
 alternativly->alternatively
@@ -3869,6 +3871,7 @@ bloekes->blokes
 bloeks->blokes
 bloekss->blokes
 blohted->bloated
+blok->block, bloke,
 blokc->block, bloke,
 blokcer->blocker
 blokchain->blockchain
@@ -3876,7 +3879,10 @@ blokchains->blockchains
 blokcing->blocking
 blokcs->blocks, blokes,
 blokcss->blocks, blokes,
+bloked->blocked
+bloker->blocker
 bloking->blocking
+bloks->blocks, blokes,
 blong->belong
 blonged->belonged
 blonging->belonging
@@ -4014,6 +4020,8 @@ bounday->boundary
 boundays->boundaries
 bounderies->boundaries
 boundery->boundary
+boundig->bounding
+boundimg->bounding
 boundrary->boundary
 boundries->boundaries
 boundry->boundary
@@ -5495,7 +5503,11 @@ coice->choice
 coincedentally->coincidentally
 coinitailize->coinitialize
 coinside->coincide
+coinsided->coincided
+coinsidence->coincidence
 coinsident->coincident
+coinsides->coincides
+coinsiding->coinciding
 cointain->contain
 cointained->contained
 cointaining->containing
@@ -6089,6 +6101,8 @@ componant->component
 componants->components
 componbents->components
 componding->compounding
+componemt->component
+componemts->components
 componenets->components
 componens->components
 componentes->components
@@ -7596,6 +7610,8 @@ coyprights->copyrights
 coyright->copyright
 coyrighted->copyrighted
 coyrights->copyrights
+cpacities->capacities
+cpacity->capacity
 cpation->caption
 cpoy->coy, copy,
 cppp->cpp
@@ -7763,6 +7779,7 @@ curerntly->currently
 curiousities->curiosities
 curiousity's->curiosity's
 curiousity->curiosity
+curnilinear->curvilinear
 currect->correct, current,
 currected->corrected
 currecting->correcting
@@ -18281,6 +18298,7 @@ monestaries->monasteries
 monestary->monastery, monetary,
 monestic->monastic
 monickers->monikers
+monitary->monetary
 moniter->monitor
 monitoing->monitoring
 monkies->monkeys
@@ -28819,7 +28837,7 @@ tunelled->tunnelled
 tunelling->tunneling
 tunned->tuned
 tunnell->tunnel
-tunning->tuning
+tunning->tuning, running,
 tuotiral->tutorial
 tuotirals->tutorials
 tupel->tuple
