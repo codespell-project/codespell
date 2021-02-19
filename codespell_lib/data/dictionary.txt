@@ -258,6 +258,13 @@ acccessing->accessing
 acccession->accession
 acccessor->accessor
 acccessors->accessors
+acccord->accord
+acccordance->accordance
+acccordances->accordances
+acccorded->accorded
+acccording->according
+acccordingly->accordingly
+acccords->accords
 acccount->account
 acccumulate->accumulate
 acccuracy->accuracy
@@ -345,6 +352,12 @@ acclerometers->accelerometers
 acclimitization->acclimatization
 accoding->according
 accodingly->accordingly
+accodr->accord
+accodrance->accordance
+accodred->accorded
+accodring->according
+accodringly->accordingly
+accodrs->accords
 accointing->accounting
 accoird->accord
 accoirding->according
@@ -390,7 +403,13 @@ accordinag->according
 accordinly->accordingly
 accordint->according
 accordintly->accordingly
+accordling->according
+accordlingly->accordingly
+accordng->according
+accordngly->accordingly
 accoriding->according
+accoridng->according
+accoridngly->accordingly
 accoring->according, occurring,
 accoringly->accordingly
 accorndingly->accordingly
@@ -3831,6 +3850,8 @@ blcoks->blocks
 bleading->bleeding
 blessd->blessed
 blessure->blessing
+bletooth->bluetooth
+bleutooth->bluetooth
 blindy->blindly
 Blitzkreig->Blitzkrieg
 bload->bloat
@@ -3863,8 +3884,11 @@ blongs->belongs
 bloted->bloated
 bluestooth->bluetooth
 bluetooh->bluetooth
+bluetoot->bluetooth
+bluetootn->bluetooth
 blured->blurred
 blurr->blur, blurred,
+blutooth->bluetooth
 bnecause->because
 boads->boards
 boardcast->broadcast
@@ -17851,6 +17875,8 @@ micoscopy->microscopy
 Micosoft->Microsoft
 micrcontroller->microcontroller
 micrcontrollers->microcontrollers
+microcontroler->microcontroller
+microcontrolers->microcontrollers
 Microfost->Microsoft
 microntroller->microcontroller
 microntrollers->microcontrollers
@@ -30656,10 +30682,16 @@ worfklows->workflows
 worflow->workflow
 worflows->workflows
 workaorund->workaround
+workaound->workaround
+workaounds->workarounds
 workaraound->workaround
+workaraounds->workarounds
 workarbound->workaround
+workaroud->workaround
+workarouds->workarounds
 workarould->workaround
 workaroung->workaround
+workaroungs->workarounds
 workarround->workaround
 workarrounds->workarounds
 workarund->workaround
@@ -30694,6 +30726,8 @@ workststion->workstation
 workststions->workstations
 world-reknown->world renown
 world-reknowned->world renowned
+worload->workload
+worloads->workloads
 worls->world
 worng->wrong, worn,
 wornged->wronged
@@ -30741,6 +30775,8 @@ writters->writers
 writtin->written, writing,
 writting->writing
 writtten->written
+wrkload->workload
+wrkloads->workloads
 wrod->word
 wroet->wrote
 wrog->wrong
@@ -30749,6 +30785,8 @@ wroked->worked
 wrokflow->workflow
 wrokflows->workflows
 wroking->working
+wrokload->workload
+wrokloads->workloads
 wroks->works
 wron->wrong
 wronf->wrong
