@@ -5010,6 +5010,12 @@ chiledren->children
 chilren->children
 chineese->Chinese
 chiop->chip, chop,
+chiper->cipher, chipper, chimer,
+chipers->ciphers, chippers, chimers,
+chipersuite->ciphersuite
+chipersuites->ciphersuites
+chipertext->ciphertext
+chipertexts->ciphertexts
 chipet->chipset
 chipslect->chipselect
 chipstes->chipsets
@@ -5065,6 +5071,8 @@ cicruit->circuit
 cicruits->circuits
 cicular->circular
 ciculars->circulars
+cihpher->cipher
+cihphers->ciphers
 cilent->client, silent,
 cilents->clients, silents, silence,
 cilincer->cylinder, silencer,
@@ -5082,7 +5090,22 @@ cintaner->container
 ciontrol->control
 ciper->cipher
 cipers->ciphers
+cipersuite->ciphersuite
+cipersuites->ciphersuites
+cipertext->ciphertext
+cipertexts->ciphertexts
+ciph->cipher, chip,
+ciphe->cipher
 cipherntext->ciphertext
+ciphersuit->ciphersuite
+ciphersuits->ciphersuites
+ciphersute->ciphersuite
+ciphersutes->ciphersuites
+cipheruite->ciphersuite
+cipheruites->ciphersuites
+ciphes->ciphers
+ciphr->cipher
+ciphrs->ciphers
 cips->chips
 circomvent->circumvent
 circomvented->circumvented
@@ -7826,6 +7849,10 @@ cylnder->cylinder
 cylnders->cylinders
 cylynders->cylinders
 cymk->CMYK
+cyphersuite->ciphersuite
+cyphersuites->ciphersuites
+cyphertext->ciphertext
+cyphertexts->ciphertexts
 cyprt->crypt
 cyprtic->cryptic
 cyprto->crypto
