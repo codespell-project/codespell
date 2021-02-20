@@ -20948,12 +20948,12 @@ plalforms->platforms
 planation->plantation
 plantext->plaintext
 plantiff->plaintiff
-plase->please, place,
-plased->placed, pleased,
+plase->place, please, phase, plaice,
+plased->placed, pleased, phased,
 plasement->placement
 plasements->placements
-plases->places, pleases,
-plasing->placing, pleasing,
+plases->places, pleases, phases,
+plasing->placing, pleasing, phasing,
 plateu->plateau
 platfarm->platform
 platfarms->platforms
@@ -23978,7 +23978,7 @@ replactes->replaces, replicates,
 replacting->replacing, replicating,
 replaint->repaint
 replase->replace, relapse,
-replased->replaced, relapsed,
+replased->replaced, relapsed, rephase,
 replasement->replacement
 replasements->replacements
 replases->replaces, relapses,
@@ -27545,6 +27545,7 @@ sutisfying->satisfying
 suttle->subtle, shuttle,
 suttled->shuttled
 suttles->shuttles
+suttlety->subtlety
 suttling->shuttling
 suuport->support
 suuported->supported
