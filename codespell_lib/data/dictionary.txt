@@ -7295,6 +7295,8 @@ coppy->copy, choppy,
 copright->copyright
 coprighted->copyrighted
 coprights->copyrights
+coproccessor->coprocessor
+coproccessors->coprocessors
 coprocesor->coprocessor
 coprright->copyright
 coprrighted->copyrighted
@@ -14029,6 +14031,7 @@ glight->flight
 gloab->globe
 gloabal->global
 gloabl->global
+globablly->globally
 globbal->global
 globel->global
 glorfied->glorified
@@ -19333,6 +19336,7 @@ nuber->number
 nubering->numbering
 nubmer->number
 nubmers->numbers
+nucleous->nucleus, nucleolus,
 nucular->nuclear
 nuculear->nuclear
 nuisanse->nuisance
@@ -26542,6 +26546,9 @@ spurrious->spurious
 sqare->square
 sqared->squared
 sqares->squares
+sqash->squash
+sqashed->squashed
+sqashing->squashing
 sqaure->square
 sqaured->squared
 sqaures->squares
