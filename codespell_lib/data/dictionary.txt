@@ -28989,7 +28989,7 @@ trageted->targeted
 trageting->targeting
 tragets->targets
 traiing->trailing, training,
-trailling->trailing
+trailling->trailing, trialling, trilling,
 traingle->triangle
 traingular->triangular
 traingulate->triangulate
@@ -28999,16 +28999,31 @@ traingulating->triangulating
 traingulation->triangulation
 traingulations->triangulations
 trainig->training
+trainigs->trainings
+trainling->training
+trainng->training
+trainngs->trainings
+traked->tracked
 traker->tracker
+trakers->trackers
 traking->tracking
-traling->trailing, trialing,
-trama->trauma
+tral->trail, trial,
+traled->trailed, trialed, trawled, traced, traded, traveled,
+traling->trailing, trialing, trawling, tracing, trading, traveling,
+tralled->trailed, trialled, trilled, trolled, trawled, travelled,
+tralling->trailing, trialling, trilling, trolling, thralling, travelling,
+trals->trails, trials,
+trama->trauma, trams,
+tramas->traumas, trams,
 tramsmit->transmit
+tramsmits->transmits
 tramsmitted->transmitted
+tramsmitting->transmitting
 tranaction->transaction
 tranactional->transactional
 tranactions->transactions
 tranasction->transaction
+tranasctions->transactions
 tranceiver->transceiver
 tranceivers->transceivers
 trancendent->transcendent
@@ -29028,7 +29043,11 @@ tranformed->transformed
 tranforming->transforming
 tranforms->transforms
 tranient->transient
+tranients->transients
+tranistion->transition
+tranistioned->transitioned
 tranistioning->transitioning
+tranistions->transitions
 tranlatable->translatable
 tranlate->translate
 tranlated->translated
@@ -29043,11 +29062,17 @@ tranmitting->transmitting
 tranparent->transparent
 tranparently->transparently
 tranport->transport
+tranported->transported
+tranporting->transporting
+tranports->transports
 transacion->transaction
+transacions->transactions
 transaciton->transaction
+transacitons->transactions
 transaction-spacific->transaction-specific
 transactiona->transactions, transactional,
 transactoin->transaction
+transactoins->transactions
 transaition->translation, transition, transaction,
 transaitions->translations, transitions, transactions,
 transalation->translation
@@ -29346,13 +29371,17 @@ tressle->trestle
 treting->treating
 trgistration->registration
 trhe->the
+trian->train
 triancle->triangle
 triancles->triangles
+trianed->trained
 triange->triangle
 trianglular->triangular
 trianglutaion->triangulation
 triangulataion->triangulation
 triangultaion->triangulation
+trianing->training
+trians->trains
 triger->trigger, tiger,
 trigered->triggered
 trigerred->triggered
@@ -29362,6 +29391,8 @@ trigged->triggered
 triggerd->triggered
 triggeres->triggers
 triggerred->triggered
+triggerring->triggering
+triggerrs->triggers
 triggger->trigger
 triguered->triggered
 trik->trick, trike,
@@ -29389,13 +29420,20 @@ trnsfered->transferred
 trnsfers->transfers
 troling->trolling
 trottle->throttle
+trottled->throttled, trotted,
+trottling->throttling, trotting,
+troublehshoot->troubleshoot
 troublehshooting->troubleshooting
+troublshoot->troubleshoot
 troublshooting->troubleshooting
 troughput->throughput
 trought->through
 troup->troupe
 troups->troupes, troops,
 trriger->trigger
+trrigered->triggered
+trrigering->triggering
+trrigers->triggers
 trubble->trouble
 trubbled->troubled
 trubbles->troubles
