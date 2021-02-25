@@ -1538,6 +1538,8 @@ alternatievly->alternatively
 alternativey->alternatively
 alternativly->alternatively
 alternatve->alternative
+alternavtive->alternative
+alternavtives->alternatives
 alternetive->alternative
 alternetives->alternatives
 alternitives->alternatives
@@ -1916,10 +1918,12 @@ appeares->appears
 appearning->appearing
 appeciate->appreciate
 appeded->appended
+appeding->appending
 appedn->append
 appen->append
 appendend->appended
 appendent->appended
+appendig->appending
 appendign->appending
 appened->append, appended, happened,
 appeneded->appended
@@ -4221,6 +4225,7 @@ brwosing->browsing
 btye->byte
 btyes->bytes
 buad->baud
+bubbless->bubbles
 Buddah->Buddha
 Buddist->Buddhist
 bufefr->buffer
@@ -7658,6 +7663,7 @@ couuldn't->couldn't
 covarage->coverage
 covarages->coverages
 covarege->coverage
+covection->convection
 covention->convention
 coventions->conventions
 covere->cover
@@ -7833,6 +7839,7 @@ cumulatative->cumulative
 cumulattive->cumulative
 cuncurency->concurrency
 cunter->counter
+curce->curse, curve, course,
 curch->church
 curcuit->circuit
 curcuits->circuits
@@ -8159,6 +8166,11 @@ deativate->deactivate
 deativated->deactivated
 deativates->deactivates
 deativation->deactivation
+deattach->detach
+deattached->detached
+deattaches->detaches
+deattaching->detaching
+deattachment->detachment
 deaults->defaults
 deauthenication->deauthentication
 debain->Debian
@@ -16541,6 +16553,7 @@ inteval->interval
 intevals->intervals
 intevene->intervene
 intgers->integers
+intgral->integral
 inthe->in the
 intiailise->initialise
 intiailised->initialized
@@ -18193,6 +18206,7 @@ mis-match->mismatch
 misalignement->misalignment
 misalinged->misaligned
 misbehaive->misbehave
+miscallenous->miscellaneous
 misceancellous->miscellaneous
 miscelaneous->miscellaneous
 miscellanious->miscellaneous
@@ -18711,6 +18725,8 @@ navagate->navigate
 navagating->navigating
 navagation->navigation
 navagitation->navigation
+navtive->native
+navtives->natives
 nax->max, nad,
 naxima->maxima
 naximal->maximal
@@ -22464,6 +22480,9 @@ pxoxies->proxies
 pxoxy->proxy
 pyhon->python
 pyhsical->physical
+pyhsically->physically
+pyhsicals->physicals
+pyhsicaly->physically
 pyhthon->python
 pyhton->python
 pyramide->pyramid
@@ -27064,6 +27083,7 @@ stuido->studio
 stuidos->studios
 stuill->still
 stummac->stomach
+sturctural->structural
 sturcture->structure
 sturctures->structures
 sturture->structure
