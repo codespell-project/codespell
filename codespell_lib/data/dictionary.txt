@@ -2896,6 +2896,9 @@ attribuition->attribution
 attribure->attribute
 attribured->attributed
 attribures->attributes
+attriburte->attribute
+attriburted->attributed
+attriburtes->attributes
 attriburtion->attribution
 attribut->attribute
 attributei->attribute
@@ -3837,6 +3840,7 @@ bitis->bits
 bitmast->bitmask
 bitnaps->bitmaps
 bitwise-orring->bitwise-oring
+biult->built, build,
 bizare->bizarre
 bizarely->bizarrely
 bizzare->bizarre
@@ -7909,6 +7913,8 @@ cycic->cyclic
 cyclinder->cylinder
 cyclinders->cylinders
 cycular->circular
+cylcic->cyclic
+cylcical->cyclical
 cyle->cycle
 cylic->cyclic
 cylider->cylinder
@@ -15436,6 +15442,8 @@ inconsistendtly->inconsistently
 inconsistenly->inconsistently
 inconsistented->inconsistent
 inconsisteny->inconsistency, inconsistent,
+inconsitant->inconsistent
+inconsitency->inconsistency
 inconsitent->inconsistent
 inconstent->inconsistent, inconstant,
 inconvertable->inconvertible
@@ -17326,6 +17334,7 @@ localed->located
 localtion->location
 localtions->locations
 localzation->localization
+locatins->locations
 loccked->locked
 locgical->logical
 lockingf->locking
@@ -18092,7 +18101,14 @@ mircosoft->Microsoft
 mirgate->migrate
 mirgated->migrated
 mirgates->migrates
+miror->mirror, minor,
+mirored->mirrored
+miroring->mirroring
 mirorr->mirror
+mirorred->mirrored
+mirorring->mirroring
+mirorrs->mirrors
+mirors->mirrors, minors,
 mirro->mirror
 mirroed->mirrored
 mirrorn->mirror
@@ -19741,6 +19757,7 @@ operaand->operand
 operaands->operands
 operaion->operation
 operaiton->operation
+operandes->operands
 operaror->operator
 operatation->operation
 operatations->operations
@@ -20962,7 +20979,12 @@ plalforms->platforms
 planation->plantation
 plantext->plaintext
 plantiff->plaintiff
-plase->please
+plase->place, please, phase, plaice,
+plased->placed, pleased, phased,
+plasement->placement
+plasements->placements
+plases->places, pleases, phases,
+plasing->placing, pleasing, phasing,
 plateu->plateau
 platfarm->platform
 platfarms->platforms
@@ -21577,6 +21599,7 @@ presenece->presence
 presener->presenter
 presense->presence
 presentaion->presentation
+presentaional->presentational
 presentaions->presentations
 presernt->present
 preserrved->preserved
@@ -23103,6 +23126,10 @@ reconsidder->reconsider
 reconstrcut->reconstruct
 reconstrcuted->reconstructed
 reconstrcution->reconstruction
+reconstuct->reconstruct
+reconstucted->reconstructed
+reconstucting->reconstructing
+reconstucts->reconstructs
 recontructed->reconstructed
 recontructing->reconstructing
 recontruction->reconstruction
@@ -23537,6 +23564,7 @@ relevence->relevance
 relevent->relevant
 relfected->reflected
 reliablity->reliability
+relie->rely, relies, really, relief,
 relient->reliant
 religeous->religious
 religous->religious
@@ -23981,6 +24009,12 @@ replacted->replaced, replicated,
 replactes->replaces, replicates,
 replacting->replacing, replicating,
 replaint->repaint
+replase->replace, relapse, rephase,
+replased->replaced, relapsed, rephased,
+replasement->replacement
+replasements->replacements
+replases->replaces, relapses, rephases,
+replasing->replacing, relapsing, rephasing,
 replcace->replace
 replcaced->replaced
 replcaof->replicaof
@@ -25074,10 +25108,16 @@ seconday->secondary
 secondy->secondly, secondary,
 seconf->second
 seconly->secondly
+secont->second
+secontary->secondary
+secontly->secondly
 seconts->seconds
 secord->second
 secotr->sector
 secound->second
+secoundary->secondary
+secoundly->secondly
+secounds->seconds
 secquence->sequence
 secratary->secretary
 secretery->secretary
@@ -27533,13 +27573,22 @@ susupend->suspend
 sutable->suitable, stable,
 sutdown->shutdown
 sute->site, suite, suit,
-suttle->subtle
+sutisfaction->satisfaction
+sutisfied->satisfied
+sutisfies->satisfies
+sutisfy->satisfy
+sutisfying->satisfying
+suttle->subtle, shuttle,
+suttled->shuttled
+suttles->shuttles
+suttlety->subtlety
+suttling->shuttling
 suuport->support
 suuported->supported
 suuporting->supporting
 suuports->supports
 suvenear->souvenir
-svae->save
+svae->save, suave,
 svelt->svelte
 swaer->swear
 swaers->swears
@@ -28638,6 +28687,7 @@ transfoprmation->transformation
 transforation->transformation
 transforations->transformations
 transformated->transformed
+transformates->transforms
 transformaton->transformation
 transformatted->transformed
 transforme->transformed, transformer, transform,
@@ -30263,8 +30313,11 @@ vetween->between
 vew->view
 veyr->very
 vhild->child
-viatnamese->vietnamese
+viatnamese->Vietnamese
+vice-fersa->vice-versa
+vice-wersa->vice-versa
 vicefersa->vice-versa
+vicewersa->vice-versa
 videostreamming->videostreaming
 vieport->viewport
 vieports->viewports
@@ -30657,6 +30710,7 @@ whichs->which's
 whicht->which
 whihc->which
 whihch->which
+whike->while
 whilest->whilst
 whiltelist->whitelist
 whiltelisted->whitelisted
@@ -30664,15 +30718,16 @@ whiltelisting->whitelisting
 whiltelists->whitelists
 whilw->while
 whioch->which
-whiped->wiped
-whis->this
-whish->wish
+whiped->whipped, wiped,
+whis->this, whisk,
+whish->wish, whisk,
 whishlist->wishlist
 whitch->which
 whitchever->whichever
 whitepsace->whitespace
 whitepsaces->whitespaces
 whith->with
+whithe->with, white, with the,
 whithin->within
 whithout->without
 whitout->without, whiteout,
@@ -30696,6 +30751,11 @@ whtihin->within
 whyth->with
 whythout->without
 wiat->wait
+wice->vice
+wice-versa->vice-versa
+wice-wersa->vice-versa
+wiceversa->vice-versa
+wicewersa->vice-versa
 wich->which
 widesread->widespread
 widged->widget
