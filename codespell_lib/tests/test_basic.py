@@ -352,7 +352,7 @@ def test_exclude_file(
     """Test exclude file functionality."""
     d = str(tmpdir)
     with open(op.join(d, "bad.txt"), "wb") as f:
-        f.write(b"1 abandonned 1\n2 abandonned 2\n")
+        f.write(b"1 abandonned 1\r\n2 abandonned 2\r\n")
     bad_name = f.name
     assert cs.main(bad_name) == 2
     with open(op.join(d, "tmp.txt"), "wb") as f:
