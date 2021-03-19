@@ -627,6 +627,9 @@ activiti->activity, activities,
 activitis->activities
 activitiy->activity
 activly->actively
+activste->activate
+activsted->activated
+activstes->activates
 activtes->activates
 activties->activities
 activty->activity
@@ -4136,6 +4139,8 @@ brillant->brilliant
 brimestone->brimstone
 bringin->bringing
 bringtofont->bringtofront
+brite->bright
+briter->brighter
 Britian->Britain
 Brittish->British
 brnach->branch
@@ -4857,6 +4862,10 @@ challege->challenge
 chambre->chamber
 chambres->chambers
 Champange->Champagne
+chanage->change
+chanaged->changed
+chanages->changes
+chanaging->changing
 chanceled->canceled
 chanceling->canceling
 chanched->changed
@@ -8678,6 +8687,7 @@ demostrating->demonstrating
 demostration->demonstration
 demudulator->demodulator
 denegrating->denigrating
+denisty->density
 densitity->density
 densly->densely
 denstiy->density
@@ -9049,6 +9059,7 @@ desintation->destination
 desintations->destinations
 desintegrated->disintegrated
 desintegration->disintegration
+desinty->density, destiny
 desipite->despite
 desireable->desirable
 desision->decision
@@ -17039,11 +17050,12 @@ launchs->launch, launches,
 launck->launch
 launhed->launched
 lavae->larvae
-lavel->level, laravel,
-laveled->leveled
-laveling->leveling
-lavelling->levelling
-lavels->levels
+lavel->level, label, laravel,
+laveled->leveled, labeled,
+laveling->leveling, labeling,
+lavelled->leveled, labelled,
+lavelling->levelling, labelling,
+lavels->levels, labels,
 layed->laid
 lazer->laser
 lazyness->laziness
@@ -24799,6 +24811,8 @@ rquiring->requiring
 rranslation->translation
 rranslations->translations
 rrase->erase
+rrror->error
+rrrors->errors
 rsizing->resizing, sizing,
 rsource->resource, source,
 rsourced->resourced, sourced,
@@ -27490,6 +27504,11 @@ supproting->supporting
 supprots->supports
 supprt->support
 supprted->supported
+suppurt->support
+suppurted->supported
+suppurting->supporting
+suppurtive->supportive
+suppurts->supports
 suppy->supply
 suppying->supplying
 suprassing->surpassing
@@ -28981,6 +29000,7 @@ triked->tricked
 trikery->trickery
 triks->tricks, trikes,
 triky->tricky
+trilinar->trilinear
 trimed->trimmed
 triming->trimming, timing,
 tring->trying, string, ring,
