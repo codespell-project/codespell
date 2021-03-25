@@ -308,11 +308,19 @@ def test_ignore_dictionary(
     """Test ignore dictionary functionality."""
     d = str(tmpdir)
     with open(op.join(d, "bad.txt"), "w") as f:
-        f.write("1 abandonned 1\n2 abandonned 2\nabondon\n")
+        f.write(
+            "1 abandonned 1\n"
+            "2 abandonned 2\n"
+            "3 abilty 3\n"
+            "4 abilty 4\n"
+            "5 ackward 5\n"
+            "6 ackward 6\n"
+            "abondon\n"
+        )
     bad_name = f.name
-    assert cs.main(bad_name) == 3
+    assert cs.main(bad_name) == 7
     with open(op.join(d, "ignore.txt"), "w") as f:
-        f.write("abandonned\n")
+        f.write("abandonned\nabilty\r\nackward ")
     assert cs.main("-I", f.name, bad_name) == 1
 
 
