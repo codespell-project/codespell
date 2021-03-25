@@ -352,12 +352,26 @@ def test_exclude_file(
     """Test exclude file functionality."""
     d = str(tmpdir)
     with open(op.join(d, "bad.txt"), "wb") as f:
-        f.write(b"1 abandonned 1\r\n2 abandonned 2\r\n")
+        # check all possible combinations of lines to ignore and ignores
+        combinations = "".join(
+            "%(n)s abandonned %(n)s\n"
+            "%(n)s abandonned %(n)s\r\n"
+            "%(n)s abandonned %(n)s \n"
+            "%(n)s abandonned %(n)s \r\n" % {"n": n}
+            for n in range(1, 5)
+        )
+        f.write((combinations + "5 abandonned 5\n6 abandonned 6").encode("utf-8"))
     bad_name = f.name
-    assert cs.main(bad_name) == 2
+    assert cs.main(bad_name) == 18
     with open(op.join(d, "tmp.txt"), "wb") as f:
-        f.write(b"1 abandonned 1\n")
-    assert cs.main(bad_name) == 2
+        f.write(
+            "1 abandonned 1\n"
+            "2 abandonned 2\r\n"
+            "3 abandonned 3 \n"
+            "4 abandonned 4 \r\n"
+            "6 abandonned 6\n".encode("utf-8")
+        )
+    assert cs.main(bad_name) == 18
     assert cs.main("-x", f.name, bad_name) == 1
 
 
