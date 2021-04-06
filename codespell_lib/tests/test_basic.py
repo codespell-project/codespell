@@ -311,14 +311,17 @@ def test_ignore_dictionary(
         f.write(
             "1 abandonned 1\n"
             "2 abandonned 2\n"
-            "3 abilty 3\n"
+            "3 abandonned 3\r\n"
             "4 abilty 4\n"
-            "5 ackward 5\n"
-            "6 ackward 6\n"
+            "5 abilty 5\n"
+            "6 abilty 6\r\n"
+            "7 ackward 7\n"
+            "8 ackward 8\n"
+            "9 ackward 9\r\n"
             "abondon\n"
         )
     bad_name = f.name
-    assert cs.main(bad_name) == 7
+    assert cs.main(bad_name) == 10
     with open(op.join(d, "ignore.txt"), "w") as f:
         f.write("abandonned\nabilty\r\nackward ")
     assert cs.main("-I", f.name, bad_name) == 1
