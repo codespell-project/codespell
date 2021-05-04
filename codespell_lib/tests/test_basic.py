@@ -288,10 +288,12 @@ def test_encoding(tmpdir, capsys):
 def test_ignore(tmpdir, capsys):
     """Test ignoring of files and directories."""
     d = str(tmpdir)
-    with open(op.join(d, 'good.txt'), 'w') as f:
+    goodtxt = op.join(d, 'good.txt')
+    with open(goodtxt, 'w') as f:
         f.write('this file is okay')
     assert cs.main(d) == 0
-    with open(op.join(d, 'bad.txt'), 'w') as f:
+    badtxt = op.join(d, 'bad.txt')
+    with open(badtxt, 'w') as f:
         f.write('abandonned')
     assert cs.main(d) == 1
     assert cs.main('--skip=bad*', d) == 0
@@ -305,6 +307,9 @@ def test_ignore(tmpdir, capsys):
     assert cs.main('--skip=*ignoredir*', d) == 1
     assert cs.main('--skip=ignoredir', d) == 1
     assert cs.main('--skip=*ignoredir/bad*', d) == 1
+    badjs = op.join(d, 'bad.js')
+    copyfile(badtxt, badjs)
+    assert cs.main('--skip=*.js', goodtxt, badtxt, badjs) == 1
 
 
 def test_check_filename(tmpdir, capsys):

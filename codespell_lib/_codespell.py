@@ -840,7 +840,7 @@ def main(*args):
                 # skip (relative) directories
                 dirs[:] = [dir_ for dir_ in dirs if not glob_match.match(dir_)]
 
-        else:
+        elif not glob_match.match(filename):  # skip files
             bad_count += parse_file(
                 filename, colors, summary, misspellings, exclude_lines,
                 file_opener, word_regex, ignore_word_regex, context, options)
