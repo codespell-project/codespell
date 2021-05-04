@@ -2633,6 +2633,12 @@ associcated->associated
 associcates->associates
 associcating->associating
 associdated->associated
+associeate->associate
+associeated->associated
+associeates->associates
+associeating->associating
+associeation->association
+associeations->associations
 associeted->associated
 assocition->association
 associuated->associated
@@ -10129,6 +10135,12 @@ distnguished->distinguished
 distniguish->distinguish
 distniguished->distinguished
 distory->destroy, distort, history,
+distrbute->distribute
+distrbuted->distributed
+distrbutes->distributes
+distrbuting->distributing
+distrbution->distribution
+distrbutions->distributions
 distrebuted->distributed
 distribtion->distribution
 distribtions->distributions
@@ -19292,6 +19304,8 @@ non-usefull->useless
 non-virutal->non-virtual
 nonbloking->non-blocking
 noncombatents->noncombatants
+nonesense->nonsense
+nonesensical->nonsensical
 nonexistance->nonexistence
 nonexistant->nonexistent
 nonnegarive->nonnegative
@@ -21546,6 +21560,9 @@ prefetchs->prefetches
 prefferable->preferable
 prefferably->preferably
 preffered->preferred
+preffix->prefix
+preffixed->prefixed
+preffixes->prefixes
 prefices->prefixes
 preformance->performance
 pregancies->pregnancies
@@ -21925,6 +21942,10 @@ proffesor->professor
 proffessor->professor
 profilic->prolific
 profissional->professional
+proflie->profile
+proflier->profiler
+proflies->profiles
+profling->profiling
 profund->profound
 profundly->profoundly
 progagate->propagate
@@ -30887,6 +30908,7 @@ withput->without
 withs->with, widths,
 witht->with
 withthe->with the
+withuout->without
 witin->within
 witk->with
 witn->with
