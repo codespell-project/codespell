@@ -16076,9 +16076,18 @@ insersect->intersect
 insersected->intersected
 insersecting->intersecting
 insersects->intersects
+inserst->insert
+insersted->inserted
+inserster->inserter
+insersting->inserting
+inserstor->inserter
+insersts->inserts
 insertin->inserting
 insertino->inserting
 insesitive->insensitive
+insesitively->insensitively
+insesitiveness->insensitiveness
+insesitivity->insensitivity
 insetad->instead
 inseted->inserted
 insided->inside
@@ -16583,6 +16592,12 @@ intrumenting->instrumenting
 intruments->instruments
 intrusted->entrusted
 intstead->instead
+intstruct->instruct
+intstructed->instructed
+intstructer->instructor
+intstructing->instructing
+intstructor->instructor
+intstructs->instructs
 intterrupt->interrupt
 intuative->intuitive
 inturpratasion->interpretation
@@ -25513,6 +25528,9 @@ servies->services
 servive->service
 serwer->server, sewer,
 sesitive->sensitive
+sesitively->sensitively
+sesitiveness->sensitiveness
+sesitivity->sensitivity
 sessio->session
 sesssion->session
 sesssions->sessions
