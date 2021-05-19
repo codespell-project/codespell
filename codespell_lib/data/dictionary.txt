@@ -2932,7 +2932,13 @@ attruibutes->attributes
 atttached->attached
 atttribute->attribute
 atttributes->attributes
+atuhenticate->authenticate
+atuhenticated->authenticated
+atuhenticates->authenticates
+atuhenticating->authenticating
 atuhentication->authentication
+atuhenticator->authenticator
+atuhenticators->authenticators
 auccess->success
 auccessive->successive
 audeince->audience
@@ -2945,6 +2951,9 @@ aunthenticate->authenticate
 aunthenticated->authenticated
 aunthenticates->authenticates
 aunthenticating->authenticating
+aunthentication->authentication
+aunthenticator->authenticator
+aunthenticators->authenticators
 auospacing->autospacing
 auot->auto
 auotmatic->automatic
@@ -2961,6 +2970,8 @@ autenticated->authenticated
 autenticates->authenticates
 autenticating->authenticating
 autentication->authentication
+autenticator->authenticator
+autenticators->authenticators
 authecate->authenticate
 authecated->authenticated
 authecates->authenticates
@@ -3068,6 +3079,13 @@ authenrication->authentication
 authenricator->authenticator
 authenricators->authenticators
 authentcated->authenticated
+authentciate->authenticate
+authentciated->authenticated
+authentciates->authenticates
+authentciating->authenticating
+authentciation->authentication
+authentciator->authenticator
+authentciators->authenticators
 authenticaiton->authentication
 authenticateion->authentication
 authentiction->authentication
