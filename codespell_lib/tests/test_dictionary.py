@@ -28,7 +28,6 @@ except Exception as exp:  # probably ImportError, but maybe also language
             'aspell not found, but not required, skipping aspell tests. Got '
             'error during import:\n%s' % (exp,))
 
-ws = re.compile(r'.*\s.*')  # whitespace
 comma = re.compile(r'.*,.*')  # comma
 
 global_err_dicts = dict()
@@ -87,7 +86,6 @@ def _check_aspell(phrase, msg, in_aspell, fname, languages):
 
 
 def _check_err_rep(err, rep, in_aspell, fname, languages):
-    assert ws.match(err) is None, 'error %r has whitespace' % err
     assert comma.match(err) is None, 'error %r has a comma' % err
     assert len(rep) > 0, ('error %s: correction %r must be non-empty'
                           % (err, rep))
@@ -132,7 +130,6 @@ def _check_err_rep(err, rep, in_aspell, fname, languages):
 
 
 @pytest.mark.parametrize('err, rep, match', [
-    ('a a', 'bar', 'has whitespace'),
     ('a,a', 'bar', 'has a comma'),
     ('a', '', 'non-empty'),
     ('a', ' bar', 'start with whitespace'),

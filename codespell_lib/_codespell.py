@@ -28,7 +28,8 @@ import re
 import sys
 import textwrap
 
-word_regex_def = u"[\\w\\-'’`]+"
+# NOTE: flake8 suppression due to it not liking \] escape sequence
+word_regex_def = u"([\\w\\-'’`]+)([.,?!-:;><@#$%^&*()_+=/\]\\[])?"  # noqa W605
 encodings = ('utf-8', 'iso-8859-1')
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
@@ -536,10 +537,35 @@ def print_context(lines, index, context):
             print('%s %s' % ('>' if i == index else ':', lines[i].rstrip()))
 
 
+def extract_pairs(text, word_regex, ignore_word_regex):
+    previous = None
+    final_word = None
+    for match in extract_words(text, word_regex, ignore_word_regex):
+        try:
+            word = match.group(1)
+            if not word:
+                raise Exception("No word matches found. Bad regex?")
+            if previous:
+                yield previous
+                yield previous + " " + word
+            if match.group(2):  # hit punctuation, yield word as stand alone
+                yield word
+                previous = None
+            else:
+                previous = word
+            final_word = previous
+        except IndexError:
+            word = match.group(0)
+            yield word
+
+    if final_word:
+        yield final_word
+
+
 def extract_words(text, word_regex, ignore_word_regex):
     if ignore_word_regex:
         text = ignore_word_regex.sub(' ', text)
-    return word_regex.findall(text)
+    return word_regex.finditer(text)
 
 
 def parse_file(filename, colors, summary, misspellings, exclude_lines,
@@ -554,7 +580,8 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
         lines = f.readlines()
     else:
         if options.check_filenames:
-            for word in extract_words(filename, word_regex, ignore_word_regex):
+            for mtch in extract_words(filename, word_regex, ignore_word_regex):
+                word = mtch.group(1)
                 lword = word.lower()
                 if lword not in misspellings:
                     continue
@@ -608,7 +635,7 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
         fixed_words = set()
         asked_for = set()
 
-        for word in extract_words(line, word_regex, ignore_word_regex):
+        for word in extract_pairs(line, word_regex, ignore_word_regex):
             lword = word.lower()
             if lword in misspellings:
                 context_shown = False

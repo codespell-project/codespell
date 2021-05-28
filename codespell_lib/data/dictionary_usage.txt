@@ -1,8 +1,12 @@
 blacklist->blocklist
 blacklists->blocklists
+dummy value->place-holder value, sample value,
+grandfathered->legacy status
+man hours->person hours, engineer hours,
 man-in-the-middle->on-path attacker
 master->primary, leader, active, writer, coordinator, parent, manager, main,
 masters->primaries, leaders, actives, writers, coordinators, parents, managers,
+sanity check->quick check, confidence check, coherence check,
 slave->secondary, follower, standby, replica, reader, worker, helper, subordinate, subsystem,
 slaves->secondaries, followers, standbys, replicas, readers, workers, helpers, subordinates,
 whitelist->allowlist, permitlist,
