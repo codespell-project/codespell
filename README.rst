@@ -154,7 +154,7 @@ If you have a suggested typo that you'd like to see merged please follow these s
 
 1. Make sure you read the instructions mentioned in the ``Dictionary format`` section above to submit correctly formatted entries.
 
-2. Choose the correct dictionary file to add your typo too. See `codespell --help` for explanations of the different dictionaries.
+2. Choose the correct dictionary file to add your typo to. See `codespell --help` for explanations of the different dictionaries.
 
 3. Sort the dictionaries. This is done by invoking (in the top level directory of ``codespell/``)::
 
