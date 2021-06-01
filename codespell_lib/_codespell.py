@@ -283,9 +283,9 @@ def parse_options(args):
                         action='store', type=str,
                         help='regular expression which is used to find '
                              'patterns to ignore by treating as whitespace. '
-                             'When writing regexes, consider ensuring there '
-                             'are boundary non-word chars, e.g., '
-                             '"\\bmatch\\b". Defaults to empty/disabled.')
+                             'When writing regular expressions, consider '
+                             'ensuring there are boundary non-word chars, '
+                             'e.g., "\\bmatch\\b". Defaults to empty/disabled.')
     parser.add_argument('-I', '--ignore-words',
                         action='append', metavar='FILE',
                         help='file that contains words which will be ignored '
