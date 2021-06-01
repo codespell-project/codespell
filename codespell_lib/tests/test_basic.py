@@ -629,7 +629,9 @@ def test_uri_ignore_words_list_option_email(tmpdir, capsys):
 
     # Variations where no error is ignored.
     for variation in ('# Please see example @ abandonned for info\n',
-                      '# Please see abandonned@ example for info\n'):
+                      '# Please see abandonned@ example for info\n',
+                      '# Please see mailto:foo@example.com?subject=Test'
+                      ' abandonned for info\n'):
         with open(op.join(d, 'flag.txt'), 'w') as f:
             f.write(variation)
         assert cs.main(f.name) == 1, variation
