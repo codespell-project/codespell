@@ -32,7 +32,7 @@ word_regex_def = u"[\\w\\-'’`]+"
 # While we want to treat characters like ( or " as okay for a starting break,
 # these may occur unescaped in URIs, and so we are more restrictive on the
 # endpoint.  Emails are more restrictive, so the endpoint remains flexible.
-uri_regex_def = (u"(\\b(?:https?|t?ftp|file|git|smb)://[^\\s]+(?=$|\\s)|"
+uri_regex_def = (u"(\\b(?:https?|[ts]?ftp|file|git|smb)://[^\\s]+(?=$|\\s)|"
                  u"\\b[\\w.%+-]+@[\\w.-]+\\b)")
 encodings = ('utf-8', 'iso-8859-1')
 USAGE = """
