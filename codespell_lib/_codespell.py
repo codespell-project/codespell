@@ -285,7 +285,8 @@ def parse_options(args):
                              'patterns to ignore by treating as whitespace. '
                              'When writing regular expressions, consider '
                              'ensuring there are boundary non-word chars, '
-                             'e.g., "\\bmatch\\b". Defaults to empty/disabled.')
+                             'e.g., "\\bmatch\\b". Defaults to '
+                             'empty/disabled.')
     parser.add_argument('-I', '--ignore-words',
                         action='append', metavar='FILE',
                         help='file that contains words which will be ignored '
