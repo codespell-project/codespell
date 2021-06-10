@@ -2252,6 +2252,8 @@ arbtrarily->arbitrarily
 arbtrary->arbitrary
 arbutrarily->arbitrarily
 arbutrary->arbitrary
+arch-dependet->arch-dependent
+arch-independet->arch-independent
 archaelogical->archaeological
 archaelogists->archaeologists
 archaelogy->archaeology
@@ -2845,6 +2847,7 @@ attemped->attempted
 attemping->attempting
 attemppt->attempt
 attemps->attempts
+attemptes->attempts
 attemptting->attempting
 attemt->attempt
 attemted->attempted
@@ -7310,6 +7313,8 @@ coprights->copyrights
 coproccessor->coprocessor
 coproccessors->coprocessors
 coprocesor->coprocessor
+coprorate->corporate
+coprorates->corporates
 coprright->copyright
 coprrighted->copyrighted
 coprrights->copyrights
@@ -8766,6 +8771,7 @@ dependendent->dependent
 dependenies->dependencies
 dependening->depending
 dependeny->dependency
+dependet->dependent
 dependices->dependencies
 dependicy->dependency
 dependig->depending
@@ -14914,6 +14920,10 @@ idividuals->individuals
 iechart->piechart
 ifself->itself
 ifset->if set
+ignest->ingest
+ignested->ingested
+ignesting->ingesting
+ignests->ingests
 ignoded->ignored
 ignonre->ignore
 ignora->ignore
@@ -15489,6 +15499,10 @@ incoporate->incorporate
 incoporated->incorporated
 incoporates->incorporates
 incoporating->incorporating
+incoprorate->incorporate
+incoprorated->incorporated
+incoprorates->incorporates
+incoprorating->incorporating
 incorect->incorrect
 incorectly->incorrectly
 incoropate->incorporate
@@ -15620,6 +15634,7 @@ independed->independent
 independedly->independently
 independend->independent
 independendet->independent
+independet->independent
 independly->independently
 independnent->independent
 independnet->independent
@@ -17887,6 +17902,8 @@ mesage->message
 mesages->messages
 mesaureed->measured
 meshe->mesh, meshed, meshes,
+messae->message, messy,
+messaes->messages
 messag->message
 messagetqueue->messagequeue
 messagin->messaging
@@ -20858,6 +20875,8 @@ persisten->persistent
 persistented->persisted
 persited->persisted
 personalitie->personality
+personalitites->personalities
+personalitity->personality
 personalitys->personalities
 personaly->personally
 personel->personnel, personal,
@@ -22004,11 +22023,9 @@ programatic->programmatic
 programatically->programmatically
 programattically->programmatically
 programd->programmed
-programed->programmed
 programemer->programmer
 programemers->programmers
 programers->programmers
-programing->programming
 programm->program, programme,
 programmaticaly->programmatically
 programmd->programmed, programme,
@@ -24755,6 +24772,7 @@ rotat->rotate
 rotataion->rotation
 rotataions->rotations
 rotatd->rotated, rotate,
+rotateable->rotatable
 rotatio->rotation, ratio,
 rotatios->rotations, ratios,
 rotats->rotates, rotate,
@@ -26681,6 +26699,8 @@ sript->script
 sripts->scripts
 srollbar->scrollbar
 srouce->source
+srtifact->artifact
+srtifacts->artifacts
 srting->string, sorting,
 srtings->strings
 srtructure->structure
@@ -26964,6 +26984,11 @@ struggels->struggles
 struttural->structural
 strutture->structure
 struture->structure
+ststion->station
+ststionary->stationary
+ststioned->stationed
+ststionery->stationery
+ststions->stations
 ststr->strstr
 stteting->setting
 sttetings->settings
@@ -27150,6 +27175,8 @@ subshystem->subsystem
 subshystems->subsystems
 subsidary->subsidiary
 subsiduary->subsidiary
+subsiquent->subsequent
+subsiquently->subsequently
 subsituent->substituent
 subsituents->substituents
 subsitutable->substitutable
