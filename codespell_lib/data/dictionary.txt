@@ -1980,11 +1980,13 @@ appretiated->appreciated
 appretiates->appreciates
 appretiating->appreciating
 appretiation->appreciation
+appretiative->appreciative
 apprieciate->appreciate
 apprieciated->appreciated
 apprieciates->appreciates
 apprieciating->appreciating
 apprieciation->appreciation
+apprieciative->appreciative
 appriopriate->appropriate
 appripriate->appropriate
 apprixamate->approximate
@@ -2100,6 +2102,7 @@ apretiated->appreciated
 apretiates->appreciates
 apretiating->appreciating
 apretiation->appreciation
+apretiative->appreciative
 aproach->approach
 aproached->approached
 aproaches->approaches
@@ -28903,6 +28906,12 @@ unambigously->unambiguously
 unamed->unnamed
 unanimuous->unanimous
 unanymous->unanimous
+unappretiated->unappreciated
+unappretiative->unappreciative
+unapprieciated->unappreciated
+unapprieciative->unappreciative
+unapretiated->unappreciated
+unapretiative->unappreciative
 unaquired->unacquired
 unarchving->unarchiving
 unathenticated->unauthenticated
