@@ -1832,6 +1832,8 @@ anwsers->answers
 anyawy->anyway
 anyhing->anything
 anyhwere->anywhere
+anylsing->analysing
+anylzing->analyzing
 anynmore->anymore
 anyother->any other
 anytghing->anything
@@ -20505,6 +20507,9 @@ parsering->parsing
 parsin->parsing
 parstree->parse tree
 partaining->pertaining
+partcular->particular
+partcularity->particularity
+partcularly->particularly
 partialy->partially
 partical->partial, particle,
 particalar->particular
@@ -25490,6 +25495,8 @@ seqeuncer->sequencer
 seqeuntials->sequentials
 sequcne->sequence
 sequece->sequence
+sequecence->sequence
+sequecences->sequences
 sequeces->sequences
 sequeence->sequence
 sequelce->sequence
@@ -29700,6 +29707,7 @@ unrecocnized->unrecognized
 unrecoginized->unrecognized
 unrecogized->unrecognized
 unrecognixed->unrecognized
+unrecongized->unrecognized
 unreconized->unrecognized
 unrecovable->unrecoverable
 unrecovarable->unrecoverable
