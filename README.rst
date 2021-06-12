@@ -23,7 +23,7 @@ Useful links
 Requirements
 ------------
 
-Python 2.7 or above.
+Python 3.5 or above.
 
 Installation
 ------------
@@ -45,11 +45,11 @@ The ``-w`` flag will actually implement the changes recommended by codespell. No
 
     codespell -I FILE, --ignore-words=FILE
 
-The ``-I`` flag can be used to whitelist certain words that are in the ``codespell_lib/data/dictionary.txt``. The format of the whitelist file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said whitelist. **Important note:** The whitelist passed to ``-I`` is case-sensitive based on how it is listed in ``dictionary.txt``. ::
+The ``-I`` flag can be used for a list of certain words to allow that are in the codespell dictionaries. The format of the file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said list of allowed words. **Important note:** The list passed to ``-I`` is case-sensitive based on how it is listed in the codespell dictionaries. ::
 
     codespell -L word1,word2,word3,word4
 
-The ``-L`` flag can be used to whitelist certain words that are comma-separated placed immediately after it. ::
+The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it.  **Important note:** The list passed to ``-L`` is case-sensitive based on how it is listed in the codespell dictionaries. ::
 
     codespell -S, --skip=
 
@@ -71,24 +71,48 @@ Display them without terminal colors and with a quiet level of 3. ::
 
 Run interactive mode level 3 and write changes to file.
 
-We ship a dictionary that is an improved version of the one available
+We ship a collection of dictionaries that are an improved version of the one available
 `on Wikipedia <https://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/For_machines>`_
 after applying them in projects like Linux Kernel, EFL, oFono among others.
 You can provide your own version of the dictionary, but patches for
 new/different entries are very welcome.
 
-Want to know if a word you're proposing exists in codespell already? It is possible to test a word against the current dictionary that exists in ``codespell_lib/data/dictionary.txt`` via::
+Want to know if a word you're proposing exists in codespell already? It is possible to test a word against the current set dictionaries that exist in ``codespell_lib/data/dictionary*.txt`` via::
 
     echo "word" | codespell -
     echo "1stword,2ndword" | codespell -
 
+You can select the optional dictionaries with the ``--builtin`` option.
+
+Using a config file
+-------------------
+
+Command line options can also be specified in a config file.
+
+When running ``codespell``, it will check in the current directory for a file
+named ``setup.cfg`` or ``.codespellrc`` (or a file specified via ``--config``),
+containing an entry named ``[codespell]``. Each command line argument can
+be specified in this file (without the preceding dashes), for example::
+
+    [codespell]
+    skip = *.po,*.ts,./src/3rdParty,./src/Test
+    count =
+    quiet-level = 3
+
+This is equivalent to running::
+
+    codespell --quiet-level 3 --count --skip "*.po,*.ts,./src/3rdParty,./src/Test"
+
+Any options specified in the command line will *override* options from the
+config file.
+
 Dictionary format
 -----------------
 
-The format of the dictionary was influenced by the one it originally came from,
+The format of the dictionaries was influenced by the one they originally came from,
 i.e. from Wikipedia. The difference is how multiple options are treated and
-that the last argument is the reason why a certain entry could not be applied
-directly, but instead be manually inspected. E.g.:
+that the last argument is an optional reason why a certain entry could not be
+applied directly, but should instead be manually inspected. E.g.:
 
 1. Simple entry: one wrong word / one suggestion::
 
@@ -104,12 +128,28 @@ directly, but instead be manually inspected. E.g.:
    to give the user the file and line where the error occurred as well as
    the suggestions.
 
-3. Entry with one word, but with automatically fix disabled::
+3. Entry with one word, but with automatic fix disabled::
 
        clas->class, disabled because of name clash in c++
 
-   Note that there isn't a comma in the end of the line. The last argument is
+   Note that there isn't a comma at the end of the line. The last argument is
    treated as the reason why a suggestion cannot be automatically applied.
+   
+   There can also be multiple suggestions but any automatic fix will again be
+   disabled::
+   
+       clas->class, clash, disabled because of name clash in c++
+
+Development Setup
+-----------------
+
+You can install required dependencies for development by running the following within a checkout of the codespell source::
+
+       pip install -e ".[dev]"
+
+To run tests against the codebase run::
+
+       make check
 
 Sending Pull Requests
 ---------------------
@@ -118,19 +158,21 @@ If you have a suggested typo that you'd like to see merged please follow these s
 
 1. Make sure you read the instructions mentioned in the ``Dictionary format`` section above to submit correctly formatted entries.
 
-2. Sort the dictionary. This is done by invoking (in the top level directory of ``codespell/``)::
+2. Choose the correct dictionary file to add your typo to. See `codespell --help` for explanations of the different dictionaries.
+
+3. Sort the dictionaries. This is done by invoking (in the top level directory of ``codespell/``)::
 
        make check-dictionaries
 
-   If the make script finds that you need to sort the dictionary, please then run::
+   If the make script finds that you need to sort a dictionary, please then run::
 
        make sort-dictionaries
 
-3. Only after this process is complete do we recommend you submit the PR.
+4. Only after this process is complete do we recommend you submit the PR.
 
 **Important Notes:**
 
-* If the dictionary is submitted without being pre-sorted the PR will fail via TravisCI.
+* If the dictionaries are submitted without being pre-sorted the PR will fail via our various CI tools.
 * Not all PRs will be merged. This is pending on the discretion of the devs, maintainers, and the community.
 
 Updating
@@ -149,15 +191,18 @@ To stay current with codespell developments it is possible to build codespell fr
 * It has been reported that after installing from ``pip``, codespell can't be located. Please check the $PATH variable to see if ``~/.local/bin`` is present. If it isn't then add it to your path.
 * If you decide to install via ``pip`` then be sure to remove any previously installed versions of codespell (via your platform's preferred app manager).
 
-Updating the dictionary
------------------------
+Updating the dictionaries
+-------------------------
 
-In the scenario where the user prefers not to follow the development version of codespell yet still opts to benefit from the frequently updated `dictionary.txt` file, we recommend running a simple set of commands to achieve this ::
+In the scenario where the user prefers not to follow the development version of codespell yet still opts to benefit from the frequently updated dictionary files, we recommend running a simple set of commands to achieve this ::
 
     wget https://raw.githubusercontent.com/codespell-project/codespell/master/codespell_lib/data/dictionary.txt
     codespell -D dictionary.txt
 
 The above simply downloads the latest ``dictionary.txt`` file and then by utilizing the ``-D`` flag allows the user to specify the freshly downloaded ``dictionary.txt`` as the custom dictionary instead of the default one.
+
+You can also do the same thing for the other dictionaries listed here:
+    https://github.com/codespell-project/codespell/tree/master/codespell_lib/data
 
 License
 -------
@@ -185,6 +230,7 @@ with the following terms:
 
 .. _GPL v2: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-dictionary.txt is a derived work of English Wikipedia and is released under the
-Creative Commons Attribution-Share-Alike License 3.0
+``dictionary.txt`` and the other ``dictionary_*.txt`` files are a derived work of
+English Wikipedia and are released under the Creative Commons
+Attribution-Share-Alike License 3.0
 http://creativecommons.org/licenses/by-sa/3.0/

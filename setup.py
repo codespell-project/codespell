@@ -43,17 +43,26 @@ if __name__ == "__main__":
                        'Operating System :: Unix',
                        'Operating System :: MacOS'],
           platforms='any',
+          python_requires='>=3.5',
           packages=[
-              'codespell_lib', 'codespell_lib.tests',
+              'codespell_lib',
               'codespell_lib.data',
           ],
           package_data={'codespell_lib': [
               op.join('data', 'dictionary*.txt'),
               op.join('data', 'linux-kernel.exclude'),
           ]},
+          exclude_package_data={'codespell_lib': [
+              op.join('tests', '*'),
+          ]},
           entry_points={
               'console_scripts': [
                   'codespell = codespell_lib:_script_main'
               ],
+          },
+          extras_require={
+              "dev": ["check-manifest", "flake8", "pytest", "pytest-cov",
+                      "pytest-dependency"],
+              "hard-encoding-detection": ["chardet"],
           }
           )
