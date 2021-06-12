@@ -19,8 +19,8 @@ authorised->authorized
 authorises->authorizes
 authorising->authorizing
 behaviour->behavior
-cancellation->cancelation
 behaviours->behaviors
+cancellation->cancelation
 cancelled->canceled
 cancelling->canceling
 capitalisation->capitalization
@@ -52,7 +52,6 @@ colours->colors
 counsellor->counselor
 criticise->criticize
 criticised->criticized
-customisable->customizable
 criticises->criticizes
 criticising->criticizing
 crystallisation->crystallization
@@ -60,6 +59,7 @@ crystallise->crystallize
 crystallised->crystallized
 crystallises->crystallizes
 crystallising->crystallizing
+customisable->customizable
 customisation->customization
 customise->customize
 customised->customized
@@ -124,9 +124,9 @@ legalises->legalizes
 legalising->legalizing
 licence->license
 licenced->licensed
+licences->licenses
 licencing->licensing
 manoeuvering->maneuvering
-licences->licenses
 manoeuvre->maneuver
 manoeuvres->maneuvers
 memorisation->memorization
@@ -165,10 +165,6 @@ optimiser->optimizer
 optimises->optimizes
 optimising->optimizing
 organisation->organization
-parallelising->parallelizing
-parallelled->paralleled
-parallelling->paralleling
-parametrise->parametrize
 organisations->organizations
 organise->organize
 organised->organized
@@ -176,6 +172,10 @@ organiser->organizer
 organisers->organizers
 organises->organizes
 organising->organizing
+parallelising->parallelizing
+parallelled->paralleled
+parallelling->paralleling
+parametrise->parametrize
 plagiarise->plagiarize
 plagiarised->plagiarized
 plagiarises->plagiarizes
@@ -191,15 +191,12 @@ prioritised->prioritized
 prioritises->prioritizes
 prioritising->prioritizing
 proveable->provable
-rasterisation->rasterization
-rasterise->rasterize
-realise->realize
-resizeable->resizable
-sanitisation->sanitization
 publicise->publicize
 publicised->publicized
 publicises->publicizes
 publicising->publicizing
+rasterisation->rasterization
+rasterise->rasterize
 realisation->realization
 realise->realize
 realised->realized
@@ -221,6 +218,8 @@ reorganise->reorganize
 reorganised->reorganized
 reorganises->reorganizes
 reorganising->reorganizing
+resizeable->resizable
+sanitisation->sanitization
 sanitise->sanitize
 sanitised->sanitized
 sanitiser->sanitizer
@@ -237,12 +236,6 @@ skilfulness->skillfulness
 specialisation->specialization
 specialise->specialize
 specialised->specialized
-uninitialised->uninitialized
-utilise->utilize
-utilised->utilized
-vectorisation->vectorization
-vectorise->vectorize
-writeable->writable
 specialises->specializes
 specialising->specializing
 specialities->specialties
@@ -269,6 +262,7 @@ synchronised->synchronized
 synchronises->synchronizes
 synchronising->synchronizing
 unauthorised->unauthorized
+uninitialised->uninitialized
 unorganised->unorganized
 unrecognised->unrecognized
 utilisation->utilization
@@ -276,6 +270,8 @@ utilise->utilize
 utilised->utilized
 utilises->utilizes
 utilising->utilizing
+vectorisation->vectorization
+vectorise->vectorize
 virtualisation->virtualization
 visualisation->visualization
 visualisations->visualizations
@@ -284,3 +280,4 @@ visualised->visualized
 visualiser->visualizer
 visualises->visualizes
 visualising->visualizing
+writeable->writable
