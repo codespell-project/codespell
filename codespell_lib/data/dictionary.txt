@@ -6834,6 +6834,9 @@ constain->constrain, contain,
 constained->constrained, contained,
 constaining->constraining, containing,
 constains->constrains, contains,
+constaint->constraint
+constainte->constraint, constrained, constraints,
+constainted->constrained
 constaints->constraints
 constallation->constellation
 constallations->constellations
@@ -7103,6 +7106,7 @@ contradically->contradictory
 contrained->contained, constrained,
 contraining->constraining
 contraint->constraint
+contrainted->constrained
 contraints->constraints
 contraitns->constraints
 contraveining->contravening
@@ -8019,6 +8023,8 @@ dameon->daemon, demon, Damien,
 damge->damage
 dammage->damage
 dammages->damages
+damon->daemon, demon,
+damons->daemons, demons,
 danceing->dancing
 dandidates->candidates
 daplicating->duplicating
@@ -17666,6 +17672,7 @@ manufaturing->manufacturing
 manufaucturing->manufacturing
 manulally->manually
 manully->manually
+manuly->manually
 manupilations->manipulations
 manupulate->manipulate
 manupulated->manipulated
@@ -19456,7 +19463,9 @@ notificaction->notification
 notificaiton->notification
 notificaitons->notifications
 notificaton->notification
+notificatons->notifications
 notificiation->notification
+notificiations->notifications
 notifiy->notify
 notifiying->notifying
 notifycation->notification
@@ -21621,6 +21630,8 @@ prefere->prefer, preferred,
 preferecne->preference
 preferecnes->preferences
 prefered->preferred
+preferencfe->preference
+preferencfes->preferences
 preferend->preferred, preference,
 prefering->preferring
 prefernce->preference
@@ -24213,6 +24224,8 @@ representating->representing
 representd->represented
 represente->represents, represented,
 representiative->representative
+represention->representation
+representions->representations
 representive->representative
 representives->representatives
 represetation->representation
@@ -24829,6 +24842,7 @@ rmove->remove
 rmoved->removed
 rmoving->removing
 rnage->rage, range,
+ro->to, row, rob, rod, roe, rot,
 roataion->rotation
 roatation->rotation
 roated->rotated
@@ -26078,6 +26092,10 @@ skeep->skip
 skelton->skeleton
 skept->skipped
 sketchs->sketches
+sketck->sketch, skate,
+sketcked->sketched, skated,
+sketckes->sketches, skates,
+sketcking->sketching, skating,
 skilfull->skilful, skillful,
 skillfull->skillful, skilful, skillfully, skilfully,
 skillfullness->skillfulness, skilfulness,
@@ -28586,6 +28604,10 @@ timestan->timespan
 timestanp->timestamp, timespan,
 timestanps->timestamps, timespans,
 timestans->timespans
+timestap->timestamp
+timestaped->timestamped
+timestaping->timestamping
+timestaps->timestamps
 timestemp->timestamp
 timestemps->timestamps
 timestmap->timestamp
@@ -29034,6 +29056,7 @@ trasporter->transporter
 trasports->transports
 traspose->transpose
 trasposed->transposed
+trasposing->transposing
 trasposition->transposition
 traspositions->transpositions
 traved->traversed
@@ -29109,6 +29132,7 @@ trings->strings, rings,
 triniy->trinity
 triology->trilogy
 tripple->triple
+triuangulate->triangulate
 trival->trivial
 trivally->trivially
 trivias->trivia
