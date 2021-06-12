@@ -25911,6 +25911,7 @@ singeled->singled, signaled,
 singeles->singles, signals,
 singelton->singleton
 singificand->significand, significant,
+singl->single
 singlar->singular
 single-threded->single-threaded
 singls->singles, single,
@@ -29253,6 +29254,10 @@ unanimuous->unanimous
 unanymous->unanimous
 unaquired->unacquired
 unarchving->unarchiving
+unassing->unassign
+unassinged->unassigned
+unassinging->unassigning
+unassings->unassigns
 unathenticated->unauthenticated
 unathorised->unauthorised
 unatteded->unattended
