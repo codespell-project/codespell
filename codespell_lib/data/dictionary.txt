@@ -16080,7 +16080,11 @@ inidicates->indicates
 inidvidual->individual
 inifinite->infinite
 inifinte->infinite
+inintialisation->initialisation
 inintialization->initialization
+inisialise->initialise
+inisialised->initialised
+inisialises->initialises
 initail->initial
 initailisation->initialisation
 initailise->initialise
@@ -16108,10 +16112,12 @@ initailze->initialize
 initailzed->initialized
 initailziation->initialization
 inital->initial
+initalialisation->initialisation
 initalialization->initialization
 initalisation->initialisation
 initalise->initialise
 initalised->initialised
+initaliser->initialiser
 initalises->initialises
 initalising->initialising
 initalization->initialization
@@ -16128,16 +16134,30 @@ initation->initiation
 initators->initiators
 initiaitive->initiative
 initiales->initialize, initializes, initials, initialise, initialises,
+initialialise->initialise
 initialialize->initialize
-initialiase->initialise, initialize,
+initialiasation->initialisation
+initialiase->initialise
+initialiased->initialised
 initialiation->initialization
 initialiazation->initialization
 initialiaze->initialize
 initialiazed->initialized
 initialied->initialized
+initialilsing->initialising
 initialilzing->initializing
-initialisiert->initialised, initialized,
+initialisaing->initialising
+initialisaiton->initialisation
+initialisatin->initialisation
+initialisationg->initialisation
+initialiseing->initialising
+initialisiation->initialisation
+initialisiert->initialised
+initialisong->initialising
+initialiss->initialise, initialises,
 initialiting->initializing
+initialitse->initialise
+initialitsing->initialising
 initialitze->initialize
 initialitzing->initializing
 initializaing->initializing
@@ -16148,16 +16168,17 @@ initializeing->initializing
 initializiation->initialization
 initializong->initializing
 initializs->initialize, initializes,
-initialse->initialise, initialize,
-initialsed->initialised, initialized,
-initialses->initialises, initializes,
+initialsation->initialisation
+initialse->initialise
+initialsed->initialised
+initialses->initialises
 initialsing->initialising
 initialy->initially
 initialyl->initially
-initialyse->initialise, initialize,
-initialysed->initialised, initialized,
-initialyses->initialises, initializes,
-initialysing->initialising, initializing,
+initialyse->initialise
+initialysed->initialised
+initialyses->initialises
+initialysing->initialising
 initialyze->initialize
 initialyzed->initialized
 initialyzes->initializes
@@ -16171,26 +16192,30 @@ initiialise->initialise
 initiialize->initialize
 initilialised->initialised
 initilialized->initialized
-initiliase->initialise, initialize,
-initiliased->initialised, initialized,
-initiliases->initialises, initializes,
-initiliasing->initialising, initializing,
+initiliase->initialise
+initiliased->initialised
+initiliases->initialises
+initiliasing->initialising
 initiliaze->initialize
 initiliazed->initialized
 initiliazes->initializes
 initiliazing->initializing
-initilisation->initialisation, initialization,
-initilisations->initialisations, initializations,
-initilise->initialise, initialize,
-initilised->initialised, initialized,
-initilises->initialises, initializes,
-initilising->initialising, initializing,
+initilisation->initialisation
+initilisations->initialisations
+initilise->initialise
+initilised->initialised
+initilises->initialises
+initilising->initialising
 initilization->initialization
 initilizations->initializations
 initilize->initialize
 initilized->initialized
 initilizes->initializes
 initilizing->initializing
+inititalisation->initialisation
+inititalisations->initialisations
+inititalization->initialization
+inititalizations->initializations
 inititate->initiate
 inititator->initiator
 initliasation->initialisation
@@ -16201,6 +16226,7 @@ initliazation->initialization
 initliaze->initialize
 initliazed->initialized
 initliazer->initializer
+inituialisation->initialisation
 inituialization->initialization
 inivisible->invisible
 inizialize->initialize
@@ -17631,7 +17657,7 @@ lokal->local
 lokale->locale
 lokaly->locally
 lolal->total
-lonber->longer
+lonber->longer, loner,
 lond->long
 lonelyness->loneliness
 long-runnign->long-running
@@ -25162,6 +25188,7 @@ runnign->running
 runnigng->running
 runnin->running
 runnint->running
+runnners->runners
 runnning->running
 runns->runs
 runnung->running
@@ -27360,6 +27387,7 @@ struggel->struggle
 struggeled->struggled
 struggeling->struggling
 struggels->struggles
+strust->trust, strut,
 struttural->structural
 strutture->structure
 struture->structure
@@ -29457,6 +29485,7 @@ triuangulate->triangulate
 trival->trivial
 trivally->trivially
 trivias->trivia
+trivival->trivial
 trnasfers->transfers
 trnasmit->transmit
 trnasmited->transmitted
@@ -31462,6 +31491,7 @@ woraround->workaround
 worarounds->workarounds
 worbench->workbench
 worbenches->workbenches
+worchester->Worcester
 wordlwide->worldwide
 wordpres->wordpress
 worfklow->workflow
