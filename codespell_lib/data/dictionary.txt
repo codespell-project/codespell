@@ -12667,7 +12667,11 @@ inidicates->indicates
 inidvidual->individual
 inifinite->infinite
 inifinte->infinite
+inintialisation->initialisation
 inintialization->initialization
+inisialise->initialise
+inisialised->initialised
+inisialises->initialises
 initail->initial
 initailisation->initialisation
 initailise->initialise
@@ -12695,10 +12699,12 @@ initailze->initialize
 initailzed->initialized
 initailziation->initialization
 inital->initial
+initalialisation->initialisation
 initalialization->initialization
 initalisation->initialisation
 initalise->initialise
 initalised->initialised
+initaliser->initialiser
 initalises->initialises
 initalising->initialising
 initalization->initialization
@@ -12715,16 +12721,34 @@ initation->initiation
 initators->initiators
 initiaitive->initiative
 initiales->initialize, initializes, initials, initialise, initialises,
+initialialise->initialise
 initialialize->initialize
+initialiasation->initialisation
+initialiase->initialise
 initialiase->initialise, initialize,
+initialiased->initialised
+initialiation->initialisation
 initialiation->initialization
 initialiazation->initialization
 initialiaze->initialize
 initialiazed->initialized
+initialied->initialised
 initialied->initialized
+initialilsing->initialising
 initialilzing->initializing
+initialisaing->initialising
+initialisaiton->initialisation
+initialisatin->initialisation
+initialisationg->initialisation
+initialiseing->initialising
+initialisiation->initialisation
 initialisiert->initialised, initialized,
+initialisong->initialising
+initialiss->initialise, initialises,
+initialiting->initialising
 initialiting->initializing
+initialitse->initialise
+initialitsing->initialising
 initialitze->initialize
 initialitzing->initializing
 initializaing->initializing
@@ -12735,15 +12759,23 @@ initializeing->initializing
 initializiation->initialization
 initializong->initializing
 initializs->initialize, initializes,
+initialsation->initialisation
+initialse->initialise
 initialse->initialise, initialize,
+initialsed->initialised
 initialsed->initialised, initialized,
+initialses->initialises
 initialses->initialises, initializes,
 initialsing->initialising
 initialy->initially
 initialyl->initially
+initialyse->initialise
 initialyse->initialise, initialize,
+initialysed->initialised
 initialysed->initialised, initialized,
+initialyses->initialises
 initialyses->initialises, initializes,
+initialysing->initialising
 initialysing->initialising, initializing,
 initialyze->initialize
 initialyzed->initialized
@@ -12758,19 +12790,29 @@ initiialise->initialise
 initiialize->initialize
 initilialised->initialised
 initilialized->initialized
+initiliase->initialise
 initiliase->initialise, initialize,
+initiliased->initialised
 initiliased->initialised, initialized,
+initiliases->initialises
 initiliases->initialises, initializes,
+initiliasing->initialising
 initiliasing->initialising, initializing,
 initiliaze->initialize
 initiliazed->initialized
 initiliazes->initializes
 initiliazing->initializing
+initilisation->initialisation
 initilisation->initialisation, initialization,
+initilisations->initialisations
 initilisations->initialisations, initializations,
+initilise->initialise
 initilise->initialise, initialize,
+initilised->initialised
 initilised->initialised, initialized,
+initilises->initialises
 initilises->initialises, initializes,
+initilising->initialising
 initilising->initialising, initializing,
 initilization->initialization
 initilizations->initializations
@@ -12778,8 +12820,10 @@ initilize->initialize
 initilized->initialized
 initilizes->initializes
 initilizing->initializing
+inititalisation->initialisation
+inititalisations->initialisations
 inititalization->initialization
-inititalizations>initializations
+inititalizations->initializations
 inititator->initiator
 initliasation->initialisation
 initliase->initialise
@@ -12789,6 +12833,7 @@ initliazation->initialization
 initliaze->initialize
 initliazed->initialized
 initliazer->initializer
+inituialisation->initialisation
 inituialization->initialization
 inivisible->invisible
 inizialize->initialize
