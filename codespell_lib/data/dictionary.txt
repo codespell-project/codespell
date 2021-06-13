@@ -415,8 +415,8 @@ acconted->accounted
 acconting->accounting
 accoording->according
 accoordingly->accordingly
-accopunt->account
 accoount->account
+accopunt->account
 accordding->according
 accordeon->accordion
 accordian->accordion
@@ -2169,13 +2169,13 @@ apprpriate->appropriate
 apprpriately->appropriately
 appy->apply
 appying->applying
+appytokind->applytokind
 apreciate->appreciate
 apreciated->appreciated
 apreciates->appreciates
 apreciating->appreciating
 apreciation->appreciation
 apreciative->appreciative
-appytokind->applytokind
 aprehensive->apprehensive
 apreteate->appreciate
 apreteated->appreciated
@@ -8450,6 +8450,7 @@ decordes->decodes
 decording->decoding
 decordings->decodings
 decorrellation->decorrelation
+decortator->decorator
 decose->decode
 decosed->decoded
 decoser->decoder
@@ -8457,7 +8458,6 @@ decosers->decoders
 decoses->decodes
 decosing->decoding
 decosings->decodings
-decortator->decorator
 decraesing->decreasing, deceasing,
 decrasing->decreasing, deceasing,
 decration->decoration
@@ -8861,12 +8861,12 @@ depandent->dependent
 deparment->department
 deparmental->departmental
 deparments->departments
+depcrecated->deprecated
 depden->depend
 depdence->dependence
 depdencente->dependence
 depdencentes->dependences
 depdences->dependences
-depcrecated->deprecated
 depdencies->dependencies
 depdency->dependency
 depdend->depend
@@ -11126,12 +11126,12 @@ encocders->encoders
 encocdes->encodes
 encocding->encoding
 encocdings->encodings
+encodingt->encoding
 enconde->encode
 enconded->encoded
 enconder->encoder
 enconders->encoders
 encondes->encodes
-encodingt->encoding
 enconding->encoding
 encondings->encodings
 encorde->encode, encore,
@@ -17140,9 +17140,9 @@ kewword->keyword
 kewwords->keywords
 keybaord->keyboard
 keybaords->keyboards
+keybault->keyvault
 keyboaard->keyboard
 keyboaards->keyboards
-keybault->keyvault
 keyboad->keyboard
 keyboads->keyboards
 keybooard->keyboard
@@ -17652,8 +17652,8 @@ lokal->local
 lokale->locale
 lokaly->locally
 lolal->total
-lonber->longer
 lolerant->tolerant
+lonber->longer
 lond->long
 lonelyness->loneliness
 long-runnign->long-running
@@ -18274,6 +18274,7 @@ midified->modified
 migrateable->migratable
 migt->might, midget,
 migth->might
+miht->might
 miinimisation->minimisation
 miinimise->minimise
 miinimised->minimised
@@ -18285,7 +18286,6 @@ miinimized->minimized
 miinimizes->minimizes
 miinimizing->minimizing
 miinimum->minimum
-miht->might
 mikrosecond->microsecond
 mikroseconds->microseconds
 milage->mileage
@@ -20079,9 +20079,9 @@ openscourced->open-sourced, open sourced, opensourced,
 operaand->operand
 operaands->operands
 operaion->operation
+operaions->operations
 operaiton->operation
 operandes->operands
-operaions->operations
 operaror->operator
 operatation->operation
 operatations->operations
@@ -30970,8 +30970,8 @@ visiable->visible
 visiably->visibly
 visibale->visible
 visibile->visible
-visibilit->visibility
 visibililty->visibility
+visibilit->visibility
 visibilty->visibility
 visibleable->visible
 visibles->visible
@@ -31252,8 +31252,8 @@ wayword->wayward
 weant->want, wean,
 weaponary->weaponry
 weas->was
-webaserver->web server, webserver,
 webadress->webaddress
+webaserver->web server, webserver,
 webiste->website
 wedensday->Wednesday
 wednesdaay->Wednesday
@@ -31451,7 +31451,6 @@ withon->within
 withoout->without
 withot->without
 withotu->without
-withon->within
 withou->without
 withoud->without
 withoug->without
