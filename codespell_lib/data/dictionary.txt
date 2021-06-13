@@ -1744,6 +1744,7 @@ ancapsulate->encapsulate
 ancesetor->ancestor
 ancesetors->ancestors
 ancester->ancestor
+ancesters->ancestors
 ancestore->ancestor
 ancestores->ancestors
 ancestory->ancestry
@@ -2423,6 +2424,7 @@ argumetns->arguments
 argumets->arguments
 argumnet->argument
 argumnets->arguments
+argumnt->argument
 argumnts->arguments
 arhive->archive
 arhives->archives
@@ -7051,6 +7053,7 @@ containner->container
 containners->containers
 containns->contains
 containr->container
+containrs->containers
 containt->contain, content,
 containted->contained
 containter->container
@@ -7197,6 +7200,8 @@ contraveining->contravening
 contravercial->controversial
 contraversy->controversy
 contrbution->contribution
+contribte->contribute
+contribted->contributed
 contribtes->contributes
 contributer->contributor
 contributers->contributors
@@ -18773,6 +18778,7 @@ mudules->modules
 muext->mutex
 mulithread->multithread
 mulitiplier->multiplier
+mulitipliers->multipliers
 mulitpart->multipart
 mulitpath->multipath
 mulitple->multiple
@@ -20303,7 +20309,9 @@ origionally->originally
 orign->origin
 orignal->original
 orignally->originally
+orignate->originate
 orignated->originated
+orignates->originates
 orignial->original
 orignially->originally
 origninal->original
@@ -26401,6 +26409,7 @@ skipp->skip, skipped,
 skippd->skipped
 skipt->skip, Skype, skipped,
 skyp->skip, Skype,
+slach->slash
 slaches->slashes
 slase->slash
 slases->slashes
@@ -27812,6 +27821,7 @@ sugestion->suggestion
 sugestions->suggestions
 sugests->suggests
 suggestes->suggests
+suggestin->suggestion
 suggestins->suggestions
 suggestsed->suggested
 suggestted->suggested
@@ -30911,6 +30921,7 @@ vicefersa->vice-versa
 vicewersa->vice-versa
 videostreamming->videostreaming
 vie->via
+viee->view
 viees->views
 vieport->viewport
 vieports->viewports
