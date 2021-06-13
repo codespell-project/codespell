@@ -333,8 +333,8 @@ accessoires->accessories, accessorise,
 accessoirez->accessorize, accessories,
 accessort->accessor
 accesss->access
-accesssing->accessing
 accesssible->accessible
+accesssing->accessing
 accesssor->accessor
 accesssors->accessors
 accet->accept
@@ -5684,12 +5684,12 @@ collegue->colleague
 collegues->colleagues
 collektion->collection
 colletion->collection
-collission->collision
-collistion->collision
 collidies->collides
 collison->collision, collusion,
 collisons->collisions, collusion, collusions,
+collission->collision
 collission->collision, collusion,
+collistion->collision
 colllapses->collapses
 collocalized->colocalized
 collonade->colonnade
@@ -10011,11 +10011,11 @@ discovereability->discoverability
 discoveribility->discoverability
 discovey->discovery
 discovr->discover
-discreet->discrete, discreet,
 discovred->discovered
 discovring->discovering
 discovrs->discovers
 discrards->discards
+discreet->discrete, discreet,
 discreminates->discriminates
 discrepencies->discrepancies
 discrepency->discrepancy
@@ -11861,10 +11861,10 @@ excedded->exceeded
 excedding->exceeding
 excede->exceed
 exceded->exceeded
-exceeed->exceed
 excedeed->exceeded
 excedes->exceeds
 exceding->exceeding
+exceeed->exceed
 exceirpt->excerpt
 exceirpts->excerpts
 excelent->excellent
@@ -14134,12 +14134,11 @@ gaurd->guard, gourd,
 gaurentee->guarantee
 gaurenteed->guaranteed
 gaurentees->guarantees
-gausian->gaussian
-geeneric->generic
 gaus'->Gauss'
 gaus's->Gauss'
 gaus->Gauss, gauze,
-gausian->Gaussian
+gausian->gaussian
+geeneric->generic
 geenrate->generate
 geenrated->generated
 geenrates->generates
@@ -18832,9 +18831,9 @@ mulitpath->multipath
 mulitple->multiple
 mulitplicative->multiplicative
 mulitplied->multiplied
-mulitply->multiply
 mulitplier->multiplier
 mulitpliers->multipliers
+mulitply->multiply
 multi-dimenional->multi-dimensional
 multi-dimenionsal->multi-dimensional
 multi-langual->multi-lingual
@@ -22407,8 +22406,8 @@ programmd->programmed, programme,
 programmend->programmed
 programmetically->programmatically
 programmical->programmatical
-programmming->programming
 programmign->programming
+programmming->programming
 programms->programs
 progres->progress
 progresively->progressively
@@ -31648,10 +31647,10 @@ world-reknowned->world renowned
 worload->workload
 worloads->workloads
 worls->world
-worrry->worry
 worng->wrong, worn,
 wornged->wronged
 worngs->wrongs
+worrry->worry
 worser->worse
 worstened->worsened
 worthing->worth, meriting,
