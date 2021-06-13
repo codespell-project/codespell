@@ -5713,7 +5713,10 @@ collonies->colonies
 collony->colony
 collorscheme->colorscheme
 collosal->colossal
+collpase->collapse
 collpased->collapsed
+collpases->collapses
+collpasing->collapsing
 collsions->collisions
 collumn->column
 collumns->columns
@@ -8356,6 +8359,10 @@ decalratiosn->declarations
 decapsulting->decapsulating
 decathalon->decathlon
 deccelerate->decelerate
+deccelerated->decelerated
+deccelerates->decelerates
+deccelerating->decelerating
+decceleration->deceleration
 decelaration->declaration
 Decemer->December
 decend->descend
@@ -16218,11 +16225,12 @@ initialilsing->initialising
 initialilzing->initializing
 initialisaing->initialising
 initialisaiton->initialisation
+initialisated->initialised
 initialisatin->initialisation
 initialisationg->initialisation
 initialiseing->initialising
 initialisiation->initialisation
-initialisiert->initialised
+initialisiert->initialised, initialized,
 initialisong->initialising
 initialiss->initialise, initialises,
 initialiting->initializing
@@ -16232,6 +16240,7 @@ initialitze->initialize
 initialitzing->initializing
 initializaing->initializing
 initializaiton->initialization
+initializated->initialized
 initializatin->initialization
 initializationg->initialization
 initializeing->initializing
@@ -21516,6 +21525,14 @@ poiunter->pointer
 poject->project
 pojecting->projecting
 pojnt->point
+pojrect->project
+pojrected->projected
+pojrecting->projecting
+pojrection->projection
+pojrections->projections
+pojrector->projector
+pojrectors->projectors
+pojrects->projects
 poket->pocket
 polariy->polarity
 polical->political
