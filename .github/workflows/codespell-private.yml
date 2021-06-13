@@ -1,0 +1,59 @@
+# GitHub Action to check our dictionary, this should only be used by the codespell project itself
+# For general usage in your repo, see the example in codespell.yml
+# https://github.com/codespell-project/codespell
+name: codespell
+on: [push, pull_request]
+jobs:
+  test:
+    env:
+      REQUIRE_ASPELL: true
+    # Make sure we're using the latest aspell dictionary
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        python-version:
+          - 3.6
+          - 3.7
+          - 3.8
+          - 3.9
+    name: Python ${{ matrix.python-version }} test
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: sudo apt-get install libaspell-dev aspell-en
+      - run: |
+          python --version  # just to check
+          pip install -U pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
+          pip install codecov chardet "setuptools!=47.2.0" docutils
+          pip install aspell-python-py3
+          pip install -e ".[dev]" # install the codespell dev packages
+      - run: python setup.py install
+      - run: codespell --help
+      - run: make check
+      - run: codespell --check-filenames --skip="./.git/*,*.pyc,./codespell_lib/tests/test_basic.py,./codespell_lib/data/*,./example/code.c,./build/lib/codespell_lib/tests/test_basic.py,./build/lib/codespell_lib/data/*"
+      # this file has an error
+      - run: "! codespell codespell_lib/tests/test_basic.py"
+      - run: codecov
+    
+  make-check-dictionaries:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v2
+      - uses: actions/checkout@v2
+      - name: Install general dependencies
+        run: pip install -U pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
+      - name: Install codespell dependencies
+        run: pip install -e ".[dev]"
+      - uses: codespell-project/sort-problem-matcher@v1
+      - run: make check-dictionaries
+
+  flake8-annotation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Flake8 with annotations
+        uses: TrueBrain/actions-flake8@v1.2

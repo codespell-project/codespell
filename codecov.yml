@@ -1,1 +1,8 @@
 comment: off
+coverage:
+  status:
+    project:
+      default:
+        # basic
+        target: auto
+        threshold: 1%

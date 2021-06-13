@@ -4,24 +4,22 @@
 # for it to be on multiple physical lines, so long as you remember: - There
 # can't be any leading "-"s - All newlines will be removed, so use ";"s
 
+dist: focal
 language: python
-sudo: false
-dist: xenial
+cache: pip
+python:
+  - 3.5
+  - 3.6
+  - 3.7
+  - 3.8
+env:
+  REQUIRE_ASPELL=true
 
-cache:
-  directories:
-    - $HOME/.cache/pip
-
-matrix:
-    include:
-        - os: linux
-          python: 2.7
-        - os: linux
-          python: 3.5
-        - os: linux
-          python: 3.6
-        - os: linux
-          python: 3.7
+addons:
+  apt:
+    packages:
+      - libaspell-dev
+      - aspell-en
 
 before_install:
     - source tools/travis_tools.sh
@@ -30,24 +28,21 @@ before_install:
     - virtualenv --python=python venv
     - source venv/bin/activate
     - python --version  # just to check
-    - pip install -U pip wheel  # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
-    - retry pip install pytest pytest-cov flake8 coverage codecov chardet setuptools docutils
+    - pip install -U pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
+    - retry pip install codecov chardet "setuptools!=47.2.0" docutils
+    - retry pip install aspell-python-py3
     - cd $SRC_DIR
+    - pip install -e ".[dev]" # install the codespell dev packages
 
 install:
     - python setup.py install
 
 script:
     - codespell --help
-    - make check-dictionary
-    - codespell --skip="codespell_lib/tests/test_basic.py,codespell_lib/data/*" codespell_lib/
+    - make check
+    - codespell --check-filenames --skip="./.git/*,*.pyc,./codespell_lib/tests/test_basic.py,./codespell_lib/data/*,./example/code.c,./build/lib/codespell_lib/tests/test_basic.py,./build/lib/codespell_lib/data/*"
     # this file has an error
     - "! codespell codespell_lib/tests/test_basic.py"
-    - flake8
-    - if [ "$TRAVIS_PYTHON_VERSION" != "2.7" ]; then
-        python setup.py check --restructuredtext --strict;
-      fi;
-    - pytest codespell_lib
 
 after_success:
     - codecov
