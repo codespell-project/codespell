@@ -334,6 +334,7 @@ accessoirez->accessorize, accessories,
 accessort->accessor
 accesss->access
 accesssible->accessible
+accesssing->accessing
 accesssor->accessor
 accesssors->accessors
 accet->accept
@@ -473,6 +474,7 @@ accssible->accessible
 accssor->accessor
 acctual->actual
 accumalate->accumulate
+accumalates->accumulates
 accumalator->accumulator
 accumalte->accumulate
 accumalted->accumulated
@@ -1434,6 +1436,7 @@ allk->all
 alllocate->allocate
 alllocation->allocation
 alllow->allow
+alllowed->allowed
 alllows->allows
 allmost->almost
 alloacate->allocate
@@ -1795,6 +1798,7 @@ annayed->annoyed
 annaying->annoying
 annays->annoys, any,
 anniversery->anniversary
+annnounce->announce
 annoation->annotation
 annoint->anoint
 annointed->anointed
@@ -2515,6 +2519,8 @@ arrivial->arrival
 arround->around
 arrray->array
 arrrays->arrays
+arrrive->arrive
+arrrived->arrived
 arrrives->arrives
 arrtibute->attribute
 arry->array, carry,
@@ -2743,7 +2749,9 @@ asssembler->assembler
 asssembly->assembly
 asssert->assert
 asssertion->assertion
+asssociate->associated
 asssociated->associated
+asssociation->association
 asssume->assume
 asssumes->assumes
 asssuming->assuming
@@ -3331,6 +3339,7 @@ automaticly->automatically
 autometic->automatic
 autometically->automatically
 automibile->automobile
+automicatilly->automatically
 automonomous->autonomous
 automtically->automatically
 autonagotiation->autonegotiation
@@ -5679,6 +5688,7 @@ collidies->collides
 collison->collision, collusion,
 collisons->collisions, collusion, collusions,
 collission->collision, collusion,
+collistion->collision
 colllapses->collapses
 collocalized->colocalized
 collonade->colonnade
@@ -6269,6 +6279,8 @@ compresion->compression
 compresor->compressor
 compressable->compressible
 compresser->compressor
+compresss->compress
+compresssed->compressed
 compresssion->compression
 comprimise->compromise
 compromize->compromise
@@ -6348,6 +6360,7 @@ concatentating->concatenating
 concatentation->concatenation
 concatentations->concatenations
 concatented->concatenated
+concatinate->concatenate
 concatinated->concatenated
 concatination->concatenation
 concatinations->concatenations
@@ -8424,6 +8437,7 @@ decompresion->decompression
 decompresor->decompressor
 decompressd->decompressed
 decompresser->decompressor
+decompresssion->decompression
 decompse->decompose
 decond->decode
 deconde->decode
@@ -11848,6 +11862,7 @@ exceded->exceeded
 excedeed->exceeded
 excedes->exceeds
 exceding->exceeding
+exceeed->exceed
 exceirpt->excerpt
 exceirpts->excerpts
 excelent->excellent
@@ -14083,6 +14098,7 @@ ganster->gangster
 garabge->garbage
 garantee->guarantee
 garanteed->guaranteed
+garanteeed->guaranteed
 garantees->guarantees
 garantied->guaranteed
 garanty->guarantee
@@ -14119,7 +14135,8 @@ gaurentees->guarantees
 gaus'->Gauss'
 gaus's->Gauss'
 gaus->Gauss, gauze,
-gausian->Gaussian
+gausian->gaussian
+geeneric->generic
 geenrate->generate
 geenrated->generated
 geenrates->generates
@@ -14179,6 +14196,7 @@ generilize->generalize
 generilized->generalized
 generilizes->generalizes
 generiously->generously
+generlaizes->generalizes
 generted->generated
 generting->generating
 genertion->generation
@@ -14921,6 +14939,7 @@ histry->history
 hitogram->histogram
 hitsingles->hit singles
 hiygeine->hygiene
+hmdi->hdmi
 hnalder->handler
 hoeks->hoax
 hoever->however
@@ -18417,7 +18436,7 @@ minmum->minimum
 minsitry->ministry
 minstries->ministries
 minstry->ministry
-mintor->mentor, monitor,
+mintor->mentor, monitor, minor,
 mintored->mentored, monitored,
 mintoring->mentoring, monitoring,
 mintors->mentors, monitors,
@@ -18795,6 +18814,7 @@ mozzilla->mozilla
 mroe->more
 MSDOS->MS-DOS
 mssing->missing
+msssge->message
 mthod->method
 mtuually->mutually
 mucuous->mucous
@@ -18811,6 +18831,7 @@ mulitplicative->multiplicative
 mulitplied->multiplied
 mulitplier->multiplier
 mulitpliers->multipliers
+mulitply->multiply
 multi-dimenional->multi-dimensional
 multi-dimenionsal->multi-dimensional
 multi-langual->multi-lingual
@@ -19044,6 +19065,7 @@ neeedles->needles, needless,
 neeedless->needless, needles,
 neeedn't->needn't
 neeeds->needs
+neees->needs, knees,
 nees->needs
 neesd->needs
 neesds->needs
@@ -20525,6 +20547,7 @@ overrride->override
 overrriden->overridden
 overrrides->overrides
 overrriding->overriding
+overrrun->overrun
 overshaddowed->overshadowed
 oversubscibe->oversubscribe
 oversubscibed->oversubscribed
@@ -20890,6 +20913,9 @@ passerbys->passersby
 passin->passing
 passiv->passive
 passowrd->password
+passs->pass
+passsed->passed
+passsing->passing
 passthrought->passthrough
 passthruogh->passthrough
 passtime->pastime
@@ -21891,6 +21917,7 @@ preferrable->preferable
 preferrably->preferably
 preferrence->preference
 preferrences->preferences
+preferrred->preferred
 prefetchs->prefetches
 prefferable->preferable
 prefferably->preferably
@@ -22150,6 +22177,7 @@ probabilaty->probability
 probabilites->probabilities
 probabilty->probability
 probabily->probability, probably,
+probablay->probably
 probablistic->probabilistic
 probablly->probably
 probaby->probably
@@ -22359,6 +22387,7 @@ progesses->progresses
 progessive->progressive
 progessor->progressor
 progesss->progress
+progesssive->progressive
 progidy->prodigy
 programable->programmable
 programatic->programmatic
@@ -22375,6 +22404,7 @@ programmend->programmed
 programmetically->programmatically
 programmical->programmatical
 programmign->programming
+programmming->programming
 programms->programs
 progres->progress
 progresively->progressively
@@ -24566,6 +24596,7 @@ repulics->republics
 reqest->request
 reqested->requested
 reqests->requests
+reqeuest->request
 reqeust->request
 reqeusted->requested
 reqeusting->requesting
@@ -27975,6 +28006,8 @@ suppported->supported
 suppporting->supporting
 suppports->supports
 suppres->suppress
+suppresion->suppression
+suppresions->suppressions
 suppressingd->suppressing
 supprot->support
 supproted->supported
@@ -28663,6 +28696,7 @@ termindate->terminate
 termine->determine
 termined->terminated
 terminte->terminate
+termintor->terminator
 termo->thermo
 termostat->thermostat
 termperatue->temperature
@@ -31294,6 +31328,7 @@ wayword->wayward
 weant->want, wean,
 weaponary->weaponry
 weas->was
+webage->webpage
 webaserver->web server, webserver,
 webiste->website
 wedensday->Wednesday
@@ -31338,6 +31373,7 @@ wheather->weather, whether,
 whehter->whether
 wheigh->weigh
 whell->wheel, well,
+whem->when
 whenevery->whenever
 whenver->whenever
 wher->where, were,
@@ -31408,6 +31444,7 @@ wiceversa->vice-versa
 wicewersa->vice-versa
 wich->which
 widesread->widespread
+widgect->widget
 widged->widget
 widgit->widget
 widht->width
@@ -31608,6 +31645,7 @@ worls->world
 worng->wrong, worn,
 wornged->wronged
 worngs->wrongs
+worrry->worry
 worser->worse
 worstened->worsened
 worthing->worth, meriting,
