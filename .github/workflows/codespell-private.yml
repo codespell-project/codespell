@@ -34,6 +34,7 @@ jobs:
       - run: codespell --help
       - run: make check
       - run: codespell --check-filenames --skip="./.git/*,*.pyc,./codespell_lib/tests/test_basic.py,./codespell_lib/data/*,./example/code.c,./build/lib/codespell_lib/tests/test_basic.py,./build/lib/codespell_lib/data/*,README.rst,*.egg-info/*"
+      - run: codespell README.rst --ignore-words-list="adn"
       # this file has an error
       - run: "! codespell codespell_lib/tests/test_basic.py"
       - run: codecov
