@@ -317,6 +317,9 @@ accesed->accessed
 acceses->accesses
 accesibility->accessibility
 accesible->accessible
+accesiblity->accessibility
+accesiibility->accessibility
+accesiiblity->accessibility
 accesing->accessing
 accesnt->accent
 accesor->accessor
@@ -330,9 +333,12 @@ accessibile->accessible
 accessibiliity->accessibility
 accessibilitiy->accessibility
 accessibiliy->accessibility, accessible,
+accessibiltiy->accessibility
 accessibilty->accessibility
 accessiblilty->accessibility
 accessiblity->accessibility
+accessiibility->accessibility
+accessiiblity->accessibility
 accessile->accessible
 accessintg->accessing
 accessisble->accessible
@@ -341,7 +347,10 @@ accessoires->accessories, accessorise,
 accessoirez->accessorize, accessories,
 accessort->accessor
 accesss->access
+accesssibility->accessibility
 accesssible->accessible
+accesssiblity->accessibility
+accesssiiblity->accessibility
 accesssing->accessing
 accesssor->accessor
 accesssors->accessors
@@ -2088,6 +2097,10 @@ appologies->apologies
 appology->apology
 appon->upon
 appopriate->appropriate
+apporach->approach
+apporached->approached
+apporaches->approaches
+apporaching->approaching
 apporiate->appropriate
 apporoximate->approximate
 apporoximated->approximated
@@ -5626,6 +5639,7 @@ clonning->cloning
 clory->glory
 clos->close
 closeing->closing
+closesly->closely
 closests->closest, closets,
 closig->closing
 clossed->closed
@@ -6894,6 +6908,8 @@ congifuration->configuration
 congifure->configure
 congifured->configured
 congigure->configure
+congnition->cognition
+congnitive->cognitive
 congradulations->congratulations
 congresional->congressional
 conider->consider
@@ -7469,6 +7485,10 @@ controversey->controversy
 controversials->controversial
 controvertial->controversial
 controvery->controversy
+contrst->contrast
+contrsted->contrasted
+contrsting->contrasting
+contrsts->contrasts
 contrtoller->controller
 contruct->construct
 contructed->constructed
@@ -9790,6 +9810,8 @@ devleop->develop
 devleoped->developed
 devleoper->developer
 devleopers->developers
+devleoping->developing
+devleopment->development
 devleopper->developer
 devleoppers->developers
 devlop->develop
@@ -10183,6 +10205,10 @@ disabe->disable
 disabeling->disabling
 disabels->disables
 disabes->disables
+disabilitiles->disabilities
+disabilitily->disability
+disabiltities->disabilities
+disabiltitiy->disability
 disabl->disable
 disablle->disable
 disadvantadge->disadvantage
@@ -14830,6 +14856,8 @@ glight->flight
 gloab->globe
 gloabal->global
 gloabl->global
+gloassaries->glossaries
+gloassary->glossary
 globablly->globally
 globbal->global
 globel->global
@@ -15879,6 +15907,8 @@ immitating->imitating
 immitator->imitator
 immmediate->immediate
 immmediately->immediately
+immsersive->immersive
+immsersively->immersively
 immuniy->immunity
 immunosupressant->immunosuppressant
 immutible->immutable
@@ -17218,6 +17248,7 @@ interchangably->interchangeably
 intercollegate->intercollegiate
 intercontinential->intercontinental
 intercontinetal->intercontinental
+interdependant->interdependent
 interecptor->interceptor
 intered->interred, interned,
 intereested->interested
@@ -17670,6 +17701,8 @@ iterrupt->interrupt
 itertation->iteration
 iteself->itself
 itesm->items
+itheir->their
+itheirs->theirs
 itialise->initialise
 itialised->initialised
 itialises->initialises
@@ -18739,6 +18772,12 @@ meatadata->metadata
 meatfile->metafile
 meathod->method
 meaure->measure
+meaured->measured
+meaurement->measurement
+meaurements->measurements
+meaurer->measurer
+meaurers->measurers
+meaures->measures
 meauring->measuring
 meausure->measure
 meausures->measures
@@ -19677,8 +19716,13 @@ naximum->maximum
 Nazereth->Nazareth
 nclude->include
 nd->and, 2nd,
-nead->need
-neaded->needed, kneaded,
+nead->need, knead, head,
+neaded->needed, kneaded, headed,
+neader->header, kneader,
+neaders->headers, kneaders,
+neading->needing, kneading, heading,
+neads->needs, kneads, heads,
+neady->needy
 neagtive->negative
 nealy->nearly, newly,
 neares->nearest
@@ -20992,8 +21036,18 @@ organiztion->organization
 organiztions->organizations
 organsiation->organisation
 organsiations->organisations
+organsied->organised
+organsier->organiser
+organsiers->organisers
+organsies->organises
+organsiing->organising
 organziation->organization
 organziations->organizations
+organzied->organized
+organzier->organizer
+organziers->organizers
+organzies->organizes
+organziing->organizing
 orgiginal->original
 orgiginally->originally
 orgiginals->originals
@@ -21754,8 +21808,13 @@ peprocessor->preprocessor
 per-interpeter->per-interpreter
 perade->parade
 peraphs->perhaps
+percentange->percentage
+percentanges->percentages
 percentil->percentile
 percepted->perceived
+percievable->perceivable
+percievabley->perceivably
+percievably->perceivably
 percieve->perceive
 percieved->perceived
 percision->precision
@@ -23422,7 +23481,9 @@ protol->protocol
 protols->protocols
 prototyes->prototypes
 protoype->prototype
+protoyped->prototyped
 protoypes->prototypes
+protoyping->prototyping
 protoytpe->prototype
 protoytpes->prototypes
 protrait->portrait
@@ -29521,6 +29582,8 @@ technic->technique
 technics->techniques
 technik->technique
 techniks->techniques
+techniquest->techniques
+techniquet->technique
 technitian->technician
 technition->technician
 technlogy->technology
