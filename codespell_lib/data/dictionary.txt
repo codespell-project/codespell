@@ -779,6 +779,16 @@ addpress->address
 addrass->address
 addrees->address
 addreess->address
+addrerss->address
+addrerssed->addressed
+addrersser->addresser
+addrersses->addresses
+addrerssing->addressing
+addrersss->address
+addrersssed->addressed
+addrerssser->addresser
+addrerssses->addresses
+addrersssing->addressing
 addres->address
 addresable->addressable
 addresed->addressed
@@ -882,6 +892,11 @@ adquired->acquired
 adquires->acquires
 adquiring->acquiring
 adrea->area
+adrerss->address
+adrerssed->addressed
+adrersser->addresser
+adrersses->addresses
+adrerssing->addressing
 adres->address
 adresable->addressable
 adresing->addressing
@@ -4370,6 +4385,9 @@ buillt->built
 built-time->build-time
 builter->builder
 builters->builders
+buinseses->businesses
+buinsess->business
+buinsesses->businesses
 buipd->build
 buisness->business
 buisnessman->businessman
@@ -5441,6 +5459,11 @@ cleff->clef
 cleint's->client's
 cleint->client
 cleints->clients
+clen->clean, clan,
+clened->cleaned
+clener->cleaner
+clening->cleaning
+clens->cleans, clans,
 cler->clear
 clera->clear, sclera,
 clese->close
@@ -7862,7 +7885,14 @@ cppp->cpp
 cption->option, caption,
 cpuld->could
 crace->grace, crate,
+craced->graced
+craceful->graceful
+cracefully->gracefully
+cracefulness->gracefulness
+craceless->graceless
+craces->graces, crates,
 craches->crashes, caches, crutches,
+cracing->gracing
 craete->create
 craeting->creating, crating,
 crahed->crashed
@@ -7874,6 +7904,13 @@ crasheed->crashed
 crashees->crashes
 crashess->crashes
 crashs->crashes
+cration->creation, nation,
+crationalism->nationalism
+crationalist->nationalist
+crationalists->nationalists
+crationist->creationist
+crationists->creationists
+crations->creations, nations,
 creaate->create
 creaed->created
 creaeted->created
@@ -10073,6 +10110,13 @@ discovr->discover
 discovred->discovered
 discovring->discovering
 discovrs->discovers
+discrace->disgrace
+discraced->disgraced
+discraceful->disgraceful
+discracefully->disgracefully
+discracefulness->disgracefulness
+discraces->disgraces
+discracing->disgracing
 discrards->discards
 discreminates->discriminates
 discrepencies->discrepancies
@@ -10416,7 +10460,12 @@ distribuition->distribution
 distribuitng->distributing
 distribure->distribute
 districct->district
+distrobute->distribute
+distrobuted->distributed
+distrobuting->distributing
 distrobution->distribution
+distrobutions->distributions
+distrobuts->distributs
 distroname->distro name
 distroying->destroying
 distrub->disturb
@@ -14155,6 +14204,9 @@ Galations->Galatians
 gallaries->galleries
 gallary->gallery
 gallaxies->galaxies
+gallleries->galleries
+galllery->gallery
+galllerys->galleries
 galvinized->galvanized
 Gameboy->Game Boy
 ganbia->gambia
@@ -16247,8 +16299,11 @@ initally->initially
 initals->initials
 initate->initiate, imitate,
 initated->initiated, imitated,
-initation->initiation
-initators->initiators
+initates->initiates, imitates,
+initating->initiating, imitating,
+initation->initiation, imitation,
+initator->initiator, imitator,
+initators->initiators, imitators,
 initiaitive->initiative
 initiales->initialize, initializes, initials, initialise, initialises,
 initialialise->initialise
@@ -16599,7 +16654,13 @@ insurence->insurance
 intaces->instance
 intack->intact
 intall->install
+intallation->installation
 intallationpath->installationpath
+intallations->installations
+intalled->installed
+intalles->installs
+intalling->installing
+intalls->installs
 intance->instance, intense,
 intances->instances
 intantiate->instantiate
@@ -17302,6 +17363,7 @@ keyworkds->keywords
 keywors->keywords
 keywprd->keyword
 kindergarden->kindergarten
+kinnect->Kinect
 klenex->kleenex
 klick->click
 klicked->clicked
@@ -18532,6 +18594,8 @@ mircophone->microphone
 mircophones->microphones
 mircoscope->microscope
 mircoscopes->microscopes
+mircoservice->microservice
+mircoservices->microservices
 mircosoft->Microsoft
 mirgate->migrate
 mirgated->migrated
@@ -21613,8 +21677,14 @@ politicans->politicians
 politicing->politicking
 pollenate->pollinate
 polltry->poultry
+polocies->policies
+polocy->policy
+polocys->policys
 pologon->polygon
 pologons->polygons
+polotic->politic
+polotical->political
+polotics->politics
 poltical->political
 poltry->poultry
 polute->pollute
@@ -25709,6 +25779,11 @@ sectoning->sectioning
 sectons->sections
 secue->secure
 secuely->securely
+secuence->sequence
+secuenced->sequenced
+secuences->sequences
+secuencial->sequential
+secuencing->sequencing
 secuity->security
 secund->second
 securiy->security
@@ -26674,6 +26749,10 @@ soket->socket
 sokets->sockets
 solarmutx->solarmutex
 solatary->solitary
+solate->isolate
+solated->isolated
+solates->isolates
+solating->isolating
 soler->solver, solar, solely,
 soley->solely
 solf->solve, sold,
@@ -29008,6 +29087,8 @@ thoughout->throughout
 thougt->thought, though,
 thougth->thought
 thounsands->thousands
+thourgh->through, thorough,
+thourghly->thoroughly
 thourough->thorough
 thouroughly->thoroughly
 thow->throw, tow,
@@ -29089,6 +29170,8 @@ thyat->that
 tich->thick, tick, titch, stitch,
 tichened->thickened
 tichness->thickness
+tidibt->tidbit
+tidibts->tidbits
 tieing->tying
 tiem->time, item,
 tiemout->timeout
