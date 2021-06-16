@@ -7904,13 +7904,13 @@ crasheed->crashed
 crashees->crashes
 crashess->crashes
 crashs->crashes
-cration->creation, nation,
-crationalism->nationalism
-crationalist->nationalist
-crationalists->nationalists
+cration->creation, ration, nation,
+crationalism->rationalism, nationalism,
+crationalist->rationalist, nationalist,
+crationalists->rationalists, nationalists,
 crationist->creationist
 crationists->creationists
-crations->creations, nations,
+crations->creations, rations, nations,
 creaate->create
 creaed->created
 creaeted->created
@@ -10462,10 +10462,11 @@ distribure->distribute
 districct->district
 distrobute->distribute
 distrobuted->distributed
+distrobutes->distributes
 distrobuting->distributing
 distrobution->distribution
 distrobutions->distributions
-distrobuts->distributs
+distrobuts->distributes
 distroname->distro name
 distroying->destroying
 distrub->disturb
@@ -16302,9 +16303,11 @@ initated->initiated, imitated,
 initates->initiates, imitates,
 initating->initiating, imitating,
 initation->initiation, imitation,
+initations->initiations, imitations,
 initator->initiator, imitator,
 initators->initiators, imitators,
 initiaitive->initiative
+initiaitives->initiatives
 initiales->initialize, initializes, initials, initialise, initialises,
 initialialise->initialise
 initialialize->initialize
@@ -21668,6 +21671,7 @@ poket->pocket
 polariy->polarity
 polical->political
 policie->policies, policy, police,
+policys->policies, police,
 poligon->polygon
 poligons->polygons
 polinator->pollinator
@@ -21679,7 +21683,7 @@ pollenate->pollinate
 polltry->poultry
 polocies->policies
 polocy->policy
-polocys->policys
+polocys->policies
 pologon->polygon
 pologons->polygons
 polotic->politic
