@@ -2920,6 +2920,12 @@ atomatically->automatically
 atomical->atomic
 atomicly->atomically
 atomiticity->atomicity
+atomtic->atomic, automatic,
+atomtical->automatic
+atomtically->automatically
+atomticaly->automatically
+atomticlly->automatically
+atomticly->automatically
 atorecovery->autorecovery
 atorney->attorney
 atquired->acquired
@@ -3367,7 +3373,13 @@ automaticly->automatically
 autometic->automatic
 autometically->automatically
 automibile->automobile
+automic->atomic, automatic,
+automical->automatic
+automically->automatically
+automicaly->automatically
 automicatilly->automatically
+automiclly->automatically
+automicly->automatically
 automonomous->autonomous
 automtic->automatic
 automtically->automatically
@@ -4266,6 +4278,7 @@ brethen->brethren
 bretheren->brethren
 brfore->before
 brievely->briefly
+brievety->brevity
 brigde->bridge
 brige->bridge
 briges->bridges
@@ -7093,6 +7106,8 @@ consumate->consummate
 consumated->consummated
 consumating->consummating
 consummed->consumed
+consummer->consumer
+consummers->consumers
 consumtion->consumption
 contacentaion->concatenation
 contagen->contagion
@@ -15211,6 +15226,7 @@ idealogies->ideologies
 idealogy->ideology
 idefinite->indefinite
 idelogy->ideology
+idemopotent->idempotent
 idendifier->identifier
 idenfifier->identifier
 idenitify->identify
@@ -30337,6 +30353,7 @@ unkown->unknown
 unkowns->unknowns
 unkwown->unknown
 unlcear->unclear
+unleess->unless
 unles->unless
 unlikey->unlikely
 unlikley->unlikely
