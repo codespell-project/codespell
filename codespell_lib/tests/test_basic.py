@@ -743,8 +743,12 @@ def test_config(tmpdir, capsys):
     d = str(tmpdir)
 
     # Create sample files.
-    with open(op.join(d, 'bad.txt'), 'w') as f:
+    with open(op.join(d, 'bad1.txt'), 'w') as f:
         f.write('abandonned donn\n')
+    with open(op.join(d, 'bad2.txt'), 'w') as f:
+        f.write('eror paramter\n')
+    with open(op.join(d, 'bad3.txt'), 'w') as f:
+        f.write('eror paramter\n')
     with open(op.join(d, 'good.txt'), 'w') as f:
         f.write("good")
 
@@ -753,20 +757,28 @@ def test_config(tmpdir, capsys):
     with open(conffile, 'w') as f:
         f.write(
             '[codespell]\n'
-            'skip = bad.txt\n'
+            'skip = \n'
+            '    bad1.txt\n'
+            '    bad2.txt  # this is a comment line\n'
+            '    # bad3.txt  # comments will have no effect\n'
             'count = \n'
         )
 
     # Should fail when checking both.
     code, stdout, _ = cs.main(d, count=True, std=True)
     # Code in this case is not exit code, but count of misspellings.
-    assert code == 2
-    assert 'bad.txt' in stdout
+    assert code == 6
+    assert 'bad1.txt' in stdout
+    assert 'bad2.txt' in stdout
+    assert 'bad3.txt' in stdout
 
-    # Should pass when skipping bad.txt
+    # Should skip bad1.txt and bad2.txt,
+    # while still report bad3.txt
     code, stdout, _ = cs.main('--config', conffile, d, count=True, std=True)
-    assert code == 0
-    assert 'bad.txt' not in stdout
+    assert code == 2
+    assert 'bad1.txt' not in stdout
+    assert 'bad2.txt' not in stdout
+    assert 'bad3.txt' in stdout
 
 
 @contextlib.contextmanager
