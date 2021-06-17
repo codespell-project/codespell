@@ -6131,6 +6131,8 @@ commnent->comment
 commnents->comments
 commnetary->commentary
 commnication->communication
+commnities->communities
+commnity->community
 commnt->comment
 commnted->commented
 commnuative->commutative
@@ -10346,6 +10348,7 @@ disctionaries->dictionaries
 disctionary->dictionary
 discuassed->discussed
 discusion->discussion
+discusions->discussions
 discusson->discussion
 discussons->discussions
 discusting->disgusting
@@ -12128,6 +12131,12 @@ eventially->eventually
 eventuall->eventually
 eventualy->eventually
 evenually->eventually
+eveolution->evolution
+eveolutionary->evolutionary
+eveolve->evolve
+eveolved->evolved
+eveolves->evolves
+eveolving->evolving
 everage->average
 everaged->averaged
 everbody->everybody
@@ -18183,6 +18192,9 @@ limititer->limiter
 limititers->limiters
 limititing->limiting
 limitted->limited
+limitter->limiter
+limitting->limiting
+limitts->limits
 limk->link
 limted->limited
 limti->limit
@@ -25698,6 +25710,7 @@ resrouce->resource
 resrouced->resourced
 resrouces->resources
 resroucing->resourcing
+reSructuredText->reStructuredText
 resrved->reserved
 ressapee->recipe
 ressemblance->resemblance
@@ -25754,9 +25767,14 @@ restrcted->restricted
 restrcuture->restructure
 restriced->restricted
 restroing->restoring
+reStructuredTetx->reStructuredText
+reStructuredTxet->reStructuredText
+reStrucuredText->reStructuredText
 restuarant->restaurant
 restuarants->restaurants
+reStucturedText->reStructuredText
 restucturing->restructuring
+reStucuredText->reStructuredText
 resturant->restaurant
 resturants->restaurants
 resturaunt->restaurant
@@ -28413,7 +28431,12 @@ structue->structure
 structued->structured
 structues->structures
 structur->structure
+strucur->structure
 strucure->structure
+strucured->structured
+strucures->structures
+strucuring->structuring
+strucurs->structures
 strucutre->structure
 strucutred->structured
 strucutres->structures
@@ -28925,7 +28948,9 @@ suported->supported
 suporting->supporting
 suports->supports
 suportted->supported
+suposable->supposable
 supose->suppose
+suposeable->supposable
 suposed->supposed
 suposedly->supposedly
 suposes->supposes
@@ -28954,6 +28979,7 @@ supportes->supports
 supportet->supporter, supported,
 supportin->supporting
 supportted->supported
+supposeable->supposable
 supposeded->supposed
 supposedely->supposedly
 supposeds->supposed
@@ -32428,6 +32454,7 @@ weaponary->weaponry
 weas->was
 webage->webpage
 webaserver->web server, webserver,
+webbased->web-based
 webiste->website
 wedensday->Wednesday
 wednesdaay->Wednesday
