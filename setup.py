@@ -43,7 +43,7 @@ if __name__ == "__main__":
                        'Operating System :: Unix',
                        'Operating System :: MacOS'],
           platforms='any',
-          python_requires='>=3.5',
+          python_requires='>=3.6',
           packages=[
               'codespell_lib',
               'codespell_lib.data',
