@@ -759,7 +759,7 @@ def test_config(tmpdir, capsys):
             '[codespell]\n'
             'skip = \n'
             '    bad1.txt\n'
-            '    bad2.txt  # this is a comment line\n'
+            '    bad2.txt\n'
             '    # bad3.txt  # comments will have no effect\n'
             'count = \n'
         )

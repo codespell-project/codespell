@@ -413,16 +413,14 @@ def parse_options(args):
         for key in config['codespell']:
             # Add option as arg.
             cfg_args.append("--%s" % key)
-            # get lines of value
-            val_lines = config['codespell'][key].splitlines()
             # strip comments from lines
             filtered_lines = []
-            for line in val_lines:
-                line = line.split('#', 1)[0].strip()
+            for line in config['codespell'][key].splitlines():
+                line = line.strip()
                 if line != "":
                     filtered_lines.append(line)
             # concatenate non-empty lines
-            val = ','.join(line for line in filtered_lines if line != "")
+            val = ','.join(filtered_lines)
             # If value is blank, skip.
             if val != "":
                 cfg_args.append(val)
