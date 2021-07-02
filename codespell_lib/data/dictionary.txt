@@ -4718,8 +4718,11 @@ bumpt->bump
 bumpted->bumped
 bumpter->bumper
 bumpting->bumping
+bund->bound
 bundel->bundle
 bundeled->bundled
+bundels->bundles
+bunding->bounding
 buoancy->buoyancy
 bureauracy->bureaucracy
 buring->burying, burning, burin, during,
@@ -5293,6 +5296,7 @@ cententenial->centennial
 centerd->centered
 centisencond->centisecond
 centisenconds->centiseconds
+centred->centered
 centrifugeable->centrifugable
 centrigrade->centigrade
 centruies->centuries
@@ -5631,6 +5635,13 @@ chemestry->chemistry
 chemicaly->chemically
 chenged->changed
 chennel->channel
+cherch->church
+cherching->checking
+cherchs->churchs
+cherck->check
+chercked->checked
+chercking->checking
+chercks->checks
 chescksums->checksums
 chgange->change
 chganged->changed
@@ -5691,6 +5702,8 @@ chosse->choose, chose,
 chossen->chosen
 chould->should, could,
 chouse->choose, chose, choux,
+chowse->chose, choose,
+chowsing->choosing
 chracter->character
 chracters->characters
 chractor->character
@@ -5705,6 +5718,7 @@ chromum->chromium
 chuch->church
 chuks->chunks
 chunaks->chunks
+chunc->chunk
 chunck->chunk
 chuncked->chunked
 chuncking->chunking
@@ -5889,11 +5903,15 @@ clearouput->clearoutput
 clearted->cleared
 cleck->check
 cleean->clean
+cleen->clean
+cleened->cleaned
+cleens->cleans
 cleff->clef
 cleint's->client's
 cleint->client
 cleints->clients
 clen->clean, clan,
+clene->clean, cleaned,
 clened->cleaned
 clener->cleaner
 clening->cleaning
@@ -11228,6 +11246,7 @@ distace->distance, distaste,
 distaces->distances, distastes,
 distancef->distanced, distances, distance,
 distange->distance
+distanse->distance
 distantce->distance
 distarct->distract
 distater->disaster
@@ -12177,6 +12196,12 @@ emplyments->employments
 emporer->emperor
 emprically->empirically
 emprisoned->imprisoned
+emprove->improve
+emproved->improved
+emprovement->improvement
+emprovements->improvements
+emproves->improves
+emproving->improving
 emptniess->emptiness
 emptry->empty
 emptyed->emptied
@@ -17259,6 +17284,9 @@ incvalid->invalid
 indcates->indicates
 indciate->indicate
 inddex->index
+inddividual->individual
+inddividually->individually
+inddividuals->individuals
 indecate->indicate
 indeces->indices
 indecies->indices
@@ -21538,6 +21566,8 @@ Novermber->November
 nowadys->nowadays
 nowdays->nowadays
 nowe->now
+nown->known, noun,
+nowns->knowns, nouns,
 ntification->notification
 nuber->number
 nubering->numbering
@@ -21789,6 +21819,7 @@ officialy->officially
 offloded->offloaded
 offred->offered
 offser->offset
+offsest->offsets, offset,
 offseted->offsetted
 offseting->offsetting
 offsetp->offset
@@ -22358,6 +22389,7 @@ outputed->outputted
 outputing->outputting
 outrside->outside, other side,
 outselves->ourselves
+outsid->outside
 outter->outer
 outtermost->outermost
 outupt->output
@@ -26785,7 +26817,11 @@ represention->representation
 representions->representations
 representive->representative
 representives->representatives
+represet->represent
 represetation->representation
+represeted->represented
+represeting->representing
+represets->represents
 represnet->represent
 represneted->represented
 represneting->representing
@@ -27193,7 +27229,7 @@ resuable->reusable
 resubstituion->resubstitution
 resuction->reduction
 resue->reuse, rescue,
-resued->reused, rescued,
+resued->reused, rescued, resumed,
 resuilt->result
 resuilted->resulted
 resuilting->resulting
@@ -28445,6 +28481,7 @@ seuence->sequence
 seuences->sequences
 sevaral->several
 seve->save, sieve,
+severat->several
 severeal->several
 severirirty->severity
 severirities->severities
@@ -33008,6 +33045,8 @@ unnessessarily->unnecessarily
 unnessessary->unnecessary
 unning->running
 unnnecessary->unnecessary
+unnown->unknown
+unnowns->unknowns
 unnsupported->unsupported
 unnused->unused
 unobstrusive->unobtrusive
@@ -33142,6 +33181,7 @@ unshfiting->unshifting
 unshfits->unshifts
 unsiged->unsigned
 unsigend->unsigned
+unsignd->unsigned
 unsignificant->insignificant
 unsing->using
 unsinged->unsigned
