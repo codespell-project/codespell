@@ -4309,6 +4309,7 @@ breshing->brushing
 brethen->brethren
 bretheren->brethren
 brfore->before
+bridg->bridge
 brievely->briefly
 brigde->bridge
 brige->bridge
@@ -10582,6 +10583,9 @@ ditributed->distributed
 ditribution->distribution
 ditributions->distributions
 divde->divide
+divded->divided
+divdes->divides
+divding->dividing
 diversed->diverse, diverged,
 divertion->diversion
 divertions->diversions
@@ -14212,6 +14216,11 @@ fullfils->fulfils, fulfills,
 fullill->fulfil, fulfill,
 fullly->fully
 fulsh->flush
+fumction->function
+fumctional->functional
+fumctionally->functionally
+fumctioned->functioned
+fumctions->functions
 funcation->function
 funchtion->function
 funchtional->functional
@@ -19303,7 +19312,11 @@ nanoseonds->nanoseconds
 Naploeon->Napoleon
 Napolean->Napoleon
 Napoleonian->Napoleonic
+nast->nest, mast,
+nasted->nested
+nasting->nesting
 nastly->nasty
+nasts->nests, masts,
 nastyness->nastiness
 nativelyx->natively
 natrual->natural
@@ -19853,6 +19866,8 @@ newslines->newlines
 newthon->newton
 newtork->network
 Newyorker->New Yorker
+niear->near
+niearest->nearest
 nighbor->neighbor
 nighborhood->neighborhood
 nighboring->neighboring
@@ -20003,6 +20018,9 @@ normalyze->normalize
 normalyzed->normalized
 normlly->normally
 normnal->normal
+normol->normal
+normolise->normalise
+normolize->normalize
 northen->northern
 northereastern->northeastern
 nortmally->normally
@@ -20122,6 +20140,9 @@ obect->object
 obediance->obedience
 obediant->obedient
 obejct->object
+obeject->object
+obejection->objection
+obejects->objects
 obeserve->observe
 obession->obsession
 obessions->obsessions
@@ -22115,6 +22136,9 @@ poverful->powerful
 poweful->powerful
 powerfull->powerful
 powerppc->powerpc
+pozitive->positive
+pozitively->positively
+pozitives->positives
 ppcheck->cppcheck
 ppeline->pipeline
 ppelines->pipelines
@@ -22325,6 +22349,9 @@ preparetion->preparation
 preparetions->preparations
 prepartion->preparation
 prepartions->preparations
+prepate->prepare
+prepated->prepared
+prepates->prepares
 prepatory->preparatory
 prependet->prepended
 prepented->prepended
@@ -26382,6 +26409,10 @@ serailse->serialise
 serailsed->serialised
 serailze->serialize
 serailzed->serialized
+serch->search
+serched->searched
+serches->searches
+serching->searching
 sercive->service
 sercived->serviced
 sercives->services
@@ -29200,6 +29231,8 @@ terriory->territory
 territorist->terrorist
 territoy->territory
 terroist->terrorist
+terurn->return
+terurns->returns
 tescase->testcase
 tescases->testcases
 tese->these, tease, terse,
