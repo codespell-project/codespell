@@ -2161,6 +2161,7 @@ appropriage->appropriate
 appropriatedly->appropriately
 appropriatly->appropriately
 appropriatness->appropriateness
+appropriete->appropriate
 appropritae->appropriate
 approprite->appropriate
 approproate->appropriate
@@ -17146,6 +17147,11 @@ interruptted->interrupted
 interrut->interrupt
 interrutps->interrupts
 interscetion->intersection
+intersecct->intersect
+interseccted->intersected
+interseccting->intersecting
+intersecction->intersection
+interseccts->intersects
 intersecrion->intersection
 intersecton->intersection
 intersectons->intersections
@@ -17570,7 +17576,7 @@ kernal->kernel
 kernals->kernels
 kernerl->kernel
 kernerls->kernels
-ket->kept
+ket->key, kept,
 keword->keyword
 kewords->keywords
 kewword->keyword
@@ -21909,6 +21915,7 @@ pltform->platform
 pltforms->platforms
 plugable->pluggable
 pluged->plugged
+plugget->plugged, plug it,
 pluging->plugging, plugin,
 pluign->plugin
 pluigns->plugins
@@ -22396,6 +22403,8 @@ preesnt->present
 prefectches->prefetches
 prefecth->prefetch
 prefectly->perfectly
+prefence->preference
+prefences->preferences
 prefere->prefer, preferred,
 preferecne->preference
 preferecnes->preferences
