@@ -23,7 +23,7 @@ Useful links
 Requirements
 ------------
 
-Python 3.5 or above.
+Python 3.6 or above.
 
 Installation
 ------------
@@ -134,10 +134,10 @@ applied directly, but should instead be manually inspected. E.g.:
 
    Note that there isn't a comma at the end of the line. The last argument is
    treated as the reason why a suggestion cannot be automatically applied.
-   
+
    There can also be multiple suggestions but any automatic fix will again be
    disabled::
-   
+
        clas->class, clash, disabled because of name clash in c++
 
 Development Setup

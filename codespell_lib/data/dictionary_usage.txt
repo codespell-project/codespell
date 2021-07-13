@@ -1,5 +1,6 @@
 blacklist->blocklist
 blacklists->blocklists
+blueish->bluish
 man-in-the-middle->on-path attacker
 master->primary, leader, active, writer, coordinator, parent, manager, main,
 masters->primaries, leaders, actives, writers, coordinators, parents, managers,
