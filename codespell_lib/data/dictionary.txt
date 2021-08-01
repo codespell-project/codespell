@@ -132,6 +132,7 @@ absoltue->absolute
 absoltuely->absolutely
 absoluate->absolute
 absoluately->absolutely
+absolue->absolute
 absoluely->absolutely
 absoluet->absolute
 absoluetly->absolutely
@@ -1934,6 +1935,7 @@ anytrhing->anything
 anytthing->anything
 anytying->anything
 anywere->anywhere
+anyy->any
 aoache->apache
 aond->and
 aother->another, other, mother,
@@ -3960,6 +3962,7 @@ beteween->between
 betrween->between
 bettern->better
 bettery->better, battery,
+bettween->between
 betwean->between
 betwee->between
 betweed->between
@@ -7521,6 +7524,7 @@ convised->convinced
 convovle->convolve
 convovled->convolved
 convovling->convolving
+convrt->convert
 convserion->conversion
 conyak->cognac
 coodinate->coordinate
@@ -8124,6 +8128,8 @@ cryptograpic->cryptographic
 crystalisation->crystallisation
 cryto->crypto
 crytpo->crypto
+csae->case
+csaes->cases
 ctificate->certificate
 ctificated->certificated
 ctificates->certificates
@@ -9850,6 +9856,7 @@ differantion->differentiation
 differate->differentiate
 differect->different
 differen->different
+differencess->differences
 differencial->differential
 differenciate->differentiate
 differenciated->differentiated
@@ -13367,6 +13374,11 @@ eyasr->years, eyas,
 eyt->yet
 ezdrop->eavesdrop
 fability->facility
+fabircate->fabricate
+fabircated->fabricated
+fabircates->fabricates
+fabircatings->fabricating
+fabircation->fabrication
 facce->face
 facedrwaing->facedrawing, face drawing,
 faceis->faces, face is,
@@ -13753,11 +13765,13 @@ flexable->flexible
 flexibel->flexible
 flexibele->flexible
 flexibilty->flexibility
+flexibily->flexibly, flexibility,
 flext->flex
 flie->file
 floading->floating, flooding,
 floading-add->floating-add
 floatation->flotation
+flor->floor, flow,
 floresent->fluorescent, florescent,
 floride->fluoride
 floting->floating
@@ -14538,6 +14552,12 @@ geraff->giraffe
 geraphics->graphics
 gerat->great
 gereating->generating
+gerenate->generate
+gerenated->generated
+gerenates->generates
+gerenating->generating
+gerenation->generation
+gerenations->generations
 gererate->generate
 gererated->generated
 gerilla->guerrilla
@@ -14711,6 +14731,7 @@ groubpy->groupby
 groupd->grouped
 groupe->grouped, group,
 groupes->groups, grouped,
+groupping->grouping
 groupt->grouped
 grranted->granted
 gruop->group
@@ -29687,6 +29708,9 @@ tourch->torch, touch,
 towords->towards
 towrad->toward
 toxen->toxin
+tpye->type
+tpyed->typed
+tpyes->types
 tpyo->typo
 trabsform->transform
 traceablity->traceability
@@ -30820,6 +30844,7 @@ unnessessary->unnecessary
 unning->running
 unnnecessary->unnecessary
 unnsupported->unsupported
+unobstrusive->unobtrusive
 unocde->Unicode
 unoffical->unofficial
 unoin->union
@@ -31497,6 +31522,7 @@ verfiy->verify
 verfy->verify
 verfying->verifying
 veriable->variable, veritable,
+verical->vertical
 verifcation->verification
 verifi->verify, verified,
 verifiaction->verification
