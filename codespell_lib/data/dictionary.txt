@@ -14,6 +14,11 @@ aadd->add
 aaggregation->aggregation
 aanother->another
 aapply->apply
+aaproximate->approximate
+aaproximated->approximated
+aaproximately->approximately
+aaproximates->approximates
+aaproximating->approximating
 aare->are
 aassociated->associated
 aautomatic->automatic
@@ -2490,6 +2495,7 @@ arogant->arrogant
 arogent->arrogant
 aronud->around
 aroud->around
+arounf->around
 aroung->around
 arount->around
 arquitecture->architecture
@@ -4372,6 +4378,8 @@ bugous->bogus
 buguous->bogus
 bugus->bogus
 buid->build
+buider->builder
+buiders->builders
 buiding->building
 buidling->building
 buiild->build
@@ -5256,6 +5264,7 @@ chopipng->chopping
 chopy->choppy, chop,
 choronological->chronological
 chosed->chose
+choseen->chosen
 choser->chooser
 chosing->choosing
 chossen->chosen
@@ -7884,8 +7893,12 @@ cption->option, caption,
 cpuld->could
 crace->grace, crate,
 craches->crashes, caches, crutches,
-craete->create
+craete->create, crate,
+craeted->created, crated,
+craetes->creates, crates,
 craeting->creating, crating,
+craetor->creator, crater,
+craetors->creators, craters,
 crahed->crashed
 crahes->crashes
 crahs->crash, crass,
@@ -7928,7 +7941,12 @@ cretae->create
 cretaed->created
 cretaes->creates
 cretaing->creating
+cretate->create
+cretated->created
 cretates->creates
+cretating->creating
+cretator->creator
+cretators->creators
 creted->created
 crewsant->croissant
 cricital->critical
@@ -14034,9 +14052,14 @@ ftrunacate->ftruncate
 fualt->fault
 fualts->faults
 fucntion->function
+fucntionality->functionality
+fucntioned->functioned
 fucntioning->functioning
 fucntions->functions
 fuction->function
+fuctionality->functionality
+fuctiones->functioned
+fuctioning->functioning
 fuctionoid->functionoid
 fuctions->functions
 fufill->fulfill
@@ -14087,7 +14110,7 @@ functionailty->functionality
 functionallity->functionality
 functionaltiy->functionality
 functionalty->functionality
-functionaly->functionally
+functionaly->functionally, functionality,
 functionnal->functional
 functionnalities->functionalities
 functionnality->functionality
@@ -15208,6 +15231,10 @@ icesickle->icicle
 icluding->including
 iconclastic->iconoclastic
 iconifie->iconify
+icrease->increase
+icreased->increased
+icreases->increases
+icreasing->increasing
 idae->idea
 idaeidae->idea
 idaes->ideas
@@ -17622,6 +17649,8 @@ libreoficekit->libreofficekit
 libreries->libraries
 librery->library
 libries->libraries
+librraies->libraries
+librray->library
 libstc++->libstdc++
 licate->locate
 licated->located
@@ -22960,6 +22989,9 @@ pursuades->persuades
 pusehd->pushed
 pususading->persuading
 puting->putting
+putpose->purpose
+putposed->purposed
+putposes->purposes
 pwoer->power
 pxoxied->proxied
 pxoxies->proxies
@@ -23100,6 +23132,8 @@ rasons->reasons
 raspoberry->raspberry
 rathar->rather
 rathern->rather
+rationnal->rational, rationale,
+rationnals->rationals, rationales,
 rcall->recall
 rceate->create
 rceating->creating
@@ -24766,6 +24800,10 @@ repulic->republic
 repulican->republican
 repulicans->republicans
 repulics->republics
+reputpose->repurpose
+reputposed->repurposed
+reputposes->repurposes
+reputposing->repurposing
 reqest->request
 reqested->requested
 reqests->requests
@@ -26279,6 +26317,7 @@ sheping->shaping
 shepre->sphere
 shepres->spheres
 sherif->sheriff
+shfted->shifted
 shicane->chicane
 shif->shift
 shif-tab->shift-tab
