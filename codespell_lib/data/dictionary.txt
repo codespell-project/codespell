@@ -1998,6 +1998,7 @@ appearences->appearances
 appearently->apparently
 appeares->appears
 appearning->appearing
+appearrs->appears
 appeciate->appreciate
 appeded->appended
 appeding->appending
@@ -6948,11 +6949,13 @@ considder->consider
 considderation->consideration
 considdered->considered
 considdering->considering
+conside->consider, coincide,
 considerd->considered
 considere->consider, considered,
 consideren->considered
 consideres->considered, considers,
 considert->considered, consider,
+consides->considers, coincides,
 considred->considered
 consier->consider
 consiers->considers
@@ -9667,6 +9670,8 @@ diabling->disabling
 diaciritc->diacritic
 diaciritcs->diacritics
 diagnistic->diagnostic
+diagnoal->diagonal
+diagnoals->diagonals
 diagnol->diagonal
 diagnosics->diagnostics
 diagnositc->diagnostic
@@ -16563,6 +16568,7 @@ inputsream->inputstream
 inpuut->input
 inreractive->interactive
 inrerface->interface
+inresponsive->unresponsive
 inro->into
 ins't->isn't
 insallation->installation
@@ -24370,6 +24376,7 @@ remebering->remembering
 remebers->remembers
 rememberable->memorable
 rememberance->remembrance
+rememberd->remembered
 remembrence->remembrance
 rememeber->remember
 rememebered->remembered
@@ -31376,6 +31383,7 @@ viatnamese->Vietnamese
 vice-fersa->vice-versa
 vice-wersa->vice-versa
 vicefersa->vice-versa
+viceversa->vice-versa
 vicewersa->vice-versa
 videostreamming->videostreaming
 viee->view
@@ -31441,6 +31449,7 @@ visibile->visible
 visibililty->visibility
 visibilit->visibility
 visibilty->visibility
+visibily->visibly, visibility,
 visibleable->visible
 visibles->visible
 visiblities->visibilities
