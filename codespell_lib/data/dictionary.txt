@@ -1493,6 +1493,7 @@ alloco->alloc
 allocos->allocs
 allocte->allocate
 allocted->allocated
+alloction->allocation
 alloctions->allocations
 alloctor->allocator
 alloed->allowed, aloud,
@@ -3060,6 +3061,9 @@ attrirbute->attribute
 attrirbuted->attributed
 attrirbutes->attributes
 attrirbution->attribution
+attritube->attribute
+attritubed->attributed
+attritubes->attributes
 attriubtes->attributes
 attriubute->attribute
 attrocities->atrocities
@@ -4599,7 +4603,13 @@ calcultator->calculator
 calculting->calculating
 calculuations->calculations
 calcurate->calculate
+calcurated->calculated
+calcurates->calculates
+calcurating->calculating
+calcutate->calculate
 calcutated->calculated
+calcutates->calculates
+calcutating->calculating
 caleed->called
 caler->caller
 calescing->coalescing
@@ -5293,6 +5303,7 @@ chosed->chose
 choseen->chosen
 choser->chooser
 chosing->choosing
+chosse->choose, chose,
 chossen->chosen
 chould->should, could,
 chouse->choose, chose, choux,
@@ -5838,9 +5849,12 @@ comamndline->commandline
 comamnds->commands
 comand->command
 comand-line->command-line
+comanded->commanded
 comander->commander, commandeer,
+comanding->commanding
 comando->commando
 comandos->commandos
+comands->commands
 comany->company
 comapany->company
 comapared->compared
@@ -7549,7 +7563,10 @@ copeing->copying
 copiese->copies
 copiing->copying
 copiler->compiler
+coplete->complete
+copleted->completed
 copletely->completely
+copletes->completes
 copmetitors->competitors
 copmilation->compilation
 copmonent->component
@@ -9807,6 +9824,7 @@ differenly->differently
 differens->difference
 differense->difference
 differentiatiations->differentiations
+differentl->differently
 differents->different, difference,
 differernt->different
 differes->differs
@@ -11064,6 +11082,8 @@ efford->effort, afford,
 effords->efforts, affords,
 effulence->effluence
 eforceable->enforceable
+egal->equal
+egals->equals
 egde->edge
 egdes->edges
 ege->edge
@@ -12441,6 +12461,7 @@ existatus->exitstatus
 existencd->existence
 existend->existed
 existense->existence
+existin->existing
 existince->existence
 existng->existing
 existsing->existing
@@ -14180,6 +14201,7 @@ functin->function
 functinality->functionality
 functino->function
 functins->functions
+functio->function
 functionability->functionality
 functionable->functional, functioning,
 functionaility->functionality
@@ -16262,6 +16284,7 @@ inforation->information
 inforational->informational
 inforce->enforce
 inforced->enforced
+informacion->information
 informaion->information
 informaiton->information
 informatation->information
@@ -17930,6 +17953,8 @@ logile->logfile
 loging->logging, lodging,
 logitude->longitude
 logoic->logic
+logorithm->logarithm
+logorithmic->logarithmic
 logrithm->logarithm
 logwritter->logwriter
 loign->login
@@ -18836,7 +18861,7 @@ mocules->modules
 moddel->model
 moddels->models
 modell->model
-moderm->modem
+moderm->modern, modem,
 modernination->modernization
 moderninations->modernizations
 moderninationz->modernizations
@@ -20428,6 +20453,9 @@ oposed->opposed
 oposite->opposite
 oposition->opposition
 oppenly->openly
+opperate->operate
+opperated->operated
+opperates->operates
 opperation->operation
 opperational->operational
 opperations->operations
@@ -22863,6 +22891,7 @@ propotions->proportions, promotions,
 proppely->properly
 propper->proper
 propperly->properly
+proprely->properly
 proprietory->proprietary
 proproable->probable
 proproably->probably
@@ -29109,12 +29138,13 @@ territoy->territory
 terroist->terrorist
 tescase->testcase
 tescases->testcases
-tese->these
-tesed->used, teased,
+tese->these, tease, terse,
+tesed->used, teased, tested,
 tesellate->tessellate
 tesellated->tessellated
 tesellation->tessellation
 tesellator->tessellator
+tesited->tested
 tessealte->tessellate
 tessealted->tessellated
 tesselatad->tessellated
@@ -29142,6 +29172,9 @@ texline->textline
 textfrme->textframe
 texual->textual
 texually->textually
+texure->texture
+texured->textured
+texures->textures
 texxt->text
 tey->they
 tghe->the
@@ -30154,6 +30187,7 @@ uminportant->unimportant
 umit->unit
 ummark->unmark
 umoutn->umount
+un-complete->incomplete
 unabailable->unavailable
 unabale->unable
 unabel->unable
@@ -31711,6 +31745,8 @@ warninsg->warnings
 warninsgs->warnings
 warniong->warning
 warniongs->warnings
+warnkng->warning
+warnkngs->warnings
 warrent->warrant
 warrriors->warriors
 was'nt->wasn't
@@ -31758,6 +31794,7 @@ weilded->wielded
 weill->will
 weired->weird
 weitght->weight
+wel->well
 well-reknown->well-renowned, well renown,
 well-reknowned->well-renowned, well renowned,
 wendesday->Wednesday
