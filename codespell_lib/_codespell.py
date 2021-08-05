@@ -819,7 +819,7 @@ def main(*args):
                     parser.print_help()
                     return EX_USAGE
         else:
-            if not os.path.isfile(dictionary):
+            if not os.path.exists(dictionary) or os.path.isdir(dictionary):
                 print("ERROR: cannot find dictionary file: %s" % dictionary,
                       file=sys.stderr)
                 parser.print_help()
