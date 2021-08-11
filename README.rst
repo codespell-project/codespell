@@ -41,23 +41,40 @@ Some noteworthy flags::
 
     codespell -w, --write-changes
 
-The ``-w`` flag will actually implement the changes recommended by codespell. Not running with ``-w`` flag is the same as with doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.::
+Apply (rather than suggest) changes, modifying files in place.
+Recommended to be used together with ``-i``, ``--interactive``.
+
+::
 
     codespell -I FILE, --ignore-words=FILE
 
-The ``-I`` flag can be used for a list of certain words to allow that are in the codespell dictionaries. The format of the file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said list of allowed words. **Important note:** The list passed to ``-I`` is case-sensitive based on how it is listed in the codespell dictionaries. ::
+Get a list of words to ignore from ``FILE``. The ``FILE`` format is one word per line.
 
-    codespell -L word1,word2,word3,word4
+**Important note:** Words are case-sensitive, based on how they are listed in the codespell dictionaries.
 
-The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it.  **Important note:** The list passed to ``-L`` is case-sensitive based on how it is listed in the codespell dictionaries. ::
+::
+
+    codespell -L LIST, --ignore-words-list=LIST
+
+Ignore words from the comma-separated ``LIST``.
+
+**Important note:** Words are case-sensitive, based on how they are listed in the codespell dictionaries.
+
+Example:
+
+* to ignore the words "creat" and "clos", invoke ``codespell --ignore-words-list="creat,clos"``.
+
+::
 
     codespell -x FILE, --exclude-file=FILE
 
 Ignore whole lines that match those in ``FILE``.  The lines in ``FILE`` should match the to-be-excluded lines exactly.
 
-    codespell -S, --skip=
+::
 
-Comma-separated list of files to skip. It accepts globs as well.  Examples:
+    codespell -S LIST, --skip=LIST
+
+Skip files from the comma-separated ``LIST``. Globs are also supported.  Examples:
 
 * to skip .eps & .txt files, invoke ``codespell --skip="*.eps,*.txt"``
 
@@ -99,13 +116,15 @@ containing an entry named ``[codespell]``. Each command line argument can
 be specified in this file (without the preceding dashes), for example::
 
     [codespell]
-    skip = *.po,*.ts,./src/3rdParty,./src/Test
-    count =
     quiet-level = 3
+    count =
+    skip = *.po,*.ts,./src/3rdParty,./src/Test
+    ignore-words-list = creat,clos
 
 This is equivalent to running::
 
-    codespell --quiet-level 3 --count --skip "*.po,*.ts,./src/3rdParty,./src/Test"
+    codespell --quiet-level 3 --count --skip "*.po,*.ts,./src/3rdParty,./src/Test" \
+              --ignore-words-list creat,clos
 
 Any options specified in the command line will *override* options from the
 config file.
