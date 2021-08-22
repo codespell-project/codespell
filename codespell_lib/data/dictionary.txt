@@ -2732,6 +2732,10 @@ assit->assist
 assitant->assistant
 assition->assertion
 assmbler->assembler
+assmeble->assemble
+assmebler->assembler
+assmebles->assembles
+assmebling->assembling
 assmebly->assembly
 assmelber->assembler
 assmption->assumption
@@ -6857,6 +6861,11 @@ conntroller->controller
 conosuer->connoisseur
 conotation->connotation
 conotations->connotations
+conotrol->control
+conotroled->controlled
+conotroling->controlling
+conotrolled->controlled
+conotrols->controls
 conpares->compares
 conplete->complete
 conpleted->completed
@@ -15826,6 +15835,7 @@ incompatbility->incompatibility
 incompatble->incompatible
 incompatiability->incompatibility
 incompatiable->incompatible
+incompatibile->incompatible
 incompatibilies->incompatibilities
 incompatiblities->incompatibilities
 incompatiblity->incompatibility
@@ -18078,6 +18088,8 @@ manufatured->manufactured
 manufaturing->manufacturing
 manufaucturing->manufacturing
 manulally->manually
+manule->manual
+manuley->manually
 manully->manually
 manuly->manually
 manupilations->manipulations
@@ -29444,6 +29456,7 @@ tragets->targets
 traiing->trailing, training,
 trailling->trailing, trialling, trilling,
 traingle->triangle
+traingles->triangles
 traingular->triangular
 traingulate->triangulate
 traingulated->triangulated
