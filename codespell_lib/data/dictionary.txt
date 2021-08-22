@@ -4123,6 +4123,8 @@ bootstap->bootstrap
 bootstapped->bootstrapped
 bootstapping->bootstrapping
 bootstaps->bootstraps
+booundaries->boundaries
+booundary->boundary
 boquet->bouquet
 borad->board
 boradcast->broadcast
@@ -20924,6 +20926,9 @@ parametes->parameters
 parametic->parametric, paramedic,
 parametised->parametrised
 parametr->parameter
+parametre->parameter
+parametreless->parameterless
+parametres->parameters
 parametter->parameter
 parametters->parameters
 paramss->params
@@ -28676,7 +28681,7 @@ tagnetial->tangential
 tagnets->tangents
 tahn->than
 taht->that
-taks->task, tasks,
+taks->task, tasks, takes,
 takslet->tasklet
 talbe->table
 talekd->talked
