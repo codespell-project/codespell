@@ -4219,6 +4219,7 @@ bounderies->boundaries
 boundery->boundary
 boundig->bounding
 boundimg->bounding
+boundin->bounding
 boundrary->boundary
 boundries->boundaries
 boundry->boundary
@@ -5180,6 +5181,8 @@ charator->character
 charators->characters
 charcater->character
 charcter->character
+charcteristic->characteristic
+charcteristics->characteristics
 charcters->characters
 charctor->character
 charctors->characters
@@ -5792,6 +5795,8 @@ collegues->colleagues
 collektion->collection
 colletion->collection
 collidies->collides
+collisin->collision, collusion,
+collisins->collisions, collusions,
 collison->collision, collusion,
 collisons->collisions, collusion, collusions,
 collission->collision, collusion,
@@ -8224,8 +8229,11 @@ custonizers->customizers
 custonizing->customizing
 custons->customs
 custormer->customer
+custum->custom
+custumer->customer
 custumised->customised
 custumized->customized
+custums->customs
 cuted->cut, cute, cuter,
 cutom->custom
 cutted->cut
@@ -14663,6 +14671,7 @@ gropu->group
 gropus->groups, gropes,
 groubpy->groupby
 groupd->grouped
+groupe->grouped, group,
 groupes->groups, grouped,
 groupt->grouped
 grranted->granted
@@ -19183,6 +19192,7 @@ multliplies->multiplies
 multliply->multiply
 multliplying->multiplying
 multple->multiple
+multples->multiples
 multplied->multiplied
 multplier->multiplier
 multpliers->multipliers
@@ -19590,6 +19600,8 @@ negoziations->negotiations
 negoziator->negotiator
 negoziators->negotiators
 negtive->negative
+neibhbors->neighbors
+neibhbours->neighbours
 neice->niece, nice,
 neigbor->neighbor
 neigborhood->neighborhood
@@ -25424,6 +25436,7 @@ returmed->returned
 returming->returning
 returms->returns
 returnd->returned
+returne->returned, return,
 returnes->returns
 returnig->returning
 returnn->return
@@ -27532,6 +27545,8 @@ spezific->specific
 spezified->specified
 spezify->specify
 spicific->specific
+spicified->specified
+spicify->specify
 spile->spite, spiral,
 spiltting->splitting
 spindel->spindle
@@ -31534,6 +31549,7 @@ visbly->visibly
 visiable->visible
 visiably->visibly
 visibale->visible
+visibibilty->visibility
 visibile->visible
 visibililty->visibility
 visibilit->visibility
