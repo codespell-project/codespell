@@ -3834,6 +3834,10 @@ beginnig->beginning
 beginnin->beginning
 beginnning->beginning
 beginnnings->beginnings
+behabior->behavior
+behabiors->behaviors
+behabiour->behaviour
+behabiours->behaviours
 behabviour->behaviour
 behaivior->behavior
 behavious->behaviour, behaviours,
@@ -11286,6 +11290,8 @@ emmitted->emitted
 emmitting->emitting
 emnity->enmity
 emoty->empty
+emough->enough
+emought->enough
 emperical->empirical
 emperically->empirically
 emphaised->emphasised
@@ -20536,6 +20542,8 @@ optimasation->optimization
 optimation->optimization, optimisation,
 optimazation->optimization
 optimiality->optimality
+optimice->optimize, optimise,
+optimiced->optimized, optimised,
 optimier->optimizer, optimiser,
 optimisim->optimism
 optimisitc->optimistic
@@ -30737,6 +30745,8 @@ unoffical->unofficial
 unoin->union
 unompress->uncompress
 unoperational->nonoperational
+unoptimice->unoptimize, unoptimise,
+unoptimiced->unoptimized, unoptimised,
 unorderd->unordered
 unoredered->unordered
 unorotated->unrotated
@@ -32166,6 +32176,10 @@ worthing->worth, meriting,
 worthwile->worthwhile
 woth->worth
 wothout->without
+wotk->work
+wotked->worked
+wotking->working
+wotks->works
 woud->would
 woudl->would
 woudn't->wouldn't
