@@ -1847,6 +1847,7 @@ annoymous->anonymous
 annualy->annually
 annuled->annulled
 annyoingly->annoyingly
+anoher->another
 anohter->another
 anologon->analogon
 anomally->anomaly
@@ -2706,6 +2707,9 @@ assignemnt->assignment
 assignemnts->assignments
 assignemtn->assignment
 assignend->assigned
+assignenment->assignment
+assignenmentes->assignments
+assignenments->assignments
 assignenmet->assignment
 assignes->assigns
 assignmenet->assignment
@@ -4904,6 +4908,8 @@ ccordinates->coordinates
 ccordinats->coordinates
 ccoutant->accountant
 ccpcheck->cppcheck
+ccustom->custom
+ccustoms->customs
 cdecompress->decompress
 ceartype->cleartype
 Ceasar->Caesar
@@ -7101,6 +7107,8 @@ constrcutor->constructor
 constrcutors->constructors
 constrcuts->constructs
 constriants->constraints
+constrint->constraint
+constrints->constraints
 constrollers->controllers
 construc->construct
 construced->constructed, construed,
@@ -9996,6 +10004,7 @@ directely->directly
 directes->directs
 directgories->directories
 directgory->directory
+directiona->directional, directions,
 directoies->directories
 directon->direction
 directores->directories
@@ -11106,6 +11115,7 @@ ehr->her
 ehternet->Ethernet
 ehther->ether, either,
 ehthernet->ethernet
+eiegn->eigen, reign,
 eighter->either
 eigth->eighth, eight,
 eihter->either
@@ -11696,6 +11706,7 @@ equaly->equally
 equel->equal
 equelibrium->equilibrium
 equialent->equivalent
+equil->equal
 equilavalent->equivalent
 equilibium->equilibrium
 equilibrum->equilibrium
@@ -11874,6 +11885,9 @@ Europians->Europeans
 Eurpean->European
 Eurpoean->European
 evalation->evaluation
+evalite->evaluate
+evalited->evaluated
+evalites->evaluates
 evaluataion->evaluation
 evaluataions->evaluations
 evalueate->evaluate
@@ -11984,6 +11998,11 @@ exand->expand
 exansive->expansive
 exapansion->expansion
 exapend->expand
+exaplain->explain
+exaplaination->explanation
+exaplained->explained
+exaplaining->explaining
+exaplains->explains
 exaplanation->explanation
 exaplanations->explanations
 exaple->example
@@ -13307,6 +13326,7 @@ eyasr->years, eyas,
 eyt->yet
 ezdrop->eavesdrop
 fability->facility
+facce->face
 facedrwaing->facedrawing, face drawing,
 faceis->faces, face is,
 faciliate->facilitate
@@ -15708,6 +15728,8 @@ implicitely->implicitly
 implicitley->implicitly
 implict->implicit
 implictly->implicitly
+implimcit->implicit
+implimcitly->implicitly
 impliment->implement
 implimentation->implementation
 implimentation-spacific->implementation-specific
@@ -17186,6 +17208,8 @@ invalidiate->invalidate
 invalud->invalid
 invarient->invariant
 invarients->invariants
+invarinat->invariant
+invarinats->invariants
 inventer->inventor
 inverded->inverted
 inverion->inversion
@@ -17802,6 +17826,8 @@ lik->like, lick, link,
 likeley->likely
 likelyhood->likelihood
 likewis->likewise
+likey->likely
+likley->likely
 likly->likely
 lileral->literal
 liminted->limited
@@ -23604,6 +23630,11 @@ reanmes->renames
 reanming->renaming
 reaon->reason
 reaons->reasons
+reapeat->repeat
+reapeated->repeated
+reapeater->repeater
+reapeating->repeating
+reapeats->repeats
 reappeares->reappears
 reapper->reappear
 reappered->reappeared
@@ -24402,6 +24433,7 @@ remaing->remaining
 remainging->remaining
 remainig->remaining
 remainst->remains
+remanin->remaining, remain,
 remaning->remaining
 remaping->remapping
 rembember->remember
@@ -25207,6 +25239,9 @@ ressembled->resembled
 ressemblence->resemblance
 ressembling->resembling
 ressemle->resemble
+resset->reset
+resseted->reset
+ressets->resets
 ressetting->resetting
 ressize->resize
 ressizes->resizes
@@ -25270,6 +25305,7 @@ resuling->resulting
 resullt->result
 resulotion->resolution
 resulsets->resultsets
+resulst->results
 resultion->resolution
 resultions->resolutions
 resultung->resulting
@@ -25719,6 +25755,7 @@ satandards->standards
 satelite->satellite
 satelites->satellites
 satelitte->satellite
+satellittes->satellites
 satement->statement
 satements->statements
 saterday->Saturday
@@ -26446,6 +26483,7 @@ shandeleers->chandeliers
 shandow->shadow
 shaneal->chenille
 shanghi->Shanghai
+shapt->shaped, shape,
 sharable->shareable
 shareed->shared
 sharloton->charlatan
@@ -26579,8 +26617,8 @@ sicne->since
 sidde->side
 sideral->sidereal
 siduction->seduction
-sie->size, sigh,
-sies->size, sighs,
+sie->size, sigh, side,
+sies->size, sighs, sides,
 siez->size, seize,
 sieze->seize, size,
 siezed->seized, sized,
@@ -26638,6 +26676,8 @@ silentely->silently
 silenty->silently
 siliently->silently, saliently,
 simeple->simple
+simetrie->symmetry
+simetries->symmetries
 simgle->single
 simialr->similar
 simiar->similar
@@ -29131,6 +29171,7 @@ ternament->tournament
 ternimate->terminate
 terrable->terrible
 terrestial->terrestrial
+terriffic->terrific
 terriories->territories
 terriory->territory
 territorist->terrorist
@@ -29162,6 +29203,7 @@ testin->testing
 testng->testing
 testof->test of
 testomony->testimony
+testsing->testing
 tetrahedran->tetrahedron
 tetrahedrans->tetrahedrons
 tetry->retry
@@ -30017,7 +30059,8 @@ troublehshoot->troubleshoot
 troublehshooting->troubleshooting
 troublshoot->troubleshoot
 troublshooting->troubleshooting
-troughput->throughput
+troughout->throughout, throughput,
+troughput->throughput, throughout,
 trought->through
 troup->troupe
 troups->troupes, troops,
@@ -31210,6 +31253,7 @@ vallidation->validation
 vallidity->validity
 vallue->value
 vallues->values
+valsues->values
 valtage->voltage
 valtages->voltages
 valu->value
