@@ -4335,6 +4335,7 @@ briges->bridges
 brighness->brightness
 brightnesss->brightness
 brigth->bright
+brigthnes->brightness
 brigthness->brightness
 briliant->brilliant
 brilinear->bilinear
@@ -14299,6 +14300,11 @@ functionon->function
 functionss->functions
 functios->functions
 functiosn->functions
+functiton->function
+functitonal->functional
+functitonally->functionally
+functitoned->functioned
+functitons->functions
 functon->function
 functonal->functional
 functonality->functionality
@@ -19261,6 +19267,7 @@ multpliers->multipliers
 multplies->multiplies
 multply->multiply
 multplying->multiplying
+multy->multi
 multy-thread->multithread
 mumber->number
 mumbers->numbers
@@ -22762,6 +22769,9 @@ proerties->properties
 proerty->property, poetry,
 proessing->processing
 profesion->profusion, profession,
+profesional->professional
+profesionally->professionally
+profesionals->professionals
 profesor->professor
 professer->professor
 proffesed->professed
@@ -23016,6 +23026,8 @@ propogation->propagation
 proporpotion->proportion
 proporpotional->proportional
 proportianal->proportional
+proporties->properties
+proporty->property
 propostion->proposition
 propotion->proportion, promotion,
 propotional->proportional, promotional,
@@ -23806,6 +23818,7 @@ reassocition->reassociation
 reasssign->reassign
 reasy->ready, easy,
 reatime->realtime
+reattache->reattached, reattach,
 reattachement->reattachment
 reay->ready, really, ray,
 reayd->ready, read,
@@ -24128,6 +24141,10 @@ redistirbuted->redistributed
 redistirbutes->redistributes
 redistirbuting->redistributing
 redistirbution->redistribution
+redistrubute->redistribute
+redistrubuted->redistributed
+redistrubution->redistribution
+redistrubutions->redistributions
 redliens->redlines
 rednerer->renderer
 redonly->readonly
@@ -29014,6 +29031,7 @@ tamplating->templating
 tangeant->tangent
 tangeantial->tangential
 tangeants->tangents
+tangenet->tangent
 tangensial->tangential
 tangentailly->tangentially
 tanget->tangent
@@ -29051,6 +29069,10 @@ tarvisci->TravisCI
 tasbar->taskbar
 taskelt->tasklet
 tast->taste
+tatgert->target
+tatgerted->targeted
+tatgerting->targeting
+tatgerts->targets
 tath->that
 tatoo->tattoo
 tatoos->tattoos
@@ -29160,6 +29182,10 @@ temperture->temperature
 templaet->template
 templat->template
 templateas->templates
+templete->template
+templeted->templated
+templetes->templates
+templeting->templating
 tempoaray->temporary
 tempopary->temporary
 temporaere->temporary
