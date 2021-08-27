@@ -3837,6 +3837,8 @@ begginings->beginnings
 begginnig->beginning
 begginning->beginning
 beggins->begins
+beghavior->behavior
+beghaviors->behaviors
 begiinning->beginning
 beginer->beginner
 begines->begins
@@ -17542,6 +17544,8 @@ keyworkds->keywords
 keywors->keywords
 keywprd->keyword
 kindergarden->kindergarten
+kinf->kind
+kinfs->kinds
 klenex->kleenex
 klick->click
 klicked->clicked
@@ -19640,6 +19644,10 @@ negoziators->negotiators
 negtive->negative
 neibhbors->neighbors
 neibhbours->neighbours
+neibor->neighbor
+neiborhood->neighborhood
+neiborhoods->neighborhoods
+neibors->neighbors
 neice->niece, nice,
 neigbor->neighbor
 neigborhood->neighborhood
@@ -21674,6 +21682,10 @@ phillosophically->philosophically
 philospher->philosopher
 philosphies->philosophies
 philosphy->philosophy
+phisical->physical
+phisically->physically
+phisicaly->physically
+phisics->physics
 phisosophy->philosophy
 Phonecian->Phoenecian
 phoneticly->phonetically
@@ -23115,6 +23127,7 @@ pseudononymous->pseudonymous
 pseudonyn->pseudonym
 pseudopoential->pseudopotential
 pseudopoentials->pseudopotentials
+pseudorinverse->pseudoinverse
 pseuo-palette->pseudo-palette
 psitoin->position
 psitoined->positioned
@@ -23125,8 +23138,10 @@ psrameter->parameter
 pssed->passed
 pssibility->possibility
 psudo->pseudo
+psudoinverse->pseudoinverse
 psuedo->pseudo
 psuedo-fork->pseudo-fork
+psuedoinverse->pseudoinverse
 psuedolayer->pseudolayer
 psuh->push
 psychadelic->psychedelic
@@ -24371,6 +24386,11 @@ reimplmentation->reimplementation
 reimplmented->reimplemented
 reimplmenting->reimplementing
 reimplments->reimplements
+reimpplement->reimplement
+reimpplementating->reimplementing
+reimpplementation->reimplementation
+reimpplemented->reimplemented
+reimpremented->reimplemented
 reinfoce->reinforce
 reinfoced->reinforced
 reinfocement->reinforcement
@@ -30734,7 +30754,7 @@ unkown->unknown
 unkowns->unknowns
 unkwown->unknown
 unlcear->unclear
-unleess->unless
+unleess->unless, unleash,
 unles->unless
 unlikey->unlikely
 unlikley->unlikely
