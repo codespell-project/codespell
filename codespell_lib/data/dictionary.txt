@@ -1487,6 +1487,7 @@ allocatedi->allocated
 allocatedp->allocated
 allocateing->allocating
 allocateng->allocating
+allocationg->allocating, allocation,
 allocaton->allocation
 allocatoor->allocator
 allocatote->allocate
@@ -3760,6 +3761,7 @@ bateries->batteries
 batery->battery
 battaries->batteries
 battary->battery
+bbefore->before
 bboolean->boolean
 bbooleans->booleans
 bcak->back
@@ -4736,6 +4738,8 @@ cannonicalize->canonicalize
 cannont->cannot
 cannotation->connotation
 cannotations->connotations
+cannote->cannot, connote,
+cannotes->cannot, connotes,
 cannott->cannot
 canonalize->canonicalize
 canonalized->canonicalized
@@ -10321,6 +10325,8 @@ disovering->discovering
 disovery->discovery
 dispached->dispatched
 dispair->despair
+dispalcement->displacement
+dispalcements->displacements
 dispaly->display
 dispalying->displaying
 disparingly->disparagingly
@@ -11302,6 +11308,7 @@ embeed->embed
 embezelled->embezzled
 emblamatic->emblematic
 embold->embolden
+embrodery->embroidery
 emedded->embedded
 emegrency->emergency
 emenet->element
@@ -21601,6 +21608,8 @@ perhasp->perhaps
 perheaps->perhaps
 perhpas->perhaps
 peridic->periodic
+perihperal->peripheral
+perihperals->peripherals
 perimetre->perimeter
 perimetres->perimeters
 periode->period
@@ -21694,6 +21703,9 @@ persuing->pursuing
 persuit->pursuit
 persuits->pursuits
 persumably->presumably
+perticular->particular
+perticularly->particularly
+perticulars->particulars
 pertrub->perturb
 pertrubation->perturbation
 pertrubations->perturbations
@@ -22292,7 +22304,7 @@ pre-proces->pre-process
 pre-procesing->pre-processing
 pre-realease->pre-release
 pre-registeres->pre-registers
-preallocationg->preallocating
+preallocationg->preallocating, preallocation,
 prealocate->preallocate
 prealocated->preallocated
 prealocates->preallocates
@@ -22616,7 +22628,16 @@ prinicipal->principal
 printting->printing
 prioritiy->priority
 priorty->priority
+priot->prior
+priotise->prioritise
+priotised->prioritised
+priotising->prioritising
+priotities->priorities
+priotitize->prioritize
 priotity->priority
+priotized->prioritized
+priotizing->prioritizing
+priots->priors
 prirority->priority
 pris->prise
 priting->printing
@@ -25332,6 +25353,7 @@ resourcs->resources, resource,
 resourcse->resources, resource,
 resourcsed->resourced, resource,
 resoure->resource
+resourecs->resources
 resoured->resourced
 resoures->resources
 resoution->resolution
@@ -28236,6 +28258,8 @@ subract->subtract
 subracted->subtracted
 subraction->subtraction
 subree->subtree
+subresoure->subresource
+subresoures->subresources
 subroutie->subroutine
 subrouties->subroutines
 subsceptible->susceptible
@@ -29035,6 +29059,9 @@ tabualtors->tabulators
 tage->stage, take, tag, tagged,
 taged->tagged
 taget->target
+tageted->targeted
+tageting->targeting
+tagets->targets
 tagggen->taggen
 tagnet->tangent
 tagnetial->tangential
@@ -31017,6 +31044,7 @@ unsettin->unsetting
 unsharable->unshareable
 unsiged->unsigned
 unsignificant->insignificant
+unsing->using
 unsinged->unsigned
 unsoclicited->unsolicited
 unsolicitied->unsolicited
