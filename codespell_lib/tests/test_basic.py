@@ -384,6 +384,7 @@ def test_encoding(
     assert "WARNING: Binary file" in stderr
 
 
+<<<<<<< HEAD
 def test_unknown_encoding_chardet(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
@@ -398,26 +399,69 @@ def test_ignore(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
-    """Test ignoring of files and directories."""
+    """Test ignoring of files and directories.
+
+    Test the following file hierarchy:
+
+        tmpdir
+        ├── good.txt
+        ├── bad.txt
+        └── ignoredir
+            └── subdir
+                └── bad.txt
+
+    """
     goodtxt = tmp_path / "good.txt"
     goodtxt.write_text("this file is okay")
-    assert cs.main(tmp_path) == 0
+    assert cs.main(d) == 0
     badtxt = tmp_path / "bad.txt"
     badtxt.write_text("abandonned")
     assert cs.main(tmp_path) == 1
     assert cs.main("--skip=bad*", tmp_path) == 0
+    assert cs.main("--skip=*bad*", tmp_path) == 0
     assert cs.main("--skip=bad.txt", tmp_path) == 0
-    subdir = tmp_path / "ignoredir"
+    assert cs.main("--skip=./bad.txt", tmp_path) == 0  # deprecated
+    subdir = tmp_path / "ignoredir" / "subdir"
     subdir.mkdir()
     (subdir / "bad.txt").write_text("abandonned")
     assert cs.main(tmp_path) == 2
-    assert cs.main("--skip=bad*", tmp_path) == 0
-    assert cs.main("--skip=*ignoredir*", tmp_path) == 1
-    assert cs.main("--skip=ignoredir", tmp_path) == 1
-    assert cs.main("--skip=*ignoredir/bad*", tmp_path) == 1
-    badjs = tmp_path / "bad.js"
-    copyfile(badtxt, badjs)
-    assert cs.main("--skip=*.js", goodtxt, badtxt, badjs) == 1
+    assert cs.main(goodtxt, badtxt) == 1
+    assert cs.main('--skip=*.txt', tmp_path) == 0
+    assert cs.main('--skip=*.txt', goodtxt, badtxt) == 0
+    assert cs.main('--skip=bad*', tmp_path) == 0
+    assert cs.main('--skip=*ignoredir*', tmp_path) == 1
+    assert cs.main('--skip=*gnoredir*', tmp_path) == 1
+    assert cs.main('--skip=ignoredir', tmp_path) == 1
+    assert cs.main('--skip=ignoredir/', tmp_path) == 1
+    assert cs.main('--skip=*ignoredir/subdir*', tmp_path) == 1
+    assert cs.main('--skip=*gnoredir/subdi*', tmp_path) == 1
+    assert cs.main('--skip=ignoredir/subdir', tmp_path) == 1
+    assert cs.main('--skip=ignoredir/subdir/', tmp_path) == 1
+    assert cs.main('--skip=*ignoredir/subdir/bad*', tmp_path) == 1
+    assert cs.main('--skip=ignoredir/subdir/bad.txt', tmp_path) == 1
+    assert cs.main('--skip=*subdir*', tmp_path) == 1
+    assert cs.main('--skip=*ubd*', tmp_path) == 1
+    assert cs.main('--skip=subdir', tmp_path) == 1
+    assert cs.main('--skip=*subdir/bad*', tmp_path) == 1
+    assert cs.main('--skip=subdir/bad*', tmp_path) == 2
+    # test deprecated syntax from outside "tmpdir"
+    assert cs.main('--skip=./ignoredir', tmp_path) == 2
+    assert cs.main('--skip=./ignoredir/subdir/', tmp_path) == 2
+    assert cs.main('--skip=./ignoredir/subdir/bad.txt', tmp_path) == 2
+    assert cs.main(f'--skip={d}/ignoredir', tmp_path) == 1
+    assert cs.main(f'--skip={d}/ignoredir/subdir/', tmp_path) == 1
+    assert cs.main(f'--skip={d}/ignoredir/subdir/bad.txt', tmp_path) == 1
+    # test deprecated syntax from inside "tmpdir"
+    cwd = os.getcwd()
+    os.chdir(tmpdir)
+    assert cs.main('--skip=./ignoredir') == 1
+    assert cs.main('--skip=./ignoredir/subdir/') == 1
+    assert cs.main('--skip=./ignoredir/subdir/bad.txt') == 1
+    assert cs.main('--skip=./ignoredir', '.') == 1
+    assert cs.main(f'--skip={d}/ignoredir') == 1
+    assert cs.main(f'--skip={d}/ignoredir/subdir/') == 1
+    assert cs.main(f'--skip={d}/ignoredir/subdir/bad.txt') == 1
+    os.chdir(cwd)
 
 
 def test_check_filename(
