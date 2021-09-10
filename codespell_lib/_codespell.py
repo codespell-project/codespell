@@ -139,8 +139,14 @@ class GlobMatch:
     def __init__(self, pattern: Optional[str]) -> None:
         self.pattern_list: Optional[List[str]]
         if pattern:
-            # Pattern might be a list of comma-delimited strings
-            self.pattern_list = ",".join(pattern).split(",")
+            self.pattern_list = [
+                # We remove trailing path separators from each pattern
+                # because shell completion might add a trailing separator
+                # '/' after directory names
+                p.rstrip(os.path.sep)
+                # Pattern might be a list of comma-separated patterns
+                for p in ",".join(pattern).split(",")
+            ]
         else:
             self.pattern_list = None
 
