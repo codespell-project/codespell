@@ -37,7 +37,7 @@ jobs:
       # this file has an error
       - run: "! codespell codespell_lib/tests/test_basic.py"
       - run: codecov
-    
+
   make-check-dictionaries:
     runs-on: ubuntu-latest
     steps:
