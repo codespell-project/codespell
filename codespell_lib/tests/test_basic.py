@@ -493,6 +493,13 @@ def test_ignore_regex_option(tmpdir, capsys):
     # Adding word breaks causes only one to be ignored.
     assert cs.main(f.name, r'--ignore-regex=\bdonn\b') == 1
 
+    with open(op.join(d, 'flag.txt'), 'w') as f:
+        f.write('text TE OTU text\n')
+    # Test file has 2 invalid entries.
+    assert cs.main(f.name) == 2
+    # Ignore consecutive 2 and 3 letter upper case acronyms:
+    assert cs.main(f.name, '--ignore-regex', '\\W([A-Z]{2,3})\\W') == 0
+
 
 def test_uri_regex_option(tmpdir, capsys):
     """Test --uri-regex option functionality."""
