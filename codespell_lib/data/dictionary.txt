@@ -7165,6 +7165,7 @@ conseedd->conceded
 conseeded->conceded
 conseeds->concedes
 consenquently->consequently
+consensis->consensus
 consentrate->concentrate
 consentrated->concentrated
 consentrates->concentrates
@@ -7909,6 +7910,10 @@ corrct->correct
 corrdinates->coordinates
 correclty->correctly
 correcly->correctly
+correcpond->correspond
+correcponded->corresponded
+correcponding->corresponding
+correcponds->corresponds
 correctably->correctable
 correctely->correctly
 correcters->correctors
@@ -8033,6 +8038,11 @@ corssite->cross-site
 corsssite->cross-site
 corsssute->cross-site
 corssute->cross-site
+corupt->corrupt
+corupted->corrupted
+coruption->corruption
+coruptions->corruptions
+corupts->corrupts
 corus->chorus
 corvering->covering
 cosnsrain->constrain
@@ -11138,6 +11148,10 @@ doubes->doubles
 doubleclick->double-click
 doublely->doubly
 doubletquote->doublequote
+doubth->doubt
+doubthed->doubted
+doubthing->doubting
+doubths->doubts
 doucment->document
 doucmentated->documented
 doucmentation->documentation
@@ -13100,6 +13114,9 @@ expemted->exempted
 expemtion->exemption
 expemtions->exemptions
 expemts->exempts
+expence->expense
+expences->expenses
+expencive->expensive
 expendeble->expendable
 expepect->expect
 expepected->expected
@@ -13576,6 +13593,8 @@ expirimental->experimental
 explaination->explanation
 explainations->explanations
 explainatory->explanatory
+explanaiton->explanation
+explanaitons->explanations
 explaning->explaining
 explantion->explanation
 explantions->explanations
@@ -14753,6 +14772,7 @@ functionallity->functionality
 functionaltiy->functionality
 functionalty->functionality
 functionaly->functionally, functionality,
+functionionality->functionality
 functionnal->functional
 functionnalities->functionalities
 functionnality->functionality
@@ -17691,6 +17711,7 @@ intialisers->initialisers
 intialises->initialises
 intialising->initialising
 intialistion->initialisation
+intializating->initializing
 intialization->initialization
 intializaze->initialize
 intialize->initialize
@@ -20497,6 +20518,7 @@ nelink->netlink
 nenviroment->environment
 neolitic->neolithic
 nerver->never
+nescesarry->necessary
 nescessarily->necessarily
 nescessary->necessary
 nesesarily->necessarily
@@ -24038,6 +24060,7 @@ pytohn->python
 pyton->python
 pytyon->python
 qeueue->queue
+qhich->which, quiche,
 qith->with
 qoute->quote
 qouted->quoted
@@ -24568,7 +24591,18 @@ rebuliding->rebuilding
 rebulids->rebuilds
 rebulit->rebuilt
 recahed->reached
+recalcualte->recalculate
+recalcualted->recalculated
+recalcualter->recalculator
+recalcualtes->recalculates
+recalcualting->recalculating
+recalcualtion->recalculation
+recalcualtions->recalculations
+recalcuate->recalculate
 recalcuated->recalculated
+recalcuations->recalculations
+recalculaion->recalculation
+recalculatble->recalculatable, recalculable,
 recalcution->recalculation
 recalulate->recalculate
 recalulation->recalculation
@@ -25366,6 +25400,10 @@ remining->remaining
 reminiscense->reminiscence
 reminscent->reminiscent
 reminsicent->reminiscent
+remmeber->remember
+remmebered->remembered
+remmebering->remembering
+remmebers->remembers
 remmove->remove
 remoce->remove
 remontly->remotely
@@ -25897,6 +25935,7 @@ reqeusting->requesting
 reqeusts->requests
 reqiest->request
 reqiure->require
+requency->frequency
 requeried->required
 reques->request
 requeset->request, requisite,
@@ -25908,6 +25947,10 @@ requestested->requested
 requestests->requests, requested,
 requestied->requested
 requestying->requesting
+requet->request
+requeted->requested
+requeting->requesting
+requets->requests
 requeum->requiem
 requied->required
 requierd->required
@@ -26491,6 +26534,7 @@ roatation->rotation
 roated->rotated
 roation->rotation
 roboustness->robustness
+robustnes->robustness
 Rockerfeller->Rockefeller
 rococco->rococo
 rocord->record
@@ -30564,6 +30608,9 @@ todya->today
 toekn->token
 togehter->together
 toggel->toggle
+toggeles->toggles
+toggeling->toggling
+toggels->toggles
 togheter->together
 toghether->together
 togling->toggling
@@ -31469,6 +31516,7 @@ underfined->undefined
 underlayed->underlaid
 underlaying->underlying
 underlow->underflow
+underneeth->underneath
 underrrun->underrun
 undersacn->underscan
 understadn->understand
@@ -32897,6 +32945,7 @@ waranty->warranty
 wardobe->wardrobe
 waring->warning
 warinigs->warnings
+warining->warning
 warinings->warnings
 warks->works
 warlking->walking
