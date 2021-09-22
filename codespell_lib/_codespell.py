@@ -54,7 +54,7 @@ _builtin_dictionaries = (
     # realistic for obscure words
     ('clear', 'for unambiguous errors', '',
         False, None, supported_languages_en, None),
-    ('rare', 'for rare but valid words', '_rare',
+    ('rare', 'for rare (but valid) words which are likely to be errors', '_rare',  # noqa: E501
         None, None, None, None),
     ('informal', 'for making informal words more formal', '_informal',
         True, True, supported_languages_en, supported_languages_en),
