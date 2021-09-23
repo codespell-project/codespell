@@ -28,9 +28,6 @@ except Exception as exp:  # probably ImportError, but maybe also language
             'aspell not found, but not required, skipping aspell tests. Got '
             'error during import:\n%s' % (exp,))
 
-ws = re.compile(r'.*\s.*')  # whitespace
-comma = re.compile(r'.*,.*')  # comma
-
 global_err_dicts = dict()
 global_pairs = set()
 
@@ -86,30 +83,40 @@ def _check_aspell(phrase, msg, in_aspell, fname, languages):
         assert not this_in_aspell, '%s should not %s' % (msg, end)
 
 
+whitespace = re.compile(r'\s')
+start_whitespace = re.compile(r'^\s')
+start_comma = re.compile(r'^,')
+whitespace_comma = re.compile(r'\s,')
+comma_whitespaces = re.compile(r',\s\s')
+comma_without_whitespace = re.compile(r',[^ ]')
+whitespace_end = re.compile(r'\s+$')
+single_comma = re.compile(r'^[^,]*,\s*$')
+
+
 def _check_err_rep(err, rep, in_aspell, fname, languages):
-    assert ws.match(err) is None, 'error %r has whitespace' % err
-    assert comma.match(err) is None, 'error %r has a comma' % err
+    assert whitespace.search(err) is None, 'error %r has whitespace' % err
+    assert ',' not in err, 'error %r has a comma' % err
     assert len(rep) > 0, ('error %s: correction %r must be non-empty'
                           % (err, rep))
-    assert not re.match(r'^\s.*', rep), ('error %s: correction %r '
-                                         'cannot start with whitespace'
-                                         % (err, rep))
+    assert not start_whitespace.match(rep), ('error %s: correction %r '
+                                             'cannot start with whitespace'
+                                             % (err, rep))
     _check_aspell(err, 'error %r' % (err,), in_aspell[0], fname, languages[0])
     prefix = 'error %s: correction %r' % (err, rep)
     for (r, msg) in [
-            (r'^,',
+            (start_comma,
              '%s starts with a comma'),
-            (r'\s,',
+            (whitespace_comma,
              '%s contains a whitespace character followed by a comma'),
-            (r',\s\s',
+            (comma_whitespaces,
              '%s contains a comma followed by multiple whitespace characters'),
-            (r',[^ ]',
+            (comma_without_whitespace,
              '%s contains a comma *not* followed by a space'),
-            (r'\s+$',
+            (whitespace_end,
              '%s has a trailing space'),
-            (r'^[^,]*,\s*$',
+            (single_comma,
              '%s has a single entry but contains a trailing comma')]:
-        assert not re.search(r, rep), (msg % (prefix,))
+        assert not r.search(rep), (msg % (prefix,))
     del msg
     if rep.count(','):
         assert rep.endswith(','), ('error %s: multiple corrections must end '
