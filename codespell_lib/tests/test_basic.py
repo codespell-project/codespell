@@ -23,7 +23,8 @@ def test_constants():
 class MainWrapper:
     """Compatibility wrapper for when we used to return the count."""
 
-    def main(self, *args, count=True, std=False, **kwargs):
+    @staticmethod
+    def main(*args, count=True, std=False, **kwargs):
         if count:
             args = ('--count',) + args
         code = cs_.main(*args, **kwargs)
