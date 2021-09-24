@@ -58,7 +58,7 @@ def test_dictionary_formatting(fname, in_aspell, in_dictionary):
                 _check_err_rep(err, rep, in_aspell, fname, in_dictionary)
             except AssertionError as exp:
                 errors.append(str(exp).split('\n')[0])
-    if len(errors):
+    if errors:
         raise AssertionError('\n' + '\n'.join(errors))
 
 
