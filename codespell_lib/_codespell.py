@@ -536,7 +536,7 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
             r = sys.stdin.readline().strip().upper()
             if not r:
                 r = 'Y'
-            if r != 'Y' and r != 'N':
+            if r not in ('Y', 'N'):
                 print("Say 'y' or 'n'")
                 r = ''
 
