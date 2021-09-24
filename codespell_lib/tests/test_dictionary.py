@@ -9,7 +9,7 @@ import pytest
 from codespell_lib._codespell import _builtin_dictionaries
 from codespell_lib._codespell import supported_languages
 
-spellers = dict()
+spellers = {}
 
 try:
     import aspell
@@ -26,7 +26,7 @@ except Exception as exp:  # probably ImportError, but maybe also language
             'aspell not found, but not required, skipping aspell tests. Got '
             'error during import:\n%s' % (exp,))
 
-global_err_dicts = dict()
+global_err_dicts = {}
 global_pairs = set()
 
 # Filename, should be seen as errors in aspell or not
@@ -48,7 +48,7 @@ def test_dictionaries_exist():
 @fname_params
 def test_dictionary_formatting(fname, in_aspell, in_dictionary):
     """Test that all dictionary entries are valid."""
-    errors = list()
+    errors = []
     with open(fname, 'rb') as fid:
         for line in fid:
             err, rep = line.decode('utf-8').split('->')
@@ -208,7 +208,7 @@ allowed_dups = {
 @pytest.mark.dependency(name='dictionary loop')
 def test_dictionary_looping(fname, in_aspell, in_dictionary):
     """Test that all dictionary entries are valid."""
-    this_err_dict = dict()
+    this_err_dict = {}
     short_fname = op.basename(fname)
     with open(fname, 'rb') as fid:
         for line in fid:
