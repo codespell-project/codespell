@@ -400,7 +400,7 @@ def parse_options(args):
     options = parser.parse_args(list(args))
 
     # Load config files and look for ``codespell`` options.
-    cfg_files = ['setup.cfg', '.codespellrc']
+    cfg_files = ['tox.ini', 'setup.cfg', '.codespellrc']
     if options.config:
         cfg_files.append(options.config)
     config = configparser.ConfigParser()

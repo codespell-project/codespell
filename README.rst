@@ -94,9 +94,10 @@ Using a config file
 Command line options can also be specified in a config file.
 
 When running ``codespell``, it will check in the current directory for a file
-named ``setup.cfg`` or ``.codespellrc`` (or a file specified via ``--config``),
-containing an entry named ``[codespell]``. Each command line argument can
-be specified in this file (without the preceding dashes), for example::
+named ``.codespellrc``, ``setup.cfg`` or ``tox.ini`` (or a file specified via
+``--config``), containing an entry named ``[codespell]``. Each command line
+argument can be specified in this file (without the preceding dashes), for
+example::
 
     [codespell]
     skip = *.po,*.ts,./src/3rdParty,./src/Test
