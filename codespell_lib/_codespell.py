@@ -17,8 +17,6 @@ Copyright (C) 2010-2011  Lucas De Marchi <lucas.de.marchi@gmail.com>
 Copyright (C) 2011  ProFUSION embedded systems
 """
 
-from __future__ import print_function
-
 import argparse
 import codecs
 import configparser
