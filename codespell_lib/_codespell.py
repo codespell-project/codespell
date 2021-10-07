@@ -237,7 +237,7 @@ class NewlineHelpFormatter(argparse.HelpFormatter):
     def _split_lines(self, text, width):
         parts = text.split('\n')
         out = list()
-        for pi, part in enumerate(parts):
+        for part in parts:
             # Eventually we could allow others...
             indent_start = '- '
             if part.startswith(indent_start):
