@@ -88,7 +88,7 @@ start_whitespace = re.compile(r'^\s')
 start_comma = re.compile(r'^,')
 whitespace_comma = re.compile(r'\s,')
 comma_whitespaces = re.compile(r',\s\s')
-comma_without_whitespace = re.compile(r',[^ ]')
+comma_without_space = re.compile(r',[^ ]')
 whitespace_end = re.compile(r'\s+$')
 single_comma = re.compile(r'^[^,]*,\s*$')
 
@@ -110,7 +110,7 @@ def _check_err_rep(err, rep, in_aspell, fname, languages):
              '%s contains a whitespace character followed by a comma'),
             (comma_whitespaces,
              '%s contains a comma followed by multiple whitespace characters'),
-            (comma_without_whitespace,
+            (comma_without_space,
              '%s contains a comma *not* followed by a space'),
             (whitespace_end,
              '%s has a trailing space'),
