@@ -205,13 +205,12 @@ allowed_dups = {
 # variable record how many loop executed in case multiple runs of the test, initialize the dictionary
 duplicates_dict_num = 0
 
-
 @pytest.fixture(scope="function")
 def initialize_dictionary():
     """ initialize the dictionary """
     global duplicates_dict_num
     duplicates_dict_num += 1
-    if duplicates_dict_num == len(_fnames_in_aspell)+1:
+    if duplicates_dict_num >= len(_fnames_in_aspell)+1:
         global global_err_dicts
         global_err_dicts = dict()
         global global_pairs
