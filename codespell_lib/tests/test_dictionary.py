@@ -195,9 +195,27 @@ allowed_dups = {
     ('dictionary_rare.txt', 'dictionary_usage.txt'),
 }
 
+# variable record how many loop executed in case multiple runs of the test, initialize the dictionary 
+duplicates_dict_num = 0
+
+
+@pytest.fixture(scope="function")
+def initialize_dictionary():
+    """ initialize the dictionary """
+    global duplicates_dict_num
+    duplicates_dict_num += 1
+    print(duplicates_dict_num)
+    if duplicates_dict_num == len(_fnames_in_aspell)+1:
+        global global_err_dicts
+        global_err_dicts = dict()
+        global global_pairs
+        global_pairs = set()
+        duplicates_dict_num = 1
+
 
 @fname_params
 @pytest.mark.dependency(name='dictionary loop')
+@pytest.mark.usefixtures("initialize_dictionary")
 def test_dictionary_looping(fname, in_aspell, in_dictionary):
     """Test that all dictionary entries are valid."""
     this_err_dict = dict()
