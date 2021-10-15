@@ -26618,6 +26618,8 @@ sercive->service
 sercived->serviced
 sercives->services
 serciving->servicing
+sereverless->serverless
+serevrless->serverless
 sergent->sergeant
 serialiasation->serialisation
 serialiazation->serialization
@@ -26657,12 +26659,16 @@ serveice->service
 serveiced->serviced
 serveices->services
 serveicing->servicing
+serveless->serverless
 serveral->several
 serverite->severity
 serverites->severities
 serveritie->severity, severities,
 serverities->severities
 serverity->severity
+serverles->serverless
+serverlesss->serverless
+serverlsss->serverless
 servicies->services
 servie->service
 servies->services
