@@ -1653,6 +1653,7 @@ alwasys->always
 alwauys->always
 alway->always
 alwyas->always
+alwys->always
 alyways->always
 amacing->amazing
 amacingly->amazingly
@@ -10851,7 +10852,7 @@ doublely->doubly
 doubletquote->doublequote
 doucment->document
 doucmentated->documented
-doucmentation->documenting
+doucmentation->documentation
 doucmented->documented
 doucmenter->documenter
 doucmenters->documenters
@@ -11569,6 +11570,7 @@ enironments->environments
 enities->entities
 enitities->entities
 enitity->entity
+enitre->entire
 enity->entity
 enivornment->environment
 enivornments->environments
@@ -11671,6 +11673,9 @@ entquired->enquired, inquired,
 entquires->enquires, inquires,
 entquiries->enquiries, inquiries,
 entquiry->enquiry, inquiry,
+entrace->entrance
+entraced->entranced
+entraces->entrances
 entrepeneur->entrepreneur
 entrepeneurs->entrepreneurs
 entrie->entry, entries,
