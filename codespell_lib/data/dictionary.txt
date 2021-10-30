@@ -4132,6 +4132,8 @@ bobard->board, bombard,
 bocome->become
 boddy->body
 bodydbuilder->bodybuilder
+boelean->boolean
+boeleans->booleans
 boffer->buffer
 bofore->before
 bofy->body
@@ -6345,6 +6347,7 @@ compiliant->compliant
 compiliation->compilation
 compilier->compiler
 compiliers->compilers
+compitability->compatibility
 compitable->compatible
 compitent->competent
 compitible->compatible
@@ -15173,6 +15176,8 @@ havnt->haven't
 haynus->heinous
 hazzle->hassle
 hda->had
+headder-header
+headders-headers
 headle->handle
 headong->heading
 headquarer->headquarter
@@ -27488,6 +27493,7 @@ specifiction->specification
 specifictions->specifications
 specificy->specify, specificity, specifically,
 specifid->specified
+specifiees->specifies
 specifig->specific
 specifigation->specification
 specifigations->specifications
