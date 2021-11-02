@@ -4735,6 +4735,8 @@ candidiate->candidate
 candidiates->candidates
 candinate->candidate
 candinates->candidates
+canditate->candidate
+canditates->candidates
 cange->change
 canged->changed
 canidate->candidate
@@ -6377,6 +6379,7 @@ complementt->complement
 compleness->completeness
 complession->compression
 complet->complete
+completd->complete, completed,
 completedthe->completed the
 completeion->completion
 completelly->completely
@@ -6390,6 +6393,7 @@ completly->completely
 completness->completeness
 complette->complete
 complettly->completely
+complety->completely
 compliace->compliance
 compliancy->compliance
 complianse->compliance
@@ -12410,7 +12414,10 @@ exectuables->executables
 exectued->executed
 exectuion->execution
 exectuions->executions
+execture->execute
 exectured->executed
+exectures->executes
+execturing->executing
 exectute->execute
 exectuted->executed
 exectutes->executes
@@ -12625,6 +12632,7 @@ existying->existing
 exitation->excitation
 exitations->excitations
 exite->exit, excite, exits,
+exitsing->existing, exiting,
 exitt->exit
 exitted->exited
 exitting->exiting
@@ -13810,6 +13818,7 @@ fisrt->first
 fiter->filter, fighter, fitter, fiver,
 fitering->filtering
 fiters->filters, fighters, fitters, fivers,
+fith->fifth, filth,
 fitler->filter
 fitlers->filters
 fivety->fifty
@@ -16071,6 +16080,7 @@ inclreased->increased
 includ->include
 includea->include
 includee->include
+includeing->including
 includied->included
 includig->including
 includign->including
@@ -16131,6 +16141,7 @@ incompetant->incompetent
 incompete->incomplete
 incompleate->incomplete
 incompleete->incomplete
+incompletd->incomplete
 incomptable->incompatible
 incomptetent->incompetent
 incomptible->incompatible
@@ -20284,6 +20295,8 @@ numberals->numerals
 numberic->numeric
 numberous->numerous
 numbert->number
+numbet->number
+numbets->numbers
 numbres->numbers
 numearate->numerate
 numearation->numeration
@@ -24432,6 +24445,7 @@ refrerenceing->referencing
 refrerences->references
 refrerencial->referential
 refrers->refers
+refreshs->refreshes
 refridgeration->refrigeration
 refridgerator->refrigerator
 refromatting->refomatting
@@ -28264,6 +28278,8 @@ stutus->status
 styhe->style
 styilistic->stylistic
 stying->staying, styling,
+stylessheet->stylesheet, stylesheets,
+stylessheets->stylesheets
 sub-lcuase->sub-clause
 subcatagories->subcategories
 subcatagory->subcategory
@@ -28926,6 +28942,7 @@ swicthed->switched
 swicthing->switching
 swiming->swimming
 switchs->switches
+switcht->switched
 switchting->switching
 swith->switch
 swithable->switchable
@@ -29225,6 +29242,7 @@ tarbal->tarball
 tarbals->tarballs
 targed->target
 targer->target
+targest->targets
 targetted->targeted
 targetting->targeting
 targettting->targeting
@@ -30535,6 +30553,11 @@ ue->use, due,
 ueful->useful
 uegister->unregister
 uesd->used
+uesful->useful
+uesfull->useful
+uesfulness->usefulness
+uesless->useless
+ueslessness->uselessness
 uggly->ugly
 ugglyness->ugliness
 uglyness->ugliness
@@ -31180,6 +31203,7 @@ unsiged->unsigned
 unsignificant->insignificant
 unsing->using
 unsinged->unsigned
+unsless->unless, useless,
 unsoclicited->unsolicited
 unsolicitied->unsolicited
 unsolicted->unsolicited
