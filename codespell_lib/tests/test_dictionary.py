@@ -199,6 +199,7 @@ allowed_dups = {
     ('dictionary.txt', 'dictionary_names.txt'),
     ('dictionary.txt', 'dictionary_rare.txt'),
     ('dictionary.txt', 'dictionary_usage.txt'),
+    ('dictionary_code.txt', 'dictionary_rare.txt'),
     ('dictionary_rare.txt', 'dictionary_usage.txt'),
 }
 
