@@ -9608,6 +9608,8 @@ destroied->destroyed
 destroing->destroying
 destrois->destroys
 destroyes->destroys
+destruktor->desctructor
+destruktors->desctructors
 destrutor->destructor
 destrutors->destructors
 destry->destroy
@@ -17799,6 +17801,8 @@ knwoingly->knowingly
 knwon->known
 knwos->knows
 kocalized->localized
+komma->comma, coma,
+kommas->commas, comas,
 konw->know
 konwn->known
 konws->knows
@@ -19051,6 +19055,8 @@ mircosoft->Microsoft
 mirgate->migrate
 mirgated->migrated
 mirgates->migrates
+mirometer->micrometer
+mirometers->micrometers
 miror->mirror, minor,
 mirored->mirrored
 miroring->mirroring
@@ -20710,6 +20716,7 @@ ony->only, on,
 onyl->only
 oommits->commits
 opactity->opacity
+opactiy->opacity
 opacy->opacity
 opague->opaque
 opatque->opaque
@@ -20920,6 +20927,7 @@ opulates->populates, opiates,
 orcale->oracle
 orded->ordered
 orderd->ordered
+ordert->ordered
 ordner->order
 orgamise->organise
 organim->organism
@@ -29712,7 +29720,7 @@ thatn->that, than,
 thats'->that's
 thats->that's
 thats;->that's
-thay->they
+thay->they, that,
 thck->thick
 theard->thread
 thearding->threading
