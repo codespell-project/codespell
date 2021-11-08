@@ -3,6 +3,10 @@ codespell
 
 Fix common misspellings in text files. It's designed primarily for checking
 misspelled words in source code, but it can be used with other files as well.
+It does not check for word membership in a complete dictionary, but instead
+looks for a set of common misspellings. Therefore it should catch errors like
+"adn", but it will not catch "adnasdfasdf". This also means it shouldn't
+generate false-positives when you use a niche term it doesn't know about.
 
 Useful links
 ------------
@@ -19,7 +23,7 @@ Useful links
 Requirements
 ------------
 
-Python 3.5 or above.
+Python 3.6 or above.
 
 Installation
 ------------
@@ -130,10 +134,10 @@ applied directly, but should instead be manually inspected. E.g.:
 
    Note that there isn't a comma at the end of the line. The last argument is
    treated as the reason why a suggestion cannot be automatically applied.
-   
+
    There can also be multiple suggestions but any automatic fix will again be
    disabled::
-   
+
        clas->class, clash, disabled because of name clash in c++
 
 Development Setup
@@ -154,7 +158,7 @@ If you have a suggested typo that you'd like to see merged please follow these s
 
 1. Make sure you read the instructions mentioned in the ``Dictionary format`` section above to submit correctly formatted entries.
 
-2. Choose the correct dictionary file to add your typo too. See `codespell --help` for explanations of the different dictionaries.
+2. Choose the correct dictionary file to add your typo to. See `codespell --help` for explanations of the different dictionaries.
 
 3. Sort the dictionaries. This is done by invoking (in the top level directory of ``codespell/``)::
 

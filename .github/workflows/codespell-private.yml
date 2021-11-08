@@ -33,11 +33,11 @@ jobs:
       - run: python setup.py install
       - run: codespell --help
       - run: make check
-      - run: codespell --check-filenames --skip="./.git/*,*.pyc,./codespell_lib/tests/test_basic.py,./codespell_lib/data/*,./example/code.c,./build/lib/codespell_lib/tests/test_basic.py,./build/lib/codespell_lib/data/*"
+      - run: codespell --check-filenames --skip="./.git/*,*.pyc,./codespell_lib/tests/test_basic.py,./codespell_lib/data/*,./example/code.c,./build/lib/codespell_lib/tests/test_basic.py,./build/lib/codespell_lib/data/*,README.rst,*.egg-info/*"
       # this file has an error
       - run: "! codespell codespell_lib/tests/test_basic.py"
       - run: codecov
-    
+
   make-check-dictionaries:
     runs-on: ubuntu-latest
     steps:
@@ -56,4 +56,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Flake8 with annotations
-        uses: TrueBrain/actions-flake8@v1.2
+        uses: TrueBrain/actions-flake8@v2

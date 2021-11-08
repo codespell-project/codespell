@@ -3,7 +3,6 @@
 # adapted from mne-python
 
 import os
-from os import path as op
 
 from setuptools import setup
 
@@ -43,17 +42,17 @@ if __name__ == "__main__":
                        'Operating System :: Unix',
                        'Operating System :: MacOS'],
           platforms='any',
-          python_requires='>=3.5',
+          python_requires='>=3.6',
           packages=[
               'codespell_lib',
               'codespell_lib.data',
           ],
           package_data={'codespell_lib': [
-              op.join('data', 'dictionary*.txt'),
-              op.join('data', 'linux-kernel.exclude'),
+              os.path.join('data', 'dictionary*.txt'),
+              os.path.join('data', 'linux-kernel.exclude'),
           ]},
           exclude_package_data={'codespell_lib': [
-              op.join('tests', '*'),
+              os.path.join('tests', '*'),
           ]},
           entry_points={
               'console_scripts': [

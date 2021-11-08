@@ -17,8 +17,6 @@ Copyright (C) 2010-2011  Lucas De Marchi <lucas.de.marchi@gmail.com>
 Copyright (C) 2011  ProFUSION embedded systems
 """
 
-from __future__ import print_function
-
 import argparse
 import codecs
 import configparser
@@ -29,11 +27,16 @@ import sys
 import textwrap
 
 word_regex_def = u"[\\w\\-'’`]+"
+# While we want to treat characters like ( or " as okay for a starting break,
+# these may occur unescaped in URIs, and so we are more restrictive on the
+# endpoint.  Emails are more restrictive, so the endpoint remains flexible.
+uri_regex_def = (u"(\\b(?:https?|[ts]?ftp|file|git|smb)://[^\\s]+(?=$|\\s)|"
+                 u"\\b[\\w.%+-]+@[\\w.-]+\\b)")
 encodings = ('utf-8', 'iso-8859-1')
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
-VERSION = '2.1.dev0'
+VERSION = '2.2.dev0'
 
 supported_languages_en = ('en', 'en_GB', 'en_US', 'en_CA', 'en_AU')
 supported_languages = supported_languages_en
@@ -49,7 +52,7 @@ _builtin_dictionaries = (
     # realistic for obscure words
     ('clear', 'for unambiguous errors', '',
         False, None, supported_languages_en, None),
-    ('rare', 'for rare but valid words', '_rare',
+    ('rare', 'for rare (but valid) words which are likely to be errors', '_rare',  # noqa: E501
         None, None, None, None),
     ('informal', 'for making informal words more formal', '_informal',
         True, True, supported_languages_en, supported_languages_en),
@@ -290,9 +293,10 @@ def parse_options(args):
                         action='store', type=str,
                         help='regular expression which is used to find '
                              'patterns to ignore by treating as whitespace. '
-                             'When writing regexes, consider ensuring there '
-                             'are boundary non-word chars, e.g., '
-                             '"\\Wmatch\\W". Defaults to empty/disabled.')
+                             'When writing regular expressions, consider '
+                             'ensuring there are boundary non-word chars, '
+                             'e.g., "\\bmatch\\b". Defaults to '
+                             'empty/disabled.')
     parser.add_argument('-I', '--ignore-words',
                         action='append', metavar='FILE',
                         help='file that contains words which will be ignored '
@@ -304,6 +308,13 @@ def parse_options(args):
                         help='comma separated list of words to be ignored '
                              'by codespell. Words are case sensitive based on '
                              'how they are written in the dictionary file')
+    parser.add_argument('--uri-ignore-words-list',
+                        action='append', metavar='WORDS',
+                        help='comma separated list of words to be ignored '
+                             'by codespell in URIs and emails only. Words are '
+                             'case sensitive based on how they are written in '
+                             'the dictionary file. If set to "*", all '
+                             'misspelling in URIs and emails will be ignored.')
     parser.add_argument('-r', '--regex',
                         action='store', type=str,
                         help='regular expression which is used to find words. '
@@ -311,6 +322,10 @@ def parse_options(args):
                              'underscore, the hyphen, and the apostrophe is '
                              'used to build words. This option cannot be '
                              'specified together with --write-changes.')
+    parser.add_argument('--uri-regex',
+                        action='store', type=str,
+                        help='regular expression which is used to find URIs '
+                             'and emails. A default expression is provided.')
     parser.add_argument('-s', '--summary',
                         action='store_true', default=False,
                         help='print summary of fixes')
@@ -411,6 +426,15 @@ def parse_options(args):
         options.files.append('.')
 
     return options, parser
+
+
+def parse_ignore_words_option(ignore_words_option):
+    ignore_words = set()
+    if ignore_words_option:
+        for comma_separated_words in ignore_words_option:
+            for word in comma_separated_words.split(','):
+                ignore_words.add(word.strip())
+    return ignore_words
 
 
 def build_exclude_hashes(filename, exclude_lines):
@@ -542,8 +566,20 @@ def extract_words(text, word_regex, ignore_word_regex):
     return word_regex.findall(text)
 
 
+def apply_uri_ignore_words(check_words, line, word_regex, ignore_word_regex,
+                           uri_regex, uri_ignore_words):
+    if not uri_ignore_words:
+        return
+    for uri in re.findall(uri_regex, line):
+        for uri_word in extract_words(uri, word_regex,
+                                      ignore_word_regex):
+            if uri_word in uri_ignore_words:
+                check_words.remove(uri_word)
+
+
 def parse_file(filename, colors, summary, misspellings, exclude_lines,
-               file_opener, word_regex, ignore_word_regex, context, options):
+               file_opener, word_regex, ignore_word_regex, uri_regex,
+               uri_ignore_words, context, options):
     bad_count = 0
     lines = None
     changed = False
@@ -608,7 +644,19 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
         fixed_words = set()
         asked_for = set()
 
-        for word in extract_words(line, word_regex, ignore_word_regex):
+        # If all URI spelling errors will be ignored, erase any URI before
+        # extracting words. Otherwise, apply ignores after extracting words.
+        # This ensures that if a URI ignore word occurs both inside a URI and
+        # outside, it will still be a spelling error.
+        if "*" in uri_ignore_words:
+            line = uri_regex.sub(' ', line)
+        check_words = extract_words(line, word_regex, ignore_word_regex)
+        if "*" not in uri_ignore_words:
+            apply_uri_ignore_words(check_words, line, word_regex,
+                                   ignore_word_regex, uri_regex,
+                                   uri_ignore_words)
+
+        for word in check_words:
             lword = word.lower()
             if lword in misspellings:
                 context_shown = False
@@ -728,7 +776,7 @@ def main(*args):
         ignore_word_regex = None
 
     ignore_words_files = options.ignore_words or []
-    ignore_words = set()
+    ignore_words = parse_ignore_words_option(options.ignore_words_list)
     for ignore_words_file in ignore_words_files:
         if not os.path.isfile(ignore_words_file):
             print("ERROR: cannot find ignore-words file: %s" %
@@ -737,10 +785,15 @@ def main(*args):
             return EX_USAGE
         build_ignore_words(ignore_words_file, ignore_words)
 
-    ignore_words_list = options.ignore_words_list or []
-    for comma_separated_words in ignore_words_list:
-        for word in comma_separated_words.split(','):
-            ignore_words.add(word.strip())
+    uri_regex = options.uri_regex or uri_regex_def
+    try:
+        uri_regex = re.compile(uri_regex)
+    except re.error as err:
+        print("ERROR: invalid --uri-regex \"%s\" (%s)" %
+              (uri_regex, err), file=sys.stderr)
+        parser.print_help()
+        return EX_USAGE
+    uri_ignore_words = parse_ignore_words_option(options.uri_ignore_words_list)
 
     if options.dictionary:
         dictionaries = options.dictionary
@@ -834,16 +887,17 @@ def main(*args):
                         continue
                     bad_count += parse_file(
                         fname, colors, summary, misspellings, exclude_lines,
-                        file_opener, word_regex, ignore_word_regex, context,
-                        options)
+                        file_opener, word_regex, ignore_word_regex, uri_regex,
+                        uri_ignore_words, context, options)
 
                 # skip (relative) directories
                 dirs[:] = [dir_ for dir_ in dirs if not glob_match.match(dir_)]
 
-        else:
+        elif not glob_match.match(filename):  # skip files
             bad_count += parse_file(
                 filename, colors, summary, misspellings, exclude_lines,
-                file_opener, word_regex, ignore_word_regex, context, options)
+                file_opener, word_regex, ignore_word_regex, uri_regex,
+                uri_ignore_words, context, options)
 
     if summary:
         print("\n-------8<-------\nSUMMARY:")
