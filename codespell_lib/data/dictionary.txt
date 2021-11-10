@@ -18078,7 +18078,7 @@ linewdith->linewidth
 linez->lines
 lingth->length
 linheight->lineheight
-linke->linked
+linke->linked, like,
 linkfy->linkify
 linnaena->linnaean
 lintain->lintian
@@ -24479,6 +24479,7 @@ regenrative->regenerative
 regession->regression
 regestered->registered
 regidstered->registered
+regio->region
 regiser->register
 regisration->registration
 regist->register
