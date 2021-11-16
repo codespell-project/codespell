@@ -117,8 +117,28 @@ def test_basic(tmpdir, capsys):
     assert cs.main(d) == 0
 
     # empty directory
-    os.mkdir(op.join(d, 'test'))
+    os.mkdir(op.join(d, 'empty'))
     assert cs.main(d) == 0
+
+
+def test_bad_glob(tmpdir, capsys):
+    # disregard invalid globs, properly handle escaped globs
+    g = op.join(tmpdir, 'glob')
+    os.mkdir(g)
+    fname = op.join(g, '[b-a].txt')
+    with open(fname, 'a') as f:
+        f.write('abandonned\n')
+    assert cs.main(g) == 1
+    # bad glob is invalid
+    code, _, stderr = cs.main('--skip', '[b-a].txt',
+                              g, std=True)
+    if sys.hexversion < 0x030A05F0:  # Python < 3.10.5 raises re.error
+        assert code == EX_USAGE, 'invalid glob'
+        assert 'invalid glob' in stderr
+    else:  # Python >= 3.10.5 does not match
+        assert code == 1
+    # properly escaped glob is valid, and matches glob-like file name
+    assert cs.main('--skip', '[[]b-a[]].txt', g) == 0
 
 
 @pytest.mark.skipif(
