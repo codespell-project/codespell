@@ -752,7 +752,7 @@ def main(*args):
 
     if options.regex and options.write_changes:
         print("ERROR: --write-changes cannot be used together with "
-              "--regex")
+              "--regex", file=sys.stderr)
         parser.print_help()
         return EX_USAGE
     word_regex = options.regex or word_regex_def
@@ -840,7 +840,8 @@ def main(*args):
         if (options.before_context is not None) or \
                 (options.after_context is not None):
             print("ERROR: --context/-C cannot be used together with "
-                  "--context-before/-B or --context-after/-A")
+                  "--context-before/-B or --context-after/-A",
+                  file=sys.stderr)
             parser.print_help()
             return EX_USAGE
         context_both = max(0, options.context)

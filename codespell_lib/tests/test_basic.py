@@ -240,9 +240,9 @@ def test_custom_regex(tmpdir, capsys):
         f.write('abandonned_abondon\n')
     assert cs.main(d) == 0
     assert cs.main('-r', "[a-z]+", d) == 2
-    code, stdout, _ = cs.main('-r', '[a-z]+', '--write-changes', d, std=True)
+    code, _, stderr = cs.main('-r', '[a-z]+', '--write-changes', d, std=True)
     assert code == EX_USAGE
-    assert 'ERROR:' in stdout
+    assert 'ERROR:' in stderr
 
 
 def test_exclude_file(tmpdir, capsys):
@@ -447,15 +447,15 @@ def test_context(tmpdir, capsys):
     assert lines[3] == ': line 4'
 
     # both '-C' and '-A' on the command line
-    code, stdout, _ = cs.main('-C', '2', '-A', '1', d, std=True)
+    code, _, stderr = cs.main('-C', '2', '-A', '1', d, std=True)
     assert code == EX_USAGE
-    lines = stdout.split('\n')
+    lines = stderr.split('\n')
     assert 'ERROR' in lines[0]
 
     # both '-C' and '-B' on the command line
-    code, stdout, stderr = cs.main('-C', '2', '-B', '1', d, std=True)
+    code, _, stderr = cs.main('-C', '2', '-B', '1', d, std=True)
     assert code == EX_USAGE
-    lines = stdout.split('\n')
+    lines = stderr.split('\n')
     assert 'ERROR' in lines[0]
 
 
