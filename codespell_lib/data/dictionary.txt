@@ -1109,6 +1109,7 @@ ajusted->adjusted
 ajustement->adjustment
 ajusting->adjusting
 ajustment->adjustment
+ajustments->adjustments
 ake->ache
 akkumulate->accumulate
 akkumulated->accumulated
@@ -1855,6 +1856,7 @@ announed->announced
 announement->announcement
 announements->announcements
 annoymous->anonymous
+annoyying->annoying
 annualy->annually
 annuled->annulled
 annyoingly->annoyingly
@@ -2479,6 +2481,7 @@ argumemnts->arguments
 argumeng->argument
 argumengs->arguments
 argumens->arguments
+argumenst->arguments
 argumentents->arguments
 argumeny->argument
 argumet->argument
@@ -8987,6 +8990,7 @@ degress->degrees, digress,
 deimiter->delimiter
 deine->define
 deined->denied, defined,
+deines->denies, defines, defined,
 deinitailse->deinitialise
 deinitailze->deinitialize
 deinitalized->deinitialized
@@ -9827,6 +9831,8 @@ diamater->diameter
 diamaters->diameters
 diamon->diamond
 diamons->diamonds
+diamter->diameter
+diamters->diameters
 diangose->diagnose
 dianostic->diagnostic
 dianostics->diagnostics
@@ -13629,6 +13635,8 @@ fassade->facade
 fassinate->fascinate
 fasterner->fastener
 fasterners->fasteners
+fastner->fastener
+fastners->fasteners
 fastr->faster
 fatc->fact
 fater->faster
@@ -14707,6 +14715,7 @@ georeferncing->georeferencing
 geraff->giraffe
 geraphics->graphics
 gerat->great
+gere->here, gear,
 gereating->generating
 gerenate->generate
 gerenated->generated
@@ -14899,6 +14908,7 @@ Guadulupe->Guadalupe, Guadeloupe,
 guage->gauge
 guaranted->guaranteed
 guaranteey->guaranty
+guaranteing->guaranteeing
 guarantes->guarantees
 guarantie->guarantee
 guarbage->garbage
@@ -15964,6 +15974,8 @@ implictly->implicitly
 implimcit->implicit
 implimcitly->implicitly
 impliment->implement
+implimentaion->implementation
+implimentaions->implementations
 implimentation->implementation
 implimentation-spacific->implementation-specific
 implimentations->implementations
@@ -17550,6 +17562,7 @@ isntallation->installation
 isntallations->installations
 isntance->instance
 isntances->instances
+isntead->instead, isn't read,
 isotrophically->isotropically
 isplay->display
 Israelies->Israelis
@@ -17617,6 +17630,8 @@ itslev->itself
 itteration->iteration
 itterations->iterations
 iunior->junior
+iverse->diverse, inverse,
+iversed->inverse, inversed,
 ivocation->invocation
 ivoked->invoked
 iwithout->without
@@ -19262,6 +19277,7 @@ modulues->modules
 modyfy->modify
 moent->moment
 moeny->money
+moew->more, meow, mow,
 mofdified->modified
 mofification->modification
 mofified->modified
@@ -19617,6 +19633,7 @@ necessaery->necessary
 necessar->necessary
 necessarilly->necessarily
 necessariy->necessary, necessarily,
+necessarly->necessarily
 necessarry->necessary
 necessaryly->necessarily
 necessay->necessary
@@ -23015,6 +23032,10 @@ proffesional->professional
 proffesor->professor
 proffessor->professor
 profilic->prolific
+profirle->profile
+profirled->profiled
+profirler->profiler
+profirles->profiles
 profissional->professional
 proflie->profile
 proflied->profiles, profiled,
@@ -24354,6 +24375,7 @@ recyle->recycle
 recyled->recycled
 recyles->recycles
 recyling->recycling
+redability->readability
 redandant->redundant
 redction->reduction, redaction,
 redeable->readable
@@ -24875,7 +24897,10 @@ remved->removed
 remves->removes
 remvoe->remove
 remvoed->removed
+remvoes->removes
+remvove->remove
 remvoved->removed
+remvoves->removes
 remvs->removes
 renabled->re-enabled
 rende->render, rend,
@@ -30437,7 +30462,7 @@ travesed->traversed
 traveses->traverses
 travesing->traversing
 tre->tree
-treadet->treated
+treadet->treated, treaded, threaded,
 treak->treat, tweak,
 treate->treat
 treatement->treatment
@@ -32447,6 +32472,8 @@ wich->which
 widesread->widespread
 widgect->widget
 widged->widget
+widghet->widget
+widghets->widgets
 widgit->widget
 widht->width
 widhtpoint->widthpoint
