@@ -2033,6 +2033,7 @@ apllied->applied
 apllies->applies
 aplly->apply
 apllying->applying
+aply->apply
 aplyed->applied
 apointed->appointed
 apointing->appointing
@@ -2118,6 +2119,7 @@ applicaton->application
 applicatons->applications
 appliction->application
 applictions->applications
+applide->applied
 applikation->application
 appling->applying, appalling,
 applyable->applicable
@@ -4305,7 +4307,9 @@ bottlneck->bottleneck
 bottlnecks->bottlenecks
 bottomborde->bottomborder
 bottome->bottom
+bottomn->bottom
 botton->bottom, button,
+bottonm->bottom
 bottons->bottoms, buttons,
 botttom->bottom
 bouce->bounce
@@ -10822,6 +10826,7 @@ disssociated->dissociated
 disssociates->dissociates
 disssociating->dissociating
 distancef->distanced, distances, distance,
+distange->distance
 distantce->distance
 distarct->distract
 distater->disaster
@@ -11043,6 +11048,7 @@ doesent->doesn't
 doesing->doing, does, does in, dosing, dozing,
 doesits->does its
 doesn'->doesn't
+doesn't't->doesn't
 doesn;t->doesn't
 doesnexist->doesn't exist
 doesnot->doesn't, does not,
@@ -11444,6 +11450,7 @@ eceptions->exceptions
 ecidious->deciduous
 eclise->eclipse
 eclispe->eclipse
+ecnetricity->eccentricity
 ecognized->recognized
 ecomonic->economic
 ecounter->encounter
@@ -12265,6 +12272,7 @@ esitmate->estimate
 esitmated->estimated
 esitmates->estimates
 esle->else
+espacally->especially
 espace->escape
 espaced->escaped
 espaces->escapes
@@ -16748,6 +16756,7 @@ indepenendence->independence
 indepenent->independent
 indepenently->independently
 indepent->independent
+indepentent->independent
 indepently->independently
 inderect->indirect
 inderts->inserts
@@ -32513,6 +32522,7 @@ vbsrcript->vbscript
 vebrose->verbose
 vecotr->vector
 vecotrs->vectors
+vectices->vertices
 vectore->vector
 vectores->vectors
 vecvtor->vector
