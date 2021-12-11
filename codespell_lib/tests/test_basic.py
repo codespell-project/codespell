@@ -117,6 +117,14 @@ def test_basic(tmpdir, capsys):
     assert stdout == stderr == ''
     assert cs.main(d) == 0
 
+    # unreadable file
+    if sys.platform == 'linux':  # cannot create unreadable file on Windows
+        with open(op.join(d, 'unreadable.txt'), 'w') as f:
+            f.write('abandonned\n')
+        os.chmod(f.name, 0o000)
+        code, _, stderr = cs.main(f.name, std=True)
+        assert 'WARNING:' in stderr
+
     # empty directory
     os.mkdir(op.join(d, 'test'))
     assert cs.main(d) == 0

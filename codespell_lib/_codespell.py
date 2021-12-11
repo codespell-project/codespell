@@ -647,14 +647,26 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
         if not os.path.isfile(filename):
             return bad_count
 
-        text = is_text_file(filename)
+        try:
+            text = is_text_file(filename)
+        except PermissionError as e:
+            print("WARNING: %s: %s" % (e.strerror, filename),
+                  file=sys.stderr)
+            return bad_count
+        except OSError:
+            return bad_count
+
         if not text:
             if not options.quiet_level & QuietLevels.BINARY_FILE:
                 print("WARNING: Binary file: %s" % filename, file=sys.stderr)
             return bad_count
         try:
             lines, encoding = file_opener.open(filename)
-        except Exception:
+        except PermissionError as e:
+            print("WARNING: %s: %s" % (e.strerror, filename),
+                  file=sys.stderr)
+            return bad_count
+        except OSError:
             return bad_count
 
     for i, line in enumerate(lines):
