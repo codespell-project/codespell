@@ -3964,6 +3964,7 @@ beneeth->beneath
 benefical->beneficial
 beneficary->beneficiary
 benefied->benefited
+benefitial->beneficial
 beneits->benefits
 benerate->generate, venerate,
 benetifs->benefits
@@ -4391,7 +4392,10 @@ Britian->Britain
 Brittish->British
 brnach->branch
 brnaches->branches
+broacast->broadcast
 broacasted->broadcast
+broacasting->broadcasting
+broacasts->broadcasts
 broadacasting->broadcasting
 broadcas->broadcast
 broadcase->broadcast
@@ -5159,6 +5163,7 @@ chanel->channel
 chanell->channel
 chanels->channels
 changable->changeable
+changeble->changeable
 changeing->changing
 changged->changed
 changlog->changelog
@@ -7040,6 +7045,7 @@ conseated->conceited
 consective->consecutive
 consectively->consecutively
 consectutive->consecutive
+consectuve->consecutive
 consecuitively->consecutively
 conseed->concede
 conseedd->conceded
@@ -9274,7 +9280,10 @@ depenent->dependent
 depenently->dependently
 depening->depending, deepening,
 depennding->depending
+deperecate->deprecate
 deperecated->deprecated
+deperecates->deprecates
+deperecating->deprecating
 deploied->deployed
 deploiment->deployment
 deploiments->deployments
@@ -10841,6 +10850,7 @@ documetnation->documentation
 documment->document
 documments->documents
 documnet->document
+documnetation->documentation
 documument->document
 docunment->document
 doed->does
@@ -13373,6 +13383,7 @@ explictily->explicitly
 explictly->explicitly
 explicty->explicitly, explicit,
 explit->explicit
+explitictly->explicitly
 explitit->explicit
 explitly->explicitly
 explizit->explicit
@@ -16722,6 +16733,7 @@ inhomogenous->inhomogeneous
 inialized->initialized
 iniate->initiate
 inidicates->indicates
+inidividual->individual
 inidvidual->individual
 inifinite->infinite
 inifinte->infinite
@@ -17007,6 +17019,7 @@ insesitively->insensitively
 insesitiveness->insensitiveness
 insesitivity->insensitivity
 insetad->instead
+insetead->instead
 inseted->inserted
 insid->inside
 insided->inside
@@ -17245,6 +17258,7 @@ intercation->interaction
 interchage->interchange
 interchangable->interchangeable
 interchangably->interchangeably
+interchangeble->interchangeable
 intercollegate->intercollegiate
 intercontinential->intercontinental
 intercontinetal->intercontinental
@@ -17698,6 +17712,8 @@ iterpreter->interpreter
 iterration->iteration
 iterrations->iterations
 iterrupt->interrupt
+iterstion->iteration
+iterstions->iterations
 itertation->iteration
 iteself->itself
 itesm->items
@@ -18159,6 +18175,8 @@ libreries->libraries
 librery->library
 libries->libraries
 librraies->libraries
+librraries->libraries
+librrary->library
 librray->library
 libstc++->libstdc++
 licate->locate
@@ -21019,6 +21037,8 @@ optoins->options
 optomism->optimism
 opulate->populate, opiate, opulent,
 opulates->populates, opiates,
+opyion->option
+opyions->options
 orcale->oracle
 orded->ordered
 orderd->ordered
@@ -21361,6 +21381,11 @@ overwritren->overwritten
 overwrittes->overwrites
 overwrittin->overwriting
 overwritting->overwriting
+ovewrite->overwrite
+ovewrites->overwrites
+ovewriting->overwriting
+ovewritten->overwritten
+ovewrote->overwrote
 ovride->override
 ovrides->overrides
 ovrlapped->overlapped
@@ -27710,7 +27735,11 @@ spcae->space
 spcecified->specified
 spcial->special
 spcific->specific
+spcification->specification
+spcifications->specifications
+spcified->specified
 spcifies->specifies
+spcify->specify
 speach->speech
 speacial->special, spacial,
 spearator->separator
@@ -28371,6 +28400,7 @@ stoream->stream
 storeble->storable
 storeing->storing
 storeis->stories, stores, store is, storeys,
+storge->storage
 storise->stories
 stornegst->strongest
 storys->stories, storeys,
@@ -29922,6 +29952,7 @@ theyr->their, there, they're,
 theyre->they're, their, there,
 thgat->that
 thge->the
+thhis->this
 thi->the, this,
 thicking->thinking, thickening,
 thicknes->thickness, thickens,
