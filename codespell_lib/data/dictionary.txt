@@ -23110,7 +23110,7 @@ processig->processing
 processinf->processing
 processore->processor
 processpr->processor
-processs->process
+processs->process, processes,
 processsed->processed
 processses->processes
 processsing->processing
@@ -26281,6 +26281,8 @@ sandwhich->sandwich
 Sanhedrim->Sanhedrin
 sanitizisation->sanitization
 sanizer->sanitizer
+sansitizer->sanitizer
+sansitizers->sanitizers
 santioned->sanctioned
 santize->sanitize
 santized->sanitized
