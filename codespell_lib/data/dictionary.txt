@@ -3920,6 +3920,8 @@ bechmarking->benchmarking
 bechmarks->benchmarks
 becoem->become
 becomeing->becoming
+becomme->become
+becommes->becomes
 becomming->becoming
 becoms->becomes
 becouse->because
@@ -4633,6 +4635,8 @@ butterly->butterfly
 buttom->button, bottom,
 buttoms->buttons, bottom,
 buttong->button
+buttonn->button
+buttonns->buttons
 buttosn->buttons
 buttton->button
 butttons->buttons
@@ -5306,6 +5310,7 @@ chaning->chaining, changing,
 chaninging->changing
 chanllenge->challenge
 chanllenging->challenging
+channael->channel
 channe->channel
 channeles->channels
 channes->channels, chances, changes,
@@ -9353,6 +9358,7 @@ demolishon->demolition
 demolision->demolition
 demoninator->denominator
 demoninators->denominators
+demonstates->demonstrates
 demorcracy->democracy
 demostrate->demonstrate
 demostrated->demonstrated
@@ -10162,6 +10168,10 @@ diemsion->dimension
 dieties->deities
 diety->deity
 diferent->different
+diferentiate->differentiate
+diferentiated->differentiated
+diferentiates->differentiates
+diferentiating->differentiating
 diferently->differently
 diferrent->different
 diffcult->difficult
@@ -10354,6 +10364,7 @@ dirctly->directly
 dirctories->directories
 dirctory->directory
 direccion->direction
+direcctly->directly
 direcctory->directory
 direcctorys->directories
 direcctries->directories
@@ -10422,6 +10433,7 @@ disabilitiles->disabilities
 disabilitily->disability
 disabiltities->disabilities
 disabiltitiy->disability
+disabing->disabling
 disabl->disable
 disablle->disable
 disadvantadge->disadvantage
@@ -13996,6 +14008,7 @@ fased->fazed, phased,
 fases->fazes, phases,
 fasing->fazing, phasing,
 fasion->fashion
+fasle->false
 fassade->facade
 fassinate->fascinate
 fasterner->fastener
@@ -16276,6 +16289,8 @@ implamented->implemented
 implamenting->implementing
 implaments->implements
 implcit->implicit
+implcitly->implicitly
+implct->implicit
 implemantation->implementation
 implemataion->implementation
 implemataions->implementations
@@ -16886,6 +16901,7 @@ inefficently->inefficiently
 inefficenty->inefficiently
 inefficienty->inefficiently
 inefficieny->inefficiency, inefficiently,
+ineffiecent->inefficient
 ineffient->inefficient
 ineffiently->inefficiently
 ineficient->inefficient
@@ -17644,6 +17660,7 @@ interm->interim, intern,
 intermediat->intermediate
 intermeidate->intermediate
 intermidiate->intermediate
+intermitent->intermittent
 intermittant->intermittent
 intermperance->intemperance
 internall->internal, internally,
@@ -18491,6 +18508,7 @@ librairy->library
 libralie->library
 libralies->libraries
 libraly->library
+libraray->library
 libraris->libraries
 librarries->libraries
 librarry->library
@@ -18753,6 +18771,7 @@ lpatform->platform
 lsat->last, slat, sat,
 lsit->list, slit, sit,
 lsits->lists, slits, sits,
+luckly->luckily
 lukid->lucid, Likud,
 luminose->luminous
 luminousity->luminosity
@@ -21403,6 +21422,8 @@ optmized->optimized
 optoin->option
 optoins->options
 optomism->optimism
+opton->option
+optons->options
 opulate->populate, opiate, opulent,
 opulates->populates, opiates,
 opyion->option
@@ -22532,6 +22553,7 @@ pimxaps->pixmaps
 pinapple->pineapple
 pinnaple->pineapple
 pinoneered->pioneered
+pinter->pointer, printer,
 piont->point
 pionter->pointer
 pionts->points
@@ -23979,6 +24001,8 @@ prposes->proposes
 prposiing->proposing
 prrcision->precision
 prrottypes->prototypes
+prset->preset
+prsets->presets
 prtinf->printf
 prufe->proof
 prviate->private
@@ -24646,6 +24670,7 @@ reassinging->reassigning
 reassocition->reassociation
 reasssign->reassign
 reasy->ready, easy,
+reate->create, relate,
 reather->rather, feather,
 reatime->realtime
 reattache->reattached, reattach,
@@ -26205,6 +26230,10 @@ resoured->resourced
 resoures->resources
 resoution->resolution
 resoves->resolves
+resovle->resolve
+resovled->resolved
+resovles->resolves
+resovling->resolving
 respawining->respawning
 respecitve->respective
 respecitvely->respectively
@@ -26586,6 +26615,7 @@ rhythim->rhythm
 rhythimcally->rhythmically
 rhytmic->rhythmic
 rigeur->rigueur, rigour, rigor,
+righ->right
 righht->right
 rigourous->rigorous
 rigt->right
@@ -27258,6 +27288,7 @@ sepaate->separate
 separartor->separator
 separat->separate
 separater->separator
+separatley->separately
 separatly->separately
 separed->separated
 separete->separate
@@ -27531,6 +27562,8 @@ settelement->settlement
 settign->setting
 settigns->settings
 settigs->settings
+settiing->setting
+settiings->settings
 settinga->settings
 settingss->settings
 settins->settings
@@ -27609,6 +27642,10 @@ sheping->shaping
 shepre->sphere
 shepres->spheres
 sherif->sheriff
+shfit->shift
+shfited->shifted
+shfiting->shifting
+shfits->shifts
 shfted->shifted
 shicane->chicane
 shif->shift
@@ -32065,7 +32102,12 @@ unser->under, unset, unsure, user,
 unseting->unsetting
 unsettin->unsetting
 unsharable->unshareable
+unshfit->unshift
+unshfited->unshifted
+unshfiting->unshifting
+unshfits->unshifts
 unsiged->unsigned
+unsigend->unsigned
 unsignificant->insignificant
 unsing->using
 unsinged->unsigned
@@ -32250,6 +32292,7 @@ updateded->updated
 updateed->updated
 updatees->updates
 updateing->updating
+updatess->updates
 updatig->updating
 updats->updates
 updgrade->upgrade
@@ -32487,6 +32530,8 @@ vactor->vector
 vactors->vectors
 vacumme->vacuum
 vacuosly->vacuously
+vaelue->value, valued,
+vaelues->values
 vaguaries->vagaries
 vaiable->variable
 vaiables->variables
@@ -33334,6 +33379,7 @@ withrawal->withdrawal
 withs->with, widths,
 witht->with
 withthe->with the
+withun->within
 withuout->without
 witin->within
 witk->with
@@ -33509,6 +33555,7 @@ wth->with
 wtih->with
 wuold->would
 wupport->support
+wuthin->within
 wya->way
 wyth->with
 wythout->without
