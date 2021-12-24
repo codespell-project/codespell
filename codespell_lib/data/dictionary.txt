@@ -395,6 +395,7 @@ accomadating->accommodating
 accomadation->accommodation
 accomadations->accommodations
 accomdate->accommodate
+accomidate->accommodate
 accommadate->accommodate
 accommadates->accommodates
 accommadating->accommodating
@@ -4822,6 +4823,8 @@ captrure->capture
 captued->captured
 capturd->captured
 caputre->capture
+caputred->captured
+caputres->captures
 caputure->capture
 carachter->character
 caracter->character
@@ -7495,6 +7498,8 @@ convenant->covenant
 convenction->convention, convection,
 conveneince->convenience
 conveniance->convenience
+conveniant->convenient
+conveniantly->conveniently
 convenince->convenience
 conveninent->convenient
 convense->convince
@@ -10032,6 +10037,7 @@ diggit->digit
 diggital->digital
 diggits->digits
 digial->digital
+digist->digits
 digitalise->digitize
 digitalising->digitizing
 digitalize->digitize
@@ -14245,6 +14251,12 @@ formmatted->formatted
 formost->foremost
 formt->format
 formua->formula
+fornat->format
+fornated->formatted
+fornater->formatter
+fornats->formats
+fornatted->formatted
+fornatter->formatter
 forr->for
 forsaw->foresaw
 forse->force
@@ -14812,6 +14824,9 @@ glyphes->glyphs
 glyping->glyphing
 glyserin->glycerin
 gnawwed->gnawed
+gneral->general
+gnerally->generally
+gnerals->generals
 gnerate->generate
 gnorung->ignoring
 gobal->global
@@ -14919,6 +14934,7 @@ grwo->grow
 Guaduloupe->Guadalupe, Guadeloupe,
 Guadulupe->Guadalupe, Guadeloupe,
 guage->gauge
+guarante->guarantee
 guaranted->guaranteed
 guaranteey->guaranty
 guaranteing->guaranteeing
@@ -15355,6 +15371,11 @@ higest->highest
 high-affort->high-effort
 highe->high, higher, highs,
 highes->highest, highs,
+highight->highlight
+highighted->highlighted
+highighter->highlighter
+highighters->highlighters
+highights->highlights
 highjack->hijack
 highlighing->highlighting
 highlightin->highlighting
@@ -15471,6 +15492,8 @@ horinzontal->horizontal
 horizntal->horizontal
 horizonal->horizontal
 horizontale->horizontal
+horiztonal->horizontal
+horiztonally->horizontally
 horphan->orphan
 horrable->horrible
 horrifing->horrifying
@@ -16240,6 +16263,8 @@ inconsitant->inconsistent
 inconsitency->inconsistency
 inconsitent->inconsistent
 inconstent->inconsistent, inconstant,
+inconveniant->inconvenient
+inconveniantly->inconveniently
 inconvertable->inconvertible
 inconvienience->inconvenience
 inconvienient->inconvenient
@@ -16511,6 +16536,8 @@ inernal->internal
 inerrupt->interrupt
 inershia->inertia
 inershial->inertial
+inersia->inertia
+inersial->inertial
 inertion->insertion
 ines->lines
 inestart->linestart
@@ -17070,6 +17097,9 @@ inted->inetd, intend,
 inteded->intended
 intedned->intended
 inteface->interface
+intefere->interfere
+intefered->interfered
+inteference->interference
 integarte->integrate
 integarted->integrated
 integartes->integrates
@@ -17642,6 +17672,7 @@ itselv->itself
 itsems->items
 itslef->itself
 itslev->itself
+itsself->itself
 itteration->iteration
 itterations->iterations
 iunior->junior
@@ -22570,6 +22601,7 @@ precent->percent, prescient,
 precentage->percentage
 precentile->percentile
 precentiles->percentiles
+precessing->processing
 precessor->predecessor, processor,
 precice->precise
 precicion->precision
@@ -26167,7 +26199,12 @@ saphire->sapphire
 saphires->sapphires
 sargant->sergeant
 sargeant->sergeant
+sart->start, star,
+sarted->started
+sarter->starter
+sarters->starters
 sarting->starting, sorting,
+sarts->starts, stars,
 sastisfies->satisfies
 sasy->says, sassy,
 satandard->standard
@@ -31250,6 +31287,7 @@ unpredicatable->unpredictable
 unpredicatble->unpredictable
 unpredictablity->unpredictability
 unpredictible->unpredictable
+unpriviledged->unprivileged
 unpriviliged->unprivileged
 unprmopted->unprompted
 unqiue->unique
@@ -32135,8 +32173,12 @@ vitories->victories
 vitual->virtual
 viusally->visually
 viusualisation->visualisation
+viwe->view
+viwed->viewed
+viweed->viewed
 viwer->viewer
 viwers->viewers
+viwes->views
 vizualisation->visualisation
 vizualise->visualise
 vizualised->visualised
