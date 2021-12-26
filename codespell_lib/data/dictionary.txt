@@ -1637,7 +1637,11 @@ alternavtive->alternative
 alternavtives->alternatives
 alternetive->alternative
 alternetives->alternatives
+alternitive->alternative
+alternitively->alternatively
+alternitiveness->alternativeness
 alternitives->alternatives
+alternitivly->alternatively
 altetnative->alternative
 altho->although
 althogh->although
@@ -2914,6 +2918,10 @@ assymptotically->asymptotically
 asterices->asterisks
 asteriks->asterisk, asterisks,
 asteriod->asteroid
+astethic->aesthetic
+astethically->aesthetically
+astethicism->aestheticism
+astethics->aesthetics
 asthetic->aesthetic
 asthetical->aesthetical
 asthetically->aesthetically
@@ -6258,6 +6266,7 @@ comonent->component
 comor->color
 compability->compatibility
 compabillity->compatibility
+compabitiliby->compatibility
 compabitility->compatibility
 compagnion->companion
 compagny->company
@@ -8218,6 +8227,7 @@ crosreferenced->cross-referenced
 crosreferences->cross-references
 cross-commpilation->cross-compilation
 cross-orgin->cross-origin
+crossgne->crossgen
 crossin->crossing
 crossite->cross-site
 crossreference->cross-reference
@@ -8940,6 +8950,7 @@ defaulrts->defaults
 defauls->default, defaults,
 defaulst->defaults, default,
 defaultet->defaulted
+defaulty->default
 defauly->default
 defaulys->defaults
 defaulz->default, defaults,
@@ -9412,6 +9423,10 @@ dergeistered->deregistered
 dergistration->deregistration
 deriair->derriere
 dericed->derived
+dericteries->directories
+derictery->directory
+dericteryes->directories
+dericterys->directories
 deriffed->derived
 derivaties->derivatives
 derivatio->derivation
@@ -11185,6 +11200,7 @@ dublication->duplication
 ducment->document
 ducument->document
 dueing->doing, during, dueling,
+duirng->during
 dulicate->duplicate
 dum->dumb
 dummp->dump, dummy,
@@ -11621,6 +11637,9 @@ enalbed->enabled
 enalbes->enables
 enameld->enameled
 enaugh->enough
+enbable->enable
+enbabled->enabled
+enbabling->enabling
 enbale->enable
 enbaled->enabled
 enbales->enables
@@ -14487,6 +14506,8 @@ frambuffer->framebuffer
 framebufer->framebuffer
 framei->frame
 frametyp->frametype
+framewoek->framework
+framewoeks->frameworks
 frameworkk->framework
 framlayout->framelayout
 framming->framing
@@ -18661,6 +18682,12 @@ manipluate->manipulate
 manipluated->manipulated
 manipulatin->manipulating
 manipulaton->manipulation
+manipute->manipulate
+maniputed->manipulated
+maniputing->manipulating
+manipution->manipulation
+maniputions->manipulations
+maniputor->manipulator
 manisfestations->manifestations
 maniuplate->manipulate
 maniuplated->manipulated
@@ -18988,6 +19015,7 @@ memmory->memory
 memoery->memory
 memomry->memory
 memor->memory
+memoty->memory
 mempry->memory
 memroy->memory
 menally->mentally
@@ -19371,6 +19399,12 @@ mistmatch->mismatch
 mistmatched->mismatched
 mistmatches->mismatches
 mistmatching->mismatching
+miticate->mitigate
+miticated->mitigated
+miticateing->mitigating
+miticates->mitigates
+miticating->mitigating
+miticator->mitigator
 mittigate->mitigate
 miximum->maximum
 mixted->mixed
@@ -19633,6 +19667,14 @@ movment->movement
 mozila->Mozilla
 mozzilla->mozilla
 mroe->more
+msbild->MSBuild
+msbilds->MSBuild's
+msbuid->MSBuild
+msbuids->MSBuild's
+msbuld->MSBuild
+msbulds->MSBuild's
+msbulid->MSBuild
+msbulids->MSBuild's
 MSDOS->MS-DOS
 mssing->missing
 msssge->message
@@ -19839,6 +19881,8 @@ naximum->maximum
 Nazereth->Nazareth
 nclude->include
 nd->and, 2nd,
+ndoe->node
+ndoes->nodes
 nead->need, knead, head,
 neaded->needed, kneaded, headed,
 neader->header, kneader,
@@ -21858,6 +21902,8 @@ patckets->packets
 patern->pattern
 paterns->patterns
 pathalogical->pathological
+pathame->pathname
+pathames->pathnames
 pathane->pathname
 pathced->patched
 pathes->paths
@@ -22120,6 +22166,8 @@ permited->permitted
 permition->permission
 permitions->permissions
 permormance->performance
+permssion->permission
+permssions->permissions
 permuation->permutation
 permuations->permutations
 permutaion->permutation
@@ -22722,6 +22770,9 @@ ppublisher->publisher
 ppyint->pyint
 praameter->parameter
 praameters->parameters
+prabability->probability
+prabable->probable
+prabably->probably
 pracitcal->practical
 pracitcally->practically
 practial->practical
@@ -23124,6 +23175,8 @@ privaleges->privileges
 privaye->private
 privcy->privacy
 privde->provide
+priveledge->privilege
+priveledged->privileged
 priveledges->privileges
 privelege->privilege
 priveleged->privileged
@@ -25034,6 +25087,11 @@ relavent->relevant
 releaase->release
 releaased->released
 relead->reload
+releae->release
+releaed->released
+releaeing->releasing
+releaes->releases, release,
+releaing->releasing
 releant->relevant, relent,
 releas->release
 releasead->released
@@ -25642,6 +25700,8 @@ reproducability->reproducibility
 reproducable->reproducible
 reproducablitity->reproducibility
 reproducably->reproducibly
+reproduciability->reproduceability
+reproduciable->reproduceable
 reproduciblity->reproducibility
 reprot->report
 reprots->reports
@@ -25993,6 +26053,10 @@ resubstituion->resubstitution
 resuction->reduction
 resue->reuse, rescue,
 resued->reused, rescued,
+resuilt->result
+resuilted->resulted
+resuilting->resulting
+resuilts->results
 resul->result
 resuling->resulting
 resullt->result
@@ -26213,6 +26277,11 @@ revriever->retriever
 revrievers->retrievers
 revrieves->retrieves
 revsion->revision
+rewiev->review
+rewieved->reviewed
+rewiever->reviewer
+rewieving->reviewing
+rewievs->reviews
 rewirtable->rewritable
 rewirte->rewrite
 rewirtten->rewritten
@@ -26713,6 +26782,14 @@ secton->section
 sectoned->sectioned
 sectoning->sectioning
 sectons->sections
+sectopm->section
+sectopmed->sectioned
+sectopming->sectioning
+sectopms->sections
+sectopn->section
+sectopned->sectioned
+sectopning->sectioning
+sectopns->sections
 secue->secure
 secuely->securely
 secuity->security
@@ -27868,6 +27945,9 @@ spearator->separator
 spearators->separators
 spec-complient->spec-compliant
 specail->special
+specefic->specific
+specefically->specifically
+speceficly->specifically
 specefied->specified
 specfic->specific
 specfically->specifically
@@ -29114,6 +29194,7 @@ sumarize->summarize
 sumary->summary
 sumbitted->submitted
 sumed-up->summed-up
+summarizen->summarize
 summay->summary
 summerised->summarised
 summerized->summarized
@@ -31866,6 +31947,7 @@ upgarte->upgrade
 upgarted->upgraded
 upgartes->upgrades
 upgarting->upgrading
+upgradablilty->upgradability
 upgradde->upgrade
 upgradded->upgraded
 upgraddes->upgrades
@@ -32020,7 +32102,11 @@ usuage->usage
 usuall->usually, usual,
 usuallly->usually
 usualy->usually
+usue->use
+usued->used
 usueful->useful
+usuer->user
+usuing->using
 usupported->unsupported
 ususal->usual
 ususally->usually
@@ -32155,6 +32241,8 @@ varients->variants
 varierty->variety
 variey->variety
 variing->varying
+varilue->variable, value,
+varilues->variables, values,
 varing->varying
 varities->varieties
 varity->variety
@@ -33153,6 +33241,7 @@ zefer->zephyr
 zefers->zephyrs
 zellot->zealot
 zellots->zealots
+zemporary->temporary
 zick-zack->zig-zag
 zimmap->zipmap
 zimpaps->zipmaps
