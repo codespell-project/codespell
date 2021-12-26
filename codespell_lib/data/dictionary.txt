@@ -1900,6 +1900,9 @@ anroid->android
 ansalisation->nasalisation
 ansalization->nasalization
 anser->answer
+ansester->ancestor
+ansesters->ancestors
+ansestor->ancestor
 ansestors->ancestors
 answhare->answer
 answhared->answered
@@ -3504,7 +3507,7 @@ autonymous->autonomous
 autopsec->autospec
 autor->author
 autorealease->autorelease
-autorisation->authorization
+autorisation->authorisation
 autoritative->authoritative
 autority->authority
 autorization->authorization
@@ -3887,6 +3890,8 @@ behabiour->behaviour
 behabiours->behaviours
 behabviour->behaviour
 behaivior->behavior
+behaiviour->behaviour
+behaiviuor->behaviour
 behavious->behaviour, behaviours,
 behavioutr->behaviour
 behaviuor->behaviour
@@ -4483,6 +4488,8 @@ build-dependancy->build-dependency
 build-dependencie->build-dependency, build-dependencies,
 build-in->built-in
 builded->built
+buildpackge->buildpackage
+buildpackges->buildpackages
 buillt->built
 built-time->build-time
 builter->builder
@@ -4615,7 +4622,10 @@ cahdidate->candidate
 cahdidates->candidates
 cahe->cache
 cahes->caches
+cahgne->change
 cahgned->changed
+cahgner->changer
+cahgners->changers
 cahgnes->changes
 cahgning->changing
 cahhel->channel
@@ -5512,6 +5522,7 @@ cirsumstances->circumstances
 cirtcuit->circuit
 cirucal->circular
 cirucit->circuit
+cirucits->circuits
 ciruclar->circular
 ciruclation->circulation
 ciruclator->circulator
@@ -6261,6 +6272,7 @@ comparater->comparator
 comparation->comparison
 comparations->comparisons
 compareable->comparable
+compareing->comparing
 compareison->comparison
 compareisons->comparisons
 compariable->comparable
@@ -6631,6 +6643,12 @@ condig->config
 condigdialog->configdialog
 condiiton->condition
 condionally->conditionally
+conditial->conditional
+conditially->conditionally
+conditialy->conditionally
+conditianal->conditional
+conditianally->conditionally
+conditianaly->conditionally
 conditionaly->conditionally
 conditionn->condition
 conditionnal->conditional
@@ -8493,6 +8511,7 @@ datset->dataset
 datsets->datasets
 daty->data, date,
 daugher->daughter
+dbeian->Debian
 DCHP->DHCP
 dcok->dock
 dcoked->docked
@@ -8568,7 +8587,7 @@ deamiguate->disambiguate
 deamiguates->disambiguates
 deamiguation->disambiguation
 deamon->daemon
-deamonified->daemonised, daemonized,
+deamonified->daemonized, daemonised,
 deamonisation->daemonisation
 deamonise->daemonise
 deamonised->daemonised
@@ -8600,12 +8619,17 @@ deauthenication->deauthentication
 debain->Debian
 debateable->debatable
 debbuger->debugger
+debehlper->debhelper
 debgu->debug
 debgug->debug
 debguging->debugging
+debhlper->debhelper
+debia->Debian
 debiab->Debian
 debians->Debian's
+debina->Debian
 debloking->deblocking
+debnia->Debian
 debth->depth
 debths->depths
 debufs->debugfs
@@ -11027,6 +11051,8 @@ dowt->doubt
 doxgen->doxygen
 dpeends->depends
 dpendent->dependent
+dpkg-buildpackge->dpkg-buildpackage
+dpkg-buildpackges->dpkg-buildpackages
 dpuble->double
 dpubles->doubles
 draconain->draconian
@@ -11754,6 +11780,8 @@ enpoints->endpoints
 enque->enqueue
 enqueing->enqueuing
 enrties->entries
+enrtries->entries
+enrtry->entry
 enrty->entry
 ensconsed->ensconced
 entaglements->entanglements
@@ -14461,6 +14489,7 @@ fropm->from
 frops->drops
 frozee->frozen
 fschk->fsck
+FTBS->FTBFS
 ftrunacate->ftruncate
 fualt->fault
 fualts->faults
@@ -14853,6 +14882,8 @@ gioen->given
 gir->git
 giser->geyser
 gisers->geysers
+git-buildpackge->git-buildpackage
+git-buildpackges->git-buildpackages
 gitar->guitar
 gitars->guitars
 gitatributes->gitattributes
@@ -17436,10 +17467,15 @@ intgers->integers
 intgral->integral
 inthe->in the
 intiailise->initialise
-intiailised->initialized
+intiailised->initialised
+intiailiseing->initialising
+intiailiser->initialiser
 intiailises->initialises
+intiailising->initialising
 intiailize->initialize
 intiailized->initialized
+intiailizeing->initializing
+intiailizer->initializer
 intiailizes->initializes
 intiailizing->initializing
 intial->initial
@@ -17734,6 +17770,7 @@ itnernal->internal
 itnervals->intervals
 itnroduced->introduced
 itsef->itself
+itsel->itself
 itselfs->itself
 itselt->itself
 itselv->itself
@@ -18189,7 +18226,8 @@ licese->license
 lieing->lying
 liek->like
 liekd->liked
-lient->client, clients,
+lient->client
+lients->clients
 liesure->leisure
 lieuenant->lieutenant
 liev->live
@@ -21298,6 +21336,7 @@ ovelap->overlap
 over-engeneer->over-engineer
 over-engeneering->over-engineering
 overaall->overall
+overal->overall
 overcompansate->overcompensate
 overcompansated->overcompensated
 overcompansates->overcompensates
@@ -21625,6 +21664,10 @@ paritial->partial
 parition->partition
 paritioning->partitioning
 paritition->partition
+parititioned->partitioned
+parititioner->partitioner
+parititiones->partitions
+parititioning->partitioning
 parititions->partitions
 paritiy->parity
 parituclar->particular
@@ -25692,6 +25735,7 @@ resistable->resistible
 resistence->resistance
 resistent->resistant
 resivwar->reservoir
+resizeable->resizable
 resizeble->resizable
 reslection->reselection
 reslove->resolve
@@ -31035,7 +31079,14 @@ uncondisional->unconditional
 uncondisionaly->unconditionally
 uncondisionnal->unconditional
 uncondisionnaly->unconditionally
+unconditial->unconditional
+unconditially->unconditionally
+unconditialy->unconditionally
+unconditianal->unconditional
+unconditianally->unconditionally
+unconditianaly->unconditionally
 unconditinally->unconditionally
+unconditinaly->unconditionally
 unconditionaly->unconditionally
 unconditionnal->unconditional
 unconditionnally->unconditionally
@@ -32961,6 +33012,7 @@ xgetttext->xgettext
 xinitiazlize->xinitialize
 xmdoel->xmodel
 xour->your
+xwindows->X
 xyou->you
 yaching->yachting
 yaer->year
