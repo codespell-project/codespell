@@ -1800,7 +1800,16 @@ anarchim->anarchism
 anarchistm->anarchism
 anarquism->anarchism
 anarquist->anarchist
+anaylse->analyse
+anaylsed->analysed
+anaylser->analyser
+anaylses->analyses
 anaylsis->analysis
+anaylsises->analysises
+anaylze->analyze
+anaylzed->analyzed
+anaylzer->analyzer
+anaylzes->analyzes
 anbd->and
 ancapsulate->encapsulate
 ancapsulated->encapsulated
@@ -1956,6 +1965,7 @@ anual->annual
 anually->annually
 anulled->annulled
 anumber->a number
+anuwhere->anywhere
 anway->anyway
 anways->anyway
 anwhere->anywhere
@@ -2487,6 +2497,11 @@ archvies->archives
 archving->archiving
 arcitecture->architecture
 arcitectures->architectures
+arcive->archive
+arcived->archived
+arciver->archiver
+arcives->archives
+arciving->archiving
 arcticle->article
 Ardiuno->Arduino
 are'nt->aren't
@@ -2562,6 +2577,7 @@ arogant->arrogant
 arogent->arrogant
 aronud->around
 aroud->around
+arouind->around
 arounf->around
 aroung->around
 arount->around
@@ -2753,6 +2769,16 @@ assgins->assigns
 asside->aside
 assiged->assigned
 assigend->assigned
+assigh->assign
+assighed->assigned
+assighee->assignee
+assighees->assignees
+assigher->assigner
+assighers->assigners
+assighing->assigning
+assighor->assignor
+assighors->assignors
+assighs->assigns
 assiging->assigning
 assigment->assignment
 assigments->assignments
@@ -3170,6 +3196,14 @@ auccess->success
 auccessive->successive
 audeince->audience
 audiance->audience
+augmnet->augment
+augmnetation->augmentation
+augmneted->augmented
+augmneter->augmenter
+augmneters->augmenters
+augmnetes->augments
+augmneting->augmenting
+augmnets->augments
 auguest->august
 augument->argument, augment,
 auhtor->author
@@ -4593,6 +4627,8 @@ bypas->bypass
 bypased->bypassed
 bypasing->bypassing
 byteoder->byteorder, byte order,
+bytetream->bytestream
+bytetreams->bytestreams
 cacahe->cache
 cacahes->caches
 cace->cache
@@ -4999,6 +5035,9 @@ catgories->categories
 catgory->category
 cathlic->catholic
 catholocism->catholicism
+catloag->catalog
+catloaged->cataloged
+catloags->catalogs
 catory->factory
 catpture->capture
 catpure->capture
@@ -5373,6 +5412,7 @@ checkum->checksum
 checkums->checksums
 checkuot->checkout
 cheduling->scheduling
+cheeper->cheaper
 cheeta->cheetah
 cheif->chief
 cheifs->chiefs
@@ -8533,6 +8573,8 @@ data-strcutures->data-structures
 databaase->database
 databaases->databases
 databae->database
+databaes->database
+databaeses->databases
 databas->database
 databsae->database
 databsaes->databases
@@ -9049,6 +9091,8 @@ definded->defined, defunded,
 defineas->defines
 defineed->defined
 definend->defined
+definete->definite
+definetelly->definitely
 definetely->definitely
 definetly->definitely
 definiation->definition
@@ -10231,6 +10275,7 @@ dinamiclly->dynamically
 dinamicly->dynamically
 dinmaic->dynamic
 dinteractively->interactively
+diong->doing
 diosese->diocese
 diphtong->diphthong
 diphtongs->diphthongs
@@ -10903,6 +10948,8 @@ dnamically->dynamically
 dne->done
 dnymaic->dynamic
 do'nt->don't
+doagonal->diagonal
+doagonals->diagonals
 doalog->dialog
 doamin->domain, dopamine,
 doamine->dopamine, domain,
@@ -10951,6 +10998,10 @@ documenation->documentation
 documenatry->documentary
 documenet->document
 documenetation->documentation
+documeneted->documented
+documeneter->documenter
+documeneters->documenters
+documeneting->documenting
 documenets->documents
 documentaion->documentation
 documentaiton->documentation
@@ -12352,6 +12403,7 @@ everythin->everything
 everythings->everything
 everytime->every time
 everyting->everything
+everytone->everyone
 eveyone->everyone
 eveyr->every
 evidentally->evidently
@@ -12625,6 +12677,9 @@ exchnging->exchanging
 exchngng->exchanging
 exchngs->exchanges
 exciation->excitation
+excipt->except
+exciption->exception
+exciptions->exceptions
 excist->exist
 excisted->existed
 excisting->existing
@@ -14454,6 +14509,7 @@ formaters->formatters
 formates->formats
 formating->formatting
 formatteded->formatted
+formattgin->formatting
 formattind->formatting
 formattings->formatting
 formattring->formatting
@@ -19186,6 +19242,9 @@ metion->mention
 metioned->mentioned
 metod->method
 metods->methods
+metrig->metric
+metrigal->metrical
+metrigs->metrics
 meybe->maybe
 miagic->magic
 miagical->magical
@@ -20473,6 +20532,8 @@ nevere->never
 neveretheless->nevertheless
 nevers->never
 neverthless->nevertheless
+newine->newline
+newines->newlines
 newletters->newsletters
 nework->network
 neworks->networks
@@ -21020,6 +21081,7 @@ onlly->only
 onlye->only
 onoly->only
 onot->note, not,
+onother->another
 ons->owns
 onself->oneself
 onservation->conservation, observation,
@@ -23567,6 +23629,7 @@ projeting->projecting
 projets->projects
 prolbems->problems
 prolem->problem
+prolematic->problematic
 prolems->problems
 prologomena->prolegomena
 prominance->prominence
@@ -24768,6 +24831,12 @@ recursivelly->recursively
 recursivion->recursion
 recursivley->recursively
 recursivly->recursively
+recursse->recurse, recurses,
+recurssed->recursed
+recursses->recurses
+recurssing->recursing
+recurssion->recursion
+recurssive->recursive
 recusion->recursion, reclusion,
 recusive->recursive, reclusive,
 recusively->recursively, reclusively,
@@ -24826,6 +24895,12 @@ reduntancy->redundancy
 reduntant->redundant
 reduse->reduce, reuse,
 redy->ready, red,
+reease->release
+reeased->released
+reeaser->releaser
+reeasers->releasers
+reeases->releases
+reeasing->releasing
 reedeming->redeeming
 reelation->relation
 reelease->release
@@ -26668,6 +26743,8 @@ scavanger->scavenger
 scavangers->scavengers
 scavanges->scavenges
 sccope->scope
+sceanrio->scenario
+sceanrios->scenarios
 scecified->specified
 sceen->scene, seen, screen, scheme,
 sceens->scenes, screens, schemes,
@@ -28092,6 +28169,7 @@ specifig->specific
 specifigation->specification
 specifigations->specifications
 specifing->specifying
+specifities->specifics
 specifiy->specify
 specifiying->specifying
 specifric->specific
@@ -28417,7 +28495,12 @@ speshel->special
 speshelly->specially, especially,
 spesialisation->specialization
 spesific->specific
+spesifical->specific
+spesifically->specifically
+spesificaly->specifically
+spesifics->specifics
 spesified->specified
+spesifities->specifics
 spesify->specify
 spetial->special, spatial,
 spezialisation->specialization
@@ -29554,6 +29637,8 @@ swithching->switching
 swithcing->switching
 swithcover->switchover
 swithed->switched
+swither->switcher
+swithes->switches
 swithing->switching
 switiches->switches
 swown->shown
@@ -29887,11 +29972,16 @@ teachnig->teaching
 teamplate->template
 teamplates->templates
 teated->treated
+teched->taught
+techer->teacher
+techers->teachers
+teches->teaches
 techical->technical
 techician->technician
 techicians->technicians
 techincal->technical
 techincally->technically
+teching->teaching
 techinically->technically
 techinique->technique
 techiniques->techniques
@@ -30576,6 +30666,11 @@ traget->target
 trageted->targeted
 trageting->targeting
 tragets->targets
+traige->triage
+traiger->triager
+traigers->triagers
+traiges->triages
+traiging->triaging
 traiing->trailing, training,
 trailling->trailing, trialling, trilling,
 traingle->triangle
@@ -31162,7 +31257,9 @@ udpating->updating
 ue->use, due,
 ueful->useful
 uegister->unregister
+ues->yes, use,
 uesd->used
+ueses->uses
 uesful->useful
 uesfull->useful
 uesfulness->usefulness
@@ -32439,6 +32536,9 @@ veriosns->versions
 verious->various
 verison->version
 verisoned->versioned
+verisoner->versioner
+verisoners->versioners
+verisoning->versioning
 verisons->versions
 veritcal->vertical
 veritical->vertical
