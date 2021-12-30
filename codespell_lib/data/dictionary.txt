@@ -8155,8 +8155,12 @@ cotranser->cotransfer
 cotrasferred->cotransferred
 cotrasfers->cotransfers
 cotrol->control
+cotroll->control
 cotrolled->controlled
+cotroller->controller
+cotrolles->controls
 cotrolling->controlling
+cotrolls->controls
 cotrols->controls
 cotten->cotton
 coucil->council
@@ -18594,6 +18598,7 @@ lightyears->light years
 ligth->light
 ligthing->lighting
 ligths->lights
+liitle->little
 lik->like, lick, link,
 likeley->likely
 likelyhood->likelihood
@@ -23757,10 +23762,13 @@ programd->programmed
 programemer->programmer
 programemers->programmers
 programers->programmers
+programm->program
 programm->program, programme,
 programmaticaly->programmatically
 programmd->programmed, programme,
+programme->program
 programmend->programmed
+programmes->programs
 programmetically->programmatically
 programmical->programmatical
 programmign->programming
@@ -26095,6 +26103,8 @@ reqiure->require
 requencies->frequencies
 requency->frequency
 requeried->required
+requeriment->requirement
+requeriments->requirements
 reques->request
 requeset->request, requisite,
 requesr->request
@@ -26844,7 +26854,7 @@ salery->salary
 salveof->slaveof
 samle->sample
 samled->sampled
-samles->samples
+samles->samples, seamless,
 samll->small
 samller->smaller
 sammon->salmon
@@ -27648,6 +27658,7 @@ shadasloo->shadaloo
 shaddow->shadow
 shadhow->shadow
 shadoloo->shadaloo
+shal->shall
 shamen->shaman, shamans,
 shandeleer->chandelier
 shandeleers->chandeliers
@@ -30103,6 +30114,7 @@ tabualtor->tabulator
 tabualtors->tabulators
 tage->stage, take, tag, tagged,
 taged->tagged
+tages->tags, stages,
 taget->target
 tageted->targeted
 tageting->targeting
