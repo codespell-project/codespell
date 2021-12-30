@@ -2842,6 +2842,12 @@ assmebly->assembly
 assmelber->assembler
 assmption->assumption
 assmptions->assumptions
+assmume->assume
+assmumed->assumed
+assmumes->assumes
+assmuming->assuming
+assmumption->assumption
+assmumptions->assumptions
 assocaited->associated
 assocate->associate
 assocated->associated
@@ -11856,6 +11862,7 @@ endevour->endeavour
 endfi->endif
 endianes->endianness
 endianess->endianness
+endianity->endianness
 endiannes->endianness
 endien->endian, indian,
 endiens->endians, indians,
@@ -22853,6 +22860,8 @@ possibillity->possibility
 possibilties->possibilities
 possibilty->possibility
 possibily->possibly
+possibities->possibilities
+possibity->possibility
 possiblble->possible
 possiblec->possible
 possiblely->possibly
@@ -25319,6 +25328,10 @@ releoad->reload
 relese->release
 relesed->released
 releses->releases
+relete->relate, delete,
+releted->related, deleted,
+reletes->relates, deletes,
+releting->relating, deleting,
 reletive->relative
 reletively->relatively
 relevabt->relevant
@@ -27622,6 +27635,7 @@ shtoppes->stops, shops,
 shtopping->stopping, shopping,
 shtops->stops, shops,
 shttp->https
+shudown->shutdown
 shuld->should
 shure->sure
 shurely->surely
@@ -30788,6 +30802,7 @@ tranceivers->transceivers
 trancendent->transcendent
 trancending->transcending
 tranclate->translate
+trandional->traditional
 tranfer->transfer
 tranfered->transferred
 tranfering->transferring
@@ -32399,6 +32414,8 @@ utiltities->utilities
 utiltity->utility
 utilty->utility
 utitity->utility
+utitlities->utilities
+utitlity->utility
 utitlty->utility
 utlities->utilities
 utlity->utility
