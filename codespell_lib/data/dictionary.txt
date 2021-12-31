@@ -1175,6 +1175,7 @@ akumulating->accumulating
 akumulation->accumulation
 akumulative->accumulative
 akumulator->accumulator
+al->all, at,
 alaready->already
 albiet->albeit
 albumns->albums
@@ -4272,6 +4273,7 @@ boaut->bout, boat, about,
 bobard->board, bombard,
 bocome->become
 boddy->body
+bodiese->bodies
 bodydbuilder->bodybuilder
 boelean->boolean
 boeleans->booleans
@@ -8192,6 +8194,7 @@ corus->chorus
 corvering->covering
 cosnsrain->constrain
 cosnsrained->constrained
+cosntitutive->constitutive
 cosntrain->constrain
 cosntrained->constrained
 cosntraining->constraining
@@ -11431,6 +11434,10 @@ downlowd->download
 downlowded->downloaded
 downlowding->downloading
 downlowds->downloads
+downoad->download
+downoaded->downloaded
+downoading->downloading
+downoads->downloads
 downrade->downgrade
 downraded->downgraded
 downrades->downgrades
@@ -11477,6 +11484,8 @@ dreasm->dreams
 dreawn->drawn
 dregee->degree
 dregees->degrees
+dregree->degree
+dregrees->degrees
 drescription->description
 drescriptions->descriptions
 driagram->diagram
@@ -15424,6 +15433,9 @@ gorry->gory
 gost->ghost
 Gothenberg->Gothenburg
 Gottleib->Gottlieb
+goup->group
+gouped->grouped
+goups->groups
 gouvener->governor
 govement->government
 govenment->government
@@ -18371,6 +18383,8 @@ jodpers->jodhpurs
 Johanine->Johannine
 joineable->joinable
 joinning->joining
+jont->joint
+jonts->joints
 jornal->journal
 jorunal->journal
 Jospeh->Joseph
@@ -18510,6 +18524,9 @@ kwno->know
 kwoledgebase->knowledge base
 kyrillic->cyrillic
 labatory->lavatory, laboratory,
+labbel->label
+labbeled->labeled
+labbels->labels
 labed->labeled
 labeld->labelled
 labirinth->labyrinth
@@ -18656,11 +18673,14 @@ legact->legacy
 legalimate->legitimate
 legasy->legacy
 legel->legal
+leght->length
+leghts->lengths
 legitamate->legitimate
 legitimiately->legitimately
 legitmate->legitimate
 legnth->length
 legth->length
+legths->lengths
 leibnitz->leibniz
 leightweight->lightweight
 lene->lens
@@ -23117,7 +23137,12 @@ poninted->pointed
 poninter->pointer
 poninting->pointing
 ponints->points
+ponit->point
+ponitd->pointed
+ponited->pointed
 poniter->pointer
+poniters->pointers
+ponits->points
 pont->point
 pontential->potential
 ponter->pointer
@@ -29996,6 +30021,11 @@ summmarization->summarization
 summmarized->summarized
 summmary->summary
 sumodules->submodules
+sumulate->simulate
+sumulated->simulated
+sumulates->simulates
+sumulation->simulation
+sumulations->simulations
 sunglases->sunglasses
 suntask->subtask
 suop->soup
