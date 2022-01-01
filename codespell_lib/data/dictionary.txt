@@ -838,6 +838,7 @@ addtional->additional
 addtionally->additionally
 addtitional->additional
 adecuate->adequate
+aded->added
 adequit->adequate
 adge->edge, badge, adage,
 adges->edges, badges, adages,
@@ -1530,6 +1531,7 @@ alloco->alloc
 allocos->allocs
 allocte->allocate
 allocted->allocated
+allocting->allocating
 alloction->allocation
 alloctions->allocations
 alloctor->allocator
@@ -2769,6 +2771,11 @@ assgining->assigning
 assginment->assignment
 assginments->assignments
 assgins->assigns
+assiciate->associate
+assiciated->associated
+assiciates->associates
+assiciation->association
+assiciations->associations
 asside->aside
 assiged->assigned
 assigend->assigned
@@ -11860,6 +11867,7 @@ ende->end
 endevors->endeavors
 endevour->endeavour
 endfi->endif
+endge->edge, end,
 endianes->endianness
 endianess->endianness
 endianity->endianness
@@ -13816,6 +13824,7 @@ extreamily->extremely
 extreamly->extremely
 extreams->extremes
 extreem->extreme
+extreemly->extremely
 extrem->extremum, extreme,
 extremaly->extremely
 extremelly->extremely
@@ -15964,6 +15973,7 @@ idaes->ideas
 idealogies->ideologies
 idealogy->ideology
 idefinite->indefinite
+idel->idle
 idelogy->ideology
 idemopotent->idempotent
 idendifier->identifier
@@ -16832,6 +16842,7 @@ indivudually->individually
 indizies->indices
 indpendent->independent
 indpendently->independently
+indrect->indirect
 indulgue->indulge
 indure->endure
 indutrial->industrial
@@ -17947,6 +17958,8 @@ isnpiron->inspiron
 isnt'->isn't
 isnt->isn't
 isnt;->isn't
+isntalation->installation
+isntalations->installations
 isntallation->installation
 isntallations->installations
 isntance->instance
@@ -18261,6 +18274,7 @@ languge->language
 languges->languages
 langugue->language
 langugues->languages
+lanich->launch
 lanuage->language
 lanugage->language
 lanugages->languages
@@ -19848,6 +19862,8 @@ mudering->murdering
 mudule->module
 mudules->modules
 muext->mutex
+muiltiple->multiple
+muiltiples->multiples
 mulithread->multithread
 mulitiplier->multiplier
 mulitipliers->multipliers
@@ -24143,6 +24159,7 @@ queus->queues
 quew->queue
 quickier->quicker
 quicklyu->quickly
+quickyl->quickly
 quicly->quickly
 quiessent->quiescent
 quinessential->quintessential
@@ -31185,6 +31202,9 @@ tring->trying, string, ring,
 trings->strings, rings,
 triniy->trinity
 triology->trilogy
+tripel->triple
+tripeld->tripled
+tripels->triples
 tripple->triple
 triuangulate->triangulate
 trival->trivial
@@ -31943,7 +31963,7 @@ unregiste->unregister
 unregisted->unregistered
 unregisteing->registering
 unregisterd->unregistered
-unregisteres->unregisters
+unregisteres->unregisters, unregistered,
 unregistert->unregistered
 unregistes->unregisters
 unregisting->unregistering
@@ -32362,6 +32382,7 @@ usibility->usability
 usible->usable
 usig->using
 usign->using, unsign,
+usigned->unsigned
 usiing->using
 usin->using
 usind->using
@@ -32490,6 +32511,7 @@ varaiance->variance
 varaiation->variation
 varaible->variable
 varaibles->variables
+varaint->variant
 varation->variation
 varations->variations
 variabe->variable
