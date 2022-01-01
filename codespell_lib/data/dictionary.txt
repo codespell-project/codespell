@@ -3966,6 +3966,8 @@ begiinning->beginning
 beginer->beginner
 begines->begins
 begining->beginning
+begininng->beginning
+begininngs->beginnings
 beginn->begin
 beginnig->beginning
 beginnin->beginning
@@ -5770,6 +5772,8 @@ climing->climbing
 clincial->clinical
 clinets->clients
 clinicaly->clinically
+clipboad->clipboard
+clipboads->clipboards
 clipoard->clipboard
 clipoards->clipboards
 clipoing->clipping
@@ -5962,6 +5966,8 @@ coexsitence->coexistence, co-existence,
 coexsiting->coexisting, co-existing,
 coexsits->coexists, co-exists,
 cofeee->coffee
+cofficient->coefficient
+cofficients->coefficients
 cofidence->confidence
 cofiguration->configuration
 cofigure->configure
@@ -6523,6 +6529,7 @@ compeltelyt->completely
 compeltion->completion
 compeltly->completely
 compenent->component, competent,
+compenents->components, competence,
 compensantion->compensation
 competance->competence
 competant->competent
@@ -6621,6 +6628,7 @@ componbents->components
 componding->compounding
 componemt->component
 componemts->components
+componenet->component
 componenets->components
 componens->components
 componentes->components
@@ -15719,6 +15727,7 @@ hemorage->haemorrhage
 henc->hence
 henderence->hindrance
 hendler->handler
+hense->hence
 hepler->helper
 herad->heard, Hera,
 herat->heart
@@ -16050,6 +16059,7 @@ idelogy->ideology
 idemopotent->idempotent
 idendifier->identifier
 idenfifier->identifier
+idenitfy->identify
 idenitify->identify
 identation->indentation
 identcial->identical
@@ -21815,6 +21825,7 @@ overwize->otherwise
 overwridden->overridden, overwritten,
 overwride->overwrite
 overwriteable->overwritable
+overwrited->overwritten, overwrote,
 overwriten->overwritten
 overwritren->overwritten
 overwrittes->overwrites
@@ -21970,6 +21981,7 @@ paralellism->parallelism
 paralellization->parallelization
 paralelly->parallelly
 paralely->parallelly
+paralle->parallel
 parallell->parallel
 parallely->parallelly
 parallization->parallelization
@@ -23130,6 +23142,7 @@ pre-congifured->pre-configured
 pre-defiend->pre-defined
 pre-defiened->pre-defined
 pre-empt->preempt
+pre-pended->prepended
 pre-pre-realease->pre-pre-release
 pre-proces->pre-process
 pre-procesing->pre-processing
@@ -23401,6 +23414,7 @@ prevews->previews
 previewd->previewed
 previious->previous
 previlege->privilege
+previoous->previous
 previos->previous
 previosly->previously
 previosu->previous
@@ -27727,6 +27741,7 @@ shortcat->shortcut
 shortcats->shortcuts
 shortcomming->shortcoming
 shortcommings->shortcomings
+shortcutt->shortcut
 shortend->shortened, short end,
 shortern->shorten
 shortkut->shortcut
@@ -31306,6 +31321,8 @@ trianglutaion->triangulation
 triangulataion->triangulation
 triangultaion->triangulation
 trianing->training
+trianlge->triangle
+trianlges->triangles
 trians->trains
 triger->trigger, tiger,
 trigered->triggered
@@ -32582,6 +32599,7 @@ utlity->utility
 utput->output
 utputs->outputs
 uupload->upload
+uupper->upper
 vaalues->values
 vaccum->vacuum
 vaccume->vacuum
@@ -33142,6 +33160,7 @@ vyer->very
 vyre->very
 waht->what
 wainting->waiting
+waitting->waiting
 wakeus->wakeups, wake us, walrus,
 wakup->wakeup
 wallthickness->wall thickness
