@@ -2661,6 +2661,8 @@ articat->artifact
 articats->artifacts
 artice->article
 articel->article
+artifac->artifact
+artifacs->artifacts
 artifcat->artifact
 artifcats->artifacts
 artifical->artificial
@@ -9994,7 +9996,10 @@ developpement->development
 developper->developer
 developpers->developers
 developpment->development
+develp->develop
+develped->developed
 develpment->development
+develps->develops
 devels->delves
 deveolpment->development
 deveopers->developers
@@ -10117,6 +10122,10 @@ diaram->diagram, diorama,
 diarea->diarrhea
 diaresis->diaeresis
 diarhea->diarrhoea, diarrhea,
+diasble->disable
+diasbled->disabled
+diasbles->disables
+diasbling->disabling
 diaspra->diaspora
 diaster->disaster
 diatance->distance
@@ -14211,6 +14220,7 @@ finializing->finalizing
 finilizes->finalizes
 finisch->finish, Finnish,
 finisched->finished
+finised->finished
 finishe->finished, finish,
 finishied->finished
 finishs->finishes
@@ -14414,6 +14424,7 @@ folloing->following
 folloiwng->following
 follolwing->following
 follong->following
+follos->follows
 followd->followed, follows, follow,
 followig->following
 followign->following
@@ -19950,6 +19961,7 @@ mulitipliers->multipliers
 mulitpart->multipart
 mulitpath->multipath
 mulitple->multiple
+mulitplication->multiplication
 mulitplicative->multiplicative
 mulitplied->multiplied
 mulitplier->multiplier
@@ -22876,6 +22888,11 @@ porjects->projects
 porotocol->protocol
 porotocols->protocols
 porperty->property
+porportion->proportion
+porportional->proportional
+porportionally->proportionally
+porportioning->proportioning
+porportions->proportions
 porsalin->porcelain
 porshan->portion
 porshon->portion
@@ -26644,6 +26661,7 @@ rhythem->rhythm
 rhythim->rhythm
 rhythimcally->rhythmically
 rhytmic->rhythmic
+ridiculus->ridiculous
 rigeur->rigueur, rigour, rigor,
 righ->right
 righht->right
@@ -31301,6 +31319,8 @@ triky->tricky
 trilinar->trilinear, trillionaire,
 trimed->trimmed
 triming->trimming, timing,
+trinagle->triangle
+trinagles->triangles
 tring->trying, string, ring,
 trings->strings, rings,
 triniy->trinity
@@ -32899,6 +32919,7 @@ visibililty->visibility
 visibilit->visibility
 visibilty->visibility
 visibily->visibly, visibility,
+visibl->visible
 visibleable->visible
 visibles->visible
 visiblities->visibilities
