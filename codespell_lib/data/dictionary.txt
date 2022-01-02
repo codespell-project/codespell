@@ -1527,6 +1527,7 @@ allocaton->allocation
 allocatoor->allocator
 allocatote->allocate
 allocatrd->allocated
+allocattion->allocation
 alloco->alloc
 allocos->allocs
 allocte->allocate
@@ -2556,6 +2557,7 @@ arhive->archive
 arhives->archives
 aribitary->arbitrary
 aribiter->arbiter
+aribrary->arbitrary
 aribtrarily->arbitrarily
 aribtrary->arbitrary
 ariflow->airflow
@@ -4139,6 +4141,8 @@ binay->binary
 bindins->bindings
 binidng->binding
 binominal->binomial
+binraries->binaries
+binrary->binary
 bion->bio
 birght->bright
 birghten->brighten
@@ -5355,6 +5359,8 @@ characterisicly->characteristically
 characterisitic->characteristic
 characterisitics->characteristics
 characteristicly->characteristically
+characteritic->characteristic
+characteritics->characteristics
 charactersistic->characteristic
 charactersistically->characteristically
 charactersistics->characteristics
@@ -5910,6 +5916,8 @@ codepoitn->codepoint
 codesc->codecs
 codespel->codespell
 codesream->codestream
+codition->condition
+coditioned->conditioned
 coditions->conditions
 coduct->conduct
 coducted->conducted
@@ -6008,6 +6016,7 @@ collaction->collection
 collaobrative->collaborative
 collaps->collapse
 collapsable->collapsible
+collapted->collapsed, collated, collapse, coapted,
 collasion->collision
 collationg->collation
 collborative->collaborative
@@ -6091,6 +6100,7 @@ comand-line->command-line
 comanded->commanded
 comander->commander, commandeer,
 comanding->commanding
+comandline->commandline
 comando->commando
 comandos->commandos
 comands->commands
@@ -7078,6 +7088,10 @@ congifurable->configurable
 congifuration->configuration
 congifure->configure
 congifured->configured
+congig->config
+congigs->configs
+congiguration->configuration
+congigurations->configurations
 congigure->configure
 congnition->cognition
 congnitive->cognitive
@@ -16038,6 +16052,7 @@ identificable->identifiable
 identifictaion->identification
 identifieer->identifier
 identifing->identifying
+identifiy->identify
 identifyable->identifiable
 identiy->identify, identity,
 identtation->indentation
@@ -16266,6 +16281,8 @@ impelementing->implementing
 impelements->implements
 impelentation->implementation
 impelment->implement
+impelmentation->implementation
+impelmentations->implementations
 impement->implement
 impementaion->implementation
 impementaions->implementations
@@ -17033,6 +17050,7 @@ ingores->ignores
 ingoring->ignoring
 ingration->integration
 ingreediants->ingredients
+inh->in
 inhabitans->inhabitants
 inherantly->inherently
 inheratance->inheritance
@@ -17895,6 +17913,10 @@ intstructing->instructing
 intstructor->instructor
 intstructs->instructs
 intterrupt->interrupt
+intterupt->interrupt
+intterupted->interrupted
+intterupting->interrupting
+intterupts->interrupts
 intuative->intuitive
 inturpratasion->interpretation
 inturpratation->interpretation
@@ -18459,6 +18481,7 @@ letgitimate->legitimate
 letmost->leftmost
 leutenant->lieutenant
 levae->leave, levee,
+levaridge->leverage
 levetate->levitate
 levetated->levitated
 levetates->levitates
@@ -19110,6 +19133,9 @@ mdoeling->modeling
 mdoelled->modelled
 mdoelling->modelling
 mdoels->models
+meaasure->measure
+meaasured->measured
+meaasures->measures
 meachanism->mechanism
 meachanisms->mechanisms
 meachinism->mechanism
@@ -19744,6 +19770,7 @@ modifified->modified
 modifify->modify
 modifing->modifying
 modifiy->modify
+modifiying->modifying
 modifiyng->modifying
 modifled->modified
 modifler->modifier
@@ -20089,6 +20116,8 @@ nasting->nesting
 nastly->nasty
 nasts->nests, masts,
 nastyness->nastiness
+natched->matched
+natches->matches
 nativelyx->natively
 natrual->natural
 naturaly->naturally
@@ -20167,6 +20196,7 @@ nediums->mediums
 nedle->needle
 nedles->needles, needless,
 nedless->needless, needles,
+neds->needs
 neede->needed, need,
 needeed->needed
 neeed->need
@@ -27609,6 +27639,7 @@ shanghi->Shanghai
 shapt->shaped, shape,
 sharable->shareable
 shareed->shared
+shareing->sharing
 sharloton->charlatan
 sharraid->charade
 sharraids->charades
@@ -33079,6 +33110,7 @@ vunerable->vulnerable
 vyer->very
 vyre->very
 waht->what
+wainting->waiting
 wakeus->wakeups, wake us, walrus,
 wakup->wakeup
 wallthickness->wall thickness
