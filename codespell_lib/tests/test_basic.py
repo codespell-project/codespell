@@ -393,6 +393,50 @@ def test_case_handling(tmpdir, capsys):
         assert f.read().decode('utf-8') == 'this has an ASCII error'
 
 
+def test_case_handling_in_fixes(tmpdir, capsys):
+    """Test that the case of fixes is similar to the mispelled word."""
+    d = str(tmpdir)
+    with open(op.join(d, 'dictionary_with_reason.txt'), 'w') as f:
+        fix = 'adopter, adaptor'
+        reason = 'these are different words!'
+        f.write(f'adoptor->{fix}, {reason}\n')
+    dictionary_name = f.name
+
+    # the mispelled word is entirely lowercase
+    with open(op.join(d, 'bad.txt'), 'w') as f:
+        f.write('early adoptor\n')
+    code, stdout, _ = cs.main('-D', dictionary_name, f.name, std=True)
+    # all suggested fixes must be lowercase too
+    assert 'adopter, adaptor' in stdout
+
+    # the mispelled word is capitalized
+    with open(op.join(d, 'bad.txt'), 'w') as f:
+        f.write('Early Adoptor\n')
+    code, stdout, _ = cs.main('-D', dictionary_name, f.name, std=True)
+    # all suggested fixes must be capitalized too
+    assert 'Adopter, Adaptor' in stdout
+    # the reason, however, must not be modified
+    assert reason in stdout
+
+    # the mispelled word is entirely uppercase
+    with open(op.join(d, 'bad.txt'), 'w') as f:
+        f.write('EARLY ADOPTOR\n')
+    code, stdout, _ = cs.main('-D', dictionary_name, f.name, std=True)
+    # all suggested fixes must be uppercase too
+    assert 'ADOPTER, ADAPTOR' in stdout
+    # the reason, however, must not be modified
+    assert reason in stdout
+
+    # the mispelled word mixes lowercase and uppercase
+    with open(op.join(d, 'bad.txt'), 'w') as f:
+        f.write('EaRlY AdOpToR\n')
+    code, stdout, _ = cs.main('-D', dictionary_name, f.name, std=True)
+    # all suggested fixes should be lowercase
+    assert 'adopter, adaptor' in stdout
+    # the reason, however, must not be modified
+    assert reason in stdout
+
+
 def test_context(tmpdir, capsys):
     """Test context options."""
     d = str(tmpdir)

@@ -495,7 +495,7 @@ def is_text_file(filename):
 
 def fix_case(word, fixword):
     if word == word.capitalize():
-        return fixword.capitalize()
+        return ', '.join(w.strip().capitalize() for w in fixword.split(','))
     elif word == word.upper():
         return fixword.upper()
     # they are both lower case
