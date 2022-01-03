@@ -393,13 +393,14 @@ def test_case_handling(tmpdir, capsys):
         assert f.read().decode('utf-8') == 'this has an ASCII error'
 
 
-def test_case_handling_in_fixes(tmpdir, capsys):
-    """Test that the case of fixes is similar to the mispelled word."""
+def _helper_test_case_handling_in_fixes(tmpdir, capsys, reason):
     d = str(tmpdir)
-    with open(op.join(d, 'dictionary_with_reason.txt'), 'w') as f:
-        fix = 'adopter, adaptor'
-        reason = 'these are different words!'
-        f.write(f'adoptor->{fix}, {reason}\n')
+
+    with open(op.join(d, 'dictionary.txt'), 'w') as f:
+        if reason:
+            f.write('adoptor->adopter, adaptor, reason\n')
+        else:
+            f.write('adoptor->adopter, adaptor,\n')
     dictionary_name = f.name
 
     # the mispelled word is entirely lowercase
@@ -408,6 +409,9 @@ def test_case_handling_in_fixes(tmpdir, capsys):
     code, stdout, _ = cs.main('-D', dictionary_name, f.name, std=True)
     # all suggested fixes must be lowercase too
     assert 'adopter, adaptor' in stdout
+    # the reason, if any, must not be modified
+    if reason:
+        assert 'reason' in stdout
 
     # the mispelled word is capitalized
     with open(op.join(d, 'bad.txt'), 'w') as f:
@@ -415,8 +419,9 @@ def test_case_handling_in_fixes(tmpdir, capsys):
     code, stdout, _ = cs.main('-D', dictionary_name, f.name, std=True)
     # all suggested fixes must be capitalized too
     assert 'Adopter, Adaptor' in stdout
-    # the reason, however, must not be modified
-    assert reason in stdout
+    # the reason, if any, must not be modified
+    if reason:
+        assert 'reason' in stdout
 
     # the mispelled word is entirely uppercase
     with open(op.join(d, 'bad.txt'), 'w') as f:
@@ -424,8 +429,9 @@ def test_case_handling_in_fixes(tmpdir, capsys):
     code, stdout, _ = cs.main('-D', dictionary_name, f.name, std=True)
     # all suggested fixes must be uppercase too
     assert 'ADOPTER, ADAPTOR' in stdout
-    # the reason, however, must not be modified
-    assert reason in stdout
+    # the reason, if any, must not be modified
+    if reason:
+        assert 'reason' in stdout
 
     # the mispelled word mixes lowercase and uppercase
     with open(op.join(d, 'bad.txt'), 'w') as f:
@@ -433,8 +439,15 @@ def test_case_handling_in_fixes(tmpdir, capsys):
     code, stdout, _ = cs.main('-D', dictionary_name, f.name, std=True)
     # all suggested fixes should be lowercase
     assert 'adopter, adaptor' in stdout
-    # the reason, however, must not be modified
-    assert reason in stdout
+    # the reason, if any, must not be modified
+    if reason:
+        assert 'reason' in stdout
+
+
+def test_case_handling_in_fixes(tmpdir, capsys):
+    """Test that the case of fixes is similar to the mispelled word."""
+    _helper_test_case_handling_in_fixes(tmpdir, capsys, reason=False)
+    _helper_test_case_handling_in_fixes(tmpdir, capsys, reason=True)
 
 
 def test_context(tmpdir, capsys):
