@@ -343,8 +343,9 @@ def parse_options(args):
                              'you\'d give "*.eps,*.txt" to this option.')
 
     parser.add_argument('-x', '--exclude-file', type=str, metavar='FILE',
-                        help='FILE with lines that should not be checked for '
-                             'errors or changed')
+                        help='ignore whole lines that match those '
+                             'in the file FILE. The lines in FILE '
+                             'should match the to-be-excluded lines exactly')
 
     parser.add_argument('-i', '--interactive',
                         action='store', type=int, default=0,
