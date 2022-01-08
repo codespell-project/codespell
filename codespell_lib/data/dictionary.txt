@@ -6549,6 +6549,7 @@ compications->complications
 compied->compiled
 compilability->compatibility
 compilant->compliant
+compileable->compilable
 compiletime->compile time
 compiliant->compliant
 compiliation->compilation
@@ -7818,6 +7819,8 @@ coomand->command
 coommand->command
 coonstantly->constantly
 coonstructed->constructed
+cooordinate->coordinate
+cooordinates->coordinates
 coopearte->cooperate
 coopeartes->cooperates
 cooporative->cooperative
@@ -8642,6 +8645,10 @@ daita->data
 dake->take
 dalmation->Dalmatian
 dalta->delta
+damange->damage
+damanged->damaged
+damanges->damages
+damanging->damaging
 damenor->demeanor
 dameon->daemon, demon, Damien,
 damge->damage
@@ -13722,6 +13729,11 @@ explictely->explicitly
 explictily->explicitly
 explictly->explicitly
 explicty->explicitly, explicit,
+explin->explain
+explination->explanation
+explinations->explanations
+explined->explained
+explins->explains
 explit->explicit
 explitictly->explicitly
 explitit->explicit
@@ -16621,6 +16633,7 @@ incomfort->discomfort, uncomfortable, in comfort,
 incomfortable->uncomfortable
 incomming->incoming
 incommplete->incomplete
+incomparible->incompatible, incomparable,
 incompatabable->incompatible
 incompatabiity->incompatibility
 incompatabile->incompatible
@@ -18332,6 +18345,8 @@ laguages->languages
 laguague->language
 laguagues->languages
 laiter->later
+lamda->lambda
+lamdas->lambdas
 lanaguage->language
 lanauge->language
 langage->language
@@ -19928,6 +19943,8 @@ moutning->mounting
 moutnpoint->mountpoint
 moutnpoints->mountpoints
 moutns->mounts
+mouvement->movement
+mouvements->movements
 movebackwrd->movebackward
 moveble->movable
 movemement->movement
@@ -22481,6 +22498,8 @@ peroids->periods
 peronal->personal
 peroperly->properly
 perosnality->personality
+perpandicular->perpendicular
+perpandicularly->perpendicularly
 perperties->properties
 perpertrated->perpetrated
 perperty->property
@@ -23962,6 +23981,7 @@ proprotion->proportion
 proprotional->proportional
 proprotionally->proportionally
 proprotions->proportions
+proprty->property
 propt->prompt
 propteries->properties
 propterties->properties
@@ -27208,6 +27228,7 @@ seemlessly->seamlessly
 seesion->session
 seesions->sessions
 seeting->seating, setting, seething,
+seetings->settings
 segement->segment
 segementation->segmentation
 segemented->segmented
@@ -27875,6 +27896,10 @@ signularity->singularity
 silentely->silently
 silenty->silently
 siliently->silently, saliently,
+silouhette->silhouette
+silouhetted->silhouetted
+silouhettes->silhouettes
+silouhetting->silhouetting
 simeple->simple
 simetrie->symmetry
 simetries->symmetries
@@ -31503,6 +31528,7 @@ ubiquituously->ubiquitously
 ubitquitous->ubiquitous
 ublisher->publisher
 ubunut->Ubuntu
+ubutu->Ubuntu
 ubutunu->Ubuntu
 udated->updated, dated,
 udater->updater, dater,
@@ -31987,6 +32013,8 @@ unknwoing->unknowing
 unknwoingly->unknowingly
 unknwon->unknown
 unknwons->unknowns
+unknwown->unknown
+unknwowns->unknowns
 unkonwn->unknown
 unkonwns->unknowns
 unkown->unknown
@@ -33545,6 +33573,8 @@ worklfow->workflow
 worklfows->workflows
 workpsace->workspace
 workpsaces->workspaces
+workround->workaround
+workrounds->workarounds
 workspce->workspace
 workspsace->workspace
 workspsaces->workspaces
