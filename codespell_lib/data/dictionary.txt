@@ -21629,6 +21629,12 @@ ot->to, of, or, not,
 otain->obtain
 otained->obtained
 otains->obtains
+otate->notate, rotate,
+otated->notated, rotated,
+otates->notates, rotates,
+otating->notating, rotating,
+otation->notation, rotation,
+otations->notations, rotations,
 otehr->other
 otehrwice->otherwise
 otehrwise->otherwise
@@ -26637,6 +26643,8 @@ reversable->reversible
 reverse-engeneer->reverse-engineer
 reverse-engeneering->reverse-engineering
 reverse-engieer->reverse-engineer
+reverseed->reversed
+reversees->reverses
 reverve->reserve
 reverved->reserved
 revewrse->reverse
