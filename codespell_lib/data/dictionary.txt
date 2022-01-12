@@ -774,7 +774,9 @@ addiiton->addition
 addiitonall->additional
 addional->additional
 addionally->additionally
+additianal->additional
 additianally->additionally
+additinal->additional
 additinally->additionally
 additioanal->additional
 additioanally->additionally
@@ -7671,7 +7673,10 @@ controles->controls, controllers,
 controling->controlling
 controll->control
 controllerd->controlled
+controllled->controlled
 controlller->controller
+controlllers->controllers
+controllling->controlling
 controllor->controller
 controlls->controls
 contronl->control
@@ -8965,6 +8970,8 @@ decomposion->decomposition
 decomposit->decompose
 decomposited->decomposed
 decompositing->decomposing
+decompositon->decomposition
+decompositons->decompositions
 decomposits->decomposes
 decompostion->decomposition
 decompostition->decomposition
@@ -10191,6 +10198,8 @@ dictionarys->dictionaries
 dictionay->dictionary
 dictionnaries->dictionaries
 dictionnary->dictionary
+dictionries->dictionaries
+dictionry->dictionary
 dictoinaries->dictionaries
 dictonaries->dictionaries
 dictonary->dictionary
@@ -10426,6 +10435,8 @@ directes->directs
 directgories->directories
 directgory->directory
 directiona->directional, directions,
+directiories->directories
+directiory->directory
 directoies->directories
 directon->direction
 directores->directories
@@ -11960,6 +11971,7 @@ endiannes->endianness
 endien->endian, indian,
 endiens->endians, indians,
 endig->ending
+endiness->endianness
 endnoden->endnode
 endoint->endpoint
 endolithes->endoliths
@@ -13748,8 +13760,10 @@ explot->exploit, explore,
 explotation->exploitation, exploration,
 exploting->exploiting, exploring,
 expoed->exposed
+expoent->exponent
 expoential->exponential
 expoentially->exponentially
+expoentntial->exponential
 expoert->export, expert,
 expoerted->exported
 expoit->exploit
@@ -14781,7 +14795,11 @@ freind->friend
 freindly->friendly
 freqencies->frequencies
 freqency->frequency
+freqeuncies->frequencies
 freqeuncy->frequency
+freqiencies->frequencies
+freqiency->frequency
+freqquencies->frequencies
 freqquency->frequency
 frequancies->frequencies
 frequancy->frequency
@@ -15297,6 +15315,8 @@ grabed->grabbed
 grabing->grabbing
 gracefull->graceful
 gracefuly->gracefully
+gradiant->gradient, radiant,
+gradiants->gradients
 gradualy->gradually
 graet->great
 grafics->graphics
@@ -17211,8 +17231,11 @@ initialitze->initialize
 initialitzing->initializing
 initializaing->initializing
 initializaiton->initialization
+initializate->initialize
 initializated->initialized
+initializates->initializes
 initializatin->initialization
+initializating->initializing
 initializationg->initialization
 initializeing->initializing
 initializiation->initialization
@@ -17707,9 +17730,12 @@ interger's->integer's
 interger->integer
 intergerated->integrated
 intergers->integers
+intergrate->integrate
 intergrated->integrated
+intergrates->integrates
 intergrating->integrating
 intergration->integration
+intergrations->integrations
 interit->inherit
 interitance->inheritance
 interited->inherited
@@ -21466,6 +21492,8 @@ optimitation->optimization
 optimizaing->optimizing
 optimizaton->optimization
 optimizier->optimizer
+optimiztion->optimization
+optimiztions->optimizations
 optimsitic->optimistic
 optimyze->optimize
 optimze->optimize
@@ -28895,6 +28923,11 @@ srunkn->shrunken
 ssee->see
 ssome->some
 stabalization->stabilization
+stabilitation->stabilization
+stabilite->stabilize
+stabilited->stabilized
+stabilites->stabilizes
+stabiliting->stabilizing
 stabilty->stability
 stablility->stability
 stablilization->stabilization
@@ -30869,6 +30902,8 @@ tolen->token
 tolens->tokens
 toleranz->tolerance
 tolerence->tolerance
+tolerences->tolerances
+tolerent->tolerant
 tolernce->tolerance
 Tolkein->Tolkien
 tollerable->tolerable
@@ -31110,6 +31145,7 @@ transfert->transfer, transferred,
 transfom->transform
 transfomation->transformation
 transfomational->transformational
+transfomations->transformations
 transfomed->transformed
 transfomer->transformer
 transfomm->transform
@@ -31747,6 +31783,7 @@ unconfortability->discomfort
 unconsisntency->inconsistency
 unconsistent->inconsistent
 uncontitutional->unconstitutional
+uncontrained->unconstrained
 uncontrolable->uncontrollable
 unconvential->unconventional
 uncorectly->incorrectly
@@ -32629,6 +32666,7 @@ utilitizing->utilizing
 utiliz->utilize
 utiliza->utilize
 utilizaton->utilization
+utill->until, utils,
 utillities->utilities
 utilties->utilities
 utiltities->utilities
