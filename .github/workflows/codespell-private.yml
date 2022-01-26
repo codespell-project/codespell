@@ -51,6 +51,18 @@ jobs:
       - uses: codespell-project/sort-problem-matcher@v1
       - run: make check-dictionaries
 
+  make-sort-dictionaries:
+    if: ${{ failure() }}
+    needs: make-check-dictionaries
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: make sort-dictionaries
+      - name: Suggest how to fix dictionary sorting
+      - uses: getsentry/action-git-diff-suggestions@main
+        with:
+          message: 'sort the dictionary'
+
   flake8-annotation:
     runs-on: ubuntu-latest
     steps:
