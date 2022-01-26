@@ -5403,9 +5403,13 @@ charactrs->characters
 characts->characters
 characture->character
 charakter->character
+charakters->characters
 chararacter->character
+chararacters->characters
 chararcter->character
+chararcters->characters
 charas->chars
+charascter->character
 charascters->characters
 charasmatic->charismatic
 charater->character
@@ -11264,6 +11268,9 @@ doubeleclicked->double-clicked
 doubeleclicks->double-clicks
 doubely->doubly
 doubes->doubles
+doublde->double
+doublded->doubled
+doubldes->doubles
 doubleclick->double-click
 doublely->doubly
 doubletquote->doublequote
@@ -19293,7 +19300,7 @@ mechinism->mechanism
 mechnanism->mechanism
 mechnism->mechanism
 mechnisms->mechanisms
-meda->meta, medal,
+meda->meta, medal, media,
 medacine->medicine
 medai->media
 medeival->medieval
@@ -21051,6 +21058,10 @@ obejct->object
 obeject->object
 obejection->objection
 obejects->objects
+oberflow->overflow
+oberflowed->overflowed
+oberflowing->overflowing
+oberflows->overflows
 obervation->observation
 obervations->observations
 oberve->observe
@@ -21208,7 +21219,6 @@ oder->order, odor,
 odly->oddly
 ody->body
 oen->one
-oerflow->overflow
 ofcource->of course
 offcers->officers
 offcial->official
@@ -21825,6 +21835,9 @@ overengeneer->overengineer
 overengeneering->overengineering
 overfl->overflow
 overfow->overflow
+overfowed->overflowed
+overfowing->overflowing
+overfows->overflows
 overhread->overhead
 overiddden->overridden
 overidden->overridden
@@ -21837,11 +21850,20 @@ overlaping->overlapping
 overlapp->overlap
 overlayed->overlaid
 overlflow->overflow
+overlflowed->overflowed
+overlflowing->overflowing
+overlflows->overflows
 overlfow->overflow
+overlfowed->overflowed
+overlfowing->overflowing
+overlfows->overflows
 overlodaded->overloaded
 overloded->overloaded
 overlodes->overloads
 overlow->overflow
+overlowed->overflowed, overloaded,
+overlowing->overflowing
+overlows->overflows
 overreidden->overridden
 overreide->override
 overreides->overrides
@@ -21921,6 +21943,9 @@ ovverriding->overriding
 owener->owner
 ower->lower, owner, over,
 owerflow->overflow
+owerflowed->overflowed
+owerflowing->overflowing
+owerflows->overflows
 owership->ownership
 owervrite->overwrite
 owervrites->overwrites
@@ -25610,7 +25635,7 @@ relyably->reliably
 relyed->relied
 relyes->relies, realize, realise,
 relys->relies
-remaines->remains
+remaines->remains, remained,
 remaing->remaining
 remainging->remaining
 remainig->remaining
@@ -31844,9 +31869,24 @@ undelying->underlying
 undependend->independent, nondependent,
 underfiend->undefined
 underfined->undefined
+underfow->underflow
+underfowed->underflowed
+underfowing->underflowing
+underfows->underflows
 underlayed->underlaid
 underlaying->underlying
+underlflow->underflow
+underlflowed->underflowed
+underlflowing->underflowing
+underlflows->underflows
+underlfow->underflow
+underlfowed->underflowed
+underlfowing->underflowing
+underlfows->underflows
 underlow->underflow
+underlowed->underflowed
+underlowing->underflowing
+underlows->underflows
 underneeth->underneath
 underrrun->underrun
 undersacn->underscan
