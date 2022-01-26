@@ -10946,6 +10946,7 @@ disssociated->dissociated
 disssociates->dissociates
 disssociating->dissociating
 distace->distance, distaste,
+distaces->distances, distastes,
 distancef->distanced, distances, distance,
 distange->distance
 distantce->distance
@@ -18923,7 +18924,10 @@ madatory->mandatory
 maddness->madness
 maesure->measure
 maesured->measured
+maesurement->measurement
+maesurements->measurements
 maesures->measures
+maesuring->measuring
 magasine->magazine
 magent->magenta, magnet,
 magincian->magician
@@ -30171,6 +30175,8 @@ syntehsize->synthesize
 syntehsized->synthesized
 syntesis->synthesis
 syntethic->synthetic
+syntethically->synthetically
+syntethics->synthetics
 syntetic->synthetic
 syntetize->synthesize
 syntetized->synthesized
@@ -30302,8 +30308,6 @@ tansmit->transmit
 tarbal->tarball
 tarbals->tarballs
 tarce->trace
-tarceback->traceback
-tarcebacks->tracebacks
 tarced->traced
 tarces->traces
 tarcing->tracing
