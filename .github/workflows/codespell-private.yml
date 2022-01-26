@@ -1,7 +1,7 @@
 # GitHub Action to check our dictionary, this should only be used by the codespell project itself
 # For general usage in your repo, see the example in codespell.yml
 # https://github.com/codespell-project/codespell
-name: codespell
+name: codespell Private Actions
 on: [push, pull_request]
 jobs:
   test:
@@ -58,6 +58,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: make sort-dictionaries
+      - run: git diff -U0 --color=never
       - uses: getsentry/action-git-diff-suggestions@main
         name: Suggest how to fix dictionary sorting
         with:
