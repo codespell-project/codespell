@@ -58,8 +58,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: make sort-dictionaries
-      - name: Suggest how to fix dictionary sorting
       - uses: getsentry/action-git-diff-suggestions@main
+        name: Suggest how to fix dictionary sorting
         with:
           message: 'sort the dictionary'
 
