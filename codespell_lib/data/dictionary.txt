@@ -5221,6 +5221,7 @@ certficiation->certification
 certficiations->certifications
 certfied->certified
 certfy->certify
+certi->certificate, certify,
 certian->certain
 certianly->certainly
 certicate->certificate
@@ -5246,6 +5247,7 @@ certifiates->certificates
 certifiating->certificating
 certifiation->certification
 certifiations->certifications
+certific->certificate, certification,
 certificat->certificate
 certificatd->certificated
 certificatin->certificating, certification,
@@ -8324,6 +8326,7 @@ crashaes->crashes
 crasheed->crashed
 crashees->crashes
 crashess->crashes
+crashign->crashing
 crashs->crashes
 cration->creation, ration, nation,
 crationalism->rationalism, nationalism,
@@ -11598,6 +11601,8 @@ ediges->edges
 editedt->edited
 editiing->editing
 editoro->editor
+editot->editor
+editots->editors
 editt->edit
 editted->edited
 editter->editor
@@ -20119,6 +20124,7 @@ muscial->musical
 muscician->musician
 muscicians->musicians
 musn't->mustn't
+must't->mustn't
 mustator->mutator
 muste->must
 mutablity->mutability
@@ -30708,6 +30714,7 @@ thess->this, these,
 thest->test
 thether->tether, whether,
 thetrahedron->tetrahedron
+thets->that's, theta,
 thev->the
 theves->thieves
 thex->the, then,
@@ -32719,6 +32726,7 @@ usuage->usage
 usuall->usually, usual,
 usuallly->usually
 usualy->usually
+usualyl->usually
 usue->use
 usued->used
 usueful->useful
