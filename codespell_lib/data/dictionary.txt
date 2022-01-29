@@ -5199,6 +5199,7 @@ centruy->century
 centuties->centuries
 centuty->century
 cerate->create
+cerated->created, serrated,
 ceratin->certain, keratin,
 cereates->creates
 cerification->certification, verification,
@@ -8362,7 +8363,9 @@ createable->creatable
 createdd->created
 createing->creating
 createive->creative
-creater->creator
+creater->creator, crater,
+creaters->creators, craters,
+creatin->creation, creating, creatine, cretin,
 creationg->creation, creating,
 creatning->creating
 creatre->create
@@ -12565,6 +12568,8 @@ everbody->everybody
 everithing->everything
 everone->everyone
 everthing->everything
+evertyhign->everything
+evertyhing->everything
 evertything->everything
 everwhere->everywhere
 everybodies->everybody, everybody's,
@@ -16017,6 +16022,7 @@ houskeeping->housekeeping
 housr->hours, house,
 hovever->however
 hovewer->however
+howeever->however
 howerver->however
 howeverm->however
 howver->however
@@ -18863,14 +18869,20 @@ logictech->logitech
 logile->logfile
 loging->logging, lodging,
 logitude->longitude
+logitudes->longitudes
+logner->longer, logger,
 logoic->logic
 logorithm->logarithm
 logorithmic->logarithmic
+logorithms->logarithms
 logrithm->logarithm
+logrithms->logarithms
 logwritter->logwriter
 loign->login
+loigns->logins
 lokal->local
 lokale->locale
+lokales->locales
 lokaly->locally
 lolal->total
 lolerant->tolerant
@@ -19252,12 +19264,14 @@ mcroscopes->microscopes
 mcroscopic->microscopic
 mcroscopies->microscopies
 mcroscopy->microscopy
+mdoe->mode, doe,
 mdoel->model
 mdoeled->modeled
 mdoeling->modeling
 mdoelled->modelled
 mdoelling->modelling
 mdoels->models
+mdoes->modes, does,
 meaasure->measure
 meaasured->measured
 meaasures->measures
@@ -27439,6 +27453,8 @@ self-contianed->self-contained
 self-referencial->self-referential
 self-refering->self-referring
 selfs->self
+sellect->select
+sellected->selected
 selt->set, self, sold,
 selv->self
 semaintics->semantics
@@ -27842,6 +27858,8 @@ shandeleers->chandeliers
 shandow->shadow
 shaneal->chenille
 shanghi->Shanghai
+shapsnot->snapshot
+shapsnots->snapshots
 shapt->shaped, shape,
 sharable->shareable
 shareed->shared
@@ -28246,6 +28264,7 @@ situtaion->situation
 situtaions->situations
 situtation->situation
 situtations->situations
+siutable->suitable
 siute->suite
 sivible->visible
 siwtch->switch
@@ -30699,6 +30718,8 @@ texxt->text
 tey->they
 tghe->the
 tha->than, that, the,
+thair->their, there,
+thairs->theirs, there's,
 thann->than, thank,
 thansk->thanks
 thansparent->transparent
