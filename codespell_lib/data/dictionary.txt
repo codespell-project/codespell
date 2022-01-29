@@ -3777,6 +3777,8 @@ backgournd->background
 backgournds->backgrounds
 backgrond->background
 backgronds->backgrounds
+backgroound->background
+backgroounds->backgrounds
 backgroud->background
 backgrouds->backgrounds
 backgroung->background
@@ -5316,6 +5318,7 @@ chanell->channel
 chanels->channels
 changable->changeable
 changeble->changeable
+changee->changed, changes, change,
 changeing->changing
 changged->changed
 changlog->changelog
@@ -5770,6 +5773,8 @@ clera->clear, sclera,
 clese->close
 cleses->closes
 clevely->cleverly
+cliboard->clipboard
+cliboards->clipboards
 cliens->clients
 cliensite->client-side
 clienta->client
@@ -6655,6 +6660,7 @@ composibility->composability
 composiblity->composability
 composit->composite
 composits->composites
+composte->composite, compost, composted,
 compount->compound
 comppatible->compatible
 comprable->comparable
@@ -10946,6 +10952,8 @@ disssociate->dissociate
 disssociated->dissociated
 disssociates->dissociates
 disssociating->dissociating
+distace->distance, distaste,
+distaces->distances, distastes,
 distancef->distanced, distances, distance,
 distange->distance
 distantce->distance
@@ -11042,6 +11050,8 @@ distrubution->distribution
 distrubutions->distributions
 distruction->destruction
 distructive->destructive
+distructor->destructor
+distructors->destructors
 distuingish->distinguish
 disuade->dissuade
 disucssion->discussion
@@ -14264,6 +14274,7 @@ finctional->functional, fictional,
 finctionalities->functionalities
 finctionality->functionality
 finde->find
+finded->found, fined, funded,
 findn->find
 findout->find out
 finelly->finally
@@ -18359,6 +18370,8 @@ knwos->knows
 kocalized->localized
 komma->comma, coma,
 kommas->commas, comas,
+konstant->constant
+konstants->constants
 konw->know
 konwn->known
 konws->knows
@@ -18918,6 +18931,12 @@ macthing->matching
 madantory->mandatory
 madatory->mandatory
 maddness->madness
+maesure->measure
+maesured->measured
+maesurement->measurement
+maesurements->measurements
+maesures->measures
+maesuring->measuring
 magasine->magazine
 magent->magenta, magnet,
 magincian->magician
@@ -21429,6 +21448,7 @@ operaror->operator
 operatation->operation
 operatations->operations
 operater->operator
+operatings->operating
 operatio->operation
 operatione->operation
 operatior->operator
@@ -28063,6 +28083,7 @@ simulataniously->simultaneously
 simulatanous->simultaneous
 simulatanously->simultaneously
 simulatation->simulation
+simulatenous->simultaneous
 simulatenously->simultaneously
 simultaneos->simultaneous
 simultaneosly->simultaneously
@@ -30181,6 +30202,9 @@ syntehsised->synthesised
 syntehsize->synthesize
 syntehsized->synthesized
 syntesis->synthesis
+syntethic->synthetic
+syntethically->synthetically
+syntethics->synthetics
 syntetic->synthetic
 syntetize->synthesize
 syntetized->synthesized
@@ -30311,6 +30335,10 @@ tanslator->translator
 tansmit->transmit
 tarbal->tarball
 tarbals->tarballs
+tarce->trace
+tarced->traced
+tarces->traces
+tarcing->tracing
 targed->target
 targer->target
 targest->targets
@@ -30699,6 +30727,8 @@ therem->there, theorem,
 thereom->theorem
 thererin->therein
 theres->there's
+thereshold->threshold
+theresholds->thresholds
 therfore->therefore
 theri->their, there,
 thermisor->thermistor
@@ -33398,6 +33428,8 @@ wathever->whatever
 waths->whats, watches,
 wating->waiting
 watn->want
+wavelengh->wavelength
+wavelenghs->wavelengths
 wavelenght->wavelength
 wavelenghts->wavelengths
 wavelnes->wavelines
