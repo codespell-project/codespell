@@ -492,6 +492,9 @@ accss->access
 accssible->accessible
 accssor->accessor
 acctual->actual
+accuarcy->accuracy
+accuarte->accurate
+accuartely->accurately
 accumalate->accumulate
 accumalates->accumulates
 accumalator->accumulator
@@ -4688,7 +4691,9 @@ caclucate->calculate
 caclucation->calculation
 caclucations->calculations
 caclucator->calculator
+caclulate->calculate
 caclulated->calculated
+caclulates->calculates
 caclulating->calculating
 caclulation->calculation
 caclulations->calculations
@@ -4805,6 +4810,8 @@ caleed->called
 caler->caller
 calescing->coalescing
 caliased->aliased
+calibraiton->calibration
+calibraitons->calibrations
 calibrte->calibrate
 calibrtion->calibration
 caligraphy->calligraphy
@@ -6073,6 +6080,7 @@ collpase->collapse
 collpased->collapsed
 collpases->collapses
 collpasing->collapsing
+collsion->collision
 collsions->collisions
 collumn->column
 collumns->columns
@@ -7821,6 +7829,8 @@ convinving->convincing
 convirted->converted
 convirting->converting
 convised->convinced
+convoultion->convolution
+convoultions->convolutions
 convovle->convolve
 convovled->convolved
 convovling->convolving
@@ -12005,6 +12015,7 @@ endpints->endpoints
 endpiont->endpoint
 endpionts->endpoints
 endpont->endpoint
+endponts->endpoints
 endsup->ends up
 enduce->induce
 eneables->enables
@@ -14855,6 +14866,7 @@ fromat->format
 frome->from
 fromed->formed
 froms->forms
+fromt->from
 fromthe->from the
 fron->from, front,
 fronend->frontend
@@ -19529,6 +19541,11 @@ Microsofot->Microsoft
 Micrsft->Microsoft
 Micrsoft->Microsoft
 midified->modified
+midpints->midpoints
+midpiont->midpoint
+midpionts->midpoints
+midpont->midpoint
+midponts->midpoints
 migrateable->migratable
 migt->might, midget,
 migth->might
@@ -21562,6 +21579,7 @@ optiones->options
 optionial->optional
 optionn->option
 optionnal->optional
+optionnally->optionally
 optionnaly->optionally
 optionss->options
 optios->options
@@ -25354,6 +25372,12 @@ reffers->refers
 refinemenet->refinement
 refinmenet->refinement
 refinment->refinement
+reflet->reflect
+refleted->reflected
+refleting->reflecting
+refletion->reflection
+refletions->reflections
+reflets->reflects
 refocuss->refocus
 refocussed->refocused
 reformating->reformatting
@@ -28512,6 +28536,9 @@ specfications->specifications
 specfied->specified
 specfield->specified
 specfies->specifies
+specfifies->specifies
+specfify->specify
+specfifying->specifying
 specfiied->specified
 specfy->specify
 specfying->specifying
@@ -33060,6 +33087,7 @@ vertikal->vertical
 vertix->vertex
 vertixes->vertices
 vertixs->vertices
+vertx->vertex
 veryfieng->verifying
 veryfy->verify
 veryified->verified
