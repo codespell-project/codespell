@@ -730,6 +730,8 @@ acutual->actual
 adapated->adapted
 adapater->adapter
 adapaters->adapters
+adapation->adaptation, adoption,
+adapations->adaptations, adoptions,
 adapd->adapt, adapted, adopt, adopted,
 adapdive->adaptive
 adaped->adapted, adapt, adopted, adopt,
@@ -1003,8 +1005,10 @@ affinitied->affinities
 affinitiy->affinity
 affinitized->affinities, affinity,
 affinitze->affinitize
+affinties->affinities
 affintiy->affinity
 affintize->affinitize
+affinty->affinity
 affitnity->affinity
 affort->afford, effort,
 affortable->affordable
@@ -6574,6 +6578,8 @@ compications->complications
 compied->compiled
 compilability->compatibility
 compilant->compliant
+compilaton->compilation
+compilatons->compilations
 compileable->compilable
 compiletime->compile time
 compiliant->compliant
@@ -7677,6 +7683,8 @@ contribtes->contributes
 contributer->contributor
 contributers->contributors
 contries->countries
+contrinution->contribution
+contrinutions->contributions
 contritutions->contributions
 contriubte->contribute
 contriubted->contributed
@@ -8768,6 +8776,7 @@ dcument->document
 dcumented->documented
 dcumenting->documenting
 dcuments->documents
+ddelete->delete
 de-actived->deactivated
 de-duplacate->de-duplicate
 de-duplacated->de-duplicated
@@ -8943,6 +8952,8 @@ decimials->decimals
 decison->decision
 decission->decision
 declar->declare
+declaraion->declaration
+declaraions->declarations
 declarated->declared
 declaratinos->declarations
 declaratiom->declaration
@@ -11941,6 +11952,10 @@ encocdes->encodes
 encocding->encoding
 encocdings->encodings
 encodingt->encoding
+encompas->encompass
+encompased->encompassed
+encompases->encompasses
+encompasing->encompassing
 enconde->encode
 enconded->encoded
 enconder->encoder
@@ -11975,6 +11990,8 @@ encoutners->encounters
 encouttering->encountering
 encrcypt->encrypt
 encripted->encrypted
+encription->encryption
+encriptions->encryptions
 encrpt->encrypt
 encrpted->encrypted
 encrption->encryption
@@ -14197,6 +14214,7 @@ fhurter->further
 fials->fails
 fianite->finite
 fianlly->finally
+fibonaacci->Fibonacci
 ficks->flicks, fix,
 ficticious->fictitious
 fictious->fictitious
@@ -15271,6 +15289,7 @@ ggogle->goggle, Google,
 ggogled->Googled
 ggogles->goggles, Googles,
 Ghandi->Gandhi
+ghostcript->ghostscript
 ghostscritp->ghostscript
 ghraphic->graphic
 gigibit->gigabit
@@ -15388,6 +15407,7 @@ granualtiry->granularity
 granulatiry->granularity
 grapgics->graphics
 graphcis->graphics
+graphis->graphics
 grapic->graphic
 grapical->graphical
 grapics->graphics
@@ -17280,6 +17300,8 @@ initialitse->initialise
 initialitsing->initialising
 initialitze->initialize
 initialitzing->initializing
+initializa->initialize
+initializad->initialized
 initializaing->initializing
 initializaiton->initialization
 initializate->initialize
@@ -20835,6 +20857,7 @@ newtork->network
 Newyorker->New Yorker
 niear->near
 niearest->nearest
+niether->neither
 nighbor->neighbor
 nighborhood->neighborhood
 nighboring->neighboring
@@ -21041,6 +21064,8 @@ notmutch->notmuch
 notning->nothing
 notse->notes, note,
 nott->not
+nottaion->notation
+nottaions->notations
 notwhithstanding->notwithstanding
 noveau->nouveau
 Novemer->November
@@ -22057,6 +22082,8 @@ pactch->patch
 pactched->patched
 pactches->patches
 padam->param
+padd->pad, padded,
+padds->pads
 pading->padding
 paermission->permission
 paermissions->permissions
@@ -22154,6 +22181,7 @@ paramerters->parameters
 paramerts->parameters
 parameteras->parameters
 parametere->parameter, parameters,
+parameteres->parameters
 parameterical->parametrical
 parameterizes->parametrizes
 parameterts->parameters
@@ -25704,6 +25732,7 @@ remainig->remaining
 remainst->remains
 remanin->remaining, remain,
 remaning->remaining
+remaped->remapped
 remaping->remapping
 rembember->remember
 rembembered->remembered
@@ -25780,6 +25809,7 @@ renabled->re-enabled
 rende->render, rend,
 renderadble->renderable
 rendereing->rendering
+rendererd->rendered
 rendererers->renderers, renderer's,
 renderering->rendering
 renderes->renders, renderers, renderer's,
@@ -26520,6 +26550,13 @@ resposive->responsive
 resposiveness->responsiveness
 resposne->response
 resposnes->responses
+respresent->represent
+respresentation->representation
+respresentational->representational
+respresentations->representations
+respresented->represented
+respresenting->representing
+respresents->represents
 resquest->request
 resrouce->resource
 resrouced->resourced
@@ -27295,6 +27332,8 @@ seaches->searches
 seaching->searching
 seachkey->searchkey
 seacrchable->searchable
+seamlessley->seamlessly
+seamlessy->seamlessly
 searcahble->searchable
 searche->search, searched,
 searcheable->searchable
@@ -27386,6 +27425,8 @@ seesion->session
 seesions->sessions
 seeting->seating, setting, seething,
 seetings->settings
+seeverities->severities
+seeverity->severity
 segement->segment
 segementation->segmentation
 segemented->segmented
@@ -29133,6 +29174,8 @@ starup->startup
 starups->startups
 statamenet->statement
 statamenets->statements
+stategies->strategies
+stategy->strategy
 stateman->statesman
 statemanet->statement
 statememts->statements
@@ -30170,6 +30213,9 @@ symnol->symbol
 symnols->symbols
 symobilic->symbolic
 symobl->symbol
+symoblic->symbolic
+symoblically->symbolically
+symobls->symbols
 symol->symbol
 symols->symbols
 synagouge->synagogue
@@ -32199,6 +32245,7 @@ unitilizing->uninitializing
 unitilties->utilities
 unitilty->utility
 unititialized->uninitialized
+unitl->until
 unitled->untitled
 unitss->units
 univeral->universal
@@ -32964,6 +33011,8 @@ varning->warning
 varnings->warnings
 varns->warns
 varoius->various
+varous->various
+varously->variously
 vartical->vertical
 vartically->vertically
 vas->was
