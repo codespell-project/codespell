@@ -2134,6 +2134,7 @@ applicatons->applications
 appliction->application
 applictions->applications
 applide->applied
+applie->apply, applied,
 applikation->application
 appling->applying, appalling,
 applyable->applicable
@@ -7920,6 +7921,7 @@ cootdinates->coordinates
 cootdinating->coordinating
 cootdination->coordination
 copeing->copying
+copie->copy, copies, copied, copier,
 copiese->copies
 copiing->copying
 copiler->compiler
@@ -10460,6 +10462,8 @@ direcctly->directly
 direcctory->directory
 direcctorys->directories
 direcctries->directories
+direcion->direction
+direcions->directions
 direclty->directly
 direcly->directly
 direcories->directories
@@ -10693,6 +10697,8 @@ discribing->describing
 discription->description
 discriptions->descriptions
 discriptor's->descriptor's
+discriptor->descriptor
+discriptors->descriptors
 disctinction->distinction
 disctinctive->distinctive
 disctinguish->distinguish
@@ -11124,6 +11130,7 @@ doamin->domain, dopamine,
 doamine->dopamine, domain,
 doamins->domains
 doas->does
+doasn't->doesn't
 doble->double
 dobled->doubled
 dobles->doubles
@@ -13956,6 +13963,7 @@ extrac->extract
 extraced->extracted
 extracing->extracting
 extracter->extractor
+extractet->extracted
 extractino->extracting
 extractins->extractions
 extradiction->extradition
@@ -14089,6 +14097,10 @@ faireness->fairness
 fairoh->pharaoh
 faiway->fairway
 faiways->fairways
+faktor->factor
+faktored->factored
+faktoring->factoring
+faktors->factors
 falg->flag
 falgs->flags
 falied->failed
@@ -15354,6 +15366,7 @@ gogin->going, Gauguin,
 goign->going
 goin->going
 goind->going
+golab->global
 golbal->global
 golbally->globally
 golbaly->globally
@@ -15833,6 +15846,7 @@ hendler->handler
 hense->hence
 hepler->helper
 herad->heard, Hera,
+herarchy->hierarchy
 herat->heart
 heree->here
 heridity->heredity
@@ -16860,6 +16874,7 @@ incremenet->increment
 incremenetd->incremented
 incremeneted->incremented
 incrementall->incremental, incrementally,
+incrementaly->incrementally
 incremet->increment
 incremetal->incremental
 incremeted->incremented
@@ -16992,6 +17007,7 @@ indicaite->indicate
 indicat->indicate
 indicateds->indicated, indicates,
 indicatee->indicates, indicated,
+indicationg->indicating, indication,
 indicats->indicates, indicate,
 indicees->indices
 indiciate->indicate
@@ -18200,6 +18216,7 @@ istening->listening
 ists->its, lists,
 isue->issue
 iteartor->iterator
+iteator->iterator
 iteger->integer
 itegral->integral
 itegrals->integrals
@@ -20823,6 +20840,7 @@ nessecarilt->necessarily
 nessecarily->necessarily
 nessecarry->necessary
 nessecary->necessary
+nesseccarily->necessarily
 nesseccary->necessary
 nessesarily->necessarily
 nessesary->necessary
@@ -21510,6 +21528,7 @@ operatio->operation
 operatione->operation
 operatior->operator
 operatng->operating
+operato->operator
 operaton->operation
 operatons->operations
 operattion->operation
@@ -21716,6 +21735,8 @@ oriente->oriented
 orientiation->orientation
 orientied->oriented
 orientned->oriented
+orietation->orientation
+orietations->orientations
 origanaly->originally
 origial->original
 origially->originally
@@ -22363,6 +22384,7 @@ passowrd->password
 passs->pass
 passsed->passed
 passsing->passing
+passt->passed, past,
 passthrought->passthrough
 passthruogh->passthrough
 passtime->pastime
@@ -25082,6 +25104,7 @@ reciving->receiving
 reclaimation->reclamation
 recnt->recent, recant, rent,
 recntly->recently
+recocnisable->recognizable, reconcilable,
 recod->record
 recofig->reconfig
 recoginizing-->recognizing
@@ -31135,6 +31158,7 @@ tortilini->tortellini
 tortise->tortoise
 torward->toward
 torwards->towards
+totaly->totally
 totat->total
 totation->rotation
 totats->totals
@@ -33645,6 +33669,7 @@ whoes->whose
 whoknows->who knows
 wholey->wholly
 wholy->wholly, holy,
+whoms->whom, whose,
 whoose->whose
 whos->whose, who's,
 whould->would
