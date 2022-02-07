@@ -1717,6 +1717,7 @@ ambien->ambient
 ambigious->ambiguous
 ambigous->ambiguous
 ambiguious->ambiguous
+ambiguitiy->ambiguity
 ambiguos->ambiguous
 ambitous->ambitious
 ambuguity->ambiguity
@@ -4602,6 +4603,7 @@ buillt->built
 built-time->build-time
 builter->builder
 builters->builders
+builting->building, built-in,
 buinseses->businesses
 buinsess->business
 buinsesses->businesses
@@ -8053,6 +8055,13 @@ correcxt->correct
 correcy->correct
 correect->correct
 correectly->correctly
+correespond->correspond
+correesponded->corresponded
+correespondence->correspondence
+correespondences->correspondences
+correespondent->correspondent
+correesponding->corresponding
+correesponds->corresponds
 correlasion->correlation
 correlatd->correlated
 correllate->correlate
@@ -9590,6 +9599,10 @@ depracated->deprecated
 depreacte->deprecate
 depreacted->deprecated
 depreacts->deprecates
+depreate->deprecate
+depreated->deprecated
+depreates->deprecates
+depreating->deprecating
 deprecatedf->deprecated
 depreceate->deprecate, depreciate,
 depreceated->deprecated, depreciated,
@@ -9614,7 +9627,10 @@ depricate->deprecate
 depricated->deprecated
 depricates->deprecates
 depricating->deprecating
+deque->dequeue
 dequed->dequeued
+dequeing->dequeuing
+deques->dequeues
 derageable->dirigible
 deram->dram, dream,
 derective->directive
@@ -9925,6 +9941,8 @@ destinatin->destination
 destinatino->destination
 destinatinos->destinations
 destinatins->destinations
+destinaton->destination
+destinatons->destinations
 destinguish->distinguish
 destionation->destination
 destionations->destinations
@@ -12604,6 +12622,7 @@ everythings->everything
 everytime->every time
 everyting->everything
 everytone->everyone
+evey->every
 eveyone->everyone
 eveyr->every
 evidentally->evidently
@@ -13770,6 +13789,7 @@ expicitly->explicitly
 expidition->expedition
 expiditions->expeditions
 expierence->experience
+expierenced->experienced
 expierences->experiences
 expierience->experience
 expieriences->experiences
@@ -14287,6 +14307,7 @@ fils->fills, files, file,
 filse->files
 filsystem->filesystem
 filsystems->filesystems
+filterd->filtered
 filterig->filtering
 filterin->filtering
 filterring->filtering
@@ -15106,6 +15127,7 @@ garuantees->guarantees
 garuantied->guaranteed
 gatable->gateable
 gateing->gating
+gatherig->gathering
 gatway->gateway
 gauage->gauge
 gauarana->guaraná
@@ -15326,6 +15348,7 @@ gloabl->global
 gloassaries->glossaries
 gloassary->glossary
 globablly->globally
+globaly->globally
 globbal->global
 globel->global
 glorfied->glorified
@@ -20271,6 +20294,8 @@ nagatively->negatively
 nagatives->negatives
 nagivation->navigation
 naieve->naive
+namaed->named
+namaes->names
 namd->named, name,
 namemespace->namespace
 namepace->namespace
@@ -25045,9 +25070,11 @@ receieving->receiving
 receipient->recipient
 receipients->recipients
 receiption->reception
+receivd->received
 receivedfrom->received from
 receiveing->receiving
 receiviing->receiving
+receivs->receives
 recenet->recent
 recenlty->recently
 recenly->recently
@@ -25582,6 +25609,8 @@ rehersal->rehearsal
 rehersing->rehearsing
 reicarnation->reincarnation
 reigining->reigning
+reigon->reign, region,
+reigonal->regional
 reigons->reigns, regions,
 reigster->register
 reigstered->registered
@@ -26217,6 +26246,8 @@ reposonse->response
 reposonses->responses
 repostiories->repositories
 repostiory->repository
+repostories->repositories
+repostory->repository
 repote->report, remote,
 repport->report
 reppository->repository
@@ -27151,6 +27182,7 @@ saterday->Saturday
 saterdays->Saturdays
 satified->satisfied
 satifies->satisfies
+satifsy->satisfy
 satify->satisfy
 satifying->satisfying
 satisfactority->satisfactorily
@@ -28638,6 +28670,7 @@ specifcations->specifications
 specifcied->specified
 specifclly->specifically
 specifed->specified
+specifes->specifies
 speciffic->specific
 speciffically->specifically
 specifi->specific, specify,
@@ -31104,6 +31137,8 @@ toggeling->toggling
 toggels->toggles
 togheter->together
 toghether->together
+togle->toggle
+togled->toggled
 togling->toggling
 toglle->toggle
 toglled->toggled
@@ -32369,6 +32404,7 @@ unnessessary->unnecessary
 unning->running
 unnnecessary->unnecessary
 unnsupported->unsupported
+unnused->unused
 unobstrusive->unobtrusive
 unocde->Unicode
 unoffical->unofficial
