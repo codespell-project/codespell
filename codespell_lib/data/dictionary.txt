@@ -643,6 +643,8 @@ acquaintences->acquaintances
 acquiantence->acquaintance
 acquiantences->acquaintances
 acquiesence->acquiescence
+acquisiton->acquisition
+acquisitons->acquisitions
 acquited->acquitted
 acquition->acquisition
 acqure->acquire
@@ -1103,6 +1105,7 @@ agrieved->aggrieved
 agrresive->aggressive
 agrument->argument
 agruments->arguments
+agsinst->against
 agument->argument
 agumented->augmented
 aguments->arguments
@@ -3505,6 +3508,10 @@ auto-negoziations->auto-negotiations
 auto-realease->auto-release
 auto-realeased->auto-released
 autochtonous->autochthonous
+autocmplete->autocomplete
+autocmpleted->autocompleted
+autocmpletes->autocompletes
+autocmpleting->autocompleting
 autocommiting->autocommitting
 autoconplete->autocomplete
 autoconpleted->autocompleted
@@ -4462,6 +4469,7 @@ breakthroughts->breakthroughs
 breakthruogh->breakthrough
 breakthruoghs->breakthroughs
 breal->break
+breating->breathing
 breef->brief, beef,
 breefly->briefly
 brefore->before
@@ -11958,6 +11966,7 @@ encocdes->encodes
 encocding->encoding
 encocdings->encodings
 encodingt->encoding
+encodning->encoding
 encompas->encompass
 encompased->encompassed
 encompases->encompasses
@@ -15854,6 +15863,8 @@ hesistate->hesitate
 hesistated->hesitated
 hesistates->hesitates
 hesistating->hesitating
+hesistation->hesitation
+hesistations->hesitations
 hestiate->hesitate
 hetrogeneous->heterogeneous
 hetrogenous->heterogenous, heterogeneous,
@@ -20409,6 +20420,13 @@ negatiotiators->negotiators
 negativ->negative
 negatve->negative
 negible->negligible
+negitiable->negotiable
+negitiate->negotiate
+negitiated->negotiated
+negitiates->negotiates
+negitiating->negotiating
+negitiation->negotiation
+negitiations->negotiations
 negitive->negative
 neglible->negligible
 negligable->negligible
@@ -22741,6 +22759,7 @@ petetion->petition
 pevent->prevent
 pevents->prevents
 pezier->bezier
+phanthom->phantom
 Pharoah->Pharaoh
 phasepsace->phasespace
 phasis->phases
@@ -25200,6 +25219,10 @@ reconize->recognize
 reconized->recognized
 reconnaisance->reconnaissance
 reconnaissence->reconnaissance
+reconnct->reconnect
+reconncted->reconnected
+reconncting->reconnecting
+reconncts->reconnects
 reconsidder->reconsider
 reconstrcut->reconstruct
 reconstrcuted->reconstructed
@@ -27565,6 +27588,9 @@ sensetive->sensitive
 sensisble->sensible
 sensistive->sensitive
 sensistively->sensitively, sensitivity,
+sensititive->sensitive
+sensititivies->sensitivities
+sensititivy->sensitivity
 sensitiv->sensitive
 sensitiveties->sensitivities
 sensitivety->sensitivity
@@ -27999,6 +28025,7 @@ shoudlnt->shouldn't
 shoudn't->shouldn't
 shoudn->shouldn
 shoudt->should, shouldn't,
+shoul->should
 should'nt->shouldn't
 should't->shouldn't
 shouldbe->should, should be,
@@ -29731,6 +29758,7 @@ succesive->successive
 succesor->successor
 succesors->successors
 successed->succeeded, success, successful,
+successfui->successful
 successfule->successful
 successfull->successful
 successfullies->successfully
