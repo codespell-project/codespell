@@ -194,7 +194,9 @@ def test_error_checking_in_aspell(err, rep, err_aspell, rep_aspell, match):
 
 
 # allow some duplicates, like "m-i-n-i-m-i-s-e", or "c-a-l-c-u-l-a-t-a-b-l-e"
+# correction in left can appear as typo in right
 allowed_dups = {
+    ('dictionary.txt', 'dictionary_code.txt'),
     ('dictionary.txt', 'dictionary_en-GB_to_en-US.txt'),
     ('dictionary.txt', 'dictionary_names.txt'),
     ('dictionary.txt', 'dictionary_rare.txt'),
