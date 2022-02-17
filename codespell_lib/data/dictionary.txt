@@ -4450,6 +4450,8 @@ brach->branch
 brackeds->brackets
 brackground->background
 bradcast->broadcast
+braket->bracket
+brakets->brackets
 brakpoint->breakpoint
 brakpoints->breakpoints
 brance->branch, brace, branches,
@@ -14750,6 +14752,7 @@ forcasts->forecasts
 forcot->forgot
 foreing->foreign
 forementionned->aforementioned
+forermly->formerly
 foreward->foreword, forward,
 forfiet->forfeit
 forgeround->foreground
@@ -17483,6 +17486,7 @@ innosense->innocence
 inocence->innocence
 inofficial->unofficial
 inofrmation->information
+inoperant->inoperative
 inoquous->innocuous
 inot->into
 inout->input, in out,
@@ -28697,6 +28701,12 @@ specfic->specific
 specfically->specifically
 specfication->specification
 specfications->specifications
+specficication->specification
+specficications->specifications
+specficied->specified
+specficies->specifies
+specficy->specify
+specficying->specifying
 specfied->specified
 specfield->specified
 specfies->specifies
@@ -29328,7 +29338,10 @@ steraming->streaming
 sterams->streams
 sterio->stereo
 steriods->steroids
+sterotype->stereotype
 sterotypes->stereotypes
+stickness->stickiness
+stickyness->stickiness
 stiffneing->stiffening
 stiky->sticky
 stil->still
