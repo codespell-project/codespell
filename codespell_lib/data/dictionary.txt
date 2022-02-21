@@ -5515,6 +5515,10 @@ checksuming->checksumming
 checkum->checksum
 checkums->checksums
 checkuot->checkout
+checl->check
+checled->checked
+checling->checking
+checls->checks
 cheduling->scheduling
 cheeper->cheaper
 cheeta->cheetah
@@ -8245,6 +8249,8 @@ coudnt->couldn't
 coul->could
 could'nt->couldn't
 could't->couldn't
+couldent->couldn't
+coulden`t->couldn't
 couldn;t->couldn't
 couldnt'->couldn't
 couldnt->couldn't
@@ -12403,6 +12409,7 @@ equivqlent->equivalent
 eqution->equation
 equtions->equations
 equvalent->equivalent
+equvivalent->equivalent
 erally->orally, really,
 erasablocks->eraseblocks
 erasuer->erasure, eraser,
@@ -14873,6 +14880,8 @@ fragmnet->fragment
 frambuffer->framebuffer
 framebufer->framebuffer
 framei->frame
+frament->fragment
+framents->fragments
 frametyp->frametype
 framewoek->framework
 framewoeks->frameworks
@@ -15273,6 +15282,7 @@ geogcountry->geocountry
 geographich->geographic
 geographicial->geographical
 geoio->geoip
+geomerty->geometry
 geomery->geometry
 geometites->geometries
 geometrc->geometric, geometry,
@@ -15286,6 +15296,7 @@ geomitrically->geometrically
 geomoetric->geometric
 geomoetrically->geometrically
 geomoetry->geometry
+geomtries->geometries
 geomtry->geometry
 geomtrys->geometries
 georeferncing->georeferencing
@@ -19324,6 +19335,7 @@ matser->master
 matzch->match
 maube->maybe, mauve,
 mavrick->maverick
+maximice->maximize
 maximim->maximum
 maximimum->maximum
 maximium->maximum
@@ -24170,6 +24182,9 @@ propert->property
 properteis->properties
 propertery->property
 propertie->property, properties,
+propertion->proportion
+propertional->proportional
+propertions->proportions
 propertise->properties
 propertly->properly, property,
 propertu->property
@@ -24944,7 +24959,7 @@ realted->related
 realtion->relation, reaction,
 realtions->relations, reactions,
 realtive->relative, reactive,
-realy->really
+realy->really, relay,
 realyl->really
 reamde->README
 reamins->remains
@@ -28781,6 +28796,7 @@ speciying->specifying
 specktor->specter, spectre,
 spectauclar->spectacular
 spectaulars->spectaculars
+spected->expected
 spectification->specification
 spectifications->specifications
 spectified->specified
@@ -29594,6 +29610,7 @@ subexpresssions->subexpressions
 subfolfer->subfolder
 subfolfers->subfolders
 subfroms->subforms
+subgregion->subregion
 subirectory->subdirectory
 subjec->subject
 subjet->subject
@@ -32416,6 +32433,7 @@ unmanouverable->unmaneuverable, unmanoeuvrable,
 unmaping->unmapping
 unmappend->unmapped
 unmarsalling->unmarshalling
+unmaximice->unmaximize
 unmistakeably->unmistakably
 unmodfide->unmodified
 unmodfided->unmodified
@@ -32587,6 +32605,7 @@ unselectabe->unselectable
 unsepcified->unspecified
 unser->under, unset, unsure, user,
 unseting->unsetting
+unsetset->unset
 unsettin->unsetting
 unsharable->unshareable
 unshfit->unshift
@@ -32851,6 +32870,7 @@ uppler->upper
 uppon->upon
 upported->supported
 upporterd->supported
+uppper->upper
 uppstream->upstream
 uppstreamed->upstreamed
 uppstreamer->upstreamer
@@ -34004,6 +34024,8 @@ woudl->would
 woudn't->wouldn't
 would'nt->wouldn't
 would't->wouldn't
+wouldent->wouldn't
+woulden`t->wouldn't
 wouldn;t->wouldn't
 wouldnt'->wouldn't
 wouldnt->wouldn't
