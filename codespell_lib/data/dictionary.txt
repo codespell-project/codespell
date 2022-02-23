@@ -9834,6 +9834,11 @@ desctructors->destructors
 descuss->discuss
 descvription->description
 descvriptions->descriptions
+deselct->deselect
+deselctable->deselectable
+deselctables->deselectable
+deselcted->deselected
+deselcting->deselecting
 desepears->disappears
 deserailise->deserialise
 deserailize->deserialize
@@ -27567,6 +27572,7 @@ sekect->select
 sekected->selected
 sekects->selects
 selcetion->selection
+selct->select
 selctable->selectable
 selctables->selectable
 selcted->selected
@@ -32588,6 +32594,7 @@ unscubscribe->subscribe
 unscubscribed->subscribed
 unsearcahble->unsearchable
 unsed->unused, used,
+unselct->unselect
 unselcted->unselected
 unselctes->unselects
 unselcting->unselecting
