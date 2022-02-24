@@ -401,9 +401,17 @@ def parse_options(args):
 
     # Load config files and look for ``codespell`` options.
     cfg_files = ['setup.cfg', '.codespellrc']
+    tomlfile = 'pyproject.toml'
     if options.config:
         cfg_files.append(options.config)
     config = configparser.ConfigParser()
+
+    # Read toml before other config files.
+    if os.path.isfile(os.path.realpath(tomlfile)):
+        import tomli
+        with open(tomlfile, 'rb') as f:
+            data = tomli.load(f).get('tool', {})
+        config.read_dict(data)
     config.read(cfg_files)
 
     if config.has_section('codespell'):

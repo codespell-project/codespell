@@ -107,6 +107,13 @@ This is equivalent to running::
 
     codespell --quiet-level 3 --count --skip "*.po,*.ts,./src/3rdParty,./src/Test"
 
+Now codespell also support ``pyproject.toml``::
+
+    [tool.codespell]
+    skip = '*.po,*.ts,./src/3rdParty,./src/Test'
+    count = ''
+    quiet-level = 3
+
 Any options specified in the command line will *override* options from the
 config file.
 
