@@ -1,0 +1,11 @@
+include codespell_lib/__init__.py
+recursive-include codespell_lib *.py
+include codespell_lib/data/dictionary*.txt
+include codespell_lib/data/linux-kernel.exclude
+include COPYING
+include bin/codespell
+exclude *.yml *.yaml
+exclude .coveragerc
+exclude example example/* snap snap/* tools tools/*
+exclude Makefile
+exclude codespell.1.include

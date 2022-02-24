@@ -1,0 +1,35 @@
+clone_depth: 50
+
+environment:
+  matrix:
+    - PYTHON: C:\Python37-x64
+      PYTHON_VERSION: 3.7
+      PYTHON_ARCH: 64
+
+cache:
+  # Cache downloaded pip packages and built wheels.
+  - '%LOCALAPPDATA%\pip\Cache\http'
+  - '%LOCALAPPDATA%\pip\Cache\wheels'
+
+install:
+  - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
+  - "pip install codecov chardet setuptools"
+  - "pip install -e \".[dev]\"" # install the codespell dev packages
+  - "python setup.py develop"
+
+build: false  # Not a C# project, build stuff at the test step instead.
+
+test_script:
+  - "codespell --help"
+  - "flake8"
+  - "pytest codespell_lib"
+
+on_success:
+  - "codecov"
+  # Remove old or huge cache files to hopefully not exceed the 1GB cache limit.
+  # (adapted from PyInstaller)
+  - C:\cygwin\bin\find "%LOCALAPPDATA%\pip" -type f -mtime +360 -delete
+  - C:\cygwin\bin\find "%LOCALAPPDATA%\pip" -type f -size +10M -delete
+  - C:\cygwin\bin\find "%LOCALAPPDATA%\pip" -empty -delete
+  # Show size of cache
+  - C:\cygwin\bin\du -hs "%LOCALAPPDATA%\pip\Cache"
