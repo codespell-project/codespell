@@ -19883,6 +19883,8 @@ misstype->mistype
 misstypes->mistypes
 missunderstood->misunderstood
 missuse->misuse
+missused->misused
+missusing->misusing
 mistatch->mismatch
 mistatchd->mismatched
 mistatched->mismatched
@@ -19895,6 +19897,9 @@ mistmatch->mismatch
 mistmatched->mismatched
 mistmatches->mismatches
 mistmatching->mismatching
+misue->misuse
+misued->misused
+misuing->misusing
 miticate->mitigate
 miticated->mitigated
 miticateing->mitigating
