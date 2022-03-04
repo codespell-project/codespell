@@ -7211,6 +7211,7 @@ connecotr->connector
 connecstatus->connectstatus
 connectd->connected
 connecte->connected
+connectec->connected
 connectet->connected
 connectibity->connectivity
 connectino->connection
