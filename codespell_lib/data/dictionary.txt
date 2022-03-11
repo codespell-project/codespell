@@ -293,6 +293,7 @@ acceleartion->acceleration
 acceleartor->accelerator
 acceleated->accelerated
 acceleratoin->acceleration
+acceleraton->acceleration
 acceleratrion->acceleration
 accelerte->accelerate
 accelertion->acceleration
@@ -1900,6 +1901,7 @@ annoint->anoint
 annointed->anointed
 annointing->anointing
 annoints->anoints
+annonated->annotated
 annoncement->announcement
 annonymous->anonymous
 annotaion->annotation
@@ -2026,6 +2028,7 @@ aparment->apartment
 apdated->updated
 apear->appear
 apeared->appeared
+apears->appears
 apect->aspect
 apects->aspects
 apeends->appends
@@ -2066,12 +2069,16 @@ apon->upon, apron,
 aportionable->apportionable
 apostrophie->apostrophe
 apostrophies->apostrophes
+appar->appear
 apparant->apparent
 apparantly->apparently
+appared->appeared
 apparence->appearance
 apparenlty->apparently
 apparenly->apparently
+appares->appeares
 apparoches->approaches
+appars->appears
 appart->apart
 appartment->apartment
 appartments->apartments
@@ -4874,6 +4881,8 @@ caluclated->calculated
 caluclater->calculator
 caluclates->calculates
 caluclating->calculating
+caluclation->calculation
+caluclations->calculations
 caluclator->calculator
 caluculate->calculate
 caluculated->calculated
@@ -6656,6 +6665,7 @@ completness->completeness
 complette->complete
 complettly->completely
 complety->completely
+complext->complexity
 compliace->compliance
 complianse->compliance
 complied-in->compiled-in
@@ -6703,6 +6713,8 @@ composits->composites
 composte->composite, compost, composted,
 compount->compound
 comppatible->compatible
+comppiler->compiler
+comppilers->compilers
 comprable->comparable
 compre->compare, compère,
 compredded->compressed
@@ -10316,6 +10328,8 @@ didnt't->didn't
 didnt->didn't
 didnt;->didn't
 diea->idea, die,
+diect->direct
+diectly->directly
 dieing->dying, dyeing,
 dielectirc->dielectric
 dielectircs->dielectrics
@@ -14183,6 +14197,7 @@ falshed->flashed
 falshes->flashes
 falshing->flashing
 falsly->falsely
+falsy->falsely, false,
 falt->fault
 falure->failure
 familar->familiar
@@ -20462,6 +20477,7 @@ necesarrily->necessarily
 necesarry->necessary
 necesary->necessary
 necessaery->necessary
+necessairly->necessarily
 necessar->necessary
 necessarilly->necessarily
 necessariy->necessary, necessarily,
@@ -20496,6 +20512,7 @@ neeedles->needles, needless,
 neeedless->needless, needles,
 neeedn't->needn't
 neeeds->needs
+neeeed->needed, need,
 neees->needs, knees,
 nees->needs
 neesd->needs
@@ -22439,6 +22456,7 @@ particaular->particular
 particaularly->particularly
 particaulr->particular
 particaulrly->particularly
+particlar->particular
 particually->particularly
 particualr->particular
 particuar->particular
@@ -23970,6 +23988,7 @@ prodecure->procedure
 producable->producible
 producables->producible
 produceds->produces, produced,
+produciton->production
 producted->produced
 productiviy->productivity
 produkt->product
@@ -29560,6 +29579,9 @@ structre->structure
 structred->structured
 structres->structures
 structrual->structural
+structrue->structure
+structrued->structured
+structrues->structures
 structual->structural
 structue->structure
 structued->structured
@@ -29986,6 +30008,8 @@ suffication->suffocation
 sufficent->sufficient
 sufficently->sufficiently
 sufficiant->sufficient
+sufficiennt->sufficient
+sufficienntly->sufficiently
 suffisticated->sophisticated
 suficate->suffocate
 suficated->suffocated
@@ -30133,6 +30157,7 @@ suppported->supported
 suppporting->supporting
 suppports->supports
 suppres->suppress
+suppresed->suppressed
 suppresion->suppression
 suppresions->suppressions
 suppressingd->suppressing
@@ -30987,6 +31012,7 @@ themselfe->themselves, themself,
 themselfes->themselves
 themselfs->themselves
 themselve->themselves, themself,
+themselvs->themselves
 themslves->themselves
 thenes->themes
 thenn->then
@@ -31258,6 +31284,7 @@ tobbaco->tobacco
 tobot->robot
 toches->touches
 tocksen->toxin
+todays->today's
 todya->today
 toekn->token
 togehter->together
@@ -31671,6 +31698,7 @@ transvormation->transformation
 transvormed->transformed
 transvorming->transforming
 transvorms->transforms
+tranverse->tansverse, traverse,
 tranversing->traversing
 trapeziod->trapezoid
 trapeziodal->trapezoidal
@@ -33173,6 +33201,8 @@ variabele->variable
 variabes->variables
 variabla->variable
 variablen->variable
+varialbe->variable
+varialbes->variables
 varialbles->variables
 varian->variant
 variantions->variations
@@ -33344,6 +33374,7 @@ vertial->vertical
 verticall->vertical
 verticaly->vertically
 verticies->vertices
+verticla->veritcal
 verticle->vertical
 verticlealign->verticalalign
 vertiece->vertex
