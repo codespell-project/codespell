@@ -8809,6 +8809,7 @@ datbases->databases
 datea->date, data,
 datecreatedd->datecreated
 datection->detection
+datections->detections
 datee->date
 datset->dataset
 datsets->datasets
@@ -9146,6 +9147,7 @@ dectecte->detect, detected, detects,
 dectected->detected
 dectecting->detecting
 dectection->detection
+dectections->detections
 dectector->detector
 dectivate->deactivate
 decutable->deductible
@@ -9157,6 +9159,7 @@ dedault->default
 dedect->detect, deduct,
 dedected->detected, deducted,
 dedection->detection, deduction,
+dedections->detections
 dedects->detects, deducts,
 dedidate->dedicate
 dedidated->dedicated
@@ -10035,15 +10038,19 @@ detatched->detached
 detatches->detaches
 detatching->detaching
 detction->detection
+detctions->detections
 deteced->detected
 detecing->detecting
+detecion->detection
+detecions->detections
 detecs->detects, deters, detect,
 detecte->detected, detect, detects,
 detectected->detected
 detectes->detects
 detectetd->detected
-detectiona->detection
+detectiona->detection, detections,
 detectsion->detection
+detectsions->detections
 detemine->determine
 detemined->determined
 detemines->determines
@@ -10082,6 +10089,7 @@ deteted->detected, deleted,
 detetes->deletes, detects,
 deteting->detecting, deleting,
 detetion->detection, deletion,
+detetions->detections, deletions,
 detetmine->determine
 detets->detects, deletes,
 detination->destination
