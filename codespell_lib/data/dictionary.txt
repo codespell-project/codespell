@@ -12543,6 +12543,11 @@ esists->exists
 esitmate->estimate
 esitmated->estimated
 esitmates->estimates
+esitmating->estimating
+esitmation->estimation
+esitmations->estimations
+esitmator->estimator
+esitmators->estimators
 esle->else
 espacally->especially
 espace->escape
@@ -14048,8 +14053,11 @@ extesnions->extensions
 extimate->estimate
 extimated->estimated
 extimates->estimates
-extimation->esitmation
-extimations->esitmations
+extimating->estimating
+extimation->estimation
+extimations->estimations
+extimator->estimator
+extimators->estimators
 extint->extinct, extant,
 extist->exist
 extit->exit
