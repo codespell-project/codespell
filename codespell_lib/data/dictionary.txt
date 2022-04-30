@@ -914,6 +914,7 @@ adminstration->administration
 adminstrative->administrative
 adminstrator->administrator
 adminstrators->administrators
+admisible->admissible
 admissability->admissibility
 admissable->admissible
 admited->admitted
@@ -1862,6 +1863,7 @@ andthe->and the
 ane->and
 anevironment->environment
 anevironments->environments
+angluar->angular
 anhoter->another
 anid->and
 anihilation->annihilation
@@ -2675,6 +2677,8 @@ arrrived->arrived
 arrrives->arrives
 arrtibute->attribute
 arry->array, carry,
+arrya->array
+arryas->arrays
 arrys->arrays
 artcile->article
 articaft->artifact
@@ -5995,6 +5999,7 @@ coefficeint->coefficient
 coefficeints->coefficients
 coefficent->coefficient
 coefficents->coefficients
+coefficientss->coefficients
 coeffiecient->coefficient
 coeffiecients->coefficients
 coeffient->coefficient
@@ -10507,6 +10512,7 @@ diong->doing
 diosese->diocese
 diphtong->diphthong
 diphtongs->diphthongs
+diplacement->displacement
 diplay->display
 diplayed->displayed
 diplaying->displaying
@@ -13185,6 +13191,7 @@ exerciesed->exercised
 exercieses->exercises
 exerciesing->exercising
 exercize->exercise
+exerimental->experimental
 exerpt->excerpt
 exerpts->excerpts
 exersize->exercise
@@ -14789,6 +14796,7 @@ forcasters->forecasters
 forcasting->forecasting
 forcasts->forecasts
 forcot->forgot
+foreces->forces
 foreing->foreign
 forementionned->aforementioned
 forermly->formerly
@@ -18137,6 +18145,7 @@ intriduced->introduced
 intriduction->introduction
 intrisinc->intrinsic
 intrisincs->intrinsics
+introductionary->introductory
 introdued->introduced
 introduse->introduce
 introdused->introduced
@@ -18894,6 +18903,7 @@ lincese->license
 lincesed->licensed
 linceses->licenses
 linearily->linearly, linearity,
+lineary->linearly
 linerisation->linearisation
 linerisations->linearisations
 linewdith->linewidth
@@ -19084,6 +19094,7 @@ mached->matched
 maches->matches
 machinary->machinery
 machine-dependend->machine-dependent
+machiness->machines
 maching->machine, marching, matching,
 mackeral->mackerel
 maco->macro
@@ -20242,6 +20253,7 @@ mudules->modules
 muext->mutex
 muiltiple->multiple
 muiltiples->multiples
+muliple->multiple
 mulithread->multithread
 mulitiplier->multiplier
 mulitipliers->multipliers
@@ -22479,6 +22491,7 @@ partisioning->partitioning
 partisions->partitions
 partitial->partial
 partiticular->particular
+partitinioning->partitioning
 partitioing->partitioning
 partitiones->partitions
 partiton->partition
@@ -27603,6 +27616,8 @@ seeting->seating, setting, seething,
 seetings->settings
 seeverities->severities
 seeverity->severity
+segault->segfault
+segaults->segfaults
 segement->segment
 segementation->segmentation
 segemented->segmented
@@ -29573,6 +29588,7 @@ structer->structure
 structere->structure
 structered->structured
 structeres->structures
+structetr->structure
 structire->structure
 structre->structure
 structred->structured
@@ -33888,6 +33904,7 @@ widged->widget
 widghet->widget
 widghets->widgets
 widgit->widget
+widgtes->widgets
 widht->width
 widhtpoint->widthpoint
 widhtpoints->widthpoints
