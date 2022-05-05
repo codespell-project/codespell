@@ -3175,6 +3175,11 @@ attnetion->attention
 attosencond->attosecond
 attosenconds->attoseconds
 attrbiute->attribute
+attrbute->attribute
+attrbuted->attributed
+attrbutes->attributes
+attrbution->attribution
+attrbutions->attributions
 attribbute->attribute
 attribiute->attribute
 attribiutes->attributes
@@ -22869,6 +22874,7 @@ persistantly->persistently
 persisten->persistent
 persistented->persisted
 persited->persisted
+persitent->persistent
 personalitie->personality
 personalitites->personalities
 personalitity->personality
@@ -23703,6 +23709,7 @@ presearved->preserved
 presearver->preserver
 presearves->preserves
 presearving->preserving
+presed->pressed, preset,
 presedential->presidential
 presenece->presence
 presener->presenter
@@ -23791,6 +23798,7 @@ previou->previous
 previouly->previously
 previouse->previous
 previousl->previously
+previousy->previously
 previsou->previous
 previsouly->previously
 previuous->previous
@@ -26717,6 +26725,7 @@ respecitve->respective
 respecitvely->respectively
 respecive->respective
 respecively->respectively
+respectivelly->respectively
 respectivley->respectively
 respectivly->respectively
 respnse->response
@@ -31985,7 +31994,7 @@ tye->type, tie,
 tyep->type
 tyes->types, ties,
 tyhat->that
-tyhe->they
+tyhe->they, the,
 tyies->tries
 tymecode->timecode
 tyope->type
@@ -33858,6 +33867,7 @@ wheigh->weigh
 whell->wheel, well,
 whem->when
 whenevery->whenever
+whenn->when
 whenver->whenever
 wher->where, were,
 wheras->whereas
