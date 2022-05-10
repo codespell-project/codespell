@@ -891,6 +891,7 @@ adjcence->adjacence
 adjcencies->adjacencies
 adjcent->adjacent
 adjcentcy->adjacency
+adjency->agency, adjacency,
 adjsence->adjacence
 adjsencies->adjacencies
 adjsuted->adjusted
@@ -3728,6 +3729,7 @@ availanle->available
 availavble->available
 availavility->availability
 availavle->available
+availbable->available
 availbale->available
 availbe->available
 availble->available
@@ -14174,6 +14176,7 @@ extrenaly->externally
 extrime->extreme
 extrimely->extremely
 extrimly->extremely
+extrmities->extremities
 extrodinary->extraordinary
 extrordinarily->extraordinarily
 extrordinary->extraordinary
@@ -22450,6 +22453,7 @@ paramer->parameter
 paramert->parameter
 paramerters->parameters
 paramerts->parameters
+paramete->parameter
 parameteras->parameters
 parametere->parameter, parameters,
 parameteres->parameters
@@ -28306,6 +28310,9 @@ shotcut->shortcut
 shotdown->shutdown
 shoucl->should
 shoud->should
+shouder->shoulder
+shoudered->shouldered
+shouders->shoulders
 shoudl->should
 shoudld->should
 shoudle->should
