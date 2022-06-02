@@ -12035,6 +12035,7 @@ emptyed->emptied
 empy->empty
 emtied->emptied
 emties->empties
+emtpies->empties
 emtpy->empty
 emty->empty
 emtying->emptying
@@ -14820,6 +14821,7 @@ fomratting->formatting
 fonction->function
 fonctional->functional
 fonctionalities->functionalities
+fonctionality->functionality
 fonctioning->functioning
 fonctionnalies->functionalities
 fonctionnalities->functionalities
@@ -17189,7 +17191,7 @@ indicte->indicate
 indictement->indictment
 indictes->indicates
 indictor->indicator
-indide->inside
+indide->inside, indeed,
 indien->indian, endian,
 indiens->indians, endians,
 indigineous->indigenous
@@ -26806,6 +26808,7 @@ respons->response, respond,
 responsabilities->responsibilities
 responsability->responsibility
 responsable->responsible
+responsbile->responsible
 responsed->responded, responses,
 responser's->responder's
 responser->responder
@@ -28038,6 +28041,7 @@ sequentialy->sequentially
 sequenzes->sequences
 sequetial->sequential
 sequeze->squeeze, sequence,
+sequnce->sequence
 sequnces->sequences
 ser->set
 serach->search
@@ -28462,6 +28466,7 @@ simulatanously->simultaneously
 simulatation->simulation
 simulatenous->simultaneous
 simulatenously->simultaneously
+simultanaeous->simultaneous
 simultaneos->simultaneous
 simultaneosly->simultaneously
 simultanious->simultaneous
@@ -31762,6 +31767,7 @@ transparcency->transparency
 transparcenies->transparencies
 transparceny->transparency
 transparecy->transparency
+transpareny->transparency
 transparities->transparencies
 transparity->transparency
 transparnecies->transparencies
@@ -33467,6 +33473,7 @@ verrical->vertical
 verry->very
 vershin->version
 versin->version
+versinos->versions
 versio->version
 versiob->version
 versioed->versioned
