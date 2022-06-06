@@ -6468,6 +6468,7 @@ commtted->committed
 commuication->communication
 commuications->communications
 commuinications->communications
+commun->commune, common,
 communcation->communication
 communciation->communication
 communiation->communication
@@ -8201,6 +8202,8 @@ corrispond->correspond
 corrispondant->correspondent
 corrispondants->correspondents
 corrisponded->corresponded
+corrispondence->correspondence
+corrispondences->correspondences
 corrisponding->corresponding
 corrisponds->corresponds
 corrleation->correlation
@@ -8695,6 +8698,10 @@ custome->custom, customs, costume, customer,
 customicable->customisable, customizable,
 customie->customize
 customied->customized
+customisaton->customisation
+customisatons->customisations
+customizaton->customization
+customizatons->customizations
 customizeble->customizable
 customsied->customised
 customzied->customized
@@ -18774,6 +18781,7 @@ lavelling->levelling, labelling,
 lavels->levels, labels,
 layed->laid
 lazer->laser
+laziliy->lazily
 lazyness->laziness
 lcoal->local, coal,
 lcoally->locally
