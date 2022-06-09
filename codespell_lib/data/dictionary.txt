@@ -7477,6 +7477,9 @@ constallation->constellation
 constallations->constellations
 constanly->constantly
 constantsm->constants
+constarin->constrain
+constarint->constraint
+constarints->constraints
 constarnation->consternation
 constatn->constant
 constatnt->constant
@@ -7832,6 +7835,8 @@ contstants->constants
 contstraint->constraint
 contstructing->constructing
 contstruction->construction
+contstructor->constructor
+contstructors->constructors
 contur->contour
 contzains->contains
 conuntry->country
@@ -7897,6 +7902,7 @@ conveyer->conveyor
 conviced->convinced
 convience->convince, convenience,
 convienence->convenience
+convienent->convenient
 convienience->convenience
 convienient->convenient
 convieniently->conveniently
@@ -8167,6 +8173,7 @@ correponding->corresponding
 correponds->corresponds
 correponsing->corresponding
 correposding->corresponding
+correpsondence->correspondence
 corresond->correspond
 corresonded->corresponded
 corresonding->corresponding
@@ -8334,6 +8341,8 @@ coulmns->columns
 couln't->couldn't
 couloumb->coulomb
 coult->could
+coulumn->column, coulomb,
+coulumns->columns, coulombs,
 coummunities->communities
 coummunity->community
 coumpound->compound
@@ -9548,6 +9557,7 @@ delink->unlink
 delivared->delivered
 delivative->derivative
 delivatives->derivatives
+deliverate->deliberate
 delivermode->deliverymode
 delte->delete
 delted->deleted
@@ -17560,6 +17570,7 @@ initializates->initializes
 initializatin->initialization
 initializating->initializing
 initializationg->initialization
+initializedd->initialized
 initializeing->initializing
 initializiation->initialization
 initializong->initializing
@@ -18240,6 +18251,8 @@ intiger->integer
 intiial->initial
 intiialise->initialise
 intiialize->initialize
+intilising->initialising
+intilizing->initializing
 intimite->intimate
 intinite->infinite
 intitial->initial
@@ -19515,6 +19528,8 @@ materla->material
 materlas->materials
 mathamatics->mathematics
 mathces->matches
+mathch->match
+mathching->matching
 mathcing->matching
 mathed->matched
 mathematicaly->mathematically
@@ -20150,7 +20165,9 @@ mocule->module
 mocules->modules
 moddel->model
 moddels->models
+modelinng->modeling
 modell->model
+modellinng->modelling
 moderm->modern, modem,
 modernination->modernization
 moderninations->modernizations
@@ -23788,6 +23805,11 @@ prehaps->perhaps
 preiod->period
 preivew->preview
 preivous->previous
+preject->project, prefect,
+prejected->projected
+prejection->projection
+prejections->projections
+prejects->projects, prefects,
 preliferation->proliferation
 prelimitary->preliminary
 premeire->premiere
@@ -23996,6 +24018,7 @@ prinf->print, printf, sprintf,
 pring->print, bring, ping, spring,
 pringing->printing, springing,
 prinicipal->principal
+prining->printing
 printting->printing
 prioritiy->priority
 priorty->priority
@@ -25552,6 +25575,7 @@ reconstuct->reconstruct
 reconstucted->reconstructed
 reconstucting->reconstructing
 reconstucts->reconstructs
+reconsturction->reconstruction
 recontructed->reconstructed
 recontructing->reconstructing
 recontruction->reconstruction
@@ -25847,6 +25871,8 @@ registes->registers
 registing->registering
 registors->registers
 registrain->registration
+registraion->registration
+registraions->registrations
 registraration->registration
 registred->registered
 registrer->register
@@ -30274,6 +30300,7 @@ sumarize->summarize
 sumary->summary
 sumbitted->submitted
 sumed-up->summed-up
+summar->summary, summer,
 summarizen->summarize
 summay->summary
 summerised->summarised
@@ -33700,6 +33727,7 @@ visibibilty->visibility
 visibile->visible
 visibililty->visibility
 visibilit->visibility
+visibiliy->visibly, visibility,
 visibilty->visibility
 visibily->visibly, visibility,
 visibl->visible
@@ -34131,6 +34159,8 @@ widgtes->widgets
 widht->width
 widhtpoint->widthpoint
 widhtpoints->widthpoints
+widnow->window, widow,
+widnows->windows, widows,
 widthn->width
 widthout->without
 wief->wife
@@ -34193,6 +34223,9 @@ wirtten->written
 wirtual->virtual
 witable->writeable
 witdh->width
+witdhs->widths
+witdth->width
+witdths->widths
 wite->write, white,
 witha->with a, with,
 withdrawl->withdrawal, withdraw,
