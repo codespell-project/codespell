@@ -21,6 +21,7 @@ aaproximates->approximates
 aaproximating->approximating
 aare->are
 aassociated->associated
+aassumed->assumed
 aautomatic->automatic
 aautomatically->automatically
 abailable->available
@@ -2167,6 +2168,8 @@ applide->applied
 applie->apply, applied,
 applikation->application
 appling->applying, appalling,
+appllied->applied
+applly->apply
 applyable->applicable
 applycable->applicable
 applyed->applied
@@ -2743,6 +2746,8 @@ asbtractness->abstractness
 asbtractor->abstractor
 asbtracts->abstracts
 asceding->ascending
+ascpect->aspect
+ascpects->aspects
 asdignment->assignment
 asdignments->assignments
 asend->ascend, as end,
@@ -5420,6 +5425,7 @@ channnel->channel
 channnels->channels
 chanses->chances
 chaper->chapter
+characater->character, caricature,
 characaters->characters
 characer->character
 characers->characters
@@ -6038,6 +6044,7 @@ coefficeint->coefficient
 coefficeints->coefficients
 coefficent->coefficient
 coefficents->coefficients
+coefficiens->coefficients
 coefficientss->coefficients
 coeffiecient->coefficient
 coeffiecients->coefficients
@@ -6656,6 +6663,8 @@ compilability->compatibility
 compilant->compliant
 compilaton->compilation
 compilatons->compilations
+compilcate->complicate
+compilcated->complicated
 compileable->compilable
 compiletime->compile time
 compiliant->compliant
@@ -7952,6 +7961,7 @@ coordiantion->coordination
 coordiate->coordinate
 coordiates->coordinates
 coordiinates->coordinates
+coordinatess->coordinates
 coordinats->coordinates
 coordindate->coordinate
 coordindates->coordinates
@@ -9189,6 +9199,7 @@ decribes->describes
 decribing->describing
 decription->description, decryption,
 decriptions->descriptions, decryptions,
+decriptive->descriptive
 decriptor->descriptor
 decriptors->descriptors
 decrmenet->decrement
@@ -10029,6 +10040,7 @@ desrired->desired
 desroyer->destroyer
 desscribe->describe
 desscribing->describing
+desscription->description
 dessicate->desiccate
 dessicated->desiccated
 dessication->desiccation
@@ -10437,6 +10449,7 @@ differenes->differences
 differenly->differently
 differens->difference
 differense->difference
+differentes->differences, difference, different,
 differentiatiations->differentiations
 differentl->differently
 differents->different, difference,
@@ -10817,6 +10830,8 @@ discouranged->discouraged
 discourarged->discouraged
 discourrage->discourage
 discourraged->discouraged
+discove->discover
+discoved->discovered
 discovereability->discoverability
 discoveribility->discoverability
 discovey->discovery
@@ -16375,6 +16390,9 @@ ibject->object
 ibjects->objects
 ibrary->library
 icesickle->icicle
+iclude->include
+icluded->included
+icludes->includes
 icluding->including
 iconclastic->iconoclastic
 iconifie->iconify
@@ -17127,6 +17145,7 @@ inddex->index
 indecate->indicate
 indeces->indices
 indecies->indices
+inded->indeed, index,
 indefinate->indefinite
 indefinately->indefinitely
 indefineable->undefinable
@@ -17358,6 +17377,7 @@ infomation->information
 infomational->informational
 infomed->informed
 infomer->informer
+infomration->information
 infoms->informs
 infor->info
 inforamtion->information
@@ -17908,6 +17928,7 @@ inteligent->intelligent
 intelisense->intellisense
 intelligable->intelligible
 intemediary->intermediary
+intenal->internal
 intenational->international
 intendet->intended
 inteneded->intended
@@ -19515,6 +19536,8 @@ mathmatician->mathematician
 mathmaticians->mathematicians
 mathod->method
 matix->matrix
+matrial->material
+matrials->materials
 matser->master
 matzch->match
 maube->maybe, mauve,
@@ -21378,6 +21401,7 @@ nuissance->nuisance
 nulk->null
 Nullabour->Nullarbor
 nulll->null
+numbe->number, numb,
 numberal->numeral
 numberals->numerals
 numberic->numeric
@@ -22544,6 +22568,7 @@ paret->parent, parrot,
 parial->partial
 parially->partially
 parisitic->parasitic
+paritally->partially
 paritial->partial
 parition->partition
 paritioning->partitioning
@@ -24694,6 +24719,8 @@ puplates->populates
 puplating->populating
 puplation->population
 puplisher->publisher
+pupose->purpose
+puposes->purposes
 pupulated->populated
 purcahed->purchased
 purcahse->purchase
@@ -26413,6 +26440,7 @@ repblic->republic
 repblican->republican
 repblicans->republicans
 repblics->republics
+repeates->repeats
 repeatly->repeatedly
 repect->respect
 repectable->respectable
@@ -29034,6 +29062,10 @@ speciic->specific
 speciied->specified
 speciifc->specific
 speciifed->specified
+specilisation->specialisation
+specilisations->specialisations
+specilization->specialization
+specilizations->specializations
 specilized->specialized
 speciman->specimen
 speciries->specifies
@@ -29995,6 +30027,7 @@ subsituted->substituted
 subsitutes->substitutes
 subsituting->substituting
 subsitution->substitution
+subsitutions->substitutions
 subsitutuent->substituent
 subsitutuents->substituents
 subsitutute->substitute
