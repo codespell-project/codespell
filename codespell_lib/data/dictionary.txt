@@ -3224,6 +3224,7 @@ attribtutes->attributes
 attribude->attribute
 attribue->attribute
 attribues->attributes
+attribuets->attributes
 attribuite->attribute
 attribuites->attributes
 attribuition->attribution
@@ -7771,8 +7772,10 @@ contracitions->contradictions
 contracter->contractor
 contracters->contractors
 contradically->contradictory
+contrain->constrain
 contrained->contained, constrained,
 contraining->constraining
+contrains->constrains, constraints,
 contraint->constraint
 contrainted->constrained
 contraints->constraints
@@ -27079,6 +27082,7 @@ resturctures->restructures
 resturcturing->restructuring
 resturn->return, returns,
 resturns->returns
+resuable->reusable
 resubstituion->resubstitution
 resuction->reduction
 resue->reuse, rescue,
@@ -32707,6 +32711,8 @@ Unicde->Unicode
 unich->unix
 unidentifiedly->unidentified
 unidimensionnal->unidimensional
+unifform->uniform
+unifforms->uniforms
 unifiy->unify
 uniformely->uniformly
 uniformy->uniformly, uniform,
