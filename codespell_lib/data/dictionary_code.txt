@@ -64,6 +64,8 @@ shouldnot->should not, shouldn't,
 sinc->sync, sink, since,
 sincs->syncs, sinks, since,
 snd->send, and, sound,
+sockt->socket
+sockts->sockets
 spawnve->spawn
 stdio->studio
 stdios->studios
