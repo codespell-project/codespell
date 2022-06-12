@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import contextlib
 import inspect
 import os
@@ -22,7 +20,7 @@ def test_constants():
     assert EX_DATAERR == 65
 
 
-class MainWrapper(object):
+class MainWrapper:
     """Compatibility wrapper for when we used to return the count."""
 
     def main(self, *args, count=True, std=False, **kwargs):
@@ -174,7 +172,7 @@ def test_interactivity(tmpdir, capsys):
         with FakeStdin('0\n'):  # blank input -> nothing
             assert cs.main('-w', '-i', '3', f.name) == 0
         assert cs.main(f.name) == 0
-        with open(f.name, 'r') as f_read:
+        with open(f.name) as f_read:
             assert f_read.read() == 'awkward\n'
         with open(f.name, 'w') as f:
             f.write('ackward\n')
@@ -184,7 +182,7 @@ def test_interactivity(tmpdir, capsys):
             assert code == 0
         assert 'a valid option' in stdout
         assert cs.main(f.name) == 0
-        with open(f.name, 'r') as f:
+        with open(f.name) as f:
             assert f.read() == 'backward\n'
     finally:
         os.remove(f.name)
@@ -249,11 +247,11 @@ def test_exclude_file(tmpdir, capsys):
     """Test exclude file functionality."""
     d = str(tmpdir)
     with open(op.join(d, 'bad.txt'), 'wb') as f:
-        f.write('1 abandonned 1\n2 abandonned 2\n'.encode('utf-8'))
+        f.write(b'1 abandonned 1\n2 abandonned 2\n')
     bad_name = f.name
     assert cs.main(bad_name) == 2
     with open(op.join(d, 'tmp.txt'), 'wb') as f:
-        f.write('1 abandonned 1\n'.encode('utf-8'))
+        f.write(b'1 abandonned 1\n')
     assert cs.main(bad_name) == 2
     assert cs.main('-x', f.name, bad_name) == 1
 
@@ -266,11 +264,11 @@ def test_encoding(tmpdir, capsys):
     # with CaptureStdout() as sio:
     assert cs.main(f.name) == 0
     with open(f.name, 'wb') as f:
-        f.write(u'naïve\n'.encode('utf-8'))
+        f.write('naïve\n'.encode())
     assert cs.main(f.name) == 0
     assert cs.main('-e', f.name) == 0
     with open(f.name, 'ab') as f:
-        f.write(u'naieve\n'.encode('utf-8'))
+        f.write(b'naieve\n')
     assert cs.main(f.name) == 1
     # Encoding detection (only try ISO 8859-1 because UTF-8 is the default)
     with open(f.name, 'wb') as f:
@@ -395,7 +393,7 @@ def test_case_handling(tmpdir, capsys):
     # with CaptureStdout() as sio:
     assert cs.main(f.name) == 0
     with open(f.name, 'wb') as f:
-        f.write('this has an ACII error'.encode('utf-8'))
+        f.write(b'this has an ACII error')
     code, stdout, _ = cs.main(f.name, std=True)
     assert code == 1
     assert 'ASCII' in stdout
