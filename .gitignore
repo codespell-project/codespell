@@ -7,3 +7,4 @@ codespell.egg-info
 *.orig
 .cache/
 .pytest_cache/
+.mypy_cache/
