@@ -4856,6 +4856,8 @@ calcualtion->calculation
 calcualtions->calculations
 calcualtor->calculator
 calcuate->calculate
+calcuated->calculated
+calcuates->calculates
 calcuations->calculations
 calculaion->calculation
 calculatble->calculatable, calculable,
@@ -8349,7 +8351,7 @@ coud->could
 coudl->could, cloud,
 coudn't->couldn't
 coudnt->couldn't
-cought->caught
+cought->caught, cough,
 coul->could
 could'nt->couldn't
 could't->couldn't
@@ -10028,6 +10030,7 @@ desipite->despite
 desireable->desirable
 desision->decision
 desisions->decisions
+desitable->desirable
 desitination->destination
 desitinations->destinations
 desition->decision
@@ -12109,6 +12112,7 @@ emphsis->emphasis
 emphysyma->emphysema
 empirial->empirical, imperial,
 empiricaly->empirically
+emply->empty, imply,
 emporer->emperor
 emprically->empirically
 emprisoned->imprisoned
@@ -16455,6 +16459,7 @@ idenitfy->identify
 idenitify->identify
 identation->indentation
 identcial->identical
+identfiers->identifiers
 identiable->identifiable
 idential->identical
 identicial->identical
@@ -20630,6 +20635,7 @@ namepace->namespace
 namepsace->namespace
 namepsaces->namespaces
 namesd->named, names,
+namess->names
 namesspaces->namespaces
 namme->name
 namne->name
@@ -24020,6 +24026,7 @@ previosly->previously
 previosu->previous
 previosuly->previously
 previou->previous
+previoulsy->previously
 previouly->previously
 previouse->previous
 previousl->previously
@@ -28302,6 +28309,8 @@ servoced->serviced
 servoces->services
 servocing->servicing
 serwer->server, sewer,
+sesion->session
+sesions->sessions
 sesitive->sensitive
 sesitively->sensitively
 sesitiveness->sensitiveness
@@ -28564,6 +28573,7 @@ signifant->significant
 signifantly->significantly
 signifcant->significant
 signifcantly->significantly
+significanly->significantly
 significently->significantly
 signifigant->significant
 signifigantly->significantly
@@ -32530,6 +32540,7 @@ uncontitutional->unconstitutional
 uncontrained->unconstrained
 uncontrolable->uncontrollable
 unconvential->unconventional
+unconventionnal->unconventional
 uncorectly->incorrectly
 uncorelated->uncorrelated
 uncorrect->incorrect
