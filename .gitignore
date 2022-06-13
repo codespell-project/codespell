@@ -6,5 +6,5 @@ codespell.egg-info
 *.pyc
 *.orig
 .cache/
-.pytest_cache/
 .mypy_cache/
+.pytest_cache/
