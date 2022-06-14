@@ -8351,7 +8351,7 @@ coud->could
 coudl->could, cloud,
 coudn't->couldn't
 coudnt->couldn't
-cought->caught, cough,
+cought->caught, cough, fought,
 coul->could
 could'nt->couldn't
 could't->couldn't
@@ -12112,7 +12112,15 @@ emphsis->emphasis
 emphysyma->emphysema
 empirial->empirical, imperial,
 empiricaly->empirically
-emply->empty, imply,
+emply->employ, empty, imply,
+emplyed->employed
+emplyee->employee
+emplyees->employees
+emplyer->employer
+emplyers->employers
+emplying->employing
+emplyment->employment
+emplyments->employments
 emporer->emperor
 emprically->empirically
 emprisoned->imprisoned
@@ -16459,6 +16467,8 @@ idenitfy->identify
 idenitify->identify
 identation->indentation
 identcial->identical
+identfied->identified
+identfier->identifier
 identfiers->identifiers
 identiable->identifiable
 idential->identical
@@ -17588,6 +17598,8 @@ initialisaiton->initialisation
 initialisated->initialised
 initialisatin->initialisation
 initialisationg->initialisation
+initialisaton->initialisation
+initialisatons->initialisations
 initialiseing->initialising
 initialisiation->initialisation
 initialisiert->initialised, initialized,
@@ -25408,6 +25420,7 @@ recalcualtion->recalculation
 recalcualtions->recalculations
 recalcuate->recalculate
 recalcuated->recalculated
+recalcuates->recalculates
 recalcuations->recalculations
 recalculaion->recalculation
 recalculatble->re-calculable
@@ -30804,7 +30817,7 @@ synoym->synonym
 synphony->symphony
 synronous->synchronous
 syntac->syntax
-syntaces->syntaxes
+syntaces->syntax, syntaxes,
 syntacks->syntax
 syntacs->syntax
 syntact->syntax
@@ -32607,6 +32620,7 @@ underuns->underruns
 underware->underwear
 underyling->underlying
 undesireable->undesirable
+undesitable->undesirable
 undestand->understand
 undestood->understood
 undet->under
