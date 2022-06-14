@@ -4856,6 +4856,8 @@ calcualtion->calculation
 calcualtions->calculations
 calcualtor->calculator
 calcuate->calculate
+calcuated->calculated
+calcuates->calculates
 calcuations->calculations
 calculaion->calculation
 calculatble->calculatable, calculable,
@@ -8349,7 +8351,7 @@ coud->could
 coudl->could, cloud,
 coudn't->couldn't
 coudnt->couldn't
-cought->caught
+cought->caught, cough, fought,
 coul->could
 could'nt->couldn't
 could't->couldn't
@@ -10031,6 +10033,7 @@ desipite->despite
 desireable->desirable
 desision->decision
 desisions->decisions
+desitable->desirable
 desitination->destination
 desitinations->destinations
 desition->decision
@@ -12112,6 +12115,15 @@ emphsis->emphasis
 emphysyma->emphysema
 empirial->empirical, imperial,
 empiricaly->empirically
+emply->employ, empty, imply,
+emplyed->employed
+emplyee->employee
+emplyees->employees
+emplyer->employer
+emplyers->employers
+emplying->employing
+emplyment->employment
+emplyments->employments
 emporer->emperor
 emprically->empirically
 emprisoned->imprisoned
@@ -16458,6 +16470,9 @@ idenitfy->identify
 idenitify->identify
 identation->indentation
 identcial->identical
+identfied->identified
+identfier->identifier
+identfiers->identifiers
 identiable->identifiable
 idential->identical
 identicial->identical
@@ -17586,6 +17601,8 @@ initialisaiton->initialisation
 initialisated->initialised
 initialisatin->initialisation
 initialisationg->initialisation
+initialisaton->initialisation
+initialisatons->initialisations
 initialiseing->initialising
 initialisiation->initialisation
 initialisiert->initialised, initialized,
@@ -17606,6 +17623,8 @@ initializates->initializes
 initializatin->initialization
 initializating->initializing
 initializationg->initialization
+initializaton->initialization
+initializatons->initializations
 initializedd->initialized
 initializeing->initializing
 initializiation->initialization
@@ -20633,6 +20652,7 @@ namepace->namespace
 namepsace->namespace
 namepsaces->namespaces
 namesd->named, names,
+namess->names
 namesspaces->namespaces
 namme->name
 namne->name
@@ -24023,6 +24043,7 @@ previosly->previously
 previosu->previous
 previosuly->previously
 previou->previous
+previoulsy->previously
 previouly->previously
 previouse->previous
 previousl->previously
@@ -25402,6 +25423,7 @@ recalcualtion->recalculation
 recalcualtions->recalculations
 recalcuate->recalculate
 recalcuated->recalculated
+recalcuates->recalculates
 recalcuations->recalculations
 recalculaion->recalculation
 recalculatble->re-calculable
@@ -28305,6 +28327,8 @@ servoced->serviced
 servoces->services
 servocing->servicing
 serwer->server, sewer,
+sesion->session
+sesions->sessions
 sesitive->sensitive
 sesitively->sensitively
 sesitiveness->sensitiveness
@@ -28567,6 +28591,7 @@ signifant->significant
 signifantly->significantly
 signifcant->significant
 signifcantly->significantly
+significanly->significantly
 significently->significantly
 signifigant->significant
 signifigantly->significantly
@@ -30795,6 +30820,7 @@ synoym->synonym
 synphony->symphony
 synronous->synchronous
 syntac->syntax
+syntaces->syntax, syntaxes,
 syntacks->syntax
 syntacs->syntax
 syntact->syntax
@@ -32533,6 +32559,7 @@ uncontitutional->unconstitutional
 uncontrained->unconstrained
 uncontrolable->uncontrollable
 unconvential->unconventional
+unconventionnal->unconventional
 uncorectly->incorrectly
 uncorelated->uncorrelated
 uncorrect->incorrect
@@ -32596,6 +32623,7 @@ underuns->underruns
 underware->underwear
 underyling->underlying
 undesireable->undesirable
+undesitable->undesirable
 undestand->understand
 undestood->understood
 undet->under
