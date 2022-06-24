@@ -4838,6 +4838,11 @@ calaber->caliber
 calalog->catalog
 calander->calendar, colander,
 calback->callback
+calbirate->calibrate
+calbirated->calibrated
+calbirates->calibrates
+calbiration->calibration
+calbirations->calibrations
 calcable->calculable
 calcalate->calculate
 calciulate->calculate
@@ -6722,6 +6727,7 @@ completetion->completion
 completetly->completely
 completiom->completion
 completition->completion
+completley->completely
 completly->completely
 completness->completeness
 complette->complete
@@ -11453,6 +11459,10 @@ domension->dimension
 domensions->dimensions
 domian->domain
 domians->domains
+dominante->dominant, dominate,
+dominanted->dominated
+dominantes->dominants, dominates,
+dominantion->domination
 dominaton->domination
 dominent->dominant
 dominiant->dominant
@@ -11460,6 +11470,7 @@ domonstrate->demonstrate
 domonstrates->demonstrates
 domonstrating->demonstrating
 domonstration->demonstration
+domonstrations->demonstrations
 donain->domain
 donains->domains
 donejun->dungeon
@@ -11474,6 +11485,9 @@ donwloaded->downloaded
 donwloading->downloading
 donwloads->downloads
 doocument->document
+doocumented->documented
+doocumenting->documenting
+doocuments->documents
 doorjam->doorjamb
 dorce->force
 dorced->forced
@@ -14030,6 +14044,7 @@ expited->expired, expedited,
 explaination->explanation
 explainations->explanations
 explainatory->explanatory
+explaind->explained
 explanaiton->explanation
 explanaitons->explanations
 explaning->explaining
@@ -21708,6 +21723,7 @@ ocurrance->occurrence
 ocurred->occurred
 ocurrence->occurrence
 ocurrences->occurrences
+ocurrred->occurred
 oder->order, odor,
 odly->oddly
 ody->body
@@ -28485,6 +28501,7 @@ shortkut->shortcut
 shortkuts->shortcuts
 shortwhile->short while
 shotcut->shortcut
+shotcuts->shortcuts
 shotdown->shutdown
 shoucl->should
 shoud->should
@@ -31545,6 +31562,8 @@ thta->that
 thtat->that
 thte->the, that,
 thumbbnail->thumbnail
+thumbnal->thumbnail
+thumbnals->thumbnails
 thundebird->thunderbird
 thurough->thorough
 thurrow->thorough
