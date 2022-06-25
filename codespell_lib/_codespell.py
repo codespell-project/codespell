@@ -17,7 +17,6 @@ Copyright (C) 2011  ProFUSION embedded systems
 """
 
 import argparse
-import codecs
 import configparser
 import fnmatch
 import os
@@ -172,7 +171,7 @@ class FileOpener:
 
     def open_with_chardet(self, filename):
         self.encdetector.reset()
-        with codecs.open(filename, 'rb') as f:
+        with open(filename, 'rb') as f:
             for line in f:
                 self.encdetector.feed(line)
                 if self.encdetector.done:
@@ -181,7 +180,7 @@ class FileOpener:
         encoding = self.encdetector.result['encoding']
 
         try:
-            f = codecs.open(filename, 'r', encoding=encoding)
+            f = open(filename, encoding=encoding, newline='')
         except UnicodeDecodeError:
             print("ERROR: Could not detect encoding: %s" % filename,
                   file=sys.stderr)
@@ -205,7 +204,7 @@ class FileOpener:
             elif not self.quiet_level & QuietLevels.ENCODING:
                 print("WARNING: Trying next encoding %s"
                       % encoding, file=sys.stderr)
-            with codecs.open(filename, 'r', encoding=encoding) as f:
+            with open(filename, encoding=encoding, newline='') as f:
                 try:
                     lines = f.readlines()
                 except UnicodeDecodeError:
@@ -463,19 +462,19 @@ def parse_ignore_words_option(ignore_words_option):
 
 
 def build_exclude_hashes(filename, exclude_lines):
-    with codecs.open(filename, mode='r', encoding='utf-8') as f:
+    with open(filename, encoding='utf-8') as f:
         for line in f:
             exclude_lines.add(line)
 
 
 def build_ignore_words(filename, ignore_words):
-    with codecs.open(filename, mode='r', encoding='utf-8') as f:
+    with open(filename, encoding='utf-8') as f:
         for line in f:
             ignore_words.add(line.strip())
 
 
 def build_dict(filename, misspellings, ignore_words):
-    with codecs.open(filename, mode='r', encoding='utf-8') as f:
+    with open(filename, encoding='utf-8') as f:
         for line in f:
             [key, data] = line.split('->')
             # TODO for now, convert both to lower. Someday we can maybe add
@@ -767,7 +766,7 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
                 print("%sFIXED:%s %s"
                       % (colors.FWORD, colors.DISABLE, filename),
                       file=sys.stderr)
-            with codecs.open(filename, 'w', encoding=encoding) as f:
+            with open(filename, 'w', encoding=encoding, newline='') as f:
                 f.writelines(lines)
     return bad_count
 
