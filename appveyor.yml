@@ -22,7 +22,7 @@ build: false  # Not a C# project, build stuff at the test step instead.
 test_script:
   - "codespell --help"
   - "flake8"
-  - "pytest codespell_lib"
+  - "pytest"
 
 on_success:
   - "codecov"

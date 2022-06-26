@@ -40,9 +40,9 @@ jobs:
       - run: codespell --version
       - run: make check
       - uses: codecov/codecov-action@v3
-      - run: codespell --check-filenames --skip="./.git/*,*.pyc,./codespell_lib/tests/test_basic.py,./codespell_lib/data/*,./example/code.c,./build/lib/codespell_lib/tests/test_basic.py,./build/lib/codespell_lib/data/*,README.rst,*.egg-info/*"
+      - run: codespell --check-filenames --skip="./.git/*,*.pyc,./tests/test_basic.py,./codespell_lib/data/*,./example/code.c,./build/lib/tests/test_basic.py,./build/lib/codespell_lib/data/*,README.rst,*.egg-info/*"
       # this file has an error
-      - run: "! codespell codespell_lib/tests/test_basic.py"
+      - run: "! codespell tests/test_basic.py"
 
   make-check-dictionaries:
     runs-on: ubuntu-latest

@@ -6,6 +6,7 @@ import warnings
 
 import pytest
 
+import codespell_lib
 from codespell_lib._codespell import _builtin_dictionaries
 from codespell_lib._codespell import supported_languages
 
@@ -30,7 +31,7 @@ global_err_dicts = dict()
 global_pairs = set()
 
 # Filename, should be seen as errors in aspell or not
-_data_dir = op.join(op.dirname(__file__), '..', 'data')
+_data_dir = op.join(op.dirname(codespell_lib.__file__), 'data')
 _fnames_in_aspell = [
     (op.join(_data_dir, 'dictionary%s.txt' % d[2]), d[3:5], d[5:7])
     for d in _builtin_dictionaries]

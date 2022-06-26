@@ -28,7 +28,7 @@ check-dictionaries:
 		fi; \
 	done
 	@if command -v pytest > /dev/null; then \
-		pytest codespell_lib/tests/test_dictionary.py; \
+		pytest tests/test_dictionary.py; \
 	else \
 		echo "Test dependencies not present, install using 'pip install -e \".[dev]\"'"; \
 		exit 1; \
@@ -54,7 +54,7 @@ flake8:
 	flake8
 
 pytest:
-	pytest codespell_lib
+	pytest
 
 clean:
 	rm -rf codespell.1
