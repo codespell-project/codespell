@@ -582,7 +582,11 @@ achoring->anchoring
 achors->anchors
 ACI->ACPI
 acident->accident
+acidental->accidental
+acidentally->accidentally
+acidents->accidents
 acient->ancient
+acients->ancients
 ACII->ASCII
 acition->action
 acitions->actions
@@ -1038,6 +1042,7 @@ affraid->afraid
 afinity->affinity
 afor->for
 aforememtioned->aforementioned
+aforementiond->aforementioned
 aforementionned->aforementioned
 aformentioned->aforementioned
 afterall->after all
@@ -1680,6 +1685,9 @@ alternaive->alternative
 alternaives->alternatives
 alternarive->alternative
 alternarives->alternatives
+alternatie->alternative, alternate,
+alternatiely->alternatively, alternately,
+alternaties->alternatives, alternates,
 alternatievly->alternatively
 alternativey->alternatively
 alternativly->alternatively
@@ -6752,6 +6760,8 @@ complety->completely
 complext->complexity
 compliace->compliance
 complianse->compliance
+compliation->compilation
+compliations->compilations
 complied-in->compiled-in
 complience->compliance
 complient->compliant
@@ -7267,6 +7277,7 @@ conider->consider
 conifguration->configuration
 conifiguration->configuration
 conig->config
+conigured->configured
 conincide->coincide
 conincidence->coincidence
 conincident->coincident
@@ -21971,6 +21982,8 @@ opertaions->operations
 opertion->operation
 opertional->operational
 opertions->operations
+opertor->operator
+opertors->operators
 opetional->optional
 ophan->orphan
 opion->option
@@ -22648,6 +22661,7 @@ parametr->parameter
 parametre->parameter
 parametreless->parameterless
 parametres->parameters
+parametrs->parameters
 parametter->parameter
 parametters->parameters
 paramss->params
@@ -24239,6 +24253,8 @@ probem->problem
 proberly->properly
 proberty->property, properly,
 problably->probably
+problaem->problem
+problaems->problems
 problamatic->problematic
 proble->problem, probe, probably,
 probleme->problem
@@ -24326,6 +24342,7 @@ producables->producible
 produceds->produces, produced,
 produciton->production
 producted->produced
+producting->producing, production,
 productiviy->productivity
 produkt->product
 produse->produce
@@ -25597,6 +25614,7 @@ recogniced->recognised
 recogninse->recognise
 recognizeable->recognizable
 recomend->recommend
+recomendation->recommendation
 recomendations->recommendations
 recomendatoin->recommendation
 recomendatoins->recommendations
@@ -25705,6 +25723,7 @@ reconstucted->reconstructed
 reconstucting->reconstructing
 reconstucts->reconstructs
 reconsturction->reconstruction
+recontruct->reconstruct
 recontructed->reconstructed
 recontructing->reconstructing
 recontruction->reconstruction
@@ -28054,6 +28073,9 @@ semding->sending
 sement->cement, segment,
 sementation->segmentation
 semented->cemented, segmented,
+sementic->semantic
+sementically->semantically
+sementics->semantics
 sementing->cementing, segmenting,
 sements->cements, segments,
 semgent->segment
@@ -28697,6 +28719,7 @@ simpified->simplified
 simplei->simply
 simpley->simply
 simplfy->simplify
+simplicitly->simplicity
 simplicty->simplicity
 simplier->simpler
 simplies->implies, simplifies,
