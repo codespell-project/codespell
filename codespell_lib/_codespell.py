@@ -230,7 +230,7 @@ class NewlineHelpFormatter(argparse.HelpFormatter):
 
     def _split_lines(self, text, width):
         parts = text.split('\n')
-        out = list()
+        out = []
         for part in parts:
             # Eventually we could allow others...
             indent_start = '- '
@@ -400,7 +400,7 @@ def parse_options(args):
     config = configparser.ConfigParser(interpolation=None)
 
     # Read toml before other config files.
-    toml_files_errors = list()
+    toml_files_errors = []
     if os.path.isfile('pyproject.toml'):
         toml_files_errors.append(('pyproject.toml', False))
     if options.toml:
@@ -834,7 +834,7 @@ def main(*args):
         dictionaries = options.dictionary
     else:
         dictionaries = ['-']
-    use_dictionaries = list()
+    use_dictionaries = []
     for dictionary in dictionaries:
         if dictionary == "-":
             # figure out which builtin dictionaries to use
@@ -858,7 +858,7 @@ def main(*args):
                 parser.print_help()
                 return EX_USAGE
             use_dictionaries.append(dictionary)
-    misspellings = dict()
+    misspellings = {}
     for dictionary in use_dictionaries:
         build_dict(dictionary, misspellings, ignore_words)
     colors = TermColors()
