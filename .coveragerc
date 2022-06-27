@@ -1,5 +1,4 @@
 [run]
 branch = True
 source = codespell_lib
-include = */codespell_lib/*
 omit = */codespell_lib/tests/*
