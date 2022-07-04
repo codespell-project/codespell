@@ -688,6 +688,7 @@ actiavtes->activates
 actiavting->activating
 actiavtion->activation
 actiavtions->activations
+actiavtor->activator
 actibity->activity
 acticate->activate
 actine->active
@@ -2784,7 +2785,13 @@ ascpect->aspect
 ascpects->aspects
 asdignment->assignment
 asdignments->assignments
+asemble->assemble
+asembled->assembled
+asembler->assembler
+asemblers->assemblers
+asembles->assembles
 asemblies->assemblies
+asembling->assembling
 asembly->assembly
 asend->ascend, as end,
 asendance->ascendance
@@ -2977,8 +2984,11 @@ associeations->associations
 associeted->associated
 associte->associate
 associted->associated
+assocites->associates
+associting->associating
 assocition->association
 associtions->associations
+associtive->associative
 associuated->associated
 assoction->association
 assoiated->associated
@@ -5472,6 +5482,7 @@ changee->changed, changes, change,
 changeing->changing
 changge->change
 changged->changed
+changgeling->changeling
 changges->changes
 changlog->changelog
 changuing->changing
@@ -11065,6 +11076,7 @@ dispair->despair
 dispalcement->displacement
 dispalcements->displacements
 dispaly->display
+dispalyable->displayable
 dispalyed->displayed
 dispalyes->displays
 dispalying->displaying
@@ -22854,6 +22866,7 @@ paricularly->particularly
 parisitic->parasitic
 parital->partial, parietal,
 paritally->partially
+paritals->partials
 paritial->partial
 parition->partition
 paritioning->partitioning
@@ -25097,6 +25110,7 @@ quanlifies->qualifies, quantifies,
 quanlify->qualify, quantify,
 quantaty->quantity
 quantitites->quantities
+quantititive->quantitative
 quantitity->quantity
 quantitiy->quantity
 quarantaine->quarantine
@@ -27140,6 +27154,7 @@ resistable->resistible
 resistence->resistance
 resistent->resistant
 resitance->resistance
+resitances->resistances
 resivwar->reservoir
 resizeable->resizable
 resizeble->resizable
@@ -27228,6 +27243,7 @@ responc->response, respond,
 responce->response
 responces->responses
 responde->respond, response, responds, responded, responder,
+respone->response
 respones->response, responses,
 responibilities->responsibilities
 responisble->responsible
@@ -31909,6 +31925,7 @@ todya->today
 toekn->token
 togehter->together
 togeter->together
+togeterness->togetherness
 toggel->toggle
 toggeles->toggles
 toggeling->toggling
