@@ -3673,6 +3673,7 @@ autoneogotiation->autonegotiation
 autoneotiation->autonegotiation
 autonogotiation->autonegotiation
 autonymous->autonomous
+autoonf->autoconf
 autopsec->autospec
 autor->author
 autorealease->autorelease
@@ -14422,6 +14423,7 @@ failture->failure
 failue->failure
 failuer->failure
 failues->failures
+failured->failed
 faireness->fairness
 fairoh->pharaoh
 faiway->fairway
@@ -20022,6 +20024,7 @@ microcontrolers->microcontrollers
 Microfost->Microsoft
 microntroller->microcontroller
 microntrollers->microcontrollers
+microoseconds->microseconds
 micropone->microphone
 micropones->microphones
 microprocesspr->microprocessor
@@ -21779,6 +21782,7 @@ ocntext->context
 ocorrence->occurrence
 ocorrences->occurrences
 octect->octet
+octects->octets
 octohedra->octahedra
 octohedral->octahedral
 octohedron->octahedron
@@ -23301,6 +23305,8 @@ picoseonds->picoseconds
 pieceweise->piecewise, piece wise,
 piecewiese->piecewise, piece wise,
 piecwise->piecewise, piece wise,
+piggypack->piggyback
+piggypacked->piggybacked
 pilgrimmage->pilgrimage
 pilgrimmages->pilgrimages
 pimxap->pixmap
@@ -28515,6 +28521,8 @@ shandeleers->chandeliers
 shandow->shadow
 shaneal->chenille
 shanghi->Shanghai
+shapshot->snapshot
+shapshots->snapshots
 shapsnot->snapshot
 shapsnots->snapshots
 shapt->shaped, shape,
@@ -29180,6 +29188,8 @@ sovled->solved
 sovren->sovereign
 sowe->sow, so we,
 spacific->specific
+spacification->specification
+spacifications->specifications
 spacifics->specifics
 spacified->specified
 spacifies->specifies
@@ -31135,6 +31145,7 @@ tbey->they
 tcahce->cache
 tcahces->caches
 tcheckout->checkout
+tcpdumpp->tcpdump
 tcppcheck->cppcheck
 te->the, be, we, to,
 teached->taught
