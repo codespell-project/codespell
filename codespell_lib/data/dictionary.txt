@@ -1855,8 +1855,12 @@ analouges->analogues
 analsye->analyse
 analsyed->analysed
 analsyer->analyser
+analsyers->analysers
+analsyes->analyses
 analsying->analysing
 analsyis->analysis
+analsyt->analyst
+analsyts->analysts
 analye->analyse, analyze,
 analyed->analysed, analyzed,
 analyer->analyser, analyzer,
@@ -1875,6 +1879,8 @@ analyzies->analysis, analyses, analyzes,
 analzye->analyze
 analzyed->analyzed
 analzyer->analyzer
+analzyers->analyzers
+analzyes->analyzes
 analzying->analyzing
 ananlog->analog
 anarchim->anarchism
@@ -4988,6 +4994,7 @@ calcualtor->calculator
 calcuate->calculate
 calcuated->calculated
 calcuates->calculates
+calcuation->calculation
 calcuations->calculations
 calculaion->calculation
 calculatble->calculatable, calculable,
@@ -9875,6 +9882,8 @@ demostration->demonstration
 demudulator->demodulator
 denegrating->denigrating
 denisty->density
+denomitator->denominator
+denomitators->denominators
 densitity->density
 densly->densely
 denstiy->density
@@ -10179,6 +10188,7 @@ describtions->descriptions
 descrice->describe
 descriced->described
 descrices->describes
+descricing->describing
 descrie->describe
 descriibes->describes
 descriminant->discriminant
@@ -11787,6 +11797,7 @@ donains->domains
 donejun->dungeon
 donejuns->dungeons
 donig->doing
+donn't->don't
 donn->done, don,
 donnot->do not
 dont'->don't
@@ -15179,6 +15190,7 @@ followind->following
 followint->following
 followng->following
 followwing->following
+followwings->followings
 folls->follows
 follw->follow
 follwed->followed
@@ -15634,6 +15646,11 @@ funcitoned->functioned
 funcitoning->functioning
 funcitons->functions
 functiion->function
+functiional->functional
+functiionality->functionality
+functiionally->functionally
+functiioning->functioning
+functiions->functions
 functin->function
 functinality->functionality
 functino->function
@@ -16706,6 +16723,7 @@ homogeniusly->homogeneously
 homogenoues->homogeneous
 homogenous->homogeneous
 homogenously->homogeneously
+homogenuous->homogeneous
 honory->honorary
 hoook->hook
 hoooks->hooks
@@ -24926,6 +24944,8 @@ pringing->printing, springing,
 prinicipal->principal
 prining->printing
 printting->printing
+prioirties->priorities
+prioirty->priority
 prioritiy->priority
 priorty->priority
 priot->prior
@@ -27469,6 +27489,8 @@ repet->repeat
 repetative->repetitive
 repete->repeat
 repeteadly->repeatedly
+repetetion->repetition
+repetetions->repetitions
 repetetive->repetitive
 repeting->repeating
 repetion->repetition
@@ -27821,6 +27843,8 @@ resistence->resistance
 resistent->resistant
 resitance->resistance
 resitances->resistances
+resitor->resistor
+resitors->resistors
 resivwar->reservoir
 resizeable->resizable
 resizeble->resizable
@@ -31161,6 +31185,7 @@ subscritpitons->subscriptions
 subscritpt->subscript
 subscritption->subscription
 subscritptions->subscriptions
+subsctitution->substitution
 subsecrion->subsection
 subsedent->subsequent
 subseqence->subsequence
@@ -32279,6 +32304,7 @@ tendancies->tendencies
 tendancy->tendency
 tennisplayer->tennis player
 tentaive->tentative
+tentaively->tentatively
 tention->tension
 teplmate->template
 teplmated->templated
@@ -33920,6 +33946,8 @@ uniquness->uniqueness
 unistalled->uninstalled
 uniterrupted->uninterrupted
 UnitesStates->UnitedStates
+unith->unit
+uniths->units
 unitialize->uninitialize
 unitialized->uninitialized
 unitilised->uninitialised
