@@ -1967,6 +1967,12 @@ anormal->abnormal, a normal,
 anormalies->anomalies
 anormally->abnormally, a normally,
 anormaly->abnormally
+anotate->annotate
+anotated->annotated
+anotates->annotates
+anotating->annotating
+anotation->annotation
+anotations->annotations
 anoter->another
 anothe->another
 anothers->another
@@ -6295,6 +6301,9 @@ comapny->company
 comapre->compare
 comapring->comparing
 comaprison->comparison
+comaptibele->compatible
+comaptibelities->compatibilities
+comaptibelity->compatibility
 comaptible->compatible
 comarators->comparators
 comback->comeback
@@ -12531,6 +12540,7 @@ entraces->entrances
 entrepeneur->entrepreneur
 entrepeneurs->entrepreneurs
 entrie->entry, entries,
+entriess->entries
 entriy->entry, entries,
 entrys->entries, entry,
 enty->entry, entity,
@@ -17116,6 +17126,9 @@ incoherant->incoherent
 incoherantly->incoherently
 incomapatibility->incompatibility
 incomapatible->incompatible
+incomaptibele->incompatible
+incomaptibelities->incompatibilities
+incomaptibelity->incompatibility
 incomaptible->incompatible
 incombatibilities->incompatibilities
 incombatibility->incompatibility
@@ -17421,6 +17434,8 @@ indistiguishable->indistinguishable
 indivdual->individual
 indivdually->individually
 indivdualy->individually
+individal->individual
+individals->individuals
 individaul->individual
 individaully->individually
 individauls->individuals
@@ -19602,6 +19617,9 @@ manuell->manual
 manuelly->manually
 manuever->maneuver, manoeuvre,
 manuevers->maneuvers, manoeuvres,
+manufactuer->manufacture, manufacturer,
+manufactuerd->manufactured
+manufactuers->manufactures, manufacturers,
 manufacturedd->manufactured
 manufature->manufacture
 manufatured->manufactured
@@ -24065,6 +24083,7 @@ prequisites->prerequisites
 prerequesite->prerequisite
 prerequesites->prerequisites
 prerequisit->prerequisite
+prerequisities->prerequisites
 prerequisits->prerequisites
 prerequiste->prerequisite
 prerequsite->prerequisite
@@ -28815,8 +28834,14 @@ simpliifcation->simplification
 simpliifcations->simplifications
 simplist->simplest
 simpy->simply
+simualte->simulate
+simualted->simulated
+simualtes->simulates
+simualting->simulating
 simualtion->simulation
 simualtions->simulations
+simualtor->simulator
+simualtors->simulators
 simulantaneous->simultaneous
 simulantaneously->simultaneously
 simulataeous->simultaneous
@@ -30951,6 +30976,7 @@ synchonize->synchronize
 synchonized->synchronized
 synchonizes->synchronizes
 synchonizing->synchronizing
+synchonous->synchronous
 synchonrous->synchronous
 synchrnization->synchronization
 synchrnonization->synchronization
@@ -32923,6 +32949,7 @@ unfourtunately->unfortunately
 unfourtunetly->unfortunately
 unfurtunately->unfortunately
 ungeneralizeable->ungeneralizable
+ungly->ugly
 unhandeled->unhandled
 unhilight->unhighlight
 unhilighted->unhighlighted
@@ -34718,7 +34745,7 @@ writen->written
 writet->writes
 writewr->writer
 writingm->writing
-writter->writer
+writter->writer, written,
 writters->writers
 writtin->written, writing,
 writting->writing
