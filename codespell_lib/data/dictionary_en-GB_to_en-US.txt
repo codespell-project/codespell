@@ -20,6 +20,7 @@ authorises->authorizes
 authorising->authorizing
 behaviour->behavior
 behaviours->behaviors
+cancellation->cancelation
 cancelled->canceled
 cancelling->canceling
 capitalisation->capitalization
@@ -58,6 +59,7 @@ crystallise->crystallize
 crystallised->crystallized
 crystallises->crystallizes
 crystallising->crystallizing
+customisable->customizable
 customisation->customization
 customise->customize
 customised->customized
@@ -121,7 +123,11 @@ legalised->legalized
 legalises->legalizes
 legalising->legalizing
 licence->license
+licenced->licensed
 licences->licenses
+licencing->licensing
+manoeuverability->maneuverability
+manoeuvering->maneuvering
 manoeuvre->maneuver
 manoeuvres->maneuvers
 memorisation->memorization
@@ -167,6 +173,10 @@ organiser->organizer
 organisers->organizers
 organises->organizes
 organising->organizing
+parallelising->parallelizing
+parallelled->paralleled
+parallelling->paralleling
+parametrise->parametrize
 plagiarise->plagiarize
 plagiarised->plagiarized
 plagiarises->plagiarizes
@@ -181,10 +191,13 @@ prioritise->prioritize
 prioritised->prioritized
 prioritises->prioritizes
 prioritising->prioritizing
+proveable->provable
 publicise->publicize
 publicised->publicized
 publicises->publicizes
 publicising->publicizing
+rasterisation->rasterization
+rasterise->rasterize
 realisation->realization
 realise->realize
 realised->realized
@@ -206,6 +219,8 @@ reorganise->reorganize
 reorganised->reorganized
 reorganises->reorganizes
 reorganising->reorganizing
+resizeable->resizable
+sanitisation->sanitization
 sanitise->sanitize
 sanitised->sanitized
 sanitiser->sanitizer
@@ -248,6 +263,7 @@ synchronised->synchronized
 synchronises->synchronizes
 synchronising->synchronizing
 unauthorised->unauthorized
+uninitialised->uninitialized
 unorganised->unorganized
 unrecognised->unrecognized
 utilisation->utilization
@@ -255,6 +271,8 @@ utilise->utilize
 utilised->utilized
 utilises->utilizes
 utilising->utilizing
+vectorisation->vectorization
+vectorise->vectorize
 virtualisation->virtualization
 visualisation->visualization
 visualisations->visualizations
@@ -263,3 +281,4 @@ visualised->visualized
 visualiser->visualizer
 visualises->visualizes
 visualising->visualizing
+writeable->writable
