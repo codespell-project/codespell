@@ -51,6 +51,10 @@ The ``-I`` flag can be used for a list of certain words to allow that are in the
 
 The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it.  **Important note:** The list passed to ``-L`` is case-sensitive based on how it is listed in the codespell dictionaries. ::
 
+    codespell -x FILE, --exclude-file=FILE
+
+Ignore whole lines that match those in ``FILE``.  The lines in ``FILE`` should match the to-be-excluded lines exactly.
+
     codespell -S, --skip=
 
 Comma-separated list of files to skip. It accepts globs as well.  Examples:

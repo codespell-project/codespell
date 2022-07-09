@@ -58,7 +58,7 @@ _builtin_dictionaries = (
         True, True, supported_languages_en, supported_languages_en),
     ('usage', 'for replacing phrasing with recommended terms', '_usage',
         None, None, None, None),
-    ('code', 'for words common to code and/or mathematics that might be typos', '_code',  # noqa: E501
+    ('code', 'for words from code and/or mathematics that are likely to be typos in other contexts', '_code',  # noqa: E501
         None, None, None, None,),
     ('names', 'for valid proper names that might be typos', '_names',
         None, None, None, None,),
@@ -343,8 +343,9 @@ def parse_options(args):
                              'you\'d give "*.eps,*.txt" to this option.')
 
     parser.add_argument('-x', '--exclude-file', type=str, metavar='FILE',
-                        help='FILE with lines that should not be checked for '
-                             'errors or changed')
+                        help='ignore whole lines that match those '
+                             'in the file FILE. The lines in FILE '
+                             'should match the to-be-excluded lines exactly')
 
     parser.add_argument('-i', '--interactive',
                         action='store', type=int, default=0,
@@ -752,7 +753,7 @@ def main(*args):
 
     if options.regex and options.write_changes:
         print("ERROR: --write-changes cannot be used together with "
-              "--regex")
+              "--regex", file=sys.stderr)
         parser.print_help()
         return EX_USAGE
     word_regex = options.regex or word_regex_def
@@ -840,7 +841,8 @@ def main(*args):
         if (options.before_context is not None) or \
                 (options.after_context is not None):
             print("ERROR: --context/-C cannot be used together with "
-                  "--context-before/-B or --context-after/-A")
+                  "--context-before/-B or --context-after/-A",
+                  file=sys.stderr)
             parser.print_help()
             return EX_USAGE
         context_both = max(0, options.context)
