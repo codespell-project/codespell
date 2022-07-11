@@ -391,6 +391,42 @@ def test_ignore_word_list(
     assert cs.main("-Labandonned,someword", "-Labilty", tmp_path) == 1
 
 
+@pytest.mark.parametrize('content, expected_error_count', [
+    # recommended form
+    ('abandonned abondon abilty  # codespell:ignore abondon', 2),
+    ('abandonned abondon abilty  // codespell:ignore abondon,abilty', 1),
+    ('abandonned abondon abilty  /* codespell:ignore abandonned,abondon,abilty', 0),  # noqa: E501
+    # wildcard form
+    ('abandonned abondon abilty  # codespell:ignore ', 0),
+    ('abandonned abondon abilty  # codespell:ignore', 0),
+    ('abandonned abondon abilty  # codespell:ignore\n', 0),
+    ('abandonned abondon abilty  # codespell:ignore  # noqa: E501\n', 0),
+    ('abandonned abondon abilty  # codespell:ignore # noqa: E501\n', 0),
+    # ignore these for safety
+    ('abandonned abondon abilty  # codespell:ignore# noqa: E501\n', 3),
+    ('abandonned abondon abilty  # codespell:ignore, noqa: E501\n', 3),
+    ('abandonned abondon abilty  # codespell:ignore/noqa: E501\n', 3),
+    ('abandonned abondon abilty  # codespell:ignorenoqa: E501\n', 3),
+    ('abandonned abondon abilty  #codespell:ignore\n', 3),
+    ('abandonned abondon abilty  codespell:ignore\n', 3),
+    ('abandonned abondon abilty codespell:ignore\n', 3),
+    # showcase different comment markers
+    ("abandonned abondon abilty ' codespell:ignore\n", 0),
+    ('abandonned abondon abilty " codespell:ignore\n', 0),
+    ('abandonned abondon abilty ;; codespell:ignore\n', 0),
+])
+def test_inline_ignores(
+    tmpdir: pytest.TempPathFactory,
+    capsys: pytest.CaptureFixture[str],
+    content: str,
+    expected_error_count: int
+) -> None:
+    d = str(tmpdir)
+    with open(op.join(d, 'bad.txt'), 'w') as f:
+        f.write(content)
+    assert cs.main(d) == expected_error_count
+
+
 def test_custom_regex(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],

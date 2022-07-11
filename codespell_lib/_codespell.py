@@ -55,6 +55,8 @@ uri_regex_def = (
 # Pass all misspellings through this translation table to generate
 # alternative misspellings and fixes.
 alt_chars = (("'", "’"),)  # noqa: RUF001
+inline_ignore_regex = re.compile(
+    r"[^\w\s] codespell:ignore(?:(?:\s|$)([\w,]*))")
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
@@ -974,6 +976,15 @@ def parse_file(
         if line.rstrip() in exclude_lines:
             continue
 
+        extra_words_to_ignore = set()
+        match = inline_ignore_regex.search(line)
+        if match:
+            extra_words_to_ignore = set(
+                filter(None, (match.group(1) or "").split(","))
+            )
+            if not extra_words_to_ignore:
+                continue
+
         fixed_words = set()
         asked_for = set()
 
@@ -998,7 +1009,7 @@ def parse_file(
             if word in ignore_words_cased:
                 continue
             lword = word.lower()
-            if lword in misspellings:
+            if lword in misspellings and lword not in extra_words_to_ignore:
                 # Sometimes we find a 'misspelling' which is actually a valid word
                 # preceded by a string escape sequence.  Ignore such cases as
                 # they're usually false alarms; see issue #17 among others.
