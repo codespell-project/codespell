@@ -402,6 +402,7 @@ def test_ignore_word_list(
     ('abandonned abondon abilty  # codespell:ignore ', 0),
     ('abandonned abondon abilty  # codespell:ignore', 0),
     ('abandonned abondon abilty  # codespell:ignore\n', 0),
+    ('abandonned abondon abilty  # codespell:ignore\r\n', 0),
     ('abandonned abondon abilty  # codespell:ignore  # noqa: E501\n', 0),
     ('abandonned abondon abilty  # codespell:ignore # noqa: E501\n', 0),
     # ignore these for safety
