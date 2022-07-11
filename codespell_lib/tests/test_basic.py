@@ -396,6 +396,8 @@ def test_ignore_word_list(
     ('abandonned abondon abilty  # codespell:ignore abondon', 2),
     ('abandonned abondon abilty  // codespell:ignore abondon,abilty', 1),
     ('abandonned abondon abilty  /* codespell:ignore abandonned,abondon,abilty', 0),  # noqa: E501
+    # ignore unused ignore
+    ('abandonned abondon abilty  # codespell:ignore nomenklatur', 3),
     # wildcard form
     ('abandonned abondon abilty  # codespell:ignore ', 0),
     ('abandonned abondon abilty  # codespell:ignore', 0),
