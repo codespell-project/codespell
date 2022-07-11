@@ -56,7 +56,8 @@ uri_regex_def = (
 # alternative misspellings and fixes.
 alt_chars = (("'", "’"),)  # noqa: RUF001
 inline_ignore_regex = re.compile(
-    r"[^\w\s] codespell:ignore(?:(?:\s|$)([\w,]*))")
+    r"([^\w\s]) codespell:ignore(\s(?P<words>[\w,]*))?(\s+\1|$)"
+)
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
@@ -980,7 +981,7 @@ def parse_file(
         match = inline_ignore_regex.search(line)
         if match:
             extra_words_to_ignore = set(
-                filter(None, (match.group(1) or "").split(","))
+                filter(None, (match.group("words") or "").split(","))
             )
             if not extra_words_to_ignore:
                 continue

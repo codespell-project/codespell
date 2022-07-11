@@ -417,6 +417,9 @@ def test_ignore_word_list(
     ("abandonned abondon abilty ' codespell:ignore\n", 0),
     ('abandonned abondon abilty " codespell:ignore\n', 0),
     ('abandonned abondon abilty ;; codespell:ignore\n', 0),
+    ('abandonned abondon abilty /* codespell:ignore */\n', 0),
+    # avoid false positive
+    ('You could also use line based igore ( codespell:ignore ) to igore ', 2),
 ])
 def test_inline_ignores(
     tmpdir: pytest.TempPathFactory,
