@@ -24830,10 +24830,10 @@ prsets->presets
 prtinf->printf
 prufe->proof
 prviate->private
-psace->space
-psaced->spaced
-psaces->spaces
-psacing->spacing
+psace->space, pace,
+psaced->spaced, paced,
+psaces->spaces, paces,
+psacing->spacing, pacing,
 psaswd->passwd
 pseude->pseudo
 pseudononymous->pseudonymous
@@ -29240,9 +29240,9 @@ spcifications->specifications
 spcified->specified
 spcifies->specifies
 spcify->specify
-speace->space
+speace->space, peace,
 speaced->spaced
-speaces->spaces
+speaces->spaces, species,
 speach->speech
 speacial->special, spacial,
 speacing->spacing
