@@ -2193,6 +2193,7 @@ applycable->applicable
 applyed->applied
 applyes->applies
 applyied->applied
+applyig->applying
 applys->applies
 applyting->applying
 appned->append
@@ -4988,6 +4989,9 @@ canbe->can be
 cancelaltion->cancellation
 cancelation->cancellation
 cancelations->cancellations
+cancele->cancel, cancels,
+canceles->cancels
+cancell->cancel
 cancelles->cancels
 cances->cancel
 cancl->cancel
@@ -12634,6 +12638,7 @@ envrironments->environments
 envrirons->environs
 envvironment->environment
 enxt->next
+enything->anything
 enyway->anyway
 epecifica->especifica
 epect->expect
@@ -14112,9 +14117,13 @@ expierience->experience
 expieriences->experiences
 expilicitely->explicitly
 expireitme->expiretime
+expiriation->expiration
+expirie->expire
+expiried->expired
 expirience->experience
 expiriences->experiences
 expirimental->experimental
+expiriy->expiry
 expite->expire, expedite,
 expited->expired, expedited,
 explaination->explanation
@@ -19261,6 +19270,7 @@ linearily->linearly, linearity,
 lineary->linearly
 linerisation->linearisation
 linerisations->linearisations
+liness->lines
 linewdith->linewidth
 linez->lines
 lingth->length
@@ -27120,6 +27130,15 @@ resoruce->resource
 resoruced->resourced
 resoruces->resources
 resorucing->resourcing
+resotration->restoration
+resotrations->restorations
+resotrative->restorative
+resotre->restore
+resotred->restored, resorted,
+resotrer->restorer
+resotrers->restorers
+resotres->restores
+resotring->restoring
 resouce->resource
 resouced->resourced
 resouces->resources
@@ -27698,6 +27717,7 @@ sacrifical->sacrificial
 sacrifying->sacrificing
 sacrilegeous->sacrilegious
 sacrin->saccharin
+saddly->sadly, saddle,
 sade->sad
 saem->same
 safe-pooint->safe-point
