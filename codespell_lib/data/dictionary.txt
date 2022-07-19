@@ -32188,6 +32188,8 @@ transacion->transaction
 transacions->transactions
 transaciton->transaction
 transacitons->transactions
+transacrtion->transaction
+transacrtions->transactions
 transaction-spacific->transaction-specific
 transactiona->transactions, transactional,
 transactoin->transaction
@@ -32236,7 +32238,7 @@ transcordings->transcodings
 transcoser->transcoder
 transcosers->transcoders
 transcripting->transcribing, transcription,
-transction->transacrtion
+transction->transaction
 transctions->transactions
 transeint->transient
 transending->transcending
