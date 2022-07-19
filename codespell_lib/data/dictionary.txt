@@ -22938,6 +22938,7 @@ particuarly->particularly
 particulaly->particularly
 particularily->particularly
 particulary->particularly
+particuliar->particular
 partifular->particular
 partiiton->partition
 partiitoned->partitioned
@@ -23615,6 +23616,7 @@ poket->pocket
 polariy->polarity
 polical->political
 policie->policies, policy, police,
+policiy->policy
 policys->policies, police,
 poligon->polygon
 poligons->polygons
@@ -23722,6 +23724,7 @@ porjection->projection
 porjects->projects
 porotocol->protocol
 porotocols->protocols
+porperties->properties
 porperty->property
 porportion->proportion
 porportional->proportional
@@ -24165,6 +24168,8 @@ preriod->period
 preriodic->periodic
 prersistent->persistent
 presance->presence
+prescripe->prescribe
+prescriped->prescribed
 prescrition->prescription
 prescritions->prescriptions
 presearvation->preservation
@@ -24359,6 +24364,9 @@ privilages->privileges
 priviledge->privilege
 priviledged->privileged
 priviledges->privileges
+privilidge->privilege
+privilidged->privileged
+privilidges->privileges
 privilige->privilege
 priviliged->privileged
 priviliges->privileges
@@ -24632,6 +24640,7 @@ programmical->programmatical
 programmign->programming
 programmming->programming
 programms->programs
+progreess->progress
 progres->progress
 progresively->progressively
 progresss->progress
@@ -24787,6 +24796,7 @@ proporpotion->proportion
 proporpotional->proportional
 proportianal->proportional
 proporties->properties
+proportinal->proportional
 proporty->property
 propostion->proposition
 propotion->proportion, promotion,
@@ -25698,6 +25708,10 @@ recconeting->reconnecting
 recconetion->reconnection
 recconetions->reconnections
 recconets->reconnects
+reccord->record
+reccorded->recorded
+reccording->recording
+reccords->records
 reccuring->recurring
 reccursive->recursive
 reccursively->recursively
@@ -25729,6 +25743,7 @@ receved->received
 receves->receives
 recevie->receive
 recevied->received
+recevier->receiver
 recevies->receives
 receving->receiving
 rechable->reachable
@@ -25778,6 +25793,7 @@ recogizing->recognizing
 recogniced->recognised
 recogninse->recognise
 recognizeable->recognizable
+recognzied->recognized
 recomend->recommend
 recomendation->recommendation
 recomendations->recommendations
@@ -25868,6 +25884,7 @@ reconfugre->reconfigure
 reconfugure->reconfigure
 reconfure->reconfigure
 recongifure->reconfigure
+recongize->recognize
 recongized->recognized
 recongnises->recognises
 recongnizes->recognizes
@@ -25917,6 +25934,8 @@ recrusively->recursively
 rectange->rectangle
 rectanges->rectangles
 rectanglar->rectangular
+rectangluar->rectangular
+rectangual->rectangular, rectangle,
 rectiinear->rectilinear
 recude->reduce
 recuiting->recruiting
@@ -26001,6 +26020,8 @@ reeasers->releasers
 reeases->releases
 reeasing->releasing
 reedeming->redeeming
+reegion->region
+reegions->regions
 reelation->relation
 reelease->release
 reenable->re-enable
@@ -26300,6 +26321,10 @@ reinitailize->reinitialize
 reinitalize->reinitialize
 reinitilize->reinitialize
 reinitilized->reinitialized
+reinstatiate->reinstantiate
+reinstatiated->reinstantiated
+reinstatiates->reinstantiates
+reinstatiation->reinstantiation
 reintantiate->reinstantiate
 reintantiating->reinstantiating
 reintepret->reinterpret
@@ -26509,6 +26534,7 @@ remvs->removes
 renabled->re-enabled
 rende->render, rend,
 renderadble->renderable
+renderd->rendered
 rendereing->rendering
 rendererd->rendered
 renderered->rendered
@@ -27028,6 +27054,9 @@ reqeusted->requested
 reqeusting->requesting
 reqeusts->requests
 reqiest->request
+reqired->required
+reqirement->requirement
+reqirements->requirements
 reqiure->require
 requencies->frequencies
 requency->frequency
@@ -27079,6 +27108,8 @@ requrested->requested
 requresting->requesting
 requrests->requests
 requried->required
+requriement->requirement
+requriements->requirements
 requries->requires
 requriment->requirement
 requring->requiring
@@ -27369,6 +27400,7 @@ resturcturing->restructuring
 resturn->return, returns,
 resturns->returns
 resuable->reusable
+resuables->reusables
 resubstituion->resubstitution
 resuction->reduction
 resue->reuse, rescue,
@@ -28005,6 +28037,7 @@ scnearios->scenarios
 scoket->socket
 scoll->scroll
 scolling->scrolling
+scondary->secondary
 scopeing->scoping
 scorebord->scoreboard
 scource->source, scouse,
@@ -28017,6 +28050,8 @@ scraches->scratches
 scraching->scratching
 scrachs->scratches
 scrao->scrap
+screeb->screen
+screebs->screens
 screem->scream, screen,
 screenchot->screenshot
 screenchots->screenshots
@@ -28502,6 +28537,8 @@ sequetial->sequential
 sequeze->squeeze, sequence,
 sequnce->sequence
 sequnces->sequences
+sequnece->sequence
+sequneces->sequences
 ser->set
 serach->search
 serached->searched
@@ -28551,6 +28588,7 @@ serialzing->serializing
 serice->service
 serices->services, series,
 serie->series
+seriel->serial
 serieses->series
 serios->serious
 seriouly->seriously
@@ -28861,6 +28899,7 @@ signifant->significant
 signifantly->significantly
 signifcant->significant
 signifcantly->significantly
+signifficant->significant
 significanly->significantly
 significently->significantly
 signifigant->significant
@@ -28914,6 +28953,8 @@ simmetric->symmetric
 simmetrical->symmetrical
 simmetry->symmetry
 simmilar->similar
+simpification->simplification
+simpifications->simplifications
 simpified->simplified
 simplei->simply
 simpley->simply
@@ -29282,6 +29323,7 @@ soop->soup, scoop, snoop, soap,
 soource->source
 sophicated->sophisticated
 sophisicated->sophisticated
+sophisitcated->sophisticated
 sophmore->sophomore
 sorce->source, force,
 sorceror->sorcerer
@@ -29357,6 +29399,9 @@ spainish->Spanish
 spaning->spanning
 sparate->separate
 sparately->separately
+spash->splash
+spashed->splashed
+spashes->splashes
 spaw->spawn
 spawed->spawned
 spawing->spawning
@@ -29458,6 +29503,7 @@ specifigation->specification
 specifigations->specifications
 specifing->specifying
 specifities->specifics
+specifix->specifics, specific,
 specifiy->specify
 specifiying->specifying
 specifric->specific
@@ -30278,6 +30324,7 @@ stying->staying, styling,
 stylessheet->stylesheet, stylesheets,
 stylessheets->stylesheets
 sub-lcuase->sub-clause
+subbtle->subtle
 subcatagories->subcategories
 subcatagory->subcategory
 subcirucit->subcircuit
@@ -30568,6 +30615,7 @@ succsess->success
 succsessfull->successful
 succsessive->successive
 succssful->successful
+succussfully->successfully
 suceed->succeed
 suceeded->succeeded
 suceeding->succeeding
@@ -30911,6 +30959,7 @@ suspedn->suspend
 suspeneded->suspended
 suspention->suspension
 suspicios->suspicious
+suspicioulsy->suspiciously
 suspicous->suspicious
 suspicously->suspiciously
 suspision->suspicion
@@ -31035,6 +31084,7 @@ sylog->syslog
 symantics->semantics
 symblic->symbolic
 symbo->symbol
+symboles->symbols
 symboll->symbol
 symbonname->symbolname
 symbsol->symbol
@@ -31128,6 +31178,7 @@ syntaks->syntax
 syntakt->syntax
 syntakts->syntax
 syntatic->syntactic
+syntatically->syntactically
 syntaxe->syntax
 syntaxg->syntax
 syntaxt->syntax
@@ -31907,6 +31958,8 @@ tinterrupts->interrupts
 tiome->time, tome,
 tipe->type, tip,
 tipically->typically
+tirangle->triangle
+tirangles->triangles
 titel->title
 titels->titles
 titile->title
@@ -32135,6 +32188,8 @@ transacion->transaction
 transacions->transactions
 transaciton->transaction
 transacitons->transactions
+transacrtion->transaction
+transacrtions->transactions
 transaction-spacific->transaction-specific
 transactiona->transactions, transactional,
 transactoin->transaction
@@ -32183,6 +32238,8 @@ transcordings->transcodings
 transcoser->transcoder
 transcosers->transcoders
 transcripting->transcribing, transcription,
+transction->transaction
+transctions->transactions
 transeint->transient
 transending->transcending
 transer->transfer
@@ -32574,6 +32631,7 @@ tryes->tries
 tryig->trying
 tryinng->trying
 trys->tries
+tryying->trying
 ttests->tests
 tthe->the
 tufure->future
@@ -34433,6 +34491,11 @@ warniongs->warnings
 warnkng->warning
 warnkngs->warnings
 warrent->warrant
+warrents->warrants
+warrn->warn
+warrned->warned
+warrning->warning
+warrnings->warnings
 warrriors->warriors
 was'nt->wasn't
 was't->wasn't
@@ -34805,6 +34868,7 @@ worng->wrong, worn,
 wornged->wronged
 worngs->wrongs
 worrry->worry
+wors->worse, worst, works, wars, was,
 worser->worse
 worstened->worsened
 worthing->worth, meriting,
