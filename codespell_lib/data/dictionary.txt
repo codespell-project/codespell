@@ -4989,8 +4989,12 @@ calld->called
 calle->called
 callef->called
 calles->calls
+callibrate->calibrate
 callibrated->calibrated
+callibrates->calibrates
+callibrating->calibrating
 callibration->calibration
+callibrations->calibrations
 callibri->calibri
 callig->calling
 callint->calling
@@ -11562,6 +11566,7 @@ documnetation->documentation
 documument->document
 docunment->document
 doed->does
+doen's->doesn't
 doen't->doesn't
 doen->done
 doens't->doesn't
@@ -15367,6 +15372,10 @@ frontents->frontends
 frop->drop
 fropm->from
 frops->drops
+frowarded->forwarded
+frowrad->forward
+frowrading->forwarding
+frowrads->forwards
 frozee->frozen
 fschk->fsck
 FTBS->FTBFS
@@ -16335,6 +16344,7 @@ herselv->herself
 hertiage->heritage
 hertically->hectically
 hertzs->hertz
+hese->these
 hesiate->hesitate
 hesistant->hesitant
 hesistate->hesitate
@@ -16672,6 +16682,9 @@ idelogy->ideology
 idemopotent->idempotent
 idendifier->identifier
 idenfifier->identifier
+idenfitifer->identifier
+idenfitifers->identifiers
+idenfitify->identify
 idenitfy->identify
 idenitify->identify
 identation->indentation
@@ -18802,6 +18815,8 @@ itentionaly->intentionally
 iteratable->iterable
 iterater->iterator
 iteratered->iterated
+iteratior->iterator
+iteratiors->iterators
 iteratons->iterations
 itereating->iterating
 iterface->interface
@@ -26240,6 +26255,7 @@ refrerences->references
 refrerencial->referential
 refrers->refers
 refreshs->refreshes
+refreshses->refreshes
 refridgeration->refrigeration
 refridgerator->refrigerator
 refromatting->refomatting
@@ -31820,6 +31836,7 @@ therafter->thereafter
 therapudic->therapeutic
 therby->thereby
 thereads->threads
+thered->thread, the red,
 therem->there, theorem,
 thereom->theorem
 thererin->therein
@@ -34924,6 +34941,7 @@ worfklows->workflows
 worflow->workflow
 worflows->workflows
 workaorund->workaround
+workaorunds->workarounds
 workaound->workaround
 workaounds->workarounds
 workaraound->workaround
