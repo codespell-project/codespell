@@ -5802,7 +5802,7 @@ cilincer->cylinder, silencer,
 cilincers->cylinders, silencers,
 cilinder->cylinder
 cilinders->cylinders
-cilindrical->cylindical
+cilindrical->cylindrical
 cilyndre->cylinder
 cilyndres->cylinders
 cilyndrs->cylinders
@@ -8936,6 +8936,7 @@ cyle->cycle
 cylic->cyclic
 cylider->cylinder
 cyliders->cylinders
+cylindical->cylindrical
 cylindre->cylinder
 cylnder->cylinder
 cylnders->cylinders
