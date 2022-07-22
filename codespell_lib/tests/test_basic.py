@@ -405,12 +405,11 @@ def test_ignore_word_list(
     ('abandonned abondon abilty  # codespell:ignore\r\n', 0),
     ('abandonned abondon abilty  # codespell:ignore  # noqa: E501\n', 0),
     ('abandonned abondon abilty  # codespell:ignore # noqa: E501\n', 0),
+    ('abandonned abondon abilty  # codespell:ignore# noqa: E501\n', 0),
+    ('abandonned abondon abilty  # codespell:ignore, noqa: E501\n', 0),
+    ('abandonned abondon abilty  #codespell:ignore\n', 0),
     # ignore these for safety
-    ('abandonned abondon abilty  # codespell:ignore# noqa: E501\n', 3),
-    ('abandonned abondon abilty  # codespell:ignore, noqa: E501\n', 3),
-    ('abandonned abondon abilty  # codespell:ignore/noqa: E501\n', 3),
     ('abandonned abondon abilty  # codespell:ignorenoqa: E501\n', 3),
-    ('abandonned abondon abilty  #codespell:ignore\n', 3),
     ('abandonned abondon abilty  codespell:ignore\n', 3),
     ('abandonned abondon abilty codespell:ignore\n', 3),
     # showcase different comment markers
@@ -418,8 +417,11 @@ def test_ignore_word_list(
     ('abandonned abondon abilty " codespell:ignore\n', 0),
     ('abandonned abondon abilty ;; codespell:ignore\n', 0),
     ('abandonned abondon abilty /* codespell:ignore */\n', 0),
-    # avoid false positive
-    ('You could also use line based igore ( codespell:ignore ) to igore ', 2),
+    # prose examples
+    ('You could also use line based igore ( codespell:ignore ) to igore ', 0),
+    ('You could also use line based igore (codespell:ignore) to igore ', 0),
+    ('You could also use line based igore (codespell:ignore igore) to igore ', 0),  # noqa: E501
+    ('You could also use line based igore (codespell:ignore igare) to igore ', 2),  # noqa: E501
 ])
 def test_inline_ignores(
     tmpdir: pytest.TempPathFactory,
