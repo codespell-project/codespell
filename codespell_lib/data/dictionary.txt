@@ -1890,6 +1890,7 @@ ancapsulation->encapsulation
 ancesetor->ancestor
 ancesetors->ancestors
 ancester->ancestor
+ancesteres->ancestors
 ancesters->ancestors
 ancestore->ancestor
 ancestores->ancestors
@@ -2083,6 +2084,14 @@ anyy->any
 aoache->apache
 aond->and
 aother->another, other, mother,
+aoto->auto
+aotomate->automate
+aotomated->automated
+aotomatic->automatic
+aotomatical->automatic
+aotomaticall->automatically
+aotomatically->automatically
+aotomation->automation
 aovid->avoid
 apach->apache
 apapted->adapted
@@ -2790,6 +2799,7 @@ arugment->argument
 arugments->arguments
 aruments->arguments
 arund->around
+arvg->argv
 asai->Asia
 asain->Asian
 asbolute->absolute
@@ -3930,8 +3940,10 @@ backgroound->background
 backgroounds->backgrounds
 backgroud->background
 backgrouds->backgrounds
+backgroun->background
 backgroung->background
 backgroungs->backgrounds
+backgrouns->backgrounds
 backgrount->background
 backgrounts->backgrounds
 backgrouund->background
@@ -4284,7 +4296,9 @@ bi-langual->bi-lingual
 bianries->binaries
 bianry->binary
 biappicative->biapplicative
+biddings->bidding
 bidimentionnal->bidimensional
+bidings->bindings, bidding,
 bidning->binding
 bidnings->bindings
 bigallic->bigalloc
@@ -6184,6 +6198,8 @@ codesream->codestream
 codition->condition
 coditioned->conditioned
 coditions->conditions
+codo->code
+codos->codes
 coduct->conduct
 coducted->conducted
 coducter->conductor
@@ -8814,6 +8830,14 @@ cryto->crypto
 crytpo->crypto
 csae->case
 csaes->cases
+cteate->create
+cteateing->creating
+cteater->creator
+cteates->creates
+cteating->creating
+cteation->creation
+cteations->creations
+cteator->creator
 ctificate->certificate
 ctificated->certificated
 ctificates->certificates
@@ -8837,7 +8861,9 @@ cummunicate->communicate
 cumulatative->cumulative
 cumulattive->cumulative
 cuncurency->concurrency
-cunter->counter
+cunted->counted, hunted,
+cunter->counter, hunter,
+cunting->counting, hunting,
 curce->curse, curve, course,
 curch->church
 curcuit->circuit
@@ -9046,6 +9072,8 @@ daplicating->duplicating
 Dardenelles->Dardanelles
 dasdot->dashdot
 dashbaord->dashboard
+dashboar->dashboard
+dashboars->dashboards
 dashbord->dashboard
 dashbords->dashboards
 dashs->dashes
@@ -9230,6 +9258,11 @@ debloking->deblocking
 debnia->Debian
 debth->depth
 debths->depths
+debudg->debug
+debudgged->debugged
+debudgger->debugger
+debudgging->debugging
+debudgs->debugs
 debufs->debugfs
 debugee->debuggee
 debuger->debugger
@@ -9644,6 +9677,9 @@ defualt->default
 defualtdict->defaultdict
 defualts->defaults
 defult->default
+defulted->defaulted
+defulting->defaulting
+defults->defaults
 degenarate->degenerate
 degenarated->degenerated
 degenarating->degenerating
@@ -9881,6 +9917,9 @@ depedent->dependent
 depeding->depending
 depencencies->dependencies
 depencency->dependency
+depencendencies->dependencies
+depencendency->dependency
+depencendencys->dependencies
 depencent->dependent
 depencies->dependencies
 depency->dependency
@@ -10273,6 +10312,9 @@ desparately->desperately
 despatch->dispatch
 despict->depict
 despiration->desperation
+desplay->display
+desplayed->displayed
+desplays->displays
 desposit->deposit, deposition,
 desposition->disposition
 desrciption->description
@@ -10889,6 +10931,9 @@ direcctly->directly
 direcctory->directory
 direcctorys->directories
 direcctries->directories
+direcdories->directories
+direcdory->directory
+direcdorys->directories
 direcion->direction
 direcions->directions
 direclty->directly
@@ -11211,6 +11256,7 @@ dispalys->displays
 disparingly->disparagingly
 disparite->disparate
 dispatcgh->dispatch
+dispatchs->dispatches
 dispath->dispatch
 dispathed->dispatched
 dispathes->dispatches
@@ -11539,6 +11585,7 @@ disussions->discussions
 disutils->distutils
 ditance->distance
 ditinguishes->distinguishes
+ditorconfig->editorconfig
 ditribute->distribute
 ditributed->distributed
 ditribution->distribution
@@ -12070,6 +12117,7 @@ easer->easier, eraser,
 easili->easily
 easiliy->easily
 easilly->easily
+easist->easiest
 easiy->easily
 easly->easily
 easyer->easier
@@ -13069,8 +13117,14 @@ evalueated->evaluated
 evaluete->evaluate
 evalueted->evaluated
 evalulates->evaluates
+evalutae->evaluate
+evalutaed->evaluated
+evalutaeing->evaluating
+evalutaes->evaluates
+evalutaing->evaluating
 evalutaion->evaluation
 evalutaions->evaluations
+evalutaor->evaluator
 evalutate->evaluate
 evalutated->evaluated
 evalutates->evaluates
@@ -14426,7 +14480,10 @@ exspense->expense
 exspensed->expensed
 exspenses->expenses
 exstacy->ecstasy
+exsted->existed
+exsting->existing
 exstream->extreme
+exsts->exists
 extact->extract, exact,
 extaction->extraction
 extactly->exactly
@@ -14844,6 +14901,8 @@ filterin->filtering
 filterring->filtering
 filtersing->filtering
 filterss->filters
+filtype->filetype
+filtypes->filetypes
 fime->fixme, time,
 fimilies->families
 fimrware->firmware
@@ -15551,6 +15610,7 @@ functionability->functionality
 functionable->functional, functioning,
 functionaility->functionality
 functionailty->functionality
+functionaily->functionality
 functionallities->functionalities
 functionallity->functionality
 functionaltiy->functionality
@@ -16748,6 +16808,7 @@ hypenating->hyphenating
 hypenation->hyphenation
 hypens->hyphens
 hyperboly->hyperbole
+Hyperldger->Hyperledger
 hypervior->hypervisor
 hypocracy->hypocrisy
 hypocrasy->hypocrisy
@@ -17216,6 +17277,7 @@ imporovement->improvement
 imporovements->improvements
 imporoves->improves
 imporoving->improving
+imporsts->imports
 importamt->important
 importat->important
 importd->imported
@@ -17272,7 +17334,17 @@ improovment->improvement
 improovments->improvements
 impropely->improperly
 improssible->impossible
+improt->import
+improtance->importance
 improtant->important
+improtantly->importantly
+improtation->importation
+improtations->importations
+improted->imported
+improter->importer
+improters->importers
+improting->importing
+improts->imports
 improvemen->improvement
 improvemenet->improvement
 improvemenets->improvements
@@ -17315,6 +17387,7 @@ inbed->embed
 inbedded->embedded
 inbetween->between, in between,
 inbility->inability
+inbulit->inbuilt, built-in,
 incalid->invalid
 incarcirated->incarcerated
 incase->in case
@@ -18008,6 +18081,12 @@ initialze->initialize
 initialzed->initialized
 initialzes->initializes
 initialzing->initializing
+initiatiate->initiate
+initiatiated->initiated
+initiatiater->initiator
+initiatiating->initiating
+initiatiator->initiator
+initiatiats->initiates
 initiialise->initialise
 initiialize->initialize
 initilialised->initialised
@@ -18349,6 +18428,8 @@ intallation->installation
 intallationpath->installationpath
 intallations->installations
 intalled->installed
+intalleing->installing
+intaller->installer
 intalles->installs
 intalling->installing
 intalls->installs
@@ -19018,12 +19099,13 @@ japanses->Japanese
 jaques->jacques
 javacript->javascript
 javascipt->javascript
-JavaSciript->JavaScript
+javasciript->javascript
 javascritp->javascript
 javascropt->javascript
 javasript->javascript
 javasrript->javascript
 jave->java, have,
+javescript->javascript
 javsscript->javascript
 jeapardy->jeopardy
 jeffies->jiffies
@@ -19037,6 +19119,7 @@ jenkns->Jenkins
 jepordize->jeopardize
 jewl->Jew, jewel,
 jewllery->jewellery
+jhondoe->johndoe
 jitterr->jitter
 jitterring->jittering
 jodpers->jodhpurs
@@ -19210,6 +19293,9 @@ laiter->later
 lamda->lambda
 lamdas->lambdas
 lanaguage->language
+lanaguge->language
+lanaguges->languages
+lanagugs->languages
 lanauge->language
 langage->language
 langauage->language
@@ -19296,6 +19382,10 @@ lavelled->leveled, labelled,
 lavelling->levelling, labelling,
 lavels->levels, labels,
 layed->laid
+layser->layer, laser,
+laysered->layered, lasered,
+laysering->layering, lasering,
+laysers->layers, lasers,
 lazer->laser
 laziliy->lazily
 lazyness->laziness
@@ -20401,6 +20491,8 @@ methodd->method
 methode->method
 methoden->methods
 methodss->methods
+methon->method
+methons->methods
 methos->methods, method,
 methot->method
 methots->methods
@@ -21009,6 +21101,7 @@ motoroloa->motorola
 moudle->module
 moudule->module
 mounth->month, mouth,
+mounths->months, mouths,
 mountian->mountain
 mountpiont->mountpoint
 mountpionts->mountpoints
@@ -22152,6 +22245,8 @@ oberflow->overflow
 oberflowed->overflowed
 oberflowing->overflowing
 oberflows->overflows
+oberv->observe
+obervant->observant
 obervation->observation
 obervations->observations
 oberve->observe
@@ -22160,6 +22255,7 @@ oberver->observer
 obervers->observers
 oberves->observes
 oberving->observing
+obervs->observes
 obeservation->observation
 obeservations->observations
 obeserve->observe
@@ -22514,6 +22610,7 @@ opeming->opening
 opems->opens
 openbrower->openbrowser
 openeing->opening
+openen->opened, opening,
 openend->opened
 openened->opened
 openening->opening
@@ -22559,6 +22656,13 @@ opions->options
 opitionally->optionally
 opiton->option
 opitons->options
+opject->object
+opjected->objected
+opjecteing->objecting
+opjecting->objecting
+opjective->objective
+opjectively->objectively
+opjects->objects
 opne->open
 opned->opened
 opnegroup->opengroup
@@ -23308,6 +23412,7 @@ paritals->partials
 paritial->partial
 parition->partition
 paritioning->partitioning
+paritions->partitions
 paritition->partition
 parititioned->partitioned
 parititioner->partitioner
@@ -24193,6 +24298,12 @@ porve->prove
 porved->proved
 porven->proven
 porves->proves
+porvide->provide
+porvided->provided
+porvider->provider
+porvides->provides
+porviding->providing
+porvids->provides
 porving->proving
 posative->positive
 posatives->positives
@@ -24713,6 +24824,7 @@ previosly->previously
 previosu->previous
 previosuly->previously
 previou->previous
+previouls->previous
 previoulsy->previously
 previouly->previously
 previouse->previous
@@ -25368,7 +25480,11 @@ provived->provided
 provives->provides
 proviving->providing
 provode->provide
+provoded->provided
+provoder->provider
+provodes->provides
 provoding->providing
+provods->provides
 provsioning->provisioning
 proximty->proximity
 proyect->project, protect,
@@ -28024,6 +28140,8 @@ reudctions->reductions
 reuest->request
 reuests->requests
 reulator->regulator
+reundant->redundant
+reundantly->redundantly
 reuplad->reupload
 reupladad->reupload, reuploaded,
 reupladed->reuploaded
@@ -28189,6 +28307,13 @@ roiginally->originally
 roiginals->originals
 roiginating->originating
 roigins->origins
+romote->remote
+romoted->remoted
+romoteing->remoting
+romotely->remotely
+romotes->remotes
+romoting->remoting
+romotly->remotely
 roomate->roommate
 ropeat->repeat
 rorated->rotated
@@ -28858,6 +28983,8 @@ separatelly->separately
 separater->separator
 separatley->separately
 separatly->separately
+separato->separator
+separatos->separators
 separatring->separating
 separed->separated
 separete->separate
@@ -28955,8 +29082,10 @@ seperatism->separatism
 seperatist->separatist
 seperatley->separately
 seperatly->separately
+seperato->separator
 seperator->separator
 seperators->separators
+seperatos->separators
 sepereate->separate
 sepereated->separated
 sepereates->separates
@@ -29032,6 +29161,10 @@ sequneces->sequences
 ser->set
 serach->search
 serached->searched
+seracher->searcher
+seraches->searches
+seraching->searching
+serachs->searches
 serailisation->serialisation
 serailise->serialise
 serailised->serialised
@@ -30327,6 +30460,14 @@ speparating->separating
 speparation->separation
 speparator->separator
 spepc->spec
+speperatd->separated
+speperate->separate
+speperateing->separating
+speperater->separator
+speperates->separates
+speperating->separating
+speperator->separator
+speperats->separates
 sperate->separate
 sperately->separately
 spermatozoan->spermatozoon
@@ -30570,6 +30711,8 @@ statments->statements
 statrt->start
 stattistic->statistic
 statubar->statusbar
+statuline->statusline
+statulines->statuslines
 statup->startup
 statuss->status
 statusses->statuses
@@ -33100,6 +33243,11 @@ troling->trolling
 trottle->throttle
 trottled->throttled, trotted,
 trottling->throttling, trotting,
+troubeshoot->troubleshoot
+troubeshooted->troubleshooted
+troubeshooter->troubleshooter
+troubeshooting->troubleshooting
+troubeshoots->troubleshoots
 troublehshoot->troubleshoot
 troublehshooting->troubleshooting
 troublshoot->troubleshoot
@@ -33150,6 +33298,7 @@ trustworthyness->trustworthiness
 trustworty->trustworthy
 trustwortyness->trustworthiness
 truw->true
+trye->true, try,
 tryed->tried
 tryes->tries
 tryig->trying
@@ -33258,6 +33407,10 @@ uesless->useless
 ueslessness->uselessness
 uest->quest
 uests->quests
+uffer->buffer
+uffered->buffered
+uffering->buffering
+uffers->buffers
 uggly->ugly
 ugglyness->ugliness
 uglyness->ugliness
@@ -35027,6 +35180,14 @@ warniong->warning
 warniongs->warnings
 warnkng->warning
 warnkngs->warnings
+warpped->wrapped, warped,
+warpper->wrapper, warper,
+warpping->wrapping, warping,
+warppred->wrapped, warped,
+warpprer->wrapper, warper,
+warppring->wrapping, warping,
+warpprs->wraps, warps,
+warpps->wraps, warps,
 warrent->warrant
 warrents->warrants
 warrn->warn
