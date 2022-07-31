@@ -137,6 +137,7 @@ absolue->absolute
 absoluely->absolutely
 absoluet->absolute
 absoluetly->absolutely
+absolule->absolute
 absolulte->absolute
 absolultely->absolutely
 absolune->absolute
@@ -329,6 +330,7 @@ accesor->accessor
 accesories->accessories
 accesors->accessors
 accesory->accessory
+accessability->accessibility
 accessable->accessible
 accessbile->accessible
 accessiable->accessible
@@ -1943,6 +1945,7 @@ annay->annoy, any,
 annayed->annoyed
 annaying->annoying
 annays->annoys, any,
+annd->and
 anniversery->anniversary
 annnounce->announce
 annoation->annotation
@@ -2764,6 +2767,7 @@ articat->artifact
 articats->artifacts
 artice->article
 articel->article
+articels->articles
 artifac->artifact
 artifacs->artifacts
 artifcat->artifact
@@ -3957,6 +3961,8 @@ bakc->back
 bakcrefs->backrefs
 bakend->backend, baked,
 bakends->backends
+bakground->background
+bakgrounds->backgrounds
 bakup->backup
 bakups->backups
 bakward->backward
@@ -4121,6 +4127,8 @@ behabviour->behaviour
 behaivior->behavior
 behaiviour->behaviour
 behaiviuor->behaviour
+behaivor->behavior
+behaivors->behaviors
 behavious->behaviour, behaviours,
 behavioutr->behaviour
 behaviuor->behaviour
@@ -7430,6 +7438,7 @@ connecstatus->connectstatus
 connectd->connected
 connecte->connected
 connectec->connected
+connectes->connects
 connectet->connected
 connectibity->connectivity
 connectino->connection
@@ -7448,6 +7457,7 @@ conneiction->connection
 connektors->connectors
 connetced->connected
 connetcion->connection
+conneted->connected
 Conneticut->Connecticut
 connetion->connection
 connetor->connector
@@ -10004,7 +10014,9 @@ derivitivs->derivatives
 derivtive->derivative
 derivtives->derivatives
 dermine->determine
+dermined->determined
 dermines->determines
+dermining->determining
 derogitory->derogatory
 derprecated->deprecated
 derrivatives->derivatives
@@ -10271,6 +10283,8 @@ destintation->destination
 destintations->destinations
 destionation->destination
 destionations->destinations
+destop->desktop
+destops->desktops
 destoried->destroyed
 destort->distort
 destory->destroy
@@ -11873,6 +11887,7 @@ drity->dirty
 driveing->driving
 drivr->driver
 drnik->drink
+drob->drop
 dropabel->droppable
 dropable->droppable
 droped->dropped
@@ -17358,6 +17373,8 @@ inconlusive->inconclusive
 inconsisent->inconsistent
 inconsisently->inconsistently
 inconsisntency->inconsistency
+inconsistance->inconsistency
+inconsistancies->inconsistencies
 inconsistancy->inconsistency
 inconsistant->inconsistent
 inconsisten->inconsistent
@@ -17798,7 +17815,12 @@ inherting->inheriting
 inhomogenous->inhomogeneous
 inialized->initialized
 iniate->initiate
+inidicate->indicate
+inidicated->indicated
 inidicates->indicates
+inidicating->indicating
+inidication->indication
+inidications->indications
 inidividual->individual
 inidvidual->individual
 inifinite->infinite
@@ -19995,6 +20017,8 @@ maximice->maximize
 maximim->maximum
 maximimum->maximum
 maximium->maximum
+maximnum->maximum
+maximnums->maximums
 maximun->maximum
 maxinum->maximum
 maxium->maximum
@@ -21939,6 +21963,7 @@ noteably->notably
 noteriety->notoriety
 notfication->notification
 notfications->notifications
+notfy->notify
 noth->north
 nothe->note, north,
 nothern->northern
@@ -22013,6 +22038,7 @@ numberal->numeral
 numberals->numerals
 numberic->numeric
 numberous->numerous
+numberss->numbers
 numbert->number
 numbet->number
 numbets->numbers
@@ -23607,6 +23633,8 @@ permisssions->permissions
 permited->permitted
 permition->permission
 permitions->permissions
+permmission->permission
+permmissions->permissions
 permormance->performance
 permssion->permission
 permssions->permissions
@@ -25584,6 +25612,7 @@ rasies->raises
 rasiing->raising
 rasing->raising
 rasons->reasons
+raspbery->raspberry
 raspoberry->raspberry
 rathar->rather
 rathern->rather
@@ -26430,6 +26459,7 @@ referene->reference
 referenece->reference
 refereneced->referenced
 refereneces->references
+referened->referenced
 referenence->reference
 referenenced->referenced
 referenences->references
@@ -27949,6 +27979,8 @@ reveiwes->reviews, reviewers,
 reveiwing->reviewing
 reveiws->reviews
 revelent->relevant
+revelution->revolution
+revelutions->revolutions
 reveokes->revokes
 rever->revert, refer, fever,
 reveral->reversal, referral,
@@ -29832,6 +29864,7 @@ specied->specified
 speciefied->specified
 specifactions->specifications
 specifc->specific
+specifcally->specifically
 specifcation->specification
 specifcations->specifications
 specifcied->specified
