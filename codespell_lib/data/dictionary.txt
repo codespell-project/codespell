@@ -9586,6 +9586,7 @@ definitian->definition
 definitiion->definition
 definitiions->definitions
 definitio->definition
+definitios->definitions
 definitivly->definitively
 definitly->definitely
 definitoin->definition
@@ -12218,6 +12219,7 @@ eleminates->eliminates
 eleminating->eliminating
 elemnets->elements
 elemnt->element
+elemntal->elemental
 elemnts->elements
 elemt->element
 elemtary->elementary
@@ -15506,6 +15508,7 @@ functionability->functionality
 functionable->functional, functioning,
 functionaility->functionality
 functionailty->functionality
+functionallities->functionalities
 functionallity->functionality
 functionaltiy->functionality
 functionalty->functionality
@@ -15763,6 +15766,8 @@ geogcountry->geocountry
 geographich->geographic
 geographicial->geographical
 geoio->geoip
+geomertic->geometric
+geomerties->geometries
 geomerty->geometry
 geomery->geometry
 geometites->geometries
@@ -18893,6 +18898,8 @@ itention->intention
 itentional->intentional
 itentionally->intentionally
 itentionaly->intentionally
+iteraction->interaction
+iteractions->interactions
 iteratable->iterable
 iterater->iterator
 iteratered->iterated
@@ -24770,6 +24777,7 @@ probabilty->probability
 probabily->probability, probably,
 probablay->probably
 probablistic->probabilistic
+probablity->probability
 probablly->probably
 probaby->probably
 probalby->probably
@@ -25039,6 +25047,7 @@ projctions->projections
 projctor->projector
 projctors->projectors
 projcts->projects
+projectd->projected
 projectio->projection
 projecttion->projection
 projet->project
@@ -25287,6 +25296,10 @@ provisiong->provisioning
 provisionging->provisioning
 provisiosn->provision
 provisonal->provisional
+provive->provide
+provived->provided
+provives->provides
+proviving->providing
 provode->provide
 provoding->providing
 provsioning->provisioning
@@ -26374,6 +26387,7 @@ redistirbuted->redistributed
 redistirbutes->redistributes
 redistirbuting->redistributing
 redistirbution->redistribution
+redistributeable->redistributable
 redistrubute->redistribute
 redistrubuted->redistributed
 redistrubution->redistribution
@@ -30291,6 +30305,8 @@ spports->supports
 spreaded->spread
 spreadhseet->spreadsheet
 spreadhseets->spreadsheets
+spreadsheat->spreadsheet
+spreadsheats->spreadsheets
 spreasheet->spreadsheet
 spreasheets->spreadsheets
 sprech->speech
@@ -30910,6 +30926,8 @@ substancial->substantial
 substantialy->substantially
 substantivly->substantively
 substatial->substantial
+substential->substantial
+substentially->substantially
 substition->substitution
 substitions->substitutions
 substititions->substitutions
@@ -31691,6 +31709,7 @@ tagggen->taggen
 tagnet->tangent
 tagnetial->tangential
 tagnets->tangents
+tagued->tagged
 tahn->than
 taht->that
 taks->task, tasks, takes,
@@ -32122,6 +32141,7 @@ theoreticaly->theoretically
 theorical->theoretical
 theorically->theoretically
 theoritical->theoretical
+theoritically->theoretically
 ther->there, their, the, other,
 therafter->thereafter
 therapudic->therapeutic
@@ -33309,6 +33329,7 @@ uncompreses->uncompresses
 uncompresing->uncompressing
 uncompresor->uncompressor
 uncompresors->uncompressors
+uncompressible->incompressible
 uncomprss->uncompress
 unconcious->unconscious
 unconciousness->unconsciousness
