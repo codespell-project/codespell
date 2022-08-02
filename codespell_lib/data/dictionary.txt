@@ -18898,8 +18898,8 @@ itention->intention
 itentional->intentional
 itentionally->intentionally
 itentionaly->intentionally
-iteraction->interaction
-iteractions->interactions
+iteraction->interaction, iteration,
+iteractions->interactions, iterations,
 iteratable->iterable
 iterater->iterator
 iteratered->iterated
@@ -24777,6 +24777,7 @@ probabilty->probability
 probabily->probability, probably,
 probablay->probably
 probablistic->probabilistic
+probablities->probabilities
 probablity->probability
 probablly->probably
 probaby->probably
