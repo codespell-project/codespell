@@ -5026,7 +5026,7 @@ callcain->callchain
 calld->called
 calle->called
 callef->called
-calles->calls, called,
+calles->calls, called, callers, caller,
 callibrate->calibrate
 callibrated->calibrated
 callibrates->calibrates
