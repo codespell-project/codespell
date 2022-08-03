@@ -86,6 +86,7 @@ abosulte->absolute
 abosultely->absolutely
 abosulute->absolute
 abosulutely->absolutely
+abot->about
 abotu->about
 abount->about
 abourt->abort, about,
@@ -2207,6 +2208,8 @@ appent->append
 apperance->appearance
 apperances->appearances
 apperant->apparent, aberrant,
+apperarance->appearance
+apperarances->appearances
 appereance->appearance
 appereances->appearances
 appered->appeared
@@ -2361,6 +2364,7 @@ appropration->appropriation
 approprations->appropriations
 appropriage->appropriate
 appropriatedly->appropriately
+appropriatee->appropriate
 appropriatly->appropriately
 appropriatness->appropriateness
 appropriete->appropriate
@@ -10950,6 +10954,9 @@ dilligence->diligence
 dilligent->diligent
 dilligently->diligently
 dillimport->dllimport
+dimansion->dimension
+dimansional->dimensional
+dimansions->dimensions
 dimemsions->dimensions
 dimenion->dimension, dominion,
 dimenional->dimensional
@@ -11363,6 +11370,7 @@ dispertion->dispersion
 dispicable->despicable
 dispite->despite
 displa->display
+displacemnt->displacement
 displacment->displacement
 displacments->displacements
 displayd->displayed
@@ -12344,6 +12352,9 @@ einstance->instance
 eisntance->instance
 eiter->either
 eith->with
+elaspe->elapse
+elasped->elapsed
+elasping->elapsing
 elction->election
 elctromagnetic->electromagnetic
 elease->release
@@ -14546,7 +14557,7 @@ expors->exports
 exportet->exported, exporter,
 expport->export
 exppressed->expressed
-expreses->express
+expreses->expresses, express,
 expresion->expression
 expresions->expressions
 expressable->expressible
@@ -18339,6 +18350,8 @@ inpacted->impacted
 inpacting->impacting
 inpacts->impacts
 inpeach->impeach
+inpection->inspection
+inpections->inspections
 inpending->impending
 inpenetrable->impenetrable
 inplementation->implementation
@@ -20864,6 +20877,8 @@ miniums->minimums
 miniumum->minimum
 minmal->minimal
 minmum->minimum
+minnimum->minimum
+minnimums->minimums
 minoosha->minutiae, minutia,
 minsitry->ministry
 minstries->ministries
@@ -22961,6 +22976,7 @@ optoin->option
 optoins->options
 optomism->optimism
 opton->option
+optonal->optional
 optons->options
 opulate->populate, opiate, opulent,
 opulates->populates, opiates,
@@ -23782,8 +23798,12 @@ peculure->peculiar
 pedestrain->pedestrian
 peding->pending
 pedning->pending
+pefer->prefer
+pefered->preferred
 peference->preference
 peferences->preferences
+peferred->preferred
+pefers->prefers
 peform->perform
 peformance->performance
 peformed->performed
@@ -27028,6 +27048,12 @@ reguarlize->regularize
 reguarlizer->regularizer
 reguarly->regularly
 reguator->regulator
+reguire->require
+reguired->required
+reguirement->requirement
+reguirements->requirements
+reguires->requires
+reguiring->requiring
 regulaer->regular
 regulaion->regulation
 regulamentation->regulation
@@ -32120,6 +32146,7 @@ tabeles->tables
 tabels->tables
 tabeview->tabview
 tabke->table
+tabl->table
 tablepsace->tablespace
 tablepsaces->tablespaces
 tablle->table
