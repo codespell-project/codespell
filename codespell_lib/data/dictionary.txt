@@ -3020,6 +3020,11 @@ assmumes->assumes
 assmuming->assuming
 assmumption->assumption
 assmumptions->assumptions
+assoaiate->associate
+assoaiated->associated
+assoaiates->associates
+assoaiation->association
+assoaiations->associations
 assocaited->associated
 assocate->associate
 assocated->associated
@@ -4008,6 +4013,7 @@ backwark->backward
 backwrad->backward
 bactracking->backtracking
 bacup->backup
+baed->based
 bage->bag
 bahaving->behaving
 bahavior->behavior
@@ -4806,6 +4812,8 @@ build-in->built-in
 builded->built
 buildpackge->buildpackage
 buildpackges->buildpackages
+builing->building
+builings->buildings
 buillt->built
 built-time->build-time
 builter->builder
@@ -5015,6 +5023,7 @@ calcuates->calculates
 calcuation->calculation
 calcuations->calculations
 calculaion->calculation
+calculataed->calculated
 calculatble->calculatable, calculable,
 calculater->calculator
 calculatted->calculated
@@ -8943,6 +8952,9 @@ curentfilter->currentfilter
 curently->currently
 curernt->current
 curerntly->currently
+curev->curve
+curevd->curved
+curevs->curves
 curiousities->curiosities
 curiousity's->curiosity's
 curiousity->curiosity
@@ -10220,6 +10232,9 @@ descover->discover
 descovered->discovered
 descovering->discovering
 descovery->discovery
+descrease->decrease
+descreased->decreased
+descreases->decreases
 descrementing->decrementing
 describ->describe
 describbed->described
@@ -11659,6 +11674,8 @@ distrubute->distribute
 distrubuted->distributed
 distrubution->distribution
 distrubutions->distributions
+distrubutor->distributor
+distrubutors->distributors
 distruction->destruction
 distructive->destructive
 distructor->destructor
@@ -12016,6 +12033,7 @@ downsterams->downstreams
 dows->does
 dowt->doubt
 doxgen->doxygen
+doygen->doxygen
 dpeends->depends
 dpendent->dependent
 dpkg-buildpackge->dpkg-buildpackage
@@ -12054,6 +12072,8 @@ driagrammed->diagrammed
 driagramming->diagramming
 driagrams->diagrams
 driectly->directly
+drier->dryer
+driers->dryers
 drity->dirty
 driveing->driving
 drivr->driver
@@ -17981,6 +18001,7 @@ infinate->infinite
 infinately->infinitely
 infininte->infinite
 infinit->infinite
+infinitie->infinity
 infinitly->infinitely
 infinte->infinite
 infintesimal->infinitesimal
@@ -19868,6 +19889,7 @@ lizens->license
 lizense->license
 lizensing->licensing
 lke->like
+llinear->linear
 lmits->limits
 loaader->loader
 loacal->local
@@ -23622,6 +23644,10 @@ parms->params, prams,
 parmter->parameter
 parmters->parameters
 parnoia->paranoia
+parnter->partner
+parnters->partners
+parntership->partnership
+parnterships->partnerships
 parrakeets->parakeets
 parralel->parallel
 parrallel->parallel
@@ -24314,6 +24340,7 @@ poing->point
 poinits->points
 poinnter->pointer
 poins->points
+pointeres->pointers
 pointes->points
 pointetr->pointer
 pointetrs->pointers
@@ -24771,6 +24798,7 @@ precent->percent, prescient,
 precentage->percentage
 precentile->percentile
 precentiles->percentiles
+precesion->precision, precession,
 precessing->processing
 precessor->predecessor, processor,
 precice->precise
@@ -27972,6 +28000,7 @@ resgisters->registers
 residental->residential
 resierfs->reiserfs
 resignement->resignment
+resilence->resilience
 resistable->resistible
 resistence->resistance
 resistent->resistant
@@ -29811,6 +29840,8 @@ simualtion->simulation
 simualtions->simulations
 simualtor->simulator
 simualtors->simulators
+simulaiton->simulation
+simulaitons->simulations
 simulantaneous->simultaneous
 simulantaneously->simultaneously
 simulataeous->simultaneous
@@ -30804,6 +30835,7 @@ srunken->shrunken
 srunkn->shrunken
 ssame->same
 ssee->see
+ssoaiating->associating
 ssome->some
 stabalization->stabilization
 stabilitation->stabilization
@@ -32798,6 +32830,9 @@ tigthly->tightly
 tihkn->think
 tihs->this
 tiitle->title
+tillt->tilt
+tillted->tilted
+tillts->tilts
 timdelta->timedelta
 timedlta->timedelta
 timeing->timing
@@ -33575,6 +33610,7 @@ typcast->typecast
 typcasting->typecasting
 typcasts->typecasts
 typcial->typical
+typcially->typically
 typdef->typedef, typed,
 typechek->typecheck
 typecheking->typechecking
@@ -35447,6 +35483,7 @@ wavelnes->wavelines
 wayoint->waypoint
 wayoints->waypoints
 wayword->wayward
+weahter->weather
 weant->want, wean,
 weaponary->weaponry
 weas->was
