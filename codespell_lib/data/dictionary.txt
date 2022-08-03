@@ -1071,7 +1071,7 @@ aforementionned->aforementioned
 aformentioned->aforementioned
 afterall->after all
 afterw->after
-afther->after
+afther->after, father,
 aftrer->after
 aftzer->after
 againnst->against
@@ -1243,6 +1243,7 @@ alegience->allegiance
 alegorical->allegorical
 alernate->alternate
 alernated->alternated
+alernately->alternately
 alernates->alternates
 alers->alerts
 aleviate->alleviate
@@ -2894,6 +2895,8 @@ asscoitaed->associated
 assebly->assembly
 assebmly->assembly
 assembe->assemble
+assembed->assembled
+assembeld->assembled
 assember->assembler
 assemblys->assemblies
 assemby->assembly
@@ -7349,6 +7352,8 @@ configuted->configured
 configutes->configures
 configutration->configuration
 confim->confirm
+confimation->confirmation
+confimations->confirmations
 confimed->confirmed
 confiming->confirming
 confimred->confirmed
@@ -12978,6 +12983,7 @@ equivivalent->equivalent
 equivlalent->equivalent
 equivlantly->equivalently
 equivlent->equivalent
+equivlently->equivalently
 equivlents->equivalents
 equivqlent->equivalent
 eqution->equation
@@ -13723,7 +13729,9 @@ exension->extension
 exensions->extensions
 exent->extent
 exentended->extended
+exepct->expect
 exepcted->expected
+exepcts->expects
 exepect->expect
 exepectation->expectation
 exepectations->expectations
@@ -16637,6 +16645,8 @@ highights->highlights
 highjack->hijack
 highligh->highlight
 highlighed->highlighted
+highligher->highlighter
+highlighers->highlighters
 highlighing->highlighting
 highlighs->highlights
 highlightin->highlighting
@@ -17952,6 +17962,7 @@ infrasctructure->infrastructure
 infrastrcuture->infrastructure
 infrastruture->infrastructure
 infrastucture->infrastructure
+infrastuctures->infrastructures
 infreqency->infrequency
 infreqentcy->infrequency
 infreqeuncy->infrequency
@@ -18700,7 +18711,14 @@ interopeable->interoperable
 interoprability->interoperability
 interperated->interpreted
 interpert->interpret
+interpertation->interpretation
+interpertations->interpretations
+interperted->interpreted
 interperter->interpreter
+interperters->interpreters
+interperting->interpreting
+interpertive->interpretive
+interperts->interprets
 interpet->interpret
 interpetation->interpretation
 interpeted->interpreted
@@ -20769,8 +20787,8 @@ mintor->mentor, monitor, minor,
 mintored->mentored, monitored,
 mintoring->mentoring, monitoring,
 mintors->mentors, monitors,
-minue->minute, menu,
-minues->minutes, menus,
+minue->minute, minus, menu,
+minues->minutes, minus, minuses, menus,
 minum->minimum
 minumum->minimum
 minuscle->minuscule
@@ -20839,6 +20857,10 @@ misile->missile
 mising->missing
 misintepret->misinterpret
 misintepreted->misinterpreted
+misinterpert->misinterpret
+misinterperted->misinterpreted
+misinterperting->misinterpreting
+misinterperts->misinterprets
 misinterprett->misinterpret
 misinterpretted->misinterpreted
 misisng->missing
