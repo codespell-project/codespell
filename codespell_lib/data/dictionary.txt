@@ -4198,6 +4198,7 @@ beghaviors->behaviors
 begiinning->beginning
 beginer->beginner
 begines->begins
+beging->begging, beginning, being,
 begining->beginning
 beginining->beginning
 begininings->beginnings
@@ -4570,6 +4571,7 @@ bostom->boston, bottom,
 bothe->both
 boths->both
 botifies->notifies
+bottem->bottom
 bottlenck->bottleneck
 bottlencks->bottlenecks
 bottlenect->bottleneck
@@ -5031,7 +5033,12 @@ calclation->calculation
 calcluate->calculate
 calcluated->calculated
 calcluates->calculates
+calcualate->calculate
+calcualated->calculated
+calcualates->calculates
+calcualating->calculating
 calcualation->calculation
+calcualations->calculations
 calcualte->calculate
 calcualted->calculated
 calcualter->calculator
@@ -5673,6 +5680,7 @@ characteres->characters
 characterisic->characteristic
 characterisically->characteristically
 characterisicly->characteristically
+characterisics->characteristics
 characterisitic->characteristic
 characterisitics->characteristics
 characteristicly->characteristically
@@ -7769,6 +7777,7 @@ constainted->constrained
 constaints->constraints
 constallation->constellation
 constallations->constellations
+constan->constant
 constanly->constantly
 constans->constants, constant, Constance,
 constantsm->constants
@@ -10372,6 +10381,7 @@ deserialsie->deserialise
 deserialsied->deserialised
 deserialsies->deserialises
 deserialsing->deserialising
+deserialze->deserialize
 deserialziation->deserialization
 deserialzie->deserialize
 deserialzied->deserialized
@@ -10909,6 +10919,7 @@ differens->difference
 differense->difference
 differentes->differences, difference, different,
 differentiatiations->differentiations
+differentiaton->differentiation
 differentl->differently
 differents->different, difference,
 differernt->different
@@ -11917,6 +11928,7 @@ donig->doing
 donn't->don't
 donn->done, don,
 donnot->do not
+donot->do not, donut,
 dont'->don't
 dont't->don't
 donwload->download
@@ -13239,6 +13251,7 @@ estabishd->established
 estabished->established
 estabishes->establishes
 estabishing->establishing
+establised->established
 establishs->establishes
 establising->establishing
 establsihed->established
@@ -13812,6 +13825,7 @@ executd->executed
 executding->executing
 executeable->executable
 executeables->executables
+executible->executable
 executign->executing
 executiong->execution, executing,
 executng->executing
@@ -17092,7 +17106,9 @@ idefinite->indefinite
 idel->idle
 idelogy->ideology
 idemopotent->idempotent
+idendified->identified
 idendifier->identifier
+idenfied->identified
 idenfifier->identifier
 idenfitifer->identifier
 idenfitifers->identifiers
@@ -17108,6 +17124,7 @@ identiable->identifiable
 idential->identical
 identicial->identical
 identidier->identifier
+identies->identities
 identifaction->identification
 identifcation->identification
 identifeir->identifier
@@ -25136,6 +25153,8 @@ pressentation->presentation
 pressented->presented
 pressre->pressure
 presss->press, presses,
+pressue->pressure
+pressues->pressures
 prestigeous->prestigious
 prestigous->prestigious
 presuambly->presumably
@@ -27145,6 +27164,7 @@ registrain->registration
 registraion->registration
 registraions->registrations
 registraration->registration
+registrated->registered
 registred->registered
 registrer->register
 registring->registering
@@ -27237,6 +27257,8 @@ reigstration->registration
 reimplemenet->reimplement
 reimplementaion->reimplementation
 reimplementaions->reimplementations
+reimplemention->reimplementation
+reimplementions->reimplementations
 reimplented->reimplemented
 reimplents->reimplements
 reimpliment->reimplement
@@ -28058,6 +28080,7 @@ requisits->requisites
 requre->require
 requred->required
 requrement->requirement
+requrements->requirements
 requres->requires
 requrest->request
 requrested->requested
@@ -28471,6 +28494,9 @@ retrive->retrieve
 retrived->retrieved
 retrives->retrieves
 retriving->retrieving
+retrn->return
+retrned->returned
+retrns->returns
 retrun->return
 retruned->returned
 retruns->returns
@@ -29258,6 +29284,7 @@ selet->select
 seleted->selected, deleted,
 seletion->selection, deletion,
 seletions->selections, deletions,
+selets->selects
 self-comparisson->self-comparison
 self-contianed->self-contained
 self-referencial->self-referential
@@ -29531,6 +29558,7 @@ sequenzes->sequences
 sequetial->sequential
 sequeze->squeeze, sequence,
 sequnce->sequence
+sequnced->sequenced
 sequnces->sequences
 sequnece->sequence
 sequneces->sequences
@@ -30279,6 +30307,7 @@ solum->solemn
 soluton->solution
 solutons->solutions
 solveable->solvable
+solveing->solving
 solwed->solved
 som->some
 someboby->somebody
@@ -31204,6 +31233,9 @@ streched->stretched
 streches->stretches
 streching->stretching
 strectch->stretch
+strecth->stretch
+strecthed->stretched
+strecthes->stretches
 streem->stream
 streemlining->streamlining
 stregth->strength
@@ -33779,6 +33811,7 @@ typographc->typographic
 typpe->type
 typped->typed
 typpes->types
+typpically->typically
 tyranies->tyrannies
 tyrany->tyranny
 tyring->trying
@@ -35103,6 +35136,7 @@ vecotrs->vectors
 vectices->vertices
 vectore->vector
 vectores->vectors
+vectorss->vectors
 vectror->vector
 vectrors->vectors
 vecvtor->vector
