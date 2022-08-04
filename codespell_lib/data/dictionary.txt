@@ -12627,6 +12627,7 @@ enforceing->enforcing
 enforcmement->enforcement
 enforcment->enforcement
 enfore->enforce
+enfored->enforced
 enfores->enforces
 enforncing->enforcing
 engagment->engagement
@@ -15664,12 +15665,14 @@ funtioning->functioning
 funtions->functions
 funvtion->function
 funvtional->functional
+funvtionalities->functionalities
 funvtionality->functionality
 funvtioned->functioned
 funvtioning->functioning
 funvtions->functions
 funxtion->function
 funxtional->functional
+funxtionalities->functionalities
 funxtionality->functionality
 funxtioned->functioned
 funxtioning->functioning
@@ -19085,7 +19088,10 @@ itnerprelation->interpretation
 itnerpret->interpret
 itnerpretation->interpretation
 itnerpretaton->interpretation
+itnerpreted->interpreted
 itnerpreter->interpreter
+itnerpreting->interpreting
+itnerprets->interprets
 itnervals->intervals
 itnroduced->introduced
 itsef->itself
@@ -23529,6 +23535,8 @@ partitoning->partitioning
 partitons->partitions
 partiula->particular
 partiular->particular
+partiularly->particularly
+partiulars->particulars
 pary->party, parry,
 pase->pass, pace, parse,
 pased->passed, parsed,
