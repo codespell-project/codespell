@@ -86,7 +86,7 @@ abosulte->absolute
 abosultely->absolutely
 abosulute->absolute
 abosulutely->absolutely
-abot->about
+abot->about, abort, a bot,
 abotu->about
 abount->about
 abourt->abort, about,
@@ -11371,6 +11371,7 @@ dispicable->despicable
 dispite->despite
 displa->display
 displacemnt->displacement
+displacemnts->displacements
 displacment->displacement
 displacments->displacements
 displayd->displayed
@@ -12354,6 +12355,7 @@ eiter->either
 eith->with
 elaspe->elapse
 elasped->elapsed
+elaspes->elapses
 elasping->elapsing
 elction->election
 elctromagnetic->electromagnetic
@@ -18350,6 +18352,7 @@ inpacted->impacted
 inpacting->impacting
 inpacts->impacts
 inpeach->impeach
+inpecting->inspecting
 inpection->inspection
 inpections->inspections
 inpending->impending
@@ -22977,6 +22980,7 @@ optoins->options
 optomism->optimism
 opton->option
 optonal->optional
+optonally->optionally
 optons->options
 opulate->populate, opiate, opulent,
 opulates->populates, opiates,
@@ -23799,10 +23803,15 @@ pedestrain->pedestrian
 peding->pending
 pedning->pending
 pefer->prefer
+peferable->preferable
+peferably->preferably
 pefered->preferred
 peference->preference
 peferences->preferences
+peferential->preferential
+peferentially->preferentially
 peferred->preferred
+peferring->preferring
 pefers->prefers
 peform->perform
 peformance->performance
