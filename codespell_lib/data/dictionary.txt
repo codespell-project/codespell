@@ -7436,6 +7436,8 @@ confugure->configure
 confugured->configured
 confugures->configures
 confuguring->configuring
+confuigration->configuration
+confuigrations->configurations
 confuing->confusing
 confunction->conjunction
 confunder->confounder
@@ -12712,6 +12714,9 @@ enforcable->enforceable
 enforceing->enforcing
 enforcmement->enforcement
 enforcment->enforcement
+enfore->enforce
+enfored->enforced
+enfores->enforces
 enforncing->enforcing
 engagment->engagement
 engeneer->engineer
@@ -15772,6 +15777,20 @@ funtionally->functionally
 funtionalty->functionality
 funtioning->functioning
 funtions->functions
+funvtion->function
+funvtional->functional
+funvtionalities->functionalities
+funvtionality->functionality
+funvtioned->functioned
+funvtioning->functioning
+funvtions->functions
+funxtion->function
+funxtional->functional
+funxtionalities->functionalities
+funxtionality->functionality
+funxtioned->functioned
+funxtioning->functioning
+funxtions->functions
 furether->further
 furethermore->furthermore
 furethest->furthest
@@ -17958,6 +17977,7 @@ infex->index
 infilitrate->infiltrate
 infilitrated->infiltrated
 infilitration->infiltration
+infinate->infinite
 infinately->infinitely
 infininte->infinite
 infinit->infinite
@@ -19209,6 +19229,14 @@ itnerest->interest
 itnerface->interface
 itnerfaces->interfaces
 itnernal->internal
+itnerprelation->interpretation
+itnerpret->interpret
+itnerpretation->interpretation
+itnerpretaton->interpretation
+itnerpreted->interpreted
+itnerpreter->interpreter
+itnerpreting->interpreting
+itnerprets->interprets
 itnervals->intervals
 itnroduced->introduced
 itsef->itself
@@ -23667,6 +23695,10 @@ partiton->partition
 partitoned->partitioned
 partitoning->partitioning
 partitons->partitions
+partiula->particular
+partiular->particular
+partiularly->particularly
+partiulars->particulars
 pary->party, parry,
 pase->pass, pace, parse,
 pased->passed, parsed,
@@ -24359,6 +24391,8 @@ polygond->polygons
 polygone->polygon
 polylon->polygon, pylon,
 polymorpic->polymorphic
+polynomal->polynomial
+polynomals->polynomials
 polyphonyic->polyphonic
 polypoygon->polypolygon
 polypoylgons->polypolygons
@@ -32633,6 +32667,7 @@ thnaks->thanks
 thne->then
 thnig->thing
 thnigs->things
+thoese->those, these,
 thonic->chthonic
 thoroughty->thoroughly
 thorugh->through, thorough,
