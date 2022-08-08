@@ -2280,6 +2280,12 @@ apporoximate->approximate
 apporoximated->approximated
 apporpiate->appropriate
 apporpriate->appropriate
+apporpriated->appropriated
+apporpriately->appropriately
+apporpriates->appropriates
+apporpriating->appropriating
+apporpriation->appropriation
+apporpriations->appropriations
 apporval->approval
 apporve->approve
 apporved->approved
@@ -15183,6 +15189,7 @@ finsished->finished
 finxed->fixed
 finxing->fixing
 fiorget->forget
+firday->Friday
 firdt->first, third,
 firends->friends
 firest->fires, first,
@@ -15740,7 +15747,9 @@ freze->freeze
 frezes->freezes
 frgament->fragment
 fricton->friction
+fridey->Friday
 frimware->firmware
+frisday->Friday
 frist->first
 frition->friction
 fritional->frictional
@@ -17157,6 +17166,8 @@ identifers->identifiers
 identificable->identifiable
 identifictaion->identification
 identifieer->identifier
+identifiler->identifier
+identifilers->identifiers
 identifing->identifying
 identifiy->identify
 identifyable->identifiable
@@ -19412,8 +19423,12 @@ itsself->itself
 itterate->iterate
 itterated->iterated
 itterates->iterates
+itterating->iterating
 itteration->iteration
 itterations->iterations
+itterative->iterative
+itterator->iterator
+itterators->iterators
 iunior->junior
 ivalid->invalid
 iverse->diverse, inverse,
@@ -21384,6 +21399,7 @@ momory->memory
 monarkey->monarchy
 monarkeys->monarchies
 monarkies->monarchies
+mondey->Monday, money, monkey,
 mone->mono, money, none,
 monestaries->monasteries
 monestary->monastery, monetary,
@@ -21403,6 +21419,7 @@ monotir->monitor
 monotired->monitored
 monotiring->monitoring
 monotirs->monitors
+monsday->Monday
 Monserrat->Montserrat
 monstrum->monster
 montains->mountains
@@ -23216,6 +23233,7 @@ oriantation->orientation
 oridinal->ordinal, original,
 oridinarily->ordinarily
 orieation->orientation
+orieations->orientations
 orienatate->orientate
 orienatated->orientated
 orienatation->orientation
@@ -25792,6 +25810,7 @@ propperly->properly
 propperties->properties
 propperty->property
 proprely->properly
+propreties->properties
 proprety->property
 proprietory->proprietary
 proproable->probable
@@ -27344,6 +27363,8 @@ reintepret->reinterpret
 reintepreted->reinterpreted
 reister->register
 reitterate->reiterate
+reitterated->reiterated
+reitterates->reiterates
 reivison->revision
 rejplace->replace
 reknown->renown
@@ -28294,6 +28315,7 @@ resourecs->resources
 resoured->resourced
 resoures->resources
 resourse->resource, recourse,
+resourses->resources
 resoution->resolution
 resoves->resolves
 resovle->resolve
@@ -28493,6 +28515,8 @@ retieving->retrieving
 retinew->retinue
 retireve->retrieve
 retireved->retrieved
+retirever->retriever
+retirevers->retrievers
 retireves->retrieves
 retireving->retrieving
 retirned->returned
@@ -28988,6 +29012,8 @@ sattellite->satellite
 sattellites->satellites
 satuaday->Saturday
 satuadays->Saturdays
+saturdey->Saturday
+satursday->Saturday
 satus->status
 saught->sought
 sav->save
@@ -31188,6 +31214,7 @@ statubar->statusbar
 statuline->statusline
 statulines->statuslines
 statup->startup
+staturday->Saturday
 statuss->status
 statusses->statuses
 statustics->statistics
@@ -31840,6 +31867,8 @@ sugests->suggests
 suggesst->suggest
 suggessted->suggested
 suggessting->suggesting
+suggesstion->suggestion
+suggesstions->suggestions
 suggessts->suggests
 suggestes->suggests
 suggestin->suggestion
@@ -31890,7 +31919,9 @@ sumulated->simulated
 sumulates->simulates
 sumulation->simulation
 sumulations->simulations
+sundey->Sunday
 sunglases->sunglasses
+sunsday->Sunday
 suntask->subtask
 suop->soup
 supeblock->superblock
@@ -33053,8 +33084,10 @@ thumbbnail->thumbnail
 thumbnal->thumbnail
 thumbnals->thumbnails
 thundebird->thunderbird
+thurday->Thursday
 thurough->thorough
 thurrow->thorough
+thursdey->Thursday
 thurver->further
 thw->the, thaw,
 thyat->that
@@ -33823,6 +33856,7 @@ trys->tries
 tryying->trying
 ttests->tests
 tthe->the
+tuesdey->Tuesday
 tufure->future
 tuhmbnail->thumbnail
 tunelled->tunnelled
@@ -33844,6 +33878,7 @@ turorials->tutorials
 turtorial->tutorial
 turtorials->tutorials
 Tuscon->Tucson
+tusday->Tuesday
 tust->trust
 tution->tuition
 tutoriel->tutorial
@@ -35772,8 +35807,11 @@ webaserver->web server, webserver,
 webbased->web-based
 webiste->website
 wedensday->Wednesday
+wednesay->Wednesday
 wednesdaay->Wednesday
-wednessday->wednesday
+wednesdey->Wednesday
+wednessday->Wednesday
+wednsday->Wednesday
 wege->wedge
 wehere->where
 wehn->when
@@ -35791,6 +35829,7 @@ well-reknown->well-renowned, well renown,
 well-reknowned->well-renowned, well renowned,
 wendesday->Wednesday
 wendsay->Wednesday
+wendsday->Wednesday
 wensday->Wednesday
 were'nt->weren't
 wereabouts->whereabouts
