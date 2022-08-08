@@ -2682,6 +2682,7 @@ arguents->arguments
 argumant->argument
 argumants->arguments
 argumeent->argument
+argumeents->arguments
 argumement->argument
 argumements->arguments
 argumemnt->argument
@@ -3221,7 +3222,13 @@ atachment->attachment
 atachments->attachments
 atack->attack
 atain->attain
+atatch->attach
+atatchable->attachable
+atatched->attached
+atatches->attaches
+atatching->attaching
 atatchment->attachment
+atatchments->attachments
 atempt->attempt
 atempting->attempting
 atempts->attempts
@@ -6377,6 +6384,10 @@ collapsable->collapsible
 collapted->collapsed, collated, collapse, coapted,
 collasion->collision
 collaspe->collapse
+collasped->collapsed
+collaspes->collapses
+collaspible->collapsible
+collasping->collapsing
 collationg->collation
 collborative->collaborative
 collecing->collecting
@@ -8026,6 +8037,7 @@ continus->continue, continuous,
 continuse->continues, continuous,
 continusly->continuously
 continuting->continuing
+contious->continuous
 contiously->continuously
 contiuation->continuation
 contiue->continue
@@ -8436,7 +8448,10 @@ corrct->correct
 corrdinate->coordinate
 corrdinated->coordinated
 corrdinates->coordinates
+corrdinating->coordinating
 corrdination->coordination
+corrdinator->coordinator
+corrdinators->coordinators
 correclty->correctly
 correcly->correctly
 correcpond->correspond
@@ -13054,6 +13069,7 @@ eqivalents->equivalents
 equalibrium->equilibrium
 equallity->equality
 equaly->equally
+equeation->equation
 equeations->equations
 equel->equal
 equelibrium->equilibrium
@@ -13168,6 +13184,10 @@ esimate->estimate
 esimated->estimated
 esimates->estimates
 esimating->estimating
+esimation->estimation
+esimations->estimations
+esimator->estimator
+esimators->estimators
 esists->exists
 esitmate->estimate
 esitmated->estimated
@@ -15689,6 +15709,8 @@ fricton->friction
 frimware->firmware
 frist->first
 frition->friction
+fritional->frictional
+fritions->frictions
 frmat->format
 frmo->from
 froce->force
@@ -18158,6 +18180,7 @@ inherriting->inheriting
 inherrits->inherits
 inhert->inherit
 inhertance->inheritance
+inhertances->inheritances
 inherted->inherited
 inhertiance->inheritance
 inhertig->inheriting, inherited,
@@ -18314,6 +18337,8 @@ initiatiating->initiating
 initiatiator->initiator
 initiatiats->initiates
 initiatie->initiate
+initiatied->initiated
+initiaties->initiates
 initiialise->initialise
 initiialize->initialize
 initilialised->initialised
@@ -19900,7 +19925,6 @@ linarly->linearly
 lincese->license
 lincesed->licensed
 linceses->licenses
-lineal->linear
 linearily->linearly, linearity,
 lineary->linearly
 linerisation->linearisation
@@ -22701,6 +22725,7 @@ ocurrence->occurrence
 ocurrences->occurrences
 ocurring->occurring
 ocurrred->occurred
+ocurrs->occurs
 oder->order, odor,
 odly->oddly
 ody->body
@@ -24334,7 +24359,6 @@ plaforms->platforms
 plaftorm->platform
 plaftorms->platforms
 plagarism->plagiarism
-plaint->plain, paint,
 plalform->platform
 plalforms->platforms
 planation->plantation
@@ -25030,6 +25054,7 @@ preppended->prepended
 preppendet->prepended
 preppent->prepend, preprent,
 preppented->prepended
+preprend->prepend
 preprended->prepended
 prepresent->represent
 prepresented->represented
@@ -27329,7 +27354,9 @@ releveant->relevant
 relevence->relevance
 relevent->relevant
 relfected->reflected
+relfecting->reflecting
 relfection->reflection
+relfections->reflections
 reliablity->reliability
 relie->rely, relies, really, relief,
 relient->reliant
