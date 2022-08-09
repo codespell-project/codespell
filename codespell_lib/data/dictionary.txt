@@ -3433,6 +3433,7 @@ auccess->success
 auccessive->successive
 audeince->audience
 audiance->audience
+augest->August
 augmnet->augment
 augmnetation->augmentation
 augmneted->augmented
@@ -6952,7 +6953,11 @@ compilaton->compilation
 compilatons->compilations
 compilcate->complicate
 compilcated->complicated
+compilcatedly->complicatedly
 compilcates->complicates
+compilcating->complicating
+compilcation->complication
+compilcations->complications
 compileable->compilable
 compiletime->compile time
 compiliant->compliant
@@ -7665,8 +7670,15 @@ consants->constants
 conscent->consent
 consciencious->conscientious
 consciouness->consciousness
+consctruct->construct
+consctructed->constructed
+consctructing->constructing
+consctruction->construction
+consctructions->constructions
+consctructive->constructive
 consctructor->constructor
 consctructors->constructors
+consctructs->constructs
 consdider->consider
 consdidered->considered
 consdiered->considered
@@ -7930,7 +7942,7 @@ containa->contain
 containe->contain, contained, container, contains,
 containees->containers
 containerr->container
-containes->contains, container,
+containes->contains, container, contained,
 containg->containing
 containging->containing
 containig->containing
@@ -11696,6 +11708,7 @@ distingiush->distinguish
 distingquished->distinguished
 distinguise->distinguish
 distinguised->distinguished
+distinguises->distinguishes
 distingush->distinguish
 distingushed->distinguished
 distingushes->distinguishes
@@ -12486,6 +12499,8 @@ elegible->eligible
 elelement->element
 elelements->elements
 elelment->element
+elelmental->elemental
+elelmentary->elementary
 elelments->elements
 elemant->element
 elemantary->elementary
@@ -15034,8 +15049,9 @@ featurs->features
 feautre->feature
 feauture->feature
 feautures->features
-febbruary->february
+febbruary->February
 febewary->February
+februar->February
 Febuary->February
 Feburary->February
 fecthing->fetching
@@ -15092,7 +15108,7 @@ fielname->filename
 fielneame->filename
 fiels->feels, fields, files, phials,
 fiercly->fiercely
-fiew->few
+fiew->few, flew,
 fifht->fifth, fight,
 fightings->fighting
 figurestyle->figurestyles
@@ -16848,6 +16864,7 @@ hierachy->hierarchy
 hierarachical->hierarchical
 hierarachy->hierarchy
 hierarchichal->hierarchical
+hierarchichally->hierarchically
 hierarchie->hierarchy
 hierarcical->hierarchical
 hierarcy->hierarchy
@@ -17540,7 +17557,11 @@ implenting->implementing
 implentors->implementers
 implents->implements
 implet->implement
+impletation->implementation
+impletations->implementations
 impleted->implemented
+impleter->implementer
+impleting->implementing
 impletment->implement
 implets->implements
 implicite->implicit, implicitly,
@@ -18797,7 +18818,8 @@ integarted->integrated
 integartes->integrates
 integated->integrated
 integates->integrates
-integation->integrate
+integating->integrating
+integation->integration
 integations->integrations
 integeral->integral
 integere->integer
@@ -20899,6 +20921,7 @@ metioned->mentioned
 metiphor->metaphor
 metiphors->metaphors
 metod->method
+metodologies->methodologies
 metodology->methodology
 metods->methods
 metrig->metric
@@ -22488,9 +22511,6 @@ nonte->note
 nontheless->nonetheless
 noo->no
 noone->no one
-nopjectification->objectifications
-nopjection->objection
-nopjections->objections
 noral->normal, moral,
 noralize->normalize
 noralized->normalized
@@ -22588,6 +22608,7 @@ nottaion->notation
 nottaions->notations
 notwhithstanding->notwithstanding
 noveau->nouveau
+novemeber->November
 Novemer->November
 Novermber->November
 nowadys->nowadays
@@ -23088,8 +23109,12 @@ opitons->options
 opject->object
 opjected->objected
 opjecteing->objecting
+opjectification->objectification
+opjectifications->objectifications
 opjectified->objectified
 opjecting->objecting
+opjection->objection
+opjections->objections
 opjective->objective
 opjectively->objectively
 opjects->objects
@@ -24419,7 +24444,7 @@ phyton->python
 phy_interace->phy_interface
 piblisher->publisher
 pice->piece
-pich->pitch, pick,
+pich->pitch, pick, pinch,
 picoseond->picosecond
 picoseonds->picoseconds
 pieceweise->piecewise, piece wise,
@@ -28935,8 +28960,8 @@ runting->runtime
 rurrent->current
 russina->Russian
 Russion->Russian
-rute->route, rule,
-rutes->routes, rules,
+rute->route, rule, brute,
+rutes->routes, rules, brutes,
 rwite->write
 rysnc->rsync
 rythem->rhythm
@@ -32207,7 +32232,7 @@ suuported->supported
 suuporting->supporting
 suuports->supports
 suvenear->souvenir
-suystem->sysmte
+suystem->system
 suystemic->systemic
 suystems->systems
 svae->save, suave,
@@ -32428,6 +32453,8 @@ sysems->systems
 sysmatically->systematically
 sysmbol->symbol
 sysmograph->seismograph
+sysmte->system
+sysmtes->systems
 systax->syntax
 syste->system
 systemwindiow->systemwindow, system window,
