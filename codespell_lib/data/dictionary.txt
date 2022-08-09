@@ -4354,6 +4354,7 @@ betweeness->betweenness
 betweent->between
 betwen->between
 betwene->between
+betwenn->between
 betwern->between
 betwween->between
 beucase->because
@@ -21362,6 +21363,8 @@ modfiying->modifying
 modfy->modify
 modfying->modifying
 modications->modifications
+modidfied->modified
+modidfy->modify
 modifable->modifiable
 modifaction->modification
 modifactions->modifications
@@ -22525,7 +22528,7 @@ noramalizes->normalizes
 noramalizing->normalizing
 noramals->normals
 noraml->normal
-nore->nor, note, more,
+nore->nor, note, more, node,
 norhern->northern
 norifications->notifications
 normailzation->normalization
@@ -24837,6 +24840,7 @@ positoin->position
 positoined->positioned
 positoins->positions
 positon->position, positron,
+positonal->positional
 positoned->positioned
 positoning->positioning
 positons->positions, positrons,
@@ -27120,6 +27124,8 @@ reenable->re-enable
 reenabled->re-enabled
 reename->rename
 reencode->re-encode
+reenfoce->reinforce
+reenfoced->reinforced
 reenforced->reinforced
 reesrved->reserved
 reesult->result
@@ -27871,6 +27877,8 @@ renegoziator->renegotiator
 renegoziators->renegotiators
 reneweal->renewal
 renewl->renewal
+renforce->reinforce
+renforced->reinforced
 rennovate->renovate
 rennovated->renovated
 rennovating->renovating
@@ -32700,6 +32708,7 @@ temorarily->temporarily
 temorary->temporary
 tempalte->template
 tempaltes->templates
+temparally->temporarily, temporally,
 tempararily->temporarily
 temparary->temporary
 temparate->temperate
@@ -33303,6 +33312,8 @@ Tolkein->Tolkien
 tollerable->tolerable
 tollerance->tolerance
 tollerances->tolerances
+tolorance->tolerance
+tolorant->tolerant
 tomatoe->tomato
 tomatos->tomatoes
 tommorow->tomorrow
