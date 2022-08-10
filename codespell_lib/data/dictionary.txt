@@ -772,6 +772,7 @@ adapater->adapter
 adapaters->adapters
 adapation->adaptation, adoption,
 adapations->adaptations, adoptions,
+adapative->adaptive
 adapd->adapt, adapted, adopt, adopted,
 adapdive->adaptive
 adaped->adapted, adapt, adopted, adopt,
@@ -3432,6 +3433,7 @@ auccess->success
 auccessive->successive
 audeince->audience
 audiance->audience
+augest->August
 augmnet->augment
 augmnetation->augmentation
 augmneted->augmented
@@ -4836,7 +4838,10 @@ buid->build
 buider->builder
 buiders->builders
 buiding->building
+buidl->build
 buidling->building
+buidlings->buildings
+buidls->builds
 buiild->build
 buik->bulk
 buil->build, built,
@@ -6948,6 +6953,11 @@ compilaton->compilation
 compilatons->compilations
 compilcate->complicate
 compilcated->complicated
+compilcatedly->complicatedly
+compilcates->complicates
+compilcating->complicating
+compilcation->complication
+compilcations->complications
 compileable->compilable
 compiletime->compile time
 compiliant->compliant
@@ -7660,6 +7670,15 @@ consants->constants
 conscent->consent
 consciencious->conscientious
 consciouness->consciousness
+consctruct->construct
+consctructed->constructed
+consctructing->constructing
+consctruction->construction
+consctructions->constructions
+consctructive->constructive
+consctructor->constructor
+consctructors->constructors
+consctructs->constructs
 consdider->consider
 consdidered->considered
 consdiered->considered
@@ -7923,7 +7942,7 @@ containa->contain
 containe->contain, contained, container, contains,
 containees->containers
 containerr->container
-containes->contains
+containes->contains, container, contained,
 containg->containing
 containging->containing
 containig->containing
@@ -10247,6 +10266,8 @@ derrived->derived
 dertermine->determine
 derterming->determining
 derth->dearth
+derviative->derivative
+derviatives->derivatives
 dervie->derive
 dervied->derived
 dervies->derives
@@ -11685,6 +11706,9 @@ distingishes->distinguishes
 distingishing->distinguishing
 distingiush->distinguish
 distingquished->distinguished
+distinguise->distinguish
+distinguised->distinguished
+distinguises->distinguishes
 distingush->distinguish
 distingushed->distinguished
 distingushes->distinguishes
@@ -12346,6 +12370,8 @@ ecxites->excites
 ecxiting->exciting
 ecxtracted->extracted
 EDCDIC->EBCDIC
+eddge->edge
+eddges->edges
 edditable->editable
 ede->edge
 ediable->editable
@@ -12472,6 +12498,10 @@ eleent->element
 elegible->eligible
 elelement->element
 elelements->elements
+elelment->element
+elelmental->elemental
+elelmentary->elementary
+elelments->elements
 elemant->element
 elemantary->elementary
 elemement->element
@@ -15019,7 +15049,9 @@ featurs->features
 feautre->feature
 feauture->feature
 feautures->features
+febbruary->February
 febewary->February
+februar->February
 Febuary->February
 Feburary->February
 fecthing->fetching
@@ -15076,6 +15108,7 @@ fielname->filename
 fielneame->filename
 fiels->feels, fields, files, phials,
 fiercly->fiercely
+fiew->few, flew,
 fifht->fifth, fight,
 fightings->fighting
 figurestyle->figurestyles
@@ -16830,6 +16863,8 @@ hierachry->hierarchy
 hierachy->hierarchy
 hierarachical->hierarchical
 hierarachy->hierarchy
+hierarchichal->hierarchical
+hierarchichally->hierarchically
 hierarchie->hierarchy
 hierarcical->hierarchical
 hierarcy->hierarchy
@@ -17521,7 +17556,14 @@ implented->implemented
 implenting->implementing
 implentors->implementers
 implents->implements
+implet->implement
+impletation->implementation
+impletations->implementations
+impleted->implemented
+impleter->implementer
+impleting->implementing
 impletment->implement
+implets->implements
 implicite->implicit, implicitly,
 implicitely->implicitly
 implicitley->implicitly
@@ -18397,7 +18439,12 @@ initiaties->initiates
 initiialise->initialise
 initiialize->initialize
 initilialised->initialised
+initilialization->initialization
+initilializations->initializations
+initilialize->initialize
 initilialized->initialized
+initilializes->initializes
+initilializing->initializing
 initiliase->initialise
 initiliased->initialised
 initiliases->initialises
@@ -18769,6 +18816,11 @@ inteference->interference
 integarte->integrate
 integarted->integrated
 integartes->integrates
+integated->integrated
+integates->integrates
+integating->integrating
+integation->integration
+integations->integrations
 integeral->integral
 integere->integer
 integreated->integrated
@@ -18846,10 +18898,10 @@ interaly->internally
 interanl->internal
 interanlly->internally
 interate->iterate
-interated->iterated, interacted,
-interates->iterates, interacts,
-interating->iterating, interacting,
-interation->iteration, interaction,
+interated->iterated, interacted, integrated,
+interates->iterates, interacts, integrated,
+interating->iterating, interacting, integrating,
+interation->iteration, interaction, integration,
 interational->international
 interations->iterations, interactions,
 interative->interactive
@@ -19993,6 +20045,8 @@ linearily->linearly, linearity,
 lineary->linearly
 linerisation->linearisation
 linerisations->linearisations
+lineseach->linesearch
+lineseaches->linesearches
 liness->lines
 linewdith->linewidth
 linez->lines
@@ -20519,6 +20573,8 @@ matix->matrix
 matrial->material
 matrials->materials
 matser->master
+mattern->pattern, matter,
+matterns->patterns, matters,
 matzch->match
 maube->maybe, mauve,
 mavrick->maverick
@@ -20707,7 +20763,7 @@ memebr->member
 memebrof->memberof
 memebrs->members
 memember->member, remember,
-memembers->members
+memembers->members, remembers,
 mememory->memory
 mememto->memento
 memeory->memory
@@ -20865,6 +20921,8 @@ metioned->mentioned
 metiphor->metaphor
 metiphors->metaphors
 metod->method
+metodologies->methodologies
+metodology->methodology
 metods->methods
 metrig->metric
 metrigal->metrical
@@ -22362,6 +22420,10 @@ nofified->notified
 nofity->notify
 nohypen->nohyphen
 noice->noise, nice, notice,
+nomber->number
+nombered->numbered
+nombering->numbering
+nombers->numbers
 nomimal->nominal
 non-alphanumunder->non-alphanumeric
 non-asii->non-ascii
@@ -22508,6 +22570,7 @@ nothigng->nothing
 nothihg->nothing
 nothin->nothing
 nothind->nothing
+nothink->nothing
 noticable->noticeable
 noticably->noticeably
 notication->notification
@@ -22545,6 +22608,7 @@ nottaion->notation
 nottaions->notations
 notwhithstanding->notwithstanding
 noveau->nouveau
+novemeber->November
 Novemer->November
 Novermber->November
 nowadys->nowadays
@@ -23045,7 +23109,12 @@ opitons->options
 opject->object
 opjected->objected
 opjecteing->objecting
+opjectification->objectification
+opjectifications->objectifications
+opjectified->objectified
 opjecting->objecting
+opjection->objection
+opjections->objections
 opjective->objective
 opjectively->objectively
 opjects->objects
@@ -23297,6 +23366,7 @@ orthagonalize->orthogonalize
 orthoganal->orthogonal
 orthoganalize->orthogonalize
 orthognal->orthogonal
+orthonormalizatin->orthonormalization
 osbscure->obscure
 osciallator->oscillator
 oscilate->oscillate
@@ -23440,6 +23510,7 @@ oveflowed->overflowed
 oveflowing->overflowing
 oveflows->overflows
 ovelap->overlap
+ovelapping->overlapping
 over-engeneer->over-engineer
 over-engeneering->over-engineering
 overaall->overall
@@ -24373,7 +24444,7 @@ phyton->python
 phy_interace->phy_interface
 piblisher->publisher
 pice->piece
-pich->pitch
+pich->pitch, pick, pinch,
 picoseond->picosecond
 picoseonds->picoseconds
 pieceweise->piecewise, piece wise,
@@ -28889,6 +28960,8 @@ runting->runtime
 rurrent->current
 russina->Russian
 Russion->Russian
+rute->route, rule, brute,
+rutes->routes, rules, brutes,
 rwite->write
 rysnc->rsync
 rythem->rhythm
@@ -32159,6 +32232,9 @@ suuported->supported
 suuporting->supporting
 suuports->supports
 suvenear->souvenir
+suystem->system
+suystemic->systemic
+suystems->systems
 svae->save, suave,
 svelt->svelte
 swaer->swear
@@ -32377,6 +32453,8 @@ sysems->systems
 sysmatically->systematically
 sysmbol->symbol
 sysmograph->seismograph
+sysmte->system
+sysmtes->systems
 systax->syntax
 syste->system
 systemwindiow->systemwindow, system window,
@@ -32928,6 +33006,7 @@ thesholds->thresholds
 thess->this, these,
 thest->test
 thether->tether, whether,
+thetraedral->tetrahedral
 thetrahedron->tetrahedron
 thets->that's, theta,
 thev->the
@@ -33736,6 +33815,8 @@ triancle->triangle
 triancles->triangles
 trianed->trained
 triange->triangle
+triangel->triangle
+triangels->triangles
 trianglular->triangular
 trianglutaion->triangulation
 triangulataion->triangulation
@@ -35198,6 +35279,7 @@ varialbles->variables
 varian->variant
 variantions->variations
 variatinos->variations
+variationnal->variational
 variatoin->variation
 variatoins->variations
 varibable->variable
@@ -35579,6 +35661,8 @@ volounteering->volunteering
 volounteers->volunteers
 volumne->volume
 volums->volume
+volxel->voxel
+volxels->voxels
 vonfig->config
 vould->would
 voxes->voxels, voxel,
