@@ -808,7 +808,7 @@ addeed->added
 addersses->addresses
 addert->assert
 adderted->asserted
-addes->adds, added, address,
+addes->adds, added, adders, address,
 addess->address
 addessed->addressed
 addesses->addresses
@@ -1650,7 +1650,7 @@ alocate->allocate
 alocated->allocated
 alocates->allocates
 alocating->allocating
-alocation->allocation
+alocation->allocation, a location,
 alocations->allocations
 alochol->alcohol
 alog->along
@@ -11709,8 +11709,9 @@ distiction->distinction
 distictly->distinctly
 distiguish->distinguish
 distiguished->distinguished
-distination->destination
-distinations->destinations
+distination->destination, distinction,
+distinations->destinations, distinctions,
+distinative->distinctive
 distingish->distinguish
 distingished->distinguished
 distingishes->distinguishes
@@ -18668,6 +18669,8 @@ insid->inside
 insidde->inside
 insiddes->insides
 insided->inside
+insignificat->insignificant
+insignificatly->insignificantly
 insigt->insight
 insigth->insight
 insigths->insights
@@ -20182,6 +20185,7 @@ loger->logger, lodger, longer,
 loggging->logging
 loggin->login, logging,
 logial->logical
+logially->logically
 logicaly->logically
 logictech->logitech
 logile->logfile
@@ -23707,7 +23711,7 @@ packaing->packaging
 packats->packets
 packe->packed, packet,
 packege->package
-packes->packs, packages,
+packes->packs, packed, packages,
 packge->package
 packged->packaged
 packgement->packaging
@@ -24664,6 +24668,8 @@ poited->pointed
 poiter->pointer
 poiters->pointers
 poiting->pointing
+poitless->pointless
+poitlessly->pointlessly
 poitn->point
 poitnd->pointed
 poitned->pointed
@@ -32963,6 +32969,7 @@ tetrahedrans->tetrahedrons
 tetry->retry
 tetss->tests
 tetxture->texture
+teusday->Tuesday
 texchnically->technically
 texline->textline
 textfrme->textframe
@@ -33984,6 +33991,7 @@ tryying->trying
 ttests->tests
 tthe->the
 tuesdey->Tuesday
+tuesdsy->Tuesday
 tufure->future
 tuhmbnail->thumbnail
 tunelled->tunnelled
