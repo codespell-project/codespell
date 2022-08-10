@@ -6949,6 +6949,7 @@ compenents->components, competence,
 compensantion->compensation
 compenstate->compensate
 compenstated->compensated
+compenstates->compensates
 competance->competence
 competant->competent
 competative->competitive
@@ -11782,6 +11783,7 @@ distribtuions->distributions
 distribtution->distributions
 distribue->distribute
 distribued->distributed
+distribues->distributes
 distribuion->distribution
 distribuite->distribute
 distribuited->distributed
@@ -13160,7 +13162,7 @@ eqaulizer->equalizer
 eqivalent->equivalent
 eqivalents->equivalents
 equalibrium->equilibrium
-equall->equal
+equall->equal, equally,
 equallity->equality
 equalls->equals
 equaly->equally
@@ -17411,6 +17413,7 @@ immeadiately->immediately
 immedaite->immediate
 immedate->immediate
 immedately->immediately
+immedeate->immediate
 immedeately->immediately
 immedially->immediately
 immedialty->immediately
@@ -22950,7 +22953,7 @@ ofrom->from
 ofsetted->offsetted
 ofsset->offset
 oftenly->often
-ofter->often, after,
+ofter->often, offer, after,
 ofthe->of the
 ofthen->often, of then,
 oging->going, ogling,
@@ -32916,6 +32919,7 @@ teridactyl->pterodactyl
 terific->terrific
 terimnate->terminate
 termial->terminal
+termials->terminals
 termianted->terminated
 terminater->terminator
 terminaters->terminators
@@ -34710,8 +34714,9 @@ unpacke->unpacked
 unpacket->unpacked
 unparseable->unparsable
 unpertubated->unperturbed
+unperturb->unperturbed
 unperturbated->unperturbed
-unperturbe->unperturb, unperturbed,
+unperturbe->unperturbed
 unplease->displease
 unpleasent->unpleasant
 unplesant->unpleasant
