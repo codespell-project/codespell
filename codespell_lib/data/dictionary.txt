@@ -814,7 +814,7 @@ addeed->added
 addersses->addresses
 addert->assert
 adderted->asserted
-addes->adds, added,
+addes->adds, added, adders, address,
 addess->address
 addessed->addressed
 addesses->addresses
@@ -1656,7 +1656,8 @@ alocate->allocate
 alocated->allocated
 alocates->allocates
 alocating->allocating
-alocation->allocation
+alocation->allocation, a location,
+alocations->allocations
 alochol->alcohol
 alog->along
 alogirhtm->algorithm
@@ -4248,6 +4249,7 @@ behaivor->behavior
 behaivors->behaviors
 behavious->behaviour, behaviours,
 behavioutr->behaviour
+behaviro->behavior
 behaviuor->behaviour
 behavoir->behavior
 behavoirs->behaviors
@@ -9786,6 +9788,7 @@ deferal->deferral
 deferals->deferrals
 deferance->deference
 defered->deferred
+deferencing->dereferencing
 deferentiating->differentiating
 defering->deferring
 deferreal->deferral
@@ -10127,8 +10130,11 @@ dependding->depending
 dependecies->dependencies
 dependecy->dependency
 dependecys->dependencies
+dependedn->dependent
 dependees->dependencies
 dependeing->depending
+dependenceis->dependencies
+dependencey->dependency
 dependencie->dependency
 dependencied->dependency
 dependenciens->dependencies
@@ -10555,6 +10561,8 @@ destiantion->destination
 destiantions->destinations
 destiation->destination
 destiations->destinations
+destinaion->destination
+destinaions->destinations
 destinaiton->destination
 destinaitons->destinations
 destinarion->destination
@@ -10717,6 +10725,7 @@ devation->deviation
 devce->device
 devcent->decent
 devcie->device
+devcies->devices
 develoers->developers
 develoment->development
 develoments->developments
@@ -11727,6 +11736,9 @@ distiction->distinction
 distictly->distinctly
 distiguish->distinguish
 distiguished->distinguished
+distination->destination, distinction,
+distinations->destinations, distinctions,
+distinative->distinctive
 distingish->distinguish
 distingished->distinguished
 distingishes->distinguishes
@@ -14095,6 +14107,12 @@ exparation->expiration
 expasion->expansion
 expatriot->expatriate
 expception->exception
+expcet->expect, except,
+expcetation->expectation
+expcetations->expectations
+expceted->expected
+expceting->expecting
+expcets->expects
 expct->expect
 expcted->expected
 expctedly->expectedly
@@ -18332,7 +18350,12 @@ inifinity->infinity
 inifinte->infinite
 inifite->infinite
 iniitial->initial
+iniitialization->initialization
+iniitializations->initializations
+iniitialize->initialize
 iniitialized->initialized
+iniitializes->initializes
+iniitializing->initializing
 inintialisation->initialisation
 inintialization->initialization
 inisialise->initialise
@@ -18681,6 +18704,8 @@ insid->inside
 insidde->inside
 insiddes->insides
 insided->inside
+insignificat->insignificant
+insignificatly->insignificantly
 insigt->insight
 insigth->insight
 insigths->insights
@@ -20204,6 +20229,8 @@ loged->logged, lodged, longed,
 loger->logger, lodger, longer,
 loggging->logging
 loggin->login, logging,
+logial->logical
+logially->logically
 logicaly->logically
 logictech->logitech
 logile->logfile
@@ -23737,6 +23764,7 @@ packaing->packaging
 packats->packets
 packe->packed, packet,
 packege->package
+packes->packs, packed, packages,
 packge->package
 packged->packaged
 packgement->packaging
@@ -24689,11 +24717,20 @@ poistively->positively
 poistives->positives
 poistivly->positively
 poit->point
+poitd->pointed
+poited->pointed
 poiter->pointer
 poiters->pointers
+poiting->pointing
+poitless->pointless
+poitlessly->pointlessly
 poitn->point
+poitnd->pointed
+poitned->pointed
 poitner->pointer
+poitnes->points
 poitning->pointing
+poitns->points
 poits->points
 poiunter->pointer
 poject->project
@@ -28240,6 +28277,8 @@ reqirements->requirements
 reqires->requires
 reqiring->requiring
 reqiure->require
+reqrite->rewrite
+reqrites->rewrites
 requencies->frequencies
 requency->frequency
 requeried->required
@@ -28440,6 +28479,7 @@ resoultion->resolution
 resoultions->resolutions
 resourcd->resourced, resource,
 resourcde->resourced, resource,
+resourcees->resources
 resourceype->resourcetype
 resourcs->resources, resource,
 resourcse->resources, resource,
@@ -28874,6 +28914,7 @@ ridiculus->ridiculous
 rigeur->rigueur, rigour, rigor,
 righ->right
 righht->right
+righmost->rightmost
 rightt->right
 rigourous->rigorous
 rigt->right
@@ -30150,6 +30191,8 @@ signifcant->significant
 signifcantly->significantly
 signifficant->significant
 significanly->significantly
+significat->significant
+significatly->significantly
 significently->significantly
 signifigant->significant
 signifigantly->significantly
@@ -30620,6 +30663,8 @@ sourc->source
 sourcd->sourced, source,
 sourcde->sourced, source,
 sourcedrectory->sourcedirectory
+sourcee->source
+sourcees->sources
 sourcs->sources, source,
 sourcse->sources, source,
 sourct->source
@@ -32996,6 +33041,7 @@ tetrahedrans->tetrahedrons
 tetry->retry
 tetss->tests
 tetxture->texture
+teusday->Tuesday
 texchnically->technically
 texline->textline
 textfrme->textframe
@@ -34017,6 +34063,7 @@ tryying->trying
 ttests->tests
 tthe->the
 tuesdey->Tuesday
+tuesdsy->Tuesday
 tufure->future
 tuhmbnail->thumbnail
 tunelled->tunnelled
@@ -34039,6 +34086,7 @@ turtorial->tutorial
 turtorials->tutorials
 Tuscon->Tucson
 tusday->Tuesday
+tuseday->Tuesday
 tust->trust
 tution->tuition
 tutoriel->tutorial
