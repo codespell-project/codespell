@@ -707,6 +707,7 @@ actiavtions->activations
 actiavtor->activator
 actibity->activity
 acticate->activate
+actice->active
 actine->active
 actiual->actual
 activ->active
@@ -2133,6 +2134,10 @@ aparent->apparent
 aparently->apparently
 aparment->apartment
 apdated->updated
+apeal->appeal
+apealed->appealed
+apealing->appealing
+apeals->appeals
 apear->appear
 apeared->appeared
 apears->appears
@@ -4198,6 +4203,7 @@ becuse->because
 becxause->because
 beding->bedding, begging,
 bedore->before
+beed->been, bead, beet, beer, bees,
 beeing->being, been,
 beeings->beings
 beetween->between
@@ -6436,6 +6442,8 @@ collborative->collaborative
 collecing->collecting
 collecion->collection
 collecions->collections
+colleciton->collection
+collecitons->collections
 collectin->collection
 collecton->collection
 collectons->collections
@@ -7624,8 +7632,10 @@ connectec->connected
 connectes->connects
 connectet->connected
 connectibity->connectivity
+connectin->connecting, connection,
 connectino->connection
 connectinos->connections
+connectins->connections
 connectiom->connection
 connectioms->connections
 connectiona->connection
@@ -10354,6 +10364,7 @@ descreased->decreased
 descreases->decreases
 descreasing->decreasing
 descrementing->decrementing
+descrete->discrete
 describ->describe
 describbed->described
 describibg->describing
@@ -10987,6 +10998,7 @@ differenciated->differentiated
 differenciates->differentiates
 differenciating->differentiating
 differenciation->differentiation
+differencies->differences
 differenct->different
 differend->different
 differene->difference
@@ -15288,7 +15300,9 @@ firmwear->firmware
 firmwqre->firmware
 firmwre->firmware
 firmwware->firmware
+firsname->firstname, first name,
 firsr->first
+firstest->firsttest, first test,
 firsth->first
 firt->first, flirt,
 firts->first, flirts,
@@ -16270,6 +16284,7 @@ gernerator->generator
 gernerators->generators
 gerneric->generic
 gernerics->generics
+ges->goes, guess,
 gess->guess
 get's->gets
 get;s->gets
@@ -17257,6 +17272,7 @@ identifilers->identifiers
 identifing->identifying
 identifiy->identify
 identifyable->identifiable
+identifyed->identified
 identiy->identify, identity,
 identtation->indentation
 identties->identities
@@ -20894,7 +20910,7 @@ menue->menu
 menues->menus
 menutitems->menuitems
 meny->menu, many,
-meory->memory
+meory->memory, Maori,
 meraj->mirage
 merajes->mirages
 meranda->veranda, Miranda,
@@ -30644,6 +30660,7 @@ soource->source
 sophicated->sophisticated
 sophisicated->sophisticated
 sophisitcated->sophisticated
+sophisticted->sophisticated
 sophmore->sophomore
 sorce->source, force,
 sorceror->sorcerer
@@ -31941,9 +31958,11 @@ succedes->succeeds
 succedfully->successfully
 succeding->succeeding
 succeds->succeeds
+succee->succeed
+succeedde->succeeded
 succeedes->succeeds
 succeeed->succeed, succeeded,
-succees->success
+succees->success, succeeds,
 succeess->success
 succeesses->successes
 succes->success
@@ -32192,6 +32211,7 @@ suppoprted->supported
 suppor->support
 suppored->supported
 supporession->suppression
+supporing->supporting
 supportd->supported
 supporte->supported, supporter,
 supportes->supports
@@ -34979,9 +34999,17 @@ unsucccessful->unsuccessful
 unsucccessfully->unsuccessfully
 unsucccessul->unsuccessful
 unsucccessully->unsuccessfully
+unsuccee->unsuccessful
+unsucceed->unsuccessful
+unsucceedde->unsuccessful
+unsucceeded->unsuccessful
+unsucceeds->unsuccessful
+unsucceeed->unsuccessful
+unsuccees->unsuccessful
 unsuccesful->unsuccessful
 unsuccesfull->unsuccessful
 unsuccesfully->unsuccessfully
+unsuccess->unsuccessful
 unsuccessfull->unsuccessful
 unsuccessfullly->unsuccessfully
 unsucesful->unsuccessful
@@ -35310,6 +35338,7 @@ utilitisation->utilisation
 utilitise->utilise
 utilitises->utilises
 utilitising->utilising
+utilitiy->utility
 utilitization->utilization
 utilitize->utilize
 utilitizes->utilizes
