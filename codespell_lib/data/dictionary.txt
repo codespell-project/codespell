@@ -1628,7 +1628,7 @@ alloted->allotted
 alloud->aloud, allowed,
 allowd->allowed, allow, allows,
 allowe->allowed, allow, allows,
-allowes->allows
+allowes->allows, allowed,
 allpication->application
 allready->already, all ready,
 allredy->already, all ready,
@@ -4257,6 +4257,7 @@ behaiviuor->behaviour
 behaivor->behavior
 behaivors->behaviors
 behaivour->behaviour
+behaivoural->behavioural
 behaivours->behaviours
 behavious->behaviour, behaviours,
 behavioutr->behaviour
@@ -6011,6 +6012,8 @@ ciphr->cipher
 ciphrs->ciphers
 cips->chips
 circluar->circular
+circluarly->circularly
+circluars->circulars
 circomvent->circumvent
 circomvented->circumvented
 circomvents->circumvents
@@ -6866,7 +6869,8 @@ compareable->comparable
 compareing->comparing
 compareison->comparison
 compareisons->comparisons
-comparement->comparing, comparison,
+comparement->compartment, comparing, comparison,
+comparements->compartments
 compariable->comparable
 comparied->compared
 comparign->comparing
@@ -11208,7 +11212,9 @@ direcdory->directory
 direcdorys->directories
 direcion->direction
 direcions->directions
+direciton->direction
 direcitonal->directional
+direcitons->directions
 direclty->directly
 direcly->directly
 direcories->directories
@@ -13044,6 +13050,7 @@ enterie->entry
 enteries->entries
 enterily->entirely
 enterprice->enterprise
+enterprices->enterprises
 entery->entry
 enteties->entities
 entety->entity
@@ -14847,7 +14854,6 @@ extedns->extends
 extemely->extremely
 exten->extent
 extenal->external
-extendability->extendibility
 extendded->extended
 extendet->extended
 extendsions->extensions
@@ -18823,6 +18829,8 @@ inster->insert
 insterad->instead
 insterrupts->interrupts
 instersction->intersection
+instersctions->intersections
+instersectioned->intersection
 instert->insert
 insterted->inserted
 instertion->insertion
@@ -19037,7 +19045,7 @@ interect->intersect, interact,
 interected->intersected, interacted,
 interecting->intersecting, interacting,
 interection->intersection, interaction,
-interectioned->instersectioned
+interectioned->intersection, interaction,
 interections->intersections, interactions,
 interects->intersects, interacts,
 intered->interred, interned,
@@ -22273,10 +22281,12 @@ neiborhood->neighborhood
 neiborhoods->neighborhoods
 neibors->neighbors
 neice->niece, nice,
+neigbhor->neighbor
 neigbhorhood->neighborhood
 neigbhorhoods->neighborhoods
-neigbhour->neighbor
-neigbhours->neighbors
+neigbhors->neighbors
+neigbhour->neighbour
+neigbhours->neighbours
 neigbor->neighbor
 neigborhood->neighborhood
 neigboring->neighboring
@@ -23521,6 +23531,7 @@ orthoganalize->orthogonalize
 orthognal->orthogonal
 orthonormalizatin->orthonormalization
 ortogonal->orthogonal
+ortogonality->orthogonality
 osbscure->obscure
 osciallator->oscillator
 oscilate->oscillate
@@ -30071,6 +30082,7 @@ severly->severely
 sevice->service
 sevirity->severity
 sevral->several
+sevrally->severally
 sevrity->severity
 sewdonim->pseudonym
 sewdonims->pseudonyms
@@ -32858,7 +32870,7 @@ techer->teacher
 techers->teachers
 teches->teaches
 techical->technical
-techically->technically
+techically->technically, tactically,
 techician->technician
 techicians->technicians
 techincal->technical
@@ -33809,8 +33821,10 @@ transisitions->transitions
 transistion->transition
 transistioning->transitioning
 transistions->transitions
+transitionnal->transitional
 transitionned->transitioned
 transitionning->transitioning
+transitionns->transitions
 transiton->transition
 transitoning->transitioning
 transitons->transitions
@@ -33848,6 +33862,8 @@ transofrm->transform
 transofrmation->transformation
 transofrmations->transformations
 transofrmed->transformed
+transofrmer->transformer
+transofrmers->transformers
 transofrming->transforming
 transofrms->transforms
 transolate->translate
@@ -36479,8 +36495,6 @@ workes->works
 workfow->workflow
 workfows->workflows
 workign->working
-workled->worklet, worked,
-workleds->worklets, worked,
 worklfow->workflow
 worklfows->workflows
 workpsace->workspace
