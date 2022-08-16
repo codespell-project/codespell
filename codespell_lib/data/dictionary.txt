@@ -12859,6 +12859,7 @@ encosure->enclosure
 encounted->encountered, encounter,
 encounterd->encountered
 encountre->encounter, encountered,
+encountres->encounters
 encouraing->encouraging
 encouter->encounter
 encoutered->encountered
@@ -20767,7 +20768,14 @@ mcroscopes->microscopes
 mcroscopic->microscopic
 mcroscopies->microscopies
 mcroscopy->microscopy
+mdification->modification
+mdifications->modifications
+mdified->modified
+mdifier->modifier
+mdifiers->modifiers
+mdifies->modifies
 mdify->modify
+mdifying->modifying
 mdoe->mode, doe,
 mdoel->model
 mdoeled->modeled
@@ -24318,6 +24326,7 @@ percievabley->perceivably
 percievably->perceivably
 percieve->perceive
 percieved->perceived
+percise->precise
 percisely->precisely
 percision->precision
 perenially->perennially
@@ -24425,8 +24434,12 @@ perfomrs->performs
 perfoms->performs
 perfoom->perfume, perform,
 perfor->perform
+perforam->perform
+perforamed->performed
+perforaming->performing
 perforamnce->performance
 perforamnces->performances
+perforams->performs
 perford->performed
 perforemd->performed
 performace->performance
@@ -35619,6 +35632,7 @@ varoius->various
 varous->various
 varously->variously
 varriance->variance
+varriances->variances
 vartical->vertical
 vartically->vertically
 vas->was
@@ -36574,7 +36588,8 @@ wouuld->would
 wqs->was
 wraapp->wrap
 wraapped->wrapped
-wraapper->Wrapper
+wraapper->wrapper
+wraappers->wrappers
 wraapping->wrapping
 wraapps->wraps
 wraning->warning
