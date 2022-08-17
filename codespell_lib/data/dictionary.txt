@@ -5902,6 +5902,7 @@ chiledren->children
 chilren->children
 chineese->Chinese
 chinense->Chinese
+chinesse->Chinese
 chiop->chip, chop,
 chiper->cipher, chipper, chimer,
 chipers->ciphers, chippers, chimers,
@@ -9455,6 +9456,10 @@ deatch->detach
 deatched->detached
 deatches->detaches
 deatching->detaching
+deatil->detail
+deatiled->detailed
+deatiling->detailing
+deatils->details
 deativate->deactivate
 deativated->deactivated
 deativates->deactivates
@@ -10738,6 +10743,10 @@ detetion->detection, deletion,
 detetions->detections, deletions,
 detetmine->determine
 detets->detects, deletes,
+detial->detail
+detialed->detailed
+detialing->detailing
+detials->details
 detination->destination
 detinations->destinations
 detremental->detrimental
@@ -10992,6 +11001,8 @@ dielectircs->dielectrics
 diemsion->dimension
 dieties->deities
 diety->deity
+diference->difference
+diferences->differences
 diferent->different
 diferentiate->differentiate
 diferentiated->differentiated
@@ -12847,6 +12858,8 @@ encosings->enclosings, encodings,
 encosure->enclosure
 encounted->encountered, encounter,
 encounterd->encountered
+encountre->encounter, encountered,
+encountres->encounters
 encouraing->encouraging
 encouter->encounter
 encoutered->encountered
@@ -18189,6 +18202,7 @@ indivdual->individual
 indivdually->individually
 indivdualy->individually
 individal->individual
+individally->individually
 individals->individuals
 individaul->individual
 individaully->individually
@@ -19971,6 +19985,8 @@ legact->legacy
 legalimate->legitimate
 legasy->legacy
 legel->legal
+leggacies->legacies
+leggacy->legacy
 leght->length
 leghts->lengths
 legitamate->legitimate
@@ -20752,6 +20768,14 @@ mcroscopes->microscopes
 mcroscopic->microscopic
 mcroscopies->microscopies
 mcroscopy->microscopy
+mdification->modification
+mdifications->modifications
+mdified->modified
+mdifier->modifier
+mdifiers->modifiers
+mdifies->modifies
+mdify->modify
+mdifying->modifying
 mdoe->mode, doe,
 mdoel->model
 mdoeled->modeled
@@ -24302,6 +24326,8 @@ percievabley->perceivably
 percievably->perceivably
 percieve->perceive
 percieved->perceived
+percise->precise
+percisely->precisely
 percision->precision
 perenially->perennially
 peresent->present, presents, presence, percent,
@@ -24408,6 +24434,12 @@ perfomrs->performs
 perfoms->performs
 perfoom->perfume, perform,
 perfor->perform
+perforam->perform
+perforamed->performed
+perforaming->performing
+perforamnce->performance
+perforamnces->performances
+perforams->performs
 perford->performed
 perforemd->performed
 performace->performance
@@ -25570,6 +25602,8 @@ printting->printing
 prioirties->priorities
 prioirty->priority
 prioritiy->priority
+priorization->prioritization
+priorizations->prioritizations
 priorty->priority
 priot->prior
 priotise->prioritise
@@ -26002,6 +26036,8 @@ propators->propagators
 propbably->probably
 propely->properly
 propeoperties->properties
+propereties->properties
+properety->property
 properies->properties
 properites->properties
 properities->properties
@@ -35595,6 +35631,8 @@ varns->warns
 varoius->various
 varous->various
 varously->variously
+varriance->variance
+varriances->variances
 vartical->vertical
 vartically->vertically
 vas->was
@@ -36548,6 +36586,12 @@ wounderful->wonderful
 wouold->would
 wouuld->would
 wqs->was
+wraapp->wrap
+wraapped->wrapped
+wraapper->wrapper
+wraappers->wrappers
+wraapping->wrapping
+wraapps->wraps
 wraning->warning
 wranings->warnings
 wraped->wrapped, warped,
