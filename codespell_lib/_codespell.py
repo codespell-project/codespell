@@ -52,7 +52,7 @@ _builtin_dictionaries = (
     # realistic for obscure words
     ('clear', 'for unambiguous errors', '',
         False, None, supported_languages_en, None),
-    ('rare', 'for rare (but valid) words which are likely to be errors', '_rare',  # noqa: E501
+    ('rare', 'for rare (but valid) words that are likely to be errors', '_rare',  # noqa: E501
         None, None, None, None),
     ('informal', 'for making informal words more formal', '_informal',
         True, True, supported_languages_en, supported_languages_en),
@@ -291,7 +291,7 @@ def parse_options(args):
                         'The default is %(default)r.')
     parser.add_argument('--ignore-regex',
                         action='store', type=str,
-                        help='regular expression which is used to find '
+                        help='regular expression that is used to find '
                              'patterns to ignore by treating as whitespace. '
                              'When writing regular expressions, consider '
                              'ensuring there are boundary non-word chars, '
@@ -299,7 +299,7 @@ def parse_options(args):
                              'empty/disabled.')
     parser.add_argument('-I', '--ignore-words',
                         action='append', metavar='FILE',
-                        help='file that contains words which will be ignored '
+                        help='file that contains words that will be ignored '
                              'by codespell. File must contain 1 word per line.'
                              ' Words are case sensitive based on how they are '
                              'written in the dictionary file')
@@ -317,14 +317,14 @@ def parse_options(args):
                              'misspelling in URIs and emails will be ignored.')
     parser.add_argument('-r', '--regex',
                         action='store', type=str,
-                        help='regular expression which is used to find words. '
+                        help='regular expression that is used to find words. '
                              'By default any alphanumeric character, the '
                              'underscore, the hyphen, and the apostrophe is '
                              'used to build words. This option cannot be '
                              'specified together with --write-changes.')
     parser.add_argument('--uri-regex',
                         action='store', type=str,
-                        help='regular expression which is used to find URIs '
+                        help='regular expression that is used to find URIs '
                              'and emails. A default expression is provided.')
     parser.add_argument('-s', '--summary',
                         action='store_true', default=False,
