@@ -32,6 +32,7 @@ if __name__ == "__main__":
           version=__version__,
           download_url=DOWNLOAD_URL,
           long_description=LONG_DESCRIPTION,
+          long_description_content_type='text/x-rst',
           zip_safe=False,
           classifiers=['Intended Audience :: Developers',
                        'License :: OSI Approved',
