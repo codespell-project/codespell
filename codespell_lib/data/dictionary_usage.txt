@@ -3,9 +3,13 @@ blacklists->blocklists
 blueish->bluish
 man-hour->person-hour
 man-hours->person-hours
-man-in-the-middle->on-path attacker
+man-in-the-middle->on-path attacker, interceptor, intermediary
 master->primary, leader, active, writer, coordinator, parent, manager, main,
 masters->primaries, leaders, actives, writers, coordinators, parents, managers,
+sanity-check->test, verification
+sanity-checks->tests, verifications
+sanity-test->test, verification
+sanity-tests->tests, verifications
 segregation->separation, segmentation
 segregations->separations, segmentations
 slave->secondary, follower, standby, replica, reader, worker, helper, subordinate, subsystem,
