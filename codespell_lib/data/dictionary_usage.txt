@@ -1,11 +1,20 @@
+black-hat->malicious actor, attacker
+blackhat->malicious actor, attacker
 blacklist->blocklist
 blacklists->blocklists
 blueish->bluish
-man-hour->person-hour
-man-hours->person-hours
-man-in-the-middle->on-path attacker, interceptor, intermediary
+cripples->slows down, hinders, obstructs
+crippling->attenuating, incapacitating
+dummy-value->placeholder value
+girlfriend-test->mom-test->user test, acceptance test, validation test, ease-of-use test, friendliness test, useability test
+man-hour->staff hour, volunteer hour, hour of effort, person-hour
+man-hours->staff hours, volunteer hours, hours of effort, person-hours
+man-in-the-middle->on-path attacker, interceptor, intermediary, machine-in-the-middle, person-in-the-middle
+manned->crewed, staffed, monitored, human operated
 master->primary, leader, active, writer, coordinator, parent, manager, main,
 masters->primaries, leaders, actives, writers, coordinators, parents, managers,
+middleman->intermediary, broker
+mom-test->user test, acceptance test, validation test, ease-of-use test, friendliness test, useability test
 sanity-check->test, verification
 sanity-checks->tests, verifications
 sanity-test->test, verification
