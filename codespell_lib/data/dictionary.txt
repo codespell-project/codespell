@@ -1510,6 +1510,7 @@ alignmant->alignment
 alignmen->alignment
 alignmenet->alignment
 alignmenets->alignments
+alignmenton->alignment on
 alignmet->alignment
 alignmets->alignments
 alignmment->alignment
@@ -4715,6 +4716,7 @@ boycot->boycott
 bracese->braces
 brach->branch
 brackeds->brackets
+bracketwith->bracket with
 brackground->background
 bradcast->broadcast
 braket->bracket, brake,
@@ -4723,7 +4725,9 @@ brakpoint->breakpoint
 brakpoints->breakpoints
 brance->branch, brace, branches,
 branchces->branches
+brancheswith->branches with
 branchs->branches
+branchsi->branches
 branck->branch
 branckes->branches
 brancket->bracket
@@ -6748,7 +6752,14 @@ commndline->commandline
 commnds->commands
 commnent->comment
 commnents->comments
+commnet->comment
+commnetaries->commentaries
 commnetary->commentary
+commnetator->commentator
+commnetators->commentators
+commneted->commented
+commneting->commenting
+commnets->comments
 commnication->communication
 commnities->communities
 commnity->community
@@ -7271,6 +7282,8 @@ condfigures->configures
 condfiguring->configuring
 condict->conduct
 condicted->conducted
+condidate->candidate
+condidates->candidates
 condident->confident
 condidential->confidential
 condidional->conditional
@@ -7826,6 +7839,9 @@ consitutute->constitute
 consitututed->constituted
 consitututes->constitutes
 consitututing->constituting
+consntant->constant
+consntantly->constantly
+consntants->constants
 consol->console
 consolodate->consolidate
 consolodated->consolidated
@@ -8554,6 +8570,7 @@ correcpond->correspond
 correcponded->corresponded
 correcponding->corresponding
 correcponds->corresponds
+correcs->corrects
 correctably->correctable
 correctely->correctly
 correcters->correctors
@@ -9729,6 +9746,7 @@ dedected->detected, deducted,
 dedection->detection, deduction,
 dedections->detections
 dedects->detects, deducts,
+dedented->indented
 dedidate->dedicate
 dedidated->dedicated
 dedidates->dedicates
@@ -11254,6 +11272,8 @@ directort->directory
 directorty->directory
 directorys->directories
 directoty->directory
+directove->directive
+directoves->directives
 directoy->directory
 directpries->directories
 directpry->directory
@@ -15221,6 +15241,7 @@ fifht->fifth, fight,
 fightings->fighting
 figurestyle->figurestyles
 filal->final
+fileand->file and
 fileds->fields
 fileld->field
 filelds->fields
@@ -19178,6 +19199,8 @@ interpolaiton->interpolation
 interpolar->interpolator
 interpolayed->interpolated
 interporated->interpolated, interpreted,
+interporation->interpolation
+interporations->interpolations
 interprate->interpret
 interprated->interpreted
 interpreation->interpretation
@@ -20299,6 +20322,10 @@ locatins->locations
 loccked->locked
 locgical->logical
 lockingf->locking
+lodable->loadable
+loded->loaded
+loder->loader
+loders->loaders
 loding->loading
 loev->love
 logarithmical->logarithmically
@@ -23054,12 +23081,17 @@ offcers->officers
 offcial->official
 offcially->officially
 offcials->officials
+offens->offend, offense, offends, offers,
 offerd->offered
 offereings->offerings
 offest->offset
 offests->offsets
 offet->offset, offer,
 offets->offsets, offers,
+offfence->offence
+offfences->offences
+offfense->offense
+offfenses->offenses
 offic->office
 offical->official
 offically->officially
@@ -23072,6 +23104,9 @@ officealy->officially
 officialy->officially
 offloded->offloaded
 offred->offered
+offsence->offence
+offsense->offense
+offsenses->offenses
 offser->offset
 offsest->offsets, offset,
 offseted->offsetted
@@ -23082,6 +23117,7 @@ offstets->offsets
 offten->often
 oficial->official
 oficially->officially
+ofmodule->of module
 ofo->of
 ofrom->from
 ofsetted->offsetted
@@ -24727,6 +24763,9 @@ platflorm->platform
 platflorms->platforms
 platfoem->platform
 platfom->platform
+platfomr->platform
+platfomrs->platforms
+platfoms->platforms
 platform-spacific->platform-specific
 platforma->platforms
 platformt->platforms
@@ -28509,6 +28548,7 @@ rescources->resources
 rescourcing->resourcing
 rescrition->restriction
 rescritions->restrictions
+rescueing->rescuing
 reseach->research
 reseached->researched
 researvation->reservation
@@ -36257,6 +36297,7 @@ whcich->which
 whcih->which
 whe->when, we,
 wheather->weather, whether,
+wheh->when
 whehter->whether
 wheigh->weigh
 whell->wheel, well,
@@ -36638,6 +36679,7 @@ wsee->see
 wser->user
 wth->with
 wtih->with
+wtyle->style
 wuold->would
 wupport->support
 wuth->with
