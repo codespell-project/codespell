@@ -26,6 +26,28 @@ import re
 import sys
 import textwrap
 
+try:
+    import shtab
+except ImportError:
+    from . import _shtab as shtab
+
+
+def dict_to_choices(d={}):
+    return list(d.keys())
+
+
+def dict_to_complete(d={}):
+    def f(x):
+        return ("'" + str(x[0]) + '\\:' + x[1] + "'").replace('"', r'\"')
+    return {'zsh': '((' + ' '.join(map(f, d.items())) + '))'}
+
+
+def dict_to_help(d={}):
+    def f(x):
+        return str(x[0]) + ': ' + x[1]
+    return '\n- ' + '\n- '.join(map(f, d.items()))
+
+
 word_regex_def = u"[\\w\\-'’`]+"
 # While we want to treat characters like ( or " as okay for a starting break,
 # these may occur unescaped in URIs, and so we are more restrictive on the
@@ -256,7 +278,9 @@ class NewlineHelpFormatter(argparse.HelpFormatter):
 
 
 def parse_options(args):
-    parser = argparse.ArgumentParser(formatter_class=NewlineHelpFormatter)
+    parser = argparse.ArgumentParser('codespell',
+                                     formatter_class=NewlineHelpFormatter)
+    shtab.add_argument_to(parser)
 
     parser.set_defaults(colors=sys.stdout.isatty())
     parser.add_argument('--version', action='version', version=VERSION)
@@ -280,15 +304,15 @@ def parse_options(args):
                              'corrections. If this flag is not specified or '
                              'equals "-" then the default dictionary is used. '
                              'This option can be specified multiple times.')
-    builtin_opts = '\n- '.join([''] + [
-        '%r %s' % (d[0], d[1]) for d in _builtin_dictionaries])
+    builtin_opts = {d[0]: d[1] for d in _builtin_dictionaries}
     parser.add_argument('--builtin',
                         dest='builtin', default=_builtin_default,
                         metavar='BUILTIN-LIST',
                         help='comma-separated list of builtin dictionaries '
                         'to include (when "-D -" or no "-D" is passed). '
-                        'Current options are:' + builtin_opts + '\n'
-                        'The default is %(default)r.')
+                        'Current options are:' + dict_to_help(builtin_opts) + '\n'  # noqa: E501
+                        'The default is %(default)r.',
+                        ).complete = dict_to_complete(builtin_opts)
     parser.add_argument('--ignore-regex',
                         action='store', type=str,
                         help='regular expression that is used to find '
@@ -302,7 +326,8 @@ def parse_options(args):
                         help='file that contains words that will be ignored '
                              'by codespell. File must contain 1 word per line.'
                              ' Words are case sensitive based on how they are '
-                             'written in the dictionary file')
+                             'written in the dictionary file',
+                        ).complete = shtab.FILE
     parser.add_argument('-L', '--ignore-words-list',
                         action='append', metavar='WORDS',
                         help='comma separated list of words to be ignored '
@@ -345,29 +370,41 @@ def parse_options(args):
     parser.add_argument('-x', '--exclude-file', type=str, metavar='FILE',
                         help='ignore whole lines that match those '
                              'in the file FILE. The lines in FILE '
-                             'should match the to-be-excluded lines exactly')
+                             'should match the to-be-excluded lines exactly',
+                        ).complete = shtab.FILE
 
+    interactive_opts = {
+        -1: '',
+        0: 'no interactivity.',
+        1: 'ask for confirmation.',
+        2: 'ask user to choose one fix when more than one is available.',
+        3: 'both 1 and 2',
+    }
     parser.add_argument('-i', '--interactive',
-                        action='store', type=int, default=0,
-                        help='set interactive mode when writing changes:\n'
-                             '- 0: no interactivity.\n'
-                             '- 1: ask for confirmation.\n'
-                             '- 2: ask user to choose one fix when more than one is available.\n'  # noqa: E501
-                             '- 3: both 1 and 2')
+                        action='store', type=int, default=0, metavar='{-1..3}',
+                        choices=dict_to_choices(interactive_opts),
+                        help='set interactive mode when writing changes:' + dict_to_help(interactive_opts),  # noqa: E501
+                        ).complete = dict_to_complete(interactive_opts)
 
+    basic_quiet_level_opts = {
+        0: 'print all messages.',
+        1: 'disable warnings about wrong encoding.',
+        2: 'disable warnings about binary files.',
+        4: 'omit warnings about automatic fixes that were disabled in the dictionary.',  # noqa: E501
+        8: 'don\'t print anything for non-automatic fixes.',
+        16: 'don\'t print the list of fixed files.',
+    }
+    quiet_level_opts = {i: "" for i in range(32)}
+    quiet_level_opts.update(basic_quiet_level_opts)
     parser.add_argument('-q', '--quiet-level',
-                        action='store', type=int, default=2,
-                        help='bitmask that allows suppressing messages:\n'
-                             '- 0: print all messages.\n'
-                             '- 1: disable warnings about wrong encoding.\n'
-                             '- 2: disable warnings about binary files.\n'
-                             '- 4: omit warnings about automatic fixes that were disabled in the dictionary.\n'  # noqa: E501
-                             '- 8: don\'t print anything for non-automatic fixes.\n'  # noqa: E501
-                             '- 16: don\'t print the list of fixed files.\n'
+                        action='store', type=int, default=2, metavar='{0..31}',
+                        choices=dict_to_choices(quiet_level_opts),
+                        help='bitmask that allows suppressing messages:' + dict_to_help(basic_quiet_level_opts) + '\n'  # noqa: E501
                              'As usual with bitmasks, these levels can be '
                              'combined; e.g. use 3 for levels 1+2, 7 for '
                              '1+2+4, 23 for 1+2+4+16, etc. '
-                             'The default mask is %(default)s.')
+                             'The default mask is %(default)s.',
+                        ).complete = dict_to_complete(quiet_level_opts)
 
     parser.add_argument('-e', '--hard-encoding-detection',
                         action='store_true', default=False,
@@ -391,10 +428,12 @@ def parse_options(args):
     parser.add_argument('-C', '--context', type=int, metavar='LINES',
                         help='print LINES of surrounding context')
     parser.add_argument('--config', type=str,
-                        help='path to config file.')
+                        help='path to config file.',
+                        ).complete = shtab.FILE
 
     parser.add_argument('files', nargs='*',
-                        help='files or directories to check')
+                        help='files or directories to check',
+                        ).complete = shtab.FILE
 
     # Parse command line options.
     options = parser.parse_args(list(args))

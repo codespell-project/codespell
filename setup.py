@@ -62,5 +62,6 @@ if __name__ == "__main__":
               "dev": ["check-manifest", "flake8", "pytest", "pytest-cov",
                       "pytest-dependency"],
               "hard-encoding-detection": ["chardet"],
+              "shtab": ["completion"],
           }
           )
