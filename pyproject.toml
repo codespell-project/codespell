@@ -37,6 +37,9 @@ hard-encoding-detection = [
 toml = [
     "tomli; python_version < '3.11'"
 ]
+completion = [
+    "shtab"
+]
 
 [project.scripts]
 codespell = "codespell_lib:_script_main"

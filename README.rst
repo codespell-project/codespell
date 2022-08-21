@@ -32,6 +32,26 @@ You can use ``pip`` to install codespell with e.g.::
 
     pip install codespell
 
+You can get shell completion script by::
+
+    pip install "codespell[completion]"
+    codespell --print-completion bash | sudo tee /usr/share/bash-completion/completions/codespell
+    codespell --print-completion zsh | sudo tee /usr/share/zsh/site-functions/_codespell
+    codespell --print-completion tcsh | sudo tee /etc/profile.d/codespell.completion.csh
+
+You can get toml support by::
+
+    pip install "codespell[toml]"
+
+If you use pre-commit and toml, remember to add tomli::
+
+      - repo: https://github.com/codespell-project/codespell
+        rev: v2.2.2
+        hooks:
+          - id: codespell
+            additional_dependencies:
+              - tomli
+
 Usage
 -----
 
