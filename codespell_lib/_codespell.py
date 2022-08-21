@@ -390,10 +390,10 @@ def parse_options(args):
                         help='print LINES of leading context')
     parser.add_argument('-C', '--context', type=int, metavar='LINES',
                         help='print LINES of surrounding context')
-    parser.add_argument('--config', type=str,
+    parser.add_argument('--config', type=str, metavar="FILE",
                         help='path to config file.')
 
-    parser.add_argument('files', nargs='*',
+    parser.add_argument('files', nargs='*', metavar="FILE",
                         help='files or directories to check')
 
     # Parse command line options.
