@@ -46,14 +46,12 @@ if __name__ == "__main__":
           python_requires='>=3.6',
           packages=[
               'codespell_lib',
+              'codespell_lib.tests',
               'codespell_lib.data',
           ],
           package_data={'codespell_lib': [
               os.path.join('data', 'dictionary*.txt'),
               os.path.join('data', 'linux-kernel.exclude'),
-          ]},
-          exclude_package_data={'codespell_lib': [
-              os.path.join('tests', '*'),
           ]},
           entry_points={
               'console_scripts': [
