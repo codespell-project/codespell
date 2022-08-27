@@ -30241,10 +30241,6 @@ riminders->reminders
 riminding->reminding
 rimitives->primitives
 rininging->ringing
-rsicv->riscv
-RSICV->RISCV
-rsic-v->risc-v
-RSIC-V->RISC-V
 rised->raised, rose,
 rispective->respective
 ristrict->restrict
@@ -30357,6 +30353,8 @@ rrror->error
 rrrored->errored
 rrroring->erroring
 rrrors->errors
+rsic-v->RISC-V
+rsicv->RISCV
 rsizing->resizing, sizing,
 rsource->resource, source,
 rsourced->resourced, sourced,
