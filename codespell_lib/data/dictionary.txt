@@ -2006,6 +2006,7 @@ annonates->annotates
 annonce->announce
 annonced->announced
 annoncement->announcement
+annoncements->announcements
 annonces->announces
 annoncing->announcing
 annonymous->anonymous
@@ -2143,6 +2144,7 @@ aovid->avoid
 apach->apache
 apapted->adapted
 aparant->apparent
+aparantly->apparently
 aparent->apparent
 aparently->apparently
 aparment->apartment
@@ -2242,6 +2244,7 @@ apperar->appear
 apperarance->appearance
 apperarances->appearances
 apperared->appeared
+apperaring->appearing
 apperars->appears
 appereance->appearance
 appereances->appearances
@@ -2272,6 +2275,7 @@ applicaion->application
 applicaiton->application
 applicaitons->applications
 applicance->appliance
+applicapility->applicability
 applicaple->applicable
 applicatable->applicable
 applicaten->application
@@ -7769,7 +7773,12 @@ conrete->concrete
 conrol->control
 conroller->controller
 conrrespond->correspond
+conrrespondence->correspondence
+conrrespondences->correspondences
+conrrespondent->correspondent
+conrrespondents->correspondents
 conrresponding->corresponding
+conrrespondingly->correspondingly
 conrresponds->corresponds
 conrrol->control
 conrrupt->corrupt
@@ -10741,7 +10750,7 @@ destroi->destroy
 destroied->destroyed
 destroing->destroying
 destrois->destroys
-destroyd->destroyed
+destroyd->destroyed, destroys,
 destroyes->destroys
 destruciton->destruction
 destructro->destructor
@@ -11434,6 +11443,7 @@ disappeard->disappeared
 disappearred->disappeared
 disapper->disappear
 disapperar->disappear
+disapperarance->disappearance
 disapperared->disappeared
 disapperars->disappears
 disappered->disappeared
@@ -13362,6 +13372,7 @@ equilavalent->equivalent
 equilibium->equilibrium
 equilibrum->equilibrium
 equilvalent->equivalent
+equilvalently->equivalently
 equilvalents->equivalents
 equiped->equipped
 equipmentd->equipment
@@ -15566,6 +15577,8 @@ flexibily->flexibly, flexibility,
 flext->flex
 flie->file
 fliter->filter
+flitered->filtered
+flitering->filtering
 fliters->filters
 floading->floating, flooding,
 floading-add->floating-add
@@ -17443,7 +17456,9 @@ icreased->increased
 icreases->increases
 icreasing->increasing
 icrement->increment
+icrementally->incrementally
 icremented->incremented
+icrementing->incrementing
 icrements->increments
 idae->idea
 idaeidae->idea
@@ -20680,6 +20695,7 @@ mamentos->mementos
 mamory->memory
 mamuth->mammoth
 manafacturer->manufacturer
+manafacturers->manufacturers
 managable->manageable, manageably,
 managament->management
 manageed->managed
@@ -23084,6 +23100,9 @@ obejct->object
 obejcted->objected
 obejction->objection
 obejctions->objections
+obejctive->objective
+obejctively->objectively
+obejctives->objectives
 obejcts->objects
 obeject->object
 obejection->objection
@@ -25286,7 +25305,8 @@ positionns->positions
 positionof->position, position of,
 positiv->positive
 positivies->positives
-positivy->positivity, positivly, positive,
+positivly->positively
+positivy->positivity, positively, positive,
 positoin->position
 positoined->positioned
 positoins->positions
@@ -27857,7 +27877,7 @@ reguster->register
 rehersal->rehearsal
 rehersing->rehearsing
 reicarnation->reincarnation
-reight->right
+reight->right, eight, freight,
 reigining->reigning
 reigon->reign, region,
 reigonal->regional
@@ -28571,7 +28591,7 @@ representated->represented
 representating->representing
 representd->represented
 represente->represents, represented,
-representes->represents
+representes->represents, represented,
 representiative->representative
 represention->representation
 representions->representations
@@ -34001,6 +34021,7 @@ tramsmitting->transmitting
 tranaction->transaction
 tranactional->transactional
 tranactions->transactions
+tranalating->translating
 tranalation->translation
 tranalations->translations
 tranasction->transaction
@@ -34517,6 +34538,7 @@ trunctation->truncation
 truncted->truncated
 truned->turned
 truns->turns
+trustworthly->trustworthy
 trustworthyness->trustworthiness
 trustworty->trustworthy
 trustwortyness->trustworthiness
