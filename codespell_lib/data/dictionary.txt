@@ -2331,6 +2331,7 @@ apppriate->appropriate
 appproach->approach
 apppropriate->appropriate
 appraoch->approach
+appraochable->approachable
 appraoched->approached
 appraoches->approaches
 appraoching->approaching
@@ -7534,8 +7535,13 @@ confirmedd->confirmed
 confirmeed->confirmed
 confirmming->confirming
 confiug->config
+confiugrable->configurable
 confiugration->configuration
 confiugrations->configurations
+confiugre->configure
+confiugred->configured
+confiugres->configures
+confiugring->configuring
 confiugure->configure
 conflictd->conflicts, conflicted,
 conflictin->conflicting
@@ -9761,6 +9767,7 @@ dedection->detection, deduction,
 dedections->detections
 dedects->detects, deducts,
 dedented->indented
+dedfined->defined
 dedidate->dedicate
 dedidated->dedicated
 dedidates->dedicates
@@ -9895,7 +9902,9 @@ defination->definition
 definations->definitions
 definatly->definitely
 defind->defined, defund,
+definde->defined, defines, define,
 definded->defined, defunded,
+definding->defining
 defineas->defines
 defineed->defined
 definend->defined
@@ -9977,6 +9986,7 @@ degress->degrees, digress,
 deifne->define
 deifned->defined
 deifnes->defines
+deifning->defining
 deimiter->delimiter
 deine->define
 deined->denied, defined,
@@ -10050,6 +10060,7 @@ deliberatey->deliberately
 deliberatly->deliberately
 deliberite->deliberate
 deliberitely->deliberately
+delibery->delivery
 delibrate->deliberate
 delibrately->deliberately
 delievering->delivering
@@ -10094,6 +10105,7 @@ delivatives->derivatives
 deliverate->deliberate
 delivermode->deliverymode
 deliverying->delivering
+deliverys->deliveries, delivers,
 delte->delete
 delted->deleted
 deltes->deletes
@@ -13545,8 +13557,14 @@ evauluated->evaluated
 evauluates->evaluates
 evauluation->evaluation
 evelope->envelope, envelop,
+eveluate->evaluate
+eveluated->evaluated
+eveluates->evaluates
+eveluating->evaluating
 eveluation->evaluation
 eveluations->evaluations
+eveluator->evaluator
+eveluators->evaluators
 evem->even, ever,
 evenhtually->eventually
 eventally->eventually
@@ -13593,8 +13611,12 @@ evition->eviction
 evluate->evaluate
 evluated->evaluated
 evluates->evaluates
+evluating->evaluating
 evluation->evaluation
 evluations->evaluations
+evluative->evaluative
+evluator->evaluator
+evluators->evaluators
 evnet->event
 evoluate->evaluate
 evoluated->evaluated
@@ -20965,6 +20987,8 @@ meganism->mechanism
 mege->merge
 mehcanic->mechanic
 mehcanical->mechanical
+mehcanically->mechanically
+mehcanics->mechanics
 mehod->method
 mehodical->methodical
 mehodically->methodically
@@ -21313,8 +21337,14 @@ mimimun->minimum
 miminal->minimal
 miminally->minimally
 miminaly->minimally
+miminise->minimise
+miminised->minimised
+miminises->minimises
+miminising->minimising
 miminize->minimize
 miminized->minimized
+miminizes->minimizes
+miminizing->minimizing
 mimmick->mimic
 mimmicked->mimicked
 mimmicking->mimicking
@@ -21339,8 +21369,14 @@ minimzed->minimized
 minimzes->minimizes
 minimzing->minimizing
 mininal->minimal
+mininise->minimise
+mininised->minimised
+mininises->minimises
+mininising->minimising
 mininize->minimize
 mininized->minimized
+mininizes->minimizes
+mininizing->minimizing
 mininum->minimum
 miniscule->minuscule
 miniscully->minusculely
@@ -28364,6 +28400,7 @@ repositiory->repository
 repositiroes->repositories
 reposititioning->repositioning
 repositorry->repository
+repositotries->repositories
 repositotry->repository
 repositry->repository
 reposoitory->repository
@@ -29192,6 +29229,7 @@ Rockerfeller->Rockefeller
 rococco->rococo
 rocord->record
 rocorded->recorded
+rocorder->recorder
 rocording->recording
 rocordings->recordings
 rocords->records
@@ -31014,6 +31052,8 @@ specfy->specify
 specfying->specifying
 speciafied->specified
 specialiced->specialised, specialized,
+specialisaiton->specialisation
+specialisaitons->specialisations
 specialitzed->specialised, specialized,
 specializaiton->specialization
 specializaitons->specializations
@@ -33482,7 +33522,7 @@ threadsave->threadsafe
 threah->thread, threat,
 threashold->threshold
 threasholds->thresholds
-threated->threatened, treated,
+threated->threaded, threatened, treated,
 threatend->threatened
 threatment->treatment
 threatments->treatments
@@ -35171,7 +35211,7 @@ unsiged->unsigned
 unsigend->unsigned
 unsignd->unsigned
 unsignificant->insignificant
-unsing->using, unsign,
+unsing->using, unsigned,
 unsinged->unsigned
 unsless->unless, useless,
 unsoclicited->unsolicited
@@ -36299,7 +36339,8 @@ wasnt'->wasn't
 wasnt->wasn't
 wasnt;->wasn't
 wass->was
-wastefull->wasteful
+wastefull->wasteful, wastefully,
+wastefullness->wastefulness
 watchdong->watchdog
 watchog->watchdog
 watermask->watermark
