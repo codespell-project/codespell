@@ -495,7 +495,7 @@ def is_text_file(filename):
 
 def fix_case(word, fixword):
     if word == word.capitalize():
-        return fixword.capitalize()
+        return ', '.join(w.strip().capitalize() for w in fixword.split(','))
     elif word == word.upper():
         return fixword.upper()
     # they are both lower case
@@ -528,7 +528,7 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
         # we ask the user which word to use
 
         r = ''
-        opt = list(map(lambda x: x.strip(), misspelling.data.split(',')))
+        opt = [w.strip() for w in misspelling.data.split(',')]
         while not r:
             print("%s Choose an option (blank for none): " % line, end='')
             for i in range(len(opt)):
