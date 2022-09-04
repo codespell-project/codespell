@@ -829,7 +829,10 @@ addiiton->addition
 addiitonall->additional
 addional->additional
 addionally->additionally
+addiotion->addition
 addiotional->additional
+addiotionally->additionally
+addiotions->additions
 additianal->additional
 additianally->additionally
 additinal->additional
@@ -1634,6 +1637,7 @@ alloud->aloud, allowed,
 allowd->allowed, allow, allows,
 allowe->allowed, allow, allows,
 allowence->allowance
+allowences->allowances
 allowes->allows, allowed,
 allpication->application
 allready->already, all ready,
@@ -3066,8 +3070,10 @@ assiociated->associated
 assiociates->associates
 assiociating->associating
 assiociation->association
+assisance->assistance
 assisant->assistant
 assisants->assistants
+assising->assisting
 assisnate->assassinate
 assisst->assist, assists,
 assistence->assistance
@@ -3152,6 +3158,7 @@ assosiates->associates
 assosiating->associating
 assosiation->association
 assosiations->associations
+assosiative->associative
 assosication->assassination
 assotiated->associated
 assoziated->associated
@@ -4535,7 +4542,7 @@ bloaded->bloated
 blocack->blockack
 bloccks->blocks
 blocekd->blocked
-blockes->blocks
+blockes->blocks, blocked,
 blockhain->blockchain
 blockhains->blockchains
 blockin->blocking
@@ -24978,8 +24985,8 @@ physisist->physicist
 phython->python
 phyton->python
 phy_interace->phy_interface
-piar->pair, plier, pier,
-piars->pairs, pliars, piers,
+piar->pair, pier, pliers,
+piars->pairs, piers, pliers,
 piblisher->publisher
 pice->piece
 pich->pitch, pick, pinch,
@@ -25113,6 +25120,7 @@ plese->please
 plesently->pleasantly
 plesing->pleasing, blessing,
 plian->plain, pliant,
+pliars->pliers
 pllatforms->platforms
 ploted->plotted
 ploting->plotting
@@ -26419,6 +26427,7 @@ propetys->properties
 propgated->propagated
 prophacy->prophecy
 propietary->proprietary
+propietries->proprietaries
 propietry->proprietary
 propigate->propagate
 propigation->propagation
@@ -33393,6 +33402,7 @@ tempatized->templatized
 tempature->temperature
 tempdate->template
 tempearture->temperature
+tempeartures->temperatures
 tempearure->temperature
 tempelate->template
 temperarily->temporarily
@@ -34068,7 +34078,9 @@ tracsoder->transcoder
 tracsoders->transcoders
 tracsodes->transcodes
 tracsoding->transcoding
+traddition->tradition
 tradditional->traditional
+tradditions->traditions
 tradgic->tragic
 tradionally->traditionally
 traditilnal->traditional
@@ -36628,7 +36640,6 @@ wasnt'->wasn't
 wasnt->wasn't
 wasnt;->wasn't
 wass->was
-wast->waste
 wastefull->wasteful, wastefully,
 wastefullness->wastefulness
 watchdong->watchdog
