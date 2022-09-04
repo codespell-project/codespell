@@ -4935,7 +4935,7 @@ build-dependancies->build-dependencies
 build-dependancy->build-dependency
 build-dependencie->build-dependency, build-dependencies,
 build-in->built-in
-buildd->build
+buildd->build, builds,
 builded->built
 buildpackge->buildpackage
 buildpackges->buildpackages
@@ -5135,6 +5135,10 @@ calclation->calculation
 calcluate->calculate
 calcluated->calculated
 calcluates->calculates
+calclulate->calculate
+calclulated->calculated
+calclulates->calculates
+calclulating->calculating
 calclulation->calculation
 calclulations->calculations
 calcualate->calculate
@@ -5161,7 +5165,7 @@ calculataed->calculated
 calculatble->calculatable, calculable,
 calculater->calculator
 calculatess->calculates, calculated,
-calculatin->calculating
+calculatin->calculating, calculation,
 calculatted->calculated
 calculatter->calculator
 calculattion->calculation
@@ -5229,7 +5233,12 @@ calloed->called
 callsr->calls
 calss->calls, class,
 calsses->classes
+calucalte->calculate
 calucalted->calculated
+calucaltes->calculates
+calucalting->calculating
+calucaltion->calculation
+calucaltions->calculations
 calucate->calculate
 caluclate->calculate
 caluclated->calculated
@@ -5241,6 +5250,8 @@ caluclations->calculations
 caluclator->calculator
 caluculate->calculate
 caluculated->calculated
+caluculates->calculates
+caluculating->calculating
 caluculation->calculation
 caluculations->calculations
 calue->value
@@ -10831,7 +10842,7 @@ detaults->defaults
 detction->detection
 detctions->detections
 deteced->detected
-deteched->detached
+deteched->detached, detected,
 detecing->detecting
 detecion->detection
 detecions->detections
@@ -12633,8 +12644,11 @@ ede->edge
 ediable->editable
 edige->edge
 ediges->edges
+ediit->edit
+ediiting->editing
 ediitor->editor
 ediitors->editors
+ediits->edits
 editedt->edited
 editiing->editing
 editoro->editor
@@ -21488,6 +21502,8 @@ milliescond->millisecond
 milliesconds->milliseconds
 millimiter->millimeter
 millimiters->millimeters
+millimitre->millimetre
+millimitres->millimetres
 millioniare->millionaire
 millioniares->millionaires
 millisencond->millisecond
@@ -22113,7 +22129,6 @@ multipliciaton->multiplication
 multiplicites->multiplicities
 multiplicty->multiplicity
 multiplikation->multiplication
-multiplikatior->multiplikator
 multipling->multiplying
 multipllication->multiplication
 multiplyed->multiplied
@@ -23378,6 +23393,7 @@ offfences->offences
 offfense->offense
 offfenses->offenses
 offfset->offset
+offfsets->offsets
 offic->office
 offical->official
 offically->officially
