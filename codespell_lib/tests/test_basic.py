@@ -100,7 +100,7 @@ def test_basic(tmpdir, capsys):
     os.remove(fname)
 
     with open(op.join(d, 'bad.txt'), 'w') as f:
-        f.write('abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd')
+        f.write('abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd\nabandonned\rAbandonned\r\nABANDONNED \nAbAnDoNnEd')
     assert cs.main(d) == 4
     code, _, stderr = cs.main('-w', d, std=True)
     assert code == 0
@@ -108,7 +108,7 @@ def test_basic(tmpdir, capsys):
     with open(op.join(d, 'bad.txt')) as f:
         new_content = f.read()
     assert cs.main(d) == 0
-    assert new_content == 'abandoned\nAbandoned\nABANDONED\nabandoned'
+    assert new_content == 'abandoned\nAbandoned\nABANDONED\nabandoned\nabandoned\rAbandoned\r\nABANDONED \nabandonned'
 
     with open(op.join(d, 'bad.txt'), 'w') as f:
         f.write('abandonned abandonned\n')
