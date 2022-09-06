@@ -105,7 +105,7 @@ def test_basic(tmpdir, capsys):
     code, _, stderr = cs.main('-w', d, std=True)
     assert code == 0
     assert 'FIXED:' in stderr
-    with open(op.join(d, 'bad.txt')) as f:
+    with open(op.join(d, 'bad.txt'), newline='') as f:
         new_content = f.read()
     assert cs.main(d) == 0
     assert new_content == 'abandoned\nAbandoned\nABANDONED\nabandoned\nabandoned\rAbandoned\r\nABANDONED \n abandoned'  # noqa: E501
