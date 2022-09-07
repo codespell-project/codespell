@@ -99,7 +99,7 @@ def test_basic(tmpdir, capsys):
     assert 'cannot find dictionary' in stderr
     os.remove(fname)
 
-    with open(op.join(d, 'bad.txt'), 'w') as f:
+    with open(op.join(d, 'bad.txt'), 'w', newline='') as f:
         f.write('abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd\nabandonned\rAbandonned\r\nABANDONNED \n AbAnDoNnEd')  # noqa: E501
     assert cs.main(d) == 8
     code, _, stderr = cs.main('-w', d, std=True)
