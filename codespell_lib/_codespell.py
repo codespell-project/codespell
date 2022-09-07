@@ -36,7 +36,7 @@ encodings = ('utf-8', 'iso-8859-1')
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
-VERSION = '2.2.dev0'
+VERSION = '2.3.0.dev0'
 
 supported_languages_en = ('en', 'en_GB', 'en_US', 'en_CA', 'en_AU')
 supported_languages = supported_languages_en
@@ -52,13 +52,13 @@ _builtin_dictionaries = (
     # realistic for obscure words
     ('clear', 'for unambiguous errors', '',
         False, None, supported_languages_en, None),
-    ('rare', 'for rare (but valid) words which are likely to be errors', '_rare',  # noqa: E501
+    ('rare', 'for rare (but valid) words that are likely to be errors', '_rare',  # noqa: E501
         None, None, None, None),
     ('informal', 'for making informal words more formal', '_informal',
         True, True, supported_languages_en, supported_languages_en),
     ('usage', 'for replacing phrasing with recommended terms', '_usage',
         None, None, None, None),
-    ('code', 'for words from code and/or mathematics that are likely to be typos in other contexts', '_code',  # noqa: E501
+    ('code', 'for words from code and/or mathematics that are likely to be typos in other contexts (such as uint)', '_code',  # noqa: E501
         None, None, None, None,),
     ('names', 'for valid proper names that might be typos', '_names',
         None, None, None, None,),
@@ -291,7 +291,7 @@ def parse_options(args):
                         'The default is %(default)r.')
     parser.add_argument('--ignore-regex',
                         action='store', type=str,
-                        help='regular expression which is used to find '
+                        help='regular expression that is used to find '
                              'patterns to ignore by treating as whitespace. '
                              'When writing regular expressions, consider '
                              'ensuring there are boundary non-word chars, '
@@ -299,7 +299,7 @@ def parse_options(args):
                              'empty/disabled.')
     parser.add_argument('-I', '--ignore-words',
                         action='append', metavar='FILE',
-                        help='file that contains words which will be ignored '
+                        help='file that contains words that will be ignored '
                              'by codespell. File must contain 1 word per line.'
                              ' Words are case sensitive based on how they are '
                              'written in the dictionary file')
@@ -317,14 +317,14 @@ def parse_options(args):
                              'misspelling in URIs and emails will be ignored.')
     parser.add_argument('-r', '--regex',
                         action='store', type=str,
-                        help='regular expression which is used to find words. '
+                        help='regular expression that is used to find words. '
                              'By default any alphanumeric character, the '
                              'underscore, the hyphen, and the apostrophe is '
                              'used to build words. This option cannot be '
                              'specified together with --write-changes.')
     parser.add_argument('--uri-regex',
                         action='store', type=str,
-                        help='regular expression which is used to find URIs '
+                        help='regular expression that is used to find URIs '
                              'and emails. A default expression is provided.')
     parser.add_argument('-s', '--summary',
                         action='store_true', default=False,
@@ -495,7 +495,7 @@ def is_text_file(filename):
 
 def fix_case(word, fixword):
     if word == word.capitalize():
-        return fixword.capitalize()
+        return ', '.join(w.strip().capitalize() for w in fixword.split(','))
     elif word == word.upper():
         return fixword.upper()
     # they are both lower case
@@ -528,7 +528,7 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
         # we ask the user which word to use
 
         r = ''
-        opt = list(map(lambda x: x.strip(), misspelling.data.split(',')))
+        opt = [w.strip() for w in misspelling.data.split(',')]
         while not r:
             print("%s Choose an option (blank for none): " % line, end='')
             for i in range(len(opt)):

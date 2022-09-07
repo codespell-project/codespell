@@ -393,6 +393,63 @@ def test_case_handling(tmpdir, capsys):
         assert f.read().decode('utf-8') == 'this has an ASCII error'
 
 
+def _helper_test_case_handling_in_fixes(tmpdir, capsys, reason):
+    d = str(tmpdir)
+
+    with open(op.join(d, 'dictionary.txt'), 'w') as f:
+        if reason:
+            f.write('adoptor->adopter, adaptor, reason\n')
+        else:
+            f.write('adoptor->adopter, adaptor,\n')
+    dictionary_name = f.name
+
+    # the mispelled word is entirely lowercase
+    with open(op.join(d, 'bad.txt'), 'w') as f:
+        f.write('early adoptor\n')
+    code, stdout, _ = cs.main('-D', dictionary_name, f.name, std=True)
+    # all suggested fixes must be lowercase too
+    assert 'adopter, adaptor' in stdout
+    # the reason, if any, must not be modified
+    if reason:
+        assert 'reason' in stdout
+
+    # the mispelled word is capitalized
+    with open(op.join(d, 'bad.txt'), 'w') as f:
+        f.write('Early Adoptor\n')
+    code, stdout, _ = cs.main('-D', dictionary_name, f.name, std=True)
+    # all suggested fixes must be capitalized too
+    assert 'Adopter, Adaptor' in stdout
+    # the reason, if any, must not be modified
+    if reason:
+        assert 'reason' in stdout
+
+    # the mispelled word is entirely uppercase
+    with open(op.join(d, 'bad.txt'), 'w') as f:
+        f.write('EARLY ADOPTOR\n')
+    code, stdout, _ = cs.main('-D', dictionary_name, f.name, std=True)
+    # all suggested fixes must be uppercase too
+    assert 'ADOPTER, ADAPTOR' in stdout
+    # the reason, if any, must not be modified
+    if reason:
+        assert 'reason' in stdout
+
+    # the mispelled word mixes lowercase and uppercase
+    with open(op.join(d, 'bad.txt'), 'w') as f:
+        f.write('EaRlY AdOpToR\n')
+    code, stdout, _ = cs.main('-D', dictionary_name, f.name, std=True)
+    # all suggested fixes should be lowercase
+    assert 'adopter, adaptor' in stdout
+    # the reason, if any, must not be modified
+    if reason:
+        assert 'reason' in stdout
+
+
+def test_case_handling_in_fixes(tmpdir, capsys):
+    """Test that the case of fixes is similar to the mispelled word."""
+    _helper_test_case_handling_in_fixes(tmpdir, capsys, reason=False)
+    _helper_test_case_handling_in_fixes(tmpdir, capsys, reason=True)
+
+
 def test_context(tmpdir, capsys):
     """Test context options."""
     d = str(tmpdir)
