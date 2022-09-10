@@ -22,7 +22,7 @@ check-dictionaries:
 			echo "Dictionary $$dictionary not sorted. Sort with 'make sort-dictionaries'"; \
 			exit 1; \
 		fi; \
-		if egrep -n "^\s*$$|\s$$|^\s" $$dictionary; then \
+		if grep -E -n "^\s*$$|\s$$|^\s" $$dictionary; then \
 			echo "Dictionary $$dictionary contains leading/trailing whitespace and/or blank lines.  Trim with 'make trim-dictionaries'"; \
 			exit 1; \
 		fi; \
