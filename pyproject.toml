@@ -33,6 +33,7 @@ dynamic = ["version"]
 [project.optional-dependencies]
 dev = [
     "build",
+    "chardet",
     "flake8",
     "flake8-pyproject",
     "pytest",
