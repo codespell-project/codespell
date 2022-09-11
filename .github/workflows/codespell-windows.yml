@@ -19,7 +19,7 @@ jobs:
         run: |
           python --version
           pip install -U pip
-          pip install chardet setuptools
+          pip install setuptools
           pip install -e .[dev]
       - run: codespell --help
       - run: codespell --version
