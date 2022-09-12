@@ -99,16 +99,16 @@ def test_basic(tmpdir, capsys):
     assert 'cannot find dictionary' in stderr
     os.remove(fname)
 
-    with open(op.join(d, 'bad.txt'), 'w') as f:
-        f.write('abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd')
-    assert cs.main(d) == 4
+    with open(op.join(d, 'bad.txt'), 'w', newline='') as f:
+        f.write('abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd\nabandonned\rAbandonned\r\nABANDONNED \n AbAnDoNnEd')  # noqa: E501
+    assert cs.main(d) == 8
     code, _, stderr = cs.main('-w', d, std=True)
     assert code == 0
     assert 'FIXED:' in stderr
-    with open(op.join(d, 'bad.txt')) as f:
+    with open(op.join(d, 'bad.txt'), newline='') as f:
         new_content = f.read()
     assert cs.main(d) == 0
-    assert new_content == 'abandoned\nAbandoned\nABANDONED\nabandoned'
+    assert new_content == 'abandoned\nAbandoned\nABANDONED\nabandoned\nabandoned\rAbandoned\r\nABANDONED \n abandoned'  # noqa: E501
 
     with open(op.join(d, 'bad.txt'), 'w') as f:
         f.write('abandonned abandonned\n')
