@@ -110,6 +110,16 @@ def test_basic(tmpdir, capsys):
     assert cs.main(d) == 0
     assert new_content == 'abandoned\nAbandoned\nABANDONED\nabandoned\nabandoned\rAbandoned\r\nABANDONED \n abandoned'  # noqa: E501
 
+    with open(op.join(d, 'apostrophe.txt'), 'w') as f:
+        f.write("cant'")
+    assert cs.main(d) == 1
+    capsys.readouterr()
+    assert cs.main('-w', d) == 0
+    with open(op.join(d, 'apostrophe.txt')) as f:
+        new_content = f.read()
+    assert cs.main(d) == 0
+    assert new_content == "can't"
+
     with open(op.join(d, 'bad.txt'), 'w') as f:
         f.write('abandonned abandonned\n')
     assert cs.main(d) == 2
