@@ -1,4 +1,5 @@
 .coverage
+.hypothesis
 build
 dist
 ld
