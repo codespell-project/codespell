@@ -563,7 +563,10 @@ def print_context(lines, index, context):
 
 def extract_words(text, word_regex, ignore_word_regex):
     if ignore_word_regex:
-        text = ignore_word_regex.sub(' ', text)
+        # Loop in order to support consecutive ignores
+        # e.g. --ignore-regex '\W([A-Z]{2,3})\W'
+        while ignore_word_regex.search(text):
+            text = ignore_word_regex.sub(' ', text)
     return word_regex.findall(text)
 
 
