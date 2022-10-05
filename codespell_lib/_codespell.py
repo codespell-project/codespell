@@ -392,7 +392,8 @@ def parse_options(args):
                         help='print LINES of surrounding context')
     parser.add_argument('--config', type=str,
                         help='path to config file.')
-
+    parser.add_argument('--toml', type=str,
+                        help='path to a pyproject.toml file.')
     parser.add_argument('files', nargs='*',
                         help='files or directories to check')
 
@@ -404,6 +405,18 @@ def parse_options(args):
     if options.config:
         cfg_files.append(options.config)
     config = configparser.ConfigParser()
+
+    # Read toml before other config files.
+    if options.toml:
+        try:
+            import tomli
+        except Exception as exc:
+            raise ImportError(
+                f'tomli is required to read pyproject.toml but could not be '
+                f'imported, got: {exc}') from None
+        with open(options.toml, 'rb') as f:
+            data = tomli.load(f).get('tool', {})
+        config.read_dict(data)
     config.read(cfg_files)
 
     if config.has_section('codespell'):

@@ -43,7 +43,7 @@ if __name__ == "__main__":
                        'Operating System :: Unix',
                        'Operating System :: MacOS'],
           platforms='any',
-          python_requires='>=3.6',
+          python_requires='>=3.7',
           packages=[
               'codespell_lib',
               'codespell_lib.tests',
@@ -58,9 +58,12 @@ if __name__ == "__main__":
                   'codespell = codespell_lib:_script_main'
               ],
           },
+          # TODO: toml will need to be updated when 3.11 comes out as it's a
+          # CPython module there
           extras_require={
               "dev": ["check-manifest", "flake8", "pytest", "pytest-cov",
-                      "pytest-dependency"],
+                      "pytest-dependency", "tomli"],
               "hard-encoding-detection": ["chardet"],
+              "toml": ["tomli"],
           }
           )

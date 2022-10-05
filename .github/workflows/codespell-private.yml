@@ -2,6 +2,9 @@
 # For general usage in your repo, see the example in codespell.yml
 # https://github.com/codespell-project/codespell
 name: codespell Private Actions
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.number }}-${{ github.event.ref }}
+  cancel-in-progress: true
 on: [push, pull_request]
 jobs:
   test:
@@ -10,12 +13,13 @@ jobs:
     # Make sure we're using the latest aspell dictionary
     runs-on: ubuntu-20.04
     strategy:
+      fail-fast: false
       matrix:
         python-version:
-          - 3.6
-          - 3.7
-          - 3.8
-          - 3.9
+          - '3.7'
+          - '3.8'
+          - '3.9'
+          - '3.10'
     name: Python ${{ matrix.python-version }} test
     steps:
       - uses: actions/checkout@v3
