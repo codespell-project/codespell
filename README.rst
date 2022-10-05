@@ -120,7 +120,7 @@ This is equivalent to running::
 Any options specified in the command line will *override* options from the
 config files.
 
-.. _tomli:: https://pypi.org/project/tomli/
+.. _tomli: https://pypi.org/project/tomli/
 
 Dictionary format
 -----------------
