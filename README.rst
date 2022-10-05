@@ -113,7 +113,7 @@ is installed, for example::
     count = ''
     quiet-level = 3
 
-This is equivalent to running::
+These are both equivalent to running::
 
     codespell --quiet-level 3 --count --skip "*.po,*.ts,./src/3rdParty,./src/Test"
 
