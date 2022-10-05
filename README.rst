@@ -103,19 +103,24 @@ be specified in this file (without the preceding dashes), for example::
     count =
     quiet-level = 3
 
-This is equivalent to running::
-
-    codespell --quiet-level 3 --count --skip "*.po,*.ts,./src/3rdParty,./src/Test"
-
-Now codespell also support ``pyproject.toml`` via the ``--toml pyproject.toml`` argument::
+Codespell will also check in the current directory for a ``pyproject.toml``
+(or a path can be specified via ``--toml <filename>``) file, and the
+``[tool.codespell]`` entry will be used as long as the tomli_ package
+is installed, for example::
 
     [tool.codespell]
     skip = '*.po,*.ts,./src/3rdParty,./src/Test'
     count = ''
     quiet-level = 3
 
+This is equivalent to running::
+
+    codespell --quiet-level 3 --count --skip "*.po,*.ts,./src/3rdParty,./src/Test"
+
 Any options specified in the command line will *override* options from the
-config file.
+config files.
+
+.. _tomli:: https://pypi.org/project/tomli/
 
 Dictionary format
 -----------------
