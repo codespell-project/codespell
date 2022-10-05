@@ -1,8 +1,8 @@
 # GitHub Action to check our dictionary, this should only be used by the codespell project itself
 # For general usage in your repo, see the example in codespell.yml
 # https://github.com/codespell-project/codespell
+# Concurrency cancels an action on a given PR once a new commit is pushed
 name: codespell Private Actions
-# Cancel an action on a given PR once a new commit is pushed
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number }}-${{ github.event.ref }}
   cancel-in-progress: true
