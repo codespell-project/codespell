@@ -418,8 +418,8 @@ def parse_options(args):
         except Exception as exc:
             if raise_error:
                 raise ImportError(
-                    f'tomli is required to read pyproject.toml but could not be '
-                    f'imported, got: {exc}') from None
+                    f'tomli is required to read pyproject.toml but could not '
+                    f'be imported, got: {exc}') from None
             else:
                 continue
         with open(toml_file, 'rb') as f:
