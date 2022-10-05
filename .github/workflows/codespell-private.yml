@@ -2,6 +2,7 @@
 # For general usage in your repo, see the example in codespell.yml
 # https://github.com/codespell-project/codespell
 name: codespell Private Actions
+# Cancel an action on a given PR once a new commit is pushed
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number }}-${{ github.event.ref }}
   cancel-in-progress: true

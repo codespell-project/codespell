@@ -107,7 +107,7 @@ This is equivalent to running::
 
     codespell --quiet-level 3 --count --skip "*.po,*.ts,./src/3rdParty,./src/Test"
 
-Now codespell also support ``pyproject.toml``::
+Now codespell also support ``pyproject.toml`` via the ``--toml pyproject.toml`` argument::
 
     [tool.codespell]
     skip = '*.po,*.ts,./src/3rdParty,./src/Test'
