@@ -819,8 +819,9 @@ count =
     else:
         assert kind == 'toml'
         pytest.importorskip('tomli')
-        args = ()
-        with open(tmp_path / 'pyproject.toml', 'w') as f:
+        tomlfile = str(tmp_path / 'pyproject.toml')
+        args = ('--toml', tomlfile)
+        with open(tomlfile, 'w') as f:
             f.write("""\
 [tool.codespell]
 skip = 'bad.txt,whatever.txt'
@@ -828,12 +829,7 @@ count = false
 """)
 
     # Should pass when skipping bad.txt
-    orig_path = os.getcwd()
-    try:
-        os.chdir(tmp_path)
-        code, stdout, _ = cs.main(str(d), *args, count=True, std=True)
-    finally:
-        os.chdir(orig_path)
+    code, stdout, _ = cs.main(str(d), *args, count=True, std=True)
     assert code == 0
     assert 'bad.txt' not in stdout
 
