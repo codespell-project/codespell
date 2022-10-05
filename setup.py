@@ -58,6 +58,8 @@ if __name__ == "__main__":
                   'codespell = codespell_lib:_script_main'
               ],
           },
+          # TODO: toml will need to be updated when 3.11 comes out as it's a
+          # CPython module there
           extras_require={
               "dev": ["check-manifest", "flake8", "pytest", "pytest-cov",
                       "pytest-dependency", "tomli"],
