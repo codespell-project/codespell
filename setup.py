@@ -43,7 +43,7 @@ if __name__ == "__main__":
                        'Operating System :: Unix',
                        'Operating System :: MacOS'],
           platforms='any',
-          python_requires='>=3.6',
+          python_requires='>=3.7',
           packages=[
               'codespell_lib',
               'codespell_lib.tests',
@@ -60,7 +60,7 @@ if __name__ == "__main__":
           },
           extras_require={
               "dev": ["check-manifest", "flake8", "pytest", "pytest-cov",
-                      "pytest-dependency"],
+                      "pytest-dependency", "tomli"],
               "hard-encoding-detection": ["chardet"],
               "toml": ["tomli"],
           }

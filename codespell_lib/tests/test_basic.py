@@ -791,35 +791,49 @@ def test_uri_regex_def():
         assert not uri_regex.findall(boilerplate % uri), uri
 
 
-def test_config(tmpdir, capsys):
-    """
-    Tests loading options from a config file.
-    """
-    d = str(tmpdir)
-
-    # Create sample files.
-    with open(op.join(d, 'bad.txt'), 'w') as f:
+@pytest.mark.parametrize('kind', ('toml', 'cfg'))
+def test_config_toml(tmp_path, capsys, kind):
+    """Test loading options from a config file or toml."""
+    d = tmp_path / 'files'
+    d.mkdir()
+    with open(d / 'bad.txt', 'w') as f:
         f.write('abandonned donn\n')
-    with open(op.join(d, 'good.txt'), 'w') as f:
+    with open(d / 'good.txt', 'w') as f:
         f.write("good")
 
-    # Create a config file.
-    conffile = op.join(d, 'config.cfg')
-    with open(conffile, 'w') as f:
-        f.write(
-            '[codespell]\n'
-            'skip = bad.txt\n'
-            'count = \n'
-        )
-
     # Should fail when checking both.
-    code, stdout, _ = cs.main(d, count=True, std=True)
+    code, stdout, _ = cs.main(str(d), count=True, std=True)
     # Code in this case is not exit code, but count of misspellings.
     assert code == 2
     assert 'bad.txt' in stdout
 
+    if kind == 'cfg':
+        conffile = str(tmp_path / 'config.cfg')
+        args = ('--config', conffile)
+        with open(conffile, 'w') as f:
+            f.write("""\
+[codespell]
+skip = bad.txt
+count =
+""")
+    else:
+        assert kind == 'toml'
+        pytest.importorskip('tomli')
+        args = ()
+        with open(tmp_path / 'pyproject.toml', 'w') as f:
+            f.write("""\
+[tool.codespell]
+skip = 'bad.txt'
+count = false
+""")
+
     # Should pass when skipping bad.txt
-    code, stdout, _ = cs.main('--config', conffile, d, count=True, std=True)
+    orig_path = os.getcwd()
+    try:
+        os.chdir(tmp_path)
+        code, stdout, _ = cs.main(str(d), *args, count=True, std=True)
+    finally:
+        os.chdir(orig_path)
     assert code == 0
     assert 'bad.txt' not in stdout
 

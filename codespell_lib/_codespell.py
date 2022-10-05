@@ -408,7 +408,12 @@ def parse_options(args):
 
     # Read toml before other config files.
     if os.path.isfile(os.path.realpath(tomlfile)):
-        import tomli
+        try:
+            import tomli
+        except Exception as exc:
+            raise ImportError(
+                f'tomli is required to read pyproject.toml but could not be '
+                f'imported, got: {exc}') from None
         with open(tomlfile, 'rb') as f:
             data = tomli.load(f).get('tool', {})
         config.read_dict(data)
