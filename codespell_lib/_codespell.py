@@ -411,12 +411,12 @@ def parse_options(args):
         try:
             import tomli
         except Exception as exc:
-            raise ImportError(
-                f'tomli is required to read pyproject.toml but could not be '
-                f'imported, got: {exc}') from None
-        with open(tomlfile, 'rb') as f:
-            data = tomli.load(f).get('tool', {})
-        config.read_dict(data)
+            print('WARNING: pyproject.yml detected but could not be read. '
+                  'tomli is required to read pyproject.toml but could not '
+                  f'be imported, got: {exc}')
+        else:
+            with open(tomlfile, 'rb') as f:
+                config.read_dict(tomli.load(f).get('tool', {}))
     config.read(cfg_files)
 
     if config.has_section('codespell'):
