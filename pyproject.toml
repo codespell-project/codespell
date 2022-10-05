@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codespell"
+dynamic = ["version"]
+maintainers = [{name = "Lucas De Marchi", email = "lucas.de.marchi@gmail.com"}]
+license = {text = "GPL v2"}
+description = "Codespell"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved",
+    "Programming Language :: Python",
+    "Topic :: Software Development",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Operating System :: MacOS",
+]
+requires-python = ">=3.7"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/codespell-project/codespell/"
+Download = "https://github.com/codespell-project/codespell/"
+
+[project.optional-dependencies]
+dev = [
+    "check-manifest",
+    "flake8",
+    "pytest",
+    "pytest-cov",
+    "pytest-dependency",
+    "tomli",
+    "validate-pyproject",
+]
+hard-encoding-detection = ["chardet"]
+toml = ["tomli"]
+
+[project.scripts]
+codespell = "codespell_lib:_script_main"
+
+[tool.setuptools]
+packages = [
+    "codespell_lib",
+    "codespell_lib.tests",
+    "codespell_lib.data",
+]
+zip-safe = false
+include-package-data = true
+platforms = ["any"]
+
+[tool.setuptools.dynamic]
+version = {attr = "codespell_lib.__version__"}
+
+[tool.setuptools.package-data]
+codespell_lib = [
+    "data/dictionary*.txt",
+    "data/linux-kernel.exclude",
+]
+
+[tool.pytest.ini_options]
+addopts = "--cov=codespell_lib -rs --cov-report= --tb=short"

@@ -1,0 +1,3 @@
+[flake8]
+exclude = build, ci-helpers
+ignore =

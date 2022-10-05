@@ -13,9 +13,10 @@ cache:
 
 install:
   - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
+  - '%PYTHON%\python.exe -m pip install --upgrade pip'
   - "pip install codecov chardet setuptools"
   - "pip install -e \".[dev]\"" # install the codespell dev packages
-  - "python setup.py develop"
+  - "pip install ."
 
 build: false  # Not a C# project, build stuff at the test step instead.
 
