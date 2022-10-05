@@ -411,7 +411,7 @@ def parse_options(args):
         try:
             import tomli
         except Exception as exc:
-            print('WARNING: pyproject.yml detected but could not be read. '
+            print('WARNING: pyproject.toml detected but could not be read. '
                   'tomli is required to read pyproject.toml but could not '
                   f'be imported, got: {exc}')
         else:
