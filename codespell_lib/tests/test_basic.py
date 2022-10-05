@@ -813,7 +813,7 @@ def test_config_toml(tmp_path, capsys, kind):
         with open(conffile, 'w') as f:
             f.write("""\
 [codespell]
-skip = bad.txt
+skip = bad.txt, whatever.txt
 count =
 """)
     else:
@@ -823,7 +823,7 @@ count =
         with open(tmp_path / 'pyproject.toml', 'w') as f:
             f.write("""\
 [tool.codespell]
-skip = 'bad.txt'
+skip = 'bad.txt,whatever.txt'
 count = false
 """)
 
