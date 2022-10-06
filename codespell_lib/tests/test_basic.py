@@ -808,7 +808,7 @@ def test_config_toml(tmp_path, capsys, kind):
     assert 'bad.txt' in stdout
 
     if kind == 'cfg':
-        conffile = str(tmp_path / 'config.cfg')
+        conffile = str(tmp_path / 'setup.cfg')
         args = ('--config', conffile)
         with open(conffile, 'w') as f:
             f.write("""\
@@ -830,6 +830,16 @@ count = false
 
     # Should pass when skipping bad.txt
     code, stdout, _ = cs.main(str(d), *args, count=True, std=True)
+    assert code == 0
+    assert 'bad.txt' not in stdout
+
+    # And both should automatically work if they're in cwd
+    cwd = os.getcwd()
+    try:
+        os.chdir(tmp_path)
+        code, stdout, _ = cs.main(str(d), count=True, std=True)
+    finally:
+        os.chdir(cwd)
     assert code == 0
     assert 'bad.txt' not in stdout
 
