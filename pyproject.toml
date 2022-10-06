@@ -26,7 +26,7 @@ content-type = "text/x-rst"
 
 [project.urls]
 Homepage = "https://github.com/codespell-project/codespell/"
-Download = "https://github.com/codespell-project/codespell/"
+Download = "https://github.com/codespell-project/codespell/releases"
 
 [project.optional-dependencies]
 dev = [
