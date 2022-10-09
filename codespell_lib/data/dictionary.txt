@@ -1745,6 +1745,7 @@ alternatiely->alternatively, alternately,
 alternaties->alternatives, alternates,
 alternatievly->alternatively
 alternativey->alternatively
+alternativley->alternatively
 alternativly->alternatively
 alternatve->alternative
 alternavtely->alternatively
@@ -6681,6 +6682,8 @@ combinatorical->combinatorial
 combinbe->combined
 combind->combined
 combinded->combined
+combiniation->combination
+combiniations->combinations
 combinine->combine
 combintaion->combination
 combintaions->combinations
@@ -10577,6 +10580,7 @@ describ->describe
 describbed->described
 describibg->describing
 describng->describing
+describs->describes, describe,
 describtion->description
 describtions->descriptions
 descrice->describe
@@ -16367,6 +16371,7 @@ furter->further
 furthemore->furthermore
 furthermor->furthermore
 furtherst->furthest
+furthremore->furthermore
 furthrest->furthest
 furthur->further
 furture->future
@@ -16780,6 +16785,7 @@ greif->grief
 grephic->graphic
 grestest->greatest
 greysacles->greyscales
+gride->grid
 gridles->griddles
 grigorian->Gregorian
 grobal->global
@@ -17950,6 +17956,7 @@ implemnt->implement
 implemntation->implementation
 implemntations->implementations
 implemtation->implementation
+implemtations->implementations
 implemtentation->implementation
 impleneted->implemented
 implenment->implement
@@ -18302,6 +18309,7 @@ incorported->incorporated
 incorprates->incorporates
 incorreclty->incorrectly
 incorrecly->incorrectly
+incorrecty->incorrectly
 incorreect->incorrect
 incorreectly->incorrectly
 incorrent->incorrect
@@ -19046,6 +19054,7 @@ insepects->inspects
 insependent->independent
 inseperable->inseparable
 insepsion->inception
+inser->insert
 insering->inserting
 insersect->intersect
 insersected->intersected
@@ -19349,6 +19358,10 @@ interative->interactive
 interatively->interactively
 interator->iterator
 interators->iterators
+interaxction->interaction
+interaxctions->interactions
+interaxtion->interaction
+interaxtions->interactions
 interbread->interbreed, interbred,
 intercahnge->interchange
 intercahnged->interchanged
@@ -19636,6 +19649,7 @@ intitialized->initialized
 intitials->initials
 intity->entity
 intot->into
+intoto->into
 intpreter->interpreter
 intput->input
 intputs->inputs
@@ -20413,6 +20427,7 @@ libraray->library
 libraris->libraries
 librarries->libraries
 librarry->library
+libraryes->libraries
 libratie->library
 libraties->libraries
 libraty->library
@@ -21140,6 +21155,9 @@ meaninless->meaningless
 meaninng->meaning
 mear->wear, mere, mare,
 mearly->merely, nearly,
+meassure->measure
+meassured->measured
+meassures->measures
 measue->measure
 measued->measured
 measuement->measurement
@@ -21837,6 +21855,7 @@ Mocrosoft->Microsoft
 mocule->module
 mocules->modules
 moddel->model
+moddeled->modeled
 moddels->models
 modee->mode
 modelinng->modeling
@@ -23373,6 +23392,8 @@ occrrances->occurrences
 occrred->occurred
 occrring->occurring
 occsionally->occasionally
+occucence->occurrence
+occucences->occurrences
 occulusion->occlusion
 occuped->occupied
 occupided->occupied
@@ -24931,6 +24952,8 @@ perpertrated->perpetrated
 perperty->property
 perphas->perhaps
 perpindicular->perpendicular
+perpsective->perspective
+perpsectives->perspectives
 perrror->perror
 persan->person
 persepctive->perspective
@@ -25507,6 +25530,7 @@ possibile->possible
 possibilies->possibilities
 possibilites->possibilities
 possibilitities->possibilities
+possibiliy->possibility
 possibillity->possibility
 possibilties->possibilities
 possibilty->possibility
@@ -35169,6 +35193,7 @@ unesacpe->unescape
 unesacped->unescaped
 unessecarry->unnecessary
 unessecary->unnecessary
+unevaluted->unevaluated
 unexcected->unexpected
 unexcectedly->unexpectedly
 unexcpected->unexpected
@@ -35313,7 +35338,7 @@ uninstlaling->uninstalling
 uninstlals->uninstalls
 unint8_t->uint8_t
 unintelligable->unintelligible
-unintented->unintended
+unintented->unintended, unindented,
 unintentially->unintentionally
 uninteressting->uninteresting
 uninterpretted->uninterpreted
@@ -35924,6 +35949,7 @@ uqest->quest
 uqests->quests
 ure->sure, ire, are, urea, rue,
 urrlib->urllib
+usag->usage
 usal->usual
 usally->usually
 uscaled->unscaled
@@ -37001,6 +37027,7 @@ witin->within
 witk->with
 witn->with
 witout->without
+witrh->with
 witth->with
 wiull->will
 wiyh->with
