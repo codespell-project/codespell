@@ -460,7 +460,7 @@ def parse_ignore_words_option(ignore_words_option):
 
 
 def build_exclude_hashes(filename, exclude_lines):
-    with codecs.open(filename, 'r') as f:
+    with codecs.open(filename, mode='r', encoding='utf-8') as f:
         for line in f:
             exclude_lines.add(line)
 
