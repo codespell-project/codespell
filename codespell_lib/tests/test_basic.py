@@ -272,6 +272,19 @@ def test_encoding(tmpdir, capsys):
     with open(f.name, 'ab') as f:
         f.write(u'naieve\n'.encode('utf-8'))
     assert cs.main(f.name) == 1
+    # Encoding detection (only try ISO 8859-1 because UTF-8 is the default)
+    with open(f.name, 'wb') as f:
+        f.write(b'Speling error, non-ASCII: h\xe9t\xe9rog\xe9n\xe9it\xe9\n')
+    # check warnings about wrong encoding are enabled with "-q 0"
+    code, stdout, stderr = cs.main('-q', '0', f.name, std=True, count=True)
+    assert code == 1
+    assert 'Speling' in stdout
+    assert 'iso-8859-1' in stderr
+    # check warnings about wrong encoding are disabled with "-q 1"
+    code, stdout, stderr = cs.main('-q', '1', f.name, std=True, count=True)
+    assert code == 1
+    assert 'Speling' in stdout
+    assert 'iso-8859-1' not in stderr
     # Binary file warning
     with open(f.name, 'wb') as f:
         f.write(b'\x00\x00naiive\x00\x00')

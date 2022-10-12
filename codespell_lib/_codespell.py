@@ -200,29 +200,26 @@ class FileOpener(object):
         return lines, encoding
 
     def open_with_internal(self, filename):
-        curr = 0
-        while True:
-            try:
-                f = codecs.open(filename, 'r', encoding=encodings[curr])
-            except UnicodeDecodeError:
-                if not self.quiet_level & QuietLevels.ENCODING:
-                    print("WARNING: Decoding file using encoding=%s failed: %s"
-                          % (encodings[curr], filename,), file=sys.stderr)
-                    try:
-                        print("WARNING: Trying next encoding %s"
-                              % encodings[curr + 1], file=sys.stderr)
-                    except IndexError:
-                        pass
-
-                curr += 1
-            else:
-                lines = f.readlines()
-                f.close()
-                break
-        if not lines:
+        encoding = None
+        first_try = True
+        for encoding in encodings:
+            if first_try:
+                first_try = False
+            elif not self.quiet_level & QuietLevels.ENCODING:
+                print("WARNING: Trying next encoding %s"
+                      % encoding, file=sys.stderr)
+            with codecs.open(filename, 'r', encoding=encoding) as f:
+                try:
+                    lines = f.readlines()
+                except UnicodeDecodeError:
+                    if not self.quiet_level & QuietLevels.ENCODING:
+                        print("WARNING: Decoding file using encoding=%s "
+                              "failed: %s" % (encoding, filename,),
+                              file=sys.stderr)
+                else:
+                    break
+        else:
             raise Exception('Unknown encoding')
-
-        encoding = encodings[curr]
 
         return lines, encoding
 
