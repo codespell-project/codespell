@@ -1,1 +1,2 @@
-from ._codespell import main, _script_main, VERSION as __version__  # noqa
+from ._codespell import main, _script_main  # noqa
+from ._version import __version__  # noqa
