@@ -26,9 +26,11 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install build
+        pip install build twine
     - name: Build package
       run: python -m build
+    - name: Check package
+      run: twine check --strict dist/*
     - name: Check env vars
       run: |
         echo "Triggered by: ${{ github.event_name }}"

@@ -3,7 +3,7 @@
 [project]
 name = "codespell"
 description = "Codespell"
-readme = "README.rst"
+readme = { file = "README.rst", content-type = "text/x-rst" }
 requires-python = ">=3.7"
 license = {text = "GPL v2"}
 authors = [
