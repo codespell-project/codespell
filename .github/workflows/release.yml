@@ -34,17 +34,27 @@ jobs:
     - name: Check env vars
       run: |
         echo "Triggered by: ${{ github.event_name }}"
-    # PyPI on release
-    - name: Publish package
+
+  # PyPI on release
+  pypi:
+    needs: package
+    runs-on: ubuntu-latest
+    if: github.event_name == 'release'
+    steps:
+    - name: Publish to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
-      if: github.event_name == 'release'
       with:
         user: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
-    # TestPyPI on push
-    - name: Publish package
+
+  # TestPyPI on push
+  test_pypi:
+    needs: package
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    steps:
+    - name: Publish to TestPyPI
       uses: pypa/gh-action-pypi-publish@release/v1
-      if: github.event_name == 'push'
       with:
         user: __token__
         password: ${{ secrets.TESTPYPI_API_TOKEN }}
