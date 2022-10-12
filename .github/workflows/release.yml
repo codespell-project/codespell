@@ -1,6 +1,6 @@
 # Upload a Python Package using Twine when a release is created
 
-name: Build Python Package
+name: Build
 on:
   release:
     types: [published]
@@ -15,7 +15,7 @@ permissions:
   contents: read
 
 jobs:
-  deploy:
+  package:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3

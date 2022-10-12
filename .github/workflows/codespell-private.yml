@@ -2,7 +2,7 @@
 # For general usage in your repo, see the example in codespell.yml
 # https://github.com/codespell-project/codespell
 # Concurrency cancels an action on a given PR once a new commit is pushed
-name: Tests
+name: Test
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number }}-${{ github.event.ref }}
   cancel-in-progress: true
@@ -32,7 +32,7 @@ jobs:
       - run: |
           python --version  # just to check
           pip install -U pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
-          pip install codecov chardet "setuptools!=47.2.0" docutils tomli
+          pip install codecov chardet "setuptools!=47.2.0" docutils setuptools_scm[toml]
           pip install aspell-python-py3
           pip install -e ".[dev]" # install the codespell dev packages
       - run: codespell --help
