@@ -32,17 +32,18 @@ jobs:
     - name: Check env vars
       run: |
         echo "Triggered by: ${{ github.event_name }}"
-    # PyPi on release
+    # PyPI on release
     - name: Publish package
       uses: pypa/gh-action-pypi-publish@v1
       if: github.event_name == 'release'
       with:
         user: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
-    # TestPyPi on push
+    # TestPyPI on push
     - name: Publish package
       uses: pypa/gh-action-pypi-publish@v1
       if: github.event_name == 'push'
       with:
         user: __token__
         password: ${{ secrets.TESTPYPI_API_TOKEN }}
+        repository_url: https://test.pypi.org/legacy
