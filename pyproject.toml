@@ -63,3 +63,6 @@ codespell_lib = [
     "data/dictionary*.txt",
     "data/linux-kernel.exclude"
 ]
+
+[tool.check-manifest]
+ignore = ["codespell_lib/_version.py"]
