@@ -1,0 +1,68 @@
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+
+[project]
+name = "codespell"
+description = "Codespell"
+readme = { file = "README.rst", content-type = "text/x-rst" }
+requires-python = ">=3.7"
+license = {text = "GPL v2"}
+authors = [
+    {name = "Lucas De Marchi", email = "lucas.de.marchi@gmail.com"},
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved",
+    "Programming Language :: Python",
+    "Topic :: Software Development",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Operating System :: MacOS"
+]
+dependencies = []
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "check-manifest",
+    "flake8",
+    "pytest",
+    "pytest-cov",
+    "pytest-dependency",
+    "tomli"
+]
+hard-encoding-detection = [
+    "chardet"
+]
+toml = [
+    "tomli; python_version < '3.11'"
+]
+
+[project.scripts]
+codespell = "codespell_lib:_script_main"
+
+[project.urls]
+homepage = "https://github.com/codespell-project/codespell"
+repository = "https://github.com/codespell-project/codespell"
+
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "codespell_lib/_version.py"
+
+[tool.setuptools.packages.find]
+exclude = [
+    "snap",
+    "dist"
+]
+
+[tool.setuptools.package-data]
+codespell_lib = [
+    "data/dictionary*.txt",
+    "data/linux-kernel.exclude"
+]
+
+[tool.check-manifest]
+ignore = ["codespell_lib/_version.py"]

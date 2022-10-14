@@ -45,7 +45,7 @@ trim-dictionaries:
 	done
 
 check-manifest:
-	check-manifest
+	check-manifest --no-build-isolation
 
 check-distutils:
 	python setup.py check --restructuredtext --strict
@@ -55,9 +55,6 @@ flake8:
 
 pytest:
 	pytest codespell_lib
-
-pypi:
-	python setup.py sdist register upload
 
 clean:
 	rm -rf codespell.1
