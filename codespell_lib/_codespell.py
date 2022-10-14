@@ -474,10 +474,10 @@ def build_dict(filename, misspellings, ignore_words):
     with codecs.open(filename, mode='r', encoding='utf-8') as f:
         for line in f:
             [key, data] = line.split('->')
-            # TODO for now, convert both to lower. Someday we can maybe add
-            # support for fixing caps.
+            # Convert key to lower case.
+            # Do not modify data to lower case. Leave it as per dictionary.
             key = key.lower()
-            data = data.lower()
+            # data = data.lower()
             if key in ignore_words:
                 continue
             data = data.strip()
@@ -513,13 +513,51 @@ def is_text_file(filename):
     return True
 
 
+def is_camel_case_word(input_word):
+    return (input_word != input_word.lower()) and \
+           (input_word != input_word.upper()) and \
+           ("_" not in input_word) and \
+           ("-" not in input_word) and \
+           (" " not in input_word)
+
+
+def is_camel_case_string(input_string):
+    for word in input_string.split(','):
+        if is_camel_case_word(word) is True:
+            return True
+    return False
+
+
 def fix_case(word, fixword):
-    if word == word.capitalize():
-        return ', '.join(w.strip().capitalize() for w in fixword.split(','))
+    if fixword == fixword.upper():
+        # abbreviation, acronym: fixword is in all upper case.
+        # Use fixword as per dictionary.
+        # Eg. asscii->ASCII
+        return fixword
+    elif word == word.capitalize() and fixword == fixword.lower():
+        # word is capitalized and fixword(s) in lower.
+        # Capitalize/Title fixword(s).
+        # Eg. Weather, Whether,
+        return fixword.title()
+        # return ', '.join(w.strip().capitalize() for w in fixword.split(','))
+    elif word == word.capitalize() and not is_camel_case_string(fixword):
+        # word is capitalized and fixword(s) contain mixed with no camelCase.
+        # Capitalize/Title fixword(s).
+        # Eg. skipt->skip, Skype, skipped,
+        return fixword.title()
+        # return ', '.join(w.strip().capitalize() for w in fixword.split(','))
     elif word == word.upper():
+        # word is in all upper case, change fixword to upper.
+        # Eg. MONDAY
         return fixword.upper()
-    # they are both lower case
-    # or we don't have any idea
+    elif word.lower() == fixword.lower():
+        # Special feature only meant for private custom dictionary.
+        # word is valid but fixword required in CamelCase.
+        # Use fixword as per dictionary.
+        # Eg. mysql->MySQL
+        return fixword
+    # word is in lower, capitalize, CamelCase or whatever.
+    # Use fixword as per dictionary.
     return fixword
 
 

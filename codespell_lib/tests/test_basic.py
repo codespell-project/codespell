@@ -406,61 +406,280 @@ def test_case_handling(tmpdir, capsys):
         assert f.read().decode('utf-8') == 'this has an ASCII error'
 
 
-def _helper_test_case_handling_in_fixes(tmpdir, capsys, reason):
+def _helper_test_case_handling(tmpdir, capsys, dict_entry, bad_input,
+                               expected_output, reason):
     d = str(tmpdir)
 
     with open(op.join(d, 'dictionary.txt'), 'w') as f:
         if reason:
-            f.write('adoptor->adopter, adaptor, reason\n')
+            f.write(dict_entry + ' reason\n')
         else:
-            f.write('adoptor->adopter, adaptor,\n')
+            f.write(dict_entry + '\n')
     dictionary_name = f.name
 
-    # the mispelled word is entirely lowercase
+    # the misspelled word is entirely lowercase
     with open(op.join(d, 'bad.txt'), 'w') as f:
-        f.write('early adoptor\n')
+        f.write(bad_input + '\n')
     code, stdout, _ = cs.main('-D', dictionary_name, f.name, std=True)
     # all suggested fixes must be lowercase too
-    assert 'adopter, adaptor' in stdout
-    # the reason, if any, must not be modified
-    if reason:
-        assert 'reason' in stdout
-
-    # the mispelled word is capitalized
-    with open(op.join(d, 'bad.txt'), 'w') as f:
-        f.write('Early Adoptor\n')
-    code, stdout, _ = cs.main('-D', dictionary_name, f.name, std=True)
-    # all suggested fixes must be capitalized too
-    assert 'Adopter, Adaptor' in stdout
-    # the reason, if any, must not be modified
-    if reason:
-        assert 'reason' in stdout
-
-    # the mispelled word is entirely uppercase
-    with open(op.join(d, 'bad.txt'), 'w') as f:
-        f.write('EARLY ADOPTOR\n')
-    code, stdout, _ = cs.main('-D', dictionary_name, f.name, std=True)
-    # all suggested fixes must be uppercase too
-    assert 'ADOPTER, ADAPTOR' in stdout
-    # the reason, if any, must not be modified
-    if reason:
-        assert 'reason' in stdout
-
-    # the mispelled word mixes lowercase and uppercase
-    with open(op.join(d, 'bad.txt'), 'w') as f:
-        f.write('EaRlY AdOpToR\n')
-    code, stdout, _ = cs.main('-D', dictionary_name, f.name, std=True)
-    # all suggested fixes should be lowercase
-    assert 'adopter, adaptor' in stdout
+    assert expected_output in stdout
     # the reason, if any, must not be modified
     if reason:
         assert 'reason' in stdout
 
 
-def test_case_handling_in_fixes(tmpdir, capsys):
-    """Test that the case of fixes is similar to the mispelled word."""
-    _helper_test_case_handling_in_fixes(tmpdir, capsys, reason=False)
-    _helper_test_case_handling_in_fixes(tmpdir, capsys, reason=True)
+def test_case_handling_in_fix_case(tmpdir, capsys):
+    """Test various case handling in fix_case() function."""
+    # Test typical: Both misspelled and multiple suggested words are coded
+    #      as lower case in dictionary.
+    # Verifying: Capitalize is consistent for all suggested words
+    _helper_test_case_handling(tmpdir, capsys,
+                               'adoptor->adopter, adaptor,',
+                               'early adoptor',
+                               'adopter, adaptor', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'adoptor->adopter, adaptor,',
+                               'Early Adoptor',
+                               'Adopter, Adaptor', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'adoptor->adopter, adaptor,',
+                               'EARLY ADOPTOR',
+                               'ADOPTER, ADAPTOR', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'adoptor->adopter, adaptor,',
+                               'EaRlY AdOpToR',
+                               'adopter, adaptor', reason=False)
+    # Verifying: Capitalize is consistent for all suggested words
+    _helper_test_case_handling(tmpdir, capsys,
+                               'adoptor->adopter, adaptor,',
+                               'early adoptor',
+                               'adopter, adaptor', reason=True)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'adoptor->adopter, adaptor,',
+                               'Early Adoptor',
+                               'Adopter, Adaptor', reason=True)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'adoptor->adopter, adaptor,',
+                               'EARLY ADOPTOR',
+                               'ADOPTER, ADAPTOR', reason=True)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'adoptor->adopter, adaptor,',
+                               'EaRlY AdOpToR',
+                               'adopter, adaptor', reason=True)
+    # Test abbreviation, acronym, initialism: Suggested word coded as
+    #      upper case in dictionary.
+    _helper_test_case_handling(tmpdir, capsys,
+                               'asscii->ASCII',
+                               'asscii',
+                               'ASCII', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'asscii->ASCII',
+                               'Asscii',
+                               'ASCII', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'asscii->ASCII',
+                               'AssCii',
+                               'ASCII', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'asscii->ASCII',
+                               'ASSCII',
+                               'ASCII', reason=False)
+    # Test proper nouns: Misspelled coded as lower case in dictionary.
+    _helper_test_case_handling(tmpdir, capsys,
+                               'austrailia->Australia',
+                               'austrailia',
+                               'Australia', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'austrailia->Australia',
+                               'Austrailia',
+                               'Australia', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'austrailia->Australia',
+                               'AustRailia',
+                               'Australia', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'austrailia->Australia',
+                               'AUSTRAILIA',
+                               'AUSTRALIA', reason=False)
+    # Test proper nouns, brand names: Misspelled coded as capitalize
+    #      in dictionary.
+    _helper_test_case_handling(tmpdir, capsys,
+                               'Micosoft->Microsoft',
+                               'micosoft',
+                               'Microsoft', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'Micosoft->Microsoft',
+                               'Micosoft',
+                               'Microsoft', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'Micosoft->Microsoft',
+                               'MicoSoft',
+                               'Microsoft', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'Micosoft->Microsoft',
+                               'MICOSOFT',
+                               'MICROSOFT', reason=False)
+    # Test typical single: Both misspelled and suggested word both coded
+    #      as lower case in dictionary.
+    _helper_test_case_handling(tmpdir, capsys,
+                               'pinapple->pineapple',
+                               'pinapple',
+                               'pineapple', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'pinapple->pineapple',
+                               'Pinapple',
+                               'Pineapple', reason=False)
+    # Test typical multiple: Both misspelled and multiple suggested words
+    #      both coded as lower case in dictionary.
+    _helper_test_case_handling(tmpdir, capsys,
+                               'uspported->supported, unsupported,',
+                               'uspported',
+                               'supported, unsupported', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'uspported->supported, unsupported,',
+                               'Uspported',
+                               'Supported, Unsupported', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'uspported->supported, unsupported,',
+                               'USPPORTED',
+                               'SUPPORTED, UNSUPPORTED', reason=False)
+    # Test typical multiple & mix: Misspelled coded in lower. Multiple
+    #      suggested words coded as lower & capitalize case in dictionary.
+    _helper_test_case_handling(tmpdir, capsys,
+                               'skipt->skip, Skype, skipped,',
+                               'skipt',
+                               'skip, Skype, skipped', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'skipt->skip, Skype, skipped,',
+                               'Skipt',
+                               'Skip, Skype, Skipped', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'skipt->skip, Skype, skipped,',
+                               'SKIPT',
+                               'SKIP, SKYPE, SKIPPED', reason=False)
+    # Test CamelCase basic: Suggested word coded as CamelCase in dictionary.
+    _helper_test_case_handling(tmpdir, capsys,
+                               'lesstiff->LessTif',
+                               'lesstiff',
+                               'LessTif', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'lesstiff->LessTif',
+                               'lessTiff',
+                               'LessTif', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'lesstiff->LessTif',
+                               'Lesstiff',
+                               'LessTif', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'lesstiff->LessTif',
+                               'LessTiff',
+                               'LessTif', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'lesstiff->LessTif',
+                               'LESSTIFF',
+                               'LESSTIF', reason=False)
+    # Test CamelCase brand names: Suggested word coded as CamelCase
+    #      in dictionary.
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mangodb->MongoDB',
+                               'mangodb',
+                               'MongoDB', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mangodb->MongoDB',
+                               'mangoDb',
+                               'MongoDB', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mangodb->MongoDB',
+                               'mangoDB',
+                               'MongoDB', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mangodb->MongoDB',
+                               'Mangodb',
+                               'MongoDB', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mangodb->MongoDB',
+                               'MangoDb',
+                               'MongoDB', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mangodb->MongoDB',
+                               'MangoDB',
+                               'MongoDB', reason=False)
+    # Test CamelCase brand names: Suggested word coded as CamelCase
+    #      in dictionary.
+    _helper_test_case_handling(tmpdir, capsys,
+                               'ebya->eBay',
+                               'ebya',
+                               'eBay', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'ebya->eBay',
+                               'eBya',
+                               'eBay', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'ebya->eBay',
+                               'Ebya',
+                               'eBay', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'ebya->eBay',
+                               'EBya',
+                               'eBay', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'ebya->eBay',
+                               'EBYA',
+                               'EBAY', reason=False)
+    # Special Test CamelCase, brand names: Misspelled is correct spelling
+    #      but incorrect case. Suggested word is coded as CamelCase in
+    #      dictionary. For custom dictionary only.
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mariadb->MariaDB',
+                               'mariadb',
+                               'MariaDB', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mariadb->MariaDB',
+                               'mariaDb',
+                               'MariaDB', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mariadb->MariaDB',
+                               'mariaDB',
+                               'MariaDB', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mariadb->MariaDB',
+                               'Mariadb',
+                               'MariaDB', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mariadb->MariaDB',
+                               'MariaDb',
+                               'MariaDB', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mariadb->MariaDB',
+                               'MariaDB',
+                               'MariaDB', reason=False)
+    # Special Test CamelCase, brand names: Misspelled is correct spelling
+    #      but incorrect case. Multiple suggested words are coded as CamelCase
+    #      and lower case in dictionary. For custom dictionary only.
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mysql->MySQL, mysql,',
+                               'mysql',
+                               'MySQL, mysql', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mysql->MySQL, mysql,',
+                               'mySql',
+                               'MySQL, mysql', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mysql->MySQL, mysql,',
+                               'mySQL',
+                               'MySQL, mysql', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mysql->MySQL, mysql,',
+                               'Mysql',
+                               'MySQL, mysql', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mysql->MySQL, mysql,',
+                               'MySql',
+                               'MySQL, mysql', reason=False)
+    _helper_test_case_handling(tmpdir, capsys,
+                               'mysql->MySQL, mysql,',
+                               'MySQL',
+                               'MySQL, mysql', reason=False)
 
 
 def test_context(tmpdir, capsys):
