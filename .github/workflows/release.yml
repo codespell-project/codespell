@@ -34,6 +34,11 @@ jobs:
     - name: Check env vars
       run: |
         echo "Triggered by: ${{ github.event_name }}"
+    - uses: actions/upload-artifact@v3
+      with:
+        name: dist
+        path: |
+          dist
 
   # PyPI on release
   pypi:
@@ -41,6 +46,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'release'
     steps:
+    - uses: actions/download-artifact@v3
+      with:
+        name: dist
     - name: Publish to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
@@ -53,6 +61,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
     steps:
+    - uses: actions/download-artifact@v3
+      with:
+        name: dist
     - name: Publish to TestPyPI
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
