@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import glob
 import os.path as op
 import os
@@ -41,9 +39,9 @@ fname_params = pytest.mark.parametrize('fname, in_aspell, in_dictionary', _fname
 
 def test_dictionaries_exist():
     """Test consistency of dictionaries."""
-    doc_fnames = set(op.basename(f[0]) for f in _fnames_in_aspell)
-    got_fnames = set(op.basename(f)
-                     for f in glob.glob(op.join(_data_dir, '*.txt')))
+    doc_fnames = {op.basename(f[0]) for f in _fnames_in_aspell}
+    got_fnames = {op.basename(f)
+                  for f in glob.glob(op.join(_data_dir, '*.txt'))}
     assert doc_fnames == got_fnames
 
 
