@@ -662,10 +662,6 @@ def parse_file(filename, colors, summary, misspellings, exclude_lines,
             return bad_count
         try:
             lines, encoding = file_opener.open(filename)
-        except PermissionError as e:
-            print("WARNING: %s: %s" % (e.strerror, filename),
-                  file=sys.stderr)
-            return bad_count
         except OSError:
             return bad_count
 
