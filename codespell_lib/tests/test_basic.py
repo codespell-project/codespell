@@ -384,10 +384,22 @@ def test_check_hidden(tmpdir, capsys):
     assert cs.main('--check-hidden', d) == 2
     assert cs.main('--check-hidden', '--check-filenames', d) == 5
     # check again with a relative path
-    rel = op.join('.', str(tmpdir))
+    rel = op.relpath(tmpdir)
     assert cs.main(rel) == 0
     assert cs.main('--check-hidden', rel) == 2
     assert cs.main('--check-hidden', '--check-filenames', rel) == 5
+    # hidden subdirectory
+    assert cs.main(d) == 0
+    assert cs.main('--check-hidden', d) == 2
+    assert cs.main('--check-hidden', '--check-filenames', d) == 5
+    subdir = op.join(d, 'subdir')
+    os.mkdir(subdir)
+    os.mkdir(op.join(subdir, '.abandonned'))
+    copyfile(op.join(d, '.abandonned.txt'),
+             op.join(subdir, '.abandonned', 'abandonned.txt'))
+    assert cs.main(d) == 0
+    assert cs.main('--check-hidden', d) == 4
+    assert cs.main('--check-hidden', '--check-filenames', d) == 10
 
 
 def test_case_handling(tmpdir, capsys):
