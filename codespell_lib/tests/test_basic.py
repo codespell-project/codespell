@@ -455,19 +455,33 @@ def test_check_hidden(
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test ignoring of hidden files."""
-    fname = tmp_path / "test.txt"
     # visible file
-    fname.write_text("abandonned\n")
+    #
+    #         tmp_path
+    #         └── test.txt
+    #
+    fname = tmp_path / "test.txt"
+    fname.write_text("erorr\n")
     assert cs.main(fname) == 1
     assert cs.main(tmp_path) == 1
+
     # hidden file
+    #
+    #         tmp_path
+    #         └── .test.txt
+    #
     hidden_file = tmp_path / ".test.txt"
     fname.rename(hidden_file)
     assert cs.main(hidden_file) == 0
     assert cs.main(tmp_path) == 0
     assert cs.main("--check-hidden", hidden_file) == 1
     assert cs.main("--check-hidden", tmp_path) == 1
+
     # hidden file with typo in name
+    #
+    #         tmp_path
+    #         └── .abandonned.txt
+    #
     typo_file = tmp_path / ".abandonned.txt"
     hidden_file.rename(typo_file)
     assert cs.main(typo_file) == 0
@@ -476,16 +490,28 @@ def test_check_hidden(
     assert cs.main("--check-hidden", tmp_path) == 1
     assert cs.main("--check-hidden", "--check-filenames", typo_file) == 2
     assert cs.main("--check-hidden", "--check-filenames", tmp_path) == 2
+
     # hidden directory
+    #
+    #         tmp_path
+    #         ├── .abandonned
+    #         │   ├── .abandonned.txt
+    #         │   └── subdir
+    #         │       └── .abandonned.txt
+    #         └── .abandonned.txt
+    #
     assert cs.main(tmp_path) == 0
     assert cs.main("--check-hidden", tmp_path) == 1
     assert cs.main("--check-hidden", "--check-filenames", tmp_path) == 2
-    hidden_dir = tmp_path / ".abandonned"
-    hidden_dir.mkdir()
-    copyfile(typo_file, hidden_dir / typo_file.name)
+    hidden = tmp_path / ".abandonned"
+    hidden.mkdir()
+    copyfile(typo_file, hidden / typo_file.name)
+    subdir = hidden / "subdir"
+    subdir.mkdir()
+    copyfile(typo_file, subdir / typo_file.name)
     assert cs.main(tmp_path) == 0
-    assert cs.main("--check-hidden", tmp_path) == 2
-    assert cs.main("--check-hidden", "--check-filenames", tmp_path) == 5
+    assert cs.main("--check-hidden", tmp_path) == 3
+    assert cs.main("--check-hidden", "--check-filenames", tmp_path) == 8
     # check again with a relative path
     try:
         rel = op.relpath(tmp_path)
@@ -494,20 +520,28 @@ def test_check_hidden(
         pass
     else:
         assert cs.main(rel) == 0
-        assert cs.main("--check-hidden", rel) == 2
-        assert cs.main("--check-hidden", "--check-filenames", rel) == 5
+        assert cs.main("--check-hidden", rel) == 3
+        assert cs.main("--check-hidden", "--check-filenames", rel) == 8
+
     # hidden subdirectory
-    assert cs.main(tmp_path) == 0
-    assert cs.main("--check-hidden", tmp_path) == 2
-    assert cs.main("--check-hidden", "--check-filenames", tmp_path) == 5
+    #
+    #         tmp_path
+    #         ├── .abandonned
+    #         │   ├── .abandonned.txt
+    #         │   └── subdir
+    #         │       └── .abandonned.txt
+    #         ├── .abandonned.txt
+    #         └── subdir
+    #             └── .abandonned
+    #                 └── .abandonned.txt
     subdir = tmp_path / "subdir"
     subdir.mkdir()
-    hidden_subdir = subdir / ".abandonned"
-    hidden_subdir.mkdir()
-    copyfile(typo_file, hidden_subdir / typo_file.name)
+    hidden = subdir / ".abandonned"
+    hidden.mkdir()
+    copyfile(typo_file, hidden / typo_file.name)
     assert cs.main(tmp_path) == 0
-    assert cs.main("--check-hidden", tmp_path) == 3
-    assert cs.main("--check-hidden", "--check-filenames", tmp_path) == 8
+    assert cs.main("--check-hidden", tmp_path) == 4
+    assert cs.main("--check-hidden", "--check-filenames", tmp_path) == 11
 
 
 def test_case_handling(
