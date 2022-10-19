@@ -383,6 +383,11 @@ def test_check_hidden(tmpdir, capsys):
     assert cs.main(d) == 0
     assert cs.main('--check-hidden', d) == 2
     assert cs.main('--check-hidden', '--check-filenames', d) == 5
+    # check again with a relative path
+    rel = op.join('.', str(tmpdir))
+    assert cs.main(rel) == 0
+    assert cs.main('--check-hidden', rel) == 2
+    assert cs.main('--check-hidden', '--check-filenames', rel) == 5
 
 
 def test_case_handling(tmpdir, capsys):
