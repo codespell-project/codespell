@@ -121,6 +121,8 @@ def test_basic(tmpdir, capsys):
     if sys.platform == 'linux':  # cannot create unreadable file on Windows
         with open(op.join(d, 'unreadable.txt'), 'w') as f:
             f.write('abandonned\n')
+        code, _, stderr = cs.main(f.name, std=True)
+        assert 'WARNING:' not in stderr
         os.chmod(f.name, 0o000)
         code, _, stderr = cs.main(f.name, std=True)
         assert 'WARNING:' in stderr
