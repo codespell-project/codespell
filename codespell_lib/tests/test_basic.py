@@ -413,7 +413,25 @@ def test_check_hidden(tmpdir, capsys):
              op.join(subdir, '.abandonned', 'abandonned.txt'))
     assert cs.main(d) == 0
     assert cs.main('--check-hidden', d) == 3
-    assert cs.main('--check-hidden', '--check-filenames', d) == 7
+    assert cs.main('--check-hidden', '--check-filenames', d) == 8
+    os.mkdir(op.join(d, '.abandonned', 'a'))
+    copyfile(op.join(d, '.abandonned.txt'),
+             op.join(d, '.abandonned', 'a', 'abandonned.txt'))
+    assert cs.main(d) == 0
+    assert cs.main('--check-hidden', d) == 4
+    assert cs.main('--check-hidden', '--check-filenames', d) == 11
+    os.mkdir(op.join(d, '.abandonned', 'a', 'b'))
+    copyfile(op.join(d, '.abandonned.txt'),
+             op.join(d, '.abandonned', 'a', 'b', 'abandonned.txt'))
+    assert cs.main(d) == 0
+    assert cs.main('--check-hidden', d) == 5
+    assert cs.main('--check-hidden', '--check-filenames', d) == 14
+    os.mkdir(op.join(d, '.abandonned', 'a', 'b', 'c'))
+    copyfile(op.join(d, '.abandonned.txt'),
+             op.join(d, '.abandonned', 'a', 'b', 'c', 'abandonned.txt'))
+    assert cs.main(d) == 0
+    assert cs.main('--check-hidden', d) == 6
+    assert cs.main('--check-hidden', '--check-filenames', d) == 17
 
 
 def test_case_handling(tmpdir, capsys):
