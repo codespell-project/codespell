@@ -412,8 +412,8 @@ def test_check_hidden(tmpdir, capsys):
     copyfile(op.join(d, '.abandonned.txt'),
              op.join(subdir, '.abandonned', 'abandonned.txt'))
     assert cs.main(d) == 0
-    assert cs.main('--check-hidden', d) == 4
-    assert cs.main('--check-hidden', '--check-filenames', d) == 10
+    assert cs.main('--check-hidden', d) == 3
+    assert cs.main('--check-hidden', '--check-filenames', d) == 7
 
 
 def test_case_handling(tmpdir, capsys):
