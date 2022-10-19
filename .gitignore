@@ -9,3 +9,5 @@ codespell.egg-info
 .mypy_cache/
 .pytest_cache/
 codespell_lib/_version.py
+junit-results.xml
+*.egg-info/
