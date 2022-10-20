@@ -466,7 +466,7 @@ def build_exclude_hashes(filename, exclude_lines):
 def build_ignore_words(filename, ignore_words):
     with codecs.open(filename, mode='r', encoding='utf-8') as f:
         for line in f:
-            ignore_words.add(line.strip())
+            ignore_words.add(line.partition('#')[0].strip())
 
 
 def build_dict(filename, misspellings, ignore_words):

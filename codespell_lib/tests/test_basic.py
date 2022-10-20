@@ -234,6 +234,9 @@ def test_ignore_dictionary(tmpdir, capsys):
     with open(op.join(d, 'ignore.txt'), 'w') as f:
         f.write('abandonned\n')
     assert cs.main('-I', f.name, bad_name) == 1
+    with open(op.join(d, 'ignore.txt'), 'w') as f:
+        f.write('abandonned#comment\n')
+    assert cs.main('-I', f.name, bad_name) == 1
 
 
 def test_ignore_word_list(tmpdir, capsys):

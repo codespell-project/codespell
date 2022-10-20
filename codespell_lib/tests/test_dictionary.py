@@ -94,6 +94,7 @@ single_comma = re.compile(r'^[^,]*,\s*$')
 def _check_err_rep(err, rep, in_aspell, fname, languages):
     assert whitespace.search(err) is None, 'error %r has whitespace' % err
     assert ',' not in err, 'error %r has a comma' % err
+    assert '#' not in err, 'error %r has a hash' % err
     assert len(rep) > 0, ('error %s: correction %r must be non-empty'
                           % (err, rep))
     assert not start_whitespace.match(rep), ('error %s: correction %r '
