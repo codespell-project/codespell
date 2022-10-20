@@ -7,7 +7,7 @@ int f(int type)
 int main(void)
 {
     int fd, clas;
-    /* tis code does nothing */
+    /* this code does nothing */
 
     f(1, 2, 3);
 
