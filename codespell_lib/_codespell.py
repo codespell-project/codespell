@@ -402,7 +402,7 @@ def parse_options(args):
     cfg_files = ['setup.cfg', '.codespellrc']
     if options.config:
         cfg_files.append(options.config)
-    config = configparser.ConfigParser()
+    config = configparser.ConfigParser(interpolation=None)
 
     # Read toml before other config files.
     toml_files_errors = list()
