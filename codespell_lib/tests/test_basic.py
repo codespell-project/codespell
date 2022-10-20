@@ -122,6 +122,20 @@ def test_basic(tmpdir, capsys):
     assert cs.main(d) == 0
 
 
+@pytest.mark.skipif(
+    not sys.platform == 'linux', reason='Only supported on Linux')
+def test_permission_error(tmp_path, capsys):
+    """Test permission error handling."""
+    d = tmp_path
+    with open(d / 'unreadable.txt', 'w') as f:
+        f.write('abandonned\n')
+    code, _, stderr = cs.main(f.name, std=True)
+    assert 'WARNING:' not in stderr
+    os.chmod(f.name, 0o000)
+    code, _, stderr = cs.main(f.name, std=True)
+    assert 'WARNING:' in stderr
+
+
 def test_interactivity(tmpdir, capsys):
     """Test interaction"""
     # Windows can't read a currently-opened file, so here we use
