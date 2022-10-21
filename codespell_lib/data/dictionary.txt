@@ -5625,6 +5625,9 @@ centruies->centuries
 centruy->century
 centuties->centuries
 centuty->century
+cerain->certain
+cerainly->certainly
+cerainty->certainty
 cerate->create
 cerated->created, serrated,
 ceratin->certain, keratin,
@@ -5708,6 +5711,9 @@ certiticated->certificated
 certiticates->certificates
 certitication->certification
 cervial->cervical, servile, serval,
+cetain->certain
+cetainly->certainly
+cetainty->certainty
 cetrainly->certainly
 cetting->setting
 Cgywin->Cygwin
@@ -7083,6 +7089,10 @@ compelte->complete
 compeltelyt->completely
 compeltion->completion
 compeltly->completely
+compelx->complex
+compelxes->complexes
+compelxities->complexities
+compelxity->complexity
 compenent->component, competent,
 compenents->components, competence,
 compensantion->compensation
@@ -17305,7 +17315,7 @@ hightlight->highlight
 hightlighted->highlighted
 hightlighting->highlighting
 hightlights->highlights
-hights->height
+hights->heights
 higlight->highlight
 higlighted->highlighted
 higlighting->highlighting
@@ -20379,6 +20389,8 @@ libarary->library
 libaries->libraries
 libary->library
 libell->libel
+liberaries->libraries
+liberary->library
 liberoffice->libreoffice
 liberry->library
 libgng->libpng
@@ -25161,6 +25173,8 @@ playge->plague
 playgerise->plagiarise
 playgerize->plagiarize
 playgropund->playground
+playist->playlist
+playists->playlists
 playright->playwright
 playwrite->playwright
 playwrites->playwrights
@@ -29199,6 +29213,7 @@ restoreing->restoring
 restors->restores
 restouration->restoration
 restraunt->restraint, restaurant,
+restraunts->restraints, restaurants,
 restrcted->restricted
 restrcuture->restructure
 restriced->restricted
@@ -31178,6 +31193,7 @@ solfs->solves
 soliders->soldiers
 solification->solidification
 soliliquy->soliloquy
+solitare->solitaire, solitary,
 soltion->solution
 soltuion->solution
 soltuions->solutions
@@ -31405,6 +31421,8 @@ speciffic->specific
 speciffically->specifically
 specifi->specific, specify,
 specifially->specifically
+specificaiton->specification
+specificaitons->specifications
 specificallly->specifically
 specificaly->specifically
 specificated->specified
@@ -33629,6 +33647,8 @@ terimnate->terminate
 termial->terminal
 termials->terminals
 termianted->terminated
+termimal->terminal
+termimals->terminals
 terminater->terminator
 terminaters->terminators
 terminats->terminates
@@ -33660,6 +33680,8 @@ termporarily->temporarily
 termporary->temporary
 ternament->tournament
 ternimate->terminate
+terninal->terminal
+terninals->terminals
 terrable->terrible
 terrestial->terrestrial
 terrform->terraform
@@ -34982,10 +35004,16 @@ uncalcualted->uncalculated
 unce->once
 uncehck->uncheck
 uncehcked->unchecked
+uncerain->uncertain
+uncerainties->uncertainties
+uncerainty->uncertainty
 uncertaincy->uncertainty
 uncertainities->uncertainties
 uncertainity->uncertainty
 uncessarily->unnecessarily
+uncetain->uncertain
+uncetainties->uncertainties
+uncetainty->uncertainty
 unchache->uncache
 unchached->uncached
 unchaged->unchanged
