@@ -24,6 +24,7 @@ dynamic = ["version"]
 
 [project.optional-dependencies]
 dev = [
+    "aspell-python-py3",
     "check-manifest",
     "flake8",
     "pytest",
