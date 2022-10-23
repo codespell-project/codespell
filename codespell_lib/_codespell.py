@@ -423,8 +423,21 @@ def parse_options(args):
         with open(toml_file, 'rb') as f:
             data = tomli.load(f).get('tool', {})
         config.read_dict(data)
-    config.read(cfg_files)
 
+    # Report which config files are going to be used
+    used_cfg_files = []
+    for cfg_file in cfg_files:
+        _cfg = configparser.ConfigParser()
+        _cfg.read(cfg_file)
+        if _cfg.has_section('codespell'):
+            used_cfg_files.append(cfg_file)
+    if len(used_cfg_files) > 0:
+        print('Used config files:\n')
+    for ifile, cfg_file in enumerate(used_cfg_files):
+        print('    %i : %s' % (ifile, cfg_file))
+
+    # Use config files
+    config.read(cfg_files)
     if config.has_section('codespell'):
         # Build a "fake" argv list using option name and value.
         cfg_args = []
