@@ -66,3 +66,6 @@ codespell_lib = [
 
 [tool.check-manifest]
 ignore = ["codespell_lib/_version.py"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=codespell_lib -rs --cov-report= --tb=short --junit-xml=junit-results.xml"
