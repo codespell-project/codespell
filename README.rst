@@ -117,6 +117,17 @@ These are both equivalent to running::
 
     codespell --quiet-level 3 --count --skip "*.po,*.ts,./src/3rdParty,./src/Test"
 
+If several config files are present, they are read in the following order:
+
+#. ``pyproject.toml``
+#. ``setup.cfg``
+#. ``.codespellrc``
+#. any additional file supplied via ``--config``
+
+If a codespell configuration is supplied in several of these files,
+the configuration from the most recently read file overwrites previously
+specified configurations.
+
 Any options specified in the command line will *override* options from the
 config files.
 
