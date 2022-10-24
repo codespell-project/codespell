@@ -119,7 +119,7 @@ These are both equivalent to running::
 
 If several config files are present, they are read in the following order:
 
-#. ``pyproject.toml``
+#. ``pyproject.toml`` (only if the ``tomli`` library is available)
 #. ``setup.cfg``
 #. ``.codespellrc``
 #. any additional file supplied via ``--config``
