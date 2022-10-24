@@ -542,7 +542,6 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
 
         if r == 'N':
             misspelling.fix = False
-            misspelling.fixword = ''
 
     elif (interactivity & 2) and not misspelling.reason:
         # if it is not disabled, i.e. it just has more than one possible fix,
