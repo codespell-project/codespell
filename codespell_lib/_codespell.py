@@ -103,11 +103,7 @@ class GlobMatch:
         if self.pattern_list is None:
             return False
 
-        for p in self.pattern_list:
-            if fnmatch.fnmatch(filename, p):
-                return True
-
-        return False
+        return any(fnmatch.fnmatch(filename, p) for p in self.pattern_list)
 
 
 class Misspelling:
@@ -507,9 +503,7 @@ def is_hidden(filename, check_hidden):
 def is_text_file(filename):
     with open(filename, mode='rb') as f:
         s = f.read(1024)
-    if b'\x00' in s:
-        return False
-    return True
+    return b'\x00' not in s
 
 
 def fix_case(word, fixword):
