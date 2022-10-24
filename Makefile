@@ -47,9 +47,6 @@ trim-dictionaries:
 check-manifest:
 	check-manifest --no-build-isolation
 
-check-distutils:
-	python setup.py check --restructuredtext --strict
-
 flake8:
 	flake8
 

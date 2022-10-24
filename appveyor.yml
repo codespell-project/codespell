@@ -15,7 +15,6 @@ install:
   - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
   - "pip install codecov chardet setuptools"
   - "pip install -e \".[dev]\"" # install the codespell dev packages
-  - "python setup.py develop"
 
 build: false  # Not a C# project, build stuff at the test step instead.
 
