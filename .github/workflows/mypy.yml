@@ -1,0 +1,22 @@
+name: mypy
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  mypy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.7'
+
+      - name: Install dependencies
+        run: pip install -e .[types]
+
+      - name: Run mypy
+        run: mypy .
