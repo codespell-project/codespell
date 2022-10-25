@@ -782,7 +782,7 @@ def main(*args):
     options, parser, used_cfg_files = parse_options(args)
 
     # Report used config files
-    if len(used_cfg_files) > 0:
+    if used_cfg_files:
         print('Used config files:')
     for ifile, cfg_file in enumerate(used_cfg_files, start=1):
         print('    %i: %s' % (ifile, cfg_file))
