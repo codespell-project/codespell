@@ -170,6 +170,10 @@ applied directly, but should instead be manually inspected. E.g.:
 Development Setup
 -----------------
 
+As suggested in the `Python Packaging User Guide`_, ensure ``pip``, ``setuptools``, and ``wheel`` are up to date before installing from source. Specifically you will need recent versions of ``setuptools`` and ``setuptools_scm``::
+
+    pin install --upgrade pip setuptools setuptools_scm wheel
+
 You can install required dependencies for development by running the following within a checkout of the codespell source::
 
        pip install -e ".[dev]"
@@ -177,6 +181,8 @@ You can install required dependencies for development by running the following w
 To run tests against the codebase run::
 
        make check
+
+.. _Python Packaging User Guide: https://packaging.python.org/en/latest/tutorials/installing-packages/#requirements-for-installing-packages
 
 Sending Pull Requests
 ---------------------
