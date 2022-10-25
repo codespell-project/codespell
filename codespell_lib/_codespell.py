@@ -424,17 +424,13 @@ def parse_options(args):
             data = tomli.load(f).get('tool', {})
         config.read_dict(data)
 
-    # Report which config files are going to be used
+    # Collect which config files are going to be used
     used_cfg_files = []
     for cfg_file in cfg_files:
         _cfg = configparser.ConfigParser()
         _cfg.read(cfg_file)
         if _cfg.has_section('codespell'):
             used_cfg_files.append(cfg_file)
-    if len(used_cfg_files) > 0:
-        print('Used config files:\n')
-    for ifile, cfg_file in enumerate(used_cfg_files):
-        print('    %i : %s' % (ifile, cfg_file))
 
     # Use config files
     config.read(cfg_files)
@@ -458,7 +454,7 @@ def parse_options(args):
     if not options.files:
         options.files.append('.')
 
-    return options, parser
+    return options, parser, used_cfg_files
 
 
 def parse_ignore_words_option(ignore_words_option):
@@ -789,7 +785,13 @@ def _script_main():
 
 def main(*args):
     """Contains flow control"""
-    options, parser = parse_options(args)
+    options, parser, used_cfg_files = parse_options(args)
+
+    # Report used config files
+    if len(used_cfg_files) > 0:
+        print('Used config files:')
+    for ifile, cfg_file in enumerate(used_cfg_files, start=1):
+        print('    %i: %s' % (ifile, cfg_file))
 
     if options.regex and options.write_changes:
         print("ERROR: --write-changes cannot be used together with "
