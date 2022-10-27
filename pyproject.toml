@@ -46,7 +46,7 @@ homepage = "https://github.com/codespell-project/codespell"
 repository = "https://github.com/codespell-project/codespell"
 
 [build-system]
-requires = ["setuptools>=64", "setuptools_scm[toml]>=6.2", "wheel"]
+requires = ["setuptools>=64", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools_scm]
