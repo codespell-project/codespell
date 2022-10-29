@@ -47,11 +47,10 @@ cs = MainWrapper()
 def run_codespell(args=(), cwd=None):
     """Run codespell."""
     args = ('--count',) + args
-    proc = subprocess.Popen(
+    proc = subprocess.run(
         ['codespell'] + list(args), cwd=cwd,
-        stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    stderr = proc.communicate()[1].decode('utf-8')
-    count = int(stderr.split('\n')[-2])
+        capture_output=True, encoding='utf-8')
+    count = int(proc.stderr.split('\n')[-2])
     return count
 
 
