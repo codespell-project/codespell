@@ -12717,6 +12717,8 @@ efel->evil
 eferences->references
 efetivity->effectivity
 effciency->efficiency
+effcient->efficient
+effciently->efficiently
 effctive->effective
 effctively->effectively
 effeciency->efficiency
@@ -17543,6 +17545,8 @@ hyposesis->hypothesis
 hypoteses->hypotheses
 hypotesis->hypothesis
 hypotethically->hypothetically
+hypothenuse->hypotenuse
+hypothenuses->hypotenuses
 hypter->hyper
 hyptothetical->hypothetical
 hyptothetically->hypothetically
@@ -18545,6 +18549,9 @@ indvidual->individual
 indviduals->individuals
 indxes->indexes
 inearisation->linearisation
+ineffciency->inefficiency
+ineffcient->inefficient
+ineffciently->inefficiently
 inefficency->inefficiency
 inefficent->inefficient
 inefficently->inefficiently
@@ -19238,6 +19245,9 @@ insturments->instruments
 instutionalized->institutionalized
 instutions->intuitions
 insue->ensue, insure,
+insuffciency->insufficiency
+insuffcient->insufficient
+insuffciently->insufficiently
 insufficency->insufficiency
 insufficent->insufficient
 insufficently->insufficiently
@@ -20391,6 +20401,9 @@ levetating->levitating
 levl->level
 levle->level
 lexial->lexical
+lexigraphic->lexicographic
+lexigraphical->lexicographical
+lexigraphically->lexicographically
 leyer->layer
 leyered->layered
 leyering->layering
@@ -24950,10 +24963,22 @@ permmissions->permissions
 permormance->performance
 permssion->permission
 permssions->permissions
+permuatate->permutate
+permuatated->permutated
+permuatates->permutates
+permuatating->permutating
+permuatation->permutation
+permuatations->permutations
+permuate->permute, permutate,
+permuated->permuted, permutated,
+permuates->permutes, permutates,
+permuating->permuting, permutating,
 permuation->permutation
 permuations->permutations
 permutaion->permutation
 permutaions->permutations
+permution->permutation
+permutions->permutations
 peroendicular->perpendicular
 perogative->prerogative
 peroid->period
@@ -32716,6 +32741,9 @@ suface->surface
 sufaces->surfaces
 sufface->surface
 suffaces->surfaces
+suffciency->sufficiency
+suffcient->sufficient
+suffciently->sufficiently
 sufferage->suffrage
 sufferred->suffered
 sufferring->suffering
