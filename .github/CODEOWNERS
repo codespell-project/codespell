@@ -17,15 +17,15 @@
 *.yml  @larsoner
 *.rst  @larsoner @peternewman
 *.cfg  @larsoner
-codespell.1.include @peternewman
+codespell.1.include @larsoner @peternewman
 coverage*  @larsoner
 .github/*  @larsoner @peternewman
-.gitignore @peternewman
+.gitignore @larsoner @peternewman
 Makefile  @larsoner @peternewman
 
 # Python code
 codespell_lib/*.py  @larsoner @peternewman
-bin/* @peternewman
+bin/* @larsoner @peternewman
 
 # Dictionaries
 codespell_lib/data/dictionary_code.txt @peternewman
