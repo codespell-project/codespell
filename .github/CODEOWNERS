@@ -15,14 +15,22 @@
 # Administrata and CIs
 *.toml  @larsoner
 *.yml  @larsoner
-*.rst  @larsoner
+*.rst  @larsoner @peternewman
 *.cfg  @larsoner
+codespell.1.include @larsoner @peternewman
 coverage*  @larsoner
-.github/*  @larsoner
-Makefile  @larsoner
+.github/*  @larsoner @peternewman
+.gitignore @larsoner @peternewman
+Makefile  @larsoner @peternewman
 
 # Python code
-codespell_lib/*.py  @larsoner
+codespell_lib/*.py  @larsoner @peternewman
+bin/* @larsoner @peternewman
 
 # Dictionaries
+codespell_lib/data/dictionary_code.txt @peternewman
+codespell_lib/data/dictionary_en-GB_to_en-US.txt @peternewman
+codespell_lib/data/dictionary_informal.txt @peternewman
+codespell_lib/data/dictionary_names.txt @peternewman
+codespell_lib/data/dictionary_rare.txt @peternewman
 # codepell_lib/data/*.txt  @luzpaz
