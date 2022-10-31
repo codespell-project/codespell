@@ -13,9 +13,6 @@ Useful links
 
 * `GitHub project <https://github.com/codespell-project/codespell>`_
 
-* Mailing list: <codespell@googlegroups.com> with web archives/interface
-  `here <https://groups.google.com/forum/?fromgroups#!forum/codespell>`_
-
 * `Repository <https://github.com/codespell-project/codespell>`_
 
 * `Releases <https://github.com/codespell-project/codespell/releases>`_
