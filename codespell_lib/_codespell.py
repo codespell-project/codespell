@@ -898,7 +898,15 @@ def main(*args):
 
     file_opener = FileOpener(options.hard_encoding_detection,
                              options.quiet_level)
+
     glob_match = GlobMatch(options.skip)
+    try:
+        glob_match.match("/random/path")  # does not need a real path
+    except re.error:
+        print("ERROR: --skip/-S has been fed an invalid glob, "
+              "try escaping special characters",
+              file=sys.stderr)
+        return EX_USAGE
 
     bad_count = 0
     for filename in options.files:
