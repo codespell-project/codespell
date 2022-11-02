@@ -169,7 +169,7 @@ Development Setup
 
 As suggested in the `Python Packaging User Guide`_, ensure ``pip``, ``setuptools``, and ``wheel`` are up to date before installing from source. Specifically you will need recent versions of ``setuptools`` and ``setuptools_scm``::
 
-    pin install --upgrade pip setuptools setuptools_scm wheel
+    pip install --upgrade pip setuptools setuptools_scm wheel
 
 You can install required dependencies for development by running the following within a checkout of the codespell source::
 
