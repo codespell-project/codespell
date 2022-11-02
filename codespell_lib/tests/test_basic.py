@@ -3,14 +3,14 @@ import inspect
 import os
 import os.path as op
 import re
-from shutil import copyfile
 import subprocess
 import sys
+from shutil import copyfile
 
 import pytest
 
 import codespell_lib as cs_
-from codespell_lib._codespell import uri_regex_def, EX_USAGE, EX_OK, EX_DATAERR
+from codespell_lib._codespell import EX_DATAERR, EX_OK, EX_USAGE, uri_regex_def
 
 
 def test_constants():

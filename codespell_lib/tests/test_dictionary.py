@@ -1,13 +1,12 @@
 import glob
-import os.path as op
 import os
+import os.path as op
 import re
 import warnings
 
 import pytest
 
-from codespell_lib._codespell import _builtin_dictionaries
-from codespell_lib._codespell import supported_languages
+from codespell_lib._codespell import _builtin_dictionaries, supported_languages
 
 spellers = dict()
 
