@@ -536,7 +536,7 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
             r = sys.stdin.readline().strip().upper()
             if not r:
                 r = 'Y'
-            if r != 'Y' and r != 'N':
+            if r not in ('Y', 'N'):
                 print("Say 'y' or 'n'")
                 r = ''
 
@@ -551,8 +551,8 @@ def ask_for_word_fix(line, wrongword, misspelling, interactivity):
         opt = [w.strip() for w in misspelling.data.split(',')]
         while not r:
             print("%s Choose an option (blank for none): " % line, end='')
-            for i in range(len(opt)):
-                fixword = fix_case(wrongword, opt[i])
+            for i, o in enumerate(opt):
+                fixword = fix_case(wrongword, o)
                 print(" %d) %s" % (i, fixword), end='')
             print(": ", end='')
             sys.stdout.flush()
