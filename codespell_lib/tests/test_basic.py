@@ -5,6 +5,7 @@ import os.path as op
 import re
 import subprocess
 import sys
+from io import StringIO
 from shutil import copyfile
 
 import pytest
@@ -908,10 +909,6 @@ count = false
 
 @contextlib.contextmanager
 def FakeStdin(text):
-    if sys.version[0] == '2':
-        from StringIO import StringIO
-    else:
-        from io import StringIO
     oldin = sys.stdin
     try:
         in_ = StringIO(text)
