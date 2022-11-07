@@ -40,6 +40,12 @@ hard-encoding-detection = [
 toml = [
     "tomli; python_version < '3.11'"
 ]
+types = [
+    "mypy",
+    "pytest",
+    "types-chardet",
+    "types-setuptools",
+]
 
 [project.scripts]
 codespell = "codespell_lib:_script_main"
@@ -64,11 +70,17 @@ exclude = [
 [tool.setuptools.package-data]
 codespell_lib = [
     "data/dictionary*.txt",
-    "data/linux-kernel.exclude"
+    "data/linux-kernel.exclude",
+    "py.typed",
 ]
 
 [tool.check-manifest]
 ignore = ["codespell_lib/_version.py"]
+
+[tool.mypy]
+pretty = true
+show_error_codes = true
+strict = true
 
 [tool.pytest.ini_options]
 addopts = "--cov=codespell_lib -rs --cov-report= --tb=short --junit-xml=junit-results.xml"
