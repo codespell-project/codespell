@@ -5860,6 +5860,9 @@ charactetr->character
 charactetrs->characters
 charactets->characters
 characther->character
+charactiristic->characteristic
+charactiristically->characteristically
+charactiristics->characteristics
 charactor->character
 charactors->characters
 charactristic->characteristic
@@ -7176,6 +7179,7 @@ completeion->completion
 completelly->completely
 completelty->completely
 completelyl->completely
+completess->completes, completeness,
 completetion->completion
 completetly->completely
 completiom->completion
@@ -8472,6 +8476,7 @@ convienent->convenient
 convienience->convenience
 convienient->convenient
 convieniently->conveniently
+convient->convenient, convent,
 conviently->conveniently
 conviguration->configuration
 convigure->configure
@@ -13452,6 +13457,8 @@ ephememeris->ephemeris
 epidsodes->episodes
 epigramic->epigrammatic
 epilgoue->epilogue
+episdoe->episode
+episdoes->episodes
 eploit->exploit
 eploits->exploits
 epmty->empty
@@ -14395,6 +14402,8 @@ exixt->exist
 exlamation->exclamation
 exlcude->exclude
 exlcuding->excluding
+exlcusion->exclusion
+exlcusions->exclusions
 exlcusive->exclusive
 exlicit->explicit
 exlicite->explicit
@@ -16334,6 +16343,11 @@ functonality->functionality
 functoning->functioning
 functons->functions
 functtion->function
+functtional->functional
+functtionalities->functionalities
+functtioned->functioned
+functtioning->functioning
+functtions->functions
 funczion->function
 fundametal->fundamental
 fundametals->fundamentals
@@ -24455,6 +24469,7 @@ paramemter->parameter
 paramemters->parameters
 paramenet->parameter
 paramenets->parameters
+paramenter->parameter
 paramenters->parameters
 paramer->parameter
 paramert->parameter
@@ -25007,6 +25022,10 @@ peroendicular->perpendicular
 perogative->prerogative
 peroid->period
 peroidic->periodic
+peroidical->periodical
+peroidically->periodically
+peroidicals->periodicals
+peroidicity->periodicity
 peroids->periods
 peronal->personal
 peroperly->properly
@@ -27011,6 +27030,7 @@ quicly->quickly
 quiessent->quiescent
 quiest->quest, quiet,
 quiests->quests
+quikc->quick
 quinessential->quintessential
 quitely->quite, quietly,
 quith->quit, with,
@@ -27063,6 +27083,7 @@ rapresentation->representation
 rapresented->represented
 rapresenting->representing
 rapresents->represents
+rapsberry->raspberry
 rarelly->rarely
 rarified->rarefied
 rasberry->raspberry
@@ -31955,6 +31976,7 @@ spred->spread
 spredsheet->spreadsheet
 spreedsheet->spreadsheet
 sprinf->sprintf
+spririous->spurious
 spriritual->spiritual
 spritual->spiritual
 sproon->spoon
@@ -32083,6 +32105,11 @@ staps->steps, stops,
 staration->starvation
 stard->start
 stardard->standard
+stardardize->standardize
+stardardized->standardized
+stardardizes->standardizes
+stardardizing->standardizing
+stardards->standards
 staright->straight
 startd->started
 startegic->strategic
@@ -33150,7 +33177,17 @@ swithing->switching
 switiches->switches
 swown->shown
 swtich->switch
+swtichable->switchable
+swtichback->switchback
+swtichbacks->switchbacks
+swtichboard->switchboard
+swtichboards->switchboards
+swtiched->switched
+swticher->switcher
+swtichers->switchers
+swtiches->switches
 swtiching->switching
+swtichover->switchover
 swtichs->switches
 sxl->xsl
 syantax->syntax
@@ -34035,6 +34072,9 @@ througout->throughout
 througt->through
 througth->through
 throuh->through
+throuhg->through
+throuhgout->throughout
+throuhgput->throughput
 throuth->through
 throwed->threw, thrown,
 throwgh->through
