@@ -6,6 +6,7 @@ include COPYING
 include bin/codespell
 exclude *.yml *.yaml
 exclude .coveragerc
+exclude .git-blame-ignore-revs
 exclude example example/* snap snap/* tools tools/*
 exclude Makefile
 exclude codespell.1.include
