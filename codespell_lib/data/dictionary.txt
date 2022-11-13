@@ -246,6 +246,7 @@ abtractor->abstractor
 abtracts->abstracts
 abudance->abundance
 abudances->abundances
+abundace->abundance
 abundacies->abundances
 abundancies->abundances
 abundand->abundant
@@ -936,6 +937,7 @@ addresing->addressing
 addresse->addresses, address,
 addressess->addresses
 addressibility->addressability
+addressible->addressable
 addressings->addressing
 addresss->address
 addresssed->addressed
@@ -1164,6 +1166,7 @@ aforememtioned->aforementioned
 aforementiond->aforementioned
 aforementionned->aforementioned
 aformentioned->aforementioned
+afrer->after
 afterall->after all
 afterw->after
 afther->after, father,
@@ -1362,6 +1365,8 @@ aleviate->alleviate
 aleviates->alleviates
 aleviating->alleviating
 alevt->alert
+alforithm->algorithm
+alforithms->algorithms
 algebraical->algebraic
 algebric->algebraic
 algebrra->algebra
@@ -2039,6 +2044,7 @@ analiser->analyser
 analises->analysis, analyses,
 analising->analysing
 analisis->analysis
+analisys->analysis
 analitic->analytic
 analitical->analytical
 analitically->analytically
@@ -2474,6 +2480,8 @@ apihelion->aphelion
 apihelions->aphelions
 apilogue->epilogue
 aplha->alpha
+aplicabile->applicable
+aplicability->applicability
 aplication->application
 aplications->applications
 aplied->applied
@@ -3143,6 +3151,7 @@ arquitecture->architecture
 arquitectures->architectures
 arraay->array
 arragement->arrangement
+arraies->arrays
 arraival->arrival
 arral->array
 arranable->arrangeable
@@ -4123,6 +4132,7 @@ authrorization->authorization
 authrors->authors
 autimatic->automatic
 autimatically->automatically
+autio->audio
 autmatically->automatically
 auto-dependancies->auto-dependencies
 auto-destrcut->auto-destruct
@@ -4929,6 +4939,7 @@ betwene->between
 betwenn->between
 betwern->between
 betwween->between
+betwwen->between
 beucase->because
 beuracracy->bureaucracy
 beuraucratic->bureaucratic
@@ -5587,6 +5598,8 @@ butifuly->beautifully
 buton->button
 butons->buttons
 butterly->butterfly
+buttin->button
+buttins->buttons
 buttom->button, bottom,
 buttoms->buttons, bottom,
 buttong->button
@@ -7531,8 +7544,11 @@ colaborations->collaborations
 colateral->collateral
 coldplg->coldplug
 colected->collected
+colecting->collecting
 colection->collection
 colections->collections
+colector->collector
+colectors->collectors
 coleeg->colleague
 coleeges->colleagues
 coleegs->colleagues
@@ -10522,6 +10538,7 @@ cusstomization->customization
 cusstomize->customize
 cusstomized->customized
 cusstoms->customs
+custamizable->customizable
 custoisable->customisable
 custoisation->customisation
 custoise->customise
@@ -15133,6 +15150,8 @@ especifically->specifically, especially,
 especiially->especially
 espect->expect
 espeically->especially
+espisode->episode
+espisodes->episodes
 esponding->desponding, responding,
 esseintially->essentially
 essencial->essential
@@ -17262,6 +17281,7 @@ firmwear->firmware
 firmwqre->firmware
 firmwre->firmware
 firmwware->firmware
+firrst->first
 firsname->firstname, first name,
 firsr->first
 firstest->firsttest, first test,
@@ -17763,6 +17783,8 @@ foward->forward
 fowarded->forwarded
 fowarding->forwarding
 fowards->forwards
+fowll->follow, foul,
+fowlling->following
 fpr->for, far, fps,
 fprmat->format
 fpt->ftp
@@ -17793,9 +17815,12 @@ frameword->framework
 frameworkk->framework
 framlayout->framelayout
 framming->framing
+framw->frame
+framwd->framed
 framwework->framework
 framwork->framework
 framworks->frameworks
+framws->frames
 frane->frame
 frankin->franklin
 Fransiscan->Franciscan
@@ -18296,6 +18321,7 @@ geomitrically->geometrically
 geomoetric->geometric
 geomoetrically->geometrically
 geomoetry->geometry
+geomteries->geometries
 geomtery->geometry
 geomtries->geometries
 geomtry->geometry
@@ -18558,6 +18584,7 @@ groubpy->groupby
 groupd->grouped
 groupe->grouped, group,
 groupes->groups, grouped,
+groupped->grouped
 groupping->grouping
 groupt->grouped
 growtesk->grotesque
@@ -19061,6 +19088,7 @@ hierachies->hierarchies
 hierachries->hierarchies
 hierachry->hierarchy
 hierachy->hierarchy
+hierachycal->hierarchical
 hierarachical->hierarchical
 hierarachy->hierarchy
 hierarchichal->hierarchical
@@ -23160,6 +23188,7 @@ manualyl->manually
 manualyy->manually
 manuell->manual
 manuelly->manually
+manues->menus
 manuever->maneuver, manoeuvre,
 manuevers->maneuvers, manoeuvres,
 manufactuer->manufacture, manufacturer,
@@ -23925,6 +23954,7 @@ minue->minute, minus, menu,
 minues->minutes, minus, minuses, menus,
 minum->minimum
 minumum->minimum
+minumun->minimum
 minuscle->minuscule
 minusculy->minusculely, minuscule,
 minuts->minutes
@@ -24351,6 +24381,7 @@ moslty->mostly
 mostlky->mostly
 mosture->moisture
 mosty->mostly
+mosue->mouse, mosque,
 motation->notation, rotation, motivation,
 moteef->motif
 moteefs->motifs
@@ -27056,6 +27087,8 @@ paragarph->paragraph
 paragarphs->paragraphs
 paragph->paragraph
 paragpraph->paragraph
+paragrah->paragraph
+paragrahs->paragraphs
 paragraphy->paragraph
 paragrphs->paragraphs
 parahaps->perhaps
@@ -34916,7 +34949,9 @@ smaler->smaller
 smallar->smaller
 smalles->smallest
 smaple->sample
+smapled->sampled
 smaples->samples
+smapling->sampling
 smealting->smelting
 smething->something
 smll->small, smell,
@@ -35864,6 +35899,7 @@ stardardizes->standardizes
 stardardizing->standardizing
 stardards->standards
 staright->straight
+starigth->straight
 startd->started
 startegic->strategic
 startegies->strategies
@@ -39899,6 +39935,7 @@ unwarrented->unwarranted
 unweildly->unwieldy
 unwieldly->unwieldy
 unwraped->unwrapped
+unwraping->unwrapping
 unwrritten->unwritten
 unx->unix
 unxepected->unexpected
@@ -41278,6 +41315,8 @@ winndows->windows
 winodw->window
 wipoing->wiping
 wirded->wired, weird,
+wireframw->wireframe
+wireframws->wireframes
 wirh->with
 wirtable->writable, writeable,
 wirte->write
