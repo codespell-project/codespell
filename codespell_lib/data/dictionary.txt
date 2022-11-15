@@ -247,6 +247,7 @@ abtracts->abstracts
 abudance->abundance
 abudances->abundances
 abundace->abundance
+abundaces->abundances
 abundacies->abundances
 abundancies->abundances
 abundand->abundant
@@ -1366,6 +1367,8 @@ aleviates->alleviates
 aleviating->alleviating
 alevt->alert
 alforithm->algorithm
+alforithmic->algorithmic
+alforithmically->algorithmically
 alforithms->algorithms
 algebraical->algebraic
 algebric->algebraic
@@ -2482,6 +2485,7 @@ apilogue->epilogue
 aplha->alpha
 aplicabile->applicable
 aplicability->applicability
+aplicable->applicable
 aplication->application
 aplications->applications
 aplied->applied
@@ -7543,12 +7547,15 @@ colaboration->collaboration
 colaborations->collaborations
 colateral->collateral
 coldplg->coldplug
+colectable->collectable
 colected->collected
 colecting->collecting
 colection->collection
 colections->collections
+colective->collective
 colector->collector
 colectors->collectors
+colects->collects
 coleeg->colleague
 coleeges->colleagues
 coleegs->colleagues
@@ -10539,6 +10546,9 @@ cusstomize->customize
 cusstomized->customized
 cusstoms->customs
 custamizable->customizable
+custamized->customized
+custamizes->customizes
+custamizing->customizing
 custoisable->customisable
 custoisation->customisation
 custoise->customise
@@ -15152,6 +15162,9 @@ espect->expect
 espeically->especially
 espisode->episode
 espisodes->episodes
+espisodic->episodic
+espisodical->episodical
+espisodically->episodically
 esponding->desponding, responding,
 esseintially->essentially
 essencial->essential
@@ -18321,6 +18334,8 @@ geomitrically->geometrically
 geomoetric->geometric
 geomoetrically->geometrically
 geomoetry->geometry
+geomteric->geometric
+geomterically->geometrically
 geomteries->geometries
 geomtery->geometry
 geomtries->geometries
