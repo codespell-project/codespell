@@ -485,11 +485,9 @@ def build_dict(
 ) -> None:
     with open(filename, encoding='utf-8') as f:
         for line in f:
-            [key, data] = line.split('->')
             # TODO for now, convert both to lower. Someday we can maybe add
             # support for fixing caps.
-            key = key.lower()
-            data = data.lower()
+            [key, data] = line.lower().split('->')
             if key in ignore_words:
                 continue
             data = data.strip()
