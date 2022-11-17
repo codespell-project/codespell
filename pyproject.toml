@@ -82,6 +82,9 @@ codespell_lib = [
 [tool.check-manifest]
 ignore = ["codespell_lib/_version.py"]
 
+[tool.isort]
+profile = "black"
+
 [tool.mypy]
 pretty = true
 show_error_codes = true
