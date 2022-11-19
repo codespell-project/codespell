@@ -7,6 +7,12 @@ cripples->slows down, hinders, obstructs,
 crippling->attenuating, incapacitating,
 dummy-value->placeholder value
 girlfriend-test->user test, acceptance test, validation test, ease-of-use test, friendliness test, useability test,
+mahomedan->muslim
+mahomedans->muslims
+mahometan->muslim
+mahometans->muslims
+mahommedan->muslim
+mahommedans->muslims
 man-hour->staff hour, volunteer hour, hour of effort, person-hour,
 man-hours->staff hours, volunteer hours, hours of effort, person-hours,
 man-in-the-middle->on-path attacker, adversary-in-the-middle, interceptor, intermediary, machine-in-the-middle, person-in-the-middle,
@@ -14,6 +20,8 @@ manned->crewed, staffed, monitored, human operated,
 master->primary, leader, active, writer, coordinator, parent, manager, main,
 masters->primaries, leaders, actives, writers, coordinators, parents, managers,
 middleman->intermediary, broker,
+mohammedan->muslim
+mohammedans->muslims
 mom-test->user test, acceptance test, validation test, ease-of-use test, friendliness test, useability test,
 sanity-check->test, verification,
 sanity-checks->tests, verifications,
