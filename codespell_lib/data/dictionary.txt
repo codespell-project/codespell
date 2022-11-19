@@ -2918,6 +2918,7 @@ artillary->artillery
 artuments->arguments
 arugment->argument
 arugments->arguments
+arument->argument
 aruments->arguments
 arund->around
 arvg->argv
@@ -5016,6 +5017,7 @@ bulid->build
 buliding->building
 bulids->builds
 bulit->built
+bulitin->built-in
 bulle->bullet
 bulletted->bulleted
 bulnerabilities->vulnerabilities
@@ -5240,6 +5242,8 @@ calcutated->calculated
 calcutates->calculates
 calcutating->calculating
 caleed->called
+caleee->callee
+calees->callees
 caler->caller
 calescing->coalescing
 caliased->aliased
@@ -5530,6 +5534,7 @@ casuing->causing
 casulaties->casualties
 casulaty->casualty
 cataalogue->catalogue
+catagori->category
 catagorie->category, categories,
 catagories->categories
 catagorization->categorization
@@ -15107,6 +15112,7 @@ explicitily->explicitly
 explicity->explicitly
 explicityly->explicitly
 explict->explicit
+explicte->explicit, explicate,
 explictely->explicitly
 explictily->explicitly
 explictly->explicitly
@@ -15155,7 +15161,10 @@ expors->exports
 exportet->exported, exporter,
 expport->export
 exppressed->expressed
+expres->express
+expresed->expressed
 expreses->expresses, express,
+expresing->expressing
 expresion->expression
 expresions->expressions
 expressable->expressible
@@ -36360,6 +36369,7 @@ valtage->voltage
 valtages->voltages
 valu->value
 valuble->valuable
+valud->valid, value,
 valudes->values
 value-to-pack->value to pack
 valueable->valuable
