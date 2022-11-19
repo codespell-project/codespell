@@ -61,6 +61,7 @@ abiguity->ambiguity
 abilityes->abilities
 abilties->abilities
 abilty->ability
+abiove->above
 abiss->abyss
 abitrarily->arbitrarily
 abitrary->arbitrary
@@ -373,6 +374,7 @@ accesssiiblity->accessibility
 accesssing->accessing
 accesssor->accessor
 accesssors->accessors
+accestor->ancestor, accessor,
 accet->accept
 accetable->acceptable
 accets->accepts
@@ -926,6 +928,7 @@ addresess->addresses
 addresing->addressing
 addresse->addresses, address,
 addressess->addresses
+addressibility->addressability
 addressings->addressing
 addresss->address
 addresssed->addressed
@@ -1003,6 +1006,7 @@ adjuscent->adjacent
 adjusment->adjustment
 adjustement->adjustment
 adjustements->adjustments
+adjustes->adjusted, adjusts,
 adjustificat->justification
 adjustification->justification
 adjustmant->adjustment
@@ -1800,6 +1804,7 @@ alphapeticaly->alphabetically
 alrady->already
 alraedy->already
 alread->already
+alreadh->already
 alreadly->already
 alreadt->already
 alreasy->already
@@ -1815,6 +1820,7 @@ alrteady->already
 als->also
 alse->also, else, false,
 alsmost->almost
+alsoneeds->also needs
 alsot->also
 alsready->already
 altenative->alternative
@@ -3389,6 +3395,7 @@ assignenmentes->assignments
 assignenments->assignments
 assignenmet->assignment
 assignes->assigns
+assignmen->assignment, assign men,
 assignmenet->assignment
 assignmens->assignments
 assignmet->assignment
@@ -4416,6 +4423,7 @@ avoinded->avoided
 avoinding->avoiding
 avoinds->avoids
 avoud->avoid
+avove->above
 avriable->variable
 avriables->variables
 avriant->variant
@@ -4432,6 +4440,8 @@ awnser->answer
 awnsered->answered
 awnsers->answers
 awoid->avoid
+awrning->warning, awning,
+awrnings->warnings
 awsome->awesome
 awya->away
 axises->axes
@@ -4580,6 +4590,7 @@ barnchers->branchers
 barnches->branches
 barnching->branching
 baroke->baroque
+barrer->barrier, barred, barrel, barren,
 barriors->barriers
 barrriers->barriers
 barycentic->barycentric
@@ -5074,6 +5085,7 @@ boganveelia->bougainvillea
 boganveelias->bougainvilleas
 boggus->bogus
 bogos->bogus
+bogous->bogus
 bointer->pointer
 bolean->boolean
 boleen->boolean
@@ -5445,6 +5457,7 @@ buildpackge->buildpackage
 buildpackges->buildpackages
 builing->building
 builings->buildings
+builitn->built-in
 buillt->built
 built-time->build-time
 builter->builder
@@ -5785,6 +5798,7 @@ calliflowers->cauliflowers
 callig->calling
 callint->calling
 callis->callus
+calll->call
 callled->called
 calllee->callee
 calllers->callers
@@ -6817,6 +6831,7 @@ chizzles->chisels
 chizzling->chiseling
 chked->checked
 chlid->child
+chlids->children
 chnage->change
 chnaged->changed
 chnages->changes
@@ -7243,6 +7258,7 @@ cloude->cloud
 cloudes->clouds
 cloumn->column
 cloumns->columns
+cloure->closure, clojure,
 clousre->closure
 clsoe->close
 clssroom->classroom
@@ -8103,6 +8119,7 @@ compiliation->compilation
 compilicated->complicated
 compilier->compiler
 compiliers->compilers
+compination->combination, compilation,
 compitability->compatibility
 compitable->compatible
 compitent->competent
@@ -8347,6 +8364,7 @@ concentraze->concentrate
 conceous->conscious
 conceousally->consciously
 conceously->consciously
+conceptification->conceptualization, conceptualisation,
 concequence->consequence
 concequences->consequences
 concered->concerned
@@ -9887,7 +9905,7 @@ corruptiuon->corruption
 corruput->corrupt
 cors-site->cross-site
 cors-sute->cross-site
-corse->course
+corse->course, coarse, core, curse, horse, norse, worse, corpse, CORS, torse, corset,
 corsor->cursor
 corss->cross, course,
 corss-compiling->cross-compiling
@@ -10752,6 +10770,8 @@ deamonized->daemonized
 deamonizes->daemonizes
 deamonizing->daemonizing
 deamons->daemons
+deapth->depth
+deapths->depths
 deassering->deasserting
 deatch->detach
 deatched->detached
@@ -11450,6 +11470,11 @@ denomitators->denominators
 densitity->density
 densly->densely
 denstiy->density
+dentified->identified
+dentifier->identifier
+dentifiers->identifiers
+dentifies->identifies
+dentifying->identifying
 deocde->decode
 deocded->decoded
 deocder->decoder
@@ -13896,6 +13921,7 @@ easer->easier, eraser,
 easili->easily
 easiliy->easily
 easilly->easily
+easilty->easily
 easist->easiest
 easiy->easily
 easly->easily
@@ -13999,6 +14025,7 @@ effectiviness->effectiveness
 effectivness->effectiveness
 effectly->effectively
 effedts->effects
+effeect->effect
 effekt->effect
 effexts->effects
 efficcient->efficient
@@ -14266,6 +14293,7 @@ emprovement->improvement
 emprovements->improvements
 emproves->improves
 emproving->improving
+empted->emptied
 emptniess->emptiness
 emptry->empty
 emptyed->emptied
@@ -14880,6 +14908,7 @@ esgers->edgers
 esges->edges
 esging->edging
 esiest->easiest
+esily->easily
 esimate->estimate
 esimated->estimated
 esimates->estimates
@@ -16365,6 +16394,7 @@ explicited->explicit, explicitly,
 explicitelly->explicitly
 explicitely->explicitly
 explicitily->explicitly
+explicits->explicit
 explicity->explicitly
 explicityly->explicitly
 explict->explicit
@@ -16476,6 +16506,9 @@ extacy->ecstasy
 extarnal->external
 extarnally->externally
 extatic->ecstatic
+exteded->extended
+exteder->extender
+exteders->extenders
 extedn->extend
 extedned->extended
 extedner->extender
@@ -17811,6 +17844,7 @@ garantee->guarantee
 garanteed->guaranteed
 garanteeed->guaranteed
 garantees->guarantees
+garantie->guarantee
 garantied->guaranteed
 garanty->guarantee
 garbadge->garbage
@@ -22171,6 +22205,7 @@ locatins->locations
 loccked->locked
 locgical->logical
 lockingf->locking
+locla->local
 lodable->loadable
 loded->loaded
 loder->loader
@@ -22623,6 +22658,7 @@ matresses->mattresses
 matrial->material
 matrials->materials
 matricess->matrices, mattresses,
+matris->matrix
 matser->master
 mattern->pattern, matter,
 matterns->patterns, matters,
@@ -24931,6 +24967,7 @@ obsure->obscure
 obtaien->obtain, obtained,
 obtaiend->obtained
 obtaiens->obtains
+obtaines->obtains
 obtainig->obtaining
 obtaion->obtain
 obtaioned->obtained
@@ -27903,6 +27940,7 @@ proceses->processes
 proceshandler->processhandler
 procesing->processing
 procesor->processor
+procesors->processors
 processeed->processed
 processees->processes
 processer->processor
@@ -30987,6 +31025,10 @@ restes->reset
 restesting->retesting
 resticted->restricted
 restictive->restrictive
+restire->restore
+restired->restored
+restires->restores
+restiring->restoring
 restoding->restoring
 restoiring->restoring
 restor->restore
@@ -38195,6 +38237,8 @@ vas->was
 vasall->vassal
 vasalls->vassals
 vaue->value
+vaued->valued
+vaues->values
 vaule->value
 vauled->valued
 vaules->values
