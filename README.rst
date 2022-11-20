@@ -164,6 +164,12 @@ applied directly, but should instead be manually inspected. E.g.:
 
        clas->class, clash, disabled because of name clash in c++
 
+4. Comments and blanks
+
+   Lines starting with "#" and blank lines are ignored. This is intended for
+   custom dictionaries (specified with the ``-D`` flag), and is not used by the
+   dictionaries distributed with codespell itself.
+
 Development Setup
 -----------------
 
