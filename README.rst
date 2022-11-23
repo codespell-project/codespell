@@ -260,7 +260,4 @@ with the following terms:
 
 .. _GPL v2: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-``dictionary.txt`` and the other ``dictionary_*.txt`` files are a derived work of
-English Wikipedia and are released under the Creative Commons
-Attribution-Share-Alike License 3.0
-http://creativecommons.org/licenses/by-sa/3.0/
+``dictionary.txt`` and the other ``dictionary_*.txt`` files are derivative works of English Wikipedia and are released under the `Creative Commons Attribution-Share-Alike License 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>`_.
