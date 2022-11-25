@@ -2,11 +2,11 @@ SORT_ARGS := -f -b
 
 DICTIONARIES := codespell_lib/data/dictionary*.txt
 
-PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dictionary sort-dictionary trim-dictionary check-manifest check-dist flake8 pytest pypi clean
+PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dictionary sort-dictionary trim-dictionary check-dist flake8 pytest pypi clean
 
 all: check-dictionaries codespell.1
 
-check: check-dictionaries check-manifest check-dist flake8 pytest
+check: check-dictionaries check-dist flake8 pytest
 
 check-dictionary: check-dictionaries
 sort-dictionary: sort-dictionaries
@@ -43,9 +43,6 @@ trim-dictionaries:
 	@for dictionary in ${DICTIONARIES}; do \
 		sed -E -i.bak -e 's/^[[:space:]]+//; s/[[:space:]]+$$//; /^$$/d' $$dictionary && rm $$dictionary.bak; \
 	done
-
-check-manifest:
-	check-manifest --no-build-isolation
 
 check-dist:
 	$(eval TMP := $(shell mktemp -d))
