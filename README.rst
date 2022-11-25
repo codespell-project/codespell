@@ -42,15 +42,15 @@ The ``-w`` flag will actually implement the changes recommended by codespell. No
 
     codespell -I FILE, --ignore-words=FILE
 
-The ``-I`` flag can be used for a list of certain words to allow that are in the codespell dictionaries. The format of the file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said list of allowed words. **Important note:** The list passed to ``-I`` is case-sensitive based on how it is listed in the codespell dictionaries. ::
+The ``-I`` flag can be used for a list of certain words to allow that are in the codespell dictionaries. The format of the file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said list of allowed words. **Important note:** The list passed to ``-I`` is case-sensitive based on how it is listed in the codespell dictionaries.::
 
     codespell -L word1,word2,word3,word4
 
-The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it.  **Important note:** The list passed to ``-L`` is case-sensitive based on how it is listed in the codespell dictionaries. ::
+The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it.  **Important note:** The list passed to ``-L`` is case-sensitive based on how it is listed in the codespell dictionaries.::
 
     codespell -x FILE, --exclude-file=FILE
 
-Ignore whole lines that match those in ``FILE``.  The lines in ``FILE`` should match the to-be-excluded lines exactly.
+Ignore whole lines that match those in ``FILE``.  The lines in ``FILE`` should match the to-be-excluded lines exactly.::
 
     codespell -S, --skip=
 
@@ -66,7 +66,7 @@ Useful commands::
     codespell -d -q 3 --skip="*.po,*.ts,./src/3rdParty,./src/Test"
 
 List all typos found except translation files and some directories.
-Display them without terminal colors and with a quiet level of 3. ::
+Display them without terminal colors and with a quiet level of 3.::
 
     codespell -i 3 -w
 
@@ -214,7 +214,7 @@ To stay current with codespell developments it is possible to build codespell fr
 
 **Important Notes:**
 
-* Sometimes installing via ``pip`` will complain about permissions. If this is the case then run with ::
+* Sometimes installing via ``pip`` will complain about permissions. If this is the case then run with::
 
     pip install --user --upgrade git+https://github.com/codespell-project/codespell.git
 
@@ -224,7 +224,7 @@ To stay current with codespell developments it is possible to build codespell fr
 Updating the dictionaries
 -------------------------
 
-In the scenario where the user prefers not to follow the development version of codespell yet still opts to benefit from the frequently updated dictionary files, we recommend running a simple set of commands to achieve this ::
+In the scenario where the user prefers not to follow the development version of codespell yet still opts to benefit from the frequently updated dictionary files, we recommend running a simple set of commands to achieve this::
 
     wget https://raw.githubusercontent.com/codespell-project/codespell/master/codespell_lib/data/dictionary.txt
     codespell -D dictionary.txt
