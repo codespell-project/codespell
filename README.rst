@@ -34,23 +34,33 @@ Usage
 
 For more in depth info please check usage with ``codespell -h``.
 
-Some noteworthy flags::
+Some noteworthy flags:
+
+::
 
     codespell -w, --write-changes
 
-The ``-w`` flag will actually implement the changes recommended by codespell. Not running with ``-w`` flag is the same as with doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.::
+The ``-w`` flag will actually implement the changes recommended by codespell. Not running with ``-w`` flag is the same as with doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.
+
+::
 
     codespell -I FILE, --ignore-words=FILE
 
-The ``-I`` flag can be used for a list of certain words to allow that are in the codespell dictionaries. The format of the file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said list of allowed words. **Important note:** The list passed to ``-I`` is case-sensitive based on how it is listed in the codespell dictionaries.::
+The ``-I`` flag can be used for a list of certain words to allow that are in the codespell dictionaries. The format of the file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said list of allowed words. **Important note:** The list passed to ``-I`` is case-sensitive based on how it is listed in the codespell dictionaries.
+
+::
 
     codespell -L word1,word2,word3,word4
 
-The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it.  **Important note:** The list passed to ``-L`` is case-sensitive based on how it is listed in the codespell dictionaries.::
+The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it.  **Important note:** The list passed to ``-L`` is case-sensitive based on how it is listed in the codespell dictionaries.
+
+::
 
     codespell -x FILE, --exclude-file=FILE
 
-Ignore whole lines that match those in ``FILE``.  The lines in ``FILE`` should match the to-be-excluded lines exactly.::
+Ignore whole lines that match those in ``FILE``.  The lines in ``FILE`` should match the to-be-excluded lines exactly.
+
+::
 
     codespell -S, --skip=
 
@@ -61,12 +71,16 @@ Comma-separated list of files to skip. It accepts globs as well.  Examples:
 * to skip directories, invoke ``codespell --skip="./src/3rd-Party,./src/Test"``
 
 
-Useful commands::
+Useful commands:
+
+::
 
     codespell -d -q 3 --skip="*.po,*.ts,./src/3rdParty,./src/Test"
 
 List all typos found except translation files and some directories.
-Display them without terminal colors and with a quiet level of 3.::
+Display them without terminal colors and with a quiet level of 3.
+
+::
 
     codespell -i 3 -w
 
