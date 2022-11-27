@@ -8,7 +8,7 @@ import sys
 from io import StringIO
 from pathlib import Path
 from shutil import copyfile
-from typing import Generator, Optional, Tuple, Union
+from typing import Any, Generator, Optional, Tuple, Union
 
 import pytest
 
@@ -28,10 +28,11 @@ class MainWrapper:
 
     @staticmethod
     def main(
-        *args: str,
+        *args: Any,
         count: bool = True,
         std: bool = False,
     ) -> Union[int, Tuple[int, str, str]]:
+        args = tuple(str(arg) for arg in args)
         if count:
             args = ("--count",) + args
         code = cs_.main(*args)
@@ -57,53 +58,50 @@ cs = MainWrapper()
 
 
 def run_codespell(
-    args: Tuple[str, ...] = (),
-    cwd: Optional[str] = None,
+    args: Tuple[Any, ...] = (),
+    cwd: Optional[Path] = None,
 ) -> int:
     """Run codespell."""
-    args = ("--count",) + args
+    args = tuple(str(arg) for arg in args)
     proc = subprocess.run(
-        ["codespell"] + list(args), cwd=cwd, capture_output=True, encoding="utf-8"
+        ["codespell", "--count", *args], cwd=cwd, capture_output=True, encoding="utf-8"
     )
     count = int(proc.stderr.split("\n")[-2])
     return count
 
 
-def test_command(tmpdir: pytest.TempPathFactory) -> None:
+def test_command(tmp_path: Path) -> None:
     """Test running the codespell executable."""
     # With no arguments does "."
-    d = str(tmpdir)
-    assert run_codespell(cwd=d) == 0
-    with open(op.join(d, "bad.txt"), "w") as f:
-        f.write("abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd")
-    assert run_codespell(cwd=d) == 4
+    assert run_codespell(cwd=tmp_path) == 0
+    (tmp_path / "bad.txt").write_text("abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd")
+    assert run_codespell(cwd=tmp_path) == 4
 
 
 def test_basic(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test some basic functionality."""
     assert cs.main("_does_not_exist_") == 0
-    fname = op.join(str(tmpdir), "tmp")
-    with open(fname, "w") as f:
-        pass
-    result = cs.main("-D", "foo", f.name, std=True)
+    fname = tmp_path / "tmp"
+    fname.touch()
+    result = cs.main("-D", "foo", fname, std=True)
     assert isinstance(result, tuple)
     code, _, stderr = result
     assert code == EX_USAGE, "missing dictionary"
     assert "cannot find dictionary" in stderr
     assert cs.main(fname) == 0, "empty file"
-    with open(fname, "a") as f:
+    with fname.open("a") as f:
         f.write("this is a test file\n")
     assert cs.main(fname) == 0, "good"
-    with open(fname, "a") as f:
+    with fname.open("a") as f:
         f.write("abandonned\n")
     assert cs.main(fname) == 1, "bad"
-    with open(fname, "a") as f:
+    with fname.open("a") as f:
         f.write("abandonned\n")
     assert cs.main(fname) == 2, "worse"
-    with open(fname, "a") as f:
+    with fname.open("a") as f:
         f.write("tim\ngonna\n")
     assert cs.main(fname) == 2, "with a name"
     assert cs.main("--builtin", "clear,rare,names,informal", fname) == 4
@@ -112,57 +110,54 @@ def test_basic(
     code, _, stderr = result
     assert code == EX_USAGE  # bad type
     assert "Unknown builtin dictionary" in stderr
-    d = str(tmpdir)
-    result = cs.main(fname, "-D", op.join(d, "foo"), std=True)
+    result = cs.main(fname, "-D", tmp_path / "foo", std=True)
     assert isinstance(result, tuple)
     code, _, stderr = result
     assert code == EX_USAGE  # bad dict
     assert "cannot find dictionary" in stderr
-    os.remove(fname)
+    fname.unlink()
 
-    with open(op.join(d, "bad.txt"), "w", newline="") as f:
+    with (tmp_path / "bad.txt").open("w", newline="") as f:
         f.write(
             "abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd\nabandonned\rAbandonned\r\nABANDONNED \n AbAnDoNnEd"  # noqa: E501
         )
-    assert cs.main(d) == 8
-    result = cs.main("-w", d, std=True)
+    assert cs.main(tmp_path) == 8
+    result = cs.main("-w", tmp_path, std=True)
     assert isinstance(result, tuple)
     code, _, stderr = result
     assert code == 0
     assert "FIXED:" in stderr
-    with open(op.join(d, "bad.txt"), newline="") as f:
+    with (tmp_path / "bad.txt").open(newline="") as f:
         new_content = f.read()
-    assert cs.main(d) == 0
+    assert cs.main(tmp_path) == 0
     assert (
         new_content
         == "abandoned\nAbandoned\nABANDONED\nabandoned\nabandoned\rAbandoned\r\nABANDONED \n abandoned"  # noqa: E501
     )
 
-    with open(op.join(d, "bad.txt"), "w") as f:
-        f.write("abandonned abandonned\n")
-    assert cs.main(d) == 2
-    result = cs.main("-q", "16", "-w", d, count=False, std=True)
+    (tmp_path / "bad.txt").write_text("abandonned abandonned\n")
+    assert cs.main(tmp_path) == 2
+    result = cs.main("-q", "16", "-w", tmp_path, count=False, std=True)
     assert isinstance(result, tuple)
     code, stdout, stderr = result
     assert code == 0
     assert stdout == stderr == ""
-    assert cs.main(d) == 0
+    assert cs.main(tmp_path) == 0
 
     # empty directory
-    os.mkdir(op.join(d, "empty"))
-    assert cs.main(d) == 0
+    (tmp_path / "empty").mkdir()
+    assert cs.main(tmp_path) == 0
 
 
 def test_bad_glob(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     # disregard invalid globs, properly handle escaped globs
-    g = op.join(str(tmpdir), "glob")
-    os.mkdir(g)
-    fname = op.join(g, "[b-a].txt")
-    with open(fname, "a") as f:
-        f.write("abandonned\n")
+    g = tmp_path / "glob"
+    g.mkdir()
+    fname = g / "[b-a].txt"
+    fname.write_text("abandonned\n")
     assert cs.main(g) == 1
     # bad glob is invalid
     result = cs.main("--skip", "[b-a].txt", g, std=True)
@@ -183,116 +178,105 @@ def test_permission_error(
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test permission error handling."""
-    d = tmp_path
-    with open(d / "unreadable.txt", "w") as f:
-        f.write("abandonned\n")
-    result = cs.main(f.name, std=True)
+    fname = tmp_path / "unreadable.txt"
+    fname.write_text("abandonned\n")
+    result = cs.main(fname, std=True)
     assert isinstance(result, tuple)
     code, _, stderr = result
     assert "WARNING:" not in stderr
-    os.chmod(f.name, 0o000)
-    result = cs.main(f.name, std=True)
+    fname.chmod(0o000)
+    result = cs.main(fname, std=True)
     assert isinstance(result, tuple)
     code, _, stderr = result
     assert "WARNING:" in stderr
 
 
 def test_interactivity(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test interaction"""
     # Windows can't read a currently-opened file, so here we use
     # NamedTemporaryFile just to get a good name
-    with open(op.join(str(tmpdir), "tmp"), "w") as f:
-        pass
+    fname = tmp_path / "tmp"
+    fname.touch()
     try:
-        assert cs.main(f.name) == 0, "empty file"
-        with open(f.name, "w") as f:
-            f.write("abandonned\n")
-        assert cs.main("-i", "-1", f.name) == 1, "bad"
+        assert cs.main(fname) == 0, "empty file"
+        fname.write_text("abandonned\n")
+        assert cs.main("-i", "-1", fname) == 1, "bad"
         with FakeStdin("y\n"):
-            assert cs.main("-i", "3", f.name) == 1
+            assert cs.main("-i", "3", fname) == 1
         with FakeStdin("n\n"):
-            result = cs.main("-w", "-i", "3", f.name, std=True)
+            result = cs.main("-w", "-i", "3", fname, std=True)
             assert isinstance(result, tuple)
             code, stdout, _ = result
             assert code == 0
         assert "==>" in stdout
         with FakeStdin("x\ny\n"):
-            assert cs.main("-w", "-i", "3", f.name) == 0
-        assert cs.main(f.name) == 0
+            assert cs.main("-w", "-i", "3", fname) == 0
+        assert cs.main(fname) == 0
     finally:
-        os.remove(f.name)
+        fname.unlink()
 
     # New example
-    with open(op.join(str(tmpdir), "tmp2"), "w") as f:
-        pass
+    fname = tmp_path / "tmp2"
+    fname.write_text("abandonned\n")
     try:
-        with open(f.name, "w") as f:
-            f.write("abandonned\n")
-        assert cs.main(f.name) == 1
+        assert cs.main(fname) == 1
         with FakeStdin(" "):  # blank input -> Y
-            assert cs.main("-w", "-i", "3", f.name) == 0
-        assert cs.main(f.name) == 0
+            assert cs.main("-w", "-i", "3", fname) == 0
+        assert cs.main(fname) == 0
     finally:
-        os.remove(f.name)
+        fname.unlink()
 
     # multiple options
-    with open(op.join(str(tmpdir), "tmp3"), "w") as f:
-        pass
+    fname = tmp_path / "tmp3"
+    fname.write_text("ackward\n")
     try:
-        with open(f.name, "w") as f:
-            f.write("ackward\n")
-
-        assert cs.main(f.name) == 1
+        assert cs.main(fname) == 1
         with FakeStdin(" \n"):  # blank input -> nothing
-            assert cs.main("-w", "-i", "3", f.name) == 0
-        assert cs.main(f.name) == 1
+            assert cs.main("-w", "-i", "3", fname) == 0
+        assert cs.main(fname) == 1
         with FakeStdin("0\n"):  # blank input -> nothing
-            assert cs.main("-w", "-i", "3", f.name) == 0
-        assert cs.main(f.name) == 0
-        with open(f.name) as f_read:
-            assert f_read.read() == "awkward\n"
-        with open(f.name, "w") as f:
-            f.write("ackward\n")
-        assert cs.main(f.name) == 1
+            assert cs.main("-w", "-i", "3", fname) == 0
+        assert cs.main(fname) == 0
+        assert fname.read_text() == "awkward\n"
+        fname.write_text("ackward\n")
+        assert cs.main(fname) == 1
         with FakeStdin("x\n1\n"):  # blank input -> nothing
-            result = cs.main("-w", "-i", "3", f.name, std=True)
+            result = cs.main("-w", "-i", "3", fname, std=True)
             assert isinstance(result, tuple)
             code, stdout, _ = result
             assert code == 0
         assert "a valid option" in stdout
-        assert cs.main(f.name) == 0
-        with open(f.name) as f:
-            assert f.read() == "backward\n"
+        assert cs.main(fname) == 0
+        assert fname.read_text() == "backward\n"
     finally:
-        os.remove(f.name)
+        fname.unlink()
 
 
 def test_summary(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test summary functionality."""
-    with open(op.join(str(tmpdir), "tmp"), "w") as f:
-        pass
-    result = cs.main(f.name, std=True, count=False)
+    fname = tmp_path / "tmp"
+    fname.touch()
+    result = cs.main(fname, std=True, count=False)
     assert isinstance(result, tuple)
     code, stdout, stderr = result
     assert code == 0
     assert stdout == stderr == "", "no output"
-    result = cs.main(f.name, "--summary", std=True)
+    result = cs.main(fname, "--summary", std=True)
     assert isinstance(result, tuple)
     code, stdout, stderr = result
     assert code == 0
     assert stderr == "0\n"
     assert "SUMMARY" in stdout
     assert len(stdout.split("\n")) == 5
-    with open(f.name, "w") as f:
-        f.write("abandonned\nabandonned")
+    fname.write_text("abandonned\nabandonned")
     assert code == 0
-    result = cs.main(f.name, "--summary", std=True)
+    result = cs.main(fname, "--summary", std=True)
     assert isinstance(result, tuple)
     code, stdout, stderr = result
     assert stderr == "2\n"
@@ -302,43 +286,37 @@ def test_summary(
 
 
 def test_ignore_dictionary(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test ignore dictionary functionality."""
-    d = str(tmpdir)
-    with open(op.join(d, "bad.txt"), "w") as f:
-        f.write("1 abandonned 1\n2 abandonned 2\nabondon\n")
-    bad_name = f.name
+    bad_name = tmp_path / "bad.txt"
+    bad_name.write_text("1 abandonned 1\n2 abandonned 2\nabondon\n")
     assert cs.main(bad_name) == 3
-    with open(op.join(d, "ignore.txt"), "w") as f:
-        f.write("abandonned\n")
-    assert cs.main("-I", f.name, bad_name) == 1
+    fname = tmp_path / "ignore.txt"
+    fname.write_text("abandonned\n")
+    assert cs.main("-I", fname, bad_name) == 1
 
 
 def test_ignore_word_list(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test ignore word list functionality."""
-    d = str(tmpdir)
-    with open(op.join(d, "bad.txt"), "w") as f:
-        f.write("abandonned\nabondon\nabilty\n")
-    assert cs.main(d) == 3
-    assert cs.main("-Labandonned,someword", "-Labilty", d) == 1
+    (tmp_path / "bad.txt").write_text("abandonned\nabondon\nabilty\n")
+    assert cs.main(tmp_path) == 3
+    assert cs.main("-Labandonned,someword", "-Labilty", tmp_path) == 1
 
 
 def test_custom_regex(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test custom word regex."""
-    d = str(tmpdir)
-    with open(op.join(d, "bad.txt"), "w") as f:
-        f.write("abandonned_abondon\n")
-    assert cs.main(d) == 0
-    assert cs.main("-r", "[a-z]+", d) == 2
-    result = cs.main("-r", "[a-z]+", "--write-changes", d, std=True)
+    (tmp_path / "bad.txt").write_text("abandonned_abondon\n")
+    assert cs.main(tmp_path) == 0
+    assert cs.main("-r", "[a-z]+", tmp_path) == 2
+    result = cs.main("-r", "[a-z]+", "--write-changes", tmp_path, std=True)
     assert isinstance(result, tuple)
     code, _, stderr = result
     assert code == EX_USAGE
@@ -346,64 +324,59 @@ def test_custom_regex(
 
 
 def test_exclude_file(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test exclude file functionality."""
-    d = str(tmpdir)
-    with open(op.join(d, "bad.txt"), "wb") as f:
-        f.write(b"1 abandonned 1\n2 abandonned 2\n")
-    bad_name = f.name
+    bad_name = tmp_path / "bad.txt"
+    bad_name.write_bytes(b"1 abandonned 1\n2 abandonned 2\n")
     assert cs.main(bad_name) == 2
-    with open(op.join(d, "tmp.txt"), "wb") as f:
-        f.write(b"1 abandonned 1\n")
+    fname = tmp_path / "tmp.txt"
+    fname.write_bytes(b"1 abandonned 1\n")
     assert cs.main(bad_name) == 2
-    assert cs.main("-x", f.name, bad_name) == 1
+    assert cs.main("-x", fname, bad_name) == 1
 
 
 def test_encoding(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test encoding handling."""
     # Some simple Unicode things
-    with open(op.join(str(tmpdir), "tmp"), "wb") as f:
-        pass
+    fname = tmp_path / "tmp"
+    fname.touch()
     # with CaptureStdout() as sio:
-    assert cs.main(f.name) == 0
-    with open(f.name, "wb") as f:
-        f.write("naïve\n".encode())
-    assert cs.main(f.name) == 0
-    assert cs.main("-e", f.name) == 0
-    with open(f.name, "ab") as f:
+    assert cs.main(fname) == 0
+    fname.write_bytes("naïve\n".encode())
+    assert cs.main(fname) == 0
+    assert cs.main("-e", fname) == 0
+    with fname.open("ab") as f:
         f.write(b"naieve\n")
-    assert cs.main(f.name) == 1
+    assert cs.main(fname) == 1
     # Encoding detection (only try ISO 8859-1 because UTF-8 is the default)
-    with open(f.name, "wb") as f:
-        f.write(b"Speling error, non-ASCII: h\xe9t\xe9rog\xe9n\xe9it\xe9\n")
+    fname.write_bytes(b"Speling error, non-ASCII: h\xe9t\xe9rog\xe9n\xe9it\xe9\n")
     # check warnings about wrong encoding are enabled with "-q 0"
-    result = cs.main("-q", "0", f.name, std=True, count=True)
+    result = cs.main("-q", "0", fname, std=True, count=True)
     assert isinstance(result, tuple)
     code, stdout, stderr = result
     assert code == 1
     assert "Speling" in stdout
     assert "iso-8859-1" in stderr
     # check warnings about wrong encoding are disabled with "-q 1"
-    result = cs.main("-q", "1", f.name, std=True, count=True)
+    result = cs.main("-q", "1", fname, std=True, count=True)
     assert isinstance(result, tuple)
     code, stdout, stderr = result
     assert code == 1
     assert "Speling" in stdout
     assert "iso-8859-1" not in stderr
     # Binary file warning
-    with open(f.name, "wb") as f:
-        f.write(b"\x00\x00naiive\x00\x00")
-    result = cs.main(f.name, std=True, count=False)
+    fname.write_bytes(b"\x00\x00naiive\x00\x00")
+    result = cs.main(fname, std=True, count=False)
     assert isinstance(result, tuple)
     code, stdout, stderr = result
     assert code == 0
     assert stdout == stderr == ""
-    result = cs.main("-q", "0", f.name, std=True, count=False)
+    result = cs.main("-q", "0", fname, std=True, count=False)
     assert isinstance(result, tuple)
     code, stdout, stderr = result
     assert code == 0
@@ -412,110 +385,100 @@ def test_encoding(
 
 
 def test_ignore(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test ignoring of files and directories."""
-    d = str(tmpdir)
-    goodtxt = op.join(d, "good.txt")
-    with open(goodtxt, "w") as f:
-        f.write("this file is okay")
-    assert cs.main(d) == 0
-    badtxt = op.join(d, "bad.txt")
-    with open(badtxt, "w") as f:
-        f.write("abandonned")
-    assert cs.main(d) == 1
-    assert cs.main("--skip=bad*", d) == 0
-    assert cs.main("--skip=bad.txt", d) == 0
-    subdir = op.join(d, "ignoredir")
-    os.mkdir(subdir)
-    with open(op.join(subdir, "bad.txt"), "w") as f:
-        f.write("abandonned")
-    assert cs.main(d) == 2
-    assert cs.main("--skip=bad*", d) == 0
-    assert cs.main("--skip=*ignoredir*", d) == 1
-    assert cs.main("--skip=ignoredir", d) == 1
-    assert cs.main("--skip=*ignoredir/bad*", d) == 1
-    badjs = op.join(d, "bad.js")
+    goodtxt = tmp_path / "good.txt"
+    goodtxt.write_text("this file is okay")
+    assert cs.main(tmp_path) == 0
+    badtxt = tmp_path / "bad.txt"
+    badtxt.write_text("abandonned")
+    assert cs.main(tmp_path) == 1
+    assert cs.main("--skip=bad*", tmp_path) == 0
+    assert cs.main("--skip=bad.txt", tmp_path) == 0
+    subdir = tmp_path / "ignoredir"
+    subdir.mkdir()
+    (subdir / "bad.txt").write_text("abandonned")
+    assert cs.main(tmp_path) == 2
+    assert cs.main("--skip=bad*", tmp_path) == 0
+    assert cs.main("--skip=*ignoredir*", tmp_path) == 1
+    assert cs.main("--skip=ignoredir", tmp_path) == 1
+    assert cs.main("--skip=*ignoredir/bad*", tmp_path) == 1
+    badjs = tmp_path / "bad.js"
     copyfile(badtxt, badjs)
     assert cs.main("--skip=*.js", goodtxt, badtxt, badjs) == 1
 
 
 def test_check_filename(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test filename check."""
-    d = str(tmpdir)
+    fname = tmp_path / "abandonned.txt"
     # Empty file
-    with open(op.join(d, "abandonned.txt"), "w") as f:
-        f.write("")
-    assert cs.main("-f", d) == 1
+    fname.touch()
+    assert cs.main("-f", tmp_path) == 1
     # Normal file with contents
-    with open(op.join(d, "abandonned.txt"), "w") as f:
-        f.write(".")
-    assert cs.main("-f", d) == 1
+    fname.write_text(".")
+    assert cs.main("-f", tmp_path) == 1
     # Normal file with binary contents
-    with open(op.join(d, "abandonned.txt"), "wb") as f:
-        f.write(b"\x00\x00naiive\x00\x00")
-    assert cs.main("-f", d) == 1
+    fname.write_bytes(b"\x00\x00naiive\x00\x00")
+    assert cs.main("-f", tmp_path) == 1
 
 
 @pytest.mark.skipif(
     (not hasattr(os, "mkfifo") or not callable(os.mkfifo)), reason="requires os.mkfifo"
 )
 def test_check_filename_irregular_file(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test irregular file filename check."""
     # Irregular file (!isfile())
-    d = str(tmpdir)
-    os.mkfifo(op.join(d, "abandonned"))
-    assert cs.main("-f", d) == 1
-    d = str(tmpdir)
+    os.mkfifo(tmp_path / "abandonned")
+    assert cs.main("-f", tmp_path) == 1
 
 
 def test_check_hidden(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test ignoring of hidden files."""
-    d = str(tmpdir)
+    fname = tmp_path / "test.txt"
     # visible file
-    with open(op.join(d, "test.txt"), "w") as f:
-        f.write("abandonned\n")
-    assert cs.main(op.join(d, "test.txt")) == 1
-    assert cs.main(d) == 1
+    fname.write_text("abandonned\n")
+    assert cs.main(fname) == 1
+    assert cs.main(tmp_path) == 1
     # hidden file
-    os.rename(op.join(d, "test.txt"), op.join(d, ".test.txt"))
-    assert cs.main(op.join(d, ".test.txt")) == 0
-    assert cs.main(d) == 0
-    assert cs.main("--check-hidden", op.join(d, ".test.txt")) == 1
-    assert cs.main("--check-hidden", d) == 1
+    hidden_file = tmp_path / ".test.txt"
+    fname.rename(hidden_file)
+    assert cs.main(hidden_file) == 0
+    assert cs.main(tmp_path) == 0
+    assert cs.main("--check-hidden", hidden_file) == 1
+    assert cs.main("--check-hidden", tmp_path) == 1
     # hidden file with typo in name
-    os.rename(op.join(d, ".test.txt"), op.join(d, ".abandonned.txt"))
-    assert cs.main(op.join(d, ".abandonned.txt")) == 0
-    assert cs.main(d) == 0
-    assert cs.main("--check-hidden", op.join(d, ".abandonned.txt")) == 1
-    assert cs.main("--check-hidden", d) == 1
-    assert (
-        cs.main("--check-hidden", "--check-filenames", op.join(d, ".abandonned.txt"))
-        == 2
-    )
-    assert cs.main("--check-hidden", "--check-filenames", d) == 2
+    typo_file = tmp_path / ".abandonned.txt"
+    hidden_file.rename(typo_file)
+    assert cs.main(typo_file) == 0
+    assert cs.main(tmp_path) == 0
+    assert cs.main("--check-hidden", typo_file) == 1
+    assert cs.main("--check-hidden", tmp_path) == 1
+    assert cs.main("--check-hidden", "--check-filenames", typo_file) == 2
+    assert cs.main("--check-hidden", "--check-filenames", tmp_path) == 2
     # hidden directory
-    assert cs.main(d) == 0
-    assert cs.main("--check-hidden", d) == 1
-    assert cs.main("--check-hidden", "--check-filenames", d) == 2
-    os.mkdir(op.join(d, ".abandonned"))
-    copyfile(op.join(d, ".abandonned.txt"), op.join(d, ".abandonned", "abandonned.txt"))
-    assert cs.main(d) == 0
-    assert cs.main("--check-hidden", d) == 2
-    assert cs.main("--check-hidden", "--check-filenames", d) == 5
+    assert cs.main(tmp_path) == 0
+    assert cs.main("--check-hidden", tmp_path) == 1
+    assert cs.main("--check-hidden", "--check-filenames", tmp_path) == 2
+    hidden_dir = tmp_path / ".abandonned"
+    hidden_dir.mkdir()
+    copyfile(typo_file, hidden_dir / typo_file.name)
+    assert cs.main(tmp_path) == 0
+    assert cs.main("--check-hidden", tmp_path) == 2
+    assert cs.main("--check-hidden", "--check-filenames", tmp_path) == 5
     # check again with a relative path
     try:
-        rel = op.relpath(d)
+        rel = op.relpath(tmp_path)
     except ValueError:
         # Windows: path is on mount 'C:', start on mount 'D:'
         pass
@@ -524,64 +487,58 @@ def test_check_hidden(
         assert cs.main("--check-hidden", rel) == 2
         assert cs.main("--check-hidden", "--check-filenames", rel) == 5
     # hidden subdirectory
-    assert cs.main(d) == 0
-    assert cs.main("--check-hidden", d) == 2
-    assert cs.main("--check-hidden", "--check-filenames", d) == 5
-    subdir = op.join(d, "subdir")
-    os.mkdir(subdir)
-    os.mkdir(op.join(subdir, ".abandonned"))
-    copyfile(
-        op.join(d, ".abandonned.txt"), op.join(subdir, ".abandonned", "abandonned.txt")
-    )
-    assert cs.main(d) == 0
-    assert cs.main("--check-hidden", d) == 3
-    assert cs.main("--check-hidden", "--check-filenames", d) == 8
+    assert cs.main(tmp_path) == 0
+    assert cs.main("--check-hidden", tmp_path) == 2
+    assert cs.main("--check-hidden", "--check-filenames", tmp_path) == 5
+    subdir = tmp_path / "subdir"
+    subdir.mkdir()
+    hidden_subdir = subdir / ".abandonned"
+    hidden_subdir.mkdir()
+    copyfile(typo_file, hidden_subdir / typo_file.name)
+    assert cs.main(tmp_path) == 0
+    assert cs.main("--check-hidden", tmp_path) == 3
+    assert cs.main("--check-hidden", "--check-filenames", tmp_path) == 8
 
 
 def test_case_handling(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test that capitalized entries get detected properly."""
     # Some simple Unicode things
-    with open(op.join(str(tmpdir), "tmp"), "wb") as f:
-        pass
+    fname = tmp_path / "tmp"
+    fname.touch()
     # with CaptureStdout() as sio:
-    assert cs.main(f.name) == 0
-    with open(f.name, "wb") as f:
-        f.write(b"this has an ACII error")
-    result = cs.main(f.name, std=True)
+    assert cs.main(fname) == 0
+    fname.write_bytes(b"this has an ACII error")
+    result = cs.main(fname, std=True)
     assert isinstance(result, tuple)
     code, stdout, _ = result
     assert code == 1
     assert "ASCII" in stdout
-    result = cs.main("-w", f.name, std=True)
+    result = cs.main("-w", fname, std=True)
     assert isinstance(result, tuple)
     code, _, stderr = result
     assert code == 0
     assert "FIXED" in stderr
-    with open(f.name, encoding="utf-8") as fp:
-        assert fp.read() == "this has an ASCII error"
+    assert fname.read_text(encoding="utf-8") == "this has an ASCII error"
 
 
 def _helper_test_case_handling_in_fixes(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
     reason: bool,
 ) -> None:
-    d = str(tmpdir)
-
-    with open(op.join(d, "dictionary.txt"), "w") as f:
-        if reason:
-            f.write("adoptor->adopter, adaptor, reason\n")
-        else:
-            f.write("adoptor->adopter, adaptor,\n")
-    dictionary_name = f.name
+    dictionary_name = tmp_path / "dictionary.txt"
+    if reason:
+        dictionary_name.write_text("adoptor->adopter, adaptor, reason\n")
+    else:
+        dictionary_name.write_text("adoptor->adopter, adaptor,\n")
 
     # the mispelled word is entirely lowercase
-    with open(op.join(d, "bad.txt"), "w") as f:
-        f.write("early adoptor\n")
-    result = cs.main("-D", dictionary_name, f.name, std=True)
+    fname = tmp_path / "bad.txt"
+    fname.write_text("early adoptor\n")
+    result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
     code, stdout, _ = result
     # all suggested fixes must be lowercase too
@@ -591,9 +548,8 @@ def _helper_test_case_handling_in_fixes(
         assert "reason" in stdout
 
     # the mispelled word is capitalized
-    with open(op.join(d, "bad.txt"), "w") as f:
-        f.write("Early Adoptor\n")
-    result = cs.main("-D", dictionary_name, f.name, std=True)
+    fname.write_text("Early Adoptor\n")
+    result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
     code, stdout, _ = result
     # all suggested fixes must be capitalized too
@@ -603,9 +559,8 @@ def _helper_test_case_handling_in_fixes(
         assert "reason" in stdout
 
     # the mispelled word is entirely uppercase
-    with open(op.join(d, "bad.txt"), "w") as f:
-        f.write("EARLY ADOPTOR\n")
-    result = cs.main("-D", dictionary_name, f.name, std=True)
+    fname.write_text("EARLY ADOPTOR\n")
+    result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
     code, stdout, _ = result
     # all suggested fixes must be uppercase too
@@ -615,9 +570,8 @@ def _helper_test_case_handling_in_fixes(
         assert "reason" in stdout
 
     # the mispelled word mixes lowercase and uppercase
-    with open(op.join(d, "bad.txt"), "w") as f:
-        f.write("EaRlY AdOpToR\n")
-    result = cs.main("-D", dictionary_name, f.name, std=True)
+    fname.write_text("EaRlY AdOpToR\n")
+    result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
     code, stdout, _ = result
     # all suggested fixes should be lowercase
@@ -628,24 +582,24 @@ def _helper_test_case_handling_in_fixes(
 
 
 def test_case_handling_in_fixes(
-    tmpdir: pytest.TempPathFactory, capsys: pytest.CaptureFixture[str]
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
 ) -> None:
     """Test that the case of fixes is similar to the mispelled word."""
-    _helper_test_case_handling_in_fixes(tmpdir, capsys, reason=False)
-    _helper_test_case_handling_in_fixes(tmpdir, capsys, reason=True)
+    _helper_test_case_handling_in_fixes(tmp_path, capsys, reason=False)
+    _helper_test_case_handling_in_fixes(tmp_path, capsys, reason=True)
 
 
 def test_context(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test context options."""
-    d = str(tmpdir)
-    with open(op.join(d, "context.txt"), "w") as f:
-        f.write("line 1\nline 2\nline 3 abandonned\nline 4\nline 5")
+    (tmp_path / "context.txt").write_text(
+        "line 1\nline 2\nline 3 abandonned\nline 4\nline 5"
+    )
 
     # symmetric context, fully within file
-    result = cs.main("-C", "1", d, std=True)
+    result = cs.main("-C", "1", tmp_path, std=True)
     assert isinstance(result, tuple)
     code, stdout, _ = result
     assert code == 1
@@ -656,7 +610,7 @@ def test_context(
     assert lines[2] == ": line 4"
 
     # requested context is bigger than the file
-    result = cs.main("-C", "10", d, std=True)
+    result = cs.main("-C", "10", tmp_path, std=True)
     assert isinstance(result, tuple)
     code, stdout, _ = result
     assert code == 1
@@ -669,7 +623,7 @@ def test_context(
     assert lines[4] == ": line 5"
 
     # only before context
-    result = cs.main("-B", "2", d, std=True)
+    result = cs.main("-B", "2", tmp_path, std=True)
     assert isinstance(result, tuple)
     code, stdout, _ = result
     assert code == 1
@@ -680,7 +634,7 @@ def test_context(
     assert lines[2] == "> line 3 abandonned"
 
     # only after context
-    result = cs.main("-A", "1", d, std=True)
+    result = cs.main("-A", "1", tmp_path, std=True)
     assert isinstance(result, tuple)
     code, stdout, _ = result
     assert code == 1
@@ -690,7 +644,7 @@ def test_context(
     assert lines[1] == ": line 4"
 
     # asymmetric context
-    result = cs.main("-B", "2", "-A", "1", d, std=True)
+    result = cs.main("-B", "2", "-A", "1", tmp_path, std=True)
     assert isinstance(result, tuple)
     code, stdout, _ = result
     assert code == 1
@@ -702,7 +656,7 @@ def test_context(
     assert lines[3] == ": line 4"
 
     # both '-C' and '-A' on the command line
-    result = cs.main("-C", "2", "-A", "1", d, std=True)
+    result = cs.main("-C", "2", "-A", "1", tmp_path, std=True)
     assert isinstance(result, tuple)
     code, _, stderr = result
     assert code == EX_USAGE
@@ -710,7 +664,7 @@ def test_context(
     assert "ERROR" in lines[0]
 
     # both '-C' and '-B' on the command line
-    result = cs.main("-C", "2", "-B", "1", d, std=True)
+    result = cs.main("-C", "2", "-B", "1", tmp_path, std=True)
     assert isinstance(result, tuple)
     code, _, stderr = result
     assert code == EX_USAGE
@@ -719,11 +673,10 @@ def test_context(
 
 
 def test_ignore_regex_option(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test ignore regex option functionality."""
-    d = str(tmpdir)
 
     # Invalid regex.
     result = cs.main("--ignore-regex=(", std=True)
@@ -732,36 +685,34 @@ def test_ignore_regex_option(
     assert code == EX_USAGE
     assert "usage:" in stdout
 
-    with open(op.join(d, "flag.txt"), "w") as f:
-        f.write("# Please see http://example.com/abandonned for info\n")
+    fname = tmp_path / "flag.txt"
+    fname.write_text("# Please see http://example.com/abandonned for info\n")
     # Test file has 1 invalid entry, and it's not ignored by default.
-    assert cs.main(f.name) == 1
+    assert cs.main(fname) == 1
     # An empty regex is the default value, and nothing is ignored.
-    assert cs.main(f.name, "--ignore-regex=") == 1
-    assert cs.main(f.name, '--ignore-regex=""') == 1
+    assert cs.main(fname, "--ignore-regex=") == 1
+    assert cs.main(fname, '--ignore-regex=""') == 1
     # Non-matching regex results in nothing being ignored.
-    assert cs.main(f.name, "--ignore-regex=^$") == 1
+    assert cs.main(fname, "--ignore-regex=^$") == 1
     # A word can be ignored.
-    assert cs.main(f.name, "--ignore-regex=abandonned") == 0
+    assert cs.main(fname, "--ignore-regex=abandonned") == 0
     # Ignoring part of the word can result in odd behavior.
-    assert cs.main(f.name, "--ignore-regex=nn") == 0
+    assert cs.main(fname, "--ignore-regex=nn") == 0
 
-    with open(op.join(d, "flag.txt"), "w") as f:
-        f.write("abandonned donn\n")
+    fname.write_text("abandonned donn\n")
     # Test file has 2 invalid entries.
-    assert cs.main(f.name) == 2
+    assert cs.main(fname) == 2
     # Ignoring donn breaks them both.
-    assert cs.main(f.name, "--ignore-regex=donn") == 0
+    assert cs.main(fname, "--ignore-regex=donn") == 0
     # Adding word breaks causes only one to be ignored.
-    assert cs.main(f.name, r"--ignore-regex=\bdonn\b") == 1
+    assert cs.main(fname, r"--ignore-regex=\bdonn\b") == 1
 
 
 def test_uri_regex_option(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test --uri-regex option functionality."""
-    d = str(tmpdir)
 
     # Invalid regex.
     result = cs.main("--uri-regex=(", std=True)
@@ -770,64 +721,59 @@ def test_uri_regex_option(
     assert code == EX_USAGE
     assert "usage:" in stdout
 
-    with open(op.join(d, "flag.txt"), "w") as f:
-        f.write("# Please see http://abandonned.com for info\n")
+    fname = tmp_path / "flag.txt"
+    fname.write_text("# Please see http://abandonned.com for info\n")
 
     # By default, the standard regex is used.
-    assert cs.main(f.name) == 1
-    assert cs.main(f.name, "--uri-ignore-words-list=abandonned") == 0
+    assert cs.main(fname) == 1
+    assert cs.main(fname, "--uri-ignore-words-list=abandonned") == 0
 
     # If empty, nothing matches.
-    assert cs.main(f.name, "--uri-regex=", "--uri-ignore-words-list=abandonned") == 0
+    assert cs.main(fname, "--uri-regex=", "--uri-ignore-words-list=abandonned") == 0
 
     # Can manually match urls.
     assert (
-        cs.main(
-            f.name, "--uri-regex=\\bhttp.*\\b", "--uri-ignore-words-list=abandonned"
-        )
+        cs.main(fname, "--uri-regex=\\bhttp.*\\b", "--uri-ignore-words-list=abandonned")
         == 0
     )
 
     # Can also match arbitrary content.
-    with open(op.join(d, "flag.txt"), "w") as f:
-        f.write("abandonned")
-    assert cs.main(f.name) == 1
-    assert cs.main(f.name, "--uri-ignore-words-list=abandonned") == 1
-    assert cs.main(f.name, "--uri-regex=.*") == 1
-    assert cs.main(f.name, "--uri-regex=.*", "--uri-ignore-words-list=abandonned") == 0
+    fname.write_text("abandonned")
+    assert cs.main(fname) == 1
+    assert cs.main(fname, "--uri-ignore-words-list=abandonned") == 1
+    assert cs.main(fname, "--uri-regex=.*") == 1
+    assert cs.main(fname, "--uri-regex=.*", "--uri-ignore-words-list=abandonned") == 0
 
 
 def test_uri_ignore_words_list_option_uri(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test ignore regex option functionality."""
-    d = str(tmpdir)
 
-    with open(op.join(d, "flag.txt"), "w") as f:
-        f.write("# Please see http://example.com/abandonned for info\n")
+    fname = tmp_path / "flag.txt"
+    fname.write_text("# Please see http://example.com/abandonned for info\n")
     # Test file has 1 invalid entry, and it's not ignored by default.
-    assert cs.main(f.name) == 1
+    assert cs.main(fname) == 1
     # An empty list is the default value, and nothing is ignored.
-    assert cs.main(f.name, "--uri-ignore-words-list=") == 1
+    assert cs.main(fname, "--uri-ignore-words-list=") == 1
     # Non-matching regex results in nothing being ignored.
-    assert cs.main(f.name, "--uri-ignore-words-list=foo,example") == 1
+    assert cs.main(fname, "--uri-ignore-words-list=foo,example") == 1
     # A word can be ignored.
-    assert cs.main(f.name, "--uri-ignore-words-list=abandonned") == 0
-    assert cs.main(f.name, "--uri-ignore-words-list=foo,abandonned,bar") == 0
-    assert cs.main(f.name, "--uri-ignore-words-list=*") == 0
+    assert cs.main(fname, "--uri-ignore-words-list=abandonned") == 0
+    assert cs.main(fname, "--uri-ignore-words-list=foo,abandonned,bar") == 0
+    assert cs.main(fname, "--uri-ignore-words-list=*") == 0
     # The match must be for the complete word.
-    assert cs.main(f.name, "--uri-ignore-words-list=abandonn") == 1
+    assert cs.main(fname, "--uri-ignore-words-list=abandonn") == 1
 
-    with open(op.join(d, "flag.txt"), "w") as f:
-        f.write("abandonned http://example.com/abandonned\n")
+    fname.write_text("abandonned http://example.com/abandonned\n")
     # Test file has 2 invalid entries.
-    assert cs.main(f.name) == 2
+    assert cs.main(fname) == 2
     # Ignoring the value in the URI won't ignore the word completely.
-    assert cs.main(f.name, "--uri-ignore-words-list=abandonned") == 1
-    assert cs.main(f.name, "--uri-ignore-words-list=*") == 1
+    assert cs.main(fname, "--uri-ignore-words-list=abandonned") == 1
+    assert cs.main(fname, "--uri-ignore-words-list=*") == 1
     # The regular --ignore-words-list will ignore both.
-    assert cs.main(f.name, "--ignore-words-list=abandonned") == 0
+    assert cs.main(fname, "--ignore-words-list=abandonned") == 0
 
     variation_option = "--uri-ignore-words-list=abandonned"
 
@@ -848,10 +794,9 @@ def test_uri_ignore_words_list_option_uri(
         "# Please see http://[2001:0db8:85a3:0000:0000:8a2e:0370"
         ":7334]/abandonned for info\n",
     ):
-        with open(op.join(d, "flag.txt"), "w") as f:
-            f.write(variation)
-        assert cs.main(f.name) == 1, variation
-        assert cs.main(f.name, variation_option) == 0, variation
+        fname.write_text(variation)
+        assert cs.main(fname) == 1, variation
+        assert cs.main(fname, variation_option) == 0, variation
 
     # Variations where no error is ignored.
     for variation in (
@@ -860,43 +805,40 @@ def test_uri_ignore_words_list_option_uri(
         "# Please see foo/abandonned for info\n",
         "# Please see http://foo abandonned for info\n",
     ):
-        with open(op.join(d, "flag.txt"), "w") as f:
-            f.write(variation)
-        assert cs.main(f.name) == 1, variation
-        assert cs.main(f.name, variation_option) == 1, variation
+        fname.write_text(variation)
+        assert cs.main(fname) == 1, variation
+        assert cs.main(fname, variation_option) == 1, variation
 
 
 def test_uri_ignore_words_list_option_email(
-    tmpdir: pytest.TempPathFactory,
+    tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test ignore regex option functionality."""
-    d = str(tmpdir)
 
-    with open(op.join(d, "flag.txt"), "w") as f:
-        f.write("# Please see example@abandonned.com for info\n")
+    fname = tmp_path / "flag.txt"
+    fname.write_text("# Please see example@abandonned.com for info\n")
     # Test file has 1 invalid entry, and it's not ignored by default.
-    assert cs.main(f.name) == 1
+    assert cs.main(fname) == 1
     # An empty list is the default value, and nothing is ignored.
-    assert cs.main(f.name, "--uri-ignore-words-list=") == 1
+    assert cs.main(fname, "--uri-ignore-words-list=") == 1
     # Non-matching regex results in nothing being ignored.
-    assert cs.main(f.name, "--uri-ignore-words-list=foo,example") == 1
+    assert cs.main(fname, "--uri-ignore-words-list=foo,example") == 1
     # A word can be ignored.
-    assert cs.main(f.name, "--uri-ignore-words-list=abandonned") == 0
-    assert cs.main(f.name, "--uri-ignore-words-list=foo,abandonned,bar") == 0
-    assert cs.main(f.name, "--uri-ignore-words-list=*") == 0
+    assert cs.main(fname, "--uri-ignore-words-list=abandonned") == 0
+    assert cs.main(fname, "--uri-ignore-words-list=foo,abandonned,bar") == 0
+    assert cs.main(fname, "--uri-ignore-words-list=*") == 0
     # The match must be for the complete word.
-    assert cs.main(f.name, "--uri-ignore-words-list=abandonn") == 1
+    assert cs.main(fname, "--uri-ignore-words-list=abandonn") == 1
 
-    with open(op.join(d, "flag.txt"), "w") as f:
-        f.write("abandonned example@abandonned.com\n")
+    fname.write_text("abandonned example@abandonned.com\n")
     # Test file has 2 invalid entries.
-    assert cs.main(f.name) == 2
+    assert cs.main(fname) == 2
     # Ignoring the value in the URI won't ignore the word completely.
-    assert cs.main(f.name, "--uri-ignore-words-list=abandonned") == 1
-    assert cs.main(f.name, "--uri-ignore-words-list=*") == 1
+    assert cs.main(fname, "--uri-ignore-words-list=abandonned") == 1
+    assert cs.main(fname, "--uri-ignore-words-list=*") == 1
     # The regular --ignore-words-list will ignore both.
-    assert cs.main(f.name, "--ignore-words-list=abandonned") == 0
+    assert cs.main(fname, "--ignore-words-list=abandonned") == 0
 
     variation_option = "--uri-ignore-words-list=abandonned"
 
@@ -907,10 +849,9 @@ def test_uri_ignore_words_list_option_email(
         "# Please see abandonned@example.com for info\n",
         "# Please see mailto:abandonned@example.com?subject=Test for info\n",
     ):
-        with open(op.join(d, "flag.txt"), "w") as f:
-            f.write(variation)
-        assert cs.main(f.name) == 1, variation
-        assert cs.main(f.name, variation_option) == 0, variation
+        fname.write_text(variation)
+        assert cs.main(fname) == 1, variation
+        assert cs.main(fname, variation_option) == 0, variation
 
     # Variations where no error is ignored.
     for variation in (
@@ -918,10 +859,9 @@ def test_uri_ignore_words_list_option_email(
         "# Please see abandonned@ example for info\n",
         "# Please see mailto:foo@example.com?subject=Test abandonned for info\n",
     ):
-        with open(op.join(d, "flag.txt"), "w") as f:
-            f.write(variation)
-        assert cs.main(f.name) == 1, variation
-        assert cs.main(f.name, variation_option) == 1, variation
+        fname.write_text(variation)
+        assert cs.main(fname) == 1, variation
+        assert cs.main(fname, variation_option) == 1, variation
 
 
 def test_uri_regex_def() -> None:
@@ -1026,13 +966,11 @@ def test_config_toml(
     """Test loading options from a config file or toml."""
     d = tmp_path / "files"
     d.mkdir()
-    with open(d / "bad.txt", "w") as f:
-        f.write("abandonned donn\n")
-    with open(d / "good.txt", "w") as f:
-        f.write("good")
+    (d / "bad.txt").write_text("abandonned donn\n")
+    (d / "good.txt").write_text("good")
 
     # Should fail when checking both.
-    result = cs.main(str(d), count=True, std=True)
+    result = cs.main(d, count=True, std=True)
     assert isinstance(result, tuple)
     code, stdout, _ = result
     # Code in this case is not exit code, but count of misspellings.
@@ -1040,42 +978,40 @@ def test_config_toml(
     assert "bad.txt" in stdout
 
     if kind == "cfg":
-        conffile = str(tmp_path / "setup.cfg")
+        conffile = tmp_path / "setup.cfg"
         args = ("--config", conffile)
-        with open(conffile, "w") as f:
-            f.write(
-                """\
+        conffile.write_text(
+            """\
 [codespell]
 skip = bad.txt, whatever.txt
 count =
 """
-            )
+        )
     else:
         assert kind == "toml"
         pytest.importorskip("tomli")
-        tomlfile = str(tmp_path / "pyproject.toml")
+        tomlfile = tmp_path / "pyproject.toml"
         args = ("--toml", tomlfile)
-        with open(tomlfile, "w") as f:
-            f.write(
-                """\
+        tomlfile.write_text(
+            """\
 [tool.codespell]
 skip = 'bad.txt,whatever.txt'
 count = false
 """
-            )
+        )
 
     # Should pass when skipping bad.txt
-    result = cs.main(str(d), *args, count=True, std=True)
+    result = cs.main(d, *args, count=True, std=True)
     assert isinstance(result, tuple)
     code, stdout, _ = result
     assert code == 0
     assert "bad.txt" not in stdout
 
     # And both should automatically work if they're in cwd
-    cwd = os.getcwd()
+    cwd = Path.cwd()
     try:
         os.chdir(tmp_path)
-        result = cs.main(str(d), count=True, std=True)
+        result = cs.main(d, count=True, std=True)
         assert isinstance(result, tuple)
         code, stdout, _ = result
     finally:
