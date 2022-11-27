@@ -555,8 +555,8 @@ def test_case_handling(
     code, _, stderr = result
     assert code == 0
     assert "FIXED" in stderr
-    with open(f.name, "rb") as fp:
-        assert fp.read().decode("utf-8") == "this has an ASCII error"
+    with open(f.name, encoding="utf-8") as fp:
+        assert fp.read() == "this has an ASCII error"
 
 
 def _helper_test_case_handling_in_fixes(

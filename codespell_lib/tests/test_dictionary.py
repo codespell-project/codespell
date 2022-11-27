@@ -57,9 +57,9 @@ def test_dictionary_formatting(
 ) -> None:
     """Test that all dictionary entries are valid."""
     errors = []
-    with open(fname, "rb") as fid:
+    with open(fname, encoding="utf-8") as fid:
         for line in fid:
-            err, rep = line.decode("utf-8").split("->")
+            err, rep = line.split("->")
             err = err.lower()
             rep = rep.rstrip("\n")
             try:
@@ -259,9 +259,9 @@ def test_dictionary_looping(
     """Test that all dictionary entries are valid."""
     this_err_dict = {}
     short_fname = op.basename(fname)
-    with open(fname, "rb") as fid:
+    with open(fname, encoding="utf-8") as fid:
         for line in fid:
-            err, rep = line.decode("utf-8").split("->")
+            err, rep = line.split("->")
             err = err.lower()
             assert err not in this_err_dict, "error %r already exists in %s" % (
                 err,
