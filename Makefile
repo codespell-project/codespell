@@ -12,8 +12,8 @@ check-dictionary: check-dictionaries
 sort-dictionary: sort-dictionaries
 trim-dictionary: trim-dictionaries
 
-codespell.1: codespell.1.include bin/codespell Makefile
-	PYTHONPATH=. help2man ./bin/codespell --include codespell.1.include --no-info --output codespell.1
+codespell.1: codespell.1.include Makefile
+	PYTHONPATH=. help2man codespell --include codespell.1.include --no-info --output codespell.1
 	sed -i '/\.SS \"Usage/,+2d' codespell.1
 
 check-dictionaries:
