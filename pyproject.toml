@@ -49,7 +49,6 @@ types = [
     "mypy",
     "pytest",
     "types-chardet",
-    "types-setuptools",
 ]
 
 [project.scripts]
