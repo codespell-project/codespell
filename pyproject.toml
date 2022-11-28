@@ -37,6 +37,7 @@ dev = [
     "pytest",
     "pytest-cov",
     "pytest-dependency",
+    "Pygments",
     "tomli"
 ]
 hard-encoding-detection = [
