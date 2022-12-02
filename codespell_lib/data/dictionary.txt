@@ -22,6 +22,7 @@ aaproximately->approximately
 aaproximates->approximates
 aaproximating->approximating
 aare->are
+aassign->assign
 aassignment->assignment
 aassignments->assignments
 aassociated->associated
@@ -2956,6 +2957,7 @@ asending->ascending
 asent->ascent
 aserted->asserted
 asertion->assertion
+asess->assess
 asessment->assessment
 asessments->assessments
 asetic->ascetic
@@ -30065,7 +30067,7 @@ scholarhip->scholarship
 scholarhips->scholarships
 scholarstic->scholastic, scholarly,
 scholdn't->shouldn't
-schoole->schools
+schoole->schools, schooled,
 schould->should
 scientfic->scientific
 scientfically->scientifically
@@ -35025,6 +35027,7 @@ turnk->trunk, turnkey, turn,
 turorial->tutorial
 turorials->tutorials
 turtleh->turtle
+turtlehs->turtles
 turtorial->tutorial
 turtorials->tutorials
 Tuscon->Tucson
@@ -36424,10 +36427,10 @@ varous->various
 varously->variously
 varriance->variance
 varriances->variances
-vart->cart
+vart->cart, wart,
 vartical->vertical
 vartically->vertically
-varts->carts
+varts->carts, warts,
 vas->was
 vasall->vassal
 vasalls->vassals
