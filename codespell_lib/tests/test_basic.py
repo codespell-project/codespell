@@ -514,10 +514,15 @@ def test_check_hidden(
     assert cs.main("--check-hidden", d) == 2
     assert cs.main("--check-hidden", "--check-filenames", d) == 5
     # check again with a relative path
-    rel = op.relpath(d)
-    assert cs.main(rel) == 0
-    assert cs.main("--check-hidden", rel) == 2
-    assert cs.main("--check-hidden", "--check-filenames", rel) == 5
+    try:
+        rel = op.relpath(d)
+    except ValueError:
+        # Windows: path is on mount 'C:', start on mount 'D:'
+        pass
+    else:
+        assert cs.main(rel) == 0
+        assert cs.main("--check-hidden", rel) == 2
+        assert cs.main("--check-hidden", "--check-filenames", rel) == 5
     # hidden subdirectory
     assert cs.main(d) == 0
     assert cs.main("--check-hidden", d) == 2

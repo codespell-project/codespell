@@ -1,0 +1,24 @@
+name: Test Codespell Windows
+on:
+  - push
+  - pull_request
+jobs:
+  test-windows:
+    name: Test Windows
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.7'
+      - name: Install dependencies
+        run: |
+          python --version
+          pip install -U pip
+          pip install chardet setuptools
+          pip install -e .[dev]
+      - run: codespell --help
+      - run: codespell --version
+      - run: pytest codespell_lib
+      - uses: codecov/codecov-action@v3
