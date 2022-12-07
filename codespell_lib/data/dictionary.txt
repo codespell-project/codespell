@@ -10225,6 +10225,8 @@ delections->detections, deletions, selections,
 delele->delete
 delelete->delete
 deleleted->deleted
+deleletes->deletes
+deleleting->deleting
 delelte->delete
 delemeter->delimiter
 delemiter->delimiter
@@ -12966,6 +12968,7 @@ emabaroged->embargoed
 emable->enable
 emabled->enabled
 emables->enables
+emabling->enabling
 emailling->emailing
 embarass->embarrass
 embarassed->embarrassed
@@ -20574,10 +20577,13 @@ licencse->license, licenses,
 licese->license
 licesne->license
 licesnes->licenses
+licesning->licensing
 licesnse->license
 licesnses->licenses
+licesnsing->licensing
 licsense->license
 licsenses->licenses
+licsensing->licensing
 lieing->lying
 liek->like
 liekd->liked
@@ -26800,7 +26806,6 @@ provdied->provided
 provdies->provides
 provding->providing
 provedd->proved, provided,
-provence->province
 provences->provinces
 provicde->provide
 provicded->provided
@@ -31450,7 +31455,6 @@ sophmore->sophomore
 sorce->source, force,
 sorceror->sorcerer
 sord->sword, sore, sored, sawed, soared,
-soring->sorting
 sorkflow->workflow
 sorrounding->surrounding
 sortig->sorting
