@@ -82,6 +82,11 @@ codespell_lib = [
 [tool.check-manifest]
 ignore = ["codespell_lib/_version.py"]
 
+[tool.codespell]
+builtin = ["clear","rare","informal","usage","code","names"]
+ignore-words-list = ["uint"]
+skip=[ "./.*","codespell_lib/data/*","codespell_lib/tests/*"]
+
 [tool.isort]
 profile = "black"
 
@@ -89,6 +94,46 @@ profile = "black"
 pretty = true
 show_error_codes = true
 strict = true
+
+[tool.pylint]
+reports=false
+py-version=3.6
+disable = [
+          "broad-except",
+          "consider-using-f-string",
+          "consider-using-dict-items",
+          "consider-using-with",
+          "fixme",
+          "import-error",
+          "import-outside-toplevel",
+          "invalid-name",
+          "line-too-long",
+          "missing-class-docstring",
+          "missing-module-docstring",
+          "missing-function-docstring",
+          "no-else-raise",
+          "no-else-return",
+          "raise-missing-from",
+          "redefined-outer-name",
+          "subprocess-run-check",
+          "too-many-arguments",
+          "too-many-lines",
+          "too-many-locals",
+          "too-many-branches",
+          "too-many-statements",
+          "too-many-return-statements",
+          "too-few-public-methods",
+          "unneeded-not",
+          "unspecified-encoding",
+          "unused-argument",
+          "unused-variable",
+          "use-maxsplit-arg"
+]
+
+
+[tool.pylint.FORMAT]
+good-names=["F","r","i","n"]
+# include-naming-hint=yes
 
 [tool.pytest.ini_options]
 addopts = "--cov=codespell_lib -rs --cov-report= --tb=short --junit-xml=junit-results.xml"

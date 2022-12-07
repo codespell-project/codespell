@@ -108,13 +108,6 @@ repos:
     rev: v0.971
     hooks:
       - id: mypy
-        args:
-          - --ignore-missing-imports
-          - --install-types
-          - --non-interactive
-          - --check-untyped-defs
-          - --show-error-codes
-          - --show-error-context
         additional_dependencies:
           - chardet
           - pytest-cov
