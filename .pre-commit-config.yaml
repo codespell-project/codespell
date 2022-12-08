@@ -4,7 +4,7 @@ exclude: ^(\.[^/]*cache/.*)$
 repos:
   - repo: https://github.com/executablebooks/mdformat
     # Do this before other tools "fixing" the line endings
-    rev: 0.7.14
+    rev: 0.7.16
     hooks:
       - id: mdformat
         name: Format Markdown
@@ -22,12 +22,12 @@ repos:
           - mdformat-web
           - mdformat-gfm
   - repo: https://github.com/asottile/pyupgrade
-    rev: v2.37.3
+    rev: v3.3.1
     hooks:
       - id: pyupgrade
         args: [--py36-plus]
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.3.0
+    rev: v4.4.0
     hooks:
       - id: no-commit-to-branch
         args: [--branch, main]
@@ -48,7 +48,7 @@ repos:
       - id: check-case-conflict
       # - id: check-toml
   - repo: https://github.com/adrienverge/yamllint.git
-    rev: v1.27.1
+    rev: v1.28.0
     hooks:
       - id: yamllint
         args:
@@ -56,7 +56,7 @@ repos:
           - -d
           - '{extends: relaxed, rules: {line-length: {max: 90}}}'
   - repo: https://github.com/psf/black
-    rev: 22.6.0
+    rev: 22.10.0
     hooks:
       - id: black
         args:
@@ -70,7 +70,7 @@ repos:
         args: [--skip, 'B101,B404,B603', --recursive, .]
 
   - repo: https://github.com/fsouza/autoflake8
-    rev: v0.3.2
+    rev: v0.4.0
     hooks:
       - id: autoflake8
         args:
@@ -78,7 +78,7 @@ repos:
           - -r
           - --expand-star-imports
   - repo: https://github.com/PyCQA/flake8
-    rev: 5.0.4
+    rev: 6.0.0
     hooks:
       - id: flake8
         additional_dependencies:
@@ -94,9 +94,12 @@ repos:
     hooks:
       - id: isort
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.0
+    rev: v2.2.2
     hooks:
       - id: codespell
+        args: [--toml, pyproject-codespell-precommit.toml]
+        additional_dependencies:
+          - tomli
   - repo: https://github.com/pre-commit/mirrors-pylint
     rev: v3.0.0a5
     hooks:
@@ -105,7 +108,7 @@ repos:
           - chardet
           - pytest
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v0.971
+    rev: v0.991
     hooks:
       - id: mypy
         additional_dependencies:
