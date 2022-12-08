@@ -12,7 +12,7 @@ from codespell_lib._codespell import _builtin_dictionaries, supported_languages
 spellers = {}
 
 try:
-    import aspell  # type: ignore[import]
+    import aspell
 
     for lang in supported_languages:
         spellers[lang] = aspell.Speller("lang", lang)
