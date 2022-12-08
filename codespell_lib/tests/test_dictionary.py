@@ -45,9 +45,7 @@ fname_params = pytest.mark.parametrize(
 def test_dictionaries_exist() -> None:
     """Test consistency of dictionaries."""
     doc_fnames = {op.basename(f[0]) for f in _fnames_in_aspell}
-    got_fnames = {
-        op.basename(f) for f in glob.glob(op.join(_data_dir, "*.txt"))
-    }
+    got_fnames = {op.basename(f) for f in glob.glob(op.join(_data_dir, "*.txt"))}
     assert doc_fnames == got_fnames
 
 
@@ -88,9 +86,7 @@ def _check_aspell(
             _check_aspell(word, msg, in_aspell, fname, languages)
         return  # stop normal checking as we've done each word above
     this_in_aspell = any(
-        spellers[lang].check(
-            phrase.encode(spellers[lang].ConfigKeys()["encoding"][1])
-        )
+        spellers[lang].check(phrase.encode(spellers[lang].ConfigKeys()["encoding"][1]))
         for lang in languages
     )
     end = "be in aspell dictionaries ({}) for dictionary {}".format(
@@ -98,9 +94,9 @@ def _check_aspell(
         fname,
     )
     if in_aspell:  # should be an error in aspell
-        assert this_in_aspell, "{} should {}".format(msg, end)
+        assert this_in_aspell, f"{msg} should {end}"
     else:  # shouldn't be
-        assert not this_in_aspell, "{} should not {}".format(msg, end)
+        assert not this_in_aspell, f"{msg} should not {end}"
 
 
 whitespace = re.compile(r"\s")
@@ -122,18 +118,12 @@ def _check_err_rep(
 ) -> None:
     assert whitespace.search(err) is None, "error %r has whitespace" % err
     assert "," not in err, "error %r has a comma" % err
-    assert len(rep) > 0, "error {}: correction {!r} must be non-empty".format(
-        err, rep
-    )
+    assert len(rep) > 0, f"error {err}: correction {rep!r} must be non-empty"
     assert not start_whitespace.match(
         rep
-    ), "error {}: correction {!r} cannot start with whitespace".format(
-        err, rep
-    )
-    _check_aspell(
-        err, "error {!r}".format(err), in_aspell[0], fname, languages[0]
-    )
-    prefix = "error {}: correction {!r}".format(err, rep)
+    ), f"error {err}: correction {rep!r} cannot start with whitespace"
+    _check_aspell(err, f"error {err!r}", in_aspell[0], fname, languages[0])
+    prefix = f"error {err}: correction {rep!r}"
     for (regex, msg) in [
         (start_comma, "%s starts with a comma"),
         (
@@ -153,18 +143,14 @@ def _check_err_rep(
     if rep.count(","):
         assert rep.endswith(
             ","
-        ), "error %s: multiple corrections must end " 'with trailing ","' % (
-            err,
-        )
+        ), "error %s: multiple corrections must end " 'with trailing ","' % (err,)
     reps = [r.strip() for r in rep.split(",")]
     reps = [r for r in reps if len(r)]
     for r in reps:
-        assert (
-            err != r.lower()
-        ), "error {!r} corrects to itself amongst others".format(err)
+        assert err != r.lower(), f"error {err!r} corrects to itself amongst others"
         _check_aspell(
             r,
-            "error {}: correction {!r}".format(err, r),
+            f"error {err}: correction {r!r}",
             in_aspell[1],
             fname,
             languages[1],
@@ -294,9 +280,7 @@ def test_dictionary_looping(
         for line in fid:
             err, rep = line.split("->")
             err = err.lower()
-            assert (
-                err not in this_err_dict
-            ), "error {!r} already exists in {}".format(
+            assert err not in this_err_dict, "error {!r} already exists in {}".format(
                 err,
                 short_fname,
             )

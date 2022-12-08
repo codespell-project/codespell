@@ -59,16 +59,11 @@ repos:
     rev: 22.10.0
     hooks:
       - id: black
-        args:
-          - --safe
-          - --quiet
-          - -l 79
   - repo: https://github.com/Lucas-C/pre-commit-hooks-bandit
     rev: v1.0.6
     hooks:
       - id: python-bandit-vulnerability-check
         args: [--skip, 'B101,B404,B603', --recursive, .]
-
   - repo: https://github.com/fsouza/autoflake8
     rev: v0.4.0
     hooks:
