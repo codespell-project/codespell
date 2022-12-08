@@ -46,7 +46,7 @@ repos:
       - id: check-docstring-first
       - id: fix-byte-order-marker
       - id: check-case-conflict
-      # - id: check-toml
+      - id: check-toml
   - repo: https://github.com/adrienverge/yamllint.git
     rev: v1.28.0
     hooks:
@@ -111,7 +111,11 @@ repos:
     rev: v0.991
     hooks:
       - id: mypy
+        args: [--no-warn-unused-ignores, --config-file, pyproject.toml, --disable-error-code,
+          import]
         additional_dependencies:
           - chardet
+          - pytest
           - pytest-cov
           - pytest-dependency
+          - types-chardet

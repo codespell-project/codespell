@@ -49,6 +49,8 @@ toml = [
 types = [
     "mypy",
     "pytest",
+    "pytest-cov",
+    "pytest-dependency",
     "types-chardet",
 ]
 
