@@ -63,6 +63,10 @@ jobs:
   flake8-annotation:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
       - uses: actions/checkout@v3
       - name: Install codespell dependencies
         run: pip install -e ".[dev]"
