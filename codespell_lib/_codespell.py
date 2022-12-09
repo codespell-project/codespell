@@ -352,7 +352,7 @@ def parse_options(
         "This option can be specified multiple times.",
     )
     builtin_opts = "\n- ".join(
-        [""] + ["%r %s" % (d[0], d[1]) for d in _builtin_dictionaries]
+        [""] + [f"{d[0]!r} {d[1]}" for d in _builtin_dictionaries]
     )
     parser.add_argument(
         "--builtin",
@@ -693,7 +693,7 @@ def ask_for_word_fix(
         r = ""
         fixword = fix_case(wrongword, misspelling.data)
         while not r:
-            print("%s\t%s ==> %s (Y/n) " % (line, wrongword, fixword), end="")
+            print(f"{line}\t{wrongword} ==> {fixword} (Y/n) ", end="")
             r = sys.stdin.readline().strip().upper()
             if not r:
                 r = "Y"
@@ -743,7 +743,7 @@ def print_context(
     # context = (context_before, context_after)
     for i in range(index - context[0], index + context[1] + 1):
         if 0 <= i < len(lines):
-            print("%s %s" % (">" if i == index else ":", lines[i].rstrip()))
+            print("{} {}".format(">" if i == index else ":", lines[i].rstrip()))
 
 
 def extract_words(
@@ -806,14 +806,14 @@ def parse_file(
                 if summary and fix:
                     summary.update(lword)
 
-                cfilename = "%s%s%s" % (colors.FILE, filename, colors.DISABLE)
-                cwrongword = "%s%s%s" % (colors.WWORD, word, colors.DISABLE)
-                crightword = "%s%s%s" % (colors.FWORD, fixword, colors.DISABLE)
+                cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
+                cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
+                crightword = f"{colors.FWORD}{fixword}{colors.DISABLE}"
 
                 if misspellings[lword].reason:
                     if options.quiet_level & QuietLevels.DISABLED_FIXES:
                         continue
-                    creason = "  | %s%s%s" % (
+                    creason = "  | {}{}{}".format(
                         colors.FILE,
                         misspellings[lword].reason,
                         colors.DISABLE,
@@ -843,7 +843,7 @@ def parse_file(
         try:
             text = is_text_file(filename)
         except PermissionError as e:
-            print("WARNING: %s: %s" % (e.strerror, filename), file=sys.stderr)
+            print(f"WARNING: {e.strerror}: {filename}", file=sys.stderr)
             return bad_count
         except OSError:
             return bad_count
@@ -917,16 +917,16 @@ def parse_file(
                 ):
                     continue
 
-                cfilename = "%s%s%s" % (colors.FILE, filename, colors.DISABLE)
+                cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
                 cline = "%s%d%s" % (colors.FILE, i + 1, colors.DISABLE)
-                cwrongword = "%s%s%s" % (colors.WWORD, word, colors.DISABLE)
-                crightword = "%s%s%s" % (colors.FWORD, fixword, colors.DISABLE)
+                cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
+                crightword = f"{colors.FWORD}{fixword}{colors.DISABLE}"
 
                 if misspellings[lword].reason:
                     if options.quiet_level & QuietLevels.DISABLED_FIXES:
                         continue
 
-                    creason = "  | %s%s%s" % (
+                    creason = "  | {}{}{}".format(
                         colors.FILE,
                         misspellings[lword].reason,
                         colors.DISABLE,
@@ -976,7 +976,7 @@ def parse_file(
         else:
             if not options.quiet_level & QuietLevels.FIXES:
                 print(
-                    "%sFIXED:%s %s" % (colors.FWORD, colors.DISABLE, filename),
+                    f"{colors.FWORD}FIXED:{colors.DISABLE} {filename}",
                     file=sys.stderr,
                 )
             with open(filename, "w", encoding=encoding, newline="") as f:
@@ -1010,7 +1010,7 @@ def main(*args: str) -> int:
     try:
         word_regex = re.compile(word_regex)
     except re.error as err:
-        print('ERROR: invalid --regex "%s" (%s)' % (word_regex, err), file=sys.stderr)
+        print(f'ERROR: invalid --regex "{word_regex}" ({err})', file=sys.stderr)
         parser.print_help()
         return EX_USAGE
 
@@ -1019,7 +1019,9 @@ def main(*args: str) -> int:
             ignore_word_regex = re.compile(options.ignore_regex)
         except re.error as err:
             print(
-                'ERROR: invalid --ignore-regex "%s" (%s)' % (options.ignore_regex, err),
+                'ERROR: invalid --ignore-regex "{}" ({})'.format(
+                    options.ignore_regex, err
+                ),
                 file=sys.stderr,
             )
             parser.print_help()
@@ -1044,7 +1046,8 @@ def main(*args: str) -> int:
         uri_regex = re.compile(uri_regex)
     except re.error as err:
         print(
-            'ERROR: invalid --uri-regex "%s" (%s)' % (uri_regex, err), file=sys.stderr
+            f'ERROR: invalid --uri-regex "{uri_regex}" ({err})',
+            file=sys.stderr,
         )
         parser.print_help()
         return EX_USAGE
@@ -1063,12 +1066,13 @@ def main(*args: str) -> int:
                 for builtin in _builtin_dictionaries:
                     if builtin[0] == u:
                         use_dictionaries.append(
-                            os.path.join(_data_root, "dictionary%s.txt" % (builtin[2],))
+                            os.path.join(_data_root, f"dictionary{builtin[2]}.txt")
                         )
                         break
                 else:
                     print(
-                        "ERROR: Unknown builtin dictionary: %s" % (u,), file=sys.stderr
+                        f"ERROR: Unknown builtin dictionary: {u}",
+                        file=sys.stderr,
                     )
                     parser.print_help()
                     return EX_USAGE

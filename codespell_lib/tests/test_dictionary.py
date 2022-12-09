@@ -89,14 +89,14 @@ def _check_aspell(
         spellers[lang].check(phrase.encode(spellers[lang].ConfigKeys()["encoding"][1]))
         for lang in languages
     )
-    end = "be in aspell dictionaries (%s) for dictionary %s" % (
+    end = "be in aspell dictionaries ({}) for dictionary {}".format(
         ", ".join(languages),
         fname,
     )
     if in_aspell:  # should be an error in aspell
-        assert this_in_aspell, "%s should %s" % (msg, end)
+        assert this_in_aspell, f"{msg} should {end}"
     else:  # shouldn't be
-        assert not this_in_aspell, "%s should not %s" % (msg, end)
+        assert not this_in_aspell, f"{msg} should not {end}"
 
 
 whitespace = re.compile(r"\s")
@@ -118,15 +118,18 @@ def _check_err_rep(
 ) -> None:
     assert whitespace.search(err) is None, "error %r has whitespace" % err
     assert "," not in err, "error %r has a comma" % err
-    assert len(rep) > 0, "error %s: correction %r must be non-empty" % (err, rep)
+    assert len(rep) > 0, f"error {err}: correction {rep!r} must be non-empty"
     assert not start_whitespace.match(
         rep
-    ), "error %s: correction %r cannot start with whitespace" % (err, rep)
-    _check_aspell(err, "error %r" % (err,), in_aspell[0], fname, languages[0])
-    prefix = "error %s: correction %r" % (err, rep)
+    ), f"error {err}: correction {rep!r} cannot start with whitespace"
+    _check_aspell(err, f"error {err!r}", in_aspell[0], fname, languages[0])
+    prefix = f"error {err}: correction {rep!r}"
     for (regex, msg) in [
         (start_comma, "%s starts with a comma"),
-        (whitespace_comma, "%s contains a whitespace character followed by a comma"),
+        (
+            whitespace_comma,
+            "%s contains a whitespace character followed by a comma",
+        ),
         (
             comma_whitespaces,
             "%s contains a comma followed by multiple whitespace characters",
@@ -144,9 +147,13 @@ def _check_err_rep(
     reps = [r.strip() for r in rep.split(",")]
     reps = [r for r in reps if len(r)]
     for r in reps:
-        assert err != r.lower(), "error %r corrects to itself amongst others" % (err,)
+        assert err != r.lower(), f"error {err!r} corrects to itself amongst others"
         _check_aspell(
-            r, "error %s: correction %r" % (err, r), in_aspell[1], fname, languages[1]
+            r,
+            f"error {err}: correction {r!r}",
+            in_aspell[1],
+            fname,
+            languages[1],
         )
 
     # aspell dictionary is case sensitive, so pass the original case into there
@@ -180,7 +187,11 @@ def test_error_checking(err: str, rep: str, match: str) -> None:
     """Test that our error checking works."""
     with pytest.raises(AssertionError, match=match):
         _check_err_rep(
-            err, rep, (None, None), "dummy", (supported_languages, supported_languages)
+            err,
+            rep,
+            (None, None),
+            "dummy",
+            (supported_languages, supported_languages),
         )
 
 
@@ -205,7 +216,13 @@ def test_error_checking(err: str, rep: str, match: str) -> None:
         ("a", "bar back", None, False, "should not be in aspell"),
         ("a", "bar back Wednesday", None, False, "should not be in aspell"),
         # Second multi-word, both parts
-        ("a", "bar back, abcdef uvwxyz, bar,", None, True, "should be in aspell"),
+        (
+            "a",
+            "bar back, abcdef uvwxyz, bar,",
+            None,
+            True,
+            "should be in aspell",
+        ),
         (
             "a",
             "abcdef uvwxyz, bar back, ghijkl,",
@@ -263,7 +280,7 @@ def test_dictionary_looping(
         for line in fid:
             err, rep = line.split("->")
             err = err.lower()
-            assert err not in this_err_dict, "error %r already exists in %s" % (
+            assert err not in this_err_dict, "error {!r} already exists in {}".format(
                 err,
                 short_fname,
             )
@@ -286,7 +303,7 @@ def test_dictionary_looping(
         for err in this_err_dict:
             assert (
                 err not in other_err_dict
-            ), "error %r in dictionary %s already exists in dictionary %s" % (
+            ), "error {!r} in dictionary {} already exists in dictionary {}".format(
                 err,
                 short_fname,
                 other_fname,
@@ -297,7 +314,7 @@ def test_dictionary_looping(
             for err in this_err_dict:
                 assert (
                     err not in other_err_dict
-                ), "error %r in dictionary %s already exists in dictionary %s" % (
+                ), "error {!r} in dictionary {} already exists in dictionary {}".format(
                     err,
                     short_fname,
                     other_fname,
