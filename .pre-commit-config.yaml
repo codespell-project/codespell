@@ -1,5 +1,5 @@
 ---
-files: ^(.*\.(py|json|md|sh|yaml|cfg|txt))$
+files: ^(.*\.(py|json|md|sh|yaml|yml|in|cfg|txt|rst|toml|precommit-toml))$
 exclude: ^(\.[^/]*cache/.*)$
 repos:
   - repo: https://github.com/executablebooks/mdformat
@@ -21,6 +21,10 @@ repos:
           - mdformat-black
           - mdformat-web
           - mdformat-gfm
+  - repo: https://github.com/Lucas-C/pre-commit-hooks-markup
+    rev: v1.0.1
+    hooks:
+      - id: rst-linter
   - repo: https://github.com/asottile/pyupgrade
     rev: v3.3.1
     hooks:
@@ -56,7 +60,7 @@ repos:
           - -d
           - '{extends: relaxed, rules: {line-length: {max: 90}}}'
   - repo: https://github.com/psf/black
-    rev: 22.10.0
+    rev: 22.12.0
     hooks:
       - id: black
   - repo: https://github.com/Lucas-C/pre-commit-hooks-bandit
