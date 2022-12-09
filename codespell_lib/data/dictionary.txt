@@ -11086,11 +11086,11 @@ deviceremoveable->deviceremovable
 devicesr->devices
 devicess->devices
 devicest->devices
-devide->divide
+devide->divide, device,
 devided->divided
 devider->divider
 deviders->dividers
-devides->divides
+devides->divides, devices,
 deviding->dividing
 deviece->device
 devied->device
@@ -21402,6 +21402,9 @@ meeds->needs
 meens->means
 meerkrat->meerkat
 meerly->merely
+meethod->method
+meethodology->methodology
+meethods->methods
 meetign->meeting
 meganism->mechanism
 mege->merge
