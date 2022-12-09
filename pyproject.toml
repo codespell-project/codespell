@@ -34,6 +34,7 @@ dynamic = ["version"]
 dev = [
     "check-manifest",
     "flake8",
+    "flake8-pyproject",
     "pytest",
     "pytest-cov",
     "pytest-dependency",
@@ -81,6 +82,15 @@ codespell_lib = [
     "py.typed",
 ]
 
+[tool.autoflake]
+in-place = true
+recursive = true
+expand-star-imports = true
+
+[tool.bandit]
+skip = "B101,B404,B603"
+recursive = true
+
 [tool.check-manifest]
 ignore = ["codespell_lib/_version.py"]
 
@@ -89,6 +99,10 @@ ignore = ["codespell_lib/_version.py"]
 #builtin = ["clear","rare","informal","usage","code","names"]
 #ignore-words-list = ["uint"]
 #skip=[ "./.*","codespell_lib/data/*","codespell_lib/tests/*"]
+
+[tool.flake8]
+max-line-length = "88"
+extend-ignore = "E203"
 
 [tool.isort]
 profile = "black"
@@ -100,7 +114,7 @@ strict = true
 
 [tool.pylint]
 reports=false
-py-version=3.6
+py-version="3.7"
 disable = [
           "broad-except",
           "consider-using-f-string",
