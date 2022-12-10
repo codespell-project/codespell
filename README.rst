@@ -34,7 +34,20 @@ You can use ``pip`` to install codespell with e.g.:
 Usage
 -----
 
-For more in depth info please check usage with ``codespell -h``.
+Below are some simple usage examples to demonstrate how the tool works.
+For exhaustive usage information, please check the output of ``codespell -h``.
+
+Run codespell in all files of the current directory:
+
+.. code-block:: sh
+
+    codespell
+
+Run codespell in specific files or directories (specified via their names or glob patterns):
+
+.. code-block:: sh
+
+    codespell some_file some_dir/ *.ext
 
 Some noteworthy flags:
 
@@ -54,7 +67,7 @@ The ``-I`` flag can be used for a list of certain words to allow that are in the
 
     codespell -L word1,word2,word3,word4
 
-The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it.  **Important note:** The list passed to ``-L`` is case-sensitive based on how it is listed in the codespell dictionaries.
+> The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it.  **Important note:** The list passed to ``-L`` is case-sensitive based on how it is listed in the codespell dictionaries.
 
 .. code-block:: sh
 
