@@ -34,7 +34,20 @@ You can use ``pip`` to install codespell with e.g.:
 Usage
 -----
 
-For more in depth info please check usage with ``codespell -h``.
+Below are some simple usage examples to demonstrate how the tool works.
+For exhaustive usage information, please check the output of ``codespell -h``.
+
+Run codespell in all files of the current directory:
+
+.. code-block:: sh
+
+    codespell
+
+Run codespell in specific files or directories (specified via their names or glob patterns):
+
+.. code-block:: sh
+
+    codespell some_file some_dir/ *.ext
 
 Some noteworthy flags:
 
@@ -42,7 +55,7 @@ Some noteworthy flags:
 
     codespell -w, --write-changes
 
-The ``-w`` flag will actually implement the changes recommended by codespell. Not running with ``-w`` flag is the same as with doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.
+The ``-w`` flag will actually implement the changes recommended by codespell. Running without the ``-w`` flag is the same as with doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.
 
 .. code-block:: sh
 
