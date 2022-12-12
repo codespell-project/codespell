@@ -154,6 +154,29 @@ config files.
 
 .. _tomli: https://pypi.org/project/tomli/
 
+`pre-commit <https://pre-commit.com/>`_ hook
+--------------------------------------------
+
+codespell also works with `pre-commit`, using
+
+.. code-block:: yaml
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.2.2
+    hooks:
+    - id: codespell
+    
+If one configures codespell using the `pyproject.toml` file instead use:
+
+.. code-block:: yaml
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.2.2
+    hooks:
+    - id: codespell
+      additional_dependencies:
+        - tomli
+
 Dictionary format
 -----------------
 
