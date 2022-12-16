@@ -694,6 +694,7 @@ def ask_for_word_fix(
         fixword = fix_case(wrongword, misspelling.data)
         while not r:
             print(f"{line}\t{wrongword} ==> {fixword} (Y/n) ", end="")
+            sys.stdout.flush()
             r = sys.stdin.readline().strip().upper()
             if not r:
                 r = "Y"
