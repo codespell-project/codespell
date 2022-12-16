@@ -332,8 +332,8 @@ with the following terms:
 
    You should have received a copy of the GNU General Public License
    along with this program; if not, see
-   <http://www.gnu.org/licenses/old-licenses/gpl-2.0.html>.
+   <https://www.gnu.org/licenses/old-licenses/gpl-2.0.html>.
 
-.. _GPL v2: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+.. _GPL v2: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-``dictionary.txt`` and the other ``dictionary_*.txt`` files are derivative works of English Wikipedia and are released under the `Creative Commons Attribution-Share-Alike License 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>`_.
+``dictionary.txt`` and the other ``dictionary_*.txt`` files are derivative works of English Wikipedia and are released under the `Creative Commons Attribution-Share-Alike License 3.0 <https://creativecommons.org/licenses/by-sa/3.0/>`_.
