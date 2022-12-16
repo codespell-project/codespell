@@ -693,8 +693,7 @@ def ask_for_word_fix(
         r = ""
         fixword = fix_case(wrongword, misspelling.data)
         while not r:
-            print(f"{line}\t{wrongword} ==> {fixword} (Y/n) ", end="",
-                  flush=True)
+            print(f"{line}\t{wrongword} ==> {fixword} (Y/n) ", end="", flush=True)
             r = sys.stdin.readline().strip().upper()
             if not r:
                 r = "Y"
@@ -716,8 +715,7 @@ def ask_for_word_fix(
             for i, o in enumerate(opt):
                 fixword = fix_case(wrongword, o)
                 print(" %d) %s" % (i, fixword), end="")
-            print(": ", end="")
-            sys.stdout.flush()
+            print(": ", end="", flush=True)
 
             n = sys.stdin.readline().strip()
             if not n:
