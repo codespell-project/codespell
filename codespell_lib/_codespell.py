@@ -10,7 +10,7 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, see
-# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html.
+# https://www.gnu.org/licenses/old-licenses/gpl-2.0.html.
 """
 Copyright (C) 2010-2011  Lucas De Marchi <lucas.de.marchi@gmail.com>
 Copyright (C) 2011  ProFUSION embedded systems
