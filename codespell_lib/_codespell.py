@@ -132,6 +132,7 @@ class QuietLevels:
     DISABLED_FIXES = 4
     NON_AUTOMATIC_FIXES = 8
     FIXES = 16
+    CONFIG_FILES = 32
 
 
 class GlobMatch:
@@ -475,7 +476,7 @@ def parse_options(
         "--quiet-level",
         action="store",
         type=int,
-        default=2,
+        default=34,
         help="bitmask that allows suppressing messages:\n"
         "- 0: print all messages.\n"
         "- 1: disable warnings about wrong encoding.\n"
@@ -483,6 +484,7 @@ def parse_options(
         "- 4: omit warnings about automatic fixes that were disabled in the dictionary.\n"  # noqa: E501
         "- 8: don't print anything for non-automatic fixes.\n"  # noqa: E501
         "- 16: don't print the list of fixed files.\n"
+        "- 32: don't print configuration files.\n"
         "As usual with bitmasks, these levels can be "
         "combined; e.g. use 3 for levels 1+2, 7 for "
         "1+2+4, 23 for 1+2+4+16, etc. "
@@ -993,10 +995,11 @@ def main(*args: str) -> int:
     options, parser, used_cfg_files = parse_options(args)
 
     # Report used config files
-    if len(used_cfg_files) > 0:
-        print("Used config files:")
-    for ifile, cfg_file in enumerate(used_cfg_files, start=1):
-        print("    %i: %s" % (ifile, cfg_file))
+    if not options.quiet_level & QuietLevels.CONFIG_FILES:
+        if len(used_cfg_files) > 0:
+            print("Used config files:")
+        for ifile, cfg_file in enumerate(used_cfg_files, start=1):
+            print("    %i: %s" % (ifile, cfg_file))
 
     if options.regex and options.write_changes:
         print(
