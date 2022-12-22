@@ -651,7 +651,7 @@ def build_dict(
                 reason = ""
                 fix = False
             else:
-                reason = data[fix + 1 :].strip()
+                reason = data[fix + 1:].strip()
                 data = data[:fix]
                 fix = False
 
