@@ -760,6 +760,7 @@ actural->actual
 acturally->actually
 actusally->actually
 actve->active
+actvie->active
 actzal->actual
 acual->actual
 acually->actually
@@ -3329,6 +3330,7 @@ asynchroneously->asynchronously
 asynchronious->asynchronous
 asynchronlous->asynchronous
 asynchrons->asynchronous
+asynchronus->asynchronous
 asynchroous->asynchronous
 asynchrounous->asynchronous
 asynchrounsly->asynchronously
@@ -4240,6 +4242,7 @@ bateries->batteries
 batery->battery
 battaries->batteries
 battary->battery
+battey->battery
 bbefore->before
 bboolean->boolean
 bbooleans->booleans
@@ -4554,6 +4557,7 @@ bitfilelds->bitfields
 bitis->bits
 bitmast->bitmask
 bitnaps->bitmaps
+bitwiedh->bitwidth
 bitwise-orring->bitwise-oring
 biult->built, build,
 bizare->bizarre
@@ -4729,7 +4733,9 @@ bottonm->bottom
 bottons->bottoms, buttons,
 botttom->bottom
 bouce->bounce
+bouced->bounced
 bouces->bounces
+boucing->bouncing
 boudaries->boundaries
 boudary->boundary
 bouding->bounding
@@ -5283,6 +5289,7 @@ callint->calling
 callled->called
 calllee->callee
 calloed->called
+callser->caller
 callsr->calls
 calss->calls, class,
 calsses->classes
@@ -6066,6 +6073,10 @@ chnage->change
 chnaged->changed
 chnages->changes
 chnaging->changing
+chnange->change
+chnanged->changed
+chnanges->changes
+chnanging->changing
 chnge->change
 chnged->changed
 chnges->changes
@@ -7127,6 +7138,7 @@ compatiable->compatible
 compatiablity->compatibility
 compatibel->compatible
 compatibile->compatible
+compatibililty->compatibility
 compatibiliy->compatibility
 compatibiltiy->compatibility
 compatibilty->compatibility
@@ -9721,6 +9733,10 @@ debians->Debian's
 debina->Debian
 debloking->deblocking
 debnia->Debian
+debouce->debounce
+debouced->debounced
+debouces->debounces
+deboucing->debouncing
 debth->depth
 debths->depths
 debudg->debug
@@ -10273,7 +10289,10 @@ deliberitely->deliberately
 delibery->delivery
 delibrate->deliberate
 delibrately->deliberately
+deliever->deliver
+delievered->delivered
 delievering->delivering
+delievers->delivers
 delievery->delivery
 delievred->delivered
 delievries->deliveries
@@ -10963,6 +10982,7 @@ detectetd->detected
 detectiona->detection, detections,
 detectsion->detection
 detectsions->detections
+detectt->detect
 detemine->determine
 detemined->determined
 detemines->determines
@@ -11570,6 +11590,7 @@ dirtyed->dirtied
 dirtyness->dirtiness
 dirver->driver
 disabe->disable
+disabed->disabled
 disabeling->disabling
 disabels->disables
 disabes->disables
@@ -11627,6 +11648,7 @@ disapprouving->disapproving
 disaproval->disapproval
 disard->discard
 disariable->desirable
+disasembler->disassembler
 disassebled->disassembled
 disassocate->disassociate
 disassocation->disassociation
@@ -11782,6 +11804,7 @@ disertation->dissertation
 disfunctional->dysfunctional
 disfunctionality->dysfunctionality
 disgarded->discarded, discarted,
+disgest->digest
 disgn->design
 disgned->designed
 disgner->designer
@@ -14014,6 +14037,7 @@ exceded->exceeded
 excedeed->exceeded
 excedes->exceeds
 exceding->exceeding
+exceds->exceeds
 exceeed->exceed
 exceirpt->excerpt
 exceirpts->excerpts
@@ -14430,6 +14454,7 @@ exerternal->external
 exeucte->execute
 exeucted->executed
 exeuctes->executes
+exeuction->execution
 exeution->execution
 exexutable->executable
 exhalted->exalted
@@ -15754,6 +15779,8 @@ fitering->filtering
 fiters->filters, fighters, fitters, fivers,
 fith->fifth, filth,
 fitler->filter
+fitlered->filtered
+fitlering->filtering
 fitlers->filters
 fivety->fifty
 fixe->fixed, fixes, fix, fixme, fixer,
@@ -16902,6 +16929,7 @@ granchildren->grandchildren
 granilarity->granularity
 granuality->granularity
 granualtiry->granularity
+granularty->granularity
 granulatiry->granularity
 grapgics->graphics
 graphcis->graphics
@@ -17283,6 +17311,7 @@ havent't->haven't
 havent->haven't
 havew->have
 haviest->heaviest
+havind->having
 havn't->haven't
 havnt->haven't
 hax->hex
@@ -18341,6 +18370,8 @@ incomfort->discomfort, uncomfortable, in comfort,
 incomfortable->uncomfortable
 incomming->incoming
 incommplete->incomplete
+incompaitible->incompatible
+incompaitiblity->incompatibility
 incomparible->incompatible, incomparable,
 incompatabable->incompatible
 incompatabiity->incompatibility
@@ -20027,6 +20058,7 @@ isssue->issue
 isssued->issued
 isssues->issues
 issueing->issuing
+issus->issues
 ist->is, it, its, it's, sit, list,
 istalling->installing
 istance->instance
@@ -20905,6 +20937,7 @@ lveo->love
 lvoe->love
 Lybia->Libya
 maake->make
+maangement->management
 mabe->maybe
 mabye->maybe
 macack->macaque
@@ -22215,6 +22248,7 @@ monickers->monikers
 monitary->monetary
 moniter->monitor
 monitoing->monitoring
+monitring->monitoring
 monkies->monkeys
 monochorome->monochrome
 monochromo->monochrome
@@ -23636,6 +23670,9 @@ odly->oddly
 ody->body
 oen->one
 ofcource->of course
+off-laod->off-load
+off-laoded->off-loaded
+off-laoding->off-loading
 offcers->officers
 offcial->official
 offcially->officially
@@ -23663,6 +23700,9 @@ officeally->officially
 officeals->officials
 officealy->officially
 officialy->officially
+offlaod->offload
+offlaoded->offloaded
+offlaoding->offloading
 offloded->offloaded
 offred->offered
 offsence->offence
@@ -23930,6 +23970,7 @@ oppinion->opinion
 oppinions->opinions
 opponant->opponent
 oppononent->opponent
+opportunies->opportunities
 opportunisticly->opportunistically
 opportunistly->opportunistically
 opportunties->opportunities
@@ -24323,6 +24364,7 @@ overcompansations->overcompensations
 overengeneer->overengineer
 overengeneering->overengineering
 overfl->overflow
+overflw->overflow
 overfow->overflow
 overfowed->overflowed
 overfowing->overflowing
@@ -24861,6 +24903,7 @@ pattented->patented
 pattersn->patterns
 pattren->pattern, patron,
 pattrens->patterns, patrons,
+pattrns->patterns
 pavillion->pavilion
 pavillions->pavilions
 paínt->paint
@@ -25092,6 +25135,7 @@ periode->period
 periodicaly->periodically
 periodioc->periodic
 peripathetic->peripatetic
+periperal->peripheral
 peripherial->peripheral
 peripherials->peripherals
 perisist->persist
@@ -26036,6 +26080,10 @@ preffixed->prefixed
 preffixes->prefixes
 preffixing->prefixing
 prefices->prefixes
+prefitler->prefilter
+prefitlered->prefiltered
+prefitlering->prefiltering
+prefitlers->prefilters
 preformance->performance
 preformances->performances
 pregancies->pregnancies
@@ -26085,6 +26133,10 @@ preppended->prepended
 preppendet->prepended
 preppent->prepend, preprent,
 preppented->prepended
+preprare->prepare
+preprared->prepared
+preprares->prepares
+prepraring->preparing
 preprend->prepend
 preprended->prepended
 prepresent->represent
@@ -26218,6 +26270,7 @@ previousl->previously
 previousy->previously
 previsou->previous
 previsouly->previously
+previsously->previously
 previuous->previous
 previus->previous
 previvous->previous
@@ -27045,6 +27098,7 @@ puposes->purposes
 pupulated->populated
 purcahed->purchased
 purcahse->purchase
+purgable->purgeable
 purgest->purges
 puritannical->puritanical
 purposedly->purposely
@@ -27759,6 +27813,7 @@ recidents->residents
 reciding->residing
 reciepents->recipients
 reciept->receipt
+recievd->received
 recieve->receive
 recieved->received
 reciever->receiver
@@ -29119,9 +29174,11 @@ reqirement->requirement
 reqirements->requirements
 reqires->requires
 reqiring->requiring
+reqister->register
 reqiure->require
 reqrite->rewrite
 reqrites->rewrites
+requed->requeued
 requencies->frequencies
 requency->frequency
 requeried->required
@@ -29912,6 +29969,7 @@ runnigng->running
 runnin->running
 runnint->running
 runnners->runners
+runnnig->running
 runnning->running
 runns->runs
 runnung->running
@@ -30914,6 +30972,7 @@ shif-tab->shift-tab
 shineing->shining
 shiped->shipped
 shiping->shipping
+shoft->shift, short,
 shoftware->software
 shoild->should
 shoing->showing
@@ -31169,6 +31228,7 @@ simulatenously->simultaneously
 simultanaeous->simultaneous
 simultaneos->simultaneous
 simultaneosly->simultaneously
+simultaneusly->simultaneously
 simultanious->simultaneous
 simultaniously->simultaneously
 simultanous->simultaneous
@@ -31415,6 +31475,7 @@ soemthing->something
 soemwhere->somewhere
 sofisticated->sophisticated
 softend->softened
+softwade->software
 softwares->software
 softwre->software
 sofware->software
@@ -33376,6 +33437,7 @@ sycronizing->synchronizing
 sycronous->synchronous
 sycronously->synchronously
 sycronus->synchronous
+syfs->sysfs
 sylabus->syllabus
 sylabuses->syllabuses, syllabi,
 syle->style
@@ -33605,6 +33667,7 @@ tagnets->tangents
 tagued->tagged
 tahn->than
 taht->that
+tained->tainted, stained,
 taks->task, tasks, takes,
 takslet->tasklet
 talbe->table
@@ -33645,6 +33708,7 @@ tarce->trace
 tarced->traced
 tarces->traces
 tarcing->tracing
+tarffic->traffic
 targed->target
 targer->target
 targest->targets
@@ -34425,6 +34489,7 @@ topologie->topology
 torerable->tolerable
 toriodal->toroidal
 tork->torque
+torlence->tolerance
 tormenters->tormentors
 tornadoe->tornado
 torpeados->torpedoes
@@ -34682,6 +34747,7 @@ transisitioned->transitioned
 transisitioning->transitioning
 transisitions->transitions
 transistion->transition
+transistioned->transitioned
 transistioning->transitioning
 transistions->transitions
 transitionnal->transitional
@@ -35332,6 +35398,7 @@ uncommpressed->uncompressed
 uncommpression->uncompression
 uncommtited->uncommitted
 uncomon->uncommon
+uncompatible->incompatible
 uncompetetive->uncompetitive
 uncompetive->uncompetitive
 uncomplete->incomplete
@@ -35688,6 +35755,7 @@ unknon->unknown
 unknonw->unknown
 unknonwn->unknown
 unknonws->unknowns
+unknouwn->unknown
 unknwn->unknown
 unknwns->unknowns
 unknwoing->unknowing
@@ -36243,6 +36311,7 @@ usag->usage
 usal->usual
 usally->usually
 uscaled->unscaled
+usccess->success
 useability->usability
 useable->usable
 useage->usage
