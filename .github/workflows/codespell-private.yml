@@ -7,6 +7,7 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.event.number }}-${{ github.event.ref }}
   cancel-in-progress: true
 on: [push, pull_request]
+permissions: {}
 jobs:
   test:
     env:
@@ -25,6 +26,8 @@ jobs:
     name: Python ${{ matrix.python-version }} test
     steps:
       - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
       - name: Setup python
         uses: actions/setup-python@v4
         with:
@@ -53,6 +56,8 @@ jobs:
         with:
           python-version: 3.x
       - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
       - name: Install general dependencies
         run: pip install -U pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
       - name: Install codespell dependencies
@@ -68,6 +73,8 @@ jobs:
         with:
           python-version: 3.x
       - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
       - name: Install codespell dependencies
         run: pip install -e ".[dev]"
       - name: Flake8 with annotations
