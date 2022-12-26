@@ -375,6 +375,7 @@ accesssing->accessing
 accesssor->accessor
 accesssors->accessors
 accestor->ancestor, accessor,
+accestors->ancestors, accessors,
 accet->accept
 accetable->acceptable
 accets->accepts
@@ -14043,6 +14044,7 @@ effectivness->effectiveness
 effectly->effectively
 effedts->effects
 effeect->effect
+effeects->effects
 effekt->effect
 effexts->effects
 efficcient->efficient
@@ -16607,6 +16609,7 @@ extacy->ecstasy
 extarnal->external
 extarnally->externally
 extatic->ecstatic
+exted->extend
 exteded->extended
 exteder->extender
 exteders->extenders
@@ -17994,6 +17997,7 @@ garanteeed->guaranteed
 garantees->guarantees
 garantie->guarantee
 garantied->guaranteed
+garanties->guarantees
 garanty->guarantee
 garbadge->garbage
 garbage-dollected->garbage-collected
@@ -22354,6 +22358,7 @@ loccked->locked
 locgical->logical
 lockingf->locking
 locla->local
+loclas->locals
 lodable->loadable
 loded->loaded
 loder->loader
@@ -25115,6 +25120,7 @@ obsure->obscure
 obtaien->obtain, obtained,
 obtaiend->obtained
 obtaiens->obtains
+obtaine->obtain, obtained, obtains,
 obtaines->obtains
 obtainig->obtaining
 obtaion->obtain
@@ -28092,17 +28098,20 @@ procesors->processors
 processeed->processed
 processees->processes
 processer->processor
+processers->processors
 processess->processes
 processessing->processing
 processibg->processing
 processig->processing
 processinf->processing
 processore->processor
+processores->processors
 processpr->processor
 processs->process, processes,
 processsed->processed
 processses->processes
 processsing->processing
+processsor->processor
 processsors->processors
 procesure->procedure
 procesures->procedures
@@ -31175,6 +31184,7 @@ resticted->restricted
 restictive->restrictive
 restire->restore
 restired->restored
+restirer->restorer
 restires->restores
 restiring->restoring
 restoding->restoring
