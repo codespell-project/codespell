@@ -1859,7 +1859,9 @@ amealearator->ameliorator
 amealiarate->ameliorate
 amealiarative->ameliorative
 amealiarator->ameliorator
-ameba->amoeba
+ameba->amoebae
+amebae->amoebae
+amebas->amoebae
 ameelarate->ameliorate
 ameelarative->ameliorative
 ameelarator->ameliorator
@@ -2352,6 +2354,7 @@ aplications->applications
 aplied->applied
 aplies->applies
 aplikay->appliqué
+aplikays->appliqués
 aplitude->amplitude, aptitude,
 apllicatin->application
 apllicatins->applications
@@ -2485,6 +2488,8 @@ applide->applied
 applie->apply, applied,
 applikation->application
 applikations->applications
+applikay->appliqué
+applikays->appliqués
 appling->applying, appalling,
 appllied->applied
 applly->apply
@@ -2714,7 +2719,10 @@ aprroximates->approximates
 aprroximation->approximation
 aprroximations->approximations
 aprtment->apartment
-apyoon->uppugn
+apyoon->oppugn
+apyooned->oppugned
+apyooning->oppugning
+apyoons->oppugns
 aqain->again
 aqcuire->acquire
 aqcuired->acquired
@@ -3469,6 +3477,7 @@ assymtotically->asymptotically
 astarisk->asterisk
 astarisks->asterisks
 asterices->asterisks
+asterik->asterisk
 asteriks->asterisk, asterisks,
 asteriod->asteroid
 astethic->aesthetic
