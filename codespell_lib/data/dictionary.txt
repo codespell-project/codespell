@@ -360,6 +360,7 @@ accessile->accessible
 accessintg->accessing
 accessisble->accessible
 accessment->assessment
+accessments->assessments
 accessoire->accessory
 accessoires->accessories, accessorise,
 accessoirez->accessorize, accessories,
@@ -583,6 +584,11 @@ acessing->accessing
 acessor->accessor
 acessors->accessors, accessor,
 acheeve->achieve
+acheeved->achieved
+acheevement->achievement
+acheevements->achievements
+acheeves->achieves
+acheeving->achieving
 acheive->achieve
 acheived->achieved
 acheivement->achievement
@@ -673,9 +679,12 @@ acoording->according
 acoordingly->accordingly
 acoostic->acoustic
 acordian->accordion
+acordians->accordions
 acording->according
 acordingly->accordingly
 acordinng->according
+acordion->accordion
+acordions->accordions
 acorss->across
 acorting->according
 acount->account
@@ -687,6 +696,9 @@ acquiantence->acquaintance
 acquiantences->acquaintances
 acquiesence->acquiescence
 acquiess->acquiesce
+acquiessed->acquiesced
+acquiesses->acquiesces
+acquiessing->acquiescing
 acquisiton->acquisition
 acquisitons->acquisitions
 acquited->acquitted
@@ -713,7 +725,6 @@ actally->actually
 actaly->actually
 actaul->actual
 actaully->actually
-acter->actor
 actial->actual
 actially->actually
 actialy->actually
@@ -797,6 +808,7 @@ acutal->actual
 acutally->actually
 acutual->actual
 adament->adamant
+adamently->adamantly
 adapated->adapted
 adapater->adapter
 adapaters->adapters
@@ -817,6 +829,7 @@ adaptove->adaptive, adoptive,
 adaquate->adequate
 adaquately->adequately
 adaquit->adequate
+adaquitly->adequately
 adatper->adapter
 adatpers->adapters
 adavance->advance
@@ -940,6 +953,7 @@ adge->edge, badge, adage,
 adges->edges, badges, adages,
 adhearing->adhering
 adheasive->adhesive
+adheasives->adhesives
 adherance->adherence
 adiacent->adjacent
 adiditon->addition
@@ -961,13 +975,18 @@ adjacentsy->adjacency
 adjactend->adjacent
 adjancent->adjacent
 adjasant->adjacent
+adjasantly->adjacently
 adjascent->adjacent
+adjascently->adjacently
 adjasence->adjacence
 adjasencies->adjacencies
 adjasensy->adjacency
 adjasent->adjacent
 adjast->adjust
 adjatate->agitate
+adjatated->agitated
+adjatates->agitates
+adjatating->agitating
 adjative->adjective
 adjcence->adjacence
 adjcencies->adjacencies
@@ -1061,6 +1080,7 @@ advantagous->advantageous
 advanved->advanced
 adventages->advantages
 adventagous->advantageous
+adventagously->advantageously
 adventrous->adventurous
 adverised->advertised
 advertice->advertise
@@ -1175,6 +1195,9 @@ aggresively->aggressively
 aggrevate->aggravate
 aggrgate->aggregate
 aggrivate->aggravate
+aggrivated->aggravated
+aggrivates->aggravates
+aggrivating->aggravating
 agian->again
 agianst->against
 agin->again
@@ -1185,6 +1208,9 @@ aglorithms->algorithms
 agorithm->algorithm
 agrain->again
 agrandize->aggrandize
+agrandized->aggrandized
+agrandizes->aggrandizes
+agrandizing->aggrandizing
 agravate->aggravate
 agre->agree
 agred->agreed
@@ -1225,6 +1251,7 @@ ahev->have
 ahlpa->alpha
 ahlpas->alphas
 ahmond->almond
+ahmonds->almonds
 ahppen->happen
 ahve->have
 aicraft->aircraft
@@ -1849,7 +1876,9 @@ amacing->amazing
 amacingly->amazingly
 amalgomated->amalgamated
 amalgum->amalgam
+amalgums->amalgams
 amatuer->amateur
+amatuers->amateurs
 amatur->amateur
 amature->armature, amateur,
 amaturs->amateurs
