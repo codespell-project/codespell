@@ -5887,14 +5887,17 @@ cariage->carriage
 caridge->carriage
 cariier->carrier
 carimonial->ceremonial
+carimonially->ceremonially
 carimonies->ceremonies
 carimony->ceremony
 carinomial->ceremonial
+carinomially->ceremonially
 carinomies->ceremonies
 carinomy->ceremony
 carismatic->charismatic
 Carmalite->Carmelite
 carmonial->ceremonial
+carmonially->ceremonially
 carmonies->ceremonies
 carmony->ceremony
 Carnagie->Carnegie
@@ -5908,6 +5911,7 @@ Carnigie->Carnegie
 Carnigie-Mellon->Carnegie-Mellon
 carniverous->carnivorous
 carnomial->ceremonial
+carnomially->ceremonially
 carnomies->ceremonies
 carnomy->ceremony
 caronavirus->coronavirus
@@ -6136,11 +6140,20 @@ cehcker->checker
 cehcking->checking
 cehcks->checks
 Celcius->Celsius
+cellabrate->celebrate
+cellabrated->celebrated
+cellabrates->celebrates
+cellabrating->celebrating
 cellabration->celebration
 cellabrations->celebrations
+cellebrate->celebrate
+cellebrated->celebrated
+cellebrates->celebrates
+cellebrating->celebrating
 cellebration->celebration
 cellebrations->celebrations
 celler->cellar
+cellers->cellars
 celles->cells
 cellpading->cellpadding
 cellst->cells
@@ -6157,6 +6170,7 @@ cencretely->concretely
 cencter->center
 cencus->census
 cengter->center
+censabilities->sensibilities
 censability->sensibility
 censable->sensible
 censably->sensibly
@@ -6194,8 +6208,12 @@ cerated->created, serrated,
 ceratin->certain, keratin,
 cercomstance->circumstance
 cercomstances->circumstances
+cercomstancial->circumstantial
+cercomstantial->circumstantial
 cercumstance->circumstance
 cercumstances->circumstances
+cercumstancial->circumstantial
+cercumstantial->circumstantial
 cereates->creates
 cerification->certification, verification,
 cerifications->certifications, verifications,
@@ -6208,12 +6226,15 @@ cerimonies->ceremonies
 cerimonious->ceremonious
 cerimony->ceremony
 cerinomial->ceremonial
+cerinomially->ceremonially
 cerinomies->ceremonies
 cerinomy->ceremony
 cermonial->ceremonial
+cermonially->ceremonially
 cermonies->ceremonies
 cermony->ceremony
 cernomial->ceremonial
+cernomially->ceremonially
 cernomies->ceremonies
 cernomy->ceremony
 ceromony->ceremony
@@ -6743,13 +6764,20 @@ cicruits->circuits
 cicular->circular
 ciculars->circulars
 cigarete->cigarette
+cigaretes->cigarettes
 cigarett->cigarette
 cigarret->cigarette
 cigarrete->cigarette
+cigarretes->cigarettes
+cigarrets->cigarettes
 cigarrett->cigarette
 cigarrette->cigarette
+cigarrettes->cigarettes
+cigarretts->cigarettes
 ciguret->cigarette
 cigurete->cigarette
+ciguretes->cigarettes
+cigurets->cigarettes
 cihpher->cipher
 cihphers->ciphers
 cilent->client, silent,
@@ -6793,6 +6821,7 @@ cinfigurations->configurations
 cintaner->container
 ciontrol->control
 ciotee->coyote
+ciotees->coyotes
 ciper->cipher
 cipers->ciphers
 cipersuite->ciphersuite
@@ -7285,7 +7314,7 @@ cofrimations->confirmations
 cofrimed->confirmed
 cofriming->confirming
 cofrims->confirms
-cogniscent->cognizant, cognisant,
+cogniscent->cognizant
 cognizent->cognizant
 cohabitating->cohabiting
 coherance->coherence
@@ -7370,6 +7399,7 @@ collistions->collisions
 colllapses->collapses
 collocalized->colocalized
 collocweall->colloquial
+collocweally->colloquially
 collonade->colonnade
 collone->cologne
 collonies->colonies
@@ -7504,6 +7534,7 @@ comfirm->confirm
 comflicting->conflicting
 comformance->conformance
 comfterble->comfortable
+comfterbly->comfortably
 comiled->compiled
 comilers->compilers
 comination->combination
@@ -7567,6 +7598,7 @@ commected->connected
 commecting->connecting
 commectivity->connectivity
 commedian->comedian
+commedians->comedians
 commedic->comedic
 commemerative->commemorative
 commemmorate->commemorate
@@ -7732,6 +7764,7 @@ communicaion->communication
 communicatie->communication
 communicaton->communication
 communikay->communiqué
+communikays->communiqués
 communitcate->communicate
 communitcated->communicated
 communitcates->communicates
@@ -7995,6 +8028,7 @@ complettly->completely
 complety->completely
 complext->complexity
 complextion->complexion
+complextions->complexions
 compliace->compliance
 complianse->compliance
 compliation->compilation
@@ -8211,16 +8245,17 @@ concious->conscious
 conciously->consciously
 conciousness->consciousness
 concrets->concrete, concerts,
-concured->conquered
+concured->concurred, conquered,
 concurence->concurrence
 concurency->concurrency
 concurent->concurrent
 concurently->concurrently
 concurents->concurrents, concurrence,
 concurer->conqueror
-concures->conquers
-concuring->conquering
+concures->concurs, conquers,
+concuring->concurring, conquering,
 concurrect->concurrent
+concurrectly->concurrently
 condamned->condemned
 condem->condemn
 condemmed->condemned
@@ -9825,10 +9860,12 @@ coummunities->communities
 coummunity->community
 coumpound->compound
 coumpounds->compounds
-councel->council
+councel->council, counsel,
+councelled->counselled
+councelling->counselling
 councellor->councillor, counselor, councilor,
 councellors->councillors, counselors, councilors,
-councels->councils
+councels->councils, counsels,
 counciler->councilor
 councilers->councilors
 cound->could, count, found,
@@ -10163,6 +10200,7 @@ cuncurency->concurrency
 cunted->counted, hunted,
 cunter->counter, hunter,
 cunterpart->counterpart
+cunters->counters, hunters,
 cunting->counting, hunting,
 cuple->couple
 cuples->couples
