@@ -1985,6 +1985,7 @@ ammused->amused
 amny->many
 amongs->among
 amonst->amongst
+amont->among, amount,
 amonut->amount
 amound->amount
 amounds->amounts
@@ -5801,6 +5802,7 @@ capela->capella
 caperbility->capability
 Capetown->Cape Town
 capibilities->capabilities
+capibility->capability
 capible->capable
 capitolize->capitalize
 cappable->capable
@@ -6331,6 +6333,7 @@ charaters->characters
 charator->character
 charators->characters
 charcater->character
+charcaters->characters
 charcter->character
 charcteristic->characteristic
 charcteristics->characteristics
@@ -9470,6 +9473,7 @@ could'nt->couldn't
 could't->couldn't
 couldent->couldn't
 coulden`t->couldn't
+couldn->could, couldn't,
 couldn;t->couldn't
 couldnt'->couldn't
 couldnt->couldn't
@@ -10243,6 +10247,7 @@ debugggee->debuggee
 debuggger->debugger
 debuggging->debugging
 debugggs->debugs
+debuggin->debugging
 debugginf->debugging
 debuggs->debugs
 debuging->debugging
@@ -10442,6 +10447,7 @@ decroation->decoration
 decrpt->decrypt
 decrpted->decrypted
 decrption->decryption
+decryped->decrypted
 decrytion->decryption
 decscription->description
 decsion->decision
@@ -13761,6 +13767,7 @@ encrption->encryption
 encrptions->encryptions
 encrpts->encrypts
 encrupted->encrypted
+encryped->encrypted
 encrypiton->encryption
 encrypte->encrypted, encrypt,
 encryptiion->encryption
@@ -16443,6 +16450,8 @@ fluroescent->fluorescent
 flushs->flushes
 flusing->flushing
 flyes->flies, flyers,
+fnction->function
+fnctions->functions
 fo->of, for, to, do, go,
 focu->focus
 focued->focused
@@ -17572,6 +17581,7 @@ grop->group, drop,
 gropu->group
 gropuing->grouping
 gropus->groups, gropes,
+groth->growth
 groubpy->groupby
 groupd->grouped
 groupe->grouped, group,
@@ -21054,6 +21064,7 @@ lanaguges->languages
 lanagugs->languages
 lanauge->language
 langage->language
+langages->languages
 langauage->language
 langauge->language
 langauges->languages
@@ -21333,6 +21344,7 @@ licemse->license
 licemses->licenses
 licenceing->licencing
 licencse->license, licenses,
+licens->license
 licese->license
 licesne->license
 licesnes->licenses
@@ -25614,7 +25626,10 @@ pass-trough->pass-through, pass through, passthrough,
 passerbys->passersby
 passin->passing
 passiv->passive
+passord->password
+passords->passwords
 passowrd->password
+passowrds->passwords
 passs->pass
 passsed->passed
 passsing->passing
@@ -28025,6 +28040,7 @@ queus->queues
 quew->queue
 quickier->quicker
 quicklyu->quickly
+quicky->quickly, quickie,
 quickyl->quickly
 quicly->quickly
 quiessent->quiescent
@@ -32047,6 +32063,9 @@ simliar->similar
 simliarly->similarly
 simlicity->simplicity
 simlified->simplified
+simlifies->simplifies
+simlify->simplify
+simlifying->simplifying
 simly->simply, simile, smiley,
 simmetric->symmetric
 simmetrical->symmetrical
@@ -36388,6 +36407,8 @@ unconditionaly->unconditionally
 unconditionnal->unconditional
 unconditionnally->unconditionally
 unconditionnaly->unconditionally
+unconditonal->unconditional
+unconditonally->unconditionally
 uncondtional->unconditional
 uncondtionally->unconditionally
 unconfiged->unconfigured
