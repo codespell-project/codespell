@@ -1854,21 +1854,36 @@ ambulence->ambulance
 ambulences->ambulances
 amdgput->amdgpu
 amealearate->ameliorate
+amealearated->ameliorated
+amealearates->ameliorates
+amealearating->ameliorating
 amealearative->ameliorative
 amealearator->ameliorator
 amealiarate->ameliorate
+amealiarated->ameliorated
+amealiarates->ameliorates
+amealiarating->ameliorating
 amealiarative->ameliorative
 amealiarator->ameliorator
 ameba->amoebae
 amebae->amoebae
 amebas->amoebae
 ameelarate->ameliorate
+ameelarated->ameliorated
+ameelarates->ameliorates
+ameelarating->ameliorating
 ameelarative->ameliorative
 ameelarator->ameliorator
 ameeliarate->ameliorate
+ameeliarated->ameliorated
+ameeliarates->ameliorates
+ameeliarating->ameliorating
 ameeliarative->ameliorative
 ameeliarator->ameliorator
 amelearate->ameliorate
+amelearated->ameliorated
+amelearates->ameliorates
+amelearating->ameliorating
 amelearative->ameliorative
 amelearator->ameliorator
 amendement->amendment
@@ -1876,6 +1891,11 @@ amendmant->amendment
 amened->amended, amend,
 Amercia->America
 amerliorate->ameliorate
+amerliorated->ameliorated
+amerliorates->ameliorates
+amerliorating->ameliorating
+amerliorative->ameliorative
+amerliorator->ameliorator
 amgle->angle
 amgles->angles
 amiguous->ambiguous
@@ -1983,11 +2003,16 @@ analzyes->analyzes
 analzying->analyzing
 ananlog->analog
 anarchim->anarchism
-anarchistm->anarchism
+anarchistm->anarchism, anarchist,
+anarchit->anarchist
+anarchits->anarchists
+anarkist->anarchist
 anarkistic->anarchistic
 anarkists->anarchists
 anarquism->anarchism
 anarquist->anarchist
+anarquistic->anarchistic
+anarquists->anarchists
 anaylse->analyse
 anaylsed->analysed
 anaylser->analyser
@@ -2036,7 +2061,10 @@ androind->android
 androinds->androids
 andthe->and the
 ane->and
+aneel->anneal
+aneeled->annealed
 aneeling->annealing
+aneels->anneals
 anevironment->environment
 anevironments->environments
 angluar->angular
@@ -2138,6 +2166,7 @@ annonomus->anonymous
 annonomusally->anonymously
 annonomusly->anonymously
 annonymous->anonymous
+annonymously->anonymously
 annotaion->annotation
 annotaions->annotations
 annoted->annotated
@@ -2196,6 +2225,7 @@ anounce->announce
 anounced->announced
 anouncement->announcement
 anount->amount
+anoy->annoy
 anoyed->annoyed
 anoying->annoying
 anoymous->anonymous
@@ -2242,8 +2272,8 @@ anthropolgy->anthropology
 antialialised->antialiased
 antialising->antialiasing
 antiapartheid->anti-apartheid
-anticdote->anecdote
-anticdotes->anecdotes
+anticdote->anecdote, antidote,
+anticdotes->anecdotes, antidotes,
 anticpate->anticipate
 antripanewer->entrepreneur
 antripanewers->entrepreneurs
@@ -2257,6 +2287,7 @@ anull->annul
 anulled->annulled
 anulling->annulling
 anulls->annulled
+anuls->annulls
 anumber->a number
 anurism->aneurysm
 anuwhere->anywhere
@@ -3203,6 +3234,9 @@ asscoitaed->associated
 assebly->assembly
 assebmly->assembly
 assemalate->assimilate
+assemalated->assimilated
+assemalates->assimilates
+assemalating->assimilating
 assembe->assemble
 assembed->assembled
 assembeld->assembled
@@ -3224,6 +3258,9 @@ assesments->assessments
 assessmant->assessment
 assessmants->assessments
 assfalt->asphalt
+assfalted->asphalted
+assfalting->asphalting
+assfalts->asphalts
 assgin->assign
 assgined->assigned
 assgining->assigning
