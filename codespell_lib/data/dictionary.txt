@@ -4635,8 +4635,11 @@ beauquets->bouquets
 beauracracy->bureaucracy
 beauracratic->bureaucratic
 beauracratical->bureaucratic
+beauracratically->bureaucratically
 beaurocracy->bureaucracy
 beaurocratic->bureaucratic
+beaurocratical->bureaucratic
+beaurocratically->bureaucratically
 beause->because
 beauti->beauty
 beautifull->beautiful, beautifully,
@@ -4746,7 +4749,7 @@ behaviuor->behaviour
 behavoir->behavior
 behavoirs->behaviors
 behavor->behavior, behaviour,
-behavoral->behavioral
+behavoral->behavioral, behavioural,
 behavour->behaviour
 behavoural->behavioural
 behavriour->behaviour
@@ -5350,6 +5353,7 @@ brocolee->broccoli
 brocoli->broccoli
 brodcast->broadcast
 broge->brogue
+broges->brogues
 broked->broken
 brokem->broken
 brokend->broken
@@ -5417,7 +5421,7 @@ buggest->biggest
 bugous->bogus
 buguous->bogus
 bugus->bogus
-bui->buoy
+bui->buoy, buy,
 buid->build
 buider->builder
 buiders->builders
@@ -5448,7 +5452,7 @@ buinseses->businesses
 buinsess->business
 buinsesses->businesses
 buipd->build
-buis->buoy, buoys,
+buis->buoy, buoys, buys,
 buisness->business
 buisnessman->businessman
 buissiness->business
@@ -5537,7 +5541,10 @@ bve->be
 bwtween->between
 byast->biased
 bycicle->bicycle
+bycicled->bicycled
 bycicles->bicycles
+bycicling->bicycling
+byciclist->bicyclist
 bypas->bypass
 bypased->bypassed
 bypasing->bypassing
