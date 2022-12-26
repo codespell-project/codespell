@@ -19307,6 +19307,7 @@ identtifier->identifier
 identty->identity
 ideosincracies->idiosyncrasies
 ideosincracy->idiosyncrasy
+ideosincratic->idiosyncratic
 ideosyncracies->idiosyncrasies
 ideosyncracy->idiosyncrasy
 ideosyncratic->idiosyncratic
@@ -19321,7 +19322,10 @@ idicating->indicating
 idices->indices
 idiosincracies->idiosyncrasies
 idiosincracy->idiosyncrasy
+idiosincratic->idiosyncratic
 idiosynchrasies->idiosyncrasies
+idiosynchrasy->idiosyncrasy
+idiosynchratic->idiosyncratic
 idiosyncracies->idiosyncrasies
 idiosyncracy->idiosyncrasy
 idividual->individual
@@ -19397,6 +19401,7 @@ igrnore->ignore
 igzort->exhort
 igzorted->exhorted
 igzorter->exhorter
+igzorting->exhorting
 igzorts->exhorts
 Ihaca->Ithaca
 ihs->his
@@ -19448,8 +19453,13 @@ imblance->imbalance
 imbrace->embrace
 imbraced->embraced
 imbracer->embracer
+imbraces->embraces
 imbracing->embracing
 imbrase->embrace
+imbrased->embraced
+imbraser->embracer
+imbrases->embraces
+imbrasing->embracing
 imcoming->incoming
 imcomming->incoming
 imcompatibility->incompatibility
@@ -19814,7 +19824,9 @@ improvments->improvements
 impune->impugn
 impuned->impugned
 impuner->impugner
+impunes->impugns
 impuning->impugning
+impuns->impugns
 imput->input
 imrovement->improvement
 imsensitive->insensitive
@@ -19856,8 +19868,13 @@ inbility->inability
 inbrace->embrace
 inbraced->embraced
 inbracer->embracer
+inbraces->embraces
 inbracing->embracing
 inbrase->embrace
+inbrased->embraced
+inbraser->embracer
+inbrases->embraces
+inbrasing->embracing
 inbrio->embryo
 inbrios->embryos
 inbulit->inbuilt, built-in,
@@ -19926,6 +19943,9 @@ incompaitible->incompatible
 incompaitiblity->incompatibility
 incomparible->incompatible, incomparable,
 incompasitate->incapacitate
+incompasitated->incapacitated
+incompasitates->incapacitates
+incompasitating->incapacitating
 incompatabable->incompatible
 incompatabiity->incompatibility
 incompatabile->incompatible
