@@ -16099,10 +16099,13 @@ Farenheit->Fahrenheit
 farest->fairest, farthest,
 fariar->farrier
 faries->fairies
+farmasudic->pharmaceutic
 farmasudical->pharmaceutical
+farmasudics->pharmaceutics
 farmework->framework
 farse->farce
 farses->farces
+farsical->farcical
 fasade->facade
 fase->faze, phase, false,
 fased->fazed, phased,
@@ -16111,8 +16114,12 @@ faseeshusly->facetiously
 fasen->fasten
 fasend->fastened
 fasened->fastened
+fasening->fastening
+fasens->fastens, fasels,
 fases->fazes, phases,
 fashism->fascism
+fashist->fascist
+fashists->fascists
 fashon->fashion
 fashonable->fashionable
 fashoned->fashioned
@@ -16764,7 +16771,6 @@ Formalhaut->Fomalhaut
 formallize->formalize
 formallized->formalized
 formaly->formally, formerly,
-forman->foreman
 formate->format
 formated->formatted
 formater->formatter
