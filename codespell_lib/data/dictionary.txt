@@ -13939,6 +13939,10 @@ ecxited->excited
 ecxites->excites
 ecxiting->exciting
 ecxtracted->extracted
+eczecute->execute
+eczecuted->executed
+eczecutes->executes
+eczecuting->executing
 eczecutive->executive
 eczecutives->executives
 EDCDIC->EBCDIC
@@ -14228,7 +14232,8 @@ embeed->embed
 embezelled->embezzled
 emblamatic->emblematic
 embold->embolden
-embrio->embryos
+embrio->embryo
+embrios->embryos
 embrodery->embroidery
 emcas->emacs
 emcompass->encompass
@@ -14273,6 +14278,7 @@ emought->enough
 empass->impasse
 empasses->impasses
 emperial->imperial
+emperially->imperially
 emperical->empirical
 emperically->empirically
 emphaised->emphasised
@@ -14341,6 +14347,7 @@ enble->enable
 enbrace->embrace
 enbraced->embraced
 enbracer->embracer
+enbraces->embraces
 enbracing->embracing
 encapsualtes->encapsulates
 encapsulatzion->encapsulation
@@ -14765,10 +14772,10 @@ environmont->environment
 environnement->environment
 environtment->environment
 envoke->invoke, evoke,
-envoked->invoked
-envoker->invoker
-envokes->invokes
-envoking->invoking
+envoked->invoked, evoked,
+envoker->invoker, evoker,
+envokes->invokes, evokes,
+envoking->invoking, evoking,
 envolutionary->evolutionary
 envolved->involved
 envorce->enforce
@@ -14928,6 +14935,7 @@ escaltion->escalation
 escapeable->escapable
 escapemant->escapement
 escartment->escarpment
+escartments->escarpments
 escased->escaped
 escate->escalate, escape,
 escated->escalated, escaped,
@@ -15014,10 +15022,6 @@ establishs->establishes
 establising->establishing
 establsihed->established
 estbalishment->establishment
-esthetic->aesthetic
-esthetically->aesthetically
-estheticly->aesthetically
-esthetics->aesthetics
 estimage->estimate
 estimages->estimates
 estiomator->estimator
@@ -15029,6 +15033,7 @@ etablish->establish
 etablishd->established
 etablished->established
 etablishing->establishing
+etamologies->etymologies
 etamology->etymology
 etcc->etc
 etcp->etc
@@ -15160,6 +15165,7 @@ everyting->everything
 everytone->everyone
 everywher->everywhere
 evesdrop->eavesdrop
+evesdropped->eavesdropped
 evesdropper->eavesdropper
 evesdropping->eavesdropping
 evesdrops->eavesdrops
