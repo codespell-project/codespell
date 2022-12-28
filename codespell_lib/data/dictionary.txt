@@ -24570,11 +24570,13 @@ Napolean->Napoleon
 Napoleonian->Napoleonic
 napom->napalm
 napomed->napalmed
-napomes->napalmes
+napomes->napalms
 napoming->napalming
 napommed->napalmed
-napommes->napalmes
+napommes->napalms
 napomming->napalming
+napomms->napalms
+napoms->napalms
 narl->gnarl
 narled->gnarled
 narling->gnarling
@@ -24630,6 +24632,8 @@ nawsea->nausea
 nawseous->nauseous
 nawseously->nauseously
 nawshea->nausea
+nawshes->nauseous
+nawshesly->nauseously
 nawshus->nauseous
 nawshusly->nauseously
 nax->max, nad,
@@ -25173,9 +25177,11 @@ neolitic->neolithic
 neral->neural
 nerally->neurally
 neraly->neurally
-nerative->narrative
-neratives->narratives
+nerative->narrative, negative,
+neratively->narratively, negatively,
+neratives->narratives, negatives,
 nervana->nirvana
+nervanic->nirvanic
 nerver->never
 nescesaries->necessaries
 nescesarily->necessarily
@@ -25221,12 +25227,20 @@ netwroked->networked
 netwroks->networks
 netwrork->network
 neumeric->numeric
-neumonic->mnemonic
+neumonectomies->pneumonectomies
+neumonectomy->pneumonectomy
+neumonia->pneumonia
+neumonic->mnemonic, pneumonic,
 neumonically->mnemonically
 neumonicly->mnemonically
 neumonics->mnemonics
-nevelope->envelope
+neumonitis->pneumonitis
+nevelop->envelop
+nevelope->envelope, envelop,
+neveloped->enveloped
 nevelopes->envelopes
+neveloping->enveloping
+nevelops->envelops
 nevere->never
 neveretheless->nevertheless
 nevers->never
@@ -25241,7 +25255,11 @@ newletters->newsletters
 newmatic->pneumatic
 newmatically->pneumatically
 newmaticly->pneumatically
+newmonectomies->pneumonectomies
+newmonectomy->pneumonectomy
 newmonia->pneumonia
+newmonic->pneumonic
+newmonitis->pneumonitis
 nework->network
 neworks->networks
 newsans->nuisance
@@ -25273,22 +25291,33 @@ nimphal->nymphal
 nimphean->nymphean
 nimphian->nymphean
 nimphlike->nymphlike
+nimpho->nympho
+nimphomania->nymphomania
+nimphomaniac->nymphomaniac
+nimphomaniacs->nymphomaniacs
+nimphos->nymphos
 nimphs->nymphs
+nimute->minute
 nimutes->minutes
 nin->inn, min, bin, nine,
 nineth->ninth
 ninima->minima
 ninimal->minimal
+ninimally->minimally
 ninimum->minimum
-ninjs->ninja
+ninj->ninja
+ninjs->ninja, ninjas,
 ninteenth->nineteenth
 ninties->nineties, 1990s,
 ninty->ninety, minty,
 nitch->niche
+nitched->niched
+nitches->niches
+nitching->niching
 nither->neither
 nitification->notification
 nitifications->notifications
-nives->knives
+nives->knives, nieves, nines, dives, fives, hives, wives,
 nknown->unknown
 nkow->know
 nkwo->know
@@ -25314,7 +25343,7 @@ nomber->number
 nombered->numbered
 nombering->numbering
 nombers->numbers
-nome->gnome
+nomes->gnomes
 nomimal->nominal
 nomralization->normalization
 non-alphanumunder->non-alphanumeric
@@ -25613,6 +25642,11 @@ numvers->numbers
 nunber->number
 nunbers->numbers
 Nuremburg->Nuremberg
+nurish->nourish
+nurished->nourished
+nurisher->nourisher
+nurishes->nourishes
+nurishing->nourishing
 nurishment->nourishment
 nusance->nuisance
 nutral->neutral
