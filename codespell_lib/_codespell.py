@@ -233,15 +233,11 @@ class FileOpener:
         try:
             f = open(filename, encoding=encoding, newline="")
         except UnicodeDecodeError:
-            print("ERROR: Could not detect encoding: %s" % filename, file=sys.stderr)
+            print(f"ERROR: Could not detect encoding: {filename}", file=sys.stderr)
             raise
         except LookupError:
             print(
-                "ERROR: Don't know how to handle encoding %s: %s"
-                % (
-                    encoding,
-                    filename,
-                ),
+                f"ERROR: Don't know how to handle encoding {encoding}: {filename}",
                 file=sys.stderr,
             )
             raise
@@ -258,19 +254,15 @@ class FileOpener:
             if first_try:
                 first_try = False
             elif not self.quiet_level & QuietLevels.ENCODING:
-                print("WARNING: Trying next encoding %s" % encoding, file=sys.stderr)
+                print(f'WARNING: Trying next encoding "{encoding}"', file=sys.stderr)
             with open(filename, encoding=encoding, newline="") as f:
                 try:
                     lines = f.readlines()
                 except UnicodeDecodeError:
                     if not self.quiet_level & QuietLevels.ENCODING:
                         print(
-                            "WARNING: Decoding file using encoding=%s "
-                            "failed: %s"
-                            % (
-                                encoding,
-                                filename,
-                            ),
+                            f'WARNING: Cannot decode file using encoding "{encoding}": '
+                            f"{filename}",
                             file=sys.stderr,
                         )
                 else:
@@ -587,7 +579,7 @@ def parse_options(
         cfg_args = []
         for key in config["codespell"]:
             # Add option as arg.
-            cfg_args.append("--%s" % key)
+            cfg_args.append(f"--{key}")
             # If value is blank, skip.
             val = config["codespell"][key]
             if val != "":
@@ -713,10 +705,10 @@ def ask_for_word_fix(
         r = ""
         opt = [w.strip() for w in misspelling.data.split(",")]
         while not r:
-            print("%s Choose an option (blank for none): " % line, end="")
+            print(f"{line} Choose an option (blank for none): ", end="")
             for i, o in enumerate(opt):
                 fixword = fix_case(wrongword, o)
-                print(" %d) %s" % (i, fixword), end="")
+                print(f" {i}) {fixword}", end="")
             print(": ", end="", flush=True)
 
             n = sys.stdin.readline().strip()
@@ -811,14 +803,11 @@ def parse_file(
                 cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
                 crightword = f"{colors.FWORD}{fixword}{colors.DISABLE}"
 
-                if misspellings[lword].reason:
+                reason = misspellings[lword].reason
+                if reason:
                     if options.quiet_level & QuietLevels.DISABLED_FIXES:
                         continue
-                    creason = "  | {}{}{}".format(
-                        colors.FILE,
-                        misspellings[lword].reason,
-                        colors.DISABLE,
-                    )
+                    creason = f"  | {colors.FILE}{reason}{colors.DISABLE}"
                 else:
                     if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
                         continue
@@ -826,16 +815,7 @@ def parse_file(
 
                 bad_count += 1
 
-                print(
-                    "%(FILENAME)s: %(WRONGWORD)s"
-                    " ==> %(RIGHTWORD)s%(REASON)s"
-                    % {
-                        "FILENAME": cfilename,
-                        "WRONGWORD": cwrongword,
-                        "RIGHTWORD": crightword,
-                        "REASON": creason,
-                    }
-                )
+                print(f"{cfilename}: {cwrongword} ==> {crightword}{creason}")
 
         # ignore irregular files
         if not os.path.isfile(filename):
@@ -851,7 +831,7 @@ def parse_file(
 
         if not text:
             if not options.quiet_level & QuietLevels.BINARY_FILE:
-                print("WARNING: Binary file: %s" % filename, file=sys.stderr)
+                print(f"WARNING: Binary file: {filename}", file=sys.stderr)
             return bad_count
         try:
             lines, encoding = file_opener.open(filename)
@@ -919,23 +899,18 @@ def parse_file(
                     continue
 
                 cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
-                cline = "%s%d%s" % (colors.FILE, i + 1, colors.DISABLE)
+                cline = f"{colors.FILE}{i + 1}{colors.DISABLE}"
                 cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
                 crightword = f"{colors.FWORD}{fixword}{colors.DISABLE}"
 
-                if misspellings[lword].reason:
+                reason = misspellings[lword].reason
+                if reason:
                     if options.quiet_level & QuietLevels.DISABLED_FIXES:
                         continue
-
-                    creason = "  | {}{}{}".format(
-                        colors.FILE,
-                        misspellings[lword].reason,
-                        colors.DISABLE,
-                    )
+                    creason = f"  | {colors.FILE}{reason}{colors.DISABLE}"
                 else:
                     if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
                         continue
-
                     creason = ""
 
                 # If we get to this point (uncorrected error) we should change
@@ -946,27 +921,13 @@ def parse_file(
                     print_context(lines, i, context)
                 if filename != "-":
                     print(
-                        "%(FILENAME)s:%(LINE)s: %(WRONGWORD)s "
-                        "==> %(RIGHTWORD)s%(REASON)s"
-                        % {
-                            "FILENAME": cfilename,
-                            "LINE": cline,
-                            "WRONGWORD": cwrongword,
-                            "RIGHTWORD": crightword,
-                            "REASON": creason,
-                        }
+                        f"{cfilename}:{cline}: {cwrongword} "
+                        f"==> {crightword}{creason}"
                     )
                 else:
                     print(
-                        "%(LINE)s: %(STRLINE)s\n\t%(WRONGWORD)s "
-                        "==> %(RIGHTWORD)s%(REASON)s"
-                        % {
-                            "LINE": cline,
-                            "STRLINE": line.strip(),
-                            "WRONGWORD": cwrongword,
-                            "RIGHTWORD": crightword,
-                            "REASON": creason,
-                        }
+                        f"{cline}: {line.strip()}\n\t{cwrongword} "
+                        f"==> {crightword}{creason}"
                     )
 
     if changed:
@@ -999,7 +960,7 @@ def main(*args: str) -> int:
         if len(used_cfg_files) > 0:
             print("Used config files:")
         for ifile, cfg_file in enumerate(used_cfg_files, start=1):
-            print("    %i: %s" % (ifile, cfg_file))
+            print(f"    {ifile}: {cfg_file}")
 
     if options.regex and options.write_changes:
         print(
@@ -1011,19 +972,17 @@ def main(*args: str) -> int:
     word_regex = options.regex or word_regex_def
     try:
         word_regex = re.compile(word_regex)
-    except re.error as err:
-        print(f'ERROR: invalid --regex "{word_regex}" ({err})', file=sys.stderr)
+    except re.error as e:
+        print(f'ERROR: invalid --regex "{word_regex}" ({e})', file=sys.stderr)
         parser.print_help()
         return EX_USAGE
 
     if options.ignore_regex:
         try:
             ignore_word_regex = re.compile(options.ignore_regex)
-        except re.error as err:
+        except re.error as e:
             print(
-                'ERROR: invalid --ignore-regex "{}" ({})'.format(
-                    options.ignore_regex, err
-                ),
+                f'ERROR: invalid --ignore-regex "{options.ignore_regex}" ({e})',
                 file=sys.stderr,
             )
             parser.print_help()
@@ -1036,7 +995,7 @@ def main(*args: str) -> int:
     for ignore_words_file in ignore_words_files:
         if not os.path.isfile(ignore_words_file):
             print(
-                "ERROR: cannot find ignore-words file: %s" % ignore_words_file,
+                f"ERROR: cannot find ignore-words file: {ignore_words_file}",
                 file=sys.stderr,
             )
             parser.print_help()
@@ -1046,9 +1005,9 @@ def main(*args: str) -> int:
     uri_regex = options.uri_regex or uri_regex_def
     try:
         uri_regex = re.compile(uri_regex)
-    except re.error as err:
+    except re.error as e:
         print(
-            f'ERROR: invalid --uri-regex "{uri_regex}" ({err})',
+            f'ERROR: invalid --uri-regex "{uri_regex}" ({e})',
             file=sys.stderr,
         )
         parser.print_help()
@@ -1081,7 +1040,7 @@ def main(*args: str) -> int:
         else:
             if not os.path.isfile(dictionary):
                 print(
-                    "ERROR: cannot find dictionary file: %s" % dictionary,
+                    f"ERROR: cannot find dictionary file: {dictionary}",
                     file=sys.stderr,
                 )
                 parser.print_help()
