@@ -27192,8 +27192,10 @@ parrent->parent
 parsef->parsed, parser, parsec,
 parseing->parsing
 parsering->parsing
+parshal->partial
 parshally->partially
 parshaly->partially
+parsial->partial
 parsially->partially
 parsialy->partially
 parsin->parsing
@@ -27268,10 +27270,26 @@ partiular->particular
 partiularly->particularly
 partiulars->particulars
 pary->party, parry,
+pascheurisation->pasteurisation
 pascheurise->pasteurise
+pascheurised->pasteurised
+pascheurises->pasteurises
+pascheurising->pasteurising
+pascheurization->pasteurization
 pascheurize->pasteurize
+pascheurized->pasteurized
+pascheurizes->pasteurizes
+pascheurizing->pasteurizing
+paschurisation->pasteurisation
 paschurise->pasteurise
+paschurised->pasteurised
+paschurises->pasteurises
+paschurising->pasteurising
+paschurization->pasteurization
 paschurize->pasteurize
+paschurized->pasteurized
+paschurizes->pasteurizes
+paschurizing->pasteurizing
 pase->pass, pace, parse,
 pased->passed, parsed,
 pasengers->passengers
@@ -27310,8 +27328,16 @@ pasteries->pastries
 pastery->pastry
 pasttime->pastime
 pastural->pastoral
+pasturisation->pasteurisation
 pasturise->pasteurise
+pasturised->pasteurised
+pasturises->pasteurises
+pasturising->pasteurising
+pasturization->pasteurization
 pasturize->pasteurize
+pasturized->pasteurized
+pasturizes->pasteurizes
+pasturizing->pasteurizing
 pasword->password
 paswords->passwords
 patameter->parameter
@@ -27362,9 +27388,12 @@ peapel->people
 peapels->peoples
 peaple->people
 peaples->peoples
-pease->peace
+pease->peace, piece,
+peased->pieced
 peaseful->peaceful
 peasefully->peacefully
+peases->pieces
+peasing->piecing
 pecentage->percentage
 pecified->specified, pacified,
 pecularities->peculiarities
@@ -27380,6 +27409,8 @@ peedmonts->piedmonts
 peepel->people
 peepels->peoples
 peerowet->pirouette
+peerowetes->pirouettes
+peerowets->pirouettes
 pefer->prefer
 peferable->preferable
 peferably->preferably
@@ -27408,6 +27439,7 @@ peirods->periods
 Peloponnes->Peloponnese, Peloponnesus,
 penalities->penalties
 penality->penalty
+penatenturies->penitentiaries
 penatentury->penitentiary
 penatly->penalty
 pendantic->pedantic
@@ -27427,7 +27459,10 @@ pennensular->peninsular
 pennensulas->peninsulas
 penninsula->peninsula
 penninsular->peninsular
+penninsulas->peninsulas
 pennisula->peninsula
+pennisular->peninsular
+pennisulas->peninsulas
 Pennyslvania->Pennsylvania
 pensinula->peninsula
 pensle->pencil
@@ -27765,10 +27800,12 @@ perticipate->participate
 perticipated->participated
 perticipates->participates
 perticipating->participating
+perticipation->participation
 perticular->particular
 perticularly->particularly
 perticulars->particulars
 pertinate->pertinent
+pertinately->pertinently
 pertrub->perturb
 pertrubation->perturbation
 pertrubations->perturbations
@@ -27784,8 +27821,7 @@ perturbate->perturb
 perturbates->perturbs
 perturbe->perturb, perturbed,
 perview->preview, purview,
-perview->purview
-perviews->purviews
+perviews->previews, purviews,
 pervious->previous
 perviously->previously
 pessiary->pessary
@@ -27797,17 +27833,21 @@ pezier->bezier
 phanthom->phantom
 pharmaseudical->pharmaceutical
 pharmaseudically->pharmaceutical
+pharmaseudicals->pharmaceuticals
 pharmaseudicaly->pharmaceutical
 pharmaseutical->pharmaceutical
 pharmaseutically->pharmaceutical
+pharmaseuticals->pharmaceuticals
 pharmaseuticaly->pharmaceutical
 pharmasist->pharmacist
 pharmasists->pharmacists
 pharmasudical->pharmaceutical
 pharmasudically->pharmaceutical
+pharmasudicals->pharmaceuticals
 pharmasudicaly->pharmaceutical
 pharmasutical->pharmaceutical
 pharmasutically->pharmaceutical
+pharmasuticals->pharmaceuticals
 pharmasuticaly->pharmaceutical
 Pharoah->Pharaoh
 pharoh->Pharaoh
@@ -27837,6 +27877,11 @@ phisicaly->physically
 phisics->physics
 phisosophy->philosophy
 phlem->phlegm
+phlema->phlegma
+phlematic->phlegmatic
+phlematically->phlegmatically
+phlematous->phlegmatous
+phlemy->phlegmy
 Phonecian->Phoenecian
 phoneticly->phonetically
 phongraph->phonograph
@@ -27875,13 +27920,14 @@ piar->pair, pier, pliers,
 piars->pairs, piers, pliers,
 piblisher->publisher
 pice->piece
-pich->pitch
 pich->pitch, pick, pinch,
+piched->pitched, picked, pinched,
+piches->pitches, pinches,
+piching->pitching, picking, pinching,
 picknic->picnic
 pickniced->picnicked
 picknicer->picnicker
 picknicing->picnicking
-picknick->picnic
 picknicked->picnicked
 picknicker->picnicker
 picknicking->picnicking
@@ -27892,7 +27938,7 @@ pickyunes->picayunes
 picniced->picnicked
 picnicer->picnicker
 picnicing->picnicking
-picnick->picnic
+picnick->picnic, picknick,
 picnicks->picnics
 picoseond->picosecond
 picoseonds->picoseconds
@@ -27918,6 +27964,7 @@ pijuns->pigeons
 pilgram->pilgrim
 pilgramidge->pilgrimage
 pilgramig->pilgrimage
+pilgramige->pilgrimage
 pilgrimmage->pilgrimage
 pilgrimmages->pilgrimages
 pilon->pylon
@@ -27974,10 +28021,10 @@ placemet->placement, placemat, place mat,
 placemets->placements, placemats, place mats,
 placholder->placeholder
 placholders->placeholders
-plack->plaque
 placmenet->placement
 placmenets->placements
-plad->plaid
+plad->plaid, plead,
+pladed->plaided, pleaded,
 plaform->platform
 plaforms->platforms
 plaftorm->platform
@@ -28700,7 +28747,9 @@ preffixes->prefixes
 preffixing->prefixing
 prefices->prefixes
 preficiency->proficiency
+preficiensy->proficiency
 preficient->proficient
+preficiently->proficiently
 preficientsy->proficiency
 prefitler->prefilter
 prefitlered->prefiltered
@@ -29695,6 +29744,10 @@ pssed->passed
 pssibility->possibility
 psudo->pseudo
 psudoinverse->pseudoinverse
+psudonym->pseudonym
+psudonymity->pseudonymity
+psudonymous->pseudonymous
+psudonyms->pseudonyms
 psuedo->pseudo
 psuedo-fork->pseudo-fork
 psuedocode->pseudocode
@@ -29705,6 +29758,8 @@ psuh->push
 psychadelic->psychedelic
 psycology->psychology
 psydonym->pseudonym
+psydonymity->pseudonymity
+psydonymous->pseudonymous
 psydonyms->pseudonyms
 psyhic->psychic
 ptd->pdf
@@ -29813,6 +29868,9 @@ pursuade->persuade
 pursuaded->persuaded
 pursuades->persuades
 purtain->pertain
+purtained->pertained
+purtaining->pertaining
+purtains->pertains
 pusehd->pushed
 pususading->persuading
 puting->putting
