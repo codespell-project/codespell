@@ -29727,6 +29727,7 @@ rabit->rabbit
 rabits->rabbits
 racaus->raucous
 rackit->racket, racquet,
+rackits->rackets, racquets,
 racoon->raccoon
 racoons->raccoons
 ractise->practise
@@ -29737,7 +29738,7 @@ rademptions->redemptions
 rademtion->redemption
 rademtions->redemptions
 radeus->radius
-radeuses->radii
+radeuses->radii, radiuses,
 radiactive->radioactive
 radiaton->radiation
 radify->ratify
@@ -29754,12 +29755,16 @@ raison->reason, raisin,
 ralation->relation
 randayvoo->rendezvous
 randayvooed->rendezvoused
+randayvoos->rendezvous
 randayvou->rendezvous
 randayvoued->rendezvoused
+randayvous->rendezvous
 randazyvoo->rendezvous
 randazyvooed->rendezvoused
+randazyvoos->rendezvous
 randazyvou->rendezvous
 randazyvoued->rendezvoused
+randazyvous->rendezvous
 randmom->random
 randomally->randomly
 raoming->roaming
@@ -29772,6 +29777,9 @@ raotation->rotation
 raotations->rotations
 raotats->rotates
 rapell->rappel
+rapelled->rappelled
+rapelling->rappelling
+rapells->rappells
 raplace->replace
 raplacing->replacing
 rapore->rapport
@@ -31034,11 +31042,14 @@ releationship->relationship
 releationships->relationships
 releative->relative
 releavant->relevant
+releave->relieve
 releaved->relieved
 releaves->relieves
 releaving->relieving
 relecant->relevant
 relected->reelected, reflected,
+releif->relief
+releife->relief
 releifed->relieved
 releifes->relieves
 releifing->relieving
@@ -31089,8 +31100,8 @@ relitavely->relatively
 relized->realised, realized,
 rellocates->reallocates, relocates,
 relly->really
-relm->realm
-relms->realms
+relm->realm, elm, helm, ream, rem,
+relms->realms, elms, helms, reams,
 reloade->reload
 relocae->relocate
 relocaes->relocates
@@ -31168,7 +31179,12 @@ remenber->remember
 remenicent->reminiscent
 remeniss->reminisce
 remenissed->reminisced
+remenissence->reminiscence
+remenissense->reminiscence
+remenissent->reminiscent
+remenissently->reminiscently
 remenisser->reminiscer
+remenisses->reminisces
 remenissing->reminiscing
 remian->remain
 remiander->remainder, reminder,
@@ -31178,11 +31194,23 @@ remians->remains
 reminent->remnant
 reminescent->reminiscent
 remining->remaining
+reminis->reminisce
 reminiscense->reminiscence
+reminise->reminisce
+reminised->reminisced
 reminisent->reminiscent
 reminisentky->reminiscently
+reminiser->reminiscer
+reminises->reminisces
+reminising->reminiscing
+reminsce->reminisce
+reminsced->reminisced
+reminscence->reminiscence
 reminscent->reminiscent
 reminscently->reminiscently
+reminscer->reminiscer
+reminsces->reminisces
+reminscing->reminiscing
 reminsicent->reminiscent
 reminsicently->reminiscently
 remmeber->remember
@@ -31531,7 +31559,11 @@ repects->respects
 repedability->repeatability
 repedable->repeatable
 repeition->repetition
+repeled->repelled
+repeler->repeller
+repeling->repelling
 repell->repel
+repells->repels
 repentence->repentance
 repentent->repentant
 reperesent->represent
@@ -31658,15 +31690,11 @@ reposonders->responders
 reposonding->responding
 reposonse->response
 reposonses->responses
-repost->riposte
-reposted->riposted
-repostes->ripostes
-reposting->riposting
+repostes->reposts, ripostes,
 repostiories->repositories
 repostiory->repository
 repostories->repositories
 repostory->repository
-reposts->ripostes
 repote->report, remote,
 repport->report
 reppository->repository
@@ -32475,10 +32503,12 @@ rhythim->rhythm
 rhythimcally->rhythmically
 rhytmic->rhythmic
 rickoshay->ricochet
+rickoshayed->ricocheted
+rickoshaying->ricocheting
 rickoshays->ricochets
 ridiculus->ridiculous
 riendeer->reindeer
-riendeers->reindeer
+riendeers->reindeers
 rige->ridge
 riges->ridges
 rigeur->rigueur, rigour, rigor,
@@ -32494,7 +32524,9 @@ rigths->rights
 rigurous->rigorous
 rimaniss->reminisce
 rimanissed->reminisced
+rimanissent->reminiscent
 rimanisser->reminiscer
+rimanisses->reminisces
 rimanissing->reminiscing
 riminder->reminder
 riminders->reminders
@@ -32502,6 +32534,7 @@ riminding->reminding
 riminiced->reminisced
 riminicent->reminiscent
 riminicer->reminiscer
+riminices->reminisces
 riminicing->reminiscing
 rimitives->primitives
 rininging->ringing
@@ -32509,7 +32542,7 @@ rinosarus->rhinoceros
 rinosaruses->rhinoceroses
 rinosaruss->rhinoceroses
 rised->raised, rose,
-riskay->risque
+riskay->risky, risqué,
 rispective->respective
 ristrict->restrict
 ristricted->restricted
@@ -32518,11 +32551,11 @@ ritable->writable
 rithm->rhythm
 rithmic->rhythmic
 rithmicly->rhythmically
-rittle->riddle
-rittled->riddled
-rittler->riddler
-rittles->riddles
-rittling->riddling
+rittle->riddle, rattle,
+rittled->riddled, rattled,
+rittler->riddler, rattler,
+rittles->riddles, rattles,
+rittling->riddling, rattling,
 rivised->revised
 rizes->rises
 rlation->relation
