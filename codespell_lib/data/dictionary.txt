@@ -38950,15 +38950,24 @@ vaccum->vacuum
 vaccume->vacuum
 vaccuum->vacuum
 vacinate->vaccinate
+vacinated->vaccinated
+vacinates->vaccinates
+vacinating->vaccinating
 vacination->vaccination
 vacinations->vaccinations
+vacine->vaccine
+vacines->vaccines
 vacinity->vicinity
 vactor->vector
 vactors->vectors
 vacume->vacuum
+vacumed->vacuumed
+vacumeed->vacuumed
 vacumes->vacuums
+vacuming->vacuuming
 vacumme->vacuum
 vacummes->vacuums
+vacums->vacuums
 vacuosly->vacuously
 vaelue->value, valued,
 vaelues->values
@@ -39093,6 +39102,7 @@ varierty->variety
 variey->variety
 varification->verification
 varifications->verifications
+varified->verified
 varify->verify
 varigated->variegated
 variing->varying
@@ -39207,6 +39217,7 @@ verbouse->verbose
 verbously->verbosely
 verbse->verbose
 verchew->virtue
+verchews->virtues
 verctor->vector
 verctors->vectors
 veregated->variegated
@@ -39308,7 +39319,9 @@ versoions->versions
 verson->version
 versoned->versioned
 versons->versions
+vertabraes->vertebraes
 vertabray->vertebrae
+vertabrays->vertebraes
 vertextes->vertices
 vertexts->vertices
 vertial->vertical
@@ -39359,6 +39372,10 @@ vicefersa->vice-versa
 viceversa->vice-versa
 vicewersa->vice-versa
 victem->victim
+victemize->victimize
+victemized->victimized
+victemizes->victimizes
+victemizing->victimizing
 victems->victims
 victum->victim
 victums->victims
@@ -39376,11 +39393,14 @@ vigilence->vigilance
 vigourous->vigorous
 vill->will
 villan->villain
+villans->villains
 villian->villain
+villians->villains
 villification->vilification
 villify->vilify
 villin->villi, villain, villein,
 vinal->vinyl
+vinals->vinyls
 vincinity->vicinity
 vinigar->vinegar
 vinigarette->vinaigrette
@@ -39396,6 +39416,7 @@ violoating->violating
 violoation->violation
 violoations->violations
 viralence->virulence
+viralently->virulently
 virtal->virtual
 virtalenv->virtualenv
 virtaul->virtual
@@ -39495,7 +39516,6 @@ visuaized->visualized
 visuaizes->visualizes
 visuale->visual
 visuales->visuals
-visualisation->visualization
 visualizaion->visualization
 visualizaiton->visualization
 visualizaitons->visualizations
@@ -39542,6 +39562,8 @@ volenteer->volunteer
 volenteered->volunteered
 volenteers->volunteers
 volentier->volunteer
+volentiered->volunteered
+volentiering->volunteering
 volentiers->volunteers
 voleyball->volleyball
 volontary->voluntary
@@ -39561,8 +39583,10 @@ volxels->voxels
 vonfig->config
 vould->would
 voxes->voxels, voxel,
+voyour->voyeur
 voyouristic->voyeuristic
 voyouristically->voyeuristically
+voyours->voyeurs
 vreity->variety
 vresion->version
 vrey->very
@@ -39685,6 +39709,7 @@ vulnreability->vulnerability
 vunerabilities->vulnerabilities
 vunerability->vulnerability
 vunerable->vulnerable
+vunrabilities->vulnerabilities
 vunrability->vulnerability
 vunrable->vulnerable
 vyer->very
