@@ -32794,6 +32794,9 @@ sanwiches->sandwiches
 sanytise->sanitise
 sanytize->sanitize
 sapeena->subpoena
+sapeenad->subpoenaed
+sapeenaing->subpoenaing
+sapeenas->subpoenas
 saphire->sapphire
 saphires->sapphires
 sargant->sergeant
@@ -32801,9 +32804,11 @@ sargeant->sergeant
 sarimonial->ceremonial
 sarimonies->ceremonies
 sarimony->ceremony
+sarimonys->ceremonies
 sarinomial->ceremonial
 sarinomies->ceremonies
 sarinomy->ceremony
+sarinomys->ceremonies
 sart->start, star,
 sarted->started
 sarter->starter
@@ -32865,6 +32870,7 @@ savere->severe
 savety->safety
 savgroup->savegroup
 savve->save, savvy, salve,
+savves->saves, salves,
 savy->savvy
 sawtay->sauté
 sawtayed->sautéd
@@ -33356,7 +33362,9 @@ sensability->sensibility
 sensable->sensible
 sensably->sensibly
 sensative->sensitive
+sensativity->sensitivity
 sensetive->sensitive
+sensetivity->sensitivity
 sensisble->sensible
 sensistive->sensitive
 sensistively->sensitively, sensitivity,
@@ -33613,9 +33621,11 @@ seralizing->serializing
 seramonial->ceremonial
 seramonies->ceremonies
 seramony->ceremony
+seramonys->ceremonies
 seranomial->ceremonial
 seranomies->ceremonies
 seranomy->ceremony
+seranomys->ceremonies
 serch->search
 serched->searched
 serches->searches
@@ -33665,9 +33675,11 @@ serieses->series
 serimonial->ceremonial
 serimonies->ceremonies
 serimony->ceremony
+serimonys->ceremonies
 serinomial->ceremonial
 serinomies->ceremonies
 serinomy->ceremony
+serinomys->ceremonies
 serios->serious
 seriouly->seriously
 seriousally->seriously
@@ -33676,6 +33688,9 @@ seriuos->serious
 serivce->service
 serivces->services
 seround->surround
+serounded->surrounded
+serounding->surrounding
+serounds->surrounds
 serrebral->cerebral
 serrebrally->cerebrally
 sersies->series
@@ -33845,6 +33860,8 @@ sheilding->shielding
 sheilds->shields
 sheme->scheme, shame,
 shepard->shepherd
+sheparded->shepherded
+sheparding->shepherding
 shepards->shepherds
 shepe->shape
 sheped->shaped, shepherd,
@@ -33854,9 +33871,13 @@ shepereds->shepherds
 shepes->shapes
 sheping->shaping
 shepperd->shepherd
+shepperded->shepherded
+shepperding->shepherding
+shepperds->shepherds
 shepre->sphere
 shepres->spheres
 sherif->sheriff
+sherifs->sheriffs
 shfit->shift
 shfited->shifted
 shfiting->shifting
@@ -34005,7 +34026,8 @@ sigantures->signatures
 sigen->sign
 sighrynge->syringe
 sighrynges->syringes
-sighth->scythe
+sighth->scythe, sight,
+sighths->scythes, sights,
 sigificance->significance
 sigificant->significant
 siginificant->significant
@@ -34051,6 +34073,10 @@ signularity->singularity
 sigrynge->syringe
 sigrynges->syringes
 siguret->cigarette
+sigurete->cigarette
+siguretes->cigarettes
+sigurets->cigarettes
+sigurette->cigarette
 silabus->syllabus
 silabuses->syllabuses
 silentely->silently
@@ -34059,10 +34085,12 @@ silhouete->silhouette
 silhoueted->silhouetted
 silhouetes->silhouettes
 silhoueting->silhouetting
+silhouetist->silhouettist
 silhouwet->silhouette
 silhouweted->silhouetted
 silhouwetes->silhouettes
 silhouweting->silhouetting
+silhouwetist->silhouettist
 silibus->syllabus
 silibuses->syllabuses
 siliently->silently, saliently,
@@ -34077,6 +34105,7 @@ silouete->silhouette
 siloueted->silhouetted
 silouetes->silhouettes
 siloueting->silhouetting
+silouetist->silhouettist
 silouhette->silhouette
 silouhetted->silhouetted
 silouhettes->silhouettes
@@ -34085,10 +34114,12 @@ silouwet->silhouette
 silouweted->silhouetted
 silouwetes->silhouettes
 silouweting->silhouetting
+silouwetist->silhouettist
 silowet->silhouette
 siloweted->silhouetted
 silowetes->silhouettes
 siloweting->silhouetting
+silowetist->silhouettist
 silybus->syllabus
 silybuses->syllabuses
 simeple->simple
@@ -34251,12 +34282,18 @@ singuarl->singular
 singulat->singular
 singulaties->singularities
 sinic->cynic
+sinical->cynical
+sinically->cynically
+sinicaly->cynically
 sinics->cynics
 sinlge->single
 sinlges->singles
 sinnagog->synagogue
 sinnagogs->synagogues
 sinnic->cynic
+sinnical->cynical
+sinnically->cynically
+sinnicaly->cynically
 sinnics->cynics
 sinply->simply
 sinse->sines, since,
@@ -34297,12 +34334,19 @@ sirectory->directory
 sirects->directs
 siringe->syringe
 siringes->syringes
+sirvayl->surveil
+sirvayled->surveiled
 sirvaylence->surveillance
+sirvayles->surveils
+sirvayling->surveiling
+sirvayls->surveils
 sirynge->syringe
 sirynges->syringes
 sise->size, sisal,
 sisnce->since
 sisser->scissor
+sissered->scissored
+sissering->scissoring
 sissers->scissors
 sist->cyst
 sistem->system
@@ -34357,14 +34401,18 @@ situtation->situation
 situtations->situations
 siutable->suitable
 siute->suite
-sive->sieve
-sives->sieves
+sive->sieve, save,
+sived->sieved, saved,
+sives->sieves, saves,
 sivible->visible
+siving->sieving, saving,
 siwtch->switch
 siwtched->switched
 siwtching->switching
 Sixtin->Sistine, Sixteen,
 siz->size, six,
+sizemologist->seismologist
+sizemologists->seismologists
 sizemologogical->seismological
 sizemologogically->seismologically
 sizemology->seismology
@@ -34397,6 +34445,7 @@ skippped->skipped
 skippps->skips
 skipt->skip, Skype, skipped,
 skitsofrinic->schizophrenic
+skitsofrinics->schizophrenics
 skool->school
 skooled->schooled
 skooling->schooling
@@ -34498,6 +34547,8 @@ socripted->scripted
 socripting->scripting
 socripts->scripts
 sodder->solder
+soddered->soldered
+soddering->soldering
 sodders->solders
 sodo->sudo, soda, sod, sods, dodo, solo,
 sodu->sudo, soda, sod, sods,
@@ -34530,6 +34581,8 @@ solated->isolated
 solates->isolates
 solating->isolating
 soldger->soldier
+soldgered->soldiered
+soldgering->soldiering
 soldgers->soldiers
 soler->solver, solar, solely,
 soley->solely
@@ -34540,6 +34593,8 @@ solfes->solves
 solfing->solving
 solfs->solves
 solger->soldier
+solgered->soldiered
+solgering->soldiering
 solgers->soldiers
 soliders->soldiers
 solification->solidification
@@ -35461,6 +35516,7 @@ stawk->stalk
 stcokbrush->stockbrush
 stdanard->standard
 stdanards->standards
+stegnographic->steganographic
 stegnography->steganography
 stength->strength
 steram->stream
@@ -36414,11 +36470,12 @@ susbsystem->subsystem
 susbsystems->subsystems
 susbsytem->subsystem
 susbsytems->subsystems
-suscede->secede
-susceded->seceded
+suscede->secede, succeed,
+susceded->seceded, succeeded,
 susceder->seceder
-suscedes->secedes
-susceding->seceding
+susceders->seceders
+suscedes->secedes, succeeds,
+susceding->seceding, succeeding,
 suscribe->subscribe
 suscribed->subscribed
 suscribes->subscribes
