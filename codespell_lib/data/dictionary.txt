@@ -39252,6 +39252,7 @@ weahter->weather
 weahters->weathers
 weant->want, wean,
 weaponary->weaponry
+weappon->weapon
 weappons->weapons
 weas->was
 webage->webpage
@@ -39290,6 +39291,7 @@ wendesday->Wednesday
 wendsay->Wednesday
 wendsday->Wednesday
 wensday->Wednesday
+wepon->weapon
 wepons->weapons
 weppon->weapon
 weppons->weapons
@@ -39453,6 +39455,7 @@ willingless->willingness
 willk->will
 willl->will
 wimmen->women
+wimmenly->womanly
 wimmens->women
 windo->window
 windoes->windows
@@ -39479,11 +39482,17 @@ wirting->writing
 wirtten->written
 wirtual->virtual
 wiscle->whistle
+wiscled->whistled
 wiscles->whistles
+wiscling->whistling
 wisper->whisper
+wispered->whispered
+wispering->whispering
 wispers->whispers
 wissle->whistle
+wissled->whistled
 wissles->whistles
+wissling->whistling
 witable->writeable
 witdh->width
 witdhs->widths
@@ -39559,10 +39568,10 @@ wolrd->world
 wolrdly->worldly
 wolrdwide->worldwide
 wolwide->worldwide
-womans->women
+womans->woman's, women,
 womens->women's, women,
 won;t->won't
-wonce->once
+wonce->once, nonce, ponce, wince,
 wonderfull->wonderful
 wonderig->wondering
 wonderous->wondrous
