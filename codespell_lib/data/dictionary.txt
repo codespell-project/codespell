@@ -24522,16 +24522,16 @@ nagative->negative
 nagatively->negatively
 nagatives->negatives
 nagivation->navigation
-naibhor->neighbor
-naibhorhood->neighborhood
-naibhorhoods->neighborhoods
-naibhorly->neighborly
-naibhors->neighbors
-naibor->neighbor
-naiborhood->neighborhood
-naiborhoods->neighborhoods
-naiborly->neighborly
-naibors->neighbors
+naibhor->neighbor, neighbour,
+naibhorhood->neighborhood, neighbourhood,
+naibhorhoods->neighborhoods, neighbourhoods,
+naibhorly->neighborly, neighbourly,
+naibhors->neighbors, neighbour,
+naibor->neighbor, neighbour,
+naiborhood->neighborhood, neighbourhood,
+naiborhoods->neighborhoods, neighbourhoods,
+naiborly->neighborly, neighbourly,
+naibors->neighbors, neighbours,
 naieve->naive
 naivity->naivety
 nam->name
@@ -24577,10 +24577,10 @@ napommes->napalms
 napomming->napalming
 napomms->napalms
 napoms->napalms
-narl->gnarl
-narled->gnarled
-narling->gnarling
-narls->gnarls
+narl->gnarl, snarl, earl, farl, marl, nail, nark, nary,
+narled->gnarled, snarled, nailed, narked,
+narling->gnarling, snarling, nailing, narking,
+narls->gnarls, snarls, earls, farls, marls, nails, narks,
 narly->gnarly
 nast->nest, mast, nasty,
 nastalgea->nostalgia
@@ -24650,6 +24650,11 @@ nayborhood->neighborhood
 nayborhoods->neighborhoods
 nayborly->neighborly
 naybors->neighbors
+naybour->neighbour
+naybourhood->neighbourhood
+naybourhoods->neighbourhoods
+naybourly->neighbourly
+naybours->neighbours
 Nazereth->Nazareth
 nce->once, nice,
 nclude->include
@@ -25326,6 +25331,7 @@ nmme->name
 nned->need
 nneeded->needed
 nnovisheate->novitiate
+nnovisheates->novitiates
 nnumber->number
 no-overide->no-override
 nodel->model, nodal,
@@ -25568,7 +25574,10 @@ noveau->nouveau
 novemeber->November
 Novemer->November
 Novermber->November
+novisheate->novitiate
+novisheates->novitiates
 novisheut->novitiate
+novisheuts->novitiates
 nowadys->nowadays
 nowdays->nowadays
 nowe->now
@@ -25589,7 +25598,7 @@ nucular->nuclear
 nuculear->nuclear
 nuisans->nuisance
 nuisanse->nuisance
-nuisanses->nuisance
+nuisanses->nuisance, nuisances,
 nuissance->nuisance
 nulk->null
 null-termined->null-terminated
