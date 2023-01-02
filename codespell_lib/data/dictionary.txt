@@ -32330,8 +32330,7 @@ resitances->resistances
 resitor->resistor
 resitors->resistors
 resivwar->reservoir
-resizeable->resizable
-resizeble->resizable
+resizeble->resizeable, resizable,
 reslection->reselection
 reslove->resolve
 resloved->resolved
@@ -34762,6 +34761,7 @@ siwtched->switched
 siwtching->switching
 Sixtin->Sistine, Sixteen,
 siz->size, six,
+sizeble->sizeable, sizable,
 sizemologist->seismologist
 sizemologists->seismologists
 sizemologogical->seismological
