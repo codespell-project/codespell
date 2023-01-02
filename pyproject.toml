@@ -32,7 +32,7 @@ dynamic = ["version"]
 
 [project.optional-dependencies]
 dev = [
-    "check-manifest",
+    "build",
     "flake8",
     "flake8-pyproject",
     "pytest",
@@ -90,9 +90,6 @@ expand-star-imports = true
 [tool.bandit]
 skip = "B101,B404,B603"
 recursive = true
-
-[tool.check-manifest]
-ignore = ["codespell_lib/_version.py"]
 
 # TODO: reintegrate codespell configuration after updating test cases
 #[tool.codespell]
