@@ -22174,9 +22174,9 @@ kyeboshing->kiboshing
 kyrillic->cyrillic
 labatory->lavatory, laboratory,
 labbel->label
-labbeled->labeled
+labbeled->labeled, labelled,
 labbels->labels
-labed->labeled
+labed->labeled, labelled,
 labeld->labelled
 labirinth->labyrinth
 lable->label
@@ -38462,7 +38462,7 @@ unkonwns->unknowns
 unkown->unknown
 unkowns->unknowns
 unkwown->unknown
-unlabled->unlabeled
+unlabled->unlabeled, unlabelled,
 unlcear->unclear
 unleess->unless, unleash,
 unles->unless
