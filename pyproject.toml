@@ -48,11 +48,11 @@ toml = [
     "tomli; python_version < '3.11'"
 ]
 types = [
+    "chardet>=5.1.0",
     "mypy",
     "pytest",
     "pytest-cov",
     "pytest-dependency",
-    "types-chardet",
 ]
 
 [project.scripts]
