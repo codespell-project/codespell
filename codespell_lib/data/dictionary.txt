@@ -26928,8 +26928,9 @@ paermission->permission
 paermissions->permissions
 paeth->path
 pagagraph->paragraph
-pagent->pageant
-pagents->pageants
+pagent->pageant, plangent,
+pagentry->pageantry, plangently,
+pagents->pageants, plangents,
 pahses->phases
 paht->path, pat, part,
 pahts->paths, pats, parts,
@@ -27115,10 +27116,10 @@ paret->parent, parrot,
 paretheses->parentheses
 parfay->parfait
 parge->large
-paria->pariah
+paria->pariah, parka,
 parial->partial
 parially->partially
-parias->pariahs
+parias->pariahs, parkas,
 paricular->particular
 paricularly->particularly
 parisitic->parasitic
@@ -27137,8 +27138,8 @@ parititioning->partitioning
 parititions->partitions
 paritiy->parity
 parituclar->particular
-parkay->parquet
-parkays->parquets
+parkay->parquet, parlay, parkway,
+parkays->parquets, parlays, parkways,
 parlament->parliament
 parlamentary->parliamentary
 parlaments->parliaments
@@ -27192,7 +27193,7 @@ parrent->parent
 parsef->parsed, parser, parsec,
 parseing->parsing
 parsering->parsing
-parshal->partial
+parshal->partial, marshal,
 parshally->partially
 parshaly->partially
 parsial->partial
@@ -27388,12 +27389,12 @@ peapel->people
 peapels->peoples
 peaple->people
 peaples->peoples
-pease->peace, piece,
-peased->pieced
+pease->peace, piece, please, lease,
+peased->pieced, pleased, leased,
 peaseful->peaceful
 peasefully->peacefully
-peases->pieces
-peasing->piecing
+peases->pieces, pleases, leases,
+peasing->piecing, pleasing, leasing,
 pecentage->percentage
 pecified->specified, pacified,
 pecularities->peculiarities
@@ -27828,7 +27829,7 @@ pessiary->pessary
 petetion->petition
 pevent->prevent
 pevents->prevents
-pewder->pewter
+pewder->pewter, powder, lewder,
 pezier->bezier
 phanthom->phantom
 pharmaseudical->pharmaceutical
@@ -27849,8 +27850,8 @@ pharmasutical->pharmaceutical
 pharmasutically->pharmaceutical
 pharmasuticals->pharmaceuticals
 pharmasuticaly->pharmaceutical
-Pharoah->Pharaoh
-pharoh->Pharaoh
+pharoah->pharaoh
+pharoh->pharaoh
 phasepsace->phasespace
 phasis->phases
 phenomenom->phenomenon
@@ -27876,7 +27877,7 @@ phisically->physically
 phisicaly->physically
 phisics->physics
 phisosophy->philosophy
-phlem->phlegm
+phlem->phlegm, phloem,
 phlema->phlegma
 phlematic->phlegmatic
 phlematically->phlegmatically
@@ -27938,7 +27939,7 @@ pickyunes->picayunes
 picniced->picnicked
 picnicer->picnicker
 picnicing->picnicking
-picnick->picnic, picknick,
+picnick->picnic
 picnicks->picnics
 picoseond->picosecond
 picoseonds->picoseconds
@@ -27949,8 +27950,8 @@ pictureskness->picturesqueness
 pieceweise->piecewise, piece wise,
 piecewiese->piecewise, piece wise,
 piecwise->piecewise, piece wise,
-pigen->pigeon
-pigens->pigeons
+pigen->pigeon, pigpen,
+pigens->pigeons, pigpens,
 piggypack->piggyback
 piggypacked->piggybacked
 pigin->pigeon
@@ -27967,8 +27968,8 @@ pilgramig->pilgrimage
 pilgramige->pilgrimage
 pilgrimmage->pilgrimage
 pilgrimmages->pilgrimages
-pilon->pylon
-pilons->pylons
+pilon->pylon, pillion,
+pilons->pylons, pillions,
 pimxap->pixmap
 pimxaps->pixmaps
 pinapple->pineapple
@@ -28079,7 +28080,7 @@ plausable->plausible
 playble->playable
 playfull->playful, playfully,
 playge->plague
-playgerise->plagiarize, plagiarise,
+playgerise->plagiarise
 playgerize->plagiarize
 playgropund->playground
 playist->playlist
@@ -29608,7 +29609,7 @@ protecte->protected, protect,
 protectiv->protective
 protectoin->protection
 protedcted->protected
-proteen->protein
+proteen->protein, protean, preteen,
 protential->potential
 protext->protect
 protocal->protocol
