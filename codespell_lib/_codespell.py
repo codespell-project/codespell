@@ -544,25 +544,29 @@ def parse_options(
     config = configparser.ConfigParser(interpolation=None)
 
     # Read toml before other config files.
-    toml_files_errors = []
+    toml_files = []
+    tomlib_raise_error = False
     if os.path.isfile("pyproject.toml"):
-        toml_files_errors.append(("pyproject.toml", False))
+        toml_files.append("pyproject.toml")
     if options.toml:
-        toml_files_errors.append((options.toml, True))
-    for toml_file, raise_error in toml_files_errors:
+        toml_files.append(options.toml)
+        tomlib_raise_error = True
+    if toml_files:
         try:
-            import tomli
-        except Exception as exc:
-            if raise_error:
-                raise ImportError(
-                    f"tomli is required to read pyproject.toml but could not "
-                    f"be imported, got: {exc}"
-                ) from None
-            else:
-                continue
-        with open(toml_file, "rb") as f:
-            data = tomli.load(f).get("tool", {})
-        config.read_dict(data)
+            import tomlib  # type: ignore
+        except ModuleNotFoundError:
+            try:
+                import tomli as tomlib  # type: ignore
+            except ImportError as e:
+                if tomlib_raise_error:
+                    raise ImportError(
+                        f"tomlib or tomli are required to read pyproject.toml "
+                        f"but could not be imported, got: {e}"
+                    ) from None
+        for toml_file in toml_files:
+            with open(toml_file, "rb") as f:
+                data = tomlib.load(f).get("tool", {})
+            config.read_dict(data)
 
     # Collect which config files are going to be used
     used_cfg_files = []
