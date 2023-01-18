@@ -11083,6 +11083,11 @@ decrasing->decreasing, deceasing,
 decration->decoration
 decreace->decrease
 decreas->decrease
+decremeant->decrement
+decremeantal->decremental
+decremeanted->decremented
+decremeanting->decrementing
+decremeants->decrements
 decremenet->decrement
 decremenetd->decremented
 decremeneted->decremented
@@ -20181,7 +20186,11 @@ increament->increment
 increas->increase
 incredable->incredible
 incremantal->incremental
+incremeant->increment
 incremeantal->incremental
+incremeanted->incremented
+incremeanting->incrementing
+incremeants->increments
 incremenet->increment
 incremenetd->incremented
 incremeneted->incremented
@@ -23343,6 +23352,7 @@ meaningfull->meaningful
 meanining->meaning
 meaninless->meaningless
 meaninng->meaning
+meanting->meaning
 mear->wear, mere, mare,
 mearly->merely, nearly,
 meassurable->measurable
