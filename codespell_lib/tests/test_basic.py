@@ -1081,8 +1081,7 @@ count =
             )
     else:
         assert kind == "toml"
-        python_version = sys.version_info
-        if python_version.major == 3 and python_version.minor < 11:
+        if sys.version_info < (3, 11):
             pytest.importorskip("tomli")
         tomlfile = str(tmp_path / "pyproject.toml")
         args = ("--toml", tomlfile)
