@@ -124,7 +124,7 @@ def _check_err_rep(
     ), f"error {err}: correction {rep!r} cannot start with whitespace"
     _check_aspell(err, f"error {err!r}", in_aspell[0], fname, languages[0])
     prefix = f"error {err}: correction {rep!r}"
-    for (regex, msg) in [
+    for regex, msg in [
         (start_comma, "%s starts with a comma"),
         (
             whitespace_comma,
