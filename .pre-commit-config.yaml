@@ -52,7 +52,7 @@ repos:
       - id: check-case-conflict
       - id: check-toml
   - repo: https://github.com/adrienverge/yamllint.git
-    rev: v1.28.0
+    rev: v1.29.0
     hooks:
       - id: yamllint
         args:
@@ -60,7 +60,7 @@ repos:
           - -d
           - '{extends: relaxed, rules: {line-length: {max: 90}}}'
   - repo: https://github.com/psf/black
-    rev: 22.12.0
+    rev: 23.1.0
     hooks:
       - id: black
   - repo: https://github.com/Lucas-C/pre-commit-hooks-bandit
@@ -68,7 +68,7 @@ repos:
     hooks:
       - id: python-bandit-vulnerability-check
   - repo:  https://github.com/PyCQA/autoflake
-    rev: v2.0.0
+    rev: v2.0.1
     hooks:
       - id: autoflake
   - repo: https://github.com/PyCQA/flake8
@@ -84,7 +84,7 @@ repos:
           - pycodestyle>=2.9.1
           - pyflakes>=2.5.0
   - repo: https://github.com/PyCQA/isort
-    rev: 5.10.1
+    rev: 5.12.0
     hooks:
       - id: isort
   - repo: https://github.com/codespell-project/codespell
