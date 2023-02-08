@@ -556,7 +556,7 @@ def parse_options(
             import tomllib  # type: ignore
         except ModuleNotFoundError:
             try:
-                import tomli as tomllib  # type: ignore
+                import tomli as tomllib
             except ImportError as e:
                 if tomllib_raise_error:
                     raise ImportError(
