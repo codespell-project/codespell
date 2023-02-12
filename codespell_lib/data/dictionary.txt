@@ -4135,6 +4135,7 @@ auto-detets->auto-detects, auto-deletes,
 auto-genrated->auto-generated
 auto-genratet->auto-generated
 auto-genration->auto-generation
+auto-identation->auto-indentation
 auto-negatiotiation->auto-negotiation
 auto-negatiotiations->auto-negotiations
 auto-negoatiation->auto-negotiation
@@ -10584,6 +10585,15 @@ cuve->curve, cube, cave,
 cuves->curves, cubes, caves,
 cuvre->curve, cover,
 cuvres->curves, covers,
+cuztomizable->customizable
+cuztomization->customization
+cuztomizations->customizations
+cuztomize->customize
+cuztomized->customized
+cuztomizer->customizer
+cuztomizers->customizers
+cuztomizes->customizes
+cuztomizing->customizing
 cvignore->cvsignore
 cxan->cyan
 cycic->cyclic
@@ -14599,6 +14609,7 @@ endiannes->endianness
 endien->endian, indian,
 endiens->endians, indians,
 endig->ending
+endiif->endif
 endiness->endianness
 endnoden->endnode
 endoint->endpoint
@@ -14826,6 +14837,8 @@ enumarating->enumerating
 enumation->enumeration
 enumearate->enumerate
 enumearation->enumeration
+enumeratior->enumerator
+enumeratiors->enumerators
 enumerble->enumerable
 enumertaion->enumeration
 enusre->ensure
@@ -21697,6 +21710,8 @@ invarients->invariants
 invarinat->invariant
 invarinats->invariants
 inventer->inventor
+inveral->interval
+inverals->intervals
 inverded->inverted
 inverion->inversion
 inverions->inversions
@@ -23257,6 +23272,10 @@ materils->materials
 materla->material
 materlas->materials
 mathamatics->mathematics
+mathc->match
+mathced->matched
+mathcer->matcher
+mathcers->matchers
 mathces->matches
 mathch->match
 mathched->matched
@@ -25411,6 +25430,7 @@ non-inreractive->non-interactive
 non-instnat->non-instant
 non-interactivly->non-interactively
 non-meausure->non-measure
+non-mergable->non-mergeable
 non-negatiotiable->non-negotiable
 non-negatiotiated->non-negotiated
 non-negativ->non-negative
@@ -30385,6 +30405,7 @@ re-negoziator->re-negotiator
 re-negoziators->re-negotiators
 re-realease->re-release
 re-spawining->re-spawning, respawning,
+re-synching->re-syncing
 re-uplad->re-upload
 re-upladad->re-upload, re-uploaded,
 re-upladed->re-uploaded
