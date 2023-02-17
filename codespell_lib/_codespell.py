@@ -55,9 +55,7 @@ uri_regex_def = (
 # Pass all misspellings through this translation table to generate
 # alternative misspellings and fixes.
 alt_chars = (("'", "’"),)  # noqa: RUF001
-inline_ignore_regex = re.compile(
-    r"[^\w\s]\s?codespell:ignore\b(\s+(?P<words>[\w,]*))?"
-)
+inline_ignore_regex = re.compile(r"[^\w\s]\s?codespell:ignore\b(\s+(?P<words>[\w,]*))?")
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
