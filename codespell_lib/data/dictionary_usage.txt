@@ -9,7 +9,7 @@ dummy-value->placeholder value
 girlfriend-test->user test, acceptance test, validation test, ease-of-use test, friendliness test, useability test,
 man-hour->staff hour, volunteer hour, hour of effort, person-hour,
 man-hours->staff hours, volunteer hours, hours of effort, person-hours,
-man-in-the-middle->on-path attacker, interceptor, intermediary, machine-in-the-middle, person-in-the-middle,
+man-in-the-middle->on-path attacker, adversary-in-the-middle, interceptor, intermediary, machine-in-the-middle, person-in-the-middle,
 manned->crewed, staffed, monitored, human operated,
 master->primary, leader, active, writer, coordinator, parent, manager, main,
 masters->primaries, leaders, actives, writers, coordinators, parents, managers,
