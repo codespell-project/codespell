@@ -1113,6 +1113,7 @@ advesary->adversary
 advetise->advertise
 advicable->advisable
 adviced->advised
+advicing->advising
 adviseable->advisable
 advisoriy->advisory, advisories,
 advisoriyes->advisories
@@ -8231,6 +8232,8 @@ compleates->completes
 compleating->completing
 compleation->completion, compilation,
 compleatly->completely
+complection->completion
+complections->completions
 compleete->complete
 compleeted->completed
 compleetly->completely
@@ -10577,6 +10580,7 @@ customisaton->customisation
 customisatons->customisations
 customizaton->customization
 customizatons->customizations
+customizeable->customizable
 customizeble->customizable
 customn->custom
 customns->customs
@@ -11441,6 +11445,10 @@ deivatives->derivatives
 deivce->device
 deivces->devices
 deivices->devices
+dekete->delete
+deketed->deleted
+deketes->deletes
+deketing->deleting
 deklaration->declaration
 dekstop->desktop
 dekstops->desktops
@@ -18454,6 +18462,8 @@ globaly->globally
 globas->globals
 globbal->global
 globel->global
+globlal->global
+globlaly->globally
 glorfied->glorified
 glpyh->glyph
 glpyhs->glyphs
@@ -18972,6 +18982,7 @@ hashi->hash
 hashreference->hash reference
 hashs->hashes
 hashses->hashes
+hasing->hashing
 hask->hash
 hasn;t->hasn't
 hasnt'->hasn't
@@ -32645,7 +32656,11 @@ ressurected->resurrected
 ressurecting->resurrecting
 ressurection->resurrection
 ressurects->resurrects
+ressurrect->resurrect
+ressurrected->resurrected
+ressurrecting->resurrecting
 ressurrection->resurrection
+ressurrects->resurrects
 restarant->restaurant
 restarants->restaurants
 restaraunt->restaurant
@@ -33174,6 +33189,9 @@ rsource->resource, source,
 rsourced->resourced, sourced,
 rsources->resources, sources,
 rsourcing->resourcing, sourcing,
+rturn->return
+rturned->returned
+rturning->returning
 rturns->returns, turns,
 rubarb->rhubarb
 rucuperate->recuperate
@@ -38198,6 +38216,7 @@ Tolkein->Tolkien
 tollerable->tolerable
 tollerance->tolerance
 tollerances->tolerances
+tollerant->tolerant
 tolorance->tolerance
 tolorances->tolerances
 tolorant->tolerant
@@ -39010,6 +39029,7 @@ typdef->typedef, typed,
 typechek->typecheck
 typecheking->typechecking
 typesrript->typescript
+typess->types
 typicall->typically, typical,
 typicallly->typically
 typicaly->typically
@@ -40203,6 +40223,7 @@ usera->users
 userame->username
 userames->usernames
 userapace->userspace
+usere->user
 userful->useful
 userpace->userspace
 userpsace->userspace
