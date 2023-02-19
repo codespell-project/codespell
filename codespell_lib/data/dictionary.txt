@@ -6056,6 +6056,9 @@ captable->capable
 capter->captor
 capters->captors
 captial->capital
+captialism->capitalism
+captialist->capitalist
+captialists->capitalists
 captian->captain
 captians->captains
 captin->captain
@@ -7837,6 +7840,9 @@ commets->comments, comets,
 commig->commit, coming,
 comming->coming
 comminication->communication
+comminism->communism
+comminist->communist
+comminists->communists
 comminity->community
 comminucating->communicating
 comminucation->communication
@@ -7983,6 +7989,9 @@ communicatie->communication
 communicaton->communication
 communikay->communiqué
 communikays->communiqués
+communisim->communism
+communisit->communist
+communisits->communists
 communitcate->communicate
 communitcated->communicated
 communitcates->communicates
@@ -7991,6 +8000,9 @@ communitcations->communications
 communites->communities
 communiy->community
 communiyt->community
+communsim->communism
+communsit->communist
+communsits->communists
 communuication->communication
 commutated->commuted
 commutating->commuting
@@ -8393,6 +8405,9 @@ comtainer->container
 comtains->contains
 comunicate->communicate
 comunication->communication
+comunism->communism
+comunist->communist
+comunists->communists
 comunity->community
 comute->commute, compute,
 comuted->commuted, computed,
@@ -16756,7 +16771,10 @@ exprience->experience
 exprienced->experienced
 expriences->experiences
 exprimental->experimental
+expropiate->expropriate
 expropiated->expropriated
+expropiates->expropriates
+expropiating->expropriating
 expropiation->expropriation
 exprot->export
 exproted->exported
@@ -21319,6 +21337,10 @@ intelligable->intelligible
 intemediary->intermediary
 intenal->internal
 intenational->international
+intenationalism->internationalism
+intenationalist->internationalist
+intenationalists->internationalists
+intenationally->internationally
 intendet->intended
 inteneded->intended
 intenisty->intensity
@@ -21385,6 +21407,10 @@ interates->iterates, interacts, integrated,
 interating->iterating, interacting, integrating,
 interation->iteration, interaction, integration,
 interational->international
+interationalism->internationalism
+interationalist->internationalist
+interationalists->internationalists
+interationally->internationally
 interations->iterations, interactions,
 interative->interactive
 interatively->interactively
@@ -21500,7 +21526,15 @@ intermperance->intemperance
 internall->internal, internally,
 internaly->internally
 internatinal->international
+internatinalism->internationalism
+internatinalist->internationalist
+internatinalists->internationalists
+internatinally->internationally
 internatioanl->international
+internatioanlism->internationalism
+internatioanlist->internationalist
+internatioanlists->internationalists
+internatioanlly->internationally
 internation->international
 internel->internal
 internels->internals
@@ -23287,6 +23321,9 @@ marging->margin, merging,
 margings->margins
 mariabd->MariaDB
 mariage->marriage
+marixsm->marxism
+marixst->marxist
+marixsts->marxists
 marjority->majority
 markaup->markup
 markes->marks, marked, markers,
@@ -23301,6 +23338,9 @@ marryied->married
 marshmellow->marshmallow
 marshmellows->marshmallows
 marter->martyr
+marxisim->marxism
+marxisit->marxist
+marxisits->marxists
 marz->March, Mars,
 masakist->masochist
 mashetty->machete
@@ -24766,6 +24806,18 @@ nasturshums->nasturtiums
 nastyness->nastiness
 natched->matched
 natches->matches
+natinal->matinal, national,
+natinalism->nationalism
+natinalist->nationalist
+natinalists->nationalists
+natinally->nationally
+natinals->nationals
+natioanl->national
+natioanlism->nationalism
+natioanlist->nationalist
+natioanlists->nationalists
+natioanlly->nationally
+natioanls->nationals
 nativelyx->natively
 natrual->natural
 naturaly->naturally
@@ -26042,6 +26094,8 @@ octohedron->octahedron
 ocuntries->countries
 ocuntry->country
 ocupied->occupied
+ocupier->occupier
+ocupiers->occupiers
 ocupies->occupies
 ocupy->occupy
 ocupying->occupying
@@ -28377,6 +28431,7 @@ polariy->polarity
 polgon->polygon
 polgons->polygons
 polical->political
+polically->politically
 policie->policies, policy, police,
 policiy->policy
 policys->policies, police,
@@ -28396,8 +28451,12 @@ pologon->polygon
 pologons->polygons
 polotic->politic
 polotical->political
+polotically->politically
 polotics->politics
+poltic->politic
 poltical->political
+poltically->politically
+poltics->politics
 poltry->poultry
 polulate->populate
 polulated->populated
@@ -31279,8 +31338,13 @@ refreshs->refreshes
 refreshses->refreshes
 refridgeration->refrigeration
 refridgerator->refrigerator
+refrom->reform
+refromation->reformation
 refromatting->refomatting
+refroming->reforming
 refromist->reformist
+refromists->reformists
+refroms->reforms
 refrormatting->reformatting
 refure->refuse
 refures->refuses
@@ -32945,6 +33009,7 @@ reveiwing->reviewing
 reveiws->reviews
 revelent->relevant
 revelution->revolution
+revelutionary->revolutionary
 revelutions->revolutions
 reveokes->revokes
 rever->revert, refer, fever,
@@ -32979,8 +33044,30 @@ reviwed->reviewed
 reviwer->reviewer
 reviwers->reviewers
 reviwing->reviewing
+revoltuion->revolution
+revoltuionary->revolutionary
+revoltuions->revolutions
 revoluion->revolution
+revoluionary->revolutionary
+revoluions->revolutions
+revoluiton->revolution
+revoluitonary->revolutionary
+revoluitons->revolutions
+revolulionary->revolutionary
+revolutin->revolution
+revolutinary->revolutionary
+revolutins->revolutions
+revolutionaary->revolutionary
+revolutionairy->revolutionary
 revolutionar->revolutionary
+revolutionaryy->revolutionary
+revolutionay->revolutionary
+revolutionnary->revolutionary
+revolutoin->revolutions
+revolutoinary->revolutionary
+revolutoins->revolutionss
+revoluttionary->revolutionary
+revoluutionary->revolutionary
 revrese->reverse
 revrieve->retrieve
 revrieved->retrieved
@@ -35065,6 +35152,8 @@ snytax->syntax
 Soalris->Solaris
 socail->social
 socalism->socialism
+socalist->socialist
+socalists->socialists
 socekts->sockets
 socities->societies
 socript->script
@@ -38889,9 +38978,25 @@ trooso->trousseau
 troosos->trousseaux, trousseaus,
 troosso->trousseau
 troossos->trousseaux, trousseaus,
+trotski->Trotsky
+trotskism->trotskyism
+trotskist->trotskyist
+trotskists->trotskyists
+trotskyite->trotskyist
+trotskyites->trotskyists
 trottle->throttle
 trottled->throttled, trotted,
 trottling->throttling, trotting,
+trotzki->Trotsky
+trotzkism->trotskyism
+trotzkist->trotskyist
+trotzkists->trotskyists
+trotzky->Trotsky
+trotzkyism->trotskyism
+trotzkyist->trotskyist
+trotzkyists->trotskyists
+trotzkyite->trotskyist
+trotzkyites->trotskyists
 troubador->troubadour
 troubadors->troubadours
 troubeshoot->troubleshoot
