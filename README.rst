@@ -135,8 +135,8 @@ be specified in this file (without the preceding dashes), for example:
 
 Codespell will also check in the current directory for a ``pyproject.toml``
 (or a path can be specified via ``--toml <filename>``) file, and the
-``[tool.codespell]`` entry will be used as long as the tomli_ package
-is installed, for example:
+``[tool.codespell]`` entry will be used, but only if the tomli_ package
+is installed for versions of Python prior to 3.11. For example:
 
 .. code-block:: toml
 
