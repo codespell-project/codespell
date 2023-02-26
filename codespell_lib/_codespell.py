@@ -136,11 +136,11 @@ class QuietLevels:
 
 
 class GlobMatch:
-    def __init__(self, pattern: Optional[str]) -> None:
+    def __init__(self, patterns: List[str]) -> None:
         self.pattern_list: Optional[List[str]]
-        if pattern:
+        if patterns:
             # Pattern might be a list of comma-delimited strings
-            self.pattern_list = ",".join(pattern).split(",")
+            self.pattern_list = ",".join(patterns).split(",")
         else:
             self.pattern_list = None
 
@@ -431,6 +431,16 @@ def parse_options(
     )
 
     parser.add_argument(
+        "--skip-file",
+        type=str,
+        metavar="FILE",
+        help="file that contains file paths that will be skipped "
+        "by codespell. File must contain 1 path per line. It"
+        "accepts globs as well. E.g.: if you want "
+        "codespell to skip .eps and .txt files you can.",
+    )
+
+    parser.add_argument(
         "-S",
         "--skip",
         action="append",
@@ -610,16 +620,10 @@ def parse_ignore_words_option(ignore_words_option: List[str]) -> Set[str]:
     return ignore_words
 
 
-def build_exclude_hashes(filename: str, exclude_lines: Set[str]) -> None:
+def add_file_lines(filename: str, target: Set[str], *, strip: bool = False) -> None:
     with open(filename, encoding="utf-8") as f:
         for line in f:
-            exclude_lines.add(line)
-
-
-def build_ignore_words(filename: str, ignore_words: Set[str]) -> None:
-    with open(filename, encoding="utf-8") as f:
-        for line in f:
-            ignore_words.add(line.strip())
+            target.add(line.strip() if strip else line)
 
 
 def build_dict(
@@ -1004,7 +1008,7 @@ def main(*args: str) -> int:
             )
             parser.print_help()
             return EX_USAGE
-        build_ignore_words(ignore_words_file, ignore_words)
+        add_file_lines(ignore_words_file, ignore_words, strip=True)
 
     uri_regex = options.uri_regex or uri_regex_def
     try:
@@ -1085,11 +1089,18 @@ def main(*args: str) -> int:
 
     exclude_lines: Set[str] = set()
     if options.exclude_file:
-        build_exclude_hashes(options.exclude_file, exclude_lines)
+        add_file_lines(options.exclude_file, exclude_lines)
+
+    skip: Set[str] = set()
+    if options.skip_file:
+        add_file_lines(options.skip_file, skip, strip=True)
+    if options.skip:
+        skip.update(options.skip)
+    # import ipdb; ipdb.set_trace()
 
     file_opener = FileOpener(options.hard_encoding_detection, options.quiet_level)
 
-    glob_match = GlobMatch(options.skip)
+    glob_match = GlobMatch(list(skip))
     try:
         glob_match.match("/random/path")  # does not need a real path
     except re.error:

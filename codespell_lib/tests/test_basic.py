@@ -439,6 +439,59 @@ def test_ignore(
     badjs = op.join(d, "bad.js")
     copyfile(badtxt, badjs)
     assert cs.main("--skip=*.js", goodtxt, badtxt, badjs) == 1
+    assert cs.main("--skip=*.js", d) == 2
+    assert cs.main("--skip=*.js,ignoredir", d) == 1
+
+
+def test_ignore_file(
+    tmpdir: pytest.TempPathFactory,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Test ignoring of files and directories."""
+    d = str(tmpdir)
+    goodtxt = op.join(d, "good.txt")
+    with open(goodtxt, "wb") as f:
+        f.write(b"this file is okay")
+    assert cs.main(d) == 0
+    badtxt = op.join(d, "bad.txt")
+    with open(badtxt, "wb") as f:
+        f.write(b"abandonned")
+    assert cs.main(d) == 1
+    with open(op.join(d, "skip.txt"), "wb") as f:
+        f.write(b"bad*\n")
+    assert cs.main("--skip-file", f.name, d) == 0
+    with open(op.join(d, "skip.txt"), "wb") as f:
+        f.write(b"bad.txt\n")
+    assert cs.main("--skip-file", f.name, d) == 0
+    subdir = op.join(d, "ignoredir")
+    os.mkdir(subdir)
+    with open(op.join(subdir, "bad.txt"), "bw") as f:
+        f.write(b"abandonned")
+    assert cs.main(d) == 2
+    with open(op.join(d, "skip.txt"), "wb") as f:
+        f.write(b"bad*\n")
+    assert cs.main("--skip-file", f.name, d) == 0
+    with open(op.join(d, "skip.txt"), "wb") as f:
+        f.write(b"*ignoredir*\n")
+    assert cs.main("--skip-file", f.name, d) == 1
+    with open(op.join(d, "skip.txt"), "wb") as f:
+        f.write(b"ignoredir\n")
+    assert cs.main("--skip-file", f.name, d) == 1
+    with open(op.join(d, "skip.txt"), "wb") as f:
+        f.write(b"*ignoredir/bad*\n")
+    assert cs.main("--skip-file", f.name, d) == 1
+    with open(op.join(d, "skip.txt"), "wb") as f:
+        f.write(b"*ignoredir/bad*\n")
+    assert cs.main("--skip-file", f.name, d) == 1
+    badjs = op.join(d, "bad.js")
+    copyfile(badtxt, badjs)
+    with open(op.join(d, "skip.txt"), "wb") as f:
+        f.write(b"*.js\n")
+    assert cs.main("--skip-file", f.name, goodtxt, badtxt, badjs) == 1
+    assert cs.main("--skip-file", f.name, d) == 2
+    with open(op.join(d, "skip.txt"), "wb") as f:
+        f.write(b"*.js\nignoredir\n")
+    assert cs.main("--skip-file", f.name, d) == 1
 
 
 def test_check_filename(
