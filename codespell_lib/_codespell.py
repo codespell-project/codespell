@@ -571,7 +571,7 @@ def parse_options(
     # Collect which config files are going to be used
     used_cfg_files = []
     for cfg_file in cfg_files:
-        _cfg = configparser.ConfigParser()
+        _cfg = configparser.ConfigParser(interpolation=None)
         _cfg.read(cfg_file)
         if _cfg.has_section("codespell"):
             used_cfg_files.append(cfg_file)
