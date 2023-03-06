@@ -683,6 +683,7 @@ def ask_for_word_fix(
     wrongword: str,
     misspelling: Misspelling,
     interactivity: int,
+    colors: TermColors,
 ) -> Tuple[bool, str]:
     if interactivity <= 0:
         return misspelling.fix, fix_case(wrongword, misspelling.data)
@@ -691,7 +692,16 @@ def ask_for_word_fix(
         r = ""
         fixword = fix_case(wrongword, misspelling.data)
         while not r:
-            print(f"{line}\t{wrongword} ==> {fixword} (Y/n) ", end="", flush=True)
+            # TODO: this might be different from how word is parsed etc.
+            # Ideally should operate on some information pointing to exact
+            # location of misspelling in the line
+            line_ui = re.sub(
+                rf"\b({wrongword})\b",
+                rf"{colors.WWORD}\1{colors.DISABLE}",
+                line,
+                flags=re.IGNORECASE,
+            )
+            print(f"{line_ui}\t{wrongword} ==> {fixword} (Y/n) ", end="", flush=True)
             r = sys.stdin.readline().strip().upper()
             if not r:
                 r = "Y"
@@ -878,7 +888,11 @@ def parse_file(
                         context_shown = True
                         print_context(lines, i, context)
                     fix, fixword = ask_for_word_fix(
-                        lines[i], word, misspellings[lword], options.interactive
+                        lines[i],
+                        word,
+                        misspellings[lword],
+                        options.interactive,
+                        colors=colors,
                     )
                     asked_for.add(lword)
 
