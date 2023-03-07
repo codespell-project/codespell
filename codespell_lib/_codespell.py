@@ -789,9 +789,11 @@ def apply_uri_ignore_words(
     for uri in re.findall(uri_regex, line):
         for uri_word in extract_words(uri, word_regex, ignore_word_regex):
             if uri_word in uri_ignore_words:
-                check_matches = [
-                    match for match in check_matches if match.group() != uri_word
-                ]
+                # determine/remove only the first among matches
+                for i, match in enumerate(check_matches):
+                    if match.group() == uri_word:
+                        check_matches = check_matches[:i] + check_matches[i + 1 :]
+                        break
     return check_matches
 
 
