@@ -680,27 +680,21 @@ def fix_case(word: str, fixword: str) -> str:
 
 def ask_for_word_fix(
     line: str,
-    wrongword: str,
+    match: re.Match,
     misspelling: Misspelling,
     interactivity: int,
     colors: TermColors,
 ) -> Tuple[bool, str]:
+    wrongword = match.group()
     if interactivity <= 0:
         return misspelling.fix, fix_case(wrongword, misspelling.data)
+
+    line_ui = rf"{line[:match.start()]}{colors.WWORD}{wrongword}{colors.DISABLE}{line[match.end():]}"
 
     if misspelling.fix and interactivity & 1:
         r = ""
         fixword = fix_case(wrongword, misspelling.data)
         while not r:
-            # TODO: this might be different from how word is parsed etc.
-            # Ideally should operate on some information pointing to exact
-            # location of misspelling in the line
-            line_ui = re.sub(
-                rf"\b({wrongword})\b",
-                rf"{colors.WWORD}\1{colors.DISABLE}",
-                line,
-                flags=re.IGNORECASE,
-            )
             print(f"{line_ui}\t{wrongword} ==> {fixword} (Y/n) ", end="", flush=True)
             r = sys.stdin.readline().strip().upper()
             if not r:
@@ -719,7 +713,7 @@ def ask_for_word_fix(
         r = ""
         opt = [w.strip() for w in misspelling.data.split(",")]
         while not r:
-            print(f"{line} Choose an option (blank for none): ", end="")
+            print(f"{line_ui} Choose an option (blank for none): ", end="")
             for i, o in enumerate(opt):
                 fixword = fix_case(wrongword, o)
                 print(f" {i}) {fixword}", end="")
@@ -757,26 +751,33 @@ def extract_words(
     text: str,
     word_regex: Pattern[str],
     ignore_word_regex: Optional[Pattern[str]],
-) -> List[str]:
+    finditer: bool = False,
+) -> List[str | re.Match]:
     if ignore_word_regex:
         text = ignore_word_regex.sub(" ", text)
-    return word_regex.findall(text)
+    if finditer:
+        return list(word_regex.finditer(text))
+    else:
+        return word_regex.findall(text)
 
 
 def apply_uri_ignore_words(
-    check_words: List[str],
+    check_matches: List[re.Match],
     line: str,
     word_regex: Pattern[str],
     ignore_word_regex: Optional[Pattern[str]],
     uri_regex: Pattern[str],
     uri_ignore_words: Set[str],
-) -> None:
+) -> List[re.Match]:
     if not uri_ignore_words:
-        return
+        return check_matches
     for uri in re.findall(uri_regex, line):
         for uri_word in extract_words(uri, word_regex, ignore_word_regex):
             if uri_word in uri_ignore_words:
-                check_words.remove(uri_word)
+                check_matches = [
+                    match for match in check_matches if match.group() == uri_word
+                ]
+    return check_matches
 
 
 def parse_file(
@@ -865,18 +866,20 @@ def parse_file(
         # outside, it will still be a spelling error.
         if "*" in uri_ignore_words:
             line = uri_regex.sub(" ", line)
-        check_words = extract_words(line, word_regex, ignore_word_regex)
+        check_matches = extract_words(
+            line, word_regex, ignore_word_regex, finditer=True
+        )
         if "*" not in uri_ignore_words:
-            apply_uri_ignore_words(
-                check_words,
+            check_matches = apply_uri_ignore_words(
+                check_matches,
                 line,
                 word_regex,
                 ignore_word_regex,
                 uri_regex,
                 uri_ignore_words,
             )
-
-        for word in check_words:
+        for match in check_matches:
+            word = match.group()
             lword = word.lower()
             if lword in misspellings:
                 context_shown = False
@@ -889,7 +892,7 @@ def parse_file(
                         print_context(lines, i, context)
                     fix, fixword = ask_for_word_fix(
                         lines[i],
-                        word,
+                        match,
                         misspellings[lword],
                         options.interactive,
                         colors=colors,
