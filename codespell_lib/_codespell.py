@@ -790,7 +790,7 @@ def apply_uri_ignore_words(
         for uri_word in extract_words(uri, word_regex, ignore_word_regex):
             if uri_word in uri_ignore_words:
                 check_matches = [
-                    match for match in check_matches if match.group() == uri_word
+                    match for match in check_matches if match.group() != uri_word
                 ]
     return check_matches
 
