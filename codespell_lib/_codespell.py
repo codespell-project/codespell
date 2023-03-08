@@ -563,10 +563,12 @@ def parse_options(
                         f"tomllib or tomli are required to read pyproject.toml "
                         f"but could not be imported, got: {e}"
                     ) from None
-        for toml_file in toml_files:
-            with open(toml_file, "rb") as f:
-                data = tomllib.load(f).get("tool", {})
-            config.read_dict(data)
+                tomllib = None
+        if tomllib is not None:
+            for toml_file in toml_files:
+                with open(toml_file, "rb") as f:
+                    data = tomllib.load(f).get("tool", {})
+                config.read_dict(data)
 
     # Collect which config files are going to be used
     used_cfg_files = []
