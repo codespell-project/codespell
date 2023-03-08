@@ -23,12 +23,10 @@ jobs:
           - '3.9'
           - '3.10'
           - '3.11'
-        toml:
-          - true
         include:
           - python-version: '3.10'
-            toml: false
-    name: ${{ matrix.python-version }} toml=${{ matrix.toml }}
+            no-toml: 'no-toml'
+    name: ${{ matrix.python-version }} ${{ matrix.no-toml }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -55,8 +53,9 @@ jobs:
       - run: |
           set -eo pipefail
           pip uninstall -yq tomli
+          echo "Running codespell without tomli"
           codespell codespell_lib/tests/__init__.py
-        if: ${{ !(matrix.toml) }})
+        if: ${{ matrix.no-toml == 'true' }}
 
 
   make-check-dictionaries:
