@@ -56,7 +56,7 @@ jobs:
           set -eo pipefail
           pip uninstall -yq tomli
           codespell codespell_lib/tests/__init__.py
-        if: not(${{ matrix.toml}})
+        if: ${{ !(matrix.toml) }})
 
 
   make-check-dictionaries:
