@@ -26,7 +26,7 @@ jobs:
         toml:
           - true
         include:
-          - python: '3.10'
+          - python-version: '3.10'
             toml: false
     name: ${{ matrix.python-version }} toml=${{ matrix.toml }}
     steps:
