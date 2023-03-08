@@ -23,6 +23,8 @@ jobs:
           - '3.9'
           - '3.10'
           - '3.11'
+        no-toml:
+          - ''
         include:
           - python-version: '3.10'
             no-toml: 'no-toml'
