@@ -2,7 +2,7 @@
 # For general usage in your repo, see the example in codespell.yml
 # https://github.com/codespell-project/codespell
 # Concurrency cancels an action on a given PR once a new commit is pushed
-name: Test Codespell
+name: Pytest
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number }}-${{ github.event.ref }}
   cancel-in-progress: true
@@ -47,13 +47,17 @@ jobs:
           pip install -e ".[dev]" # install the codespell dev packages
       - run: codespell --help
       - run: codespell --version
-      - run: pip uninstall -yq tomli
-        if: not(${{ matrix.toml}})
       - run: make check
       - uses: codecov/codecov-action@v3
       - run: codespell --check-filenames --skip="./.git/*,*.pyc,./codespell_lib/tests/test_basic.py,./codespell_lib/data/*,./example/code.c,./build/lib/codespell_lib/tests/test_basic.py,./build/lib/codespell_lib/data/*,README.rst,*.egg-info/*,pyproject-codespell.precommit-toml"
       # this file has an error
       - run: "! codespell codespell_lib/tests/test_basic.py"
+      - run: |
+          set -eo pipefail
+          pip uninstall -yq tomli
+          codespell codespell_lib/tests/__init__.py
+        if: not(${{ matrix.toml}})
+
 
   make-check-dictionaries:
     runs-on: ubuntu-latest
