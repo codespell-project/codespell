@@ -957,6 +957,35 @@ def test_uri_regex_def() -> None:
         assert not uri_regex.findall(boilerplate % uri), uri
 
 
+def test_quiet_option_32(
+    tmp_path: Path,
+    tmpdir: pytest.TempPathFactory,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    d = tmp_path / "files"
+    d.mkdir()
+    conf = str(tmp_path / "setup.cfg")
+    with open(conf, "w") as f:
+        # It must contain a "codespell" section.
+        f.write("[codespell]\n")
+    args = ("--config", conf)
+
+    # Config files should NOT be in output.
+    result = cs.main(str(d), *args, "--quiet-level=32", std=True)
+    assert isinstance(result, tuple)
+    code, stdout, _ = result
+    assert code == 0
+    assert "Used config files:" not in stdout
+
+    # Config files SHOULD be in output.
+    result = cs.main(str(d), *args, "--quiet-level=2", std=True)
+    assert isinstance(result, tuple)
+    code, stdout, _ = result
+    assert code == 0
+    assert "Used config files:" in stdout
+    assert "setup.cfg" in stdout
+
+
 @pytest.mark.parametrize("kind", ("toml", "cfg"))
 def test_config_toml(
     tmp_path: Path,
@@ -989,7 +1018,8 @@ count =
         )
     else:
         assert kind == "toml"
-        pytest.importorskip("tomli")
+        if sys.version_info < (3, 11):
+            pytest.importorskip("tomli")
         tomlfile = tmp_path / "pyproject.toml"
         args = ("--toml", tomlfile)
         tomlfile.write_text(

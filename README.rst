@@ -34,7 +34,20 @@ You can use ``pip`` to install codespell with e.g.:
 Usage
 -----
 
-For more in depth info please check usage with ``codespell -h``.
+Below are some simple usage examples to demonstrate how the tool works.
+For exhaustive usage information, please check the output of ``codespell -h``.
+
+Run codespell in all files of the current directory:
+
+.. code-block:: sh
+
+    codespell
+
+Run codespell in specific files or directories (specified via their names or glob patterns):
+
+.. code-block:: sh
+
+    codespell some_file some_dir/ *.ext
 
 Some noteworthy flags:
 
@@ -42,7 +55,7 @@ Some noteworthy flags:
 
     codespell -w, --write-changes
 
-The ``-w`` flag will actually implement the changes recommended by codespell. Not running with ``-w`` flag is the same as with doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.
+The ``-w`` flag will actually implement the changes recommended by codespell. Running without the ``-w`` flag is the same as with doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.
 
 .. code-block:: sh
 
@@ -122,8 +135,8 @@ be specified in this file (without the preceding dashes), for example:
 
 Codespell will also check in the current directory for a ``pyproject.toml``
 (or a path can be specified via ``--toml <filename>``) file, and the
-``[tool.codespell]`` entry will be used as long as the tomli_ package
-is installed, for example:
+``[tool.codespell]`` entry will be used, but only if the tomli_ package
+is installed for versions of Python prior to 3.11. For example:
 
 .. code-block:: toml
 
@@ -153,6 +166,29 @@ Any options specified in the command line will *override* options from the
 config files.
 
 .. _tomli: https://pypi.org/project/tomli/
+
+`pre-commit <https://pre-commit.com/>`_ hook
+--------------------------------------------
+
+codespell also works with `pre-commit`, using
+
+.. code-block:: yaml
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.2.2
+    hooks:
+    - id: codespell
+
+If one configures codespell using the `pyproject.toml` file instead use:
+
+.. code-block:: yaml
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.2.2
+    hooks:
+    - id: codespell
+      additional_dependencies:
+        - tomli
 
 Dictionary format
 -----------------
@@ -296,8 +332,8 @@ with the following terms:
 
    You should have received a copy of the GNU General Public License
    along with this program; if not, see
-   <http://www.gnu.org/licenses/old-licenses/gpl-2.0.html>.
+   <https://www.gnu.org/licenses/old-licenses/gpl-2.0.html>.
 
-.. _GPL v2: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+.. _GPL v2: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-``dictionary.txt`` and the other ``dictionary_*.txt`` files are derivative works of English Wikipedia and are released under the `Creative Commons Attribution-Share-Alike License 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>`_.
+``dictionary.txt`` and the other ``dictionary_*.txt`` files are derivative works of English Wikipedia and are released under the `Creative Commons Attribution-Share-Alike License 3.0 <https://creativecommons.org/licenses/by-sa/3.0/>`_.

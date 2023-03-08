@@ -7,6 +7,7 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.event.number }}-${{ github.event.ref }}
   cancel-in-progress: true
 on: [push, pull_request]
+permissions: {}
 jobs:
   test:
     env:
@@ -25,6 +26,8 @@ jobs:
     name: Python ${{ matrix.python-version }} test
     steps:
       - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
       - name: Setup python
         uses: actions/setup-python@v4
         with:
@@ -34,14 +37,14 @@ jobs:
         run: |
           python --version  # just to check
           pip install -U pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
-          pip install --upgrade chardet "setuptools!=47.2.0" docutils setuptools_scm[toml] twine
+          pip install --upgrade "setuptools!=47.2.0" docutils setuptools_scm[toml] twine
           pip install aspell-python-py3
           pip install -e ".[dev]" # install the codespell dev packages
       - run: codespell --help
       - run: codespell --version
       - run: make check
       - uses: codecov/codecov-action@v3
-      - run: codespell --check-filenames --skip="./.git/*,*.pyc,./codespell_lib/tests/test_basic.py,./codespell_lib/data/*,./example/code.c,./build/lib/codespell_lib/tests/test_basic.py,./build/lib/codespell_lib/data/*,README.rst,*.egg-info/*"
+      - run: codespell --check-filenames --skip="./.git/*,*.pyc,./codespell_lib/tests/test_basic.py,./codespell_lib/data/*,./example/code.c,./build/lib/codespell_lib/tests/test_basic.py,./build/lib/codespell_lib/data/*,README.rst,*.egg-info/*,pyproject-codespell.precommit-toml"
       # this file has an error
       - run: "! codespell codespell_lib/tests/test_basic.py"
 
@@ -53,6 +56,8 @@ jobs:
         with:
           python-version: 3.x
       - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
       - name: Install general dependencies
         run: pip install -U pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
       - name: Install codespell dependencies
@@ -63,6 +68,14 @@ jobs:
   flake8-annotation:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
       - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+      - name: Install codespell dependencies
+        run: pip install -e ".[dev]"
       - name: Flake8 with annotations
         uses: TrueBrain/actions-flake8@v2
