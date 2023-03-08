@@ -28,7 +28,7 @@ jobs:
         include:
           - python: '3.10'
             toml: false
-    name: Python ${{ matrix.python-version }} test
+    name: ${{ matrix.python-version }} toml=${{ matrix.toml }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -47,8 +47,8 @@ jobs:
           pip install -e ".[dev]" # install the codespell dev packages
       - run: codespell --help
       - run: codespell --version
-      - run: pip uninstall tomli
-        if: not(${{ matrix.notoml}})
+      - run: pip uninstall -yq tomli
+        if: not(${{ matrix.toml}})
       - run: make check
       - uses: codecov/codecov-action@v3
       - run: codespell --check-filenames --skip="./.git/*,*.pyc,./codespell_lib/tests/test_basic.py,./codespell_lib/data/*,./example/code.c,./build/lib/codespell_lib/tests/test_basic.py,./build/lib/codespell_lib/data/*,README.rst,*.egg-info/*,pyproject-codespell.precommit-toml"
