@@ -41,7 +41,7 @@ jobs:
       - name: Install dependencies
         run: |
           python --version  # just to check
-          pip install -U pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
+          pip install --upgrade pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
           pip install --upgrade "setuptools!=47.2.0" docutils setuptools_scm[toml] twine
           pip install aspell-python-py3
           pip install -e ".[dev]" # install the codespell dev packages
@@ -68,13 +68,13 @@ jobs:
         with:
           persist-credentials: false
       - name: Install general dependencies
-        run: pip install -U pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
+        run: pip install --upgrade pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
       - name: Install codespell dependencies
         run: pip install -e ".[dev]"
       - uses: codespell-project/sort-problem-matcher@v1
       - run: make check-dictionaries
 
-  flake8-annotation:
+  ruff-annotation:
     runs-on: ubuntu-latest
     steps:
       - name: Setup python
@@ -86,5 +86,5 @@ jobs:
           persist-credentials: false
       - name: Install codespell dependencies
         run: pip install -e ".[dev]"
-      - name: Flake8 with annotations
-        uses: TrueBrain/actions-flake8@v2
+      - name: Ruff with annotations
+        run: ruff --select=ANN --ignore=ANN101,ANN401 .

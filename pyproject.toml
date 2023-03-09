@@ -34,12 +34,11 @@ dynamic = ["version"]
 dev = [
     "build",
     "chardet",
-    "flake8",
-    "flake8-pyproject",
     "pytest",
     "pytest-cov",
     "pytest-dependency",
     "Pygments",
+    "ruff",
     "tomli"
 ]
 hard-encoding-detection = [
@@ -64,16 +63,16 @@ homepage = "https://github.com/codespell-project/codespell"
 repository = "https://github.com/codespell-project/codespell"
 
 [build-system]
-requires = ["setuptools>=64", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
+requires = ["setuptools>=64", "setuptools_scm[toml]>=6.2"]
 
 [tool.setuptools_scm]
 write_to = "codespell_lib/_version.py"
 
 [tool.setuptools.packages.find]
 exclude = [
+    "dist",
     "snap",
-    "dist"
 ]
 
 [tool.setuptools.package-data]
@@ -88,67 +87,60 @@ in-place = true
 recursive = true
 expand-star-imports = true
 
-[tool.bandit]
-skip = "B101,B404,B603"
-recursive = true
-
 # TODO: reintegrate codespell configuration after updating test cases
 #[tool.codespell]
 #builtin = ["clear","rare","informal","usage","code","names"]
 #ignore-words-list = ["uint"]
 #skip=[ "./.*","codespell_lib/data/*","codespell_lib/tests/*"]
 
-[tool.flake8]
-max-line-length = "88"
-extend-ignore = "E203"
-
-[tool.isort]
-profile = "black"
-
 [tool.mypy]
 pretty = true
 show_error_codes = true
 strict = true
 
-[tool.pylint]
-reports=false
-py-version="3.7"
-disable = [
-          "broad-except",
-          "consider-using-f-string",
-          "consider-using-dict-items",
-          "consider-using-with",
-          "fixme",
-          "import-error",
-          "import-outside-toplevel",
-          "invalid-name",
-          "line-too-long",
-          "missing-class-docstring",
-          "missing-module-docstring",
-          "missing-function-docstring",
-          "no-else-raise",
-          "no-else-return",
-          "raise-missing-from",
-          "redefined-outer-name",
-          "subprocess-run-check",
-          "too-many-arguments",
-          "too-many-lines",
-          "too-many-locals",
-          "too-many-branches",
-          "too-many-statements",
-          "too-many-return-statements",
-          "too-few-public-methods",
-          "unneeded-not",
-          "unspecified-encoding",
-          "unused-argument",
-          "unused-variable",
-          "use-maxsplit-arg"
-]
-
-
-[tool.pylint.FORMAT]
-good-names=["F","r","i","n"]
-# include-naming-hint=yes
-
 [tool.pytest.ini_options]
 addopts = "--cov=codespell_lib -rs --cov-report= --tb=short --junit-xml=junit-results.xml"
+
+[tool.ruff]
+extend-ignore = [
+    "A003",
+    "ANN101",
+    "ANN401",
+    "B904",
+    "N802",
+    "N812",
+    "PLW2901",
+    "S101",
+    "UP031",
+]
+line-length = 88
+select = [
+    "A",
+    "ANN",
+    "B",
+    "C4",
+    "C9",
+    "E",
+    "F",
+    "I",
+    "N",
+    "PLC",
+    "PLE",
+    "PLR",
+    "PLW",
+    "S",
+    "U",
+    "W",
+    "YTT",
+]
+target-version = "py37"
+
+[tool.ruff.mccabe]
+max-complexity = 45
+
+[tool.ruff.pylint]
+allow-magic-value-types = ["bytes", "int", "str",]
+max-args = 12
+max-branches = 48
+max-returns = 10
+max-statements = 111
