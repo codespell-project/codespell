@@ -2,11 +2,11 @@ SORT_ARGS := -f -b
 
 DICTIONARIES := codespell_lib/data/dictionary*.txt
 
-PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dist flake8 pytest pypi clean
+PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dist pytest pypi ruff clean
 
 all: check-dictionaries codespell.1
 
-check: check-dictionaries check-dist flake8 pytest
+check: check-dictionaries check-dist pytest ruff
 
 codespell.1: codespell.1.include Makefile
 	PYTHONPATH=. help2man codespell --include codespell.1.include --no-info --output codespell.1
@@ -46,8 +46,8 @@ check-dist:
 	twine check --strict $(TMP)/*
 	rm -rf $(TMP)
 
-flake8:
-	flake8
+ruff:
+	ruff .
 
 pytest:
 	@if command -v pytest > /dev/null; then \
