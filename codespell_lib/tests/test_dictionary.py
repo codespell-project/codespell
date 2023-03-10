@@ -34,7 +34,7 @@ global_pairs: Set[Tuple[str, str]] = set()
 # Filename, should be seen as errors in aspell or not
 _data_dir = op.join(op.dirname(__file__), "..", "data")
 _fnames_in_aspell = [
-    (op.join(_data_dir, "dictionary%s.txt" % d[2]), d[3:5], d[5:7])
+    (op.join(_data_dir, f"dictionary{d[2]}.txt"), d[3:5], d[5:7])
     for d in _builtin_dictionaries
 ]
 fname_params = pytest.mark.parametrize(
@@ -89,10 +89,7 @@ def _check_aspell(
         spellers[lang].check(phrase.encode(spellers[lang].ConfigKeys()["encoding"][1]))
         for lang in languages
     )
-    end = "be in aspell dictionaries ({}) for dictionary {}".format(
-        ", ".join(languages),
-        fname,
-    )
+    end = f"be in aspell dictionaries ({', '.join(languages)}) for dictionary {fname}"
     if in_aspell:  # should be an error in aspell
         assert this_in_aspell, f"{msg} should {end}"
     else:  # shouldn't be
@@ -116,8 +113,8 @@ def _check_err_rep(
     fname: str,
     languages: Tuple[Iterable[str], Iterable[str]],
 ) -> None:
-    assert whitespace.search(err) is None, "error %r has whitespace" % err
-    assert "," not in err, "error %r has a comma" % err
+    assert whitespace.search(err) is None, f"error {err!r} has whitespace"
+    assert "," not in err, f"error {err!r} has a comma"
     assert len(rep) > 0, f"error {err}: correction {rep!r} must be non-empty"
     assert not start_whitespace.match(
         rep
@@ -143,7 +140,7 @@ def _check_err_rep(
     if rep.count(","):
         assert rep.endswith(
             ","
-        ), "error %s: multiple corrections must end " 'with trailing ","' % (err,)
+        ), f"error {err}: multiple corrections must end with trailing \",\""
     reps = [r.strip() for r in rep.split(",")]
     reps = [r for r in reps if len(r)]
     for r in reps:
@@ -162,7 +159,7 @@ def _check_err_rep(
     reps = [r.lower() for r in reps]
     assert len(set(reps)) == len(
         reps
-    ), 'error %s: corrections "%s" are not ' "(lower-case) unique" % (err, rep)
+    ), f"error {err}: corrections \"{rep}\" are not (lower-case) unique"
 
 
 @pytest.mark.parametrize(

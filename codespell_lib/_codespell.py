@@ -750,7 +750,7 @@ def print_context(
     # context = (context_before, context_after)
     for i in range(index - context[0], index + context[1] + 1):
         if 0 <= i < len(lines):
-            print("{} {}".format(">" if i == index else ":", lines[i].rstrip()))
+            print(f"{'>' if i == index else ':'} {lines[i].rstrip()}")
 
 
 def _ignore_word_sub(
