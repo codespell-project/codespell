@@ -140,7 +140,7 @@ def _check_err_rep(
     if rep.count(","):
         assert rep.endswith(
             ","
-        ), f"error {err}: multiple corrections must end with trailing \",\""
+        ), f'error {err}: multiple corrections must end with trailing ","'
     reps = [r.strip() for r in rep.split(",")]
     reps = [r for r in reps if len(r)]
     for r in reps:
@@ -159,7 +159,7 @@ def _check_err_rep(
     reps = [r.lower() for r in reps]
     assert len(set(reps)) == len(
         reps
-    ), f"error {err}: corrections \"{rep}\" are not (lower-case) unique"
+    ), f'error {err}: corrections "{rep}" are not (lower-case) unique'
 
 
 @pytest.mark.parametrize(
