@@ -103,14 +103,9 @@ addopts = "--cov=codespell_lib -rs --cov-report= --tb=short --junit-xml=junit-re
 
 [tool.ruff]
 extend-ignore = [
-    "A003",
     "ANN101",
-    "ANN401",
     "B904",
-    "N802",
-    "N812",
     "PLW2901",
-    "S101",
 ]
 line-length = 88
 select = [
@@ -136,6 +131,11 @@ target-version = "py37"
 
 [tool.ruff.mccabe]
 max-complexity = 45
+
+[tool.ruff.per-file-ignores]
+"codespell_lib/_codespell.py" = ["A003"]
+"codespell_lib/tests/test_*" = ["S101"]
+"codespell_lib/tests/test_basic.py" = ["ANN401", "N802"]
 
 [tool.ruff.pylint]
 allow-magic-value-types = ["bytes", "int", "str",]
