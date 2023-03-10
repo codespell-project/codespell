@@ -111,7 +111,6 @@ extend-ignore = [
     "N812",
     "PLW2901",
     "S101",
-    "UP031",
 ]
 line-length = 88
 select = [
