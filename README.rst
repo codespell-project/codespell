@@ -175,7 +175,7 @@ codespell also works with `pre-commit`, using
 .. code-block:: yaml
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.2
+    rev: v2.2.4
     hooks:
     - id: codespell
 
@@ -184,7 +184,7 @@ If one configures codespell using the `pyproject.toml` file instead use:
 .. code-block:: yaml
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.2
+    rev: v2.2.4
     hooks:
     - id: codespell
       additional_dependencies:
