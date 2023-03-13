@@ -228,7 +228,6 @@ class FileOpener:
                     break
         self.encdetector.close()
         encoding = self.encdetector.result["encoding"]
-        assert encoding is not None  # noqa: S101
 
         try:
             f = open(filename, encoding=encoding, newline="")
@@ -245,7 +244,7 @@ class FileOpener:
             lines = f.readlines()
             f.close()
 
-        return lines, encoding
+        return lines, f.encoding
 
     def open_with_internal(self, filename: str) -> Tuple[List[str], str]:
         encoding = None
