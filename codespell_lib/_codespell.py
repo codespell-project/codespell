@@ -587,7 +587,7 @@ def parse_options(
             cfg_args.append(f"--{key}")
             # If value is blank, skip.
             val = config["codespell"][key]
-            if val != "":
+            if val:
                 cfg_args.append(val)
 
         # Parse config file options.
