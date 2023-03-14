@@ -105,6 +105,7 @@ addopts = "--cov=codespell_lib -rs --cov-report= --tb=short --junit-xml=junit-re
 extend-ignore = [
     "ANN101",
     "B904",
+    "PLC1901",
     "PLW2901",
 ]
 line-length = 88
@@ -112,7 +113,7 @@ select = [
     "A",
     "ANN",
     "B",
-    "C4",
+    "C40",
     "C9",
     "E",
     "F",
