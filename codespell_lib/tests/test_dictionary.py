@@ -20,12 +20,12 @@ except Exception as exp:  # probably ImportError, but maybe also language
     if os.getenv("REQUIRE_ASPELL", "false").lower() == "true":
         raise RuntimeError(
             "Cannot run complete tests without aspell when "
-            "REQUIRE_ASPELL=true. Got error during import:\n%s" % (exp,)
+            "REQUIRE_ASPELL=true. Got error during import:\n{}".format(exp)
         )
     else:
         warnings.warn(
             "aspell not found, but not required, skipping aspell tests. Got "
-            "error during import:\n%s" % (exp,)
+            "error during import:\n{}".format(exp)
         )
 
 global_err_dicts: Dict[str, Dict[str, Any]] = {}
@@ -289,8 +289,8 @@ def test_dictionary_looping(
     for err in this_err_dict:
         for r in this_err_dict[err]:
             assert r not in this_err_dict, (
-                "error %s: correction %s is an error itself in the same "
-                "dictionary file %s" % (err, r, short_fname)
+                "error {}: correction {} is an error itself in the same "
+                "dictionary file {}".format(err, r, short_fname)
             )
     pair = (short_fname, short_fname)
     assert pair not in global_pairs
