@@ -141,7 +141,7 @@ def test_basic(
     assert isinstance(result, tuple)
     code, stdout, stderr = result
     assert code == 0
-    assert stdout == stderr == ""
+    assert not stdout and not stderr
     assert cs.main(tmp_path) == 0
 
     # empty directory
@@ -266,7 +266,7 @@ def test_summary(
     assert isinstance(result, tuple)
     code, stdout, stderr = result
     assert code == 0
-    assert stdout == stderr == "", "no output"
+    assert not stdout and not stderr, "no output"
     result = cs.main(fname, "--summary", std=True)
     assert isinstance(result, tuple)
     code, stdout, stderr = result
@@ -375,12 +375,12 @@ def test_encoding(
     assert isinstance(result, tuple)
     code, stdout, stderr = result
     assert code == 0
-    assert stdout == stderr == ""
+    assert not stdout and not stderr
     result = cs.main("-q", "0", fname, std=True, count=False)
     assert isinstance(result, tuple)
     code, stdout, stderr = result
     assert code == 0
-    assert stdout == ""
+    assert not stdout
     assert "WARNING: Binary file" in stderr
 
 
