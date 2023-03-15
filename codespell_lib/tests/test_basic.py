@@ -384,6 +384,16 @@ def test_encoding(
     assert "WARNING: Binary file" in stderr
 
 
+def test_unknown_encoding_chardet(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Test opening a file with unknown encoding using chardet"""
+    fname = tmp_path / "tmp"
+    fname.touch()
+    assert cs.main("--hard-encoding-detection", fname) == 0
+
+
 def test_ignore(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
