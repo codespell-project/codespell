@@ -139,8 +139,14 @@ class GlobMatch:
     def __init__(self, pattern: Optional[str]) -> None:
         self.pattern_list: Optional[List[str]]
         if pattern:
-            # Pattern might be a list of comma-delimited strings
-            self.pattern_list = ",".join(pattern).split(",")
+            self.pattern_list = [
+                # We remove trailing path separators from each pattern
+                # because shell completion might add a trailing separator
+                # '/' after directory names
+                p.rstrip(os.path.sep)
+                # Pattern might be a list of comma-separated patterns
+                for p in ",".join(pattern).split(",")
+            ]
         else:
             self.pattern_list = None
 
@@ -595,6 +601,10 @@ def parse_options(
 
         # Re-parse command line options to override config.
         options = parser.parse_args(list(args), namespace=options)
+
+    # Add a phony option than can be changed into a real option when we
+    # are ready to deprecate old patterns (./foo/bar instead of foo/bar)
+    options.deprecated = True
 
     if not options.files:
         options.files.append(".")
@@ -1135,28 +1145,44 @@ def main(*args: str) -> int:
 
     bad_count = 0
     for filename in options.files:
-        # ignore hidden files
+        # ignore hidden file or directory
         if is_hidden(filename, options.check_hidden):
             continue
 
         if os.path.isdir(filename):
             for root, dirs, files in os.walk(filename):
-                if glob_match.match(root):  # skip (absolute) directories
+                rel_root = os.path.relpath(root, filename)
+                # skip matching relative and "as is" directory paths
+                if (
+                    glob_match.match(rel_root)
+                    or glob_match.match(root) and options.deprecated
+                ):
                     del dirs[:]
                     continue
-                if is_hidden(root, options.check_hidden):  # dir itself hidden
+
+                # ignore hidden directory
+                if is_hidden(root, options.check_hidden):
                     continue
+
+                # files
                 for file_ in files:
-                    # ignore hidden files in directories
+                    # ignore hidden files
                     if is_hidden(file_, options.check_hidden):
                         continue
-                    if glob_match.match(file_):  # skip files
+                    # skip base file name
+                    if glob_match.match(file_):
                         continue
-                    fname = os.path.join(root, file_)
-                    if glob_match.match(fname):  # skip paths
+                    abs_path = os.path.join(root, file_)
+                    rel_path = os.path.join(rel_root, file_)
+                    # skip matching relative and "as is" file paths
+                    if (
+                        glob_match.match(rel_path)
+                        or glob_match.match(abs_path) and options.deprecated
+                    ):
                         continue
+
                     bad_count += parse_file(
-                        fname,
+                        abs_path,
                         colors,
                         summary,
                         misspellings,
@@ -1170,10 +1196,10 @@ def main(*args: str) -> int:
                         options,
                     )
 
-                # skip (relative) directories
+                # skip base directory name
                 dirs[:] = [dir_ for dir_ in dirs if not glob_match.match(dir_)]
 
-        elif not glob_match.match(filename):  # skip files
+        elif not glob_match.match(filename):  # skip file
             bad_count += parse_file(
                 filename,
                 colors,

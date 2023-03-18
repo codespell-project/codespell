@@ -83,14 +83,14 @@ Comma-separated list of files to skip. It accepts globs as well.  Examples:
 
 * to skip .eps & .txt files, invoke ``codespell --skip="*.eps,*.txt"``
 
-* to skip directories, invoke ``codespell --skip="./src/3rd-Party,./src/Test"``
+* to skip directories, invoke ``codespell --skip="src/3rd-Party,src/Test"``
 
 
 Useful commands:
 
 .. code-block:: sh
 
-    codespell -d -q 3 --skip="*.po,*.ts,./src/3rdParty,./src/Test"
+    codespell -d -q 3 --skip="*.po,*.ts,src/3rdParty,src/Test"
 
 List all typos found except translation files and some directories.
 Display them without terminal colors and with a quiet level of 3.
@@ -129,7 +129,7 @@ be specified in this file (without the preceding dashes), for example:
 .. code-block:: ini
 
     [codespell]
-    skip = *.po,*.ts,./src/3rdParty,./src/Test
+    skip = *.po,*.ts,src/3rdParty,src/Test
     count =
     quiet-level = 3
 
@@ -149,7 +149,7 @@ These are both equivalent to running:
 
 .. code-block:: sh
 
-    codespell --quiet-level 3 --count --skip "*.po,*.ts,./src/3rdParty,./src/Test"
+    codespell --quiet-level 3 --count --skip "*.po,*.ts,src/3rdParty,src/Test"
 
 If several config files are present, they are read in the following order:
 
