@@ -755,11 +755,23 @@ def test_uri_regex_option(
     assert cs.main(fname, "--uri-regex=.*", "--uri-ignore-words-list=abandonned") == 0
 
 
-def test_uri_ignore_words_list_option_uri(
+def test_uri_ignore_words_option(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test ignore regex option functionality."""
+
+    # Invalid uri-ignore-words file.
+    result = cs.main("--uri-ignore-words=_does_not_exist_", std=True)
+    assert isinstance(result, tuple)
+    code, stdout, stderr = result
+    assert code == EX_USAGE
+    assert "usage:" in stdout
+    assert "ERROR:" in stderr
+
+    # Create valid uri-ignore-words file.
+    ignore_file = tmp_path / "uri_ignore_words_file.txt"
+    ignore_file.write_text("abandonned\n")
 
     fname = tmp_path / "flag.txt"
     fname.write_text("# Please see http://example.com/abandonned for info\n")
@@ -771,6 +783,7 @@ def test_uri_ignore_words_list_option_uri(
     assert cs.main(fname, "--uri-ignore-words-list=foo,example") == 1
     # A word can be ignored.
     assert cs.main(fname, "--uri-ignore-words-list=abandonned") == 0
+    assert cs.main(fname, f"--uri-ignore-words={ignore_file}") == 0
     assert cs.main(fname, "--uri-ignore-words-list=foo,abandonned,bar") == 0
     assert cs.main(fname, "--uri-ignore-words-list=*") == 0
     # The match must be for the complete word.
@@ -781,11 +794,10 @@ def test_uri_ignore_words_list_option_uri(
     assert cs.main(fname) == 2
     # Ignoring the value in the URI won't ignore the word completely.
     assert cs.main(fname, "--uri-ignore-words-list=abandonned") == 1
+    assert cs.main(fname, f"--uri-ignore-words={ignore_file}") == 1
     assert cs.main(fname, "--uri-ignore-words-list=*") == 1
     # The regular --ignore-words-list will ignore both.
     assert cs.main(fname, "--ignore-words-list=abandonned") == 0
-
-    variation_option = "--uri-ignore-words-list=abandonned"
 
     # Variations where an error is ignored.
     for variation in (
@@ -806,7 +818,8 @@ def test_uri_ignore_words_list_option_uri(
     ):
         fname.write_text(variation)
         assert cs.main(fname) == 1, variation
-        assert cs.main(fname, variation_option) == 0, variation
+        assert cs.main(fname, "--uri-ignore-words-list=abandonned") == 0, variation
+        assert cs.main(fname, f"--uri-ignore-words={ignore_file}") == 0, variation
 
     # Variations where no error is ignored.
     for variation in (
@@ -817,7 +830,8 @@ def test_uri_ignore_words_list_option_uri(
     ):
         fname.write_text(variation)
         assert cs.main(fname) == 1, variation
-        assert cs.main(fname, variation_option) == 1, variation
+        assert cs.main(fname, "--uri-ignore-words-list=abandonned") == 1, variation
+        assert cs.main(fname, f"--uri-ignore-words={ignore_file}") == 1, variation
 
 
 def test_uri_ignore_words_list_option_email(
