@@ -25,7 +25,8 @@ except Exception as exp:  # probably ImportError, but maybe also language
     else:
         warnings.warn(
             "aspell not found, but not required, skipping aspell tests. Got "
-            "error during import:\n{}".format(exp)
+            "error during import:\n{}".format(exp),
+            stacklevel=2,
         )
 
 global_err_dicts: Dict[str, Dict[str, Any]] = {}
