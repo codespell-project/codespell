@@ -1171,7 +1171,12 @@ def main(*args: str) -> int:
                     )
 
                 # skip (relative) directories
-                dirs[:] = [dir_ for dir_ in dirs if not glob_match.match(dir_)]
+                dirs[:] = [
+                    dir_
+                    for dir_ in dirs
+                    if not glob_match.match(dir_)
+                    and not is_hidden(dir_, options.check_hidden)
+                ]
 
         elif not glob_match.match(filename):  # skip files
             bad_count += parse_file(
