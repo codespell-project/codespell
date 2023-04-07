@@ -20,12 +20,13 @@ except Exception as exp:  # probably ImportError, but maybe also language
     if os.getenv("REQUIRE_ASPELL", "false").lower() == "true":
         raise RuntimeError(
             "Cannot run complete tests without aspell when "
-            "REQUIRE_ASPELL=true. Got error during import:\n%s" % (exp,)
+            "REQUIRE_ASPELL=true. Got error during import:\n{}".format(exp)
         )
     else:
         warnings.warn(
             "aspell not found, but not required, skipping aspell tests. Got "
-            "error during import:\n%s" % (exp,)
+            "error during import:\n{}".format(exp),
+            stacklevel=2,
         )
 
 global_err_dicts: Dict[str, Dict[str, Any]] = {}
@@ -34,7 +35,7 @@ global_pairs: Set[Tuple[str, str]] = set()
 # Filename, should be seen as errors in aspell or not
 _data_dir = op.join(op.dirname(__file__), "..", "data")
 _fnames_in_aspell = [
-    (op.join(_data_dir, "dictionary%s.txt" % d[2]), d[3:5], d[5:7])
+    (op.join(_data_dir, f"dictionary{d[2]}.txt"), d[3:5], d[5:7])
     for d in _builtin_dictionaries
 ]
 fname_params = pytest.mark.parametrize(
@@ -89,10 +90,7 @@ def _check_aspell(
         spellers[lang].check(phrase.encode(spellers[lang].ConfigKeys()["encoding"][1]))
         for lang in languages
     )
-    end = "be in aspell dictionaries ({}) for dictionary {}".format(
-        ", ".join(languages),
-        fname,
-    )
+    end = f"be in aspell dictionaries ({', '.join(languages)}) for dictionary {fname}"
     if in_aspell:  # should be an error in aspell
         assert this_in_aspell, f"{msg} should {end}"
     else:  # shouldn't be
@@ -116,15 +114,15 @@ def _check_err_rep(
     fname: str,
     languages: Tuple[Iterable[str], Iterable[str]],
 ) -> None:
-    assert whitespace.search(err) is None, "error %r has whitespace" % err
-    assert "," not in err, "error %r has a comma" % err
+    assert whitespace.search(err) is None, f"error {err!r} has whitespace"
+    assert "," not in err, f"error {err!r} has a comma"
     assert len(rep) > 0, f"error {err}: correction {rep!r} must be non-empty"
     assert not start_whitespace.match(
         rep
     ), f"error {err}: correction {rep!r} cannot start with whitespace"
     _check_aspell(err, f"error {err!r}", in_aspell[0], fname, languages[0])
     prefix = f"error {err}: correction {rep!r}"
-    for (regex, msg) in [
+    for regex, msg in [
         (start_comma, "%s starts with a comma"),
         (
             whitespace_comma,
@@ -143,7 +141,7 @@ def _check_err_rep(
     if rep.count(","):
         assert rep.endswith(
             ","
-        ), "error %s: multiple corrections must end " 'with trailing ","' % (err,)
+        ), f'error {err}: multiple corrections must end with trailing ","'
     reps = [r.strip() for r in rep.split(",")]
     reps = [r for r in reps if len(r)]
     for r in reps:
@@ -162,7 +160,7 @@ def _check_err_rep(
     reps = [r.lower() for r in reps]
     assert len(set(reps)) == len(
         reps
-    ), 'error %s: corrections "%s" are not ' "(lower-case) unique" % (err, rep)
+    ), f'error {err}: corrections "{rep}" are not (lower-case) unique'
 
 
 @pytest.mark.parametrize(
@@ -292,8 +290,8 @@ def test_dictionary_looping(
     for err in this_err_dict:
         for r in this_err_dict[err]:
             assert r not in this_err_dict, (
-                "error %s: correction %s is an error itself in the same "
-                "dictionary file %s" % (err, r, short_fname)
+                "error {}: correction {} is an error itself in the same "
+                "dictionary file {}".format(err, r, short_fname)
             )
     pair = (short_fname, short_fname)
     assert pair not in global_pairs

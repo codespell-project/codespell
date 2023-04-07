@@ -24,6 +24,8 @@ errorstring->error string
 exitst->exits, exists,
 falsy->falsely, false,
 files'->file's
+gadjet->gadget
+gadjets->gadgets
 gae->game, Gael, gale,
 hist->heist, his,
 iam->I am, aim,
@@ -32,8 +34,8 @@ ifset->if set
 isenough->is enough
 ith->with
 jupyter->Jupiter
-keyserver->key server
-keyservers->key servers
+keypair->key pair
+keypairs->key pairs
 lateset->latest
 lite->light
 movei->movie
@@ -60,9 +62,12 @@ rendir->render
 rendirs->renders
 ro->to, row, rob, rod, roe, rot,
 seeked->sought
+shouldnot->should not, shouldn't,
 sinc->sync, sink, since,
 sincs->syncs, sinks, since,
 snd->send, and, sound,
+sockt->socket
+sockts->sockets
 spawnve->spawn
 stdio->studio
 stdios->studios
