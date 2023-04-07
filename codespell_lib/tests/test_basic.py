@@ -342,10 +342,10 @@ def test_exclude_file(
     bad_name = tmp_path / "bad.txt"
     # check all possible combinations of lines to ignore and ignores
     combinations = "".join(
-        "%(n)s abandonned %(n)s\n"
-        "%(n)s abandonned %(n)s\r\n"
-        "%(n)s abandonned %(n)s \n"
-        "%(n)s abandonned %(n)s \r\n" % {"n": n}
+        f"{n} abandonned {n}\n"
+        f"{n} abandonned {n}\r\n"
+        f"{n} abandonned {n} \n"
+        f"{n} abandonned {n} \r\n"
         for n in range(1, 5)
     )
     bad_name.write_bytes(
