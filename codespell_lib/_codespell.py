@@ -216,8 +216,7 @@ class FileOpener:
     def open(self, filename: str) -> Tuple[List[str], str]:
         if self.use_chardet:
             return self.open_with_chardet(filename)
-        else:
-            return self.open_with_internal(filename)
+        return self.open_with_internal(filename)
 
     def open_with_chardet(self, filename: str) -> Tuple[List[str], str]:
         self.encdetector.reset()
@@ -672,7 +671,7 @@ def is_text_file(filename: str) -> bool:
 def fix_case(word: str, fixword: str) -> str:
     if word == word.capitalize():
         return ", ".join(w.strip().capitalize() for w in fixword.split(","))
-    elif word == word.upper():
+    if word == word.upper():
         return fixword.upper()
     # they are both lower case
     # or we don't have any idea

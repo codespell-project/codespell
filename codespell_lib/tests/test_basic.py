@@ -50,8 +50,7 @@ class MainWrapper:
             assert code == 0
         if std:
             return (code, stdout, stderr)
-        else:
-            return code
+        return code
 
 
 cs = MainWrapper()
@@ -172,7 +171,7 @@ def test_bad_glob(
     assert cs.main("--skip", "[[]b-a[]].txt", g) == 0
 
 
-@pytest.mark.skipif(not sys.platform == "linux", reason="Only supported on Linux")
+@pytest.mark.skipif(sys.platform != "linux", reason="Only supported on Linux")
 def test_permission_error(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
