@@ -22,12 +22,11 @@ except Exception as exp:  # probably ImportError, but maybe also language
             "Cannot run complete tests without aspell when "
             "REQUIRE_ASPELL=true. Got error during import:\n{}".format(exp)
         )
-    else:
-        warnings.warn(
-            "aspell not found, but not required, skipping aspell tests. Got "
-            "error during import:\n{}".format(exp),
-            stacklevel=2,
-        )
+    warnings.warn(
+        "aspell not found, but not required, skipping aspell tests. Got "
+        "error during import:\n{}".format(exp),
+        stacklevel=2,
+    )
 
 global_err_dicts: Dict[str, Dict[str, Any]] = {}
 global_pairs: Set[Tuple[str, str]] = set()
@@ -66,7 +65,7 @@ def test_dictionary_formatting(
             try:
                 _check_err_rep(err, rep, in_aspell, fname, in_dictionary)
             except AssertionError as exp:
-                errors.append(str(exp).split("\n")[0])
+                errors.append(str(exp).split("\n", maxsplit=1)[0])
     if errors:
         raise AssertionError("\n" + "\n".join(errors))
 
