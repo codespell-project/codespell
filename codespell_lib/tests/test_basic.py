@@ -63,7 +63,10 @@ def run_codespell(
     """Run codespell."""
     args = tuple(str(arg) for arg in args)
     proc = subprocess.run(
-        ["codespell", "--count", *args], cwd=cwd, capture_output=True, encoding="utf-8"
+        ["codespell", "--count", *args],  # noqa: S603, S607
+        cwd=cwd,
+        capture_output=True,
+        encoding="utf-8",
     )
     count = int(proc.stderr.split("\n")[-2])
     return count
