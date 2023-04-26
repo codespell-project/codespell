@@ -14711,7 +14711,11 @@ endiif->endif
 endiness->endianness
 endnoden->endnode
 endoint->endpoint
+endoints->endpoints
 endolithes->endoliths
+endpdoint->endpoint
+endpdoints->endpoints
+endpint->endpoint
 endpints->endpoints
 endpiont->endpoint
 endpionts->endpoints
@@ -14719,10 +14723,18 @@ endpont->endpoint
 endponts->endpoints
 endsup->ends up
 enduce->induce
+enduced->induced
+enduces->induces
+enducing->inducing
 endur->endure
+eneable->enable
+eneabled->enabled
 eneables->enables
+eneabling->enabling
 enebale->enable
 enebaled->enabled
+enebales->enables
+enebaling->enabling
 eneble->enable
 ened->need
 enegeries->energies
@@ -14731,6 +14743,8 @@ enehanced->enhanced
 enery->energy
 eneter->enter
 enetered->entered
+enetering->entering
+eneters->enters
 enetities->entities
 enetity->entity
 eneumeration->enumeration
@@ -14746,19 +14760,28 @@ enforcment->enforcement
 enfore->enforce
 enfored->enforced
 enfores->enforces
+enforing->enforcing
 enforncing->enforcing
 engagment->engagement
 engeneer->engineer
 engeneering->engineering
+engeneers->engineers
 engery->energy
 engieer->engineer
+engieering->engineering
+engieers->engineers
 engieneer->engineer
 engieneers->engineers
-enginee->engine
+enginee->engine, engineer,
+enginees->engines, engineers,
 enginge->engine
+enginges->engines
 enginin->engine
 enginineer->engineer
+enginineering->engineering
+enginineers->engineers
 engoug->enough
+engouh->enough
 enhabce->enhance
 enhabced->enhanced
 enhabces->enhances
@@ -14767,6 +14790,8 @@ enhace->enhance
 enhaced->enhanced
 enhacement->enhancement
 enhacements->enhancements
+enhaces->enhances
+enhacing->enhancing
 enhancd->enhanced
 enhancment->enhancement
 enhancments->enhancements
@@ -18209,6 +18234,7 @@ fusha->fuchsia
 fushas->fuchsias
 fushed->flushed
 fushing->flushing
+fusipn->fusion
 futal->futile
 futer->further, future,
 futher->further
@@ -19543,6 +19569,7 @@ idenfitifer->identifier
 idenfitifers->identifiers
 idenfitify->identify
 idenitfy->identify
+idenities->identities
 idenitify->identify
 identation->indentation
 identcial->identical
@@ -19572,6 +19599,8 @@ identifiters->identifier
 identifiy->identify
 identifyable->identifiable
 identifyed->identified
+identiies->identities
+identites->identities
 identitiy->identity
 identiviert->identifiers
 identiy->identify, identity,
@@ -29723,6 +29752,10 @@ promted->prompted, promoted,
 promter->prompter, promoter,
 promters->prompters, promoters,
 promting->prompting, promoting,
+promtp->prompt
+promtped->prompted
+promtping->prompting
+promtps->prompts
 promts->prompts
 pronnounced->pronounced
 pronomial->pronominal
@@ -36496,6 +36529,8 @@ subcribe->subscribe
 subcribed->subscribed
 subcribes->subscribes
 subcribing->subscribing
+subcription->subscription
+subcriptions->subscriptions
 subdirectoires->subdirectories
 subdirectorys->subdirectories
 subdirecty->subdirectory
