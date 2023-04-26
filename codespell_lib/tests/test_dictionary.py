@@ -279,7 +279,7 @@ def test_dictionary_looping(
             err = err.lower()
             assert (
                 err not in this_err_dict
-            ), f"error {err:!r} already exists in {short_fname}"
+            ), f"error {err!r} already exists in {short_fname}"
             rep = rep.rstrip("\n")
             reps = [r.strip() for r in rep.lower().split(",")]
             reps = [r for r in reps if len(r)]
@@ -298,7 +298,7 @@ def test_dictionary_looping(
         # error duplication (eventually maybe we should just merge?)
         for err in this_err_dict:
             assert err not in other_err_dict, (
-                f"error {err:!r} in dictionary {short_fname} "
+                f"error {err!r} in dictionary {short_fname} "
                 f"already exists in dictionary {other_fname}"
             )
         # 2. check corrections in this dict against other dicts (upper)
@@ -306,7 +306,7 @@ def test_dictionary_looping(
         if pair not in allowed_dups:
             for err in this_err_dict:
                 assert err not in other_err_dict, (
-                    f"error {err:!r} in dictionary {short_fname} "
+                    f"error {err!r} in dictionary {short_fname} "
                     f"already exists in dictionary {other_fname}"
                 )
                 for r in this_err_dict[err]:
