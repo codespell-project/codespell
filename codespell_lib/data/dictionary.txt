@@ -456,6 +456,10 @@ accompagny->accompany
 accompagnying->accompanying
 accompained->accompanied
 accompanyed->accompanied
+accomponied->accompanied
+accomponies->accompanies
+accompony->accompany
+accomponying->accompanying
 accompt->account
 acconding->according
 accont->account
@@ -6560,6 +6564,7 @@ challange->challenge
 challanged->challenged
 challanges->challenges
 challege->challenge
+challening->challenging
 chambre->chamber
 chambres->chambers
 champain->Champagne
@@ -10545,6 +10550,7 @@ curretnly->currently
 curriculem->curriculum
 currious->curious
 currnet->current
+currnetly->currently
 currnt->current
 currntly->currently
 curros->cursor
@@ -20587,6 +20593,8 @@ individaully->individually
 individauls->individuals
 individauly->individually
 individial->individual
+individiual->individual
+individiually->individually
 individuall->individually, individual,
 individualy->individually
 individuel->individual
@@ -24157,6 +24165,7 @@ mirro->mirror
 mirroed->mirrored
 mirrorn->mirror
 mirrorred->mirrored
+mis->miss, mist,
 mis-alignement->misalignment
 mis-alignment->misalignment
 mis-intepret->mis-interpret
@@ -26147,6 +26156,7 @@ occuring->occurring
 occurr->occur
 occurrance->occurrence
 occurrances->occurrences
+occurrencies->occurrences
 occurrencs->occurrences
 occurrs->occurs
 oce->once, one, ore,
@@ -27775,6 +27785,8 @@ peprocessor->preprocessor
 per-interpeter->per-interpreter
 perade->parade
 peraphs->perhaps
+percenatge->percentage
+percenatges->percentages
 percentange->percentage
 percentanges->percentages
 percentil->percentile
@@ -30423,6 +30435,8 @@ rapsberry->raspberry
 rarelly->rarely
 rarified->rarefied
 rasberry->raspberry
+rasbperries->raspberries
+rasbperry->raspberry
 rasie->raise
 rasied->raised
 rasies->raises
@@ -31647,6 +31661,10 @@ relaimed->reclaimed
 relaion->relation
 relaive->relative
 relaly->really
+relaod->reload
+relaoded->reloaded
+relaoding->reloading
+relaods->reloads
 relase->release
 relased->released
 relaser->releaser
@@ -34401,6 +34419,8 @@ sertification->certification
 servce->service, serve,
 servced->serviced, served,
 servces->services, serves,
+servcie->service
+servcies->services
 servcing->servicing, serving,
 servece->service
 serveced->serviced
@@ -34722,6 +34742,8 @@ sigaled->signaled
 sigals->signals, sigils,
 siganture->signature
 sigantures->signatures
+sigature->signature
+sigatures->signatures
 sigen->sign
 sighrynge->syringe
 sighrynges->syringes
@@ -36984,6 +37006,10 @@ summmarised->summarised
 summmarization->summarization
 summmarized->summarized
 summmary->summary
+summurize->summarize
+summurized->summarized
+summurizes->summarizes
+summurizing->summarizing
 sumodules->submodules
 sumulate->simulate
 sumulated->simulated
@@ -37318,6 +37344,9 @@ swtiching->switching
 swtichover->switchover
 swtichs->switches
 sxl->xsl
+sxmbol->symbol
+sxmbolic->symbolic
+sxmbols->symbols
 syantax->syntax
 syas->says
 syatem->system
