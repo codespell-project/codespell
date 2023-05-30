@@ -12846,6 +12846,7 @@ diplomancy->diplomacy
 dipose->dispose, depose,
 diposed->disposed, deposed,
 diposing->disposing, deposing,
+diposition->disposition
 diptheria->diphtheria
 dipthong->diphthong
 dipthongs->diphthongs
@@ -25736,6 +25737,7 @@ non-negotitated->non-negotiated
 non-negotited->non-negotiated
 non-negoziable->non-negotiable
 non-negoziated->non-negotiated
+non-persistant->non-persistent
 non-priviliged->non-privileged
 non-referenced-counted->non-reference-counted
 non-replacable->non-replaceable
