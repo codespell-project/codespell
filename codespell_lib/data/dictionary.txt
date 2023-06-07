@@ -24671,12 +24671,24 @@ mudules->modules
 muext->mutex
 muiltiple->multiple
 muiltiples->multiples
+muiltiplied->multiplied
+muiltiplies->multiplies
+muiltiply->multiply
+muiltiplying->multiplying
 muliple->multiple
 muliples->multiples
+muliplied->multiplied
+muliplies->multiplies
+muliply->multiply
+muliplying->multiplying
 mulithread->multithread
 mulitiple->multiple
+mulitiplied->multiplied
 mulitiplier->multiplier
 mulitipliers->multipliers
+mulitiplies->multiplies
+mulitiply->multiply
+mulitiplying->multiplying
 mulitpart->multipart
 mulitpath->multipath
 mulitple->multiple
@@ -24685,7 +24697,9 @@ mulitplicative->multiplicative
 mulitplied->multiplied
 mulitplier->multiplier
 mulitpliers->multipliers
+mulitplies->multiplies
 mulitply->multiply
+mulitplying->multiplying
 multi-dimenional->multi-dimensional
 multi-dimenionsal->multi-dimensional
 multi-langual->multi-lingual
@@ -24705,9 +24719,20 @@ multiecast->multicast
 multifuction->multifunction
 multilangual->multilingual
 multile->multiple
+multilied->multiplied
+multilies->multiplies
 multilpe->multiple
+multilpies->multiplies
+multilplied->multiplied
+multilplies->multiplies
+multilpy->multiply
+multilpying->multiplying
+multily->multiply
+multilying->multiplying
 multipe->multiple
 multipes->multiples
+multipied->multiplied
+multipies->multiplies
 multipiler->multiplier
 multipilers->multipliers
 multipl->multiple, multiply,
@@ -24724,6 +24749,7 @@ multiplyed->multiplied
 multipresistion->multiprecision
 multipul->multiple
 multipy->multiply
+multipying->multiplying
 multipyling->multiplying
 multithreded->multithreaded
 multitute->multitude
@@ -24793,7 +24819,10 @@ mutimarked->multimarked
 mutipath->multipath
 mutipl->multiple, multiply,
 mutiple->multiple
+mutiplied->multiplied
+mutiplies->multiplies
 mutiply->multiply
+mutiplying->multiplying
 mutli->multi
 mutli-threaded->multi-threaded
 mutlipart->multipart
@@ -24802,9 +24831,12 @@ mutlipler->multiplier, multiple,
 mutliples->multiples
 mutliplication->multiplication
 mutliplicites->multiplicities
+mutliplied->multiplied
 mutliplier->multiplier
 mutlipliers->multipliers
+mutliplies->multiplies
 mutliply->multiply
+mutliplying->multiplying
 mutully->mutually
 mutux->mutex
 mutuxes->mutexes
