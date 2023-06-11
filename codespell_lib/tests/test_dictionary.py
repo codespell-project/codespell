@@ -20,14 +20,13 @@ except Exception as exp:  # probably ImportError, but maybe also language
     if os.getenv("REQUIRE_ASPELL", "false").lower() == "true":
         raise RuntimeError(
             "Cannot run complete tests without aspell when "
-            "REQUIRE_ASPELL=true. Got error during import:\n{}".format(exp)
+            f"REQUIRE_ASPELL=true. Got error during import:\n{exp}"
         )
-    else:
-        warnings.warn(
-            "aspell not found, but not required, skipping aspell tests. Got "
-            "error during import:\n{}".format(exp),
-            stacklevel=2,
-        )
+    warnings.warn(
+        "aspell not found, but not required, skipping aspell tests. Got "
+        f"error during import:\n{exp}",
+        stacklevel=2,
+    )
 
 global_err_dicts: Dict[str, Dict[str, Any]] = {}
 global_pairs: Set[Tuple[str, str]] = set()
@@ -66,7 +65,7 @@ def test_dictionary_formatting(
             try:
                 _check_err_rep(err, rep, in_aspell, fname, in_dictionary)
             except AssertionError as exp:
-                errors.append(str(exp).split("\n")[0])
+                errors.append(str(exp).split("\n", maxsplit=1)[0])
     if errors:
         raise AssertionError("\n" + "\n".join(errors))
 
@@ -278,10 +277,9 @@ def test_dictionary_looping(
         for line in fid:
             err, rep = line.split("->")
             err = err.lower()
-            assert err not in this_err_dict, "error {!r} already exists in {}".format(
-                err,
-                short_fname,
-            )
+            assert (
+                err not in this_err_dict
+            ), f"error {err!r} already exists in {short_fname}"
             rep = rep.rstrip("\n")
             reps = [r.strip() for r in rep.lower().split(",")]
             reps = [r for r in reps if len(r)]
@@ -290,8 +288,8 @@ def test_dictionary_looping(
     for err in this_err_dict:
         for r in this_err_dict[err]:
             assert r not in this_err_dict, (
-                "error {}: correction {} is an error itself in the same "
-                "dictionary file {}".format(err, r, short_fname)
+                f"error {err}: correction {r} is an error itself "
+                f"in the same dictionary file {short_fname}"
             )
     pair = (short_fname, short_fname)
     assert pair not in global_pairs
@@ -299,29 +297,22 @@ def test_dictionary_looping(
     for other_fname, other_err_dict in global_err_dicts.items():
         # error duplication (eventually maybe we should just merge?)
         for err in this_err_dict:
-            assert (
-                err not in other_err_dict
-            ), "error {!r} in dictionary {} already exists in dictionary {}".format(
-                err,
-                short_fname,
-                other_fname,
+            assert err not in other_err_dict, (
+                f"error {err!r} in dictionary {short_fname} "
+                f"already exists in dictionary {other_fname}"
             )
         # 2. check corrections in this dict against other dicts (upper)
         pair = (short_fname, other_fname)
         if pair not in allowed_dups:
             for err in this_err_dict:
-                assert (
-                    err not in other_err_dict
-                ), "error {!r} in dictionary {} already exists in dictionary {}".format(
-                    err,
-                    short_fname,
-                    other_fname,
+                assert err not in other_err_dict, (
+                    f"error {err!r} in dictionary {short_fname} "
+                    f"already exists in dictionary {other_fname}"
                 )
                 for r in this_err_dict[err]:
                     assert r not in other_err_dict, (
-                        "error %s: correction %s from dictionary %s is an "
-                        "error itself in dictionary %s"
-                        % (err, r, short_fname, other_fname)
+                        f"error {err}: correction {r} from dictionary {short_fname} "
+                        f"is an error itself in dictionary {other_fname}"
                     )
         assert pair not in global_pairs
         global_pairs.add(pair)
@@ -331,9 +322,8 @@ def test_dictionary_looping(
             for err in other_err_dict:
                 for r in other_err_dict[err]:
                     assert r not in this_err_dict, (
-                        "error %s: correction %s from dictionary %s is an "
-                        "error itself in dictionary %s"
-                        % (err, r, other_fname, short_fname)
+                        f"error {err}: correction {r} from dictionary {other_fname} "
+                        f"is an error itself in dictionary {short_fname}"
                     )
         assert pair not in global_pairs
         global_pairs.add(pair)
