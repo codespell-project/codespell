@@ -898,7 +898,7 @@ def parse_file(
             lword = word.lower()
             if lword in misspellings:
                 # Sometimes we find a 'misspelling' which is actually a valid word
-                # preceeded by a string escape sequence.  Ignore such cases as
+                # preceded by a string escape sequence.  Ignore such cases as
                 # they're usually false alarms; see issue #17 among others.
                 char_before_idx = match.start() - 1
                 if (
