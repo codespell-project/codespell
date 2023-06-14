@@ -897,6 +897,19 @@ def parse_file(
             word = match.group()
             lword = word.lower()
             if lword in misspellings:
+                # Sometimes we find a 'misspelling' which is actually a valid word
+                # preceeded by a string escape sequence.  Ignore such cases as
+                # they're usually false alarms; see issue #17 among others.
+                char_before_idx = match.start() - 1
+                if (
+                    char_before_idx >= 0
+                    and line[char_before_idx] == "\\"
+                    # bell, backspace, formfeed, newline, carriage-return, tab, vtab.
+                    and word.startswith(("a", "b", "f", "n", "r", "t", "v"))
+                    and lword[1:] not in misspellings
+                ):
+                    continue
+
                 context_shown = False
                 fix = misspellings[lword].fix
                 fixword = fix_case(word, misspellings[lword].data)
