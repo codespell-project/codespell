@@ -12,6 +12,7 @@ jobs:
   test:
     env:
       REQUIRE_ASPELL: true
+      RUFF_FORMAT: github
     # Make sure we're using the latest aspell dictionary
     runs-on: ubuntu-22.04
     strategy:
@@ -75,6 +76,8 @@ jobs:
       - run: make check-dictionaries
 
   ruff-annotation:
+    env:
+      RUFF_FORMAT: github
     runs-on: ubuntu-latest
     steps:
       - name: Setup python
