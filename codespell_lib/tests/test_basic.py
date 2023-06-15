@@ -115,6 +115,11 @@ def test_basic(
     with fname.open("w") as f:  # overwrite the file
         f.write("var = '\\nwe must check codespell likes escapes \\nin strings'\n")
     assert cs.main(fname) == 0, "with string escape"
+    with fname.open("w") as f:  # overwrite the file
+        f.write("var = '\\\\nwe must check codespell ignores double escapes \\\\nin strings'\n")
+    assert cs.main(fname) == 2, "with string escape"
+    # the four backslashes here become two on disk and one when output to a file,
+    # so these typos should be found
     result = cs.main(fname, "--builtin", "foo", std=True)
     assert isinstance(result, tuple)
     code, _, stderr = result
