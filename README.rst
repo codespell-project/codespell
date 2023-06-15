@@ -2,7 +2,7 @@ codespell
 =========
 
 Fix common misspellings in text files. It's designed primarily for checking
-misspelled words in source code, but it can be used with other files as well.
+misspelled words in source code (backslash escapes are skipped), but it can be used with other files as well.
 It does not check for word membership in a complete dictionary, but instead
 looks for a set of common misspellings. Therefore it should catch errors like
 "adn", but it will not catch "adnasdfasdf". This also means it shouldn't
