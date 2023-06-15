@@ -98,10 +98,10 @@ def test_basic(
         f.write("this is a test file\n")
     assert cs.main(fname) == 0, "good"
     with fname.open("a") as f:
-        f.write("var = 'nDoes not error on newline'\n")
-    assert cs.main(fname) == 1, "checking our string escape test word is bad"
+        f.write("var = 'nwe must check codespell likes escapes nin strings'\n")
+    assert cs.main(fname) == 2, "checking our string escape test words are bad"
     with fname.open("a") as f:
-        f.write("var = '\\nDoes not error on newline'\n")
+        f.write("var = '\\nwe must check codespell likes escapes \\nin strings'\n")
     assert cs.main(fname) == 0, "with string escape"
     with fname.open("a") as f:
         f.write("abandonned\n")
