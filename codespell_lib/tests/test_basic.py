@@ -110,7 +110,8 @@ def test_basic(
     with fname.open("w") as f:  # overwrite the file
         f.write("var = 'nwe must check codespell likes escapes nin strings'\n")
     assert cs.main(fname) == 1, "checking our string escape test word is bad"
-    # the first one is missed because the apostrophe means its not currently treated as a word on its own
+    # the first one is missed because the apostrophe means its not currently
+    # treated as a word on its own
     with fname.open("w") as f:  # overwrite the file
         f.write("var = '\\nwe must check codespell likes escapes \\nin strings'\n")
     assert cs.main(fname) == 0, "with string escape"
