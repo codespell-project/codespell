@@ -98,12 +98,6 @@ def test_basic(
         f.write("this is a test file\n")
     assert cs.main(fname) == 0, "good"
     with fname.open("a") as f:
-        f.write("var = 'nwe must check codespell likes escapes nin strings'\n")
-    assert cs.main(fname) == 2, "checking our string escape test words are bad"
-    with fname.open("a") as f:
-        f.write("var = '\\nwe must check codespell likes escapes \\nin strings'\n")
-    assert cs.main(fname) == 0, "with string escape"
-    with fname.open("a") as f:
         f.write("abandonned\n")
     assert cs.main(fname) == 1, "bad"
     with fname.open("a") as f:
@@ -113,6 +107,12 @@ def test_basic(
         f.write("tim\ngonna\n")
     assert cs.main(fname) == 2, "with a name"
     assert cs.main("--builtin", "clear,rare,names,informal", fname) == 4
+    with fname.open("w") as f:  # overwrite the file
+        f.write("var = 'nwe must check codespell likes escapes nin strings'\n")
+    assert cs.main(fname) == 2, "checking our string escape test words are bad"
+    with fname.open("w") as f:  # overwrite the file
+        f.write("var = '\\nwe must check codespell likes escapes \\nin strings'\n")
+    assert cs.main(fname) == 0, "with string escape"
     result = cs.main(fname, "--builtin", "foo", std=True)
     assert isinstance(result, tuple)
     code, _, stderr = result
