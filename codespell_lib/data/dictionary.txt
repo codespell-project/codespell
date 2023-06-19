@@ -85,13 +85,18 @@ aboce->above, abode,
 aboluste->absolute
 abolustely->absolutely
 abolute->absolute
+abolutely->absolutely
 abondon->abandon
 abondoned->abandoned
 abondoning->abandoning
 abondons->abandons
 aboout->about
+aborb->absorb
+aborbed->absorbed
+aborbent->absorbent
 abord->abort, aboard,
 aborigene->aborigine
+aborption->absorption
 aborte->aborted, abort, aborts,
 abortificant->abortifacient
 aboslute->absolute
@@ -354,6 +359,8 @@ accesory->accessory
 accessability->accessibility
 accessable->accessible
 accessbile->accessible
+accessbility->accessibility
+accessble->accessible
 accessiable->accessible
 accessibile->accessible
 accessibiliity->accessibility
@@ -886,7 +893,10 @@ addapts->adapts
 addd->add
 addded->added
 addding->adding
+adddition->addition
 addditional->additional
+addditionally->additionally
+addditions->additions
 adddress->address
 adddresses->addresses
 addds->adds
@@ -1083,6 +1093,7 @@ admissability->admissibility
 admissable->admissible
 admited->admitted
 admitedly->admittedly
+admiting->admitting
 admn->admin
 admnistrator->administrator
 admnistrators->administrators
@@ -2816,6 +2827,7 @@ approprately->appropriately
 appropration->appropriation
 approprations->appropriations
 appropriage->appropriate
+appropriat->appropriate
 appropriatedly->appropriately
 appropriatee->appropriate
 appropriatly->appropriately
@@ -6248,6 +6260,7 @@ carryng->carrying
 cartain->certain
 cartdridge->cartridge
 cartensian->Cartesian
+cartesion->cartesian
 Carthagian->Carthaginian
 carthesian->cartesian
 carthographer->cartographer
@@ -7306,6 +7319,8 @@ classifed->classified
 classifer->classifier
 classifers->classifiers
 classificaion->classification
+classifiy->classify
+classifiying->classifying
 classrom->classroom
 classroms->classrooms
 classs->class
@@ -8239,6 +8254,7 @@ compatator->comparator
 compatators->comparators
 compatbile->compatible
 compatbility->compatibility
+compatble->compatible
 compatiability->compatibility
 compatiable->compatible
 compatiablity->compatibility
@@ -8253,6 +8269,8 @@ compatibity->compatibility
 compatiblilty->compatibility
 compatiblities->compatibilities
 compatiblity->compatibility
+compatilibities->compatibilities
+compatilibity->compatibility
 compation->compaction
 compatitbility->compatibility
 compativle->compatible
@@ -13687,7 +13705,10 @@ dividor->divider, divisor,
 dividors->dividers, divisors,
 divinition->definition, divination,
 divion->division
+divisability->divisibility
 divisable->divisible
+divisbility->divisibility
+divisble->divisible
 divisior->divisor
 divison->division
 divisons->divisions
@@ -14481,7 +14502,10 @@ eletromagnitic->electromagnetic
 eletronic->electronic
 elgible->eligible
 elicided->elicited
+eligability->eligibility
 eligable->eligible
+eligbility->eligibility
+eligble->eligible
 elimentary->elementary
 elimiante->eliminate
 elimiate->eliminate
@@ -17308,6 +17332,8 @@ fcound->found
 feasabile->feasible
 feasability->feasibility
 feasable->feasible
+feasbility->feasibility
+feasble->feasible
 featch->fetch, each,
 featchd->fetched
 featched->fetched
@@ -17590,6 +17616,8 @@ Flemmish->Flemish
 flewant->fluent
 flexability->flexibility
 flexable->flexible
+flexbility->flexibility
+flexble->flexible
 flexibel->flexible
 flexibele->flexible
 flexibilty->flexibility
@@ -19718,6 +19746,7 @@ identifing->identifying
 identifiter->identifier
 identifiters->identifier
 identifiy->identify
+identifiying->identifying
 identifyable->identifiable
 identifyed->identified
 identiies->identities
@@ -20181,6 +20210,7 @@ imporves->improves
 imporving->improving
 imporvment->improvement
 imposible->impossible
+impossble->impossible
 impossiblble->impossible
 impot->import
 impotant->impotent, important,
@@ -20263,6 +20293,7 @@ inabling->enabling
 inacccessible->inaccessible
 inaccesible->inaccessible
 inaccessable->inaccessible
+inaccessble->inaccessible
 inaccuraccies->inaccuracies
 inaccuraccy->inaccuracy
 inacessible->inaccessible
@@ -20280,6 +20311,7 @@ inaktively->inactively
 inalid->invalid
 inappropiate->inappropriate
 inappropreate->inappropriate
+inappropriat->inappropriate
 inapropriate->inappropriate
 inapropriately->inappropriately
 inate->innate
@@ -21535,6 +21567,7 @@ inteligence->intelligence
 inteligent->intelligent
 intelisense->intellisense
 intelligable->intelligible
+intelligble->intelligible
 intemediary->intermediary
 intenal->internal
 intenational->international
@@ -26209,19 +26242,26 @@ oblisk->obelisk
 oblisks->obelisks
 oblitque->oblique
 obnject->object
+obolete->obsolete
+oboleted->obsoleted
 obscur->obscure
 obselete->obsolete
+obseleted->obsoleted
 obseravtion->observation
 obseravtions->observations
 observ->observe
 observered->observed
 obsevrer->observer
 obsevrers->observers
+obslete->obsolete
+obsleted->obsoleted
 obsolate->obsolete
+obsolated->obsoleted
 obsolesence->obsolescence
 obsolite->obsolete
 obsolited->obsoleted
 obsolote->obsolete
+obsoloted->obsoleted
 obsolte->obsolete
 obsolted->obsoleted
 obssessed->obsessed
@@ -28148,6 +28188,7 @@ permisions->permissions
 permisison->permission
 permisisons->permissions
 permissable->permissible
+permissble->permissible
 permissiosn->permissions
 permisson->permission
 permissons->permissions
@@ -30437,6 +30478,8 @@ quailified->qualified
 qualfied->qualified
 qualfy->qualify
 qualifer->qualifier
+qualifiy->qualify
+qualifiying->qualifying
 qualitification->qualification
 qualitifications->qualifications
 quanities->quantities
@@ -30448,6 +30491,8 @@ quanlifies->qualifies, quantifies,
 quanlify->qualify, quantify,
 quantaties->quantities
 quantaty->quantity
+quantifiy->quantify
+quantifiying->quantifying
 quantitites->quantities
 quantititive->quantitative
 quantitity->quantity
@@ -32638,6 +32683,8 @@ reproducability->reproducibility
 reproducable->reproducible
 reproducablitity->reproducibility
 reproducably->reproducibly
+reproducbility->reproducibility
+reproducble->reproducible
 reproduciability->reproduceability
 reproduciable->reproduceable
 reproduciblity->reproducibility
@@ -32950,6 +32997,8 @@ responsabilities->responsibilities
 responsability->responsibility
 responsable->responsible
 responsbile->responsible
+responsbility->responsibility
+responsble->responsible
 responsed->responded, responses,
 responser's->responder's
 responser->responder
@@ -33714,7 +33763,11 @@ sarter->starter
 sarters->starters
 sarting->starting, sorting,
 sarts->starts, stars,
+sastisfaction->satisfaction
+sastisfied->satisfied
 sastisfies->satisfies
+sastisfy->satisfy
+sastisfying->satisfying
 sasy->says, sassy,
 satandard->standard
 satandards->standards
@@ -33726,21 +33779,32 @@ satement->statement
 satements->statements
 saterday->Saturday
 saterdays->Saturdays
+satifaction->satisfaction
 satified->satisfied
 satifies->satisfies
 satifsy->satisfy
+satifsying->satisfying
 satify->satisfy
 satifying->satisfying
 satisfactorally->satisfactorily
 satisfactority->satisfactorily
 satisfiabilty->satisfiability
 satisfing->satisfying
+satisfiy->satisfy
+satisfiying->satisfying
 satisfyied->satisfied
+satisfyies->satisfies
+satisifaction->satisfaction
 satisifed->satisfied
+satisifes->satisfies
 satisified->satisfied
 satisifies->satisfies
 satisify->satisfy
 satisifying->satisfying
+satistaction->satisfaction
+satistied->satisfied
+satisties->satisfies
+satisty->satisfy
 satistying->satisfying
 satric->satiric
 satrical->satirical
@@ -34481,6 +34545,7 @@ sequemces->sequences
 sequencial->sequential
 sequencially->sequentially
 sequencies->sequences
+sequene->sequence
 sequenes->sequences
 sequense->sequence
 sequensed->sequenced
@@ -34970,6 +35035,8 @@ significatly->significantly
 significently->significantly
 signifigant->significant
 signifigantly->significantly
+signifiy->signify
+signifiying->signifying
 signitories->signatories
 signitory->signatory
 signle->single, signal,
@@ -35090,11 +35157,18 @@ simplifed->simplified
 simplificaiton->simplification
 simplificaitons->simplifications
 simplifiy->simplify
+simplifiying->simplifying
 simplifys->simplifies
 simpliifcation->simplification
 simpliifcations->simplifications
 simplist->simplest
 simpliy->simply, simplify,
+simplyfication->simplification
+simplyfications->simplifications
+simplyfied->simplified
+simplyfies->simplifies
+simplyfy->simplify
+simplyfying->simplifying
 simptom->symptom
 simptomatic->symptomatic
 simptomatically->symptomatically
@@ -39965,6 +40039,7 @@ unidimensionnal->unidimensional
 unifform->uniform
 unifforms->uniforms
 unifiy->unify
+unifiying->unifying
 uniformely->uniformly
 uniformy->uniformly, uniform,
 unifrom->uniform
@@ -40011,6 +40086,7 @@ uninstlaling->uninstalling
 uninstlals->uninstalls
 unint8_t->uint8_t
 unintelligable->unintelligible
+unintelligble->unintelligible
 unintented->unintended, unindented,
 unintentially->unintentionally
 uninteressting->uninteresting
