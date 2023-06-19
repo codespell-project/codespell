@@ -13955,6 +13955,8 @@ downlaoded->downloaded
 downlaodes->downloads
 downlaoding->downloading
 downlaods->downloads
+downloade->download
+downloades->downloads, downloaded,
 downloadmanger->downloadmanager
 downlod->download
 downloded->downloaded
@@ -23098,6 +23100,8 @@ loacally->locally
 loacation->location
 loaction->location
 loactions->locations
+loade->load
+loades->loads, loaded,
 loadig->loading
 loadin->loading
 loadning->loading
@@ -27159,6 +27163,8 @@ overlfow->overflow
 overlfowed->overflowed
 overlfowing->overflowing
 overlfows->overflows
+overloade->overload
+overloades->overloads, overloaded,
 overlodaded->overloaded
 overloded->overloaded
 overlodes->overloads
@@ -31906,6 +31912,7 @@ relly->really
 relm->realm, elm, helm, ream, rem,
 relms->realms, elms, helms, reams,
 reloade->reload
+reloades->reloads, reloaded,
 relocae->relocate
 relocaes->relocates
 relocaiing->relocating
@@ -33225,6 +33232,8 @@ reuplaoder->reuploader
 reuplaoders->reuploaders
 reuplaoding->reuploading
 reuplaods->reuploads
+reuploade->reupload
+reuploades->reuploads, reuploaded,
 reuplod->reupload
 reuplodad->reupload, reuploaded,
 reuploded->reuploaded
@@ -40519,6 +40528,8 @@ uplaodes->uploads
 uplaoding->uploading
 uplaods->uploads
 upliad->upload
+uploade->upload
+uploades->uploads, uploaded,
 uplod->upload
 uplodad->upload, uploaded,
 uplodaded->uploaded
