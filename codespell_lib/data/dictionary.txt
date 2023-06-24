@@ -21791,6 +21791,10 @@ interferring->interfering
 interfers->interferes
 intergate->integrate
 intergated->integrated
+intergates->integrates
+intergating->integrating
+intergation->integration
+intergations->integrations
 interger's->integer's
 interger->integer
 intergerated->integrated
@@ -22072,7 +22076,10 @@ intructional->instructional
 intructions->instructions
 intruduce->introduce
 intruduced->introduced
+intruduces->introduces
 intruducing->introducing
+intruduction->introduction
+intruductions->introductions
 intrument->instrument
 intrumental->instrumental
 intrumented->instrumented
@@ -29226,6 +29233,7 @@ preceds->precedes
 preceed->precede, proceed,
 preceede->precede
 preceeded->preceded, proceeded,
+preceedes->precedes
 preceeding->preceding, proceeding,
 preceeds->precedes, proceeds,
 preceision->precision
@@ -30262,9 +30270,10 @@ protruberances->protuberances
 prouncements->pronouncements
 provacative->provocative
 provate->private, provide,
-provde->provide
+provde->provide, proved,
 provded->provided
 provder->provider
+provdes->provides
 provdided->provided
 provdidet->provided, provider, provident,
 provdie->provide
@@ -31185,6 +31194,7 @@ reccomendation->recommendation
 reccomendations->recommendations
 reccomended->recommended
 reccomending->recommending
+reccomends->recommends
 reccommend->recommend
 reccommendation->recommendation
 reccommendations->recommendations
@@ -39070,7 +39080,9 @@ transfomations->transformations
 transfomed->transformed
 transfomer->transformer
 transfomers->transformers
+transfoming->transforming
 transfomm->transform
+transfoms->transforms
 transfoprmation->transformation
 transforation->transformation
 transforations->transformations
