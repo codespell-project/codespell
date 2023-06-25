@@ -12739,6 +12739,8 @@ dictaionary->dictionary
 dictinary->dictionary
 dictioanries->dictionaries
 dictioanry->dictionary
+dictioary -> dictionary
+dictionarty -> dictionary
 dictionarys->dictionaries
 dictionay->dictionary
 dictionnaries->dictionaries
@@ -15283,6 +15285,7 @@ equil->equal
 equilavalent->equivalent
 equilibium->equilibrium
 equilibrum->equilibrium
+equillibriation -> equilibriation
 equilvalent->equivalent
 equilvalently->equivalently
 equilvalents->equivalents
@@ -15363,6 +15366,7 @@ ertoneous->erroneous
 ertoneously->erroneously
 ertor->error, terror,
 ertors->errors, terrors,
+erturn->return
 ervery->every
 erverything->everything
 ervices->services
@@ -18512,6 +18516,9 @@ gaurantee->guarantee
 gauranteed->guaranteed
 gauranteeing->guaranteeing
 gaurantees->guarantees
+gauranttee->guarantee
+gaurantteed->guaranteed
+gauranttees->guarantees
 gaurd->guard, gourd,
 gaurentee->guarantee
 gaurenteed->guaranteed
@@ -24708,6 +24715,7 @@ mointored->monitored
 mointoring->monitoring
 mointors->monitors
 moleclues->molecules
+molelcule->molecule
 momement->moment
 momementarily->momentarily
 momements->moments
@@ -28273,6 +28281,7 @@ permmissions->permissions
 permormance->performance
 permssion->permission
 permssions->permissions
+permuataions->permutations
 permuatate->permutate
 permuatated->permutated
 permuatates->permutates
@@ -38961,6 +38970,7 @@ trancendent->transcendent
 trancending->transcending
 tranclate->translate
 trandional->traditional
+traned -> trained
 tranfer->transfer
 tranfered->transferred
 tranfering->transferring
@@ -38976,6 +38986,7 @@ tranforming->transforming
 tranforms->transforms
 tranient->transient
 tranients->transients
+traning -> training
 traning->training
 tranistion->transition
 tranistioned->transitioned
