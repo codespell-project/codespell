@@ -32,6 +32,7 @@ dynamic = ["version"]
 
 [project.optional-dependencies]
 dev = [
+    "aspell-python-py3",
     "build",
     "chardet",
     "pytest",
@@ -39,7 +40,8 @@ dev = [
     "pytest-dependency",
     "Pygments",
     "ruff",
-    "tomli"
+    "tomli",
+    "twine"
 ]
 hard-encoding-detection = [
     "chardet"
