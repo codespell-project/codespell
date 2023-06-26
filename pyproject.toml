@@ -32,7 +32,6 @@ dynamic = ["version"]
 
 [project.optional-dependencies]
 dev = [
-    "aspell-python-py3",
     "build",
     "chardet",
     "pytest",
