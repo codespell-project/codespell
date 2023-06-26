@@ -1668,7 +1668,7 @@ aligins->aligns
 aligment->alignment
 aligments->alignments
 alignament->alignment
-alignaments->alighments
+alignaments->alignments
 alignation->alignment
 alignd->aligned
 aligne->align
@@ -7994,6 +7994,7 @@ commisions->commissions
 commisssion->commission
 commisssioned->commissioned
 commisssioner->commissioner
+commisssioners->commissioners
 commisssioning->commissioning
 commisssions->commissions
 commitable->committable
@@ -41804,7 +41805,6 @@ wasnt'->wasn't
 wasnt->wasn't
 wasnt;->wasn't
 wass->was
-wast->waste
 wastefull->wasteful, wastefully,
 wastefullness->wastefulness
 watchdong->watchdog
