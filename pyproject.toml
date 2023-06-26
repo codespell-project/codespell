@@ -39,7 +39,8 @@ dev = [
     "pytest-dependency",
     "Pygments",
     "ruff",
-    "tomli"
+    "tomli",
+    "twine"
 ]
 hard-encoding-detection = [
     "chardet"
