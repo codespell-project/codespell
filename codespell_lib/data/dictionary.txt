@@ -1667,6 +1667,8 @@ aliginment->alignment
 aligins->aligns
 aligment->alignment
 aligments->alignments
+alignament->alignment
+alignaments->alignments
 alignation->alignment
 alignd->aligned
 aligne->align
@@ -7989,6 +7991,12 @@ commisioned->commissioned
 commisioner->commissioner
 commisioning->commissioning
 commisions->commissions
+commisssion->commission
+commisssioned->commissioned
+commisssioner->commissioner
+commisssioners->commissioners
+commisssioning->commissioning
+commisssions->commissions
 commitable->committable
 commited->committed
 commitee->committee
@@ -34802,6 +34810,8 @@ sesitively->sensitively
 sesitiveness->sensitiveness
 sesitivity->sensitivity
 sessio->session
+sessoion->session
+sessoions->sessions
 sesssion->session
 sesssions->sessions
 sestatusbar->setstatusbar
@@ -37986,6 +37996,7 @@ tagnets->tangents
 tagued->tagged
 tahn->than
 taht->that
+tailred->tailored
 tained->tainted, stained,
 taks->task, tasks, takes,
 takslet->tasklet
@@ -39034,6 +39045,8 @@ transaltor->translator
 transaltors->translators
 transation->transaction, translation,
 transations->transactions, translations,
+transator->translator
+transators->translators
 transcendance->transcendence
 transcendant->transcendent
 transcendentational->transcendental
