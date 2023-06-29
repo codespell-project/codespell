@@ -7567,6 +7567,8 @@ cirucumstance->circumstance
 cirucumstances->circumstances
 ciruit->circuit
 ciruits->circuits
+cirular->circular
+cirularly->circularly
 cirumflex->circumflex
 cirumstance->circumstance
 cirumstances->circumstances
@@ -7639,6 +7641,7 @@ clasifying->classifying
 clasroom->classroom
 clasrooms->classrooms
 classe->class, classes,
+classees->classes
 classess->classes
 classesss->classes
 classied->classified
@@ -7708,6 +7711,8 @@ clened->cleaned
 clener->cleaner
 clening->cleaning
 clens->cleans, clans,
+clenup->cleanup
+clenups->cleanups
 cler->clear
 clera->clear, sclera,
 clese->close
@@ -7840,8 +7845,11 @@ coalcece->coalescence
 coalcence->coalescence
 coalesc->coalesce
 coalescsing->coalescing
+coalese->coalesce
 coalesed->coalesced
 coalesence->coalescence
+coaleses->coalesces
+coalesing->coalescing
 coaless->coalesce
 coalessed->coalesced
 coalessense->coalescence
@@ -7999,6 +8007,8 @@ colaboration->collaboration
 colaborations->collaborations
 colateral->collateral
 coldplg->coldplug
+coleague->colleague
+coleagues->colleagues
 colectable->collectable
 colected->collected
 colecting->collecting
@@ -8017,7 +8027,9 @@ colera->cholera
 colerscheme->colorscheme
 colescing->coalescing
 colision->collision
+colisions->collisions
 colission->collision
+colissions->collisions
 collaberative->collaborative
 collaberatively->collaboratively
 collaboritave->collaborative
@@ -8139,20 +8151,44 @@ comandos->commandos
 comands->commands
 comany->company
 comapany->company
+comaparable->comparable
+comaparator->comparator
+comaparators->comparators
+comapare->compare
 comapared->compared
+comapares->compares
+comaparing->comparing
+comaparison->comparison
+comaparisons->comparisons
 comapatibility->compatibility
 comapatible->compatible
 comapletion->completion
 comapnies->companies
 comapny->company
+comaprable->comparable
+comaprator->comparator
+comaprators->comparators
 comapre->compare
+comapred->compared
+comapres->compares
 comapring->comparing
 comaprison->comparison
+comaprisons->comparisons
 comaptibele->compatible
 comaptibelities->compatibilities
 comaptibelity->compatibility
+comaptibilities->compatibilities
+comaptibility->compatibility
 comaptible->compatible
+comarable->comparable
+comarator->comparator
 comarators->comparators
+comare->compare
+comared->compared
+comares->compares
+comaring->comparing
+comarison->comparison
+comarisons->comparisons
 comatibility->compatibility
 comatible->compatible
 comback->comeback
@@ -8197,6 +8233,11 @@ comerant->cormorant
 comerants->cormorants
 cometed->commented, competed,
 comfirm->confirm
+comfirmation->confirmation
+comfirmations->confirmations
+comfirmed->confirmed
+comfirming->confirming
+comfirms->confirms
 comflicting->conflicting
 comformance->conformance
 comfterble->comfortable
@@ -8435,7 +8476,10 @@ commuication->communication
 commuications->communications
 commuinications->communications
 commun->commune, common,
+communcate->communicate
 communcated->communicated
+communcates->communicates
+communcating->communicating
 communcation->communication
 communcations->communications
 communciation->communication
@@ -8485,6 +8529,8 @@ compabitle->compatible
 compagnion->companion
 compagny->company
 compaibility->compatibility
+compaible->compatible
+compaign->campaign
 compaigns->campaigns
 compain->complain
 compair->compare
@@ -8514,6 +8560,8 @@ compareisons->comparisons
 comparement->compartment, comparing, comparison,
 comparements->compartments
 compariable->comparable
+comparibility->compatibility, comparability,
+comparible->compatible, comparable,
 comparied->compared
 comparign->comparing
 comparigon->comparison
@@ -8563,7 +8611,15 @@ comparizons->comparisons
 comparment->compartment
 comparotor->comparator
 comparotors->comparators
+comparrable->comparable
+comparrator->comparator
+comparrators->comparators
 comparre->compare
+comparred->compared
+comparres->compares
+comparring->comparing
+comparrison->comparison
+comparrisons->comparisons
 comparsion->comparison
 comparsions->comparisons
 compatabable->compatible
@@ -8622,9 +8678,18 @@ compeated->competed
 compeates->competes
 compeating->competing
 compeitions->competitions
+compelete->complete
+compeleted->completed
 compeletely->completely
+compeletes->completes
+compeleting->completing
+compeletion->completion
 compelte->complete
+compelted->completed
+compeltely->completely
 compeltelyt->completely
+compeltes->completes
+compelting->completing
 compeltion->completion
 compeltly->completely
 compelx->complex
@@ -8648,6 +8713,9 @@ competitiion->competition
 competive->competitive
 competiveness->competitiveness
 compex->complex
+compexes->complexes
+compexities->complexities
+compexity->complexity
 compfortable->comfortable
 comphrehensive->comprehensive
 compiant->compliant
@@ -8676,8 +8744,11 @@ compilgers->compilers
 compiliant->compliant
 compiliation->compilation
 compilicated->complicated
+compilie->compile
+compilied->compiled
 compilier->compiler
 compiliers->compilers
+compilies->compiles
 compiller->compiler
 compillers->compilers
 compilter->compiler
@@ -8744,6 +8815,7 @@ complie->compile, complice, complied,
 complied-in->compiled-in
 complience->compliance
 complient->compliant
+complilation->compilation
 complile->compile
 compliled->compiled
 compliler->compiler
@@ -8768,6 +8840,7 @@ compluter->computer
 compnent->component
 compnents->components
 compoennt->component
+compoennts->components
 compoent->component
 compoents->components
 compoesd->composed
@@ -8775,6 +8848,7 @@ compoment->component
 compoments->components
 componant->component
 componants->components
+componbent->component
 componbents->components
 componding->compounding
 componeent->component
@@ -8790,6 +8864,7 @@ componens->components
 componentes->components
 componet->component
 componets->components
+componnent->component
 componnents->components
 componoent->component
 componoents->components
@@ -8835,6 +8910,7 @@ compsable->composable
 compsite->composite
 comptabile->compatible
 comptability->compatibility, computability,
+comptibility->compatibility
 comptible->compatible
 comptue->compute
 compuatation->computation
@@ -8874,13 +8950,19 @@ comtainer->container
 comtaining->containing
 comtains->contains
 comunicate->communicate
+comunicated->communicated
+comunicates->communicates
+comunicating->communicating
 comunication->communication
+comunications->communications
 comunism->communism
 comunist->communist
 comunists->communists
 comunity->community
 comute->commute, compute,
 comuted->commuted, computed,
+comvention->convention
+comventional->conventional
 comventions->conventions
 comverted->converted
 conain->contain
@@ -8923,6 +9005,8 @@ concatentations->concatenations
 concatented->concatenated
 concatinate->concatenate
 concatinated->concatenated
+concatinates->concatenates
+concatinating->concatenating
 concatination->concatenation
 concatinations->concatenations
 concating->concatenating
@@ -9170,7 +9254,10 @@ configring->configuring
 configruated->configured, configuration,
 configruation->configuration
 configruations->configurations
+configrue->configure
 configrued->configured
+configrues->configures
+configruing->configuring
 configuaration->configuration
 configuarble->configurable
 configuare->configure
@@ -9186,6 +9273,7 @@ configued->configured
 configuerd->configured
 configuered->configured
 configues->configures
+configuing->configuring
 configulate->configurate
 configulation->configuration
 configulations->configurations
@@ -9203,6 +9291,8 @@ configuratons->configurations
 configuratrions->configurations
 configuratuion->configuration
 configureable->configurable
+configureation->configuration
+configureations->configurations
 configureing->configuring
 configuretion->configuration
 configurres->configures
@@ -9305,6 +9395,7 @@ confursed->confused
 confurses->confuses
 confursing->confusing
 confusting->confusing
+confustion->confusion
 confuze->confuse
 confuzed->confused
 confuzes->confuses
@@ -9400,12 +9491,21 @@ connecttion->connection
 conneection->connection
 conneiction->connection
 connektors->connectors
+connet->connect
+connetc->connect
 connetced->connected
+connetcing->connecting
 connetcion->connection
+connetcions->connections
+connetcor->connector
+connetcors->connectors
 conneted->connected
 Conneticut->Connecticut
+conneting->connecting
 connetion->connection
+connetions->connections
 connetor->connector
+connetors->connectors
 connexion->connection
 connnect->connect
 connnected->connected
@@ -9417,6 +9517,7 @@ connot->cannot
 connstrain->constrain
 connstrained->constrained
 connstraint->constraint
+conntent->content
 conntents->contents
 conntroller->controller
 conosuer->connoisseur
@@ -9460,6 +9561,7 @@ conrruptions->corruptions
 conrrupts->corrupts
 conrtib->contrib
 conrtibs->contribs
+consant->constant
 consants->constants
 conscent->consent
 consciencious->conscientious
@@ -9476,7 +9578,12 @@ consctructors->constructors
 consctructs->constructs
 consdider->consider
 consdidered->considered
+consdier->consider
+consdieration->consideration
+consdierations->considerations
 consdiered->considered
+consdiering->considering
+consdiers->considers
 consdired->considered
 conseat->conceit
 conseated->conceited
@@ -9538,6 +9645,8 @@ consisant->consistent
 consisent->consistent
 consisently->consistently
 consisntency->consistency
+consisntent->consistent
+consisntently->consistently
 consistancy->consistency
 consistant->consistent
 consistantly->consistently
@@ -9625,7 +9734,12 @@ constcurts->constructs
 constext->context
 consting->consisting
 constinually->continually
+constist->consist
+constisted->consisted
 constistency->consistency
+constistent->consistent
+constistently->consistently
+constisting->consisting
 constists->consists
 constitently->consistently
 constituant->constituent
@@ -9663,6 +9777,8 @@ constrcted->constructed, constricted,
 constrcting->constructing, constricting,
 constrction->construction, constriction,
 constrctions->constructions, constrictions,
+constrctor->constructor, constrictor,
+constrctors->constructors, constrictors,
 constrcts->constructs, constricts,
 constrcuct->construct
 constrcut->construct
@@ -9689,7 +9805,9 @@ constructer->constructor
 constructers->constructors
 constructes->constructs
 constructiong->constructing, construction,
+constructr->constructor
 constructred->constructed
+constructrs->constructors, constructs,
 constructt->construct
 constructted->constructed
 constructting->constructing
@@ -9729,7 +9847,13 @@ constuctor->constructor
 constuctors->constructors
 constucts->constructs
 consturct->construct
+consturcted->constructed
+consturcting->constructing
+consturction->construction
+consturctions->constructions
 consturctor->constructor
+consturctors->constructors
+consturcts->constructs
 consuder->consider
 consuemr->consumer
 consulant->consultant
@@ -9767,8 +9891,10 @@ containining->containing
 containinng->containing
 containint->containing
 containn->contain
+containned->contained
 containner->container
 containners->containers
+containning->containing
 containns->contains
 containr->container
 containrs->containers
@@ -9793,6 +9919,7 @@ contaning->containing
 contanins->contains
 contans->contains
 contant->constant, content,
+contantly->constantly
 contants->constants, contents,
 contary->contrary
 contast->contrast, contest,
@@ -9907,8 +10034,12 @@ contition->condition
 contitions->conditions
 contiuation->continuation
 contiue->continue
+contiued->continued
+contiues->continues
 contiuguous->contiguous
 contiuing->continuing
+contiuous->continuous
+contiuously->continuously
 contniue->continue
 contniued->continued
 contniues->continues
@@ -10057,6 +10188,7 @@ convenince->convenience
 conveninent->convenient
 convense->convince
 convension->convention, conversion,
+convensions->conventions, conversions,
 convential->conventional
 conventient->convenient
 convenvient->convenient
@@ -10099,6 +10231,8 @@ conververs->conservers
 converves->conserves, converses,
 converving->conserving, conversing,
 convery->convert
+convesation->conversation
+convesations->conversations
 convesion->conversion
 convesions->conversions
 convet->convert
