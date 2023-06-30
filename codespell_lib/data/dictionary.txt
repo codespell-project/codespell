@@ -418,9 +418,14 @@ acciedential->accidental
 acciednetally->accidentally
 accient->accident
 acciental->accidental
+acclerate->accelerate
 acclerated->accelerated
 acclerates->accelerates
+acclerating->accelerating
 accleration->acceleration
+acclerator->accelerator
+acclerators->accelerators
+acclerometer->accelerometer
 acclerometers->accelerometers
 acclimitization->acclimatization
 accociate->associate
@@ -536,6 +541,9 @@ accout->account
 accouting->accounting
 accoutn->account
 accpet->accept
+accpetable->acceptable
+accpeted->accepted
+accpeting->accepting
 accpets->accepts
 accquainted->acquainted
 accquire->acquire
@@ -563,6 +571,7 @@ accssible->accessible
 accssor->accessor
 acctual->actual
 acctually->actually
+accual->actual
 accually->actually
 accuarcy->accuracy
 accuarte->accurate
@@ -597,7 +606,10 @@ accuray->accuracy, actuary,
 accure->accrue, occur, acquire,
 accured->accrued, occurred, acquired,
 accurences->occurrences
+accurracies->accuracies
 accurracy->accuracy
+accurrate->accurate
+accurrately->accurately
 accurring->occurring
 accurs->accurse, occurs,
 accussed->accused
@@ -682,6 +694,8 @@ acknodledgment->acknowledgment
 acknodledgments->acknowledgments
 acknoledge->acknowledge
 acknoledged->acknowledged
+acknoledgement->acknowledgement
+acknoledgements->acknowledgements
 acknoledges->acknowledges
 acknoledging->acknowledging
 acknoledgment->acknowledgment
@@ -802,6 +816,11 @@ activete->activate
 activeted->activated
 activetes->activates
 activiate->activate
+activiated->activated
+activiates->activates
+activiating->activating
+activiation->activation
+activiations->activations
 activies->activities
 activites->activities
 activiti->activity, activities,
@@ -813,9 +832,13 @@ activly->actively
 activste->activate
 activsted->activated
 activstes->activates
+activte->activate
+activted->activated
 activtes->activates
 activties->activities
+activting->activating
 activtion->activation
+activtions->activations
 activty->activity
 activw->active
 activy->activity
@@ -838,13 +861,23 @@ actully->actually
 actural->actual
 acturally->actually
 actusally->actually
+actvate->activate
+actvated->activated
+actvates->activates
+actvating->activating
+actvation->activation
+actvations->activations
 actve->active
 actvie->active
+actvities->activities
+actvity->activity
 actzal->actual
 acual->actual
 acually->actually
+acuire->acquire
 acuired->acquired
 acuires->acquires
+acuiring->acquiring
 acumulate->accumulate
 acumulated->accumulated
 acumulates->accumulates
@@ -853,14 +886,17 @@ acumulation->accumulation
 acumulative->accumulative
 acumulator->accumulator
 acuqire->acquire
+acuracies->accuracies
 acuracy->accuracy
 acurate->accurate
+acurately->accurately
 acused->accused
 acustom->accustom
 acustommed->accustomed
 acutal->actual
 acutally->actually
 acutual->actual
+acutually->actually
 adament->adamant
 adamently->adamantly
 adapated->adapted
@@ -895,6 +931,8 @@ addapt->adapt
 addaptation->adaptation
 addaptations->adaptations
 addapted->adapted
+addapter->adapter
+addapters->adapters
 addapting->adapting
 addapts->adapts
 addd->add
@@ -909,6 +947,7 @@ adddresses->addresses
 addds->adds
 addedd->added
 addeed->added
+adderss->address
 addersses->addresses
 addert->assert
 adderted->asserted
@@ -919,9 +958,14 @@ addesses->addresses
 addessing->addressing
 addied->added
 addig->adding
+addiing->adding
 addiional->additional
+addiionally->additionally
 addiiton->addition
+addiitonal->additional
 addiitonall->additional
+addiitonally->additionally
+addiitons->additions
 addional->additional
 addionally->additionally
 addiotion->addition
@@ -955,6 +999,7 @@ additon->addition
 additonal->additional
 additonally->additionally
 additonaly->additionally
+additons->additions
 addjust->adjust
 addjusted->adjusted
 addjusting->adjusting
@@ -1007,7 +1052,12 @@ addted->added
 addtion->addition
 addtional->additional
 addtionally->additionally
+addtionaly->additionally
+addtions->additions
+addtition->addition
 addtitional->additional
+addtitionally->additionally
+addtitions->additions
 adecuate->adequate
 aded->added
 adequit->adequate
@@ -1034,6 +1084,9 @@ aditional->additional
 aditionally->additionally
 aditionaly->additionally
 aditionnal->additional
+aditionnally->additionally
+aditionnaly->additionally
+aditions->additions
 adivce->advice, advise,
 adivsories->advisories
 adivsoriy->advisory, advisories,
@@ -1066,9 +1119,15 @@ adjecent->adjacent
 adjency->agency, adjacency,
 adjsence->adjacence
 adjsencies->adjacencies
+adjsut->adjust
 adjsuted->adjusted
+adjsuting->adjusting
+adjsutment->adjustment
+adjsutments->adjustments
+adjsuts->adjusts
 adjuscent->adjacent
 adjusment->adjustment
+adjusments->adjustments
 adjustement->adjustment
 adjustements->adjustments
 adjustes->adjusted, adjusts,
@@ -1085,6 +1144,7 @@ admininistrators->administrators
 admininstrator->administrator
 administation->administration
 administator->administrator
+administators->administrators
 administor->administrator
 administraively->administratively
 adminitrator->administrator
@@ -1114,8 +1174,10 @@ adpat->adapt
 adpated->adapted
 adpater->adapter
 adpaters->adapters
+adpative->adaptive
 adpats->adapts
 adpter->adapter
+adpters->adapters
 adquire->acquire
 adquired->acquired
 adquires->acquires
@@ -1150,6 +1212,8 @@ advane->advance
 advaned->advanced
 advantagous->advantageous
 advanved->advanced
+adventage->advantage
+adventageous->advantageous
 adventages->advantages
 adventagous->advantageous
 adventagously->advantageously
@@ -1372,6 +1436,7 @@ ajustement->adjustment
 ajusting->adjusting
 ajustment->adjustment
 ajustments->adjustments
+ajusts->adjusts
 ake->ache
 akkumulate->accumulate
 akkumulated->accumulated
@@ -1381,6 +1446,13 @@ akkumulation->accumulation
 akkumulative->accumulative
 akkumulator->accumulator
 aknowledge->acknowledge
+aknowledged->acknowledged
+aknowledgement->acknowledgement
+aknowledgements->acknowledgements
+aknowledges->acknowledges
+aknowledging->acknowledging
+aknowledgment->acknowledgment
+aknowledgments->acknowledgments
 aks->ask
 aksed->asked
 akss->asks, ass,
@@ -1661,8 +1733,11 @@ aliasses->aliases
 alientating->alienating
 aliged->aligned
 alighed->aligned, alighted,
+alighment->alignment
+alighments->alignments
 alighned->aligned
 alighnment->alignment
+alighnments->alignments
 aligin->align
 aligined->aligned
 aligining->aligning
@@ -1676,6 +1751,7 @@ alignation->alignment
 alignd->aligned
 aligne->align
 alignement->alignment
+alignements->alignments
 alignemnt->alignment
 alignemnts->alignments
 alignemt->alignment
@@ -1857,6 +1933,9 @@ alogirthmic->algorithmic
 alogirthmically->algorithmically
 alogirthms->algorithms
 alogned->aligned
+alogorithm->algorithm
+alogorithmic->algorithmic
+alogorithmically->algorithmically
 alogorithms->algorithms
 alogrithm->algorithm
 alogrithmic->algorithmic
@@ -1865,6 +1944,9 @@ alogrithms->algorithms
 alomst->almost
 aloows->allows
 alorithm->algorithm
+alorithmic->algorithmic
+alorithmically->algorithmically
+alorithms->algorithms
 alos->also
 alot->a lot, allot,
 alotted->allotted
@@ -2143,6 +2225,7 @@ analyed->analysed, analyzed,
 analyer->analyser, analyzer,
 analyers->analysers, analyzers,
 analyes->analyses, analyzes, analyse, analyze,
+analying->analysing, analyzing,
 analyis->analysis
 analyist->analyst
 analyists->analysts
@@ -2323,6 +2406,8 @@ annoints->anoints
 annonate->annotate
 annonated->annotated
 annonates->annotates
+annonation->annotation
+annonations->annotations
 annonce->announce
 annonced->announced
 annoncement->announcement
@@ -2397,6 +2482,7 @@ anothr->another
 anounce->announce
 anounced->announced
 anouncement->announcement
+anouncements->announcements
 anount->amount
 anoy->annoy
 anoyed->annoyed
@@ -2532,7 +2618,10 @@ apealed->appealed
 apealing->appealing
 apeals->appeals
 apear->appear
+apearance->appearance
+apearances->appearances
 apeared->appeared
+apearing->appearing
 apears->appears
 apect->aspect
 apects->aspects
@@ -2650,6 +2739,7 @@ appereances->appearances
 appered->appeared
 apperent->apparent
 apperently->apparently
+appering->appearing
 appers->appears
 apperture->aperture
 appicability->applicability
@@ -3439,12 +3529,25 @@ asigning->assigning
 asignmend->assignment
 asignmends->assignments
 asignment->assignment
+asignments->assignments
 asignor->assignor
+asignors->assignors
 asigns->assigns
 asii->ascii
+asisst->assist
+asisstance->assistance
 asisstant->assistant
 asisstants->assistants
+asissted->assisted
+asissting->assisting
+asissts->assists
+asist->assist
 asistance->assistance
+asistant->assistant
+asistants->assistants
+asisted->assisted
+asisting->assisting
+asists->assists
 aske->ask
 askes->asks
 aslo->also
@@ -3575,8 +3678,10 @@ assinged->assigned
 assinging->assigning
 assingled->assigned
 assingment->assignment
+assingments->assignments
 assingned->assigned
 assingnment->assignment
+assingnments->assignments
 assings->assigns
 assinment->assignment
 assiocate->associate
@@ -3787,6 +3892,7 @@ asumed->assumed
 asumes->assumes
 asuming->assuming
 asumption->assumption
+asumptions->assumptions
 asumtotic->asymptotic
 asure->assure
 aswage->assuage
@@ -3916,6 +4022,7 @@ attched->attached
 attches->attaches
 attching->attaching
 attchment->attachment
+attchments->attachments
 attement->attempt
 attemented->attempted
 attementing->attempting
@@ -3948,6 +4055,9 @@ attentuation->attenuation
 attentuations->attenuations
 attepmpt->attempt
 attept->attempt
+attepted->attempted
+attepting->attempting
+attepts->attempts
 attetntion->attention
 attibute->attribute
 attibuted->attributed
@@ -4196,7 +4306,13 @@ authenrication->authentication
 authenricator->authenticator
 authenricators->authenticators
 authentation->authentication
+authentcate->authenticate
 authentcated->authenticated
+authentcates->authenticates
+authentcating->authenticating
+authentcation->authentication
+authentcator->authenticator
+authentcators->authenticators
 authentciate->authenticate
 authentciated->authenticated
 authentciates->authenticates
@@ -4446,6 +4562,11 @@ autorisation->authorisation
 autoritative->authoritative
 autority->authority
 autorization->authorization
+autorizations->authorizations
+autorize->authorize
+autorized->authorized
+autorizes->authorizes
+autorizing->authorizing
 autoropeat->autorepeat
 autors->authors
 autosae->autosave
@@ -4901,6 +5022,8 @@ begginging->beginning
 begginig->beginning
 beggining->beginning
 begginings->beginnings
+begginner->beginner
+begginners->beginners
 begginnig->beginning
 begginning->beginning
 beggins->begins
@@ -4937,14 +5060,25 @@ behavies->behaves
 behavious->behaviour, behaviours,
 behavioutr->behaviour
 behaviro->behavior
+behaviroal->behavioral
+behaviros->behaviors
 behaviuor->behaviour
+behaviuoral->behavioural
+behaviuors->behaviours
 behavoir->behavior
+behavoiral->behavioral
 behavoirs->behaviors
+behavoiur->behaviour
+behavoiural->behavioural
+behavoiurs->behaviours
 behavor->behavior, behaviour,
 behavoral->behavioral, behavioural,
+behavors->behaviors, behaviours,
 behavour->behaviour
 behavoural->behavioural
+behavours->behaviours
 behavriour->behaviour
+behavrioural->behavioural
 behavriours->behaviours
 behinde->behind
 behing->behind, being,
@@ -5006,8 +5140,10 @@ belyed->belied
 belyes->belies
 belys->belies
 bemusemnt->bemusement
+benchamark->benchmark
 benchamarked->benchmarked
 benchamarking->benchmarking
+benchamarks->benchmarks
 benchamrk->benchmark
 benchamrked->benchmarked
 benchamrking->benchmarking
@@ -5119,6 +5255,8 @@ bidning->binding
 bidnings->bindings
 bigallic->bigalloc
 bigining->beginning
+biginner->beginner
+biginners->beginners
 biginning->beginning
 biinary->binary
 bilangual->bilingual
@@ -5632,6 +5770,7 @@ buffereed->buffered
 bufferent->buffered
 bufferes->buffers, buffered,
 bufferred->buffered
+bufferring->buffering
 buffeur->buffer
 bufffer->buffer
 bufffers->buffers
@@ -5726,7 +5865,11 @@ bunbling->bundling
 bund->bind, bound,
 bunded->binded, bundled, bounded,
 bundel->bundle
+bundele->bundle
 bundeled->bundled
+bundeler->bundler
+bundeles->bundles
+bundeling->bundling
 bundels->bundles
 bunding->binding, bundling, bounding,
 bunds->binds, bounds,
@@ -5826,6 +5969,8 @@ caclulates->calculates
 caclulating->calculating
 caclulation->calculation
 caclulations->calculations
+caclulator->calculator
+caclulators->calculators
 cacoon->cocoon
 cacoons->cocoons
 caculate->calculate
@@ -5836,6 +5981,7 @@ caculating->calculating
 caculation->calculation
 caculations->calculations
 caculator->calculator
+caculators->calculators
 cacuses->caucuses
 cadidate->candidate
 caefully->carefully
@@ -5909,24 +6055,47 @@ calbirator->calibrator
 calbirators->calibrators
 calcable->calculable
 calcalate->calculate
+calcalated->calculated
+calcalates->calculates
+calcalating->calculating
+calcalation->calculation
+calcalations->calculations
+calcalator->calculator
+calcalators->calculators
 calciulate->calculate
 calciulating->calculating
+calclate->calculate
+calclated->calculated
+calclates->calculates
+calclating->calculating
 calclation->calculation
+calclations->calculations
+calclator->calculator
+calclators->calculators
 calcluate->calculate
 calcluated->calculated
 calcluates->calculates
+calcluating->calculating
+calcluation->calculation
+calcluations->calculations
+calcluator->calculator
+calcluators->calculators
 calclulate->calculate
 calclulated->calculated
 calclulates->calculates
 calclulating->calculating
 calclulation->calculation
 calclulations->calculations
+calclulator->calculator
+calclulators->calculators
 calcualate->calculate
 calcualated->calculated
 calcualates->calculates
 calcualating->calculating
 calcualation->calculation
 calcualations->calculations
+calcualator->calculator
+calcualators->calculators
 calcualion->calculation
 calcualions->calculations
 calcualte->calculate
@@ -5937,11 +6106,15 @@ calcualting->calculating
 calcualtion->calculation
 calcualtions->calculations
 calcualtor->calculator
+calcualtors->calculators
 calcuate->calculate
 calcuated->calculated
 calcuates->calculates
+calcuating->calculating
 calcuation->calculation
 calcuations->calculations
+calcuator->calculator
+calcuators->calculators
 calculaion->calculation
 calculataed->calculated
 calculatble->calculatable, calculable,
@@ -5955,24 +6128,56 @@ calculattions->calculations
 calculaution->calculation
 calculautions->calculations
 calculcate->calculate
+calculcated->calculated
+calculcates->calculates
+calculcating->calculating
 calculcation->calculation
+calculcations->calculations
+calculcator->calculator
+calculcators->calculators
 calculed->calculated
 calculs->calculus
 calcultate->calculate
 calcultated->calculated
 calcultater->calculator
+calcultates->calculates
 calcultating->calculating
+calcultation->calculation
+calcultations->calculations
 calcultator->calculator
+calcultators->calculators
+calculte->calculate
+calculted->calculated
+calcultes->calculates
 calculting->calculating
+calcultion->calculation
+calcultions->calculations
+calcultor->calculator
+calcultors->calculators
+calculuate->calculate
+calculuated->calculated
+calculuates->calculates
+calculuating->calculating
+calculuation->calculation
 calculuations->calculations
+calculuator->calculator
+calculuators->calculators
 calcurate->calculate
 calcurated->calculated
 calcurates->calculates
 calcurating->calculating
+calcuration->calculation
+calcurations->calculations
+calcurator->calculator
+calcurators->calculators
 calcutate->calculate
 calcutated->calculated
 calcutates->calculates
 calcutating->calculating
+calcutation->calculation
+calcutations->calculations
+calcutator->calculator
+calcutators->calculators
 caldesack->cul-de-sac
 caleed->called
 caleee->callee
@@ -6019,9 +6224,14 @@ callig->calling
 callint->calling
 callis->callus
 calll->call
+calllback->callback
+calllbacks->callbacks
 callled->called
 calllee->callee
+calller->caller
 calllers->callers
+callling->calling
+callls->calls
 calloed->called
 callser->caller
 callsr->calls
@@ -6034,6 +6244,13 @@ calucalting->calculating
 calucaltion->calculation
 calucaltions->calculations
 calucate->calculate
+calucated->calculated
+calucates->calculates
+calucating->calculating
+calucation->calculation
+calucations->calculations
+calucator->calculator
+calucators->calculators
 caluclate->calculate
 caluclated->calculated
 caluclater->calculator
@@ -6042,12 +6259,15 @@ caluclating->calculating
 caluclation->calculation
 caluclations->calculations
 caluclator->calculator
+caluclators->calculators
 caluculate->calculate
 caluculated->calculated
 caluculates->calculates
 caluculating->calculating
 caluculation->calculation
 caluculations->calculations
+caluculator->calculator
+caluculators->calculators
 calue->value
 calulate->calculate
 calulated->calculated
@@ -6056,6 +6276,8 @@ calulates->calculates
 calulating->calculating
 calulation->calculation
 calulations->calculations
+calulator->calculator
+calulators->calculators
 caluse->clause, callus, callous,
 Cambrige->Cambridge
 cameleon->chameleon
@@ -6223,12 +6445,19 @@ captians->captains
 captin->captain
 captins->captains
 captrure->capture
+captue->capture
 captued->captured
+captues->captures
+captuing->capturing
 capturd->captured
 caputre->capture
 caputred->captured
 caputres->captures
+caputring->capturing
 caputure->capture
+caputured->captured
+caputures->captures
+caputuring->capturing
 caraboo->caribou
 caraboos->caribous
 carachter->character
@@ -6236,6 +6465,7 @@ caracter->character
 caractere->character
 caracteristic->characteristic
 caracteristics->characteristics
+caracterize->characterize
 caracterized->characterized
 caracters->characters
 caraff->carafe
@@ -6422,8 +6652,12 @@ cateogries->categories
 cateogry->category
 catepillar->caterpillar
 catepillars->caterpillars
+catergorical->categorical
+catergorically->categorically
+catergories->categories
 catergorize->categorize
 catergorized->categorized
+catergory->category
 caterpilar->caterpillar
 caterpilars->caterpillars
 caterpiller->caterpillar
@@ -6453,6 +6687,7 @@ caugt->caught
 cauhgt->caught
 cauing->causing
 causees->causes
+causeing->causing
 causion->caution
 causioned->cautioned
 causions->cautions
@@ -6582,6 +6817,8 @@ cercumstances->circumstances
 cercumstancial->circumstantial
 cercumstantial->circumstantial
 cereates->creates
+cerificate->certificate
+cerificates->certificates
 cerification->certification, verification,
 cerifications->certifications, verifications,
 cerified->certified, verified,
@@ -6693,6 +6930,7 @@ chace->chance, cache,
 chache->cache
 chached->cached
 chacheline->cacheline
+chaches->caches
 chaeck->check
 chaecked->checked
 chaecker->checker
@@ -6705,15 +6943,25 @@ chaging->changing, charging,
 chagne->change
 chagned->changed
 chagnes->changes
+chahge->change
 chahged->changed
+chahges->changes
 chahging->changing
 chaied->chained
 chaing->chain
+chalenge->challenge
+chalenged->challenged
+chalenger->challenger
+chalengers->challengers
+chalenges->challenges
 chalenging->challenging
 challanage->challenge
 challange->challenge
 challanged->challenged
+challanger->challenger
+challangers->challengers
 challanges->challenges
+challanging->challenging
 challege->challenge
 challening->challenging
 chambre->chamber
@@ -6728,7 +6976,10 @@ chanages->changes
 chanaging->changing
 chanceled->canceled
 chanceling->canceling
+chanche->chance, change,
 chanched->changed
+chanches->chances, changes,
+chanching->changing
 chancnel->channel, cancel,
 chandaleer->chandelier
 chandaleers->chandeliers
@@ -6738,7 +6989,9 @@ chandeleer->chandelier
 chandeleers->chandeliers
 chane->change, chain,
 chaned->changed, chained,
+chanege->change
 chaneged->changed
+chaneges->changes
 chaneging->changing
 chanel->channel
 chanell->channel
@@ -6746,6 +6999,8 @@ chanels->channels
 changable->changeable
 changeble->changeable
 changee->changed, changes, change,
+changeed->changed
+changees->changes
 changeing->changing
 changge->change
 changged->changed
@@ -6862,8 +7117,14 @@ charaset->charset
 charasets->charsets
 charasmatic->charismatic
 charater->character
+charateristic->characteristic
+charateristics->characteristics
+charaterization->characterization
+charaterizations->characterizations
 charaterize->characterize
 charaterized->characterized
+charaterizes->characterizes
+charaterizing->characterizing
 charaters->characters
 charator->character
 charators->characters
@@ -6916,6 +7177,14 @@ chceking->checking
 chceks->checks
 chck->check
 chckbox->checkbox
+chckboxes->checkboxes
+chcked->checked
+chcker->checker
+chckers->checkers
+chcking->checking
+chckpoint->checkpoint
+chckpoints->checkpoints
+chcks->checks
 cheapeast->cheapest
 cheatta->cheetah
 chec->check
@@ -6966,12 +7235,25 @@ cheeta->cheetah
 cheif->chief
 cheifs->chiefs
 chek->check
+chekbox->checkbox
+chekboxes->checkboxes
 chekc->check
+chekcbox->checkbox
+chekcboxes->checkboxes
+chekced->checked
+chekcer->checker
+chekcers->checkers
 chekcing->checking
+chekcpoint->checkpoint
+chekcpoints->checkpoints
+chekcs->checks
 chekd->checked
 cheked->checked
+cheker->checker
 chekers->checkers
 cheking->checking
+chekpoint->checkpoint
+chekpoints->checkpoints
 cheks->checks
 cheksum->checksum
 cheksums->checksums
