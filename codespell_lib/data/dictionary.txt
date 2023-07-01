@@ -10247,6 +10247,12 @@ copletely->completely
 copletes->completes
 copmetitors->competitors
 copmilation->compilation
+copmile->compile
+copmiled->compiled
+copmiler->compiler
+copmilers->compilers
+copmiles->compiles
+copmiling->compiling
 copmonent->component
 copmutations->computations
 copntroller->controller
@@ -10319,7 +10325,15 @@ coregated->corrugated
 corelate->correlate
 corelated->correlated
 corelates->correlates
+corelating->correlating
+corelation->correlation
+corelations->correlations
+corellate->correlate
+corellated->correlated
+corellates->correlates
+corellating->correlating
 corellation->correlation
+corellations->correlations
 corener->corner, coroner,
 coreolis->Coriolis
 corerct->correct
@@ -10327,7 +10341,9 @@ corerctly->correctly
 corespond->correspond
 coresponded->corresponded
 corespondence->correspondence
+corespondences->correspondences
 coresponding->corresponding
+corespondingly->correspondingly
 coresponds->corresponds
 corfirms->confirms
 coridal->cordial
@@ -10356,6 +10372,13 @@ corproration->corporation
 corprorations->corporations
 corrcect->correct
 corrct->correct
+corrcted->corrected
+corrcting->correcting
+corrction->correction
+corrctions->corrections
+corrctly->correctly
+corrctness->correctness
+corrcts->corrects
 corrdinate->coordinate
 corrdinated->coordinated
 corrdinates->coordinates
@@ -10414,8 +10437,15 @@ correponding->corresponding
 correponds->corresponds
 correponsing->corresponding
 correposding->corresponding
+correpsond->correspond
+correpsonded->corresponded
 correpsondence->correspondence
+correpsondences->correspondences
+correpsondent->correspondent
+correpsondents->correspondents
 correpsonding->corresponding
+correpsondingly->correspondingly
+correpsonds->corresponds
 corresond->correspond
 corresonded->corresponded
 corresonding->corresponding
@@ -10447,6 +10477,8 @@ correspondes->corresponds
 correspondg->corresponding
 correspondig->corresponding
 corresponed->corresponded
+corresponent->correspondent
+corresponents->correspondents
 corresponging->corresponding
 corresponing->corresponding
 correspons->corresponds
@@ -10547,6 +10579,8 @@ cosoled->consoled
 cosoles->consoles
 cosoling->consoling
 costant->constant
+costantly->constantly
+costants->constants
 costexpr->constexpr
 costitution->constitution
 costruct->construct
@@ -10561,6 +10595,8 @@ costums->customs, costumes,
 cotain->contain
 cotained->contained
 cotainer->container
+cotainers->containers
+cotaining->containing
 cotains->contains
 cotave->octave
 cotaves->octaves
@@ -10598,6 +10634,7 @@ couldn;t->couldn't
 couldnt'->couldn't
 couldnt->couldn't
 couldnt;->couldn't
+coulmn->column
 coulmns->columns
 couln't->couldn't
 couloumb->coulomb
@@ -10736,7 +10773,9 @@ craetors->creators, craters,
 crahed->crashed
 crahes->crashes
 crahs->crash, crass,
+crahsed->crashed
 crahses->crashes
+crahsing->crashing
 cramugin->curmudgeon
 cramugins->curmudgeons
 crashaes->crashes
@@ -10754,11 +10793,30 @@ crationist->creationist
 crationists->creationists
 crations->creations, rations, nations,
 creaate->create
+creaated->created
+creaates->creates
+creaating->creating
+creaation->creation
+creaations->creations
+creaative->creative
+creaator->creator
+creaators->creators
 creadential->credential
 creadentialed->credentialed
 creadentials->credentials
 creaed->created
+creaet->create
+creaetd->created
+creaete->create
 creaeted->created
+creaetes->creates
+creaeting->creating
+creaetion->creation
+creaetions->creations
+creaetive->creative
+creaetor->creator
+creaetors->creators
+creaets->creates
 creasoat->creosote
 creastor->creator
 creatation->creation
@@ -10766,7 +10824,11 @@ createa->create
 createable->creatable
 createdd->created
 createing->creating
+createion->creation
+createions->creations
 createive->creative
+createor->creator
+createors->creators
 creater->creator, crater,
 creaters->creators, craters,
 creatin->creation, creating, creatine, cretin,
@@ -10820,15 +10882,20 @@ critcially->critically
 critcials->criticals
 criteak->critique
 critera->criteria
+criterea->criteria
 critereon->criterion
 criterias->criteria
 criteriom->criterion
+criteron->criterion
 criticall->critical, critically,
 criticial->critical
 criticially->critically
 criticials->criticals
 criticists->critics
 critiera->criteria
+critieria->criteria
+critierion->criterion
+critieron->criterion
 critiical->critical
 critiically->critically
 critiicals->criticals
@@ -11000,6 +11067,7 @@ curremt->current
 curremtly->currently
 curremts->currents
 curren->current
+currenct->current, currency,
 currenctly->currently, currency,
 currenlty->currently
 currenly->currently
@@ -11011,6 +11079,7 @@ currentlly->currently
 currentry->currently
 currenty->currently
 curresponding->corresponding
+curret->current
 curretly->currently
 curretn->current
 curretnly->currently
@@ -11119,6 +11188,7 @@ custums->customs
 cuted->cut, cute, cuter,
 cutom->custom
 cutted->cutter, gutted, cut,
+cuurent->current
 cuurently->currently
 cuurrent->current
 cuurrents->currents
@@ -11142,8 +11212,12 @@ cyclinder->cylinder
 cyclinders->cylinders
 cycular->circular
 cygin->cygwin
+cylce->cycle
+cylced->cycled
+cylces->cycles
 cylcic->cyclic
 cylcical->cyclical
+cylcing->cycling
 cyle->cycle
 cylic->cyclic
 cylider->cylinder
