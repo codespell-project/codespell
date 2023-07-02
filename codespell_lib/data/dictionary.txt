@@ -11734,7 +11734,10 @@ decission->decision
 declar->declare
 declaraion->declaration
 declaraions->declarations
+declarate->declare
 declarated->declared
+declarates->declares
+declarating->declaring
 declaratinos->declarations
 declaratiom->declaration
 declaraton->declaration
@@ -11883,7 +11886,12 @@ decscription->description
 decsion->decision
 decsions->decisions
 decsiptors->descriptors
+decsribe->describe
 decsribed->described
+decsribes->describes
+decsribing->describing
+decsription->description
+decsriptions->descriptions
 decsriptor->descriptor
 decsriptors->descriptors
 decstiption->description
@@ -12006,9 +12014,12 @@ defenate->definite
 defenately->definitely
 defendent->defendant
 defendents->defendants
+defenite->definite
 defenitely->definitely
 defenition->definition
 defenitions->definitions
+defenitive->definitive
+defenitively->definitively
 defenitly->definitely
 deferal->deferral
 deferals->deferrals
@@ -12032,7 +12043,13 @@ defferred->deferred
 deffers->differs, defers,
 deffine->define
 deffined->defined
+deffines->defines
+deffining->defining
+deffinite->definite
+deffinitely->definitely
 deffinition->definition
+deffinitions->definitions
+deffinitive->definitive
 deffinitively->definitively
 deffirent->different
 defiantely->defiantly
@@ -12059,6 +12076,10 @@ definend->defined
 definete->definite
 definetelly->definitely
 definetely->definitely
+definetion->definition
+definetions->definitions
+definetive->definitive
+definetively->definitively
 definetly->definitely
 definiation->definition
 definied->defined
@@ -12087,12 +12108,15 @@ defint->definite, define,
 definte->definite, define,
 defintely->definitely
 defintian->definition
+defintie->definite
+defintiely->definitely
 defintiion->definition
 defintiions->definitions
 defintion->definition
 defintions->definitions
 defintition->definition
 defintivly->definitively
+defintly->definitely
 defishant->deficient
 defishantly->deficiently
 defition->definition
@@ -12101,7 +12125,12 @@ deflaut->default
 defned->defend, defined,
 defninition->definition
 defninitions->definitions
+defnite->definite
+defnitely->definitely
+defnition->definition
 defnitions->definitions
+defnitive->definitive
+defnitively->definitively
 defore->before
 defqault->default
 defragmenation->defragmentation
@@ -12285,6 +12314,8 @@ deliverys->deliveries, delivers,
 delpoy->deploy
 delpoyed->deployed
 delpoying->deploying
+delpoyment->deployment
+delpoyments->deployments
 delpoys->deploys
 delt->dealt
 delte->delete
@@ -12309,7 +12340,14 @@ demolishon->demolition
 demolision->demolition
 demoninator->denominator
 demoninators->denominators
+demonstate->demonstrate
+demonstated->demonstrated
 demonstates->demonstrates
+demonstating->demonstrating
+demonstation->demonstration
+demonstations->demonstrations
+demonstator->demonstrator
+demonstators->demonstrators
 demonstrat->demonstrate
 demonstratable->demonstrable
 demonstratably->demonstrably
@@ -12346,7 +12384,12 @@ deompression->decompression
 depandance->dependence
 depandancies->dependencies
 depandancy->dependency
+depandence->dependence
+depandences->dependences
+depandencies->dependencies
+depandency->dependency
 depandent->dependent
+depandents->dependents
 deparment->department
 deparmental->departmental
 deparments->departments
@@ -12405,6 +12448,7 @@ depencent->dependent
 depencies->dependencies
 depency->dependency
 dependance->dependence
+dependances->dependences
 dependancies->dependencies
 dependancy->dependency
 dependancys->dependencies
@@ -12412,6 +12456,8 @@ dependand->dependent
 dependcies->dependencies
 dependcy->dependency
 dependding->depending
+dependece->dependence
+dependeces->dependences
 dependecies->dependencies
 dependecy->dependency
 dependecys->dependencies
@@ -12436,6 +12482,7 @@ dependening->depending
 dependeny->dependency
 dependet->dependent
 dependices->dependencies
+dependicies->dependencies
 dependicy->dependency
 dependig->depending
 dependncies->dependencies
@@ -12467,6 +12514,15 @@ depenently->dependently
 depening->depending, deepening,
 depennding->depending
 depent->depend
+depented->depended
+depentence->dependence
+depentences->dependences
+depentencies->dependencies
+depentency->dependency
+depentent->dependent
+depentents->dependents
+depenting->depending
+depents->depends
 depercated->deprecated
 deperecate->deprecate
 deperecated->deprecated
@@ -12477,9 +12533,15 @@ deploiment->deployment
 deploiments->deployments
 deployd->deploy, deployed,
 deployement->deployment
+deployements->deployments
 deploymenet->deployment
 deploymenets->deployments
 deply->deploy, deeply,
+deplyed->deployed
+deplying->deploying
+deplyment->deployment
+deplyments->deployments
+deplys->deploys
 depndant->dependent
 depnds->depends
 deporarily->temporarily
@@ -12598,9 +12660,12 @@ dermines->determines
 dermining->determining
 derogitory->derogatory
 derprecated->deprecated
+derrivative->derivative
 derrivatives->derivatives
 derrive->derive
 derrived->derived
+derrives->derives
+derriving->deriving
 dertermine->determine
 derterming->determining
 derth->dearth
@@ -12639,6 +12704,10 @@ desciption->description
 desciptions->descriptions
 desciptor->descriptor
 desciptors->descriptors
+descirbe->describe
+descirbed->described
+descirbes->describes
+descirbing->describing
 desciribe->describe
 desciribed->described
 desciribes->describes
@@ -12646,7 +12715,10 @@ desciribing->describing
 desciription->description
 desciriptions->descriptions
 descirption->description
+descirptions->descriptions
+descirptive->descriptive
 descirptor->descriptor
+descirptors->descriptors
 descision->decision
 descisions->decisions
 descize->disguise
@@ -12677,7 +12749,11 @@ descriced->described
 descrices->describes
 descricing->describing
 descrie->describe
+descriibe->describe
+descriibed->described
 descriibes->describes
+descriibing->describing
+descriing->describing
 descriminant->discriminant
 descriminate->discriminate
 descriminated->discriminated
@@ -12733,9 +12809,11 @@ descrtiption->description
 descrtiptions->descriptions
 descrutor->destructor
 descrybe->describe
+descrybed->described
+descrybes->describes
 descrybing->describing
-descryption->description
-descryptions->descriptions
+descryption->description, decryption,
+descryptions->descriptions, decryptions,
 desctiption->description
 desctiptor->descriptor
 desctiptors->descriptors
@@ -12764,6 +12842,7 @@ deserialsie->deserialise
 deserialsied->deserialised
 deserialsies->deserialises
 deserialsing->deserialising
+deserialzation->deserialization
 deserialze->deserialize
 deserialzed->deserialized
 deserialzes->deserializes
@@ -12949,8 +13028,14 @@ detabase->database
 detachs->detaches
 detahced->detached
 detaild->detailed
+detaill->detail
 detailled->detailed
+detailling->detailing
+detaills->details
 detais->details
+detal->detail
+detaled->detailed
+detaling->detailing
 detals->details
 detatch->detach
 detatched->detached
@@ -13015,6 +13100,7 @@ determintes->determines
 determnine->determine
 deternine->determine
 detet->detect, delete,
+detete->delete
 deteted->detected, deleted,
 detetes->deletes, detects,
 deteting->detecting, deleting,
@@ -13041,6 +13127,8 @@ detroying->destroying
 detroys->destroys
 detructed->destructed
 dettach->detach
+dettached->detached
+dettaches->detaches
 dettaching->detaching
 detur->detour
 deturance->deterrence
@@ -13156,7 +13244,14 @@ devlopments->developments
 devlopper->developer
 devloppers->developers
 devlops->develops
+devolop->develop
+devoloped->developed
 devolopement->development
+devoloper->developer
+devolopers->developers
+devoloping->developing
+devolopment->development
+devolops->develops
 devritualisation->devirtualisation
 devritualization->devirtualization
 devuce->device
