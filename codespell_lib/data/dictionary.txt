@@ -13296,6 +13296,7 @@ dialgos->dialogs
 dialig->dialog
 dialigs->dialogs
 dialoge->dialog, dialogue,
+dialoges->dialogs, dialogues,
 dialouge->dialogue
 dialouges->dialogues
 diamater->diameter
@@ -13308,6 +13309,8 @@ diangose->diagnose
 dianostic->diagnostic
 dianostics->diagnostics
 diaplay->display
+diaplayed->displayed
+diaplaying->displaying
 diaplays->displays
 diappeares->disappears
 diaram->diagram, diorama,
@@ -13410,6 +13413,7 @@ diferentiate->differentiate
 diferentiated->differentiated
 diferentiates->differentiates
 diferentiating->differentiating
+diferentiation->differentiation
 diferently->differently
 diferrent->different
 diffcult->difficult
@@ -13420,6 +13424,8 @@ diffence->difference
 diffenet->different
 diffenrence->difference
 diffenrences->differences
+diffenrent->different
+diffenrently->differently
 diffent->different
 diffentiating->differentiating
 differance->difference
@@ -13513,6 +13519,8 @@ diffrently->differently
 diffrents->different, difference,
 diffrerence->difference
 diffrerences->differences
+diffrerent->different
+diffrerently->differently
 diffues->diffuse, defuse,
 diffult->difficult
 diffussion->diffusion
@@ -13532,7 +13540,10 @@ difraction->diffraction
 difractive->diffractive
 difuse->diffuse, defuse,
 difused->diffused, defused,
-difuses->diffuses, defused,
+difuses->diffuses, defuses,
+difusing->diffusing, defusing,
+difusion->diffusion
+difusive->diffusive
 difussion->diffusion
 difussive->diffusive
 digesty->digest
@@ -13587,6 +13598,10 @@ dimentional->dimensional
 dimentionnal->dimensional
 dimentionnals->dimensional
 dimentions->dimensions
+dimesion->dimension
+dimesional->dimensional
+dimesionalities->dimensionalities
+dimesionality->dimensionality
 dimesions->dimensions
 dimesnion->dimension
 dimesnional->dimensional
@@ -13633,8 +13648,17 @@ diptheria->diphtheria
 dipthong->diphthong
 dipthongs->diphthongs
 dircet->direct
+dirceted->directed
+dirceting->directing
+dircetion->direction
+dircetional->directional
+dircetions->directions
+dircetive->directive
+dircetives->directives
+dircetly->directly
 dircetories->directories
 dircetory->directory
+dircets->directs
 dirctly->directly
 dirctories->directories
 dirctory->directory
@@ -13714,13 +13738,28 @@ diretories->directories
 diretory->directory
 direvctory->directory
 dirived->derived
+dirrect->direct
+dirrected->directed
+dirrecting->directing
+dirrection->direction
+dirrectional->directional
+dirrections->directions
+dirrective->directive
+dirrectives->directives
 dirrectly->directly
+dirrectories->directories
+dirrectory->directory
+dirrects->directs
 dirtectory->directory
 dirtyed->dirtied
 dirtyness->dirtiness
 dirver->driver
 disabe->disable
 disabed->disabled
+disabel->disable
+disabeld->disabled
+disabeled->disabled
+disabeles->disables
 disabeling->disabling
 disabels->disables
 disabes->disables
@@ -13738,6 +13777,7 @@ disalb->disable
 disalbe->disable
 disalbed->disabled
 disalbes->disables
+disalbing->disabling
 disale->disable
 disaled->disabled
 disalow->disallow
@@ -13923,6 +13963,7 @@ discribes->describes
 discribing->describing
 discription->description
 discriptions->descriptions
+discriptive->descriptive
 discriptor's->descriptor's
 discriptor->descriptor
 discriptors->descriptors
@@ -13949,7 +13990,10 @@ disencouraged->discouraged
 disertation->dissertation
 disfunctional->dysfunctional
 disfunctionality->dysfunctionality
+disgard->discard
 disgarded->discarded, discarted,
+disgarding->discarding
+disgards->discards
 disgest->digest
 disgn->design
 disgned->designed
@@ -14032,6 +14076,7 @@ displacemnt->displacement
 displacemnts->displacements
 displacment->displacement
 displacments->displacements
+displaed->displayed
 displaing->displaying
 displayd->displayed
 displayes->displays, displayed,
@@ -14330,7 +14375,12 @@ distrobution->distribution
 distrobutions->distributions
 distrobuts->distributes
 distroname->distro name
+distroy->destroy
+distroyed->destroyed
+distroyer->destroyer
+distroyers->destroyers
 distroying->destroying
+distroys->destroys
 distrub->disturb
 distrubiotion->distribution
 distrubite->distribute
@@ -14348,6 +14398,10 @@ distructor->destructor
 distructors->destructors
 distuingish->distinguish
 disuade->dissuade
+disucss->discuss
+disucssed->discussed
+disucsses->discusses
+disucssing->discussing
 disucssion->discussion
 disucssions->discussions
 disucussion->discussion
@@ -14371,8 +14425,11 @@ divertion->diversion
 divertions->diversions
 divet->divot
 diviation->deviation, divination,
-divice->device
+divice->device, divide,
+diviced->divided
 divicer->divider
+divices->devices, divides,
+divicing->dividing
 dividor->divider, divisor,
 dividors->dividers, divisors,
 divinition->definition, divination,
@@ -14405,7 +14462,9 @@ dobled->doubled
 dobles->doubles
 dobling->doubling
 doccument->document
+doccumentation->documentation
 doccumented->documented
+doccumenting->documenting
 doccuments->documents
 dockson->dachshund
 docmenetation->documentation
@@ -14467,12 +14526,26 @@ documentaton->documentation
 documentes->documents
 documentiation->documentation
 documention->documentation
+documet->document
 documetation->documentation
+documeted->documented
+documeting->documenting
+documetn->document
 documetnation->documentation
+documetned->documented
+documetning->documenting
+documetns->documents
+documets->documents
 documment->document
+docummentation->documentation
+docummented->documented
+docummenting->documenting
 documments->documents
 documnet->document
 documnetation->documentation
+documneted->documented
+documneting->documenting
+documnets->documents
 documument->document
 docunment->document
 doed->does
@@ -14639,6 +14712,9 @@ doumentc->document
 douments->documents
 dout->doubt
 dowgrade->downgrade
+dowgraded->downgraded
+dowgrades->downgrades
+dowgrading->downgrading
 dowlink->downlink
 dowlinks->downlinks
 dowload->download
@@ -14724,7 +14800,12 @@ dowt->doubt
 doxgen->doxygen
 doygen->doxygen
 dpeends->depends
+dpendence->dependence
+dpendences->dependences
+dpendencies->dependencies
+dpendency->dependency
 dpendent->dependent
+dpendents->dependents
 dpkg-buildpackge->dpkg-buildpackage
 dpkg-buildpackges->dpkg-buildpackages
 dpuble->double
@@ -14765,7 +14846,18 @@ dribbeld->dribbled
 dribbeled->dribbled
 dribbeling->dribbling
 dribbels->dribbles
+driect->direct
+driected->directed
+driecting->directing
+driection->direction
+driectional->directional
+driections->directions
+driective->directive
+driectives->directives
 driectly->directly
+driectories->directories
+driectory->directory
+driects->directs
 drity->dirty
 driveing->driving
 drivr->driver
@@ -14790,7 +14882,15 @@ drwawing->drawing
 drwawings->drawings
 dscrete->discrete
 dscretion->discretion
+dscribe->describe
 dscribed->described
+dscribes->describes
+dscribing->describing
+dscription->description
+dscriptions->descriptions
+dscriptive->descriptive
+dscriptor->descriptor
+dscriptors->descriptors
 dsiable->disable
 dsiabled->disabled
 dsplays->displays
@@ -14812,6 +14912,10 @@ dubling->doubling, Dublin,
 dubly->doubly
 ducment->document
 ducument->document
+ducumentation->documentation
+ducumented->documented
+ducumenting->documenting
+ducuments->documents
 dudo->sudo
 dueing->doing, during, dueling,
 duirng->during
@@ -14887,6 +14991,7 @@ durining->during
 durning->during
 durring->during
 duting->during
+dyanamic->dynamic
 dyanamically->dynamically
 dyanmic->dynamic
 dyanmically->dynamically
@@ -14894,6 +14999,7 @@ dyas->dryas
 dymamic->dynamic
 dymamically->dynamically
 dynamc->dynamic
+dynamcally->dynamically
 dynamcly->dynamically
 dynamcs->dynamics
 dynamicaly->dynamically
