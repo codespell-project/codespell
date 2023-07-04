@@ -18231,11 +18231,16 @@ fewg->few, fugue,
 fewsha->fuchsia
 fezent->pheasant
 fhurter->further
-fial->fail
-fialed->failed
-fialing->failing
+fial->fail, final, dial, vial,
+fialed->failed, dialed,
+fialing->failing, dialing,
+fially->finally
+fialog->dialog
+fialogs->dialogs
+fialogue->dialogue
+fialogues->dialogues
 fialover->failover
-fials->fails
+fials->fails, dials, vials,
 fialure->failure
 fialures->failures
 fianite->finite
@@ -18247,11 +18252,11 @@ fictious->fictitious
 fidality->fidelity
 fiddley->fiddly
 fidn->find
-fied->field
+fied->field, fiend,
 fiedl->field
 fiedled->fielded
 fiedls->fields
-fieds->fields
+fieds->fields, fiends,
 fieid->field
 fieids->fields
 fiel->feel, field, file, phial,
