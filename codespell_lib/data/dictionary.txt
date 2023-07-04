@@ -18140,7 +18140,8 @@ facilititate->facilitate
 facillitate->facilitate
 facillities->facilities
 faciltate->facilitate
-facilties->facilities
+facilties->facilities, faculties,
+facilty->facility, faculty,
 facinated->fascinated
 facirity->facility
 facist->fascist
@@ -18163,6 +18164,7 @@ faetures->features
 Fahrenheight->Fahrenheit
 faied->failed, fade,
 faield->failed
+faiing->failing
 faild->failed
 failded->failed
 faile->fail, failed,
@@ -18171,12 +18173,17 @@ failes->fails
 failicies->facilities
 failicy->facility
 failied->failed
+failiing->failing
 failiure->failure
 failiures->failures
 failiver->failover
 faill->fail
 failled->failed
+failling->failing
+faillover->failover
+faills->fails
 faillure->failure
+faillures->failures
 failng->failing
 failre->failure
 failrue->failure
@@ -18194,6 +18201,8 @@ faireness->fairness
 fairoh->pharaoh
 faiulre->failure
 faiulres->failures
+faiure->failure
+faiures->failures
 faiway->fairway
 faiways->fairways
 faktor->factor
@@ -18225,7 +18234,11 @@ familes->families
 familiies->families
 familiy->family
 familliar->familiar
+famillies->families
 familly->family
+famliar->familiar
+famlies->families
+famliliar->familiar
 famlilies->families
 famlily->family
 famly->family
@@ -18282,6 +18295,9 @@ fater->faster
 fatig->fatigue
 fatser->faster
 fature->feature
+fatured->featured
+fatures->features
+faturing->featuring
 faught->fought
 fauilure->failure
 fauilures->failures
@@ -18317,14 +18333,25 @@ featchured->featured
 featchures->features
 featchuring->featuring
 featre->feature
+featred->featured
+featres->features
+featring->featuring
 featue->feature
 featued->featured
 featues->features
+featuing->featuring
 featur->feature
+featurd->featured
+featurng->featuring
 featurs->features
 feautre->feature
+feautred->featured
+feautres->features
+feautring->featuring
 feauture->feature
+feautured->featured
 feautures->features
+feauturing->featuring
 febbruary->February
 febewary->February
 februar->February
@@ -18341,7 +18368,9 @@ feets->feet, feats,
 feetur->feature
 feeture->feature
 feild->field
+feilds->fields
 feld->field
+felds->fields
 felisatus->felicitous
 femminist->feminist
 fempto->femto
@@ -18360,7 +18389,18 @@ fewg->few, fugue,
 fewsha->fuchsia
 fezent->pheasant
 fhurter->further
-fials->fails
+fial->fail, final, dial, vial,
+fialed->failed, dialed,
+fialing->failing, dialing,
+fially->finally
+fialog->dialog
+fialogs->dialogs
+fialogue->dialogue
+fialogues->dialogues
+fialover->failover
+fials->fails, dials, vials,
+fialure->failure
+fialures->failures
 fianite->finite
 fianlly->finally
 fibonaacci->Fibonacci
@@ -18370,11 +18410,13 @@ fictious->fictitious
 fidality->fidelity
 fiddley->fiddly
 fidn->find
-fied->field
+fied->field, fiend,
 fiedl->field
 fiedled->fielded
 fiedls->fields
+fieds->fields, fiends,
 fieid->field
+fieids->fields
 fiel->feel, field, file, phial,
 fieldlst->fieldlist
 fieled->field
@@ -18402,18 +18444,25 @@ filesname->filename, filenames,
 filesnames->filenames
 filess->files
 filesstem->filesystem
+filesstems->filesystems
+filessystem->filesystem
+filessystems->filesystems
 filessytem->filesystem
 filessytems->filesystems
 fileststem->filesystem
+fileststems->filesystems
+filesysem->filesystem
 filesysems->filesystems
 filesysthem->filesystem
 filesysthems->filesystems
+filesystme->filesystem
 filesystmes->filesystems
 filesystyem->filesystem
 filesystyems->filesystems
 filesytem->filesystem
 filesytems->filesystems
 filesytsem->filesystem
+filesytsems->filesystems
 fileter->filter
 filetest->file test
 filetests->file tests
@@ -18447,7 +18496,9 @@ filterss->filters
 filtype->filetype
 filtypes->filetypes
 fime->fixme, time,
+fimiliar->familiar
 fimilies->families
+fimily->family
 fimrware->firmware
 fimware->firmware
 finacial->financial
@@ -18466,9 +18517,14 @@ financialy->financially
 finanize->finalize
 finanlize->finalize
 fincally->finally
+finction->function, fiction,
 finctional->functional, fictional,
 finctionalities->functionalities
 finctionality->functionality
+finctionally->functionally
+finctioned->functioned
+finctioning->functioning
+finctions->functions
 finde->find
 finded->found, fined, funded,
 findn->find
@@ -18533,6 +18589,7 @@ fisisist->physicist
 fisist->physicist
 fisrt->first
 fiter->filter, fighter, fitter, fiver,
+fitered->filtered
 fitering->filtering
 fiters->filters, fighters, fitters, fivers,
 fith->fifth, filth,
@@ -18542,6 +18599,9 @@ fitlering->filtering
 fitlers->filters
 fivety->fifty
 fixe->fixed, fixes, fix, fixme, fixer,
+fixeed->fixed
+fixees->fixes
+fixeing->fixing
 fixel->pixel
 fixels->pixels
 fixeme->fixme
@@ -18639,6 +18699,7 @@ fogot->forgot
 fogotten->forgotten
 fointers->pointers
 folde->folder, fold,
+foldes->folders, folder, folds,
 foler->folder
 folers->folders
 folfer->folder
@@ -18708,6 +18769,8 @@ follolwing->following
 follong->following
 follos->follows
 followd->followed, follows, follow,
+followe->follow, followed,
+followeing->following
 followes->follows
 followig->following
 followign->following
@@ -18855,6 +18918,7 @@ fonctional->functional
 fonctionalities->functionalities
 fonctionality->functionality
 fonctioning->functioning
+fonctionnal->functional
 fonctionnalies->functionalities
 fonctionnalities->functionalities
 fonctionnality->functionality
@@ -19091,12 +19155,20 @@ freind->friend
 freindly->friendly
 freqencies->frequencies
 freqency->frequency
+freqent->frequent
+freqently->frequently
 freqeuncies->frequencies
 freqeuncy->frequency
+freqeunt->frequent
+freqeuntly->frequently
 freqiencies->frequencies
 freqiency->frequency
+freqient->frequent
+freqiently->frequently
 freqquencies->frequencies
 freqquency->frequency
+freqquent->frequent
+freqquently->frequently
 frequancies->frequencies
 frequancy->frequency
 frequant->frequent
@@ -19134,6 +19206,10 @@ fromates->formats
 fromating->formatting
 fromation->formation
 fromats->formats
+fromatted->formatted
+fromatter->formatter
+fromatters->formatters
+fromatting->formatting
 frome->from
 fromed->formed
 fromm->from
@@ -19165,12 +19241,18 @@ fualt->fault
 fualts->faults
 fucntion->function
 fucntional->functional
+fucntionalities->functionalities
 fucntionality->functionality
+fucntionally->functionally
 fucntioned->functioned
 fucntioning->functioning
 fucntions->functions
 fuction->function
+fuctional->functional
+fuctionalities->functionalities
 fuctionality->functionality
+fuctionally->functionally
+fuctioned->functioned
 fuctiones->functioned
 fuctioning->functioning
 fuctionoid->functionoid
@@ -19202,6 +19284,13 @@ fumctionally->functionally
 fumctioned->functioned
 fumctions->functions
 funcation->function
+funcational->functional
+funcationalities->functionalities
+funcationality->functionality
+funcationally->functionally
+funcationed->functioned
+funcationing->functioning
+funcations->functions
 funchtion->function
 funchtional->functional
 funchtioned->functioned
@@ -19235,15 +19324,34 @@ functiionally->functionally
 functiioning->functioning
 functiions->functions
 functin->function
+functinal->functional
+functinalities->functionalities
 functinality->functionality
+functinally->functionally
+functined->functioned
+functining->functioning
 functino->function
+functinoal->functional
+functinoalities->functionalities
+functinoality->functionality
+functinoally->functionally
+functinoed->functioned
+functinoing->functioning
+functinos->functions
 functins->functions
 functio->function
+functioal->functional
+functioalities->functionalities
+functioality->functionality
+functioally->functionally
+functioed->functioned
+functioing->functioning
 functionability->functionality
 functionable->functional, functioning,
 functionaility->functionality
 functionailty->functionality
 functionaily->functionality
+functionaity->functionality
 functionallities->functionalities
 functionallity->functionality
 functionaltiy->functionality
@@ -19286,6 +19394,13 @@ fundementally->fundamentally
 fundementals->fundamentals
 funguses->fungi
 funktion->function
+funktional->functional
+funktionalities->functionalities
+funktionality->functionality
+funktionally->functionally
+funktioned->functioned
+funktioning->functioning
+funktions->functions
 funnnily->funnily
 funrel->funeral
 funrels->funerals
