@@ -10837,6 +10837,11 @@ cooresponds->corresponds
 cooridate->coordinate
 cooridated->coordinated
 cooridates->coordinates
+cooridinate->coordinate
+cooridinated->coordinated
+cooridinates->coordinates
+cooridinating->coordinating
+cooridination->coordination
 cooridnate->coordinate
 cooridnated->coordinated
 cooridnates->coordinates
@@ -29739,6 +29744,8 @@ oricle->oracle
 oricles->oracles
 oridinal->ordinal, original,
 oridinarily->ordinarily
+oridinate->ordinate
+oridinates->ordinates
 orieation->orientation
 orieations->orientations
 orienatate->orientate
