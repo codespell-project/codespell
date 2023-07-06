@@ -9,7 +9,7 @@
             "extensions": [
                 "github.vscode-github-actions",
                 "ms-python.python",
-                "python.vscode-pylance"
+                "ms-python.vscode-pylance"
             ]
         }
     },
