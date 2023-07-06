@@ -1,9 +1,6 @@
 {
     "name": "Codespell Development Environment",
-    // TODO: Switch to image 'mcr.microsoft.com/devcontainers/python:1-3' once
-    // https://github.com/codespell-project/codespell/issues/2897 has been
-    // resolved.
-    "image": "mcr.microsoft.com/devcontainers/python:1-3-bullseye",
+    "image": "mcr.microsoft.com/devcontainers/python:1-3",
     "customizations": {
         "vscode": {
             "extensions": [
