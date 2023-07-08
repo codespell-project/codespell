@@ -1,0 +1,14 @@
+{
+    "name": "Codespell Development Environment",
+    "image": "mcr.microsoft.com/devcontainers/python:1-3",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "github.vscode-github-actions",
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ]
+        }
+    },
+    "postCreateCommand": "bash .devcontainer/post_create.sh"
+}
