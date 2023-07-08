@@ -19911,16 +19911,24 @@ glamourous->glamorous
 glight->flight
 gloab->globe
 gloabal->global
+gloabally->globally
 gloabl->global
+gloablly->globally
+gloably->globally
 gloassaries->glossaries
 gloassary->glossary
 globa->global
+globabl->global
 globablly->globally
 globaly->globally
 globas->globals
 globbal->global
+globbally->globally
 globel->global
+globelly->globally
+globla->global
 globlal->global
+globlally->globally
 globlaly->globally
 glorfied->glorified
 glpyh->glyph
@@ -20007,6 +20015,8 @@ gradiant->gradient, radiant,
 gradiants->gradients
 gradualy->gradually
 graet->great
+grafic->graphic
+grafical->graphical
 grafics->graphics
 grafitti->graffiti
 grahic->graphic
@@ -20273,6 +20283,7 @@ guyzer->geyser
 guyzers->geysers
 gwava->guava
 gylph->glyph
+gylphs->glyphs
 gymnist->gymnast
 gymnistic->gymnastic
 gymnistics->gymnastics
@@ -20384,9 +20395,13 @@ hapenned->happened
 hapenning->happening
 hapenns->happens
 hapens->happens
+happan->happen
 happaned->happened
+happaning->happening
+happans->happens
 happend->happened, happens, happen,
 happended->happened
+happending->happening
 happends->happens
 happenned->happened
 happenning->happening
@@ -20478,6 +20493,7 @@ headders->headers
 heade->header, head,
 headerr->header
 headerrs->headers
+heades->headers, heads,
 headle->handle
 headong->heading
 headquarer->headquarter
@@ -20492,8 +20508,10 @@ hearbeating->heartbeating, heart beating, hear beating,
 hearbeats->heartbeats, heart beats, hear beats,
 heared->heard, header,
 heathy->healthy
-heders->headers
+heder->header, herder,
+heders->headers, herders,
 hefer->heifer
+hefers->heifers
 Heidelburg->Heidelberg
 heigest->highest
 heigh->height, high,
@@ -20517,7 +20535,8 @@ hellow->hello
 helment->helmet
 heloer->helper
 heloers->helpers
-helpe->helper
+helpe->helper, help, helped,
+helpes->helps, helpers,
 helpfull->helpful
 helpfuly->helpfully
 helpped->helped
@@ -20540,7 +20559,10 @@ henc->hence
 henderence->hindrance
 hendler->handler
 hense->hence
+hepled->helped
 hepler->helper
+heplers->helpers
+hepling->helping
 herad->heard, Hera,
 herarchy->hierarchy
 herat->heart
@@ -20578,6 +20600,7 @@ hexidecimal->hexadecimal
 hexidecimals->hexadecimals
 hge->he
 hhttp->http
+hhttps->https
 hiarchical->hierarchical
 hiarchically->hierarchically
 hiarchy->hierarchy
@@ -20587,10 +20610,14 @@ hiddin->hidden, hiding,
 hidding->hiding, hidden,
 hideen->hidden
 hiden->hidden
+hiearchical->hierarchical
+hiearchically->hierarchically
 hiearchies->hierarchies
 hiearchy->hierarchy
 hieght->height
+hieghts->heights
 hiena->hyena
+hienas->hyenas
 hierachical->hierarchical
 hierachies->hierarchies
 hierachries->hierarchies
@@ -20625,8 +20652,14 @@ highight->highlight
 highighted->highlighted
 highighter->highlighter
 highighters->highlighters
+highighting->highlighting
 highights->highlights
 highjack->hijack
+highjacked->hijacked
+highjacker->hijacker
+highjackers->hijackers
+highjacking->hijacking
+highjacks->hijacks
 highligh->highlight
 highlighed->highlighted
 highligher->highlighter
@@ -20642,19 +20675,30 @@ highligjting->highlighting
 highligjts->highlights
 highligt->highlight
 highligted->highlighted
+highligter->highlighter
+highligters->highlighters
 highligth->highlight
+highligthed->highlighted
+highligther->highlighter
+highligthers->highlighters
+highligthing->highlighting
+highligths->highlights
 highligting->highlighting
 highligts->highlights
 hight->height, high,
 highter->higher
-hightest->highest
+hightest->highest, high-test,
 hightlight->highlight
 hightlighted->highlighted
+hightlighter->highlighter
+hightlighters->highlighters
 hightlighting->highlighting
 hightlights->highlights
 hights->heights
 higlight->highlight
 higlighted->highlighted
+higlighter->highlighter
+higlighters->highlighters
 higlighting->highlighting
 higlights->highlights
 higly->highly
@@ -20666,6 +20710,8 @@ hijkacking->hijacking
 hijkacks->hijacks
 hilight->highlight
 hilighted->highlighted
+hilighter->highlighter
+hilighters->highlighters
 hilighting->highlighting
 hilights->highlights
 hillarious->hilarious
@@ -20674,7 +20720,15 @@ hinderance->hindrance
 hinderence->hindrance
 hindrence->hindrance
 hipopotamus->hippopotamus
+hipoteses->hypotheses
+hipotesis->hypothesis
 hipotetical->hypothetical
+hipotetically->hypothetically
+hipotheses->hypotheses
+hipothesis->hypothesis
+hipothetical->hypothetical
+hipothetically->hypothetically
+hirachies->hierarchies
 hirachy->hierarchy
 hirarchies->hierarchies
 hirarchy->hierarchy
@@ -20834,6 +20888,7 @@ huminoid->humanoid
 humoural->humoral
 humurous->humorous
 hunderd->hundred
+hunderds->hundreds
 hundret->hundred, hundreds,
 hundreths->hundredths
 hundrets->hundreds
@@ -20866,7 +20921,11 @@ hygene->hygiene
 hygenic->hygienic
 hygine->hygiene
 hyjack->hijack
+hyjacked->hijacked
+hyjacker->hijacker
+hyjackers->hijackers
 hyjacking->hijacking
+hyjacks->hijacks
 hypen->hyphen
 hypenate->hyphenate
 hypenated->hyphenated
@@ -20886,10 +20945,15 @@ hyposeses->hypotheses
 hyposesis->hypothesis
 hypoteses->hypotheses
 hypotesis->hypothesis
+hypotethical->hypothetical
 hypotethically->hypothetically
+hypotetical->hypothetical
+hypotetically->hypothetically
 hypothenuse->hypotenuse
 hypothenuses->hypotenuses
 hypter->hyper
+hyptotheses->hypotheses
+hyptothesis->hypothesis
 hyptothetical->hypothetical
 hyptothetically->hypothetically
 hypvervisor->hypervisor
