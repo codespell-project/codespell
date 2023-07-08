@@ -20506,9 +20506,10 @@ hearbeating->heartbeating, heart beating, hear beating,
 hearbeats->heartbeats, heart beats, hear beats,
 heared->heard, header,
 heathy->healthy
-heder->header
-heders->headers
+heder->header, herder,
+heders->headers, herders,
 hefer->heifer
+hefers->heifers
 Heidelburg->Heidelberg
 heigest->highest
 heigh->height, high,
@@ -20532,7 +20533,7 @@ hellow->hello
 helment->helmet
 heloer->helper
 heloers->helpers
-helpe->helper
+helpe->helper, help, helped,
 helpes->helps, helpers,
 helpfull->helpful
 helpfuly->helpfully
@@ -20614,6 +20615,7 @@ hiearchy->hierarchy
 hieght->height
 hieghts->heights
 hiena->hyena
+hienas->hyenas
 hierachical->hierarchical
 hierachies->hierarchies
 hierachries->hierarchies
@@ -20651,6 +20653,11 @@ highighters->highlighters
 highighting->highlighting
 highights->highlights
 highjack->hijack
+highjacked->hijacked
+highjacker->hijacker
+highjackers->hijackers
+highjacking->hijacking
+highjacks->hijacks
 highligh->highlight
 highlighed->highlighted
 highligher->highlighter
@@ -20678,7 +20685,7 @@ highligting->highlighting
 highligts->highlights
 hight->height, high,
 highter->higher
-hightest->highest
+hightest->highest, high-test,
 hightlight->highlight
 hightlighted->highlighted
 hightlighter->highlighter
@@ -20719,6 +20726,7 @@ hipotheses->hypotheses
 hipothesis->hypothesis
 hipothetical->hypothetical
 hipothetically->hypothetically
+hirachies->hierarchies
 hirachy->hierarchy
 hirarchies->hierarchies
 hirarchy->hierarchy
@@ -20911,7 +20919,11 @@ hygene->hygiene
 hygenic->hygienic
 hygine->hygiene
 hyjack->hijack
+hyjacked->hijacked
+hyjacker->hijacker
+hyjackers->hijackers
 hyjacking->hijacking
+hyjacks->hijacks
 hypen->hyphen
 hypenate->hyphenate
 hypenated->hyphenated
