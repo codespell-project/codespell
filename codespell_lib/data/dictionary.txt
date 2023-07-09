@@ -23589,11 +23589,22 @@ ioclt->ioctl
 iomaped->iomapped
 ionde->inode
 iound->round, wound,
+iplement->implement
 iplementation->implementation
+iplementations->implementations
+iplemented->implemented
+iplementing->implementing
+iplements->implements
+ipmrove->improve
+ipmroved->improved
 ipmrovement->improvement
 ipmrovements->improvements
+ipmroves->improves
+ipmroving->improving
 iput->input
+iputs->inputs
 ireelevant->irrelevant
+irelevant->irrelevant
 irelevent->irrelevant
 iresistable->irresistible
 iresistably->irresistibly
@@ -23648,6 +23659,8 @@ isntall->install, isn't all,
 isntallation->installation
 isntallations->installations
 isntalled->installed
+isntaller->installer
+isntallers->installers
 isntalling->installing
 isntalls->installs
 isntance->instance
@@ -23672,7 +23685,16 @@ istalled->installed
 istalling->installing
 istalls->installs
 Istambul->Istanbul
-istance->instance
+istance->instance, distance,
+istances->instances, distances,
+istant->instant, distant,
+istantiate->instantiate
+istantiated->instantiated
+istantiates->instantiates
+istantiating->instantiating
+istantiation->instantiation
+istantiations->instantiations
+istantly->instantly, distantly,
 istead->instead
 istened->listened
 istener->listener
@@ -23681,25 +23703,62 @@ istening->listening
 ists->its, lists,
 isue->issue
 isues->issues
+itearte->iterate
+itearted->iterated
+iteartes->iterates
+itearting->iterating
+iteartion->iteration
+iteartions->iterations
 iteartor->iterator
+iteartors->iterators
+iteate->iterate
+iteated->iterated
+iteates->iterates
+iteating->iterating
+iteation->iteration
+iteations->iterations
 iteator->iterator
+iteators->iterators
 iteger->integer
+itegers->integers
 itegral->integral
 itegrals->integrals
+itegrate->integrate
+itegrated->integrated
+itegrates->integrates
+itegrating->integrating
+itegration->integration
+itegrations->integrations
+itegrity->integrity
 iten->item
 itens->items
 itention->intention
 itentional->intentional
 itentionally->intentionally
 itentionaly->intentionally
+iteract->interact
+iteracte->iterate
+iteracted->interacted, iterated,
+iteractes->iterates
+iteracting->interacting, iterating,
 iteraction->interaction, iteration,
 iteractions->interactions, iterations,
+iteractive->interactive, iterative,
+iteractively->interactively, iteratively,
+iteracts->interacts
+iterae->iterate
+iteraed->iterated
+iteraes->iterates
+iteraing->iterating
 iteraion->iteration
 iteraions->iterations
+iteraor->iterator
+iteraors->iterators
 iteratable->iterable
-iterater->iterator
+iterater->iterator, iterate,
 iteraterate->iterate
 iteratered->iterated
+iteraters->iterators, iterates,
 iteratior->iterator
 iteratiors->iterators
 iteratoin->iteration
@@ -23710,11 +23769,35 @@ itereating->iterating
 iterface->interface
 iterfaces->interfaces
 iterm->term, item, intern,
+iterms->terms, items, interns,
+iternate->iterate
+iternated->iterated
+iternates->iterates
+iternating->iterating
+iternation->iteration
 iternations->iterations
+iternator->iterator
+iternators->iterators
+iterpret->interpret
+iterpretation->interpretation
+iterpretations->interpretations
+iterpreted->interpreted
 iterpreter->interpreter
+iterpreters->interpreters
+iterpreting->interpreting
+iterprets->interprets
+iterrate->iterate
+iterrated->iterated
+iterrates->iterates
+iterrating->iterating
 iterration->iteration
 iterrations->iterations
+iterrator->iterator
+iterrators->iterators
 iterrupt->interrupt
+iterrupted->interrupted
+iterrupting->interrupting
+iterrupts->interrupts
 iterstion->iteration
 iterstions->iterations
 itertation->iteration
@@ -23730,6 +23813,7 @@ itialize->initialize
 itialized->initialized
 itializes->initializes
 itializing->initializing
+itme->item, time,
 itmes->items, times,
 itnerest->interest
 itnerface->interface
@@ -23765,10 +23849,21 @@ itterator->iterator
 itterators->iterators
 iunior->junior
 ivalid->invalid
+ivalidate->invalidate
+ivalidated->invalidated
+ivalidates->invalidates
+ivalidating->invalidating
+ivalidation->invalidation
 iverse->diverse, inverse,
 iversed->inverse, inversed,
 ivocation->invocation
+ivocations->invocations
+ivoke->invoke
 ivoked->invoked
+ivoker->invoker
+ivokers->invokers
+ivokes->invokes
+ivoking->invoking
 iwithout->without
 iwll->will
 iwth->with
@@ -23819,10 +23914,25 @@ joinning->joining
 jont->joint
 jonts->joints
 jornal->journal
+jornaled->journaled
+jornaling->journaling
+jornals->journals
+jorney->journey
+jorneys->journeys
 jorunal->journal
+jorunaled->journaled
+jorunaling->journaling
+jorunals->journals
+joruney->journey
+joruneys->journeys
 Jospeh->Joseph
 jossle->jostle
+jounal->journal
+jounaled->journaled
+jounaling->journaling
+jounals->journals
 jouney->journey
+jouneys->journeys
 journied->journeyed
 journies->journeys
 journing->journeying
@@ -23887,6 +23997,8 @@ karisma->charisma
 karismatic->charismatic
 karismatically->charismatically
 kazakstan->Kazakhstan
+keboard->keyboard
+keboards->keyboards
 keep-alives->keep-alive
 keept->kept
 keesh->quiche
@@ -23927,20 +24039,26 @@ keybords->keyboards
 keybroad->keyboard
 keybroads->keyboards
 keyevente->keyevent
+keyord->keyword
 keyords->keywords
 keyosk->kiosk
 keyosks->kiosks
 keyoutch->keytouch
 keyowrd->keyword
+keyowrds->keywords
+keystoke->keystroke
 keystokes->keystrokes
 keyward->keyword
-keywoards->keywords
+keywards->keywords
+keywoard->keyword, keyboard,
+keywoards->keywords, keyboards,
 keywork->keyword, key work,
 keyworkd->keyword
 keyworkds->keywords
 keyworks->keywords, key works,
 keywors->keywords
 keywprd->keyword
+keywprds->keywords
 kibutz->kibbutz
 kibutzes->kibbutzim
 kibutzim->kibbutzim
@@ -23990,6 +24108,9 @@ knive->knife
 kno->know
 knockous->noxious
 knockously->noxiously
+knoing->knowing
+knoledge->knowledge
+knoledgeable->knowledgeable
 knowladge->knowledge
 knowlage->knowledge
 knowlageable->knowledgeable
@@ -24002,6 +24123,8 @@ knowlegeable->knowledgeable
 knwo->know
 knwoing->knowing
 knwoingly->knowingly
+knwoledge->knowledge
+knwoledgeable->knowledgeable
 knwon->known
 knwos->knows
 kocalized->localized
