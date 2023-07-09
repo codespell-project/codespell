@@ -1346,8 +1346,11 @@ agin->again
 agina->again, angina,
 aginst->against
 aglorithm->algorithm
+aglorithmic->algorithmic
 aglorithms->algorithms
 agorithm->algorithm
+agorithmic->algorithmic
+agorithms->algorithms
 agrain->again
 agrandize->aggrandize
 agrandized->aggrandized
@@ -10296,6 +10299,10 @@ coodinate->coordinate
 coodinates->coordinates
 coodrinate->coordinate
 coodrinates->coordinates
+cooedinate->coordinate
+cooedinated->coordinated
+cooedinates->coordinates
+cooedinating->coordinating
 cooefficient->coefficient
 cooefficients->coefficients
 cooger->cougar
@@ -12841,6 +12848,7 @@ deserialsie->deserialise
 deserialsied->deserialised
 deserialsies->deserialises
 deserialsing->deserialising
+deserialsise->deserialise
 deserialzation->deserialization
 deserialze->deserialize
 deserialzed->deserialized
@@ -12850,6 +12858,7 @@ deserialzie->deserialize
 deserialzied->deserialized
 deserialzies->deserializes
 deserialzing->deserializing
+deserialzize->deserialize
 desgin->design
 desgin-mode->design-mode
 desgined->designed
@@ -17943,6 +17952,8 @@ exrension->extension
 exrensions->extensions
 exressed->expressed
 exression->expression
+exsample->example
+exsamples->examples
 exsist->exists, exist,
 exsisted->existed
 exsistence->existence
@@ -18663,6 +18674,7 @@ flitering->filtering
 fliters->filters
 floading->floating, flooding,
 floading-add->floating-add
+floaing->floating, flowing,
 floatation->flotation
 flor->floor, flow,
 floresent->fluorescent, florescent,
@@ -25146,16 +25158,25 @@ mavrick->maverick
 mawsoleum->mausoleum
 maximice->maximize
 maximim->maximum
+maximims->maximums
 maximimum->maximum
+maximimums->maximums
 maximium->maximum
+maximiums->maximums
 maximnum->maximum
 maximnums->maximums
 maximuim->maximum
+maximuims->maximums
 maximun->maximum
+maximuns->maximums
 maxinum->maximum
+maxinums->maximums
 maxium->maximum
+maxiums->maximums
 maxiumum->maximum
+maxiumums->maximums
 maxmimum->maximum
+maxmimums->maximums
 maxmium->maximum
 maxmiums->maximums
 maxosx->macosx
@@ -30241,6 +30262,7 @@ polyedral->polyhedral
 polygond->polygons
 polygone->polygon
 polylon->polygon, pylon,
+polymorhic->polymorphic
 polymorpic->polymorphic
 polynomal->polynomial
 polynomals->polynomials
@@ -30960,6 +30982,8 @@ previouly->previously
 previouse->previous
 previousl->previously
 previousy->previously
+previout->previous
+previoutly->previously
 previsou->previous
 previsouly->previously
 previsously->previously
@@ -35053,6 +35077,8 @@ roated->rotated
 roation->rotation
 roboustness->robustness
 robustnes->robustness
+rocess->process
+rocesses->processes
 Rockerfeller->Rockefeller
 rococco->rococo
 rocord->record
@@ -36160,11 +36186,13 @@ serialsie->serialise
 serialsied->serialised
 serialsies->serialises
 serialsing->serialising
+serialsise->serialise
 serialziation->serialization
 serialzie->serialize
 serialzied->serialized
 serialzies->serializes
 serialzing->serializing
+serialzize->serialize
 serice->service
 serices->services, series,
 serie->series
@@ -37419,6 +37447,9 @@ specifiecs->specifies, specifics,
 specifieed->specified
 specifiees->specifies
 specififed->specified
+specifific->specific
+specififically->specifically
+specififics->specifics
 specifig->specific
 specifigation->specification
 specifigations->specifications
@@ -41992,6 +42023,7 @@ unspefixeid->unspecified
 unspefixied->unspecified
 unspefixifed->unspecified
 unspported->unsupported
+unssuported->unsupported
 unssupported->unsupported
 unstabel->unstable
 unstalbe->unstable
