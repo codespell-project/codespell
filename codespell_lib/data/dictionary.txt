@@ -3346,7 +3346,7 @@ aribrary->arbitrary
 aribtrarily->arbitrarily
 aribtrary->arbitrary
 ariflow->airflow
-arised->arose
+arised->arose, arisen,
 arithemetic->arithmetic
 arithemtic->arithmetic
 arithmatic->arithmetic
@@ -4945,10 +4945,12 @@ beachead->beachhead
 beacuse->because
 beanches->branches, benches,
 beaon->beacon
+beared->beard, bearded, bore, borne, born, beaded,
 bearword->bareword
 beastiality->bestiality
 beastiaries->bestiaries
 beastiary->bestiary
+beated->heated, belated, beat, beaten, beater,
 beatiful->beautiful
 beauquet->bouquet
 beauquets->bouquets
@@ -4994,6 +4996,7 @@ bechmarked->benchmarked
 bechmarking->benchmarking
 bechmarks->benchmarks
 becoem->become
+becomed->becomes, became, become,
 becomeing->becoming
 becomme->become
 becommes->becomes
@@ -5039,6 +5042,7 @@ beggins->begins
 beghavior->behavior
 beghaviors->behaviors
 begiinning->beginning
+begined->began, begun,
 beginer->beginner
 begines->begins
 beging->begging, beginning, being,
@@ -5048,6 +5052,7 @@ begininings->beginnings
 begininng->beginning
 begininngs->beginnings
 beginn->begin
+beginned->beginner, began, begun,
 beginnig->beginning
 beginnin->beginning
 beginnning->beginning
@@ -5210,11 +5215,13 @@ beseige->besiege
 beseiged->besieged
 beseiging->besieging
 besure->be sure
+beted->bet, bated,
 beteeen->between
 beteen->between
 beter->better
 beteween->between
 betrween->between
+betted->better, bet,
 bettern->better
 bettery->better, battery,
 bettr->better, bettor,
@@ -5257,6 +5264,7 @@ bi-langual->bi-lingual
 bianries->binaries
 bianry->binary
 biappicative->biapplicative
+bidded->bidder, bid, bedded,
 biddings->bidding
 bidimentionnal->bidimensional
 bidings->bindings, bidding,
@@ -5306,11 +5314,13 @@ bisunes->business
 bisuness->business
 bitamps->bitmaps
 bitap->bitmap
+bited->bit, bitten, bites,
 bitfileld->bitfield
 bitfilelds->bitfields
 bitis->bits
 bitmast->bitmask
 bitnaps->bitmaps
+bitted->bitter, bitten, bit,
 bitween->between
 bitwiedh->bitwidth
 bitwise-orring->bitwise-oring
@@ -5345,6 +5355,7 @@ blbos->blobs
 blcok->block
 blcoks->blocks
 bleading->bleeding
+bleeded->bled
 blessd->blessed
 blessure->blessing
 bletooth->bluetooth
@@ -5653,6 +5664,7 @@ Brasillian->Brazilian
 brazeer->brassiere
 brazillian->Brazilian
 breack->break, brake,
+breaked->braked, broke, broken, breaker,
 breakes->breaks
 breakthough->breakthrough
 breakthroughts->breakthroughs
@@ -5661,6 +5673,7 @@ breakthruoghs->breakthroughs
 breal->break
 breanches->branches
 breating->breathing, beating,
+breeded->bred, breaded, breeder,
 breef->brief, beef,
 breefly->briefly
 brefore->before
@@ -5691,6 +5704,7 @@ brilinear->bilinear
 brillant->brilliant
 brimestone->brimstone
 brin->bring
+bringed->brought
 bringin->bringing
 bringtofont->bringtofront
 brite->bright
@@ -5898,6 +5912,7 @@ buro->bureau, burro,
 burocratic->bureaucratic
 buros->bureaus, burros,
 burried->buried
+bursted->burst, busted,
 burtst->burst
 burzwah->bourgeois
 busines->business
@@ -5924,6 +5939,7 @@ butttons->buttons
 buufers->buffers
 buuild->build
 buuilds->builds
+buyed->bought, buyer, buoyed,
 buzilla->bugzilla
 bve->be
 bwtween->between
@@ -6617,6 +6633,7 @@ cassims->chasms
 cassm->chasm
 cassms->chasms
 cassowarry->cassowary
+casted->cast, coasted,
 casue->cause
 casued->caused
 casues->causes
@@ -8234,6 +8251,7 @@ comect->connect
 comected->connected
 comecting->connecting
 comectivity->connectivity
+comed->comes, came, come, comedy,
 comedlib->comedilib
 comemmorates->commemorates
 comemoretion->commemoration
@@ -11000,6 +11018,7 @@ credis->credits
 credists->credits
 creditted->credited
 creedence->credence
+creeped->crept, creeper, creepered, creemed, cheeped, creeded, creeled,
 cresent->crescent
 cresh->crèche
 cresits->credits
@@ -11335,7 +11354,7 @@ custumer->customer
 custumised->customised
 custumized->customized
 custums->customs
-cuted->cut, cute, cuter,
+cuted->cut, cute, cuter, cured, chuted,
 cutom->custom
 cutted->cutter, gutted, cut,
 cuurent->current
@@ -11586,7 +11605,7 @@ deail->deal
 deailing->dealing
 deaktivate->deactivate
 deaktivated->deactivated
-dealed->dealt
+dealed->dealt, dealer, sealed,
 dealilng->dealing
 dealloacte->deallocate
 deallocaed->deallocated
@@ -13563,6 +13582,7 @@ difusion->diffusion
 difusive->diffusive
 difussion->diffusion
 difussive->diffusive
+diged->dug, died, dived,
 digesty->digest
 diggit->digit
 diggital->digital
@@ -14877,7 +14897,9 @@ driectly->directly
 driectories->directories
 driectory->directory
 driects->directs
+drinked->drank, drunk, drinker,
 drity->dirty
+drived->derived, drove, driven, driver, drives,
 driveing->driving
 drivr->driver
 drnik->drink
@@ -15076,6 +15098,7 @@ easist->easiest
 easiy->easily
 easly->easily
 easyer->easier
+eated->ate, eaten, eater, heated, seated,
 eaturn->return, eaten, Saturn,
 eaxct->exact
 eazier->easier
@@ -18242,6 +18265,7 @@ faliures->failures
 fallabck->fallback
 fallbacl->fallback
 fallbck->fallback
+falled->fell, fallen, failed, faller,
 fallhrough->fallthrough
 fallthruogh->fallthrough
 falltrough->fallthrough
@@ -18386,9 +18410,10 @@ fecthing->fetching
 fedality->fidelity
 fedreally->federally
 feeback->feedback
-feeded->fed
+feeded->fed, feeder,
 feek->feel
 feeks->feels
+feeled->felt, feeler, heeled,
 feets->feet, feats,
 feetur->feature
 feeture->feature
@@ -18453,6 +18478,7 @@ fiels->feels, fields, files, phials,
 fiercly->fiercely
 fiew->few, flew,
 fifht->fifth, fight,
+fighted->fought, fighter, frighted,
 fightings->fighting
 figurestyle->figurestyles
 filal->final
@@ -18551,7 +18577,7 @@ finctioned->functioned
 finctioning->functioning
 finctions->functions
 finde->find
-finded->found, fined, funded,
+finded->found, finder, fined, funded,
 findn->find
 findout->find out
 finelly->finally
@@ -18665,7 +18691,7 @@ flattend->flattened
 flattenning->flattening
 flawess->flawless
 fle->file
-fleed->fled, freed,
+fleed->fled, flees, freed,
 flem->phlegm
 Flemmish->Flemish
 flewant->fluent
@@ -18680,6 +18706,7 @@ flexibily->flexibly, flexibility,
 flexiblity->flexibility
 flext->flex
 flie->file
+flinged->flung, fringed, flanged, flinched,
 fliter->filter
 flitered->filtered
 flitering->filtering
@@ -18973,7 +19000,10 @@ forat->format
 forbad->forbade
 forbatum->verbatim
 forbbiden->forbidden
+forbidded->forbade, forbidden, forbidder,
+forbided->forbade, forbidden, foreboded,
 forbiden->forbidden
+forbiding->forbidding
 forbit->forbid
 forbiten->forbidden
 forbitten->forbidden
@@ -18994,6 +19024,7 @@ foregronds->foregrounds
 foreing->foreign
 forementionned->aforementioned
 forermly->formerly
+foreseed->foreseen, foresees, foresee,
 foreward->foreword, forward,
 forfiet->forfeit
 forfit->forfeit
@@ -19001,6 +19032,10 @@ forfited->forfeited
 forfiting->forfeiting
 forfits->forfeits
 forgeround->foreground
+forgeted->forgot, forgotten, forgetter, forged,
+forgeting->forgetting
+forgetted->forgot, forgotten, forgetter,
+forgived->forgave, forgiven, forgives, forgiver,
 forgoten->forgotten
 forgotton->forgotten
 forground->foreground
@@ -19057,6 +19092,7 @@ fornatter->formatter
 forot->forgot
 forotten->forgotten
 forr->for
+forsaked->forsook, forsaken, forsakes, forsaker,
 forsaw->foresaw
 forse->force
 forseeable->foreseeable
@@ -19176,6 +19212,7 @@ freedums->freedoms
 freee->free
 freeed->freed
 freez->frees, freeze,
+freezed->froze, frozen, freezes, freezer,
 freezs->freezes
 freind->friend
 freindly->friendly
@@ -19885,12 +19922,14 @@ ges->goes, guess,
 gess->guess
 get's->gets
 get;s->gets
+geted->gated, got, gotten,
 getfastproperyvalue->getfastpropertyvalue
 getimezone->gettimezone
 geting->getting
 getlael->getlabel
 getoe->ghetto
 getoject->getobject
+getted->got, gotten, getter, vetted, netted,
 gettetx->gettext
 gettign->getting
 gettitem->getitem, get item,
@@ -19924,7 +19963,7 @@ git-buildpackges->git-buildpackages
 gitar->guitar
 gitars->guitars
 gitatributes->gitattributes
-gived->given, gave,
+gived->given, gave, gives, giver, hived,
 giveing->giving
 givem->given, give them, give 'em,
 givne->given
@@ -20102,6 +20141,7 @@ grestest->greatest
 greysacles->greyscales
 gridles->griddles
 grigorian->Gregorian
+grinded->ground, grinder, grinned,
 grobal->global
 grobally->globally
 grometry->geometry
@@ -20127,6 +20167,7 @@ groupes->groups, grouped,
 groupped->grouped
 groupping->grouping
 groupt->grouped
+growed->grew, grown, grower,
 growtesk->grotesque
 growteskly->grotesquely
 grranted->granted
@@ -20497,6 +20538,7 @@ hav->have, half,
 hava->have, have a,
 have'nt->haven't
 havea->have, have a,
+haved->had, heaved, halved, haven, haver, haves, hawed,
 havee->have, have a,
 haveing->having
 haven;t->haven't
@@ -20629,7 +20671,7 @@ hiarchical->hierarchical
 hiarchically->hierarchically
 hiarchy->hierarchy
 hiddden->hidden
-hidded->hidden
+hidded->hid, hidden,
 hiddin->hidden, hiding,
 hidding->hiding, hidden,
 hideen->hidden
@@ -20783,10 +20825,12 @@ histroicaly->historically
 histroies->histories
 histroy->history
 histry->history
+hited->hit, hired, hiked, heated,
 hitogram->histogram
 hitories->histories
 hitory->history
 hitsingles->hit singles
+hitted->hit, hitter,
 hiygeine->hygiene
 hmdi->hdmi
 hmtl->html
@@ -20794,6 +20838,7 @@ hnalder->handler
 hoeks->hoax
 hoever->however
 hokay->okay
+holded->held, holder, folded,
 holf->hold
 holliday->holiday
 hollowcost->holocaust
@@ -20921,6 +20966,7 @@ hunrgy->hungry
 huricane->hurricane
 huristic->heuristic
 hurse->hearse, nurse,
+hurted->hurt, hurter, hurtled,
 husban->husband
 hussel->hustle, mussel,
 hvae->have
@@ -22855,7 +22901,7 @@ inpsection->inspection
 inpterpreter->interpreter
 inpu->input
 inpust->input, inputs,
-inputed->inputted
+inputed->inputted, input,
 inputsream->inputstream
 inpuut->input
 inrement->increment
@@ -24222,6 +24268,9 @@ kazakstan->Kazakhstan
 keboard->keyboard
 keboards->keyboards
 keep-alives->keep-alive
+keeped->kept, keeper,
+keepped->kept, kipped,
+keepping->keeping
 keept->kept
 keesh->quiche
 kenel->kernel, kennel,
@@ -24333,6 +24382,7 @@ knockously->noxiously
 knoing->knowing
 knoledge->knowledge
 knoledgeable->knowledgeable
+knowed->knew, known, knower,
 knowladge->knowledge
 knowlage->knowledge
 knowlageable->knowledgeable
@@ -24657,6 +24707,7 @@ leibnitz->leibniz
 leightweight->lightweight
 lemosine->limousine
 lemosines->limousines
+lended->lent, lender, landed, mended, blended,
 lene->lens
 lenggth->length
 lengh->length
@@ -24703,8 +24754,11 @@ lerning->learning, leaning,
 lessson->lesson
 lesssons->lessons
 lesstiff->LessTif
+leted->let
 letgitimate->legitimate
+leting->letting
 letmost->leftmost
+letted->let, letter,
 leutenant->lieutenant
 levae->leave, levee,
 levaridge->leverage
@@ -25093,6 +25147,7 @@ loosley->loosely
 loosly->loosely
 loosy->lossy, lousy, loose,
 losd->lost, loss, lose, load,
+losed->lost, loser, lose, loosed, closed, hosed,
 losely->loosely
 losen->loosen
 losened->loosened
@@ -25209,7 +25264,7 @@ maitained->maintained
 maitainers->maintainers
 majoroty->majority
 maka->make
-maked->marked, made,
+maked->marked, made, maker,
 makefle->makefile
 makeing->making
 makign->making
@@ -25583,7 +25638,7 @@ meachnisms->mechanisms
 meading->meaning
 meaing->meaning
 mealflur->millefleur
-meaned->meant
+meaned->meant, meaner,
 meanigfull->meaningful
 meanign->meaning
 meanin->meaning
@@ -25688,10 +25743,13 @@ meeds->needs
 meens->means
 meerkrat->meerkat
 meerly->merely
+meeted->met, meted,
 meethod->method
 meethodology->methodology
 meethods->methods
 meetign->meeting
+meetted->met
+meetting->meeting
 meganism->mechanism
 mege->merge
 mehcanic->mechanic
@@ -28291,10 +28349,11 @@ offsense->offense
 offsenses->offenses
 offser->offset
 offsest->offsets, offset,
-offseted->offsetted
+offseted->offset
 offseting->offsetting
 offsetp->offset
 offsett->offset
+offsetted->offset
 offstets->offsets
 offten->often
 oficial->official
@@ -28310,7 +28369,7 @@ ofisionados->aficionados
 ofmodule->of module
 ofo->of
 ofrom->from
-ofsetted->offsetted
+ofsetted->offset
 ofsset->offset
 oftenly->often
 ofter->often, offer, after,
@@ -29040,6 +29099,7 @@ over-engeneer->over-engineer
 over-engeneering->over-engineering
 overaall->overall
 overal->overall
+overcomed->overcame, overcome, overcomes, overcomer,
 overcompansate->overcompensate
 overcompansated->overcompensated
 overcompansates->overcompensates
@@ -29550,6 +29610,7 @@ parsialy->partially
 parsin->parsing
 parstree->parse tree
 partaining->pertaining
+partaked->partook, partaken, partakes, partaker,
 partcular->particular
 partcularity->particularity
 partcularly->particularly
@@ -31245,6 +31306,8 @@ presernt->present
 preserrved->preserved
 preserv->preserve
 presetation->presentation
+preseted->preset, presented,
+presetted->preset, presented,
 preseve->preserve
 preseved->preserved
 preseverance->perseverance
@@ -32282,6 +32345,7 @@ purtaining->pertaining
 purtains->pertains
 pusehd->pushed
 pususading->persuading
+puted->put, putted, pouted,
 puting->putting
 putpose->purpose
 putposed->purposed
@@ -32425,7 +32489,7 @@ quitely->quite, quietly,
 quith->quit, with,
 quiting->quitting
 quitt->quit
-quitted->quit
+quitted->quit, quitter,
 quizes->quizzes
 quizs->quizzes
 quizzs->quizzes
@@ -32808,7 +32872,7 @@ readdrssed->readdressed
 readdrsses->readdresses
 readdrssing->readdressing
 readeable->readable
-readed->read, re-add, re-added,
+readed->read, re-add, re-added, readied, reader,
 reademe->README
 readiable->readable
 readibility->readability
@@ -35368,6 +35432,7 @@ rickoshay->ricochet
 rickoshayed->ricocheted
 rickoshaying->ricocheting
 rickoshays->ricochets
+rided->rid, raided, rider,
 ridiculus->ridiculous
 riendeer->reindeer
 riendeers->reindeers
@@ -35403,7 +35468,7 @@ rininging->ringing
 rinosarus->rhinoceros
 rinosaruses->rhinoceroses
 rinosaruss->rhinoceroses
-rised->raised, rose,
+rised->raised, rose, risen, rises, riser, risked, irised,
 riskay->risky, risqué,
 rispective->respective
 ristrict->restrict
@@ -35556,7 +35621,7 @@ rulle->rule
 rumatic->rheumatic
 runing->running, ruining,
 runn->run
-runned->ran, run, ruined,
+runned->ran, run, ruined, runner,
 runnging->running, rummaging,
 runnig->running
 runnign->running
@@ -35763,6 +35828,7 @@ sawtees->sautés
 sawteing->sautéing
 sawtes->sautés
 saxaphone->saxophone
+sayed->said
 sbsampling->subsampling
 scafold->scaffold
 scafolded->scaffolded
@@ -36181,6 +36247,7 @@ self-refering->self-referring
 selfs->self
 sellect->select
 sellected->selected
+selled->sold
 selt->set, self, sold,
 selv->self
 semaintics->semantics
@@ -36228,6 +36295,7 @@ sence->sense, since,
 sencond->second
 sencondary->secondary
 senconds->seconds
+sended->sent, sender,
 sendign->sending
 sendinging->sending
 sendinng->sending
@@ -36644,6 +36712,7 @@ sesssion->session
 sesssions->sessions
 sestatusbar->setstatusbar
 sestatusmsg->setstatusmsg
+seted->set
 setevn->setenv
 setgit->setgid
 seting->setting
@@ -36654,7 +36723,7 @@ setis->set is, settees,
 setitng->setting
 setitngs->settings
 setquential->sequential
-setted->set
+setted->set, setter,
 settelement->settlement
 settign->setting
 settigns->settings
@@ -36708,6 +36777,7 @@ shadasloo->shadaloo
 shaddow->shadow
 shadhow->shadow
 shadoloo->shadaloo
+shaked->shook, shaken, shakes, shaker,
 shal->shall
 shamen->shaman, shamans,
 shandeleer->chandelier
@@ -36740,6 +36810,7 @@ shecked->checked, shucked,
 shecker->checker, shucker,
 shecking->checking, shucking,
 shecks->checks, cheques, shucks,
+shedded->shed
 shedule->schedule
 sheduled->scheduled
 sheduler->scheduler
@@ -36785,6 +36856,7 @@ shif-tab->shift-tab
 shineing->shining
 shiped->shipped
 shiping->shipping
+shoed->shod, shoes,
 shoft->shift, short,
 shoftware->software
 shoild->should
@@ -36794,6 +36866,9 @@ sholder->shoulder
 sholdn't->shouldn't
 sholuld->should
 sholuldn't->shouldn't
+shooted->shoot
+shootted->shoot
+shootting->shooting
 shoould->should
 shopkeeepers->shopkeepers
 shopuld->should
@@ -36879,8 +36954,10 @@ shuoldnt->shouldn't
 shure->sure
 shurely->surely
 shutdownm->shutdown
-shuting->shutting
+shuted->shut
+shuting->shutting, shouting,
 shutodwn->shutdown
+shutted->shut, shutter,
 shwo->show
 shwon->shown
 shystem->system
@@ -37194,6 +37271,7 @@ sinical->cynical
 sinically->cynically
 sinicaly->cynically
 sinics->cynics
+sinked->sank, sunk, sunken, sinker,
 sinlge->single
 sinlges->singles
 sinnagog->synagogue
@@ -37292,6 +37370,7 @@ sitirs->stirs
 sitl->still
 sitll->still
 sitmuli->stimuli
+sitted->sat, seated, sitter,
 situaion->situation
 situaions->situations
 situationals->situational, situations,
@@ -37387,13 +37466,17 @@ slected->selected
 slecting->selecting
 slection->selection
 sleect->select
-sleeped->slept
+sleeped->slept, sleeper,
 sleepp->sleep
+sleepped->slept
+sleepping->sleeping
 slewth->sleuth
 slewthed->sleuthed
 slewthing->sleuthing
 slewths->sleuths
 slicable->sliceable
+slidded->slid, sledded, skidded,
+slided->slid, slide, slides, slider, sliced,
 slient->silent
 sliently->silently
 slighlty->slightly
@@ -37408,6 +37491,8 @@ sligtly->slightly
 sliped->slipped
 sliseshow->slideshow
 slite->sleight, elite, slide, site,
+slited->slit, sliced, suited,
+slitted->slit, slotted,
 slooth->sleuth, sloth, sooth,
 sloothed->sleuthing
 sloothing->sleuthing
@@ -37425,6 +37510,7 @@ smapled->sampled
 smaples->samples
 smapling->sampling
 smealting->smelting
+smeled->smelled, smelt,
 smething->something
 smll->small, smell,
 smller->smaller
@@ -37712,6 +37798,7 @@ speaces->spaces, species,
 speach->speech
 speacial->special, spacial,
 speacing->spacing
+speaked->spoke, spoken, speaker, sneaked, speared,
 spearate->separate
 spearated->separated
 spearates->separates
@@ -38135,8 +38222,10 @@ speicfied->specified
 speicific->specific
 speicified->specified
 speicify->specify
+speled->spelt, spelled,
 speling->spelling
 spellshecking->spellchecking
+spended->spent, spender,
 spendour->splendour
 speparate->separate
 speparated->separated
@@ -38183,16 +38272,18 @@ spile->spite, spiral,
 spiltting->splitting
 spindel->spindle
 spindels->spindles
+spining->spinning
 spinlcok->spinlock
+spinned->spined, spun, spinner, pinned,
 spinock->spinlock
 splig->split, splign,
 spligs->splits
 spliiter->splitter
 spliitting->splitting
 splite->split, splits, splice,
-splited->split
+splited->split, spliced, spited,
 spliting->splitting
-splitted->split
+splitted->split, splitter,
 splittng->splitting
 spllitting->splitting
 spoace->space
@@ -38214,7 +38305,8 @@ spport->support
 spported->supported
 spporting->supporting
 spports->supports
-spreaded->spread
+spreadded->spread
+spreaded->spread, spreader,
 spreadhseet->spreadsheet
 spreadhseets->spreadsheets
 spreadsheat->spreadsheet
@@ -38361,6 +38453,7 @@ standartizator->standardizer
 standartized->standardized
 standarts->standards
 standatd->standard
+standed->stood, stranded,
 standerd->standard
 standerds->standards
 standlone->standalone
@@ -38447,6 +38540,7 @@ stawk->stalk
 stcokbrush->stockbrush
 stdanard->standard
 stdanards->standards
+stealed->stole, stolen, stealer, sealed, steamed, steeled,
 stegnographic->steganographic
 stegnography->steganography
 stength->strength
@@ -38459,13 +38553,16 @@ sterio->stereo
 steriods->steroids
 sterotype->stereotype
 sterotypes->stereotypes
+sticked->stuck, sticker, stacked, stocked, ticked,
 stickness->stickiness
 stickyness->stickiness
 stiffneing->stiffening
 stiky->sticky
 stil->still
 stilus->stylus
+stinged->stung, stinger, singed,
 stingent->stringent
+stinked->stank, stunk, stinker,
 stip->strip, stop,
 stipped->stripped
 stiring->stirring
@@ -38601,6 +38698,7 @@ strigification->stringification
 strigifying->stringifying
 striing->string
 striings->strings
+striked->struck, stricken, strikes, striker,
 strikely->strikingly
 strin->string, strine, stein,
 stringifed->stringified
@@ -39503,6 +39601,8 @@ swapiness->swappiness
 swaping->swapping
 swarmin->swarming
 swcloumns->swcolumns
+sweared->swore, sworn, sweated, sheared, smeared, speared, seared, swearer,
+sweeped->swept, sweeper,
 swepth->swept
 swich->switch
 swiched->switched
@@ -39510,7 +39610,10 @@ swiching->switching
 swicth->switch
 swicthed->switched
 swicthing->switching
+swimed->swam, swum, swiped,
 swiming->swimming
+swimmed->swam, swum, swimmer,
+swinged->swung, singed, swinger,
 switchs->switches
 switcht->switched
 switchting->switching
@@ -39834,6 +39937,7 @@ tahn->than
 taht->that
 tailred->tailored
 tained->tainted, stained,
+taked->took, taken, takes, taker, raked, faked,
 taks->task, tasks, takes,
 takslet->tasklet
 talbe->table
@@ -39921,7 +40025,7 @@ tcppcheck->cppcheck
 te->the, be, we, to,
 teacer->teacher
 teacers->teachers
-teached->taught
+teached->taught, teaches, teacher, reached,
 teachnig->teaching
 teaher->teacher
 teahers->teachers
@@ -39983,6 +40087,7 @@ teksts->texts
 telegramm->telegram
 telelevision->television
 televsion->television
+telled->told, teller, yelled, gelled,
 telocom->telecom
 telphony->telephony
 temaplate->template
@@ -40382,6 +40487,7 @@ thime->time, theme, thyme, thine,
 thimngs->things
 thinigs->things
 thinkabel->thinkable
+thinked->thought, thinker, thanked,
 thinkg->think, thing, things,
 thinkgs->thinks, things,
 thinn->thin
@@ -40482,7 +40588,7 @@ throuhg->through
 throuhgout->throughout
 throuhgput->throughput
 throuth->through
-throwed->threw, thrown,
+throwed->threw, thrown, thrower,
 throwgh->through
 thrreshold->threshold
 thrresholds->thresholds
@@ -40492,6 +40598,7 @@ thruogh->through
 thruoghout->throughout
 thruoghput->throughput
 thruout->throughout
+thrusted->thrust, thruster, trusted,
 ths->the, this,
 Thse->these, this,
 thses->these
@@ -41512,6 +41619,9 @@ typcially->typically
 typdef->typedef, typed,
 typechek->typecheck
 typecheking->typechecking
+typeseted->typeset
+typeseting->typesetting
+typesetted->typeset, typesetter,
 typesrript->typescript
 typess->types
 typicall->typically, typical,
@@ -41835,6 +41945,8 @@ understadn->understand
 understadnable->understandable
 understadning->understanding
 understadns->understands
+understandding->understanding
+understanded->understood, understated,
 understandig->understanding
 understoon->understood
 understoud->understood
@@ -43684,6 +43796,7 @@ weant->want, wean,
 weaponary->weaponry
 weappon->weapon
 weappons->weapons
+weared->wore, worn, wearer, wearied, seared,
 weas->was
 webage->webpage
 webaserver->web server, webserver,
@@ -43697,6 +43810,7 @@ wednesdaay->Wednesday
 wednesdey->Wednesday
 wednessday->Wednesday
 wednsday->Wednesday
+weeped->wept, weeper,
 weerd->weird
 weerdly->weirdly
 weev->weave
@@ -43902,6 +44016,7 @@ windwos->windows
 winn->win
 winndow->window
 winndows->windows
+winned->won, winner, wined, winded,
 winodw->window
 wipoing->wiping
 wirded->wired, weird,
@@ -43936,6 +44051,7 @@ witdth->width
 witdths->widths
 wite->write, white,
 witha->with a, with,
+withdrawed->withdrew, withdrawn,
 withdrawl->withdrawal, withdraw,
 witheld->withheld
 withh->with
@@ -44139,6 +44255,7 @@ wresseling->wrestling
 wressels->wrestles
 wresters->wrestlers
 wriet->write
+wringed->wrung, wringer, wronged, winged,
 writebufer->writebuffer
 writechetque->writecheque
 writed->wrote, written, write, writer,
