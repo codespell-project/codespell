@@ -14,9 +14,14 @@ spellers = {}
 try:
     import aspell  # type: ignore[import]
 
+    _test_data_dir = op.join(op.dirname(__file__), "..", "tests", "data")
     for lang in supported_languages:
-        spellers[lang] = aspell.Speller("lang", lang)
-except Exception as exp:  # probably ImportError, but maybe also language
+        _wordlist = op.join(_test_data_dir, f"{lang}-additionnal.wordlist")
+        if op.isfile(_wordlist):
+            spellers[lang] = aspell.Speller(("lang", lang), ("wordlists", _wordlist))
+        else:
+            spellers[lang] = aspell.Speller("lang", lang)
+except ImportError as exp:
     if os.getenv("REQUIRE_ASPELL", "false").lower() == "true":
         raise RuntimeError(
             "Cannot run complete tests without aspell when "
@@ -259,6 +264,7 @@ allowed_dups = {
     ("dictionary.txt", "dictionary_rare.txt"),
     ("dictionary.txt", "dictionary_usage.txt"),
     ("dictionary_code.txt", "dictionary_rare.txt"),
+    ("dictionary_rare.txt", "dictionary_en-GB_to_en-US.txt"),
     ("dictionary_rare.txt", "dictionary_usage.txt"),
 }
 
