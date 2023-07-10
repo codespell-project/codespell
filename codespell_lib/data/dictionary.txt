@@ -24883,6 +24883,7 @@ lackrimose->lachrymose
 lackrimosity->lachrymosity
 lackrimosly->lachrymosely
 laer->later, layer,
+laest->least, latest,
 laf->laugh, leaf, loaf, lad, lag, lac, kaf, kaph,
 lagacies->legacies
 lagacy->legacy
@@ -24896,22 +24897,26 @@ laiter->later
 lamda->lambda
 lamdas->lambdas
 lanaguage->language
+lanaguages->languages
 lanaguge->language
 lanaguges->languages
 lanagugs->languages
 lanauage->language
 lanauages->languages
 lanauge->language
+lanauges->languages
 langage->language
 langages->languages
 langague->language
 langagues->languages
 langauage->language
+langauages->languages
 langauge->language
 langauges->languages
 langerie->lingerie
 langerray->lingerie
 langeuage->language
+langeuages->languages
 langeuagesection->languagesection
 langht->length
 langhts->lengths
@@ -24929,6 +24934,7 @@ languag->language
 language-spacific->language-specific
 languagee->language
 languagees->languages
+languags->languages
 languague->language
 languagues->languages
 languahe->language
@@ -24976,6 +24982,7 @@ lanich->launch
 lannguage->language
 lannguages->languages
 lanuage->language
+lanuages->languages
 lanuch->launch
 lanuched->launched
 lanuches->launches
@@ -24984,6 +24991,8 @@ lanugage->language
 lanugages->languages
 laod->load
 laoded->loaded
+laoder->loader
+laoders->loaders
 laoding->loading
 laods->loads
 Laotion->Laotian, lotion,
@@ -25015,6 +25024,7 @@ latitue->latitude
 latitute->latitude
 latops->laptops
 latset->latest
+lattest->latest
 lattitude->latitude
 lauch->launch
 lauched->launched
@@ -25024,6 +25034,7 @@ lauching->launching
 laugnage->language
 laugnages->languages
 lauguage->language
+lauguages->languages
 launchs->launch, launches,
 launck->launch
 laungage->language
@@ -25201,6 +25212,7 @@ liasing->liaising
 liasion->liaison
 liason->liaison
 liasons->liaisons
+libararies->libraries
 libarary->library
 libaries->libraries
 libary->library
@@ -25208,6 +25220,7 @@ libell->libel
 liberaries->libraries
 liberary->library
 liberoffice->libreoffice
+liberries->libraries
 liberry->library
 libgng->libpng
 libguistic->linguistic
@@ -25281,6 +25294,10 @@ licsensing->licensing
 lieing->lying
 liek->like
 liekd->liked
+lieklihood->likelihood
+liekly->likely
+lieks->likes
+liekwise->likewise
 lient->client
 lients->clients
 liesure->leisure
@@ -25288,20 +25305,31 @@ lieuenant->lieutenant
 liev->live
 lieved->lived
 lifceycle->lifecycle
+lifceycles->lifecycles
+lifcycle->lifecycle
+lifcycles->lifecycles
 lifecyle->lifecycle
+lifecyles->lifecycles
 lifes->lives
 lifeycle->lifecycle
+lifeycles->lifecycles
 liftime->lifetime
+liftimes->lifetimes
 ligh->light, lie, lye,
+lighbulb->lightbulb
+lighbulbs->lightbulbs
 ligher->lighter, liar, liger,
 lighers->lighters, liars, ligers,
 lighing->lighting
+lighning->lightning
 lightbulp->lightbulb
+lightbulps->lightbulbs
 lightweigh->lightweight
 lightwieght->lightweight
 lightwight->lightweight
 lightyear->light year
 lightyears->light years
+lighweight->lightweight
 ligitamacy->legitimacy
 ligitamassy->legitimacy
 ligitamate->legitimate
@@ -25318,13 +25346,16 @@ likelly->likely
 likelyhood->likelihood
 likewis->likewise
 likey->likely
+likleihood->likelihood
 liklelihood->likelihood
 likley->likely
+liklihood->likelihood
 likly->likely
 lileral->literal
 limiation->limitation
 limiations->limitations
 limination->limitation, lamination,
+liminations->limitations, laminations,
 liminted->limited
 limitaion->limitation
 limitaions->limitations
@@ -25356,10 +25387,23 @@ limitts->limits
 limk->link
 limosine->limousine
 limosines->limousines
-limted->limited
+limt->limit, lint,
+limtation->limitation
+limtations->limitations
+limted->limited, linted,
+limter->limiter, linter,
+limters->limiters, linters,
 limti->limit
-limts->limits
+limtiation->limitation
+limtiations->limitations
+limtied->limited
+limtier->limiter
+limtiers->limiters
+limtiing->limiting
+limting->limiting, linting,
+limts->limits, lints,
 linaer->linear
+linaerly->linearly
 linar->linear
 linarly->linearly
 lincese->license
@@ -25369,6 +25413,8 @@ linearily->linearly, linearity,
 lineary->linearly
 linerisation->linearisation
 linerisations->linearisations
+linerization->linearization
+linerizations->linearizations
 lineseach->linesearch
 lineseaches->linesearches
 liness->lines
@@ -25387,10 +25433,28 @@ liquify->liquefy
 liquour->liquor
 liraries->libraries
 lirary->library
-liscense->license, licence,
-lisence->license, licence,
-lisense->license, licence,
+liscence->licence
+liscenced->licenced
+liscences->licences
+liscencing->licencing
+liscense->license
+liscensed->licensed
+liscenses->licenses
+liscensing->licensing
+lisence->licence
+lisenced->licenced
+lisences->licences
+lisencing->licencing
+lisense->license
+lisensed->licensed
+lisenses->licenses
+lisensing->licensing
+lisetn->listen
+lisetned->listened
+lisetner->listener
+lisetners->listeners
 lisetning->listening
+lisetns->listens
 lising->listing
 listapck->listpack
 listbbox->listbox
@@ -25403,8 +25467,10 @@ listensers->listeners
 listenter->listener
 listenters->listeners
 listernes->listeners
+listned->listened
 listner->listener
 listners->listeners
+listning->listening
 litaral->literal
 litarally->literally
 litarals->literals
@@ -25426,17 +25492,29 @@ litterally->literally
 litterals->literals
 litterate->literate
 litterature->literature
+litttle->little
 liturature->literature
 liuke->like
+livecycle->lifecycle
+livecycles->lifecycles
 liveing->living
 livel->level
+livels->levels
 livetime->lifetime
+livetimes->lifetimes
 livley->lively
 lizens->license
 lizense->license
 lizensing->licensing
 lke->like
 llinear->linear
+lmit->limit
+lmitation->limitation
+lmitations->limitations
+lmited->limited
+lmiter->limiter
+lmiters->limiters
+lmiting->limiting
 lmits->limits
 lnguage->language
 lnguages->languages
@@ -25444,7 +25522,16 @@ loaader->loader
 loacal->local
 loacality->locality
 loacally->locally
+loacate->locate
+loacated->located
+loacates->locates
+loacating->locating
 loacation->location
+loacations->locations
+loacte->locate
+loacted->located
+loactes->locates
+loacting->locating
 loaction->location
 loactions->locations
 loade->load
@@ -25481,6 +25568,7 @@ localtion->location
 localtions->locations
 localy->locally
 localzation->localization
+locatin->location, locating,
 locatins->locations
 loccked->locked
 locgical->logical
@@ -25499,6 +25587,10 @@ logaritmic->logarithmic
 logcal->logical
 loged->logged, lodged, longed,
 loger->logger, lodger, longer,
+logers->loggers, lodgers,
+loggged->logged
+loggger->logger
+logggers->loggers
 loggging->logging
 loggin->login, logging,
 logial->logical
