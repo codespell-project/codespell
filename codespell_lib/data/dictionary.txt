@@ -27484,7 +27484,13 @@ naerly->nearly, gnarly,
 nagative->negative
 nagatively->negatively
 nagatives->negatives
+nagivate->navigate
+nagivated->navigated
+nagivates->navigates
+nagivating->navigating
 nagivation->navigation
+nagivator->navigator
+nagivators->navigators
 naibhor->neighbor, neighbour,
 naibhorhood->neighborhood, neighbourhood,
 naibhorhoods->neighborhoods, neighbourhoods,
@@ -27503,7 +27509,9 @@ namaes->names
 namd->named, name,
 nameing->naming
 namemespace->namespace
+namemespaces->namespaces
 namepace->namespace
+namepaces->namespaces
 namepsace->namespace
 namepsaces->namespaces
 namesapce->namespace
@@ -27511,8 +27519,12 @@ namesapced->namespaced
 namesapces->namespaces
 namesd->named, names,
 namess->names
+namesspace->namespace
 namesspaces->namespaces
 namme->name
+nammed->named
+nammes->names
+namming->naming
 namne->name
 namned->named
 namnes->names
@@ -27584,6 +27596,7 @@ natioanlly->nationally
 natioanls->nationals
 nativelyx->natively
 natrual->natural
+natrually->naturally
 naturaly->naturally
 naturely->naturally
 naturual->natural
@@ -27591,15 +27604,27 @@ naturually->naturally
 natvigation->navigation
 nautral->natural, neutral,
 navagate->navigate
+navagated->navigated
+navagates->navigates
 navagating->navigating
 navagation->navigation
+navagator->navigator
+navagators->navigators
 navagitation->navigation
+navgiate->navigate
+navgiated->navigated
+navgiates->navigates
+navgiating->navigating
 navgiation->navigation
+navgiator->navigator
+navgiators->navigators
 naviagte->navigate
 naviagted->navigated
 naviagtes->navigates
 naviagting->navigating
 naviagtion->navigation
+naviagtor->navigator
+naviagtors->navigators
 navitvely->natively
 navtive->native
 navtives->natives
@@ -28327,7 +28352,14 @@ nombering->numbering
 nombers->numbers
 nomes->gnomes
 nomimal->nominal
+nomral->normal
 nomralization->normalization
+nomralize->normalize
+nomralized->normalized
+nomralizes->normalizes
+nomralizing->normalizing
+nomrally->normally
+nomrals->normals
 non-alphanumunder->non-alphanumeric
 non-asii->non-ascii
 non-assiged->non-assigned
@@ -28415,6 +28447,7 @@ nonsens->nonsense
 nonseperable->non-separable
 nonte->note
 nontheless->nonetheless
+nonthing->nothing
 noo->no
 noone->no one
 noral->normal, moral,
@@ -28433,9 +28466,17 @@ noramals->normals
 noraml->normal
 nore->nor, note, more, node,
 norhern->northern
+norification->notification
 norifications->notifications
 normailzation->normalization
+normailze->normalize
+normailzed->normalized
+normailzes->normalizes
+normailzing->normalizing
+normaize->normalize
 normaized->normalized
+normaizes->normalizes
+normaizing->normalizing
 normale->normal
 normales->normals
 normall->normal, normally,
@@ -28492,6 +28533,11 @@ noticiable->noticeable
 noticible->noticeable
 noticication->notification
 noticications->notifications
+noticied->noticed, notified,
+noticies->notices, notifies,
+noticiing->noticing
+noticy->notify, notice,
+noticying->notifying
 notidy->notify, not tidy,
 notifacation->notification
 notifacations->notifications
@@ -28521,6 +28567,7 @@ notificaton->notification
 notificatons->notifications
 notificiation->notification
 notificiations->notifications
+notificication->notification
 notificications->notifications
 notifictation->notification
 notifictations->notifications
@@ -28531,9 +28578,17 @@ notififations->notifications
 notifiy->notify
 notifiying->notifying
 notifycation->notification
+notifycations->notifications
+notifyed->notified
+notifyes->notifies
 notigication->notification
 notigications->notifications
+notitication->notification
+notitications->notifications
+notitied->notified
+notities->notifies
 notity->notify
+notitying->notifying
 notmalize->normalize
 notmalized->normalized
 notmutch->notmuch
@@ -28565,12 +28620,18 @@ nowns->knowns, nouns,
 nstall->install
 nstallation->installation
 nstalled->installed
+nstaller->installer
+nstallers->installers
 nstalling->installing
 nstalls->installs
 ntification->notification
 nuber->number
+nubered->numbered
 nubering->numbering
+nubers->numbers
 nubmer->number
+nubmered->numbered
+nubmering->numbering
 nubmers->numbers
 nucleous->nucleus, nucleolus,
 nucular->nuclear
@@ -28590,7 +28651,11 @@ numbbers->numbers
 numbe->number, numb,
 numberal->numeral
 numberals->numerals
+numberator->numerator
+numberators->numerators
 numberic->numeric
+numberical->numerical
+numberically->numerically
 numberous->numerous
 numberr->number
 numberred->numbered
@@ -28618,7 +28683,14 @@ numering->numbering
 numers->numbers
 nummber->number
 nummbers->numbers
+nummeral->numeral
+nummerals->numerals
+nummerator->numerator
+nummerators->numerators
 nummeric->numeric
+nummerical->numerical
+nummerically->numerically
+nummerous->numerous
 numnber->number
 numnbered->numbered
 numnbering->numbering
