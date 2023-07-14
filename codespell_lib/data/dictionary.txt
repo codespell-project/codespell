@@ -30103,7 +30103,12 @@ pacakging->packaging
 paceholder->placeholder
 pach->patch, path,
 pachage->package
+pachaged->packaged
+pachages->packages
+pachaging->packaging
+pached->patched
 paches->patches
+paching->patching
 pachooly->patchouli
 pacht->patch
 pachtches->patches
@@ -30111,11 +30116,18 @@ pachtes->patches
 pacjage->package
 pacjages->packages
 packacge->package
+packacged->packaged
+packacges->packages
+packacging->packaging
+packae->package
+packaed->packaged, packed,
 packaeg->package
 packaege->package
 packaeges->packages
 packaegs->packages
+packaes->packages
 packag->package
+packagd->packaged
 packags->packages
 packaing->packaging
 packats->packets
@@ -30123,10 +30135,11 @@ packe->packed, packet,
 packege->package
 packes->packs, packed, packages,
 packge->package
-packged->packaged
+packged->packaged, packed,
 packgement->packaging
 packges'->packages'
 packges->packages
+packging->packaging, packing,
 packgs->packages
 packhage->package
 packhages->packages
@@ -30138,6 +30151,11 @@ packtes->packets
 pactch->patch
 pactched->patched
 pactches->patches
+pactching->patching
+pacth->patch
+pacthed->patched
+pacthes->patches
+pacthing->patching
 paculier->peculiar
 paculierly->peculiarly
 padam->param
@@ -30174,15 +30192,27 @@ pairokeelly->parochially
 paitience->patience
 paiting->painting
 pakage->package
+pakaged->packaged
 pakageimpl->packageimpl
 pakages->packages
+pakaging->packaging
 pakcage->package
+pakcaged->packaged
+pakcages->packages
+pakcaging->packaging
 paket->packet
+pakets->packets
 pakge->package
 pakvage->package
 palatte->palette
 palce->place, palace,
+palced->placed
+palceholder->placeholder
+palceholders->placeholders
+palcement->placement
+palcements->placements
 palces->places, pales,
+palcing->placing
 paleolitic->paleolithic
 palete->palette
 paliamentarian->parliamentarian
@@ -30195,6 +30225,7 @@ palletted->paletted
 paln->plan, pain, palm,
 paltette->palette
 paltform->platform
+paltforms->platforms
 pamflet->pamphlet
 pamplet->pamphlet
 paniced->panicked
@@ -30209,6 +30240,7 @@ paradime->paradigm
 paradym->paradigm
 paraemeter->parameter
 paraemeters->parameters
+paraeter->parameter
 paraeters->parameters
 parafanalia->paraphernalia
 paragaph->paragraph
@@ -30224,19 +30256,56 @@ paragraphy->paragraph
 paragrphs->paragraphs
 parahaps->perhaps
 paralel->parallel
+paralelisation->parallelisation
+paralelise->parallelise
+paralelised->parallelised
+paralelises->parallelises
 paralelising->parallelising
 paralelism->parallelism
+paralelization->parallelization
+paralelize->parallelize
+paralelized->parallelized
+paralelizes->parallelizes
 paralelizing->parallelizing
 paralell->parallel
 paralelle->parallel
+paralellisation->parallelisation
+paralellise->parallelise
+paralellised->parallelised
+paralellises->parallelises
+paralellising->parallelising
 paralellism->parallelism
 paralellization->parallelization
+paralellize->parallelize
+paralellized->parallelized
+paralellizes->parallelizes
+paralellizing->parallelizing
+paralells->parallels
 paralelly->parallelly
+paralels->parallels
 paralely->parallelly
 paralle->parallel
 parallell->parallel
+parallellisation->parallelisation
+parallellise->parallelise
+parallellised->parallelised
+parallellises->parallelises
+parallellising->parallelising
+parallellism->parallelism
+parallellization->parallelization
+parallellize->parallelize
+parallellized->parallelized
+parallellizes->parallelizes
+parallellizing->parallelizing
+parallells->parallels
 parallely->parallelly
 paralles->parallels
+parallisation->parallelisation
+parallise->parallelise
+parallised->parallelised
+parallises->parallelises
+parallising->parallelising
+parallism->parallelism
 parallization->parallelization
 parallize->parallelize
 parallized->parallelized
@@ -30258,14 +30327,18 @@ paramenets->parameters
 paramenter->parameter
 paramenters->parameters
 paramer->parameter
+paramers->parameters
 paramert->parameter
+paramerter->parameter
 paramerters->parameters
 paramerts->parameters
 paramete->parameter
 parameteras->parameters
 parametere->parameter, parameters,
 parameteres->parameters
+parameteric->parametric
 parameterical->parametrical
+parameterically->parametrically
 parameterts->parameters
 parametes->parameters
 parametic->parametric, paramedic,
@@ -30279,6 +30352,7 @@ parametter->parameter
 parametters->parameters
 paramss->params
 paramter->parameter
+paramtere->parameter
 paramterer->parameter
 paramterers->parameters
 paramteres->parameters
@@ -30316,6 +30390,8 @@ pararmeters->parameters
 parastic->parasitic
 parastics->parasitics
 paratheses->parentheses
+parathesis->parenthesis
+paratmer->parameter
 paratmers->parameters
 paravirtualiation->paravirtualization, paravirtualisation,
 paravirtualied->paravirtualized, paravirtualised,
@@ -30336,6 +30412,7 @@ paremeter->parameter
 paremeters->parameters
 paremter->parameter
 paremters->parameters
+parenteses->parentheses
 parentesis->parentheses, parenthesis,
 parenthese->parentheses
 parenthesed->parenthesized
@@ -30344,6 +30421,7 @@ parenthises->parentheses
 parenthsis->parenthesis
 paret->parent, parrot,
 paretheses->parentheses
+parethesis->parenthesis
 parfay->parfait
 parge->large
 paria->pariah, parka,
@@ -30381,6 +30459,7 @@ parmaeter->parameter
 parmaeters->parameters
 parmameter->parameter
 parmameters->parameters
+parmater->parameter
 parmaters->parameters
 parmesian->Parmesan
 parmeter->parameter
@@ -30454,9 +30533,12 @@ particaularly->particularly
 particaulr->particular
 particaulrly->particularly
 particlar->particular
+particlarly->particularly
 particlars->particulars
+particual->particular
 particually->particularly
 particualr->particular
+particualrly->particularly
 particuar->particular
 particuarly->particularly
 particulaly->particularly
@@ -30482,6 +30564,7 @@ partisioned->partitioned
 partisioning->partitioning
 partisions->partitions
 partitial->partial
+partitially->partially
 partiticipant->participant
 partiticipants->participants
 partiticular->particular
@@ -30492,6 +30575,10 @@ partitionned->partitioned
 partitionning->partitioning
 partitionns->partitions
 partitionss->partitions
+partitition->partition
+partititioned->partitioned
+partititioning->partitioning
+partititions->partitions
 partiton->partition
 partitoned->partitioned
 partitoning->partitioning
@@ -30582,7 +30669,10 @@ pathalogical->pathological
 pathame->pathname
 pathames->pathnames
 pathane->pathname
+pathc->patch
 pathced->patched
+pathces->patches
+pathcing->patching
 pathes->paths
 pathign->pathing
 pathnme->pathname
@@ -30655,8 +30745,13 @@ peferring->preferring
 pefers->prefers
 peform->perform
 peformance->performance
+peformances->performances
+peformant->performant
 peformed->performed
+peformer->performer
+peformers->performers
 peforming->performing
+peforms->performs
 pege->page
 pehaps->perhaps
 peice->piece
@@ -30789,6 +30884,7 @@ perfom->perform
 perfomamce->performance
 perfomamces->performances
 perfomance->performance
+perfomances->performances
 perfomanse->performance
 perfomanses->performances
 perfomant->performant
@@ -30797,6 +30893,7 @@ perfome->perform
 perfomeamce->performance
 perfomeamces->performances
 perfomeance->performance
+perfomeances->performances
 perfomeanse->performance
 perfomeanses->performances
 perfomeant->performant
@@ -30818,6 +30915,7 @@ perfomr->perform
 perfomramce->performance
 perfomramces->performances
 perfomrance->performance
+perfomrances->performances
 perfomranse->performance
 perfomranses->performances
 perfomrant->performant
@@ -30838,6 +30936,8 @@ perforaming->performing
 perforamnce->performance
 perforamnces->performances
 perforams->performs
+perforance->performance
+perforances->performances
 perford->performed
 perforemd->performed
 performace->performance
@@ -30846,6 +30946,8 @@ performamce->performance
 performane->performance
 performe->perform, performed,
 performence->performance
+performences->performances
+performent->performant
 performes->performed, performs,
 performnace->performance
 perfors->performs
@@ -30885,8 +30987,18 @@ peripherial->peripheral
 peripherials->peripherals
 perisist->persist
 perisisted->persisted
+perisistence->persistence
 perisistent->persistent
+perisistently->persistently
+perisisting->persisting
+perisists->persists
+perist->persist
+peristed->persisted
+peristence->persistence
 peristent->persistent
+peristently->persistently
+peristing->persisting
+perists->persists, persist,
 perjery->perjury
 perjorative->pejorative
 perlciritc->perlcritic
@@ -30954,7 +31066,11 @@ peroidicity->periodicity
 peroids->periods
 peronal->personal
 peroperly->properly
+perosn->person
+perosnal->personal
+perosnalities->personalities
 perosnality->personality
+perosnally->personally
 perpandicular->perpendicular
 perpandicularly->perpendicularly
 perperties->properties
@@ -31008,7 +31124,11 @@ persistantly->persistently
 persisten->persistent
 persistented->persisted
 persited->persisted
+persitence->persistence
 persitent->persistent
+persitently->persistently
+persiting->persisting
+persits->persists, persist,
 persmission->permission
 persmissions->permissions
 personalitie->personality
@@ -31019,6 +31139,9 @@ personaly->personally
 personel->personnel, personal,
 personell->personnel
 personnal->personal
+personnalities->personalities
+personnality->personality
+personnally->personally
 personnaly->personally
 personnell->personnel
 perspecitve->perspective
@@ -31129,15 +31252,25 @@ photografy->photography
 photograpic->photographic
 photograpical->photographical
 phsical->physical
+phsically->physically
+phsics->physics
+phsyical->physical
 phsyically->physically
+phsyics->physics
 phtread->pthread
 phtreads->pthreads
 phyiscal->physical
 phyiscally->physically
 phyiscs->physics
+phylosopher->philosopher
+phylosophers->philosophers
 phylosophical->philosophical
+phylosophy->philosophy
 physcial->physical
+physcially->physically
+physcis->physics
 physial->physical
+physially->physically
 physicaly->physically
 physican->physician
 physicans->physicians
@@ -31262,6 +31395,8 @@ placholder->placeholder
 placholders->placeholders
 placmenet->placement
 placmenets->placements
+placment->placement
+placments->placements
 plad->plaid, plead,
 pladed->plaided, pleaded,
 plaform->platform
