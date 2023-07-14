@@ -4213,6 +4213,7 @@ assocciations->associations
 assocciative->associative
 associatated->associated
 associatd->associated
+associateed->associated
 associatied->associated
 associcate->associate
 associcated->associated
@@ -30162,6 +30163,7 @@ pacakge->package
 pacakges->packages
 pacakging->packaging
 paceholder->placeholder
+paceholders->placeholders
 pach->patch, path,
 pachage->package
 pachaged->packaged
@@ -31443,7 +31445,10 @@ pixelx->pixels, pixel,
 pixes->pixels
 placeemnt->placement
 placeemnts->placements
+placegolder->placeholder
+placegolders->placeholders
 placehoder->placeholder
+placehoders->placeholders
 placeholde->placeholder
 placeholdes->placeholders
 placeholer->placeholder
@@ -43990,6 +43995,7 @@ unahppy->unhappy
 unale->unable
 unalllowed->unallowed
 unambigious->unambiguous
+unambigiously->unambiguously
 unambigous->unambiguous
 unambigously->unambiguously
 unamed->unnamed
