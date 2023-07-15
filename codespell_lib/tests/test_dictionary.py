@@ -18,9 +18,11 @@ try:
     for lang in supported_languages:
         _wordlist = op.join(_test_data_dir, f"{lang}-additionnal.wordlist")
         if op.isfile(_wordlist):
-            spellers[lang] = aspell.Speller(("lang", lang), ("wordlists", _wordlist))
+            spellers[lang] = aspell.Speller(
+                ("lang", lang), ("size", "80"), ("wordlists", _wordlist)
+            )
         else:
-            spellers[lang] = aspell.Speller("lang", lang)
+            spellers[lang] = aspell.Speller(("lang", lang), ("size", "80"))
 except ImportError as exp:
     if os.getenv("REQUIRE_ASPELL", "false").lower() == "true":
         raise RuntimeError(
