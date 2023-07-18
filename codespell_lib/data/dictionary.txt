@@ -34794,15 +34794,12 @@ refartored->refactored, refracted,
 refartoring->refactoring, refractoring,
 refcound->refcount
 refcounf->refcount
-refect->reflect
-refected->reflected
-refecting->reflecting
 refectiv->reflective
-refective->reflective
 refectivity->reflectivity
-refector->refactor
+refector->refactor, reflector,
+refectored->refactored
 refectoring->refactoring
-refects->reflects
+refectors->refactors, reflectors,
 refedendum->referendum
 refeinement->refinement
 refeinements->refinements
@@ -34833,6 +34830,7 @@ referanced->referenced
 referances->references
 referancing->referencing
 referant->referent
+referants->referents
 refere->refer, referee,
 referebces->references
 referece->reference
@@ -35096,6 +35094,7 @@ reguarliser->regulariser
 reguarlize->regularize
 reguarlizer->regularizer
 reguarlly->regularly
+reguarls->regulars
 reguarly->regularly
 reguator->regulator
 reguire->require
