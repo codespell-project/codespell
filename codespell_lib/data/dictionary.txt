@@ -34794,33 +34794,57 @@ refartored->refactored, refracted,
 refartoring->refactoring, refractoring,
 refcound->refcount
 refcounf->refcount
-refect->reflect
-refected->reflected
-refecting->reflecting
 refectiv->reflective
-refector->refactor
+refectivity->reflectivity
+refector->refactor, reflector,
+refectored->refactored
 refectoring->refactoring
-refects->reflects
+refectors->refactors, reflectors,
 refedendum->referendum
 refeinement->refinement
 refeinements->refinements
+refelect->reflect
+refelected->reflected
+refelecting->reflecting
+refelection->reflection
+refelections->reflections
+refelective->reflective
+refelectivity->reflectivity
 refelects->reflects
 refence->reference
+refenced->referenced
 refences->references
+refencing->referencing
 refenence->reference
+refenenced->referenced
+refenences->references
+refenencing->referencing
+refenrence->reference
 refenrenced->referenced
+refenrences->references
+refenrencing->referencing
 referal->referral
+referals->referrals
 referance->reference
 referanced->referenced
 referances->references
+referancing->referencing
 referant->referent
+referants->referents
 refere->refer, referee,
 referebces->references
 referece->reference
+refereced->referenced
 referecence->reference
+referecenced->referenced
 referecences->references
+referecencing->referencing
 refereces->references
+referecing->referencing
 referecne->reference
+referecned->referenced
+referecnes->references
+referecning->referencing
 refered->referred
 referefences->references
 referemce->reference
@@ -34849,6 +34873,10 @@ referenz->reference
 referenzes->references
 refererd->referred
 refererence->reference
+refererenced->referenced
+refererences->references
+refererencing->referencing
+referering->referring, refereeing,
 referers->referrer, referrers,
 referes->refers, referees,
 referiang->referring
@@ -34863,6 +34891,7 @@ referncing->referencing
 refernece->reference
 referneced->referenced
 referneces->references
+refernecing->referencing
 refernnce->reference
 referr->refer
 referrence->reference
@@ -34871,6 +34900,10 @@ referrences->references
 referrencing->referencing
 referreres->referrers
 referres->refers
+referrred->referred
+referrrer->referrer
+referrrers->referrers
+referrring->referring
 referrs->refers
 refertence->reference
 refertenced->referenced
@@ -34879,8 +34912,13 @@ refesh->refresh
 refeshed->refreshed
 refeshes->refreshes
 refeshing->refreshing
+refferal->referral
+refferals->referrals
 reffered->referred
 refference->reference
+refferenced->referenced
+refferences->references
+refferencing->referencing
 refferes->refers, referees,
 reffering->referring
 refferr->refer
@@ -34948,35 +34986,64 @@ regenrating->regenerating
 regenration->regeneration
 regenrative->regenerative
 regession->regression
+regester->register
 regestered->registered
+regestering->registering
+regesters->registers
+regestration->registration
+regestrations->registrations
+regestries->registries
+regestry->registry
 regidstered->registered
 regio->region
 regiser->register
+regisered->registered
+regisering->registering
+regisers->registers
 regisration->registration
+regisrations->registrations
+regisries->registries
+regisry->registry
 regist->register
 registartion->registration
+registartions->registrations
 registation->registration
+registations->registrations
 registe->register
 registed->registered
 registeing->registering
 registeration->registration
+registerations->registrations
 registerd->registered, registers,
 registerered->registered
 registeres->registers
 registeresd->registered
+registeries->registries
 registerred->registered
+registerring->registering
 registert->registered
 registery->registry
 registes->registers
+registies->registries
 registing->registering
+registor->register
+registored->registered
+registoring->registering
 registors->registers
+registr->register
 registrain->registration
 registraion->registration
 registraions->registrations
 registraration->registration
+registrate->register
 registrated->registered
+registrates->registers
+registrating->registering
 registred->registered
 registrer->register
+registrered->registered
+registrering->registering
+registrers->registers
 registring->registering
 registrs->registers
 registser->register
@@ -34985,6 +35052,10 @@ regiter->register
 regitered->registered
 regitering->registering
 regiters->registers
+regitration->registration
+regitrations->registrations
+regitries->registries
+regitry->registry
 regluar->regular
 regon->region
 regons->regions
@@ -35011,12 +35082,19 @@ regualarly->regularly
 regualator->regulator
 regualr->regular
 regualtor->regulator
+reguard->regard
+reguarded->regarded
+reguarding->regarding
 reguardless->regardless
+reguards->regards
+reguarl->regular
 reguarldess->regardless
 reguarlise->regularise
 reguarliser->regulariser
 reguarlize->regularize
 reguarlizer->regularizer
+reguarlly->regularly
+reguarls->regulars
 reguarly->regularly
 reguator->regulator
 reguire->require
@@ -35175,7 +35253,9 @@ releant->relevant, relent,
 releas->release
 releasead->released
 releasse->release
+releate->relate
 releated->related
+releates->relates
 releating->relating
 releation->relation
 releations->relations
@@ -35217,10 +35297,14 @@ relevane->relevant
 releveant->relevant
 relevence->relevance
 relevent->relevant
+relfect->reflect
 relfected->reflected
 relfecting->reflecting
 relfection->reflection
 relfections->reflections
+relfective->reflective
+relfectivity->reflectivity
+relfects->reflects
 reliabily->reliably, reliability,
 reliablity->reliability
 relie->rely, relies, really, relief,
@@ -35237,8 +35321,19 @@ relinguish->relinquish
 relinguishing->relinquishing
 relinqushment->relinquishment
 relintquish->relinquish
+relisation->realisation
+relisations->realisations
+relise->realise
+relised->realised
+relises->realises
+relising->realising
 relitavely->relatively
-relized->realised, realized,
+relization->realization
+relizations->realizations
+relize->realize
+relized->realized
+relizes->realizes
+relizing->realizing
 rellocates->reallocates, relocates,
 relly->really
 relm->realm, elm, helm, ream, rem,
@@ -35371,21 +35466,32 @@ remoote->remote
 remore->remote
 remorted->reported
 remot->remote
+remotly->remotely
+remots->remotes
 removce->remove
 removeable->removable
+removeed->removed
+removees->removes
 removefromat->removeformat
 removeing->removing
 removerd->removed
+remplace->replace
+remplaced->replaced
 remplacement->replacement
+remplaces->replaces
+remplacing->replacing
 remve->remove
 remved->removed
 remves->removes
+remving->removing
 remvoe->remove
 remvoed->removed
 remvoes->removes
+remvoing->removing
 remvove->remove
 remvoved->removed
 remvoves->removes
+remvoving->removing
 remvs->removes
 renable->re-enable
 renabled->re-enabled
@@ -35411,7 +35517,11 @@ renderering->rendering
 renderes->renders, renderers, renderer's,
 renderning->rendering
 renderr->render
+renderred->rendered
+renderrer->renderer
+renderrers->renderers
 renderring->rendering
+renderrs->renderers, renders,
 rendevous->rendezvous
 rendezous->rendezvous
 rendired->rendered
@@ -35673,7 +35783,10 @@ reosurced->resourced
 reosurces->resources
 reosurcing->resourcing
 reounded->rounded
+reoute->route, reroute,
 reouted->routed, rerouted,
+reoutes->routes, reroutes,
+reouting->routing, rerouting,
 repace->replace
 repaced->replaced
 repacement->replacement
@@ -35743,6 +35856,7 @@ repet->repeat
 repetative->repetitive
 repete->repeat
 repeteadly->repeatedly
+repetes->repeats
 repetetion->repetition
 repetetions->repetitions
 repetetive->repetitive
@@ -35814,13 +35928,21 @@ replicaiton->replication
 replicaitons->replications
 repling->replying
 replys->replies
+repond->respond
+reponded->responded
+reponder->responder
+reponders->responders
 reponding->responding
+reponds->responds
 reponse->response
 reponses->responses
 reponsibilities->responsibilities
 reponsibility->responsibility
 reponsible->responsible
+reponsive->responsive
 repore->report, rapport, repose,
+repored->reported, reposed,
+repores->reports, reposes,
 reporeted->reported
 reporing->reporting
 reporitory->repository
@@ -35852,6 +35974,9 @@ repostories->repositories
 repostory->repository
 repote->report, remote,
 repport->report
+repported->reported
+repporting->reporting
+repports->reports
 reppository->repository
 repraesentation->representation
 repraesentational->representational
@@ -35874,6 +35999,7 @@ represantation->representation
 represantational->representational
 represantations->representations
 represantative->representative
+represen->represent
 represenatation->representation
 represenatational->representational
 represenatations->representations
@@ -35881,6 +36007,9 @@ represenation->representation
 represenational->representational
 represenations->representations
 represend->represent
+represened->represented
+represening->representing
+represens->represents
 representaion->representation
 representaional->representational
 representaions->representations
@@ -35940,6 +36069,8 @@ reproduciability->reproduceability
 reproduciable->reproduceable
 reproduciblity->reproducibility
 reprot->report
+reproted->reported
+reproting->reporting
 reprots->reports
 reprsent->represent
 reprsentation->representation
@@ -35949,11 +36080,25 @@ reprsenting->representing
 reprsents->represents
 reprtoire->repertoire
 reprucible->reproducible
+repsect->respect
+repsected->respected
+repsecting->respecting
+repsective->respective
 repsectively->respectively
+repsects->respects
 repsented->represented, repented,
+repsond->respond
+repsonded->responded
+repsonder->responder
+repsonders->responders
+repsonding->responding
+repsonds->responds
 repsonse->response
 repsonses->responses
+repsonsibilities->responsibilities
+repsonsibility->responsibility
 repsonsible->responsible
+repsonsive->responsive
 repspectively->respectively
 repsresents->represents
 reptition->repetition
