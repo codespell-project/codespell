@@ -36135,6 +36135,11 @@ reqires->requires
 reqiring->requiring
 reqister->register
 reqiure->require
+reqiured->required
+reqiurement->requirement
+reqiurements->requirements
+reqiures->requires
+reqiuring->requiring
 reqrite->rewrite
 reqrites->rewrites
 requed->requeued
@@ -36161,7 +36166,11 @@ requeted->requested
 requeting->requesting
 requets->requests
 requeum->requiem
+requie->require
 requied->required
+requiement->requirement
+requiements->requirements
+requier->require
 requierd->required
 requiere->require
 requiered->required
@@ -36169,19 +36178,26 @@ requierement->requirement
 requierements->requirements
 requieres->requires
 requiering->requiring
+requierment->requirement
+requierments->requirements
+requiers->requires
 requies->requires
 requiest->request
 requiested->requested
 requiesting->requesting
 requiests->requests
+requiing->requiring
+requir->require
 requird->required
 requireing->requiring
 requiremenet->requirement
 requiremenets->requirements
 requiremnt->requirement
+requiremnts->requirements
 requirment->requirement
 requirmentes->requirements
 requirments->requirements
+requirs->requires
 requisit->requisite
 requisits->requisites
 requre->require
@@ -36193,16 +36209,23 @@ requrest->request
 requrested->requested
 requresting->requesting
 requrests->requests
+requrid->required
+requrie->require
 requried->required
 requriement->requirement
 requriements->requirements
 requries->requires
+requriing->requiring
 requriment->requirement
+requriments->requirements
 requring->requiring
+requrire->require
 requrired->required
 requrirement->requirement
 requrirements->requirements
-requris->require
+requrires->requires
+requriring->requiring
+requris->requires, require,
 requsite->requisite
 requsites->requisites
 requst->request
@@ -36226,6 +36249,8 @@ rerurn->return, rerun,
 rerwite->rewrite
 resarch->research
 resart->restart
+resarted->restarted
+resarting->restarting
 resarts->restarts
 resaurant->restaurant
 resaurants->restaurants
@@ -36272,7 +36297,13 @@ resevered->reserved
 resevering->reserving
 resevoir->reservoir
 resgister->register
+resgistered->registered
+resgistering->registering
 resgisters->registers
+resgistration->registration
+resgistrations->registrations
+resgistries->registries
+resgistry->registry
 residental->residential
 resierfs->reiserfs
 resignement->resignment
@@ -36311,9 +36342,17 @@ resoluton->resolution
 resolvinf->resolving
 reson->reason
 resonable->reasonable
+resonably->reasonably
+resoned->reasoned
+resoning->reasoning
 resons->reasons
 resonse->response
 resonses->responses
+resonsibilities->responsibilities
+resonsibility->responsibility
+resonsible->responsible
+resonsive->responsive
+resonsiveness->responsiveness
 resoource->resource
 resoourced->resourced
 resoources->resources
@@ -36381,8 +36420,19 @@ respecively->respectively
 respectivelly->respectively
 respectivley->respectively
 respectivly->respectively
+respnd->respond
+respnded->responded
+respnder->responder
+respnders->responders
+respnding->responding
+respnds->responds
 respnse->response
 respnses->responses
+respnsibilities->responsibilities
+respnsibility->responsibility
+respnsible->responsible
+respnsive->responsive
+respnsiveness->responsiveness
 respoduce->reproduce
 responc->response, respond,
 responce->response
@@ -36391,7 +36441,15 @@ responde->respond, response, responds, responded, responder,
 respone->response, respond,
 respones->response, responses,
 responibilities->responsibilities
+responibility->responsibility
+responible->responsible
+responisbilities->responsibilities
+responisbility->responsibility
 responisble->responsible
+responisve->responsive
+responisveness->responsiveness
+responive->responsive
+responiveness->responsiveness
 responnsibilty->responsibility
 respons->response, respond,
 responsabilities->responsibilities
@@ -36492,8 +36550,13 @@ resteraunt->restaurant
 resteraunts->restaurants
 restes->reset
 restesting->retesting
+restict->restrict
 resticted->restricted
+resticting->restricting
+restiction->restriction
+restictions->restrictions
 restictive->restrictive
+resticts->restricts
 restire->restore
 restired->restored
 restirer->restorer
@@ -36538,7 +36601,12 @@ resturns->returns
 resuable->reusable
 resuables->reusables
 resubstituion->resubstitution
+resuce->reduce, rescue,
+resuced->reduced, rescued,
+resuces->reduces, rescues,
+resucing->reducing, rescuing,
 resuction->reduction
+resuctions->reductions
 resue->reuse, rescue,
 resued->reused, rescued, resumed,
 resuilt->result
@@ -36550,12 +36618,15 @@ resuled->resulted, resumed,
 resuling->resulting
 resullt->result
 resulotion->resolution
+resulotions->resolutions
+resuls->results
 resulsets->resultsets
 resulst->results
 resultion->resolution
 resultions->resolutions
 resultung->resulting
 resulution->resolution
+resulutions->resolutions
 resumbmitting->resubmitting
 resumitted->resubmitted
 resumt->resume
@@ -36571,13 +36642,21 @@ resurecting->resurrecting
 resurse->recurse, resource,
 resursive->recursive, resourceful,
 resursively->recursively
-resuse->reuse
+resusable->reusable
+resuse->reuse, refuse, resume,
 resused->reused, refused, resumed,
+resuses->reuses, refuses, resumes,
+resusing->reusing, refusing, resuming,
+resut->result
+resuted->resulted
+resuting->resulting
 resuts->results
 resycn->resync
 retalitated->retaliated
 retalitation->retaliation
+retangle->rectangle
 retangles->rectangles
+retangular->rectangular
 retanslate->retranslate
 retart->restart
 retartation->retardation
@@ -36654,6 +36733,8 @@ retrivable->retrievable
 retrival->retrieval, retrial,
 retrive->retrieve
 retrived->retrieved
+retriver->retriever
+retrivers->retrievers
 retrives->retrieves
 retriving->retrieving
 retrn->return
@@ -36661,6 +36742,7 @@ retrned->returned
 retrns->returns
 retrun->return
 retruned->returned
+retruning->returning
 retruns->returns
 retrvieve->retrieve
 retrvieved->retrieved
@@ -36732,6 +36814,12 @@ reuqest->request
 reuqested->requested
 reuqesting->requesting
 reuqests->requests
+reuqire->require
+reuqired->required
+reuqirement->requirement
+reuqirements->requirements
+reuqires->requires
+reuqiring->requiring
 reurn->return
 reursively->recursively
 reuseable->reusable
@@ -36743,6 +36831,11 @@ reutrns->returns
 revaildating->revalidating
 revaluated->reevaluated
 reveive->receive, revive,
+reveived->received, reviewed, revived,
+reveiver->receiver, reviewer, reviver,
+reveivers->receivers, reviewers, revivers,
+reveives->receives, revives,
+reveiving->receiving, reviewing, reviving,
 reveiw->review
 reveiwed->reviewed
 reveiwer->reviewer
@@ -36783,10 +36876,12 @@ revist->revisit
 revisted->revisited
 revisting->revisiting
 revists->revisits
+reviw->review
 reviwed->reviewed
 reviwer->reviewer
 reviwers->reviewers
 reviwing->reviewing
+reviws->reviews
 revoltuion->revolution
 revoltuionary->revolutionary
 revoltuions->revolutions
@@ -36921,8 +37016,12 @@ rmoving->removing
 rnage->rage, range,
 roataion->rotation
 roatation->rotation
+roate->rotate
 roated->rotated
+roates->rotates
+roating->rotating
 roation->rotation
+roations->rotations
 roboustness->robustness
 robustnes->robustness
 rocess->process
@@ -36950,6 +37049,10 @@ romotely->remotely
 romotes->remotes
 romoting->remoting
 romotly->remotely
+romove->remove
+romoved->removed
+romoves->removes
+romoving->removing
 rondayvoo->rendezvous
 rondayvooed->rendezvoused
 rondayvou->rendezvous
@@ -36960,7 +37063,12 @@ rondazyvou->rendezvous
 rondazyvoued->rendezvoused
 roomate->roommate
 ropeat->repeat
+rorate->rotate
 rorated->rotated
+rorates->rotates
+rorating->rotating
+roration->rotation
+rorations->rotations
 rosponse->response
 rosponsive->responsive
 rotaion->rotation
@@ -37001,6 +37109,7 @@ routins->routines
 rovide->provide
 rovided->provided
 rovider->provider
+roviders->providers
 rovides->provides
 roviding->providing
 rplace->replace
@@ -37015,6 +37124,7 @@ rquests->requests, quests,
 rquire->require
 rquired->required
 rquirement->requirement
+rquirements->requirements
 rquires->requires
 rquiring->requiring
 rranslation->translation
@@ -37067,9 +37177,16 @@ rutes->routes, rules, brutes,
 rwite->write
 rysnc->rsync
 rythem->rhythm
+rythemic->rhythmic
+rythems->rhythms
 rythim->rhythm
+rythimic->rhythmic
+rythims->rhythms
 rythm->rhythm
 rythmic->rhythmic
+rythms->rhythms
+rythym->rhythm
+rythymic->rhythmic
 rythyms->rhythms
 saame->same
 sabatage->sabotage
