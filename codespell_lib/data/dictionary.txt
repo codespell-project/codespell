@@ -33499,14 +33499,47 @@ pytohn->python
 pyton->python
 pytyon->python
 qest->quest
+qestion->question
+qestioned->questioned
+qestioning->questioning
+qestionnaire->questionnaire
+qestionnaires->questionnaires
+qestions->questions
 qests->quests
+qeue->queue
+qeued->queued
+qeueing->queueing
+qeues->queues
 qeuest->quest
+qeuestion->question
+qeuestioned->questioned
+qeuestioning->questioning
+qeuestionnaire->questionnaire
+qeuestionnaires->questionnaires
+qeuestions->questions
 qeuests->quests
 qeueue->queue
+qeueued->queued
+qeueueing->queueing
+qeueues->queues
+qeueuing->queuing
+qeuing->queuing
 qeust->quest
+qeustion->question
+qeustioned->questioned
+qeustioning->questioning
+qeustionnaire->questionnaire
+qeustionnaires->questionnaires
+qeustions->questions
 qeusts->quests
 qhich->which, quiche,
 qiest->quest
+qiestion->question
+qiestioned->questioned
+qiestioning->questioning
+qiestionnaire->questionnaire
+qiestionnaires->questionnaires
+qiestions->questions
 qiests->quests
 qith->with
 qoute->quote
@@ -33533,8 +33566,22 @@ qualifiy->qualify
 qualifiying->qualifying
 qualitification->qualification
 qualitifications->qualifications
-quanities->quantities
+quanification->qualification, quantification,
+quanifications->qualifications, quantifications,
+quanified->quantified, qualified,
+quanifies->quantifies, qualifies,
+quanify->quantify, qualify,
+quanifying->quantifying, qualifying,
+quanities->quantities, qualities,
+quanitification->quantification
+quanitifications->quantifications
 quanitified->quantified
+quanitifies->quantifies
+quanitify->quantify
+quanitifying->quantifying
+quanititative->quantitative
+quanitities->quantities
+quanitity->quantity
 quanity->quantity
 quanlification->qualification, quantification,
 quanlified->qualified, quantified,
@@ -33568,30 +33615,66 @@ queiried->queried
 queisce->quiesce
 queriable->queryable
 quering->querying
+querried->queried
 querries->queries
 querry->query, quarry,
+querrying->querying
 queryies->queries
 queryinterace->queryinterface
 querys->queries
 quesant->croissant
 quesants->croissants
 queset->quest
+quesetion->question
+quesetioned->questioned
+quesetioning->questioning
+quesetionnaire->questionnaire
+quesetionnaires->questionnaires
+quesetions->questions
 quesets->quests
+quesion->question
+quesioned->questioned
+quesioning->questioning
+quesionnaire->questionnaire
+quesionnaires->questionnaires
+quesions->questions
 quesiton->question
 quesitonable->questionable
+quesitoned->questioned
+quesitoning->questioning
+quesitonnaire->questionnaire
+quesitonnaires->questionnaires
 quesitons->questions
 quesr->quest
+quesrion->question
+quesrioned->questioned
+quesrioning->questioning
+quesrionnaire->questionnaire
+quesrionnaires->questionnaires
+quesrions->questions
 quesrs->quests
 quess->guess, quests,
 quessant->croissant
 quessants->croissants
 questionaire->questionnaire
+questionaires->questionnaires
 questionare->questionnaire
 questionares->questionnaires
 questionnair->questionnaire
+questionnairs->questionnaires
 questoin->question
+questoined->questioned
+questoining->questioning
+questoinnaire->questionnaire
+questoinnaires->questionnaires
 questoins->questions
+queston->question
 questonable->questionable
+questoned->questioned
+questoning->questioning
+questonnaire->questionnaire
+questonnaires->questionnaires
+questons->questions
 queu->queue
 queueud->queued
 queus->queues
@@ -33601,8 +33684,18 @@ quicklyu->quickly
 quicky->quickly, quickie,
 quickyl->quickly
 quicly->quickly
+quieried->queried
+quieries->queries
+quiery->query
+quierying->querying
 quiessent->quiescent
 quiest->quest, quiet,
+quiestion->question
+quiestioned->questioned
+quiestioning->questioning
+quiestionnaire->questionnaire
+quiestionnaires->questionnaires
+quiestions->questions
 quiests->quests
 quikc->quick
 quinessential->quintessential
@@ -33622,8 +33715,17 @@ quoteed->quoted
 quotent->quotient
 quottes->quotes
 quried->queried
+quries->queries
 quroum->quorum
+qury->query
+qurying->querying
 qust->quest
+qustion->question
+qustioned->questioned
+qustioning->questioning
+qustionnaire->questionnaire
+qustionnaires->questionnaires
+qustions->questions
 qusts->quests
 qutie->quite, quiet,
 quwesant->croissant
@@ -33659,6 +33761,7 @@ radis->radix
 rady->ready
 raed->read
 raeding->reading
+raedme->README
 raeds->reads
 raedy->ready
 raelly->really
@@ -34019,7 +34122,10 @@ reaktivated->reactivated
 realease->release
 realeased->released
 realeases->releases
+realeasing->releasing
+realiability->reliability
 realiable->reliable
+realiably->reliably
 realitime->realtime
 realitvely->relatively
 realiy->really
@@ -34043,10 +34149,16 @@ reallocaitions->reallocations
 reallocaiton->reallocation
 reallocaitons->reallocations
 realsitic->realistic
+realte->relate
 realted->related
+realtes->relates
+realting->relating, reacting,
 realtion->relation, reaction,
 realtions->relations, reactions,
+realtionship->relationship
+realtionships->relationships
 realtive->relative, reactive,
+realtively->relatively
 realy->really, relay,
 realyl->really
 reamde->README
@@ -34071,6 +34183,11 @@ reapper->reappear
 reappered->reappeared
 reappering->reappearing
 reaquire->reacquire, require,
+reaquired->required, reacquired,
+reaquirement->requirement
+reaquirements->requirements
+reaquires->requires, reacquires,
+reaquiring->requiring, reacquiring,
 rearely->rarely
 rearranable->rearrangeable
 rearrane->rearrange
@@ -34138,8 +34255,15 @@ rebiulding->rebuilding
 rebllions->rebellions
 reboto->reboot
 rebounce->rebound
+rebuid->rebuild
+rebuiding->rebuilding
+rebuids->rebuilds
 rebuil->rebuild, rebuilt,
 rebuilded->rebuilt
+rebuiling->rebuilding
+rebuilld->rebuild
+rebuillding->rebuilding
+rebuillds->rebuilds
 rebuillt->rebuilt
 rebuils->rebuilds
 rebuilts->rebuilds, rebuilt, rebuild,
@@ -34151,6 +34275,7 @@ rebulid->rebuild
 rebuliding->rebuilding
 rebulids->rebuilds
 rebulit->rebuilt
+rebult->rebuilt
 recahed->reached
 recal->recall
 recalcualte->recalculate
@@ -34217,7 +34342,13 @@ reccord->record
 reccorded->recorded
 reccording->recording
 reccords->records
-reccuring->recurring
+reccur->recur, reoccur,
+reccured->recurred, reoccurred,
+reccurence->recurrence
+reccurences->recurrences
+reccuring->recurring, reoccurring,
+reccurs->recurs, reoccurs,
+reccursion->recursion
 reccursive->recursive
 reccursively->recursively
 receeded->receded
@@ -34229,6 +34360,8 @@ receieve->receive
 receieved->received
 receieves->receives
 receieving->receiving
+receipe->recipe, receipt,
+receipes->recipes, receipts,
 receipient->recipient
 receipients->recipients
 receiption->reception
@@ -34290,6 +34423,8 @@ recipie->recipe
 recipies->recipes
 reciprocoal->reciprocal
 reciprocoals->reciprocals
+recipt->receipt, recipe,
+recipts->receipts, recipes,
 recive->receive
 recived->received
 reciver->receiver
@@ -34322,7 +34457,10 @@ recogize->recognize
 recogized->recognized
 recogizes->recognizes
 recogizing->recognizing
-recogniced->recognised
+recognice->recognize, recognise,
+recogniced->recognized, recognised,
+recognices->recognizes, recognises,
+recognicing->recognizing, recognising,
 recogninse->recognise
 recognizeable->recognizable
 recognzied->recognized
@@ -34357,12 +34495,22 @@ recommeding->recommending
 recommeds->recommends
 recommened->recommended, recommend,
 recommeneded->recommended
+recommentation->recommendation
+recommentations->recommendations
 recommented->recommended
+recommenting->recommending
+recomments->recommends
 recommmend->recommend
+recommmendation->recommendation
+recommmendations->recommendations
 recommmended->recommended
+recommmending->recommending
 recommmends->recommends
 recommnd->recommend
+recommndation->recommendation
+recommndations->recommendations
 recommnded->recommended
+recommnding->recommending
 recommnds->recommends
 recommned->recommend
 recommneded->recommended
@@ -34516,7 +34664,11 @@ recun->reckon, recon, recur,
 recund->reckoned, fecund,
 recuning->reckoning, retuning, recusing,
 recuring->recurring
+recurion->recursion
+recurison->recursion
+recurisve->recursive
 recurisvely->recursively
+recurive->recursive
 recurively->recursively
 recurrance->recurrence
 recursily->recursively
@@ -34563,6 +34715,9 @@ redidual->residual
 rediect->redirect
 rediected->redirected
 redifine->redefine
+redifined->redefined
+redifines->redefines
+redifining->redefining
 redifinition->redefinition
 redifinitions->redefinitions
 redifintion->redefinition
