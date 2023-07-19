@@ -40221,13 +40221,20 @@ srinked->shrunk
 srinking->shrinking
 sript->script
 sripts->scripts
+sroll->scroll, stroll,
+srollable->scrollable
 srollbar->scrollbar
+srollbars->scrollbars
+srolled->scrolled, strolled,
+srolling->scrolling, strolling,
+srolls->scrolls, strolls,
 srouce->source
 srtifact->artifact
 srtifacts->artifacts
 srting->string, sorting,
 srtings->strings
 srtructure->structure
+srtting->setting
 srttings->settings
 sructure->structure
 sructures->structures
@@ -40239,7 +40246,14 @@ ssee->see
 ssoaiating->associating
 ssome->some
 ssudo->sudo
+stabality->stability
 stabalization->stabilization
+stabalize->stabilize
+stabalized->stabilized
+stabalizer->stabilizer
+stabalizers->stabilizers
+stabalizes->stabilizes
+stabalizing->stabilizing
 stabel->stable
 stabilitation->stabilization
 stabilite->stabilize
@@ -40248,9 +40262,29 @@ stabilites->stabilizes
 stabiliting->stabilizing
 stabillity->stability
 stabilty->stability
+stabilzation->stabilization
+stabilze->stabilize
+stabilzed->stabilized
+stabilzer->stabilizer
+stabilzers->stabilizers
+stabilzes->stabilizes
+stabilzing->stabilizing
 stablility->stability
 stablilization->stabilization
+stablilize->stabilize
+stablilized->stabilized
+stablilizer->stabilizer
+stablilizers->stabilizers
+stablilizes->stabilizes
+stablilizing->stabilizing
+stablity->stability
+stablization->stabilization
 stablize->stabilize
+stablized->stabilized
+stablizer->stabilizer
+stablizers->stabilizers
+stablizes->stabilizes
+stablizing->stabilizing
 stach->stack
 stacionary->stationary
 stackk->stack
@@ -40272,7 +40306,18 @@ staition->station
 staitions->stations
 stalagtite->stalactite
 stamement's->statement's, statements, statement,
+stanalone->standalone
 stanard->standard
+stanardisation->standardisation
+stanardise->standardise
+stanardised->standardised
+stanardises->standardises
+stanardising->standardising
+stanardization->standardization
+stanardize->standardize
+stanardized->standardized
+stanardizes->standardizes
+stanardizing->standardizing
 stanards->standards
 standalown->standalone, stand-alone,
 standar->standard
@@ -40295,10 +40340,16 @@ standartd->standard
 standartds->standards
 standartisation->standardisation
 standartisator->standardiser
+standartise->standardise
 standartised->standardised
+standartises->standardises
+standartising->standardising
 standartization->standardization
 standartizator->standardizer
+standartize->standardize
 standartized->standardized
+standartizes->standardizes
+standartizing->standardizing
 standarts->standards
 standatd->standard
 standerd->standard
@@ -40306,6 +40357,18 @@ standerds->standards
 standlone->standalone
 standrat->standard
 standrats->standards
+standrd->standard
+standrdisation->standardisation
+standrdise->standardise
+standrdised->standardised
+standrdises->standardises
+standrdising->standardising
+standrdization->standardization
+standrdize->standardize
+standrdized->standardized
+standrdizes->standardizes
+standrdizing->standardizing
+standrds->standards
 standtard->standard
 standy->standby, sandy, standee,
 stange->strange
@@ -40320,8 +40383,15 @@ stardardized->standardized
 stardardizes->standardizes
 stardardizing->standardizing
 stardards->standards
+starded->started
+starding->starting
+stards->starts
 staright->straight
 starigth->straight
+starnge->strange
+starngely->strangely
+starnger->stranger
+starngers->strangers
 startd->started
 startegic->strategic
 startegies->strategies
@@ -40346,11 +40416,16 @@ stategized->strategized
 stategy->strategy
 stateman->statesman
 statemanet->statement
+statemanets->statements
+statememt->statement
 statememts->statements
 statemen->statement
 statemenet->statement
 statemenets->statements
+statemens->statements
 statemet->statement
+statemets->statements
+statemnt->statement
 statemnts->statements
 stati->statuses, state,
 staticly->statically
@@ -40365,7 +40440,9 @@ statistices->statistics
 statitic->statistic
 statitics->statistics
 statmenet->statement
+statmenets->statements
 statmenmt->statement
+statmenmts->statements
 statment->statement
 statments->statements
 statrt->start
@@ -40429,6 +40506,9 @@ stoers->stores
 stomache->stomach
 stompted->stomped
 stong->strong
+stonger->stronger
+stongest->strongest
+stongly->strongly
 stoped->stopped
 stoping->stopping
 stopp->stop
@@ -40441,6 +40521,7 @@ storeable->storable
 storeage->storage
 stoream->stream
 storeble->storable
+storege->storage
 storeing->storing
 storeis->stories, stores, store is, storeys,
 storge->storage
@@ -40463,7 +40544,11 @@ straightfoward->straightforward
 straigt->straight
 straigth->straight
 straigthen->straighten
+straigthened->straightened
 straigthening->straightening
+straigthens->straightens
+straigthforward->straightforward
+straigths->straights
 straines->strains
 stram->steam, stream, tram,
 straming->streaming, steaming,
@@ -40477,6 +40562,8 @@ strarting->starting
 strarts->starts
 strat->start, strata,
 stratagically->strategically
+strated->started
+strating->starting
 strcture->structure
 strctures->structures
 strcutre->structure
@@ -40538,7 +40625,11 @@ strictiest->strictest
 strictist->strictest
 strig->string
 strigification->stringification
+strigified->stringified
+strigifies->stringifies
+strigify->stringify
 strigifying->stringifying
+strigs->strings
 striing->string
 striings->strings
 strikely->strikingly
@@ -40553,6 +40644,7 @@ stripts->scripts, strips,
 strirngification->stringification
 strnad->strand
 strng->string
+strngs->strings
 stroage->storage
 stroe->store
 stroing->storing
@@ -40562,48 +40654,72 @@ strorage->storage
 strore->store
 strored->stored
 strores->stores
+strories->stories
 stroring->storing
+strory->story
 strotage->storage
 stroy->story, destroy,
 stroyboard->storyboard
 struc->struct
+strucrural->structural
 strucrure->structure
 strucrured->structured
 strucrures->structures
+strucruring->structuring
 structed->structured
 structer->structure
+structeral->structural
 structere->structure
 structered->structured
 structeres->structures
+structering->structuring
+structers->structures
 structetr->structure
+structiral->structural
 structire->structure
+structired->structured
+structires->structures
+structiring->structuring
+structoral->structural
 structore->structure
 structored->structured
 structores->structures
 structoring->structuring
+structral->structural
 structre->structure
 structred->structured
 structres->structures
+structring->structuring
 structrual->structural
 structrue->structure
 structrued->structured
 structrues->structures
+structruing->structuring
 structual->structural
 structue->structure
 structued->structured
 structues->structures
+structuing->structuring
 structur->structure
+structurd->structured
 structurs->structures
 strucur->structure
+strucural->structural
 strucure->structure
 strucured->structured
 strucures->structures
 strucuring->structuring
 strucurs->structures
+strucutral->structural
 strucutre->structure
 strucutred->structured
 strucutres->structures
+strucutring->structuring
+strucutural->structural
 strucuture->structure
+strucutured->structured
+strucutures->structures
+strucuturing->structuring
 struggel->struggle
 struggeled->struggled
 struggeling->struggling
@@ -40611,7 +40727,11 @@ struggels->struggles
 strust->trust, strut,
 struttural->structural
 strutture->structure
+strutural->structural
 struture->structure
+strutured->structured
+strutures->structures
+struturing->structuring
 ststion->station
 ststionary->stationary
 ststioned->stationed
@@ -40629,9 +40749,11 @@ stucked->stuck
 stuckt->stuck
 stuct->struct
 stucts->structs
+stuctural->structural
 stucture->structure
 stuctured->structured
 stuctures->structures
+stucturing->structuring
 studdy->study
 studetn->student
 studetns->students
@@ -40640,23 +40762,43 @@ studing->studying
 studis->studies, studios,
 studoi->studio
 studois->studios
+stuggle->struggle
+stuggled->struggled
+stuggles->struggles
 stuggling->struggling
 stuido->studio
 stuidos->studios
 stuill->still
 stummac->stomach
+sturct->struct
+sturcts->structs
 sturctural->structural
 sturcture->structure
+sturctured->structured
 sturctures->structures
+sturcturing->structuring
+sturtural->structural
 sturture->structure
 sturtured->structured
 sturtures->structures
+sturturing->structuring
+sturuct->struct
+sturucts->structs
+stuructural->structural
 sturucture->structure
+stuructured->structured
+stuructures->structures
+sturucturing->structuring
 stutdown->shutdown
 stutus->status
 styhe->style
+styile->style
+styiled->styled
+styiles->styles
+styiling->styling
 styilistic->stylistic
 stying->staying, styling,
+styless->styles
 stylessheet->stylesheet, stylesheets,
 stylessheets->stylesheets
 sub-lcuase->sub-clause
