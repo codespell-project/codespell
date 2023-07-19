@@ -38525,7 +38525,14 @@ sheild->shield
 sheilded->shielded
 sheilding->shielding
 sheilds->shields
+shema->schema
+shemas->schemas
+shematic->schematic
+shematics->schematics
 sheme->scheme, shame,
+shemed->schemed, shamed,
+shemes->schemes, shames,
+sheming->scheming, shaming,
 shepard->shepherd
 sheparded->shepherded
 sheparding->shepherding
@@ -38549,7 +38556,10 @@ shfit->shift
 shfited->shifted
 shfiting->shifting
 shfits->shifts
+shft->shift
 shfted->shifted
+shfting->shifting
+shfts->shifts
 shgould->should
 shicane->chicane
 shif->shift
@@ -38701,6 +38711,7 @@ sighths->scythes, sights,
 sigificance->significance
 sigificant->significant
 sigificantly->significantly
+siginificance->significance
 siginificant->significant
 siginificantly->significantly
 siginify->signify
@@ -38715,21 +38726,33 @@ signall->signal
 signatue->signature
 signatur->signature
 signes->signs
+signficance->significance
 signficant->significant
 signficantly->significantly
+signficiance->significance
 signficiant->significant
+signficiantly->significantly
 signfies->signifies
 signguature->signature
+signifance->significance
 signifanct->significant
 signifant->significant
 signifantly->significantly
+signifcance->significance
 signifcant->significant
 signifcantly->significantly
+signifficance->significance
 signifficant->significant
+signifficantly->significantly
+significace->significance
+significan->significant
 significanly->significantly
 significat->significant
 significatly->significantly
+significence->significance
+significent->significant
 significently->significantly
+signifigance->significance
 signifigant->significant
 signifigantly->significantly
 signifiy->signify
@@ -38738,11 +38761,15 @@ signitories->signatories
 signitory->signatory
 signle->single, signal,
 signles->singles, signals,
+signleton->singleton
+signletons->singletons
 signol->signal
 signto->sign to
 signul->signal
 signular->singular
+signularities->singularities
 signularity->singularity
+signularly->singularly
 sigrynge->syringe
 sigrynges->syringes
 siguret->cigarette
@@ -38766,6 +38793,11 @@ silhouweting->silhouetting
 silhouwetist->silhouettist
 silibus->syllabus
 silibuses->syllabuses
+silience->silence, salience,
+silienced->silenced
+siliences->silences, saliences,
+siliencing->silencing
+silient->silent, salient,
 siliently->silently, saliently,
 sillabus->syllabus
 sillabuses->syllabuses
@@ -38808,6 +38840,8 @@ simialr->similar
 simialrity->similarity
 simialrly->similarly
 simiar->similar
+simiarity->similarity
+simiarly->similarly
 similarily->similarly
 similary->similarly
 similat->similar
@@ -38818,13 +38852,17 @@ similiarly->similarly
 similiarty->similarity
 similiary->similarity
 simillar->similar
+simillarity->similarity
+simillarly->similarly
 similtaneous->simultaneous
 simily->simile, smiley, simply, similarly,
 simlar->similar
+simlarity->similarity
 simlarlity->similarity
 simlarly->similarly
 simle->simple, smile, simile,
 simliar->similar
+simliarity->similarity
 simliarly->similarly
 simlicity->simplicity
 simlified->simplified
@@ -38839,18 +38877,40 @@ simmetriclly->symmetrically
 simmetricly->symmetrically
 simmetry->symmetry
 simmilar->similar
+simmilarity->similarity
+simmilarly->similarly
+simpicity->simplicity
 simpification->simplification
 simpifications->simplifications
 simpified->simplified
+simpifier->simplifier
+simpifiers->simplifiers
+simpifies->simplifies
+simpify->simplify
+simpifying->simplifying
+simplcity->simplicity
 simplei->simply
 simpley->simply
+simplfication->simplification
+simplfications->simplifications
+simplfied->simplified
+simplfier->simplifier
+simplfiers->simplifiers
+simplfies->simplifies
 simplfy->simplify
+simplfying->simplifying
 simplicitly->simplicity
 simplicty->simplicity
+simplied->simplified, implied,
 simplier->simpler
 simplies->implies, simplifies,
 simpliest->simplest
+simplifcation->simplification
+simplifcations->simplifications
 simplifed->simplified
+simplifer->simplifier
+simplifers->simplifiers
+simplifes->simplifies
 simplificaiton->simplification
 simplificaitons->simplifications
 simplifiy->simplify
@@ -38866,6 +38926,7 @@ simplyfied->simplified
 simplyfies->simplifies
 simplyfy->simplify
 simplyfying->simplifying
+simplying->simplifying, simply, implying,
 simptom->symptom
 simptomatic->symptomatic
 simptomatically->symptomatically
@@ -38906,14 +38967,18 @@ simulatation->simulation
 simulatenous->simultaneous
 simulatenously->simultaneously
 simultanaeous->simultaneous
+simultanaeously->simultaneously
 simultaneos->simultaneous
 simultaneosly->simultaneously
+simultaneus->simultaneous
 simultaneusly->simultaneously
 simultanious->simultaneous
 simultaniously->simultaneously
 simultanous->simultaneous
 simultanously->simultaneously
+simultenious->simultaneous
 simulteniously->simultaneously
+simutaneous->simultaneous
 simutaneously->simultaneously
 sinagog->synagogue
 sinagogs->synagogues
@@ -38978,6 +39043,8 @@ sinnics->cynics
 sinoid->sinusoid
 sinoidal->sinusoidal
 sinoids->sinusoids
+sinopses->synopses
+sinopsis->synopsis
 sinply->simply
 sinse->sines, since,
 sintac->syntax
@@ -39033,6 +39100,7 @@ sissering->scissoring
 sissers->scissors, sisters,
 sist->cyst, sits, sift,
 sistem->system
+sistematic->systematic
 sistematically->systematically
 sistematics->systematics
 sistematies->systematies
@@ -39128,6 +39196,7 @@ skipp->skip, skipped,
 skippd->skipped
 skippped->skipped
 skippps->skips
+skipps->skips
 skipt->skip, Skype, skipped,
 skitsofrinic->schizophrenic
 skitsofrinics->schizophrenics
@@ -39166,14 +39235,20 @@ slewthed->sleuthed
 slewthing->sleuthing
 slewths->sleuths
 slicable->sliceable
+slience->silence
+slienced->silenced
+sliences->silences
+sliencing->silencing
 slient->silent
 sliently->silently
+sligh->slight
 slighlty->slightly
 slighly->slightly
 slightl->slightly
 slighty->slightly
 slignt->slight
 sligntly->slightly
+sligt->slight
 sligth->slight
 sligthly->slightly
 sligtly->slightly
@@ -39211,11 +39286,15 @@ smove->move
 smpt->SMTP, SMTPE,
 snaped->snapped
 snaphot->snapshot
+snaphots->snapshots
 snaphsot->snapshot
+snaphsots->snapshots
 snaping->snapping
 snappng->snapping
 snapsnot->snapshot
 snapsnots->snapshots
+snashot->snapshot
+snashots->snapshots
 sneeks->sneaks
 snese->sneeze
 snipet->snippet
@@ -39243,7 +39322,13 @@ sodo->sudo, soda, sod, sods, dodo, solo,
 sodu->sudo, soda, sod, sods,
 soecialize->specialized
 soem->some
+soembody->somebody
+soemhow->somehow
+soemone->someone
 soemthing->something
+soemtime->sometime
+soemtimes->sometimes
+soemwhat->somewhat
 soemwhere->somewhere
 sofisticated->sophisticated
 sofmore->sophomore
@@ -39290,6 +39375,7 @@ solification->solidification
 soliliquy->soliloquy
 solitare->solitaire, solitary,
 soltion->solution
+soltions->solutions
 soltuion->solution
 soltuions->solutions
 soluable->soluble
@@ -39307,10 +39393,15 @@ somehting->something
 somehwat->somewhat
 somehwere->somewhere
 somehwo->somehow
+someime->sometime
+someimes->sometimes
 somelse->someone else
 somemore->some more
 somene->someone
 somenone->someone
+somenthing->something
+somentime->sometime
+somentimes->sometimes
 someon->someone
 somes->some, sums,
 somethig->something
@@ -39332,6 +39423,7 @@ sometrings->somethings
 somewere->somewhere
 somewher->somewhere
 somewho->somehow
+somhow->somehow
 somme->some
 somone->someone
 somthign->something
@@ -39342,7 +39434,14 @@ somwhat->somewhat
 somwhere->somewhere
 somwho->somehow
 somwhow->somehow
+sonebody->somebody
+sonehow->somehow
+soneone->someone
 sonething->something
+sonetime->sometime
+sonetimes->sometimes
+sonewhat->somewhat
+sonewhere->somewhere
 songlar->singular
 songle->single, dongle,
 songled->singled, dongled,
@@ -39387,8 +39486,11 @@ soscket->socket
 soterd->stored, sorted,
 sotfware->software
 sotrage->storage, shortage,
+sotre->store
 sotred->sorted, stored,
+sotres->stores
 sotring->storing, sorting,
+sotrs->sorts
 sotry->story, sorry,
 sotyr->satyr, story,
 souce->source
@@ -39438,6 +39540,10 @@ soverignity->sovereignty
 soverignty->sovereignty
 sovle->solve
 sovled->solved
+sovler->solver
+sovlers->solvers
+sovles->solves
+sovling->solving
 sovren->sovereign
 sowe->sow, so we,
 spacific->specific
@@ -39473,11 +39579,16 @@ spcaing->spacing
 spcecified->specified
 spcial->special
 spcific->specific
+spcifically->specifically
 spcification->specification
 spcifications->specifications
+spcifics->specifics
 spcified->specified
+spcifier->specifier
+spcifiers->specifiers
 spcifies->specifies
 spcify->specify
+spcifying->specifying
 speace->space, peace,
 speaced->spaced
 speaces->spaces, species,
@@ -39528,7 +39639,9 @@ speciallized->specialised, specialized,
 specialy->specially
 specic->specific
 specical->special
+specically->specifically
 specication->specification
+specications->specifications
 specidic->specific
 specied->specified
 speciefied->specified
@@ -39538,13 +39651,32 @@ specifcally->specifically
 specifcation->specification
 specifcations->specifications
 specifcied->specified
+specifcier->specifier
+specifciers->specifiers
+specifcies->specifies
 specifclly->specifically
+specifcs->specifics
+specifcy->specify
+specifcying->specifying
 specifed->specified
+specifer->specifier
+specifers->specifiers
 specifes->specifies
 speciffic->specific
 speciffically->specifically
+speciffication->specification
+speciffications->specifications
+speciffics->specifics
+speciffied->specified
+speciffier->specifier
+speciffiers->specifiers
+speciffies->specifies
+speciffy->specify
+speciffying->specifying
 specifi->specific, specify,
 specifially->specifically
+specifiation->specification
+specifiations->specifications
 specificaiton->specification
 specificaitons->specifications
 specificallly->specifically
@@ -39561,12 +39693,15 @@ specificiation->specification
 specificiations->specifications
 specificically->specifically
 specificied->specified
+specificier->specifier
+specificiers->specifiers
 specificies->specifics, specifies,
 specificl->specific
 specificly->specifically
 specifiction->specification
 specifictions->specifications
 specificy->specify, specificity, specifically,
+specificying->specifying
 specifid->specified
 specifiec->specific
 specifiecally->specifically
@@ -39584,6 +39719,7 @@ specififics->specifics
 specifig->specific
 specifigation->specification
 specifigations->specifications
+specifiing->specifying
 specifing->specifying
 specifities->specifics
 specifity->specificity
@@ -39903,7 +40039,17 @@ spefying->specifying
 speherical->spherical
 speical->special
 speices->species
+speicfic->specific
+speicfically->specifically
+speicfication->specification
+speicfications->specifications
+speicfics->specifics
 speicfied->specified
+speicfier->specifier
+speicfiers->specifiers
+speicfies->specifies
+speicfy->specify
+speicfying->specifying
 speicific->specific
 speicified->specified
 speicify->specify
@@ -39925,7 +40071,14 @@ speperating->separating
 speperator->separator
 speperats->separates
 sperate->separate
+sperated->separated
 sperately->separately
+sperates->separates
+sperating->separating
+speration->separation
+sperations->separations
+sperator->separator
+sperators->separators
 sperhical->spherical
 spermatozoan->spermatozoon
 speshal->special
@@ -39937,10 +40090,16 @@ spesific->specific
 spesifical->specific
 spesifically->specifically
 spesificaly->specifically
+spesification->specification
+spesifications->specifications
 spesifics->specifics
 spesified->specified
+spesifier->specifier
+spesifiers->specifiers
+spesifies->specifies
 spesifities->specifics
 spesify->specify
+spesifying->specifying
 spetial->special, spatial,
 spetsific->specific
 spetsified->specified
@@ -39952,6 +40111,7 @@ spicific->specific
 spicified->specified
 spicify->specify
 spile->spite, spiral,
+spilts->splits
 spiltting->splitting
 spindel->spindle
 spindels->spindles
