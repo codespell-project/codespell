@@ -10,3 +10,5 @@ pip install --upgrade \
     setuptools_scm \
     wheel
 pip install -e '.[dev]'
+
+pre-commit install --install-hooks
