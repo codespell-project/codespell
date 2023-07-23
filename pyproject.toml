@@ -34,6 +34,7 @@ dynamic = ["version"]
 dev = [
     "build",
     "chardet",
+    "pre-commit",
     "pytest",
     "pytest-cov",
     "pytest-dependency",
