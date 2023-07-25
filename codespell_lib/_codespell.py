@@ -550,9 +550,9 @@ def parse_options(
         toml_files.append(options.toml)
         tomllib_raise_error = True
     if toml_files:
-        try:
-            import tomllib  # type: ignore[import]
-        except ModuleNotFoundError:
+        if sys.version_info >= (3, 11):
+            import tomllib
+        else:
             try:
                 import tomli as tomllib  # type: ignore[no-redef]
             except ImportError as e:

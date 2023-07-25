@@ -81,11 +81,8 @@ repos:
     rev: v1.4.1
     hooks:
       - id: mypy
-        args: [--no-warn-unused-ignores, --config-file, pyproject.toml, --disable-error-code,
-          import]
+        args: ["--config-file", "pyproject.toml"]
         additional_dependencies:
-          - chardet
           - pytest
-          - pytest-cov
-          - pytest-dependency
+          - tomli
           - types-chardet
