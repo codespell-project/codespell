@@ -30,7 +30,6 @@ repos:
     hooks:
       - id: no-commit-to-branch
         args: [--branch, main]
-      - id: check-toml
       - id: check-yaml
         args: [--unsafe]
       - id: debug-statements
