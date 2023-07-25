@@ -98,6 +98,7 @@ expand-star-imports = true
 pretty = true
 show_error_codes = true
 strict = true
+warn_unused_ignores = false
 
 [tool.pytest.ini_options]
 addopts = "--cov=codespell_lib -rs --cov-report= --tb=short --junit-xml=junit-results.xml"

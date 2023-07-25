@@ -59,3 +59,6 @@ pytest:
 
 clean:
 	rm -rf codespell.1
+
+mypy:
+	mypy .
