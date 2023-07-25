@@ -554,14 +554,14 @@ def parse_options(
             import tomllib  # type: ignore[import]
         except ModuleNotFoundError:
             try:
-                import tomli as tomllib
+                import tomli as tomllib  # type: ignore[no-redef]
             except ImportError as e:
                 if tomllib_raise_error:
                     raise ImportError(
                         f"tomllib or tomli are required to read pyproject.toml "
                         f"but could not be imported, got: {e}"
                     ) from None
-                tomllib = None
+                tomllib = None  # type: ignore[assignment]
         if tomllib is not None:
             for toml_file in toml_files:
                 with open(toml_file, "rb") as f:
