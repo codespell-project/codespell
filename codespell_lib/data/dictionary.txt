@@ -3006,6 +3006,10 @@ antripanewers->entrepreneurs
 antry->entry
 antyhing->anything
 anual->annual
+anualization->annualization
+anualize->annualize
+anualized->annualized
+anualizing->annualizing
 anually->annually
 anuled->annulled
 anuling->annulling
@@ -4267,6 +4271,8 @@ asssembler->assembler
 asssembly->assembly
 asssert->assert
 asssertion->assertion
+assset->asset
+asssets->assets
 asssociate->associate
 asssociated->associated
 asssociation->association
@@ -5169,6 +5175,8 @@ avertising->advertising
 avgerage->average
 aviable->available
 avialable->available
+avialibility->availability
+avialible->available
 avilability->availability
 avilable->available
 aviod->avoid
@@ -5306,8 +5314,10 @@ bahavior->behavior
 bahavioral->behavioral
 bahaviors->behaviors
 bahaviour->behaviour
+bais->bias
 baisc->basic
-baised->raised
+baised->raised, biased,
+baises->raises, biases
 bakc->back
 bakcrefs->backrefs
 bakend->backend, baked,
@@ -8213,6 +8223,9 @@ clinets->clients
 clinicaly->clinically
 clipboad->clipboard
 clipboads->clipboards
+cliped->clipped
+cliper->clipper
+cliping->clipping
 clipoard->clipboard
 clipoards->clipboards
 clipoing->clipping
@@ -11646,6 +11659,7 @@ cuple->couple
 cuples->couples
 curage->courage
 curageous->courageous
+curature->curvature
 curce->curse, curve, course,
 curch->church
 curcuit->circuit
@@ -12880,6 +12894,9 @@ deparments->departments
 depcrecated->deprecated
 depden->depend
 depdence->dependence
+depdencencies->dependencies
+depdencency->dependency
+depdencent->dependent
 depdencente->dependence
 depdencentes->dependences
 depdences->dependences
@@ -19514,6 +19531,11 @@ formost->foremost
 formt->format
 formua->formula
 formual->formula
+formuala->formula
+formualas->formulas
+formualate->formulate
+formualating->formulating
+formualation->formulation
 formuale->formulae
 formuals->formulas
 formulaical->formulaic
@@ -27423,6 +27445,11 @@ multliplies->multiplies
 multliply->multiply
 multliplying->multiplying
 multpart->multipart
+multpile->multiple
+multpiles->multiples
+multpilication->multiplication
+multpily->multiply
+multpilying->multiplying
 multplayer->multiplayer
 multple->multiple
 multples->multiples
@@ -30448,8 +30475,13 @@ pararaph->paragraph
 parareter->parameter
 parargaph->paragraph
 parargaphs->paragraphs
+pararm->param
 pararmeter->parameter
+pararmeterization->parameterization
+pararmeterize->parameterize
+pararmeterized->parameterized
 pararmeters->parameters
+pararms->params
 parastic->parasitic
 parastics->parasitics
 paratheses->parentheses
@@ -31598,10 +31630,13 @@ poicies->policies
 poicy->policy
 poiint->point
 poiints->points
+poin->point
 poind->point
 poindcloud->pointcloud
 poiner->pointer
+poiners->pointers
 poing->point
+poining->pointing
 poinits->points
 poinnter->pointer
 poins->points
@@ -37856,6 +37891,10 @@ segmentes->segments
 segmetn->segment
 segmetned->segmented
 segmetns->segments
+segmnet->segment
+segmnetation->segmentation
+segmneting->segmenting
+segmnets->segments
 segument->segment
 seguoys->segues
 segway->segue
@@ -42622,6 +42661,7 @@ termniations->terminations
 termniator->terminator
 termniators->terminators
 termo->thermo
+termonology->terminology
 termostat->thermostat
 termperatue->temperature
 termperatues->temperatures
@@ -43136,6 +43176,8 @@ togther->together
 togueter->together
 toi->to, toy,
 tolarable->tolerable
+tolearnce->tolerance
+tolearnces->tolerances
 tolelerance->tolerance
 tolen->token
 tolens->tokens
@@ -43261,6 +43303,8 @@ traget->target
 trageted->targeted
 trageting->targeting
 tragets->targets
+traid->triad, trade,
+traids->triads, trades,
 traige->triage
 traiger->triager
 traigers->triagers
@@ -44030,7 +44074,9 @@ tunnell->tunnel
 tunning->tuning, running,
 tuotiral->tutorial
 tuotirals->tutorials
+tupe->tuple, type,
 tupel->tuple
+tupes->tuples, types,
 tupple->tuple
 tupples->tuples
 turain->terrain
