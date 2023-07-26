@@ -46529,6 +46529,7 @@ vunrable->vulnerable
 vyer->very
 vyre->very
 waht->what
+wahtever->whatever
 wainting->waiting
 waisline->waistline
 waislines->waistlines
@@ -46540,7 +46541,10 @@ wan't->want, wasn't,
 wan;t->want, wasn't,
 want;s->wants
 wantto->want to
+wapped->wrapped, swapped, warped,
+wapper->wrapper
 wappers->wrappers
+wapping->wrapping, swapping, warping,
 warantee->warranty
 waranties->warranties
 waranty->warranty
@@ -46652,8 +46656,16 @@ weeved->weaved, wove,
 weeves->weaves
 weeving->weaving
 wege->wedge
+wehen->when
+wehenever->whenever
 wehere->where
+wehereas->whereas
+weherever->wherever
 wehn->when
+wehnever->whenever
+wehre->where
+wehreas->whereas
+wehrever->wherever
 wehther->whether
 weigth->weight
 weigthed->weighted
@@ -46705,6 +46717,13 @@ wheather->weather, whether,
 wheh->when
 whehter->whether
 wheigh->weigh
+wheighed->weighed
+wheighing->weighing
+wheighs->weighs
+wheight->weight, height,
+wheighted->weighted
+wheighting->weighting, weighing,
+wheights->weights, heights,
 whell->wheel, well,
 whem->when
 whenevery->whenever
@@ -46753,6 +46772,7 @@ whith->with
 whithe->with, white, with the,
 whithin->within
 whithout->without
+whitin->within
 whitout->without, whiteout,
 whitre->white
 whitspace->whitespace
@@ -46788,10 +46808,14 @@ wich->which
 widder->wider
 widesread->widespread
 widgect->widget
+widgects->widgets
 widged->widget
+widgeds->widgets
 widghet->widget
 widghets->widgets
 widgit->widget
+widgits->widgets
+widgte->widget
 widgtes->widgets
 widht->width
 widhtpoint->widthpoint
@@ -46814,10 +46838,13 @@ wiew->view
 wigdet->widget
 wigdets->widgets
 wighed->weighed, wicked,
+wighing->weighing
 wighted->weighted, weighed,
+wighting->weighting, weighing,
 wih->with
 wihch->which
 wihich->which
+wihin->within
 wihite->white
 wihle->while
 wihout->without
@@ -46840,6 +46867,7 @@ wimmen->women
 wimmenly->womanly
 wimmens->women
 windo->window
+windoe->window
 windoes->windows
 windoow->window
 windoows->windows
@@ -46851,11 +46879,14 @@ winn->win
 winndow->window
 winndows->windows
 winodw->window
+winodws->windows
 wipoing->wiping
 wirded->wired, weird,
 wireframw->wireframe
 wireframws->wireframes
 wirh->with
+wirhin->within
+wirhout->without
 wirtable->writable, writeable,
 wirte->write
 wirter->writer
@@ -46916,6 +46947,7 @@ withs->with, widths,
 witht->with
 withthe->with the
 withtin->within
+withtout->without
 withun->within
 withuout->without
 witin->within
@@ -46923,11 +46955,18 @@ witk->with
 witn->with
 witout->without
 witrh->with
+witrhin->within
+witrhout->without
 witth->with
+witthin->within
+witthout->without
 wiull->will
 wiyh->with
+wiyhin->within
 wiyhout->without
 wiyth->with
+wiythin->within
+wiythout->without
 wizzard->wizard
 wjat->what
 wll->will
@@ -46937,15 +46976,37 @@ wnat->want, what,
 wnated->wanted
 wnating->wanting
 wnats->wants
+wndow->window
+wndows->windows
 wnen->when, Wen,
 wnidow->window, widow,
 wnidows->windows, widows,
 woh->who
 wohle->whole
 woill->will
+woith->with, worth,
+woithin->within
 woithout->without
 wokr->work
+wokraround->workaround
+wokrarounds->workarounds
+wokrbench->workbench
+wokrbenches->workbenches
+wokrbook->workbook
+wokrbooks->workbooks
+wokred->worked
+wokrer->worker
+wokrers->workers
+wokrflow->workflow
+wokrflows->workflows
 wokring->working
+wokrload->workload
+wokrloads->workloads
+wokrs->works
+wokrspace->workspace
+wokrspaces->workspaces
+wokrstation->workstation
+wokrstations->workstations
 wollow->follow, wallow,
 wollowing->following, wallowing,
 wolrd->world
@@ -46965,6 +47026,8 @@ woraround->workaround
 worarounds->workarounds
 worbench->workbench
 worbenches->workbenches
+worbook->workbook
+worbooks->workbooks
 worchester->Worcester
 wordl->world
 wordlwide->worldwide
@@ -47042,10 +47105,16 @@ worrry->worry
 worrrying->worrying
 wors->worse, worst, works, wars, was,
 worser->worse
+worspace->workspace
+worspaces->workspaces
+worstation->workstation
+worstations->workstations
 worstened->worsened
+worte->wrote
 worthing->worth, meriting,
 worthwile->worthwhile
 woth->worth, with,
+wothin->within
 wothout->without
 wotk->work
 wotked->worked
@@ -47076,11 +47145,18 @@ wraning->warning
 wranings->warnings
 wraped->wrapped, warped,
 wrapepd->wrapped
+wrapepr->wrapper
+wrapeprs->wrappers
 wraper->wrapper
+wrapers->wrappers
 wraping->wrapping, warping,
 wrapp->wrap
 wrappered->wrapped
 wrappng->wrapping
+wrappped->wrapped
+wrappper->wrapper
+wrapppers->wrappers
+wrappping->wrapping
 wrapps->wraps
 wressel->wrestle
 wresseled->wrestled
@@ -47105,19 +47181,51 @@ writters->writers
 writtin->written, writing,
 writting->writing
 writtten->written
+wrkaround->workaround
+wrkarounds->workarounds
+wrkbench->workbench
+wrkbenches->workbenches
+wrkbook->workbook
+wrkbooks->workbooks
+wrked->worked
+wrker->worker
+wrkers->workers
+wrkflow->workflow
+wrkflows->workflows
+wrking->working
 wrkload->workload
 wrkloads->workloads
+wrkspace->workspace
+wrkspaces->workspaces
+wrkstation->workstation
+wrkstations->workstations
 wrod->word
 wroet->wrote
 wrog->wrong
 wrok->work
+wrokaround->workaround
+wrokarounds->workarounds
+wrokbench->workbench
+wrokbenches->workbenches
+wrokbook->workbook
+wrokbooks->workbooks
 wroked->worked
+wroker->worker
+wrokers->workers
 wrokflow->workflow
 wrokflows->workflows
 wroking->working
 wrokload->workload
 wrokloads->workloads
 wroks->works
+wrokspace->workspace
+wrokspaces->workspaces
+wrokstation->workstation
+wrokstations->workstations
+wrold->world
+wroldly->worldly
+wrolds->worlds
+wroldwide->worldwide
 wron->wrong
 wronf->wrong
 wronly->wrongly
@@ -47131,12 +47239,17 @@ wrything->writhing
 wsee->see
 wser->user
 wth->with
+wthin->within
+wthout->without
 wtih->with
+wtihin->within
+wtihout->without
 wtyle->style
 wuold->would
 wupport->support
 wuth->with
 wuthin->within
+wuthout->without
 wya->way
 wyas->ways
 wyth->with
@@ -47181,6 +47294,8 @@ yeras->years
 yersa->years
 yhe->the
 yieldin->yielding
+ymbol->symbol
+ymbolic->symbolic
 ymbols->symbols
 yoman->yeoman
 yomen->yeomen
@@ -47221,13 +47336,17 @@ zemporary->temporary
 zick-zack->zig-zag
 zick-zacks->zig-zags
 zimmap->zipmap
+zimmaps->zipmaps
+zimpap->zipmap
 zimpaps->zipmaps
 zink->zinc
 ziped->zipped
 ziper->zipper
+zipers->zippers
 ziping->zipping
 zlot->slot
 zombe->zombie
+zombes->zombies
 zomebie->zombie
 zomebies->zombies
 zoocheenei->zucchinis
@@ -47250,7 +47369,7 @@ zukeenei->zucchinis
 zukeeni->zucchini
 zuser->user
 zylophone->xylophone
-zylophones->xylophone
+zylophones->xylophones
 __attribyte__->__attribute__
 __cpluspus->__cplusplus
 __cpusplus->__cplusplus
