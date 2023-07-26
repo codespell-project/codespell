@@ -45543,7 +45543,14 @@ utput->output
 utputs->outputs
 uupload->upload
 uupper->upper
+vaaluable->valuable
+vaaluables->valuables
+vaaluation->valuation
+vaaluations->valuations
+vaalue->value
+vaalued->valued
 vaalues->values
+vaaluing->valuing
 vaccum->vacuum
 vaccume->vacuum
 vaccuum->vacuum
@@ -45573,29 +45580,91 @@ vaguaries->vagaries
 vai->via, vie,
 vaiable->variable
 vaiables->variables
-vaiant->variant
+vaiance->variance, valiance,
+vaiances->variances
+vaiant->variant, valiant,
+vaiantly->valiantly
 vaiants->variants
-vaid->valid, void,
+vaiation->variation, aviation,
+vaiations->variations
+vaid->valid, void, vapid,
 vaidate->validate
+vaidated->validated
+vaidates->validates
+vaidating->validating
+vaidation->validation
+vaidations->validations
+vaidator->validator
+vaidators->validators
+vaidity->validity, vapidity,
 vaieties->varieties
 vailable->available
 vaild->valid
+vaildate->validate
+vaildated->validated
+vaildates->validates
+vaildating->validating
+vaildation->validation
+vaildations->validations
+vaildator->validator
+vaildators->validators
+vaildity->validity
+vailid->valid
+vailidate->validate
+vailidated->validated
+vailidates->validates
+vailidating->validating
+vailidation->validation
+vailidations->validations
+vailidator->validator
+vailidators->validators
 vailidity->validity
 vailidty->validity
 vairable->variable
 vairables->variables
+vairance->variance
+vairances->variances
+vairant->variant
+vairants->variants
+vairation->variation
+vairations->variations
 vairous->various
 vakue->value
 vakued->valued
 vakues->values
 valailable->available
 valdate->validate
+valdated->validated
+valdates->validates
+valdating->validating
+valdation->validation
+valdations->validations
+valdator->validator
+valdators->validators
+valdity->validity
 valetta->valletta
 valeu->value
+valeud->valued
+valeus->values
+valiate->validate
+valiated->validated
+valiates->validates
+valiating->validating
+valiation->validation, valuation,
+valiations->validations, valuations,
 valiator->validator
+valiators->validators
 validade->validate
+validaded->validated
+validades->validates
+validading->validating
+validadion->validation
+validadions->validations
+validador->validator
+validadors->validators
 validata->validate
 validataion->validation
+validataions->validations
 validaterelase->validaterelease
 valide->valid
 valididty->validity
@@ -45605,6 +45674,7 @@ validted->validated
 validtes->validates
 validting->validating
 validtion->validation
+valie->value, valid,
 valied->valid
 valies->values
 valif->valid
@@ -45643,6 +45713,7 @@ valuling->valuing
 valus->values, value, talus,
 valuse->values, value,
 valye->value, valse, valve,
+valyes->values, valses, valves,
 vanishs->vanishes
 varable->variable
 varables->variables
@@ -45650,11 +45721,23 @@ varagated->variegated
 varaiable->variable
 varaiables->variables
 varaiance->variance
+varaiances->variances
+varaiant->variant
+varaiants->variants
 varaiation->variation
+varaiations->variations
 varaible->variable
 varaibles->variables
+varaince->variance
+varainces->variances
 varaint->variant
 varaints->variants
+varaition->variation
+varaitions->variations
+varance->variance
+varances->variances
+varant->variant
+varants->variants
 varation->variation
 varations->variations
 varegated->variegated
@@ -45664,15 +45747,24 @@ variabbles->variables
 variabe->variable
 variabel->variable
 variabele->variable
+variabeles->variables
+variabels->variables
 variabes->variables
 variabl->variable
 variabla->variable
+variablas->variables
 variablen->variable
+variablens->variables
+variabls->variables
 varialbe->variable
 varialbes->variables
+varialble->variable
 varialbles->variables
 varian->variant
+varians->variants
+variantion->variation
 variantions->variations
+variatino->variation
 variatinos->variations
 variationnal->variational
 variatoin->variation
@@ -45695,6 +45787,7 @@ varibles->variables
 varieable->variable
 varieables->variables
 varience->variance
+variences->variances
 varient->variant
 varients->variants
 varierty->variety
@@ -45702,6 +45795,8 @@ variey->variety
 varification->verification
 varifications->verifications
 varified->verified
+varifier->verifier
+varifiers->verifiers
 varifies->verifies
 varify->verify
 varifying->verifying
@@ -45725,8 +45820,14 @@ varns->warns
 varoius->various
 varous->various
 varously->variously
+varriable->variable
+varriables->variables
 varriance->variance
 varriances->variances
+varriant->variant
+varriants->variants
+varriation->variation
+varriations->variations
 vart->cart, wart,
 vartical->vertical
 vartically->vertically
@@ -45844,7 +45945,7 @@ verfiy->verify
 verfiying->verifying
 verfy->verify
 verfying->verifying
-veriable->variable, veritable,
+veriable->variable, verifiable, veritable,
 veriables->variables
 veriasion->variation
 veriasions->variations
@@ -45854,8 +45955,13 @@ verical->vertical
 verically->vertically
 verication->verification
 verications->verifications
+verifable->verifiable
 verifcation->verification
 verifcations->verifications
+verifed->verified
+verifer->verifier
+verifers->verifiers
+verifes->verifies
 verifi->verify, verified,
 verifiaction->verification
 verifiactions->verifications
@@ -45895,20 +46001,35 @@ verrical->vertical
 verry->very
 versatle->versatile
 vershin->version
+vershined->versioned
+vershining->versioning
+vershins->versions
 versin->version
+versined->versioned
+versining->versioning
 versino->version
+versinoed->versioned
+versinoing->versioning
 versinos->versions
 versins->versions
 versio->version
 versiob->version
+versiobed->versioned
+versiobing->versioning
+versiobs->versions
 versioed->versioned
 versioing->versioning
 versiom->version
+versiomed->versioned
+versioming->versioning
+versioms->versions
 versionaddded->versionadded
 versionm->version
 versionms->versions
+versionn->version
 versionned->versioned
 versionning->versioning
+versionns->versions
 versios->versions
 versital->versatile
 versitilaty->versatility
@@ -45916,10 +46037,16 @@ versitile->versatile
 versitle->versatile
 versitlity->versatility
 versoin->version
+versoined->versioned
+versoining->versioning
+versoins->versions
 versoion->version
+versoioned->versioned
+versoioning->versioning
 versoions->versions
 verson->version
 versoned->versioned
+versoning->versioning
 versons->versions
 vertabraes->vertebraes
 vertabray->vertebrae
@@ -45950,6 +46077,8 @@ veryifies->verifies
 veryify->verify
 veryifying->verifying
 vesion->version
+vesioned->versioned
+vesioning->versioning
 vesions->versions
 vetex->vertex
 vetexes->vertices
@@ -45967,6 +46096,7 @@ vew->view
 veyr->very
 vhild->child
 viariable->variable
+viariables->variables
 viatnamese->Vietnamese
 vice-fersa->vice-versa
 vice-wersa->vice-versa
@@ -46037,7 +46167,19 @@ virtualzation->virtualization
 virtuell->virtual
 virtural->virtual
 virture->virtue
-virual->virtual, viral,
+virual->virtual, visual, viral,
+virualenv->virtualenv
+virualisation->virtualisation, visualisation,
+virualise->virtualise, visualise,
+virualised->virtualised, visualised,
+virualises->virtualises, visualises,
+virualising->virtualising, visualising,
+virualization->virtualization, visualization,
+virualize->virtualize, visualize,
+virualized->virtualized, visualized,
+virualizes->virtualizes, visualizes,
+virualizing->virtualizing, visualizing,
+virually->virtually, visually,
 virutal->virtual
 virutalenv->virtualenv
 virutalisation->virtualisation
@@ -46077,12 +46219,18 @@ visibily->visibly, visibility,
 visibl->visible
 visibleable->visible
 visibles->visible
+visiblilities->visibilities
+visiblility->visibility
 visiblities->visibilities
 visiblity->visibility
 visiblle->visible
+visiblly->visibly
 visinble->visible
 visious->vicious
+visisbilities->visibilities
+visisbility->visibility
 visisble->visible
+visisbly->visibly
 visiter->visitor
 visiters->visitors
 visitng->visiting
@@ -46129,6 +46277,7 @@ visualy->visually
 visualyse->visualise, visualize,
 visualzation->visualization
 visualzations->visualizations
+visul->visual
 visulisation->visualisation
 visulisations->visualisations
 visulization->visualization
@@ -46142,8 +46291,33 @@ vitories->victories
 vitrole->vitriol
 vitrual->virtual
 vitrually->virtually
-vitual->virtual
+vitual->virtual, visual,
+vitualenv->virtualenv
+vitualisation->virtualisation, visualisation,
+vitualise->virtualise, visualise,
+vitualised->virtualised, visualised,
+vitualises->virtualises, visualises,
+vitualising->virtualising, visualising,
+vitualization->virtualization, visualization,
+vitualize->virtualize, visualize,
+vitualized->virtualized, visualized,
+vitualizes->virtualizes, visualizes,
+vitualizing->virtualizing, visualizing,
+vitually->virtually, visually,
+vituals->visuals
+viusal->visual
+viusalisation->visualisation
+viusalise->visualise
+viusalised->visualised
+viusalises->visualises
+viusalising->visualising
+viusalization->visualization
+viusalize->visualize
+viusalized->visualized
+viusalizes->visualizes
+viusalizing->visualizing
 viusally->visually
+viusals->visuals
 viusualisation->visualisation
 viwe->view
 viwed->viewed
@@ -46151,19 +46325,34 @@ viweed->viewed
 viwer->viewer
 viwers->viewers
 viwes->views
+vizual->visual
 vizualisation->visualisation
 vizualise->visualise
 vizualised->visualised
+vizualises->visualises
+vizualising->visualising
 vizualization->visualization, virtualization,
 vizualize->visualize
 vizualized->visualized
+vizualizes->visualizes
+vizualizing->visualizing
+vizually->visually
+vizuals->visuals
 vlarge->large
 vlaue->value
 vlaues->values
 vlone->clone
 vloned->cloned
 vlones->clones
-vlues->values
+vluable->valuable
+vluables->valuables
+vluation->valuation
+vluations->valuations
+vlue->value, blue,
+vlued->valued
+vlues->values, blues,
+vluetooth->bluetooth
+vluing->valuing
 voif->void
 volatage->voltage
 volatages->voltages
@@ -46201,6 +46390,9 @@ voyouristically->voyeuristically
 voyours->voyeurs
 vreity->variety
 vresion->version
+vresioned->versioned
+vresioning->versioning
+vresions->versions
 vrey->very
 vriable->variable
 vriables->variables
@@ -46266,8 +46458,10 @@ vulernability->vulnerability
 vulernable->vulnerable
 vulnarabilities->vulnerabilities
 vulnarability->vulnerability
+vulnarable->vulnerable
 vulnderabilities->vulnerabilities
 vulnderability->vulnerability
+vulnderable->vulnerable
 vulneabilities->vulnerabilities
 vulneability->vulnerability
 vulneable->vulnerable
@@ -46277,6 +46471,7 @@ vulnearable->vulnerable
 vulnearabule->vulnerable
 vulnearbilities->vulnerabilities
 vulnearbility->vulnerability
+vulnearble->vulnerable
 vulnearbuilities->vulnerabilities
 vulnearbuility->vulnerability
 vulnerabilies->vulnerabilities
@@ -46295,9 +46490,11 @@ vulnerabillity->vulnerability
 vulnerabilties->vulnerabilities
 vulnerabilty->vulnerability
 vulnerabily->vulnerably, vulnerability,
+vulnerablilities->vulnerabilities
 vulnerablility->vulnerability
 vulnerablities->vulnerabilities
 vulnerablity->vulnerability
+vulnerablle->vulnerable
 vulnerabuilility->vulnerability
 vulnerabuilites->vulnerabilities
 vulnerabuiliti->vulnerability
@@ -46317,10 +46514,12 @@ vulnerarbility->vulnerability
 vulnerarble->vulnerable
 vulnerbilities->vulnerabilities
 vulnerbility->vulnerability
+vulnerble->vulnerable
 vulnerbuilities->vulnerabilities
 vulnerbuility->vulnerability
 vulnreabilities->vulnerabilities
 vulnreability->vulnerability
+vulnreable->vulnerable
 vunerabilities->vulnerabilities
 vunerability->vulnerability
 vunerable->vulnerable
