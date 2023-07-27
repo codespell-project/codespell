@@ -16,6 +16,7 @@ aactually->actually
 aadd->add
 aadded->added
 aadding->adding
+aafter->after
 aagain->again
 aaggregation->aggregation
 aanother->another
@@ -70,6 +71,8 @@ abberration->aberration
 abberrations->aberrations
 abberviation->abbreviation
 abberviations->abbreviations
+abbilities->abilities
+abbility->ability
 abbort->abort, abbot,
 abborted->aborted
 abborting->aborting
@@ -108,7 +111,10 @@ abdomnial->abdominal
 abdonimal->abdominal
 aberation->aberration
 abigious->ambiguous
+abigiously->ambiguously
 abiguity->ambiguity
+abiguous->ambiguous
+abiguously->ambiguously
 abilitiy->ability
 abilityes->abilities
 abilties->abilities
@@ -149,6 +155,9 @@ aborb->absorb
 aborbed->absorbed
 aborbent->absorbent
 abord->abort, aboard,
+aborded->aborted
+abording->aborting
+abords->aborts
 aborginial->aboriginal
 aboriganal->aboriginal
 aborigenal->aboriginal
@@ -344,8 +353,13 @@ abstracness->abstractness
 abstracor->abstractor
 abstracs->abstracts
 abstracto->abstraction, abstract,
+abstrakt->abstract
+abstrakted->abstracted
+abstrakting->abstracting
 abstraktion->abstraction
 abstraktions->abstractions
+abstraktly->abstractly
+abstrakts->abstracts
 abstrat->abstract
 abstrated->abstracted
 abstrater->abstracter
@@ -366,7 +380,13 @@ abstrctly->abstractly
 abstrctness->abstractness
 abstrctor->abstractor
 abstrcts->abstracts
+abstruct->abstract, obstruct,
+abstructed->abstracted, obstructed,
+abstructing->abstracting, obstructing,
 abstruction->abstraction, obstruction,
+abstructions->abstractions, obstructions,
+abstructly->abstractly
+abstructs->abstracts, obstructs,
 absuer->abuser
 absuers->abusers
 absulute->absolute
@@ -409,28 +429,62 @@ abusrdly->absurdly
 abutts->abuts
 abvailable->available
 abvious->obvious
+abviously->obviously
 abymsal->abysmal
 abymsally->abysmally
+acadamia->academia
+acadamic->academic
+acadamically->academically
+acadamics->academics
+acadamies->academies
 acadamy->academy
+academci->academic
 academcially->academically
+academcis->academics
 academica->academia
 academicaly->academically
 academicas->academics
 academicese->academics
 academicos->academics
 academicus->academics
-academis->academics
+academis->academics, academies,
+acadimia->academia
+acadimic->academic
+acadimically->academically
+acadimics->academics
+acadimies->academies
 acadimy->academy
+acadmia->academia
 acadmic->academic
+acadmically->academically
+acadmics->academics
+acadmies->academies
+acadmy->academy
 acale->scale
+acatemia->academia
+acatemic->academic
+acatemically->academically
+acatemics->academics
+acatemies->academies
 acatemy->academy
+accademia->academia
 accademic->academic
+accademically->academically
+accademics->academics
+accademies->academies
 accademy->academy
 accalimed->acclaimed
 accapt->accept
+accaptable->acceptable
+accaptably->acceptably
+accaptance->acceptance
 accapted->accepted
+accapting->accepting
 accapts->accepts
 acccept->accept
+accceptable->acceptable
+accceptably->acceptably
+accceptance->acceptance
 acccepted->accepted
 acccepting->accepting
 acccepts->accepts
@@ -453,6 +507,11 @@ acccording->according
 acccordingly->accordingly
 acccords->accords
 acccount->account
+acccountant->accountant
+acccountants->accountants
+acccounted->accounted
+acccounting->accounting
+acccounts->accounts
 acccumulate->accumulate
 acccuracy->accuracy
 acccurate->accurate
@@ -465,6 +524,13 @@ accedent->accident
 accedental->accidental
 accedentally->accidentally
 accedents->accidents
+acceept->accept
+acceeptable->acceptable
+acceeptably->acceptably
+acceeptance->acceptance
+acceepted->accepted
+acceepting->accepting
+acceepts->accepts
 accees->access
 acceess->access
 accelarate->accelerate
@@ -508,14 +574,42 @@ accelorates->accelerates
 accelorating->accelerating
 accelorator->accelerator
 accelorators->accelerators
+accend->ascend, accent,
+accended->ascended
 accending->ascending
+accends->ascends, accents,
 accension->accession, ascension,
 acceot->accept
+acceotable->acceptable
+acceotably->acceptably
+acceotance->acceptance
+acceoted->accepted
+acceoting->accepting
+acceots->accepts
 accepatble->acceptable
+accepatbly->acceptably
+accepatnce->acceptance
 accepect->accept
+accepectable->acceptable
+accepectably->acceptably
+accepectance->acceptance
 accepected->accepted
+accepecting->accepting
+accepects->accepts
+accepet->accept
+accepetable->acceptable
+accepetably->acceptably
+accepetance->acceptance
 accepeted->accepted
+accepeting->accepting
+accepets->accepts
 acceppt->accept
+accepptable->acceptable
+accepptably->acceptably
+accepptance->acceptance
+acceppted->accepted
+acceppting->accepting
+acceppts->accepts
 acceptabel->acceptable
 acceptabil->acceptable
 acceptence->acceptance
@@ -571,13 +665,17 @@ accessoirez->accessorize, accessories,
 accessoirs->accessories
 accessort->accessor
 accesss->access
+accesssed->accessed
+accessses->accesses
 accesssibility->accessibility
 accesssible->accessible
 accesssiblity->accessibility
 accesssiiblity->accessibility
 accesssing->accessing
 accesssor->accessor
+accesssories->accessories
 accesssors->accessors
+accesssory->accessory
 accestor->ancestor, accessor,
 accestors->ancestors, accessors,
 accet->accept
@@ -643,6 +741,8 @@ accociation->association
 accociations->associations
 accoding->according
 accodingly->accordingly
+accodion->accordion
+accodions->accordions
 accodomate->accommodate
 accodomated->accommodated
 accodomates->accommodates
@@ -655,7 +755,12 @@ accodred->accorded
 accodring->according
 accodringly->accordingly
 accodrs->accords
+accoint->account
+accointant->accountant
+accointants->accountants
+accointed->accounted
 accointing->accounting
+accoints->accounts
 accoird->accord
 accoirding->according
 accomadate->accommodate
@@ -738,16 +843,25 @@ acconplishment->accomplishment
 acconplishments->accomplishments
 accont->account
 accontant->accountant
+accontants->accountants
 acconted->accounted
 acconting->accounting
+acconts->accounts
 accoording->according
 accoordingly->accordingly
 accoount->account
 accopunt->account
 accordding->according
+accorddingly->accordingly
+accorddion->accordion
+accorddions->accordions
 accordeon->accordion
+accordeons->accordions
 accordian->accordion
+accordians->accordions
 accordign->according
+accordignly->accordingly
+accordiing->according
 accordiingly->accordingly
 accordin->according
 accordinag->according
@@ -771,8 +885,19 @@ accorted->accorded
 accortind->according
 accorting->according
 accostumed->accustomed
+accoun->account
+accounant->accountant
+accounants->accountants
 accound->account
+accoundant->accountant
+accoundants->accountants
+accounded->accounted
+accounding->according, accounting,
+accoundingly->accordingly
+accounds->accounts
 accouned->accounted
+accouning->accounting
+accouns->accounts
 accountabillity->accountability
 accountabilty->accountability
 accountas->accountants, accounts,
@@ -786,14 +911,31 @@ accoustic->acoustic
 accoustically->acoustically
 accoustics->acoustics
 accout->account
+accoutant->accountant
+accoutants->accountants
+accouted->accounted
 accouting->accounting
 accoutn->account
+accoutnant->accountant
+accoutnants->accountants
+accoutned->accounted
+accoutning->accounting
+accoutns->accounts
+accouts->accounts
 accpet->accept
 accpetable->acceptable
+accpetably->acceptably
 accpetance->acceptance
 accpeted->accepted
 accpeting->accepting
 accpets->accepts
+accpt->accept
+accptable->acceptable
+accptably->acceptably
+accptance->acceptance
+accpted->accepted
+accpting->accepting
+accpts->accepts
 accquainted->acquainted
 accquire->acquire
 accquired->acquired
@@ -803,6 +945,8 @@ accracy->accuracy
 accrate->accurate
 accrding->according
 accrdingly->accordingly
+accrdion->accordion
+accrdions->accordions
 accrediated->accredited
 accrediation->accreditation
 accredidation->accreditation
@@ -817,10 +961,29 @@ accrording->according
 accros->across
 accrose->across
 accross->across
+accsept->accept
+accseptable->acceptable
+accseptably->acceptably
+accseptance->acceptance
+accsepted->accepted
+accsepting->accepting
+accsepts->accepts
 accsess->access
 accss->access
 accssible->accessible
 accssor->accessor
+acction->action, auction,
+acctions->actions, auctions,
+acctivate->activate
+acctivated->activated
+acctivates->activates
+acctivating->activating
+acctivation->activation
+acctivations->activations
+acctive->active
+acctively->actively
+acctivities->activities
+acctivity->activity
 acctual->actual
 acctually->actually
 accual->actual
@@ -855,11 +1018,26 @@ accumlate->accumulate
 accumlated->accumulated
 accumlates->accumulates
 accumlating->accumulating
+accumlation->accumulation
+accumlative->accumulative
 accumlator->accumulator
+accumlators->accumulators
+accummulate->accumulate
+accummulated->accumulated
+accummulates->accumulates
 accummulating->accumulating
+accummulation->accumulation
+accummulative->accumulative
+accummulator->accumulator
 accummulators->accumulators
 accumualte->accumulate
+accumualted->accumulated
+accumualtes->accumulates
+accumualting->accumulating
 accumualtion->accumulation
+accumualtive->accumulative
+accumualtor->accumulator
+accumualtors->accumulators
 accumulare->accumulate
 accumulatin->accumulation, accumulating,
 accumulato->accumulation
