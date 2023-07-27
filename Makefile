@@ -14,10 +14,6 @@ codespell.1: codespell.1.include Makefile
 
 check-dictionaries:
 	@for dictionary in ${DICTIONARIES}; do \
-		if ! LC_ALL=C sort ${SORT_ARGS} -c $$dictionary; then \
-			echo "Dictionary $$dictionary not sorted. Sort with 'make sort-dictionaries'"; \
-			exit 1; \
-		fi; \
 		if grep -E -n "^\s*$$|\s$$|^\s" $$dictionary; then \
 			echo "Dictionary $$dictionary contains leading/trailing whitespace and/or blank lines.  Trim with 'make trim-dictionaries'"; \
 			exit 1; \
@@ -31,9 +27,7 @@ check-dictionaries:
 	fi
 
 sort-dictionaries:
-	@for dictionary in ${DICTIONARIES}; do \
-		LC_ALL=C sort ${SORT_ARGS} -u -o $$dictionary $$dictionary; \
-	done
+	pre-commit run --all-files file-contents-sorter
 
 trim-dictionaries:
 	@for dictionary in ${DICTIONARIES}; do \

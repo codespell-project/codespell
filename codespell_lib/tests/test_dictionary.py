@@ -77,6 +77,21 @@ def test_dictionary_formatting(
         raise AssertionError("\n" + "\n".join(errors))
 
 
+@fname_params
+def test_dictionary_sorting(
+    fname: str,
+    in_aspell: Tuple[bool, bool],
+    in_dictionary: Tuple[Iterable[str], Iterable[str]],
+) -> None:
+    previous_line = None
+    with open(fname, encoding="utf-8") as file:
+        for current_line in file:
+            current_line = current_line.strip().lower()
+            if previous_line is not None:
+                assert previous_line < current_line, f"{fname} is not sorted"
+            previous_line = current_line
+
+
 def _check_aspell(
     phrase: str,
     msg: str,

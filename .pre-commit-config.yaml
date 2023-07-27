@@ -46,6 +46,9 @@ repos:
       - id: fix-byte-order-marker
       - id: check-case-conflict
       - id: check-toml
+      - id: file-contents-sorter
+        files: dictionary.*\.txt$
+        args: [--ignore-case]
   - repo: https://github.com/adrienverge/yamllint.git
     rev: v1.32.0
     hooks:
