@@ -1,6 +1,7 @@
 import glob
 import os
 import os.path as op
+import pathlib
 import re
 import warnings
 from typing import Any, Dict, Iterable, Optional, Set, Tuple
@@ -10,6 +11,8 @@ import pytest
 from codespell_lib._codespell import _builtin_dictionaries, supported_languages
 
 spellers = {}
+
+root = pathlib.Path(__file__).parent.parent
 
 try:
     import aspell  # type: ignore[import]
@@ -77,18 +80,21 @@ def test_dictionary_formatting(
         raise AssertionError("\n" + "\n".join(errors))
 
 
-@fname_params
-def test_dictionary_sorting(
-    fname: str,
-    in_aspell: Tuple[bool, bool],
-    in_dictionary: Tuple[Iterable[str], Iterable[str]],
-) -> None:
+@pytest.mark.parametrize(
+    "filename",
+    [
+        *(root / "data").rglob("dictionary*.txt"),
+        *(root / "tests/data").rglob("*.wordlist"),
+    ],
+)
+def test_dictionary_sorting(filename: pathlib.Path) -> None:
+    relative_path = filename.relative_to(root)
     previous_line = None
-    with open(fname, encoding="utf-8") as file:
+    with filename.open(encoding="utf-8") as file:
         for current_line in file:
             current_line = current_line.strip().lower()
             if previous_line is not None:
-                assert previous_line < current_line, f"{fname} is not sorted"
+                assert previous_line < current_line, f"{relative_path} is not sorted"
             previous_line = current_line
 
 

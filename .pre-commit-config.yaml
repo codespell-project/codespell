@@ -1,5 +1,5 @@
 ---
-files: ^(.*\.(py|json|md|sh|yaml|yml|in|cfg|txt|rst|toml|precommit-toml))$
+files: ^(.*\.(py|json|md|sh|yaml|yml|in|cfg|txt|rst|toml|precommit-toml|wordlist))$
 exclude: ^(\.[^/]*cache/.*)$
 repos:
   - repo: https://github.com/executablebooks/mdformat
@@ -47,7 +47,7 @@ repos:
       - id: check-case-conflict
       - id: check-toml
       - id: file-contents-sorter
-        files: dictionary.*\.txt$
+        files: dictionary.*\.txt$|\.wordlist$
         args: [--ignore-case]
   - repo: https://github.com/adrienverge/yamllint.git
     rev: v1.32.0

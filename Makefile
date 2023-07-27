@@ -1,4 +1,4 @@
-DICTIONARIES := codespell_lib/data/dictionary*.txt
+DICTIONARIES := codespell_lib/data/dictionary*.txt codespell_lib/tests/data/*.wordlist
 
 PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dist pytest pypi ruff clean
 
