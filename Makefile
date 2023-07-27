@@ -1,5 +1,3 @@
-SORT_ARGS := -f -b
-
 DICTIONARIES := codespell_lib/data/dictionary*.txt
 
 PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dist pytest pypi ruff clean
