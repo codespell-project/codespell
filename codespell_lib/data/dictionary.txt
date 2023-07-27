@@ -5314,10 +5314,11 @@ bahavior->behavior
 bahavioral->behavioral
 bahaviors->behaviors
 bahaviour->behaviour
-bais->bias
+bais->bias, basis, bails, baits,
 baisc->basic
-baised->raised, biased,
-baises->raises, biases
+baised->raised, biased, braised, bailed, baited,
+baises->raises, biases, braises,
+baising->raising, biasing, braising, bailing, baiting,
 bakc->back
 bakcrefs->backrefs
 bakend->backend, baked,
@@ -11660,6 +11661,7 @@ cuples->couples
 curage->courage
 curageous->courageous
 curature->curvature
+curatures->curvatures
 curce->curse, curve, course,
 curch->church
 curcuit->circuit
@@ -19534,8 +19536,11 @@ formual->formula
 formuala->formula
 formualas->formulas
 formualate->formulate
+formualated->formulated
+formualates->formulates
 formualating->formulating
 formualation->formulation
+formualations->formulations
 formuale->formulae
 formuals->formulas
 formulaical->formulaic
@@ -27448,6 +27453,7 @@ multpart->multipart
 multpile->multiple
 multpiles->multiples
 multpilication->multiplication
+multpilications->multiplications
 multpily->multiply
 multpilying->multiplying
 multplayer->multiplayer
@@ -37893,6 +37899,8 @@ segmetned->segmented
 segmetns->segments
 segmnet->segment
 segmnetation->segmentation
+segmnetations->segmentations
+segmneted->segmented
 segmneting->segmenting
 segmnets->segments
 segument->segment
@@ -42661,6 +42669,8 @@ termniations->terminations
 termniator->terminator
 termniators->terminators
 termo->thermo
+termonological->terminological
+termonologies->terminologies
 termonology->terminology
 termostat->thermostat
 termperatue->temperature
@@ -43303,8 +43313,8 @@ traget->target
 trageted->targeted
 trageting->targeting
 tragets->targets
-traid->triad, trade,
-traids->triads, trades,
+traid->triad, trade, raid,
+traids->triads, trades, raids,
 traige->triage
 traiger->triager
 traigers->triagers
