@@ -16,7 +16,7 @@ try:
 
     _test_data_dir = op.join(op.dirname(__file__), "..", "tests", "data")
     for lang in supported_languages:
-        _wordlist = op.join(_test_data_dir, f"{lang}-additionnal.wordlist")
+        _wordlist = op.join(_test_data_dir, f"{lang}-additional.wordlist")
         if op.isfile(_wordlist):
             spellers[lang] = aspell.Speller(
                 ("lang", lang), ("size", "80"), ("wordlists", _wordlist)
