@@ -2256,6 +2256,8 @@ aggreator->aggregator
 aggreators->aggregators
 aggree->agree
 aggreeable->agreeable
+aggreeableness->agreeableness
+aggreeably->agreeably
 aggreed->agreed
 aggreeing->agreeing
 aggreement->agreement
@@ -2327,9 +2329,13 @@ agravates->aggravates
 agravating->aggravating
 agre->agree
 agreable->agreeable
+agreableness->agreeableness
+agreably->agreeably
 agred->agreed
 agreee->agree
 agreeeable->agreeable
+agreeeableness->agreeableness
+agreeeably->agreeably
 agreeed->agreed
 agreeeing->agreeing
 agreeement->agreement
@@ -3126,7 +3132,7 @@ altogehter->altogether
 altough->although
 altought->although
 altready->already
-altso->also
+altso->also, altos,
 alue->value
 alues->values
 alusion->allusion, illusion,
