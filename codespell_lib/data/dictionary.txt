@@ -1118,17 +1118,20 @@ acedamia->academia
 acedamic->academic
 acedamically->academically
 acedamics->academics
+acedamies->academies
 acedamy->academy
 acedemia->academia
 acedemic->academic
 acedemically->academically
 acedemics->academics
+acedemies->academies
 acedemy->academy
 acelerate->accelerate
 acelerated->accelerated
 acelerates->accelerates
 acelerating->accelerating
 aceleration->acceleration
+acelerations->accelerations
 acelerator->accelerator
 acelerators->accelerators
 acelerometer->accelerometer
@@ -1660,6 +1663,7 @@ adaptate->adapt
 adaptated->adapted
 adaptater->adapter
 adaptaters->adapters
+adaptates->adapts
 adaptating->adaptation, adapting,
 adapte->adapter
 adaptee->adapted
@@ -1790,6 +1794,7 @@ addministers->administers
 addministration->administration
 addministrations->administrations
 addministrative->administrative
+addministratively->administratively
 addministrator->administrator
 addministrators->administrators
 addmins->admins
@@ -1947,6 +1952,7 @@ admininisters->administers
 admininistration->administration
 admininistrations->administrations
 admininistrative->administrative
+admininistratively->administratively
 admininistrator->administrator
 admininistrators->administrators
 admininster->administer
@@ -1956,11 +1962,13 @@ admininsters->administers
 admininstration->administration
 admininstrations->administrations
 admininstrative->administrative
+admininstratively->administratively
 admininstrator->administrator
 admininstrators->administrators
 administation->administration
 administations->administrations
 administative->administrative
+administatively->administratively
 administator->administrator
 administators->administrators
 administor->administrator
@@ -1978,6 +1986,7 @@ adminiters->administers
 adminitration->administration
 adminitrations->administrations
 adminitrative->administrative
+adminitratively->administratively
 adminitrator->administrator
 adminitrators->administrators
 adminssion->admission
@@ -1989,6 +1998,7 @@ adminstrate->administrate
 adminstration->administration
 adminstrations->administrations
 adminstrative->administrative
+adminstratively->administratively
 adminstrator->administrator
 adminstrators->administrators
 admisible->admissible
@@ -2036,6 +2046,8 @@ adrerssing->addressing
 adres->address
 adresable->addressable
 adresed->addressed
+adresee->addressee
+adresees->addresses, addressees,
 adreses->addresses
 adresing->addressing
 adress->address
