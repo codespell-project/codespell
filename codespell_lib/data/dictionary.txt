@@ -2132,9 +2132,13 @@ aesy->easy
 aexs->axes
 afair->affair
 afaraid->afraid
+afater->after
+afaterwards->afterwards
 afe->safe
 afect->affect, effect,
+afected->affected
 afecting->affecting
+afects->affects, effects,
 afer->after
 aferwards->afterwards
 afetr->after
@@ -2178,9 +2182,11 @@ afterw->after
 afther->after, father,
 aftrer->after
 aftzer->after
+againn->again
 againnst->against
 agains->against, again,
 againsg->against
+againsst->against
 againt->against
 againts->against
 agaisnt->against
@@ -2188,36 +2194,115 @@ agaist->against
 agancies->agencies
 agancy->agency
 aganda->agenda, Uganda,
+agani->again
 aganist->against
 agant->agent
 agants->agents, against,
+aggaravate->aggravate
+aggaravated->aggravated
 aggaravates->aggravates
+aggaravating->aggravating
 aggegate->aggregate
+aggegated->aggregated
+aggegates->aggregates
+aggegating->aggregating
+aggegation->aggregation
+aggegations->aggregations
+aggegator->aggregator
+aggegators->aggregators
 aggenst->against
 aggessive->aggressive
 aggessively->aggressively
 agggregate->aggregate
+agggregated->aggregated
+agggregates->aggregates
+agggregating->aggregating
+agggregation->aggregation
+agggregations->aggregations
+agggregator->aggregator
+agggregators->aggregators
 aggragate->aggregate
+aggragated->aggregated
+aggragates->aggregates
+aggragating->aggregating
+aggragation->aggregation
+aggragations->aggregations
 aggragator->aggregator
-aggrated->aggregated
+aggragators->aggregators
+aggrate->aggregate, aggravate,
+aggrated->aggregated, aggravated,
+aggrates->aggregates, aggravates,
+aggrating->aggregating, aggravating,
+aggration->aggregation
+aggrations->aggregations
+aggrator->aggregator
+aggrators->aggregators
 aggreagate->aggregate
+aggreagated->aggregated
+aggreagates->aggregates
+aggreagating->aggregating
+aggreagation->aggregation
+aggreagations->aggregations
+aggreagator->aggregator
+aggreagators->aggregators
 aggreataon->aggregation
 aggreate->aggregate
 aggreated->aggregated
+aggreates->aggregates
+aggreating->aggregating
 aggreation->aggregation
 aggreations->aggregations
+aggreator->aggregator
+aggreators->aggregators
+aggree->agree
+aggreeable->agreeable
+aggreeableness->agreeableness
+aggreeably->agreeably
 aggreed->agreed
+aggreeing->agreeing
 aggreement->agreement
+aggreements->agreements
+aggrees->agrees
 aggregatet->aggregated
+aggregete->aggregate
+aggregeted->aggregated
+aggregetes->aggregates
+aggregeting->aggregating
+aggregetion->aggregation
+aggregetions->aggregations
 aggregetor->aggregator
+aggregetors->aggregators
 aggreggate->aggregate
+aggreggated->aggregated
+aggreggates->aggregates
+aggreggating->aggregating
+aggreggation->aggregation
+aggreggations->aggregations
+aggreggator->aggregator
+aggreggators->aggregators
 aggregious->egregious
 aggregrate->aggregate
 aggregrated->aggregated
+aggregrates->aggregates
+aggregrating->aggregating
+aggregration->aggregation
+aggregrations->aggregations
+aggregrator->aggregator
+aggregrators->aggregators
 aggresive->aggressive
 aggresively->aggressively
 aggrevate->aggravate
+aggrevated->aggravated
+aggrevates->aggravates
+aggrevating->aggravating
 aggrgate->aggregate
+aggrgated->aggregated
+aggrgates->aggregates
+aggrgating->aggregating
+aggrgation->aggregation
+aggrgations->aggregations
+aggrgator->aggregator
+aggrgators->aggregators
 aggrivate->aggravate
 aggrivated->aggravated
 aggrivates->aggravates
@@ -2239,19 +2324,38 @@ agrandized->aggrandized
 agrandizes->aggrandizes
 agrandizing->aggrandizing
 agravate->aggravate
+agravated->aggravated
+agravates->aggravates
+agravating->aggravating
 agre->agree
+agreable->agreeable
+agreableness->agreeableness
+agreably->agreeably
 agred->agreed
+agreee->agree
+agreeeable->agreeable
+agreeeableness->agreeableness
+agreeeably->agreeably
+agreeed->agreed
+agreeeing->agreeing
 agreeement->agreement
+agreeements->agreements
+agreees->agrees
 agreemnet->agreement
 agreemnets->agreements
 agreemnt->agreement
+agreemnts->agreements
 agregate->aggregate
 agregated->aggregated
 agregates->aggregates
+agregating->aggregating
 agregation->aggregation
+agregations->aggregations
 agregator->aggregator
+agregators->aggregators
 agreing->agreeing
 agrement->agreement
+agrements->agreements
 agression->aggression
 agressive->aggressive
 agressively->aggressively
@@ -2273,9 +2377,10 @@ agrument->argument
 agruments->arguments
 ags->tags, ages,
 agsinst->against
-agument->argument
+agument->argument, augment,
 agumented->augmented
-aguments->arguments
+agumenting->augmenting
+aguments->arguments, augments,
 aheared->adhered
 ahed->ahead
 ahere->here, adhere,
@@ -2286,6 +2391,8 @@ ahmond->almond
 ahmonds->almonds
 ahppen->happen
 ahve->have
+ahven't->haven't
+ahving->having
 aicraft->aircraft
 aiffer->differ
 ailgn->align
@@ -2301,6 +2408,11 @@ airlfow->airflow
 airloom->heirloom
 airporta->airports
 airrcraft->aircraft
+airrflow->airflow
+airrplane->airplane
+airrplanes->airplanes
+airrport->airport
+airrports->airports
 aisian->Asian
 aixs->axis
 aizmuth->azimuth
@@ -2341,11 +2453,17 @@ aknowledgments->acknowledgments
 aks->ask
 aksed->asked
 akss->asks, ass,
+aktion->action
+aktions->actions
 aktivate->activate
 aktivated->activated
 aktivates->activates
 aktivating->activating
 aktivation->activation
+aktive->active
+aktively->actively
+aktivities->activities
+aktivity->activity
 akumulate->accumulate
 akumulated->accumulated
 akumulates->accumulates
@@ -2377,6 +2495,10 @@ alernate->alternate
 alernated->alternated
 alernately->alternately
 alernates->alternates
+alernating->alternating
+alernative->alternative
+alernatively->alternatively
+alernatives->alternatives
 alers->alerts
 aleviate->alleviate
 aleviates->alleviates
@@ -2395,9 +2517,12 @@ alghoritm->algorithm
 alghoritmic->algorithmic
 alghoritmically->algorithmically
 alghoritms->algorithms
+algin->align
 algined->aligned
+algining->aligning
 alginment->alignment
 alginments->alignments
+algins->aligns
 algohm->algorithm
 algohmic->algorithmic
 algohmically->algorithmically
@@ -2625,8 +2750,10 @@ alighnment->alignment
 alighnments->alignments
 aligin->align
 aligined->aligned
+aliging->aligning
 aligining->aligning
 aliginment->alignment
+aliginments->alignments
 aligins->aligns
 aligment->alignment
 aligments->alignments
@@ -2665,6 +2792,11 @@ alinment->alignment
 alinments->alignments
 alis->alias, alas, axis, alms,
 alisas->alias, aliases,
+alisased->aliased
+alisases->aliases
+alisasing->aliasing
+alised->aliased
+alises->aliases
 alising->aliasing
 aliver->alive, liver, a liver, sliver,
 allcate->allocate
@@ -2696,6 +2828,10 @@ allegedy->allegedly
 allegely->allegedly
 allegence->allegiance
 allegience->allegiance
+allias->alias
+alliased->aliased
+alliases->aliases
+alliasing->aliasing
 allif->all if
 allign->align
 alligned->aligned
@@ -2709,7 +2845,13 @@ alligns->aligns
 alliviate->alleviate
 allk->all
 alllocate->allocate
+alllocated->allocated
+alllocates->allocates
+alllocating->allocating
 alllocation->allocation
+alllocations->allocations
+alllocator->allocator
+alllocators->allocators
 alllow->allow
 alllowed->allowed
 alllows->allows
@@ -2790,8 +2932,16 @@ alltogether->altogether, all together,
 alltogetrher->altogether, all together,
 alltogther->altogether, all together,
 alltough->although
+allwance->allowance
+allwances->allowances
 allways->always
+allwed->allowed
+allwing->allowing
 allwo->allow
+allwoance->allowance
+allwoances->allowances
+allwoed->allowed
+allwoing->allowing
 allwos->allows
 allws->allows
 allwys->always
@@ -2807,6 +2957,8 @@ alocates->allocates
 alocating->allocating
 alocation->allocation, a location,
 alocations->allocations
+alocator->allocator
+alocators->allocators
 alochol->alcohol
 alog->along
 alogirhtm->algorithm
@@ -2817,7 +2969,12 @@ alogirthm->algorithm
 alogirthmic->algorithmic
 alogirthmically->algorithmically
 alogirthms->algorithms
+alogn->along, align,
 alogned->aligned
+alogning->aligning
+alognment->alignment
+alognments->alignments
+alogns->aligns
 alogorithm->algorithm
 alogorithmic->algorithmic
 alogorithmically->algorithmically
@@ -2827,6 +2984,11 @@ alogrithmic->algorithmic
 alogrithmically->algorithmically
 alogrithms->algorithms
 alomst->almost
+aloow->allow
+aloowance->allowance
+aloowances->allowances
+aloowed->allowed
+aloowing->allowing
 aloows->allows
 alorithm->algorithm
 alorithmic->algorithmic
@@ -2842,16 +3004,38 @@ alows->allows
 alpabet->alphabet
 alpabetic->alphabetic
 alpabetical->alphabetical
+alpabetically->alphabetically
 alpabets->alphabets
 alpah->alpha
+alpahabet->alphabet
+alpahabetic->alphabetic
 alpahabetical->alphabetical
+alpahabetically->alphabetically
+alpahabets->alphabets
+alpahbet->alphabet
+alpahbetic->alphabetic
+alpahbetical->alphabetical
 alpahbetically->alphabetically
+alpahbets->alphabets
+alpahs->alphas
 alph->alpha
 alpha-numeric->alphanumeric
+alphabeticall->alphabetical
+alphabeticallly->alphabetically
 alphabeticaly->alphabetically
 alphabeticly->alphabetical
 alphapeicall->alphabetical
+alphapet->alphabet
+alphapetic->alphabetic
+alphapetical->alphabetical
+alphapetically->alphabetically
 alphapeticaly->alphabetically
+alphapets->alphabets
+alphbet->alphabet
+alphbetic->alphabetic
+alphbetical->alphabetical
+alphbetically->alphabetically
+alphbets->alphabets
 alrady->already
 alraedy->already
 alread->already
@@ -2863,6 +3047,7 @@ alreay->already
 alreayd->already
 alreday->already
 alredy->already
+alreeady->already
 alreight->all right, alright,
 alrelady->already
 alrms->alarms
@@ -2874,9 +3059,20 @@ alsmost->almost
 alsoneeds->also needs
 alsot->also
 alsready->already
+alsso->also
+altenate->alternate
+altenated->alternated
+altenately->alternately
+altenates->alternates
+altenating->alternating
 altenative->alternative
-alterated->altered
+altenatively->alternatively
+altenatives->alternatives
+alterate->alternate, alter,
+alterated->altered, alternated,
 alterately->alternately
+alterates->alters, alternates,
+alterating->altering, alternating,
 alterative->alternative
 alteratively->alternatively
 alteratives->alternatives
@@ -2890,23 +3086,33 @@ alternarives->alternatives
 alternatie->alternative, alternate,
 alternatiely->alternatively, alternately,
 alternaties->alternatives, alternates,
+alternatiev->alternative
 alternatievly->alternatively
+alternatievs->alternatives
+alternativ->alternative
 alternativey->alternatively
 alternativley->alternatively
 alternativly->alternatively
+alternativs->alternatives
 alternatve->alternative
+alternatvely->alternatively
+alternatves->alternatives
+alternavte->alternative
 alternavtely->alternatively
+alternavtes->alternatives
 alternavtive->alternative
 alternavtively->alternatively
 alternavtives->alternatives
 alternetive->alternative
 alternetively->alternatively
 alternetives->alternatives
+alternitiv->alternative
 alternitive->alternative
 alternitively->alternatively
 alternitiveness->alternativeness
 alternitives->alternatives
 alternitivly->alternatively
+alternitivs->alternatives
 altetnative->alternative
 altetnatively->alternatively
 altetnatives->alternatives
@@ -2926,7 +3132,9 @@ altogehter->altogether
 altough->although
 altought->although
 altready->already
+altso->also, altos,
 alue->value
+alues->values
 alusion->allusion, illusion,
 alvorithm->algorithm
 alvorithmic->algorithmic
