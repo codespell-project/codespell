@@ -3453,12 +3453,12 @@ ancilliary->ancillary
 andd->and
 anddroid->android
 anddroids->androids
-andle->handle, candle, angle, ankle,
-andled->handled
+andle->handle, candle, angle, ankle, dandle,
+andled->handled, dandled,
 andler->handler, antler,
 andlers->handlers, antlers,
-andles->handles, candles, angles, ankles,
-andling->handling
+andles->handles, candles, angles, ankles, dandles,
+andling->handling, dandling,
 andoid->android
 andoids->androids
 andorid->android
@@ -3625,6 +3625,8 @@ annnotates->annotates
 annnotating->annotating
 annnotation->annotation
 annnotations->annotations
+annnotator->annotator
+annnotators->annotators
 annnounce->announce
 annnounced->announced
 annnouncement->announcement
@@ -3639,6 +3641,8 @@ annoates->annotates
 annoating->annotating
 annoation->annotation
 annoations->annotations
+annoator->annotator
+annoators->annotators
 annoint->anoint
 annointed->anointed
 annointing->anointing
@@ -3649,6 +3653,8 @@ annonates->annotates
 annonating->annotating
 annonation->annotation
 annonations->annotations
+annonator->annotator
+annonators->annotators
 annonce->announce
 annonced->announced
 annoncement->announcement
@@ -3666,6 +3672,8 @@ annotaes->annotates
 annotaing->annotating
 annotaion->annotation
 annotaions->annotations
+annotaor->annotator
+annotaors->annotators
 annote->annotate
 annoted->annotated
 annotes->annotates
@@ -3673,6 +3681,8 @@ annother->another
 annoting->annotating
 annotion->annotation
 annotions->annotations
+annotor->annotator
+annotors->annotators
 annouce->announce
 annouced->announced
 annoucement->announcement
@@ -3731,6 +3741,8 @@ anotates->annotates
 anotating->annotating
 anotation->annotation
 anotations->annotations
+anotator->annotator
+anotators->annotators
 anoter->another
 anothe->another
 anothers->another
