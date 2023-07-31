@@ -3185,6 +3185,7 @@ ambitous->ambitious
 ambuguity->ambiguity
 ambulence->ambulance
 ambulences->ambulances
+amde->made
 amdgput->amdgpu
 amealearate->ameliorate
 amealearated->ameliorated
@@ -3233,6 +3234,10 @@ amgle->angle
 amgles->angles
 amiguous->ambiguous
 amke->make
+amkefile->makefile
+amkefiles->makefiles
+amkes->makes
+amkeup->makeup
 amking->making
 ammend->amend
 ammended->amended
@@ -3246,6 +3251,9 @@ ammortizes->amortizes
 ammoung->among
 ammoungst->amongst
 ammount->amount
+ammounted->amounted
+ammounting->amounting
+ammounts->amounts
 ammused->amused
 amny->many
 amongs->among
@@ -3284,17 +3292,22 @@ analig->analog
 analise->analyse
 analised->analysed
 analiser->analyser
+analisers->analysers
 analises->analysis, analyses,
 analising->analysing
 analisis->analysis
+analist->analyst
+analists->analysts
 analisys->analysis
 analitic->analytic
 analitical->analytical
 analitically->analytically
 analiticaly->analytically
+analitics->analytics
 analize->analyze
 analized->analyzed
 analizer->analyzer
+analizers->analyzers
 analizes->analyzes
 analizing->analyzing
 analogeous->analogous
@@ -3320,17 +3333,47 @@ analyers->analysers, analyzers,
 analyes->analyses, analyzes, analyse, analyze,
 analying->analysing, analyzing,
 analyis->analysis
+analyise->analyse
+analyised->analysed
+analyiser->analyser
+analyisers->analysers
+analyises->analyses
+analyising->analysing
+analyisis->analysis
 analyist->analyst
 analyists->analysts
+analyitic->analytic
+analyitical->analytical
+analyitically->analytically
+analyitics->analytics
+analyize->analyze
+analyized->analyzed
+analyizer->analyzer
+analyizers->analyzers
+analyizes->analyzes
+analyizing->analyzing
 analysator->analyser
+analysators->analysers
+analysie->analyse
+analysied->analysed
+analysier->analyser
+analysiers->analysers
 analysies->analyses, analysis,
+analysiing->analysing
+analysiis->analysis
 analysus->analysis
 analysy->analysis
 analyticall->analytical, analytically,
 analyticaly->analytically
 analyticly->analytically
 analyzator->analyzer
+analyzators->analyzers
+analyzie->analyze
+analyzied->analyzed
+analyzier->analyzer
+analyziers->analyzers
 analyzies->analysis, analyses, analyzes,
+analyziing->analyzing
 analzye->analyze
 analzyed->analyzed
 analzyer->analyzer
@@ -3338,6 +3381,25 @@ analzyers->analyzers
 analzyes->analyzes
 analzying->analyzing
 ananlog->analog
+ananlyse->analyse
+ananlysed->analysed
+ananlyser->analyser
+ananlysers->analysers
+ananlyses->analyses
+ananlysing->analysing
+ananlysis->analysis
+ananlyst->analyst
+ananlysts->analysts
+ananlytic->analytic
+ananlytical->analytical
+ananlytically->analytically
+ananlytics->analytics
+ananlyze->analyze
+ananlyzed->analyzed
+ananlyzer->analyzer
+ananlyzers->analyzers
+ananlyzes->analyzes
+ananlyzing->analyzing
 anarchim->anarchism
 anarchistm->anarchism, anarchist,
 anarchit->anarchist
@@ -3352,9 +3414,13 @@ anarquists->anarchists
 anaylse->analyse
 anaylsed->analysed
 anaylser->analyser
+anaylsers->analysers
 anaylses->analyses
+anaylsing->analysing
 anaylsis->analysis
 anaylsises->analysises
+anaylst->analyst
+anaylsts->analysts
 anayltic->analytic
 anayltical->analytical
 anayltically->analytically
@@ -3362,7 +3428,9 @@ anayltics->analytics
 anaylze->analyze
 anaylzed->analyzed
 anaylzer->analyzer
+anaylzers->analyzers
 anaylzes->analyzes
+anaylzing->analyzing
 anbd->and
 ancapsulate->encapsulate
 ancapsulated->encapsulated
@@ -3383,7 +3451,14 @@ anchestors->ancestors
 anchord->anchored
 ancilliary->ancillary
 andd->and
+anddroid->android
+anddroids->androids
+andle->handle, candle, angle, ankle, dandle,
+andled->handled, dandled,
+andler->handler, antler,
 andlers->handlers, antlers,
+andles->handles, candles, angles, ankles, dandles,
+andling->handling, dandling,
 andoid->android
 andoids->androids
 andorid->android
@@ -3426,26 +3501,57 @@ anialates->annihilates
 anialating->annihilating
 anid->and
 anihilation->annihilation
+animaed->animated
+animaes->animates
 animaing->animating
+animaion->animation
+animaions->animations
 animaite->animate
+animaited->animated
 animaiter->animator
 animaiters->animators
+animaites->animates
+animaiting->animating
+animaition->animation
+animaitions->animations
+animaitng->animating
 animaiton->animation
 animaitons->animations
 animaitor->animator
 animaitors->animators
+animaor->animator
+animaors->animators
+animatie->animate
+animatied->animated
+animaties->animates
+animatiing->animating
+animatiion->animation
+animatiions->animations
 animatior->animator, animation,
+animatiors->animators, animations,
+animatng->animating
 animaton->animation
 animatonic->animatronic
+animatons->animations
 animete->animate
 animeted->animated
+animetes->animates
+animeting->animating
 animetion->animation
 animetions->animations
+animetor->animator
+animetors->animators
 animets->animates
 animonee->anemone
 animore->anymore
 aninate->animate
+aninated->animated
+aninates->animates
+aninating->animating
 anination->animation
+aninations->animations
+aninator->animator
+aninators->animators
 aniother->any other
 anisotrophically->anisotropically
 anitaliasing->antialiasing
@@ -3471,9 +3577,32 @@ ankshusly->anxiously
 ankshusness->anxiousness
 anlge->angle
 anly->only, any,
+anlyse->analyse
+anlysed->analysed
+anlyser->analyser
+anlysers->analysers
+anlyses->analyses
+anlysing->analysing
 anlysis->analysis
+anlyst->analyst
+anlysts->analysts
+anlytic->analytic
+anlytical->analytical
+anlytically->analytically
+anlytics->analytics
+anlyze->analyze
+anlyzed->analyzed
+anlyzer->analyzer
+anlyzers->analyzers
+anlyzes->analyzes
 anlyzing->analyzing
 anme->name, anime,
+anmed->named
+anmes->names, animes,
+anmespace->namespace
+anmespaces->namespaces
+anming->naming
+anmore->anymore
 annaverseries->anniversaries
 annaversery->anniversary
 annaverserys->anniversaries
@@ -3490,8 +3619,30 @@ annhilating->annihilating
 annhilation->annihilation
 annhilations->annihilations
 anniversery->anniversary
+annnotate->annotate
+annnotated->annotated
+annnotates->annotates
+annnotating->annotating
+annnotation->annotation
+annnotations->annotations
+annnotator->annotator
+annnotators->annotators
 annnounce->announce
+annnounced->announced
+annnouncement->announcement
+annnouncements->announcements
+annnouncer->announcer
+annnouncers->announcers
+annnounces->announces
+annnouncing->announcing
+annoate->annotate
+annoated->annotated
+annoates->annotates
+annoating->annotating
 annoation->annotation
+annoations->annotations
+annoator->annotator
+annoators->annotators
 annoint->anoint
 annointed->anointed
 annointing->anointing
@@ -3499,8 +3650,11 @@ annoints->anoints
 annonate->annotate
 annonated->annotated
 annonates->annotates
+annonating->annotating
 annonation->annotation
 annonations->annotations
+annonator->annotator
+annonators->annotators
 annonce->announce
 annonced->announced
 annoncement->announcement
@@ -3512,10 +3666,23 @@ annonomusally->anonymously
 annonomusly->anonymously
 annonymous->anonymous
 annonymously->anonymously
+annotae->annotate
+annotaed->annotated
+annotaes->annotates
+annotaing->annotating
 annotaion->annotation
 annotaions->annotations
+annotaor->annotator
+annotaors->annotators
+annote->annotate
 annoted->annotated
+annotes->annotates
 annother->another
+annoting->annotating
+annotion->annotation
+annotions->annotations
+annotor->annotator
+annotors->annotators
 annouce->announce
 annouced->announced
 annoucement->announcement
@@ -3537,7 +3704,13 @@ annoyningly->annoyingly
 annoyying->annoying
 annualy->annually
 annuled->annulled
+annyo->annoy
+annyoance->annoyance
+annyoances->annoyances
+annyoed->annoyed
+annyoing->annoying
 annyoingly->annoyingly
+annyos->annoys
 anoher->another
 anohter->another
 anologon->analogon
@@ -3568,6 +3741,8 @@ anotates->annotates
 anotating->annotating
 anotation->annotation
 anotations->annotations
+anotator->annotator
+anotators->annotators
 anoter->another
 anothe->another
 anothers->another
@@ -3576,6 +3751,10 @@ anounce->announce
 anounced->announced
 anouncement->announcement
 anouncements->announcements
+anouncer->announcer
+anouncers->announcers
+anounces->announces
+anouncing->announcing
 anount->amount
 anoy->annoy
 anoyed->annoyed
@@ -3594,11 +3773,17 @@ anphitheaters->amphitheaters
 anpitheater->amphitheater
 anpitheaters->amphitheaters
 anroid->android
+anroids->androids
 ansalisation->nasalisation
 ansalization->nasalization
 ansamble->ensemble
 ansambles->ensembles
 anser->answer
+ansered->answered
+anserer->answerer
+anserers->answerers
+ansering->answering
+ansers->answers
 ansester->ancestor
 ansesters->ancestors
 ansestor->ancestor
