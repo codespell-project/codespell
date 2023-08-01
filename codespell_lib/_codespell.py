@@ -637,19 +637,14 @@ def build_dict(
             if key in ignore_words:
                 continue
             data = data.strip()
-            fix = data.rfind(",")
 
-            if fix < 0:
+            if "," in data:
+                fix = False
+                data, reason = data.rsplit(",", 1)
+                reason = reason.lstrip()
+            else:
                 fix = True
                 reason = ""
-            elif fix == (len(data) - 1):
-                data = data[:fix]
-                reason = ""
-                fix = False
-            else:
-                reason = data[fix + 1 :].strip()
-                data = data[:fix]
-                fix = False
 
             misspellings[key] = Misspelling(data, fix, reason)
 
