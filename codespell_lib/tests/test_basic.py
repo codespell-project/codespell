@@ -168,6 +168,12 @@ def test_default_word_parsing(
         f.write("`abandonned`\n")
     assert cs.main(fname) == 1, "bad"
 
+    fname = tmp_path / "apostrophe"
+    fname.write_text("woudn't\n", encoding="utf-8")  # U+0027 (')
+    assert cs.main(fname) == 1, "misspelling containing typewriter apostrophe U+0027"
+    fname.write_text("woudn’t\n", encoding="utf-8")  # U+2019 (’)
+    assert cs.main(fname) == 1, "misspelling containing typographic apostrophe U+2019"
+
 
 def test_bad_glob(
     tmp_path: Path,
