@@ -2376,6 +2376,7 @@ agriculure->agriculture
 agricuture->agriculture
 agrieved->aggrieved
 agrresive->aggressive
+agrs->args
 agrument->argument
 agruments->arguments
 ags->tags, ages,
@@ -16692,6 +16693,7 @@ efficencty->efficiency
 efficency->efficiency
 efficent->efficient
 efficently->efficiently
+efficience->efficiency
 efficieny->efficiency, efficiently,
 effiency->efficiency
 effient->efficient
@@ -17101,6 +17103,9 @@ encounterd->encountered
 encounting->encountering
 encountre->encounter, encountered,
 encountres->encounters
+encourae->encourage
+encouraed->encouraged
+encouraes->encourages
 encouraing->encouraging
 encourge->encourage
 encourged->encouraged
@@ -19308,6 +19313,8 @@ explainatory->explanatory
 explaind->explained
 explanaiton->explanation
 explanaitons->explanations
+explanantion->explanation
+explanantions->explanations
 explane->explain
 explaned->explained
 explanes->explains
@@ -20635,6 +20642,9 @@ frankin->franklin
 Fransiscan->Franciscan
 Fransiscans->Franciscans
 franzise->franchise
+fration->fraction, ration,
+frational->fractional, rational,
+frations->fractions, rations,
 frecuencies->frequencies
 frecuency->frequency
 frecuent->frequent
@@ -32729,6 +32739,11 @@ polyedral->polyhedral
 polygond->polygons
 polygone->polygon
 polylon->polygon, pylon,
+polymoprh->polymorph
+polymoprhic->polymorphic
+polymoprhism->polymorphism
+polymoprhisms->polymorphisms
+polymoprhs->polymorphs
 polymorhic->polymorphic
 polymorpic->polymorphic
 polynomal->polynomial
@@ -46949,6 +46964,7 @@ verbage->verbiage
 verbaitm->verbatim
 verbatum->verbatim
 verboase->verbose
+verbossity->verbosity
 verbous->verbose
 verbouse->verbose
 verbously->verbosely
