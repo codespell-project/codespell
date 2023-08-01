@@ -17103,7 +17103,11 @@ encounterd->encountered
 encounting->encountering
 encountre->encounter, encountered,
 encountres->encounters
+encourae->encourage
 encouraed->encouraged
+encouraed->encouraged
+encouraes->encourages
+encouraing->encouraging
 encouraing->encouraging
 encourge->encourage
 encourged->encouraged
@@ -20639,7 +20643,10 @@ frankin->franklin
 Fransiscan->Franciscan
 Fransiscans->Franciscans
 franzise->franchise
+fration->fraction, ration,
 frational->fractional
+frational->fractional, rational,
+frations->fractions, rations,
 frecuencies->frequencies
 frecuency->frequency
 frecuent->frequent
@@ -32735,6 +32742,11 @@ polygond->polygons
 polygone->polygon
 polylon->polygon, pylon,
 polymoprh->polymorph
+polymoprh->polymorph
+polymoprhic->polymorphic
+polymoprhism->polymorphism
+polymoprhisms->polymorphisms
+polymoprhs->polymorphs
 polymorhic->polymorphic
 polymorpic->polymorphic
 polynomal->polynomial
@@ -48421,15 +48433,3 @@ zylophones->xylophones
 сontainor->container
 сontainors->containers
 сontains->contains
-encouraed->encouraged
-encourae->encourage
-encouraes->encourages
-encouraing->encouraging
-fration->fraction, ration,
-frational->fractional, rational,
-frations->fractions, rations,
-polymoprh->polymorph
-polymoprhic->polymorphic
-polymoprhism->polymorphism
-polymoprhisms->polymorphisms
-polymoprhs->polymorphs
