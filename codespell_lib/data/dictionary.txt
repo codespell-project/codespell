@@ -5319,6 +5319,8 @@ assicietions->associations
 assicietive->associative
 asside->aside
 assiged->assigned
+assigee->assignee
+assigees->assignees
 assigend->assigned
 assigh->assign
 assighed->assigned
@@ -5363,12 +5365,16 @@ assignmnet->assignment
 assignmnets->assignments
 assignt->assign
 assignted->assigned
+assigntee->assignee
+assigntees->assignees
 assignting->assigning
 assigntment->assignment
 assigntments->assignments
 assignts->assigns
 assihn->assign
 assihned->assigned
+assihnee->assignee
+assihnees->assignees
 assihning->assigning
 assihnment->assignment
 assihnments->assignments
@@ -5429,6 +5435,7 @@ assisstant->assistant
 assisstants->assistants
 assissted->assisted
 assissting->assisting
+assisstive->assistive
 assissts->assists
 assistence->assistance
 assistent->assistant
@@ -5447,6 +5454,7 @@ assitsant->assistant
 assitsants->assistants
 assitsed->assisted
 assitsing->assisting
+assitsive->assistive
 assitss->assists
 assma->asthma
 assmbler->assembler
