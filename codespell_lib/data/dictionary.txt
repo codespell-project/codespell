@@ -5854,6 +5854,7 @@ atleast->at least
 atll->all
 atmoic->atomic
 atmoically->atomically
+atomata->automata
 atomate->automate
 atomated->automated
 atomates->automates
@@ -5861,9 +5862,13 @@ atomatic->automatic, atomic, aromatic,
 atomatically->automatically, atomically,
 atomating->automating
 atomation->automation
+atomaton->automaton
 atomical->atomic
 atomicly->atomically
 atomiticity->atomicity
+atomobile->automobile
+atomobiles->automobiles
+atomotive->automotive
 atomtic->atomic, automatic,
 atomtical->automatic
 atomtically->automatically
@@ -6187,6 +6192,7 @@ aunthenticator->authenticator
 aunthenticators->authenticators
 auospacing->autospacing
 auot->auto
+auotmata->automata
 auotmate->automate
 auotmated->automated
 auotmates->automates
@@ -6194,6 +6200,10 @@ auotmatic->automatic
 auotmatically->automatically
 auotmating->automating
 auotmation->automation
+auotmaton->automaton
+auotmobile->automobile
+auotmobiles->automobiles
+auotmotive->automotive
 auromated->automated
 aussian->Gaussian, Russian, Austrian,
 austair->austere
@@ -6454,6 +6464,7 @@ authrors->authors
 autimatic->automatic
 autimatically->automatically
 autio->audio
+autmata->automata
 autmate->automate
 autmated->automated
 autmates->automates
@@ -6461,6 +6472,10 @@ autmatic->automatic
 autmatically->automatically
 autmating->automating
 autmation->automation
+autmaton->automaton
+autmobile->automobile
+autmobiles->automobiles
+autmotive->automotive
 auto-dependancies->auto-dependencies
 auto-destrcut->auto-destruct
 auto-detet->auto-detect, auto-delete,
