@@ -1992,6 +1992,8 @@ adminitrative->administrative
 adminitratively->administratively
 adminitrator->administrator
 adminitrators->administrators
+adminsitrator->administrator
+adminsitrators->administrators
 adminssion->admission
 adminster->administer
 adminstered->administered
@@ -23031,6 +23033,7 @@ hismelf->himself
 hisory->history
 histerical->historical, hysterical,
 histgram->histogram
+histgrams->histograms
 histocompatability->histocompatibility
 historgram->histogram
 historgrams->histograms
@@ -23979,6 +23982,8 @@ improvemen->improvement
 improvemenet->improvement
 improvemenets->improvements
 improvemens->improvements
+improvemnt->improvement
+improvemnts->improvements
 improvision->improvisation
 improvmenet->improvement
 improvmenets->improvements
@@ -48219,6 +48224,7 @@ volums->volume
 volxel->voxel
 volxels->voxels
 vonfig->config
+vor->for
 vould->would
 voxes->voxels, voxel,
 voyour->voyeur
