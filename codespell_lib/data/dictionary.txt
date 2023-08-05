@@ -6875,15 +6875,31 @@ azma->asthma
 azmith->azimuth
 azmiths->azimuths
 baase->base, abase,
+baased->based, abased,
+baases->bases, abases,
+baasic->basic
+baasically->basically
+baasics->basics
+baasing->basing, abasing,
+baasis->basis
 bable->babel, table, bible,
+bacame->became
 bacause->because
 baceause->because
+bacend->backend
+bacends->backends
 bacground->background
+bacgrounds->backgrounds
 bachler->bachelor
 bachlers->bachelors
 bacic->basic
+bacically->basically
+bacics->basics
+bacis->basic, basis,
+bacisally->basically
 backaloriette->baccalaureate
 backaloriettes->baccalaureates
+backard->backward
 backards->backwards
 backbround->background
 backbrounds->backgrounds
@@ -6891,7 +6907,8 @@ backedn->backend
 backedns->backends
 backened->backend, blackened,
 backeneds->backends, blackens,
-backets->brackets, baskets, buckets,
+backet->bracket, basket, bucket, backed, backer,
+backets->brackets, baskets, buckets, backers,
 backgorund->background
 backgorunds->backgrounds
 backgound->background
@@ -6936,13 +6953,24 @@ backslases->backslashes
 backslashs->backslashes
 backupped->backed-up, backed up,
 backwad->backwards
+backwar->backward
 backwardss->backwards
 backware->backward
+backwares->backwards
 backwark->backward
+backwarks->backwards
 backwars->backward, backwards,
 backwrad->backward
+backwrads->backwards
+bacome->become, became,
+bacomes->becomes
+bacoming->becoming
+bactrack->backtrack
+bactracked->backtracked
 bactracking->backtracking
+bactracks->backtracks
 bacup->backup
+bacups->backups
 bacward->backward
 bacwards->backwards
 badmitten->badminton
@@ -6956,11 +6984,21 @@ bahaviors->behaviors
 bahaviour->behaviour
 bais->bias, basis, bails, baits,
 baisc->basic
+baiscally->basically
+baiscs->basics
 baised->raised, biased, braised, bailed, baited,
 baises->raises, biases, braises,
 baising->raising, biasing, braising, bailing, baiting,
 bakc->back
+bakcend->backend
+bakcends->backends
+bakcground->background
+bakcgrounds->backgrounds
 bakcrefs->backrefs
+bakcup->backup
+bakcups->backups
+bakcward->backward
+bakcwards->backwards
 bakend->backend, baked,
 bakends->backends
 bakground->background
@@ -6969,12 +7007,29 @@ bakup->backup
 bakups->backups
 bakward->backward
 bakwards->backwards
+balace->balance
+balaced->balanced
+balacer->balancer
+balacers->balancers
+balaces->balances
 balacing->balancing
 balaster->baluster
 balasters->balusters
 balck->black, balk,
 balence->balance
+balenced->balanced
+balencer->balancer
+balencers->balancers
+balences->balances
+balencing->balancing
 ballance->balance
+ballanced->balanced
+ballancer->balancer
+ballancers->balancers
+ballances->balances
+ballancing->balancing
+balnk->blank
+balnks->blanks
 balona->bologna
 balony->baloney, bologna,
 baloon->balloon
@@ -6984,6 +7039,11 @@ banannas->bananas
 banch->branch, bench,
 banched->branched, benched,
 banches->branches, benches,
+banching->branching, benching,
+banchmark->benchmark
+banchmarked->benchmarked
+banchmarking->benchmarking
+banchmarks->benchmarks
 bandwdith->bandwidth
 bandwdiths->bandwidths
 bandwidht->bandwidth
@@ -7028,6 +7088,8 @@ basline->baseline
 baslines->baselines
 bassic->basic
 bassically->basically
+bassics->basics
+bassis->basis
 bastract->abstract
 bastracted->abstracted
 bastracter->abstracter
@@ -7059,13 +7121,21 @@ beacaon->beacon
 beacause->because
 beachead->beachhead
 beacuse->because
-beanches->branches, benches,
+beanch->branch, bench, beach,
+beanched->branched, benched,
+beanches->branches, benches, beaches,
+beanching->branching, benching,
+beanchmark->benchmark
+beanchmarked->benchmarked
+beanchmarking->benchmarking
+beanchmarks->benchmarks
 beaon->beacon
 bearword->bareword
 beastiality->bestiality
 beastiaries->bestiaries
 beastiary->bestiary
 beatiful->beautiful
+beatifully->beautifully
 beauquet->bouquet
 beauquets->bouquets
 beauracracy->bureaucracy
@@ -7082,7 +7152,12 @@ beautifull->beautiful, beautifully,
 beautiy->beauty
 beautyfied->beautified
 beautyfull->beautiful
+beavior->behavior
+beavioral->behavioral
+beaviors->behaviors
 beaviour->behaviour
+beavioural->behavioural
+beaviours->behaviours
 bebefore->before
 bebongs->belongs
 bebore->before
@@ -7091,6 +7166,7 @@ becacdd->because
 becahse->because
 becamae->became
 becames->becomes, became,
+becaming->becoming
 becaouse->because
 becase->because
 becasue->because
@@ -7125,20 +7201,27 @@ becuz->because
 becxause->because
 beding->bedding, begging,
 bedore->before
+beecause->because
 beed->been, bead, beet, beer, bees,
 beeen->been
+beefore->before
+beeforehand->beforehand
 beeing->being, been,
 beeings->beings
 beetween->between
 beetwen->between
 beffer->buffer
 befoer->before
+befoerhand->beforehand
 befor->before
 beforehands->beforehand
 beforere->before
+beforerehand->beforehand
 befores->before
+beforhand->beforehand
 beforing->before
 befure->before
+befurehand->beforehand
 beggin->begin, begging,
 begginer->beginner
 begginers->beginners
@@ -7154,20 +7237,34 @@ begginning->beginning
 beggins->begins
 beghavior->behavior
 beghaviors->behaviors
+begiin->begin
+begiinner->beginner
+begiinners->beginners
 begiinning->beginning
+begiinnings->beginnings
+begiins->begins
 beginer->beginner
+beginers->beginners
 begines->begins
 beging->begging, beginning, being,
+begininer->beginner
+begininers->beginners
 begining->beginning
+beginings->beginnings
 beginining->beginning
 begininings->beginnings
 begininng->beginning
 begininngs->beginnings
 beginn->begin
 beginnig->beginning
+beginnigs->beginnings
 beginnin->beginning
+beginnins->beginnings
+beginnner->beginner
+beginnners->beginners
 beginnning->beginning
 beginnnings->beginnings
+beginns->begins
 behabior->behavior
 behabiors->behaviors
 behabiour->behaviour
@@ -7182,6 +7279,11 @@ behaivour->behaviour
 behaivoural->behavioural
 behaivours->behaviours
 behavies->behaves
+behavio->behavior
+behavioal->behavioral
+behavios->behaviors
+behaviou->behaviour
+behavioual->behavioural
 behavious->behaviour, behaviours,
 behavioutr->behaviour
 behaviro->behavior
@@ -7202,14 +7304,26 @@ behavors->behaviors, behaviours,
 behavour->behaviour
 behavoural->behavioural
 behavours->behaviours
+behavrior->behavior
+behavrioral->behavioral
+behavriors->behaviors
 behavriour->behaviour
 behavrioural->behavioural
 behavriours->behaviours
 behinde->behind
 behing->behind, being,
 behvaior->behavior
+behvaioral->behavioral
+behvaiors->behaviors
 behvaiour->behaviour
+behvaioural->behavioural
+behvaiours->behaviours
+behvior->behavior
+behvioral->behavioral
+behviors->behaviors
 behviour->behaviour
+behvioural->behavioural
+behviours->behaviours
 beigin->begin
 beiginning->beginning
 beind->behind, being,
@@ -7325,6 +7439,9 @@ besed->based
 beseige->besiege
 beseiged->besieged
 beseiging->besieging
+besic->basic
+besically->basically
+besics->basics
 besure->be sure
 beteeen->between
 beteen->between
@@ -7334,6 +7451,7 @@ betrween->between
 bettern->better
 bettery->better, battery,
 bettr->better, bettor,
+bettter->better
 bettween->between
 betwean->between
 betwee->between
