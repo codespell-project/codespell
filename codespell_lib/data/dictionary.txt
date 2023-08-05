@@ -6907,8 +6907,8 @@ backedn->backend
 backedns->backends
 backened->backend, blackened,
 backeneds->backends, blackens,
-backet->bracket, basket, bucket,
-backets->brackets, baskets, buckets,
+backet->bracket, basket, bucket, backed, backer,
+backets->brackets, baskets, buckets, backers,
 backgorund->background
 backgorunds->backgrounds
 backgound->background
