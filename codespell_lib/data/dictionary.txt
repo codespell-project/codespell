@@ -8339,6 +8339,14 @@ cabnets->cabinets
 cacahe->cache
 cacahes->caches
 cace->cache
+cacel->cancel
+caceled->canceled
+caceling->canceling
+cacellation->cancellation
+cacellations->cancellations
+cacelled->cancelled
+cacelling->cancelling
+cacels->cancels
 cach->catch, cache,
 cachable->cacheable
 cacheed->cached
@@ -8381,7 +8389,11 @@ caculator->calculator
 caculators->calculators
 cacuses->caucuses
 cadidate->candidate
+cadidates->candidates
+caeful->careful
 caefully->carefully
+caendar->calendar
+caendars->calendars
 Caesarian->Caesarean
 caese->cease
 caesed->ceased
@@ -8408,14 +8420,17 @@ cahce->cache
 cahced->cached
 cahces->caches
 cahche->cache
+cahched->cached
 cahchedb->cachedb
 cahches->caches
+cahching->caching
 cahcing->caching
 cahcs->caches
 cahdidate->candidate
 cahdidates->candidates
-cahe->cache
-cahes->caches
+cahe->cache, ache,
+cahed->cached, ached,
+cahes->caches, aches,
 cahgne->change
 cahgned->changed
 cahgner->changer
@@ -8424,9 +8439,11 @@ cahgnes->changes
 cahgning->changing
 cahhel->channel
 cahhels->channels
+cahin->chain
 cahined->chained
-cahing->caching
+cahing->caching, aching,
 cahining->chaining
+cahins->chains
 cahnge->change
 cahnged->changed
 cahnges->changes
@@ -8440,8 +8457,12 @@ cahrging->charging
 cahrs->chars
 calaber->caliber
 calalog->catalog
+calandar->calendar
+calandars->calendars
 calander->calendar, colander,
+calanders->calendars, colanders,
 calback->callback
+calbacks->callbacks
 calbirate->calibrate
 calbirated->calibrated
 calbirates->calibrates
@@ -8580,6 +8601,7 @@ caleed->called
 caleee->callee
 calees->callees
 calenday->calendar
+calendays->calendars
 caler->caller
 calescing->coalescing
 calfes->calves
@@ -8596,17 +8618,31 @@ caling->calling, scaling, culling,
 callabck->callback
 callabcks->callbacks
 callack->callback
+callacks->callbacks
 callbacl->callback
+callbacls->callbacks
 callbacsk->callback
+callbacsks->callbacks
 callbak->callback
 callbakc->callback
 callbakcs->callbacks
+callbaks->callbacks
 callbck->callback
+callbcks->callbacks
 callcack->callback
+callcacks->callbacks
 callcain->callchain
 calld->called
 calle->called, caller,
 callef->called, caller,
+callendar->calendar
+callendars->calendars
+callenge->challenge
+callenged->challenged
+callenger->challenger
+callengers->challengers
+callenges->challenges
+callenging->challenging
 calles->calls, called, callers, caller,
 callibrate->calibrate
 callibrated->calibrated
@@ -8634,6 +8670,19 @@ callser->caller
 callsr->calls
 calss->calls, class,
 calsses->classes
+calssic->classic
+calssical->classical
+calssically->classically
+calssification->classification
+calssifications->classifications
+calssified->classified
+calssifier->classifier
+calssifiers->classifiers
+calssifies->classifies
+calssify->classify
+calssifying->classifying
+calssroom->classroom
+calssrooms->classrooms
 calucalte->calculate
 calucalted->calculated
 calucaltes->calculates
@@ -8666,6 +8715,7 @@ caluculations->calculations
 caluculator->calculator
 caluculators->calculators
 calue->value
+calues->values
 calulate->calculate
 calulated->calculated
 calulater->calculator
@@ -8695,7 +8745,24 @@ campain->campaign
 campaing->campaign
 campaings->campaigns
 campains->campaigns
+campanies->companies
+campany->company
+camparability->comparability
+camparable->comparable
+camparative->comparative
+camparatively->comparatively
+camparator->comparator
+camparators->comparators
+campare->compare
+campared->compared
+campares->compares
 camparing->comparing
+camparison->comparison
+camparisons->comparisons
+campatibilities->compatibilities
+campatibility->compatibility
+campatible->compatible
+campatibly->compatibly
 can;t->can't
 canabel->cannibal
 canabels->cannibals
@@ -8716,10 +8783,22 @@ cancele->cancel, cancels,
 canceles->cancels
 cancell->cancel
 cancelles->cancels
+cancelllation->cancellation
+cancelllations->cancellations
+cancellled->cancelled
+cancellling->cancelling
+cancells->cancels
 cances->cancel, cancels, chances,
 cancl->cancel
 cancle->cancel
 cancled->canceled
+cancles->cancels
+cancling->canceling
+cancllation->cancellation
+cancllations->cancellations
+canclled->cancelled
+canclling->cancelling
+cancls->cancels
 candadate->candidate
 candadates->candidates
 candiate->candidate
@@ -8769,16 +8848,48 @@ cannotes->cannot, connotes,
 cannott->cannot
 cannt->cannot
 canocical->canonical
+canocicalization->canonicalization
+canocicalize->canonicalize
+canocicalized->canonicalized
+canocicalizes->canonicalizes
+canocicalizing->canonicalizing
 canoical->canonical
+canoicalization->canonicalization
+canoicalize->canonicalize
+canoicalized->canonicalized
+canoicalizes->canonicalizes
+canoicalizing->canonicalizing
+canonal->canonical
+canonalization->canonicalization
 canonalize->canonicalize
 canonalized->canonicalized
 canonalizes->canonicalizes
 canonalizing->canonicalizing
 canoncal->canonical
+canoncalization->canonicalization
+canoncalize->canonicalize
+canoncalized->canonicalized
+canoncalizes->canonicalizes
+canoncalizing->canonicalizing
 canoncial->canonical
+canoncialization->canonicalization
+canoncialize->canonicalize
+canoncialized->canonicalized
+canoncializes->canonicalizes
+canoncializing->canonicalizing
 canoncical->canonical
+canoncicalization->canonicalization
+canoncicalize->canonicalize
+canoncicalized->canonicalized
+canoncicalizes->canonicalizes
+canoncicalizing->canonicalizing
 canonicalizations->canonicalization
 canonival->canonical
+canonivalization->canonicalization
+canonivalize->canonicalize
+canonivalized->canonicalized
+canonivalizes->canonicalizes
+canonivalizing->canonicalizing
 canot->cannot
 cant'->can't
 cant't->can't
@@ -8796,7 +8907,10 @@ cantalopes->cantaloupes
 canvase->canvas
 canye->canaille
 caost->coast
+capababilities->capabilities
+capabability->capability
 capabable->capable
+capabicities->capabilities
 capabicity->capability
 capabiities->capabilities
 capabiity->capability
@@ -8807,20 +8921,35 @@ capabilitieis->capabilities
 capabilitiies->capabilities
 capabilitires->capabilities
 capabilitiy->capability
+capabillities->capabilities
 capabillity->capability
 capabilties->capabilities
+capabiltities->capabilities
 capabiltity->capability
 capabilty->capability
 capabitilies->capabilities
+capabitily->capability
 capablilities->capabilities
+capablility->capability
 capablities->capabilities
 capablity->capability
+capablle->capable
 capaciy->capacity
 capalize->capitalize
 capalized->capitalized
 capapbilities->capabilities
-capatibilities->capabilities
+capapbility->capability
+capapble->capable
+capapcity->capacity
+capatibilities->capabilities, compatibilities,
+capatibility->compatibility, capability,
+capatible->compatible, capable,
+capaticity->capacity
+capbabilities->capabilities
 capbability->capability
+capbable->capable
+capbailities->capabilities
+capbaility->capability
 capbale->capable
 capela->capella
 caperbility->capability
@@ -8828,9 +8957,16 @@ Capetown->Cape Town
 capibilities->capabilities
 capibility->capability
 capible->capable
+capicity->capacity
 capitolize->capitalize
+cappabilities->capabilities
+cappability->capability
 cappable->capable
+cappacity->capacity
+captabilities->capabilities
+captability->capability
 captable->capable
+captacity->capacity
 capter->chapter, captor,
 capters->chapters, captors,
 captial->capital
@@ -8858,12 +8994,28 @@ caputuring->capturing
 caraboo->caribou
 caraboos->caribous
 carachter->character
+carachteristic->characteristic
+carachteristically->characteristically
+carachteristics->characteristics
+carachterization->characterization
+carachterizations->characterizations
+carachterize->characterize
+carachterized->characterized
+carachterizes->characterizes
+carachterizing->characterizing
+carachters->characters
 caracter->character
 caractere->character
+caracteres->characters
 caracteristic->characteristic
+caracteristically->characteristically
 caracteristics->characteristics
+caracterization->characterization
+caracterizations->characterizations
 caracterize->characterize
 caracterized->characterized
+caracterizes->characterizes
+caracterizing->characterizing
 caracters->characters
 caraff->carafe
 carbus->cardbus
@@ -8871,12 +9023,21 @@ carcas->carcass, Caracas,
 carcus->carcass
 carcuses->carcasses
 carefull->careful, carefully,
+carefullly->carefully
 carefuly->carefully
 careing->caring
+carful->careful
 carfull->careful
+carfully->carefully
 cariage->carriage
 caridge->carriage
+caried->carried
+carier->carrier, career,
+cariers->carriers, careers,
+cariied->carried
 cariier->carrier
+cariiers->carriers
+cariies->carries
 carimonial->ceremonial
 carimonially->ceremonially
 carimonies->ceremonies
@@ -8885,7 +9046,9 @@ carinomial->ceremonial
 carinomially->ceremonially
 carinomies->ceremonies
 carinomy->ceremony
+carisma->charisma
 carismatic->charismatic
+carismatically->charismatically
 Carmalite->Carmelite
 carmonial->ceremonial
 carmonially->ceremonially
@@ -8915,8 +9078,12 @@ carrages->carriages
 carrear->career
 carrears->careers
 carreer->career
+carreers->careers
+carreful->careful
+carrefully->carefully
 carreid->carried
-carrers->careers
+carrer->career, carrier,
+carrers->careers, carriers,
 carret->caret
 carriadge->carriage
 Carribbean->Caribbean
@@ -9015,11 +9182,16 @@ cataclism->cataclysm
 cataclismic->cataclysmic
 cataclismical->cataclysmic
 catagori->category
+catagorical->categorical
+catagorically->categorically
 catagorie->category, categories,
 catagories->categories
 catagorization->categorization
 catagorizations->categorizations
+catagorize->categorize
 catagorized->categorized
+catagorizes->categorizes
+catagorizing->categorizing
 catagory->category
 Cataline->Catiline, Catalina,
 catapillar->caterpillar
@@ -9041,19 +9213,38 @@ categogical->categorical
 categogically->categorically
 categogies->categories
 categogy->category
+categoical->categorical
+categoically->categorically
+categoies->categories
+categoization->categorization
+categoizations->categorizations
+categoize->categorize
+categoized->categorized
+categoizes->categorizes
+categoizing->categorizing
 categorie->category, categories,
 categoy->category
 cateogrical->categorical
 cateogrically->categorically
 cateogries->categories
+cateogrization->categorization
+cateogrizations->categorizations
+cateogrize->categorize
+cateogrized->categorized
+cateogrizes->categorizes
+cateogrizing->categorizing
 cateogry->category
 catepillar->caterpillar
 catepillars->caterpillars
 catergorical->categorical
 catergorically->categorically
 catergories->categories
+catergorization->categorization
+catergorizations->categorizations
 catergorize->categorize
 catergorized->categorized
+catergorizes->categorizes
+catergorizing->categorizing
 catergory->category
 caterpilar->caterpillar
 caterpilars->caterpillars
@@ -9062,6 +9253,12 @@ caterpillers->caterpillars
 catgorical->categorical
 catgorically->categorically
 catgories->categories
+catgorization->categorization
+catgorizations->categorizations
+catgorize->categorize
+catgorized->categorized
+catgorizes->categorizes
+catgorizing->categorizing
 catgory->category
 cathlic->catholic
 catholocism->catholicism
@@ -9070,9 +9267,13 @@ catloaged->cataloged
 catloags->catalogs
 catory->factory
 catpture->capture
+catptured->captured
+catptures->captures
+catpturing->capturing
 catpure->capture
 catpured->captured
 catpures->captures
+catpuring->capturing
 catterpilar->caterpillar
 catterpilars->caterpillars
 catterpillar->caterpillar
@@ -9080,9 +9281,15 @@ catterpillars->caterpillars
 cattleship->battleship
 caucasion->caucasian
 cauched->caught
+caue->cause
+caued->caused
+caues->causes, cause,
+cauesd->caused
+cauess->causes
 caugt->caught
 cauhgt->caught
 cauing->causing
+causeed->caused
 causees->causes
 causeing->causing
 causion->caution
