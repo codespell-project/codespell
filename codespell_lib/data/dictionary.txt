@@ -10683,9 +10683,27 @@ ckecksum->checksum
 ckecksums->checksums
 claaes->classes
 claculate->calculate
+claculated->calculated
+claculates->calculates
+claculating->calculating
 claculation->calculation
+claculations->calculations
+claculator->calculator
+claculators->calculators
+claen->clean
+claendar->calendar
+claendars->calendars
+claened->cleaned
+claener->cleaner
+claeners->cleaners
+claening->cleaning
+claens->cleans
+claenup->cleanup
+claenups->cleanups
 claer->clear
+claered->cleared
 claerer->clearer
+claering->clearing
 claerly->clearly
 claibscale->calibscale
 claime->claim
@@ -10695,6 +10713,8 @@ clairvoiantes->clairvoyants
 clairvoiants->clairvoyants
 clame->claim
 clammer->clamber, clamor,
+clanup->cleanup
+clanups->cleanups
 claravoyant->clairvoyant
 claravoyantes->clairvoyants
 claravoyants->clairvoyants
@@ -10717,38 +10737,81 @@ classe->class, classes,
 classees->classes
 classess->classes
 classesss->classes
+classication->classification
+classications->classifications
 classied->classified
 classifcation->classification
+classifcations->classifications
 classifed->classified
 classifer->classifier
 classifers->classifiers
+classifes->classifies
 classificaion->classification
+classificaions->classifications
+classifiication->classification
+classifiications->classifications
+classifiied->classified
+classifiier->classifier
+classifiiers->classifiers
+classifiies->classifies
 classifiy->classify
 classifiying->classifying
 classrom->classroom
 classroms->classrooms
 classs->class
 classses->classes
+classsic->classic
+classsical->classical
+classsically->classically
+classsification->classification
+classsifications->classifications
+classsified->classified
+classsifier->classifier
+classsifiers->classifiers
+classsifies->classifies
+classsify->classify
+classsifying->classifying
+classsroom->classroom
+classsrooms->classrooms
 clatified->clarified
 claus->clause
 clcoksource->clocksource
 clcosed->closed
-clea->clean
+clea->clean, clear,
+cleaed->cleaned, cleared,
 cleaer->clear, clearer, cleaner,
 cleaered->cleared
+cleaering->clearing
+cleaers->clears, cleaners,
 cleaing->cleaning, clearing,
 clealy->clearly, cleanly,
 cleancacne->cleancache
 cleand->cleaned, cleans, clean,
+cleandar->calendar
+cleandars->calendars
+cleanded->cleaned
+cleander->cleaner, calendar,
+cleanders->cleaners, calendars,
+cleanding->cleaning
+cleands->cleans
+cleandup->cleanup
+cleandups->cleanups
 cleaness->cleanness
+cleann->clean
+cleanned->cleaned
+cleanner->cleaner
+cleanners->cleaners
 cleanning->cleaning
+cleanns->cleans
 cleannup->cleanup
+cleannups->cleanups
 cleanp->cleanup, clean up,
 cleanpu->cleanup
 cleanpus->cleanups
 cleantup->cleanup
 cleare->cleared, clear,
 cleareance->clearance
+clearely->clearly
 cleares->clears
 clearified->clarified
 clearifies->clarifies
@@ -10823,6 +10886,13 @@ clishey->cliché
 clisheys->clichés
 cliuent->client
 cliuents->clients
+cllose->close
+cllosed->closed
+cllosely->closely
+clloser->closer
+clloses->closes
+cllosest->closest
+cllosing->closing
 clloud->cloud
 cllouded->clouded
 clloudes->clouds
@@ -10838,8 +10908,17 @@ clodes->closed, clothes,
 cloding->closing
 cloes->close
 cloesd->closed
+cloese->close
 cloesed->closed
+cloesely->closely
+cloeser->closer
+cloeses->closes
+cloesest->closest
 cloesing->closing
+cloesly->closely
+cloesr->closer
+cloess->closes
+cloesst->closest
 cloisonay->cloisonné
 cloisonays->cloisonnés
 clonez->clones, cloner,
@@ -10847,11 +10926,22 @@ clonning->cloning
 cloreen->chlorine
 clory->glory
 clos->close
+closee->closed, close,
+closeed->closed
+closeely->closely
+closeer->closer
+closees->closes
+closeest->closest
 closeing->closing
 closesly->closely
 closests->closest, closets,
 closig->closing
+closse->close
 clossed->closed
+clossely->closely
+closser->closer
+closses->closes
+clossest->closest
 clossing->closing
 clossion->collision
 clossions->collisions
@@ -10862,6 +10952,12 @@ cloumns->columns
 cloure->closure, clojure,
 clousre->closure
 clsoe->close
+clsoed->closed
+clsoely->closely
+clsoer->closer
+clsoes->closes
+clsoest->closest
+clsoing->closing
 clssroom->classroom
 clssrooms->classrooms
 cluase->clause
@@ -10878,14 +10974,28 @@ cmmand->command
 cmmanded->commanded
 cmmanding->commanding
 cmmands->commands
+cmment->comment
+cmmented->commented
+cmmenting->commenting
+cmments->comments
 cmobination->combination
 cmoputer->computer
 cmoputers->computers
 cna->can
+cnance->chance
+cnances->chances
+cnange->change
+cnanged->changed
+cnanges->changes
+cnanging->changing
 cnannel->channel
+cnannels->channels
 cnat'->can't
 cnat->can't
+cnfig->config
+cnfigs->configs
 cnfiguration->configuration
+cnfigurations->configurations
 cnfigure->configure
 cnfigured->configured
 cnfigures->configures
@@ -10973,6 +11083,11 @@ coalseced->coalesced
 coalsecense->coalescence
 coalsence->coalescence
 coaslescing->coalescing
+cobination->combination
+cobinations->combinations
+cobine->combine
+cobined->combined
+cobines->combines
 cobining->combining
 cobvers->covers
 coccinele->coccinelle
@@ -10982,7 +11097,13 @@ coctail->cocktail
 cocument->document
 cocumentation->documentation
 cocuments->documents
+cocurrency->concurrency
+cocurrent->concurrent
+cocurrently->concurrently
 codde->code, coded, coddle,
+codder->coder
+codders->coders
+coddes->codes, coddles,
 codeen->codeine
 codeing->coding
 codepoitn->codepoint
@@ -10990,6 +11111,9 @@ codesc->codecs
 codespel->codespell
 codesream->codestream
 codition->condition
+coditional->conditional
+coditionally->conditionally
+coditionals->conditionals
 coditioned->conditioned
 coditions->conditions
 codo->code
@@ -11040,7 +11164,11 @@ cofeee->coffee
 cofficient->coefficient
 cofficients->coefficients
 cofidence->confidence
+cofig->config
+cofigs->configs
+cofigurable->configurable
 cofiguration->configuration
+cofigurations->configurations
 cofigure->configure
 cofigured->configured
 cofigures->configures
@@ -11051,6 +11179,10 @@ cofirmations->confirmations
 cofirmed->confirmed
 cofirming->confirming
 cofirms->confirms
+coflict->conflict
+coflicted->conflicted
+coflicting->conflicting
+coflicts->conflicts
 coform->conform
 cofrim->confirm
 cofrimation->confirmation
@@ -11058,6 +11190,11 @@ cofrimations->confirmations
 cofrimed->confirmed
 cofriming->confirming
 cofrims->confirms
+cofuse->confuse
+cofused->confused
+cofuses->confuses
+cofusing->confusing
+cofusion->confusion
 cogniscent->cognizant, cognisant,
 cognizent->cognizant, cognisant,
 cohabitating->cohabiting
@@ -11076,11 +11213,18 @@ coinsides->coincides
 coinsiding->coinciding
 cointain->contain
 cointained->contained
+cointainer->container
+cointainers->containers
 cointaining->containing
 cointains->contains
 cokies->cookies
 colaboration->collaboration
 colaborations->collaborations
+colapse->collapse
+colapsed->collapsed
+colapses->collapses
+colapsible->collapsible
+colapsing->collapsing
 colateral->collateral
 coldplg->coldplug
 coleague->colleague
@@ -11133,6 +11277,7 @@ collecitons->collections
 collecter->collector, collected,
 collecters->collectors
 collectin->collection
+collectins->collections
 collecton->collection
 collectons->collections
 colleection->collection
@@ -11143,6 +11288,7 @@ collektion->collection
 collender->colander
 collenders->colanders
 colletion->collection
+colletions->collections
 collidies->collides
 collisin->collision, collusion,
 collisins->collisions, collusions,
@@ -11167,7 +11313,13 @@ collosal->colossal
 collpase->collapse
 collpased->collapsed
 collpases->collapses
+collpasible->collapsible
 collpasing->collapsing
+collpse->collapse
+collpsed->collapsed
+collpses->collapses
+collpsible->collapsible
+collpsing->collapsing
 collsion->collision
 collsions->collisions
 collumn->column
@@ -11198,7 +11350,13 @@ coloums->columns
 colourfull->colourful, colourfully,
 colourpsace->colourspace
 colourpsaces->colourspaces
+colse->close
 colsed->closed
+colsely->closely
+colser->closer
+colses->closes
+colsest->closest
+colsing->closing
 colud->could, cloud,
 colum->column
 columm->column
