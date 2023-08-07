@@ -9465,6 +9465,11 @@ cellebrations->celebrations
 celler->cellar
 cellers->cellars
 celles->cells
+celll->cell
+celllar->cellular, cellar,
+celllars->cellars
+cellls->cells
+celllular->cellular
 cellpading->cellpadding
 cellst->cells
 cellxs->cells
@@ -9515,7 +9520,20 @@ cerainly->certainly
 cerainty->certainty
 cerate->create
 cerated->created, serrated,
+cerates->creates
 ceratin->certain, keratin,
+cerating->creating
+ceratinly->certainly
+ceratinty->certainty
+ceration->creation
+cerations->creations
+cerative->creative
+ceratively->creatively
+cerativity->creativity
+cerator->creator
+cerators->creators
+cerature->creature
+ceratures->creatures
 cercomstance->circumstance
 cercomstances->circumstances
 cercomstancial->circumstantial
@@ -9552,13 +9570,21 @@ cernomy->ceremony
 ceromony->ceremony
 cerrebral->cerebral
 cerrebrally->cerebrally
+certai->certain
 certaily->certainly
 certaincy->certainty
+certainily->certainly
 certainity->certainty
 certaint->certain
 certaintly->certainly
+certaintty->certainty
 certaion->certain
+certaionly->certainly
+certaionty->certainty
+certaity->certainty
 certan->certain
+certanly->certainly
+certanty->certainty
 certficate->certificate
 certficated->certificated
 certficates->certificates
@@ -9626,7 +9652,25 @@ cervial->cervical, servile, serval,
 cetain->certain
 cetainly->certainly
 cetainty->certainty
+cetificate->certificate
+cetificates->certificates
+cetification->certification
+cetifications->certifications
+cetified->certified
+cetifies->certifies
+cetify->certify
+cetifying->certifying
+cetrain->certain
 cetrainly->certainly
+cetrainty->certainty
+cetrificate->certificate
+cetrificates->certificates
+cetrification->certification
+cetrifications->certifications
+cetrified->certified
+cetrifies->certifies
+cetrify->certify
+cetrifying->certifying
 cetting->setting
 Cgywin->Cygwin
 chaarcter->character
@@ -9634,11 +9678,14 @@ chaarcters->characters
 chaarges->charges
 chacacter->character
 chacacters->characters
-chace->chance, cache,
+chace->chance, cache, chase,
+chaced->cached, chased,
+chaces->chances, caches, chases,
 chache->cache
 chached->cached
 chacheline->cacheline
 chaches->caches
+chacing->caching, chasing,
 chaeck->check
 chaeckbox->checkbox
 chaeckboxes->checkboxes
@@ -9663,12 +9710,18 @@ chaging->changing, charging,
 chagne->change
 chagned->changed
 chagnes->changes
+chagning->changing
 chahge->change
 chahged->changed
 chahges->changes
 chahging->changing
 chaied->chained
 chaing->chain
+chainge->change
+chainged->changed, chained,
+chainges->changes
+chainging->changing, chaining,
+chaings->chains
 chalenge->challenge
 chalenged->challenged
 chalenger->challenger
@@ -9683,6 +9736,16 @@ challangers->challengers
 challanges->challenges
 challanging->challenging
 challege->challenge
+challeged->challenged
+challeger->challenger
+challegers->challengers
+challeges->challenges
+challeging->challenging
+challene->challenge
+challened->challenged
+challener->challenger
+challeners->challengers
+challenes->challenges
 challening->challenging
 chambre->chamber
 chambres->chambers
@@ -9696,6 +9759,10 @@ chanages->changes
 chanaging->changing
 chanceled->canceled
 chanceling->canceling
+chancge->change, chance,
+chancged->changed
+chancges->changes, chances,
+chancging->changing
 chanche->chance, change,
 chanched->changed
 chanches->chances, changes,
@@ -9726,8 +9793,12 @@ changge->change
 changged->changed
 changgeling->changeling
 changges->changes
+changging->changing
 changin->changing
 changlog->changelog
+changue->change
+changued->changed
+changues->changes
 changuing->changing
 chanined->chained
 chaning->chaining, changing,
@@ -9747,6 +9818,7 @@ channle->channel
 channles->channels
 channnel->channel
 channnels->channels
+chanse->chance
 chanses->chances
 chaper->chapter
 characater->character, caricature,
@@ -9777,6 +9849,7 @@ characteization->characterization
 characteor->character
 characteors->characters
 characterclasses->character classes
+charactere->character
 characteres->characters
 characterisic->characteristic
 characterisically->characteristically
@@ -9813,6 +9886,22 @@ charactetr->character
 charactetrs->characters
 charactets->characters
 characther->character
+charactherisation->characterisation
+charactherisations->characterisations
+charactherise->characterise
+charactherised->characterised
+charactherises->characterises
+charactherising->characterising
+charactheristic->characteristic
+charactheristically->characteristically
+charactheristics->characteristics
+charactherization->characterization
+charactherizations->characterizations
+charactherize->characterize
+charactherized->characterized
+charactherizes->characterizes
+charactherizing->characterizing
+characthers->characters
 charactiristic->characteristic
 charactiristically->characteristically
 charactiristics->characteristics
@@ -10098,6 +10187,11 @@ checpoints->checkpoints
 checs->checks
 checsum->checksum
 checsums->checksums
+chedule->schedule
+cheduled->scheduled
+cheduler->scheduler
+chedulers->schedulers
+chedules->schedules
 cheduling->scheduling
 cheeck->cheek, check,
 cheeckbox->checkbox
@@ -10274,6 +10368,7 @@ chizzles->chisels
 chizzling->chiseling
 chked->checked
 chlid->child
+chlidren->children
 chlids->children
 chnage->change
 chnaged->changed
@@ -10296,8 +10391,8 @@ chocolote->chocolate
 chocolotes->chocolates
 chocolots->chocolates
 choicing->choosing
-choise->choice
-choises->choices
+choise->choice, choose,
+choises->choices, chooses,
 choising->choosing
 chooose->choose
 choos->choose
@@ -10312,6 +10407,8 @@ choser->chooser
 chosing->choosing
 chosse->choose, chose,
 chossen->chosen
+chosses->chooses
+chossing->choosing
 chould->should, could,
 chouse->choose, chose, choux,
 chowse->chose, choose,
@@ -10340,6 +10437,13 @@ chuncs->chunks
 chuned->chunked
 churchs->churches
 cick->click
+cicle->cycle, circle, icicle,
+cicled->cycled, circled,
+cicles->cycles, circles, icicles,
+ciclic->cyclic
+ciclical->cyclical
+ciclically->cyclically
+cicling->cycling, circling,
 cicrle->circle
 cicruit->circuit
 cicruits->circuits
@@ -10362,6 +10466,12 @@ ciguretes->cigarettes
 cigurets->cigarettes
 cihpher->cipher
 cihphers->ciphers
+cilck->click
+cilcked->clicked
+cilcker->clicker
+cilckers->clickers
+cilcking->clicking
+cilcks->clicks
 cilent->client, silent,
 cilents->clients, silents, silence,
 cilincer->cylinder, silencer,
@@ -10455,9 +10565,23 @@ circunferences->circumferences
 circunstance->circumstance
 circunstances->circumstances
 circunstantial->circumstantial
+circunvent->circumvent
+circunvented->circumvented
+circunventing->circumventing
+circunvention->circumvention
+circunventions->circumventions
+circunvents->circumvents
+circustance->circumstance
 circustances->circumstances
+circustantial->circumstantial
 circut->circuit
 circuts->circuits
+circuvent->circumvent
+circuvented->circumvented
+circuventing->circumventing
+circuvention->circumvention
+circuventions->circumventions
+circuvents->circumvents
 ciricle->circle
 ciricles->circles
 ciricuit->circuit
@@ -10480,6 +10604,7 @@ ciriticality->criticality
 ciriticals->criticals
 ciritics->critics
 cirlce->circle
+cirlces->circles
 cirle->circle
 cirles->circles
 cirsumstances->circumstances
@@ -10501,6 +10626,8 @@ cirularly->circularly
 cirumflex->circumflex
 cirumstance->circumstance
 cirumstances->circumstances
+citeria->criteria
+citerion->criterion
 civalasation->civilisation
 civalasations->civilisations
 civalazation->civilization
