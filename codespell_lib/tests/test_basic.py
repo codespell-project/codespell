@@ -159,6 +159,16 @@ def test_basic(
     assert cs.main(tmp_path) == 0
 
 
+def test_default_word_parsing(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    fname = tmp_path / "backtick"
+    with fname.open("a") as f:
+        f.write("`abandonned`\n")
+    assert cs.main(fname) == 1, "bad"
+
+
 def test_bad_glob(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
