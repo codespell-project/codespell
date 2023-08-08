@@ -10777,22 +10777,24 @@ clatified->clarified
 claus->clause
 clcoksource->clocksource
 clcosed->closed
-clea->clean, clear,
+clea->clean, clear, cleat,
 cleaed->cleaned, cleared,
-cleaer->clear, clearer, cleaner,
+cleaer->clear, clearer, cleaner, cleaver,
 cleaered->cleared
 cleaering->clearing
-cleaers->clears, cleaners,
+cleaers->clears, cleaners, cleavers,
 cleaing->cleaning, clearing,
 clealy->clearly, cleanly,
 cleancacne->cleancache
 cleand->cleaned, cleans, clean,
 cleandar->calendar
 cleandars->calendars
-cleanded->cleaned
-cleander->cleaner, calendar,
-cleanders->cleaners, calendars,
-cleanding->cleaning
+cleande->cleaned, cleanse,
+cleanded->cleaned, cleansed,
+cleander->cleaner, calendar, cleanser,
+cleanders->cleaners, calendars, cleansers,
+cleandes->cleanses
+cleanding->cleaning, cleansing,
 cleands->cleans
 cleandup->cleanup
 cleandups->cleanups
@@ -10826,6 +10828,7 @@ clearstory->clerestory
 clearstorys->clerestories
 clearted->cleared
 cleary->clearly
+cleas->cleans, clears, cleats,
 cleaup->cleanup
 cleaups->cleanups
 cleck->check
@@ -11101,8 +11104,8 @@ cocurrency->concurrency
 cocurrent->concurrent
 cocurrently->concurrently
 codde->code, coded, coddle,
-codder->coder
-codders->coders
+codder->coder, coddler,
+codders->coders, coddlers,
 coddes->codes, coddles,
 codeen->codeine
 codeing->coding
@@ -11287,8 +11290,16 @@ collegues->colleagues
 collektion->collection
 collender->colander
 collenders->colanders
+collet->collect
+colleted->collected
+colleting->collecting
 colletion->collection
 colletions->collections
+colletive->collective
+colletively->collectively
+colletor->collector
+colletors->collectors
+collets->collects
 collidies->collides
 collisin->collision, collusion,
 collisins->collisions, collusions,
@@ -11353,9 +11364,9 @@ colourpsaces->colourspaces
 colse->close
 colsed->closed
 colsely->closely
-colser->closer
+colser->closer, colder,
 colses->closes
-colsest->closest
+colsest->closest, coldest,
 colsing->closing
 colud->could, cloud,
 colum->column
