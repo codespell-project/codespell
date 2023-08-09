@@ -190,10 +190,7 @@ class Summary:
         keys.sort()
 
         return "\n".join(
-            [
-                "{0}{1:{width}}".format(key, self.summary.get(key), width=15 - len(key))
-                for key in keys
-            ]
+            [f"{key}{self.summary.get(key):{15 - len(key)}}" for key in keys]
         )
 
 
