@@ -11443,6 +11443,10 @@ comatible->compatible
 comback->comeback
 combaination->combination
 combainations->combinations
+combainator->combinator
+combainatorial->combinatorial
+combainatorics->combinatorics
+combainators->combinators
 combaine->combine
 combained->combined
 combainer->combiner
@@ -11451,27 +11455,45 @@ combaines->combines
 combaining->combining
 combanation->combination
 combanations->combinations
+combanator->combinator
+combanatorial->combinatorial
+combanatorics->combinatorics
+combanators->combinators
 combatibility->compatibility
 combatible->compatible
 combiantion->combination
 combiantions->combinations
+combiantor->combinator
+combiantorial->combinatorial
+combiantorics->combinatorics
+combiantors->combinators
 combiation->combination
 combiations->combinations
+combiator->combinator
+combiatorial->combinatorial
+combiatorics->combinatorics
+combiators->combinators
 combie->combine
-combied->combined
+combied->combined, combed,
 combier->combiner
 combiers->combiners
 combies->combines
-combiing->combining
+combiing->combining, combing,
 combinatation->combination
 combinatations->combinations
-combinate->combine
+combinatator->combinator
+combinatatorial->combinatorial
+combinatatorics->combinatorics
+combinatators->combinators
+combinate->combine, combination, combined,
 combinated->combined
 combinateion->combination
 combinateions->combinations
 combinater->combinator, combiner,
+combinaterial->combinatorial
+combinaterics->combinatorics
 combinaters->combinators, combiners,
-combinates->combines
+combinates->combines, combinations,
 combinatin->combination
 combinating->combining
 combinatins->combinations
@@ -11484,6 +11506,10 @@ combinbe->combined
 combind->combined
 combindation->combination
 combindations->combinations
+combindator->combinator
+combindatorial->combinatorial
+combindatorics->combinatorics
+combindators->combinators
 combinde->combined, combine,
 combinded->combined
 combinder->combiner
@@ -11492,8 +11518,16 @@ combindes->combines
 combinding->combining
 combiniation->combination
 combiniations->combinations
+combiniator->combinator
+combiniatorial->combinatorial
+combiniatorics->combinatorics
+combiniators->combinators
 combinination->combination
 combininations->combinations
+combininator->combinator
+combininatorial->combinatorial
+combininatorics->combinatorics
+combininators->combinators
 combinine->combine
 combinined->combined
 combininer->combiner
@@ -11502,6 +11536,10 @@ combinines->combines
 combinining->combining
 combintaion->combination
 combintaions->combinations
+combintaor->combinator
+combintaorial->combinatorial
+combintaorics->combinatorics
+combintaors->combinators
 combusion->combustion
 comceptually->conceptually
 comdemnation->condemnation
@@ -11560,12 +11598,17 @@ comiles->compiles
 comiling->compiling
 comination->combination
 cominations->combinations
-comine->combine
+cominator->combinator
+cominatorial->combinatorial
+cominatorics->combinatorics
+cominators->combinators
+comine->combine, coming,
 comined->combined
 cominer->combiner
 cominers->combiners
-comines->combines
-comining->combining
+comines->combines, comings,
+comining->combining, coming,
+cominings->comings
 comiplation->compilation
 comiplations->compilations
 comiple->compile
@@ -11613,6 +11656,7 @@ comletly->completely
 comlex->complex
 comlexity->complexity
 comliance->compliance
+comliancy->compliancy
 comliant->compliant
 comlicate->complicate
 comlicated->complicated
@@ -11646,15 +11690,15 @@ commant->command, comment,
 commanted->commanded, commented,
 commants->commands, comments,
 commatas->commas, commata,
-commect->connect
-commected->connected
-commecting->connecting
+commect->connect, comment,
+commected->connected, commented,
+commecting->connecting, commenting,
 commection->connection
 commections->connections
 commectivity->connectivity
 commector->connector
 commectors->connectors
-commects->connects
+commects->connects, comments,
 commedian->comedian
 commedians->comedians
 commedic->comedic
@@ -11662,10 +11706,13 @@ commemerative->commemorative
 commemmorate->commemorate
 commemmorating->commemorating
 commen->commend, comment, common,
-commened->commented, commended, commend,
+commene->comment, commend, commence, commune,
+commened->commented, commended, commend, commenced, communed,
+commenes->comments, commends, commences, communes,
 commenet->comment
 commenetd->commented
 commeneted->commented
+commening->commenting, commending, commencing, communing,
 commens->comments, commons,
 commenstatus->commentstatus
 commerical->commercial
@@ -11788,8 +11835,11 @@ commnunication->communication
 commnunity->community
 commoditiy->commodity
 commom->common
-commond->command
-commonds->commands
+commond->command, common, commend,
+commonded->commanded, commended,
+commonding->commanding, commending,
+commondly->commonly
+commonds->commands, commons, commends,
 commongly->commonly
 commont->common, comment,
 commontly->commonly
