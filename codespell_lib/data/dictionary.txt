@@ -13253,7 +13253,7 @@ connctor->connector
 connctors->connectors
 conncts->connects
 conncurrent->concurrent
-connec->connect
+connec->connect, conned,
 conneced->connected
 connecetd->connected
 connecing->connecting
