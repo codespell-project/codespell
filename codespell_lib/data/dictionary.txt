@@ -14359,7 +14359,38 @@ coolent->coolant
 coolot->culotte
 coolots->culottes
 coomand->command
+coomanded->commanded
+coomanding->commanding
+coomands->commands
+cooment->comment
+coomented->commented
+coomenting->commenting
+cooments->comments
+cooming->coming
+coomit->commit
+coomits->commits
+coomitted->committed
+coomittee->committee
+coomittees->committees
+coomitter->committer
+coomitters->committers
+coomitting->committing
 coommand->command
+coommanded->commanded
+coommanding->commanding
+coommands->commands
+coomment->comment
+coommented->commented
+coommenting->commenting
+coomments->comments
+coommit->commit
+coommits->commits
+coommitted->committed
+coommittee->committee
+coommittees->committees
+coommitter->committer
+coommitters->committers
+coommitting->committing
 coomon->common
 coonstantly->constantly
 coonstructed->constructed
@@ -14440,7 +14471,14 @@ copeing->copying
 copie->copy, copies, copied, copier,
 copiese->copies
 copiing->copying
-copiler->compiler
+copilation->compilation
+copilations->compilations
+copile->compile
+copiled->compiled, copied,
+copiler->compiler, copier,
+copilers->compilers, copiers,
+copiles->compiles, copies,
+copiling->compiling
 coplete->complete
 copleted->completed
 copletely->completely
@@ -14458,10 +14496,18 @@ copmutations->computations
 copntroller->controller
 coponent->component
 coponents->components
+coporate->corporate
+coporation->corporation
+coporations->corporations
 copoying->copying
 coppermines->coppermine
 coppied->copied
+coppies->copies
 coppy->copy, choppy,
+coppying->copying
+coppyright->copyright
+coppyrighted->copyrighted
+coppyrights->copyrights
 copright->copyright
 coprighted->copyrighted
 coprights->copyrights
@@ -14517,8 +14563,11 @@ corect->correct
 corected->corrected
 corecting->correcting
 corection->correction
+corections->corrections
 corectly->correctly
 corectness->correctness
+corector->corrector
+corectors->correctors
 corects->corrects
 coreespond->correspond
 coreesponded->corresponded
@@ -14609,8 +14658,16 @@ corrdinating->coordinating
 corrdination->coordination
 corrdinator->coordinator
 corrdinators->coordinators
+correc->correct
+correced->corrected
+correcing->correcting
+correcion->correction
+correcions->corrections
 correclty->correctly
 correcly->correctly
+correcness->correctness
+correcor->corrector
+correcors->correctors
 correcpond->correspond
 correcponded->corresponded
 correcpondence->correspondence
@@ -14622,7 +14679,12 @@ correcpondingly->correspondingly
 correcponds->corresponds
 correcs->corrects
 correctably->correctable
+correcteed->corrected
+correcteing->correcting
+correcteion->correction
+correcteions->corrections
 correctely->correctly
+correcteness->correctness
 correcters->correctors
 correctlly->correctly
 correctnes->correctness
@@ -14835,8 +14897,14 @@ corresspondingly->correspondingly
 corressponds->corresponds
 corret->correct
 correted->corrected
+correting->correcting
 corretion->correction
+corretions->corrections
 corretly->correctly
+corretness->correctness
+corretor->corrector
+corretors->correctors
+correts->corrects
 corridoor->corridor
 corridoors->corridors
 corrispond->correspond
@@ -14854,8 +14922,10 @@ corrispondingly->correspondingly
 corrisponds->corresponds
 corrleation->correlation
 corrleations->correlations
+corrolate->correlate
 corrolated->correlated
 corrolates->correlates
+corrolating->correlating
 corrolation->correlation
 corrolations->correlations
 corrollary->corollary
@@ -14913,6 +14983,7 @@ corruput->corrupt
 cors-site->cross-site
 cors-sute->cross-site
 corse->course, coarse, core, curse, horse, norse, worse, corpse, CORS, torse, corset,
+corses->courses, cores, curses, horses, norses, corpses, torses, corsets,
 corsor->cursor
 corss->cross, course,
 corss-compiling->cross-compiling
@@ -14933,6 +15004,13 @@ corupts->corrupts
 corus->chorus
 corvering->covering
 cosed->closed
+cosist->consist
+cosisted->consisted
+cosistency->consistency
+cosistent->consistent
+cosistently->consistently
+cosisting->consisting
+cosists->consists
 cosnsrain->constrain
 cosnsrained->constrained
 cosntitutive->constitutive
@@ -14942,8 +15020,14 @@ cosntraining->constraining
 cosntrains->constrains, constraints,
 cosntraint->constraint
 cosntraints->constraints
+cosntruct->construct
 cosntructed->constructed
+cosntructing->constructing
+cosntruction->construction
+cosntructions->constructions
 cosntructor->constructor
+cosntructors->constructors
+cosntructs->constructs
 cosnumer->consumer
 cosolation->consolation
 cosole->console
@@ -14962,8 +15046,38 @@ costructions->constructions
 costructor->constructor
 costum->custom, costume,
 costumary->customary
+costumisable->customisable
+costumisation->customisation
+costumisations->customisations
+costumise->customise
+costumised->customised
+costumiser->customiser
+costumisers->customisers
+costumising->customising
+costumizable->customizable
+costumization->customization
+costumizations->customizations
 costumize->customize
+costumized->customized
+costumizer->customizer
+costumizers->customizers
+costumizes->customizes
+costumizing->customizing
 costums->customs, costumes,
+cosumable->consumable
+cosumables->consumables
+cosume->consume, costume,
+cosumed->consumed
+cosumer->consumer
+cosumers->consumers
+cosumes->consumes, costumes,
+cosuming->consuming
+cosumption->consumption
+cosumptions->consumptions
+cotact->contact
+cotacted->contacted
+cotacting->contacting
+cotacts->contacts
 cotain->contain
 cotained->contained
 cotainer->container
@@ -14972,19 +15086,32 @@ cotaining->containing
 cotains->contains
 cotave->octave
 cotaves->octaves
+cotent->content, cogent,
+cotents->contents
 cotnain->contain
 cotnained->contained
 cotnainer->container
 cotnainers->containers
 cotnaining->containing
 cotnains->contains
+cotnent->content
+cotnents->contents
 cotranser->cotransfer
 cotrasferred->cotransferred
 cotrasfers->cotransfers
+cotribute->contribute
+cotributed->contributed
+cotributes->contributes
+cotributing->contributing
+cotribution->contribution
+cotributions->contributions
+cotributor->contributor
+cotributors->contributors
 cotrol->control
 cotroll->control
 cotrolled->controlled
 cotroller->controller
+cotrollers->controllers
 cotrolles->controls
 cotrolling->controlling
 cotrolls->controls
@@ -15029,11 +15156,13 @@ cound->could, count, found,
 counded->counted
 counding->counting
 coundition->condition
+coundn't->couldn't
 counds->counts
 counld->could
 counpound->compound
 counpounds->compounds
 counries->countries, counties,
+counry->country, county,
 counsil->counsel
 counsils->counsels
 countain->contain
@@ -15051,8 +15180,16 @@ counterpar->counterpart
 counterpoart->counterpart
 counterpoarts->counterparts
 countie's->counties, counties', county's,
+countinual->continual
+countinually->continually
+countinuation->continuation
 countinue->continue
+countinued->continued
 countinueq->continueq, continue,
+countinues->continues
+countinuing->continuing
+countinuous->continuous
+countinuously->continuously
 countires->countries, counties,
 countour->contour, counter,
 countours->contours, counters,
@@ -15060,6 +15197,9 @@ countr->counter, contour, country, county,
 countrie's->countries, countries', country's,
 countrs->counters, contours, countries,
 cource->course, coerce, source,
+courced->coerced, sourced, coursed,
+cources->courses, coerces, sources,
+courcing->coercing, sourcing, coursing,
 courtesey->courtesy
 coururier->courier, couturier,
 couse->course, cause,
@@ -15076,28 +15216,46 @@ couters->counters, routers, scouters,
 couting->counting
 coutner->counter
 coutners->counters
+coutries->countries
+coutry->country
 couuld->could
 couuldn't->couldn't
 covarage->coverage
 covarages->coverages
 covarege->coverage
 covection->convection
+covenience->convenience
+coveniences->conveniences
+covenient->convenient
+coveniently->conveniently
 covention->convention
+coventional->conventional
+coventionally->conventionally
 coventions->conventions
 coverd->covered
 covere->cover
+covereage->coverage
+covereages->coverages
+covereed->covered
+covereing->covering
 coveres->covers
 coverge->coverage, converge,
 covergence->convergence
 coverges->coverages, converges,
 coverred->covered
+coversation->conversation
+coversations->conversations
 coversion->conversion
 coversions->conversions
 coversity->coverity
 coverted->converted, covered, coveted,
 coverter->converter
 coverters->converters
-coverting->converting
+coverting->converting, covering, coveting,
+covince->convince
+covinced->convinced
+covinces->convinces
+covincing->convincing
 covnersion->conversion
 covnert->convert
 covnerted->converted
@@ -15112,6 +15270,7 @@ covriance->covariance
 covriate->covariate
 covriates->covariates
 coyp->copy
+coyping->copying
 coypright->copyright
 coyprighted->copyrighted
 coyprights->copyrights
