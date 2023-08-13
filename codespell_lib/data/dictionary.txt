@@ -1910,6 +1910,7 @@ adjancencies->adjacencies
 adjancency->adjacency
 adjancent->adjacent
 adjancently->adjacently
+adjancey->adjacency
 adjasancies->adjacencies
 adjasancy->adjacency
 adjasant->adjacent
@@ -2788,6 +2789,8 @@ aliginments->alignments
 aligins->aligns
 aligment->alignment
 aligments->alignments
+aligmnet->alignment
+aligmnets->alignments
 alignament->alignment
 alignaments->alignments
 alignation->alignment
@@ -5149,6 +5152,7 @@ asbtractors->abstractors
 asbtracts->abstracts
 ascconciated->associated
 asceding->ascending
+ascic->ASCII, aspic, ascetic,
 ascpect->aspect
 ascpects->aspects
 ascript->script, a script,
@@ -5719,6 +5723,8 @@ assumong->assuming
 assumotion->assumption
 assumotions->assumptions
 assumpation->assumption
+assumpetion->assumption
+assumpetions->assumptions
 assumpted->assumed
 assums->assumes
 assumse->assumes
@@ -7708,6 +7714,8 @@ bluetootn->bluetooth
 blured->blurred
 blurr->blur, blurred,
 blutooth->bluetooth
+blythely->blithely
+blythly->blithely
 bnecause->because
 bnndler->bundler
 boads->boards
@@ -8883,6 +8891,7 @@ cannnot->cannot
 cannobt->cannot
 cannonical->canonical
 cannonicalize->canonicalize
+cannonically->canonically
 cannont->cannot
 cannotation->connotation
 cannotations->connotations
@@ -8896,36 +8905,42 @@ canocicalize->canonicalize
 canocicalized->canonicalized
 canocicalizes->canonicalizes
 canocicalizing->canonicalizing
+canocically->canonically
 canoical->canonical
 canoicalization->canonicalization
 canoicalize->canonicalize
 canoicalized->canonicalized
 canoicalizes->canonicalizes
 canoicalizing->canonicalizing
+canoically->canonically
 canonal->canonical, cantonal, canola,
 canonalization->canonicalization
 canonalize->canonicalize
 canonalized->canonicalized
 canonalizes->canonicalizes
 canonalizing->canonicalizing
+canonally->canonically
 canoncal->canonical
 canoncalization->canonicalization
 canoncalize->canonicalize
 canoncalized->canonicalized
 canoncalizes->canonicalizes
 canoncalizing->canonicalizing
+canoncally->canonically
 canoncial->canonical
 canoncialization->canonicalization
 canoncialize->canonicalize
 canoncialized->canonicalized
 canoncializes->canonicalizes
 canoncializing->canonicalizing
+canoncially->canonically
 canoncical->canonical
 canoncicalization->canonicalization
 canoncicalize->canonicalize
 canoncicalized->canonicalized
 canoncicalizes->canonicalizes
 canoncicalizing->canonicalizing
+canoncically->canonically
 canonicalizations->canonicalization
 canonival->canonical
 canonivalization->canonicalization
@@ -8933,6 +8948,7 @@ canonivalize->canonicalize
 canonivalized->canonicalized
 canonivalizes->canonicalizes
 canonivalizing->canonicalizing
+canonivally->canonically
 canot->cannot
 cant'->can't
 cant't->can't
@@ -13325,6 +13341,8 @@ connnections->connections
 connnector->connector
 connnectors->connectors
 connnects->connects
+connonical->canonical
+connonically->canonically
 connot->cannot
 connstrain->constrain
 connstrained->constrained
@@ -13348,6 +13366,7 @@ cononicalize->canonicalize
 cononicalized->canonicalized
 cononicalizes->canonicalizes
 cononicalizing->canonicalizing
+cononically->canonically
 conosuer->connoisseur
 conotation->connotation
 conotations->connotations
@@ -13462,6 +13481,7 @@ consequentely->consequently
 consequentually->consequently
 consequeseces->consequences
 consequetive->consecutive
+consequitive->consecutive
 consequtive->consecutive
 consequtively->consecutively
 consern->concern
@@ -17544,6 +17564,9 @@ diagnoals->diagonals
 diagnol->diagonal
 diagnosics->diagnostics
 diagnositc->diagnostic
+diagnositcs->diagnostics
+diagnostioc->diagnostic
+diagnostiocs->diagnostics
 diagnotic->diagnostic
 diagnotics->diagnostics
 diagnxostic->diagnostic
@@ -17584,6 +17607,13 @@ diasbled->disabled
 diasbles->disables
 diasbling->disabling
 diaspra->diaspora
+diassociate->disassociate, dissociate,
+diassociated->disassociated, dissociated,
+diassociates->disassociates, dissociates,
+diassociating->disassociating, dissociating,
+diassociation->disassociation, dissociation,
+diassociations->disassociations, dissociations,
+diassociative->dissociative
 diaster->disaster
 diatance->distance
 diatancing->distancing
@@ -18099,6 +18129,7 @@ disasembler->disassembler
 disassebled->disassembled
 disassocate->disassociate
 disassocation->disassociation
+disassocations->disassociations
 disasssembler->disassembler
 disasterous->disastrous
 disatisfaction->dissatisfaction
@@ -20631,6 +20662,7 @@ etension->extension
 etensions->extensions
 ethe->the
 etherenet->Ethernet
+etherent->Ethernet
 ethernal->eternal
 ethnocentricm->ethnocentrism
 ethose->those, ethos,
@@ -22520,6 +22552,7 @@ fallabck->fallback
 fallbacl->fallback
 fallbck->fallback
 fallhrough->fallthrough
+fallthough->fallthrough
 fallthruogh->fallthrough
 falltrough->fallthrough
 falsh->flash, false,
@@ -22554,6 +22587,7 @@ Farenheit->Fahrenheit
 farest->fairest, farthest,
 fariar->farrier
 faries->fairies
+farily->fairly
 farmasudic->pharmaceutic
 farmasudical->pharmaceutical
 farmasudics->pharmaceutics
@@ -24375,6 +24409,7 @@ grapical->graphical
 grapics->graphics
 grat->great
 gratefull->grateful
+gratest->greatest, grates,
 gratuitious->gratuitous
 gratutious->gratuitous
 gratutiously->gratuitously
@@ -25418,6 +25453,9 @@ identifyed->identified
 identifyer->identifier
 identifyers->identifiers
 identifyes->identifies
+identiication->identification
+identiications->identifications
+identiied->identified
 identiies->identities, identifies,
 identites->identities
 identitiy->identity
@@ -31228,6 +31266,7 @@ multiplcation->multiplication
 multipled->multiplied
 multipler->multiplier, multiple,
 multiplers->multipliers
+multiplexd->multiplexed
 multipliciaton->multiplication
 multiplicites->multiplicities
 multiplicty->multiplicity
@@ -32233,6 +32272,10 @@ nknown->unknown
 nkow->know
 nkwo->know
 nmae->name
+nmber->number
+nmbered->numbered
+nmbering->numbering
+nmbers->numbers
 nmme->name
 nned->need
 nneeded->needed
@@ -32353,6 +32396,7 @@ nonseperable->non-separable
 nonte->note
 nontheless->nonetheless
 nonthing->nothing
+nonwithstanding->notwithstanding
 noo->no
 noone->no one
 noral->normal, moral,
@@ -32482,6 +32526,7 @@ notififation->notification
 notififations->notifications
 notifiy->notify
 notifiying->notifying
+notifyable->notifiable
 notifycation->notification
 notifycations->notifications
 notifyed->notified
@@ -35580,6 +35625,8 @@ polymorhic->polymorphic
 polymorpic->polymorphic
 polynomal->polynomial
 polynomals->polynomials
+polynomical->polynomial
+polynomicals->polynomials
 polyphonyic->polyphonic
 polypoygon->polypolygon
 polypoylgons->polypolygons
@@ -37074,6 +37121,7 @@ proprely->properly
 propreties->properties
 proprety->property
 propriatery->proprietary
+propriatry->proprietary
 proprieter->proprietor
 proprieters->proprietors
 proprietory->proprietary
@@ -38182,7 +38230,10 @@ reasonbly->reasonably
 reasonnable->reasonable
 reasonnably->reasonably
 reassinging->reassigning
+reassocation->reassociation
+reassocations->reassociations
 reassocition->reassociation
+reassocitions->reassociations
 reasssign->reassign
 reasy->ready, easy,
 reate->create, relate,
@@ -38647,6 +38698,8 @@ redeable->readable
 redeclaation->redeclaration
 redefiend->redefined
 redefiende->redefined
+redefiniton->redefinition
+redefinitons->redefinitions
 redefintion->redefinition
 redefintions->redefinitions
 redemtion->redemption
@@ -38823,6 +38876,10 @@ refererencing->referencing
 referering->referring, refereeing,
 referers->referrer, referrers,
 referes->refers, referees,
+referesh->refresh
+refereshed->refreshed
+refereshes->refreshes
+refereshing->refreshing
 referiang->referring
 refering->referring
 refernce->reference
@@ -43345,6 +43402,8 @@ solger->soldier
 solgered->soldiered
 solgering->soldiering
 solgers->soldiers
+solication->solicitation, solidification,
+solications->solicitations, solidifications,
 soliders->soldiers
 solification->solidification
 soliliquy->soliloquy
@@ -43742,6 +43801,8 @@ specturm->spectrum
 specualtive->speculative
 specufies->specifies
 specufy->specify
+specyfing->specifying
+specyfying->specifying
 spedific->specific
 spedified->specified
 spedify->specify
@@ -45491,6 +45552,7 @@ supportt->support
 supportted->supported
 supportting->supporting
 supportts->supports
+suppory->support
 supposeable->supposable
 supposeded->supposed
 supposedely->supposedly
@@ -48332,6 +48394,7 @@ uncontrained->unconstrained
 uncontrolable->uncontrollable
 unconvential->unconventional
 unconventionnal->unconventional
+unconvertable->unconvertible
 uncorectly->incorrectly
 uncorelated->uncorrelated
 uncorrect->incorrect
@@ -48739,6 +48802,7 @@ unmodifable->unmodifiable
 unmodifed->unmodified
 unmoutned->unmounted
 unnable->unable
+unnacceptable->unacceptable
 unnacquired->unacquired
 unncessarily->unnecessarily
 unncessary->unnecessary
