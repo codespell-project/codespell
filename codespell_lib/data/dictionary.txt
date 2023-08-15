@@ -16105,12 +16105,26 @@ dcoker->docker
 dcokerd->dockerd, docked, docker,
 dcoking->docking
 dcoks->docks
+dcoument->document
+dcoumentation->documentation
+dcoumented->documented
+dcoumenting->documenting
+dcouments->documents
 dcument->document
+dcumentation->documentation
 dcumented->documented
 dcumenting->documenting
 dcuments->documents
 ddelete->delete
+ddition->addition, edition,
+dditional->additional
+dditionally->additionally
+dditions->additions, editions,
 ddons->addons
+ddress->address, dress,
+ddressed->addressed, dressed,
+ddresses->addresses, dresses,
+ddressing->addressing, dressing,
 de-actived->deactivated
 de-duplacate->de-duplicate
 de-duplacated->de-duplicated
@@ -16214,7 +16228,16 @@ deaults->defaults
 deauthenication->deauthentication
 debain->Debian
 debateable->debatable
+debbug->debug
+debbuged->debugged
 debbuger->debugger
+debbugers->debuggers
+debbugged->debugged
+debbugger->debugger
+debbuggers->debuggers
+debbugging->debugging
+debbuging->debugging
+debbugs->debugs
 debehlper->debhelper
 debgu->debug
 debgug->debug
@@ -16254,6 +16277,12 @@ debugginf->debugging
 debuggs->debugs
 debuging->debugging
 decaffinated->decaffeinated
+decalaration->declaration
+decalarations->declarations
+decalarative->declarative
+decalaratively->declaratively
+decalarator->declarator
+decalarators->declarators
 decalare->declare
 decalared->declared
 decalares->declares
@@ -16261,6 +16290,14 @@ decalaring->declaring
 decalration->declaration
 decalrations->declarations
 decalratiosn->declarations
+decalrative->declarative
+decalratively->declaratively
+decalrator->declarator
+decalrators->declarators
+decalre->declare
+decalred->declared
+decalres->declares
+decalring->declaring
 decapsulting->decapsulating
 decathalon->decathlon
 deccelerate->decelerate
@@ -16290,7 +16327,10 @@ decerning->discerning
 decerns->discerns
 deciaml->decimal
 deciamls->decimals
-decices->decides
+decice->device, decide,
+deciced->decided
+decices->devices, decides,
+decicing->deciding
 decidate->dedicate
 decidated->dedicated
 decidates->dedicates
@@ -16314,7 +16354,9 @@ decimials->decimals
 deciple->disciple
 deciples->disciples
 decison->decision
+decisons->decisions
 decission->decision
+decissions->decisions
 declar->declare
 declaraion->declaration
 declaraions->declarations
@@ -16358,9 +16400,30 @@ declated->declared
 declation->declaration
 declations->declarations
 declatory->declaratory
-decleration->declaration
-declerations->declarations
+declerate->decelerate, declare,
+declerated->decelerated, declared,
+declerates->decelerates, declares,
+declerating->decelerating, declaring,
+decleration->declaration, deceleration,
+declerations->declarations, decelerations,
+declerative->declarative
+decleratively->declaratively
+declerator->declarator, decelerator,
+declerators->declarators, decelerators,
+declere->declare
+declered->declared
+decleres->declares
+declering->declaring
 declration->declaration
+declrations->declarations
+declrative->declarative
+declratively->declaratively
+declrator->declarator
+declrators->declarators
+declre->declare
+declred->declared
+declres->declares
+declring->declaring
 decocde->decode
 decocded->decoded
 decocder->decoder
@@ -16433,7 +16496,13 @@ decosers->decoders
 decoses->decodes
 decosing->decoding
 decosings->decodings
+decraese->decrease, decease,
+decraesed->decreased, deceased,
+decraeses->decreases, deceases,
 decraesing->decreasing, deceasing,
+decrase->decrease, decease,
+decrased->decreased, deceased,
+decrases->decreases, deceases,
 decrasing->decreasing, deceasing,
 decration->decoration
 decreace->decrease
@@ -16539,7 +16608,10 @@ deepo->depot
 deepos->depots
 deesil->diesel
 deezil->diesel
-defail->detail
+defail->detail, derail,
+defailed->detailed, derailed,
+defailing->detailing, derailing,
+defails->details, derails,
 defailt->default
 defalt->default
 defalts->defaults
@@ -16620,7 +16692,13 @@ deferals->deferrals
 deferance->deference
 defered->deferred
 deferencing->dereferencing
+deferentiate->differentiate
+deferentiated->differentiated
+deferentiates->differentiates
 deferentiating->differentiating
+deferentiation->differentiation
+deferentiator->differentiator
+deferentiators->differentiators
 defering->deferring
 deferreal->deferral
 deffault->default
@@ -16675,14 +16753,33 @@ definetions->definitions
 definetive->definitive
 definetively->definitively
 definetly->definitely
+definiate->definite
+definiately->definitely
 definiation->definition
+definiations->definitions
+definiative->definitive
+definiatively->definitively
 definied->defined
+definiet->definite
 definietly->definitely
 definifiton->definition
+definine->define, definite,
+definined->defined
+defininely->definitely
+definines->defines
 definining->defining
+defininite->definite
+defininitely->definitely
 defininition->definition
 defininitions->definitions
+defininitive->definitive
+defininitively->definitively
+defininte->definite
+definintely->definitely
 definintion->definition
+definintions->definitions
+definintive->definitive
+definintively->definitively
 definit->definite
 definitian->definition
 definitiely->definitely
@@ -16695,6 +16792,8 @@ definitly->definitely
 definitoin->definition
 definiton->definition
 definitons->definitions
+definitve->definitive
+definitvely->definitively
 definned->defined
 definnition->definition
 defins->defines, define,
@@ -16702,13 +16801,23 @@ defint->definite, define,
 definte->definite, define,
 defintely->definitely
 defintian->definition
+defintians->definitions
 defintie->definite
 defintiely->definitely
 defintiion->definition
 defintiions->definitions
+defintiive->definitive
+defintiively->definitively
 defintion->definition
 defintions->definitions
+defintite->definite
+defintitely->definitely
 defintition->definition
+defintitions->definitions
+defintitive->definitive
+defintitively->definitively
+defintive->definitive
+defintively->definitively
 defintivly->definitively
 defintly->definitely
 defishant->deficient
@@ -16807,17 +16916,28 @@ delalyed->delayed
 delapidated->dilapidated
 delaraction->declaration
 delaractions->declarations
+delaration->declaration
 delarations->declarations
+delarative->declarative
+delaratively->declaratively
+delarator->declarator
+delarators->declarators
 delare->declare
 delared->declared
 delares->declares
 delaring->declaring
 delate->delete
 delayis->delays
+delcaration->declaration
 delcarations->declarations
+delcarative->declarative
+delcaratively->declaratively
+delcarator->declarator
+delcarators->declarators
 delcare->declare
 delcared->declared
 delcares->declares
+delcaring->declaring
 delclaration->declaration
 delection->detection, deletion, selection,
 delections->detections, deletions, selections,
@@ -16838,11 +16958,23 @@ deleteable->deletable
 deleteed->deleted
 deleteing->deleting
 deleteion->deletion
+deletete->delete
+deleteted->deleted
+deletetes->deletes
 deleteting->deleting
-deletiong->deletion
+deletetion->deletion
+deletetions->deletions
+deletiong->deletion, deleting,
 delets->deletes
+delevop->develop
+delevoped->developed
+delevoper->developer
+delevopers->developers
+delevoping->developing
 delevopment->development
+delevopments->developments
 delevopp->develop
+delevops->develops
 delgate->delegate
 delgated->delegated
 delgates->delegates
@@ -16895,6 +17027,9 @@ delimititing->delimiting
 delimitor->delimiter
 delimitors->delimiters
 delimitted->delimited
+delimitter->delimiter
+delimitters->delimiters
+delimitting->delimiting
 delimma->dilemma
 delimted->delimited
 delimter->delimiter
@@ -16968,11 +17103,17 @@ denomitators->denominators
 densitity->density
 densly->densely
 denstiy->density
+dentical->identical
+dentically->identically
+dentification->identification
 dentified->identified
 dentifier->identifier
 dentifiers->identifiers
 dentifies->identifies
+dentify->identify
 dentifying->identifying
+dentities->identities, densities, entities,
+dentity->identity, density, entity,
 deocde->decode
 deocded->decoded
 deocder->decoder
