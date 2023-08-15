@@ -9036,6 +9036,7 @@ capicitance->capacitance
 capicitor->capacitor
 capicitors->capacitors
 capicity->capacity
+capitalzes->capitalizes
 capitolize->capitalize
 cappabilities->capabilities
 cappability->capability
@@ -9517,6 +9518,7 @@ centain->certain
 centenal->sentinel, centennial,
 centenals->sentinels, centennials,
 cententenial->centennial
+centerd->centered
 centerd->centered
 centerfuge->centrifuge
 centerfuges->centrifuges
@@ -10506,6 +10508,7 @@ cimetrical->symmetrical
 cimetricaly->symmetrically
 cimetriclly->symmetrically
 cimetricly->symmetrically
+cimmand->command
 cimmetric->symmetric
 cimmetrical->symmetrical
 cimmetricaly->symmetrically
@@ -18576,6 +18579,7 @@ differernt->different
 differes->differs
 differet->different
 differetnt->different
+differientiated->differentiated
 differnce->difference
 differnces->differences
 differnciate->differentiate
@@ -26467,6 +26471,7 @@ hemipshere->hemisphere
 hemipsheres->hemispheres
 hemishpere->hemisphere
 hemishperes->hemispheres
+hemlholtz->helmholtz
 hemmorhage->haemorrhage, hemorrhage,
 hemmorhaged->haemorrhaged, hemorrhaged,
 hemmorhages->haemorrhages, hemorrhages,
@@ -28410,6 +28415,7 @@ inifinite->infinite
 inifinity->infinity
 inifinte->infinite
 inifite->infinite
+iniital->initial
 iniitalize->initialize
 iniitial->initial
 iniitialization->initialization
@@ -32586,6 +32592,7 @@ moniters->monitors
 monitoing->monitoring
 monitring->monitoring
 monkies->monkeys
+monlayer->monolayer
 monnth->month
 monnths->months
 monochorome->monochrome
@@ -35224,6 +35231,7 @@ orienatated->orientated
 orienatation->orientation
 orienate->orientate, orient, ornate,
 orienation->orientation
+oriended->oriented
 orientaion->orientation
 orientatied->orientated
 oriente->oriented
@@ -50082,6 +50090,7 @@ unepected->unexpected
 unepectedly->unexpectedly
 unequalities->inequalities
 unequality->inequality
+unequivalent->inequivalent
 uner->under
 unerlying->underlying
 unerstand->understand
@@ -52939,12 +52948,3 @@ zylophones->xylophones
 сontainor->container
 сontainors->containers
 сontains->contains
-oriended->oriented
-centerd->centered
-iniital->initial
-capitalzes->capitalizes
-cimmand->command
-monlayer->monolayer
-differientiated->differentiated
-hemlholtz->helmholtz
-unequivalent->inequivalent
