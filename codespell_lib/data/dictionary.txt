@@ -15308,9 +15308,9 @@ cracefulness->gracefulness
 craceless->graceless
 craces->graces, crates,
 crach->crash, crack, coach, crutch,
-crache->cache
+crache->cache, crèche,
 crached->crashed, cached, cracked, coached,
-craches->crashes, caches, coaches, crutches,
+craches->crashes, caches, coaches, crutches, crèches,
 craching->crashing, caching, cracking, coaching,
 crachs->cracks, crashes,
 cracing->gracing
@@ -15435,6 +15435,7 @@ cripts->scripts, crypts,
 crirical->critical
 crirically->critically
 criricals->criticals
+cristal->crystal
 cristalline->crystalline
 cristallisation->crystallisation
 cristallise->crystallise
@@ -15732,7 +15733,7 @@ cushin->cushion
 cushins->cushions
 cusine->cuisine
 cusines->cuisines
-cusom->custom
+cusom->custom, CUSUM,
 cusomary->customary
 cusomer->customer
 cusomers->customers
