@@ -16228,7 +16228,7 @@ deaults->defaults
 deauthenication->deauthentication
 debain->Debian
 debateable->debatable
-debbug->debug
+debbug->debug, bedbug,
 debbuged->debugged
 debbuger->debugger
 debbugers->debuggers
@@ -16237,7 +16237,7 @@ debbugger->debugger
 debbuggers->debuggers
 debbugging->debugging
 debbuging->debugging
-debbugs->debugs
+debbugs->debugs, bedbugs,
 debehlper->debhelper
 debgu->debug
 debgug->debug
@@ -16327,9 +16327,9 @@ decerning->discerning
 decerns->discerns
 deciaml->decimal
 deciamls->decimals
-decice->device, decide,
+decice->device, decide, decile,
 deciced->decided
-decices->devices, decides,
+decices->devices, decides, deciles,
 decicing->deciding
 decidate->dedicate
 decidated->dedicated
