@@ -17124,19 +17124,32 @@ deocdings->decodings
 deoes->does
 deoesn't->doesn't
 deompression->decompression
+depand->depend, demand,
 depandance->dependence
+depandances->dependences
 depandancies->dependencies
 depandancy->dependency
+depandant->dependent
+depandantly->dependently
+depandants->dependents
+depanded->depended, demanded,
 depandence->dependence
 depandences->dependences
 depandencies->dependencies
 depandency->dependency
 depandent->dependent
+depandently->dependently
 depandents->dependents
+depanding->depending, demanding,
+depands->depends, demands,
 deparment->department
 deparmental->departmental
 deparments->departments
+depcrecate->deprecate
 depcrecated->deprecated
+depcrecates->deprecates
+depcrecating->deprecating
+depcrecation->deprecation
 depden->depend
 depdence->dependence
 depdencencies->dependencies
@@ -17148,9 +17161,12 @@ depdences->dependences
 depdencies->dependencies
 depdency->dependency
 depdend->depend
+depdendance->dependence
+depdendances->dependences
 depdendancies->dependencies
 depdendancy->dependency
 depdendant->dependent
+depdendantly->dependently
 depdendants->dependents
 depdended->depended
 depdendence->dependence
@@ -17158,8 +17174,10 @@ depdendences->dependences
 depdendencies->dependencies
 depdendency->dependency
 depdendent->dependent
+depdendently->dependently
 depdendents->dependents
 depdendet->dependent
+depdendetly->dependently
 depdendets->dependents
 depdending->depending
 depdends->depends
@@ -17168,21 +17186,31 @@ depdenences->dependences
 depdenencies->dependencies
 depdenency->dependency
 depdenent->dependent
+depdenently->dependently
 depdenents->dependents
 depdening->depending
+depdennce->dependence
+depdennces->dependences
 depdenncies->dependencies
 depdenncy->dependency
 depdens->depends
 depdent->dependent
 depdents->dependents
+depecate->deprecate
 depecated->deprecated
+depecates->deprecates
+depecating->deprecating
+depecation->deprecation
 depedence->dependence
 depedences->dependences
 depedencies->dependencies
 depedency->dependency
 depedencys->dependencies
 depedent->dependent
+depedently->dependently
+depedents->dependents
 depeding->depending
+depeds->depends
 depencence->dependence
 depencences->dependences
 depencencies->dependencies
@@ -17201,6 +17229,14 @@ dependancys->dependencies
 dependand->dependent
 dependcies->dependencies
 dependcy->dependency
+dependded->depended
+dependdence->dependence
+dependdences->dependences
+dependdencies->dependencies
+dependdency->dependency
+dependdent->dependent
+dependdently->dependently
+dependdents->dependents
 dependding->depending
 dependece->dependence
 dependeces->dependences
@@ -17217,31 +17253,49 @@ dependencied->dependency
 dependenciens->dependencies
 dependencis->dependencies
 dependencys->dependencies
-dependend->dependent, depended,
+dependend->dependent, depended, depend,
+dependended->depended
 dependendence->dependence
 dependendences->dependences
 dependendencies->dependencies
 dependendency->dependency
 dependendent->dependent
+dependendently->dependently
+dependendents->dependents
+dependending->depending
+dependendly->dependently
+dependends->depends, dependents,
 dependenies->dependencies
 dependening->depending
 dependeny->dependency
 dependet->dependent
 dependetly->dependently
-dependices->dependencies
+dependets->dependents
+dependice->dependency, dependence,
+dependices->dependencies, dependences,
 dependicies->dependencies
 dependicy->dependency
 dependig->depending
+dependnce->dependence
+dependnces->dependences
 dependncies->dependencies
 dependncy->dependency
+dependnt->dependent
+dependntly->dependently
+dependnts->dependents
 depened->depend, depended,
 depenedecies->dependencies
 depenedecy->dependency
+depeneded->depended
 depenedence->dependence
 depenedences->dependences
 depenedencies->dependencies
 depenedency->dependency
 depenedent->dependent
+depenedently->dependently
+depenedents->dependents
+depeneding->depending
+depeneds->depends
 depenence->dependence
 depenences->dependences
 depenencies->dependencies
@@ -17267,14 +17321,20 @@ depentences->dependences
 depentencies->dependencies
 depentency->dependency
 depentent->dependent
+depentently->dependently
 depentents->dependents
 depenting->depending
 depents->depends
+depercate->deprecate
 depercated->deprecated
+depercates->deprecates
+depercating->deprecating
+depercation->deprecation
 deperecate->deprecate
 deperecated->deprecated
 deperecates->deprecates
 deperecating->deprecating
+deperecation->deprecation
 deploied->deployed
 deploiment->deployment
 deploiments->deployments
@@ -17289,27 +17349,59 @@ deplying->deploying
 deplyment->deployment
 deplyments->deployments
 deplys->deploys
+depnd->depend
+depndance->dependence
+depndances->dependences
+depndancies->dependencies
+depndancy->dependency
 depndant->dependent
+depndantly->dependently
+depndants->dependents
+depnded->depended
+depndence->dependence
+depndences->dependences
+depndencies->dependencies
+depndency->dependency
+depndent->dependent
+depndently->dependently
+depndents->dependents
+depnding->depending
 depnds->depends
 deporarily->temporarily
 deposint->deposing
 depoy->deploy
 depoyed->deployed
 depoying->deploying
+depoyment->deployment
+depoyments->deployments
+depoys->deploys
+depracate->deprecate
 depracated->deprecated
+depracates->deprecates
+depracating->deprecating
+depracation->deprecation
 depreacte->deprecate
 depreacted->deprecated
+depreactes->deprecates
+depreacting->deprecating
+depreaction->deprecation
 depreacts->deprecates
 depreate->deprecate
 depreated->deprecated
 depreates->deprecates
 depreating->deprecating
+depreation->deprecation
 deprecatedf->deprecated
 depreceate->deprecate, depreciate,
 depreceated->deprecated, depreciated,
+depreceates->deprecates, depreciates,
 depreceating->depreciating, deprecating,
 depreceation->depreciation, deprecation,
+deprectae->deprecate
 deprectaed->deprecated
+deprectaes->deprecates
+deprectaing->deprecating
+deprectaion->deprecation
 deprectat->deprecate
 deprectate->deprecate
 deprectated->deprecated
@@ -17317,7 +17409,11 @@ deprectates->deprecates
 deprectating->deprecating
 deprectation->deprecation
 deprectats->deprecates
+deprecte->deprecate
 deprected->deprecated
+deprectes->deprecates
+deprecting->deprecating
+deprection->deprecation
 depretiate->depreciate, deprecate,
 depretiated->depreciated, deprecated,
 depretiates->depreciates, deprecates,
@@ -17328,15 +17424,28 @@ depricate->deprecate
 depricated->deprecated
 depricates->deprecates
 depricating->deprecating
+deprication->deprecation, deprivation,
 dequed->dequeued
 dequeing->dequeuing
 deques->dequeues
 derageable->dirigible
 deram->dram, dream,
-derective->directive
+derect->direct, detect, defect,
+derected->directed, detected, defected,
+derecting->directing, detecting, defecting,
+derection->direction, detection,
+derections->directions, detections,
+derective->directive, detective, defective,
+derectives->directives, detectives,
+derectly->directly
+derector->detector, director,
+derectories->directories
+derectors->detectors, directors,
 derectory->directory
+derects->directs, detects, defects,
 derefence->dereference
 derefenced->dereferenced
+derefences->dereferences
 derefencing->dereferencing
 derefenrence->dereference
 dereferance->dereference
@@ -17406,7 +17515,11 @@ dermined->determined
 dermines->determines
 dermining->determining
 derogitory->derogatory
+derprecate->deprecate
 derprecated->deprecated
+derprecates->deprecates
+derprecating->deprecating
+derprecation->deprecation
 derrivative->derivative
 derrivatives->derivatives
 derrive->derive
