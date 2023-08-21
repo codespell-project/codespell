@@ -18341,8 +18341,10 @@ diagnotics->diagnostics
 diagnxostic->diagnostic
 diagonale->diagonal
 diagonales->diagonals
+diagrama->diagram
 diagramas->diagrams
 diagramm->diagram
+diagramms->diagrams
 dialaog->dialog
 dialate->dilate
 dialgo->dialog
@@ -18366,7 +18368,13 @@ diaplay->display
 diaplayed->displayed
 diaplaying->displaying
 diaplays->displays
+diappear->disappear
+diappearance->disappearance
+diappearances->disappearances
+diappeared->disappeared
 diappeares->disappears
+diappearing->disappearing
+diappears->disappears
 diaram->diagram, diorama,
 diarea->diarrhea
 diaresis->diaeresis
@@ -18407,8 +18415,11 @@ dicisions->decisions
 dicitonaries->dictionaries
 dicitonary->dictionary
 dicline->decline
+diconnect->disconnect
 diconnected->disconnected
+diconnecting->disconnecting
 diconnection->disconnection
+diconnections->disconnections
 diconnects->disconnects
 dicotomies->dichotomies
 dicotomy->dichotomy
@@ -18449,7 +18460,11 @@ dictonaries->dictionaries
 dictonary->dictionary
 dictrionaries->dictionaries
 dictrionary->dictionary
+dicuss->discuss
 dicussed->discussed
+dicusses->discusses
+dicussing->discussing
+dicussion->discussion
 dicussions->discussions
 did'nt->didn't
 didi->did
@@ -18459,8 +18474,20 @@ didnt't->didn't
 didnt->didn't
 didnt;->didn't
 diea->idea, die,
-diect->direct
+diect->direct, dissect,
+diected->directed, dissected,
+diecting->directing, dissecting,
+diection->direction, dissection,
+diectional->directional
+diections->directions, dissections,
+diective->directive
+diectives->directives
 diectly->directly
+diector->director
+diectories->directories
+diectors->directors
+diectory->directory
+diects->directs, dissects,
 dieing->dying, dyeing,
 dielectirc->dielectric
 dielectircs->dielectrics
@@ -18476,28 +18503,51 @@ diferentiates->differentiates
 diferentiating->differentiating
 diferentiation->differentiation
 diferently->differently
+diferred->differed, deferred,
+diferrence->difference
+diferrences->differences
 diferrent->different
+diferrentiate->differentiate
+diferrentiated->differentiated
+diferrentiates->differentiates
+diferrentiating->differentiating
+diferrentiation->differentiation
+diferrently->differently
+diferring->differing, deferring,
+diferrs->differs
 diffcult->difficult
 diffculties->difficulties
 diffculty->difficulty
 diffeent->different
 diffence->difference
+diffences->differences
 diffenet->different
 diffenrence->difference
 diffenrences->differences
 diffenrent->different
 diffenrently->differently
 diffent->different
+diffentiate->differentiate
+diffentiated->differentiated
+diffentiates->differentiates
 diffentiating->differentiating
+diffentiation->differentiation
+diffently->differently
 differance->difference
 differances->differences
 differant->different
 differantiate->differentiate
+differantiated->differentiated
+differantiates->differentiates
+differantiating->differentiating
 differantiation->differentiation
 differantiator->differentiator
+differantiators->differentiators
 differantion->differentiation
+differantly->differently
 differate->differentiate
 differece->difference
+differeces->differences
 differect->different
 differen->different
 differencess->differences
@@ -18610,6 +18660,12 @@ difusive->diffusive
 difussion->diffusion
 difussive->diffusive
 digesty->digest
+diggest->digest, biggest,
+diggested->digested
+diggesting->digesting
+diggestion->digestion
+diggestive->digestive
+diggests->digests
 diggit->digit
 diggital->digital
 diggits->digits
@@ -18621,6 +18677,12 @@ digitalize->digitize
 digitalizing->digitizing
 digitial->digital
 digitis->digits
+dignose->diagnose
+dignosed->diagnosed
+dignoses->diagnoses
+dignosing->diagnosing
+dignosis->diagnosis
+dignostic->diagnostic
 dignostics->diagnostics
 dilema->dilemma
 dilemas->dilemmas
@@ -18648,17 +18710,43 @@ dimenionsal->dimensional
 dimenionsalities->dimensionalities
 dimenionsality->dimensionality
 dimenison->dimension
+dimenisonal->dimensional
+dimenisonalities->dimensionalities
+dimenisonality->dimensionality
+dimenisons->dimensions
+dimensin->dimension
 dimensinal->dimensional
+dimensinalities->dimensionalities
+dimensinality->dimensionality
+dimensino->dimension
 dimensinoal->dimensional
+dimensinoalities->dimensionalities
+dimensinoality->dimensionality
 dimensinos->dimensions
+dimensins->dimensions
+dimensionail->dimensional
+dimensionailities->dimensionalities
 dimensionaility->dimensionality
+dimensionailties->dimensionalities
+dimensionailty->dimensionality
 dimensiones->dimensions
+dimenson->dimension
 dimensonal->dimensional
+dimensonalities->dimensionalities
+dimensonality->dimensionality
+dimensons->dimensions
 dimenstion->dimension
+dimenstional->dimensional
+dimenstionalities->dimensionalities
+dimenstionality->dimensionality
 dimenstions->dimensions
 dimention->dimension
 dimentional->dimensional
+dimentionalities->dimensionalities
+dimentionality->dimensionality
 dimentionnal->dimensional
+dimentionnalities->dimensionalities
+dimentionnality->dimensionality
 dimentionnals->dimensional
 dimentions->dimensions
 dimesion->dimension
@@ -18672,7 +18760,14 @@ dimesnions->dimensions
 diminsh->diminish
 diminshed->diminished
 diminuitive->diminutive
+dimiss->dismiss
+dimissal->dismissal
+dimissals->dismissals
 dimissed->dismissed
+dimisses->dismisses
+dimissing->dismissing
+dimissive->dismissive
+dimissively->dismissively
 dimmension->dimension
 dimmensioned->dimensioned
 dimmensioning->dimensioning
@@ -18687,6 +18782,7 @@ dinamically->dynamically
 dinamicaly->dynamically
 dinamiclly->dynamically
 dinamicly->dynamically
+dinamics->dynamics
 dingee->dinghy
 dingees->dinghies
 dinghys->dinghies
@@ -18722,9 +18818,19 @@ dircetly->directly
 dircetories->directories
 dircetory->directory
 dircets->directs
+dirct->direct, dict, dirt,
+dircting->directing
+dirction->direction
+dirctional->directional
+dirctions->directions
+dirctive->directive
+dirctives->directives
 dirctly->directly
+dirctor->director
 dirctories->directories
+dirctors->directors
 dirctory->directory
+dircts->directs, dicts,
 direccion->direction
 direcctly->directly
 direcctory->directory
@@ -18736,13 +18842,20 @@ direcdorys->directories
 direcetories->directories
 direcetory->directory
 direcion->direction
+direcional->directional
 direcions->directions
 direciton->direction
 direcitonal->directional
 direcitons->directions
+direcitve->directive
+direcitves->directives
+direcive->directive
+direcives->directives
 direclty->directly
 direcly->directly
+direcor->director
 direcories->directories
+direcors->directors
 direcory->directory
 direcotories->directories
 direcotory->directory
@@ -18795,7 +18908,11 @@ direrctor->director
 direrctories->directories
 direrctors->directors
 direrctory->directory
+diretion->direction
+diretional->directional
+diretions->directions
 diretive->directive
+diretives->directives
 diretly->directly
 diretories->directories
 diretory->directory
@@ -18864,7 +18981,12 @@ disapline->discipline
 disapoint->disappoint
 disapointed->disappointed
 disapointing->disappointing
+disappar->disappear
+disapparance->disappearance
+disapparances->disappearances
 disappared->disappeared
+disapparing->disappearing
+disappars->disappears
 disappearaing->disappearing
 disappeard->disappeared
 disappearred->disappeared
@@ -18908,8 +19030,12 @@ disbale->disable
 disbaled->disabled
 disbales->disables
 disbaling->disabling
+disbilities->disabilities
+disbility->disability
 disble->disable
 disbled->disabled
+disbles->disables
+disbling->disabling
 discared->discarded, discard,
 discareded->discarded
 discarge->discharge
@@ -18944,6 +19070,11 @@ discconetion->disconnection
 discconetions->disconnections
 discconets->disconnects
 disccuss->discuss
+disccussed->discussed
+disccusses->discusses
+disccussing->discussing
+disccussion->discussion
+disccussions->discussions
 discernable->discernible
 dischare->discharge
 discimenation->dissemination
@@ -19033,7 +19164,9 @@ discriptive->descriptive
 discriptor's->descriptor's
 discriptor->descriptor
 discriptors->descriptors
+disctinct->distinct
 disctinction->distinction
+disctinctions->distinctions
 disctinctive->distinctive
 disctinguish->distinguish
 disctionaries->dictionaries
@@ -19076,7 +19209,13 @@ disingenous->disingenuous
 disingenously->disingenuously
 disinguish->distinguish
 disiplined->disciplined
+disirability->desirability
+disirable->desirable
+disirably->desirably
+disire->desire
 disired->desired
+disires->desires
+disiring->desiring
 disitributions->distributions
 diskrete->discrete
 diskretion->discretion
@@ -19084,6 +19223,8 @@ diskretization->discretization
 diskretize->discretize
 diskretized->discretized
 diskrimination->discrimination
+disktop->desktop
+disktops->desktops
 dislaimer->disclaimer
 dislay->display
 dislayed->displayed
@@ -19093,7 +19234,12 @@ dislpay->display
 dislpayed->displayed
 dislpaying->displaying
 dislpays->displays
+disnabilities->disabilities
+disnability->disability
+disnable->disable
 disnabled->disabled
+disnables->disables
+disnabling->disabling
 disobediance->disobedience
 disobediant->disobedient
 disokay->display
@@ -19109,6 +19255,7 @@ dispach->dispatch
 dispached->dispatched
 dispacher->dispatcher
 dispachers->dispatchers
+dispaches->dispatches
 dispaching->dispatching
 dispair->despair
 dispalcement->displacement
@@ -19175,11 +19322,20 @@ disproportiate->disproportionate
 disproportionatly->disproportionately
 disputandem->disputandum
 disregrad->disregard
+disrepancies->discrepancies
+disrepancy->discrepancy
 disrepectful->disrespectful
 disrepectfully->disrespectfully
 disrete->discrete
 disretion->discretion
+disribute->distribute
+disributed->distributed
+disributes->distributes
+disributing->distributing
 disribution->distribution
+disributions->distributions
+disributor->distributor
+disributors->distributors
 disricts->districts
 disrm->disarm
 dissable->disable
@@ -19233,7 +19389,12 @@ dissapperd->disappeared
 dissappered->disappeared
 dissappering->disappearing
 dissappers->disappears
+dissappoint->disappoint
 dissappointed->disappointed
+dissappointing->disappointing
+dissappointment->disappointment
+dissappointments->disappointments
+dissappoints->disappoints
 dissapprove->disapprove
 dissapproves->disapproves
 dissarray->disarray
@@ -19374,6 +19535,10 @@ distiguished->distinguished
 distination->destination, distinction,
 distinations->destinations, distinctions,
 distinative->distinctive
+distince->distance
+distinced->distanced
+distinces->distances
+distincing->distancing
 distingish->distinguish
 distingished->distinguished
 distingishes->distinguishes
@@ -19383,6 +19548,7 @@ distingquished->distinguished
 distinguise->distinguish
 distinguised->distinguished
 distinguises->distinguishes
+distinguising->distinguishing
 distingush->distinguish
 distingushed->distinguished
 distingushes->distinguishes
@@ -19393,7 +19559,12 @@ distinquishable->distinguishable
 distinquished->distinguished
 distinquishes->distinguishes
 distinquishing->distinguishing
+distint->distinct, distant,
+distintion->distinction
 distintions->distinctions
+distintive->distinctive
+distintively->distinctively
+distintly->distinctly, distantly,
 distirbute->distribute
 distirbuted->distributed
 distirbutes->distributes
@@ -19460,10 +19631,18 @@ distroys->destroys
 distrub->disturb
 distrubiotion->distribution
 distrubite->distribute
+distrubte->distribute
 distrubted->distributed, disrupted,
-distrubtion->distribution
+distrubtes->distributes
+distrubting->distributing, disrupting,
+distrubtion->distribution, disruption,
+distrubtions->distributions, disruptions,
+distrubtor->distributor
+distrubtors->distributors
 distrubute->distribute
 distrubuted->distributed
+distrubutes->distributes
+distrubuting->distributing
 distrubution->distribution
 distrubutions->distributions
 distrubutor->distributor
@@ -19480,7 +19659,16 @@ disucsses->discusses
 disucssing->discussing
 disucssion->discussion
 disucssions->discussions
+disucuss->discuss
+disucussed->discussed
+disucusses->discusses
+disucussing->discussing
 disucussion->discussion
+disucussions->discussions
+disuss->discuss, disuse,
+disussed->discussed, disused,
+disusses->discusses, disuses,
+disussing->discussing, disusing,
 disussion->discussion
 disussions->discussions
 disutils->distutils
