@@ -67,6 +67,7 @@ def run_codespell(
         cwd=cwd,
         capture_output=True,
         encoding="utf-8",
+        check=False,
     )
     count = int(proc.stderr.split("\n")[-2])
     return count
