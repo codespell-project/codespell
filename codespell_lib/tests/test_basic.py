@@ -8,7 +8,8 @@ import sys
 from io import StringIO
 from pathlib import Path
 from shutil import copyfile
-from typing import Any, Generator, Optional, Tuple, Union
+from collections.abc import Generator
+from typing import Any, Optional, Union
 
 import pytest
 
@@ -31,7 +32,7 @@ class MainWrapper:
         *args: Any,
         count: bool = True,
         std: bool = False,
-    ) -> Union[int, Tuple[int, str, str]]:
+    ) -> Union[int, tuple[int, str, str]]:
         args = tuple(str(arg) for arg in args)
         if count:
             args = ("--count",) + args
@@ -57,7 +58,7 @@ cs = MainWrapper()
 
 
 def run_codespell(
-    args: Tuple[Any, ...] = (),
+    args: tuple[Any, ...] = (),
     cwd: Optional[Path] = None,
 ) -> int:
     """Run codespell."""

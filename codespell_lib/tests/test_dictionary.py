@@ -4,7 +4,8 @@ import os.path as op
 import pathlib
 import re
 import warnings
-from typing import Any, Dict, Iterable, Optional, Set, Tuple
+from collections.abc import Iterable, Set
+from typing import Any, Optional
 
 import pytest
 
@@ -38,8 +39,8 @@ except ImportError as exp:
         stacklevel=2,
     )
 
-global_err_dicts: Dict[str, Dict[str, Any]] = {}
-global_pairs: Set[Tuple[str, str]] = set()
+global_err_dicts: dict[str, dict[str, Any]] = {}
+global_pairs: Set[tuple[str, str]] = set()
 
 # Filename, should be seen as errors in aspell or not
 _data_dir = op.join(op.dirname(__file__), "..", "data")
@@ -62,8 +63,8 @@ def test_dictionaries_exist() -> None:
 @fname_params
 def test_dictionary_formatting(
     fname: str,
-    in_aspell: Tuple[bool, bool],
-    in_dictionary: Tuple[Iterable[str], Iterable[str]],
+    in_aspell: tuple[bool, bool],
+    in_dictionary: tuple[Iterable[str], Iterable[str]],
 ) -> None:
     """Test that all dictionary entries are valid."""
     errors = []
@@ -137,9 +138,9 @@ single_comma = re.compile(r"^[^,]*,\s*$")
 def _check_err_rep(
     err: str,
     rep: str,
-    in_aspell: Tuple[Optional[bool], Optional[bool]],
+    in_aspell: tuple[Optional[bool], Optional[bool]],
     fname: str,
-    languages: Tuple[Iterable[str], Iterable[str]],
+    languages: tuple[Iterable[str], Iterable[str]],
 ) -> None:
     assert whitespace.search(err) is None, f"error {err!r} has whitespace"
     assert "," not in err, f"error {err!r} has a comma"
@@ -296,8 +297,8 @@ allowed_dups = {
 @pytest.mark.dependency(name="dictionary loop")
 def test_dictionary_looping(
     fname: str,
-    in_aspell: Tuple[bool, bool],
-    in_dictionary: Tuple[bool, bool],
+    in_aspell: tuple[bool, bool],
+    in_dictionary: tuple[bool, bool],
 ) -> None:
     """Test that all dictionary entries are valid."""
     this_err_dict = {}
