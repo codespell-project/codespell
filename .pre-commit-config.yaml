@@ -4,7 +4,7 @@ exclude: ^(\.[^/]*cache/.*)$
 repos:
   - repo: https://github.com/executablebooks/mdformat
     # Do this before other tools "fixing" the line endings
-    rev: 0.7.16
+    rev: 0.7.17
     hooks:
       - id: mdformat
         name: Format Markdown
@@ -58,7 +58,7 @@ repos:
           - -d
           - '{extends: relaxed, rules: {line-length: {max: 90}}}'
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.0.285
+    rev: v0.0.286
     hooks:
       - id: ruff
   - repo:  https://github.com/PyCQA/autoflake
