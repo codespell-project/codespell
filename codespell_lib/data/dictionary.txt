@@ -21617,11 +21617,13 @@ enytime->anytime
 enyway->anyway
 enywhere->anywhere
 epecifica->especifica
-epect->expect
-epected->expected
+epect->expect, elect,
+epectation->expectation
+epectations->expectations
+epected->expected, elected,
 epectedly->expectedly
-epecting->expecting
-epects->expects
+epecting->expecting, electing,
+epects->expects, elects,
 ephememeral->ephemeral
 ephememeris->ephemeris
 ephemereal->ephemeral
@@ -21832,7 +21834,7 @@ erturns->returns
 ervery->every
 erverything->everything
 ervice->service
-ervices->services
+ervices->services, cervices,
 esacpe->escape
 esacped->escaped
 esacpes->escapes
@@ -22183,9 +22185,11 @@ evovling->evolving
 evrithing->everything
 evry->every
 evrybody->everybody
+evryday->everyday
 evryone->everyone
 evrythign->everything
 evrything->everything
+evrytime->every time
 evrywhere->everywhere
 evyrthing->everything
 ewhwer->where
@@ -22274,9 +22278,12 @@ exapnds->expands
 exapnsion->expansion
 exapnsions->expansions
 exat->exact
+exata->exacta
 exatc->exact
+exatca->exacta
 exatcly->exactly
 exatct->exact
+exatcta->exacta
 exatctly->exactly
 exatly->exactly
 exaust->exhaust
@@ -22286,6 +22293,7 @@ exaustion->exhaustion
 exaustive->exhaustive
 exaustively->exhaustively
 excact->exact
+excacta->exacta
 excactly->exactly
 excahcnge->exchange
 excahnge->exchange
@@ -22296,6 +22304,7 @@ excaped->escaped
 excapes->escapes
 excaping->escaping
 excat->exact
+excata->exacta
 excating->exacting
 excatly->exactly
 exccute->execute
