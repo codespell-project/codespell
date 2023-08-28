@@ -20409,13 +20409,21 @@ eagrely->eagerly
 eahc->each
 eailier->earlier
 eaiser->easier
+eaisest->easiest
+eaisly->easily
 ealier->earlier
 ealiest->earliest
 eamcs->emacs
 eample->example
 eamples->examples
 eanable->enable
+eanabled->enabled
+eanables->enables
+eanabling->enabling
 eanble->enable
+eanbled->enabled
+eanbles->enables
+eanbling->enabling
 earch->search, each,
 eariler->earlier
 earily->eerily
@@ -20431,6 +20439,8 @@ eary->eerie
 earyly->eerily
 easely->easily
 easer->easier, eraser,
+easiler->easier
+easilest->easiest
 easili->easily
 easiliy->easily
 easilly->easily
@@ -20439,8 +20449,11 @@ easist->easiest
 easiy->easily
 easly->easily
 easyer->easier
+easyest->easiest
+easyly->easily
 eaturn->return, eaten, Saturn,
 eaxct->exact
+eaxctly->exactly
 eazier->easier
 eaziest->easiest
 eazy->easy
@@ -20464,6 +20477,12 @@ ecounter->encounter
 ecountered->encountered
 ecountering->encountering
 ecounters->encounters
+ecourage->encourage, courage,
+ecouraged->encouraged
+ecouragement->encouragement
+ecouragements->encouragements
+ecourages->encourages
+ecouraging->encouraging
 ecplicit->explicit
 ecplicitly->explicitly
 ecret->secret, erect,
@@ -20531,6 +20550,8 @@ edittors->editors
 edn->end
 ednif->endif
 edning->ending, edging,
+ednpoint->endpoint
+ednpoints->endpoints
 edxpected->expected
 eearly->early
 eeeprom->EEPROM
@@ -20552,7 +20573,10 @@ efectively->effectively
 efectiveness->effectiveness
 efects->effects
 efel->evil
-eferences->references
+eference->reference, preference, deference,
+eferenced->referenced
+eferences->references, preferences,
+eferencing->referencing
 efetivity->effectivity
 effciency->efficiency
 effcient->efficient
@@ -20562,6 +20586,7 @@ effctive->effective
 effctively->effectively
 effctiveness->effectiveness
 effcts->effects
+effec->effect
 effeceively->effectively
 effeciency->efficiency
 effecient->efficient
@@ -20576,9 +20601,13 @@ effeck->effect
 effecked->effected
 effecks->effects
 effeckt->effect
+effecs->effects
 effectice->effective
 effecticely->effectively
+effecticeness->effectiveness
+effectivily->effectively
 effectiviness->effectiveness
+effectivly->effectively
 effectivness->effectiveness
 effectly->effectively
 effedts->effects
@@ -20599,6 +20628,10 @@ effiently->efficiently
 efford->effort, afford,
 effords->efforts, affords,
 effulence->effluence
+eficiencies->efficiencies, deficiencies,
+eficiency->efficiency, deficiency,
+eficient->efficient, deficient,
+eficiently->efficiently, deficiently,
 eforceable->enforceable
 efore->before, afore,
 egal->equal
@@ -20646,7 +20679,15 @@ elasped->elapsed
 elaspes->elapses
 elasping->elapsing
 elction->election
+elctric->electric
+elctrical->electrical
+elctrically->electrically
+elctricity->electricity
 elctromagnetic->electromagnetic
+elctron->electron
+elctronic->electronic
+elctronics->electronics
+elctrons->electrons
 elease->release
 eleased->released
 eleases->releases
@@ -20665,7 +20706,8 @@ electriv->electric
 electrnoics->electronics
 eleemnt->element
 eleent->element
-elegible->eligible
+elegibility->eligibility, illegibility, legibility,
+elegible->eligible, illegible, legible,
 elelement->element
 elelements->elements
 elelment->element
@@ -20677,6 +20719,9 @@ elemantary->elementary
 elemement->element
 elemements->elements
 elememt->element
+elememtal->elemental
+elememtary->elementary
+elememts->elements
 elemen->element
 elemenent->element
 elemenental->elemental
@@ -20699,6 +20744,9 @@ eleminated->eliminated
 eleminates->eliminates
 eleminating->eliminating
 elemination->elimination
+elemnet->element
+elemnetal->elemental
+elemnetary->elementary
 elemnets->elements
 elemnt->element
 elemntal->elemental
@@ -20717,6 +20765,9 @@ eletron->electron
 eletronic->electronic
 eletronics->electronics
 eletrons->electrons
+elgance->elegance
+elgant->elegant
+elgantly->elegantly
 elgible->eligible
 elicided->elicited
 eligability->eligibility
@@ -20733,7 +20784,11 @@ elimiation->elimination
 eliminetaion->elimination
 elimintate->eliminate
 eliminte->eliminate
+elimnate->eliminate
 elimnated->eliminated
+elimnates->eliminates
+elimnating->eliminating
+elimnation->elimination
 elipse->ellipse, eclipse,
 elipses->ellipses, eclipses, ellipsis,
 elipsis->ellipsis, eclipses,
@@ -20743,10 +20798,15 @@ eliptical->elliptical
 elipticity->ellipticity
 ellapsed->elapsed
 ellected->elected
+ellegance->elegance
+ellegant->elegant
+ellegantly->elegantly
 ellement->element
 ellemental->elemental
 ellementals->elementals
 ellements->elements
+elligibility->eligibility, illegibility,
+elligible->eligible, illegible,
 elliminate->eliminate
 elliminated->eliminated
 elliminates->eliminates
@@ -20801,10 +20861,25 @@ embarrased->embarrassed
 embarrasing->embarrassing
 embarrasingly->embarrassingly
 embarrasment->embarrassment
+embbed->embed, ebbed,
 embbedded->embedded
+embbedder->embedder
+embbedders->embedders
+embbedding->embedding
 embbeded->embedded
+embbeder->embedder
+embbeders->embedders
+embbeding->embedding
+embdded->embedded
 embdder->embedder
+embdders->embedders
+embdding->embedding
+embded->embed, embedded,
 embdedded->embedded
+embdedder->embedder
+embdedders->embedders
+embdedding->embedding
+embding->embedding
 embebbed->embedded
 embedd->embed
 embeddded->embedded
@@ -20815,8 +20890,14 @@ embeddeding->embedding
 embedds->embeds
 embeded->embedded
 embededded->embedded
+embeder->embedder
+embeders->embedders
 embeding->embedding
 embeed->embed
+embeedded->embedded
+embeedder->embedder
+embeedders->embedders
+embeedding->embedding
 embezelled->embezzled
 emblamatic->emblematic
 embold->embolden
@@ -20853,6 +20934,8 @@ emmisarry->emissary
 emmisary->emissary
 emmision->emission
 emmisions->emissions
+emmission->emission
+emmissions->emissions
 emmit->emit
 emmited->emitted
 emmiting->emitting
@@ -20889,6 +20972,7 @@ empressed->impressed
 empressing->impressing
 empressive->impressive
 empressively->impressively
+emprical->empirical
 emprically->empirically
 emprisoned->imprisoned
 emprove->improve
@@ -20914,9 +20998,15 @@ emulaters->emulators, emulates,
 emultor->emulator
 emultors->emulators
 enabe->enable
+enabed->enabled
 enabel->enable
+enabeld->enabled
+enabele->enable
 enabeled->enabled
+enabeles->enables
 enabeling->enabling
+enabels->enables
+enabes->enables
 enabing->enabling
 enabledi->enabled
 enableing->enabling
@@ -20943,23 +21033,35 @@ enbraced->embraced
 enbracer->embracer
 enbraces->embraces
 enbracing->embracing
+encapsualte->encapsulate
+encapsualted->encapsulated
 encapsualtes->encapsulates
+encapsualting->encapsulating
+encapsualtion->encapsulation
 encapsulatzion->encapsulation
+encapsulte->encapsulate
+encapsulted->encapsulated
+encapsultes->encapsulates
+encapsulting->encapsulating
 encapsultion->encapsulation
 encaspulate->encapsulate
 encaspulated->encapsulated
 encaspulates->encapsulates
 encaspulating->encapsulating
 encaspulation->encapsulation
-enchance->enhance
+enchance->enhance, enchant,
 enchanced->enhanced, enchanted,
 enchancement->enhancement, enchantment,
 enchancements->enhancements, enchantments,
+enchances->enhances, enchants,
+enchancing->enhancing, enchanting,
 enclosng->enclosing
 enclosue->enclosure
 enclosung->enclosing
-enclude->include
-encluding->including
+enclude->include, exclude,
+encluded->included, excluded,
+encludes->includes, excludes,
+encluding->including, excluding,
 encocde->encode
 encocded->encoded
 encocder->encoder
@@ -21019,33 +21121,55 @@ encoutered->encountered
 encoutering->encountering
 encouters->encounters
 encoutner->encounter
+encoutnered->encountered
+encoutnering->encountering
 encoutners->encounters
+encoutter->encounter
+encouttered->encountered
 encouttering->encountering
+encoutters->encounters
 encrcypt->encrypt
 encrcypted->encrypted
+encrcypting->encrypting
 encrcyption->encryption
 encrcyptions->encryptions
 encrcypts->encrypts
 encript->encrypt
 encripted->encrypted
+encripting->encrypting
 encription->encryption
 encriptions->encryptions
 encripts->encrypts
 encrpt->encrypt
 encrpted->encrypted
+encrpting->encrypting
 encrption->encryption
 encrptions->encryptions
 encrpts->encrypts
 encrupted->encrypted
 encryped->encrypted
+encrypitng->encrypting
 encrypiton->encryption
 encrypte->encrypted, encrypt,
+encryptiing->encrypting
 encryptiion->encryption
 encryptio->encryption
-encryptiong->encryption
+encryptiong->encryption, encrypting,
+encryt->encrypt
+encryted->encrypted
+encryting->encrypting
 encrytion->encryption
+encrytp->encrypt
 encrytped->encrypted
+encrytping->encrypting
+encrytpion->encryption
+encrytps->encrypts
+encrytpt->encrypt
+encrytpted->encrypted
+encrytpting->encrypting
 encrytption->encryption
+encrytpts->encrypts
+encryts->encrypts
 encupsulates->encapsulates
 encylopedia->encyclopedia
 encypt->encrypt
@@ -21107,6 +21231,9 @@ enebaled->enabled
 enebales->enables
 enebaling->enabling
 eneble->enable
+enebled->enabled
+enebles->enables
+enebling->enabling
 ened->need
 enegeries->energies
 enegery->energy
@@ -21148,6 +21275,9 @@ engieers->engineers
 engieneer->engineer
 engieneers->engineers
 enginee->engine, engineer,
+engineeer->engineer
+engineeering->engineering
+engineeers->engineers
 enginees->engines, engineers,
 enginge->engine
 enginges->engines
@@ -21170,7 +21300,12 @@ enhacing->enhancing
 enhancd->enhanced
 enhancment->enhancement
 enhancments->enhancements
+enhane->enhance, ethane,
 enhaned->enhanced
+enhanement->enhancement
+enhanements->enhancements
+enhanes->enhances
+enhaning->enhancing
 enhence->enhance
 enhenced->enhanced
 enhencement->enhancement
@@ -21183,6 +21318,10 @@ enities->entities
 enitities->entities
 enitity->entity
 enitre->entire
+enitrely->entirely
+enitrety->entirety
+enitties->entities
+enitty->entity
 enity->entity, enmity,
 enivornment->environment
 enivornments->environments
@@ -21250,6 +21389,11 @@ enrties->entries
 enrtries->entries
 enrtry->entry
 enrty->entry
+enrypt->encrypt
+enrypted->encrypted
+enrypting->encrypting
+enryption->encryption
+enrypts->encrypts
 ensconsed->ensconced
 entaglements->entanglements
 entend->extend, intend,
@@ -21267,6 +21411,8 @@ entereing->entering
 enterie->entry
 enteries->entries
 enterily->entirely
+enternal->internal, external, eternal,
+enternally->internally, externally, eternally,
 enterprice->enterprise
 enterprices->enterprises
 entery->entry
@@ -21332,11 +21478,22 @@ entusiastically->enthusiastically
 enty->entry, entity,
 enuf->enough
 enulation->emulation
+enumable->enumerable
+enumarable->enumerable
 enumarate->enumerate
 enumarated->enumerated
 enumarates->enumerates
 enumarating->enumerating
+enumaration->enumeration
+enumarations->enumerations
+enumarator->enumerator
+enumarators->enumerators
+enumate->enumerate
+enumated->enumerated
+enumates->enumerates
+enumating->enumerating
 enumation->enumeration
+enumations->enumerations
 enumearate->enumerate
 enumearation->enumeration
 enumerater->enumerator, enumerated, enumerates, enumerate,
@@ -21409,22 +21566,38 @@ environemt->environment
 environemtal->environmental
 environemts->environments
 environent->environment
+environental->environmental
+environents->environments
 environmane->environment
 environmenet->environment
+environmenetal->environmental
 environmenets->environments
 environmet->environment
+environmetal->environmental
 environmets->environments
 environmnet->environment
+environmnetal->environmental
+environmnets->environments
 environmont->environment
+environmontal->environmental
+environmonts->environments
 environnement->environment
+environnemental->environmental
+environnements->environments
 environtment->environment
+environtmental->environmental
+environtments->environments
 envoke->invoke, evoke,
 envoked->invoked, evoked,
 envoker->invoker, evoker,
 envokes->invokes, evokes,
 envoking->invoking, evoking,
+envolution->evolution
 envolutionary->evolutionary
-envolved->involved
+envolve->involve, evolve,
+envolved->involved, evolved,
+envolves->involves, evolves,
+envolving->involving, evolving,
 envorce->enforce
 envrion->environ
 envrionment->environment
@@ -21438,8 +21611,11 @@ envrironments->environments
 envrirons->environs
 envvironment->environment
 enxt->next
+enymore->anymore
 enything->anything
+enytime->anytime
 enyway->anyway
+enywhere->anywhere
 epecifica->especifica
 epect->expect
 epected->expected
