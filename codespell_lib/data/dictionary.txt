@@ -9036,6 +9036,10 @@ capicitance->capacitance
 capicitor->capacitor
 capicitors->capacitors
 capicity->capacity
+capitalze->capitalize
+capitalzed->capitalized
+capitalzes->capitalizes
+capitalzing->capitalizing
 capitolize->capitalize
 cappabilities->capabilities
 cappability->capability
@@ -10506,6 +10510,10 @@ cimetrical->symmetrical
 cimetricaly->symmetrically
 cimetriclly->symmetrically
 cimetricly->symmetrically
+cimmand->command
+cimmanded->commanded
+cimmanding->commanding
+cimmands->commands
 cimmetric->symmetric
 cimmetrical->symmetrical
 cimmetricaly->symmetrically
@@ -18576,6 +18584,10 @@ differernt->different
 differes->differs
 differet->different
 differetnt->different
+differientiate->differentiate
+differientiated->differentiated
+differientiates->differentiates
+differientiating->differentiating
 differnce->difference
 differnces->differences
 differnciate->differentiate
@@ -26467,6 +26479,7 @@ hemipshere->hemisphere
 hemipsheres->hemispheres
 hemishpere->hemisphere
 hemishperes->hemispheres
+hemlholtz->Helmholtz
 hemmorhage->haemorrhage, hemorrhage,
 hemmorhaged->haemorrhaged, hemorrhaged,
 hemmorhages->haemorrhages, hemorrhages,
@@ -28410,7 +28423,9 @@ inifinite->infinite
 inifinity->infinity
 inifinte->infinite
 inifite->infinite
+iniital->initial
 iniitalize->initialize
+iniitally->initially
 iniitial->initial
 iniitialization->initialization
 iniitializations->initializations
@@ -32586,6 +32601,8 @@ moniters->monitors
 monitoing->monitoring
 monitring->monitoring
 monkies->monkeys
+monlayer->monolayer
+monlayers->monolayers
 monnth->month
 monnths->months
 monochorome->monochrome
@@ -35224,6 +35241,7 @@ orienatated->orientated
 orienatation->orientation
 orienate->orientate, orient, ornate,
 orienation->orientation
+oriended->oriented
 orientaion->orientation
 orientatied->orientated
 oriente->oriented
@@ -50082,6 +50100,7 @@ unepected->unexpected
 unepectedly->unexpectedly
 unequalities->inequalities
 unequality->inequality
+unequivalent->nonequivalent
 uner->under
 unerlying->underlying
 unerstand->understand
