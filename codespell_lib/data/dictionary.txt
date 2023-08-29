@@ -25705,6 +25705,17 @@ geenric->generic
 geenrics->generics
 geeoteen->guillotine
 geeral->general
+geerally->generally
+geerate->generate
+geerated->generated
+geerates->generates
+geerating->generating
+geeration->generation
+geerations->generations
+geerator->generator
+geerators->generators
+geeric->generic
+geerics->generics
 gemetrical->geometrical
 gemetry->geometry
 gemoetry->geometry
@@ -25767,6 +25778,7 @@ generaing->generating
 generaion->generation
 generaions->generations
 generall->generally, general,
+generallly->generally
 generaly->generally
 generalyl->generally
 generalyse->generalise
@@ -25836,8 +25848,32 @@ generilizes->generalizes
 generiously->generously
 generl->general
 generla->general
+generlaisation->generalisation
+generlaisations->generalisations
+generlaise->generalise
+generlaised->generalised
+generlaises->generalises
+generlaising->generalising
+generlaization->generalization
+generlaizations->generalizations
+generlaize->generalize
+generlaized->generalized
 generlaizes->generalizes
+generlaizing->generalizing
+generlaly->generally
 generlas->generals
+generlisation->generalisation
+generlisations->generalisations
+generlise->generalise
+generlised->generalised
+generlises->generalises
+generlising->generalising
+generlization->generalization
+generlizations->generalizations
+generlize->generalize
+generlized->generalized
+generlizes->generalizes
+generlizing->generalizing
 generlly->generally
 generte->generate
 generted->generated
@@ -25913,6 +25949,8 @@ geomteric->geometric
 geomterically->geometrically
 geomteries->geometries
 geomtery->geometry
+geomtric->geometric
+geomtrically->geometrically
 geomtries->geometries
 geomtry->geometry
 geomtrys->geometries
@@ -26068,11 +26106,15 @@ gneric->generic
 gnerics->generics
 gnorung->ignoring
 gobal->global
+gobally->globally
 gocde->gcode
 godess->goddess
 godesses->goddesses
 Godounov->Godunov
+goemetric->geometric
+goemetrically->geometrically
 goemetries->geometries
+goemetry->geometry
 goess->goes
 gogether->together
 gogin->going, Gauguin,
@@ -26083,6 +26125,10 @@ golab->global, go lab,
 golbal->global
 golbally->globally
 golbaly->globally
+gometric->geometric
+gometrically->geometrically
+gometries->geometries
+gometry->geometry
 gonig->going
 gool->ghoul
 gord->gourd
@@ -26102,6 +26148,7 @@ Gothenberg->Gothenburg
 Gottleib->Gottlieb
 goup->group
 gouped->grouped
+gouping->grouping
 goups->groups
 gouvener->governor
 govement->government
@@ -26166,8 +26213,13 @@ granuality->granularity
 granualtiry->granularity
 granularty->granularity
 granulatiry->granularity
+grapgic->graphic
+grapgical->graphical
 grapgics->graphics
+graphci->graphic
+graphcial->graphical
 graphcis->graphics
+graphial->graphical
 graphis->graphics
 grapic->graphic
 grapical->graphical
@@ -26402,6 +26454,8 @@ gymnist->gymnast
 gymnistic->gymnastic
 gymnistics->gymnastics
 gymnists->gymnasts
+gyph->glyph
+gyphs->glyphs
 gziniflate->gzinflate
 gziped->gzipped
 haa->has
@@ -26409,14 +26463,25 @@ haave->have
 habaeus->habeas
 habbit->habit
 habeus->habeas
+habilities->abilities
 hability->ability
 Habsbourg->Habsburg
 hace->have
 hach->hatch, hack, hash,
 hachish->hackish
 haders->headers, shaders, haters,
+hadle->handle
+hadled->handled
+hadler->handler
+hadlers->handlers
+hadles->handles
 hadling->handling
+hadnle->handle
+hadnled->handled
 hadnler->handler
+hadnlers->handlers
+hadnles->handles
+hadnling->handling
 haeder->header
 haemorrage->haemorrhage
 haev->have, heave,
@@ -26493,9 +26558,15 @@ hanlding->handling
 hanldle->handle
 hanle->handle
 hanled->handled
+hanler->handler
+hanlers->handlers
 hanles->handles
 hanling->handling
 hannging->hanging
+hanppen->happen
+hanppened->happened
+hanppening->happening
+hanppens->happens
 hanshake->handshake
 hanshakes->handshakes
 hansome->handsome
@@ -26602,8 +26673,10 @@ hax->hex
 haynus->heinous
 hazzle->hassle
 hda->had
+headded->headed, he added,
 headder->header
 headders->headers
+headding->heading
 heade->header, head,
 headerr->header
 headerrs->headers
@@ -26635,6 +26708,10 @@ heighit->height
 heighteen->eighteen
 heigt->height
 heigth->height
+heigths->heights
+heigts->heights
+heirachical->hierarchical
+heirachically->hierarchically
 heirachies->hierarchies
 heirachy->hierarchy
 heirarchic->hierarchic
@@ -26679,6 +26756,9 @@ hepler->helper
 heplers->helpers
 hepling->helping
 herad->heard, Hera,
+herarchical->hierarchical
+herarchically->hierarchically
+herarchies->hierarchies
 herarchy->hierarchy
 herat->heart
 heree->here
@@ -26703,8 +26783,10 @@ hetrogeneous->heterogeneous
 hetrogenous->heterogenous, heterogeneous,
 heuristc->heuristic
 heuristcs->heuristics
+heursitic->heuristic
 heursitics->heuristics
 heusitic->heuristic
+heusitics->heuristics
 hevy->heavy
 hexademical->hexadecimal
 hexdecimal->hexadecimal
@@ -26718,6 +26800,7 @@ hhttp->http
 hhttps->https
 hiarchical->hierarchical
 hiarchically->hierarchically
+hiarchies->hierarchies
 hiarchy->hierarchy
 hiddden->hidden
 hidded->hidden
@@ -26734,22 +26817,32 @@ hieghts->heights
 hiena->hyena
 hienas->hyenas
 hierachical->hierarchical
+hierachically->hierarchically
 hierachies->hierarchies
+hierachrical->hierarchical
+hierachrically->hierarchically
 hierachries->hierarchies
 hierachry->hierarchy
 hierachy->hierarchy
 hierachycal->hierarchical
 hierarachical->hierarchical
+hierarachically->hierarchically
+hierarachies->hierarchies
 hierarachy->hierarchy
 hierarchichal->hierarchical
 hierarchichally->hierarchically
 hierarchie->hierarchy
 hierarcical->hierarchical
+hierarcically->hierarchically
+hierarcies->hierarchies
 hierarcy->hierarchy
 hierarhcical->hierarchical
 hierarhcically->hierarchically
 hierarhcies->hierarchies
 hierarhcy->hierarchy
+hierchical->hierarchical
+hierchically->hierarchically
+hierchies->hierarchies
 hierchy->hierarchy
 hieroglph->hieroglyph
 hieroglphs->hieroglyphs
@@ -26843,12 +26936,25 @@ hipotheses->hypotheses
 hipothesis->hypothesis
 hipothetical->hypothetical
 hipothetically->hypothetically
+hirachical->hierarchical
+hirachically->hierarchically
 hirachies->hierarchies
 hirachy->hierarchy
+hirarchical->hierarchical
+hirarchically->hierarchically
 hirarchies->hierarchies
 hirarchy->hierarchy
+hirarcical->hierarchical
+hirarcically->hierarchically
 hirarcies->hierarchies
+hirarcy->hierarchy
+hirearchical->hierarchical
+hirearchically->hierarchically
+hirearchies->hierarchies
 hirearchy->hierarchy
+hirearcical->hierarchical
+hirearcically->hierarchically
+hirearcies->hierarchies
 hirearcy->hierarchy
 hismelf->himself
 hisory->history
@@ -26975,7 +27081,13 @@ hrough->through
 hsa->has
 hsell->shell
 hsi->his
+hsitorian->historian
 hsitorians->historians
+hsitoric->historic
+hsitorical->historical
+hsitorically->historically
+hsitories->histories
+hsitory->history
 hsotname->hostname
 hsould'nt->shouldn't
 hsould->should
@@ -26988,6 +27100,7 @@ htere->there, here,
 htey->they
 htikn->think
 hting->thing
+htings->things
 htink->think
 htis->this
 htmp->html
@@ -26996,6 +27109,7 @@ htpt->http
 htpts->https
 htting->hitting
 hueristic->heuristic
+hueristics->heuristics
 huld->held, hold,
 humber->number
 humer->humor, humour,
@@ -27012,6 +27126,7 @@ hungs->hangs, hung,
 hunrgy->hungry
 huricane->hurricane
 huristic->heuristic
+huristics->heuristics
 hurse->hearse, nurse,
 husban->husband
 hussel->hustle, mussel,
@@ -27030,6 +27145,9 @@ hydropile->hydrophile
 hydropilic->hydrophilic
 hydropobe->hydrophobe
 hydropobic->hydrophobic
+hyerarchical->hierarchical
+hyerarchically->hierarchically
+hyerarchies->hierarchies
 hyerarchy->hierarchy
 hyerlink->hyperlink
 hygeine->hygiene
