@@ -22403,11 +22403,14 @@ excempts->exempts
 excentric->eccentric
 excentricity->eccentricity
 excentuating->accentuating
-exceopt->exempt
-exceopted->exempted
-exceopts->exempts
-exceotion->exemption
-exceotions->exemptions
+exceopt->exempt, except,
+exceopted->exempted, excepted,
+exceopts->exempts, excepts,
+exceot->except, exempt,
+exceoted->excepted, exempted,
+exceotion->exception, exemption,
+exceotions->exceptions, exemptions,
+exceots->excepts, exempts,
 excepetion->exception
 excepion->exception
 excepional->exceptional
