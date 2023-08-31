@@ -1068,14 +1068,16 @@ def test_config_toml(
     d.mkdir()
     (d / "bad.txt").write_text("abandonned donn\n")
     (d / "good.txt").write_text("good")
+    (d / "abandonned.txt").write_text("")
 
-    # Should fail when checking both.
-    result = cs.main(d, count=True, std=True)
+    # Should fail when checking all files.
+    result = cs.main(d, "--check-filenames", count=True, std=True)
     assert isinstance(result, tuple)
     code, stdout, _ = result
     # Code in this case is not exit code, but count of misspellings.
-    assert code == 2
+    assert code == 3
     assert "bad.txt" in stdout
+    assert "abandonned.txt" in stdout
 
     if kind == "cfg":
         conffile = tmp_path / "setup.cfg"
@@ -1097,16 +1099,18 @@ count =
             """\
 [tool.codespell]
 skip = 'bad.txt,whatever.txt'
-count = false
+check-filenames = false
+count = true
 """
         )
 
-    # Should pass when skipping bad.txt
-    result = cs.main(d, *args, count=True, std=True)
+    # Should pass when skipping bad.txt or abandonned.txt
+    result = cs.main(d, *args, std=True)
     assert isinstance(result, tuple)
     code, stdout, _ = result
     assert code == 0
     assert "bad.txt" not in stdout
+    assert "abandonned.txt" not in stdout
 
     # And both should automatically work if they're in cwd
     cwd = Path.cwd()
@@ -1119,6 +1123,7 @@ count = false
         os.chdir(cwd)
     assert code == 0
     assert "bad.txt" not in stdout
+    assert "abandonned.txt" not in stdout
 
 
 @contextlib.contextmanager
