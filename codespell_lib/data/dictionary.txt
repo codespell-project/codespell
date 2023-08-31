@@ -5942,7 +5942,12 @@ atrribute->attribute
 atrributes->attributes
 atrtribute->attribute
 atrtributes->attributes
+atructural->structural
+atructurally->structurally
 atructure->structure
+atructured->structured
+atructures->structures
+atructuring->structuring
 attaced->attached
 attachd->attached
 attachement->attachment
@@ -9027,6 +9032,10 @@ capbailities->capabilities
 capbaility->capability
 capbale->capable
 capbaly->capably
+capcitance->capacitance
+capcities->capacities
+capcitor->capacitor
+capcitors->capacitors
 capcity->capacity
 capela->capella
 caperbility->capability
@@ -20777,6 +20786,7 @@ eletric->electric
 eletrical->electrical
 eletrically->electrically
 eletricity->electricity
+eletrode->electrode
 eletrodes->electrodes
 eletromagnitic->electromagnetic
 eletron->electron
@@ -21701,7 +21711,9 @@ equavalence->equivalence
 equavalent->equivalent
 equavalently->equivalently
 equavalents->equivalents
-Equavilent->Equivalent
+equavilent->equivalent
+equavilently->equivalently
+equavilents->equivalents
 equeal->equal
 equeality->equality
 equeally->equally
@@ -24392,8 +24404,11 @@ fileds->fields
 fileld->field
 filelds->fields
 filenae->filename
+filenaes->filenames
 filenmae->filename
+filenmaes->filenames
 filenname->filename, file name,
+filennames->filenames, file names,
 filese->files
 fileshystem->filesystem
 fileshystems->filesystems
@@ -26239,6 +26254,7 @@ gratuitious->gratuitous
 gratutious->gratuitous
 gratutiously->gratuitously
 graviometric->gravimetric
+graviometry->gravimetry
 gravitiation->gravitation
 grbber->grabber
 greate->greater, create, grate, great,
@@ -30636,7 +30652,7 @@ labbels->labels
 labed->labeled, labelled,
 labeld->labelled
 labirinth->labyrinth
-lable->label
+lable->label, ladle, labile, able,
 labled->labeled, labelled,
 lablel->label
 lablels->labels
@@ -49048,7 +49064,10 @@ toos->tools
 Toosday->Tuesday
 tootonic->teutonic
 topicaizer->topicalizer
-Topoligically->Topologically
+topoligical->topological
+topoligically->topologically
+topoligies->topologies
+topoligy->topology
 topologie->topology
 topoplogical->topological
 topoplogies->topologies
