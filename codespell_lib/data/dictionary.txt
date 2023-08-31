@@ -5902,6 +5902,7 @@ atleast->at least
 atll->all
 atmoic->atomic
 atmoically->atomically
+atomacically->automatically
 atomata->automata
 atomate->automate
 atomated->automated
@@ -5941,6 +5942,12 @@ atrribute->attribute
 atrributes->attributes
 atrtribute->attribute
 atrtributes->attributes
+atructural->structural
+atructurally->structurally
+atructure->structure
+atructured->structured
+atructures->structures
+atructuring->structuring
 attaced->attached
 attachd->attached
 attachement->attachment
@@ -9025,6 +9032,11 @@ capbailities->capabilities
 capbaility->capability
 capbale->capable
 capbaly->capably
+capcitance->capacitance
+capcities->capacities
+capcitor->capacitor
+capcitors->capacitors
+capcity->capacity
 capela->capella
 caperbility->capability
 Capetown->Cape Town
@@ -20075,6 +20087,7 @@ downlaoded->downloaded
 downlaodes->downloads
 downlaoding->downloading
 downlaods->downloads
+downloadbale->downloadable
 downloade->download
 downloades->downloads, downloaded,
 downloadmanger->downloadmanager
@@ -20716,6 +20729,7 @@ electricty->electricity
 electrinics->electronics
 electriv->electric
 electrnoics->electronics
+electronnegativity->electronegativity
 eleemnt->element
 eleent->element
 elegibility->eligibility, illegibility, legibility,
@@ -20772,6 +20786,8 @@ eletric->electric
 eletrical->electrical
 eletrically->electrically
 eletricity->electricity
+eletrode->electrode
+eletrodes->electrodes
 eletromagnitic->electromagnetic
 eletron->electron
 eletronic->electronic
@@ -21695,6 +21711,9 @@ equavalence->equivalence
 equavalent->equivalent
 equavalently->equivalently
 equavalents->equivalents
+equavilent->equivalent
+equavilently->equivalently
+equavilents->equivalents
 equeal->equal
 equeality->equality
 equeally->equally
@@ -24385,7 +24404,11 @@ fileds->fields
 fileld->field
 filelds->fields
 filenae->filename
+filenaes->filenames
+filenmae->filename
+filenmaes->filenames
 filenname->filename, file name,
+filennames->filenames, file names,
 filese->files
 fileshystem->filesystem
 fileshystems->filesystems
@@ -26230,6 +26253,8 @@ gratest->greatest, grates,
 gratuitious->gratuitous
 gratutious->gratuitous
 gratutiously->gratuitously
+graviometric->gravimetric
+graviometry->gravimetry
 gravitiation->gravitation
 grbber->grabber
 greate->greater, create, grate, great,
@@ -30627,7 +30652,7 @@ labbels->labels
 labed->labeled, labelled,
 labeld->labelled
 labirinth->labyrinth
-lable->label
+lable->label, ladle, labile, able,
 labled->labeled, labelled,
 lablel->label
 lablels->labels
@@ -49039,6 +49064,10 @@ toos->tools
 Toosday->Tuesday
 tootonic->teutonic
 topicaizer->topicalizer
+topoligical->topological
+topoligically->topologically
+topoligies->topologies
+topoligy->topology
 topologie->topology
 topoplogical->topological
 topoplogies->topologies
