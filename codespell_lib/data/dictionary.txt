@@ -24332,10 +24332,13 @@ exercieses->exercises
 exerciesing->exercising
 exerciess->exercises
 exercisin->exercising
-exercize->exercise
-exercized->exercised
-exercizes->exercises
-exercizing->exercising
+exercizable->exercisable
+exercize->exercise, exorcize,
+exercized->exercised, exorcized,
+exercizer->exerciser, exorcist,
+exercizers->exercisers, exorcists,
+exercizes->exercises, exorcizes,
+exercizing->exercising, exorcizing,
 exerience->experience
 exerienced->experienced
 exeriences->experiences
@@ -24551,6 +24554,8 @@ exntry->entry
 exolicit->explicit
 exolicitly->explicitly
 exonorate->exonerate
+exorcizer->exorcist
+exorcizers->exorcists
 exort->export, extort, exert, exhort,
 exorted->exported, extorted, exerted, exhorted,
 exorting->exporting, extorting, exerting, exhorting,
@@ -54603,6 +54608,7 @@ surprisin->surprising
 surprisinlgy->surprisingly
 surprize->surprise
 surprized->surprised
+surprizes->surprises
 surprizing->surprising
 surprizingly->surprisingly
 surregat->surrogate
