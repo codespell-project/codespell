@@ -28900,12 +28900,28 @@ iniate->initiate
 iniated->initiated
 iniates->initiates
 iniating->initiating
+iniation->initiation
+iniations->initiations
+iniative->initiative
+iniatives->initiatives
+iniator->initiator
+iniators->initiators
+inidcate->indicate
+inidcated->indicated
+inidcates->indicates
+inidcating->indicating
+inidcation->indication
+inidcations->indications
+inidcator->indicator
+inidcators->indicators
 inidicate->indicate
 inidicated->indicated
 inidicates->indicates
 inidicating->indicating
 inidication->indication
 inidications->indications
+inidicator->indicator
+inidicators->indicators
 inidividual->individual
 inidvidual->individual
 iniect->inject
@@ -28914,9 +28930,14 @@ iniecting->injecting
 iniection->injection
 iniects->injects
 inifinite->infinite
+inifinitely->infinitely
 inifinity->infinity
 inifinte->infinite
+inifintely->infinitely
+inifinty->infinity
 inifite->infinite
+inifitely->infinitely
+inifity->infinity
 iniital->initial
 iniitalisation->initialisation
 iniitalisations->initialisations
@@ -28955,6 +28976,9 @@ iniitializes->initializes
 iniitializing->initializing
 iniitially->initially
 iniitials->initials
+ininite->infinite
+ininitely->infinitely
+ininity->infinity, inanity,
 inintial->initial
 inintialisation->initialisation
 inintialisations->initialisations
@@ -29033,6 +29057,16 @@ initailzers->initializers
 initailzes->initializes
 initailziation->initialization
 initailziations->initializations
+initaite->initiate
+initaited->initiated
+initaites->initiates
+initaiting->initiating
+initaition->initiation
+initaitions->initiations
+initaitive->initiative
+initaitives->initiatives
+initaitor->initiator
+initaitors->initiators
 inital->initial
 initalialisation->initialisation
 initalialization->initialization
@@ -29060,6 +29094,8 @@ initates->initiates, imitates,
 initating->initiating, imitating,
 initation->initiation, imitation,
 initations->initiations, imitations,
+initative->initiative, imitative,
+initatives->initiatives
 initator->initiator, imitator,
 initators->initiators, imitators,
 initiail->initial
@@ -29464,10 +29500,12 @@ inmigrant->immigrant
 inmigrants->immigrants
 inmmediately->immediately
 inmplementation->implementation
+innaccessible->inaccessible
 innaccuracies->inaccuracies
 innaccuracy->inaccuracy
 innaccurate->inaccurate
 innaccurately->inaccurately
+innacessible->inaccessible
 innactive->inactive
 innacuracies->inaccuracies
 innacuracy->inaccuracy
@@ -29503,8 +29541,12 @@ innitials->initials
 innocous->innocuous
 innoculate->inoculate
 innoculated->inoculated
+innosence->innocence
 innosense->innocence
+innosent->innocent
 inocence->innocence
+inocent->innocent
+inocuous->innocuous
 inofficial->unofficial
 inofrmation->information
 inoperant->inoperative
@@ -29578,9 +29620,20 @@ inro->into
 ins't->isn't
 insall->install
 insallation->installation
+insallations->installations
 insalled->installed
+insaller->installer
+insallers->installers
 insalling->installing
+insalls->installs
 insance->instance, insane,
+insances->instances
+insantiate->instantiate
+insantiated->instantiated
+insantiates->instantiates
+insantiating->instantiating
+insantiation->instantiation
+insantiations->instantiations
 inscpeting->inspecting
 insctuction->instruction
 insctuctional->instructional
@@ -29643,7 +29696,14 @@ insigths->insights
 insigts->insights
 insistance->insistence
 insititute->institute
+insititutes->institutes
+insititution->institution
+insititutional->institutional
+insititutions->institutions
+insitute->institute
+insitutes->institutes
 insitution->institution
+insitutional->institutional
 insitutions->institutions
 insonsistency->inconsistency
 inspite->in spite, inspire,
@@ -29683,6 +29743,7 @@ installe->installer, installed, install,
 installes->installs
 installion->installation, installing,
 installtion->installation
+installtions->installations
 instals->installs
 instancd->instance
 instanciate->instantiate
@@ -29711,7 +29772,14 @@ instatiates->instantiates
 instatiating->instantiating
 instatiation->instantiation
 instatiations->instantiations
+insteall->install, instead,
+insteallation->installation
+insteallations->installations
 instealled->installed
+instealler->installer
+insteallers->installers
+instealling->installing
+instealls->installs
 insteance->instance
 insted->instead
 insteead->instead
@@ -29733,8 +29801,16 @@ instersectioned->intersection
 instersections->intersections
 instert->insert
 insterted->inserted
+insterter->inserter
+insterters->inserters
+insterting->inserting
 instertion->insertion
+insterts->inserts
 institue->institute
+institues->institutes
+instituion->institution
+instituional->institutional
+instituions->institutions
 instlal->install
 instlalation->installation
 instlalations->installations
@@ -29769,6 +29845,8 @@ instrall->install
 instralled->installed
 instralling->installing
 instralls->installs
+instrance->instance, insurance,
+instrances->instances
 instrction->instruction
 instrctional->instructional
 instrctions->instructions
@@ -29785,6 +29863,12 @@ instrinic->intrinsic
 instrinics->intrinsics
 instrinsic->intrinsic
 instrinsics->intrinsics
+instroduce->introduce
+instroduced->introduced
+instroduces->introduces
+instroducing->introducing
+instroduction->introduction
+instroductions->introductions
 instrospection->introspection
 instruccion->instruction
 instruccional->instructional
@@ -29818,13 +29902,30 @@ instsallation->installation
 instsallations->installations
 instsalled->installed
 instsalls->installs
+instsance->instance
+instsances->instances
+instuct->instruct
+instucted->instructed
+instucting->instructing
 instuction->instruction
 instuctional->instructional
 instuctions->instructions
+instuctor->instructor
+instuctors->instructors
+instucts->instructs
 instument->instrument
 instumental->instrumental
 instumentation->instrumentation
 instuments->instruments
+insturct->instruct
+insturcted->instructed
+insturcting->instructing
+insturction->instruction
+insturctional->instructional
+insturctions->instructions
+insturctor->instructor
+insturctors->instructors
+insturcts->instructs
 insturment->instrument
 insturmental->instrumental
 insturmentation->instrumentation
@@ -29860,8 +29961,19 @@ intalls->installs
 intance->instance, intense,
 intances->instances
 intantiate->instantiate
+intantiated->instantiated
+intantiates->instantiates
 intantiating->instantiating
+intantiation->instantiation
+intantiations->instantiations
+inteact->interact, intact,
+inteacted->interacted
+inteacting->interacting
 inteaction->interaction
+inteactions->interactions
+inteactive->interactive
+inteactively->interactively
+inteacts->interacts
 intead->instead
 inted->inetd, intend,
 inteded->intended
@@ -29885,6 +29997,12 @@ integating->integrating
 integation->integration
 integations->integrations
 integeral->integral
+integerate->integrate
+integerated->integrated
+integerates->integrates
+integerating->integrating
+integeration->integration
+integerations->integrations
 integere->integer
 integrat->integrate, integral,
 integrats->integrates, integrals,
@@ -29914,6 +30032,8 @@ intemediary->intermediary
 intemediate->intermediate
 intemittent->intermittent
 intenal->internal
+intenally->internally
+intenals->internals
 intenational->international
 intenationalism->internationalism
 intenationalist->internationalist
@@ -29937,6 +30057,9 @@ intentionly->intentionally
 intepolate->interpolate
 intepolated->interpolated
 intepolates->interpolates
+intepolating->interpolating
+intepolation->interpolation
+intepolations->interpolations
 intepret->interpret
 intepretable->interpretable
 intepretation->interpretation
@@ -29983,7 +30106,8 @@ interals->internals, intervals, integrals,
 interaly->internally
 interanl->internal
 interanlly->internally
-interate->iterate
+interanls->internals
+interate->iterate, integrate,
 interated->iterated, interacted, integrated,
 interates->iterates, interacts, integrated,
 interating->iterating, interacting, integrating,
@@ -29993,9 +30117,9 @@ interationalism->internationalism
 interationalist->internationalist
 interationalists->internationalists
 interationally->internationally
-interations->iterations, interactions,
-interative->interactive
-interatively->interactively
+interations->iterations, interactions, integrations,
+interative->interactive, iterative,
+interatively->interactively, iteratively,
 interator->iterator
 interators->iterators
 interaxction->interaction
@@ -30005,7 +30129,14 @@ interaxtions->interactions
 interbread->interbreed, interbred,
 intercahnge->interchange
 intercahnged->interchanged
+intercat->interact
+intercated->interacted
+intercating->interacting
 intercation->interaction
+intercations->interactions
+intercative->interactive
+intercatively->interactively
+intercats->interacts
 interchage->interchange
 interchangable->interchangeable
 interchangably->interchangeably
@@ -30024,6 +30155,10 @@ interections->intersections, interactions,
 interects->intersects, interacts,
 intered->interred, interned,
 intereested->interested
+intereface->interface
+interefaced->interfaced
+interefaces->interfaces
+interefacing->interfacing
 interefere->interfere
 interefered->interfered
 intereference->interference
@@ -30041,6 +30176,8 @@ interepret->interpret
 interepretation->interpretation
 interepretations->interpretations
 interepreted->interpreted
+interepreter->interpreter
+interepreters->interpreters
 interepreting->interpreting
 intereprets->interprets
 interept->intercept
@@ -30075,8 +30212,13 @@ interfaves->interfaces
 interfcae->interface
 interfcaes->interfaces
 interfear->interfere
+interfeare->interfere
+interfeared->interfered
 interfearence->interference
+interfeares->interferes
+interfearing->interfering
 interfearnce->interference
+interfears->interferes
 interfer->interfere
 interferance->interference
 interferd->interfered
@@ -30085,6 +30227,8 @@ interfernce->interference
 interferred->interfered
 interferring->interfering
 interfers->interferes
+intergal->integral, interval, internal,
+intergals->integrals, intervals, internals,
 intergate->integrate
 intergated->integrated
 intergates->integrates
@@ -30257,6 +30401,13 @@ intevene->intervene
 intger->integer
 intgers->integers
 intgral->integral
+intgrals->integrals
+intgrate->integrate
+intgrated->integrated
+intgrates->integrates
+intgrating->integrating
+intgration->integration
+intgrations->integrations
 inthe->in the
 intiail->initial
 intiailisation->initialisation
@@ -30410,6 +30561,16 @@ intitializes->initializes
 intitializing->initializing
 intitially->initially
 intitials->initials
+intitiate->initiate
+intitiated->initiated
+intitiates->initiates
+intitiating->initiating
+intitiation->initiation
+intitiations->initiations
+intitiative->initiative
+intitiatives->initiatives
+intitiator->initiator
+intitiators->initiators
 intity->entity
 intot->into
 intoto->into
@@ -30437,6 +30598,13 @@ intreegued->intrigued
 intreeguing->intriguing
 intreface->interface
 intregral->integral
+intregrals->integrals
+intregrate->integrate
+intregrated->integrated
+intregrates->integrates
+intregrating->integrating
+intregration->integration
+intregrations->integrations
 intrerrupt->interrupt
 intresst->interest
 intressted->interested
@@ -30444,6 +30612,10 @@ intressting->interesting
 intrest->interest, insert,
 intrested->interested
 intresting->interesting
+intrface->interface
+intrfaced->interfaced
+intrfaces->interfaces
+intrfacing->interfacing
 intriduce->introduce
 intriduced->introduced
 intriduction->introduction
@@ -30467,9 +30639,15 @@ intrrupt->interrupt
 intrrupted->interrupted
 intrrupting->interrupting
 intrrupts->interrupts
+intruct->instruct
+intructed->instructed
+intructing->instructing
 intruction->instruction
 intructional->instructional
 intructions->instructions
+intructor->instructor
+intructors->instructors
+intructs->instructs
 intruduce->introduce
 intruduced->introduced
 intruduces->introduces
@@ -30484,9 +30662,15 @@ intrumenting->instrumenting
 intruments->instruments
 intrusted->entrusted
 intsall->install
+intsallation->installation
+intsallations->installations
 intsalled->installed
+intsaller->installer
+intsallers->installers
 intsalling->installing
 intsalls->installs
+intsance->instance
+intsances->instances
 intstead->instead
 intstruct->instruct, in struct,
 intstructed->instructed
@@ -30497,6 +30681,12 @@ intstructional->instructional
 intstructions->instructions
 intstructor->instructor
 intstructs->instructs
+intstrument->instrument
+intstrumental->instrumental
+intstrumentation->instrumentation
+intstrumented->instrumented
+intstrumenting->instrumenting
+intstruments->instruments
 intterrupt->interrupt
 intterupt->interrupt
 intterupted->interrupted
@@ -30693,10 +30883,12 @@ isssues->issues
 issueing->issuing
 issus->issues
 ist->is, it, its, it's, sit, list,
-istall->install
+istall->install, is tall,
 istallation->installation
 istallations->installations
 istalled->installed
+istaller->installer, is taller,
+istallers->installers
 istalling->installing
 istalls->installs
 Istambul->Istanbul
@@ -30711,11 +30903,13 @@ istantiation->instantiation
 istantiations->instantiations
 istantly->instantly, distantly,
 istead->instead
+istelf->itself
 istened->listened
 istener->listener
 isteners->listeners
 istening->listening
 ists->its, lists,
+istself->itself
 isue->issue
 isues->issues
 itearte->iterate
@@ -30780,7 +30974,20 @@ iteratoin->iteration
 iteratoins->iterations
 iteraton->iteration
 iteratons->iterations
+itereate->iterate
+itereated->iterated
+itereates->iterates
 itereating->iterating
+itereation->iteration
+itereations->iterations
+itereative->iterative
+itereatively->iteratively
+itereator->iterator
+itereators->iterators
+iterest->interest
+iterested->interested
+iteresting->interesting
+iterests->interests
 iterface->interface
 iterfaces->interfaces
 iterm->term, item, intern,
@@ -30793,6 +31000,12 @@ iternation->iteration
 iternations->iterations
 iternator->iterator
 iternators->iterators
+iterpolate->interpolate
+iterpolated->interpolated
+iterpolates->interpolates
+iterpolating->interpolating
+iterpolation->interpolation
+iterpolations->interpolations
 iterpret->interpret
 iterpretation->interpretation
 iterpretations->interpretations
