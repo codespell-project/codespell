@@ -30992,6 +30992,10 @@ jurnaler->journaler
 jurnales->journals
 jurnaling->journaling
 jurnals->journals
+jurney->journey
+jurneyed->journeyed
+jurneying->journeying
+jurneys->journeys
 jurnied->journeyed
 jurnies->journeys
 jurny->journey
@@ -31000,15 +31004,32 @@ jurnyes->journeys
 jurnys->journeys
 jus->just
 juse->just, juice, Jude, June,
+jusification->justification
+jusifications->justifications
+jusified->justified
+jusifies->justifies
+jusify->justify
+jusifying->justifying
+justfication->justification
+justfications->justifications
 justfied->justified
+justfies->justifies
+justfy->justify, justly,
+justfying->justifying
 justication->justification
+justications->justifications
+justifcation->justification
+justifcations->justifications
 justifed->justified
+justifes->justifies, justices,
+justifing->justifying
 justs->just
 juxt->just
 juxtification->justification
 juxtifications->justifications
 juxtified->justified
 juxtifies->justifies
+juxtify->justify
 juxtifying->justifying
 kackie->khaki
 kackies->khakis
@@ -31052,6 +31073,7 @@ keyboaard->keyboard
 keyboaards->keyboards
 keyboad->keyboard
 keyboads->keyboards
+keyboar->keyboard
 keyboars->keyboards, keyboard,
 keybooard->keyboard
 keybooards->keyboards
@@ -31135,11 +31157,14 @@ knoing->knowing
 knoledge->knowledge
 knoledgeable->knowledgeable
 knowladge->knowledge
+knowladgeable->knowledgeable
 knowlage->knowledge
 knowlageable->knowledgeable
+knowledg->knowledge
 knowledgable->knowledgeable
 knowlegable->knowledgeable
 knowlegde->knowledge
+knowlegdeable->knowledgeable
 knowlege->knowledge
 knowlegeabel->knowledgeable
 knowlegeable->knowledgeable
@@ -31157,6 +31182,8 @@ kommas->commas, comas,
 konstant->constant
 konstants->constants
 konw->know
+konwledge->knowledge
+konwledgeable->knowledgeable
 konwn->known
 konws->knows
 kookoo->cuckoo
@@ -31165,6 +31192,8 @@ koolot->culotte
 koolots->culottes
 koordinate->coordinate
 koordinates->coordinates
+kowledge->knowledge
+kowledgeable->knowledgeable
 kown->known
 kresh->crèche
 kronicle->chronicle
@@ -31187,6 +31216,10 @@ kubernests->Kubernetes
 kubernete->Kubernetes
 kuberntes->Kubernetes
 kwno->know
+kwnoledge->knowledge
+kwnoledgeable->knowledgeable
+kwoledge->knowledge
+kwoledgeable->knowledgeable
 kwoledgebase->knowledge base
 kwuzine->cuisine
 kwuzines->cuisines
@@ -31321,6 +31354,8 @@ lanuage->language
 lanuages->languages
 lanuch->launch
 lanuched->launched
+lanucher->launcher
+lanuchers->launchers
 lanuches->launches
 lanuching->launching
 lanugage->language
@@ -31334,6 +31369,7 @@ laods->loads
 Laotion->Laotian, lotion,
 Laotions->Laotians, lotions,
 laout->layout
+laready->already
 larer->larger, later, layer,
 larg->large
 larget->larger, largest, target,
@@ -31365,6 +31401,7 @@ lattitude->latitude
 lauch->launch
 lauched->launched
 laucher->launcher
+lauchers->launchers
 lauches->launches
 lauching->launching
 laugnage->language
@@ -31377,7 +31414,12 @@ laungage->language
 laungages->languages
 launguage->language
 launguages->languages
+launh->launch
 launhed->launched
+launher->launcher
+launhers->launchers
+launhes->launches
+launhing->launching
 lavae->larvae
 lavel->level, label, laravel,
 laveled->leveled, labeled,
@@ -31399,7 +31441,17 @@ lazer->laser
 laziliy->lazily
 lazyness->laziness
 lcoal->local, coal,
+lcoale->locale
+lcoales->locales
+lcoalhost->localhost
+lcoality->locality
+lcoalization->localization
+lcoalize->localize
+lcoalized->localized
+lcoalizes->localizes
+lcoalizing->localizing
 lcoally->locally
+lcoals->locals
 lcoation->location
 lcuase->clause
 leaast->least
@@ -31449,6 +31501,8 @@ legac->legacy
 legact->legacy
 legalimate->legitimate
 legasy->legacy
+legecies->legacies
+legecy->legacy
 legel->legal
 leggacies->legacies
 leggacy->legacy
@@ -31540,6 +31594,8 @@ leyer->layer
 leyered->layered
 leyering->layering
 leyers->layers
+leyout->layout
+leyouts->layouts
 liares->liars
 liase->liaise
 liased->liaised
@@ -31617,10 +31673,15 @@ licenceing->licencing
 licencse->license, licenses,
 licens->license
 licese->license
+licesed->licensed
+liceses->licenses
+licesing->licensing
 licesne->license
+licesned->licensed
 licesnes->licenses
 licesning->licensing
 licesnse->license
+licesnsed->licensed
 licesnses->licenses
 licesnsing->licensing
 licker->liquor
@@ -31737,6 +31798,7 @@ limtier->limiter
 limtiers->limiters
 limtiing->limiting
 limting->limiting, linting,
+limtis->limits
 limts->limits, lints,
 linaer->linear
 linaerly->linearly
@@ -31751,6 +31813,7 @@ linerisation->linearisation
 linerisations->linearisations
 linerization->linearization
 linerizations->linearizations
+linerly->linearly
 lineseach->linesearch
 lineseaches->linesearches
 liness->lines
@@ -31759,7 +31822,9 @@ linez->lines
 lingth->length
 linheight->lineheight
 Linix->Linux
-linke->linked, like,
+linke->linked, link, like, line,
+linkely->likely
+linkes->links, linked, likes, lines,
 linkfy->linkify
 linnaena->linnaean
 lintain->lintian
@@ -31798,10 +31863,22 @@ listeing->listening
 listeneing->listening
 listeneres->listeners
 listenes->listens
+listenn->listen
+listenned->listened
+listenner->listener
+listenners->listeners
 listenning->listening
+listenns->listens
+listensed->listened, licensed,
+listenser->listener
 listensers->listeners
+listensing->listening, licensing,
+listent->listen
+listented->listened
 listenter->listener
 listenters->listeners
+listenting->listening
+listents->listens
 listernes->listeners
 listned->listened
 listner->listener
@@ -31856,14 +31933,35 @@ lnguage->language
 lnguages->languages
 loaader->loader
 loacal->local
+loacale->locale
+loacales->locales
+loacalhost->localhost
 loacality->locality
+loacalization->localization
+loacalize->localize
+loacalized->localized
+loacalizes->localizes
+loacalizing->localizing
 loacally->locally
+loacals->locals
 loacate->locate
 loacated->located
 loacates->locates
 loacating->locating
 loacation->location
 loacations->locations
+loacl->local
+loacle->locale
+loacles->locales
+loaclhost->localhost
+loaclity->locality
+loaclization->localization
+loaclize->localize
+loaclized->localized
+loaclizes->localizes
+loaclizing->localizing
+loaclly->locally
+loacls->locals
 loacte->locate
 loacted->located
 loactes->locates
@@ -31910,6 +32008,16 @@ loccked->locked
 locgical->logical
 lockingf->locking
 locla->local
+loclae->locale
+loclaes->locales
+loclahost->localhost
+loclaity->locality
+loclaization->localization
+loclaize->localize
+loclaized->localized
+loclaizes->localizes
+loclaizing->localizing
+loclaly->locally
 loclas->locals
 lodable->loadable
 loded->loaded
@@ -32001,6 +32109,7 @@ lsip->lisp
 lsit->list, slit, sit,
 lsits->lists, slits, sits,
 luckly->luckily
+luetooth->bluetooth
 lugage->luggage
 lugages->luggage
 lukid->lucid, Likud,
