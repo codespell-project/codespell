@@ -7662,8 +7662,8 @@ blcoks->blocks
 bleading->bleeding
 blessd->blessed
 blessure->blessing
-bletooth->bluetooth
-bleutooth->bluetooth
+bletooth->Bluetooth
+bleutooth->Bluetooth
 blief->belief
 bliefs->beliefs
 blievable->believable
@@ -7714,13 +7714,13 @@ bloocks->blocks
 blosum->blossom
 blosums->blossoms
 bloted->bloated
-bluestooth->bluetooth
-bluetooh->bluetooth
-bluetoot->bluetooth
-bluetootn->bluetooth
+bluestooth->Bluetooth
+bluetooh->Bluetooth
+bluetoot->Bluetooth
+bluetootn->Bluetooth
 blured->blurred
 blurr->blur, blurred,
-blutooth->bluetooth
+blutooth->Bluetooth
 blythely->blithely
 blythly->blithely
 bnecause->because
@@ -30992,10 +30992,10 @@ jurnaler->journaler
 jurnales->journals
 jurnaling->journaling
 jurnals->journals
-jurney->journey
+jurney->journey, gurney,
 jurneyed->journeyed
 jurneying->journeying
-jurneys->journeys
+jurneys->journeys, gurneys,
 jurnied->journeyed
 jurnies->journeys
 jurny->journey
@@ -31414,12 +31414,12 @@ laungage->language
 laungages->languages
 launguage->language
 launguages->languages
-launh->launch
-launhed->launched
+launh->launch, laugh,
+launhed->launched, laughed,
 launher->launcher
 launhers->launchers
 launhes->launches
-launhing->launching
+launhing->launching, laughing,
 lavae->larvae
 lavel->level, label, laravel,
 laveled->leveled, labeled,
@@ -31822,7 +31822,7 @@ linez->lines
 lingth->length
 linheight->lineheight
 Linix->Linux
-linke->linked, link, like, line,
+linke->linked, link, links, like, line,
 linkely->likely
 linkes->links, linked, likes, lines,
 linkfy->linkify
@@ -32109,7 +32109,7 @@ lsip->lisp
 lsit->list, slit, sit,
 lsits->lists, slits, sits,
 luckly->luckily
-luetooth->bluetooth
+luetooth->Bluetooth
 lugage->luggage
 lugages->luggage
 lukid->lucid, Likud,
@@ -52915,7 +52915,7 @@ vluations->valuations
 vlue->value, blue,
 vlued->valued
 vlues->values, blues,
-vluetooth->bluetooth
+vluetooth->Bluetooth
 vluing->valuing
 voif->void
 volatage->voltage
