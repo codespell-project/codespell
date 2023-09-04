@@ -58,11 +58,11 @@ repos:
           - -d
           - '{extends: relaxed, rules: {line-length: {max: 90}}}'
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.0.286
+    rev: v0.0.287
     hooks:
       - id: ruff
   - repo:  https://github.com/PyCQA/autoflake
-    rev: v2.2.0
+    rev: v2.2.1
     hooks:
       - id: autoflake
   - repo: https://github.com/psf/black
