@@ -34709,10 +34709,10 @@ necessiate->necessitate
 nechanism->mechanism
 necssarily->necessarily
 necssary->necessary
-ned->need, end,
+ned->need, end, nod,
 nedd->need
-nedded->needed
-nedding->needing
+nedded->needed, nodded,
+nedding->needing, nodding,
 nedds->needs
 neded->needed
 nedia->media
@@ -34721,7 +34721,7 @@ nediums->mediums
 nedle->needle
 nedles->needles, needless,
 nedless->needless, needles,
-neds->needs
+neds->needs, ends, nods,
 neede->needed, need, needle,
 needeed->needed
 needeing->needing
@@ -35373,7 +35373,7 @@ noification->notification
 noifications->notifications
 noified->notified
 noifies->notifies
-noify->notify
+noify->notify, noisy,
 noifying->notifying
 nojification->notification
 nojifications->notifications
@@ -35557,7 +35557,7 @@ normalyy->normally
 normalyzation->normalization
 normalyze->normalize
 normalyzed->normalized
-norml->normal
+norml->normal, norm,
 normlisation->normalisation
 normlise->normalise
 normlised->normalised
@@ -35569,7 +35569,7 @@ normlized->normalized
 normlizes->normalizes
 normlizing->normalizing
 normlly->normally
-normls->normals
+normls->normals, norms,
 normnal->normal
 normol->normal
 normolise->normalise
@@ -35734,6 +35734,7 @@ nucular->nuclear
 nuculear->nuclear
 nueral->neural, numeral,
 nueron->neuron
+nueronal->neuronal
 nuerons->neurons
 nuetral->neutral
 nuetrally->neutrally
@@ -35766,8 +35767,12 @@ numberss->numbers
 numbert->number
 numbet->number
 numbets->numbers
+numbr->number
 numbre->number
+numbred->numbered
 numbres->numbers
+numbring->numbering
+numbrs->numbers
 numearate->numerate
 numearation->numeration
 numeber->number
