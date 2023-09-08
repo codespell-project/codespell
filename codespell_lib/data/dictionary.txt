@@ -35842,6 +35842,14 @@ obayed->obeyed
 obaying->obeying
 obays->obeys
 obect->object
+obected->objected
+obecting->objecting
+obection->objection
+obections->objections
+obective->objective
+obectively->objectively
+obectives->objectives
+obects->objects
 obediance->obedience
 obediant->obedient
 obejct->object
@@ -36011,8 +36019,12 @@ occcured->occurred
 occcurs->occurs
 occour->occur
 occoured->occurred
+occourence->occurrence
+occourences->occurrences
 occouring->occurring
 occourred->occurred
+occourrence->occurrence
+occourrences->occurrences
 occourring->occurring
 occours->occurs
 occrrance->occurrence
@@ -36084,6 +36096,7 @@ ocupying->occupying
 ocur->occur
 ocurr->occur
 ocurrance->occurrence
+ocurrances->occurrences
 ocurred->occurred
 ocurrence->occurrence
 ocurrences->occurrences
@@ -36093,10 +36106,17 @@ ocurrs->occurs
 ocurs->occurs
 odasee->odyssey
 odasees->odysseys
-oder->order, odor,
+oder->order, older, coder, odder, odor, over, doer,
+odered->ordered
+odering->ordering
+oders->orders, coders, odors, doers,
 odly->oddly
 ody->body
 oen->one
+oepn->open
+oepned->opened
+oepning->opening
+oepns->opens
 oeprand->operand
 oeprands->operands
 oeprate->operate
@@ -36130,6 +36150,17 @@ offfence->offence
 offfences->offences
 offfense->offense
 offfenses->offenses
+offfer->offer
+offfered->offered
+offfering->offering
+offfers->offers
+offfice->office
+offficer->officer
+offficers->officers
+offfices->offices
+offficial->official
+offficially->officially
+offficials->officials
 offfset->offset
 offfsets->offsets
 offic->office
@@ -36203,9 +36234,22 @@ oiginally->originally
 oiginals->originals
 oiginating->originating
 oigins->origins
-oints->points, pints,
+oint->point, pint, joint, lint,
+ointed->pointed, jointed, linted,
+ointer->pointer, linter,
+ointers->pointers, linters,
+ointing->pointing, jointing, linting,
+oints->points, pints, joints, lints,
 ois->is
 ojbect->object
+ojbected->objected
+ojbecting->objecting
+ojbection->objection
+ojbections->objections
+ojbective->objective
+ojbectively->objectively
+ojbectives->objectives
+ojbects->objects
 oje->one
 oject->object
 ojection->objection
@@ -36295,6 +36339,10 @@ onother->another
 ons->owns
 onself->oneself
 onservation->conservation, observation,
+ontact->contact, intact,
+ontacted->contacted
+ontacting->contacting
+ontacts->contacts
 ontain->contain
 ontained->contained
 ontainer->container
@@ -36304,6 +36352,8 @@ ontaining->containing
 ontainor->container
 ontainors->containers
 ontains->contains
+ontent->content, intent,
+ontents->contents, intents,
 ontext->context
 onthe->on the
 ontop->on top
@@ -36414,6 +36464,13 @@ operaiton->operation
 operaitonal->operational
 operaitons->operations
 operandes->operands
+operare->operate
+operared->operated
+operares->operates
+operaring->operating
+operarion->operation
+operarional->operational
+operarions->operations
 operaror->operator
 operarors->operators
 operatate->operate
@@ -36442,6 +36499,7 @@ operato->operator
 operaton->operation
 operatonal->operational
 operatons->operations
+operatos->operators, operates,
 operatte->operate
 operatted->operated
 operattes->operates
@@ -36483,6 +36541,27 @@ opetions->options
 ophan->orphan
 ophans->orphans
 ophtalmology->ophthalmology
+opimal->optimal
+opimally->optimally
+opimisation->optimisation
+opimisations->optimisations
+opimise->optimise
+opimised->optimised
+opimiser->optimiser
+opimisers->optimisers
+opimises->optimises
+opimising->optimising
+opimism->optimism
+opimistic->optimistic
+opimistically->optimistically
+opimization->optimization
+opimizations->optimizations
+opimize->optimize
+opimized->optimized
+opimizer->optimizer
+opimizers->optimizers
+opimizes->optimizes
+opimizing->optimizing
 opinionater->opinionator, opinionated, opinionates, opinionate,
 opinionaters->opinionators, opinionates,
 opinyon->opinion
@@ -36503,10 +36582,52 @@ opion->option
 opional->optional
 opionally->optionally
 opions->options
+opitimal->optimal
+opitimally->optimally
+opitimisation->optimisation
+opitimisations->optimisations
+opitimise->optimise
+opitimised->optimised
+opitimiser->optimiser
+opitimisers->optimisers
+opitimises->optimises
+opitimising->optimising
+opitimism->optimism
+opitimistic->optimistic
+opitimistically->optimistically
+opitimization->optimization
+opitimizations->optimizations
+opitimize->optimize
+opitimized->optimized
+opitimizer->optimizer
+opitimizers->optimizers
+opitimizes->optimizes
+opitimizing->optimizing
 opition->option, opinion,
 opitional->optional
 opitionally->optionally
 opitions->options, opinions,
+opitmal->optimal
+opitmally->optimally
+opitmisation->optimisation
+opitmisations->optimisations
+opitmise->optimise
+opitmised->optimised
+opitmiser->optimiser
+opitmisers->optimisers
+opitmises->optimises
+opitmising->optimising
+opitmism->optimism
+opitmistic->optimistic
+opitmistically->optimistically
+opitmization->optimization
+opitmizations->optimizations
+opitmize->optimize
+opitmized->optimized
+opitmizer->optimizer
+opitmizers->optimizers
+opitmizes->optimizes
+opitmizing->optimizing
 opiton->option
 opitonal->optional
 opitonally->optionally
@@ -36536,6 +36657,8 @@ opose->oppose
 oposed->opposed
 oposite->opposite
 oposition->opposition
+oppenent->opponent
+oppenents->opponents
 oppenly->openly
 opperate->operate
 opperated->operated
@@ -36549,6 +36672,7 @@ oppertunist->opportunist
 oppertunities->opportunities
 oppertunity->opportunity
 oppinion->opinion
+oppinionated->opinionated
 oppinions->opinions
 opponant->opponent
 oppononent->opponent
@@ -36573,6 +36697,8 @@ opps->oops
 oppsofite->opposite
 oppurtunities->opportunities
 oppurtunity->opportunity
+oprand->operand
+oprands->operands
 oprate->operate
 oprated->operated
 oprates->operates
@@ -36582,6 +36708,8 @@ oprational->operational
 oprations->operations
 oprator->operator
 oprators->operators
+opreand->operand
+opreands->operands
 opreate->operate
 opreated->operated
 opreates->operates
@@ -36643,7 +36771,15 @@ optimissm->optimism
 optimitation->optimization
 optimizaing->optimizing
 optimizaton->optimization
+optimizatons->optimizations
+optimiziation->optimization
+optimiziations->optimizations
+optimizie->optimize
+optimizied->optimized
 optimizier->optimizer
+optimiziers->optimizers
+optimizies->optimizes
+optimiziing->optimizing
 optimiztion->optimization
 optimiztions->optimizations
 optimsitic->optimistic
@@ -36820,10 +36956,13 @@ orietations->orientations
 origanaly->originally
 origial->original
 origially->originally
+origials->originals
 origianal->original
 origianally->originally
+origianals->originals
 origianaly->originally
 origianl->original
+origianlly->originally
 origianls->originals
 origigin->origin
 origiginal->original
@@ -36939,6 +37078,9 @@ othewice->otherwise
 othewise->otherwise
 othewize->otherwise
 otho->otoh
+othogonal->orthogonal
+othogonality->orthogonality
+othogonally->orthogonally
 othographic->orthographic
 othwerise->otherwise
 othwerwise->otherwise
@@ -36946,17 +37088,67 @@ othwhise->otherwise
 otification->notification
 otifications->notifications
 otiginal->original
+otimal->optimal
+otimally->optimally
+otimisation->optimisation
+otimisations->optimisations
+otimise->optimise
+otimised->optimised
+otimiser->optimiser
+otimisers->optimisers
+otimises->optimises
+otimising->optimising
+otimism->optimism
+otimistic->optimistic
+otimistically->optimistically
+otimization->optimization
+otimizations->optimizations
+otimize->optimize
+otimized->optimized
+otimizer->optimizer
+otimizers->optimizers
+otimizes->optimizes
+otimizing->optimizing
 otion->option
 otional->optional, notional,
 otionally->optionally
 otions->options
+otpimal->optimal
+otpimally->optimally
+otpimisation->optimisation
+otpimisations->optimisations
+otpimise->optimise
+otpimised->optimised
+otpimiser->optimiser
+otpimisers->optimisers
+otpimises->optimises
+otpimising->optimising
+otpimism->optimism
+otpimistic->optimistic
+otpimistically->optimistically
+otpimization->optimization
+otpimizations->optimizations
+otpimize->optimize
+otpimized->optimized
+otpimizer->optimizer
+otpimizers->optimizers
+otpimizes->optimizes
+otpimizing->optimizing
 otpion->option
+otpional->optional
+otpionally->optionally
 otpions->options
 otput->output
+otside->outside
 otu->out
 oublisher->publisher
 ouer->outer
 ouevre->oeuvre
+ougoing->outgoing, ongoing,
+ouline->outline, online,
+oulined->outlined
+oulines->outlines
+oulining->outlining
 oultinenodes->outlinenodes
 oultiner->outliner
 oultline->outline
@@ -36984,6 +37176,7 @@ outbut->output
 outbuts->outputs
 outgoign->outgoing
 outher->other, outer,
+outherwise->otherwise
 outisde->outside
 outllook->outlook
 outoign->outgoing
@@ -36999,6 +37192,7 @@ outperfomr->outperform
 outperfomring->outperforming
 outpout->output
 outpouts->outputs
+outpu->output
 outpupt->output
 outpus->output, outputs,
 outpust->output, outputs,
@@ -37025,7 +37219,13 @@ oveflowed->overflowed
 oveflowing->overflowing
 oveflows->overflows
 ovelap->overlap
+ovelapped->overlapped
 ovelapping->overlapping
+ovelaps->overlaps
+oveload->overload
+oveloaded->overloaded
+oveloading->overloading
+oveloads->overloads
 over-engeneer->over-engineer
 over-engeneering->over-engineering
 overaall->overall
@@ -37126,6 +37326,7 @@ overwirtten->overwritten
 overwise->otherwise
 overwite->overwrite
 overwites->overwrites
+overwiting->overwriting
 overwitten->overwritten
 overwize->otherwise
 overwridden->overridden, overwritten,
@@ -37158,6 +37359,8 @@ ovewrites->overwrites
 ovewriting->overwriting
 ovewritten->overwritten
 ovewrote->overwrote
+ovious->obvious, odious,
+oviously->obviously, odiously,
 ovride->override
 ovrides->overrides
 ovrlapped->overlapped
@@ -37171,7 +37374,10 @@ ovrwrt->overwrite
 ovservable->observable
 ovservation->observation
 ovserve->observe
+ovveridden->overridden
 ovveride->override
+ovverides->overrides
+ovveriding->overriding
 ovverridden->overridden
 ovverride->override
 ovverrides->overrides
@@ -37202,6 +37408,10 @@ oxigen->oxygen
 oximoron->oxymoron
 oxzillary->auxiliary
 oyu->you
+oyur->your
+oyurs->yours
+oyurself->yourself
+oyurselves->yourselves
 p0enis->penis
 paackage->package
 paackages->packages
