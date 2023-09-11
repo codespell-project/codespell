@@ -39706,7 +39706,10 @@ pre-congifured->pre-configured
 pre-defiend->pre-defined
 pre-defiened->pre-defined
 pre-empt->preempt
+pre-pend->prepend
 pre-pended->prepended
+pre-pending->prepending
+pre-pends->prepends
 pre-poulate->pre-populate
 pre-poulated->pre-populated
 pre-poulates->pre-populates
@@ -39740,13 +39743,27 @@ preapring->preparing
 preaprooved->preapproved
 prebious->previous
 prebiously->previously
+preblem->problem
+preblematic->problematic
+preblems->problems
 precacheed->precached
+preccede->precede
+precceded->preceded
+preccedence->precedence
+preccedences->precedences
+preccedent->precedent
+preccedents->precedents
+preccedes->precedes
 precceding->preceding
 precding->preceding
 preced->precede
 precedencs->precedence
 precedessor->predecessor
 preceds->precedes
+precedural->procedural
+precedurally->procedurally
+precedure->procedure
+precedures->procedures
 preceed->precede, proceed,
 preceede->precede
 preceeded->preceded, proceeded,
@@ -39772,16 +39789,27 @@ precenences->preferences
 precense->presence
 precent->percent, present, prescient,
 precentage->percentage
+precentages->percentages
 precentile->percentile
 precentiles->percentiles
 precesion->precision, precession,
+precess->process
+precessed->processed
+precesses->processes
 precessing->processing
 precessor->predecessor, processor,
 precessors->predecessors, processors,
 precice->precise
 precicely->precisely
 precicion->precision
+precide->precede, precise, preside,
+precided->preceded, presided,
+precidely->precisely
 precidence->precedence
+precidences->precedences
+precident->precedent, president,
+precidents->precedents, presidents,
+precides->precedes, presides,
 preciding->preceding, presiding,
 precisily->precisely
 precisionn->precision
@@ -39834,6 +39862,14 @@ prefecth->prefetch
 prefectly->perfectly
 prefence->pretence, presence, preference,
 prefences->preferences
+prefent->prevent, present, prefect,
+prefentation->presentation
+prefentations->presentations
+prefented->prevented, presented,
+prefenting->preventing, presenting,
+prefention->prevention
+prefentions->preventions
+prefents->prevents, presents, prefects,
 preferance->preference
 preferances->preferences
 prefere->prefer, preferred,
@@ -39871,19 +39907,32 @@ preffix->prefix
 preffixed->prefixed
 preffixes->prefixes
 preffixing->prefixing
-prefices->prefixes
+prefic->prefix
+prefice->prefix, preface,
+preficed->prefixed, prefaced,
+prefices->prefixes, prefaces,
 preficiency->proficiency
 preficiensy->proficiency
 preficient->proficient
 preficiently->proficiently
 preficientsy->proficiency
+preficing->prefixing, prefacing,
 prefitler->prefilter
 prefitlered->prefiltered
 prefitlering->prefiltering
 prefitlers->prefilters
 preformance->performance
 preformances->performances
+preformant->performant
 pregancies->pregnancies
+pregress->progress
+pregressed->progressed
+pregresses->progresses
+pregressing->progressing
+pregression->progression
+pregressions->progressions
+pregressive->progressive
+pregressively->progressively
 prehaps->perhaps
 preiod->period
 preivew->preview
@@ -39912,6 +39961,8 @@ Premonasterians->Premonstratensians
 premption->preemption
 premptive->preemptive
 premptively->preemptively
+premutation->permutation
+premutations->permutations
 preocess->process
 preocupation->preoccupation
 preoperty->property
@@ -39997,6 +40048,8 @@ presearves->preserves
 presearving->preserving
 presed->pressed, preset,
 presedential->presidential
+presenation->presentation
+presenations->presentations
 presenece->presence
 presener->presenter
 presense->presence
@@ -40018,6 +40071,8 @@ preshis->precious
 preshisly->preciously
 preshus->precious
 preshusly->preciously
+presice->precise, preside,
+presicely->precisely
 presicion->precision
 presidenital->presidential
 presidental->presidential
@@ -40037,22 +40092,53 @@ presists->persists
 presitgious->prestigious
 presmission->permission
 presmissions->permissions
+presnt->present
 presntation->presentation
 presntations->presentations
+presnted->presented
+presnter->presenter
+presnters->presenters
+presnting->presenting
+presnts->presents
+preson->person, prison,
+presonal->personal
+presonalities->personalities
+presonality->personality
+presonally->personally
+presons->persons, prisons,
 prespective->perspective
 presreved->preserved
 presse->pressed, press,
+pressence->presence
 pressent->present
 pressentation->presentation
+pressentations->presentations
 pressented->presented
+pressenter->press enter, presenter,
+pressenters->presenters
+pressenting->presenting
+pressents->presents
 pressious->precious
 pressiously->preciously
 pressiuos->precious
 pressiuosly->preciously
 pressre->pressure
 presss->press, presses,
+presssed->pressed
+pressses->presses
+presssing->pressing
+presssure->pressure
+presssured->pressured
+presssures->pressures
+presssuring->pressuring
 pressue->pressure
 pressues->pressures
+pressumable->presumable
+pressumably->presumably
+pressume->presume, pressure,
+pressumed->presumed, pressured,
+pressumes->presumes, pressures,
+pressuming->presuming, pressuring,
 prestigeous->prestigious
 prestigous->prestigious
 presuambly->presumably
@@ -40062,6 +40148,10 @@ presumeably->presumably
 presumebly->presumably
 presumely->presumably
 presumibly->presumably
+presure->pressure, presume,
+presured->pressured, presumed,
+presures->pressures, presumes,
+presuring->pressuring, presuming,
 pretaining->pertaining
 pretect->protect
 pretected->protected
@@ -40092,6 +40182,8 @@ previewd->previewed
 previious->previous
 previiously->previously
 previlege->privilege
+previleged->privileged
+previleges->privileges
 previoous->previous
 previoously->previously
 previos->previous
@@ -40130,7 +40222,30 @@ prferable->preferable
 prferables->preferable
 prference->preference
 prferred->preferred
+prfile->profile
+prfiled->profiled
+prfiler->profiler
+prfilers->profilers
+prfiles->profiles
+prfiling->profiling
+prfix->prefix
+prfixed->prefixed
+prfixes->prefixes
+prfixing->prefixing
 prgram->program
+prgrammed->programmed
+prgrammer->programmer
+prgrammers->programmers
+prgramming->programming
+prgrams->programs
+prgress->progress
+prgressed->progressed
+prgresses->progresses
+prgressing->progressing
+prgression->progression
+prgressions->progressions
+prgressive->progressive
+prgressively->progressively
 priave->private
 pricipal->principal
 priciple->principle
@@ -40166,16 +40281,49 @@ prinf->print, printf, sprintf,
 pring->print, bring, ping, spring,
 pringing->printing, springing,
 prinicipal->principal
+prinicipally->principally
+prinicipals->principals
+priniciple->principle
+priniciples->principles
 prining->printing
 printes->printers
 printting->printing
+priod->period, prior, prod, pried,
+priodic->periodic
+priodical->periodical
+priodically->periodically
+priodicals->periodicals
+priods->periods, priors, prods,
 prioirties->priorities
 prioirty->priority
+priorisation->prioritisation
+priorisations->prioritisations
+priorise->prioritise
+priorised->prioritised
+priorises->prioritises
+priorising->prioritising
 prioritities->priorities
 prioritity->priority
 prioritiy->priority
 priorization->prioritization
 priorizations->prioritizations
+priorize->prioritize
+priorized->prioritized
+priorizes->prioritizes
+priorizing->prioritizing
+priorties->priorities, prior ties,
+priortisation->prioritisation
+priortisations->prioritisations
+priortise->prioritise
+priortised->prioritised
+priortises->prioritises
+priortising->prioritising
+priortization->prioritization
+priortizations->prioritizations
+priortize->prioritize
+priortized->prioritized
+priortizes->prioritizes
+priortizing->prioritizing
 priorty->priority
 priot->prior
 priotise->prioritise
@@ -40233,10 +40381,14 @@ privision->provision
 privisional->provisional
 privisions->provisions
 privledge->privilege
+privledged->privileged
+privledges->privileges
 privlege->privilege
 privleged->privileged
 privleges->privileges
 privte->private
+prixies->proxies, pixies, privies,
+prixy->proxy, privy,
 prject->project
 prjecting->projecting
 prjection->projection
@@ -40247,10 +40399,16 @@ prmitives->primitives
 prmopting->prompting
 proable->probable
 proably->probably
+probabale->probable
 probabalistic->probabilistic
+probabalities->probabilities
+probabality->probability
 probabaly->probably
+probabe->probable
+probabely->probably
 probabilaty->probability
 probabile->probable
+probabilies->probabilities
 probabilisitic->probabilistic
 probabilites->probabilities
 probabilstic->probabilistic
@@ -40289,6 +40447,9 @@ probematic->problematic
 probems->problems
 proberly->properly
 proberty->property, properly,
+probilistic->probabilistic
+probilities->probabilities
+probility->probability
 problable->probable
 problably->probably
 problaem->problem
@@ -40300,7 +40461,12 @@ proble->problem, probe, probably,
 probleme->problem
 problemes->problems
 probles->problems, probes,
+problim->problem
 problimatic->problematic
+problims->problems
+probllem->problem
+probllematic->problematic
+probllems->problems
 problme->problem
 problmes->problems
 probly->probably
@@ -40317,6 +40483,10 @@ proccesses->processes
 proccessing->processing
 proccessor->processor
 proccessors->processors
+procdural->procedural
+procdurally->procedurally
+procdure->procedure
+procdures->procedures
 procecess->process, processes,
 procecure->procedure
 procecures->procedures
@@ -40431,7 +40601,19 @@ produktion->production
 produkts->products
 produse->produce
 prodused->produced
+produser->producer
+produsers->producers
 produses->produces
+produsing->producing
+proect->protect, project,
+proected->protected, projected,
+proecting->protecting, projecting,
+proection->protection, projection,
+proections->protections, projections,
+proective->protective, projective, proactive,
+proector->protector, projector, proctor,
+proectors->protectors, projectors, proctors,
+proects->protects, projects,
 proedural->procedural
 proedure->procedure
 proedures->procedures
@@ -40439,6 +40621,11 @@ proejct->project
 proejcted->projected
 proejcting->projecting
 proejction->projection
+proejctions->projections
+proejctive->projective
+proejctor->projector
+proejctors->projectors
+proejcts->projects
 proepr->proper
 proeprly->properly
 proeprties->properties
@@ -40606,7 +40793,15 @@ projecters->projectors, projects,
 projectio->projection
 projecttion->projection
 projet->project
+projetct->project
+projetcted->projected
+projetcting->projecting
 projetction->projection
+projetctions->projections
+projetctive->projective
+projetctor->projector
+projetctors->projectors
+projetcts->projects
 projeted->projected
 projeting->projecting
 projetion->projection
@@ -40643,6 +40838,9 @@ promted->prompted, promoted,
 promter->prompter, promoter,
 promters->prompters, promoters,
 promting->prompting, promoting,
+promtion->promotion
+promtional->promotional
+promtions->promotions
 promtp->prompt
 promtped->prompted
 promtping->prompting
@@ -40656,6 +40854,9 @@ pronouced->pronounced
 pronounched->pronounced
 pronounciation->pronunciation
 pronunce->pronounce
+prooblem->problem
+prooblematic->problematic
+prooblems->problems
 proocecure->procedure
 proocecures->procedures
 proocedure->procedure
@@ -40696,7 +40897,10 @@ propable->probable
 propably->probably
 propagater->propagator, propagated, propagates, propagate,
 propagaters->propagators, propagates,
-propage->propagate
+propage->propagate, propane,
+propaged->propagated
+propages->propagates
+propaging->propagating
 propatagion->propagation
 propator->propagator
 propators->propagators
@@ -40832,12 +41036,17 @@ propt->prompt
 propteries->properties
 propterties->properties
 propterty->property
+proptery->property
 propvider->provider
 prority->priority
 prorotype->prototype
 proseletyzing->proselytizing
-prosess->process
-prosessor->processor
+prosess->process, profess, prowess, possess,
+prosessed->processed, professed, possessed,
+prosesses->processes, professes, possesses,
+prosessing->processing, professing, possessing,
+prosessor->processor, professor,
+prosessors->processors, professors,
 prosseses->processes, possesses,
 protability->portability, probability,
 protable->portable
@@ -40895,6 +41104,7 @@ provate->private, provide,
 provde->provide, proved,
 provded->provided
 provder->provider
+provders->providers
 provdes->provides
 provdided->provided
 provdidet->provided, provider, provident,
@@ -40908,7 +41118,12 @@ provicde->provide
 provicded->provided
 provicdes->provides
 provice->provide, province,
+proviced->provided
+provicer->provider
+provicers->providers
+provices->provides, provinces,
 provicial->provincial
+provicing->providing
 provid->provide, prove, proved, proves,
 provideres->providers
 providewd->provided
@@ -40926,7 +41141,11 @@ provieders->providers
 proviedes->provides
 provieding->providing
 provier->provider, prover,
+proviers->providers, provers,
 provies->provides, proves,
+provilege->privilege
+provileged->privileged
+provileges->privileges
 provinicial->provincial
 provisioing->provisioning
 provisiong->provisioning
@@ -40947,7 +41166,12 @@ provoder->provider
 provodes->provides
 provoding->providing
 provods->provides
+provsion->provision
+provsional->provisional
+provsionally->provisionally
+provsioned->provisioned
 provsioning->provisioning
+provsions->provisions
 proximty->proximity
 proyect->project, protect,
 proyected->projected, protected,
@@ -40969,7 +41193,13 @@ prset->preset
 prsets->presets
 prtinf->printf
 prufe->proof
+prvacy->privacy
+prvate->private
+prviacy->privacy
 prviate->private
+prvilege->privilege
+prvileged->privileged
+prvileges->privileges
 psace->space, pace,
 psaced->spaced, paced,
 psaces->spaces, paces,
@@ -41095,6 +41325,10 @@ puchasing->purchasing
 Pucini->Puccini
 Puertorrican->Puerto Rican
 Puertorricans->Puerto Ricans
+pugin->plugin
+pugins->plugins
+pulgin->plugin
+pulgins->plugins
 pulish->publish
 pulished->published
 pulisher->publisher
@@ -41114,7 +41348,16 @@ puplated->populated
 puplates->populates
 puplating->populating
 puplation->population
+puplic->public
+puplication->publication, duplication,
+puplications->publications, duplications,
+puplicly->publicly
+puplish->publish, purplish,
+puplished->published
 puplisher->publisher
+puplishers->publishers
+puplishes->publishes
+puplishing->publishing
 pupose->purpose
 puposes->purposes
 pupular->popular
@@ -41124,6 +41367,8 @@ pupulated->populated
 pupulates->populates
 pupulating->populating
 pupulation->population
+pupup->popup
+pupups->popups
 purcahed->purchased
 purcahse->purchase
 purgable->purgeable
