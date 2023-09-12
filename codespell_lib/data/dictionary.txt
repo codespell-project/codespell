@@ -4866,10 +4866,8 @@ are'nt->aren't
 aready->already
 areea->area
 aren's->aren't
-aren;t->aren't
 arent'->aren't
 arent->aren't
-arent;->aren't
 areodynamics->aerodynamics
 argement->argument
 argements->arguments
@@ -8821,7 +8819,6 @@ campatibilities->compatibilities
 campatibility->compatibility
 campatible->compatible
 campatibly->compatibly
-can;t->can't
 canabel->cannibal
 canabels->cannibals
 canabelyse->cannibalise
@@ -8959,7 +8956,6 @@ canonivally->canonically
 canot->cannot
 cant'->can't
 cant't->can't
-cant;->can't
 cantact->contact
 cantacted->contacted
 cantacting->contacting
@@ -15159,10 +15155,8 @@ could't->couldn't
 coulden't->couldn't
 couldent->couldn't
 couldn->could, couldn't,
-couldn;t->couldn't
 couldnt'->couldn't
 couldnt->couldn't
-couldnt;->couldn't
 coulmn->column
 coulmns->columns
 couln't->couldn't
@@ -18488,11 +18482,9 @@ dicussion->discussion
 dicussions->discussions
 did'nt->didn't
 didi->did
-didn;t->didn't
 didnt'->didn't
 didnt't->didn't
 didnt->didn't
-didnt;->didn't
 diea->idea, die,
 diect->direct, dissect,
 diected->directed, dissected,
@@ -19883,13 +19875,11 @@ doesing->doing, does, does in, dosing, dozing,
 doesits->does its
 doesn'->doesn't
 doesn't't->doesn't
-doesn;t->doesn't
 doesnexist->doesn't exist
 doesnot->doesn't, does not,
 doesnt'->doesn't
 doesnt't->doesn't
 doesnt->doesn't, does not,
-doesnt;->doesn't
 doess->does
 doestn't->doesn't
 doign->doing
@@ -19970,13 +19960,10 @@ dosclosure->disclosure
 dosclosures->disclosures
 dosen't->doesn't
 dosen->dozen, dose, doesn,
-dosen;t->doesn't
 dosens->dozens
 dosent'->doesn't
 dosent->doesn't
-dosent;->doesn't
 dosn't->doesn't
-dosn;t->doesn't
 dosnt->doesn't
 dosposing->disposing
 dosseay->dossier
@@ -26043,7 +26030,6 @@ gernerics->generics
 ges->goes, guess,
 gess->guess
 get's->gets
-get;s->gets
 getfastproperyvalue->getfastpropertyvalue
 getimezone->gettimezone
 geting->getting
@@ -26680,7 +26666,6 @@ hashs->hashes
 hashses->hashes
 hasing->hashing
 hask->hash
-hasn;t->hasn't
 hasnt'->hasn't
 hasnt->hasn't
 hass->hash
@@ -26694,7 +26679,6 @@ have'nt->haven't
 havea->have, have a,
 havee->have, have a,
 haveing->having
-haven;t->haven't
 havent'->haven't
 havent't->haven't
 havent->haven't
@@ -27229,7 +27213,6 @@ hypvervisors->hypervisors
 hypvisor->hypervisor
 hypvisors->hypervisors
 I'sd->I'd
-i;ll->I'll
 iamge->image
 iamges->images
 ibject->object
@@ -30863,12 +30846,10 @@ iserting->inserting
 isimilar->similar
 isloation->isolation
 ismas->isthmus
-isn;t->isn't
 ISNB->ISBN
 isnpiron->inspiron
 isnt'->isn't
 isnt->isn't
-isnt;->isn't
 isntalation->installation
 isntalations->installations
 isntall->install, isn't all,
@@ -35298,7 +35279,6 @@ nighborhood->neighborhood
 nighboring->neighboring
 nighlties->nightlies
 nighlty->nightly
-nightfa;;->nightfall
 nighther->neither
 nightime->nighttime
 nihther->neither
@@ -46347,10 +46327,8 @@ shoul->should, shoal, shawl,
 should'nt->shouldn't
 should't->shouldn't
 shouldbe->should, should be,
-shouldn;t->shouldn't
 shouldnt'->shouldn't
 shouldnt->shouldn't
-shouldnt;->shouldn't
 shoule->should
 shoulld->should
 shouln't->shouldn't
@@ -50401,7 +50379,6 @@ thant->than
 thar->than, that,
 thare->there
 thast->that, that's,
-that;s->that's
 thatn->that, than,
 thatnk->thank
 thatnked->thanked
@@ -50411,7 +50388,6 @@ thatnking->thanking
 thatnks->thanks
 thats'->that's
 thats->that's
-thats;->that's
 thaught->thought, taught,
 thaughts->thoughts
 thay->they, that,
@@ -54235,8 +54211,6 @@ wakeus->wakeups, wake us, walrus,
 wakup->wakeup
 wallthickness->wall thickness
 wan't->want, wasn't,
-wan;t->want, wasn't,
-want;s->wants
 wantto->want to
 wapped->wrapped, swapped, warped,
 wapper->wrapper
@@ -54298,12 +54272,9 @@ warrnings->warnings
 warrriors->warriors
 was'nt->wasn't
 was't->wasn't
-was;t->wasn't
 wasn->wasn't, was,
-wasn;t->wasn't
 wasnt'->wasn't
 wasnt->wasn't
-wasnt;->wasn't
 wass->was
 wastefull->wasteful, wastefully,
 wastefullness->wastefulness
@@ -54442,7 +54413,6 @@ whheel->wheel
 whhen->when
 whic->which
 whicg->which
-which;s->which's
 whichs->which's
 whicht->which
 whih->which
@@ -54712,7 +54682,6 @@ wolrdwide->worldwide
 wolwide->worldwide
 womans->woman's, women,
 womens->women's, women,
-won;t->won't
 wonce->once, nonce, ponce, wince,
 wonderfull->wonderful
 wonderig->wondering
@@ -54824,10 +54793,8 @@ would'nt->wouldn't
 would't->wouldn't
 woulden't->wouldn't
 wouldent->wouldn't
-wouldn;t->wouldn't
 wouldnt'->wouldn't
 wouldnt->wouldn't
-wouldnt;->wouldn't
 wounderful->wonderful
 wouold->would
 wouuld->would

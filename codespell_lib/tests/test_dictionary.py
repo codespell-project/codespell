@@ -8,7 +8,11 @@ from typing import Any, Dict, Iterable, Optional, Set, Tuple
 
 import pytest
 
-from codespell_lib._codespell import _builtin_dictionaries, supported_languages
+from codespell_lib._codespell import (
+    _builtin_dictionaries,
+    supported_languages,
+    word_regex_def,
+)
 
 spellers = {}
 
@@ -302,6 +306,7 @@ def test_dictionary_looping(
     """Test that all dictionary entries are valid."""
     this_err_dict = {}
     short_fname = op.basename(fname)
+    word_regex = re.compile(word_regex_def)
     with open(fname, encoding="utf-8") as fid:
         for line in fid:
             err, rep = line.split("->")
@@ -315,6 +320,9 @@ def test_dictionary_looping(
             this_err_dict[err] = reps
     # 1. check the dict against itself (diagonal)
     for err in this_err_dict:
+        assert word_regex.fullmatch(
+            err
+        ), f"error {err!r} does not match default word regex '{word_regex_def}'"
         for r in this_err_dict[err]:
             assert r not in this_err_dict, (
                 f"error {err}: correction {r} is an error itself "
