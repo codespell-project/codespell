@@ -41418,6 +41418,10 @@ pytnon->python
 pytohn->python
 pyton->python
 pytyon->python
+qeried->queried
+qeries->queries
+qery->query
+qerying->querying
 qest->quest
 qestion->question
 qestioned->questioned
@@ -41444,6 +41448,10 @@ qeueueing->queueing
 qeueues->queues
 qeueuing->queuing
 qeuing->queuing
+qeuried->queried
+qeuries->queries
+qeury->query
+qeurying->querying
 qeust->quest
 qeustion->question
 qeustioned->questioned
@@ -41453,6 +41461,7 @@ qeustionnaires->questionnaires
 qeustions->questions
 qeusts->quests
 qhich->which, quiche,
+qickly->quickly
 qiest->quest
 qiestion->question
 qiestioned->questioned
@@ -41462,6 +41471,8 @@ qiestionnaires->questionnaires
 qiestions->questions
 qiests->quests
 qith->with
+qoutation->quotation
+qoutations->quotations
 qoute->quote
 qouted->quoted
 qoutes->quotes
@@ -41539,6 +41550,15 @@ querried->queried
 querries->queries
 querry->query, quarry,
 querrying->querying
+querst->quest
+querstion->question
+querstionable->questionable
+querstioned->questioned
+querstioning->questioning
+querstionnaire->questionnaire
+querstionnaires->questionnaires
+querstions->questions
+quersts->quests
 queryies->queries
 queryinterace->queryinterface
 querys->queries
@@ -41576,12 +41596,17 @@ quesrs->quests
 quess->guess, quests,
 quessant->croissant
 quessants->croissants
+questio->question
+questioable->questionable
+questioed->questioned
+questioing->questioning
 questionaire->questionnaire
 questionaires->questionnaires
 questionare->questionnaire
 questionares->questionnaires
 questionnair->questionnaire
 questionnairs->questionnaires
+questios->questions
 questoin->question
 questoined->questioned
 questoining->questioning
@@ -41596,7 +41621,10 @@ questonnaire->questionnaire
 questonnaires->questionnaires
 questons->questions
 queu->queue
+queueu->queue
 queueud->queued
+queueuing->queuing, queueing,
+queueus->queues
 queus->queues
 quew->queue
 quickier->quicker
@@ -41687,7 +41715,17 @@ raedy->ready
 raelly->really
 raisedd->raised
 raison->reason, raisin,
+raisons->reasons, raisins,
+ralate->relate
+ralated->related
+ralates->relates
+ralating->relating
 ralation->relation
+ralations->relations
+ralationship->relationship
+ralationships->relationships
+ralative->relative
+ralatively->relatively
 randayvoo->rendezvous
 randayvooed->rendezvoused
 randayvoos->rendezvous
@@ -41716,6 +41754,10 @@ rapelled->rappelled
 rapelling->rappelling
 rapells->rappells
 raplace->replace
+raplaced->replaced
+raplacement->replacement
+raplacements->replacements
+raplaces->replaces
 raplacing->replacing
 rapore->rapport
 rapresent->represent
@@ -41998,6 +42040,8 @@ reacahable->reachable
 reacahble->reachable
 reaccurring->recurring
 reaceive->receive
+reacent->recent, reagent,
+reacently->recently
 reacheable->reachable
 reacher->richer, reader,
 reachers->readers
@@ -42035,10 +42079,27 @@ readnig->reading
 readning->reading
 readyness->readiness
 reaeched->reached
+reagrd->regard
+reagrded->regarded
 reagrding->regarding
+reagrdless->regardless
+reagrds->regards
 reaise->realise, realize, raise,
+reaised->realised, realized, raised,
+reaises->realises, realizes, raises,
+reaising->realising, realizing, raising,
 reaktivate->reactivate
 reaktivated->reactivated
+realate->relate
+realated->related
+realates->relates
+realating->relating
+realation->relation
+realations->relations
+realationship->relationship
+realationships->relationships
+realative->relative
+realatively->relatively
 realease->release
 realeased->released
 realeases->releases
@@ -42086,12 +42147,20 @@ reamin->remain
 reamining->remaining
 reamins->remains
 reampping->remapping, revamping,
+reaname->rename
+reanamed->renamed
+reanames->renames
+reanaming->renaming
 reander->render
 reanme->rename
 reanmed->renamed
 reanmes->renames
 reanming->renaming
 reaon->reason
+reaonable->reasonable
+reaonably->reasonably
+reaoned->reasoned
+reaoning->reasoning
 reaons->reasons
 reapeat->repeat
 reapeated->repeated
@@ -42102,6 +42171,10 @@ reappeares->reappears
 reapper->reappear
 reappered->reappeared
 reappering->reappearing
+reaquest->request
+reaquested->requested
+reaquesting->requesting
+reaquests->requests
 reaquire->reacquire, require,
 reaquired->required, reacquired,
 reaquirement->requirement
@@ -42174,7 +42247,10 @@ reattache->reattached, reattach,
 reattachement->reattachment
 reay->ready, really, ray,
 reayd->ready, read,
+rebiuld->rebuild
 rebiulding->rebuilding
+rebiulds->rebuilds
+rebiult->rebuilt
 rebllions->rebellions
 reboto->reboot
 rebounce->rebound
@@ -42269,7 +42345,15 @@ reccur->recur, reoccur,
 reccured->recurred, reoccurred,
 reccurence->recurrence
 reccurences->recurrences
+reccurent->recurrent
+reccurently->recurrently
 reccuring->recurring, reoccurring,
+reccurred->recurred, reoccurred,
+reccurrence->recurrence
+reccurrences->recurrences
+reccurrent->recurrent
+reccurrently->recurrently
+reccurring->recurring, reoccurring,
 reccurs->recurs, reoccurs,
 reccursion->recursion
 reccursive->recursive
@@ -42281,6 +42365,8 @@ receets->receipts
 receied->received
 receieve->receive
 receieved->received
+receiever->receiver
+receievers->receivers
 receieves->receives
 receieving->receiving
 receipe->recipe, receipt,
@@ -42301,6 +42387,7 @@ recendes->rescinds
 recending->rescinding
 recends->rescinds
 recenet->recent
+recenetly->recently
 recenlty->recently
 recenly->recently
 recenty->recently
@@ -42312,11 +42399,15 @@ receptical->receptacle
 recepticals->receptacles
 receve->receive
 receved->received
+recever->receiver, recover,
+recevers->receivers, recovers,
 receves->receives
 recevie->receive
 recevied->received
 recevier->receiver
+receviers->receivers
 recevies->receives
+receviing->receiving
 receving->receiving
 rechable->reachable
 rechargable->rechargeable
@@ -42328,8 +42419,10 @@ recided->resided
 recident->resident
 recidents->residents
 reciding->residing
+reciepent->recipient
 reciepents->recipients
 reciept->receipt
+reciepts->receipts
 recievd->received
 recieve->receive
 recieved->received
@@ -42367,17 +42460,28 @@ recod->record
 recofig->reconfig
 recoginise->recognise
 recoginised->recognised
+recoginiser->recogniser
+recoginisers->recognisers
 recoginises->recognises
 recoginising->recognising
 recoginition->recognition
 recoginize->recognize
 recoginized->recognized
 recoginizer->recognizer
+recoginizers->recognizers
 recoginizes->recognizes
 recoginizing->recognizing
 recogise->recognise
+recogised->recognised
+recogiser->recogniser
+recogisers->recognisers
+recogises->recognises
+recogising->recognising
+recogition->recognition
 recogize->recognize
 recogized->recognized
+recogizer->recognizer
+recogizers->recognizers
 recogizes->recognizes
 recogizing->recognizing
 recognice->recognize, recognise,
@@ -42416,6 +42520,8 @@ recommedations->recommendations
 recommeded->recommended
 recommeding->recommending
 recommeds->recommends
+recommenation->recommendation
+recommenations->recommendations
 recommened->recommended, recommend,
 recommeneded->recommended
 recommentation->recommendation
@@ -42535,8 +42641,19 @@ reconstructers->reconstructors, reconstructs,
 reconstuct->reconstruct
 reconstucted->reconstructed
 reconstucting->reconstructing
+reconstuction->reconstruction
+reconstuctions->reconstructions
+reconstuctor->reconstructor
+reconstuctors->reconstructors
 reconstucts->reconstructs
+reconsturct->reconstruct
+reconsturcted->reconstructed
+reconsturcting->reconstructing
 reconsturction->reconstruction
+reconsturctions->reconstructions
+reconsturctor->reconstructor
+reconsturctors->reconstructors
+reconsturcts->reconstructs
 recontruct->reconstruct
 recontructed->reconstructed
 recontructing->reconstructing
@@ -42555,7 +42672,12 @@ recources->resources
 recourcing->resourcing
 recpie->recipe
 recpies->recipes
-recquired->required
+recquire->require, reacquire,
+recquired->required, reacquired,
+recquirement->requirement
+recquirements->requirements
+recquires->requires, reacquires,
+recquiring->requiring, reacquiring,
 recrational->recreational
 recreateation->recreation
 recrete->recreate
@@ -42589,6 +42711,10 @@ reculrively->recursively
 recun->reckon, recon, recur,
 recund->reckoned, fecund,
 recuning->reckoning, retuning, recusing,
+recurence->recurrence
+recurences->recurrences
+recurent->recurrent
+recurently->recurrently
 recuring->recurring
 recurion->recursion
 recurison->recursion
@@ -42597,6 +42723,9 @@ recurisvely->recursively
 recurive->recursive
 recurively->recursively
 recurrance->recurrence
+recurrances->recurrences
+recurrant->recurrent
+recurrantly->recurrently
 recursily->recursively
 recursivelly->recursively
 recursivion->recursion
@@ -42608,6 +42737,7 @@ recursses->recurses
 recurssing->recursing
 recurssion->recursion
 recurssive->recursive
+recurssively->recursively
 recusion->recursion, reclusion,
 recusive->recursive, reclusive,
 recusively->recursively, reclusively,
