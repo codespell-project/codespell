@@ -43306,12 +43306,12 @@ reimplementaion->reimplementation
 reimplementaions->reimplementations
 reimplemention->reimplementation
 reimplementions->reimplementations
-reimplent->reimplement
-reimplentation->reimplementation
-reimplentations->reimplementations
-reimplented->reimplemented
-reimplenting->reimplementing
-reimplents->reimplements
+reimplent->reimplement, reimplant,
+reimplentation->reimplementation, reimplantation,
+reimplentations->reimplementations, reimplantations,
+reimplented->reimplemented, reimplanted,
+reimplenting->reimplementing, reimplanting,
+reimplents->reimplements, reimplants,
 reimpliment->reimplement
 reimplimentation->reimplementation
 reimplimentations->reimplementations
@@ -43569,10 +43569,10 @@ rembember->remember
 rembembered->remembered
 rembembering->remembering
 rembembers->remembers
-rember->remember, renumber,
+rember->remember, renumber, member,
 rembered->remembered, renumbered,
 rembering->remembering, renumbering,
-rembers->remembers, renumbers,
+rembers->remembers, renumbers, members,
 remeber->remember
 remebered->remembered
 remebering->remembering
@@ -44058,7 +44058,7 @@ repesentational->representational
 repesented->represented
 repesenting->representing
 repesents->represents
-repet->repeat, repent, repel,
+repet->repeat, repent, repel, reset,
 repetation->repetition, reputation,
 repetations->repetitions, reputations,
 repetative->repetitive
@@ -44080,7 +44080,7 @@ repetive->repetitive, receptive,
 repetively->repetitively, receptively,
 repetoire->repertoire
 repetoires->repertoires
-repets->repeats, repents, repels,
+repets->repeats, repents, repels, resets,
 repid->rapid
 repition->repetition
 repitions->repetitions
