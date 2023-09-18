@@ -44371,8 +44371,12 @@ reputposes->repurposes
 reputposing->repurposing
 reqest->request
 reqested->requested
+reqesting->requesting
 reqests->requests
 reqeuest->request
+reqeuested->requested
+reqeuesting->requesting
+reqeuests->requests
 reqeust->request
 reqeusted->requested
 reqeusting->requesting
@@ -44401,8 +44405,14 @@ requeried->required
 requeriment->requirement
 requeriments->requirements
 reques->request
+requesed->requested
 requeset->request, requisite,
+requeseted->requested
+requeseting->requesting
+requesets->requests, requisites,
+requesing->requesting
 requesr->request
+requess->requests, request,
 requestd->requested
 requestes->requests, requested,
 requestesd->requested
@@ -44485,7 +44495,8 @@ requsted->requested
 requsting->requesting
 requsts->requests
 reregisteration->reregistration
-rererences->references
+rererence->reference, reverence,
+rererences->references, reverences,
 rerference->reference
 rerferences->references
 rerpesentation->representation
@@ -44534,6 +44545,7 @@ resepective->respective
 resepectively->respectively
 resepects->respects
 reseration->reservation
+reserations->reservations
 reserv->reserve
 reserverd->reserved
 reservered->reserved
@@ -44543,10 +44555,15 @@ resetable->resettable
 reseted->reset
 reseting->resetting
 resetted->reset
+resevation->reservation
+resevations->reservations
+reseve->reserve
 reseved->reserved
 reseverd->reserved
 resevered->reserved
 resevering->reserving
+reseves->reserves
+reseving->reserving
 resevoir->reservoir
 resgister->register
 resgistered->registered
@@ -44570,12 +44587,26 @@ resitors->resistors
 resivwar->reservoir
 resizeble->resizeable, resizable,
 reslection->reselection
+resloution->resolution
+resloutions->resolutions
 reslove->resolve
 resloved->resolved
+reslover->resolver
+reslovers->resolvers
 resloves->resolves
 resloving->resolving
 reslut->result
+resluted->resulted
+resluting->resulting
+reslution->resolution
+reslutions->resolutions
 resluts->results
+reslve->resolve
+reslved->resolved
+reslver->resolver
+reslvers->resolvers
+reslves->resolves
+reslving->resolving
 resoect->respect
 resoective->respective
 resoiurce->resource
@@ -44665,6 +44696,8 @@ resovlers->resolvers
 resovles->resolves
 resovling->resolving
 respawining->respawning
+respberries->raspberries
+respberry->raspberry
 respecitve->respective
 respecitvely->respectively
 respecive->respective
@@ -44685,10 +44718,21 @@ respnsibility->responsibility
 respnsible->responsible
 respnsive->responsive
 respnsiveness->responsiveness
+respod->respond
+respoded->responded
+respoder->responder
+respoders->responders
+respoding->responding
+respods->responds
 respoduce->reproduce
 responc->response, respond,
 responce->response
 responces->responses
+responcibilities->responsibilities
+responcibility->responsibility
+responcible->responsible
+responcive->responsive
+responciveness->responsiveness
 responde->respond, response, responds, responded, responder,
 respone->response, respond,
 respones->response, responses,
@@ -44702,11 +44746,14 @@ responisve->responsive
 responisveness->responsiveness
 responive->responsive
 responiveness->responsiveness
+responnsibilties->responsibilities
 responnsibilty->responsibility
 respons->response, respond,
 responsabilities->responsibilities
 responsability->responsibility
 responsable->responsible
+responsbiilities->responsibilities
+responsbiility->responsibility
 responsbile->responsible
 responsbilities->responsibilities
 responsbility->responsibility
@@ -44719,15 +44766,19 @@ responsess->responses
 responsibe->responsive, responsible,
 responsibile->responsible
 responsibilites->responsibilities
+responsibilties->responsibilities
 responsibilty->responsibility
 responsibities->responsibilities
+responsibity->responsibility
 responsiblities->responsibilities
 responsiblity->responsibility
 responsing->responding
 respose->response
 resposes->responses
+resposibilities->responsibilities
 resposibility->responsibility
 resposible->responsible
+resposiblities->responsibilities
 resposiblity->responsibility
 respositories->repositories
 respository->repository
@@ -44735,6 +44786,11 @@ resposive->responsive
 resposiveness->responsiveness
 resposne->response
 resposnes->responses
+resposnibilities->responsibilities
+resposnibility->responsibility
+resposnible->responsible
+resposnive->responsive
+resposniveness->responsiveness
 respponse->response
 respponses->responses
 respresent->represent
@@ -44749,6 +44805,9 @@ respwaned->respawned
 respwaning->respawning
 respwans->respawns
 resquest->request
+resquested->requested
+resquesting->requesting
+resquests->requests
 resrouce->resource
 resrouced->resourced
 resrouces->resources
@@ -44768,6 +44827,14 @@ ressets->resets
 ressetting->resetting
 ressize->resize
 ressizes->resizes
+ressolution->resolution
+ressolutions->resolutions
+ressolve->resolve
+ressolved->resolved
+ressolver->resolver
+ressolvers->resolvers
+ressolves->resolves
+ressolving->resolving
 ressource->resource
 ressourced->resourced
 ressources->resources
@@ -44776,6 +44843,9 @@ resssurecting->resurrecting
 resstriction->restriction
 resstrictions->restrictions
 ressult->result
+ressulted->resulted
+ressulting->resulting
+ressults->results
 ressurect->resurrect
 ressurected->resurrected
 ressurecting->resurrecting
@@ -44830,13 +44900,21 @@ restrcuture->restructure
 restriced->restricted
 restroing->restoring
 restructed->restricted, restructured,
+reStructedText->reStructuredText
 restructing->restricting, restructuring,
 reStructuredTetx->reStructuredText
 reStructuredTxet->reStructuredText
+restrucure->restructure
+restrucured->restructured
 reStrucuredText->reStructuredText
+restrucures->restructures
+restrucuring->restructuring
 restuarant->restaurant
 restuarants->restaurants
+restucture->restructure
+restuctured->restructured
 reStucturedText->reStructuredText
+restuctures->restructures
 restucturing->restructuring
 reStucuredText->reStructuredText
 resturant->restaurant
@@ -44869,6 +44947,9 @@ resul->result
 resuled->resulted, resumed,
 resuling->resulting
 resullt->result
+resullted->resulted
+resullting->resulting
+resullts->results
 resulotion->resolution
 resulotions->resolutions
 resuls->results
@@ -44879,6 +44960,12 @@ resultions->resolutions
 resultung->resulting
 resulution->resolution
 resulutions->resolutions
+resulve->resolve
+resulved->resolved
+resulver->resolver
+resulvers->resolvers
+resulves->resolves
+resulving->resolving
 resumbmitting->resubmitting
 resumitted->resubmitted
 resumt->resume
@@ -44890,8 +44977,18 @@ resurce->resource
 resurced->resourced
 resurces->resources
 resurcing->resourcing
+resurect->resurrect
+resurected->resurrected
 resurecting->resurrecting
+resurection->resurrection
+resurections->resurrections
+resurects->resurrects
 resurse->recurse, resource,
+resursed->recursed, resourced,
+resurses->recurses, resources,
+resursing->recursing, resourcing,
+resursion->recursion
+resursions->recursions
 resursive->recursive, resourceful,
 resursively->recursively
 resusable->reusable
@@ -44914,6 +45011,8 @@ retart->restart
 retartation->retardation
 retarted->restarted
 retarting->restarting
+retaurant->restaurant
+retaurants->restaurants
 retcieve->retrieve, receive,
 retcieved->retrieved, received,
 retciever->retriever, receiver,
@@ -44966,6 +45065,8 @@ retreivable->retrievable
 retreival->retrieval
 retreive->retrieve
 retreived->retrieved
+retreiver->retriever
+retreivers->retrievers
 retreives->retrieves
 retreiving->retrieving
 retrevable->retrievable
@@ -44974,8 +45075,13 @@ retreve->retrieve
 retreved->retrieved
 retreves->retrieves
 retreving->retrieving
-retrict->restrict
-retricted->restricted
+retrict->restrict, retract,
+retricted->restricted, retracted,
+retricting->restricting, retracting,
+retriction->restriction, retraction,
+retrictions->restrictions, retractions,
+retrictive->restrictive
+retricts->restricts, retracts,
 retriebe->retrieve
 retriece->retrieve
 retrieces->retrieves
@@ -45005,7 +45111,12 @@ retsart->restart
 retsarts->restarts
 retun->return
 retunr->return, retune,
+retunred->returned, retuned,
+retunring->returning, retuning,
+retunrn->return
 retunrned->returned
+retunrning->returning
+retunrns->returns
 retunrs->returns
 retuns->returns
 retur->return
@@ -45027,7 +45138,11 @@ returnned->returned
 returnning->returning
 returs->returns
 retursn->returns
+retutn->return
+retutned->returned
 retutning->returning
+retutns->returns
+retyr->retry
 retyring->retrying
 reudce->reduce
 reudced->reduced
@@ -45036,6 +45151,12 @@ reudction->reduction
 reudctions->reductions
 reuest->request
 reuests->requests
+reuire->require, rewire,
+reuired->required, rewired,
+reuirement->requirement
+reuirements->requirements
+reuires->requires, rewires,
+reuiring->requiring, rewiring,
 reulator->regulator
 reundant->redundant
 reundantly->redundantly
@@ -45076,8 +45197,14 @@ reurn->return
 reursively->recursively
 reuseable->reusable
 reuslt->result
+reuslted->resulted
+reuslting->resulting
+reuslts->results
 reussing->reusing
+reutnr->return
 reutnred->returned
+reutnring->returning
+reutnrs->returns
 reutrn->return
 reutrns->returns
 revaildating->revalidating
@@ -45118,7 +45245,13 @@ reverseed->reversed
 reversees->reverses
 reverve->reserve
 reverved->reserved
+revew->review, renew, revel,
+revewed->reviewed, renewed, reveled,
+revewer->reviewer
+revewers->reviewers
+revewing->reviewing, renewing, reveling,
 revewrse->reverse
+revews->reviews, renews, revels,
 reviewl->review
 reviewsectio->reviewsection
 revisisions->revisions
@@ -45257,6 +45390,10 @@ rittling->riddling, rattling,
 rivised->revised
 rizes->rises
 rlation->relation
+rlease->release, please, lease,
+rleased->released, pleased, leased,
+rleases->releases, pleases, leases,
+rleasing->releasing, pleasing, leasing,
 rlse->else
 rmeote->remote
 rmeove->remove
@@ -45278,8 +45415,12 @@ roatory->rotatory, oratory,
 roats->roasts, roast,
 roboustness->robustness
 robustnes->robustness
-rocess->process
-rocesses->processes
+rocess->process, recess,
+rocessed->processed, recessed,
+rocesses->processes, recesses,
+rocessing->processing, recessing,
+rocessor->processor
+rocessors->processors
 Rockerfeller->Rockefeller
 rococco->rococo
 rocord->record
@@ -45289,7 +45430,14 @@ rocording->recording
 rocordings->recordings
 rocords->records
 roduce->reduce, produce,
+roduced->reduced, produced,
 roduceer->producer
+roduces->reduces, produces,
+roducing->reducing, producing,
+roduct->product
+roduction->reduction, production,
+roductions->reductions, productions,
+roducts->products
 roigin->origin
 roiginal->original
 roiginally->originally
@@ -45420,14 +45568,21 @@ runnners->runners
 runnnig->running
 runnning->running
 runns->runs
+runntime->runtime
+runntimes->runtimes
 runnung->running
 runtine->runtime, routine,
+runtines->runtimes, routines,
 runting->runtime
 rurrent->current
 russina->Russian
 Russion->Russian
 rute->route, rule, brute,
 rutes->routes, rules, brutes,
+rutime->runtime
+rutimes->runtimes
+rutine->routine
+rutines->routines
 rwite->write
 rysnc->rsync
 rythem->rhythm
