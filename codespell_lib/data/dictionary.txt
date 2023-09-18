@@ -44495,8 +44495,8 @@ requsted->requested
 requsting->requesting
 requsts->requests
 reregisteration->reregistration
-rererence->reference
-rererences->references
+rererence->reference, reverence,
+rererences->references, reverences,
 rerference->reference
 rerferences->references
 rerpesentation->representation
@@ -45151,12 +45151,12 @@ reudction->reduction
 reudctions->reductions
 reuest->request
 reuests->requests
-reuire->require
-reuired->required
+reuire->require, rewire,
+reuired->required, rewired,
 reuirement->requirement
 reuirements->requirements
-reuires->requires
-reuiring->requiring
+reuires->requires, rewires,
+reuiring->requiring, rewiring,
 reulator->regulator
 reundant->redundant
 reundantly->redundantly
@@ -45245,13 +45245,13 @@ reverseed->reversed
 reversees->reverses
 reverve->reserve
 reverved->reserved
-revew->review
-revewed->reviewed
+revew->review, renew, revel,
+revewed->reviewed, renewed, reveled,
 revewer->reviewer
 revewers->reviewers
-revewing->reviewing
+revewing->reviewing, renewing, reveling,
 revewrse->reverse
-revews->reviews
+revews->reviews, renews, revels,
 reviewl->review
 reviewsectio->reviewsection
 revisisions->revisions
@@ -45415,10 +45415,10 @@ roatory->rotatory, oratory,
 roats->roasts, roast,
 roboustness->robustness
 robustnes->robustness
-rocess->process
-rocessed->processed
-rocesses->processes
-rocessing->processing
+rocess->process, recess,
+rocessed->processed, recessed,
+rocesses->processes, recesses,
+rocessing->processing, recessing,
 rocessor->processor
 rocessors->processors
 Rockerfeller->Rockefeller
