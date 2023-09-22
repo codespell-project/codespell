@@ -47108,6 +47108,10 @@ shashes->slashes
 shatow->shadow, château, châteaux,
 shatows->shadows, châteaux, châteaus,
 shbang->shebang
+shdow->shadow, show,
+shdowed->shadowed
+shdowing->shadowing, showing,
+shdows->shadows, shows,
 sheat->sheath, sheet, cheat,
 sheck->check, cheque, shuck,
 shecked->checked, shucked,
@@ -47232,6 +47236,8 @@ shouln't->shouldn't
 shouls->should
 shoult->should
 shouod->should
+shouuld->should
+shouuldn't->shouldn't
 shouw->show
 shouws->shows
 showfer->chauffeur, shower,
@@ -47247,6 +47253,8 @@ shreak->shriek
 shreshold->threshold
 shriks->shrinks
 shrinked->shrunk, shrank,
+shrtcut->shortcut
+shrtcuts->shortcuts
 shs->ssh, NHS,
 shtop->stop, shop,
 shtoped->stopped, shopped,
@@ -47303,7 +47311,16 @@ siffixes->suffixes
 siffixing->suffixing
 sigal->signal, sigil,
 sigaled->signaled
+sigaling->signaling
+sigalled->signalled
+sigalling->signalling
 sigals->signals, sigils,
+siganl->signal
+siganled->signaled
+siganling->signaling
+siganlled->signalled
+siganlling->signalling
+siganls->signals
 siganture->signature
 sigantures->signatures
 sigature->signature
@@ -47377,6 +47394,9 @@ signularity->singularity
 signularly->singularly
 sigrynge->syringe
 sigrynges->syringes
+sigular->singular
+sigularities->singularities
+sigularity->singularity
 siguret->cigarette
 sigurete->cigarette
 siguretes->cigarettes
@@ -47432,6 +47452,10 @@ siloweting->silhouetting
 silowetist->silhouettist
 silybus->syllabus
 silybuses->syllabuses
+simbol->symbol
+simbolic->symbolic
+simbolically->symbolically
+simbols->symbols
 simeple->simple
 simetric->symmetric
 simetrical->symmetrical
@@ -47509,7 +47533,7 @@ simplfiers->simplifiers
 simplfies->simplifies
 simplfy->simplify
 simplfying->simplifying
-simplicitly->simplicity
+simplicitly->simplicity, implicitly,
 simplicty->simplicity
 simplied->simplified, implied,
 simplier->simpler
@@ -47560,6 +47584,14 @@ simualtion->simulation
 simualtions->simulations
 simualtor->simulator
 simualtors->simulators
+simuate->simulate, situate,
+simuated->simulated, situated,
+simuates->simulates, situates,
+simuating->simulating, situating,
+simuation->simulation, situation,
+simuations->simulations, situations,
+simuator->simulator
+simuators->simulators
 simulaiton->simulation
 simulaitons->simulations
 simulantaneous->simultaneous
@@ -47598,8 +47630,11 @@ sinature->signature
 sincerley->sincerely
 sincerly->sincerely
 singal->signal, single,
-singaled->signaled
-singals->signals
+singaled->signaled, singled,
+singaling->signaling, singling, singalong,
+singalled->signalled
+singalling->signalling
+singals->signals, singles,
 singature->signature
 singatures->signatures
 singel->single, signal,
@@ -47608,8 +47643,14 @@ singelarity->singularity
 singelarly->singularly
 singeled->singled, signaled,
 singeles->singles, signals,
+singeleton->singleton
+singeletons->singletons
 singelton->singleton
+singeltons->singletons
+singificance->significance
 singificand->significand, significant,
+singificant->significant
+singificantly->significantly
 singl->single
 singlar->singular
 single-threded->single-threaded
@@ -47621,8 +47662,16 @@ singluar->singular
 singlular->singular
 singlularly->singularly
 singnal->signal
+singnaled->signaled
+singnaling->signaling
 singnalled->signalled
+singnalling->signalling
 singnals->signals
+singnature->signature
+singnatures->signatures
+singnificance->significance
+singnificant->significant
+singnificantly->significantly
 singol->signal, single,
 singolar->singular
 singoled->signaled, singled,
@@ -47671,6 +47720,14 @@ sintakts->syntax
 sintax->syntax
 Sionist->Zionist
 Sionists->Zionists
+siplification->simplification
+siplifications->simplifications
+siplified->simplified
+siplifier->simplifier
+siplifiers->simplifiers
+siplifies->simplifies
+siplify->simplify
+siplifying->simplifying
 siply->simply
 sircle->circle
 sircles->circles
@@ -47835,11 +47892,24 @@ slase->slash
 slases->slashes
 slashs->slashes
 slaugterhouses->slaughterhouses
-slect->select
-slected->selected
-slecting->selecting
-slection->selection
+slect->select, slept, elect, sect,
+slectable->selectable
+slected->selected, elected,
+slecting->selecting, electing,
+slection->selection, section, election,
+slections->selections, sections, elections,
+slector->selector, sector, elector,
+slectors->selectors, sectors, electors,
+slects->selects, elects, sects,
 sleect->select
+sleectable->selectable
+sleected->selected
+sleecting->selecting
+sleection->selection
+sleections->selections
+sleector->selector
+sleectors->selectors
+sleects->selects
 sleeped->slept
 sleepp->sleep
 slewth->sleuth
@@ -47884,10 +47954,25 @@ smapled->sampled
 smaples->samples
 smapling->sampling
 smealting->smelting
+smebody->somebody
+smehow->somehow
+smeone->someone
 smething->something
+smetime->sometime
+smetimes->sometimes
+smewhat->somewhat
+smewhere->somewhere
 smll->small, smell,
 smller->smaller
 smoe->some
+smoebody->somebody
+smoehow->somehow
+smoeone->someone
+smoething->something
+smoetime->sometime
+smoetimes->sometimes
+smoewhat->somewhat
+smoewhere->somewhere
 smoot->smooth
 smooter->smoother
 smoothign->smoothing
@@ -47920,6 +48005,7 @@ socail->social
 socalism->socialism
 socalist->socialist
 socalists->socialists
+socekt->socket
 socekts->sockets
 socities->societies
 socript->script
@@ -47953,6 +48039,7 @@ softwares->software
 softwre->software
 sofware->software
 sofwtare->software
+sohuld->should
 sohw->show
 soilders->soldiers
 soiurce->source
@@ -48000,6 +48087,7 @@ solveable->solvable
 solveing->solving
 solwed->solved
 som->some
+sombody->somebody
 someboby->somebody
 someghing->something
 somehing->something
@@ -48018,8 +48106,12 @@ somentime->sometime
 somentimes->sometimes
 someon->someone
 somes->some, sums,
+somestime->sometime
+somestimes->sometimes
+somethhing->something
 somethig->something
 somethign->something
+somethime->sometime
 somethimes->sometimes
 somethimg->something
 somethiong->something
@@ -48027,8 +48119,11 @@ sometiem->sometime, sometimes,
 sometiems->sometimes
 sometihing->something
 sometihng->something
+sometile->some tile, sometime,
 sometiles->some tiles, sometimes,
+sometim->sometime
 sometims->sometimes
+sometine->sometime
 sometines->sometimes
 someting->something
 sometinhg->something
@@ -48039,15 +48134,31 @@ somewher->somewhere
 somewho->somehow
 somhow->somehow
 somme->some
+sommebody->somebody
+sommehow->somehow
+sommeone->someone
+sommething->something
+sommetime->sometime
+sommetimes->sometimes
+sommewhat->somewhat
+sommewhere->somewhere
 somone->someone
 somthign->something
 somthing->something
 somthingelse->somethingelse
+somtime->sometime
 somtimes->sometimes
+somwbody->somebody
 somwhat->somewhat
 somwhere->somewhere
 somwho->somehow
 somwhow->somehow
+somwone->someone
+somwthing->something
+somwtime->sometime
+somwtimes->sometimes
+somwwhat->somewhat
+somwwhere->somewhere
 sonebody->somebody
 sonehow->somehow
 soneone->someone
@@ -48082,11 +48193,21 @@ sopund->sound
 sopunded->sounded
 sopunding->sounding
 sopunds->sounds
-sorce->source, force,
+sorce->source, force, sore,
+sorced->sourced, forced, sorted,
 sorceror->sorcerer
+sorcerors->sorcerers
+sorces->sources, forces, sores,
+sorcing->sourcing, forcing, sorting,
 sord->sword, sore, sored, sawed, soared,
 sorkflow->workflow
+sorround->surround
+sorrounded->surrounded
 sorrounding->surrounding
+sorroundings->surroundings
+sorrounds->surrounds
+sortcut->shortcut
+sortcuts->shortcuts
 sortig->sorting
 sortings->sorting
 sortlst->sortlist
@@ -48132,8 +48253,16 @@ sourcs->sources, source,
 sourcse->sources, source,
 sourct->source
 soure->source, sure, sore, sour, soured,
+sourece->source
+soureced->sourced
+soureces->sources
+sourecing->sourcing
 soures->sources, sores, sours, soured,
+sourround->surround
+sourrounded->surrounded
 sourrounding->surrounding
+sourroundings->surroundings
+sourrounds->surrounds
 sourt->sort, south, sour,
 sourth->south
 sourthern->southern
