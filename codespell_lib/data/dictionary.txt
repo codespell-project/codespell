@@ -51189,6 +51189,7 @@ tained->tainted, stained,
 taks->task, tasks, takes,
 takslet->tasklet
 talbe->table
+talbes->tables
 talekd->talked
 tallerable->tolerable
 tamplate->template
@@ -51210,8 +51211,24 @@ tansaction->transaction
 tansactional->transactional
 tansactions->transactions
 tanseint->transient
+tansfer->transfer
+tansferred->transferred
+tansferring->transferring
+tansfers->transfers
 tansfomed->transformed
+tansform->transform
+tansformation->transformation
+tansformations->transformations
+tansformed->transformed
+tansformer->transformer
+tansformers->transformers
+tansforming->transforming
+tansforms->transforms
 tansient->transient
+tansition->transition
+tansitioned->transitioned
+tansitioning->transitioning
+tansitions->transitions
 tanslate->translate
 tanslated->translated
 tanslates->translates
@@ -51228,13 +51245,22 @@ tarces->traces
 tarcing->tracing
 tarffic->traffic
 targed->target
-targer->target
-targest->targets
+targer->target, larger, tagger,
+targered->targeted
+targering->targeting
+targers->targets, taggers,
+targest->targets, largest,
 targetted->targeted
 targetting->targeting
 targettting->targeting
 targt->target
 targte->target
+targted->targeted
+targteed->targeted
+targteing->targeting
+targtes->targets
+targting->targeting
+targts->targets
 tarmigan->ptarmigan
 tarnsparent->transparent
 tarpolin->tarpaulin
@@ -51278,8 +51304,14 @@ teachnig->teaching
 teaher->teacher
 teahers->teachers
 teamplate->template
+teamplated->templated
 teamplates->templates
+teamplating->templating
 teated->treated
+teather->tether, teacher, theater, feather, weather, leather,
+teathered->tethered, feathered, weathered,
+teathering->tether, feathering, weathering,
+teathers->tethers, teachers, theaters, feathers, weathers, leathers,
 teatotaler->teetotaler
 teatotalers->teetotalers
 teatotler->teetotaler
@@ -51359,6 +51391,7 @@ tehnique->technique
 tehniques->techniques
 tehnologies->technologies
 tehnology->technology
+tehre->there
 tehse->these, tense,
 tehsion->tension
 tehsor->tensor
@@ -51373,7 +51406,9 @@ televsion->television
 telocom->telecom
 telphony->telephony
 temaplate->template
+temaplated->templated
 temaplates->templates
+temaplating->templating
 temeprature->temperature
 temepratures->temperatures
 temerature->temperature
@@ -51382,15 +51417,24 @@ teminal->terminal
 teminals->terminals
 teminate->terminate
 teminated->terminated
+teminates->terminates
 teminating->terminating
 temination->termination
+teminations->terminations
+teminator->terminator
+teminators->terminators
 temlate->template
+temlated->templated
+temlates->templates
+temlating->templating
 temmporarily->temporarily
 temmporary->temporary, temporarily,
 temorarily->temporarily
 temorary->temporary
 tempalte->template
+tempalted->templated
 tempaltes->templates
+tempalting->templating
 temparal->temporal
 temparally->temporarily, temporally,
 tempararily->temporarily
@@ -51404,6 +51448,7 @@ tempate->template
 tempated->templated
 tempates->templates
 tempatied->templatized
+tempating->templating, tempting,
 tempation->temptation
 tempatised->templatised
 tempatized->templatized
@@ -51414,7 +51459,10 @@ tempearture->temperature
 tempeartures->temperatures
 tempearure->temperature
 tempearures->temperatures
-tempelate->template
+tempelate->template, temperate,
+tempelated->templated
+tempelates->templates
+tempelating->templating
 temperarily->temporarily
 temperarure->temperature
 temperarures->temperatures
@@ -51433,8 +51481,11 @@ templaced->templated
 templaces->templates
 templacing->templating
 templaet->template
+templaetd->templated
+templaets->templates
 templat->template
 templateas->templates
+templats->templates
 templete->template
 templeted->templated
 templetes->templates
@@ -51506,6 +51557,8 @@ tempreature->temperature
 tempreatures->temperatures
 temprement->temperament
 tempremental->temperamental
+tempreture->temperature
+tempretures->temperatures
 temproaily->temporarily
 temproal->temporal
 temproarily->temporarily
@@ -51533,6 +51586,16 @@ tempurture->temperature
 tempurtures->temperatures
 temr->term
 temrinal->terminal
+temrinally->terminally
+temrinals->terminals
+temrinate->terminate
+temrinated->terminated
+temrinates->terminates
+temrinating->terminating
+temrination->termination
+temrinations->terminations
+temrinator->terminator
+temrinators->terminators
 temselves->themselves
 temtation->temptation
 tenacle->tentacle
@@ -51550,6 +51613,12 @@ tennisplayer->tennis player
 tentaive->tentative
 tentaively->tentatively
 tention->tension
+teorem->theorem
+teorems->theorems
+teoretical->theoretical
+teoretically->theoretically
+teories->theories, Tories,
+teory->theory, Tory, teary,
 teplmate->template
 teplmated->templated
 teplmates->templates
@@ -51558,19 +51627,50 @@ teraform->terraform
 teraformed->terraformed
 teraforming->terraforming
 teraforms->terraforms
+terain->terrain, train,
+terains->terrains, trains,
 terfform->terraform
 terfformed->terraformed
 terfforming->terraforming
 terfforms->terraforms
 teridactyl->pterodactyl
 terific->terrific
+terimnal->terminal
+terimnally->terminally
+terimnals->terminals
 terimnate->terminate
+terimnated->terminated
+terimnates->terminates
+terimnating->terminating
+terimnation->termination
+terimnations->terminations
+terimnator->terminator
+terimnators->terminators
 teritory->territory
 termial->terminal
+termially->terminally
 termials->terminals
+termianl->terminal
+termianlly->terminally
+termianls->terminals
 termiante->terminate
 termianted->terminated
+termiantes->terminates
+termianting->terminating
+termiantion->termination
+termiantions->terminations
+termiantor->terminator
+termiantors->terminators
+termiate->terminate, termite,
+termiated->terminated
+termiates->terminates, termites,
+termiating->terminating
+termiation->termination
+termiations->terminations
+termiator->terminator
+termiators->terminators
 termimal->terminal
+termimally->terminally
 termimals->terminals
 terminatd->terminated
 terminater->terminator, terminated, terminates, terminate,
@@ -51579,9 +51679,31 @@ terminats->terminates
 termindate->terminate
 termine->determine
 termined->terminated
+terminial->terminal
+terminially->terminally
+terminials->terminals
+terminiate->terminate
+terminiated->terminated
+terminiates->terminates
+terminiating->terminating
+terminiation->termination
+terminiations->terminations
 terminiator->terminator
-terminte->terminate
+terminiators->terminators
+terminl->terminal
+terminlly->terminally
+terminls->terminals
+terminte->terminate, termite,
+terminted->terminated
+termintes->terminates, termites,
+terminting->terminating
+termintion->termination
+termintions->terminations
 termintor->terminator
+termintors->terminators
+termnial->terminal
+termnially->terminally
+termnials->terminals
 termniate->terminate
 termniated->terminated
 termniates->terminates
@@ -51602,12 +51724,23 @@ termperatures->temperatures
 termplate->template
 termplated->templated
 termplates->templates
+termplating->templating
 termporal->temporal
 termporaries->temporaries
 termporarily->temporarily
 termporary->temporary
 ternament->tournament
+ternimal->terminal
+ternimally->terminally
+ternimals->terminals
 ternimate->terminate
+ternimated->terminated
+ternimates->terminates
+ternimating->terminating
+ternimation->termination
+ternimations->terminations
+ternimator->terminator
+ternimators->terminators
 terninal->terminal
 terninals->terminals
 terrable->terrible
@@ -51703,6 +51836,8 @@ thansparent->transparent
 thant->than
 thar->than, that,
 thare->there
+thasnk->thanks, thank,
+thasnks->thanks
 thast->that, that's,
 thatn->that, than,
 thatnk->thank
@@ -51724,6 +51859,7 @@ theared->threaded
 theather->theater
 theef->thief
 theer->there
+theere->there
 theery->theory
 theese->these
 thefore->therefore
@@ -51735,7 +51871,12 @@ theis->this, thesis,
 theiv->thief, they've,
 theive->thief
 theives->thieves
+themperature->temperature
+themperatures->temperatures
 themplate->template
+themplated->templated
+themplates->templates
+themplating->templating
 themselces->themselves
 themselfe->themselves, themself,
 themselfes->themselves
@@ -51746,6 +51887,7 @@ themslves->themselves
 thenes->themes
 thenn->then
 theorectical->theoretical
+theorectically->theoretically
 theoreticall->theoretically
 theoreticaly->theoretically
 theorical->theoretical
@@ -51756,7 +51898,10 @@ ther->there, their, the, other,
 therafter->thereafter
 therapudic->therapeutic
 therby->thereby
-thereads->threads
+theread->thread, the read,
+thereaded->threaded
+thereading->threading, the reading,
+thereads->threads, the reads,
 thered->thread, the red,
 therem->there, theorem,
 thereom->theorem
@@ -51792,9 +51937,17 @@ theyr->their, there, they're,
 theyre->they're, their, there,
 thgat->that
 thge->the
+thhank->thank
+thhanks->thanks
+thhere->there
 thhese->these
+thhink->think
+thhinking->thinking
+thhinks->thinks
 thhis->this
 thi->the, this,
+thiank->thank, think,
+thianks->thanks, thinks,
 thicking->thinking, thickening,
 thicknes->thickness, thickens,
 thid->this
@@ -51852,6 +52005,10 @@ thorasic->thoracic
 thoroidal->toroidal
 thoroughty->thoroughly
 thorugh->through, thorough,
+thorughly->thoroughly
+thorughout->throughout
+thorughput->throughput
+thoruogh->thorough
 thoruoghly->thoroughly
 thorwn->thrown, thorn,
 thos->those, this,
@@ -51873,10 +52030,15 @@ thourghly->thoroughly
 thourough->thorough
 thouroughly->thoroughly
 thow->throw, tow,
+thoward->toward
+thowards->towards
 thown->thrown, town,
 thows->throws, those, tows,
 thq->the
 thrad->thread
+thraded->threaded, traded,
+thrading->threading, trading,
+thrads->threads
 thre->three, there, their, the,
 threadsave->threadsafe
 threah->thread, threat,
@@ -51897,7 +52059,11 @@ three-dimenionsal->three-dimensional
 threedimenional->three-dimensional
 threedimenionsal->three-dimensional
 threee->three
+threeshold->threshold
+threesholds->thresholds
+threfore->therefore
 threhold->threshold
+threholds->thresholds
 threre->there, three,
 threrefore->therefore
 threshhold->threshold
@@ -51906,12 +52072,18 @@ threshod->threshold
 threshods->thresholds
 threshol->threshold
 thresold->threshold
+thresolds->thresholds
 thresshold->threshold
+thressholds->thresholds
 thrid->third
+thrird->third
 throen->thrown
 throgh->through
+throghout->throughout
+throghput->throughput
 thron->thrown, throne,
 throrough->thorough
+throroughly->thoroughly
 throtte->throttle, trot,
 throtted->throttled, trotted,
 throttes->throttles, trots,
@@ -51932,11 +52104,15 @@ throuh->through
 throuhg->through
 throuhgout->throughout
 throuhgput->throughput
+throuhout->throughout
+throuhput->throughput
 throuth->through
 throwed->threw, thrown,
 throwgh->through
 thrreshold->threshold
 thrresholds->thresholds
+thrshold->threshold
+thrsholds->thresholds
 thrue->through
 thrugh->through
 thruogh->through
@@ -51963,6 +52139,8 @@ tht->the, that,
 thta->that
 thtat->that
 thte->the, that,
+thught->thought, taught,
+thughts->thoughts
 thuis->thus, this,
 thumbbnail->thumbnail
 thumbnal->thumbnail
