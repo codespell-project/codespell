@@ -55016,7 +55016,13 @@ vaalues->values
 vaaluing->valuing
 vaccum->vacuum
 vaccume->vacuum
+vaccumed->vacuumed
+vaccuming->vacuuming
+vaccums->vacuums
 vaccuum->vacuum
+vaccuumed->vacuumed
+vaccuuming->vacuuming
+vaccuums->vacuums
 vacinate->vaccinate
 vacinated->vaccinated
 vacinates->vaccinates
@@ -55028,6 +55034,7 @@ vacines->vaccines
 vacinity->vicinity
 vactor->vector
 vactors->vectors
+vacum->vacuum
 vacume->vacuum
 vacumed->vacuumed
 vacumeed->vacuumed
@@ -55083,6 +55090,7 @@ vailidator->validator
 vailidators->validators
 vailidity->validity
 vailidty->validity
+vaious->various
 vairable->variable
 vairables->variables
 vairance->variance
@@ -55109,6 +55117,9 @@ valetta->valletta
 valeu->value
 valeud->valued
 valeus->values
+valiability->variability, availability,
+valiable->variable, valuable, available,
+valiables->variables, valuables,
 valiate->validate
 valiated->validated
 valiates->validates
@@ -55134,11 +55145,16 @@ validaters->validators, validates,
 valide->valid
 valididty->validity
 validing->validating
+validion->validation
+validions->validations
 validte->validate
 validted->validated
 validtes->validates
 validting->validating
 validtion->validation
+validtions->validations
+validtor->validator
+validtors->validators
 valie->value, valid,
 valied->valid
 valies->values
@@ -55164,6 +55180,14 @@ valtages->voltages
 valu->value
 valuble->valuable
 valud->valid, value,
+valudate->validate
+valudated->validated
+valudates->validates
+valudating->validating
+valudation->validation, valuation,
+valudations->validations, valuations,
+valudator->validator
+valudators->validators
 valudes->values
 value-to-pack->value to pack
 valueable->valuable
@@ -55175,11 +55199,18 @@ valule->value
 valuled->valued
 valules->values
 valuling->valuing
+valume->volume, value,
+valumes->volumes, values,
 valus->values, value, talus,
 valuse->values, value,
+valuses->values
 valye->value, valse, valve,
 valyes->values, valses, valves,
 vanishs->vanishes
+vaoid->avoid, valid, void, vapid,
+vaoided->avoided, voided,
+vaoiding->avoiding, voiding,
+vaoids->avoids, voids,
 varable->variable
 varables->variables
 varagated->variegated
@@ -55229,6 +55260,7 @@ varian->variant
 varians->variants
 variantion->variation
 variantions->variations
+variaties->varieties
 variatino->variation
 variatinos->variations
 variationnal->variational
@@ -55251,6 +55283,9 @@ varible->variable
 varibles->variables
 varieable->variable
 varieables->variables
+variebility->variability
+varieble->variable
+variebles->variables
 varience->variance
 variences->variances
 varient->variant
@@ -55331,12 +55366,16 @@ vecvtor->vector
 vecvtors->vectors
 vedio->video
 vefiry->verify
+vegatable->vegetable
 vegatarian->vegetarian
+vegatarians->vegetarians
 vegetarien->vegetarian
 vegetariens->vegetarians
 vegetarion->vegetarian
 vegetarions->vegetarians
+vegeteble->vegetable
 vegeterian->vegetarian
+vegeterians->vegetarians
 vegitable->vegetable
 vegitables->vegetables
 vegitarian->vegetarian
@@ -55346,6 +55385,8 @@ vegitariens->vegetarians
 vegitarion->vegetarian
 vegitarions->vegetarians
 vegtable->vegetable
+vegtarian->vegetarian
+vegtarians->vegetarians
 vehicule->vehicle
 veicle->vehicle
 veicles->vehicles
@@ -55536,8 +55577,15 @@ vertix->vertex
 vertixes->vertices
 vertixs->vertices
 vertx->vertex
+veryfication->verification
+veryfications->verifications
+veryfied->verified
 veryfieng->verifying
+veryfier->verifier
+veryfiers->verifiers
+veryfies->verifies
 veryfy->verify
+veryfying->verifying
 veryified->verified
 veryifies->verifies
 veryify->verify
@@ -55548,6 +55596,8 @@ vesioning->versioning
 vesions->versions
 vetex->vertex
 vetexes->vertices
+vetical->vertical
+vetically->vertically
 vetinarian->veterinarian
 vetinarians->veterinarians
 vetod->vetoed
@@ -55559,6 +55609,11 @@ vetran->veteran
 vetrans->veterans
 vetween->between
 vew->view
+vewed->viewed
+vewer->viewer
+vewers->viewers
+vewing->viewing
+vews->views
 veyr->very
 vhild->child
 viariable->variable
@@ -55600,6 +55655,8 @@ villification->vilification
 villify->vilify
 villin->villi, villain, villein,
 vincinity->vicinity
+vindow->window
+vindows->windows
 vinigar->vinegar
 vinigarette->vinaigrette
 vinigarettes->vinaigrettes
@@ -55618,6 +55675,18 @@ viralently->virulently
 virtal->virtual
 virtalenv->virtualenv
 virtaul->virtual
+virtaulenv->virtualenv
+virtaulisation->virtualisation
+virtaulise->virtualise
+virtaulised->virtualised
+virtaulises->virtualises
+virtaulising->virtualising
+virtaulization->virtualization
+virtaulize->virtualize
+virtaulized->virtualized
+virtaulizes->virtualizes
+virtaulizing->virtualizing
+virtaully->virtually
 virtical->vertical
 virtiual->virtual
 virttual->virtual
@@ -55737,8 +55806,10 @@ visualizaiton->visualization
 visualizaitons->visualizations
 visualizaton->visualization
 visualizatons->visualizations
+visuall->visual, visually,
 visuallisation->visualisation
 visuallization->visualization
+visuallly->visually
 visualsation->visualisation
 visualsations->visualisations
 visualy->visually
@@ -55795,11 +55866,13 @@ viwers->viewers
 viwes->views
 vizual->visual
 vizualisation->visualisation
+vizualisations->visualisations
 vizualise->visualise
 vizualised->visualised
 vizualises->visualises
 vizualising->visualising
 vizualization->visualization, virtualization,
+vizualizations->visualizations
 vizualize->visualize
 vizualized->visualized
 vizualizes->visualizes
@@ -55877,6 +55950,8 @@ vritualise->virtualise
 vritualization->virtualization
 vritualize->virtualize
 vrituoso->virtuoso
+vrsatile->versatile
+vrsatility->versatility
 vrsion->version
 vrsions->versions
 Vulacn->Vulcan
@@ -56018,6 +56093,7 @@ waranty->warranty
 wardobe->wardrobe
 waring->warning
 warings->warnings
+warinig->warning
 warinigs->warnings
 warining->warning
 warinings->warnings
@@ -56092,6 +56168,8 @@ wavelnes->wavelines
 wayoint->waypoint
 wayoints->waypoints
 wayword->wayward
+wbsite->website
+wbsites->websites
 weahter->weather
 weahters->weathers
 weant->want, wean,
@@ -56099,6 +56177,11 @@ weaponaries->weaponry, weaponries,
 weaponary->weaponry
 weappon->weapon
 weappons->weapons
+wearn->warn, wear, earn, learn,
+wearned->warned, earned, learned,
+wearning->warning, wearing, earning, learning,
+wearnings->warnings, earnings,
+wearns->warns, wears, earns, learns,
 weas->was
 webage->webpage
 webages->webpages
@@ -56177,6 +56260,7 @@ whch->which
 whcich->which
 whcih->which
 whe->when, we,
+wheareas->whereas
 wheather->weather, whether,
 wheh->when
 whehter->whether
@@ -56245,6 +56329,7 @@ whle->while
 whlie->while
 whn->when
 whne->when
+whnever->whenever
 whoes->whose
 whoknows->who knows
 wholely->wholly
@@ -56378,10 +56463,14 @@ witdhs->widths
 witdth->width
 witdths->widths
 wite->write, white,
+witespace->whitespace
+witespaces->whitespaces
 witha->with a, with,
 withdrawl->withdrawal, withdraw,
 witheld->withheld
 withh->with
+withhin->within
+withhout->without
 withih->within
 withinn->within
 withion->within
@@ -56416,6 +56505,7 @@ withun->within
 withuout->without
 witin->within
 witk->with
+witll->will
 witn->with
 witout->without
 witrh->with
@@ -56424,6 +56514,8 @@ witrhout->without
 witth->with
 witthin->within
 witthout->without
+wiuld->would, wild, wield,
+wiuldn't->wouldn't
 wiull->will
 wiyh->with
 wiyhin->within
@@ -56447,6 +56539,8 @@ wnidow->window, widow,
 wnidows->windows, widows,
 woh->who
 wohle->whole
+woild->would, world, wild,
+woildn't->wouldn't
 woill->will
 woith->with, worth,
 woithin->within
@@ -56484,6 +56578,8 @@ wonderfull->wonderful
 wonderig->wondering
 wonderous->wondrous
 wonderously->wondrously
+wondow->window
+wondows->windows
 wont't->won't
 woraround->workaround
 worarounds->workarounds
@@ -56559,6 +56655,7 @@ world-reknowned->world renowned
 worload->workload
 worloads->workloads
 worls->world
+worlwide->worldwide
 worng->wrong, worn,
 wornged->wronged
 worngs->wrongs
@@ -56691,8 +56788,14 @@ wron->wrong
 wronf->wrong
 wronly->wrongly
 wront->wrong
+wrose->worse, wrote, whose,
+wrte->write, wrote,
+wrtes->writes
 wrtie->write
+wrties->writes
 wrting->writing
+wrtiten->written
+wrtten->written
 wryth->writhe
 wrythed->writhed
 wrythes->writhes
@@ -56753,6 +56856,8 @@ Yementite->Yemenite, Yemeni,
 yera->year
 yeras->years
 yersa->years
+yhank->thank, yank,
+yhanks->thanks, yanks,
 yhe->the
 yieldin->yielding
 ymbol->symbol
@@ -56822,6 +56927,8 @@ zookeinee->zucchini
 zookeinees->zucchinis
 zookeinei->zucchinis
 zookeini->zucchini
+zoombie->zombie
+zoombies->zombies
 zucheenei->zucchinis
 zucheeni->zucchini
 zukeenee->zucchini
