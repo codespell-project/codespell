@@ -52187,8 +52187,8 @@ tigthening->tightening
 tigthens->tightens
 tigthly->tightly
 tihkn->think
-tihng->thing
-tihngs->things
+tihng->thing, ting,
+tihngs->things, tings,
 tihnk->think
 tihnking->thinking
 tihnks->thinks
@@ -52259,9 +52259,9 @@ tipe->type, tip,
 tipical->typical
 tipically->typically
 tiple->triple, tuple,
-tipled->tripled
+tipled->tripled, tipped,
 tiples->triples, tuples,
-tipling->tripling
+tipling->tripling, tipping,
 tirangle->triangle
 tirangles->triangles
 titel->title
@@ -52550,8 +52550,8 @@ tranformer->transformer
 tranformers->transformers
 tranforming->transforming
 tranforms->transforms
-trangle->triangle, tangle,
-trangles->triangles, tangles,
+trangle->triangle, tangle, strangle, wrangle,
+trangles->triangles, tangles, strangles, wrangles,
 trangular->triangular
 trangulate->triangulate
 trangulated->triangulated
@@ -53228,9 +53228,9 @@ trotzkyite->trotskyist
 trotzkyites->trotskyists
 troubador->troubadour
 troubadors->troubadours
-troube->trouble
+troube->trouble, troupe,
 troubed->troubled
-troubes->troubles
+troubes->troubles, troupes,
 troubeshoot->troubleshoot
 troubeshooted->troubleshooted
 troubeshooter->troubleshooter
@@ -53407,7 +53407,7 @@ twoo->two, too,
 Twosday->Tuesday
 twpo->two
 tye->type, tie,
-tyep->type
+tyep->type, yep,
 tyepd->typed
 tyeps->types
 tyes->types, ties,
