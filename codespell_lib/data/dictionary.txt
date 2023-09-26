@@ -52187,7 +52187,11 @@ tigthening->tightening
 tigthens->tightens
 tigthly->tightly
 tihkn->think
+tihng->thing, ting,
+tihngs->things, tings,
 tihnk->think
+tihnking->thinking
+tihnks->thinks
 tihs->this
 tiitle->title
 tillt->tilt
@@ -52197,7 +52201,9 @@ timdelta->timedelta
 timedlta->timedelta
 timeing->timing
 timemout->timeout
+timemouts->timeouts
 timeot->timeout
+timeots->timeouts
 timeoutted->timed out
 timeput->timeout, time put,
 timeputs->timeouts, time puts,
@@ -52227,13 +52233,18 @@ timmestamp->timestamp
 timmestamps->timestamps
 timming->timing, trimming,
 timne->time
+timneout->timeout
+timneouts->timeouts
 timoeut->timeout
+timoeuts->timeouts
 timout->timeout
+timouts->timeouts
 timstamp->timestamp
 timstamped->timestamped
 timstamping->timestamping
 timstamps->timestamps
 timtout->timeout
+timtouts->timeouts
 timzeone->timezone
 timzeones->timezones
 timzezone->timezone
@@ -52242,9 +52253,15 @@ timzone->timezone
 timzones->timezones
 tinterrupts->interrupts
 tiome->time, tome,
+tiomeout->timeout
+tiomeouts->timeouts
 tipe->type, tip,
 tipical->typical
 tipically->typically
+tiple->triple, tuple,
+tipled->tripled, tipped,
+tiples->triples, tuples,
+tipling->tripling, tipping,
 tirangle->triangle
 tirangles->triangles
 titel->title
@@ -52280,6 +52297,9 @@ togehter->together
 togeter->together
 togeterness->togetherness
 toggel->toggle
+toggeld->toggled
+toggele->toggle
+toggeled->toggled
 toggeles->toggles
 toggeling->toggling
 toggels->toggles
@@ -52288,9 +52308,12 @@ togheter->together
 toghether->together
 togle->toggle
 togled->toggled
+togles->toggles
 togling->toggling
 toglle->toggle
 toglled->toggled
+toglles->toggles
+toglling->toggling
 togther->together
 togueter->together
 toi->to, toy,
@@ -52350,6 +52373,8 @@ tork->torque
 torlence->tolerance
 tormenters->tormentors
 tornadoe->tornado
+torough->thorough, to rough,
+toroughly->thoroughly, to roughly,
 torpeados->torpedoes
 torpedos->torpedoes
 tortilini->tortellini
@@ -52382,7 +52407,8 @@ toughtful->thoughtful
 toughtly->tightly
 toughts->thoughts
 tounge->tongue
-touple->tuple
+touple->tuple, couple, topple, toupee,
+touples->tuples, couples, topples, toupees,
 tourch->torch, touch,
 toword->toward
 towords->towards
@@ -52407,17 +52433,26 @@ tracsodes->transcodes
 tracsoding->transcoding
 traddition->tradition
 tradditional->traditional
+tradditionally->traditionally
 tradditions->traditions
 tradgic->tragic
+tradion->tradition
+tradional->traditional
 tradionally->traditionally
+tradions->traditions
 traditilnal->traditional
 traditiona->traditional
 traditionaly->traditionally
 traditionnal->traditional
 traditionnally->traditionally
 traditition->tradition
+tradititional->traditional
+tradititionally->traditionally
+tradititions->traditions
+tradtion->tradition, traction,
 tradtional->traditional
 tradtionally->traditionally
+tradtions->traditions
 trafficed->trafficked
 trafficing->trafficking
 trafic->traffic
@@ -52466,9 +52501,13 @@ tralling->trailing, trialling, trilling, trolling, thralling, travelling,
 trals->trails, trials,
 trama->trauma, trams, tram,
 tramas->traumas, trams,
+tramsmission->transmission
+tramsmissions->transmissions
 tramsmit->transmit
 tramsmits->transmits
 tramsmitted->transmitted
+tramsmitter->transmitter
+tramsmitters->transmitters
 tramsmitting->transmitting
 tranaction->transaction
 tranactional->transactional
@@ -52477,6 +52516,7 @@ tranalating->translating
 tranalation->translation
 tranalations->translations
 tranasction->transaction
+tranasctional->transactional
 tranasctions->transactions
 tranceiver->transceiver
 tranceivers->transceivers
@@ -52510,6 +52550,15 @@ tranformer->transformer
 tranformers->transformers
 tranforming->transforming
 tranforms->transforms
+trangle->triangle, tangle, strangle, wrangle,
+trangles->triangles, tangles, strangles, wrangles,
+trangular->triangular
+trangulate->triangulate
+trangulated->triangulated
+trangulates->triangulates
+trangulating->triangulating
+trangulation->triangulation
+trangulations->triangulations
 tranient->transient
 tranients->transients
 traning->training
@@ -52539,8 +52588,13 @@ tranlsations->translations
 tranlsator->translator
 tranlsators->translators
 tranmission->transmission
+tranmissions->transmissions
 tranmist->transmit
+tranmit->transmit
+tranmits->transmits
 tranmitted->transmitted
+tranmitter->transmitter
+tranmitters->transmitters
 tranmitting->transmitting
 tranparencies->transparencies
 tranparency->transparency
@@ -52587,8 +52641,13 @@ transaltion->translation
 transaltions->translations
 transaltor->translator
 transaltors->translators
-transation->transaction, translation,
-transations->transactions, translations,
+transate->translate
+transated->translated
+transates->translates
+transating->translating
+transation->transaction, translation, transition,
+transational->transactional, translational, transitional, transnational,
+transations->transactions, translations, transitions,
 transator->translator
 transators->translators
 transcendance->transcendence
@@ -52622,6 +52681,7 @@ transcoser->transcoder
 transcosers->transcoders
 transcripting->transcribing, transcription,
 transction->transaction
+transctional->transactional
 transctions->transactions
 transeint->transient
 transending->transcending
@@ -52645,9 +52705,12 @@ transfoms->transforms
 transfoprmation->transformation
 transforation->transformation
 transforations->transformations
+transformate->transform
 transformated->transformed
 transformates->transforms
+transformating->transforming
 transformaton->transformation
+transformatons->transformations
 transformatted->transformed
 transforme->transformed, transformer, transform,
 transfrom->transform
@@ -52656,6 +52719,7 @@ transfromation->transformation
 transfromations->transformations
 transfromed->transformed
 transfromer->transformer
+transfromers->transformers
 transfroming->transforming
 transfroms->transforms
 transiet->transient
@@ -52687,18 +52751,24 @@ translatoin->translation
 translatoins->translations
 translteration->transliteration
 transmision->transmission
+transmisions->transmissions
 transmisive->transmissive
 transmissable->transmissible
 transmissione->transmission
-transmist->transmit
+transmisssion->transmission
+transmisssions->transmissions
+transmist->transmits, transmit,
 transmited->transmitted
 transmiter->transmitter
 transmiters->transmitters
 transmiting->transmitting
 transmition->transmission
+transmitions->transmissions
 transmitsion->transmission
+transmitsions->transmissions
 transmittd->transmitted
 transmittion->transmission
+transmittions->transmissions
 transmitts->transmits
 transmmit->transmit
 transocde->transcode
@@ -52799,6 +52869,10 @@ transprting->transporting
 transprts->transports
 transpsition->transposition
 transsend->transcend
+transter->transfer
+transterred->transferred
+transterring->transferring
+transters->transfers
 transtion->transition
 transtioned->transitioned
 transtioning->transitioning
@@ -52839,6 +52913,15 @@ trasformer->transformer
 trasformers->transformers
 trasforming->transforming
 trasforms->transforms
+trasient->transient
+trasiently->transiently
+trasients->transients
+trasition->transition, tradition,
+trasitional->transitional, traditional,
+trasitionally->transitionally, traditionally,
+trasitioned->transitioned
+trasitioning->transitioning
+trasitions->transitions, traditions,
 traslalate->translate
 traslalated->translated
 traslalating->translating
@@ -52850,6 +52933,8 @@ traslates->translates
 traslating->translating
 traslation->translation
 traslations->translations
+traslator->translator
+traslators->translators
 traslucency->translucency
 trasmission->transmission
 trasmissions->transmissions
@@ -52860,6 +52945,8 @@ trasmitter->transmitter
 trasmitters->transmitters
 trasmitting->transmitting
 trasnaction->transaction
+trasnactional->transactional
+trasnactions->transactions
 trasnfer->transfer
 trasnfered->transferred
 trasnferred->transferred
@@ -52869,9 +52956,11 @@ trasnformation->transformation
 trasnformed->transformed
 trasnformer->transformer
 trasnformers->transformers
+trasnforming->transforming
 trasnforms->transforms
 trasnlate->translate
 trasnlated->translated
+trasnlates->translates
 trasnlating->translating
 trasnlation->translation
 trasnlations->translations
@@ -52956,6 +53045,10 @@ treting->treating
 trew->true, threw,
 trewthful->truthful
 trewthfully->truthfully
+trgger->trigger
+trggered->triggered
+trggering->triggering
+trggers->triggers
 trgistration->registration
 trhe->the
 trhough->through
@@ -52963,10 +53056,17 @@ trian->train, trial,
 triancle->triangle
 triancles->triangles
 trianed->trained
-triange->triangle
+triange->triangle, triage,
 triangel->triangle
 triangels->triangles
+trianges->triangles, triages,
 trianglular->triangular
+trianglulate->triangulate
+trianglulated->triangulated
+trianglulates->triangulates
+trianglulating->triangulating
+trianglulation->triangulation
+trianglulations->triangulations
 trianglutaion->triangulation
 triangulataion->triangulation
 triangultaion->triangulation
@@ -52983,8 +53083,10 @@ triffers->triggers
 triger->trigger, tiger,
 trigered->triggered
 trigering->triggering
+trigerr->trigger
 trigerred->triggered
 trigerring->triggering
+trigerrs->triggers
 trigers->triggers
 trigged->triggered
 triggerd->triggered
@@ -53013,6 +53115,13 @@ triming->trimming, timing,
 trimmng->trimming
 trinagle->triangle
 trinagles->triangles
+trinagular->triangular
+trinagulate->triangulate
+trinagulated->triangulated
+trinagulates->triangulates
+trinagulating->triangulating
+trinagulation->triangulation
+trinagulations->triangulations
 tring->trying, string, ring,
 tringket->trinket
 tringkets->trinkets
@@ -53044,10 +53153,35 @@ trival->trivial
 trivally->trivially
 trivias->trivia
 trivival->trivial
+trnasfer->transfer
+trnasferred->transferred
+trnasferring->transferring
 trnasfers->transfers
+trnasform->transform
+trnasformation->transformation
+trnasformations->transformations
+trnasformed->transformed
+trnasformer->transformer
+trnasformers->transformers
+trnasforming->transforming
+trnasforms->transforms
+trnaslate->translate
+trnaslated->translated
+trnaslates->translates
+trnaslating->translating
+trnaslation->translation
+trnaslations->translations
+trnaslator->translator
+trnaslators->translators
+trnasmission->transmission
+trnasmissions->transmissions
 trnasmit->transmit
 trnasmited->transmitted
 trnasmits->transmits
+trnasmitted->transmitted
+trnasmitter->transmitter
+trnasmitters->transmitters
+trnasmitting->transmitting
 trnsfer->transfer
 trnsfered->transferred
 trnsfers->transfers
@@ -53094,11 +53228,16 @@ trotzkyite->trotskyist
 trotzkyites->trotskyists
 troubador->troubadour
 troubadors->troubadours
+troube->trouble, troupe,
+troubed->troubled
+troubes->troubles, troupes,
 troubeshoot->troubleshoot
 troubeshooted->troubleshooted
 troubeshooter->troubleshooter
+troubeshooters->troubleshooters
 troubeshooting->troubleshooting
 troubeshoots->troubleshoots
+troubing->troubling
 troublehshoot->troubleshoot
 troublehshooting->troubleshooting
 troublshoot->troubleshoot
@@ -53131,9 +53270,14 @@ trucate->truncate
 trucated->truncated
 trucates->truncates
 trucating->truncating
+trucation->truncation
+trucations->truncations
 trucnate->truncate
 trucnated->truncated
+trucnates->truncates
 trucnating->truncating
+trucnation->truncation
+trucnations->truncations
 truct->struct
 truelly->truly
 truely->truly
@@ -53177,8 +53321,12 @@ tryinng->trying
 trys->tries
 tryying->trying
 ttests->tests
+tthank->thank
+tthanks->thanks
 tthat->that
 tthe->the
+tthere->there
+tthese->these
 tucan->toucan
 tucans->toucans
 tuesdey->Tuesday
@@ -53190,6 +53338,12 @@ tuhmbnails->thumbnails
 tuhmbs->thumbs
 tumbnail->thumbnail
 tumbnails->thumbnails
+tuncate->truncate
+tuncated->truncated
+tuncates->truncates
+tuncating->truncating
+tuncation->truncation
+tuncations->truncations
 tunelled->tunnelled
 tunelling->tunneling
 tung->tongue
@@ -53203,6 +53357,7 @@ tuotiral->tutorial
 tuotirals->tutorials
 tupe->tuple, type,
 tupel->tuple
+tupels->tuples
 tupes->tuples, types,
 tupple->tuple
 tupples->tuples
@@ -53213,6 +53368,12 @@ ture->true, pure,
 turkoise->turquoise
 turle->turtle
 turly->truly
+turncate->truncate
+turncated->truncated
+turncates->truncates
+turncating->truncating
+turncation->truncation
+turncations->truncations
 turnk->trunk, turnkey, turn,
 turorial->tutorial
 turorials->tutorials
@@ -53237,6 +53398,8 @@ tweleve->twelve
 twelth->twelfth
 two-dimenional->two-dimensional
 two-dimenionsal->two-dimensional
+twoard->toward
+twoards->towards
 twodimenional->two-dimensional
 twodimenionsal->two-dimensional
 twon->town
@@ -53244,13 +53407,18 @@ twoo->two, too,
 Twosday->Tuesday
 twpo->two
 tye->type, tie,
-tyep->type
+tyep->type, yep,
+tyepd->typed
+tyeps->types
 tyes->types, ties,
 tyhat->that
 tyhe->they, the, type,
 tyies->tries
 tymecode->timecode
 tyoe->type, toey, toe,
+tyoed->typed, toyed, toed,
+tyoes->types, toes,
+tyoing->typing, toying, tying, toeing,
 tyope->type
 typcast->typecast
 typcasting->typecasting
