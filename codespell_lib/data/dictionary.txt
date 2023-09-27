@@ -53454,6 +53454,8 @@ tyrany->tyranny
 tyring->trying
 tyrranies->tyrannies
 tyrrany->tyranny
+uability->usability, ability,
+uable->unable, usable, table, able,
 ubelieveble->unbelievable
 ubelievebly->unbelievably
 ubernetes->Kubernetes
@@ -53462,6 +53464,10 @@ ubiquituously->ubiquitously
 ubiquotous->ubiquitous
 ubiquoutous->ubiquitous
 ubitquitous->ubiquitous
+ublic->public
+ublication->publication
+ublications->publications
+ublicly->publicly
 ublish->publish
 ublished->published
 ublisher->publisher
@@ -53475,6 +53481,13 @@ udated->updated, dated,
 udateed->updated
 udater->updater, dater,
 udating->updating, dating,
+uderlying->underlying
+uderstand->understand
+uderstandable->understandable
+uderstandably->understandably
+uderstanding->understanding
+uderstands->understands
+uderstood->understood
 udner->under
 udnerlying->underlying
 udnerstand->understand
@@ -53492,6 +53505,13 @@ udpating->updating
 ue->use, due,
 ueful->useful
 uegister->unregister
+ueried->queried
+ueries->queries
+uername->username
+uernames->usernames
+uers->users, user,
+uery->query, very,
+uerying->querying
 ues->yes, use,
 uesd->used
 uesed->used
@@ -53522,6 +53542,12 @@ uffer->buffer
 uffered->buffered
 uffering->buffering
 uffers->buffers
+uggest->suggest
+uggested->suggested
+uggesting->suggesting
+uggestion->suggestion
+uggestions->suggestions
+uggests->suggests
 uggly->ugly
 ugglyness->ugliness
 uglyness->ugliness
@@ -53685,6 +53711,10 @@ unchangd->unchanged
 uncheked->unchecked
 unchenged->unchanged
 uncler->unclear, uncle, uncles,
+unclude->include
+uncluded->included
+uncludes->includes
+uncluding->including
 uncognized->unrecognized
 uncoment->uncomment
 uncomented->uncommented
@@ -53750,10 +53780,17 @@ uncondtionally->unconditionally
 unconfiged->unconfigured
 unconfortability->discomfort
 unconsisntency->inconsistency
+unconsistencies->inconsistencies
+unconsistency->inconsistency
 unconsistent->inconsistent
+unconsistently->inconsistently
 uncontitutional->unconstitutional
 uncontrained->unconstrained
 uncontrolable->uncontrollable
+unconvenience->inconvenience
+unconveniences->inconveniences
+unconvenient->inconvenient
+unconveniently->inconveniently
 unconvential->unconventional
 unconventionnal->unconventional
 unconvertable->unconvertible
@@ -53858,10 +53895,12 @@ unecesarily->unnecessarily
 unecesary->unnecessary
 unecessarily->unnecessarily
 unecessary->unnecessary
+unecrypted->unencrypted
 uneeded->unneeded, unheeded, needed,
 unefficiency->inefficiency
 unefficient->inefficient
 unefficiently->inefficiently
+unefined->undefined, unrefined,
 uneforceable->unenforceable
 uneform->uniform
 unencrpt->unencrypt
@@ -54014,6 +54053,12 @@ uninfromed->uninformed, uniformed,
 uninfromes->uninforms, uniforms,
 uninfroming->uninforming, uniforming,
 uninfroms->uninforms, uniforms,
+uninistall->uninstall
+uninistalled->uninstalled
+uninistaller->uninstaller
+uninistallers->uninstallers
+uninistalling->uninstalling
+uninistalls->uninstalls
 uninitailised->uninitialised
 uninitailized->uninitialized
 uninitalise->uninitialise
@@ -54212,6 +54257,8 @@ unnessessary->unnecessary
 unning->running
 unnnecessarily->unnecessarily
 unnnecessary->unnecessary
+unnofficial->unofficial
+unnofficially->unofficially
 unnown->unknown
 unnowns->unknowns
 unnsupported->unsupported
@@ -54327,12 +54374,17 @@ unrgesiter->unregister
 unroated->unrotated
 unrosponsive->unresponsive
 unsable->unusable, usable, unstable,
+unsage->unsafe, usage, unstage,
+unsaged->unsaved, unstaged,
+unsages->usages, unstages,
+unsaging->unstaging
 unsanfe->unsafe
 unsccessful->unsuccessful
 unscubscribe->subscribe
 unscubscribed->subscribed
 unsearcahble->unsearchable
 unsed->unused, unset, used,
+unseful->useless, useful,
 unselct->unselect
 unselcted->unselected
 unselctes->unselects
@@ -54344,6 +54396,7 @@ unselecgtes->unselects
 unselecgting->unselecting
 unselecgts->unselects
 unselectabe->unselectable
+unseless->useless
 unsepcified->unspecified
 unser->under, unset, unsure, user,
 unserlying->underlying
@@ -54523,12 +54576,15 @@ untrasform->untransform, undo transform, reverse transform,
 untrasformed->untransformed
 untrasposed->untransposed
 untrustworty->untrustworthy
+untuitive->unintuitive, intuitive,
+untuitively->unintuitively, intuitively,
 unued->unused
 ununsed->unused
 ununsual->unusual
 unusal->unusual
 unusally->unusually
 unuseable->unusable
+unuseed->unused
 unuseful->useless
 unusre->unsure
 unusuable->unusable
@@ -54561,6 +54617,10 @@ unxepected->unexpected
 unxepectedly->unexpectedly
 unxpected->unexpected
 unziped->unzipped
+upack->unpack
+upacked->unpacked
+upacking->unpacking
+upacks->unpacks
 upadate->update
 upadated->updated
 upadater->updater
@@ -54600,6 +54660,12 @@ updatig->updating
 updatr->updater, update,
 updatrs->updaters, updates,
 updats->updates
+upddate->update
+upddated->updated
+upddater->updater
+upddaters->updaters
+upddates->updates
+upddating->updating
 updgrade->upgrade
 updgraded->upgraded
 updgrades->upgrades
@@ -54684,6 +54750,12 @@ upperace->uppercase
 upperaced->uppercased
 upperacing->uppercasing
 uppler->upper
+uppload->upload
+upploaded->uploaded
+upploader->uploader
+upploaders->uploaders
+upploading->uploading
+upploads->uploads
 uppon->upon
 upport->support
 upported->supported
@@ -54742,6 +54814,9 @@ upsupported->unsupported
 uptadeable->updatable
 uptdate->update
 uptim->uptime
+uption->option
+uptional->optional
+uptionally->optionally
 uptions->options
 uptodate->up-to-date
 uptodateness->up-to-dateness
@@ -54793,6 +54868,11 @@ usere->user
 userful->useful
 userpace->userspace
 userpsace->userspace
+userr->user
+userrname->username
+userrnames->usernames
+userrs->users
+userrspace->userspace
 usersapce->userspace
 userspase->userspace
 usesfull->useful
@@ -54817,7 +54897,26 @@ usnig->using
 uspported->supported, unsupported,
 usptart->upstart
 usptarts->upstarts
+usre->user, sure, use,
+usred->used
+usrename->username
+usrenames->usernames
+usrer->user, surer, usher, usurer,
+usrername->username
+usrernames->usernames
+usrers->users, ushers, usurers,
+usrerspace->userspace
+usres->users, uses,
+usrespace->userspace
+usring->using
 usseful->useful
+ussefully->usefully
+ussefulness->usefulness
+usser->user, usher,
+ussername->username
+ussernames->usernames
+ussers->users, ushers,
+usserspace->userspace
 ussual->usual
 ussuall->usual
 ussually->usually
@@ -54859,12 +54958,32 @@ utiliz->utilize
 utiliza->utilize
 utilizaton->utilization
 utill->until, utils,
+utillisation->utilisation
+utillise->utilise
+utillised->utilised
+utillises->utilises
+utillising->utilising
 utillities->utilities
 utillity->utility
+utillization->utilization
+utillize->utilize
+utillized->utilized
+utillizes->utilizes
+utillizing->utilizing
+utilsation->utilisation
+utilse->utilise
+utilsed->utilised
+utilses->utilises
+utilsing->utilising
 utilties->utilities
 utiltities->utilities
 utiltity->utility
 utilty->utility
+utilzation->utilization
+utilze->utilize
+utilzed->utilized
+utilzes->utilizes
+utilzing->utilizing
 utitities->utilities
 utitity->utility
 utitlities->utilities
