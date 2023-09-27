@@ -1,19 +1,32 @@
 import re
 
-# Define your multiline text
-multiline_text = """
-This is some text.
-Here is another line.
-And yet another line.
+def process_text(text, ignore_regex):
+    # Compile the regex pattern with the MULTILINE flag
+    pattern = re.compile(ignore_regex, re.MULTILINE)
+    
+    # Use the findall method to identify matches in the text
+    matches = pattern.findall(text)
+    
+    # Process the matches as needed (e.g., ignore or replace)
+    processed_text = pattern.sub("", text)  # Remove the matched portions
+    
+    return processed_text, matches
+
+# Example usage
+text = """Line 1: This is some text.
+Line 2: This is another line.
+Line 3: Here's more text.
 """
 
-# Define the multiline regex pattern
-multiline_pattern = r"^Here is another line\.\n"
+ignore_regex = r"Line \d+: This is another line\."
 
-# Use re.MULTILINE flag to search for the pattern in multiline text
-match = re.search(multiline_pattern, multiline_text, re.MULTILINE)
+processed_text, matches = process_text(text, ignore_regex)
 
-if match:
-    print("Pattern found in multiline text.")
-else:
-    print("Pattern not found in multiline text.")
+# Print the processed text and matched patterns
+print("Processed Text:")
+print(processed_text)
+
+print("\nMatched Patterns:")
+for match in matches:
+    print(match)
+
