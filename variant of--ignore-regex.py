@@ -1,16 +1,18 @@
 import re
 
+
 def process_text(text, ignore_regex):
     # Compile the regex pattern with the MULTILINE flag
     pattern = re.compile(ignore_regex, re.MULTILINE)
-    
+
     # Use the findall method to identify matches in the text
     matches = pattern.findall(text)
-    
+
     # Process the matches as needed (e.g., ignore or replace)
     processed_text = pattern.sub("", text)  # Remove the matched portions
-    
+
     return processed_text, matches
+
 
 # Example usage
 text = """Line 1: This is some text.
@@ -29,4 +31,3 @@ print(processed_text)
 print("\nMatched Patterns:")
 for match in matches:
     print(match)
-
