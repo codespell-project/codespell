@@ -13808,6 +13808,7 @@ consumation->consumption, consummation,
 consummed->consumed
 consummer->consumer
 consummers->consumers
+consumsion->consumption
 consumtion->consumption
 contacentaion->concatenation
 contagen->contagion
@@ -30412,6 +30413,10 @@ intersecton->intersection
 intersectons->intersections
 intersepts->intercepts, intersteps,
 intersparsed->interspersed
+intersperese->intersperse
+intersperesed->interspersed
+interspereses->intersperses
+intersperesing->interspersing
 interst->interest
 intersted->interested
 intersting->interesting
@@ -38208,7 +38213,12 @@ patcket->packet
 patckets->packets
 patern->pattern
 paterns->patterns
+pathalogic->pathologic
 pathalogical->pathological
+pathalogies->pathologies
+pathalogist->pathologist
+pathalogists->pathologists
+pathalogy->pathology
 pathame->pathname
 pathames->pathnames
 pathane->pathname
@@ -40475,6 +40485,7 @@ probabilaty->probability
 probabile->probable
 probabilies->probabilities
 probabilisitic->probabilistic
+probabilit->probability
 probabilites->probabilities
 probabilstic->probabilistic
 probabilties->probabilities
@@ -45706,9 +45717,12 @@ sais->says
 saleries->salaries
 salery->salary
 salveof->slaveof
-samle->sample
+samle->sample, same,
 samled->sampled
+samler->sampler
+samlers->samplers
 samles->samples, seamless,
+samling->sampling
 samll->small
 samller->smaller
 sammon->salmon
