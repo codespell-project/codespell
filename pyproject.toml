@@ -65,7 +65,7 @@ repository = "https://github.com/codespell-project/codespell"
 
 [build-system]
 build-backend = "setuptools.build_meta"
-requires = ["setuptools>=64", "setuptools_scm[toml]>=7.1.0"]
+requires = ["setuptools>=64", "setuptools_scm[toml]>=6.2, != 8.0.0"]
 
 [tool.setuptools_scm]
 write_to = "codespell_lib/_version.py"
