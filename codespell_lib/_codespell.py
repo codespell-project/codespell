@@ -952,7 +952,7 @@ def parse_file(
 
                 if options.write_changes and fix:
                     changed = True
-                    lines[i] = re.sub(r"\b%s\b" % word, fixword, lines[i])
+                    lines[i] = re.sub(rf"\b{word}\b", fixword, lines[i])
                     fixed_words.add(word)
                     continue
 
