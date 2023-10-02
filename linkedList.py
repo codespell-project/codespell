@@ -3,6 +3,7 @@ class Node:
         self.data = data
         self.next = None
 
+
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -28,6 +29,7 @@ class LinkedList:
             print(current.data, end=" -> ")
             current = current.next
         print("None")
+
 
 # Example usage:
 my_linked_list = LinkedList()
