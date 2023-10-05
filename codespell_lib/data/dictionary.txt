@@ -46009,6 +46009,7 @@ scheduals->schedules
 schedul->schedule
 scheduld->scheduled
 schedulier->scheduler
+scheduliers->schedulers
 schedulling->scheduling
 scheduls->schedules
 scheduluing->scheduling
@@ -48278,6 +48279,8 @@ sophmore->sophomore
 sophmores->sophomores
 sopport->support
 sopported->supported
+sopporter->supporter
+sopporters->supporters
 sopporting->supporting
 sopports->supports
 sopund->sound
@@ -54831,7 +54834,7 @@ uplaods->uploads
 upliad->upload
 uploade->upload
 uploades->uploads, uploaded,
-uploaed->uploaded
+uploaed->upload, uploaded,
 uploaeded->uploaded
 uploaeding->uploading
 uploaeds->uploads
