@@ -3548,6 +3548,8 @@ anialating->annihilating
 anid->and
 anihilate->annihilate
 anihilated->annihilated
+anihilates->annihilates
+anihilating->annihilating
 anihilation->annihilation
 animaed->animated
 animaes->animates
@@ -5006,6 +5008,8 @@ arraiving->arriving
 arral->array
 arramge->arrange
 arramged->arranged
+arramges->arranges
+arramging->arranging
 arramging->arranging
 arranable->arrangeable
 arrance->arrange
@@ -21700,6 +21704,7 @@ epxects->expects
 epxiressions->expressions
 epxlicit->explicit
 eqaul->equal
+eqaulities->equalities
 eqaulity->equality
 eqaulizer->equalizer
 eqaully->equally
@@ -28718,6 +28723,8 @@ ineficient->inefficient
 inegrate->integrate
 inegrated->integrated
 ineqality->inequality
+ineqaulities->inequalities
+ineqaulity->inequality
 inequalitiy->inequality
 inerest->interest
 inerested->interested
@@ -38419,8 +38426,8 @@ percise->precise
 percisely->precisely
 percision->precision
 perenially->perennially
-perentage->percentage
-perentages->percentages
+perentage->percentage, parentage,
+perentages->percentages, parentages,
 peresent->present, presents, presence, percent,
 peretrator->perpetrator
 perfec->perfect
@@ -42722,7 +42729,10 @@ reconncted->reconnected
 reconncting->reconnecting
 reconncts->reconnects
 reconsidder->reconsider
+reconsilde->reconcile
 reconsilded->reconciled
+reconsildes->reconciles
+reconsilding->reconciling
 reconstrcut->reconstruct
 reconstrcuted->reconstructed
 reconstrcution->reconstruction
@@ -45998,8 +46008,10 @@ scheduales->schedules
 schedualing->scheduling
 scheduals->schedules
 schedul->schedule
+scheduld->scheduled
 schedulier->scheduler
 schedulling->scheduling
+scheduls->schedules
 scheduluing->scheduling
 schem->scheme
 schematrio->schematron
@@ -48268,6 +48280,7 @@ sophmores->sophomores
 sopport->support
 sopported->supported
 sopporting->supporting
+sopports->supports
 sopund->sound
 sopunded->sounded
 sopunding->sounding
@@ -54822,6 +54835,7 @@ uploades->uploads, uploaded,
 uploaed->uploaded
 uploaeded->uploaded
 uploaeding->uploading
+uploaeds->uploads
 uplod->upload
 uplodad->upload, uploaded,
 uplodaded->uploaded
