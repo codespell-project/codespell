@@ -506,6 +506,14 @@ def parse_options(
     )
 
     parser.add_argument(
+        "-F",
+        "--filenames-only",
+        action="store_true",
+        default=False,
+        help="check only filenames and not their contents. overrides -f",
+    )
+
+    parser.add_argument(
         "-H",
         "--check-hidden",
         action="store_true",
@@ -837,7 +845,7 @@ def parse_file(
         f = sys.stdin
         lines = f.readlines()
     else:
-        if options.check_filenames:
+        if options.check_filenames and options.filenames_only:
             for word in extract_words(filename, word_regex, ignore_word_regex):
                 lword = word.lower()
                 if lword not in misspellings:
@@ -865,7 +873,35 @@ def parse_file(
                 bad_count += 1
 
                 print(f"{cfilename}: {cwrongword} ==> {crightword}{creason}")
+            return bad_count
+        else:
+            for word in extract_words(filename, word_regex, ignore_word_regex):
+                lword = word.lower()
+                if lword not in misspellings:
+                    continue
+                fix = misspellings[lword].fix
+                fixword = fix_case(word, misspellings[lword].data)
 
+                if summary and fix:
+                    summary.update(lword)
+
+                cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
+                cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
+                crightword = f"{colors.FWORD}{fixword}{colors.DISABLE}"
+
+                reason = misspellings[lword].reason
+                if reason:
+                    if options.quiet_level & QuietLevels.DISABLED_FIXES:
+                        continue
+                    creason = f"  | {colors.FILE}{reason}{colors.DISABLE}"
+                else:
+                    if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
+                        continue
+                    creason = ""
+
+                bad_count += 1
+
+                print(f"{cfilename}: {cwrongword} ==> {crightword}{creason}")
         # ignore irregular files
         if not os.path.isfile(filename):
             return bad_count
@@ -887,114 +923,115 @@ def parse_file(
         except OSError:
             return bad_count
 
-    for i, line in enumerate(lines):
-        if line in exclude_lines:
-            continue
+    if not options.filenames_only:
+        for i, line in enumerate(lines):
+            if line in exclude_lines:
+                continue
 
-        fixed_words = set()
-        asked_for = set()
+            fixed_words = set()
+            asked_for = set()
 
-        # If all URI spelling errors will be ignored, erase any URI before
-        # extracting words. Otherwise, apply ignores after extracting words.
-        # This ensures that if a URI ignore word occurs both inside a URI and
-        # outside, it will still be a spelling error.
-        if "*" in uri_ignore_words:
-            line = uri_regex.sub(" ", line)
-        check_matches = extract_words_iter(line, word_regex, ignore_word_regex)
-        if "*" not in uri_ignore_words:
-            check_matches = apply_uri_ignore_words(
-                check_matches,
-                line,
-                word_regex,
-                ignore_word_regex,
-                uri_regex,
-                uri_ignore_words,
-            )
-        for match in check_matches:
-            word = match.group()
-            lword = word.lower()
-            if lword in misspellings:
-                # Sometimes we find a 'misspelling' which is actually a valid word
-                # preceded by a string escape sequence.  Ignore such cases as
-                # they're usually false alarms; see issue #17 among others.
-                char_before_idx = match.start() - 1
-                if (
-                    char_before_idx >= 0
-                    and line[char_before_idx] == "\\"
-                    # bell, backspace, formfeed, newline, carriage-return, tab, vtab.
-                    and word.startswith(("a", "b", "f", "n", "r", "t", "v"))
-                    and lword[1:] not in misspellings
-                ):
-                    continue
+            # If all URI spelling errors will be ignored, erase any URI before
+            # extracting words. Otherwise, apply ignores after extracting words.
+            # This ensures that if a URI ignore word occurs both inside a URI and
+            # outside, it will still be a spelling error.
+            if "*" in uri_ignore_words:
+                line = uri_regex.sub(" ", line)
+            check_matches = extract_words_iter(line, word_regex, ignore_word_regex)
+            if "*" not in uri_ignore_words:
+                check_matches = apply_uri_ignore_words(
+                    check_matches,
+                    line,
+                    word_regex,
+                    ignore_word_regex,
+                    uri_regex,
+                    uri_ignore_words,
+                )
+            for match in check_matches:
+                word = match.group()
+                lword = word.lower()
+                if lword in misspellings:
+                    # Sometimes we find a 'misspelling' which is actually a valid word
+                    # preceded by a string escape sequence.  Ignore such cases as
+                    # they're usually false alarms; see issue #17 among others.
+                    char_before_idx = match.start() - 1
+                    if (
+                        char_before_idx >= 0
+                        and line[char_before_idx] == "\\"
+                        # bell, backspace, formfeed, newline, carriage-return, tab, vtab.
+                        and word.startswith(("a", "b", "f", "n", "r", "t", "v"))
+                        and lword[1:] not in misspellings
+                    ):
+                        continue
 
-                context_shown = False
-                fix = misspellings[lword].fix
-                fixword = fix_case(word, misspellings[lword].data)
+                    context_shown = False
+                    fix = misspellings[lword].fix
+                    fixword = fix_case(word, misspellings[lword].data)
 
-                if options.interactive and lword not in asked_for:
-                    if context is not None:
-                        context_shown = True
+                    if options.interactive and lword not in asked_for:
+                        if context is not None:
+                            context_shown = True
+                            print_context(lines, i, context)
+                        fix, fixword = ask_for_word_fix(
+                            lines[i],
+                            match,
+                            misspellings[lword],
+                            options.interactive,
+                            colors=colors,
+                        )
+                        asked_for.add(lword)
+
+                    if summary and fix:
+                        summary.update(lword)
+
+                    if word in fixed_words:  # can skip because of re.sub below
+                        continue
+
+                    if options.write_changes and fix:
+                        changed = True
+                        lines[i] = re.sub(rf"\b{word}\b", fixword, lines[i])
+                        fixed_words.add(word)
+                        continue
+
+                    # otherwise warning was explicitly set by interactive mode
+                    if (
+                        options.interactive & 2
+                        and not fix
+                        and not misspellings[lword].reason
+                    ):
+                        continue
+
+                    cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
+                    cline = f"{colors.FILE}{i + 1}{colors.DISABLE}"
+                    cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
+                    crightword = f"{colors.FWORD}{fixword}{colors.DISABLE}"
+
+                    reason = misspellings[lword].reason
+                    if reason:
+                        if options.quiet_level & QuietLevels.DISABLED_FIXES:
+                            continue
+                        creason = f"  | {colors.FILE}{reason}{colors.DISABLE}"
+                    else:
+                        if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
+                            continue
+                        creason = ""
+
+                    # If we get to this point (uncorrected error) we should change
+                    # our bad_count and thus return value
+                    bad_count += 1
+
+                    if (not context_shown) and (context is not None):
                         print_context(lines, i, context)
-                    fix, fixword = ask_for_word_fix(
-                        lines[i],
-                        match,
-                        misspellings[lword],
-                        options.interactive,
-                        colors=colors,
-                    )
-                    asked_for.add(lword)
-
-                if summary and fix:
-                    summary.update(lword)
-
-                if word in fixed_words:  # can skip because of re.sub below
-                    continue
-
-                if options.write_changes and fix:
-                    changed = True
-                    lines[i] = re.sub(rf"\b{word}\b", fixword, lines[i])
-                    fixed_words.add(word)
-                    continue
-
-                # otherwise warning was explicitly set by interactive mode
-                if (
-                    options.interactive & 2
-                    and not fix
-                    and not misspellings[lword].reason
-                ):
-                    continue
-
-                cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
-                cline = f"{colors.FILE}{i + 1}{colors.DISABLE}"
-                cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
-                crightword = f"{colors.FWORD}{fixword}{colors.DISABLE}"
-
-                reason = misspellings[lword].reason
-                if reason:
-                    if options.quiet_level & QuietLevels.DISABLED_FIXES:
-                        continue
-                    creason = f"  | {colors.FILE}{reason}{colors.DISABLE}"
-                else:
-                    if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
-                        continue
-                    creason = ""
-
-                # If we get to this point (uncorrected error) we should change
-                # our bad_count and thus return value
-                bad_count += 1
-
-                if (not context_shown) and (context is not None):
-                    print_context(lines, i, context)
-                if filename != "-":
-                    print(
-                        f"{cfilename}:{cline}: {cwrongword} "
-                        f"==> {crightword}{creason}"
-                    )
-                else:
-                    print(
-                        f"{cline}: {line.strip()}\n\t{cwrongword} "
-                        f"==> {crightword}{creason}"
-                    )
+                    if filename != "-":
+                        print(
+                            f"{cfilename}:{cline}: {cwrongword} "
+                            f"==> {crightword}{creason}"
+                        )
+                    else:
+                        print(
+                            f"{cline}: {line.strip()}\n\t{cwrongword} "
+                            f"==> {crightword}{creason}"
+                        )
 
     if changed:
         if filename == "-":
@@ -1166,7 +1203,7 @@ def main(*args: str) -> int:
         if is_hidden(filename, options.check_hidden):
             continue
 
-        if os.path.isdir(filename):
+        if os.path.isdir(filename) and options.filenames_only:
             for root, dirs, files in os.walk(filename):
                 if glob_match.match(root):  # skip (absolute) directories
                     del dirs[:]
@@ -1196,7 +1233,43 @@ def main(*args: str) -> int:
                         context,
                         options,
                     )
-
+                    dirs[:] = [
+                    dir_
+                    for dir_ in dirs
+                    if not glob_match.match(dir_)
+                    and not is_hidden(dir_, options.check_hidden)
+                ]
+                
+        elif os.path.isdir(filename):
+            for root, dirs, files in os.walk(filename):
+                if glob_match.match(root):  # skip (absolute) directories
+                    del dirs[:]
+                    continue
+                if is_hidden(root, options.check_hidden):  # dir itself hidden
+                    continue
+                for file_ in files:
+                    # ignore hidden files in directories
+                    if is_hidden(file_, options.check_hidden):
+                        continue
+                    if glob_match.match(file_):  # skip files
+                        continue
+                    fname = os.path.join(root, file_)
+                    if glob_match.match(fname):  # skip paths
+                        continue
+                    bad_count += parse_file(
+                        fname,
+                        colors,
+                        summary,
+                        misspellings,
+                        exclude_lines,
+                        file_opener,
+                        word_regex,
+                        ignore_word_regex,
+                        uri_regex,
+                        uri_ignore_words,
+                        context,
+                        options,
+                    )
                 # skip (relative) directories
                 dirs[:] = [
                     dir_
