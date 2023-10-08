@@ -1234,12 +1234,12 @@ def main(*args: str) -> int:
                         options,
                     )
                     dirs[:] = [
-                    dir_
-                    for dir_ in dirs
-                    if not glob_match.match(dir_)
-                    and not is_hidden(dir_, options.check_hidden)
-                ]
-                
+                        dir_
+                        for dir_ in dirs
+                        if not glob_match.match(dir_)
+                        and not is_hidden(dir_, options.check_hidden)
+                    ]
+
         elif os.path.isdir(filename):
             for root, dirs, files in os.walk(filename):
                 if glob_match.match(root):  # skip (absolute) directories
