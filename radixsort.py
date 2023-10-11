@@ -2,8 +2,8 @@
 # A function to do counting sort of arr[] according to
 # the digit represented by exp.
 
-def countingSort(arr, exp1):
 
+def countingSort(arr, exp1):
     n = len(arr)
 
     # The output array elements that will have sorted arr
@@ -36,9 +36,9 @@ def countingSort(arr, exp1):
     for i in range(0, len(arr)):
         arr[i] = output[i]
 
+
 # Method to do Radix Sort
 def radixSort(arr):
-
     # Find the maximum number to know number of digits
     max1 = max(arr)
 
@@ -58,7 +58,7 @@ arr = [170, 45, 75, 90, 802, 24, 2, 66]
 radixSort(arr)
 
 for i in range(len(arr)):
-    print(arr[i],end=" ")
+    print(arr[i], end=" ")
 
 # This code is contributed by Mohit Kumra
 # Edited by Patrick Gallagher
