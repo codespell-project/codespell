@@ -2,6 +2,7 @@
 
 # defining th efunction
 
+
 def heapify(arr, n, i):
     largest = i
     left_child = 2 * i + 1
@@ -17,6 +18,7 @@ def heapify(arr, n, i):
         arr[i], arr[largest] = arr[largest], arr[i]
         heapify(arr, n, largest)
 
+
 def heap_sort(arr):
     n = len(arr)
 
@@ -26,8 +28,12 @@ def heap_sort(arr):
 
     # Extract elements from the heap one by one
     for i in range(n - 1, 0, -1):
-        arr[i], arr[0] = arr[0], arr[i]  # Swap the root (max element) with the last element
+        arr[i], arr[0] = (
+            arr[0],
+            arr[i],
+        )  # Swap the root (max element) with the last element
         heapify(arr, i, 0)  # Call max heapify on the reduced heap
+
 
 # Example usage
 arr = [27, 8, 19, 2, 103, 77]
@@ -35,4 +41,4 @@ heap_sort(arr)
 
 # displaying the final result
 
-print("Sorted array is:", arr)  
+print("Sorted array is:", arr)
