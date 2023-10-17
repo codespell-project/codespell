@@ -30,16 +30,16 @@ try:
             )
         else:
             spellers[lang] = aspell.Speller(("lang", lang), ("size", "80"))
-except ImportError as exp:
+except ImportError as e:
     if os.getenv("REQUIRE_ASPELL", "false").lower() == "true":
         msg = (
             "Cannot run complete tests without aspell when "
-            f"REQUIRE_ASPELL=true. Got error during import:\n{exp}"
+            f"REQUIRE_ASPELL=true. Got error during import:\n{e}"
         )
-        raise RuntimeError(msg)
+        raise RuntimeError(msg) from e
     warnings.warn(
         "aspell not found, but not required, skipping aspell tests. Got "
-        f"error during import:\n{exp}",
+        f"error during import:\n{e}",
         stacklevel=2,
     )
 
