@@ -60,7 +60,7 @@ _builtin_dictionaries = (
     (
         "rare",
         "for rare (but valid) words that are likely to be errors",
-        "_rare",  # noqa: E501
+        "_rare",
         None,
         None,
         None,
@@ -105,7 +105,7 @@ _builtin_dictionaries = (
     (
         "en-GB_to_en-US",
         "for corrections from en-GB to en-US",
-        "_en-GB_to_en-US",  # noqa: E501
+        "_en-GB_to_en-US",
         True,
         True,
         ("en_GB",),
@@ -204,12 +204,13 @@ class FileOpener:
     def init_chardet(self) -> None:
         try:
             from chardet.universaldetector import UniversalDetector
-        except ImportError:
-            raise ImportError(
+        except ImportError as e:
+            msg = (
                 "There's no chardet installed to import from. "
                 "Please, install it and check your PYTHONPATH "
                 "environment variable"
             )
+            raise ImportError(msg) from e
 
         self.encdetector = UniversalDetector()
 
@@ -266,7 +267,8 @@ class FileOpener:
                 else:
                     break
         else:
-            raise Exception("Unknown encoding")
+            msg = "Unknown encoding"
+            raise Exception(msg)
 
         return lines, encoding
 
@@ -477,7 +479,7 @@ def parse_options(
         "- 1: disable warnings about wrong encoding.\n"
         "- 2: disable warnings about binary files.\n"
         "- 4: omit warnings about automatic fixes that were disabled in the dictionary.\n"  # noqa: E501
-        "- 8: don't print anything for non-automatic fixes.\n"  # noqa: E501
+        "- 8: don't print anything for non-automatic fixes.\n"
         "- 16: don't print the list of fixed files.\n"
         "- 32: don't print configuration files.\n"
         "As usual with bitmasks, these levels can be "
@@ -510,7 +512,7 @@ def parse_options(
         "--check-hidden",
         action="store_true",
         default=False,
-        help="check hidden files and directories (those " 'starting with ".") as well.',
+        help='check hidden files and directories (those starting with ".") as well.',
     )
     parser.add_argument(
         "-A",
@@ -562,10 +564,11 @@ def parse_options(
                 import tomli as tomllib  # type: ignore[no-redef]
             except ImportError as e:
                 if tomllib_raise_error:
-                    raise ImportError(
+                    msg = (
                         f"tomllib or tomli are required to read pyproject.toml "
                         f"but could not be imported, got: {e}"
-                    ) from None
+                    )
+                    raise ImportError(msg) from None
                 tomllib = None  # type: ignore[assignment]
         if tomllib is not None:
             for toml_file in toml_files:

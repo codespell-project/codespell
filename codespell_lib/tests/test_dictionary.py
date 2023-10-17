@@ -30,15 +30,16 @@ try:
             )
         else:
             spellers[lang] = aspell.Speller(("lang", lang), ("size", "80"))
-except ImportError as exp:
+except ImportError as e:
     if os.getenv("REQUIRE_ASPELL", "false").lower() == "true":
-        raise RuntimeError(
+        msg = (
             "Cannot run complete tests without aspell when "
-            f"REQUIRE_ASPELL=true. Got error during import:\n{exp}"
+            f"REQUIRE_ASPELL=true. Got error during import:\n{e}"
         )
+        raise RuntimeError(msg) from e
     warnings.warn(
         "aspell not found, but not required, skipping aspell tests. Got "
-        f"error during import:\n{exp}",
+        f"error during import:\n{e}",
         stacklevel=2,
     )
 
@@ -53,7 +54,7 @@ _fnames_in_aspell = [
 ]
 fname_params = pytest.mark.parametrize(
     "fname, in_aspell, in_dictionary", _fnames_in_aspell
-)  # noqa: E501
+)
 
 
 def test_dictionaries_exist() -> None:
@@ -81,7 +82,8 @@ def test_dictionary_formatting(
             except AssertionError as exp:
                 errors.append(str(exp).split("\n", maxsplit=1)[0])
     if errors:
-        raise AssertionError("\n" + "\n".join(errors))
+        msg = "\n" + "\n".join(errors)
+        raise AssertionError(msg)
 
 
 @pytest.mark.parametrize(
@@ -258,7 +260,7 @@ def test_error_checking(err: str, rep: str, match: str) -> None:
             None,
             False,
             "should not be in aspell",
-        ),  # noqa: E501
+        ),
         # One multi-word, second part
         ("a", "bar abcdef", None, True, "should be in aspell"),
         ("a", "abcdef back", None, False, "should not be in aspell"),
