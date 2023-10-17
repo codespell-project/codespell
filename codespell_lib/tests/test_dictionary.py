@@ -32,10 +32,11 @@ try:
             spellers[lang] = aspell.Speller(("lang", lang), ("size", "80"))
 except ImportError as exp:
     if os.getenv("REQUIRE_ASPELL", "false").lower() == "true":
-        raise RuntimeError(
+        msg = (
             "Cannot run complete tests without aspell when "
             f"REQUIRE_ASPELL=true. Got error during import:\n{exp}"
         )
+        raise RuntimeError(msg)
     warnings.warn(
         "aspell not found, but not required, skipping aspell tests. Got "
         f"error during import:\n{exp}",
@@ -81,7 +82,8 @@ def test_dictionary_formatting(
             except AssertionError as exp:
                 errors.append(str(exp).split("\n", maxsplit=1)[0])
     if errors:
-        raise AssertionError("\n" + "\n".join(errors))
+        msg = "\n" + "\n".join(errors)
+        raise AssertionError(msg)
 
 
 @pytest.mark.parametrize(

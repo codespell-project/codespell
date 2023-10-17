@@ -205,11 +205,12 @@ class FileOpener:
         try:
             from chardet.universaldetector import UniversalDetector
         except ImportError:
-            raise ImportError(
+            msg = (
                 "There's no chardet installed to import from. "
                 "Please, install it and check your PYTHONPATH "
                 "environment variable"
             )
+            raise ImportError(msg)
 
         self.encdetector = UniversalDetector()
 
@@ -266,7 +267,8 @@ class FileOpener:
                 else:
                     break
         else:
-            raise Exception("Unknown encoding")
+            msg = "Unknown encoding"
+            raise Exception(msg)
 
         return lines, encoding
 
@@ -562,10 +564,11 @@ def parse_options(
                 import tomli as tomllib  # type: ignore[no-redef]
             except ImportError as e:
                 if tomllib_raise_error:
-                    raise ImportError(
+                    msg = (
                         f"tomllib or tomli are required to read pyproject.toml "
                         f"but could not be imported, got: {e}"
-                    ) from None
+                    )
+                    raise ImportError(msg) from None
                 tomllib = None  # type: ignore[assignment]
         if tomllib is not None:
             for toml_file in toml_files:
