@@ -512,7 +512,7 @@ def parse_options(
         "--check-hidden",
         action="store_true",
         default=False,
-        help="check hidden files and directories (those " 'starting with ".") as well.',
+        help='check hidden files and directories (those starting with ".") as well.',
     )
     parser.add_argument(
         "-A",
