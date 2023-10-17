@@ -53,7 +53,7 @@ _fnames_in_aspell = [
 ]
 fname_params = pytest.mark.parametrize(
     "fname, in_aspell, in_dictionary", _fnames_in_aspell
-)  # noqa: E501
+)
 
 
 def test_dictionaries_exist() -> None:
@@ -258,7 +258,7 @@ def test_error_checking(err: str, rep: str, match: str) -> None:
             None,
             False,
             "should not be in aspell",
-        ),  # noqa: E501
+        ),
         # One multi-word, second part
         ("a", "bar abcdef", None, True, "should be in aspell"),
         ("a", "abcdef back", None, False, "should not be in aspell"),

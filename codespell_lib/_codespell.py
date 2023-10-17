@@ -60,7 +60,7 @@ _builtin_dictionaries = (
     (
         "rare",
         "for rare (but valid) words that are likely to be errors",
-        "_rare",  # noqa: E501
+        "_rare",
         None,
         None,
         None,
@@ -105,7 +105,7 @@ _builtin_dictionaries = (
     (
         "en-GB_to_en-US",
         "for corrections from en-GB to en-US",
-        "_en-GB_to_en-US",  # noqa: E501
+        "_en-GB_to_en-US",
         True,
         True,
         ("en_GB",),
@@ -477,7 +477,7 @@ def parse_options(
         "- 1: disable warnings about wrong encoding.\n"
         "- 2: disable warnings about binary files.\n"
         "- 4: omit warnings about automatic fixes that were disabled in the dictionary.\n"  # noqa: E501
-        "- 8: don't print anything for non-automatic fixes.\n"  # noqa: E501
+        "- 8: don't print anything for non-automatic fixes.\n"
         "- 16: don't print the list of fixed files.\n"
         "- 32: don't print configuration files.\n"
         "As usual with bitmasks, these levels can be "
