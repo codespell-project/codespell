@@ -287,8 +287,9 @@ class FileOpener:
                 else:
                     break
         else:
+            # reading with encoding "iso-8859-1" cannot fail with UnicodeDecodeError
             msg = "Unknown encoding"
-            raise Exception(msg)
+            raise RuntimeError(msg)  # pragma: no cover
 
         return lines, encoding
 
