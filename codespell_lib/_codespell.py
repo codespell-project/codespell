@@ -310,10 +310,7 @@ class NewlineHelpFormatter(argparse.HelpFormatter):
         for part in parts:
             # Eventually we could allow others...
             indent_start = "- "
-            if part.startswith(indent_start):
-                offset = len(indent_start)
-            else:
-                offset = 0
+            offset = len(indent_start) if part.startswith(indent_start) else 0
             part = part[offset:]
             part = self._whitespace_matcher.sub(" ", part).strip()
             parts = textwrap.wrap(part, width - offset)
@@ -1220,10 +1217,7 @@ def main(*args: str) -> int:
     if not options.colors:
         colors.disable()
 
-    if options.summary:
-        summary = Summary()
-    else:
-        summary = None
+    summary = Summary() if options.summary else None
 
     context = None
     if options.context is not None:
