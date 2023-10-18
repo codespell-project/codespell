@@ -12788,6 +12788,8 @@ compatibilty->compatibility
 compatibily->compatibility, compatibly,
 compatibities->compatibilities
 compatibity->compatibility
+compatiblilities->compatibilities
+compatiblility->compatibility
 compatiblilties->compatibilities
 compatiblilty->compatibility
 compatiblities->compatibilities
@@ -13655,16 +13657,20 @@ configuering->configuring
 configuers->configures
 configues->configures
 configuing->configuring
-configulate->configurate
+configulate->configure
 configulation->configuration
 configulations->configurations
 configuraion->configuration
 configuraions->configurations
 configuraiton->configuration
 configuraitons->configurations
+configurate->configure
+configurated->configured
+configurates->configures
 configuratien->configuration
 configuratiens->configurations
-configuratin->configuration, configurating,
+configuratin->configuration, configuring,
+configurating->configuring
 configuratins->configurations
 configuratiom->configuration
 configuratioms->configurations
