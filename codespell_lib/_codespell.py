@@ -44,7 +44,7 @@ from ._version import (  # type: ignore[import-not-found]
     __version__ as VERSION,  # noqa: N812
 )
 
-word_regex_def = r"[\w\-'’]+"
+word_regex_def = r"[\w\-'’]+"  # noqa: RUF001
 # While we want to treat characters like ( or " as okay for a starting break,
 # these may occur unescaped in URIs, and so we are more restrictive on the
 # endpoint.  Emails are more restrictive, so the endpoint remains flexible.
@@ -54,7 +54,7 @@ uri_regex_def = (
 )
 # Pass all misspellings through this translation table to generate
 # alternative misspellings and fixes.
-alt_chars = (("'", "’"),)
+alt_chars = (("'", "’"),)  # noqa: RUF001
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """

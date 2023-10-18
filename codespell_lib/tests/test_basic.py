@@ -177,9 +177,9 @@ def test_default_word_parsing(
     assert cs.main(fname) == 1, "bad"
 
     fname = tmp_path / "apostrophe"
-    fname.write_text("woudn't\n", encoding="utf-8")  # U+0027 (')
+    fname.write_text("woudn't\n", encoding="utf-8")  # U+0027
     assert cs.main(fname) == 1, "misspelling containing typewriter apostrophe U+0027"
-    fname.write_text("woudn’t\n", encoding="utf-8")  # U+2019 (’)
+    fname.write_text("woudn’t\n", encoding="utf-8")  # U+2019  # noqa: RUF001
     assert cs.main(fname) == 1, "misspelling containing typographic apostrophe U+2019"
 
 
@@ -594,9 +594,9 @@ def test_check_hidden(
     #
     #         tmp_path
     #         ├── .abandonned
-    #         │   ├── .abandonned.txt
-    #         │   └── subdir
-    #         │       └── .abandonned.txt
+    #         │   ├── .abandonned.txt
+    #         │   └── subdir
+    #         │       └── .abandonned.txt
     #         └── .abandonned.txt
     #
     assert cs.main(tmp_path) == 0
@@ -626,9 +626,9 @@ def test_check_hidden(
     #
     #         tmp_path
     #         ├── .abandonned
-    #         │   ├── .abandonned.txt
-    #         │   └── subdir
-    #         │       └── .abandonned.txt
+    #         │   ├── .abandonned.txt
+    #         │   └── subdir
+    #         │       └── .abandonned.txt
     #         ├── .abandonned.txt
     #         └── subdir
     #             └── .abandonned
