@@ -1,4 +1,3 @@
-
 import speech_recognition as sr
 import pyttsx3
 
@@ -8,10 +7,12 @@ recognizer = sr.Recognizer()
 # Create a text-to-speech engine
 engine = pyttsx3.init()
 
+
 # Define a function to speak text
 def speak(text):
     engine.say(text)
     engine.runAndWait()
+
 
 # Define a function to listen for voice input
 def listen():
@@ -24,9 +25,12 @@ def listen():
     except sr.UnknownValueError:
         text = "Could not understand audio"
     except sr.RequestError as e:
-        text = "Could not request results from Google Speech Recognition service; {0}".format(e)
+        text = "Could not request results from Google Speech Recognition service; {0}".format(
+            e
+        )
 
     return text
+
 
 # Start the voice assistant loop
 while True:

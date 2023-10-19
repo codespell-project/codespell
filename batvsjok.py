@@ -1,5 +1,6 @@
 import random
 
+
 # Create a class to represent Batman
 class Batman:
     def __init__(self):
@@ -23,6 +24,7 @@ class Batman:
     def is_alive(self):
         return self.health > 0
 
+
 # Create a class to represent an enemy
 class Enemy:
     def __init__(self, name, weapon, health):
@@ -35,6 +37,7 @@ class Enemy:
 
     def is_alive(self):
         return self.health > 0
+
 
 # Create a Batman object
 batman = Batman()

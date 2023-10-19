@@ -13,7 +13,11 @@ try:
 except sr.UnknownValueError:
     print("Could not understand audio")
 except sr.RequestError as e:
-    print("Could not request results from Google Speech Recognition service; {0}".format(e))
+    print(
+        "Could not request results from Google Speech Recognition service; {0}".format(
+            e
+        )
+    )
 
 # Print the recognized text
 print(text)
