@@ -2,7 +2,7 @@ from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
 # Create a new instance of a ChatBot
-chatbot = ChatBot('Example Bot')
+chatbot = ChatBot("Example Bot")
 
 # Create a new trainer for the chatbot
 trainer = ChatterBotCorpusTrainer(chatbot)
