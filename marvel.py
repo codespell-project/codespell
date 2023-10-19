@@ -12,7 +12,7 @@ s.bgcolor("black")
 
 # Lift the pen and move it to the starting position for the outer circle
 drawer.penup()
-drawer.setposition(-20,-350)
+drawer.setposition(-20, -350)
 
 # Lower the pen and begin filling the circle with red color
 drawer.pendown()
@@ -23,7 +23,7 @@ drawer.end_fill()
 
 # Lift the pen and move it to the starting position for the inner circle
 drawer.penup()
-drawer.setposition(-20,-260)
+drawer.setposition(-20, -260)
 
 # Lower the pen and begin filling the circle with black color
 drawer.pendown()
@@ -34,7 +34,7 @@ drawer.end_fill()
 
 # Lift the pen and move it to the starting position for the 'A' shape
 drawer.penup()
-drawer.setposition(0,-100)
+drawer.setposition(0, -100)
 
 # Lower the pen and begin filling the 'A' shape with red color
 drawer.pendown()
@@ -67,7 +67,7 @@ drawer.end_fill()
 
 # Lift the pen and move it to the starting position for the 'V' shape
 drawer.penup()
-drawer.setposition(0,-50)
+drawer.setposition(0, -50)
 
 # Lower the pen and begin filling the 'V' shape with black color
 drawer.pendown()
