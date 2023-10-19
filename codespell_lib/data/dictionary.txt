@@ -2853,12 +2853,12 @@ alighed->aligned, alighted,
 alighing->aligning, alighting,
 alighment->alignment
 alighments->alignments
-alighn->align
-alighned->aligned
-alighning->aligning
+alighn->align, alight,
+alighned->aligned, alighted,
+alighning->aligning, alighting,
 alighnment->alignment
 alighnments->alignments
-alighns->aligns
+alighns->aligns, alights,
 alighs->aligns, alights,
 aligin->align
 aligined->aligned
