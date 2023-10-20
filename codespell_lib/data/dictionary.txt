@@ -21102,10 +21102,15 @@ eanbled->enabled
 eanbles->enables
 eanbling->enabling
 earch->search, each,
+earier->earlier, easier, eerier,
+eariest->earliest, easiest, eeriest,
 eariler->earlier
-earily->eerily
+earilest->earliest
+earily->early, easily, eerily,
 earleir->earlier
+earleist->earliest
 earler->earlier
+earlest->earliest
 earliear->earlier
 earlies->earliest
 earlist->earliest
@@ -21128,6 +21133,7 @@ easly->easily
 easyer->easier
 easyest->easiest
 easyly->easily
+eather->either, rather, weather, feather, leather, ether, eat her, eater,
 eaturn->return, eaten, Saturn,
 eaxct->exact
 eaxctly->exactly
@@ -21229,6 +21235,14 @@ ednif->endif
 edning->ending, edging,
 ednpoint->endpoint
 ednpoints->endpoints
+edtion->edition
+edtions->editions
+educte->educate
+educted->educated, deducted,
+eductes->educates
+educting->educating, deducting,
+eduction->education, reduction, deduction, seduction,
+eductions->reductions, deductions, educations, seductions,
 edxpected->expected
 eearly->early
 eeeprom->EEPROM
@@ -21282,6 +21296,7 @@ effecs->effects
 effectice->effective
 effecticely->effectively
 effecticeness->effectiveness
+effectivelly->effectively
 effectivily->effectively
 effectiviness->effectiveness
 effectivly->effectively
@@ -21292,6 +21307,13 @@ effeect->effect
 effeects->effects
 effekt->effect
 effexts->effects
+efffect->effect
+efffective->effective
+efffectively->effectively
+efffectiveness->effectiveness
+efffects->effects
+efffort->effort
+effforts->efforts
 efficcient->efficient
 efficencty->efficiency
 efficency->efficiency
@@ -21309,8 +21331,18 @@ eficiencies->efficiencies, deficiencies,
 eficiency->efficiency, deficiency,
 eficient->efficient, deficient,
 eficiently->efficiently, deficiently,
+efine->define, refine,
+efined->defined, refined,
+efines->defines, refines,
+efining->defining, refining,
+efinite->definite
+efinitely->definitely
+efinition->definition
+efinitions->definitions
 eforceable->enforceable
 efore->before, afore,
+efort->effort
+eforts->efforts
 egal->equal
 egals->equals
 egde->edge
@@ -21324,6 +21356,14 @@ egenralize->generalize
 egenralized->generalized
 egenralizes->generalizes
 egenrally->generally
+egister->register
+egistered->registered
+egistering->registering
+egisters->registers
+egistration->registration
+egistrations->registrations
+egistries->registries
+egistry->registry
 egregrious->egregious
 ehance->enhance
 ehanced->enhanced
@@ -21623,6 +21663,8 @@ emmits->emits
 emmitted->emitted
 emmitting->emitting
 emnity->enmity
+emojii->emoji
+emojiis->emojis
 emoty->empty
 emough->enough
 emought->enough
@@ -21632,7 +21674,14 @@ emperial->imperial
 emperially->imperially
 emperical->empirical
 emperically->empirically
+emphaise->emphasise
 emphaised->emphasised
+emphaises->emphasises
+emphaising->emphasising
+emphazise->emphasize
+emphazised->emphasized
+emphazises->emphasizes
+emphazising->emphasizing
 emphsis->emphasis
 emphysyma->emphysema
 empiracally->empirically
@@ -21752,6 +21801,13 @@ encocdings->encodings
 encodingt->encoding
 encodning->encoding
 encodnings->encodings
+encoede->encode
+encoeded->encoded
+encoeder->encoder
+encoeders->encoders
+encoedes->encodes
+encoeding->encoding
+encoedings->encodings
 encompas->encompass
 encompased->encompassed
 encompases->encompasses
@@ -21774,7 +21830,11 @@ encorders->encoders
 encordes->encodes, encores,
 encording->encoding
 encordings->encodings
+encorporate->incorporate
+encorporated->incorporated
+encorporates->incorporates
 encorporating->incorporating
+encorporation->incorporation
 encose->enclose, encode,
 encosed->enclosed, encoded,
 encoser->encoder
@@ -21826,6 +21886,12 @@ encrpting->encrypting
 encrption->encryption
 encrptions->encryptions
 encrpts->encrypts
+encrpyt->encrypt
+encrpyted->encrypted
+encrpyting->encrypting
+encrpytion->encryption
+encrpytions->encryptions
+encrpyts->encrypts
 encrupted->encrypted
 encryped->encrypted
 encrypitng->encrypting
@@ -22188,6 +22254,10 @@ enveloppe->envelope
 envelopped->enveloped
 enveloppes->envelopes
 envelopping->enveloping
+envent->event, invent,
+envents->events, invents,
+enventual->eventual
+enventually->eventually
 enver->never
 envinronment->environment
 envinronments->environments
@@ -22355,6 +22425,10 @@ eqautions->equations
 eqivalent->equivalent
 eqivalents->equivalents
 equailateral->equilateral
+equaivalence->equivalence
+equaivalent->equivalent
+equaivalently->equivalently
+equaivalents->equivalents
 equalibrium->equilibrium
 equall->equal, equally,
 equallity->equality
@@ -22467,6 +22541,9 @@ eratically->erratically
 eraticly->erratically
 erested->arrested, erected,
 erformance->performance
+ergnomic->ergonomic
+ergnomically->ergonomically
+ergnomics->ergonomics
 erliear->earlier
 erlier->earlier
 erly->early
@@ -22482,6 +22559,8 @@ erors->errors
 erraneous->erroneous
 erraneously->erroneously
 erro->error
+erroneos->erroneous
+erroneosly->erroneously
 erroneus->erroneous
 erroneusly->erroneously
 erronoeus->erroneous
@@ -22502,6 +22581,8 @@ errorrs->errors
 erros->errors
 errot->error
 errots->errors
+errpr->error
+errprs->errors
 errro->error
 errror->error
 errrors->errors
@@ -22551,6 +22632,7 @@ escpae->escape
 escpaed->escaped
 escpaes->escapes
 escpaing->escaping
+escpecially->especially
 escuse->excuse
 escused->excused
 escuses->excuses
@@ -22597,6 +22679,8 @@ espacing->escaping
 espcially->especially
 especailly->especially
 especally->especially
+especiall->especially
+especiallly->especially
 especialy->especially
 especialyl->especially
 especifically->specifically, especially,
@@ -22711,7 +22795,15 @@ etxt->text
 euclidian->euclidean
 euivalent->equivalent
 euivalents->equivalents
+euqal->equal
+euqality->equality
+euqally->equally
+euqals->equals
+euqation->equation
+euqations->equations
+euqivalence->equivalence
 euqivalent->equivalent
+euqivalently->equivalently
 euqivalents->equivalents
 euristic->heuristic
 euristics->heuristics
@@ -22880,6 +22972,7 @@ ewhwer->where
 exaclty->exactly
 exacly->exactly
 exactely->exactly
+exactlly->exactly
 exacty->exactly
 exacutable->executable
 exacutables->executables
@@ -22917,10 +23010,12 @@ examlpe->example
 examlpes->examples
 examnple->example
 examnples->examples
+exampe->example
 exampel->example
 exampele->example
 exampeles->examples
 exampels->examples
+exampes->examples
 examplar->exemplar
 examplars->exemplars
 examplary->exemplary
@@ -23210,7 +23305,10 @@ excistence->existence
 excisting->existing, excising,
 excists->exists, excises,
 excitment->excitement
+exclaimation->exclamation
+exclaimations->exclamations
 exclamantion->exclamation
+exclamantions->exclamations
 excliude->exclude
 excliuded->excluded
 excliudes->excludes
@@ -23296,13 +23394,21 @@ execising->exercising
 execpt->except
 execption->exception
 execptions->exceptions
+exect->exact, expect, eject,
 exectable->executable
-exected->executed, expected,
-execting->executing, expecting,
-exection->execution
-exections->executions
+exectables->executables
+exectation->expectation
+exectations->expectations
+execte->execute
+exected->executed, expected, ejected,
+exectes->executes
+execting->executing, expecting, ejecting,
+exection->execution, ejection, election,
+exections->executions, ejections, elections,
+exectly->exactly
 exector->executor
 exectors->executors
+exects->expects, ejects,
 exectuable->executable
 exectuableness->executableness
 exectuables->executables
@@ -23481,10 +23587,17 @@ exeptions->exceptions
 exeqution->execution
 exerbate->exacerbate
 exerbated->exacerbated
+exercice->exercise
+exerciced->exercised
+exercices->exercises
+exercicing->exercising
+exercies->exercises, exercise,
+exerciesd->exercised
 exerciese->exercise
 exerciesed->exercised
 exercieses->exercises
 exerciesing->exercising
+exerciess->exercises
 exercize->exercise
 exercized->exercised
 exercizes->exercises
@@ -23576,8 +23689,12 @@ exhorbitent->exorbitant
 exhorbitently->exorbitantly
 exhostive->exhaustive
 exhustiveness->exhaustiveness
+exibit->exhibit
+exibited->exhibited
+exibiting->exhibiting
 exibition->exhibition
 exibitions->exhibitions
+exibits->exhibits
 exicte->excite
 exicted->excited, existed, exited, evicted, exacted,
 exictes->excites
@@ -23910,6 +24027,10 @@ experice->experience
 expericed->experienced
 experices->experiences
 expericing->experiencing
+experiece->experience
+experieced->experienced
+experieces->experiences
+experiecing->experiencing
 experiement->experiment
 experiemental->experimental
 experiementally->experimentally
@@ -24140,8 +24261,14 @@ experimtener->experimenter
 experimteners->experimenters
 experimtening->experimenting
 experimtens->experiments
+experince->experience
+experinced->experienced
+experinces->experiences
+experincing->experiencing
 experinece->experience
 experineced->experienced
+experineces->experiences
+experinecing->experiencing
 experinement->experiment
 experinemental->experimental
 experinementally->experimentally
@@ -24317,6 +24444,18 @@ expieriences->experiences
 expieriencing->experiencing
 expilicitely->explicitly
 expireitme->expiretime
+expirement->experiment
+expiremental->experimental
+expirementally->experimentally
+expirementation->experimentation
+expirementations->experimentations
+expiremented->experimented
+expirementing->experimenting
+expirements->experiments
+expirence->experience
+expirenced->experienced
+expirences->experiences
+expirencing->experiencing
 expiriation->expiration
 expirie->expire
 expiried->expired
@@ -24339,6 +24478,7 @@ explaination->explanation
 explainations->explanations
 explainatory->explanatory
 explaind->explained
+explaing->explaining
 explanaiton->explanation
 explanaitons->explanations
 explanantion->explanation
@@ -24347,6 +24487,9 @@ explane->explain
 explaned->explained
 explanes->explains
 explaning->explaining
+explanition->explanation
+explanitions->explanations
+explanitory->explanatory
 explantion->explanation
 explantions->explanations
 explcit->explicit
@@ -24433,21 +24576,40 @@ exponetial->exponential
 exponetially->exponentially
 exponetiation->exponentiation
 exponets->exponents
+exporation->exploration, expiration,
+expore->explore, expire, export, exposure, expose,
+expored->explored, expired, exported, exposed,
+exporer->explorer, exporter,
+exporers->explorers, exporters,
+expores->explores, expires, exports, exposures, exposes,
 exporession->expression
+exporing->exploring, expiring, exporting, exposing,
 expors->exports
 exportet->exported, exporter,
 expport->export
 exppressed->expressed
+exprect->expect
+exprectation->expectation
+exprectations->expectations
+exprected->expected
+exprecting->expecting
+exprects->expects
 expres->express
 expresed->expressed
 expreses->expresses, express,
 expresing->expressing
 expresion->expression
 expresions->expressions
+expresison->expression
+expresisons->expressions
 expressable->expressible
 expressino->expression
+expressio->expression
 expressiong->expression, expressing,
+expressios->expressions
 expresso->espresso
+expresson->expression
+expressons->expressions
 expresss->express
 expresssion->expression
 expresssions->expressions
