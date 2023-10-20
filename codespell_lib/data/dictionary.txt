@@ -7222,6 +7222,8 @@ backsapce->backspace
 backslase->backslash
 backslases->backslashes
 backslashs->backslashes
+backtic->backtick
+backtics->backticks
 backupped->backed-up, backed up,
 backwad->backwards
 backwar->backward
@@ -7325,6 +7327,8 @@ bangquit->banquet
 bangquits->banquets
 bankrupcy->bankruptcy
 banlance->balance
+bannana->banana, bandana,
+bannanas->bananas, bandanas,
 bannet->bayonet
 bannets->bayonets
 banruptcy->bankruptcy
@@ -7392,6 +7396,12 @@ beacaon->beacon
 beacause->because
 beachead->beachhead
 beacuse->because
+beahvior->behavior
+beahvioral->behavioral
+beahviors->behaviors
+beahviour->behaviour
+beahvioural->behavioural
+beahviours->behaviours
 beanch->branch, bench, beach,
 beanched->branched, benched,
 beanches->branches, benches, beaches,
@@ -7443,6 +7453,7 @@ becase->because
 becasue->because
 becasuse->because
 becauae->because
+becauase->because
 becauce->because
 becaue->because
 becaues->because
@@ -7620,6 +7631,14 @@ beleive->believe
 beleived->believed
 beleives->believes
 beleiving->believing
+belevable->believable
+belevably->believably
+beleve->believe
+beleved->believed, beloved,
+belever->believer
+belevers->believers
+beleves->believes
+beleving->believing
 beliefable->believable
 beliefe->believe, belief,
 beliefed->believed
@@ -7645,7 +7664,8 @@ belogs->belongs
 belond->belong
 beloning->belonging
 belove->below, beloved,
-belown->belong
+belowe->below
+belown->below, belong, blown,
 belwo->below
 belye->belie
 belyed->belied
@@ -7680,7 +7700,15 @@ benefied->benefited
 benefitial->beneficial
 beneits->benefits
 benerate->generate, venerate,
+benetif->benefit
+benetifed->benefited
+benetifing->benefiting
 benetifs->benefits
+benficial->beneficial
+benfit->benefit, befit,
+benfited->benefited
+benfiting->benefiting
+benfits->benefits, befits,
 beng->being
 benge->binge
 benged->binged
@@ -7701,6 +7729,8 @@ benjed->binged
 benjer->binger
 benjes->binges
 benjing->bingeing
+beofre->before
+beofrehand->beforehand
 beond->beyond
 berfore->before
 berforming->performing
@@ -7770,6 +7800,8 @@ bidings->bindings, bidding,
 bidning->binding
 bidnings->bindings
 bigallic->bigalloc
+biger->bigger
+bigest->biggest, digest,
 bigining->beginning
 biginner->beginner
 biginners->beginners
@@ -7827,6 +7859,7 @@ bitfilelds->bitfields
 bitis->bits
 bitmast->bitmask
 bitnaps->bitmaps
+bittorent->BitTorrent
 bitween->between
 bitwiedh->bitwidth
 bitwise-orring->bitwise-oring
@@ -7928,6 +7961,7 @@ blosum->blossom
 blosums->blossoms
 bloted->bloated
 bluestooth->Bluetooth
+bluethooth->Bluetooth
 bluetooh->Bluetooth
 bluetoot->Bluetooth
 bluetootn->Bluetooth
@@ -8245,6 +8279,7 @@ breackpoints->breakpoints
 breacks->breaks, brakes,
 breackthrough->breakthrough
 breackthroughs->breakthroughs
+breaked->broken
 breakes->breaks
 breakthough->breakthrough
 breakthoughs->breakthroughs
@@ -8363,6 +8398,7 @@ broswed->browsed
 broswer->browser
 broswers->browsers
 broswing->browsing
+brough->brought, borough, bough, trough,
 brower->browser
 browers->browsers
 browing->browsing
@@ -8555,7 +8591,11 @@ burzwah->bourgeois
 busines->business
 busineses->business, businesses,
 busness->business
+busnesses->businesses
+bussines->business
+bussineses->businesses, business,
 bussiness->business
+bussinesses->businesses
 bussy->busy
 butiful->beautiful
 butifully->beautifully
@@ -8576,6 +8616,7 @@ butttons->buttons
 buufers->buffers
 buuild->build
 buuilds->builds
+buyed->bought, buyer,
 buzilla->bugzilla
 bve->be
 bwtween->between
@@ -8804,12 +8845,17 @@ calcuations->calculations
 calcuator->calculator
 calcuators->calculators
 calculaion->calculation
+calculat->calculate
 calculataed->calculated
 calculatble->calculatable, calculable,
+calculatd->calculated
 calculater->calculator, calculated, calculates, calculate,
 calculaters->calculators, calculates,
 calculatess->calculates, calculated,
 calculatin->calculating, calculation,
+calculationg->calculating, calculation,
+calculationgs->calculations
+calculats->calculates
 calculatted->calculated
 calculatter->calculator
 calculattion->calculation
@@ -8868,6 +8914,8 @@ calcutations->calculations
 calcutator->calculator
 calcutators->calculators
 caldesack->cul-de-sac
+caledar->calendar
+caledars->calendars
 caleed->called
 caleee->callee
 calees->callees
@@ -9002,6 +9050,12 @@ cameleon->chameleon
 cameleons->chameleons
 camelion->chameleon
 camelions->chameleons
+cammand->command
+cammanded->commanded
+cammander->commander
+cammanders->commanders
+cammanding->commanding
+cammands->commands
 camoflage->camouflage
 camoflaged->camouflaged
 camoflages->camouflages
@@ -9259,11 +9313,36 @@ capicitance->capacitance
 capicitor->capacitor
 capicitors->capacitors
 capicity->capacity
+capitalsation->capitalisation
+capitalse->capitalise
+capitalsed->capitalised
+capitalses->capitalises
+capitalsing->capitalising
+capitalzation->capitalization
 capitalze->capitalize
 capitalzed->capitalized
 capitalzes->capitalizes
 capitalzing->capitalizing
+capitilisation->capitalisation
+capitilise->capitalise
+capitilised->capitalised
+capitilises->capitalises
+capitilising->capitalising
+capitilization->capitalization
+capitilize->capitalize
+capitilized->capitalized
+capitilizes->capitalizes
+capitilizing->capitalizing
+capitolisation->capitalisation
+capitolise->capitalise
+capitolised->capitalised
+capitolises->capitalises
+capitolising->capitalising
+capitolization->capitalization
 capitolize->capitalize
+capitolized->capitalized
+capitolizes->capitalizes
+capitolizing->capitalizing
 cappabilities->capabilities
 cappability->capability
 cappable->capable
@@ -9283,9 +9362,20 @@ captacity->capacity
 capter->chapter, captor,
 capters->chapters, captors,
 captial->capital
+captialisation->capitalisation
+captialise->capitalise
+captialised->capitalised
+captialises->capitalises
+captialising->capitalising
 captialism->capitalism
 captialist->capitalist
 captialists->capitalists
+captialization->capitalization
+captialize->capitalize
+captialized->capitalized
+captializes->capitalizes
+captializing->capitalizing
+captials->capitals
 captian->captain
 captians->captains
 captin->captain
@@ -9547,8 +9637,11 @@ categoize->categorize
 categoized->categorized
 categoizes->categorizes
 categoizing->categorizing
+categor->category
 categorie->category, categories,
 categoy->category
+categroies->categories
+categroy->category
 cateogrical->categorical
 cateogrically->categorically
 cateogries->categories
@@ -10023,10 +10116,13 @@ chandeleer->chandelier
 chandeleers->chandeliers
 chane->change, chain,
 chaned->changed, chained,
+chaneg->change
+chanegd->changed
 chanege->change
 chaneged->changed
 chaneges->changes
 chaneging->changing
+chanegs->changes
 chanel->channel
 chanell->channel
 chanels->channels
@@ -10043,6 +10139,8 @@ changges->changes
 changging->changing
 changin->changing
 changlog->changelog
+changset->changeset
+changsets->changesets
 changue->change
 changued->changed
 changues->changes
@@ -10458,7 +10556,13 @@ cheecks->checks
 cheecksum->checksum
 cheecksums->checksums
 cheeper->cheaper
+cheet->cheat, sheet, chest, cheer, cheek,
 cheeta->cheetah
+cheeted->cheated, cheered,
+cheeting->cheating, cheering,
+cheets->cheats, sheets, chests, cheers, cheeks,
+cheetsheet->cheatsheet
+cheetsheets->cheatsheets
 cheif->chief
 cheifs->chiefs
 chek->check
@@ -10987,6 +11091,14 @@ classe->class, classes,
 classees->classes
 classess->classes
 classesss->classes
+classfication->classification
+classfications->classifications
+classfied->classified
+classfier->classifier
+classfiers->classifiers
+classfies->classifies
+classfy->classify
+classfying->classifying
 classication->classification
 classications->classifications
 classied->classified
@@ -11065,10 +11177,13 @@ cleare->cleared, clear,
 cleareance->clearance
 clearely->clearly
 cleares->clears
+clearification->clarification
+clearifications->clarifications
 clearified->clarified
 clearifies->clarifies
 clearify->clarify
 clearifying->clarifying
+clearity->clarity
 clearling->clearing
 clearnance->clearance
 clearnances->clearances
@@ -11175,7 +11290,10 @@ cloesst->closest
 cloisonay->cloisonné
 cloisonays->cloisonnés
 clonez->clones, cloner,
-clonning->cloning
+clonne->clone
+clonned->cloned, clowned, conned,
+clonnes->clones
+clonning->cloning, clowning, conning,
 cloreen->chlorine
 clory->glory
 clos->close
