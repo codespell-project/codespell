@@ -8398,7 +8398,7 @@ broswed->browsed
 broswer->browser
 broswers->browsers
 broswing->browsing
-brough->brought, borough, bough,
+brough->brought, borough, bough, trough,
 brower->browser
 browers->browsers
 browing->browsing
@@ -8616,7 +8616,7 @@ butttons->buttons
 buufers->buffers
 buuild->build
 buuilds->builds
-buyed->bought
+buyed->bought, buyer,
 buzilla->bugzilla
 bve->be
 bwtween->between
@@ -10556,7 +10556,11 @@ cheecks->checks
 cheecksum->checksum
 cheecksums->checksums
 cheeper->cheaper
+cheet->cheat, sheet, chest, cheer, cheek,
 cheeta->cheetah
+cheeted->cheated, cheered,
+cheeting->cheating, cheering,
+cheets->cheats, sheets, chests, cheers, cheeks,
 cheetsheet->cheatsheet
 cheetsheets->cheatsheets
 cheif->chief
