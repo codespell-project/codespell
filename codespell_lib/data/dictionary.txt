@@ -24968,8 +24968,10 @@ failue->failure
 failuer->failure
 failuers->failures
 failues->failures
+failur->failure
 failured->failed
 failuring->failing
+failurs->failures
 faireness->fairness
 fairoh->pharaoh
 faiulre->failure
@@ -24997,6 +24999,7 @@ fallbacl->fallback
 fallbacls->fallbacks
 fallbck->fallback
 fallbcks->fallbacks
+falled->failed, fell, fallen, felled,
 fallhrough->fallthrough
 fallthough->fallthrough
 fallthruogh->fallthrough
@@ -25124,8 +25127,15 @@ featre->feature
 featred->featured
 featres->features
 featring->featuring
+featrue->feature
+featrued->featured
+featrues->features
+featruing->featuring
 featue->feature
 featued->featured
+featuer->feature, feather,
+featuerd->featured
+featuers->features, feathers,
 featues->features
 featuing->featuring
 featur->feature
@@ -25143,6 +25153,7 @@ feauturing->featuring
 febbruary->February
 febewary->February
 februar->February
+februrary->February
 Febuary->February
 Feburary->February
 fecthing->fetching
@@ -25200,7 +25211,19 @@ fials->fails, dials, vials,
 fialure->failure
 fialures->failures
 fianite->finite
+fianl->final
+fianlisation->finalisation
+fianlise->finalise
+fianlised->finalised
+fianlises->finalises
+fianlising->finalising
+fianlization->finalization
+fianlize->finalize
+fianlized->finalized
+fianlizes->finalizes
+fianlizing->finalizing
 fianlly->finally
+fianls->finals
 fibonaacci->Fibonacci
 ficks->flicks, fix,
 ficticious->fictitious
@@ -25226,11 +25249,17 @@ fiels->feels, fields, files, phials,
 fiercly->fiercely
 fiew->few, flew,
 fifht->fifth, fight,
+figgure->figure
+figgured->figured
+figgures->figures
+figguring->figuring
 fightings->fighting
 figurestyle->figurestyles
 fiield->field
 fiields->fields
 filal->final
+filder->folder, filter, finder, fielder,
+filders->folders, filters, finders, fielders,
 fileand->file and
 fileds->fields
 fileld->field
@@ -25257,6 +25286,8 @@ fileststem->filesystem
 fileststems->filesystems
 filesysem->filesystem
 filesysems->filesystems
+filesyste->filesystem
+filesystes->filesystems
 filesysthem->filesystem
 filesysthems->filesystems
 filesystme->filesystem
@@ -25358,9 +25389,29 @@ finess->finesse
 finge->finger, fringe,
 fingeprint->fingerprint
 fingerpint->fingerprint
+finialisation->finalisation
+finialise->finalise
+finialised->finalised
+finialises->finalises
+finialising->finalising
 finialization->finalization
+finialize->finalize
+finialized->finalized
+finializes->finalizes
 finializing->finalizing
+finially->finally
+finil->final
+finilisation->finalisation
+finilise->finalise
+finilised->finalised
+finilises->finalises
+finilising->finalising
+finilization->finalization
+finilize->finalize
+finilized->finalized
 finilizes->finalizes
+finilizing->finalizing
+finilly->finally
 finisch->finish, Finnish,
 finisched->finished
 finisches->finishes
@@ -25394,7 +25445,10 @@ finxing->fixing
 fiorget->forget
 firday->Friday
 firdt->first, third,
-firends->friends
+fireing->firing
+firend->friend, fired, fiend,
+firendly->friendly
+firends->friends, fiends,
 firest->fires, first,
 firey->fiery
 firmare->firmware
@@ -25403,6 +25457,7 @@ firmawre->firmware
 firmeare->firmware
 firmeware->firmware
 firmnware->firmware
+firmwar->firmware
 firmwart->firmware
 firmwear->firmware
 firmwqre->firmware
@@ -25431,6 +25486,10 @@ fitler->filter
 fitlered->filtered
 fitlering->filtering
 fitlers->filters
+fiture->feature, future, figure, fixture,
+fitured->figured, featured,
+fitures->features, futures, figures, fixtures,
+fituring->figuring, featuring,
 fivety->fifty
 fixe->fixed, fixes, fix, fixme, fixer,
 fixeed->fixed
@@ -25473,6 +25532,8 @@ flatened->flattened
 flattend->flattened
 flattenning->flattening
 flawess->flawless
+flawessly->flawlessly
+flawlessy->flawlessly
 fle->file
 fleed->fled, freed,
 flem->phlegm
@@ -25489,6 +25550,10 @@ flexibily->flexibly, flexibility,
 flexiblity->flexibility
 flext->flex
 flie->file
+fliped->flipped
+fliper->flipper
+flipers->flippers
+fliping->flipping
 fliter->filter
 flitered->filtered
 flitering->filtering
@@ -25813,6 +25878,7 @@ forat->format
 forbad->forbade
 forbatum->verbatim
 forbbiden->forbidden
+forbidded->forbidden, forbade,
 forbiden->forbidden
 forbit->forbid
 forbiten->forbidden
@@ -25833,6 +25899,9 @@ forcusing->focusing
 forece->force
 foreced->forced
 foreces->forces
+foregin->foreign
+foreginer->foreigner
+foreginers->foreigners
 foregrond->foreground
 foregronds->foregrounds
 foreing->foreign
@@ -25927,7 +25996,11 @@ forotten->forgotten
 forr->for
 forsaw->foresaw
 forse->force
+forsee->foresee
 forseeable->foreseeable
+forseeing->foreseeing, for seeing,
+forseen->foreseen, for seen,
+forsees->foresees
 forst->first, forced,
 fortan->fortran
 fortat->format
@@ -25935,6 +26008,7 @@ forteen->fourteen
 fortelling->foretelling
 forthcominng->forthcoming
 forthcomming->forthcoming
+forthe->for the, forth, forte,
 fortunaly->fortunately
 fortunat->fortunate
 fortunatelly->fortunately
@@ -25962,6 +26036,10 @@ forwareded->forwarded
 forwareding->forwarding
 forwareds->forwards
 forwaring->forwarding
+forword->forward, foreword, for word,
+forworded->forwarded
+forwording->forwarding
+forwords->forwards, forewords, for words,
 forwward->forward
 forwwarded->forwarded
 forwwarding->forwarding
@@ -25982,6 +26060,7 @@ foucs->focus
 foudn->found
 foudning->founding
 fougth->fought
+fould->found, could, would, fold, fouled,
 foult->fault
 foults->faults
 foundaries->foundries
@@ -26076,6 +26155,7 @@ freez->frees, freeze,
 freezs->freezes
 freind->friend
 freindly->friendly
+freinds->friends
 freit->freight
 freited->freighted
 freiting->freighting
@@ -26100,14 +26180,20 @@ frequancies->frequencies
 frequancy->frequency
 frequant->frequent
 frequantly->frequently
+frequecies->frequencies
+frequecy->frequency
 frequences->frequencies
 frequencey->frequency
 frequenct->frequency, frequent,
 frequenies->frequencies
 frequentily->frequently
 frequeny->frequency, frequently, frequent,
+frequet->frequent
+frequetly->frequently
 frequncies->frequencies
 frequncy->frequency
+frequnt->frequent
+frequntly->frequently
 frew-frew->frou-frou
 freze->freeze
 frezes->freezes
@@ -26171,6 +26257,7 @@ frquencies->frequencies
 frquency->frequency
 frquent->frequent
 frquently->frequently
+frrom->from
 frustrum->frustum
 frustrums->frustums, frusta,
 fschk->fsck
@@ -26218,6 +26305,7 @@ fullfilling->fulfilling
 fullfills->fulfills
 fullfils->fulfils, fulfills,
 fullill->fulfil, fulfill,
+fulll->full
 fullly->fully
 fulsh->flush
 fuly->fully
@@ -26260,6 +26348,14 @@ funciotnally->functionally
 funciotned->functioned
 funciotning->functioning
 funciotns->functions
+funcition->function
+funcitional->functional
+funcitionalities->functionalities
+funcitionality->functionality
+funcitionally->functionally
+funcitioned->functioned
+funcitioning->functioning
+funcitions->functions
 funciton->function
 funcitonal->functional
 funcitonalities->functionalities
@@ -26313,6 +26409,8 @@ functionaily->functionality
 functionaities->functionalities
 functionaity->functionality
 functionalies->functionalities
+functionalites->functionalities
+functionalitis->functionalities
 functionallities->functionalities
 functionallity->functionality
 functionallly->functionally
@@ -26323,6 +26421,8 @@ functionalty->functionality
 functionaly->functionally, functionality,
 functionionalities->functionalities
 functionionality->functionality
+functionlities->functionalities
+functionlity->functionality
 functionnal->functional
 functionnalities->functionalities
 functionnality->functionality
@@ -26468,6 +26568,8 @@ gage->gauge
 gages->gauges
 gagit->gadget
 gagits->gadgets
+gague->gauge
+gagues->gauges
 galatic->galactic
 Galations->Galatians
 gallaries->galleries
@@ -26515,6 +26617,14 @@ gargoils->gargoyles
 garilla->guerrilla
 garillas->guerrillas
 garnison->garrison
+garph->graph
+garphed->graphed
+garphic->graphic
+garphical->graphical
+garphically->graphically
+garphics->graphics
+garphing->graphing
+garphs->graphs
 garuantee->guarantee
 garuanteed->guaranteed
 garuantees->guarantees
@@ -26649,6 +26759,8 @@ generatd->generated
 generater->generator, generated, generates, generate,
 generaters->generators, generates,
 generatig->generating
+generatin->generating, generation,
+generatins->generations, generating,
 generatng->generating
 generaton->generation, generator,
 generatons->generations, generators,
@@ -26782,6 +26894,8 @@ genric->generic
 genrics->generics
 gental->gentle
 genuin->genuine
+genuis->genius
+genuises->geniuses
 geocentic->geocentric
 geoemtries->geometries
 geoemtry->geometry
@@ -26878,7 +26992,9 @@ getlael->getlabel
 getoe->ghetto
 getoject->getobject
 gettetx->gettext
+gettig->getting
 gettign->getting
+gettings->getting, settings,
 gettitem->getitem, get item,
 gettitems->getitems, get items,
 gettter->getter
@@ -26910,6 +27026,7 @@ git-buildpackges->git-buildpackages
 gitar->guitar
 gitars->guitars
 gitatributes->gitattributes
+gitub->GitHub
 gived->given, gave,
 giveing->giving
 givem->given, give them, give 'em,
@@ -26990,6 +27107,7 @@ gometries->geometries
 gometry->geometry
 gonig->going
 gool->ghoul
+goole->Google
 gord->gourd
 gormay->gourmet
 gorry->gory
@@ -27095,6 +27213,7 @@ gravitiation->gravitation
 grbber->grabber
 greate->greater, create, grate, great,
 greated->greater, grated, graded,
+greately->greatly
 greatful->grateful
 greatfull->grateful, gratefully,
 greatfully->gratefully
@@ -27132,6 +27251,14 @@ groupping->grouping
 groupt->grouped
 growtesk->grotesque
 growteskly->grotesquely
+grpah->graph
+grpahed->graphed
+grpahic->graphic
+grpahical->graphical
+grpahically->graphically
+grpahics->graphics
+grpahing->graphing
+grpahs->graphs
 grranted->granted
 gruop->group
 gruopd->grouped
@@ -27322,7 +27449,8 @@ gziped->gzipped
 haa->has
 haave->have
 habaeus->habeas
-habbit->habit
+habbit->habit, rabbit,
+habbits->habits, rabbits,
 habeus->habeas
 habilities->abilities
 hability->ability
@@ -27343,6 +27471,7 @@ hadnler->handler
 hadnlers->handlers
 hadnles->handles
 hadnling->handling
+hadnt->hadn't
 haeder->header
 haemorrage->haemorrhage
 haev->have, heave,
@@ -27450,6 +27579,8 @@ happend->happened, happens, happen,
 happended->happened
 happending->happening
 happends->happens
+happenend->happened
+happenes->happens, happened,
 happenned->happened
 happenning->happening
 happennings->happenings
@@ -27550,11 +27681,17 @@ headquatered->headquartered
 headquaters->headquarters
 headrom->headroom, bedroom,
 heaer->header
+healt->health, heart, halt, heal, heat,
 healthercare->healthcare
+healtier->healthier, heartier,
+healtiest->healthiest, heartiest,
+healty->healthy, hearty,
 hearbeat->heartbeat, heart beat, hear beat,
 hearbeating->heartbeating, heart beating, hear beating,
 hearbeats->heartbeats, heart beats, hear beats,
 heared->heard, header,
+heatbeat->heartbeat
+heatbeats->heartbeats
 heathy->healthy
 heder->header, herder,
 heders->headers, herders,
@@ -27842,10 +27979,12 @@ histroicaly->historically
 histroies->histories
 histroy->history
 histry->history
+hiting->hitting, hiding, hinting, hiring, hating, biting, hiking,
 hitogram->histogram
 hitories->histories
 hitory->history
 hitsingles->hit singles
+hitted->hit
 hiygeine->hygiene
 hmdi->hdmi
 hmtl->html
@@ -27857,6 +27996,7 @@ holf->hold
 holliday->holiday
 hollowcost->holocaust
 homapage->homepage
+hombrew->Homebrew
 homegeneous->homogeneous
 homestate->home state
 homogeneize->homogenize
@@ -27891,14 +28031,26 @@ hopyfully->hopefully
 horicontal->horizontal
 horicontally->horizontally
 horinzontal->horizontal
+horison->horizon
+horisons->horizons
+horisontal->horizontal
+horisontally->horizontally
 horizntal->horizontal
 horizonal->horizontal
 horizonally->horizontally
 horizontale->horizontal
+horizontall->horizontal, horizontally,
+horizontallly->horizontally
+horizontaly->horizontally
 horiztonal->horizontal
 horiztonally->horizontally
+horozon->horizon
+horozons->horizons
+horozontal->horizontal
+horozontally->horizontally
 horphan->orphan
 horrable->horrible
+horray->hooray
 horrifing->horrifying
 horyzontally->horizontally
 horziontal->horizontal
@@ -27955,6 +28107,8 @@ hsould->should
 hsouldn't->shouldn't
 hstory->history
 htacccess->htaccess
+htacces->htaccess
+htacess->htaccess
 hte->the
 hten->then, hen, the,
 htere->there, here,
@@ -27969,6 +28123,7 @@ htose->those, these,
 htpt->http
 htpts->https
 htting->hitting
+htts->https
 hueristic->heuristic
 hueristics->heuristics
 huld->held, hold,
@@ -27999,6 +28154,8 @@ hwihc->which
 hwile->while
 hwole->whole
 hybernate->hibernate
+hybird->hybrid
+hybirds->hybrids
 hydogen->hydrogen
 hydrolic->hydraulic
 hydrolics->hydraulics
