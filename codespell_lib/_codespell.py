@@ -39,7 +39,6 @@ uri_regex_def = (
 # Pass all misspellings through this translation table to generate
 # alternative misspellings and fixes.
 alt_chars = (("'", "’"),)
-encodings = ("utf-8", "iso-8859-1")
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
@@ -249,7 +248,7 @@ class FileOpener:
     def open_with_internal(self, filename: str) -> Tuple[List[str], str]:
         encoding = None
         first_try = True
-        for encoding in encodings:
+        for encoding in ("utf-8", "iso-8859-1"):
             if first_try:
                 first_try = False
             elif not self.quiet_level & QuietLevels.ENCODING:
@@ -834,10 +833,10 @@ def parse_file(
     bad_count = 0
     lines = None
     changed = False
-    encoding = encodings[0]  # if not defined, use UTF-8
 
     if filename == "-":
         f = sys.stdin
+        encoding = "utf-8"
         lines = f.readlines()
     else:
         if options.check_filenames:
