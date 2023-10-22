@@ -12582,10 +12582,10 @@ compilaiton->compilation
 compilaitons->compilations
 compilance->compliance
 compilant->compliant
-compilate->compile
-compilated->compiled
-compilates->compiles
-compilating->compiling
+compilate->compile, complicate,
+compilated->compiled, complicated,
+compilates->compiles, complicates,
+compilating->compiling, complicating,
 compilaton->compilation
 compilatons->compilations
 compilcate->complicate
@@ -14479,8 +14479,8 @@ contiuguous->contiguous
 contiuing->continuing
 contiuous->continuous
 contiuously->continuously
-contnet->content
-contnets->contents
+contnet->content, continent,
+contnets->contents, continents,
 contniue->continue
 contniued->continued
 contniues->continues
@@ -15692,6 +15692,7 @@ countr->counter, contour, country, county,
 countrie's->countries, countries', country's,
 countrs->counters, contours, countries,
 countrys->countries
+countys->counties
 cource->course, coerce, source,
 courced->coerced, sourced, coursed,
 cources->courses, coerces, sources,
@@ -15859,7 +15860,7 @@ creaing->creating, creasing, creaking, creaming,
 creasoat->creosote
 creastor->creator
 creatation->creation
-creatd->created
+creatd->created, create,
 createa->create
 createable->creatable
 createdd->created
@@ -16105,7 +16106,14 @@ cuestion->question
 cuestioned->questioned
 cuestions->questions
 cuileoga->cuileog
+culiminate->culminate
+culiminated->culminated
+culiminates->culminates
 culiminating->culminating
+culmulate->cumulate, culminate,
+culmulated->cumulated, culminated,
+culmulates->cumulates, culminates,
+culmulating->cumulating, culminating,
 culmulative->cumulative
 culprint->culprit
 culprints->culprits
