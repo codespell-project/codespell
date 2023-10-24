@@ -25258,8 +25258,8 @@ figurestyle->figurestyles
 fiield->field
 fiields->fields
 filal->final
-filder->folder, filter, finder, fielder,
-filders->folders, filters, finders, fielders,
+filder->folder, filter, finder, fielder, filer,
+filders->folders, filters, finders, fielders, filers,
 fileand->file and
 fileds->fields
 fileld->field
@@ -26894,7 +26894,7 @@ genric->generic
 genrics->generics
 gental->gentle
 genuin->genuine
-genuis->genius
+genuis->genius, genus,
 genuises->geniuses
 geocentic->geocentric
 geoemtries->geometries
@@ -27449,8 +27449,8 @@ gziped->gzipped
 haa->has
 haave->have
 habaeus->habeas
-habbit->habit, rabbit,
-habbits->habits, rabbits,
+habbit->habit, rabbit, hobbit,
+habbits->habits, rabbits, hobbits,
 habeus->habeas
 habilities->abilities
 hability->ability
@@ -27580,7 +27580,7 @@ happended->happened
 happending->happening
 happends->happens
 happenend->happened
-happenes->happens, happened,
+happenes->happens, happened, happiness,
 happenned->happened
 happenning->happening
 happennings->happenings
