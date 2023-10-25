@@ -28953,7 +28953,7 @@ importen->important, importance,
 importence->importance, impotence,
 importend->important, imported,
 importent->important, impotent,
-importently->importantly
+importently->importantly, impotently,
 importnce->importance
 importnt->important
 importntly->importantly
@@ -29046,7 +29046,7 @@ improvemenets->improvements
 improvemens->improvements
 improvemnt->improvement
 improvemnts->improvements
-improvent->improvement
+improvent->improvement, improvident,
 improvents->improvements
 improvision->improvisation
 improvmenet->improvement
@@ -29885,9 +29885,13 @@ inforrmation->information
 inforrmational->informational
 infrantryman->infantryman
 infrasctructure->infrastructure
+infrasctructures->infrastructures
 infrastracture->infrastructure
+infrastractures->infrastructures
 infrastrcuture->infrastructure
+infrastrcutures->infrastructures
 infrastruture->infrastructure
+infrastrutures->infrastructures
 infrastucture->infrastructure
 infrastuctures->infrastructures
 infreqency->infrequency
@@ -29908,6 +29912,7 @@ infront->in front
 infrormation->information
 infrormational->informational
 infrustructure->infrastructure
+infrustructures->infrastructures
 ingegral->integral
 ingenius->ingenious
 ingnorar->ignore, ignorant,
@@ -31218,7 +31223,7 @@ intepretor->interpreter
 intepretors->interpreters
 inteprets->interprets
 inter-operability->interoperability
-interable->iterable, interactable, intolerable,
+interable->iterable, interactable, integrable, intolerable,
 interace->interface, interlace,
 interaced->interacted, interfaced, interlaced,
 interaces->interfaces, interlaces,
@@ -31310,7 +31315,7 @@ intereferes->interferes
 interefering->interfering
 interelated->interrelated
 interelaved->interleaved
-interent->internet, interest, inherent,
+interent->internet, interest, inherent, interment,
 interepolate->interpolate
 interepolated->interpolated
 interepolates->interpolates
