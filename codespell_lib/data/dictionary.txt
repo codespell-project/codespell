@@ -32696,8 +32696,8 @@ laguagues->languages
 laguange->language
 laguanges->languages
 laiter->later
-lamba->lambda, lambs,
-lambas->lambdas, lambs,
+lamba->lambda, lambs, lamb,
+lambas->lambdas, lambs, lambast, lambaste,
 lanaguage->language
 lanaguages->languages
 lanaguge->language
@@ -33241,6 +33241,10 @@ linaer->linear
 linaerly->linearly
 linar->linear
 linarly->linearly
+lincence->licence
+lincenced->licenced
+lincences->licences
+lincencing->licencing
 lincense->license
 lincensed->licensed
 lincenses->licenses
@@ -33465,8 +33469,8 @@ locte->locate
 locted->located, locked,
 loctes->locates
 locting->locating, locking,
-loction->location, lotion, locution,
-loctions->locations, lotions, locutions,
+loction->location, lotion, lection, locution,
+loctions->locations, lotions, lections, locutions,
 lodable->loadable
 loded->loaded
 loder->loader
@@ -34608,6 +34612,7 @@ metrices->metrics, matrices,
 metrig->metric
 metrigal->metrical
 metrigs->metrics
+metrix->matrix, metric,
 mey->may
 meybe->maybe
 mezmorise->mesmerise
