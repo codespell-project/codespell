@@ -32327,6 +32327,7 @@ janury->January
 japanease->japanese
 japaneese->Japanese
 Japanes->Japanese
+japanse->Japanese
 japanses->Japanese
 jaques->jacques
 javacript->javascript
@@ -32595,7 +32596,10 @@ knowlegdeable->knowledgeable
 knowlege->knowledge
 knowlegeabel->knowledgeable
 knowlegeable->knowledgeable
+knowned->known
 knowngly->knowingly
+knowning->knowing
+knowningly->knowingly
 knwo->know
 knwoing->knowing
 knwoingly->knowingly
@@ -32692,6 +32696,8 @@ laguagues->languages
 laguange->language
 laguanges->languages
 laiter->later
+lamba->lambda, lambs, lamb,
+lambas->lambdas, lambs, lambast, lambaste,
 lanaguage->language
 lanaguages->languages
 lanaguge->language
@@ -32947,6 +32953,8 @@ legth->length
 legths->lengths
 leibnitz->leibniz
 leightweight->lightweight
+lement->element, clement, lament,
+lements->elements, laments,
 lemosine->limousine
 lemosines->limousines
 lene->lens
@@ -32970,6 +32978,7 @@ lengten->lengthen
 lengtext->longtext
 lengthes->lengths
 lengthh->length
+lengthly->lengthy, lengthwise, lengthily,
 lengts->lengths
 lenguage->language
 lenguages->languages
@@ -33232,6 +33241,14 @@ linaer->linear
 linaerly->linearly
 linar->linear
 linarly->linearly
+lincence->licence
+lincenced->licenced
+lincences->licences
+lincencing->licencing
+lincense->license
+lincensed->licensed
+lincenses->licenses
+lincensing->licensing
 lincese->license
 lincesed->licensed
 linceses->licenses
@@ -33250,6 +33267,7 @@ linez->lines
 lingth->length
 linheight->lineheight
 Linix->Linux
+linkdin->LinkedIn
 linke->linked, link, links, like, line,
 linkely->likely
 linkes->links, linked, likes, lines,
@@ -33447,6 +33465,12 @@ loclaizes->localizes
 loclaizing->localizing
 loclaly->locally
 loclas->locals
+locte->locate
+locted->located, locked,
+loctes->locates
+locting->locating, locking,
+loction->location, lotion, lection, locution,
+loctions->locations, lotions, lections, locutions,
 lodable->loadable
 loded->loaded
 loder->loader
@@ -33489,6 +33513,8 @@ lokales->locales
 lokaly->locally
 lolal->total
 lolerant->tolerant
+lolipop->lollipop
+lolipops->lollipops
 lonber->longer, loner,
 lond->long
 lonelyness->loneliness
@@ -33513,6 +33539,7 @@ loocking->looking, locking,
 loockup->lookup, lockup,
 lood->lewd, blood, flood, mood, look, loom,
 lookes->looks
+lookin->looking, look in,
 looknig->looking
 looop->loop
 loopup->lookup
@@ -33559,6 +33586,7 @@ maangers->managers
 maanges->manages
 maanging->managing
 mabe->maybe
+mabey->maybe
 mabye->maybe
 macack->macaque
 macason->moccasin
@@ -33576,6 +33604,9 @@ machanisms->mechanisms
 mached->matched
 maches->matches
 machettie->machete
+machien->machine
+machienry->machinery
+machiens->machines
 machinary->machinery
 machine-dependend->machine-dependent
 machiness->machines
@@ -33631,6 +33662,18 @@ mainainers->maintainers
 mainaining->maintaining
 mainains->maintains
 mainenance->maintenance
+mainfest->manifest
+mainfested->manifested
+mainfesting->manifesting
+mainfesto->manifesto
+mainfestos->manifestos
+mainfests->manifests
+mainifest->manifest
+mainifested->manifested
+mainifesting->manifesting
+mainifesto->manifesto
+mainifestos->manifestos
+mainifests->manifests
 maininly->mainly
 mainling->mailing
 maintainance->maintenance
@@ -33638,6 +33681,12 @@ maintaince->maintenance
 maintainces->maintenances
 maintainence->maintenance
 maintaing->maintaining
+maintaint->maintain
+maintainted->maintained
+maintainter->maintainer
+maintainters->maintainers
+maintainting->maintaining
+maintaints->maintains
 maintan->maintain
 maintanance->maintenance
 maintance->maintenance
@@ -33649,7 +33698,9 @@ maintaners->maintainers
 maintaning->maintaining
 maintans->maintains
 maintenace->maintenance
+maintence->maintenance
 maintenence->maintenance
+maintentance->maintenance
 maintiain->maintain
 maintiained->maintained
 maintiainer->maintainer
@@ -33753,6 +33804,7 @@ manaze->mayonnaise
 mandatatory->mandatory
 mandess->madness
 mandetory->mandatory
+manditory->mandatory
 manement->management
 maneouvre->manoeuvre
 maneouvred->manoeuvred
@@ -33764,6 +33816,18 @@ manetainer->maintainer
 manetainers->maintainers
 manetaining->maintaining
 manetains->maintains
+manfest->manifest
+manfested->manifested
+manfesting->manifesting
+manfesto->manifesto
+manfestos->manifestos
+manfests->manifests
+manfiest->manifest
+manfiested->manifested
+manfiesting->manifesting
+manfiesto->manifesto
+manfiestos->manifestos
+manfiests->manifests
 mangae->manage, manga,
 mangaed->managed
 mangaement->management
@@ -33788,12 +33852,22 @@ manifacturer->manufacturer
 manifacturers->manufacturers
 manifactures->manufactures
 manifect->manifest
+manifiest->manifest
+manifiested->manifested
+manifiesting->manifesting
+manifiesto->manifesto
+manifiestos->manifestos
+manifiests->manifests
 manipluate->manipulate
 manipluated->manipulated
 manipulater->manipulator, manipulated, manipulates, manipulate,
 manipulaters->manipulators, manipulates,
 manipulatin->manipulating
 manipulaton->manipulation
+manipule->manipulate
+manipuled->manipulated
+manipules->manipulates
+manipuling->manipulating
 manipute->manipulate
 maniputed->manipulated
 maniputing->manipulating
@@ -33849,6 +33923,12 @@ manuels->manuals
 manues->menus
 manuever->maneuver, manoeuvre,
 manuevers->maneuvers, manoeuvres,
+manufacter->manufacturer, manufacture,
+manufactered->manufactured
+manufacterer->manufacturer
+manufacterers->manufacturers
+manufactering->manufacturing
+manufacters->manufacturers, manufactures,
 manufactuer->manufacture, manufacturer,
 manufactuerd->manufactured
 manufactuers->manufactures, manufacturers,
@@ -33922,6 +34002,9 @@ marxisit->marxist
 marxisits->marxists
 marz->March, Mars,
 masakist->masochist
+maschine->machine
+maschinery->machinery
+maschines->machines
 mashetty->machete
 mashine->machine
 mashined->machined
@@ -34036,6 +34119,9 @@ matser->master
 mattern->pattern, matter,
 matterns->patterns, matters,
 matzch->match
+maual->manual, maul,
+maually->manually
+mauals->manuals, mauls,
 maube->maybe, mauve,
 mavrick->maverick
 mawsoleum->mausoleum
@@ -34149,6 +34235,8 @@ measuer->measurer, measure,
 measues->measures
 measuing->measuring
 measurd->measured, measure,
+measureable->measurable
+measureably->measurably
 measuremenet->measurement
 measuremenets->measurements
 measurmenet->measurement
@@ -34243,6 +34331,10 @@ meenings->meanings, meetings,
 meens->means
 meerkrat->meerkat
 meerly->merely
+meesage->message
+meesaged->messaged
+meesages->messages
+meesaging->messaging
 meessage->message
 meessaged->messaged
 meessages->messages
@@ -34413,6 +34505,10 @@ messagsing->messaging
 messaing->messaging
 messanger->messenger
 messangers->messengers
+messasge->message, messages,
+messasged->messaged
+messasges->messages
+messasging->messaging
 messave->message
 messege->message
 messeged->messaged
@@ -34454,6 +34550,8 @@ meta-attrubutes->meta-attributes
 meta-progamming->meta-programming
 metacharater->metacharacter
 metacharaters->metacharacters
+metadat->metadata
+metadta->metadata
 metalic->metallic
 metalurgic->metallurgic
 metalurgical->metallurgical
@@ -34464,6 +34562,7 @@ metapackges->metapackages
 metaphore->metaphor
 metaphoricial->metaphorical
 metaprogamming->metaprogramming
+metatada->metadata
 metatadata->metadata
 metatdata->metadata
 metdata->metadata
@@ -34509,9 +34608,11 @@ metod->method
 metodologies->methodologies
 metodology->methodology
 metods->methods
+metrices->metrics, matrices,
 metrig->metric
 metrigal->metrical
 metrigs->metrics
+metrix->matrix, metric,
 mey->may
 meybe->maybe
 mezmorise->mesmerise
@@ -34570,11 +34671,18 @@ midifiers->modifiers
 midifies->modifies
 midify->modify
 midifying->modifying
+midle->middle
 midpints->midpoints
 midpiont->midpoint
 midpionts->midpoints
 midpont->midpoint
 midponts->midpoints
+migate->migrate, mitigate,
+migated->migrated, mitigated,
+migates->migrates, mitigates,
+migating->migrating, mitigating,
+migation->migration, mitigation,
+migations->migrations, mitigations,
 mige->midge
 miges->midges
 migh->might
@@ -34765,6 +34873,10 @@ mintor->mentor, monitor, minor,
 mintored->mentored, monitored,
 mintoring->mentoring, monitoring,
 mintors->mentors, monitors,
+mintue->minute
+mintues->minutes
+mintute->minute
+mintutes->minutes
 minue->minute, minus, menu,
 minues->minutes, minus, minuses, menus,
 minum->minimum
@@ -34851,6 +34963,8 @@ misinterperting->misinterpreting
 misinterperts->misinterprets
 misinterprett->misinterpret
 misinterpretted->misinterpreted
+misinterpretting->misinterpreting
+misinterpretts->misinterprets
 mision->mission, minion, vision,
 misions->missions, minions, visions,
 misisng->missing
@@ -34912,6 +35026,10 @@ misspeled->misspelled
 misspeling->misspelling
 misspelings->misspellings
 misspels->misspells
+missplace->misplace
+missplaced->misplaced
+missplaces->misplaces
+missplacing->misplacing
 misssing->missing
 misssion->mission
 misssions->missions
@@ -34925,6 +35043,10 @@ misstaken->mistaken
 misstakes->mistakes
 misstype->mistype
 misstypes->mistypes
+missunderstand->misunderstand
+missunderstanding->misunderstanding
+missunderstandings->misunderstandings
+missunderstands->misunderstands
 missunderstood->misunderstood
 missuse->misuse
 missused->misused
@@ -35003,6 +35125,14 @@ moddeled->modeled
 moddelled->modelled
 moddels->models
 modee->mode
+modefication->modification
+modefications->modifications
+modefied->modified
+modefier->modifier
+modefiers->modifiers
+modefies->modifies
+modefy->modify
+modefying->modifying
 modelinng->modeling
 modell->model
 modellinng->modelling
@@ -35087,6 +35217,8 @@ modiffer->modifier
 modiffers->modifiers
 modifiation->modification
 modifiations->modifications
+modificaiton->modification
+modificaitons->modifications
 modificatioon->modification
 modificatioons->modifications
 modificaton->modification
@@ -35173,7 +35305,9 @@ molelcule->molecule
 molelcules->molecules
 momement->moment
 momementarily->momentarily
+momementary->momentary
 momements->moments
+momementum->momentum
 momemt->moment
 momemtarily->momentarily
 momemtary->momentary
@@ -35184,17 +35318,25 @@ momentarely->momentarily
 momento->memento
 momentos->mementos
 momery->memory
+momment->moment
+mommentarily->momentarily
+mommentary->momentary
+momments->moments
+mommentum->momentum
 momoent->moment
 momoment->moment
 momomentarily->momentarily
+momomentary->momentary
 momomento->memento, moment,
 momomentos->mementos, moments,
 momoments->moments
+momomentum->momentum
 momory->memory
 monarkey->monarchy
 monarkeys->monarchies
 monarkies->monarchies
 mondey->Monday, money, monkey,
+mondodb->MongoDB
 mone->mono, money, none,
 monestaries->monasteries
 monestary->monastery, monetary,
@@ -35235,8 +35377,16 @@ montion->mention, motion,
 montioned->mentioned
 montioning->mentioning
 montions->mentions, motions,
+montior->monitor
+montiored->monitored
+montioring->monitoring
+montiors->monitors
 montly->monthly
 Montnana->Montana
+montor->monitor, motor, mentor,
+montored->monitored, mentored,
+montoring->monitoring, mentoring,
+montors->monitors, motors, mentors,
 monts->months
 montypic->monotypic
 moodify->modify
@@ -35283,6 +35433,8 @@ moteured->motored
 moteuring->motoring
 moteurs->motors
 mothing->nothing
+mothod->method
+mothods->methods
 motivaiton->motivation
 motiviated->motivated
 motiviation->motivation
@@ -35450,10 +35602,20 @@ multilpicative->multiplicative
 multilpicities->multiplicities
 multilpicity->multiplicity
 multilpies->multiplies
+multilplayer->multiplayer
+multilple->multiple
+multilples->multiples
+multilplication->multiplication
+multilplications->multiplications
+multilplicative->multiplicative
+multilplicities->multiplicities
+multilplicity->multiplicity
 multilplied->multiplied
 multilplier->multiplier
 multilpliers->multipliers
 multilplies->multiplies
+multilply->multiply
+multilplying->multiplying
 multilpy->multiply
 multilpying->multiplying
 multily->multiply
@@ -35523,6 +35685,20 @@ multpliers->multipliers
 multplies->multiplies
 multply->multiply
 multplying->multiplying
+multuplayer->multiplayer
+multuple->multiple
+multuples->multiples
+multuplication->multiplication
+multuplications->multiplications
+multuplicative->multiplicative
+multuplicities->multiplicities
+multuplicity->multiplicity
+multuplied->multiplied
+multuplier->multiplier
+multupliers->multipliers
+multuplies->multiplies
+multuply->multiply
+multuplying->multiplying
 multy->multi
 multy-thread->multithread
 mumber->number
@@ -35553,6 +35729,9 @@ mustash->mustache, moustache,
 mustator->mutator
 muste->must
 mutablity->mutability
+mutatbility->mutability
+mutatble->mutable
+mutatbly->mutably
 mutater->mutator, mutated, mutates, mutate,
 mutaters->mutators, mutates,
 mutbal->mutable
