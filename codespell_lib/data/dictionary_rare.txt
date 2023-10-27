@@ -1,8 +1,13 @@
 ablet->able, tablet,
+acapella->a cappella
+accreting->accrediting
+acter->actor
+acters->actors
 afterwords->afterwards
 amination->animation, lamination,
 aminations->animations, laminations,
 aminator->animator, laminator,
+aminators->animators, laminators,
 ans->and
 arithmetics->arithmetic
 attache->attaché, attached, attach,
@@ -13,9 +18,12 @@ backword->backward
 backwords->backwards
 bale->able, bail,
 bellow->below
+biding->binding, bidding,
 bloc->block
 blocs->blocks
 bodgy->body
+brining->bringing
+bu->by, be, but, bug, bun, bud, buy, bum,
 buss->bus
 busses->buses
 calculatable->calculable
@@ -24,50 +32,78 @@ calenders->calendars
 cancelability->cancellability
 cant->can't
 chack->check, chalk, cheque,
+chacked->checked
+chacker->checker
+chackers->checkers
+chacking->checking
+chacks->checks
 chancel->cancel
 chancels->cancels
-circularly->circular
+circulary->circular, circularly,
+codded->coded, coddled,
+codding->coding, coddling,
 commata->commas
 commend->comment, command,
 commends->comments, commands,
 compliancy->compliance
-complied->compiled
 complier->compiler
 compliers->compilers
-complies->compiles
 confectionary->confectionery
 consequentially->consequently
+convertor->converter
+convertors->converters
 coo->coup
 copping->coping, copying, cropping,
-covert->convert
+corespondent->correspondent
+corespondents->correspondents
+costumer->customer
+costumers->customers
+covert->convert, cover, covet,
+coverts->converts, covers, covets,
 crasher->crash
 crashers->crashes
 crate->create
 crated->created
 creche->crèche
-cristal->crystal
 crufts->cruft
+cunt->count, hunt,
+cunts->counts, hunts,
+curios->curious
 dealign->dealing
 deffer->differ, defer,
 degrate->degrade
 degrates->degrades
 dependant->dependent
 derails->details
+descried->described
+descries->describes
+dirivative->derivative
+dirivatives->derivatives
+dirivitive->derivative
+dirivitives->derivatives
 discontentment->discontent
 discreet->discrete
+discus->discuss
+discuses->discusses
+doest->does, doesn't,
+empress->impress
+empresses->impresses
 fallow->follow
 fallowed->followed
 fallowing->following
 fallows->follows
 fave->save
+finial->final
+finis->finish
+finises->finishes
 floaw->flow, float,
 floaws->flows, floats,
 florescent->fluorescent
 followings->following
-forewarded->forwarded
 formule->formula, formulas,
 formules->formulas
 fount->found
+frequence->frequency
 fro->for, from,
 froward->forward
 fulfilment->fulfillment
@@ -76,43 +112,62 @@ girds->grids
 guarantied->guaranteed
 guerilla->guerrilla
 guerillas->guerrillas
+habitant->inhabitant
+habitants->inhabitants
 hart->heart, harm,
 heterogenous->heterogeneous
 hided->hidden, hid,
+hims->his, hymns,
 hove->have, hover, love,
-impassible->impassable
-implicity->implicitly
+impassible->impassable, impossible,
+implementor->implementer
+implementors->implementers
+implicity->implicitly, simplicity,
 inactivate->deactivate
 incluse->include
 indention->indentation
 indite->indict
 infarction->infraction
+infarctions->infractions
+ingenuous->ingenious
 inly->only
 irregardless->regardless
 knifes->knives
+lama->llama
+lamas->llamas
+lamda->lambda
+lamdas->lambdas
 leaded->led, lead,
 leas->least, lease,
+lief->leaf, life,
 lightening->lightning, lighting,
 loafing->loading
+loath->loathe
 lod->load, loud, lode,
 loos->loose, lose,
 loosing->losing
 lousily->loosely
 lumination->lamination, illumination,
 mane->main, many, Maine,
+mange->manage
+manged->managed
 manger->manager
+mangers->managers
 marge->merge
 mater->matter, master, mother,
 medias->media, mediums,
 meu->menu
 meus->menus
 midwifes->midwives
+mistakingly->mistakenly
 moil->soil, mohel,
 mot->not
 moue->mouse
 multistory->multistorey, multi-storey,
 nickle->nickel
 noes->nose, knows, nodes, does,
+nome->gnome
+ochry->ochery, ochrey,
 oerflow->overflow
 oerflowed->overflowed
 oerflowing->overflowing
@@ -120,28 +175,45 @@ oerflows->overflows
 ore->or
 panting->painting
 pares->pairs
+parma->param
 patter->pattern
 patters->patterns
 pavings->paving
 payed->paid
+plack->plaque
+placks->plaques
 planed->planned
 pleas->please
 predicable->predictable
 preform->perform
 preformed->performed
+preforming->performing
 preforms->performs
 pres->press
 prioritary->priority
+processus->processes, process,
 programed->programmed
+programer->programmer
+programers->programmers
 programing->programming
 prosses->process, processes, possess,
+provence->province
 purportive->supportive
 purvue->purview
 ques->quest
 readd->re-add, read,
-readded->read
+readded->re-added, read,
+readding->re-adding, reading,
+readds->re-adds, reads,
 ream->stream
 recuse->recurse
+refect->reflect
+refected->reflected
+refecting->reflecting
+refection->reflection
+refections->reflections
+refective->reflective
+refects->reflects
 remainer->remainder
 remainers->remainders
 retuned->returned
@@ -157,10 +229,13 @@ scrips->scripts
 setts->sets
 shat->that, shit,
 sightly->slightly
-simplication->simplification
+simplication->simplification, implication,
+simplications->simplifications, implications,
 singe->single
 singed->signed, singled, sang, sung,
 slippy->slippery
+soring->sorting
+spacial->special, spatial,
 specif->specify, specific,
 statics->statistics
 steams->streams
@@ -168,14 +243,17 @@ sting->string
 stings->strings
 straightaway->straight away
 straighted->straightened, straighten,
+stye->style
+styes->styles
 suppressable->suppressible
+texturers->textures
 therefor->therefore
 therefrom->there from
 theses->these, thesis,
 thur->their
 tittle->title
 tittles->title
-toke->took
+toke->token, took,
 tread->thread, treat,
 trough->through
 unknow->unknown
@@ -184,12 +262,16 @@ unsecure->insecure
 untypically->atypically
 vertexes->vertices
 vie->via
+vinal->vinyl
+vinals->vinyls
 vise->vice
 want's->wants
+wast->waste
 wee->we
 whats->what's
 whet->when, what, wet,
 whiling->while
+whit->with, white,
 wight->weight, white, right, write,
 wights->weights, waits, whites, rights, writes,
 wile->while
@@ -199,4 +281,5 @@ wither->either, whether, weather,
 withing->within
 wont->won't
 wounder->wonder
+wroth->worth, wrote, wrath,
 zoon->zoom

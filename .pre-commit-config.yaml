@@ -1,0 +1,91 @@
+---
+files: ^(.*\.(py|json|md|sh|yaml|yml|in|cfg|txt|rst|toml|precommit-toml|wordlist))$
+exclude: ^(\.[^/]*cache/.*)$
+repos:
+  - repo: https://github.com/executablebooks/mdformat
+    # Do this before other tools "fixing" the line endings
+    rev: 0.7.17
+    hooks:
+      - id: mdformat
+        name: Format Markdown
+        entry: mdformat  # Executable to run, with fixed options
+        language: python
+        types: [markdown]
+        args: [--wrap, '75', --number]
+        additional_dependencies:
+          - mdformat-toc
+          - mdformat-beautysh
+          # -mdformat-shfmt
+          # -mdformat-tables
+          - mdformat-config
+          - mdformat-black
+          - mdformat-web
+          - mdformat-gfm
+  - repo: https://github.com/Lucas-C/pre-commit-hooks-markup
+    rev: v1.0.1
+    hooks:
+      - id: rst-linter
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: no-commit-to-branch
+        args: [--branch, master]
+      - id: check-yaml
+        args: [--unsafe]
+      - id: debug-statements
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-json
+      - id: mixed-line-ending
+      - id: check-builtin-literals
+      - id: check-ast
+      - id: check-merge-conflict
+      - id: check-executables-have-shebangs
+      - id: check-shebang-scripts-are-executable
+      - id: check-docstring-first
+      - id: fix-byte-order-marker
+      - id: check-case-conflict
+      - id: check-toml
+      - id: file-contents-sorter
+        files: dictionary.*\.txt$|\.wordlist$
+        args: [--ignore-case]
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.32.0
+    hooks:
+      - id: yamllint
+        args:
+          - --no-warnings
+          - -d
+          - '{extends: relaxed, rules: {line-length: {max: 90}}}'
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.1.1
+    hooks:
+      - id: ruff
+  - repo:  https://github.com/PyCQA/autoflake
+    rev: v2.2.1
+    hooks:
+      - id: autoflake
+  - repo: https://github.com/psf/black
+    rev: 23.10.0
+    hooks:
+      - id: black
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.2.6
+    hooks:
+      - id: codespell
+        args: [--toml, pyproject-codespell.precommit-toml]
+        additional_dependencies:
+          - tomli
+  - repo: https://github.com/abravalheri/validate-pyproject
+    rev: v0.15
+    hooks:
+      - id: validate-pyproject
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.6.1
+    hooks:
+      - id: mypy
+        args: ["--config-file", "pyproject.toml"]
+        additional_dependencies:
+          - pytest
+          - tomli
+          - types-chardet

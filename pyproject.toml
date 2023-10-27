@@ -1,0 +1,148 @@
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+
+[project]
+name = "codespell"
+description = "Codespell"
+readme = { file = "README.rst", content-type = "text/x-rst" }
+requires-python = ">=3.8"
+license = {text = "GPL v2"}
+authors = [
+    {name = "Lucas De Marchi", email = "lucas.de.marchi@gmail.com"},
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved",
+    "Programming Language :: Python",
+    "Topic :: Software Development",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Operating System :: MacOS",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = []
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "chardet",
+    "pre-commit",
+    "pytest",
+    "pytest-cov",
+    "pytest-dependency",
+    "Pygments",
+    "ruff",
+    "tomli",
+    "twine"
+]
+hard-encoding-detection = [
+    "chardet"
+]
+toml = [
+    "tomli; python_version < '3.11'"
+]
+types = [
+    "chardet>=5.1.0",
+    "mypy",
+    "pytest",
+    "pytest-cov",
+    "pytest-dependency",
+]
+
+[project.scripts]
+codespell = "codespell_lib:_script_main"
+
+[project.urls]
+homepage = "https://github.com/codespell-project/codespell"
+repository = "https://github.com/codespell-project/codespell"
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=64", "setuptools_scm[toml]>=6.2, != 8.0.0"]
+
+[tool.setuptools_scm]
+write_to = "codespell_lib/_version.py"
+
+[tool.setuptools.packages.find]
+exclude = [
+    "dist",
+    "snap",
+]
+
+[tool.setuptools.package-data]
+codespell_lib = [
+    "data/dictionary*.txt",
+    "data/linux-kernel.exclude",
+    "py.typed",
+]
+
+[tool.autoflake]
+in-place = true
+recursive = true
+expand-star-imports = true
+
+# TODO: reintegrate codespell configuration after updating test cases
+#[tool.codespell]
+#builtin = ["clear","rare","informal","usage","code","names"]
+#ignore-words-list = ["uint"]
+#skip=[ "./.*","codespell_lib/data/*","codespell_lib/tests/*"]
+
+[tool.mypy]
+pretty = true
+show_error_codes = true
+strict = true
+warn_unused_ignores = false
+
+[tool.pytest.ini_options]
+addopts = "--cov=codespell_lib -rs --cov-report= --tb=short --junit-xml=junit-results.xml"
+
+[tool.ruff]
+extend-ignore = [
+    "ANN101",
+    "B904",
+    "PLW2901",
+]
+line-length = 88
+select = [
+    "A",
+    "ANN",
+    "B",
+    "C40",
+    "C9",
+    "E",
+    "F",
+    "I",
+    "N",
+    "PLC",
+    "PLE",
+    "PLR",
+    "PLW",
+    "S",
+    "U",
+    "W",
+    "YTT",
+]
+target-version = "py37"
+
+[tool.ruff.mccabe]
+max-complexity = 45
+
+[tool.ruff.per-file-ignores]
+"codespell_lib/_codespell.py" = ["A003"]
+"codespell_lib/tests/test_*" = ["S101"]
+"codespell_lib/tests/test_basic.py" = ["ANN401", "N802"]
+
+[tool.ruff.pylint]
+allow-magic-value-types = ["bytes", "int", "str",]
+max-args = 12
+max-branches = 48
+max-returns = 10
+max-statements = 111

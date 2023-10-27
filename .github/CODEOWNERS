@@ -1,0 +1,36 @@
+# The purpose of this file is to trigger review requests when PRs touch
+# particular files. Those reviews are not mandatory, however it's often useful
+# to have an expert pinged who is interested in only one part of codespell and
+# doesn't follow general development.
+#
+# Note that only GitHub handles (whether individuals or teams) with commit
+# rights should be added to this file.
+# See https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners
+# for more details about how CODEOWNERS works.
+
+# Each line is a file pattern followed by one or more owners.
+
+# Copy-paste-adapted from SciPy
+
+# Administrata and CIs
+*.toml  @larsoner
+*.yml  @larsoner
+*.rst  @larsoner @peternewman
+*.cfg  @larsoner
+codespell.1.include @larsoner @peternewman
+coverage*  @larsoner
+.github/*  @larsoner @peternewman
+.gitignore @larsoner @peternewman
+Makefile  @larsoner @peternewman
+
+# Python code
+codespell_lib/*.py  @larsoner @peternewman
+bin/* @larsoner @peternewman
+
+# Dictionaries
+codespell_lib/data/dictionary_code.txt @peternewman
+codespell_lib/data/dictionary_en-GB_to_en-US.txt @peternewman
+codespell_lib/data/dictionary_informal.txt @peternewman
+codespell_lib/data/dictionary_names.txt @peternewman
+codespell_lib/data/dictionary_rare.txt @peternewman
+# codepell_lib/data/*.txt  @luzpaz

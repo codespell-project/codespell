@@ -1,0 +1,27 @@
+name: Test Codespell Windows
+on:
+  - push
+  - pull_request
+permissions: {}
+jobs:
+  test-windows:
+    name: Test Windows
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+      - name: Install dependencies
+        run: |
+          python --version
+          pip install -U pip
+          pip install setuptools
+          pip install -e .[dev]
+      - run: codespell --help
+      - run: codespell --version
+      - run: pytest codespell_lib
+      - uses: codecov/codecov-action@v3
