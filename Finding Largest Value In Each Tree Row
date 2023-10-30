@@ -1,0 +1,25 @@
+class Solution 
+{
+public:
+vector<int>res;
+void dfs(TreeNode* root,int depth)
+{
+    if(root==NULL)
+    return;
+    if(depth==res.size())
+    {
+        res.push_back(root->val);
+    }
+    else
+    {
+        res[depth]=max(res[depth],root->val);
+    }
+    dfs(root->left,depth+1);
+    dfs(root->right,depth+1);
+}
+    vector<int> largestValues(TreeNode* root) 
+    {
+    dfs(root,0);
+        return res;
+    }
+};
