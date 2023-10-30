@@ -1,5 +1,14 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QHeaderView, QVBoxLayout, QWidget, QLineEdit
+from PyQt5.QtWidgets import (
+    QApplication,
+    QMainWindow,
+    QTableWidget,
+    QTableWidgetItem,
+    QHeaderView,
+    QVBoxLayout,
+    QWidget,
+    QLineEdit,
+)
 
 
 class FilterableTable(QMainWindow):
