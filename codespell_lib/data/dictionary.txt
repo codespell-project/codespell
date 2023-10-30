@@ -48011,9 +48011,9 @@ scritps->scripts
 scritpt->script
 scritpts->scripts
 scrits->scripts
-scroe->score
-scroed->scored, scrolled,
-scroes->scores
+scroe->score, scrod,
+scroed->scored, scrolled, scrod,
+scroes->scores, scrods,
 scroing->scoring, scrolling,
 scroipt->script
 scroipted->scripted
@@ -49629,7 +49629,7 @@ simulaiton->simulation
 simulaitons->simulations
 simulantaneous->simultaneous
 simulantaneously->simultaneously
-simular->similar, singular,
+simular->similar, simulator, singular,
 simularity->similarity, singularity,
 simularly->similarly, singularly,
 simulataeous->simultaneous
@@ -51006,10 +51006,10 @@ spindel->spindle
 spindels->spindles
 spinlcok->spinlock
 spinock->spinlock
-splel->spell
-spleled->spelled
-spleling->spelling
-splels->spells
+splel->spell, spiel,
+spleled->spelled, spieled,
+spleling->spelling, spieling,
+splels->spells, spiels,
 splet->spelt, split, splat,
 splig->split, splign,
 spligs->splits
@@ -51093,10 +51093,10 @@ squence->sequence
 squirel->squirrel
 squirl->squirrel
 squrared->squared
-squre->square, squire,
-squred->squared
+squre->square, sure, squire,
+squred->squared, squired,
 squres->squares, squires,
-squring->squaring
+squring->squaring, squiring,
 sratch->scratch, snatch, starch,
 sratched->scratched, snatched,
 sratches->scratches, snatches, starches,
@@ -51379,7 +51379,7 @@ statuline->statusline
 statulines->statuslines
 statup->startup
 staturday->Saturday
-statuse->status, statuses, statues, statute,
+statuse->status, statuses, statues, statute, stature,
 statuss->status
 statusses->statuses
 statustics->statistics
@@ -52694,7 +52694,7 @@ supspicions->suspicions
 supspicious->suspicious
 supspiciously->suspiciously
 surbert->sherbet
-surelly->surely
+surelly->surely, surreally,
 surfce->surface
 surgest->suggest
 surgested->suggested
