@@ -47590,7 +47590,9 @@ sampeld->sampled
 sampels->samples
 samue->same, Samuel,
 samwich->sandwich
+samwiched->sandwiched
 samwiches->sandwiches
+samwiching->sandwiching
 sanatization->sanitization
 sanatize->sanitize
 sanatized->sanitized
@@ -47601,7 +47603,14 @@ sanatizing->sanitizing
 sanaty->sanity
 sanctionning->sanctioning
 sandobx->sandbox
-sandwhich->sandwich
+sandwhich->sandwich, sand which,
+sandwhiched->sandwiched
+sandwhiches->sandwiches
+sandwhiching->sandwiching
+sandwitch->sandwich, sand witch,
+sandwitched->sandwiched
+sandwitches->sandwiches, sand witches,
+sandwitching->sandwiching
 Sanhedrim->Sanhedrin
 sanitizisation->sanitization
 sanizer->sanitizer
@@ -47626,7 +47635,9 @@ santizers->sanitizers
 santizes->sanitizes
 santizing->sanitizing
 sanwich->sandwich
+sanwiched->sandwiched
 sanwiches->sandwiches
+sanwiching->sandwiching
 sanytise->sanitise
 sanytize->sanitize
 sapeena->subpoena
@@ -47682,6 +47693,9 @@ satifsy->satisfy
 satifsying->satisfying
 satify->satisfy
 satifying->satisfying
+satisaction->satisfaction
+satisactorily->satisfactorily
+satisactory->satisfactory
 satisfactorally->satisfactorily
 satisfactority->satisfactorily
 satisfiabilty->satisfiability
@@ -47692,6 +47706,8 @@ satisfiy->satisfy
 satisfiying->satisfying
 satisfyied->satisfied
 satisfyies->satisfies
+satisied->satisfied
+satisies->satisfies
 satisifaction->satisfaction
 satisifed->satisfied
 satisifes->satisfies
@@ -47708,9 +47724,18 @@ satistied->satisfied
 satisties->satisfies
 satisty->satisfy
 satistying->satisfying
+satisy->satisfy
+satisying->satisfying
 satric->satiric
 satrical->satirical
 satrically->satirically
+satsifaction->satisfaction
+satsifactorily->satisfactorily
+satsifactory->satisfactory
+satsified->satisfied
+satsifies->satisfies
+satsify->satisfy
+satsifying->satisfying
 sattelit->satellite
 sattelite->satellite
 sattelites->satellites
@@ -47801,10 +47826,19 @@ sccripts->scripts
 sceanrio->scenario
 sceanrios->scenarios
 scecified->specified
+scedule->schedule
+sceduled->scheduled
+sceduler->scheduler
+scedulers->schedulers
+scedules->schedules
+sceduling->scheduling
 sceen->scene, seen, screen, scheme,
 sceens->scenes, screens, schemes,
 sceenshot->screenshot
 sceenshots->screenshots
+sceletal->skeletal
+sceleton->skeleton
+sceletons->skeletons
 scema->schema
 scemas->schemas
 scematic->schematic
@@ -47815,10 +47849,14 @@ scenaireo->scenario
 scenaireos->scenarios
 scenarion->scenario
 scenarions->scenarios
+scenariou->scenario
+scenarious->scenarios
 scence->scene, science, sense,
 scences->scenes, sciences, senses, census,
 scenegraaph->scenegraph
 scenegraaphs->scenegraphs
+scenerio->scenario
+scenerios->scenarios
 sceond->second
 sceonds->seconds
 scetch->sketch
@@ -47941,10 +47979,14 @@ screem->scream, screen,
 screenchot->screenshot
 screenchots->screenshots
 screenwrighter->screenwriter
+scren->screen, screw,
 screnn->screen
 screnns->screens
 scrennshot->screenshot
 scrennshots->screenshots
+screns->screens, screws,
+screnshot->screenshot
+screnshots->screenshots
 scriipt->script
 scriipted->scripted
 scriipting->scripting
@@ -47969,13 +48011,24 @@ scritps->scripts
 scritpt->script
 scritpts->scripts
 scrits->scripts
+scroe->score, scrod,
+scroed->scored, scrolled, scrod,
+scroes->scores, scrods,
+scroing->scoring, scrolling,
 scroipt->script
 scroipted->scripted
 scroipting->scripting
 scroipts->scripts
 scroipttype->scripttype
+scrol->scroll
+scrolable->scrollable
+scrolbar->scrollbar
+scrolbars->scrollbars
+scroled->scrolled
+scroling->scrolling
 scrollablbe->scrollable
 scrollin->scrolling
+scrols->scrolls
 scrool->scroll, school,
 scroolable->scrollable
 scroolbar->scrollbar
@@ -48042,7 +48095,20 @@ seachers->searchers, teachers,
 seaches->searches, reaches, teaches, beaches,
 seaching->searching, reaching, teaching,
 seachkey->searchkey
+seacrch->search
 seacrchable->searchable
+seacrched->searched
+seacrcher->searcher
+seacrchers->searchers
+seacrches->searches
+seacrching->searching
+seacrh->search
+seacrhable->searchable
+seacrhed->searched
+seacrher->searcher
+seacrhers->searchers
+seacrhes->searches
+seacrhing->searching
 seamlessley->seamlessly
 seamlessy->seamlessly
 searcahble->searchable
@@ -48051,6 +48117,13 @@ searche->search, searched,
 searcheable->searchable
 searchin->searching
 searchs->searches
+searh->search
+searhable->searchable
+searhed->searched
+searher->searcher
+searhers->searchers
+searhes->searches
+searhing->searching
 seatch->search
 secceed->succeed
 secceeded->succeeded, seceded,
@@ -48069,6 +48142,9 @@ secenario->scenario
 secenarios->scenarios
 secene->scene, serene, secede,
 secenes->scenes, secedes,
+secert->secret
+secertly->secretly
+secerts->secrets
 secific->specific
 secifically->specifically
 secification->specification
@@ -48121,8 +48197,12 @@ secoundly->secondly
 secounds->seconds
 secquence->sequence
 secratary->secretary
+secrect->secret, secrecy,
+secrectly->secretly
+secrects->secrets
 secretery->secretary
 secrion->section
+secrity->security
 secruity->security
 sectin->section
 sectins->sections
@@ -48155,6 +48235,7 @@ secundary->secondary
 secundly->secondly
 secunds->seconds
 secur->secure
+securit->security
 securiy->security
 securiyt->security
 securly->securely
@@ -48876,6 +48957,8 @@ serveiced->serviced
 serveices->services
 serveicing->servicing
 serveless->serverless
+servent->servant, serpent, fervent,
+servents->servants, serpents,
 serveral->several
 serverite->severity
 serverites->severities
@@ -48926,6 +49009,8 @@ sesnors->sensors
 sessio->session
 sessoion->session
 sessoions->sessions
+sesson->session, season, lesson,
+sessons->sessions, seasons, lessons,
 sesssion->session
 sesssions->sessions
 sestatusbar->setstatusbar
@@ -49033,6 +49118,12 @@ shashes->slashes
 shatow->shadow, château, châteaux,
 shatows->shadows, châteaux, châteaus,
 shbang->shebang
+shcedule->schedule
+shceduled->scheduled
+shceduler->scheduler
+shcedulers->schedulers
+shcedules->schedules
+shceduling->scheduling
 shdow->shadow, show,
 shdowed->shadowed
 shdowing->shadowing, showing,
@@ -49056,6 +49147,7 @@ sheild->shield
 sheilded->shielded
 sheilding->shielding
 sheilds->shields
+shelfs->shelves
 shema->schema
 shemas->schemas
 shematic->schematic
@@ -49154,6 +49246,8 @@ shoul->should, shoal, shawl,
 should'nt->shouldn't
 should't->shouldn't
 shouldbe->should, should be,
+shoulde->should, shoulder,
+shoulden't->shouldn't
 shouldnt'->shouldn't
 shouldnt->shouldn't
 shoule->should
@@ -49292,6 +49386,9 @@ signifcantly->significantly
 signifficance->significance
 signifficant->significant
 signifficantly->significantly
+signifiance->significance
+signifiant->significant
+signifiantly->significantly
 significace->significance
 significan->significant
 significanly->significantly
@@ -49307,6 +49404,8 @@ signifiy->signify
 signifiying->signifying
 signitories->signatories
 signitory->signatory
+signiture->signature
+signitures->signatures
 signle->single, signal,
 signles->singles, signals,
 signleton->singleton
@@ -49397,9 +49496,16 @@ simialrly->similarly
 simiar->similar
 simiarity->similarity
 simiarly->similarly
+similair->similar
+similairity->similarity
+similairly->similarly
+similairty->similarity
 similarily->similarly
 similary->similarly
 similat->similar
+similer->similar, simile, similes,
+similerity->similarity
+similerly->similarly
 similia->similar
 similiar->similar
 similiarity->similarity
@@ -49473,6 +49579,7 @@ simplifers->simplifiers
 simplifes->simplifies
 simplificaiton->simplification
 simplificaitons->simplifications
+simplifing->simplifying
 simplifiy->simplify
 simplifiying->simplifying
 simplifys->simplifies
@@ -49522,6 +49629,9 @@ simulaiton->simulation
 simulaitons->simulations
 simulantaneous->simultaneous
 simulantaneously->simultaneously
+simular->similar, simulator, singular,
+simularity->similarity, singularity,
+simularly->similarly, singularly,
 simulataeous->simultaneous
 simulataeously->simultaneously
 simulataneity->simultaneity
@@ -49536,6 +49646,8 @@ simulatenous->simultaneous
 simulatenously->simultaneously
 simulater->simulators, simulated, simulates, simulate,
 simulaters->simulators, simulates,
+simultaenous->simultaneous
+simultaenously->simultaneously
 simultanaeous->simultaneous
 simultanaeously->simultaneously
 simultaneos->simultaneous
@@ -49914,6 +50026,8 @@ snaphsot->snapshot
 snaphsots->snapshots
 snaping->snapping
 snappng->snapping
+snapshoted->snapshotted
+snapshoting->snapshotting
 snapsnot->snapshot
 snapsnots->snapshots
 snashot->snapshot
@@ -49926,6 +50040,19 @@ snpashot->snapshot
 snpashots->snapshots
 snyc->sync
 snytax->syntax
+snytheses->syntheses
+snythesis->synthesis
+snythesise->synthesise
+snythesised->synthesised
+snythesises->synthesises
+snythesising->synthesising
+snythesize->synthesize
+snythesized->synthesized
+snythesizes->synthesizes
+snythesizing->synthesizing
+snythetic->synthetic
+snythetically->synthetically
+snythetics->synthetics
 Soalris->Solaris
 socail->social
 socalism->socialism
@@ -49934,6 +50061,10 @@ socalists->socialists
 socekt->socket
 socekts->sockets
 socities->societies
+socre->score
+socred->scored, sacred,
+socres->scores
+socring->scoring
 socript->script
 socripted->scripted
 socripting->scripting
@@ -49959,6 +50090,7 @@ sofmore->sophomore
 sofmores->sophomores
 sofomore->sophomore
 sofomores->sophomores
+softare->software, soft are,
 softend->softened
 softwade->software
 softwares->software
@@ -50001,6 +50133,8 @@ soliders->soldiers
 solification->solidification
 soliliquy->soliloquy
 solitare->solitaire, solitary,
+soloution->solution
+soloutions->solutions
 soltion->solution
 soltions->solutions
 soltuion->solution
@@ -50263,6 +50397,7 @@ sparation->separation
 sparations->separations
 sparator->separator
 sparators->separators
+sparce->sparse, space, spare, scarce,
 spash->splash
 spashed->splashed
 spashes->splashes
@@ -50294,6 +50429,11 @@ speaces->spaces, species,
 speach->speech
 speacial->special, spacial,
 speacing->spacing
+spead->spread, speed, spend, speak, spear,
+speading->spreading, speeding, spending, speaking,
+speads->spreads, speeds, spends, speaks, spears,
+speadsheet->spreadsheet
+speadsheets->spreadsheets
 spearate->separate
 spearated->separated
 spearately->separately
@@ -50866,6 +51006,11 @@ spindel->spindle
 spindels->spindles
 spinlcok->spinlock
 spinock->spinlock
+splel->spell, spiel,
+spleled->spelled, spieled,
+spleling->spelling, spieling,
+splels->spells, spiels,
+splet->spelt, split, splat,
 splig->split, splign,
 spligs->splits
 spliiter->splitter
@@ -50884,6 +51029,9 @@ sponser->sponsor
 sponsered->sponsored
 sponsers->sponsors
 sponsership->sponsorship
+sponserships->sponsorships
+sponsorhip->sponsorship
+sponsorhips->sponsorships
 spontanous->spontaneous
 sponzored->sponsored
 spoonfulls->spoonfuls
@@ -50939,11 +51087,16 @@ sqaure->square
 sqaured->squared
 sqaures->squares
 sqeuence->sequence
+sqllite->SQLite
 squashgin->squashing
 squence->sequence
 squirel->squirrel
 squirl->squirrel
 squrared->squared
+squre->square, sure, squire,
+squred->squared, squired,
+squres->squares, squires,
+squring->squaring, squiring,
 sratch->scratch, snatch, starch,
 sratched->scratched, snatched,
 sratches->scratches, snatches, starches,
@@ -51081,6 +51234,7 @@ stanardized->standardized
 stanardizes->standardizes
 stanardizing->standardizing
 stanards->standards
+standalong->standalone, stand along,
 standalown->standalone, stand-alone,
 standar->standard
 standarad->standard
@@ -51193,6 +51347,7 @@ statemets->statements
 statemnt->statement
 statemnts->statements
 stati->statuses, state,
+statick->static
 staticly->statically
 statictic->statistic
 statictics->statistics
@@ -51204,6 +51359,10 @@ statisitic->statistic
 statisitical->statistical
 statisitically->statistically
 statisitics->statistics
+statistc->statistic
+statistcal->statistical
+statistcally->statistically
+statistcs->statistics
 statistices->statistics
 statitic->statistic
 statitics->statistics
@@ -51220,9 +51379,12 @@ statuline->statusline
 statulines->statuslines
 statup->startup
 staturday->Saturday
+statuse->status, statuses, statues, statute, stature,
 statuss->status
 statusses->statuses
 statustics->statistics
+statuts->status, statutes, statues,
+statutses->statuses, statutes,
 staulk->stalk
 stauration->saturation
 staus->status
@@ -51287,6 +51449,9 @@ stong->strong
 stonger->stronger
 stongest->strongest
 stongly->strongly
+stoopid->stupid, stooped,
+stoopidity->stupidity
+stoopidly->stupidly
 stoped->stopped
 stoping->stopping
 stopp->stop
@@ -51683,6 +51848,8 @@ submited->submitted
 submiting->submitting
 submition->submission
 submitions->submissions
+submittion->submission
+submittions->submissions
 submittted->submitted
 submoule->submodule
 submoules->submodules
@@ -51769,6 +51936,8 @@ subscirbing->subscribing
 subscirpt->subscript
 subscirption->subscription
 subscirptions->subscriptions
+subscribtion->subscription
+subscribtions->subscriptions
 subscritpion->subscription
 subscritpions->subscriptions
 subscritpiton->subscription
@@ -51957,6 +52126,10 @@ succeession->succession
 succeessive->successive
 succeessor->successor
 succeessors->successors
+succeful->successful
+succefull->successful, successfully,
+succefully->successfully
+succefuly->successfully
 succes->success
 succesful->successful
 succesfull->successful
@@ -52147,6 +52320,10 @@ sufication->suffocation
 suficcient->sufficient
 suficient->sufficient
 suficiently->sufficiently
+sufix->suffix
+sufixed->suffixed
+sufixes->suffixes
+sufixing->suffixing
 sufocate->suffocate
 sufocated->suffocated
 sufocates->suffocates
@@ -52501,6 +52678,9 @@ supsend->suspend
 supsended->suspended
 supsending->suspending
 supsends->suspends
+supsense->suspense
+supsenseful->suspenseful
+supsension->suspension
 supsicion->suspicion
 supsicions->suspicions
 supsicious->suspicious
@@ -52514,6 +52694,7 @@ supspicions->suspicions
 supspicious->suspicious
 supspiciously->suspiciously
 surbert->sherbet
+surelly->surely, surreally,
 surfce->surface
 surgest->suggest
 surgested->suggested
@@ -52652,6 +52833,10 @@ susupend->suspend
 sutable->suitable, stable,
 sutdown->shutdown
 sute->site, suite, suit,
+sutff->stuff
+sutffed->stuffed
+sutffing->stuffing
+sutffs->stuffs
 sutisfaction->satisfaction
 sutisfied->satisfied
 sutisfies->satisfies
@@ -52807,6 +52992,8 @@ symantic->semantic
 symantically->semantically
 symantics->semantics
 symbl->symbol
+symble->symbol
+symbles->symbols
 symblic->symbolic
 symbls->symbols
 symbo->symbol
@@ -52854,6 +53041,7 @@ symptumaticly->symptomatically
 symptums->symptoms
 synagouge->synagogue
 synamic->dynamic
+synatx->syntax
 synax->syntax
 synching->syncing
 synchonisation->synchronisation
@@ -52922,12 +53110,25 @@ syndonic->syntonic
 syndrom->syndrome
 syndroms->syndromes
 synomym->synonym
+synomymous->synonymous
+synomyms->synonyms
 synonim->synonym
+synonimous->synonymous
+synonims->synonyms
+synonom->synonym
 synonomous->synonymous
+synonoms->synonyms
+synonymn->synonym
+synonymnous->synonymous
 synonymns->synonyms
 synopis->synopsis
 synopsys->synopsis
 synoym->synonym
+synoymous->synonymous
+synoyms->synonyms
+synoynm->synonym
+synoynmous->synonymous
+synoynms->synonyms
 synphony->symphony
 synposis->synopsis
 synronous->synchronous
