@@ -53327,6 +53327,7 @@ tahnks->thanks
 taht->that
 tailred->tailored
 tained->tainted, stained,
+taked->took, taken,
 taks->task, tasks, takes,
 takslet->tasklet
 talbe->table
@@ -53485,6 +53486,12 @@ techiques->techniques
 techneek->technique
 techneeks->techniques
 technic->technique
+technicall->technically, technical,
+technicallly->technically
+technicaly->technically
+technicien->technician
+techniciens->technicians
+technicly->technically
 technics->techniques
 technik->technique
 techniks->techniques
@@ -53543,6 +53550,7 @@ tekst->text
 teksts->texts
 telegramm->telegram
 telelevision->television
+telemtry->telemetry
 televsion->television
 telocom->telecom
 telphony->telephony
@@ -53750,6 +53758,8 @@ tenatively->tentatively
 tendacy->tendency
 tendancies->tendencies
 tendancy->tendency
+tennant->tenant, pennant,
+tennants->tenants, pennants,
 tennisplayer->tennis player
 tentaive->tentative
 tentaively->tentatively
@@ -53893,6 +53903,7 @@ terrforms->terraforms
 terriffic->terrific
 terriories->territories
 terriory->territory
+territoires->territories
 territorist->terrorist
 territoy->territory
 terroist->terrorist
@@ -53938,6 +53949,10 @@ testser->tester
 testsers->testers
 testsing->testing
 testss->tests
+tesult->result
+tesulted->resulted
+tesulting->resulting
+tesults->results
 tetrahedora->tetrahedra
 tetrahedoren->tetrahedron
 tetrahedorens->tetrahedrons
@@ -53949,6 +53964,12 @@ tetser->tester
 tetsers->testers
 tetsing->testing
 tetss->tests
+tetst->test
+tetsted->tested
+tetster->tester
+tetsters->testers
+tetsting->testing
+tetsts->tests
 tetxture->texture
 teusday->Tuesday
 texchnically->technically
@@ -53965,6 +53986,9 @@ tghe->the
 tha->than, that, the,
 thair->their, there,
 thairs->theirs, there's,
+thankfull->thankful, thankfully,
+thankfullly->thankfully
+thankfuly->thankfully
 thann->than, thank,
 thannk->thank
 thannked->thanked
@@ -53997,6 +54021,7 @@ theard->thread
 thearding->threading
 theards->threads
 theared->threaded
+thease->these, tease,
 theather->theater
 theef->thief
 theer->there
@@ -54012,6 +54037,7 @@ theis->this, thesis,
 theiv->thief, they've,
 theive->thief
 theives->thieves
+themeing->theming
 themperature->temperature
 themperatures->temperatures
 themplate->template
@@ -54111,6 +54137,8 @@ thiks->thinks
 thime->time, theme, thyme, thine,
 thimng->thing
 thimngs->things
+thiner->thinner, thinker,
+thinest->thinnest
 thinig->thing
 thinigs->things
 thinik->think
@@ -54125,6 +54153,7 @@ thirtyth->thirtieth
 this'd->this would
 thise->these, this,
 thisle->thistle
+thiss->this
 thist->this
 thisy->this
 thiunk->think
@@ -54141,6 +54170,9 @@ thnik->think
 thniking->thinking
 thniks->thinks
 thoese->those, these,
+thogh->though, thigh,
+thoght->thought
+thoghts->thoughts
 thonic->chthonic
 thorasic->thoracic
 thoroidal->toroidal
@@ -54161,6 +54193,7 @@ thottling->throttling
 thouch->touch
 thoughout->throughout
 thoughput->throughput
+thoughs->thoughts, though,
 thougt->thought, though,
 thougth->thought
 thougths->thoughts
@@ -54173,6 +54206,7 @@ thouroughly->thoroughly
 thow->throw, tow,
 thoward->toward
 thowards->towards
+thowing->throwing, towing, showing, thawing,
 thown->thrown, town,
 thows->throws, those, tows,
 thq->the
@@ -54430,10 +54464,14 @@ toally->totally
 tobbaco->tobacco
 tobot->robot
 toches->touches
+tocken->token
+tockens->tokens
 tocksen->toxin
 todya->today
 toekn->token
+toekns->tokens
 toether->together, tether,
+togather->together, to gather,
 togehter->together
 togeter->together
 togeterness->togetherness
@@ -54496,10 +54534,16 @@ toolar->toolbar
 toolsbox->toolbox
 toom->tomb
 tooo->todo, too, tool, took,
+tooptip->tooltip
+tooptips->tooltips
 toos->tools
 Toosday->Tuesday
 tootonic->teutonic
 topicaizer->topicalizer
+toplogical->topological, top logical,
+toplogically->topologically, top logically,
+toplogies->topologies
+toplogy->topology
 topoligical->topological
 topoligically->topologically
 topoligies->topologies
@@ -54791,6 +54835,9 @@ transational->transactional, translational, transitional, transnational,
 transations->transactions, translations, transitions,
 transator->translator
 transators->translators
+transcation->transaction, translation,
+transcational->transactional, translational, transnational,
+transcations->transactions, translations,
 transcendance->transcendence
 transcendant->transcendent
 transcendentational->transcendental
@@ -54896,6 +54943,9 @@ transmisions->transmissions
 transmisive->transmissive
 transmissable->transmissible
 transmissione->transmission
+transmissiones->transmissions
+transmisson->transmission
+transmissons->transmissions
 transmisssion->transmission
 transmisssions->transmissions
 transmist->transmits, transmit,
@@ -55169,6 +55219,8 @@ treate->treat
 treatement->treatment
 treatements->treatments
 treates->treats
+treee->tree
+treees->trees
 tremelo->tremolo
 tremelos->tremolos
 trempoline->trampoline
@@ -55294,6 +55346,7 @@ trival->trivial
 trivally->trivially
 trivias->trivia
 trivival->trivial
+triyng->trying
 trnasfer->transfer
 trnasferred->transferred
 trnasferring->transferring
@@ -55419,7 +55472,14 @@ trucnates->truncates
 trucnating->truncating
 trucnation->truncation
 trucnations->truncations
-truct->struct
+truct->struct, trust, truck, tract, truce,
+tructs->structs, trusts, trucks, tracts, truces,
+tructural->structural
+tructurally->structurally
+tructure->structure
+tructured->structured
+tructures->structures
+tructuring->structuring
 truelly->truly
 truely->truly
 truged->trudged
@@ -55457,7 +55517,11 @@ truw->true
 trye->true, try,
 tryed->tried
 tryes->tries
+tryied->tried
+tryies->tries
 tryig->trying
+tryign->trying
+tryin->trying, try in,
 tryinng->trying
 trys->tries
 tryying->trying
@@ -55529,6 +55593,8 @@ tusday->Tuesday
 tuseday->Tuesday
 tust->trust
 tution->tuition
+tutoral->tutorial
+tutorals->tutorials
 tutoriel->tutorial
 tutoriels->tutorials
 tweek->tweak
@@ -55537,6 +55603,8 @@ tweeking->tweaking
 tweeks->tweaks
 tweleve->twelve
 twelth->twelfth
+twiiter->Twitter, twister,
+twiter->Twitter, twister,
 two-dimenional->two-dimensional
 two-dimenionsal->two-dimensional
 twoard->toward
@@ -55692,12 +55760,17 @@ uggests->suggests
 uggly->ugly
 ugglyness->ugliness
 uglyness->ugliness
+ugprade->upgrade
+ugpraded->upgraded
+ugprades->upgrades
+ugprading->upgrading
 ugrade->upgrade
 ugraded->upgraded
 ugrader->upgrader
 ugraders->upgraders
 ugrades->upgrades
 ugrading->upgrading
+uhandled->unhandled
 uique->unique
 uise->use
 uisng->using
@@ -55731,7 +55804,9 @@ unabailability->unavailability
 unabailable->unavailable
 unabale->unable
 unabel->unable
+unabled->unable, disabled, enabled,
 unablet->unable
+unabling->unable, disabling, enabling,
 unacceptible->unacceptable
 unaccesible->inaccessible
 unaccessable->inaccessible
@@ -55793,6 +55868,8 @@ unavaialble->unavailable
 unavaibility->unavailability
 unavaible->unavailable
 unavailabel->unavailable
+unavailbility->unavailability
+unavailble->unavailable
 unavailiability->unavailability
 unavailiable->unavailable
 unavailibility->unavailability
@@ -55811,6 +55888,7 @@ unbelivable->unbelievable
 unbeliveable->unbelievable
 unbeliveably->unbelievably
 unbelivebly->unbelievably
+unble->unable, uncle,
 unborned->unborn
 unbouind->unbound
 unbouinded->unbounded
@@ -55920,6 +55998,8 @@ uncondtional->unconditional
 uncondtionally->unconditionally
 unconfiged->unconfigured
 unconfortability->discomfort
+unconfortable->uncomfortable
+unconfortably->uncomfortably
 unconsisntency->inconsistency
 unconsistencies->inconsistencies
 unconsistency->inconsistency
@@ -55946,6 +56026,7 @@ undecideable->undecidable
 undefied->undefined
 undefien->undefine
 undefiend->undefined
+undefind->undefined
 undefinied->undefined
 undeflow->underflow
 undeflows->underflows
@@ -55976,11 +56057,38 @@ underlyng->underlying
 underneeth->underneath
 underrrun->underrun
 undersacn->underscan
+undersand->understand, under sand,
+undersandable->understandable
+undersandably->understandably
+undersanding->understanding
+undersands->understands
+undersatnd->understand
+undersatndable->understandable
+undersatndably->understandably
+undersatnding->understanding
+undersatnds->understands
+undersood->understood, undersold,
+understad->understand
+understadable->understandable
+understadably->understandably
+understading->understanding, understating,
 understadn->understand
 understadnable->understandable
+understadnably->understandably
 understadning->understanding
 understadns->understands
+understads->understands
 understandig->understanding
+understant->understand, understate,
+understantable->understandable
+understantably->understandably
+understanting->understanding, understating,
+understants->understands, understates,
+understnad->understand
+understnadable->understandable
+understnadably->understandably
+understnading->understanding
+understnads->understands
 understoon->understood
 understoud->understood
 undertable->understandable, understand,
@@ -56084,6 +56192,8 @@ unexpctedly->unexpectedly
 unexpecetd->unexpected
 unexpecetdly->unexpectedly
 unexpect->unexpected
+unexpectad->unexpected
+unexpectadly->unexpectedly
 unexpectd->unexpected
 unexpectdly->unexpectedly
 unexpecte->unexpected
@@ -56137,6 +56247,8 @@ unforttunate->unfortunate
 unforttunately->unfortunately
 unfortuante->unfortunate
 unfortuantely->unfortunately
+unfortuate->unfortunate
+unfortuately->unfortunately
 unfortunalte->unfortunate
 unfortunaltely->unfortunately
 unfortunaly->unfortunately
@@ -56147,6 +56259,8 @@ unfortunatetly->unfortunately
 unfortunatley->unfortunately
 unfortunatly->unfortunately
 unfortunet->unfortunate
+unfortunete->unfortunate
+unfortunetely->unfortunately
 unfortunetly->unfortunately
 unfortuntaly->unfortunately
 unforunate->unfortunate
@@ -56173,6 +56287,8 @@ unick->eunuch, unix,
 unicks->eunuchs
 unidentifiedly->unidentified
 unidimensionnal->unidimensional
+unifed->unified, united, unfed,
+unifes->unifies, unites,
 unifform->uniform
 unifforms->uniforms
 unifiy->unify
@@ -56357,6 +56473,8 @@ unnacceptable->unacceptable
 unnacquired->unacquired
 unncessarily->unnecessarily
 unncessary->unnecessary
+unnecassarily->unnecessarily
+unnecassary->unnecessary
 unneccecarily->unnecessarily
 unneccecary->unnecessary
 unneccesarily->unnecessarily
@@ -56373,6 +56491,7 @@ unnecesasrily->unnecessarily
 unnecesasry->unnecessary
 unnecessar->unnecessary
 unnecessarilly->unnecessarily
+unnecessarly->unnecessarily, unnecessary,
 unnecesserily->unnecessarily
 unnecessery->unnecessary
 unnecessiarlly->unnecessarily
@@ -56430,6 +56549,8 @@ unplease->displease
 unpleasent->unpleasant
 unplesant->unpleasant
 unplesent->unpleasant
+unpluged->unplugged
+unpluging->unplugging
 unprecendented->unprecedented
 unprecidented->unprecedented
 unprecise->imprecise
@@ -56611,6 +56732,7 @@ unspported->unsupported
 unssuported->unsupported
 unssupported->unsupported
 unstabel->unstable
+unstability->instability
 unstalbe->unstable
 unstall->install, uninstall,
 unstallation->installation, uninstallation,
@@ -56621,11 +56743,19 @@ unstalling->installing, uninstalling,
 unstalls->installs, uninstalls,
 unsuable->unusable
 unsual->unusual, usual,
+unsubcribe->unsubscribe
+unsubcribed->unsubscribed
+unsubcribes->unsubscribes
+unsubcribing->unsubscribing
+unsubcription->unsubscription
+unsubcriptions->unsubscriptions
 unsubscibe->unsubscribe
 unsubscibed->unsubscribed
+unsubscibes->unsubscribes
 unsubscibing->unsubscribing
 unsubscirbe->unsubscribe
 unsubscirbed->unsubscribed
+unsubscirbes->unsubscribes
 unsubscirbing->unsubscribing
 unsubscirption->unsubscription
 unsubscirptions->unsubscriptions
@@ -56726,6 +56856,7 @@ ununsed->unused
 ununsual->unusual
 unusal->unusual
 unusally->unusually
+unusde->unused
 unuseable->unusable
 unuseed->unused
 unuseful->useless
@@ -57037,6 +57168,7 @@ usigned->unsigned
 usiing->using
 usin->using
 usind->using
+usinf->using
 usinging->using
 usinng->using
 usng->using
@@ -57289,6 +57421,12 @@ validataions->validations
 validater->validator, validated, validates, validate,
 validaterelase->validaterelease
 validaters->validators, validates,
+validatin->validation, validating,
+validatins->validations
+validatior->validator, validation,
+validatiors->validators, validations,
+validaton->validation, validator,
+validatons->validations, validators,
 valide->valid
 valididty->validity
 validing->validating
@@ -57403,8 +57541,12 @@ varialbe->variable
 varialbes->variables
 varialble->variable
 varialbles->variables
+variale->variable, variate,
+variales->variables, variates,
 varian->variant
 varians->variants
+variante->variant, variance, variate,
+variantes->variants, variances, variates,
 variantion->variation
 variantions->variations
 variaties->varieties
@@ -57452,6 +57594,7 @@ variing->varying
 varilue->variable, value,
 varilues->variables, values,
 varing->varying
+varios->various
 varities->varieties
 varity->variety
 variuos->various
@@ -57621,6 +57764,8 @@ verifiaction->verification
 verifiactions->verifications
 verificaion->verification
 verificaions->verifications
+verificaiton->verification
+verificaitons->verifications
 verificiation->verification
 verificiations->verifications
 verifie->verify, verified,
@@ -57630,7 +57775,10 @@ verifiy->verify
 verifiying->verifying
 verifty->verify
 veriftying->verifying
+verifyed->verified
+verifyes->verifies
 verifyied->verified
+verifyies->verifies
 verigated->variegated
 verion->version
 verions->versions
@@ -57684,6 +57832,10 @@ versionn->version
 versionned->versioned
 versionning->versioning
 versionns->versions
+versioon->version
+versiooned->versioned
+versiooning->versioning
+versioons->versions
 versios->versions
 versital->versatile
 versitilaty->versatility
@@ -57923,7 +58075,8 @@ vissible->visible
 vist->visit, vast, vest, mist, list, fist, gist, vista,
 visted->visited, listed, vested,
 visting->visiting, listing,
-vistors->visitors
+vistor->visitor, visor, victor,
+vistors->visitors, visors, victors,
 vists->visits, lists, fists,
 visuab->visual
 visuabisation->visualisation
@@ -58041,6 +58194,10 @@ vlued->valued
 vlues->values, blues,
 vluetooth->Bluetooth
 vluing->valuing
+vocabualries->vocabularies
+vocabualry->vocabulary
+vocabularlies->vocabularies
+vocabularly->vocabulary
 voif->void
 Voight->Voigt
 volatage->voltage
@@ -58229,7 +58386,10 @@ waisline->waistline
 waislines->waistlines
 waitting->waiting
 wakeus->wakeups, wake us, walrus,
-wakup->wakeup
+wakup->wakeup, walk-up,
+wakups->wakeups, walk-ups,
+walkthough->walkthrough, walk though,
+walkthoughs->walkthroughs
 wallthickness->wall thickness
 wan't->want, wasn't,
 wantto->want to
@@ -58277,6 +58437,9 @@ warniong->warning
 warniongs->warnings
 warnkng->warning
 warnkngs->warnings
+warnned->warned
+warnning->warning
+warnnings->warnings
 warpped->wrapped, warped,
 warpper->wrapper, warper,
 warpping->wrapping, warping,
@@ -58340,6 +58503,9 @@ webbased->web-based
 webbooks->webhooks
 webhools->webhooks
 webiste->website
+webistes->websites
+webstie->website
+websties->websites
 wedensday->Wednesday
 wednesay->Wednesday
 wednesdaay->Wednesday
@@ -58392,8 +58558,16 @@ wereas->whereas
 weree->were
 werent->weren't
 werever->wherever
+werid->weird, we rid,
+werider->weirder
+weridest->weirdest
+weridly->weirdly
+weridness->weirdness
 wery->very, wary, weary,
+wesbite->website
+wesbites->websites
 wesite->website
+wesites->websites
 wether->weather, whether,
 wew->we
 wezzal->weasel
@@ -58406,6 +58580,7 @@ whatepsace->whitespace
 whatepsaces->whitespaces
 whather->whether, weather,
 whathever->whatever
+whatsover->whatsoever
 whch->which
 whcich->which
 whcih->which
@@ -58426,6 +58601,7 @@ whell->wheel, well,
 whem->when
 whenevery->whenever
 whenn->when
+whent->went, when, wheat, whet,
 whenver->whenever
 wher->where, were,
 wheras->whereas
@@ -58445,6 +58621,7 @@ whic->which
 whicg->which
 whichs->which's
 whicht->which
+whick->which, whisk, wick, whack,
 whih->which
 whihc->which
 whihch->which
@@ -58463,6 +58640,8 @@ whish->wish, whisk,
 whishlist->wishlist
 whitch->which
 whitchever->whichever
+whitepace->whitespace
+whitepaces->whitespaces
 whitepsace->whitespace
 whitepsaces->whitespaces
 whith->with
@@ -58695,6 +58874,10 @@ woill->will
 woith->with, worth,
 woithin->within
 woithout->without
+woked->worked, woke, woken, waked,
+woker->worker, waker,
+wokers->workers, wakers,
+woking->working, waking,
 wokr->work, woke, wok,
 wokraround->workaround
 wokrarounds->workarounds
@@ -58753,6 +58936,9 @@ workaounds->workarounds
 workaraound->workaround
 workaraounds->workarounds
 workarbound->workaround
+workarbounds->workarounds
+workarond->workaround
+workaronds->workarounds
 workaronud->workaround
 workaronuds->workarounds
 workaroud->workaround
@@ -58775,7 +58961,8 @@ workbennches->workbenches
 workbnech->workbench
 workbneches->workbenches
 workboos->workbooks
-workd->worked, works,
+workd->worked, works, word, world,
+workds->works, words, worlds,
 worke->work, worked, works,
 workes->works
 workfow->workflow
@@ -58809,6 +58996,7 @@ worlwide->worldwide
 worng->wrong, worn,
 wornged->wronged
 worngs->wrongs
+worpress->WordPress
 worrried->worried
 worrries->worries
 worrry->worry
@@ -58833,12 +59021,15 @@ wotks->works
 woud->would
 woudl->would
 woudn't->wouldn't
+woul->would, wool, soul, foul,
 would'nt->wouldn't
 would't->wouldn't
 woulden't->wouldn't
 wouldent->wouldn't
 wouldnt'->wouldn't
 wouldnt->wouldn't
+wouln't->wouldn't
+woulnd't->wouldn't
 wounderful->wonderful
 wouold->would
 wouuld->would
@@ -59049,6 +59240,11 @@ zefers->zephyrs
 zellot->zealot
 zellots->zealots
 zemporary->temporary
+zeor->zero
+zeored->zeroed
+zeores->zeroes
+zeoring->zeroing
+zeors->zeros
 zick-zack->zig-zag
 zick-zacks->zig-zags
 zimmap->zipmap
