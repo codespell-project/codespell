@@ -687,6 +687,16 @@ def is_text_file(filename: str) -> bool:
     return b"\x00" not in s
 
 
+def _match_path_parts(filename: str, glob_match: GlobMatch) -> bool:
+    """Find if any path part is in the skip list."""
+    head, tail = os.path.split(filename)
+    while head:
+        if tail and glob_match.match(tail):
+            return True
+        head, tail = os.path.split(head)
+    return False
+
+
 def fix_case(word: str, fixword: str) -> str:
     if word == word.capitalize():
         return ", ".join(w.strip().capitalize() for w in fixword.split(","))
@@ -1166,6 +1176,10 @@ def main(*args: str) -> int:
     for filename in options.files:
         # ignore hidden files
         if is_hidden(filename, options.check_hidden):
+            continue
+
+        # skip argument if any piece of the path is in the skip list
+        if _match_path_parts(filename, glob_match):
             continue
 
         if os.path.isdir(filename):
