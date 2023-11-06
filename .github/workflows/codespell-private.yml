@@ -15,6 +15,7 @@ jobs:
       RUFF_FORMAT: github
     # Make sure we're using the latest aspell dictionary
     runs-on: ubuntu-22.04
+    timeout-minutes: 10
     strategy:
       fail-fast: false
       matrix:
@@ -60,6 +61,7 @@ jobs:
 
   make-check-dictionaries:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Setup Python
         uses: actions/setup-python@v4
