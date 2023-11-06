@@ -392,6 +392,16 @@ def parse_options(
         "how they are written in the dictionary file",
     )
     parser.add_argument(
+        "--uri-ignore-words",
+        action="append",
+        metavar="WORDS",
+        help="file that contains words which will be ignored "
+        "by codespell in URIs and emails only. File must "
+        "contain 1 word per line. Words are case "
+        "sensitive based on how they are written in the "
+        "dictionary file.",
+    )
+    parser.add_argument(
         "--uri-ignore-words-list",
         action="append",
         metavar="WORDS",
@@ -1080,7 +1090,18 @@ def main(*args: str) -> int:
         )
         parser.print_help()
         return EX_USAGE
+
+    uri_ignore_words_files = options.uri_ignore_words or []
     uri_ignore_words = parse_ignore_words_option(options.uri_ignore_words_list)
+    for uri_ignore_words_file in uri_ignore_words_files:
+        if not os.path.isfile(uri_ignore_words_file):
+            print(
+                "ERROR: cannot find uri-ignore-words file: %s" % uri_ignore_words_file,
+                file=sys.stderr,
+            )
+            parser.print_help()
+            return EX_USAGE
+        build_ignore_words(uri_ignore_words_file, uri_ignore_words)
 
     dictionaries = options.dictionary if options.dictionary else ["-"]
 
