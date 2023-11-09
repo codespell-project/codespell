@@ -1208,20 +1208,24 @@ def main(*args: str) -> int:
                 ]
 
         elif not glob_match.match(filename):  # skip files
-            bad_count += parse_file(
-                filename,
-                colors,
-                summary,
-                misspellings,
-                exclude_lines,
-                file_opener,
-                word_regex,
-                ignore_word_regex,
-                uri_regex,
-                uri_ignore_words,
-                context,
-                options,
-            )
+            if not os.path.exists(filename):
+                bad_count += 1
+                print("ERROR: cannot access file: %s" % filename, file=sys.stderr)
+            else:
+                bad_count += parse_file(
+                    filename,
+                    colors,
+                    summary,
+                    misspellings,
+                    exclude_lines,
+                    file_opener,
+                    word_regex,
+                    ignore_word_regex,
+                    uri_regex,
+                    uri_ignore_words,
+                    context,
+                    options,
+                )
 
     if summary:
         print("\n-------8<-------\nSUMMARY:")

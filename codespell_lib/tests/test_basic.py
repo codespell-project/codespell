@@ -86,7 +86,7 @@ def test_basic(
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test some basic functionality."""
-    assert cs.main("_does_not_exist_") == 0
+    assert cs.main("_does_not_exist_") == 1
     fname = tmp_path / "tmp"
     fname.touch()
     result = cs.main("-D", "foo", fname, std=True)
