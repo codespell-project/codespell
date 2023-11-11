@@ -13,7 +13,13 @@ from typing import Any, Generator, Optional, Tuple, Union
 import pytest
 
 import codespell_lib as cs_
-from codespell_lib._codespell import EX_DATAERR, EX_OK, EX_USAGE, EX_CONFIG, uri_regex_def
+from codespell_lib._codespell import (
+    EX_CONFIG,
+    EX_DATAERR,
+    EX_OK,
+    EX_USAGE,
+    uri_regex_def,
+)
 
 
 def test_constants() -> None:
@@ -1076,7 +1082,7 @@ def test_ill_formed_ini_config_file(
     assert isinstance(result, tuple)
     code, _, stderr = result
     assert code == 78
-    assert("ill-formed config file" in stderr)
+    assert "ill-formed config file" in stderr
 
 
 @pytest.mark.parametrize("kind", ("toml", "cfg"))
