@@ -13,7 +13,7 @@ from typing import Any, Generator, Optional, Tuple, Union
 import pytest
 
 import codespell_lib as cs_
-from codespell_lib._codespell import EX_DATAERR, EX_OK, EX_USAGE, uri_regex_def
+from codespell_lib._codespell import EX_DATAERR, EX_OK, EX_USAGE, EX_CONFIG, uri_regex_def
 
 
 def test_constants() -> None:
@@ -21,6 +21,7 @@ def test_constants() -> None:
     assert EX_OK == 0
     assert EX_USAGE == 64
     assert EX_DATAERR == 65
+    assert EX_CONFIG == 78
 
 
 class MainWrapper:
@@ -42,7 +43,7 @@ class MainWrapper:
         assert frame is not None
         capsys = frame.f_locals["capsys"]
         stdout, stderr = capsys.readouterr()
-        assert code in (EX_OK, EX_USAGE, EX_DATAERR)
+        assert code in (EX_OK, EX_USAGE, EX_DATAERR, EX_CONFIG)
         if code == EX_DATAERR:  # have some misspellings
             code = int(stderr.split("\n")[-2])
         elif code == EX_OK and count:
@@ -1028,7 +1029,7 @@ def test_uri_regex_def() -> None:
         assert not uri_regex.findall(boilerplate % uri), uri
 
 
-def test_quiet_option_32(
+def test_quiet_level_32(
     tmp_path: Path,
     tmpdir: pytest.TempPathFactory,
     capsys: pytest.CaptureFixture[str],
@@ -1055,6 +1056,27 @@ def test_quiet_option_32(
     assert code == 0
     assert "Used config files:" in stdout
     assert "setup.cfg" in stdout
+
+
+def test_ill_formed_ini_config_file(
+    tmp_path: Path,
+    tmpdir: pytest.TempPathFactory,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    d = tmp_path / "files"
+    d.mkdir()
+    conf = str(tmp_path / "setup.cfg")
+    with open(conf, "w") as f:
+        # It should contain but lacks a section.
+        f.write("foobar =\n")
+    args = ("--config", conf)
+
+    # Should not raise a configparser.Error exception.
+    result = cs.main(str(d), *args, std=True)
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    assert code == 78
+    assert("ill-formed config file" in stderr)
 
 
 @pytest.mark.parametrize("kind", ("toml", "cfg"))
