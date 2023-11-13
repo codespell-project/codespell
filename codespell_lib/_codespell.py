@@ -118,6 +118,7 @@ _builtin_default = "clear,rare"
 EX_OK = 0
 EX_USAGE = 64
 EX_DATAERR = 65
+EX_CONFIG = 78
 
 # OPTIONS:
 #
@@ -586,7 +587,7 @@ def parse_options(
             used_cfg_files.append(cfg_file)
 
     # Use config files
-    config.read(cfg_files)
+    config.read(used_cfg_files)
     if config.has_section("codespell"):
         # Build a "fake" argv list using option name and value.
         cfg_args = []
@@ -1021,7 +1022,14 @@ def _script_main() -> int:
 
 def main(*args: str) -> int:
     """Contains flow control"""
-    options, parser, used_cfg_files = parse_options(args)
+    try:
+        options, parser, used_cfg_files = parse_options(args)
+    except configparser.Error as e:
+        print(
+            f"ERROR: ill-formed config file: {e.message}",
+            file=sys.stderr,
+        )
+        return EX_CONFIG
 
     # Report used config files
     if not options.quiet_level & QuietLevels.CONFIG_FILES:
