@@ -1400,6 +1400,14 @@ acknowleges->acknowledges
 acknowleging->acknowledging
 acknowlegment->acknowledgment
 acknowlegments->acknowledgments
+acknownledge->acknowledge
+acknownledged->acknowledged
+acknownledgement->acknowledgement
+acknownledgements->acknowledgements
+acknownledges->acknowledges
+acknownledging->acknowledging
+acknownledgment->acknowledgment
+acknownledgments->acknowledgments
 acknwoledge->acknowledge
 acknwoledged->acknowledged
 acknwoledges->acknowledges
@@ -3534,6 +3542,7 @@ analyzier->analyzer
 analyziers->analyzers
 analyzies->analysis, analyses, analyzes,
 analyziing->analyzing
+analyzis->analysis
 analzye->analyze
 analzyed->analyzed
 analzyer->analyzer
@@ -12582,6 +12591,8 @@ compexities->complexities
 compexity->complexity
 compfortable->comfortable
 comphrehensive->comprehensive
+compialtion->compilation, complication,
+compialtions->compilations, complications,
 compiant->compliant
 compicated->complicated
 compications->complications
@@ -32626,6 +32637,8 @@ knowned->known
 knowngly->knowingly
 knowning->knowing
 knowningly->knowingly
+knownledge->knowledge
+knownledgeable->knowledgeable
 knwo->know
 knwoing->knowing
 knwoingly->knowingly
@@ -55841,6 +55854,7 @@ unacceptible->unacceptable
 unaccesible->inaccessible
 unaccessable->inaccessible
 unacknowleged->unacknowledged
+unacknownledged->unacknowledged
 unacompanied->unaccompanied
 unadvertantly->inadvertently
 unadvertedly->inadvertently
@@ -56547,6 +56561,7 @@ unnessesary->unnecessary
 unnessessarily->unnecessarily
 unnessessary->unnecessary
 unning->running
+unnmatched->unmatched
 unnnecessarily->unnecessarily
 unnnecessary->unnecessary
 unnofficial->unofficial
