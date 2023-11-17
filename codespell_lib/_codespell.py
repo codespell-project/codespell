@@ -535,6 +535,11 @@ def parse_options(
         metavar="LINES",
         help="print LINES of surrounding context",
     )
+    parser.add_argument(
+        "--stdin-single-line",
+        action="store_true",
+        help="output just a single line for each misspelling in stdin mode",
+    )
     parser.add_argument("--config", type=str, help="path to config file.")
     parser.add_argument("--toml", type=str, help="path to a pyproject.toml file.")
     parser.add_argument("files", nargs="*", help="files or directories to check")
@@ -993,6 +998,8 @@ def parse_file(
                         f"{cfilename}:{cline}: {cwrongword} "
                         f"==> {crightword}{creason}"
                     )
+                elif options.stdin_single_line:
+                    print(f"{cline}: {cwrongword} ==> {crightword}{creason}")
                 else:
                     print(
                         f"{cline}: {line.strip()}\n\t{cwrongword} "
