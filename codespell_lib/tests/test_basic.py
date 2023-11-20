@@ -1163,3 +1163,40 @@ def FakeStdin(text: str) -> Generator[None, None, None]:
         yield
     finally:
         sys.stdin = oldin
+
+
+def run_codespell_stdin(
+    text: str,
+    args: Tuple[Any, ...],
+    cwd: Optional[Path] = None,
+) -> int:
+    """Run codespell in stdin mode and return number of lines in output."""
+    proc = subprocess.run(
+        ["codespell", *args, "-"],  # noqa: S603, S607
+        cwd=cwd,
+        input=text,
+        capture_output=True,
+        encoding="utf-8",
+        check=False,
+    )
+    output = proc.stdout
+    # get number of lines
+    count = output.count("\n")
+    return count
+
+
+def test_stdin(tmp_path: Path) -> None:
+    """Test running the codespell executable."""
+    input_file_lines = 4
+    text = ""
+    for _ in range(input_file_lines):
+        text += "abandonned\n"
+    for single_line_per_error in [True, False]:
+        args: Tuple[str, ...] = ()
+        if single_line_per_error:
+            args = ("--stdin-single-line",)
+        # we expect 'input_file_lines' number of lines with
+        # --stdin-single-line and input_file_lines * 2 lines without it
+        assert run_codespell_stdin(
+            text, args=args, cwd=tmp_path
+        ) == input_file_lines * (2 - int(single_line_per_error))
