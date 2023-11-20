@@ -1167,7 +1167,7 @@ def FakeStdin(text: str) -> Generator[None, None, None]:
 
 def run_codespell_stdin(
     text: str,
-    args: list[Any],
+    args: Tuple[Any, ...],
     cwd: Optional[Path] = None,
 ) -> int:
     """Run codespell in stdin mode and return number of lines in output."""
@@ -1192,9 +1192,9 @@ def test_stdin(tmp_path: Path) -> None:
     for _ in range(input_file_lines):
         text += "abandonned\n"
     for single_line_per_error in [True, False]:
-        args = []
+        args: Tuple[str, ...] = ()
         if single_line_per_error:
-            args.append("--stdin-single-line")
+            args = ("--stdin-single-line",)
         # we expect 'input_file_lines' number of lines with
         # --stdin-single-line and input_file_lines * 2 lines without it
         assert run_codespell_stdin(
