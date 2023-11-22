@@ -7,6 +7,7 @@ afterwords->afterwards
 amination->animation, lamination,
 aminations->animations, laminations,
 aminator->animator, laminator,
+aminators->animators, laminators,
 ans->and
 arithmetics->arithmetic
 attache->attaché, attached, attach,
@@ -17,9 +18,11 @@ backword->backward
 backwords->backwards
 bale->able, bail,
 bellow->below
+biding->binding, bidding,
 bloc->block
 blocs->blocks
 bodgy->body
+brining->bringing
 bu->by, be, but, bug, bun, bud, buy, bum,
 buss->bus
 busses->buses
@@ -29,9 +32,16 @@ calenders->calendars
 cancelability->cancellability
 cant->can't
 chack->check, chalk, cheque,
+chacked->checked
+chacker->checker
+chackers->checkers
+chacking->checking
+chacks->checks
 chancel->cancel
 chancels->cancels
 circulary->circular, circularly,
+codded->coded, coddled,
+codding->coding, coddling,
 commata->commas
 commend->comment, command,
 commends->comments, commands,
@@ -44,14 +54,20 @@ convertor->converter
 convertors->converters
 coo->coup
 copping->coping, copying, cropping,
-covert->convert
+corespondent->correspondent
+corespondents->correspondents
+costumer->customer
+costumers->customers
+covert->convert, cover, covet,
+coverts->converts, covers, covets,
 crasher->crash
 crashers->crashes
 crate->create
 crated->created
 creche->crèche
-cristal->crystal
 crufts->cruft
+cunt->count, hunt,
+cunts->counts, hunts,
 curios->curious
 dealign->dealing
 deffer->differ, defer,
@@ -59,6 +75,8 @@ degrate->degrade
 degrates->degrades
 dependant->dependent
 derails->details
+descried->described
+descries->describes
 dirivative->derivative
 dirivatives->derivatives
 dirivitive->derivative
@@ -67,6 +85,7 @@ discontentment->discontent
 discreet->discrete
 discus->discuss
 discuses->discusses
+doest->does, doesn't,
 empress->impress
 empresses->impresses
 fallow->follow
@@ -74,11 +93,13 @@ fallowed->followed
 fallowing->following
 fallows->follows
 fave->save
+finial->final
+finis->finish
+finises->finishes
 floaw->flow, float,
 floaws->flows, floats,
 florescent->fluorescent
 followings->following
-forewarded->forwarded
 formule->formula, formulas,
 formules->formulas
 fount->found
@@ -99,18 +120,23 @@ hided->hidden, hid,
 hims->his, hymns,
 hove->have, hover, love,
 impassible->impassable, impossible,
+implementor->implementer
+implementors->implementers
 implicity->implicitly, simplicity,
 inactivate->deactivate
 incluse->include
 indention->indentation
 indite->indict
 infarction->infraction
+infarctions->infractions
 ingenuous->ingenious
 inly->only
 irregardless->regardless
 knifes->knives
 lama->llama
 lamas->llamas
+lamda->lambda
+lamdas->lambdas
 leaded->led, lead,
 leas->least, lease,
 lief->leaf, life,
@@ -123,7 +149,10 @@ loosing->losing
 lousily->loosely
 lumination->lamination, illumination,
 mane->main, many, Maine,
+mange->manage
+manged->managed
 manger->manager
+mangers->managers
 marge->merge
 mater->matter, master, mother,
 medias->media, mediums,
@@ -146,6 +175,7 @@ oerflows->overflows
 ore->or
 panting->painting
 pares->pairs
+parma->param
 patter->pattern
 patters->patterns
 pavings->paving
@@ -161,7 +191,10 @@ preforming->performing
 preforms->performs
 pres->press
 prioritary->priority
+processus->processes, process,
 programed->programmed
+programer->programmer
+programers->programmers
 programing->programming
 prosses->process, processes, possess,
 provence->province
@@ -174,6 +207,13 @@ readding->re-adding, reading,
 readds->re-adds, reads,
 ream->stream
 recuse->recurse
+refect->reflect
+refected->reflected
+refecting->reflecting
+refection->reflection
+refections->reflections
+refective->reflective
+refects->reflects
 remainer->remainder
 remainers->remainders
 retuned->returned
@@ -189,7 +229,8 @@ scrips->scripts
 setts->sets
 shat->that, shit,
 sightly->slightly
-simplication->simplification
+simplication->simplification, implication,
+simplications->simplifications, implications,
 singe->single
 singed->signed, singled, sang, sung,
 slippy->slippery
@@ -202,6 +243,8 @@ sting->string
 stings->strings
 straightaway->straight away
 straighted->straightened, straighten,
+stye->style
+styes->styles
 suppressable->suppressible
 texturers->textures
 therefor->therefore
@@ -223,10 +266,12 @@ vinal->vinyl
 vinals->vinyls
 vise->vice
 want's->wants
+wast->waste
 wee->we
 whats->what's
 whet->when, what, wet,
 whiling->while
+whit->with, white,
 wight->weight, white, right, write,
 wights->weights, waits, whites, rights, writes,
 wile->while
@@ -236,4 +281,5 @@ wither->either, whether, weather,
 withing->within
 wont->won't
 wounder->wonder
+wroth->worth, wrote, wrath,
 zoon->zoom

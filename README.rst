@@ -2,7 +2,7 @@ codespell
 =========
 
 Fix common misspellings in text files. It's designed primarily for checking
-misspelled words in source code, but it can be used with other files as well.
+misspelled words in source code (backslash escapes are skipped), but it can be used with other files as well.
 It does not check for word membership in a complete dictionary, but instead
 looks for a set of common misspellings. Therefore it should catch errors like
 "adn", but it will not catch "adnasdfasdf". This also means it shouldn't
@@ -20,7 +20,7 @@ Useful links
 Requirements
 ------------
 
-Python 3.7 or above.
+Python 3.8 or above.
 
 Installation
 ------------
@@ -55,19 +55,19 @@ Some noteworthy flags:
 
     codespell -w, --write-changes
 
-The ``-w`` flag will actually implement the changes recommended by codespell. Running without the ``-w`` flag is the same as with doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.
+The ``-w`` flag will actually implement the changes recommended by codespell. Running without the ``-w`` flag is the same as doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.
 
 .. code-block:: sh
 
     codespell -I FILE, --ignore-words=FILE
 
-The ``-I`` flag can be used for a list of certain words to allow that are in the codespell dictionaries. The format of the file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said list of allowed words. **Important note:** The list passed to ``-I`` is case-sensitive based on how it is listed in the codespell dictionaries.
+The ``-I`` flag can be used for a list of certain words to allow that are in the codespell dictionaries. The format of the file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said list of allowed words. See `Ignoring Words`_ for more details.
 
 .. code-block:: sh
 
     codespell -L word1,word2,word3,word4
 
-The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it.  **Important note:** The list passed to ``-L`` is case-sensitive based on how it is listed in the codespell dictionaries.
+The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it.  See `Ignoring Words`_ for more details.
 
 .. code-block:: sh
 
@@ -115,6 +115,25 @@ Want to know if a word you're proposing exists in codespell already? It is possi
     echo "1stword,2ndword" | codespell -
 
 You can select the optional dictionaries with the ``--builtin`` option.
+
+Ignoring Words
+--------------
+
+When ignoring false positives, note that spelling errors are *case-insensitive* but words to ignore are *case-sensitive*. For example, the dictionary entry ``wrod`` will also match the typo ``Wrod``, but to ignore it you must pass ``wrod``.
+
+The words to ignore can be passed in two ways:
+
+1. ``-I``: A file with a word per line to ignore:
+
+   .. code-block:: sh
+
+       codespell -I FILE, --ignore-words=FILE
+
+2. ``-L``: A comma separated list of words to ignore on the command line:
+
+   .. code-block:: sh
+
+       codespell -L word1,word2,word3,word4
 
 Using a config file
 -------------------

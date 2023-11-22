@@ -4,7 +4,7 @@
 name = "codespell"
 description = "Codespell"
 readme = { file = "README.rst", content-type = "text/x-rst" }
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 license = {text = "GPL v2"}
 authors = [
     {name = "Lucas De Marchi", email = "lucas.de.marchi@gmail.com"},
@@ -21,11 +21,11 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
 ]
 dependencies = []
 dynamic = ["version"]
@@ -34,12 +34,14 @@ dynamic = ["version"]
 dev = [
     "build",
     "chardet",
+    "pre-commit",
     "pytest",
     "pytest-cov",
     "pytest-dependency",
     "Pygments",
     "ruff",
-    "tomli"
+    "tomli",
+    "twine"
 ]
 hard-encoding-detection = [
     "chardet"
@@ -64,7 +66,7 @@ repository = "https://github.com/codespell-project/codespell"
 
 [build-system]
 build-backend = "setuptools.build_meta"
-requires = ["setuptools>=64", "setuptools_scm[toml]>=6.2"]
+requires = ["setuptools>=64", "setuptools_scm[toml]>=6.2, != 8.0.0"]
 
 [tool.setuptools_scm]
 write_to = "codespell_lib/_version.py"
@@ -97,6 +99,7 @@ expand-star-imports = true
 pretty = true
 show_error_codes = true
 strict = true
+warn_unused_ignores = false
 
 [tool.pytest.ini_options]
 addopts = "--cov=codespell_lib -rs --cov-report= --tb=short --junit-xml=junit-results.xml"
@@ -140,6 +143,6 @@ max-complexity = 45
 [tool.ruff.pylint]
 allow-magic-value-types = ["bytes", "int", "str",]
 max-args = 12
-max-branches = 48
-max-returns = 10
+max-branches = 49
+max-returns = 11
 max-statements = 111

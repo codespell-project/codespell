@@ -2,6 +2,7 @@ agrv->argv
 alloced->allocated
 amin->main
 apoint->appoint
+arange->arrange, a range,
 atend->attend
 atending->attending
 bre->be, brie,
@@ -12,6 +13,8 @@ cloneable->clonable
 cmo->com
 copyable->copiable
 creat->create, crate,
+dateset->dataset
+datesets->datasets
 define'd->defined
 deque->dequeue
 doas->does, do as,
@@ -21,9 +24,8 @@ dosclose->disclose
 dur->due
 endcode->encode
 errorstring->error string
-exitst->exits, exists,
+exitst->exists, exist, exits,
 falsy->falsely, false,
-files'->file's
 gadjet->gadget
 gadjets->gadgets
 gae->game, Gael, gale,
@@ -48,7 +50,6 @@ objext->object
 od->of
 outputof->output of, output-of,
 packat->packet
-process'->process's
 protecten->protection, protected,
 pullrequenst->pull requests, pull request,
 pullrequest->pull request
@@ -76,7 +77,6 @@ storaged->storage, stored,
 storaget->storage
 stringly->strongly, stringy,
 subpatchs->subpatches
-subprocess'->subprocess's
 sur->sure, sir,
 tarceback->traceback
 tarcebacks->tracebacks

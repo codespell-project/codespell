@@ -13,7 +13,13 @@ from typing import Any, Generator, Optional, Tuple, Union
 import pytest
 
 import codespell_lib as cs_
-from codespell_lib._codespell import EX_DATAERR, EX_OK, EX_USAGE, uri_regex_def
+from codespell_lib._codespell import (
+    EX_CONFIG,
+    EX_DATAERR,
+    EX_OK,
+    EX_USAGE,
+    uri_regex_def,
+)
 
 
 def test_constants() -> None:
@@ -21,6 +27,7 @@ def test_constants() -> None:
     assert EX_OK == 0
     assert EX_USAGE == 64
     assert EX_DATAERR == 65
+    assert EX_CONFIG == 78
 
 
 class MainWrapper:
@@ -42,7 +49,7 @@ class MainWrapper:
         assert frame is not None
         capsys = frame.f_locals["capsys"]
         stdout, stderr = capsys.readouterr()
-        assert code in (EX_OK, EX_USAGE, EX_DATAERR)
+        assert code in (EX_OK, EX_USAGE, EX_DATAERR, EX_CONFIG)
         if code == EX_DATAERR:  # have some misspellings
             code = int(stderr.split("\n")[-2])
         elif code == EX_OK and count:
@@ -50,8 +57,7 @@ class MainWrapper:
             assert code == 0
         if std:
             return (code, stdout, stderr)
-        else:
-            return code
+        return code
 
 
 cs = MainWrapper()
@@ -64,7 +70,11 @@ def run_codespell(
     """Run codespell."""
     args = tuple(str(arg) for arg in args)
     proc = subprocess.run(
-        ["codespell", "--count", *args], cwd=cwd, capture_output=True, encoding="utf-8"
+        ["codespell", "--count", *args],  # noqa: S603, S607
+        cwd=cwd,
+        capture_output=True,
+        encoding="utf-8",
+        check=False,
     )
     count = int(proc.stderr.split("\n")[-2])
     return count
@@ -105,6 +115,14 @@ def test_basic(
         f.write("tim\ngonna\n")
     assert cs.main(fname) == 2, "with a name"
     assert cs.main("--builtin", "clear,rare,names,informal", fname) == 4
+    with fname.open("w") as f:  # overwrite the file
+        f.write("var = 'nwe must check codespell likes escapes nin strings'\n")
+    assert cs.main(fname) == 1, "checking our string escape test word is bad"
+    # the first one is missed because the apostrophe means its not currently
+    # treated as a word on its own
+    with fname.open("w") as f:  # overwrite the file
+        f.write("var = '\\nwe must check codespell likes escapes \\nin strings'\n")
+    assert cs.main(fname) == 0, "with string escape"
     result = cs.main(fname, "--builtin", "foo", std=True)
     assert isinstance(result, tuple)
     code, _, stderr = result
@@ -149,6 +167,22 @@ def test_basic(
     assert cs.main(tmp_path) == 0
 
 
+def test_default_word_parsing(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    fname = tmp_path / "backtick"
+    with fname.open("a") as f:
+        f.write("`abandonned`\n")
+    assert cs.main(fname) == 1, "bad"
+
+    fname = tmp_path / "apostrophe"
+    fname.write_text("woudn't\n", encoding="utf-8")  # U+0027 (')
+    assert cs.main(fname) == 1, "misspelling containing typewriter apostrophe U+0027"
+    fname.write_text("woudn’t\n", encoding="utf-8")  # U+2019 (’)
+    assert cs.main(fname) == 1, "misspelling containing typographic apostrophe U+2019"
+
+
 def test_bad_glob(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
@@ -172,7 +206,7 @@ def test_bad_glob(
     assert cs.main("--skip", "[[]b-a[]].txt", g) == 0
 
 
-@pytest.mark.skipif(not sys.platform == "linux", reason="Only supported on Linux")
+@pytest.mark.skipif(sys.platform != "linux", reason="Only supported on Linux")
 def test_permission_error(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
@@ -1028,7 +1062,7 @@ def test_uri_regex_def() -> None:
         assert not uri_regex.findall(boilerplate % uri), uri
 
 
-def test_quiet_option_32(
+def test_quiet_level_32(
     tmp_path: Path,
     tmpdir: pytest.TempPathFactory,
     capsys: pytest.CaptureFixture[str],
@@ -1057,6 +1091,27 @@ def test_quiet_option_32(
     assert "setup.cfg" in stdout
 
 
+def test_ill_formed_ini_config_file(
+    tmp_path: Path,
+    tmpdir: pytest.TempPathFactory,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    d = tmp_path / "files"
+    d.mkdir()
+    conf = str(tmp_path / "setup.cfg")
+    with open(conf, "w") as f:
+        # It should contain but lacks a section.
+        f.write("foobar =\n")
+    args = ("--config", conf)
+
+    # Should not raise a configparser.Error exception.
+    result = cs.main(str(d), *args, std=True)
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    assert code == 78
+    assert "ill-formed config file" in stderr
+
+
 @pytest.mark.parametrize("kind", ("toml", "cfg"))
 def test_config_toml(
     tmp_path: Path,
@@ -1068,14 +1123,16 @@ def test_config_toml(
     d.mkdir()
     (d / "bad.txt").write_text("abandonned donn\n")
     (d / "good.txt").write_text("good")
+    (d / "abandonned.txt").write_text("")
 
-    # Should fail when checking both.
-    result = cs.main(d, count=True, std=True)
+    # Should fail when checking all files.
+    result = cs.main(d, "--check-filenames", count=True, std=True)
     assert isinstance(result, tuple)
     code, stdout, _ = result
     # Code in this case is not exit code, but count of misspellings.
-    assert code == 2
+    assert code == 3
     assert "bad.txt" in stdout
+    assert "abandonned.txt" in stdout
 
     if kind == "cfg":
         conffile = tmp_path / "setup.cfg"
@@ -1097,16 +1154,18 @@ count =
             """\
 [tool.codespell]
 skip = 'bad.txt,whatever.txt'
-count = false
+check-filenames = false
+count = true
 """
         )
 
-    # Should pass when skipping bad.txt
-    result = cs.main(d, *args, count=True, std=True)
+    # Should pass when skipping bad.txt or abandonned.txt
+    result = cs.main(d, *args, std=True)
     assert isinstance(result, tuple)
     code, stdout, _ = result
     assert code == 0
     assert "bad.txt" not in stdout
+    assert "abandonned.txt" not in stdout
 
     # And both should automatically work if they're in cwd
     cwd = Path.cwd()
@@ -1119,6 +1178,7 @@ count = false
         os.chdir(cwd)
     assert code == 0
     assert "bad.txt" not in stdout
+    assert "abandonned.txt" not in stdout
 
 
 @contextlib.contextmanager
@@ -1130,3 +1190,40 @@ def FakeStdin(text: str) -> Generator[None, None, None]:
         yield
     finally:
         sys.stdin = oldin
+
+
+def run_codespell_stdin(
+    text: str,
+    args: Tuple[Any, ...],
+    cwd: Optional[Path] = None,
+) -> int:
+    """Run codespell in stdin mode and return number of lines in output."""
+    proc = subprocess.run(
+        ["codespell", *args, "-"],  # noqa: S603, S607
+        cwd=cwd,
+        input=text,
+        capture_output=True,
+        encoding="utf-8",
+        check=False,
+    )
+    output = proc.stdout
+    # get number of lines
+    count = output.count("\n")
+    return count
+
+
+def test_stdin(tmp_path: Path) -> None:
+    """Test running the codespell executable."""
+    input_file_lines = 4
+    text = ""
+    for _ in range(input_file_lines):
+        text += "abandonned\n"
+    for single_line_per_error in [True, False]:
+        args: Tuple[str, ...] = ()
+        if single_line_per_error:
+            args = ("--stdin-single-line",)
+        # we expect 'input_file_lines' number of lines with
+        # --stdin-single-line and input_file_lines * 2 lines without it
+        assert run_codespell_stdin(
+            text, args=args, cwd=tmp_path
+        ) == input_file_lines * (2 - int(single_line_per_error))

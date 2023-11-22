@@ -12,17 +12,19 @@ jobs:
   test:
     env:
       REQUIRE_ASPELL: true
+      RUFF_FORMAT: github
     # Make sure we're using the latest aspell dictionary
     runs-on: ubuntu-22.04
+    timeout-minutes: 10
     strategy:
       fail-fast: false
       matrix:
         python-version:
-          - '3.7'
           - '3.8'
           - '3.9'
           - '3.10'
           - '3.11'
+          - '3.12'
         no-toml:
           - ''
         include:
@@ -30,7 +32,7 @@ jobs:
             no-toml: 'no-toml'
     name: ${{ matrix.python-version }} ${{ matrix.no-toml }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           persist-credentials: false
       - name: Setup python
@@ -59,12 +61,13 @@ jobs:
 
   make-check-dictionaries:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           persist-credentials: false
       - name: Install general dependencies
@@ -73,18 +76,3 @@ jobs:
         run: pip install -e ".[dev]"
       - uses: codespell-project/sort-problem-matcher@v1
       - run: make check-dictionaries
-
-  ruff-annotation:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Setup python
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.x
-      - uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-      - name: Install codespell dependencies
-        run: pip install -e ".[dev]"
-      - name: Ruff with annotations
-        run: ruff --select=ANN --ignore=ANN101,ANN401 .

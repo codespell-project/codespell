@@ -1,33 +1,47 @@
 import glob
 import os
 import os.path as op
+import pathlib
 import re
 import warnings
 from typing import Any, Dict, Iterable, Optional, Set, Tuple
 
 import pytest
 
-from codespell_lib._codespell import _builtin_dictionaries, supported_languages
+from codespell_lib._codespell import (
+    _builtin_dictionaries,
+    supported_languages,
+    word_regex_def,
+)
 
 spellers = {}
+
+root = pathlib.Path(__file__).parent.parent
 
 try:
     import aspell  # type: ignore[import]
 
+    _test_data_dir = op.join(op.dirname(__file__), "..", "tests", "data")
     for lang in supported_languages:
-        spellers[lang] = aspell.Speller("lang", lang)
-except Exception as exp:  # probably ImportError, but maybe also language
+        _wordlist = op.join(_test_data_dir, f"{lang}-additional.wordlist")
+        if op.isfile(_wordlist):
+            spellers[lang] = aspell.Speller(
+                ("lang", lang), ("size", "80"), ("wordlists", _wordlist)
+            )
+        else:
+            spellers[lang] = aspell.Speller(("lang", lang), ("size", "80"))
+except ImportError as e:
     if os.getenv("REQUIRE_ASPELL", "false").lower() == "true":
-        raise RuntimeError(
+        msg = (
             "Cannot run complete tests without aspell when "
-            "REQUIRE_ASPELL=true. Got error during import:\n{}".format(exp)
+            f"REQUIRE_ASPELL=true. Got error during import:\n{e}"
         )
-    else:
-        warnings.warn(
-            "aspell not found, but not required, skipping aspell tests. Got "
-            "error during import:\n{}".format(exp),
-            stacklevel=2,
-        )
+        raise RuntimeError(msg) from e
+    warnings.warn(
+        "aspell not found, but not required, skipping aspell tests. Got "
+        f"error during import:\n{e}",
+        stacklevel=2,
+    )
 
 global_err_dicts: Dict[str, Dict[str, Any]] = {}
 global_pairs: Set[Tuple[str, str]] = set()
@@ -40,7 +54,7 @@ _fnames_in_aspell = [
 ]
 fname_params = pytest.mark.parametrize(
     "fname, in_aspell, in_dictionary", _fnames_in_aspell
-)  # noqa: E501
+)
 
 
 def test_dictionaries_exist() -> None:
@@ -66,9 +80,28 @@ def test_dictionary_formatting(
             try:
                 _check_err_rep(err, rep, in_aspell, fname, in_dictionary)
             except AssertionError as exp:
-                errors.append(str(exp).split("\n")[0])
+                errors.append(str(exp).split("\n", maxsplit=1)[0])
     if errors:
-        raise AssertionError("\n" + "\n".join(errors))
+        msg = "\n" + "\n".join(errors)
+        raise AssertionError(msg)
+
+
+@pytest.mark.parametrize(
+    "filename",
+    [
+        *(root / "data").rglob("dictionary*.txt"),
+        *(root / "tests/data").rglob("*.wordlist"),
+    ],
+)
+def test_dictionary_sorting(filename: pathlib.Path) -> None:
+    relative_path = filename.relative_to(root)
+    previous_line = None
+    with filename.open(encoding="utf-8") as file:
+        for current_line in file:
+            current_line = current_line.strip().lower()
+            if previous_line is not None:
+                assert previous_line < current_line, f"{relative_path} is not sorted"
+            previous_line = current_line
 
 
 def _check_aspell(
@@ -227,7 +260,7 @@ def test_error_checking(err: str, rep: str, match: str) -> None:
             None,
             False,
             "should not be in aspell",
-        ),  # noqa: E501
+        ),
         # One multi-word, second part
         ("a", "bar abcdef", None, True, "should be in aspell"),
         ("a", "abcdef back", None, False, "should not be in aspell"),
@@ -260,6 +293,7 @@ allowed_dups = {
     ("dictionary.txt", "dictionary_rare.txt"),
     ("dictionary.txt", "dictionary_usage.txt"),
     ("dictionary_code.txt", "dictionary_rare.txt"),
+    ("dictionary_rare.txt", "dictionary_en-GB_to_en-US.txt"),
     ("dictionary_rare.txt", "dictionary_usage.txt"),
 }
 
@@ -274,24 +308,27 @@ def test_dictionary_looping(
     """Test that all dictionary entries are valid."""
     this_err_dict = {}
     short_fname = op.basename(fname)
+    word_regex = re.compile(word_regex_def)
     with open(fname, encoding="utf-8") as fid:
         for line in fid:
             err, rep = line.split("->")
             err = err.lower()
-            assert err not in this_err_dict, "error {!r} already exists in {}".format(
-                err,
-                short_fname,
-            )
+            assert (
+                err not in this_err_dict
+            ), f"error {err!r} already exists in {short_fname}"
             rep = rep.rstrip("\n")
             reps = [r.strip() for r in rep.lower().split(",")]
             reps = [r for r in reps if len(r)]
             this_err_dict[err] = reps
     # 1. check the dict against itself (diagonal)
     for err in this_err_dict:
+        assert word_regex.fullmatch(
+            err
+        ), f"error {err!r} does not match default word regex '{word_regex_def}'"
         for r in this_err_dict[err]:
             assert r not in this_err_dict, (
-                "error {}: correction {} is an error itself in the same "
-                "dictionary file {}".format(err, r, short_fname)
+                f"error {err}: correction {r} is an error itself "
+                f"in the same dictionary file {short_fname}"
             )
     pair = (short_fname, short_fname)
     assert pair not in global_pairs
@@ -299,29 +336,22 @@ def test_dictionary_looping(
     for other_fname, other_err_dict in global_err_dicts.items():
         # error duplication (eventually maybe we should just merge?)
         for err in this_err_dict:
-            assert (
-                err not in other_err_dict
-            ), "error {!r} in dictionary {} already exists in dictionary {}".format(
-                err,
-                short_fname,
-                other_fname,
+            assert err not in other_err_dict, (
+                f"error {err!r} in dictionary {short_fname} "
+                f"already exists in dictionary {other_fname}"
             )
         # 2. check corrections in this dict against other dicts (upper)
         pair = (short_fname, other_fname)
         if pair not in allowed_dups:
             for err in this_err_dict:
-                assert (
-                    err not in other_err_dict
-                ), "error {!r} in dictionary {} already exists in dictionary {}".format(
-                    err,
-                    short_fname,
-                    other_fname,
+                assert err not in other_err_dict, (
+                    f"error {err!r} in dictionary {short_fname} "
+                    f"already exists in dictionary {other_fname}"
                 )
                 for r in this_err_dict[err]:
                     assert r not in other_err_dict, (
-                        "error %s: correction %s from dictionary %s is an "
-                        "error itself in dictionary %s"
-                        % (err, r, short_fname, other_fname)
+                        f"error {err}: correction {r} from dictionary {short_fname} "
+                        f"is an error itself in dictionary {other_fname}"
                     )
         assert pair not in global_pairs
         global_pairs.add(pair)
@@ -331,9 +361,8 @@ def test_dictionary_looping(
             for err in other_err_dict:
                 for r in other_err_dict[err]:
                     assert r not in this_err_dict, (
-                        "error %s: correction %s from dictionary %s is an "
-                        "error itself in dictionary %s"
-                        % (err, r, other_fname, short_fname)
+                        f"error {err}: correction {r} from dictionary {other_fname} "
+                        f"is an error itself in dictionary {short_fname}"
                     )
         assert pair not in global_pairs
         global_pairs.add(pair)
