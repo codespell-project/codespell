@@ -628,7 +628,7 @@ def parse_ignore_words_option(ignore_words_option: List[str]) -> Set[str]:
 def build_exclude_hashes(filename: str, exclude_lines: Set[str]) -> None:
     with open(filename, encoding="utf-8") as f:
         for line in f:
-            exclude_lines.add(line)
+            exclude_lines.add(line.rstrip())
 
 
 def build_ignore_words(filename: str, ignore_words: Set[str]) -> None:
@@ -896,7 +896,7 @@ def parse_file(
             return bad_count
 
     for i, line in enumerate(lines):
-        if line in exclude_lines:
+        if line.rstrip() in exclude_lines:
             continue
 
         fixed_words = set()
