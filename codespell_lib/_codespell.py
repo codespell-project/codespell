@@ -1190,7 +1190,7 @@ def main(*args: str) -> int:
                     continue
                 if is_hidden(root, options.check_hidden):  # dir itself hidden
                     continue
-                for file_ in files:
+                for file_ in sorted(files):
                     # ignore hidden files in directories
                     if is_hidden(file_, options.check_hidden):
                         continue
