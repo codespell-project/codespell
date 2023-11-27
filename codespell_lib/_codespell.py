@@ -1178,7 +1178,7 @@ def main(*args: str) -> int:
         return EX_USAGE
 
     bad_count = 0
-    for filename in options.files:
+    for filename in sorted(options.files):
         # ignore hidden files
         if is_hidden(filename, options.check_hidden):
             continue
@@ -1190,7 +1190,7 @@ def main(*args: str) -> int:
                     continue
                 if is_hidden(root, options.check_hidden):  # dir itself hidden
                     continue
-                for file_ in files:
+                for file_ in sorted(files):
                     # ignore hidden files in directories
                     if is_hidden(file_, options.check_hidden):
                         continue
