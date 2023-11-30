@@ -325,10 +325,21 @@ def test_ignore_dictionary(
 ) -> None:
     """Test ignore dictionary functionality."""
     bad_name = tmp_path / "bad.txt"
-    bad_name.write_text("1 abandonned 1\n2 abandonned 2\nabondon\n")
-    assert cs.main(bad_name) == 3
+    bad_name.write_text(
+        "1 abandonned 1\n"
+        "2 abandonned 2\n"
+        "3 abandonned 3\r\n"
+        "4 abilty 4\n"
+        "5 abilty 5\n"
+        "6 abilty 6\r\n"
+        "7 ackward 7\n"
+        "8 ackward 8\n"
+        "9 ackward 9\r\n"
+        "abondon\n"
+    )
+    assert cs.main(bad_name) == 10
     fname = tmp_path / "ignore.txt"
-    fname.write_text("abandonned\n")
+    fname.write_text("abandonned\nabilty\r\nackward")
     assert cs.main("-I", fname, bad_name) == 1
 
 
@@ -363,11 +374,27 @@ def test_exclude_file(
 ) -> None:
     """Test exclude file functionality."""
     bad_name = tmp_path / "bad.txt"
-    bad_name.write_bytes(b"1 abandonned 1\n2 abandonned 2\n")
-    assert cs.main(bad_name) == 2
+    # check all possible combinations of lines to ignore and ignores
+    combinations = "".join(
+        f"{n} abandonned {n}\n"
+        f"{n} abandonned {n}\r\n"
+        f"{n} abandonned {n} \n"
+        f"{n} abandonned {n} \r\n"
+        for n in range(1, 5)
+    )
+    bad_name.write_bytes(
+        (combinations + "5 abandonned 5\n6 abandonned 6").encode("utf-8")
+    )
+    assert cs.main(bad_name) == 18
     fname = tmp_path / "tmp.txt"
-    fname.write_bytes(b"1 abandonned 1\n")
-    assert cs.main(bad_name) == 2
+    fname.write_bytes(
+        b"1 abandonned 1\n"
+        b"2 abandonned 2\r\n"
+        b"3 abandonned 3 \n"
+        b"4 abandonned 4 \r\n"
+        b"6 abandonned 6\n"
+    )
+    assert cs.main(bad_name) == 18
     assert cs.main("-x", fname, bad_name) == 1
 
 
