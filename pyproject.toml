@@ -5,7 +5,7 @@ name = "codespell"
 description = "Codespell"
 readme = { file = "README.rst", content-type = "text/x-rst" }
 requires-python = ">=3.8"
-license = {text = "GPL v2"}
+license = {text = "GPL-2.0-only"}
 authors = [
     {name = "Lucas De Marchi", email = "lucas.de.marchi@gmail.com"},
 ]
