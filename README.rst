@@ -209,6 +209,16 @@ If one configures codespell using the `pyproject.toml` file instead use:
       additional_dependencies:
         - tomli
 
+
+`trunk check <https://docs.trunk.io/check>`_ hook
+-------------------------------------------------
+
+codespell also works with `trunk check` (an extensible super-linter), using
+
+.. code-block::
+     trunk check enable codespell
+
+
 Dictionary format
 -----------------
 
