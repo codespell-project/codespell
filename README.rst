@@ -213,10 +213,12 @@ If one configures codespell using the `pyproject.toml` file instead use:
 `trunk check <https://docs.trunk.io/check>`_ hook
 -------------------------------------------------
 
-codespell also works with `trunk check` (an extensible super-linter), using
+codespell also works with Trunk Check, using:
 
-.. code-block::
+.. code-block:: sh
+
      trunk check enable codespell
+
 
 
 Dictionary format
