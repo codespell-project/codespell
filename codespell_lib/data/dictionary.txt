@@ -31882,7 +31882,12 @@ instrucitonal->instructional
 instrucitons->instructions
 instructer->instructor, instructed, instruct,
 instructers->instructors, instructs,
+<<<<<<< HEAD
 instructin->instructing, instruct in, instruction,
+||||||| parent of b4fe960cb0 (instructiosn)
+=======
+instructiosn->instructions
+>>>>>>> b4fe960cb0 (instructiosn)
 instrumenet->instrument
 instrumenetation->instrumentation
 instrumenetd->instrumented
