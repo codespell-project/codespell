@@ -476,6 +476,7 @@ def test_ignore(
     assert cs.main("--skip=*ignoredir*", tmp_path) == 1
     assert cs.main("--skip=ignoredir", tmp_path) == 1
     assert cs.main("--skip=*ignoredir/bad*", tmp_path) == 1
+    assert cs.main(f"--skip={tmp_path}", tmp_path) == 0
     badjs = tmp_path / "bad.js"
     copyfile(badtxt, badjs)
     assert cs.main("--skip=*.js", goodtxt, badtxt, badjs) == 1
