@@ -620,21 +620,20 @@ def parse_ignore_words_option(ignore_words_option: List[str]) -> Set[str]:
     ignore_words = set()
     if ignore_words_option:
         for comma_separated_words in ignore_words_option:
-            for word in comma_separated_words.split(","):
-                ignore_words.add(word.strip())
+            ignore_words.update(
+                word.strip() for word in comma_separated_words.split(",")
+            )
     return ignore_words
 
 
 def build_exclude_hashes(filename: str, exclude_lines: Set[str]) -> None:
     with open(filename, encoding="utf-8") as f:
-        for line in f:
-            exclude_lines.add(line.rstrip())
+        exclude_lines.update(line.rstrip() for line in f)
 
 
 def build_ignore_words(filename: str, ignore_words: Set[str]) -> None:
     with open(filename, encoding="utf-8") as f:
-        for line in f:
-            ignore_words.add(line.strip())
+        ignore_words.update(line.strip() for line in f)
 
 
 def add_misspelling(
