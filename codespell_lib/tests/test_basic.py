@@ -1219,7 +1219,7 @@ def test_stdin(tmp_path: Path) -> None:
     text = ""
     for _ in range(input_file_lines):
         text += "abandonned\n"
-    for single_line_per_error in [True, False]:
+    for single_line_per_error in (True, False):
         args: Tuple[str, ...] = ()
         if single_line_per_error:
             args = ("--stdin-single-line",)

@@ -155,7 +155,7 @@ def _check_err_rep(
     ), f"error {err}: correction {rep!r} cannot start with whitespace"
     _check_aspell(err, f"error {err!r}", in_aspell[0], fname, languages[0])
     prefix = f"error {err}: correction {rep!r}"
-    for regex, msg in [
+    for regex, msg in (
         (start_comma, "%s starts with a comma"),
         (
             whitespace_comma,
@@ -168,7 +168,7 @@ def _check_err_rep(
         (comma_without_space, "%s contains a comma *not* followed by a space"),
         (whitespace_end, "%s has a trailing space"),
         (single_comma, "%s has a single entry but contains a trailing comma"),
-    ]:
+    ):
         assert not regex.search(rep), msg % (prefix,)
     del msg
     if rep.count(","):
