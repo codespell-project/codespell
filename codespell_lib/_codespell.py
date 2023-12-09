@@ -1097,7 +1097,7 @@ def main(*args: str) -> int:
         return EX_USAGE
     uri_ignore_words = parse_ignore_words_option(options.uri_ignore_words_list)
 
-    dictionaries = options.dictionary if options.dictionary else ["-"]
+    dictionaries = options.dictionary or ["-"]
 
     use_dictionaries = []
     for dictionary in dictionaries:
