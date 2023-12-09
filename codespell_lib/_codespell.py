@@ -1186,7 +1186,7 @@ def main(*args: str) -> int:
         if os.path.isdir(filename):
             for root, dirs, files in os.walk(filename):
                 if glob_match.match(root):  # skip (absolute) directories
-                    del dirs[:]
+                    dirs.clear()
                     continue
                 if is_hidden(root, options.check_hidden):  # dir itself hidden
                     continue
