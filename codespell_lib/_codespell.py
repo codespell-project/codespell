@@ -617,7 +617,7 @@ def parse_options(
 
 
 def parse_ignore_words_option(ignore_words_option: List[str]) -> Set[str]:
-    ignore_words = set()
+    ignore_words: Set[str] = set()
     if ignore_words_option:
         for comma_separated_words in ignore_words_option:
             ignore_words.update(
