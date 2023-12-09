@@ -810,7 +810,7 @@ def apply_uri_ignore_words(
 ) -> List[Match[str]]:
     if not uri_ignore_words:
         return check_matches
-    for uri in re.findall(uri_regex, line):
+    for uri in uri_regex.findall(line):
         for uri_word in extract_words(uri, word_regex, ignore_word_regex):
             if uri_word in uri_ignore_words:
                 # determine/remove only the first among matches
