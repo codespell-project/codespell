@@ -58,17 +58,14 @@ repos:
           - -d
           - '{extends: relaxed, rules: {line-length: {max: 90}}}'
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.1.6
+    rev: v0.1.7
     hooks:
       - id: ruff
+      - id: ruff-format
   - repo:  https://github.com/PyCQA/autoflake
     rev: v2.2.1
     hooks:
       - id: autoflake
-  - repo: https://github.com/psf/black
-    rev: 23.11.0
-    hooks:
-      - id: black
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.6
     hooks:
