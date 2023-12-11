@@ -617,24 +617,23 @@ def parse_options(
 
 
 def parse_ignore_words_option(ignore_words_option: List[str]) -> Set[str]:
-    ignore_words = set()
+    ignore_words: Set[str] = set()
     if ignore_words_option:
         for comma_separated_words in ignore_words_option:
-            for word in comma_separated_words.split(","):
-                ignore_words.add(word.strip())
+            ignore_words.update(
+                word.strip() for word in comma_separated_words.split(",")
+            )
     return ignore_words
 
 
 def build_exclude_hashes(filename: str, exclude_lines: Set[str]) -> None:
     with open(filename, encoding="utf-8") as f:
-        for line in f:
-            exclude_lines.add(line.rstrip())
+        exclude_lines.update(line.rstrip() for line in f)
 
 
 def build_ignore_words(filename: str, ignore_words: Set[str]) -> None:
     with open(filename, encoding="utf-8") as f:
-        for line in f:
-            ignore_words.add(line.strip())
+        ignore_words.update(line.strip() for line in f)
 
 
 def add_misspelling(
@@ -811,7 +810,7 @@ def apply_uri_ignore_words(
 ) -> List[Match[str]]:
     if not uri_ignore_words:
         return check_matches
-    for uri in re.findall(uri_regex, line):
+    for uri in uri_regex.findall(line):
         for uri_word in extract_words(uri, word_regex, ignore_word_regex):
             if uri_word in uri_ignore_words:
                 # determine/remove only the first among matches
@@ -1097,7 +1096,7 @@ def main(*args: str) -> int:
         return EX_USAGE
     uri_ignore_words = parse_ignore_words_option(options.uri_ignore_words_list)
 
-    dictionaries = options.dictionary if options.dictionary else ["-"]
+    dictionaries = options.dictionary or ["-"]
 
     use_dictionaries = []
     for dictionary in dictionaries:
@@ -1186,7 +1185,7 @@ def main(*args: str) -> int:
         if os.path.isdir(filename):
             for root, dirs, files in os.walk(filename):
                 if glob_match.match(root):  # skip (absolute) directories
-                    del dirs[:]
+                    dirs.clear()
                     continue
                 if is_hidden(root, options.check_hidden):  # dir itself hidden
                     continue

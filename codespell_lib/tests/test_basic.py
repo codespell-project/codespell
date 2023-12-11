@@ -476,6 +476,7 @@ def test_ignore(
     assert cs.main("--skip=*ignoredir*", tmp_path) == 1
     assert cs.main("--skip=ignoredir", tmp_path) == 1
     assert cs.main("--skip=*ignoredir/bad*", tmp_path) == 1
+    assert cs.main(f"--skip={tmp_path}", tmp_path) == 0
     badjs = tmp_path / "bad.js"
     copyfile(badtxt, badjs)
     assert cs.main("--skip=*.js", goodtxt, badtxt, badjs) == 1
@@ -1218,7 +1219,7 @@ def test_stdin(tmp_path: Path) -> None:
     text = ""
     for _ in range(input_file_lines):
         text += "abandonned\n"
-    for single_line_per_error in [True, False]:
+    for single_line_per_error in (True, False):
         args: Tuple[str, ...] = ()
         if single_line_per_error:
             args = ("--stdin-single-line",)
