@@ -84,11 +84,6 @@ codespell_lib = [
     "py.typed",
 ]
 
-[tool.autoflake]
-in-place = true
-recursive = true
-expand-star-imports = true
-
 # TODO: reintegrate codespell configuration after updating test cases
 #[tool.codespell]
 #builtin = ["clear","rare","informal","usage","code","names"]
