@@ -62,10 +62,6 @@ repos:
     hooks:
       - id: ruff
       - id: ruff-format
-  - repo:  https://github.com/PyCQA/autoflake
-    rev: v2.2.1
-    hooks:
-      - id: autoflake
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.6
     hooks:
