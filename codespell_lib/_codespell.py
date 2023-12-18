@@ -166,12 +166,14 @@ class TermColors:
         self.FILE = "\033[33m"
         self.WWORD = "\033[31m"
         self.FWORD = "\033[32m"
+        self.CARET = "\033[1;36m"
         self.DISABLE = "\033[0m"
 
     def disable(self) -> None:
         self.FILE = ""
         self.WWORD = ""
         self.FWORD = ""
+        self.CARET = ""
         self.DISABLE = ""
 
 
@@ -539,6 +541,11 @@ def parse_options(
         "--stdin-single-line",
         action="store_true",
         help="output just a single line for each misspelling in stdin mode",
+    )
+    parser.add_argument(
+        "--caret-diagnostic",
+        action="store_true",
+        help="use the diagnostic message format of modern compilers",
     )
     parser.add_argument("--config", type=str, help="path to config file.")
     parser.add_argument("--toml", type=str, help="path to a pyproject.toml file.")
@@ -919,6 +926,7 @@ def parse_file(
             )
         for match in check_matches:
             word = match.group()
+            column = match.start()
             lword = word.lower()
             if lword in misspellings:
                 # Sometimes we find a 'misspelling' which is actually a valid word
@@ -973,8 +981,10 @@ def parse_file(
 
                 cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
                 cline = f"{colors.FILE}{i + 1}{colors.DISABLE}"
+                ccolumn = f"{colors.FILE}{column + 1}{colors.DISABLE}"
                 cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
                 crightword = f"{colors.FWORD}{fixword}{colors.DISABLE}"
+                ccaret = f"{colors.CARET}^{colors.DISABLE}"
 
                 reason = misspellings[lword].reason
                 if reason:
@@ -993,10 +1003,22 @@ def parse_file(
                 if (not context_shown) and (context is not None):
                     print_context(lines, i, context)
                 if filename != "-":
-                    print(
-                        f"{cfilename}:{cline}: {cwrongword} "
-                        f"==> {crightword}{creason}"
-                    )
+                    if options.caret_diagnostic:
+                        ntabs = line[:column].count("\t")
+                        if ntabs > 0:
+                            line = line.replace("\t", "    ")
+                            column = column + ntabs * 3
+                        print(
+                            f"{cfilename}:{cline}:{ccolumn}: {cwrongword} "
+                            f"==> {crightword}{creason}"
+                        )
+                        print(f"{line}", end="")
+                        print("{:>{width}}{}".format("", ccaret, width=column))
+                    else:
+                        print(
+                            f"{cfilename}:{cline}: {cwrongword} "
+                            f"==> {crightword}{creason}"
+                        )
                 elif options.stdin_single_line:
                     print(f"{cline}: {cwrongword} ==> {crightword}{creason}")
                 else:
@@ -1139,6 +1161,18 @@ def main(*args: str) -> int:
         summary = None
 
     context = None
+    if options.caret_diagnostic and (
+        (options.context is not None)
+        or (options.before_context is not None)
+        or (options.after_context is not None)
+    ):
+        print(
+            "ERROR: --caret-diagnostic cannot be used together with "
+            "--context/-C --context-before/-B or --context-after/-A",
+            file=sys.stderr,
+        )
+        parser.print_help()
+        return EX_USAGE
     if options.context is not None:
         if (options.before_context is not None) or (options.after_context is not None):
             print(
