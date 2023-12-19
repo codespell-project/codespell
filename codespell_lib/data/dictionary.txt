@@ -2974,7 +2974,8 @@ allignmenterror->alignmenterror
 allignments->alignments
 alligns->aligns
 alliviate->alleviate
-allk->all
+allk->all, ally,
+alll->all, ally,
 alllocate->allocate
 alllocated->allocated
 alllocates->allocates
@@ -13223,6 +13224,10 @@ conervative->conservative
 conesencus->consensus
 conet->connect
 coneted->connected
+conetent->content
+conetented->contented
+conetenting->contenting
+conetents->contents
 coneting->connecting
 conetion->connection
 conetions->connections
@@ -19612,6 +19617,10 @@ disabing->disabling
 disabl->disable
 disablle->disable
 disadvantadge->disadvantage
+disaggretate->disaggregate
+disaggretated->disaggregated
+disaggretates->disaggregates
+disaggretating->disaggregating
 disagreeed->disagreed
 disagress->disagrees
 disalb->disable
@@ -42328,6 +42337,8 @@ procuded->produced
 procuder->producer, procurer,
 procudes->produces, procures,
 procuding->producing, procuring,
+procudure->procedure
+procudures->procedures
 prodce->produce
 prodced->produced, proceed,
 prodceding->proceeding
@@ -53950,6 +53961,7 @@ termplating->templating
 termporal->temporal
 termporaries->temporaries
 termporarily->temporarily
+termporarly->temporarily
 termporary->temporary
 ternament->tournament
 ternimal->terminal
@@ -56994,6 +57006,7 @@ upated->updated
 upater->updater
 upates->updates
 upating->updating
+upccoming->upcoming
 upcomming->upcoming
 updae->update
 updaed->updated
