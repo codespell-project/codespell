@@ -1026,7 +1026,7 @@ def _script_main() -> int:
     return main(*sys.argv[1:])
 
 
-def main(*args: str) -> int:
+def main(*args: str) -> int:  # noqa: C901,PLR0915
     """Contains flow control"""
     try:
         options, parser, used_cfg_files = parse_options(args)
