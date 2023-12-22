@@ -1033,6 +1033,52 @@ def parse_file(
     return bad_count
 
 
+class _FileParser:
+    """A helper class to provide top level closure for parse_file()"""
+
+    def __init__(
+        self,
+        colors: TermColors,
+        summary: Optional[Summary],
+        misspellings: Dict[str, Misspelling],
+        exclude_lines: Set[str],
+        file_opener: FileOpener,
+        word_regex: Pattern[str],
+        ignore_word_regex: Optional[Pattern[str]],
+        uri_regex: Pattern[str],
+        uri_ignore_words: Set[str],
+        context: Optional[Tuple[int, int]],
+        options: argparse.Namespace,
+    ) -> None:
+        self.colors = colors
+        self.summary = summary
+        self.misspellings = misspellings
+        self.exclude_lines = exclude_lines
+        self.file_opener = file_opener
+        self.word_regex = word_regex
+        self.ignore_word_regex = ignore_word_regex
+        self.uri_regex = uri_regex
+        self.uri_ignore_words = uri_ignore_words
+        self.context = context
+        self.options = options
+
+    def __call__(self, filename: str) -> int:
+        return parse_file(
+            filename,
+            self.colors,
+            self.summary,
+            self.misspellings,
+            self.exclude_lines,
+            self.file_opener,
+            self.word_regex,
+            self.ignore_word_regex,
+            self.uri_regex,
+            self.uri_ignore_words,
+            self.context,
+            self.options,
+        )
+
+
 def _script_main() -> int:
     """Wrap to main() for setuptools."""
     return main(*sys.argv[1:])
@@ -1225,34 +1271,32 @@ def main(*args: str) -> int:  # noqa: C901,PLR0915
                 yield filename
 
     # closure to pass only relevant to the job filename
-    def _parse_file(filename: str) -> int:
-        return parse_file(
-            filename,
-            colors,
-            summary,
-            misspellings,
-            exclude_lines,
-            file_opener,
-            word_regex,
-            ignore_word_regex,
-            uri_regex,
-            uri_ignore_words,
-            context,
-            options,
-        )
+    file_parser = _FileParser(
+        colors,
+        summary,
+        misspellings,
+        exclude_lines,
+        file_opener,
+        word_regex,
+        ignore_word_regex,
+        uri_regex,
+        uri_ignore_words,
+        context,
+        options,
+    )
 
     njobs = os.cpu_count() or 1
     if njobs:
         # parse_file would be in subprocess(es)
         with Pool(njobs) as pool:
-            results = pool.map(_parse_file, _find_files())
+            results = pool.map(file_parser, _find_files())
             for result in results:
                 if isinstance(result, Exception):
                     raise result
             bad_count = sum(results)
     else:
         # serial
-        bad_count = sum(map(_parse_file, _find_files()))
+        bad_count = sum(map(file_parser, _find_files()))
 
     if summary:
         print("\n-------8<-------\nSUMMARY:")
