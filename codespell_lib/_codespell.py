@@ -1187,8 +1187,6 @@ def main(*args: str) -> int:  # noqa: C901,PLR0915
         )
         return EX_USAGE
 
-    bad_count = 0
-
     def _find_files() -> Generator[str, None, None]:
         """Yields filename for the parsing"""
         for filename in sorted(options.files):
@@ -1225,8 +1223,9 @@ def main(*args: str) -> int:  # noqa: C901,PLR0915
             elif not glob_match.match(filename):  # skip files
                 yield filename
 
-    for filename in _find_files():
-        bad_count += parse_file(
+    # closure to pass only relevant to the job filename
+    def _parse_file(filename: str) -> int:
+        return parse_file(
             filename,
             colors,
             summary,
@@ -1240,6 +1239,8 @@ def main(*args: str) -> int:  # noqa: C901,PLR0915
             context,
             options,
         )
+
+    bad_count = sum(map(_parse_file, _find_files()))
 
     if summary:
         print("\n-------8<-------\nSUMMARY:")
