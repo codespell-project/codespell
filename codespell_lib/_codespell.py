@@ -23,6 +23,7 @@ import os
 import re
 import sys
 import textwrap
+from multiprocessing import Pool
 from typing import (
     Any,
     Dict,
@@ -1240,7 +1241,18 @@ def main(*args: str) -> int:  # noqa: C901,PLR0915
             options,
         )
 
-    bad_count = sum(map(_parse_file, _find_files()))
+    njobs = os.cpu_count() or 1
+    if njobs:
+        # parse_file would be in subprocess(es)
+        with Pool(njobs) as pool:
+            results = pool.map(_parse_file, _find_files())
+            for result in results:
+                if isinstance(result, Exception):
+                    raise result
+            bad_count = sum(results)
+    else:
+        # serial
+        bad_count = sum(map(_parse_file, _find_files()))
 
     if summary:
         print("\n-------8<-------\nSUMMARY:")
