@@ -468,6 +468,20 @@ def parse_options(
     )
 
     parser.add_argument(
+        "-J",
+        "--jobs",
+        action="store",
+        type=int,
+        default=0,
+        help="set number of jobs to parallelize processing - one "
+        "subprocess per file:\n"
+        "- 0: no parallelization (default)"
+        "- positive integer: number of sub-processes to use\n"
+        "- -1: use all available CPUs\n"
+        "Interactive mode is not compatible with parallel processing",
+    )
+
+    parser.add_argument(
         "-i",
         "--interactive",
         action="store",
@@ -1084,7 +1098,7 @@ def _script_main() -> int:
     return main(*sys.argv[1:])
 
 
-def main(*args: str) -> int:  # noqa: C901,PLR0915
+def main(*args: str) -> int:  # noqa: C901,PLR0915,PLR0911
     """Contains flow control"""
     try:
         options, parser, used_cfg_files = parse_options(args)
@@ -1196,6 +1210,25 @@ def main(*args: str) -> int:  # noqa: C901,PLR0915
     else:
         summary = None
 
+    if options.jobs and options.interactive:
+        print(
+            "ERROR: do not enable parallelization in interactive mode",
+            file=sys.stderr,
+        )
+        # no point to parser.print_help() - just hides ERROR away here
+        return EX_USAGE
+
+    jobs = options.jobs
+    if jobs == -1:
+        jobs = os.cpu_count()
+    elif jobs < -1:
+        print(
+            f"ERROR: invalid number of jobs: {jobs}",
+            file=sys.stderr,
+        )
+        parser.print_help()
+        return EX_USAGE
+
     context = None
     if options.context is not None:
         if (options.before_context is not None) or (options.after_context is not None):
@@ -1285,10 +1318,9 @@ def main(*args: str) -> int:  # noqa: C901,PLR0915
         options,
     )
 
-    njobs = os.cpu_count() or 1
-    if njobs:
+    if jobs:
         # parse_file would be in subprocess(es)
-        with Pool(njobs) as pool:
+        with Pool(jobs) as pool:
             results = pool.map(file_parser, _find_files())
             for result in results:
                 if isinstance(result, Exception):
