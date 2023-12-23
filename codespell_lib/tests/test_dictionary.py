@@ -3,7 +3,6 @@ import os
 import os.path as op
 import pathlib
 import re
-import warnings
 from typing import Any, Dict, Iterable, Optional, Set, Tuple
 
 import pytest
@@ -37,11 +36,6 @@ except ImportError as e:
             f"REQUIRE_ASPELL=true. Got error during import:\n{e}"
         )
         raise RuntimeError(msg) from e
-    warnings.warn(
-        "aspell not found, but not required, skipping aspell tests. Got "
-        f"error during import:\n{e}",
-        stacklevel=2,
-    )
 
 global_err_dicts: Dict[str, Dict[str, Any]] = {}
 global_pairs: Set[Tuple[str, str]] = set()
