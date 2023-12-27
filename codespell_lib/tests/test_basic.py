@@ -7,8 +7,8 @@ import subprocess
 import sys
 from io import StringIO
 from pathlib import Path
-from shutil import copyfile
-from typing import Any, Generator, Optional, Tuple, Union
+from shutil import copyfile, copytree
+from typing import Any, Generator, Tuple, Union
 
 import pytest
 
@@ -64,13 +64,15 @@ cs = MainWrapper()
 
 
 def run_codespell(
-    args: Tuple[Any, ...] = (),
-    cwd: Optional[Path] = None,
+    args: Tuple[Any, ...],
+    cwd: Path,
 ) -> int:
     """Run codespell."""
+    lib = "codespell_lib"
+    copytree(lib, cwd / lib, dirs_exist_ok=True)
     args = tuple(str(arg) for arg in args)
     proc = subprocess.run(
-        ["codespell", "--count", *args],  # noqa: S603, S607
+        [sys.executable, "-m", lib, "-S", lib, "--count", *args],  # noqa: S603, S607
         cwd=cwd,
         capture_output=True,
         encoding="utf-8",
@@ -83,9 +85,9 @@ def run_codespell(
 def test_command(tmp_path: Path) -> None:
     """Test running the codespell executable."""
     # With no arguments does "."
-    assert run_codespell(cwd=tmp_path) == 0
+    assert run_codespell(args=(), cwd=tmp_path) == 0
     (tmp_path / "bad.txt").write_text("abandonned\nAbandonned\nABANDONNED\nAbAnDoNnEd")
-    assert run_codespell(cwd=tmp_path) == 4
+    assert run_codespell(args=(), cwd=tmp_path) == 4
 
 
 def test_basic(
@@ -1196,11 +1198,13 @@ def FakeStdin(text: str) -> Generator[None, None, None]:
 def run_codespell_stdin(
     text: str,
     args: Tuple[Any, ...],
-    cwd: Optional[Path] = None,
+    cwd: Path,
 ) -> int:
     """Run codespell in stdin mode and return number of lines in output."""
+    lib = "codespell_lib"
+    copytree(lib, cwd / lib, dirs_exist_ok=True)
     proc = subprocess.run(
-        ["codespell", *args, "-"],  # noqa: S603, S607
+        [sys.executable, "-m", lib, "-S", lib, *args, "-"],  # noqa: S603, S607
         cwd=cwd,
         input=text,
         capture_output=True,
