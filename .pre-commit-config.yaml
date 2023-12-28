@@ -8,10 +8,10 @@ repos:
     hooks:
       - id: mdformat
         name: Format Markdown
-        entry: mdformat  # Executable to run, with fixed options
+        entry: mdformat # Executable to run, with fixed options
         language: python
         types: [markdown]
-        args: [--wrap, '75', --number]
+        args: [--wrap, "75", --number]
         additional_dependencies:
           - mdformat-toc
           - mdformat-beautysh
@@ -56,7 +56,7 @@ repos:
         args:
           - --no-warnings
           - -d
-          - '{extends: relaxed, rules: {line-length: {max: 90}}}'
+          - "{extends: relaxed, rules: {line-length: {max: 90}}}"
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.1.9
     hooks:
