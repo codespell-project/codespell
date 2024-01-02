@@ -15,7 +15,7 @@ jobs:
       - name: Setup python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.8'
+          python-version: "3.8"
       - name: Install dependencies
         run: |
           python --version
