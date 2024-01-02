@@ -92,15 +92,24 @@ codespell_lib = [
 
 [tool.mypy]
 pretty = true
-show_error_codes = true
+hide_error_codes = false
 strict = true
 warn_unused_ignores = false
+enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
 
 [tool.pytest.ini_options]
-addopts = "--cov=codespell_lib -rs --cov-report= --tb=short --junit-xml=junit-results.xml"
+minversion = "6"
+testpaths = ["codespell_lib/tests"]
+log_cli_level = "INFO"
+xfail_strict = true
+addopts = ["--cov=codespell_lib", "-rs", "--strict-config", "--strict-markers", "--cov-report=", "--tb=short", "--junit-xml=junit-results.xml"]
+filterwarnings = ["error"]
 
 [tool.ruff]
-extend-ignore = [
+line-length = 88
+
+[tool.ruff.lint]
+ignore = [
     "ANN101",
     "B904",
     "PLW2901",
@@ -120,7 +129,6 @@ extend-ignore = [
     "ISC001",
     "ISC002",
 ]
-line-length = 88
 select = [
     "A",
     "ANN",
@@ -141,17 +149,16 @@ select = [
     "W",
     "YTT",
 ]
-target-version = "py37"
 
-[tool.ruff.mccabe]
+[tool.ruff.lint.mccabe]
 max-complexity = 45
 
-[tool.ruff.per-file-ignores]
+[tool.ruff.lint.per-file-ignores]
 "codespell_lib/_codespell.py" = ["A003"]
 "codespell_lib/tests/test_*" = ["S101"]
 "codespell_lib/tests/test_basic.py" = ["ANN401", "N802"]
 
-[tool.ruff.pylint]
+[tool.ruff.lint.pylint]
 allow-magic-value-types = ["bytes", "int", "str",]
 max-args = 12
 max-branches = 49
