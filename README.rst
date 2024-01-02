@@ -152,6 +152,11 @@ be specified in this file (without the preceding dashes), for example:
     count =
     quiet-level = 3
 
+The ``.codespellrc`` file is an `INI file <https://en.wikipedia.org/wiki/INI_file>`_,
+which is read using Python's
+`configparser <https://docs.python.org/3/library/configparser.html#supported-ini-file-structure>`_.
+For example, comments are possible using ``;`` or ``#`` as the first character.
+
 Codespell will also check in the current directory for a ``pyproject.toml``
 (or a path can be specified via ``--toml <filename>``) file, and the
 ``[tool.codespell]`` entry will be used, but only if the tomli_ package
