@@ -641,7 +641,7 @@ def _helper_test_case_handling_in_fixes(
     else:
         dictionary_name.write_text("adoptor->adopter, adaptor,\n")
 
-    # the mispelled word is entirely lowercase
+    # the misspelled word is entirely lowercase
     fname = tmp_path / "bad.txt"
     fname.write_text("early adoptor\n")
     result = cs.main("-D", dictionary_name, fname, std=True)
@@ -653,7 +653,7 @@ def _helper_test_case_handling_in_fixes(
     if reason:
         assert "reason" in stdout
 
-    # the mispelled word is capitalized
+    # the misspelled word is capitalized
     fname.write_text("Early Adoptor\n")
     result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
@@ -664,7 +664,7 @@ def _helper_test_case_handling_in_fixes(
     if reason:
         assert "reason" in stdout
 
-    # the mispelled word is entirely uppercase
+    # the misspelled word is entirely uppercase
     fname.write_text("EARLY ADOPTOR\n")
     result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
@@ -675,7 +675,7 @@ def _helper_test_case_handling_in_fixes(
     if reason:
         assert "reason" in stdout
 
-    # the mispelled word mixes lowercase and uppercase
+    # the misspelled word mixes lowercase and uppercase
     fname.write_text("EaRlY AdOpToR\n")
     result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
