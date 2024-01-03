@@ -655,14 +655,20 @@ def parse_options(
     return options, parser, used_cfg_files
 
 
-def parse_ignore_words_option(ignore_words_option: List[str]) -> Set[str]:
+def parse_ignore_words_option(
+    ignore_words_option: List[str],
+) -> Tuple[Set[str], Set[str]]:
     ignore_words: Set[str] = set()
+    ignore_words_cased: Set[str] = set()
     if ignore_words_option:
         for comma_separated_words in ignore_words_option:
-            ignore_words.update(
-                word.strip() for word in comma_separated_words.split(",")
-            )
-    return ignore_words
+            for word in comma_separated_words.split(","):
+                word = word.strip()
+                if word == word.lower():
+                    ignore_words.add(word)
+                else:
+                    ignore_words_cased.add(word)
+    return (ignore_words, ignore_words_cased)
 
 
 def build_exclude_hashes(filename: str, exclude_lines: Set[str]) -> None:
@@ -670,9 +676,16 @@ def build_exclude_hashes(filename: str, exclude_lines: Set[str]) -> None:
         exclude_lines.update(line.rstrip() for line in f)
 
 
-def build_ignore_words(filename: str, ignore_words: Set[str]) -> None:
+def build_ignore_words(
+    filename: str, ignore_words: Set[str], ignore_words_cased: Set[str]
+) -> None:
     with open(filename, encoding="utf-8") as f:
-        ignore_words.update(line.strip() for line in f)
+        for line in f:
+            word = line.strip()
+            if word == word.lower():
+                ignore_words.add(word)
+            else:
+                ignore_words_cased.add(word)
 
 
 def add_misspelling(
@@ -865,6 +878,7 @@ def parse_file(
     colors: TermColors,
     summary: Optional[Summary],
     misspellings: Dict[str, Misspelling],
+    ignore_words_cased: Set[str],
     exclude_lines: Set[str],
     file_opener: FileOpener,
     word_regex: Pattern[str],
@@ -885,6 +899,8 @@ def parse_file(
     else:
         if options.check_filenames:
             for word in extract_words(filename, word_regex, ignore_word_regex):
+                if word in ignore_words_cased:
+                    continue
                 lword = word.lower()
                 if lword not in misspellings:
                     continue
@@ -958,6 +974,8 @@ def parse_file(
             )
         for match in check_matches:
             word = match.group()
+            if word in ignore_words_cased:
+                continue
             lword = word.lower()
             if lword in misspellings:
                 # Sometimes we find a 'misspelling' which is actually a valid word
@@ -1112,7 +1130,10 @@ def main(*args: str) -> int:
         ignore_word_regex = None
 
     ignore_words_files = options.ignore_words or []
-    ignore_words = parse_ignore_words_option(options.ignore_words_list)
+    ignore_words, ignore_words_cased = parse_ignore_words_option(
+        options.ignore_words_list
+    )
+
     for ignore_words_file in ignore_words_files:
         if not os.path.isfile(ignore_words_file):
             print(
@@ -1121,7 +1142,7 @@ def main(*args: str) -> int:
             )
             parser.print_help()
             return EX_USAGE
-        build_ignore_words(ignore_words_file, ignore_words)
+        build_ignore_words(ignore_words_file, ignore_words, ignore_words_cased)
 
     uri_regex = options.uri_regex or uri_regex_def
     try:
@@ -1133,7 +1154,10 @@ def main(*args: str) -> int:
         )
         parser.print_help()
         return EX_USAGE
-    uri_ignore_words = parse_ignore_words_option(options.uri_ignore_words_list)
+    uri_ignore_words_lowercase, uri_ignore_words_cased = parse_ignore_words_option(
+        options.uri_ignore_words_list
+    )
+    uri_ignore_words = uri_ignore_words_lowercase | uri_ignore_words_cased
 
     dictionaries = options.dictionary or ["-"]
 
@@ -1242,6 +1266,7 @@ def main(*args: str) -> int:
                         colors,
                         summary,
                         misspellings,
+                        ignore_words_cased,
                         exclude_lines,
                         file_opener,
                         word_regex,
@@ -1266,6 +1291,7 @@ def main(*args: str) -> int:
                 colors,
                 summary,
                 misspellings,
+                ignore_words_cased,
                 exclude_lines,
                 file_opener,
                 word_regex,
