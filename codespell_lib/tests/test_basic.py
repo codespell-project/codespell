@@ -343,6 +343,34 @@ def test_ignore_dictionary(
     assert cs.main("-I", fname, bad_name) == 1
 
 
+def test_ignore_words_with_cases(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Test ignore dictionary functionality."""
+    bad_name = tmp_path / "bad.txt"
+    bad_name.write_text(
+        "1 MIS (Management Information System) 1\n"
+        "2 Les Mis (1980 musical) 2\n"
+        "3 mis 3\n"
+    )
+    assert cs.main(bad_name) == 3
+    fname = tmp_path / "ignore.txt"
+
+    fname.write_text("miS")
+    assert cs.main("-I", fname, bad_name) == 3
+    assert cs.main("-LmiS", bad_name) == 3
+    fname.write_text("MIS")
+    assert cs.main("-I", fname, bad_name) == 2
+    assert cs.main("-LMIS", bad_name) == 2
+    fname.write_text("MIS\nMis")
+    assert cs.main("-I", fname, bad_name) == 1
+    assert cs.main("-LMIS,Mis", bad_name) == 1
+    fname.write_text("mis")
+    assert cs.main("-I", fname, bad_name) == 0
+    assert cs.main("-Lmis", bad_name) == 0
+
+
 def test_ignore_word_list(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
