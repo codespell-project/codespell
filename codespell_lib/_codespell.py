@@ -20,6 +20,7 @@ import argparse
 import configparser
 import ctypes
 import fnmatch
+import itertools
 import os
 import re
 import sys
@@ -1172,8 +1173,9 @@ def main(*args: str) -> int:
         )
         parser.print_help()
         return EX_USAGE
-    uri_ignore_words = set().union(
-        *parse_ignore_words_option(options.uri_ignore_words_list)
+
+    uri_ignore_words = set(
+        itertools.chain(*parse_ignore_words_option(options.uri_ignore_words_list))
     )
 
     dictionaries = options.dictionary or ["-"]
