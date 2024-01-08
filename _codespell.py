@@ -884,8 +884,16 @@ def parse_file(
         lines = f.readlines()
     else:
         if options.check_filenames:
-            bad_count = count_bed_spell(bad_count, colors, filename, ignore_word_regex, misspellings, options, summary,
-                                        word_regex)
+            bad_count = count_bed_spell(
+                bad_count,
+                colors,
+                filename,
+                ignore_word_regex,
+                misspellings,
+                options,
+                summary,
+                word_regex,
+            )
 
         # ignore irregular files
         if not os.path.isfile(filename):
@@ -931,8 +939,22 @@ def parse_file(
                 uri_regex,
                 uri_ignore_words,
             )
-        bad_count, changed = count_matches(asked_for, bad_count, changed, check_matches, colors, context, filename,
-                                           fixed_words, i, line, lines, misspellings, options, summary)
+        bad_count, changed = count_matches(
+            asked_for,
+            bad_count,
+            changed,
+            check_matches,
+            colors,
+            context,
+            filename,
+            fixed_words,
+            i,
+            line,
+            lines,
+            misspellings,
+            options,
+            summary,
+        )
 
     if changed:
         if filename == "-":
@@ -950,8 +972,22 @@ def parse_file(
     return bad_count
 
 
-def count_matches(asked_for, bad_count, changed, check_matches, colors, context, filename, fixed_words, i, line, lines,
-                  misspellings, options, summary):
+def count_matches(
+    asked_for,
+    bad_count,
+    changed,
+    check_matches,
+    colors,
+    context,
+    filename,
+    fixed_words,
+    i,
+    line,
+    lines,
+    misspellings,
+    options,
+    summary,
+):
     for match in check_matches:
         word = match.group()
         lword = word.lower()
@@ -961,11 +997,11 @@ def count_matches(asked_for, bad_count, changed, check_matches, colors, context,
             # they're usually false alarms; see issue #17 among others.
             char_before_idx = match.start() - 1
             if (
-                    char_before_idx >= 0
-                    and line[char_before_idx] == "\\"
-                    # bell, backspace, formfeed, newline, carriage-return, tab, vtab.
-                    and word.startswith(("a", "b", "f", "n", "r", "t", "v"))
-                    and lword[1:] not in misspellings
+                char_before_idx >= 0
+                and line[char_before_idx] == "\\"
+                # bell, backspace, formfeed, newline, carriage-return, tab, vtab.
+                and word.startswith(("a", "b", "f", "n", "r", "t", "v"))
+                and lword[1:] not in misspellings
             ):
                 continue
 
@@ -999,11 +1035,7 @@ def count_matches(asked_for, bad_count, changed, check_matches, colors, context,
                 continue
 
             # otherwise warning was explicitly set by interactive mode
-            if (
-                    options.interactive & 2
-                    and not fix
-                    and not misspellings[lword].reason
-            ):
+            if options.interactive & 2 and not fix and not misspellings[lword].reason:
                 continue
 
             cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
@@ -1029,8 +1061,7 @@ def count_matches(asked_for, bad_count, changed, check_matches, colors, context,
                 print_context(lines, i, context)
             if filename != "-":
                 print(
-                    f"{cfilename}:{cline}: {cwrongword} "
-                    f"==> {crightword}{creason}"
+                    f"{cfilename}:{cline}: {cwrongword} " f"==> {crightword}{creason}"
                 )
             elif options.stdin_single_line:
                 print(f"{cline}: {cwrongword} ==> {crightword}{creason}")
@@ -1042,7 +1073,16 @@ def count_matches(asked_for, bad_count, changed, check_matches, colors, context,
     return bad_count, changed
 
 
-def count_bed_spell(bad_count, colors, filename, ignore_word_regex, misspellings, options, summary, word_regex):
+def count_bed_spell(
+    bad_count,
+    colors,
+    filename,
+    ignore_word_regex,
+    misspellings,
+    options,
+    summary,
+    word_regex,
+):
     for word in extract_words(filename, word_regex, ignore_word_regex):
         lword = word.lower()
         if lword not in misspellings:
