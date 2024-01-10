@@ -28921,10 +28921,7 @@ implemnt->implement
 implemntation->implementation
 implemntations->implementations
 implemnted->implemented
-implemnted->implemented
 implemnting->implementing
-implemnting->implementing
-implemnts->implements
 implemnts->implements
 implemt->implement
 implemtation->implementation
@@ -46798,8 +46795,6 @@ responsiblities->responsibilities
 responsiblity->responsibility
 responsing->responding
 respose->response
-respose->response
-resposes->responses
 resposes->responses
 resposibilities->responsibilities
 resposibility->responsibility
@@ -54694,7 +54689,7 @@ torpeados->torpedoes
 torpedos->torpedoes
 tortilini->tortellini
 tortise->tortoise
-tortoitse->tortoise,tortoises
+tortoitse->tortoise, tortoises,
 torward->toward
 torwards->towards
 Tosday->Tuesday, today,
@@ -57566,7 +57561,6 @@ validatin->validation, validating,
 validatins->validations
 validatior->validator, validation,
 validatiors->validators, validations,
-validaton->validation
 validaton->validation, validator,
 validatons->validations, validators,
 valide->valid
