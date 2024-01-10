@@ -6047,6 +6047,7 @@ asynchrouns->asynchronous
 asynchrounsly->asynchronously
 asyncronous->asynchronous
 asyncronously->asynchronously
+asyncrounesouly->asynchronously
 asynnc->async
 asynnchronous->asynchronous
 asynnchronously->asynchronously
@@ -8115,6 +8116,7 @@ bootstraper->bootstrapper
 bootstrapers->bootstrappers
 bootstraping->bootstrapping
 bootstras->bootstraps
+bootup->boot-up
 booundaries->boundaries
 booundary->boundary
 boounds->bounds
@@ -13018,6 +13020,7 @@ concered->concerned
 concerened->concerned
 concering->concerning
 concerntrating->concentrating
+concerte->concrete
 conchance->conscience
 conchances->consciences
 conchus->conscious
@@ -22053,6 +22056,10 @@ enforceing->enforcing
 enforcmement->enforcement
 enforcment->enforcement
 enfore->enforce
+enforece->enforce
+enforeced->enforced
+enforeces->enforces
+enforecing->enforcing
 enfored->enforced
 enfores->enforces
 enforing->enforcing
@@ -23231,6 +23238,7 @@ exceprts->excerpts
 exceptation->expectation
 exceptin->excepting, exception, expecting, accepting,
 exceptins->exceptions, excepting,
+exceptioin->exception
 exceptionnal->exceptional
 exceptionss->exceptions
 exceptionts->exceptions
@@ -27558,6 +27566,8 @@ handeled->handled, handheld,
 handeler->handler
 handeles->handles
 handeling->handling
+handelr->handler
+handelrs->handlers
 handels->handles
 hander->handler
 handfull->handful
@@ -28907,10 +28917,14 @@ implemetning->implementing
 implemetns->implements
 implemets->implements
 implemnt->implement
+implemnt->implement
 implemntation->implementation
 implemntations->implementations
 implemnted->implemented
+implemnted->implemented
 implemnting->implementing
+implemnting->implementing
+implemnts->implements
 implemnts->implements
 implemt->implement
 implemtation->implementation
@@ -38660,6 +38674,8 @@ othopaedic->orthopaedic
 othopaedics->orthopaedics
 othopedic->orthopedic
 othopedics->orthopedics
+othre->other
+othres->others
 othwerise->otherwise
 othwerwise->otherwise
 othwhise->otherwise
@@ -44668,6 +44684,10 @@ redandant->redundant
 redction->reduction, redaction,
 redeable->readable
 redeclaation->redeclaration
+redeclare->re-declare
+redeclared->re-declared
+redeclares->re-declares
+redeclaring->re-declaring
 redefiend->redefined
 redefiende->redefined
 redefiniton->redefinition
@@ -46778,6 +46798,8 @@ responsiblities->responsibilities
 responsiblity->responsibility
 responsing->responding
 respose->response
+respose->response
+resposes->responses
 resposes->responses
 resposibilities->responsibilities
 resposibility->responsibility
@@ -50167,6 +50189,7 @@ socalist->socialist
 socalists->socialists
 socekt->socket
 socekts->sockets
+socio-economic->socioeconomic
 socities->societies
 socre->score
 socred->scored, sacred,
@@ -54671,6 +54694,7 @@ torpeados->torpedoes
 torpedos->torpedoes
 tortilini->tortellini
 tortise->tortoise
+tortoitse->tortoise,tortoises
 torward->toward
 torwards->towards
 Tosday->Tuesday, today,
@@ -57542,6 +57566,7 @@ validatin->validation, validating,
 validatins->validations
 validatior->validator, validation,
 validatiors->validators, validations,
+validaton->validation
 validaton->validation, validator,
 validatons->validations, validators,
 valide->valid
@@ -59417,28 +59442,3 @@ zylophones->xylophones
 сontainor->container
 сontainors->containers
 сontains->contains
-exceptioin->exception
-socio-economic->socioeconomic
-concerte->concrete
-respose->response
-resposes->responses
-handelr->handler
-handelrs->handlers
-implemnted->implemented
-implemnts->implements
-implemnting->implementing
-implemnt->implement
-validaton->validation
-bootup->boot-up
-enforece->enforce
-enforeced->enforced
-enforeces->enforces
-enforecing->enforcing
-redeclare->re-declare
-redeclares->re-declares
-redeclared->re-declared
-redeclaring->re-declaring
-asyncrounesouly->asynchronously
-tortoitse->tortoise,tortoises
-othre->other
-othres->others
