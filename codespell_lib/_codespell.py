@@ -733,6 +733,8 @@ def build_dict(
     with open(filename, encoding="utf-8") as f:
         translate_tables = [(x, str.maketrans(x, y)) for x, y in alt_chars]
         for line in f:
+            if re.search(r"^\s*#|^\s*$", line):
+                continue
             [key, data] = line.split("->")
             # TODO for now, convert both to lower. Someday we can maybe add
             # support for fixing caps.
