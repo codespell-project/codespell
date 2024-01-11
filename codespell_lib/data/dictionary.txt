@@ -8116,7 +8116,7 @@ bootstraper->bootstrapper
 bootstrapers->bootstrappers
 bootstraping->bootstrapping
 bootstras->bootstraps
-bootup->boot-up
+bootup->boot up, boot-up,
 booundaries->boundaries
 booundary->boundary
 boounds->bounds
@@ -23239,6 +23239,7 @@ exceptation->expectation
 exceptin->excepting, exception, expecting, accepting,
 exceptins->exceptions, excepting,
 exceptioin->exception
+exceptioins->exceptions
 exceptionnal->exceptional
 exceptionss->exceptions
 exceptionts->exceptions
@@ -28916,7 +28917,6 @@ implemetned->implemented
 implemetning->implementing
 implemetns->implements
 implemets->implements
-implemnt->implement
 implemnt->implement
 implemntation->implementation
 implemntations->implementations
@@ -43677,6 +43677,10 @@ rceate->create
 rceating->creating
 rduce->reduce
 re-attachement->re-attachment
+re-declare->redeclare
+re-declared->redeclared
+re-declares->redeclares
+re-declaring->redeclaring
 re-defiend->re-defined
 re-engeneer->re-engineer
 re-engeneering->re-engineering
@@ -44681,10 +44685,6 @@ redandant->redundant
 redction->reduction, redaction,
 redeable->readable
 redeclaation->redeclaration
-redeclare->re-declare
-redeclared->re-declared
-redeclares->re-declares
-redeclaring->re-declaring
 redefiend->redefined
 redefiende->redefined
 redefiniton->redefinition
