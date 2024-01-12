@@ -116,7 +116,7 @@ Want to know if a word you're proposing exists in codespell already? It is possi
 
 You can select the optional dictionaries with the ``--builtin`` option.
 
-Ignoring Words
+Ignoring words
 --------------
 
 When ignoring false positives, note that spelling errors are *case-insensitive* but words to ignore are *case-sensitive*. For example, the dictionary entry ``wrod`` will also match the typo ``Wrod``, but to ignore it you must pass ``wrod``.
@@ -191,10 +191,10 @@ config files.
 
 .. _tomli: https://pypi.org/project/tomli/
 
-`pre-commit <https://pre-commit.com/>`_ hook
---------------------------------------------
+pre-commit hook
+---------------
 
-codespell also works with `pre-commit`, using
+codespell also works with `pre-commit <https://pre-commit.com/>`_, using
 
 .. code-block:: yaml
 
@@ -248,7 +248,7 @@ applied directly, but should instead be manually inspected. E.g.:
 
        clas->class, clash, disabled because of name clash in c++
 
-Development Setup
+Development setup
 -----------------
 
 As suggested in the `Python Packaging User Guide`_, ensure ``pip``, ``setuptools``, and ``wheel`` are up to date before installing from source. Specifically you will need recent versions of ``setuptools`` and ``setuptools_scm``:
@@ -271,7 +271,7 @@ To run tests against the codebase run:
 
 .. _Python Packaging User Guide: https://packaging.python.org/en/latest/tutorials/installing-packages/#requirements-for-installing-packages
 
-Sending Pull Requests
+Sending pull requests
 ---------------------
 
 If you have a suggested typo that you'd like to see merged please follow these steps:
