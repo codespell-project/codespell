@@ -1,6 +1,6 @@
 ---
 files: ^(.*\.(py|json|md|sh|yaml|yml|in|cfg|txt|rst|toml|precommit-toml|wordlist))$
-exclude: ^(\.[^/]*cache/.*)$
+exclude: ^(\.[^/]*cache/.*|.github/logToCs.py)$
 repos:
   - repo: https://github.com/executablebooks/mdformat
     # Do this before other tools "fixing" the line endings
