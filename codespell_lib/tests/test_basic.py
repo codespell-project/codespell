@@ -1150,7 +1150,7 @@ def test_ill_formed_ini_config_file(
     assert "ill-formed config file" in stderr
 
 
-@pytest.mark.parametrize("kind", ("toml", "cfg"))
+@pytest.mark.parametrize("kind", ("cfg", "toml", "toml_list"))
 def test_config_toml(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
@@ -1182,7 +1182,7 @@ skip = bad.txt, whatever.txt
 count =
 """
         )
-    else:
+    elif kind == "toml":
         assert kind == "toml"
         if sys.version_info < (3, 11):
             pytest.importorskip("tomli")
@@ -1192,6 +1192,20 @@ count =
             """\
 [tool.codespell]
 skip = 'bad.txt,whatever.txt'
+check-filenames = false
+count = true
+"""
+        )
+    else:
+        assert kind == "toml_list"
+        if sys.version_info < (3, 11):
+            pytest.importorskip("tomli")
+        tomlfile = tmp_path / "pyproject.toml"
+        args = ("--toml", tomlfile)
+        tomlfile.write_text(
+            """\
+[tool.codespell]
+skip = ['bad.txt', 'whatever.txt']
 check-filenames = false
 count = true
 """
