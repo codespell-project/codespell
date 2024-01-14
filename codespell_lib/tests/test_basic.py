@@ -342,6 +342,20 @@ def test_ignore_dictionary(
     fname = tmp_path / "ignore.txt"
     fname.write_text("abandonned\nabilty\r\nackward")
     assert cs.main("-I", fname, bad_name) == 1
+    # missing file in ignore list
+    fname_missing = tmp_path / "missing.txt"
+    result = cs.main("-I", fname_missing, bad_name, std=True)
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    assert code == EX_USAGE
+    assert "ERROR:" in stderr
+    # comma-separated list of files
+    fname_dummy1 = tmp_path / "dummy1.txt"
+    fname_dummy1.touch()
+    fname_dummy2 = tmp_path / "dummy2.txt"
+    fname_dummy2.touch()
+    assert cs.main("-I", fname_dummy1, "-I", fname, "-I", fname_dummy2, bad_name) == 1
+    assert cs.main("-I", f"{fname_dummy1},{fname},{fname_dummy2}", bad_name) == 1
 
 
 def test_ignore_words_with_cases(
@@ -495,6 +509,13 @@ def test_exclude_file(
     )
     assert cs.main(bad_name) == 18
     assert cs.main("-x", fname, bad_name) == 1
+    # comma-separated list of files
+    fname_dummy1 = tmp_path / "dummy1.txt"
+    fname_dummy1.touch()
+    fname_dummy2 = tmp_path / "dummy2.txt"
+    fname_dummy2.touch()
+    assert cs.main("-x", fname_dummy1, "-x", fname, "-x", fname_dummy2, bad_name) == 1
+    assert cs.main("-x", f"{fname_dummy1},{fname},{fname_dummy2}", bad_name) == 1
 
 
 def test_encoding(
