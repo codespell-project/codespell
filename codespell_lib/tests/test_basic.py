@@ -41,7 +41,7 @@ class MainWrapper:
     ) -> Union[int, Tuple[int, str, str]]:
         args = tuple(str(arg) for arg in args)
         if count:
-            args = ("--count",) + args
+            args = ("--count", *args)
         code = cs_.main(*args)
         frame = inspect.currentframe()
         assert frame is not None
