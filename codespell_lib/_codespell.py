@@ -517,7 +517,7 @@ def parse_options(
         help="set interactive mode when writing changes:\n"
         "- 0: no interactivity.\n"
         "- 1: ask for confirmation.\n"
-        "- 2: ask user to choose one fix when more than one is available.\n"  # noqa: E501
+        "- 2: ask user to choose one fix when more than one is available.\n"
         "- 3: both 1 and 2",
     )
 
