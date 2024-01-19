@@ -191,7 +191,7 @@ def _check_err_rep(
 
 
 @pytest.mark.parametrize(
-    "err, rep, match",
+    ("err", "rep", "match"),
     [
         ("a a", "bar", "has whitespace"),
         ("a,a", "bar", "has a comma"),
@@ -222,7 +222,7 @@ def test_error_checking(err: str, rep: str, match: str) -> None:
 
 @pytest.mark.skipif(not spellers, reason="requires aspell-en")
 @pytest.mark.parametrize(
-    "err, rep, err_aspell, rep_aspell, match",
+    ("err", "rep", "err_aspell", "rep_aspell", "match"),
     [
         # This doesn't raise any exceptions, so skip for now:
         # pytest.param('a', 'uvw, bar,', None, None, 'should be in aspell'),
