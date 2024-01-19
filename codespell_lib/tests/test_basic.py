@@ -1152,7 +1152,7 @@ def test_ill_formed_ini_config_file(
     assert "ill-formed config file" in stderr
 
 
-@pytest.mark.parametrize("kind", ("cfg", "toml", "toml_list"))
+@pytest.mark.parametrize("kind", ["cfg", "toml", "toml_list"])
 def test_config_toml(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
