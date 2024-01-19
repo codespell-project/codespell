@@ -736,8 +736,8 @@ def build_dict(
         translate_tables = [(x, str.maketrans(x, y)) for x, y in alt_chars]
         for line in f:
             [key, data] = line.split("->")
-            # TODO for now, convert both to lower. Someday we can maybe add
-            # support for fixing caps.
+            # TODO: For now, convert both to lower.
+            #       Someday we can maybe add support for fixing caps.
             key = key.lower()
             data = data.lower()
             if key not in ignore_words:
