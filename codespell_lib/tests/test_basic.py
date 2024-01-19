@@ -41,7 +41,7 @@ class MainWrapper:
     ) -> Union[int, Tuple[int, str, str]]:
         args = tuple(str(arg) for arg in args)
         if count:
-            args = ("--count",) + args
+            args = ("--count", *args)
         code = cs_.main(*args)
         frame = inspect.currentframe()
         assert frame is not None
@@ -76,8 +76,7 @@ def run_codespell(
         encoding="utf-8",
         check=False,
     )
-    count = int(proc.stderr.split("\n")[-2])
-    return count
+    return int(proc.stderr.split("\n")[-2])
 
 
 def test_command(tmp_path: Path) -> None:
@@ -159,7 +158,8 @@ def test_basic(
     assert isinstance(result, tuple)
     code, stdout, stderr = result
     assert code == 0
-    assert not stdout and not stderr
+    assert not stdout
+    assert not stderr
     assert cs.main(tmp_path) == 0
 
     # empty directory
@@ -177,9 +177,9 @@ def test_default_word_parsing(
     assert cs.main(fname) == 1, "bad"
 
     fname = tmp_path / "apostrophe"
-    fname.write_text("woudn't\n", encoding="utf-8")  # U+0027 (')
+    fname.write_text("woudn't\n", encoding="utf-8")  # U+0027
     assert cs.main(fname) == 1, "misspelling containing typewriter apostrophe U+0027"
-    fname.write_text("woudn’t\n", encoding="utf-8")  # U+2019 (’)
+    fname.write_text("woudn’t\n", encoding="utf-8")  # U+2019  # noqa: RUF001
     assert cs.main(fname) == 1, "misspelling containing typographic apostrophe U+2019"
 
 
@@ -300,7 +300,8 @@ def test_summary(
     assert isinstance(result, tuple)
     code, stdout, stderr = result
     assert code == 0
-    assert not stdout and not stderr, "no output"
+    assert not stdout
+    assert not stderr, "no output"
     result = cs.main(fname, "--summary", std=True)
     assert isinstance(result, tuple)
     code, stdout, stderr = result
@@ -473,7 +474,8 @@ def test_encoding(
     assert isinstance(result, tuple)
     code, stdout, stderr = result
     assert code == 0
-    assert not stdout and not stderr
+    assert not stdout
+    assert not stderr
     result = cs.main("-q", "0", fname, std=True, count=False)
     assert isinstance(result, tuple)
     code, stdout, stderr = result
@@ -594,9 +596,9 @@ def test_check_hidden(
     #
     #         tmp_path
     #         ├── .abandonned
-    #         │   ├── .abandonned.txt
-    #         │   └── subdir
-    #         │       └── .abandonned.txt
+    #         │   ├── .abandonned.txt
+    #         │   └── subdir
+    #         │       └── .abandonned.txt
     #         └── .abandonned.txt
     #
     assert cs.main(tmp_path) == 0
@@ -626,9 +628,9 @@ def test_check_hidden(
     #
     #         tmp_path
     #         ├── .abandonned
-    #         │   ├── .abandonned.txt
-    #         │   └── subdir
-    #         │       └── .abandonned.txt
+    #         │   ├── .abandonned.txt
+    #         │   └── subdir
+    #         │       └── .abandonned.txt
     #         ├── .abandonned.txt
     #         └── subdir
     #             └── .abandonned
@@ -1150,7 +1152,7 @@ def test_ill_formed_ini_config_file(
     assert "ill-formed config file" in stderr
 
 
-@pytest.mark.parametrize("kind", ("cfg", "toml", "toml_list"))
+@pytest.mark.parametrize("kind", ["cfg", "toml", "toml_list"])
 def test_config_toml(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
@@ -1260,8 +1262,7 @@ def run_codespell_stdin(
     )
     output = proc.stdout
     # get number of lines
-    count = output.count("\n")
-    return count
+    return output.count("\n")
 
 
 def test_stdin(tmp_path: Path) -> None:

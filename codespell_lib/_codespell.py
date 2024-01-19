@@ -44,7 +44,7 @@ from ._version import (  # type: ignore[import-not-found]
     __version__ as VERSION,  # noqa: N812
 )
 
-word_regex_def = r"[\w\-'’]+"
+word_regex_def = r"[\w\-'’]+"  # noqa: RUF001
 # While we want to treat characters like ( or " as okay for a starting break,
 # these may occur unescaped in URIs, and so we are more restrictive on the
 # endpoint.  Emails are more restrictive, so the endpoint remains flexible.
@@ -54,7 +54,7 @@ uri_regex_def = (
 )
 # Pass all misspellings through this translation table to generate
 # alternative misspellings and fixes.
-alt_chars = (("'", "’"),)
+alt_chars = (("'", "’"),)  # noqa: RUF001
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
@@ -287,8 +287,9 @@ class FileOpener:
                 else:
                     break
         else:
+            # reading with encoding "iso-8859-1" cannot fail with UnicodeDecodeError
             msg = "Unknown encoding"
-            raise Exception(msg)
+            raise RuntimeError(msg)  # pragma: no cover
 
         return lines, encoding
 
@@ -309,10 +310,7 @@ class NewlineHelpFormatter(argparse.HelpFormatter):
         for part in parts:
             # Eventually we could allow others...
             indent_start = "- "
-            if part.startswith(indent_start):
-                offset = len(indent_start)
-            else:
-                offset = 0
+            offset = len(indent_start) if part.startswith(indent_start) else 0
             part = part[offset:]
             part = self._whitespace_matcher.sub(" ", part).strip()
             parts = textwrap.wrap(part, width - offset)
@@ -519,7 +517,7 @@ def parse_options(
         help="set interactive mode when writing changes:\n"
         "- 0: no interactivity.\n"
         "- 1: ask for confirmation.\n"
-        "- 2: ask user to choose one fix when more than one is available.\n"  # noqa: E501
+        "- 2: ask user to choose one fix when more than one is available.\n"
         "- 3: both 1 and 2",
     )
 
@@ -738,8 +736,8 @@ def build_dict(
         translate_tables = [(x, str.maketrans(x, y)) for x, y in alt_chars]
         for line in f:
             [key, data] = line.split("->")
-            # TODO for now, convert both to lower. Someday we can maybe add
-            # support for fixing caps.
+            # TODO: For now, convert both to lower.
+            #       Someday we can maybe add support for fixing caps.
             key = key.lower()
             data = data.lower()
             if key not in ignore_words:
@@ -1219,10 +1217,7 @@ def main(*args: str) -> int:
     if not options.colors:
         colors.disable()
 
-    if options.summary:
-        summary = Summary()
-    else:
-        summary = None
+    summary = Summary() if options.summary else None
 
     context = None
     if options.context is not None:
