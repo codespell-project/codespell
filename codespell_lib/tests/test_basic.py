@@ -76,8 +76,7 @@ def run_codespell(
         encoding="utf-8",
         check=False,
     )
-    count = int(proc.stderr.split("\n")[-2])
-    return count
+    return int(proc.stderr.split("\n")[-2])
 
 
 def test_command(tmp_path: Path) -> None:
@@ -1260,8 +1259,7 @@ def run_codespell_stdin(
     )
     output = proc.stdout
     # get number of lines
-    count = output.count("\n")
-    return count
+    return output.count("\n")
 
 
 def test_stdin(tmp_path: Path) -> None:
