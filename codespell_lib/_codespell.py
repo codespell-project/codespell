@@ -325,7 +325,11 @@ class NewlineHelpFormatter(argparse.HelpFormatter):
 
 def _toml_to_parseconfig(toml_dict: Dict[str, Any]) -> Dict[str, Any]:
     """Convert a dict read from a TOML file to the parseconfig.read_dict() format."""
-    return {k: "" if v is True else v for k, v in toml_dict.items() if v is not False}
+    return {
+        k: "" if v is True else ",".join(v) if isinstance(v, list) else v
+        for k, v in toml_dict.items()
+        if v is not False
+    }
 
 
 def _supports_ansi_colors() -> bool:
