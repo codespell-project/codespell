@@ -307,15 +307,6 @@ class NewlineHelpFormatter(argparse.HelpFormatter):
         return out
 
 
-def _toml_to_parseconfig(toml_dict: Dict[str, Any]) -> Dict[str, Any]:
-    """Convert a dict read from a TOML file to the parseconfig.read_dict() format."""
-    return {
-        k: "" if v is True else ",".join(v) if isinstance(v, list) else v
-        for k, v in toml_dict.items()
-        if v is not False
-    }
-
-
 def _supports_ansi_colors() -> bool:
     if sys.platform == "win32":
         # Windows Terminal enables ANSI escape codes by default. In other cases
@@ -346,6 +337,34 @@ def _supports_ansi_colors() -> bool:
         return True
 
     return False
+
+
+def _toml_to_parseconfig(toml_dict: Dict[str, Any]) -> Dict[str, Any]:
+    """Convert a dict read from a TOML file to the parseconfig.read_dict() format.
+
+    - Change lists into strings made of comma-separated strings.
+    - Change the value `True` to an empty string.
+    - Omit options with value `False`.
+    """
+    return {
+        k: "" if v is True else ",".join(v) if isinstance(v, list) else v
+        for k, v in toml_dict.items()
+        if v is not False
+    }
+
+
+def _config_to_argparse(value: str) -> str:
+    """Convert a value from a config file to the ArgumentParser.parse_args() format.
+
+    - Join multine values into a value with comma-separated substrings.
+    - Strip and get rid of duplicate commas.
+    """
+    return ",".join(
+        item.strip()
+        for line in value.splitlines()
+        for item in line.split(",")
+        if item.strip()
+    )
 
 
 def parse_options(
@@ -642,7 +661,7 @@ def parse_options(
             # If value is blank, skip.
             val = config["codespell"][key]
             if val:
-                cfg_args.append(val)
+                cfg_args.append(_config_to_argparse(val))
 
         # Parse config file options.
         options = parser.parse_args(cfg_args)
