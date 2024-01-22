@@ -27821,6 +27821,8 @@ hemipshere->hemisphere
 hemipsheres->hemispheres
 hemishpere->hemisphere
 hemishperes->hemispheres
+hemispere->hemisphere
+hemisperes->hemispheres
 hemlholtz->Helmholtz
 hemmorhage->haemorrhage, hemorrhage,
 hemmorhaged->haemorrhaged, hemorrhaged,
@@ -51119,7 +51121,10 @@ speration->separation
 sperations->separations
 sperator->separator
 sperators->separators
+spere->sphere
+speres->spheres
 sperhical->spherical
+sperical->spherical
 spermatozoan->spermatozoon
 speshal->special
 speshally->specially, especially,
