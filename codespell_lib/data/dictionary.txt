@@ -19025,6 +19025,8 @@ dialouges->dialogues
 diamater->diameter
 diamaters->diameters
 diamon->diamond
+diamonnd->diamond
+diamonnds->diamonds
 diamons->diamonds
 diamter->diameter
 diamters->diameters
@@ -21368,6 +21370,7 @@ efffectiveness->effectiveness
 efffects->effects
 efffort->effort
 effforts->efforts
+efficacity->efficacy
 efficcient->efficient
 efficencty->efficiency
 efficency->efficiency
@@ -21432,6 +21435,8 @@ ehther->ether, either,
 ehthernet->ethernet
 eiegn->eigen, reign,
 eighter->either
+eignvalue->eigenvalue
+eignvalues->eigenvalues
 eigth->eighth, eight,
 eihter->either
 einstance->instance
@@ -26808,6 +26813,10 @@ geneations->generations
 geneator->generator
 geneators->generators
 geneic->generic, genetic,
+genenerate->generate
+genenerated->generated
+genenerates->generates
+genenerating->generating
 geneological->genealogical
 geneologies->genealogies
 geneology->genealogy
@@ -30786,6 +30795,7 @@ inpsections->inspections
 inpsector->inspector
 inpsectors->inspectors
 inpsects->inspects
+inpt->input
 inpterpreter->interpreter
 inpu->input
 inpust->input, inputs,
@@ -35986,6 +35996,8 @@ nams->names
 namspace->namespace
 namspaces->namespaces
 nane->name
+nanoparicle->nanoparticle
+nanoparicles->nanoparticles
 nanosecod->nanosecond
 nanosecods->nanoseconds
 nanosencond->nanosecond
@@ -48649,6 +48661,7 @@ sensative->sensitive
 sensativity->sensitivity
 sensetive->sensitive
 sensetivity->sensitivity
+sensibile->sensible
 sensisble->sensible
 sensistive->sensitive
 sensistively->sensitively, sensitivity,
