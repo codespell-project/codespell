@@ -149,7 +149,7 @@ be specified in this file (without the preceding dashes), for example:
 
     [codespell]
     skip = *.po,*.ts,./src/3rdParty,./src/Test
-    count =
+    count = 
     quiet-level = 3
 
 The ``.codespellrc`` file is an `INI file <https://en.wikipedia.org/wiki/INI_file>`_,
@@ -166,7 +166,7 @@ is installed for versions of Python prior to 3.11. For example:
 
     [tool.codespell]
     skip = '*.po,*.ts,./src/3rdParty,./src/Test'
-    count = ''
+    count = true
     quiet-level = 3
 
 These are both equivalent to running:
