@@ -166,7 +166,7 @@ is installed for versions of Python prior to 3.11. For example:
 
     [tool.codespell]
     skip = '*.po,*.ts,./src/3rdParty,./src/Test'
-    count = ''
+    count = true
     quiet-level = 3
 
 These are both equivalent to running:
