@@ -28203,6 +28203,7 @@ hadnling->handling
 hadnt->hadn't
 haeder->header
 haemorrage->haemorrhage
+haemorrhagin->haemorrhaging
 haev->have, heave,
 hagas->haggis
 hagases->haggises
@@ -28238,6 +28239,7 @@ handkerchifs->handkerchiefs
 handleer->handler
 handleing->handling
 handlig->handling
+handlin->handling
 handlling->handling
 handlong->handling
 handsake->handshake
@@ -28248,6 +28250,7 @@ handshage->handshake
 handshages->handshakes
 handshaging->handshaking
 handshak->handshake
+handshakin->handshaking
 handshakng->handshaking
 handshakre->handshake
 handshakres->handshakes
@@ -28267,8 +28270,10 @@ handshkng->handshaking
 handshks->handshakes
 handskake->handshake
 handwirting->handwriting
+handwritin->handwriting
 hanel->handle
 hangig->hanging
+hangin->hanging, hang in,
 hankerchif->handkerchief
 hankerchifs->handkerchiefs
 hanlde->handle
@@ -28312,6 +28317,7 @@ happending->happening
 happends->happens
 happenend->happened
 happenes->happens, happened, happiness,
+happenin->happening, happen in,
 happenned->happened
 happenning->happening
 happennings->happenings
@@ -28325,11 +28331,13 @@ happpened->happened
 happpening->happening
 happpenings->happenings
 happpens->happens
+haranguin->haranguing
 harased->harassed
 harases->harasses
 harasment->harassment
 harasments->harassments
 harassement->harassment
+harassin->harassing, harass in,
 harcode->hardcode, charcode,
 harcoded->hardcoded
 harcodes->hardcodes, charcodes,
@@ -28366,6 +28374,7 @@ harwdare->hardware
 has'nt->hasn't
 hases->hashes
 hashi->hash
+hashin->hashing, hash in,
 hashreference->hash reference
 hashs->hashes
 hashses->hashes
@@ -28377,6 +28386,7 @@ hass->hash
 hastable->hashtable
 hastables->hashtables
 Hatian->Haitian
+hatin->hating, hat in,
 hauty->haughty
 hav->have, half,
 hava->have, have a,
@@ -28389,6 +28399,7 @@ havent't->haven't
 havent->haven't
 havew->have
 haviest->heaviest
+havin->having
 havind->having
 havn't->haven't
 havne't->haven't
@@ -28405,6 +28416,7 @@ heade->header, head,
 headerr->header
 headerrs->headers
 heades->headers, heads,
+headin->heading, head in,
 headle->handle
 headong->heading
 headquarer->headquarter
@@ -28460,6 +28472,7 @@ helpe->helper, help, helped,
 helpes->helps, helpers,
 helpfull->helpful
 helpfuly->helpfully
+helpin->helping, help in,
 helpped->helped
 helpying->helping
 hemipshere->hemisphere
@@ -28479,6 +28492,7 @@ hemoraged->haemorrhaged, hemorrhaged,
 hemorages->haemorrhages, hemorrhages,
 hemoragic->haemorrhagic, hemorrhagic,
 hemoraging->haemorrhaging, hemorrhaging,
+hemorrhagin->hemorrhaging
 henc->hence
 henderence->hindrance
 hendler->handler
@@ -28510,6 +28524,7 @@ hesistates->hesitates
 hesistating->hesitating
 hesistation->hesitation
 hesistations->hesitations
+hesitatin->hesitating, hesitation,
 hestiate->hesitate
 hetrogeneous->heterogeneous
 hetrogenous->heterogenous, heterogeneous,
@@ -28540,6 +28555,7 @@ hiddin->hidden, hiding,
 hidding->hiding, hidden,
 hideen->hidden
 hiden->hidden
+hidin->hiding, hid in,
 hiearchical->hierarchical
 hiearchically->hierarchically
 hiearchies->hierarchies
@@ -28644,10 +28660,12 @@ higlights->highlights
 higly->highly
 higth->height
 higway->highway
+hijackin->hijacking, hijack in,
 hijkack->hijack
 hijkacked->hijacked
 hijkacking->hijacking
 hijkacks->hijacks
+hikin->hiking
 hilight->highlight
 hilighted->highlighted
 hilighter->highlighter
@@ -28659,6 +28677,7 @@ himselv->himself
 hinderance->hindrance
 hinderence->hindrance
 hindrence->hindrance
+hintin->hinting, hint in,
 hipopotamus->hippopotamus
 hipoteses->hypotheses
 hipotesis->hypothesis
@@ -28688,6 +28707,7 @@ hirearcical->hierarchical
 hirearcically->hierarchically
 hirearcies->hierarchies
 hirearcy->hierarchy
+hirin->hiring
 hismelf->himself
 hisory->history
 histerical->historical, hysterical,
@@ -28719,6 +28739,7 @@ hitories->histories
 hitory->history
 hitsingles->hit singles
 hitted->hit
+hittin->hitting
 hiygeine->hygiene
 hmdi->hdmi
 hmtl->html
@@ -28744,6 +28765,7 @@ homogenoues->homogeneous
 homogenous->homogeneous
 homogenously->homogeneously
 homogenuous->homogeneous
+honorin->honoring, honor in,
 honory->honorary
 hoook->hook
 hoooks->hooks
@@ -28758,6 +28780,7 @@ hopeing->hoping
 hopful->hopeful
 hopfull->hopeful, hopefully,
 hopfully->hopefully
+hopin->hoping, hop in,
 hopmepage->homepage
 hopmepages->homepages
 hoppefully->hopefully
@@ -28786,6 +28809,7 @@ horphan->orphan
 horrable->horrible
 horray->hooray
 horrifing->horrifying
+horrifyin->horrifying, horrify in,
 horyzontally->horizontally
 horziontal->horizontal
 horziontally->horizontally
@@ -28805,6 +28829,7 @@ hould->hold, should,
 hounour->honour
 houres->hours
 housand->thousand
+housekeepin->housekeeping
 houskeeping->housekeeping
 housr->hours, house,
 hovever->however
@@ -28874,6 +28899,7 @@ hundreths->hundredths
 hundrets->hundreds
 hungs->hangs, hung,
 hunrgy->hungry
+huntin->hunting, hunt in,
 huricane->hurricane
 huristic->heuristic
 huristics->heuristics
@@ -28922,6 +28948,7 @@ hypens->hyphens
 hyperboly->hyperbole
 Hyperldger->Hyperledger
 hypervior->hypervisor
+hyphenatin->hyphenating, hyphenation,
 hypocracy->hypocrisy
 hypocrasy->hypocrisy
 hypocricy->hypocrisy
@@ -28937,6 +28964,7 @@ hypotetical->hypothetical
 hypotetically->hypothetically
 hypothenuse->hypotenuse
 hypothenuses->hypotenuses
+hypothesizin->hypothesizing
 hypter->hyper
 hyptotheses->hypotheses
 hyptothesis->hypothesis
