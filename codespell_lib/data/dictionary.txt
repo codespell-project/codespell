@@ -25540,6 +25540,7 @@ fabircated->fabricated
 fabircates->fabricates
 fabircatings->fabricating
 fabircation->fabrication
+fabricatin->fabricating, fabrication,
 facce->face
 facedrwaing->facedrawing, face drawing,
 faceis->faces, face is,
@@ -25547,6 +25548,7 @@ faciliate->facilitate
 faciliated->facilitated
 faciliates->facilitates
 faciliating->facilitating
+facilitatin->facilitating, facilitation,
 facilites->facilities
 facilitiate->facilitate
 facilitiates->facilitates
@@ -25568,10 +25570,12 @@ facourite->favourite
 facourites->favourites
 facours->favours
 factization->factorization
+factorin->factoring, factor in,
 factorizaiton->factorization
 factorys->factories
 facttories->factories
 facttory->factory
+fadin->fading, fad in,
 fadind->fading
 faeture->feature
 faetures->features
@@ -25588,6 +25592,7 @@ failicies->facilities
 failicy->facility
 failied->failed
 failiing->failing
+failin->failing, fail in,
 failiure->failure
 failiures->failures
 failiver->failover
@@ -25645,6 +25650,7 @@ fallbck->fallback
 fallbcks->fallbacks
 falled->failed, fell, fallen, felled,
 fallhrough->fallthrough
+fallin->falling, fall in,
 fallthough->fallthrough
 fallthruogh->fallthrough
 falltrough->fallthrough
@@ -25658,6 +25664,7 @@ falsks->flasks
 falsly->falsely
 falso->false
 falt->fault, flat,
+falterin->faltering, falter in,
 falure->failure
 falures->failures
 familar->familiar
@@ -25706,6 +25713,7 @@ fasened->fastened
 fasening->fastening
 fasens->fastens, fasels,
 fases->fazes, phases,
+fashionin->fashioning, fashion in,
 fashism->fascism
 fashist->fascist
 fashists->fascists
@@ -25721,6 +25729,7 @@ fasodd->facade
 fasodds->facades
 fassade->facade
 fassinate->fascinate
+fastenin->fastening, fasten in,
 fasterner->fastener
 fasterners->fasteners
 fastner->fastener
@@ -25746,10 +25755,12 @@ fauture->feature
 fautured->featured
 fautures->features
 fauturing->featuring
+favorin->favoring, favor in,
 favoutrable->favourable
 favritt->favorite
 favuourites->favourites
 faymus->famous
+fazin->fazing
 fcound->found
 feasabile->feasible
 feasability->feasibility
@@ -25768,6 +25779,7 @@ featchure->feature
 featchured->featured
 featchures->features
 featchuring->featuring
+featherin->feathering, feather in,
 featre->feature
 featred->featured
 featres->features
@@ -25785,6 +25797,7 @@ featues->features
 featuing->featuring
 featur->feature
 featurd->featured
+featurin->featuring
 featurng->featuring
 featurs->features
 feautre->feature
@@ -25833,6 +25846,7 @@ fertil->fertile
 fertily->fertility
 fetaure->feature
 fetaures->features
+fetchin->fetching, fetch in,
 fetchs->fetches
 feture->feature, future,
 fetured->featured
@@ -25898,8 +25912,10 @@ figgure->figure
 figgured->figured
 figgures->figures
 figguring->figuring
+fightin->fighting, fight in,
 fightings->fighting
 figurestyle->figurestyles
+figurin->figuring
 fiield->field
 fiields->fields
 filal->final
@@ -25964,6 +25980,7 @@ fille->file, fill, filled,
 fillement->filament
 fillements->filaments
 filles->files, fills, filled,
+fillin->filling, fill in,
 filll->fill
 fillled->filled
 filller->filler
@@ -26004,6 +26021,8 @@ fimware->firmware
 finacial->financial
 finailse->finalise
 finailze->finalize
+finalisin->finalising
+finalizin->finalizing
 finall->finally, final,
 finalle->finale, finally,
 finallly->finally
@@ -26065,6 +26084,7 @@ finised->finished
 finishd->finished
 finishe->finished, finish,
 finishied->finished
+finishin->finishing, finish in,
 finishs->finishes
 finising->finishing
 finitel->finite
@@ -26096,6 +26116,7 @@ firendly->friendly
 firends->friends, fiends,
 firest->fires, first,
 firey->fiery
+firin->firing, fir in,
 firmare->firmware
 firmaware->firmware
 firmawre->firmware
@@ -26143,6 +26164,7 @@ fixeing->fixing
 fixel->pixel
 fixels->pixels
 fixeme->fixme
+fixin->fixing, fix in,
 fixwd->fixed
 fizeek->physique
 flacor->flavor
@@ -26170,12 +26192,17 @@ flaoting->floating
 flase->false, flake, flame, flare, flash, flask,
 flashflame->flashframe
 flashig->flashing
+flashin->flashing, flash in,
 flasing->flashing
 flass->class, glass, flask, flash,
 flate->flat
 flatened->flattened
 flattend->flattened
+flattenin->flattening, flatten in,
 flattenning->flattening
+flatterin->flattering, flatter in,
+flavorin->flavoring, flavor in,
+flavourin->flavouring, flavour in,
 flawess->flawless
 flawessly->flawlessly
 flawlessy->flawlessly
@@ -26199,6 +26226,7 @@ fliped->flipped
 fliper->flipper
 flipers->flippers
 fliping->flipping
+flippin->flipping
 fliter->filter
 flitered->filtered
 flitering->filtering
@@ -26207,6 +26235,8 @@ floading->floating, flooding,
 floading-add->floating-add
 floaing->floating, flowing,
 floatation->flotation
+floatin->floating, float in,
+floodin->flooding, flood in,
 flor->floor, flow,
 floresent->fluorescent, florescent,
 floride->fluoride
@@ -26214,7 +26244,9 @@ floting->floating
 flourescent->fluorescent, florescent,
 flouride->fluoride
 flourine->fluorine
+flourishin->flourishing, flourish in,
 flourishment->flourishing
+flowin->flowing, flow in,
 flter->filter, falter, flutter, flatter, floater,
 fltered->filtered, faltered, fluttered, flattered,
 fltering->filtering, faltering, fluttering, flattering,
@@ -26224,8 +26256,10 @@ flud->flood
 fluorish->flourish
 fluoroscent->fluorescent
 fluroescent->fluorescent
+flushin->flushing, flush in,
 flushs->flushes
 flusing->flushing
+flutterin->fluttering, flutter in,
 flyes->flies, flyers,
 fnction->function
 fnctions->functions
@@ -26243,6 +26277,7 @@ focued->focused
 focument->document
 focuse->focus
 focusf->focus
+focusin->focusing, focus in,
 focuss->focus
 foded->folded, coded, faded, forded, boded,
 foder->folder, coder,
@@ -26256,6 +26291,7 @@ fogotten->forgotten
 fointers->pointers
 folde->folder, fold,
 foldes->folders, folder, folds,
+foldin->folding, fold in,
 foler->folder
 folers->folders
 folfer->folder
@@ -26524,6 +26560,7 @@ forbad->forbade
 forbatum->verbatim
 forbbiden->forbidden
 forbidded->forbidden, forbade,
+forbiddin->forbidding
 forbiden->forbidden
 forbit->forbid
 forbiten->forbidden
@@ -26536,11 +26573,14 @@ forcasters->forecasters
 forcasting->forecasting
 forcasts->forecasts
 forceably->forcibly
+forcin->forcing
 forcot->forgot
 forcus->focus, forces,
 forcused->focused
 forcuses->focuses
 forcusing->focusing
+fordin->fording, ford in,
+forecastin->forecasting, forecast in,
 forece->force
 foreced->forced
 foreces->forces
@@ -26552,16 +26592,21 @@ foregronds->foregrounds
 foreing->foreign
 forementionned->aforementioned
 forermly->formerly
+foreseein->foreseeing, foresee in,
+foretellin->foretelling, foretell in,
 foreward->forward, foreword, forewarn,
 forewarded->forwarded, forewarned,
 forewarding->forwarding, forewarning,
 forewards->forwards, forewords, forewarns,
+forewarnin->forewarning, forewarn in,
+forfeitin->forfeiting, forfeit in,
 forfiet->forfeit
 forfit->forfeit
 forfited->forfeited
 forfiting->forfeiting
 forfits->forfeits
 forgeround->foreground
+forgettin->forgetting
 forgoten->forgotten
 forgotton->forgotten
 forground->foreground
@@ -26574,6 +26619,7 @@ forld->fold
 forlder->folder
 forlders->folders
 Formalhaut->Fomalhaut
+formalizin->formalizing
 formallize->formalize
 formallized->formalized
 formaly->formally, formerly,
@@ -26589,6 +26635,7 @@ formating->formatting
 formatteded->formatted
 formattgin->formatting
 formattied->formatted
+formattin->formatting
 formattind->formatting
 formattings->formatting
 formattring->formatting
@@ -26628,6 +26675,7 @@ formualations->formulations
 formuale->formulae
 formuals->formulas
 formulaical->formulaic
+formulatin->formulating, formulation,
 formulayic->formulaic
 formware->firmware
 fornat->format
@@ -26651,6 +26699,7 @@ fortan->fortran
 fortat->format
 forteen->fourteen
 fortelling->foretelling
+forthcomin->forthcoming
 forthcominng->forthcoming
 forthcomming->forthcoming
 forthe->for the, forth, forte,
@@ -26676,6 +26725,7 @@ forwaded->forwarded
 forwading->forwarding
 forwads->forwards
 forwardig->forwarding
+forwardin->forwarding, forward in,
 forwared->forwarded, forward,
 forwareded->forwarded
 forwareding->forwarding
@@ -26710,6 +26760,7 @@ foult->fault
 foults->faults
 foundaries->foundries
 foundary->foundry
+foundin->founding, found in,
 Foundland->Newfoundland
 fourh->fourth
 fourties->forties
@@ -26739,6 +26790,7 @@ fragmenetd->fragmented
 fragmeneted->fragmented
 fragmeneting->fragmenting
 fragmenets->fragments
+fragmentin->fragmenting, fragment in,
 fragmentization->fragmentation
 fragmnet->fragment
 fram->frame, gram, dram, cram,
@@ -26753,6 +26805,7 @@ framewoek->framework
 framewoeks->frameworks
 frameword->framework
 frameworkk->framework
+framin->framing
 framlayout->framelayout
 framming->framing
 frams->frames, grams, drams, crams,
@@ -26797,7 +26850,9 @@ freeezers->freezers
 freeezes->freezes
 freeezing->freezing
 freez->frees, freeze,
+freezin->freezing
 freezs->freezes
+freightin->freighting, freight in,
 freind->friend
 freindly->friendly
 freinds->friends
@@ -26941,6 +26996,7 @@ fugures->figures
 fule->file
 fulfiled->fulfilled
 fulfiling->fulfilling
+fulfillin->fulfilling, fulfill in,
 fullfil->fulfil, fulfill,
 fullfiled->fulfilled
 fullfiling->fulfilling
@@ -27064,6 +27120,7 @@ functionaltiies->functionalities
 functionaltiy->functionality
 functionalty->functionality
 functionaly->functionally, functionality,
+functionin->functioning, function in,
 functionionalities->functionalities
 functionionality->functionality
 functionlities->functionalities
