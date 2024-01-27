@@ -33537,6 +33537,8 @@ labbeled->labeled, labelled,
 labbels->labels
 labed->labeled, labelled,
 labeld->labelled
+labelin->labeling, label in,
+labellin->labelling
 labirinth->labyrinth
 lable->label, ladle, labile, able,
 labled->labeled, labelled,
@@ -33544,6 +33546,7 @@ lablel->label
 lablels->labels
 lables->labels
 labling->labeling, labelling,
+laborin->laboring, labor in,
 labouriously->laboriously
 labratory->laboratory
 labrynth->labyrinth
@@ -33556,6 +33559,7 @@ lackers->lacquers
 lackrimose->lachrymose
 lackrimosity->lachrymosity
 lackrimosly->lachrymosely
+lacquerin->lacquering, lacquer in,
 laer->later, layer,
 laest->least, latest,
 laf->laugh, leaf, loaf, lad, lag, lac, kaf, kaph,
@@ -33579,6 +33583,7 @@ lanauage->language
 lanauages->languages
 lanauge->language
 lanauges->languages
+lancin->lancing
 langage->language
 langages->languages
 langague->language
@@ -33710,10 +33715,12 @@ laucher->launcher
 lauchers->launchers
 lauches->launches
 lauching->launching
+laughin->laughing, laugh in,
 laugnage->language
 laugnages->languages
 lauguage->language
 lauguages->languages
+launchin->launching, launch in,
 launchs->launch, launches,
 launck->launch
 laungage->language
@@ -33734,6 +33741,7 @@ lavelled->leveled, labelled,
 lavelling->levelling, labelling,
 lavels->levels, labels,
 layed->laid
+layerin->layering, layer in,
 layou->layout
 layringes->larynges
 layrinks->larynx
@@ -33781,11 +33789,14 @@ leaglity->legality
 leaglize->legalize
 leaneant->lenient
 leaneantly->leniently
+leanin->leaning, lean in,
 leanr->lean, learn, leaner,
 leapyear->leap year
 leapyears->leap years
+learnin->learning, learn in,
 leary->leery
 leaset->least
+leasin->leasing, leas in,
 leasure->leisure
 leasurely->leisurely
 leasures->leisures
@@ -33794,6 +33805,7 @@ leat->lead, leak, least, leaf,
 leathal->lethal
 leats->least
 leaveing->leaving
+leavin->leaving
 leavong->leaving
 leeg->league
 leegs->leagues
@@ -33806,6 +33818,7 @@ lefted->left
 legac->legacy
 legact->legacy
 legalimate->legitimate
+legalizin->legalizing
 legasy->legacy
 legecies->legacies
 legecy->legacy
@@ -33848,6 +33861,7 @@ lenghty->lengthy
 lengt->length
 lengten->lengthen
 lengtext->longtext
+lengthenin->lengthening, lengthen in,
 lengthes->lengths
 lengthh->length
 lengthly->lengthy, lengthwise, lengthily,
@@ -33882,11 +33896,14 @@ leutenant->lieutenant
 levae->leave, levee,
 levaridge->leverage
 leve->level, levee,
+levelin->leveling, level in,
+levellin->levelling
 leves->levels, levees,
 levetate->levitate
 levetated->levitated
 levetates->levitates
 levetating->levitating
+levitatin->levitating, levitation,
 levl->level
 levle->level
 lew->lieu, hew, sew, dew,
@@ -33905,6 +33922,7 @@ leyering->layering
 leyers->layers
 leyout->layout
 leyouts->layouts
+liaisin->liaising
 liares->liars
 liase->liaise
 liased->liaised
@@ -33981,6 +33999,7 @@ licemses->licenses
 licenceing->licencing
 licencse->license, licenses,
 licens->license
+licensin->licensing
 licese->license
 licesed->licensed
 liceses->licenses
@@ -34030,6 +34049,8 @@ lighing->lighting
 lighning->lightning
 lightbulp->lightbulb
 lightbulps->lightbulbs
+lightin->lighting, light in,
+lightnin->lightning
 lightweigh->lightweight
 lightwieght->lightweight
 lightwight->lightweight
@@ -34077,6 +34098,7 @@ limitier->limiter
 limitiers->limiters
 limitiing->limiting
 limitimg->limiting
+limitin->limiting, limit in,
 limition->limitation
 limitions->limitations
 limitis->limits
@@ -34146,6 +34168,7 @@ linkes->links, linked, likes, lines,
 linkfy->linkify
 linnaena->linnaean
 lintain->lintian
+lintin->linting, lint in,
 linz->lines
 lippizaner->lipizzaner
 liquify->liquefy
@@ -34181,6 +34204,7 @@ listeing->listening
 listeneing->listening
 listeneres->listeners
 listenes->listens
+listenin->listening, listen in,
 listenn->listen
 listenned->listened
 listenner->listener
@@ -34198,6 +34222,7 @@ listenters->listeners
 listenting->listening
 listents->listens
 listernes->listeners
+listin->listing, list in,
 listned->listened
 listner->listener
 listners->listeners
@@ -34233,6 +34258,7 @@ livel->level
 livels->levels
 livetime->lifetime
 livetimes->lifetimes
+livin->living
 livley->lively
 lizens->license
 lizense->license
@@ -34316,6 +34342,7 @@ locaizer->localizer
 locaizes->localizes
 localation->location
 localed->located
+localizin->localizing
 localtion->location
 localtions->locations
 localy->locally
@@ -34324,6 +34351,7 @@ locatin->location, locating,
 locatins->locations
 loccked->locked
 locgical->logical
+lockin->locking, lock in,
 lockingf->locking
 locla->local
 loclae->locale
@@ -34347,6 +34375,7 @@ lodable->loadable
 loded->loaded
 loder->loader
 loders->loaders
+lodgin->lodging
 loding->loading
 loev->love
 logarithimic->logarithmic
@@ -34391,6 +34420,7 @@ lonber->longer, loner,
 lond->long
 lonelyness->loneliness
 long-runnign->long-running
+long-runnin->long-running
 longe->longer, lounge,
 longers->longer
 longitudonal->longitudinal
@@ -34422,6 +34452,7 @@ losd->lost, loss, lose, load,
 losely->loosely
 losen->loosen
 losened->loosened
+losin->losing
 losted->listed, lost, lasted,
 lotation->rotation, flotation,
 lotharingen->Lothringen
@@ -34449,6 +34480,7 @@ lushisly->lusciously
 lveo->love
 lvoe->love
 Lybia->Libya
+lyin->lying
 maake->make
 maange->manage
 maanged->managed
