@@ -16899,6 +16899,7 @@ daita->data
 dake->take
 dalmation->Dalmatian
 dalta->delta
+damagin->damaging
 damamge->damage
 damamged->damaged
 damamges->damages
@@ -16914,9 +16915,13 @@ damge->damage
 daming->damning, damping, gaming, doming,
 dammage->damage
 dammages->damages
+damnin->damning, damn in,
 damons->daemons, demons,
+dampin->damping, damp in,
 danceing->dancing
+dancin->dancing
 dandidates->candidates
+dandlin->dandling
 dangereous->dangerous
 daplicating->duplicating
 Dardenelles->Dardanelles
@@ -16990,6 +16995,7 @@ datecreatedd->datecreated
 datection->detection
 datections->detections
 datee->date
+datin->dating
 datset->dataset
 datsets->datasets
 daty->data, date,
@@ -17050,6 +17056,7 @@ deacitvated->deactivated
 deacriptor->descriptor, decryptor,
 deacriptors->descriptors, decryptors,
 deactivatiion->deactivation
+deactivatin->deactivating, deactivation,
 deactive->deactivate
 deactiveate->deactivate
 deactived->deactivated
@@ -17072,6 +17079,7 @@ deaktivate->deactivate
 deaktivated->deactivated
 dealed->dealt
 dealilng->dealing
+dealin->dealing, deal in,
 dealloacte->deallocate
 deallocaed->deallocated
 dealocate->deallocate
@@ -17208,9 +17216,12 @@ decceleration->deceleration
 deccrement->decrement
 deccremented->decremented
 deccrements->decrements
+deceasin->deceasing
 deceber->December
+deceivin->deceiving
 decelaration->declaration, deceleration,
 decelarations->declarations, decelerations,
+deceleratin->decelerating, deceleration,
 Decemer->December
 decend->descend
 decendant->descendant
@@ -17221,6 +17232,7 @@ decendentant->descendant
 decendentants->descendants
 decendents->descendents, descendants,
 decending->descending
+decentralizin->decentralizing
 decern->discern
 decerned->discerned
 decerning->discerning
@@ -17236,6 +17248,7 @@ decidated->dedicated
 decidates->dedicates
 decideable->decidable
 decidely->decidedly
+decidin->deciding
 decie->decide
 decied->decide, decided,
 deciedd->decided
@@ -17274,6 +17287,7 @@ declarayion->declaration
 declarayions->declarations
 declard->declared
 declarded->declared
+declarin->declaring
 declaritive->declarative
 declaritively->declaratively
 declarnig->declaring
@@ -17344,12 +17358,15 @@ decocdings->decodings
 decodded->decoded
 decodding->decoding
 decodeing->decoding
+decodin->decoding
 decomissioned->decommissioned
 decomissioning->decommissioning
+decommissionin->decommissioning, decommission in,
 decommissionn->decommission
 decommissionned->decommissioned
 decommpress->decompress
 decomoposition->decomposition
+decomposin->decomposing
 decomposion->decomposition
 decomposit->decompose
 decomposited->decomposed
@@ -17368,6 +17385,7 @@ decompresion->decompression
 decompresor->decompressor
 decompressd->decompressed
 decompresser->decompressor
+decompressin->decompressing, decompress in, decompression,
 decompresssion->decompression
 decompse->decompose
 decond->decode
@@ -17417,6 +17435,7 @@ decrasing->decreasing, deceasing,
 decration->decoration
 decreace->decrease
 decreas->decrease
+decreasin->decreasing
 decreate->decrease, discrete, destroy, desecrate,
 decremeant->decrement
 decremeantal->decremental
@@ -17426,6 +17445,7 @@ decremeants->decrements
 decremenet->decrement
 decremenetd->decremented
 decremeneted->decremented
+decrementin->decrementing, decrement in,
 decrese->decrease
 decresing->decreasing, deceasing,
 decress->decrees
@@ -17493,6 +17513,7 @@ dedidates->dedicates
 dedly->deadly
 deductable->deductible
 deductables->deductibles
+deductin->deducting, deduct in, deduction,
 deduplacate->deduplicate
 deduplacated->deduplicated
 deduplacates->deduplicates
@@ -17516,6 +17537,7 @@ deeep->deep
 deelte->delete
 deendencies->dependencies
 deendency->dependency
+deepenin->deepening, deepen in,
 deepo->depot
 deepos->depots
 deesil->diesel
@@ -17565,6 +17587,7 @@ defaulrts->defaults
 defauls->default, defaults,
 defaulst->defaults, default,
 defaultet->defaulted
+defaultin->defaulting, default in,
 defaulty->default
 defauly->default
 defaulys->defaults
@@ -17586,6 +17609,7 @@ defeaulted->defaulted
 defeaulting->defaulting
 defeaults->defaults
 defecit->deficit
+defectin->defecting, defect in, defection,
 defeine->define
 defeines->defines
 defenate->definite
@@ -17613,6 +17637,7 @@ deferentiator->differentiator
 deferentiators->differentiators
 defering->deferring
 deferreal->deferral
+deferrin->deferring
 deffault->default
 deffaulted->defaulted
 deffaults->defaults
@@ -17675,6 +17700,7 @@ definied->defined
 definiet->definite
 definietly->definitely
 definifiton->definition
+definin->defining
 definine->define, definite,
 definined->defined
 defininely->definitely
@@ -17739,6 +17765,7 @@ defishantly->deficiently
 defition->definition
 defitions->definitions
 deflaut->default
+deflectin->deflecting, deflect in, deflection,
 defned->defend, defined,
 defninition->definition
 defninitions->definitions
@@ -17758,6 +17785,7 @@ defult->default
 defulted->defaulted
 defulting->defaulting
 defults->defaults
+defusin->defusing
 degenarate->degenerate
 degenarated->degenerated
 degenarates->degenerates
@@ -17767,6 +17795,7 @@ degenerage->degenerate
 degeneraged->degenerated
 degenerages->degenerates
 degeneraging->degenerating
+degeneratin->degenerating, degeneration,
 degenracy->degeneracy
 degenrate->degenerate
 degenrated->degenerated
@@ -17861,6 +17890,7 @@ delection->detection, deletion, selection,
 delections->detections, deletions, selections,
 delegater->delegator, delegated, delegates, delegate,
 delegaters->delegators, delegates,
+delegatin->delegating, delegation,
 delele->delete
 delelete->delete
 deleleted->deleted
@@ -17882,6 +17912,7 @@ deletetes->deletes
 deleteting->deleting
 deletetion->deletion
 deletetions->deletions
+deletin->deleting, deletion,
 deletiong->deletion, deleting,
 delets->deletes
 delevop->develop
@@ -17933,6 +17964,7 @@ delimitier->delimiter
 delimitiers->delimiters
 delimitiing->delimiting
 delimitimg->delimiting
+delimitin->delimiting, delimit in,
 delimition->delimitation
 delimitions->delimitations
 delimitis->delimits
@@ -17957,6 +17989,7 @@ delivared->delivered
 delivative->derivative
 delivatives->derivatives
 deliverate->deliberate
+deliverin->delivering, deliver in,
 delivermode->deliverymode
 deliverying->delivering
 deliverys->deliveries, delivers,
@@ -17977,6 +18010,7 @@ delvery->delivery
 demagog->demagogue
 demagogs->demagogues
 demaind->demand
+demandin->demanding, demand in,
 demaned->demand, demeaned,
 demenor->demeanor
 demension->dimension
@@ -17991,6 +18025,7 @@ demolishon->demolition
 demolision->demolition
 demoninator->denominator
 demoninators->denominators
+demonizin->demonizing
 demonstate->demonstrate
 demonstated->demonstrated
 demonstates->demonstrates
@@ -18004,6 +18039,7 @@ demonstratable->demonstrable
 demonstratably->demonstrably
 demonstrater->demonstrator, demonstrated, demonstrates, demonstrate,
 demonstraters->demonstrators, demonstrates,
+demonstratin->demonstrating, demonstration,
 demonstrats->demonstrates
 demorcracy->democracy
 demostrate->demonstrate
@@ -18013,6 +18049,7 @@ demostrating->demonstrating
 demostration->demonstration
 demudulator->demodulator
 denegrating->denigrating
+denigratin->denigrating, denigration,
 denine->define, adenine, dentine,
 denined->denied, defined,
 denines->defines, denies,
@@ -18210,6 +18247,7 @@ dependices->dependencies, dependences,
 dependicies->dependencies
 dependicy->dependency
 dependig->depending
+dependin->depending, depend in,
 dependnce->dependence
 dependnces->dependences
 dependncies->dependencies
@@ -18281,6 +18319,7 @@ deploiments->deployments
 deployd->deploy, deployed,
 deployement->deployment
 deployements->deployments
+deployin->deploying, deploy in,
 deploymenet->deployment
 deploymenets->deployments
 deply->deploy, deeply,
@@ -18320,6 +18359,7 @@ depolyment->deployment
 depolyments->deployments
 depolys->deploys
 deporarily->temporarily
+deposin->deposing
 deposint->deposing
 depoy->deploy, depot, decoy,
 depoyed->deployed
@@ -18344,11 +18384,13 @@ depreates->deprecates
 depreating->deprecating
 depreation->deprecation
 deprecatedf->deprecated
+deprecatin->deprecating, deprecation,
 depreceate->deprecate, depreciate,
 depreceated->deprecated, depreciated,
 depreceates->deprecates, depreciates,
 depreceating->depreciating, deprecating,
 depreceation->depreciation, deprecation,
+depreciatin->depreciating, depreciation,
 deprectae->deprecate
 deprectaed->deprecated
 deprectaes->deprecates
@@ -18381,6 +18423,7 @@ dequed->dequeued
 dequeing->dequeuing
 deques->dequeues
 derageable->dirigible
+derailin->derailing, derail in,
 deram->dram, dream,
 derect->direct, detect, defect, erect,
 derected->directed, detected, defected, erected,
@@ -18457,6 +18500,7 @@ derivativ->derivative
 derivativs->derivatives
 deriver->derive, driver,
 deriviated->derived
+derivin->deriving
 derivitive->derivative
 derivitives->derivatives
 derivitivs->derivatives
@@ -18513,6 +18557,7 @@ descendands->descendants
 descendat->descendant
 descendats->descendants
 descendend->descended, descendent, descendant,
+descendin->descending, descend in,
 descentences->descendants, descendents,
 descibe->describe
 descibed->described
@@ -18566,6 +18611,7 @@ descrete->discrete
 describ->describe
 describbed->described
 describibg->describing
+describin->describing
 describng->describing
 describs->describes, describe,
 describtion->description
@@ -18716,6 +18762,7 @@ deselctable->deselectable
 deselctables->deselectable
 deselcted->deselected
 deselcting->deselecting
+deselectin->deselecting, deselect in, deselection,
 desepears->disappears
 deserailisation->deserialisation
 deserailise->deserialise
@@ -18788,6 +18835,7 @@ desiging->designing, desiring,
 desigining->designing
 desigins->designs
 designd->designed
+designin->designing, design in,
 desigs->designs
 desination->destination
 desinations->destinations
@@ -18812,6 +18860,7 @@ desintegration->disintegration
 desinty->density, destiny,
 desipite->despite
 desireable->desirable
+desirin->desiring
 desision->decision
 desisions->decisions
 desitable->desirable
@@ -18969,9 +19018,11 @@ destroing->destroying
 destrois->destroys
 destroyd->destroyed, destroys,
 destroyes->destroys
+destroyin->destroying, destroy in,
 destruciton->destruction
 destructer->destructor, destruct,
 destructers->destructors, destructs,
+destructin->destructing, destruct in, destruction,
 destructro->destructor
 destructros->destructors
 destruktor->destructor
@@ -19000,9 +19051,11 @@ desturtors->destructors
 desychronize->desynchronize
 desychronized->desynchronized
 detabase->database
+detachin->detaching, detach in,
 detachs->detaches
 detahced->detached
 detaild->detailed
+detailin->detailing, detail in,
 detaill->detail
 detailled->detailed
 detailling->detailing
@@ -19047,6 +19100,7 @@ detecter->detector, detected,
 detecters->detectors
 detectes->detects
 detectetd->detected
+detectin->detecting, detect in, detection,
 detectiona->detection, detections,
 detectsion->detection
 detectsions->detections
@@ -19075,6 +19129,7 @@ deteriate->deteriorate
 deterimine->determine
 deterimined->determined
 deterine->determine
+deterioratin->deteriorating, deterioration,
 deterioriating->deteriorating
 determaine->determine
 determenant->determinant
@@ -19090,6 +19145,7 @@ determindes->determines, determined,
 determinee->determine
 determineing->determining
 determing->determining, determine,
+determinin->determining
 determinining->determining
 determinisitic->deterministic
 determinisitically->deterministically
@@ -19145,6 +19201,7 @@ deubug->debug
 deubuging->debugging
 deug->debug
 deugging->debugging
+devastatin->devastating, devastation,
 devasted->devastated
 devation->deviation
 devault->default
@@ -19169,6 +19226,7 @@ developement->development
 developements->developments
 developemnt->development
 developemnts->developments
+developin->developing, develop in,
 developme->development, develop me,
 developmemt->development
 developmet->development
@@ -19227,6 +19285,7 @@ devestating->devastating
 devfine->define
 devfined->defined
 devfines->defines
+deviatin->deviating, deviation,
 devic->device
 devicde->device
 devicdes->devices
@@ -19339,6 +19398,7 @@ diagnoal->diagonal
 diagnoals->diagonals
 diagnol->diagonal
 diagnosics->diagnostics
+diagnosin->diagnosing
 diagnositc->diagnostic
 diagnositcs->diagnostics
 diagnostioc->diagnostic
@@ -19352,6 +19412,7 @@ diagonaly->diagonally
 diagrama->diagram
 diagramas->diagrams
 diagramm->diagram
+diagrammin->diagramming
 diagramms->diagrams
 diagronalization->diagonalization
 diagronalizations->diagonalizations
@@ -19361,6 +19422,7 @@ dialgo->dialog
 dialgos->dialogs
 dialig->dialog
 dialigs->dialogs
+dialin->dialing, dial in,
 dialoge->dialog, dialogue,
 dialoges->dialogs, dialogues,
 dialouge->dialogue
@@ -19587,6 +19649,7 @@ differentes->differences, difference, different,
 differentiater->differentiator, differentiated, differentiates, differentiate,
 differentiaters->differentiators, differentiates,
 differentiatiations->differentiations
+differentiatin->differentiating, differentiation,
 differentiaton->differentiation
 differentl->differently
 differents->different, difference,
@@ -19598,6 +19661,7 @@ differientiate->differentiate
 differientiated->differentiated
 differientiates->differentiates
 differientiating->differentiating
+differin->differing, differ in,
 differnce->difference
 differnces->differences
 differnciate->differentiate
@@ -19662,6 +19726,7 @@ diffuculties->difficulties
 diffuculty->difficulty
 diffues->diffuse, defuse,
 diffult->difficult
+diffusin->diffusing, diffusion,
 diffussion->diffusion
 diffussive->diffusive
 dificult->difficult
@@ -19685,6 +19750,7 @@ difusion->diffusion
 difusive->diffusive
 difussion->diffusion
 difussive->diffusive
+digestin->digesting, digest in, digestion,
 digesty->digest
 diggest->digest, biggest,
 diggested->digested
@@ -19703,6 +19769,7 @@ digitalize->digitize
 digitalizing->digitizing
 digitial->digital
 digitis->digits
+digitizin->digitizing
 dignose->diagnose
 dignosed->diagnosed
 dignoses->diagnoses
@@ -19976,6 +20043,7 @@ disabiltities->disabilities
 disabiltitiy->disability
 disabing->disabling
 disabl->disable
+disablin->disabling
 disablle->disable
 disadvantadge->disadvantage
 disaggretate->disaggregate
@@ -19991,6 +20059,7 @@ disalbes->disables
 disalbing->disabling
 disale->disable
 disaled->disabled
+disallowin->disallowing, disallow in,
 disalow->disallow
 disambigouate->disambiguate
 disambiguaiton->disambiguation
@@ -20024,6 +20093,7 @@ disapparing->disappearing
 disappars->disappears
 disappearaing->disappearing
 disappeard->disappeared
+disappearin->disappearing, disappear in,
 disappearred->disappeared
 disapper->disappear
 disapperar->disappear
@@ -20038,6 +20108,7 @@ disapplined->disciplined
 disapplines->disciplines
 disapplining->disciplining
 disapplins->disciplines
+disappointin->disappointing, disappoint in,
 disapporval->disapproval
 disapporve->disapprove
 disapporved->disapproved
@@ -20048,14 +20119,17 @@ disapprouve->disapprove
 disapprouved->disapproved
 disapprouves->disapproves
 disapprouving->disapproving
+disapprovin->disapproving
 disaproval->disapproval
 disard->discard
 disariable->desirable
 disasembler->disassembler
 disassebled->disassembled
+disassemblin->disassembling
 disassocate->disassociate
 disassocation->disassociation
 disassocations->disassociations
+disassociatin->disassociating, disassociation,
 disasssembler->disassembler
 disasterous->disastrous
 disatisfaction->dissatisfaction
@@ -20071,6 +20145,7 @@ disble->disable
 disbled->disabled
 disbles->disables
 disbling->disabling
+discardin->discarding, discard in,
 discared->discarded, discard,
 discareded->discarded
 discarge->discharge
@@ -20111,10 +20186,13 @@ disccussing->discussing
 disccussion->discussion
 disccussions->discussions
 discernable->discernible
+discernin->discerning, discern in,
 dischare->discharge
 discimenation->dissemination
+disciplinin->disciplining
 disciplins->disciplines
 disclamer->disclaimer
+disclosin->disclosing
 disconecct->disconnect
 disconeccted->disconnected
 disconeccting->disconnecting
@@ -20147,6 +20225,7 @@ disconetions->disconnections
 disconets->disconnects
 disconnec->disconnect
 disconneced->disconnected
+disconnectin->disconnecting, disconnect in, disconnection,
 disconnet->disconnect
 disconneted->disconnected
 disconneting->disconnecting
@@ -20171,6 +20250,7 @@ discoved->discovered
 discoverd->discovered
 discovereability->discoverability
 discoveribility->discoverability
+discoverin->discovering, discover in,
 discovey->discovery
 discovr->discover
 discovred->discovered
@@ -20194,6 +20274,7 @@ discribes->describes
 discribing->describing
 discriminater->discriminator, discriminated, discriminates, discriminate,
 discriminaters->discriminators, discriminates,
+discriminatin->discriminating, discrimination,
 discription->description
 discriptions->descriptions
 discriptive->descriptive
@@ -20212,6 +20293,7 @@ discused->discussed
 discusion->discussion
 discusions->discussions
 discussd->discussed
+discussin->discussing, discuss in, discussion,
 discusson->discussion
 discussons->discussions
 discusss->discuss, discusses,
@@ -20244,8 +20326,11 @@ disgning->designing
 disgnostic->diagnostic
 disgnostics->diagnostics
 disgns->designs
+disgracin->disgracing
 disguisting->disgusting
+disgustin->disgusting, disgust in,
 disharge->discharge
+dishonorin->dishonoring, dishonor in,
 disign->design
 disignated->designated
 disingenous->disingenuous
@@ -20277,10 +20362,12 @@ dislpay->display
 dislpayed->displayed
 dislpaying->displaying
 dislpays->displays
+dismantlin->dismantling
 dismatch->mismatch, dispatch,
 dismatched->mismatched, dispatched,
 dismatches->mismatches, dispatches,
 dismatching->mismatching, dispatching,
+dismissin->dismissing, dismiss in,
 disnabilities->disabilities
 disnability->disability
 disnable->disable
@@ -20316,6 +20403,7 @@ dispalys->displays
 disparingly->disparagingly
 disparite->disparate
 dispatcgh->dispatch
+dispatchin->dispatching, dispatch in,
 dispatchs->dispatches
 dispath->dispatch
 dispathed->dispatched
@@ -20332,6 +20420,7 @@ dispell->dispel
 dispence->dispense
 dispenced->dispensed
 dispencing->dispensing
+dispensin->dispensing
 dispertion->dispersion
 dispicable->despicable
 dispite->despite
@@ -20346,6 +20435,7 @@ displayd->displayed
 displayes->displays, displayed,
 displayied->displayed
 displayig->displaying
+displayin->displaying, display in,
 disply->display
 displyed->displayed
 displying->displaying
@@ -20357,6 +20447,7 @@ disporved->disproved
 disporves->disproves
 disporving->disproving
 disposel->disposal
+disposin->disposing
 dispossable->disposable
 dispossal->disposal
 disposse->dispose
@@ -20367,6 +20458,7 @@ dispostion->disposition
 dispprove->disprove, disapprove,
 disproportiate->disproportionate
 disproportionatly->disproportionately
+disprovin->disproving
 disputandem->disputandum
 disregrad->disregard
 disrepancies->discrepancies
@@ -20385,6 +20477,7 @@ disributor->distributor
 disributors->distributors
 disricts->districts
 disrm->disarm
+disruptin->disrupting, disrupt in, disruption,
 dissable->disable
 dissabled->disabled
 dissables->disables
@@ -20502,6 +20595,7 @@ disscussion->discussion
 disscussions->discussions
 dissecter->dissector, dissenter, dissected, dissect,
 dissecters->dissectors, dissenters, dissects,
+dissectin->dissecting, dissect in, dissection,
 disshearteningly->dishearteningly
 dissimialr->dissimilar
 dissimialrity->dissimilarity
@@ -20525,6 +20619,7 @@ dissimliarly->dissimilarly
 dissimmetric->dissymmetric
 dissimmetrical->dissymmetrical
 dissimmetry->dissymmetry
+dissipatin->dissipating, dissipation,
 dissmantle->dismantle
 dissmantled->dismantled
 dissmantles->dismantles
@@ -20541,6 +20636,7 @@ dissobediance->disobedience
 dissobediant->disobedient
 dissobedience->disobedience
 dissobedient->disobedient
+dissociatin->dissociating, dissociation,
 dissplay->display
 dissrupt->disrupt
 dissrupted->disrupted
@@ -20561,6 +20657,7 @@ distace->distance, distaste,
 distaced->distanced
 distaces->distances, distastes,
 distancef->distanced, distances, distance,
+distancin->distancing
 distange->distance
 distanse->distance
 distantce->distance
@@ -20595,6 +20692,7 @@ distingquished->distinguished
 distinguise->distinguish
 distinguised->distinguished
 distinguises->distinguishes
+distinguishin->distinguishing, distinguish in,
 distinguising->distinguishing
 distingush->distinguish
 distingushed->distinguished
@@ -20662,6 +20760,7 @@ distribuitng->distributing
 distribure->distribute
 distributer->distributor, distributed, distributes, distribute,
 distributers->distributors, distributes,
+distributin->distributing, distribution,
 districct->district
 distrobute->distribute
 distrobuted->distributed
@@ -20701,6 +20800,7 @@ distructive->destructive
 distructor->destructor
 distructors->destructors
 distuingish->distinguish
+disturbin->disturbing, disturb in,
 disuade->dissuade
 disucss->discuss
 disucssed->discussed
@@ -20714,6 +20814,7 @@ disucusses->discusses
 disucussing->discussing
 disucussion->discussion
 disucussions->discussions
+disusin->disusing
 disuss->discuss, disuse,
 disussed->discussed, disused,
 disusses->discusses, disuses,
@@ -20743,8 +20844,10 @@ diviced->divided
 divicer->divider
 divices->devices, divides,
 divicing->dividing
+dividin->dividing
 dividor->divider, divisor,
 dividors->dividers, divisors,
+divinin->divining
 divinition->definition, divination,
 divion->division
 divisability->divisibility
@@ -20781,6 +20884,7 @@ doccumented->documented
 doccumenting->documenting
 doccuments->documents
 dockefile->Dockerfile
+dockin->docking, dock in,
 dockson->dachshund
 docmenetation->documentation
 docment->document
@@ -20872,6 +20976,7 @@ documentatons->documentations
 documentes->documents
 documentiation->documentation
 documentiations->documentations
+documentin->documenting, document in,
 documention->documentation
 documentions->documentations
 documentstion->documentation
@@ -20931,6 +21036,7 @@ doess->does
 doestn't->doesn't
 doign->doing
 doiing->doing
+doin->doing, do in,
 doiuble->double
 doiubled->doubled
 dokc->dock
@@ -20952,11 +21058,13 @@ domension->dimension
 domensions->dimensions
 domian->domain
 domians->domains
+domin->doming
 dominante->dominant, dominate,
 dominanted->dominated
 dominantes->dominants, dominates,
 dominanting->dominating
 dominantion->domination
+dominatin->dominating, domination,
 dominaton->domination
 dominent->dominant
 dominiant->dominant
@@ -21010,6 +21118,7 @@ dosen->dozen, dose, doesn,
 dosens->dozens
 dosent'->doesn't
 dosent->doesn't
+dosin->dosing, dos in,
 dosn't->doesn't
 dosnt->doesn't
 dosposing->disposing
@@ -21045,10 +21154,12 @@ doubldes->doubles
 doubleclick->double-click
 doublely->doubly
 doubletquote->doublequote
+doublin->doubling
 doubth->doubt
 doubthed->doubted
 doubthing->doubting
 doubths->doubts
+doubtin->doubting, doubt in,
 doucment->document
 doucmentated->documented
 doucmentation->documentation
@@ -21107,6 +21218,7 @@ downgradded->downgraded
 downgraddes->downgrades
 downgradding->downgrading
 downgradei->downgrade
+downgradin->downgrading
 downgradingn->downgrading
 downgrate->downgrade
 downgrated->downgraded
@@ -21125,6 +21237,7 @@ downloa->download
 downloadbale->downloadable
 downloade->download
 downloades->downloads, downloaded,
+downloadin->downloading, download in,
 downloadmanger->downloadmanager
 downloaed->downloaded, download,
 downloaing->downloading
@@ -21169,6 +21282,7 @@ dows->does
 dowt->doubt
 doxgen->doxygen
 doygen->doxygen
+dozin->dozing, doz in,
 dpeend->depend
 dpeended->depended
 dpeendence->dependence
@@ -21220,11 +21334,14 @@ dpubles->doubles
 draconain->draconian
 dragable->draggable
 draged->dragged
+draggin->dragging
 draging->dragging
 draing->drawing, drain, draining, draping,
+drainin->draining, drain in,
 drammatic->dramatic
 dramtic->dramatic
 dran->drawn
+drapin->draping
 drastical->drastically
 drasticaly->drastically
 drats->drafts
@@ -21234,6 +21351,7 @@ draview->drawview
 drawack->drawback
 drawacks->drawbacks
 drawed->drew, drawn, had drawn,
+drawin->drawing, draw in,
 drawm->drawn
 drawng->drawing
 dreasm->dreams
@@ -21244,6 +21362,7 @@ dregree->degree
 dregrees->degrees
 drescription->description
 drescriptions->descriptions
+dressin->dressing, dress in,
 driagram->diagram
 driagrammed->diagrammed
 driagramming->diagramming
@@ -21253,6 +21372,7 @@ dribbeld->dribbled
 dribbeled->dribbled
 dribbeling->dribbling
 dribbels->dribbles
+dribblin->dribbling
 driect->direct
 driected->directed
 driecting->directing
@@ -21268,6 +21388,7 @@ driects->directs
 drity->dirty
 drived->derived, drove, driven,
 driveing->driving
+drivin->driving
 drivr->driver
 drnik->drink
 drob->drop
@@ -21276,6 +21397,7 @@ dropable->droppable
 droped->dropped
 droping->dropping
 droppend->dropped
+droppin->dropping
 droppped->dropped
 dropse->drops
 droput->dropout
@@ -21283,6 +21405,7 @@ drowt->drought
 drowts->droughts
 druing->during
 druming->drumming
+drummin->drumming
 drummless->drumless
 drvier->driver
 drwaing->drawing
@@ -21333,6 +21456,7 @@ ducumenting->documenting
 ducuments->documents
 dudo->sudo
 dueing->doing, during, dueling,
+duelin->dueling, duel in,
 duirng->during
 dulicate->duplicate, delicate,
 dulicated->duplicated
@@ -21417,6 +21541,7 @@ dupliation->duplication
 dupliations->duplications
 duplicat->duplicate
 duplicatd->duplicated
+duplicatin->duplicating, duplication,
 duplicats->duplicates
 duplicte->duplicate
 duplicted->duplicated
@@ -21435,6 +21560,7 @@ durectories->directories
 durectory->directory
 dureing->during
 durig->during
+durin->during
 durining->during
 durning->during
 durring->during
@@ -21449,6 +21575,8 @@ dyanmic->dynamic
 dyanmically->dynamically
 dyanmics->dynamics
 dyas->dryas
+dyein->dyeing, dye in,
+dyin->dying
 dymamic->dynamic
 dymamically->dynamically
 dymamics->dynamics
