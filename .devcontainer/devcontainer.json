@@ -6,9 +6,9 @@
       "extensions": [
         "github.vscode-github-actions",
         "ms-python.python",
-        "ms-python.vscode-pylance"
-      ]
-    }
+        "ms-python.vscode-pylance",
+      ],
+    },
   },
-  "postCreateCommand": "bash .devcontainer/post_create.sh"
+  "postCreateCommand": "bash .devcontainer/post_create.sh",
 }
