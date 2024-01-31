@@ -237,7 +237,7 @@ def test_interactivity(
     try:
         assert cs.main(fname) == 0, "empty file"
         fname.write_text("abandonned\n")
-        assert cs.main("-i", "-1", fname) == 1, "bad"
+        assert cs.main("-i", "-1", fname) == 2, "invalid choice"
         with FakeStdin("y\n"):
             assert cs.main("-i", "3", fname) == 1
         with FakeStdin("n\n"):
