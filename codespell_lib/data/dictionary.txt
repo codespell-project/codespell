@@ -25086,6 +25086,7 @@ fallhrough->fallthrough
 fallthough->fallthrough
 fallthruogh->fallthrough
 falltrough->fallthrough
+fals->fails, falls, false,
 falsh->flash, false,
 falshed->flashed
 falshes->flashes
@@ -55629,6 +55630,7 @@ trrigger->trigger
 trriggered->triggered
 trriggering->triggering
 trriggers->triggers
+tru->through, true,
 trubador->troubadour
 trubadors->troubadours
 trubadour->troubadour
