@@ -392,7 +392,7 @@ def test_ignore_word_list(
 
 
 @pytest.mark.parametrize(
-    "content, expected_error_count",
+    ("content", "expected_error_count"),
     [
         # recommended form
         ("abandonned abondon abilty  # codespell:ignore abondon", 2),
@@ -400,7 +400,7 @@ def test_ignore_word_list(
         (
             "abandonned abondon abilty  /* codespell:ignore abandonned,abondon,abilty",
             0,
-        ),  # noqa: E501
+        ),
         # ignore unused ignore
         ("abandonned abondon abilty  # codespell:ignore nomenklatur", 3),
         # wildcard form
@@ -431,11 +431,11 @@ def test_ignore_word_list(
         (
             "You could also use line based igore (codespell:ignore igore) to igore ",
             0,
-        ),  # noqa: E501
+        ),
         (
             "You could also use line based igore (codespell:ignore igare) to igore ",
             2,
-        ),  # noqa: E501
+        ),
     ],
 )
 def test_inline_ignores(
