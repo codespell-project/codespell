@@ -417,6 +417,8 @@ def test_ignore_word_list(
         ("abandonned abondon abilty  # codespell:ignorenoqa: E501\n", 3),
         ("abandonned abondon abilty  codespell:ignore\n", 3),
         ("abandonned abondon abilty codespell:ignore\n", 3),
+        # ignore these as they aren't valid
+        ("abandonned abondon abilty  # codespell:igore\n", 3),
         # showcase different comment markers
         ("abandonned abondon abilty ' codespell:ignore\n", 0),
         ('abandonned abondon abilty " codespell:ignore\n', 0),
