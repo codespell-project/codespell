@@ -1,3 +1,5 @@
+git config --global --add safe.directory /workspaces/codespell
+
 sudo apt-get update
 sudo apt-get install -y libaspell-dev
 
