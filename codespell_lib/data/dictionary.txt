@@ -36846,7 +36846,7 @@ namesd->named, names,
 namess->names
 namesspace->namespace
 namesspaces->namespaces
-namin->naming
+namin->naming, admin,
 namme->name
 nammed->named
 nammes->names
@@ -36923,6 +36923,7 @@ natioanlist->nationalist
 natioanlists->nationalists
 natioanlly->nationally
 natioanls->nationals
+nationalisin->nationalising
 nationalizin->nationalizing
 nativelyx->natively
 natrual->natural
@@ -37793,7 +37794,7 @@ nomrals->normals
 non-alphanumunder->non-alphanumeric
 non-asii->non-ascii
 non-assiged->non-assigned
-non-blockin->non-blocking, non-block in,
+non-blockin->non-blocking
 non-bloking->non-blocking
 non-compleeted->non-completed
 non-complient->non-compliant
@@ -37853,7 +37854,7 @@ non-negotitated->non-negotiated
 non-negotited->non-negotiated
 non-negoziable->non-negotiable
 non-negoziated->non-negotiated
-non-neighborin->non-neighboring, non-neighbor in,
+non-neighborin->non-neighboring
 non-persistant->non-persistent
 non-priviliged->non-privileged
 non-referenced-counted->non-reference-counted
