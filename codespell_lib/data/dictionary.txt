@@ -54877,7 +54877,7 @@ taht->that
 tailred->tailored
 tained->tainted, stained,
 taked->took, taken,
-takin->taking
+takin->taking, taken, akin,
 taks->task, tasks, takes,
 takslet->tasklet
 talbe->table
@@ -55480,6 +55480,8 @@ tesselatad->tessellated
 tesselate->tessellate
 tesselated->tessellated
 tesselates->tessellates
+tesselatin->tessellating
+tesselating->tessellating
 tesselation->tessellation
 tesselations->tessellations
 tesselator->tessellator
@@ -55973,7 +55975,7 @@ timestmap->timestamp
 timestmaps->timestamps
 timetamp->timestamp
 timetamps->timestamps
-timin->timing
+timin->timing, timid,
 timmestamp->timestamp
 timmestamps->timestamps
 timming->timing, trimming,
@@ -56040,7 +56042,7 @@ tocken->token
 tockens->tokens
 tocksen->toxin
 todya->today
-toein->toeing, toe in,
+toein->toeing, toe in, toxin,
 toekn->token
 toekns->tokens
 toether->together, tether,
@@ -56171,12 +56173,12 @@ tounge->tongue
 touple->tuple, couple, topple, toupee,
 touples->tuples, couples, topples, toupees,
 tourch->torch, touch,
-towin->towing, tow in,
+towin->towing, tow in, town, toxin,
 toword->toward
 towords->towards
 towrad->toward
 toxen->toxin
-toyin->toying, toy in,
+toyin->toying, toy in, toyon, toxin,
 tpye->type
 tpyed->typed
 tpyes->types
@@ -57175,7 +57177,7 @@ tung->tongue
 tunges->tongues
 tungs->tongues
 tungues->tongues
-tunin->tuning, tun in,
+tunin->tuning, tun in, tunic,
 tunned->tuned
 tunnelin->tunneling, tunnel in,
 tunnell->tunnel
@@ -57246,7 +57248,7 @@ tyes->types, ties,
 tyhat->that
 tyhe->they, the, type,
 tyies->tries
-tyin->tying
+tyin->tying, thin, twin, tin,
 tymecode->timecode
 tyoe->type, toey, toe,
 tyoed->typed, toyed, toed,
