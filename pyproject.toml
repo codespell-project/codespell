@@ -171,4 +171,4 @@ allow-magic-value-types = ["bytes", "int", "str",]
 max-args = 13
 max-branches = 49
 max-returns = 11
-max-statements = 113
+max-statements = 119

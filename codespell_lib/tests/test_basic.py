@@ -391,6 +391,67 @@ def test_ignore_word_list(
     assert cs.main("-Labandonned,someword", "-Labilty", tmp_path) == 1
 
 
+@pytest.mark.parametrize(
+    ("content", "expected_error_count"),
+    [
+        # recommended form
+        ("abandonned abondon abilty  # codespell:ignore abondon", 2),
+        ("abandonned abondon abilty  // codespell:ignore abondon,abilty", 1),
+        (
+            "abandonned abondon abilty  /* codespell:ignore abandonned,abondon,abilty",
+            0,
+        ),
+        # ignore unused ignore
+        ("abandonned abondon abilty  # codespell:ignore nomenklatur", 3),
+        # wildcard form
+        ("abandonned abondon abilty  # codespell:ignore ", 0),
+        ("abandonned abondon abilty  # codespell:ignore", 0),
+        ("abandonned abondon abilty  # codespell:ignore\n", 0),
+        ("abandonned abondon abilty  # codespell:ignore\r\n", 0),
+        ("abandonned abondon abilty  # codespell:ignore  # noqa: E501\n", 0),
+        ("abandonned abondon abilty  # codespell:ignore # noqa: E501\n", 0),
+        ("abandonned abondon abilty  # codespell:ignore# noqa: E501\n", 0),
+        ("abandonned abondon abilty  # codespell:ignore, noqa: E501\n", 0),
+        ("abandonned abondon abilty  #codespell:ignore\n", 0),
+        # ignore these for safety
+        ("abandonned abondon abilty  # codespell:ignorenoqa: E501\n", 3),
+        ("abandonned abondon abilty  codespell:ignore\n", 3),
+        ("abandonned abondon abilty codespell:ignore\n", 3),
+        # ignore these as they aren't valid
+        ("abandonned abondon abilty  # codespell:igore\n", 4),
+        # showcase different comment markers
+        ("abandonned abondon abilty ' codespell:ignore\n", 0),
+        ('abandonned abondon abilty " codespell:ignore\n', 0),
+        ("abandonned abondon abilty ;; codespell:ignore\n", 0),
+        ("abandonned abondon abilty /* codespell:ignore */\n", 0),
+        # prose examples
+        (
+            "You could also use line based igore ( codespell:ignore ) to igore ",
+            0,
+        ),
+        ("You could also use line based igore (codespell:ignore) to igore ", 0),
+        (
+            "You could also use line based igore (codespell:ignore igore) to igore ",
+            0,
+        ),
+        (
+            "You could also use line based igore (codespell:ignore igare) to igore ",
+            2,
+        ),
+    ],
+)
+def test_inline_ignores(
+    tmpdir: pytest.TempPathFactory,
+    capsys: pytest.CaptureFixture[str],
+    content: str,
+    expected_error_count: int,
+) -> None:
+    d = str(tmpdir)
+    with open(op.join(d, "bad.txt"), "w") as f:
+        f.write(content)
+    assert cs.main(d) == expected_error_count
+
+
 def test_custom_regex(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
