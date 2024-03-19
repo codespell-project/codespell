@@ -16094,6 +16094,7 @@ coveniently->conveniently
 covention->convention
 coventional->conventional
 coventionally->conventionally
+coventionnel->conventional
 coventions->conventions
 coverd->covered
 covere->cover
@@ -20604,6 +20605,7 @@ dissimialr->dissimilar
 dissimialrity->dissimilarity
 dissimialrly->dissimilarly
 dissimiar->dissimilar
+dissimilare->dissimilar, dissimilarly,
 dissimilarily->dissimilarly
 dissimilary->dissimilarly
 dissimilat->dissimilar
@@ -21050,6 +21052,7 @@ dokcing->docking
 dokcre->docker
 dokcred->dockerd, docked, docker,
 dokcs->docks
+dokument->document
 doller->dollar
 dollers->dollars
 dollor->dollar
@@ -26551,6 +26554,9 @@ footprinst->footprints
 foound->found
 foppy->floppy
 foppys->floppies
+foraign->foreign
+foraigner->foreigner
+foraigners->foreigners
 foramatting->formatting
 foramt->format
 foramts->formats
@@ -31903,6 +31909,12 @@ insurence->insurance
 insurences->insurances
 intaces->instance
 intack->intact
+intagrate->integrate
+intagrated->integrated
+intagrates->integrates
+intagrating->integrating
+intagration->integration
+intagrations->integrations
 intall->install
 intallation->installation
 intallationpath->installationpath
@@ -50945,6 +50957,7 @@ similair->similar
 similairity->similarity
 similairly->similarly
 similairty->similarity
+similare->similar, similarly,
 similarily->similarly
 similary->similarly
 similat->similar
@@ -54877,6 +54890,8 @@ tagggen->taggen
 tagnet->tangent
 tagnetial->tangential
 tagnets->tangents
+tagret->target
+tagrets->targets
 tagued->tagged
 tahn->than
 tahnk->thank
@@ -55724,6 +55739,7 @@ thinkg->think, thing, things,
 thinkgs->thinks, things,
 thinkin->thinking, think in,
 thinn->thin
+thirdparty->third party, third-party,
 thirs->third, thirst,
 thirtyth->thirtieth
 this'd->this would
@@ -55750,6 +55766,7 @@ thogh->though, thigh,
 thoght->thought
 thoghts->thoughts
 thonic->chthonic
+thoose->those, choose,
 thorasic->thoracic
 thoroidal->toroidal
 thoroughty->thoroughly
@@ -55831,6 +55848,7 @@ thresolds->thresholds
 thresshold->threshold
 thressholds->thresholds
 thrid->third
+thridparty->third party, third-party,
 thrird->third
 throen->thrown
 throgh->through
