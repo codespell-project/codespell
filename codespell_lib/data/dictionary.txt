@@ -16094,6 +16094,7 @@ coveniently->conveniently
 covention->convention
 coventional->conventional
 coventionally->conventionally
+coventionnel->conventional
 coventions->conventions
 coverd->covered
 covere->cover
@@ -26554,6 +26555,8 @@ foound->found
 foppy->floppy
 foppys->floppies
 foraign->foreign
+foraigner->foreigner
+foraigners->foreigners
 foramatting->formatting
 foramt->format
 foramts->formats
@@ -54888,6 +54891,7 @@ tagnet->tangent
 tagnetial->tangential
 tagnets->tangents
 tagret->target
+tagrets->targets
 tagued->tagged
 tahn->than
 tahnk->thank
@@ -55735,6 +55739,7 @@ thinkg->think, thing, things,
 thinkgs->thinks, things,
 thinkin->thinking, think in,
 thinn->thin
+thirdparty->third party, third-party,
 thirs->third, thirst,
 thirtyth->thirtieth
 this'd->this would
@@ -55761,7 +55766,7 @@ thogh->though, thigh,
 thoght->thought
 thoghts->thoughts
 thonic->chthonic
-thoose->those
+thoose->those, choose,
 thorasic->thoracic
 thoroidal->toroidal
 thoroughty->thoroughly
@@ -55843,7 +55848,7 @@ thresolds->thresholds
 thresshold->threshold
 thressholds->thresholds
 thrid->third
-thridparty->thirdparty
+thridparty->third party, third-party,
 thrird->third
 throen->thrown
 throgh->through
