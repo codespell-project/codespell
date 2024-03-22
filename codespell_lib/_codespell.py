@@ -514,7 +514,7 @@ def parse_options(
         "--interactive",
         action="store",
         type=int,
-        default=0,
+        default=-1,
         help="set interactive mode when writing changes:\n"
         "- 0: no interactivity.\n"
         "- 1: ask for confirmation.\n"
@@ -1131,6 +1131,9 @@ def main(*args: str) -> int:
             print("Used config files:")
         for ifile, cfg_file in enumerate(used_cfg_files, start=1):
             print(f"    {ifile}: {cfg_file}")
+
+    if options.interactive >= 0:
+        options.write_changes = True
 
     if options.regex and options.write_changes:
         print(
