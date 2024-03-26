@@ -27,7 +27,7 @@ Installation
 
 You can use ``pip`` to install codespell with e.g.:
 
-.. code-block:: sh
+.. code-block::
 
     pip install codespell
 
@@ -39,43 +39,43 @@ For exhaustive usage information, please check the output of ``codespell -h``.
 
 Run codespell in all files of the current directory:
 
-.. code-block:: sh
+.. code-block::
 
     codespell
 
 Run codespell in specific files or directories (specified via their names or glob patterns):
 
-.. code-block:: sh
+.. code-block::
 
     codespell some_file some_dir/ *.ext
 
 Some noteworthy flags:
 
-.. code-block:: sh
+.. code-block::
 
     codespell -w, --write-changes
 
 The ``-w`` flag will actually implement the changes recommended by codespell. Running without the ``-w`` flag is the same as doing a dry run. It is recommended to run this with the ``-i`` or ``--interactive`` flag.
 
-.. code-block:: sh
+.. code-block::
 
     codespell -I FILE, --ignore-words=FILE
 
 The ``-I`` flag can be used for a list of certain words to allow that are in the codespell dictionaries. The format of the file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said list of allowed words. See `Ignoring Words`_ for more details.
 
-.. code-block:: sh
+.. code-block::
 
     codespell -L word1,word2,word3,word4
 
 The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it.  See `Ignoring Words`_ for more details.
 
-.. code-block:: sh
+.. code-block::
 
     codespell -x FILE, --exclude-file=FILE
 
 Ignore whole lines that match those in ``FILE``.  The lines in ``FILE`` should match the to-be-excluded lines exactly.
 
-.. code-block:: sh
+.. code-block::
 
     codespell -S, --skip=
 
@@ -88,14 +88,14 @@ Comma-separated list of files to skip. It accepts globs as well.  Examples:
 
 Useful commands:
 
-.. code-block:: sh
+.. code-block::
 
     codespell -d -q 3 --skip="*.po,*.ts,./src/3rdParty,./src/Test"
 
 List all typos found except translation files and some directories.
 Display them without terminal colors and with a quiet level of 3.
 
-.. code-block:: sh
+.. code-block::
 
     codespell -i 3 -w
 
@@ -109,7 +109,7 @@ new/different entries are very welcome.
 
 Want to know if a word you're proposing exists in codespell already? It is possible to test a word against the current set dictionaries that exist in ``codespell_lib/data/dictionary*.txt`` via:
 
-.. code-block:: sh
+.. code-block::
 
     echo "word" | codespell -
     echo "1stword,2ndword" | codespell -
@@ -125,13 +125,13 @@ The words to ignore can be passed in two ways:
 
 1. ``-I``: A file with a word per line to ignore:
 
-   .. code-block:: sh
+   .. code-block::
 
        codespell -I FILE, --ignore-words=FILE
 
 2. ``-L``: A comma separated list of words to ignore on the command line:
 
-   .. code-block:: sh
+   .. code-block::
 
        codespell -L word1,word2,word3,word4
 
@@ -144,14 +144,14 @@ Words should be separated by a comma.
 
 1. ignore specific word:
 
-   .. code-block:: python
+   .. code-block::
 
        def wrod() # codespell:ignore wrod
            pass
 
 2. ignore multiple words:
 
-    .. code-block:: python
+    .. code-block::
 
          def wrod(wrods) # codespell:ignore
               pass
@@ -166,7 +166,7 @@ named ``setup.cfg`` or ``.codespellrc`` (or a file specified via ``--config``),
 containing an entry named ``[codespell]``. Each command line argument can
 be specified in this file (without the preceding dashes), for example:
 
-.. code-block:: ini
+.. code-block::
 
     [codespell]
     skip = *.po,*.ts,./src/3rdParty,./src/Test
@@ -183,7 +183,7 @@ Codespell will also check in the current directory for a ``pyproject.toml``
 ``[tool.codespell]`` entry will be used, but only if the tomli_ package
 is installed for versions of Python prior to 3.11. For example:
 
-.. code-block:: toml
+.. code-block::
 
     [tool.codespell]
     skip = '*.po,*.ts,./src/3rdParty,./src/Test'
@@ -192,7 +192,7 @@ is installed for versions of Python prior to 3.11. For example:
 
 These are both equivalent to running:
 
-.. code-block:: sh
+.. code-block::
 
     codespell --quiet-level 3 --count --skip "*.po,*.ts,./src/3rdParty,./src/Test"
 
@@ -217,7 +217,7 @@ pre-commit hook
 
 codespell also works with `pre-commit <https://pre-commit.com/>`_, using
 
-.. code-block:: yaml
+.. code-block::
 
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.4
@@ -226,7 +226,7 @@ codespell also works with `pre-commit <https://pre-commit.com/>`_, using
 
 If one configures codespell using the `pyproject.toml` file instead use:
 
-.. code-block:: yaml
+.. code-block::
 
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.4
@@ -274,19 +274,19 @@ Development setup
 
 As suggested in the `Python Packaging User Guide`_, ensure ``pip``, ``setuptools``, and ``wheel`` are up to date before installing from source. Specifically you will need recent versions of ``setuptools`` and ``setuptools_scm``:
 
-.. code-block:: sh
+.. code-block::
 
     pip install --upgrade pip setuptools setuptools_scm wheel
 
 You can install required dependencies for development by running the following within a checkout of the codespell source:
 
-.. code-block:: sh
+.. code-block::
 
        pip install -e ".[dev]"
 
 To run tests against the codebase run:
 
-.. code-block:: sh
+.. code-block::
 
        make check
 
@@ -303,13 +303,13 @@ If you have a suggested typo that you'd like to see merged please follow these s
 
 3. Sort the dictionaries. This is done by invoking (in the top level directory of ``codespell/``):
 
-   .. code-block:: sh
+   .. code-block::
 
        make check-dictionaries
 
    If the make script finds that you need to sort a dictionary, please then run:
 
-   .. code-block:: sh
+   .. code-block::
 
        make sort-dictionaries
 
@@ -325,7 +325,7 @@ Updating
 
 To stay current with codespell developments it is possible to build codespell from GitHub via:
 
-.. code-block:: sh
+.. code-block::
 
     pip install --upgrade git+https://github.com/codespell-project/codespell.git
 
@@ -333,7 +333,7 @@ To stay current with codespell developments it is possible to build codespell fr
 
 * Sometimes installing via ``pip`` will complain about permissions. If this is the case then run with:
 
-  .. code-block:: sh
+  .. code-block::
 
       pip install --user --upgrade git+https://github.com/codespell-project/codespell.git
 
@@ -345,7 +345,7 @@ Updating the dictionaries
 
 In the scenario where the user prefers not to follow the development version of codespell yet still opts to benefit from the frequently updated dictionary files, we recommend running a simple set of commands to achieve this:
 
-.. code-block:: sh
+.. code-block::
 
     wget https://raw.githubusercontent.com/codespell-project/codespell/master/codespell_lib/data/dictionary.txt
     codespell -D dictionary.txt
