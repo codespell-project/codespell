@@ -151,10 +151,10 @@ Words should be separated by a comma.
 
 2. ignore multiple words:
 
-    .. code-block:: python
-
-         def wrod(wrods) # codespell:ignore
-              pass
+   .. code-block:: python
+       
+       def wrod(wrods) # codespell:ignore
+           pass
 
 Using a config file
 -------------------
