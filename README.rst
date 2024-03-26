@@ -135,6 +135,27 @@ The words to ignore can be passed in two ways:
 
        codespell -L word1,word2,word3,word4
 
+Inline ignore
+-------------
+
+Some situation might require ignoring a specific word in a specific location. This can be achieved by adding a comment in the source code.
+You can either ignore a single word or a list of words. The comment should be in the format of ``# codespell:ignore <words>``.
+Words should be separated by a comma.
+
+1. ignore specific word:
+
+   .. code-block:: python
+
+       def wrod() # codespell:ignore wrod
+           pass
+
+2. ignore multiple words:
+
+    .. code-block:: python
+
+         def wrod(wrods) # codespell:ignore
+              pass
+
 Using a config file
 -------------------
 
