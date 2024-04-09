@@ -24454,6 +24454,7 @@ exis->exist, exists, exit, exits, axis, lexis, exes,
 exising->existing
 exisit->exist
 exisited->existed
+exisitence->existence
 exisitent->existent
 exisiting->existing
 exisitng->existing
@@ -40686,6 +40687,8 @@ parenthesed->parenthesized
 parenthesies->parentheses
 parenthises->parentheses
 parenthsis->parenthesis
+paresr->parser
+paresrs->parsers
 paret->parent, parrot,
 paretheses->parentheses
 parethesis->parenthesis
