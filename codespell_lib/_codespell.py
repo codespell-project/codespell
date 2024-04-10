@@ -489,7 +489,6 @@ def parse_options(
         "accepts globs as well. E.g.: if you want "
         "codespell to skip .eps and .txt files, "
         'you\'d give "*.eps,*.txt" to this option.',
-        default=[],
     )
 
     parser.add_argument(
@@ -1103,7 +1102,7 @@ def parse_file(
 
 
 def flatten_clean_comma_separated_arguments(
-    arguments: List[str],
+    arguments: Iterable[str],
 ) -> List[str]:
     """
     >>> flatten_clean_comma_separated_arguments(["a, b ,\n c, d,", "e"])
@@ -1263,7 +1262,9 @@ def main(*args: str) -> int:
 
     file_opener = FileOpener(options.hard_encoding_detection, options.quiet_level)
 
-    glob_match = GlobMatch(flatten_clean_comma_separated_arguments(options.skip))
+    glob_match = GlobMatch(
+        flatten_clean_comma_separated_arguments(options.skip) if options.skip else []
+    )
     try:
         glob_match.match("/random/path")  # does not need a real path
     except re.error:
