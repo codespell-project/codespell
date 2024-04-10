@@ -1112,10 +1112,7 @@ def flatten_clean_comma_separated_arguments(
     []
     """
     return [
-        item.strip()
-        for argument in arguments
-        for item in argument.split(",")
-        if item
+        item.strip() for argument in arguments for item in argument.split(",") if item
     ]
 
 
