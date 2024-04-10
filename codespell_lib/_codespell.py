@@ -489,7 +489,7 @@ def parse_options(
         "accepts globs as well. E.g.: if you want "
         "codespell to skip .eps and .txt files, "
         'you\'d give "*.eps,*.txt" to this option.',
-        default=list(),
+        default=[],
     )
 
     parser.add_argument(
