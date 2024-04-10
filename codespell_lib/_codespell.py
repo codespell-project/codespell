@@ -160,15 +160,11 @@ class QuietLevels:
 
 
 class GlobMatch:
-    def __init__(self, pattern: Optional[List[str]]) -> None:
-        self.pattern_list: Optional[List[str]] = pattern
+    def __init__(self, pattern: List[str]) -> None:
+        self.pattern_list: List[str] = pattern
 
     def match(self, filename: str) -> bool:
-        return (
-            any(fnmatch.fnmatch(filename, p) for p in self.pattern_list)
-            if self.pattern_list
-            else False
-        )
+        return any(fnmatch.fnmatch(filename, p) for p in self.pattern_list)
 
 
 class Misspelling:
@@ -493,6 +489,7 @@ def parse_options(
         "accepts globs as well. E.g.: if you want "
         "codespell to skip .eps and .txt files, "
         'you\'d give "*.eps,*.txt" to this option.',
+        default=list(),
     )
 
     parser.add_argument(
@@ -1106,19 +1103,20 @@ def parse_file(
 
 
 def flatten_clean_comma_separated_arguments(
-    arguments: Optional[List[str]],
-) -> Optional[List[str]]:
+    arguments: List[str],
+) -> List[str]:
     """
     >>> flatten_clean_comma_separated_arguments(["a, b ,\n c, d,", "e"])
     ['a', 'b', 'c', 'd', 'e']
     >>> flatten_clean_comma_separated_arguments([])
-    >>> flatten_clean_comma_separated_arguments(None)
+    []
     """
-    return (
-        [item.strip() for argument in arguments for item in argument.split(",") if item]
-        if arguments
-        else None
-    )
+    return [
+        item.strip()
+        for argument in arguments
+        for item in argument.split(",")
+        if item
+    ]
 
 
 def _script_main() -> int:
