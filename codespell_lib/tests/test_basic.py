@@ -573,6 +573,8 @@ def test_ignore(
     (subdir / "bad.txt").write_text("abandonned")
     assert cs.main(tmp_path) == 2
     assert cs.main("--skip=bad*", tmp_path) == 0
+    assert cs.main("--skip=whatever.txt,bad*,whatelse.txt", tmp_path) == 0
+    assert cs.main("--skip=whatever.txt,\n bad* ,", tmp_path) == 0
     assert cs.main("--skip=*ignoredir*", tmp_path) == 1
     assert cs.main("--skip=ignoredir", tmp_path) == 1
     assert cs.main("--skip=*ignoredir/bad*", tmp_path) == 1
@@ -1213,7 +1215,7 @@ def test_ill_formed_ini_config_file(
     assert "ill-formed config file" in stderr
 
 
-@pytest.mark.parametrize("kind", ["cfg", "toml", "toml_list"])
+@pytest.mark.parametrize("kind", ["cfg", "cfg_multiline", "toml", "toml_list"])
 def test_config_toml(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
@@ -1235,44 +1237,47 @@ def test_config_toml(
     assert "bad.txt" in stdout
     assert "abandonned.txt" in stdout
 
-    if kind == "cfg":
+    if kind.startswith("cfg"):
         conffile = tmp_path / "setup.cfg"
         args = ("--config", conffile)
-        conffile.write_text(
-            """\
+        if kind == "cfg":
+            text = """\
 [codespell]
 skip = bad.txt, whatever.txt
 count =
 """
-        )
-    elif kind == "toml":
-        assert kind == "toml"
+        else:
+            assert kind == "cfg_multiline"
+            text = """\
+[codespell]
+skip = whatever.txt,
+   bad.txt ,
+   ,
+
+count =
+"""
+        conffile.write_text(text)
+    else:
         if sys.version_info < (3, 11):
             pytest.importorskip("tomli")
         tomlfile = tmp_path / "pyproject.toml"
         args = ("--toml", tomlfile)
-        tomlfile.write_text(
-            """\
+        if kind == "toml":
+            text = """\
 [tool.codespell]
 skip = 'bad.txt,whatever.txt'
 check-filenames = false
 count = true
 """
-        )
-    else:
-        assert kind == "toml_list"
-        if sys.version_info < (3, 11):
-            pytest.importorskip("tomli")
-        tomlfile = tmp_path / "pyproject.toml"
-        args = ("--toml", tomlfile)
-        tomlfile.write_text(
-            """\
+        else:
+            assert kind == "toml_list"
+            text = """\
 [tool.codespell]
 skip = ['bad.txt', 'whatever.txt']
 check-filenames = false
 count = true
 """
-        )
+        tomlfile.write_text(text)
 
     # Should pass when skipping bad.txt or abandonned.txt
     result = cs.main(d, *args, std=True)
