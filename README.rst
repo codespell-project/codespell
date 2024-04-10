@@ -139,7 +139,7 @@ Inline ignore
 -------------
 
 Some situation might require ignoring a specific word in a specific location. This can be achieved by adding a comment in the source code.
-You can either ignore a single word or a list of words. The comment should be in the format of ``# codespell:ignore <words>``.
+You can either ignore a single word or a list of words. The comment should be in the format of ``codespell:ignore <words>``.
 Words should be separated by a comma.
 
 1. ignore specific word:
