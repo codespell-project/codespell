@@ -160,19 +160,15 @@ class QuietLevels:
 
 
 class GlobMatch:
-    def __init__(self, pattern: Optional[str]) -> None:
-        self.pattern_list: Optional[List[str]]
-        if pattern:
-            # Pattern might be a list of comma-delimited strings
-            self.pattern_list = ",".join(pattern).split(",")
-        else:
-            self.pattern_list = None
+    def __init__(self, pattern: Optional[List[str]]) -> None:
+        self.pattern_list: Optional[List[str]] = pattern
 
     def match(self, filename: str) -> bool:
-        if self.pattern_list is None:
-            return False
-
-        return any(fnmatch.fnmatch(filename, p) for p in self.pattern_list)
+        return (
+            any(fnmatch.fnmatch(filename, p) for p in self.pattern_list)
+            if self.pattern_list
+            else False
+        )
 
 
 class Misspelling:
@@ -1109,6 +1105,22 @@ def parse_file(
     return bad_count
 
 
+def flatten_clean_comma_separated_arguments(
+    arguments: Optional[List[str]],
+) -> Optional[List[str]]:
+    """
+    >>> flatten_clean_comma_separated_arguments(["a, b ,\n c, d,", "e"])
+    ['a', 'b', 'c', 'd', 'e']
+    >>> flatten_clean_comma_separated_arguments([])
+    >>> flatten_clean_comma_separated_arguments(None)
+    """
+    return (
+        [item.strip() for argument in arguments for item in argument.split(",") if item]
+        if arguments
+        else None
+    )
+
+
 def _script_main() -> int:
     """Wrap to main() for setuptools."""
     return main(*sys.argv[1:])
@@ -1256,7 +1268,7 @@ def main(*args: str) -> int:
 
     file_opener = FileOpener(options.hard_encoding_detection, options.quiet_level)
 
-    glob_match = GlobMatch(options.skip)
+    glob_match = GlobMatch(flatten_clean_comma_separated_arguments(options.skip))
     try:
         glob_match.match("/random/path")  # does not need a real path
     except re.error:
