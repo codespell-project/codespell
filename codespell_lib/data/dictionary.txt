@@ -48119,10 +48119,10 @@ restauration->restoration
 restauraunt->restaurant
 restaurnad->restaurant
 restaurnat->restaurant
-reste->reset
+reste->reset, rest, rests,
 resteraunt->restaurant
 resteraunts->restaurants
-restes->reset
+restes->reset, rests,
 restesting->retesting
 restict->restrict
 resticted->restricted
@@ -51466,7 +51466,7 @@ smaple->sample
 smapled->sampled
 smaples->samples
 smapling->sampling
-sme->same, some,
+sme->same, seme, some, SMS,
 smealting->smelting
 smebody->somebody
 smehow->somehow
@@ -51651,7 +51651,7 @@ somenthing->something
 somentime->sometime
 somentimes->sometimes
 someon->someone
-somes->some, sums,
+somes->semes, some, sums,
 somestime->sometime
 somestimes->sometimes
 somethhing->something
