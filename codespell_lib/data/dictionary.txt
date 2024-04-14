@@ -3235,6 +3235,7 @@ alreadt->already
 alreasy->already
 alreay->already
 alreayd->already
+alreaydy->already
 alreday->already
 alredy->already
 alreeady->already
@@ -18386,6 +18387,7 @@ depreated->deprecated
 depreates->deprecates
 depreating->deprecating
 depreation->deprecation
+deprecatd->deprecated
 deprecatedf->deprecated
 deprecatin->deprecating, deprecation,
 depreceate->deprecate, depreciate,
@@ -18394,6 +18396,7 @@ depreceates->deprecates, depreciates,
 depreceating->depreciating, deprecating,
 depreceation->depreciation, deprecation,
 depreciatin->depreciating, depreciation,
+deprectad->deprecated
 deprectae->deprecate
 deprectaed->deprecated
 deprectaes->deprecates
@@ -37582,6 +37585,7 @@ neightobring->neighboring
 neightobrs->neighbors
 neiter->neither
 nelink->netlink
+nempty->an empty, empty,
 nenviroment->environment
 neolitic->neolithic
 neral->neural
@@ -48115,6 +48119,7 @@ restauration->restoration
 restauraunt->restaurant
 restaurnad->restaurant
 restaurnat->restaurant
+reste->reset
 resteraunt->restaurant
 resteraunts->restaurants
 restes->reset
@@ -51461,6 +51466,7 @@ smaple->sample
 smapled->sampled
 smaples->samples
 smapling->sampling
+sme->same, some,
 smealting->smelting
 smebody->somebody
 smehow->somehow
@@ -54347,6 +54353,8 @@ susceder->seceder
 susceders->seceders
 suscedes->secedes, succeeds,
 susceding->seceding, succeeding,
+suscessful->successful
+suscessfull->successful
 suscribe->subscribe
 suscribed->subscribed
 suscriber->subscriber
@@ -60308,6 +60316,7 @@ whants->wants
 whataver->whatever
 whatepsace->whitespace
 whatepsaces->whitespaces
+whaterver->whatever
 whather->whether, weather,
 whathever->whatever
 whatsover->whatsoever
