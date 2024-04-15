@@ -390,10 +390,9 @@ def parse_options(
         "-D",
         "--dictionary",
         action="append",
-        help="custom dictionary file that contains spelling "
-        "corrections. If this flag is not specified or "
-        'equals "-" then the default dictionary is used. '
-        "This option can be specified multiple times.",
+        help="comma-separated list of custom dictionary files that "
+        "contain spelling corrections. If this flag is not specified "
+        'or equals "-" then the default dictionary is used.',
     )
     builtin_opts = "\n- ".join(
         [""] + [f"{d[0]!r} {d[1]}" for d in _builtin_dictionaries]
@@ -423,26 +422,26 @@ def parse_options(
         "-I",
         "--ignore-words",
         action="append",
-        metavar="FILE",
-        help="file that contains words that will be ignored "
-        "by codespell. File must contain 1 word per line."
-        " Words are case sensitive based on how they are "
-        "written in the dictionary file",
+        metavar="FILES",
+        help="comma-separated list of files that contain "
+        "words to be ignored by codespell. Files must contain "
+        "1 word per line. Words are case sensitive based on "
+        "how they are written in the dictionary file.",
     )
     parser.add_argument(
         "-L",
         "--ignore-words-list",
         action="append",
         metavar="WORDS",
-        help="comma separated list of words to be ignored "
+        help="comma-separated list of words to be ignored "
         "by codespell. Words are case sensitive based on "
-        "how they are written in the dictionary file",
+        "how they are written in the dictionary file.",
     )
     parser.add_argument(
         "--uri-ignore-words-list",
         action="append",
         metavar="WORDS",
-        help="comma separated list of words to be ignored "
+        help="comma-separated list of words to be ignored "
         "by codespell in URIs and emails only. Words are "
         "case sensitive based on how they are written in "
         'the dictionary file. If set to "*", all '
@@ -494,11 +493,13 @@ def parse_options(
     parser.add_argument(
         "-x",
         "--exclude-file",
+        action="append",
         type=str,
-        metavar="FILE",
-        help="ignore whole lines that match those "
-        "in the file FILE. The lines in FILE "
-        "should match the to-be-excluded lines exactly",
+        metavar="FILES",
+        help="ignore whole lines that match those in "
+        "the comma-separated list of files EXCLUDE. "
+        "The lines in these files should match the "
+        "to-be-excluded lines exactly",
     )
 
     parser.add_argument(
@@ -1166,20 +1167,22 @@ def main(*args: str) -> int:
     else:
         ignore_word_regex = None
 
-    ignore_words_files = options.ignore_words or []
     ignore_words, ignore_words_cased = parse_ignore_words_option(
         options.ignore_words_list
     )
-
-    for ignore_words_file in ignore_words_files:
-        if not os.path.isfile(ignore_words_file):
-            print(
-                f"ERROR: cannot find ignore-words file: {ignore_words_file}",
-                file=sys.stderr,
-            )
-            parser.print_help()
-            return EX_USAGE
-        build_ignore_words(ignore_words_file, ignore_words, ignore_words_cased)
+    if options.ignore_words:
+        ignore_words_files = flatten_clean_comma_separated_arguments(
+            options.ignore_words
+        )
+        for ignore_words_file in ignore_words_files:
+            if not os.path.isfile(ignore_words_file):
+                print(
+                    f"ERROR: cannot find ignore-words file: {ignore_words_file}",
+                    file=sys.stderr,
+                )
+                parser.print_help()
+                return EX_USAGE
+            build_ignore_words(ignore_words_file, ignore_words, ignore_words_cased)
 
     uri_regex = options.uri_regex or uri_regex_def
     try:
@@ -1196,7 +1199,7 @@ def main(*args: str) -> int:
         itertools.chain(*parse_ignore_words_option(options.uri_ignore_words_list))
     )
 
-    dictionaries = options.dictionary or ["-"]
+    dictionaries = flatten_clean_comma_separated_arguments(options.dictionary or ["-"])
 
     use_dictionaries = []
     for dictionary in dictionaries:
@@ -1258,7 +1261,9 @@ def main(*args: str) -> int:
 
     exclude_lines: Set[str] = set()
     if options.exclude_file:
-        build_exclude_hashes(options.exclude_file, exclude_lines)
+        exclude_files = flatten_clean_comma_separated_arguments(options.exclude_file)
+        for exclude_file in exclude_files:
+            build_exclude_hashes(exclude_file, exclude_lines)
 
     file_opener = FileOpener(options.hard_encoding_detection, options.quiet_level)
 
