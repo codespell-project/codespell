@@ -21990,7 +21990,9 @@ eignvalues->eigenvalues
 eigth->eighth, eight,
 eihter->either
 einstance->instance
+einstances->instances
 eisntance->instance
+eisntances->instances
 eiter->either
 eith->with
 ejectin->ejecting, eject in, ejection,
@@ -30402,6 +30404,7 @@ incroporates->incorporates
 incroporating->incorporating
 incroporation->incorporation
 inctance->instance
+inctances->instances
 inctroduce->introduce
 inctroduced->introduced
 incude->include
@@ -31783,11 +31786,18 @@ insitutions->institutions
 insonsistency->inconsistency
 inspectin->inspecting, inspect in, inspection,
 inspite->in spite, inspire,
+insstance->instance
+insstances->instances
 instaance->instance
+instaances->instances
 instabce->instance
+instabces->instances
 instace->instance
 instaces->instances
 instaciate->instantiate
+instaciated->instantiated
+instaciates->instantiates
+instaciating->instantiating
 instad->instead
 instade->instead
 instaead->instead
@@ -31857,6 +31867,7 @@ instantiaties->instantiates
 instantiatin->instantiating
 instanze->instance
 instatance->instance
+instatances->instances
 instatiate->instantiate
 instatiated->instantiated
 instatiates->instantiates
@@ -31874,6 +31885,7 @@ insteallers->installers
 instealling->installing
 instealls->installs
 insteance->instance
+insteances->instances
 insted->instead
 insteead->instead
 insteed->instead
@@ -32052,7 +32064,8 @@ insurasnce->insurance
 insurasnces->insurances
 insurence->insurance
 insurences->insurances
-intaces->instance
+intace->instance, intact, intake,
+intaces->instances, intakes, instance,
 intack->intact
 intagrate->integrate
 intagrated->integrated
