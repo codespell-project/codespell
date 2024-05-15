@@ -5498,6 +5498,7 @@ asessment->assessment
 asessments->assessments
 asetic->ascetic
 asfar->as far
+asgolute->absolute
 asign->assign
 asigned->assigned
 asignee->assignee
@@ -6455,6 +6456,7 @@ attributring->attributing
 attributrion->attribution
 attributrions->attributions
 attributs->attributes
+attributse->attributes
 attribye->attribute
 attribyes->attributes
 attribyte->attribute
@@ -12802,6 +12804,7 @@ compatator->comparator
 compatators->comparators
 compatbile->compatible
 compatbility->compatibility
+compatbility->compatibility
 compatble->compatible
 compatiabilities->compatibilities
 compatiability->compatibility
@@ -13094,6 +13097,7 @@ componoents->components
 componsites->composites
 compontent->component
 compontents->components
+comporator->comparator
 composablity->composability
 composibility->composability
 composiblity->composability
@@ -21084,6 +21088,7 @@ doen->done
 doens't->doesn't
 doens->does
 doensn't->doesn't
+doenst->doesn't
 does'nt->doesn't
 does't->doesn't
 doese't->doesn't
@@ -32468,6 +32473,7 @@ interploated->interpolated
 interploates->interpolates
 interploatin->interpolating
 interploation->interpolation
+interplotate->interpolate
 interpolaed->interpolated
 interpolaion->interpolation
 interpolaiton->interpolation
@@ -36508,6 +36514,7 @@ monnth->month
 monnths->months
 monochorome->monochrome
 monochromo->monochrome
+monoclinc->monoclinic
 monocrome->monochrome
 monolite->monolithic
 monontonicity->monotonicity
@@ -38843,6 +38850,7 @@ officianado->aficionado
 officianados->aficionados
 officionado->aficionado
 officionados->aficionados
+offine->offline
 offisianado->aficionado
 offisianados->aficionados
 offisionado->aficionado
@@ -39748,6 +39756,7 @@ orthoganal->orthogonal
 orthoganalize->orthogonalize
 orthognal->orthogonal
 orthongonality->orthogonality
+orthongonalize->orthogonalize
 orthonormalizatin->orthonormalization
 orthorombic->orthorhombic
 ortogonal->orthogonal
@@ -39910,6 +39919,7 @@ ouptut->output
 ouptuted->outputted
 ouptuting->outputting
 ouptuts->outputs
+ouput->output
 ouput->output
 ouputarea->outputarea
 ouputs->outputs
@@ -40552,6 +40562,7 @@ parametrs->parameters
 parametrse->parameters
 parametter->parameter
 parametters->parameters
+parammeters->parameters
 paramss->params
 paramter->parameter
 paramtere->parameter
@@ -41390,6 +41401,7 @@ perhpas->perhaps
 peridic->periodic
 peridical->periodical
 peridically->periodically
+peridioc->periodic
 perihperal->peripheral
 perihperals->peripherals
 perilious->perilous
@@ -41916,6 +41928,7 @@ plalforms->platforms
 planation->plantation
 plantext->plaintext
 plantiff->plaintiff
+plarized->polarized
 plase->place, please, phase, plaice,
 plased->placed, pleased, phased,
 plasement->placement
@@ -42129,6 +42142,7 @@ polarisaiton->polarisation
 polariy->polarity
 polarizaiton->polarization
 polarizin->polarizing
+polarlized->polarized
 polcies->policies
 polciy->policy
 polcy->policy
@@ -43081,6 +43095,7 @@ preshusly->preciously
 presice->precise, preside,
 presicely->precisely
 presicion->precision
+presidence->precedence (maybe for rare)
 presidenital->presidential
 presidental->presidential
 presidin->presiding
@@ -51223,6 +51238,7 @@ simlar->similar
 simlarity->similarity
 simlarlity->similarity
 simlarly->similarly
+simlations->simulations
 simle->simple, smile, simile,
 simler->simpler, similar,
 simles->smiles, similes,
@@ -51401,6 +51417,7 @@ singlin->singling
 singls->singles, single,
 singlton->singleton
 singltons->singletons
+singluar->singular
 singluar->singular
 singlular->singular
 singlularly->singularly
@@ -52144,6 +52161,7 @@ spcaes->spaces
 spcaing->spacing
 spcecified->specified
 spcial->special
+spcies->species
 spcific->specific
 spcifically->specifically
 spcification->specification
@@ -53499,6 +53517,7 @@ struggeling->struggling
 struggels->struggles
 strugglin->struggling
 strust->trust, strut,
+strutcure->structure
 struttural->structural
 strutture->structure
 strutural->structural
@@ -54853,6 +54872,7 @@ symetrical->symmetrical
 symetrically->symmetrically
 symetry->symmetry
 symettric->symmetric
+symmeterized->symmetrized
 symmetic->symmetric
 symmetral->symmetric
 symmetri->symmetry
@@ -57262,6 +57282,7 @@ triskadekafobia->triskaidekaphobia
 triskadekaphobia->triskaidekaphobia
 triuangulate->triangulate
 trival->trivial
+trival->trivial
 trivally->trivially
 trivias->trivia
 trivival->trivial
@@ -57954,6 +57975,7 @@ uncorelated->uncorrelated
 uncorrect->incorrect
 uncorrectly->incorrectly
 uncorrolated->uncorrelated
+uncoverged->unconverged
 uncoverted->unconverted
 uncrypted->unencrypted
 undecideable->undecidable
@@ -59075,6 +59097,7 @@ uptreams->upstreams
 uqest->quest
 uqests->quests
 ure->sure, ire, are, urea, rue,
+urfaces->surfaces
 urrlib->urllib
 usag->usage
 usal->usual
@@ -61271,6 +61294,7 @@ yugoslac->yugoslav
 yuo->you
 yuor->your
 yur->your
+yymmetrical->symmetrical
 zar->czar
 zars->czars
 zeebra->zebra
