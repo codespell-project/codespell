@@ -6456,7 +6456,7 @@ attributring->attributing
 attributrion->attribution
 attributrions->attributions
 attributs->attributes
-attributse->attributes
+attributse->attributes, attribute,
 attribye->attribute
 attribyes->attributes
 attribyte->attribute
@@ -13097,6 +13097,9 @@ componsites->composites
 compontent->component
 compontents->components
 comporator->comparator
+comporators->comparators
+comporison->comparison
+comporisons->comparisons
 composablity->composability
 composibility->composability
 composiblity->composability
@@ -32473,6 +32476,9 @@ interploates->interpolates
 interploatin->interpolating
 interploation->interpolation
 interplotate->interpolate
+interplotated->interpolated
+interplotates->interpolates
+interplotating->interpolating
 interpolaed->interpolated
 interpolaion->interpolation
 interpolaiton->interpolation
@@ -39754,8 +39760,15 @@ orthagonalize->orthogonalize
 orthoganal->orthogonal
 orthoganalize->orthogonalize
 orthognal->orthogonal
+orthongonalise->orthogonalise
+orthongonalised->orthogonalised
+orthongonalises->orthogonalises
+orthongonalising->orthogonalising
 orthongonality->orthogonality
 orthongonalize->orthogonalize
+orthongonalized->orthogonalized
+orthongonalizes->orthogonalizes
+orthongonalizing->orthogonalizing
 orthonormalizatin->orthonormalization
 orthorombic->orthorhombic
 ortogonal->orthogonal
@@ -40560,6 +40573,7 @@ parametrs->parameters
 parametrse->parameters
 parametter->parameter
 parametters->parameters
+parammeter->parameter
 parammeters->parameters
 paramss->params
 paramter->parameter
@@ -41926,7 +41940,14 @@ plalforms->platforms
 planation->plantation
 plantext->plaintext
 plantiff->plaintiff
+plarise->polarise
+plarised->polarised
+plarises->polarises
+plarising->polarising
+plarize->polarize
 plarized->polarized
+plarizes->polarizes
+plarizing->polarizing
 plase->place, please, phase, plaice,
 plased->placed, pleased, phased,
 plasement->placement
@@ -42140,7 +42161,15 @@ polarisaiton->polarisation
 polariy->polarity
 polarizaiton->polarization
 polarizin->polarizing
+polarlise->polarise
+polarlised->polarised
+polarlises->polarises
+polarlising->polarising
+polarlize->polarize
 polarlized->polarized
+polarlized->polarized
+polarlizes->polarizes
+polarlizing->polarizing
 polcies->policies
 polciy->policy
 polcy->policy
@@ -43093,7 +43122,6 @@ preshusly->preciously
 presice->precise, preside,
 presicely->precisely
 presicion->precision
-presidence->precedence (maybe for rare)
 presidenital->presidential
 presidental->presidential
 presidin->presiding
@@ -51236,6 +51264,8 @@ simlar->similar
 simlarity->similarity
 simlarlity->similarity
 simlarly->similarly
+simlation->simulation
+simlation->simulation
 simlations->simulations
 simle->simple, smile, simile,
 simler->simpler, similar,
@@ -53515,6 +53545,8 @@ struggels->struggles
 strugglin->struggling
 strust->trust, strut,
 strutcure->structure
+strutcures->structures
+strutcures->structures
 struttural->structural
 strutture->structure
 strutural->structural
@@ -59093,7 +59125,10 @@ uptreams->upstreams
 uqest->quest
 uqests->quests
 ure->sure, ire, are, urea, rue,
+urface->surface
+urfaced->surfaced
 urfaces->surfaces
+urfacing->surfacing
 urrlib->urllib
 usag->usage
 usal->usual
