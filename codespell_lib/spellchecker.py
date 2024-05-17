@@ -109,7 +109,10 @@ _builtin_default = "clear,rare"
 
 _builtin_default_as_tuple = tuple(_builtin_default.split(","))
 
-_inline_ignore_regex = re.compile(r"[^\w\s]\s?codespell:ignore\b(\s+(?P<words>[\w,]*))?")
+_codespell_ignore_tag = "codespell:ignore"
+_inline_ignore_regex = re.compile(
+    rf"[^\w\s]\s?{_codespell_ignore_tag}\b(\s+(?P<words>[\w,]*))?"
+)
 
 
 class UnknownBuiltinDictionaryError(ValueError):
@@ -177,6 +180,8 @@ class Spellchecker:
         self.ignore_words_cased: Container[str] = frozenset()
 
     def _parse_inline_ignore(self, line: str) -> Optional[FrozenSet[str]]:
+        if _codespell_ignore_tag not in line:
+            return frozenset()
         inline_ignore_match = _inline_ignore_regex.search(line)
         if inline_ignore_match:
             words = frozenset(
