@@ -59,7 +59,6 @@ uri_regex_def = (
     "(\\b(?:https?|[ts]?ftp|file|git|smb)://[^\\s]+(?=$|\\s)|"
     "\\b[\\w.%+-]+@[\\w.-]+\\b)"
 )
-inline_ignore_regex = re.compile(r"[^\w\s]\s?codespell:ignore\b(\s+(?P<words>[\w,]*))?")
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
@@ -952,20 +951,10 @@ def parse_file(
         if not line or line in exclude_lines:
             continue
 
-        extra_words_to_ignore = set()
-        match = inline_ignore_regex.search(line)
-        if match:
-            extra_words_to_ignore = set(
-                filter(None, (match.group("words") or "").split(","))
-            )
-            if not extra_words_to_ignore:
-                continue
-
         fixed_words = set()
         asked_for = set()
 
-        issues = spellchecker.spellcheck_line(line, line_tokenizer, extra_words_to_ignore=extra_words_to_ignore)
-        for issue in issues:
+        for issue in spellchecker.spellcheck_line(line, line_tokenizer):
             misspelling = issue.misspelling
             word = issue.word
             lword = issue.lword

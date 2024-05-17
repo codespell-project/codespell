@@ -21,6 +21,7 @@ import re
 from typing import (
     Container,
     Dict,
+    FrozenSet,
     Generic,
     Iterable,
     Optional,
@@ -108,6 +109,8 @@ _builtin_default = "clear,rare"
 
 _builtin_default_as_tuple = tuple(_builtin_default.split(","))
 
+_inline_ignore_regex = re.compile(r"[^\w\s]\s?codespell:ignore\b(\s+(?P<words>[\w,]*))?")
+
 
 class UnknownBuiltinDictionaryError(ValueError):
     def __init__(self, name: str) -> None:
@@ -173,12 +176,21 @@ class Spellchecker:
         self._misspellings: Dict[str, Misspelling] = {}
         self.ignore_words_cased: Container[str] = frozenset()
 
+    def _parse_inline_ignore(self, line: str) -> Optional[FrozenSet[str]]:
+        inline_ignore_match = _inline_ignore_regex.search(line)
+        if inline_ignore_match:
+            words = frozenset(
+                filter(None, (inline_ignore_match.group("words") or "").split(","))
+            )
+            return words if words else None
+        return frozenset()
+
     def spellcheck_line(
         self,
         line: str,
         tokenizer: LineTokenizer[T_co],
         *,
-        extra_words_to_ignore: Container[str] = frozenset()
+        respect_inline_ignore: bool = True,
     ) -> Iterable[DetectedMisspelling[T_co]]:
         """Tokenize and spellcheck a line
 
@@ -187,11 +199,18 @@ class Spellchecker:
 
         :param line: The line to spellcheck.
         :param tokenizer: A callable that will tokenize the line
-        :param extra_words_to_ignore: Extra words to ignore for this particular line
-          (such as content from a `codespell:ignore` comment)
+        :param respect_inline_ignore: Whether to check the line for
+           `codespell:ignore` instructions
+        :returns: An iterable of discovered typos.
         """
         misspellings = self._misspellings
         ignore_words_cased = self.ignore_words_cased
+
+        extra_words_to_ignore = (
+            self._parse_inline_ignore(line) if respect_inline_ignore else frozenset()
+        )
+        if extra_words_to_ignore is None:
+            return
 
         for token in tokenizer(line):
             word = token.group()
