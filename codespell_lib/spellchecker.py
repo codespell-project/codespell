@@ -17,8 +17,11 @@ Copyright (C) 2011  ProFUSION embedded systems
 """
 
 from typing import (
+    Callable,
     Container,
     Dict,
+    Iterable,
+    Match,
     Optional,
     Sequence,
 )
@@ -28,6 +31,9 @@ from typing import (
 alt_chars = (("'", "’"),)  # noqa: RUF001
 
 
+LineTokenizer = Callable[[str], Iterable[Match[str]]]
+
+
 class Misspelling:
     def __init__(self, candidates: Sequence[str], fix: bool, reason: str) -> None:
         self.candidates = candidates
@@ -35,9 +41,49 @@ class Misspelling:
         self.reason = reason
 
 
+class DetectedMisspelling:
+
+    def __init__(self, word: str, lword: str, misspelling: Misspelling, match: Match[str]) -> None:
+        self.word = word
+        self.lword = lword
+        self.misspelling = misspelling
+        self.re_match = match
+
+
 class Spellchecker:
     def __init__(self) -> None:
         self._misspellings: Dict[str, Misspelling] = {}
+        self.ignore_words_cased: Container[str] = frozenset()
+
+    def spellcheck_line(
+        self,
+        line: str,
+        tokenizer: Callable[[str], Iterable[re.Match[str]]],
+        *,
+        extra_words_to_ignore: Container[str] = frozenset()
+    ) -> Iterable[DetectedMisspelling]:
+        misspellings = self._misspellings
+        ignore_words_cased = self.ignore_words_cased
+        for match in tokenizer(line):
+            word = match.group()
+            if word in ignore_words_cased:
+                continue
+            lword = word.lower()
+            misspelling = misspellings.get(lword)
+            if misspelling is not None and lword not in extra_words_to_ignore:
+                # Sometimes we find a 'misspelling' which is actually a valid word
+                # preceded by a string escape sequence.  Ignore such cases as
+                # they're usually false alarms; see issue #17 among others.
+                char_before_idx = match.start() - 1
+                if (
+                    char_before_idx >= 0
+                    and line[char_before_idx] == "\\"
+                    # bell, backspace, formfeed, newline, carriage-return, tab, vtab.
+                    and word.startswith(("a", "b", "f", "n", "r", "t", "v"))
+                    and lword[1:] not in misspellings
+                ):
+                    continue
+                yield DetectedMisspelling(word, lword, misspelling, match)
 
     def check_lower_cased_word(self, word: str) -> Optional[Misspelling]:
         """Check a given word against the loaded dictionaries

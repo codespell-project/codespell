@@ -37,7 +37,6 @@ from typing import (
     Sequence,
     Set,
     Tuple,
-    Callable,
 )
 
 from ._text_util import fix_case
@@ -47,7 +46,8 @@ from ._version import (  # type: ignore[import-not-found]
     __version__ as VERSION,  # noqa: N812
 )
 from .spellchecker import (
-    Misspelling,
+    DetectedMisspelling,
+    LineTokenizer,
     Spellchecker,
 )
 
@@ -716,14 +716,16 @@ def is_text_file(filename: str) -> bool:
 
 def ask_for_word_fix(
     line: str,
-    match: Match[str],
-    misspelling: Misspelling,
+    issue: DetectedMisspelling,
     interactivity: int,
     colors: TermColors,
 ) -> Tuple[bool, Sequence[str]]:
-    wrongword = match.group()
+    wrongword = issue.word
+    misspelling = issue.misspelling
     if interactivity <= 0:
         return misspelling.fix, fix_case(wrongword, misspelling.candidates)
+
+    match = issue.re_match
 
     line_ui = (
         f"{line[:match.start()]}"
@@ -839,7 +841,7 @@ def line_tokenizer_factory(
     uri_regex: Pattern[str],
     word_regex: Pattern[str],
     ignore_word_regex: Optional[Pattern[str]],
-) -> Callable[[str], Iterable[re.Match[str]]]:
+) -> LineTokenizer:
     def line_tokenizer(line: str) -> Iterable[Match[str]]:
         # If all URI spelling errors will be ignored, erase any URI before
         # extracting words. Otherwise, apply ignores after extracting words.
@@ -867,7 +869,6 @@ def parse_file(
     colors: TermColors,
     summary: Optional[Summary],
     spellchecker: Spellchecker,
-    ignore_words_cased: Set[str],
     exclude_lines: Set[str],
     file_opener: FileOpener,
     word_regex: Pattern[str],
@@ -888,7 +889,7 @@ def parse_file(
     else:
         if options.check_filenames:
             for word in extract_words(filename, word_regex, ignore_word_regex):
-                if word in ignore_words_cased:
+                if word in spellchecker.ignore_words_cased:
                     continue
                 lword = word.lower()
                 misspelling = spellchecker.check_lower_cased_word(lword)
@@ -962,25 +963,12 @@ def parse_file(
         fixed_words = set()
         asked_for = set()
 
-        for match in line_tokenizer(line):
-            word = match.group()
-            if word in ignore_words_cased:
-                continue
-            lword = word.lower()
-            misspelling = spellchecker.check_lower_cased_word(lword)
-            if misspelling is not None and lword not in extra_words_to_ignore:
-                # Sometimes we find a 'misspelling' which is actually a valid word
-                # preceded by a string escape sequence.  Ignore such cases as
-                # they're usually false alarms; see issue #17 among others.
-                char_before_idx = match.start() - 1
-                if (
-                    char_before_idx >= 0
-                    and line[char_before_idx] == "\\"
-                    # bell, backspace, formfeed, newline, carriage-return, tab, vtab.
-                    and word.startswith(("a", "b", "f", "n", "r", "t", "v"))
-                    and spellchecker.check_lower_cased_word(lword[1:]) is None
-                ):
-                    continue
+        issues = spellchecker.spellcheck_line(line, line_tokenizer, extra_words_to_ignore=extra_words_to_ignore)
+        for issue in issues:
+                # TODO: De-indent in next commit
+                misspelling = issue.misspelling
+                word = issue.word
+                lword = issue.lword
 
                 context_shown = False
                 fix = misspelling.fix
@@ -992,8 +980,7 @@ def parse_file(
                         print_context(lines, i, context)
                     fix, candidates = ask_for_word_fix(
                         lines[i],
-                        match,
-                        misspelling,
+                        issue,
                         options.interactive,
                         colors=colors,
                     )
@@ -1197,6 +1184,7 @@ def main(*args: str) -> int:
                 return EX_USAGE
             use_dictionaries.append(dictionary)
     spellchecker = Spellchecker()
+    spellchecker.ignore_words_cased = ignore_words_cased
     for dictionary in use_dictionaries:
         spellchecker.add_from_file(dictionary, ignore_words=ignore_words)
     colors = TermColors()
@@ -1274,7 +1262,6 @@ def main(*args: str) -> int:
                         colors,
                         summary,
                         spellchecker,
-                        ignore_words_cased,
                         exclude_lines,
                         file_opener,
                         word_regex,
@@ -1299,7 +1286,6 @@ def main(*args: str) -> int:
                 colors,
                 summary,
                 spellchecker,
-                ignore_words_cased,
                 exclude_lines,
                 file_opener,
                 word_regex,
