@@ -26,6 +26,10 @@ import re
 import sys
 import textwrap
 from ctypes import wintypes
+from .spellchecker import (
+    build_dict,
+    Misspelling,
+)
 from typing import (
     Any,
     Dict,
@@ -45,7 +49,6 @@ from ._text_util import fix_case
 from ._version import (  # type: ignore[import-not-found]
     __version__ as VERSION,  # noqa: N812
 )
-from .spellchecker import Misspelling, build_dict
 
 word_regex_def = r"[\w\-'’]+"  # noqa: RUF001
 # While we want to treat characters like ( or " as okay for a starting break,
@@ -716,10 +719,10 @@ def ask_for_word_fix(
     misspelling: Misspelling,
     interactivity: int,
     colors: TermColors,
-) -> Tuple[bool, str]:
+) -> Tuple[bool, Sequence[str]]:
     wrongword = match.group()
     if interactivity <= 0:
-        return misspelling.fix, fix_case(wrongword, misspelling.data)
+        return misspelling.fix, fix_case(wrongword, misspelling.candidates)
 
     line_ui = (
         f"{line[:match.start()]}"
@@ -729,7 +732,8 @@ def ask_for_word_fix(
 
     if misspelling.fix and interactivity & 1:
         r = ""
-        fixword = fix_case(wrongword, misspelling.data)
+        candidates = fix_case(wrongword, misspelling.candidates)
+        fixword = candidates[0]
         while not r:
             print(f"{line_ui}\t{wrongword} ==> {fixword} (Y/n) ", end="", flush=True)
             r = sys.stdin.readline().strip().upper()
@@ -747,12 +751,12 @@ def ask_for_word_fix(
         # we ask the user which word to use
 
         r = ""
-        opt = [w.strip() for w in misspelling.data.split(",")]
+        opt = misspelling.candidates
         while not r:
             print(f"{line_ui} Choose an option (blank for none): ", end="")
-            for i, o in enumerate(opt):
-                fixword = fix_case(wrongword, o)
-                print(f" {i}) {fixword}", end="")
+            cased_candidates = fix_case(wrongword, opt)
+            for i, candidates in enumerate(cased_candidates):
+                print(f" {i}) {candidates}", end="")
             print(": ", end="", flush=True)
 
             n = sys.stdin.readline().strip()
@@ -767,9 +771,9 @@ def ask_for_word_fix(
 
         if r:
             misspelling.fix = True
-            misspelling.data = r
+            misspelling.candidates = (r,)
 
-    return misspelling.fix, fix_case(wrongword, misspelling.data)
+    return misspelling.fix, fix_case(wrongword, misspelling.candidates)
 
 
 def print_context(
@@ -861,14 +865,14 @@ def parse_file(
                 if lword not in misspellings:
                     continue
                 fix = misspellings[lword].fix
-                fixword = fix_case(word, misspellings[lword].data)
+                candidates = fix_case(word, misspellings[lword].candidates)
 
                 if summary and fix:
                     summary.update(lword)
 
                 cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
                 cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
-                crightword = f"{colors.FWORD}{fixword}{colors.DISABLE}"
+                crightword = f"{colors.FWORD}{', '.join(candidates)}{colors.DISABLE}"
 
                 reason = misspellings[lword].reason
                 if reason:
@@ -958,13 +962,13 @@ def parse_file(
 
                 context_shown = False
                 fix = misspellings[lword].fix
-                fixword = fix_case(word, misspellings[lword].data)
+                candidates = fix_case(word, misspellings[lword].candidates)
 
                 if options.interactive and lword not in asked_for:
                     if context is not None:
                         context_shown = True
                         print_context(lines, i, context)
-                    fix, fixword = ask_for_word_fix(
+                    fix, candidates = ask_for_word_fix(
                         lines[i],
                         match,
                         misspellings[lword],
@@ -981,7 +985,7 @@ def parse_file(
 
                 if options.write_changes and fix:
                     changed = True
-                    lines[i] = re.sub(rf"\b{word}\b", fixword, lines[i])
+                    lines[i] = re.sub(rf"\b{word}\b", candidates[0], lines[i])
                     fixed_words.add(word)
                     continue
 
@@ -996,7 +1000,7 @@ def parse_file(
                 cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
                 cline = f"{colors.FILE}{i + 1}{colors.DISABLE}"
                 cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
-                crightword = f"{colors.FWORD}{fixword}{colors.DISABLE}"
+                crightword = f"{colors.FWORD}{', '.join(candidates)}{colors.DISABLE}"
 
                 reason = misspellings[lword].reason
                 if reason:

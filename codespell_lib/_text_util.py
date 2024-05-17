@@ -16,12 +16,14 @@ Copyright (C) 2010-2011  Lucas De Marchi <lucas.de.marchi@gmail.com>
 Copyright (C) 2011  ProFUSION embedded systems
 """
 
+from typing import Sequence
 
-def fix_case(word: str, fixword: str) -> str:
+
+def fix_case(word: str, candidates: Sequence[str]) -> Sequence[str]:
     if word == word.capitalize():
-        return ", ".join(w.strip().capitalize() for w in fixword.split(","))
+        return tuple(c.capitalize() for c in candidates)
     if word == word.upper():
-        return fixword.upper()
+        return tuple(c.upper() for c in candidates)
     # they are both lower case
     # or we don't have any idea
-    return fixword
+    return candidates
