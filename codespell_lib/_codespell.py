@@ -716,7 +716,7 @@ def is_text_file(filename: str) -> bool:
 
 def ask_for_word_fix(
     line: str,
-    issue: DetectedMisspelling,
+    issue: "DetectedMisspelling[re.Match[str]]",
     interactivity: int,
     colors: TermColors,
 ) -> Tuple[bool, Sequence[str]]:
@@ -725,7 +725,7 @@ def ask_for_word_fix(
     if interactivity <= 0:
         return misspelling.fix, fix_case(wrongword, misspelling.candidates)
 
-    match = issue.re_match
+    match = issue.token
 
     line_ui = (
         f"{line[:match.start()]}"
@@ -841,7 +841,7 @@ def line_tokenizer_factory(
     uri_regex: Pattern[str],
     word_regex: Pattern[str],
     ignore_word_regex: Optional[Pattern[str]],
-) -> LineTokenizer:
+) -> "LineTokenizer[re.Match[str]]":
     def line_tokenizer(line: str) -> Iterable[Match[str]]:
         # If all URI spelling errors will be ignored, erase any URI before
         # extracting words. Otherwise, apply ignores after extracting words.

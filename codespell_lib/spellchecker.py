@@ -16,22 +16,135 @@ Copyright (C) 2010-2011  Lucas De Marchi <lucas.de.marchi@gmail.com>
 Copyright (C) 2011  ProFUSION embedded systems
 """
 
+import os
+import re
 from typing import (
-    Callable,
     Container,
     Dict,
+    Generic,
     Iterable,
-    Match,
     Optional,
+    Protocol,
     Sequence,
+    TypeVar,
 )
 
 # Pass all misspellings through this translation table to generate
 # alternative misspellings and fixes.
 alt_chars = (("'", "’"),)  # noqa: RUF001
 
+T_co = TypeVar("T_co", bound="Token", covariant=True)
 
-LineTokenizer = Callable[[str], Iterable[Match[str]]]
+
+supported_languages_en = ("en", "en_GB", "en_US", "en_CA", "en_AU")
+supported_languages = supported_languages_en
+
+# Users might want to link this file into /usr/local/bin, so we resolve the
+# symbolic link path to the real path if necessary.
+_data_root = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data")
+_builtin_dictionaries = (
+    # name, desc, name, err in aspell, correction in aspell, \
+    # err dictionary array, rep dictionary array
+    # The arrays must contain the names of aspell dictionaries
+    # The aspell tests here aren't the ideal state, but the None's are
+    # realistic for obscure words
+    ("clear", "for unambiguous errors", "", False, None, supported_languages_en, None),
+    (
+        "rare",
+        "for rare (but valid) words that are likely to be errors",
+        "_rare",
+        None,
+        None,
+        None,
+        None,
+    ),
+    (
+        "informal",
+        "for making informal words more formal",
+        "_informal",
+        True,
+        True,
+        supported_languages_en,
+        supported_languages_en,
+    ),
+    (
+        "usage",
+        "for replacing phrasing with recommended terms",
+        "_usage",
+        None,
+        None,
+        None,
+        None,
+    ),
+    (
+        "code",
+        "for words from code and/or mathematics that are likely to be typos in other contexts (such as uint)",  # noqa: E501
+        "_code",
+        None,
+        None,
+        None,
+        None,
+    ),
+    (
+        "names",
+        "for valid proper names that might be typos",
+        "_names",
+        None,
+        None,
+        None,
+        None,
+    ),
+    (
+        "en-GB_to_en-US",
+        "for corrections from en-GB to en-US",
+        "_en-GB_to_en-US",
+        True,
+        True,
+        ("en_GB",),
+        ("en_US",),
+    ),
+)
+_builtin_default = "clear,rare"
+
+_builtin_default_as_tuple = tuple(_builtin_default.split(","))
+
+
+class UnknownBuiltinDictionaryError(ValueError):
+    def __init__(self, name: str) -> None:
+        super().__init__(f"Unknown built-in dictionary: {name}")
+
+
+class BuiltinDictionariesAlreadyLoadedError(TypeError):
+    def __init__(self) -> None:
+        super().__init__(
+            "load_builtin_dictionaries must not be called more than once",
+        )
+
+
+class LineTokenizer(Protocol[T_co]):
+    """Callable that splits a line into multiple tokens to be spellchecked
+
+    Generally, a regex will do for simple cases. A probably too simple one is:
+
+        >>> tokenizer = re.compile(r"[^ ]+").finditer
+
+    For more complex cases, either use more complex regexes or custom tokenization
+    code.
+    """
+
+    def __call__(self, line: str) -> Iterable[T_co]: ...
+
+
+class Token(Protocol):
+    """Describes a token
+
+    This is a protocol to support `re.Match[str]` (which codespell uses) and any
+    other tokenization method that our API consumers might be using.
+    """
+
+    def group(self) -> str: ...
+
+    def start(self) -> int: ...
 
 
 class Misspelling:
@@ -41,13 +154,18 @@ class Misspelling:
         self.reason = reason
 
 
-class DetectedMisspelling:
-
-    def __init__(self, word: str, lword: str, misspelling: Misspelling, match: Match[str]) -> None:
+class DetectedMisspelling(Generic[T_co]):
+    def __init__(
+        self,
+        word: str,
+        lword: str,
+        misspelling: Misspelling,
+        token: T_co,
+    ) -> None:
         self.word = word
         self.lword = lword
         self.misspelling = misspelling
-        self.re_match = match
+        self.token = token
 
 
 class Spellchecker:
@@ -58,14 +176,25 @@ class Spellchecker:
     def spellcheck_line(
         self,
         line: str,
-        tokenizer: Callable[[str], Iterable[re.Match[str]]],
+        tokenizer: LineTokenizer[T_co],
         *,
         extra_words_to_ignore: Container[str] = frozenset()
-    ) -> Iterable[DetectedMisspelling]:
+    ) -> Iterable[DetectedMisspelling[T_co]]:
+        """Tokenize and spellcheck a line
+
+        Split the line into tokens based using the provided tokenizer. See the doc
+        string for the class for an example.
+
+        :param line: The line to spellcheck.
+        :param tokenizer: A callable that will tokenize the line
+        :param extra_words_to_ignore: Extra words to ignore for this particular line
+          (such as content from a `codespell:ignore` comment)
+        """
         misspellings = self._misspellings
         ignore_words_cased = self.ignore_words_cased
-        for match in tokenizer(line):
-            word = match.group()
+
+        for token in tokenizer(line):
+            word = token.group()
             if word in ignore_words_cased:
                 continue
             lword = word.lower()
@@ -74,7 +203,7 @@ class Spellchecker:
                 # Sometimes we find a 'misspelling' which is actually a valid word
                 # preceded by a string escape sequence.  Ignore such cases as
                 # they're usually false alarms; see issue #17 among others.
-                char_before_idx = match.start() - 1
+                char_before_idx = token.start() - 1
                 if (
                     char_before_idx >= 0
                     and line[char_before_idx] == "\\"
@@ -83,7 +212,7 @@ class Spellchecker:
                     and lword[1:] not in misspellings
                 ):
                     continue
-                yield DetectedMisspelling(word, lword, misspelling, match)
+                yield DetectedMisspelling(word, lword, misspelling, token)
 
     def check_lower_cased_word(self, word: str) -> Optional[Misspelling]:
         """Check a given word against the loaded dictionaries
