@@ -17,9 +17,10 @@ Copyright (C) 2011  ProFUSION embedded systems
 """
 
 from typing import (
+    Container,
     Dict,
+    Optional,
     Sequence,
-    Set,
 )
 
 # Pass all misspellings through this translation table to generate
@@ -34,7 +35,49 @@ class Misspelling:
         self.reason = reason
 
 
-def add_misspelling(
+class Spellchecker:
+    def __init__(self) -> None:
+        self._misspellings: Dict[str, Misspelling] = {}
+
+    def check_lower_cased_word(self, word: str) -> Optional[Misspelling]:
+        """Check a given word against the loaded dictionaries
+
+        :param word: The word to check. This should be all lower-case.
+        """
+        return self._misspellings.get(word)
+
+    def add_from_file(
+        self,
+        filename: str,
+        *,
+        ignore_words: Container[str] = frozenset(),
+    ) -> None:
+        """Parse a codespell dictionary
+
+        :param filename: The codespell dictionary file to parse
+        :param ignore_words: Words to ignore from this dictionary.
+        """
+        misspellings = self._misspellings
+        with open(filename, encoding="utf-8") as f:
+            translate_tables = [(x, str.maketrans(x, y)) for x, y in alt_chars]
+            for line in f:
+                [key, data] = line.split("->")
+                # TODO: For now, convert both to lower.
+                #       Someday we can maybe add support for fixing caps.
+                key = key.lower()
+                data = data.lower()
+                if key not in ignore_words:
+                    _add_misspelling(key, data, misspellings)
+                # generate alternative misspellings/fixes
+                for x, table in translate_tables:
+                    if x in key:
+                        alt_key = key.translate(table)
+                        alt_data = data.translate(table)
+                        if alt_key not in ignore_words:
+                            _add_misspelling(alt_key, alt_data, misspellings)
+
+
+def _add_misspelling(
     key: str,
     data: str,
     misspellings: Dict[str, Misspelling],
@@ -54,27 +97,3 @@ def add_misspelling(
         fix,
         reason,
     )
-
-
-def build_dict(
-    filename: str,
-    misspellings: Dict[str, Misspelling],
-    ignore_words: Set[str],
-) -> None:
-    with open(filename, encoding="utf-8") as f:
-        translate_tables = [(x, str.maketrans(x, y)) for x, y in alt_chars]
-        for line in f:
-            [key, data] = line.split("->")
-            # TODO: For now, convert both to lower.
-            #       Someday we can maybe add support for fixing caps.
-            key = key.lower()
-            data = data.lower()
-            if key not in ignore_words:
-                add_misspelling(key, data, misspellings)
-            # generate alternative misspellings/fixes
-            for x, table in translate_tables:
-                if x in key:
-                    alt_key = key.translate(table)
-                    alt_data = data.translate(table)
-                    if alt_key not in ignore_words:
-                        add_misspelling(alt_key, alt_data, misspellings)

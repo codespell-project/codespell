@@ -24,6 +24,6 @@ def fix_case(word: str, candidates: Sequence[str]) -> Sequence[str]:
         return tuple(c.capitalize() for c in candidates)
     if word == word.upper():
         return tuple(c.upper() for c in candidates)
-    # they are both lower case
+    # they are both lower-case
     # or we don't have any idea
     return candidates
