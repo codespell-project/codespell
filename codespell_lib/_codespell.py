@@ -37,6 +37,7 @@ from typing import (
     Sequence,
     Set,
     Tuple,
+    Callable,
 )
 
 from ._text_util import fix_case
@@ -833,6 +834,34 @@ def apply_uri_ignore_words(
     return check_matches
 
 
+def line_tokenizer_factory(
+    uri_ignore_words: Set[str],
+    uri_regex: Pattern[str],
+    word_regex: Pattern[str],
+    ignore_word_regex: Optional[Pattern[str]],
+) -> Callable[[str], Iterable[re.Match[str]]]:
+    def line_tokenizer(line: str) -> Iterable[Match[str]]:
+        # If all URI spelling errors will be ignored, erase any URI before
+        # extracting words. Otherwise, apply ignores after extracting words.
+        # This ensures that if a URI ignore word occurs both inside a URI and
+        # outside, it will still be a spelling error.
+        if "*" in uri_ignore_words:
+            line = uri_regex.sub(" ", line)
+        check_matches = extract_words_iter(line, word_regex, ignore_word_regex)
+        if "*" not in uri_ignore_words:
+            check_matches = apply_uri_ignore_words(
+                check_matches,
+                line,
+                word_regex,
+                ignore_word_regex,
+                uri_regex,
+                uri_ignore_words,
+            )
+        return check_matches
+
+    return line_tokenizer
+
+
 def parse_file(
     filename: str,
     colors: TermColors,
@@ -910,6 +939,13 @@ def parse_file(
         except OSError:
             return bad_count
 
+    line_tokenizer = line_tokenizer_factory(
+        uri_ignore_words,
+        uri_regex,
+        word_regex,
+        ignore_word_regex,
+    )
+
     for i, line in enumerate(lines):
         if line.rstrip() in exclude_lines:
             continue
@@ -926,23 +962,7 @@ def parse_file(
         fixed_words = set()
         asked_for = set()
 
-        # If all URI spelling errors will be ignored, erase any URI before
-        # extracting words. Otherwise, apply ignores after extracting words.
-        # This ensures that if a URI ignore word occurs both inside a URI and
-        # outside, it will still be a spelling error.
-        if "*" in uri_ignore_words:
-            line = uri_regex.sub(" ", line)
-        check_matches = extract_words_iter(line, word_regex, ignore_word_regex)
-        if "*" not in uri_ignore_words:
-            check_matches = apply_uri_ignore_words(
-                check_matches,
-                line,
-                word_regex,
-                ignore_word_regex,
-                uri_regex,
-                uri_ignore_words,
-            )
-        for match in check_matches:
+        for match in line_tokenizer(line):
             word = match.group()
             if word in ignore_words_cased:
                 continue
