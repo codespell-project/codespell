@@ -965,80 +965,74 @@ def parse_file(
 
         issues = spellchecker.spellcheck_line(line, line_tokenizer, extra_words_to_ignore=extra_words_to_ignore)
         for issue in issues:
-                # TODO: De-indent in next commit
-                misspelling = issue.misspelling
-                word = issue.word
-                lword = issue.lword
+            misspelling = issue.misspelling
+            word = issue.word
+            lword = issue.lword
 
-                context_shown = False
-                fix = misspelling.fix
-                candidates = fix_case(word, misspelling.candidates)
+            context_shown = False
+            fix = misspelling.fix
+            candidates = fix_case(word, misspelling.candidates)
 
-                if options.interactive and lword not in asked_for:
-                    if context is not None:
-                        context_shown = True
-                        print_context(lines, i, context)
-                    fix, candidates = ask_for_word_fix(
-                        lines[i],
-                        issue,
-                        options.interactive,
-                        colors=colors,
-                    )
-                    asked_for.add(lword)
-
-                if summary and fix:
-                    summary.update(lword)
-
-                if word in fixed_words:  # can skip because of re.sub below
-                    continue
-
-                if options.write_changes and fix:
-                    changed = True
-                    lines[i] = re.sub(rf"\b{word}\b", candidates[0], lines[i])
-                    fixed_words.add(word)
-                    continue
-
-                # otherwise warning was explicitly set by interactive mode
-                if (
-                    options.interactive & 2
-                    and not fix
-                    and not misspelling.reason
-                ):
-                    continue
-
-                cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
-                cline = f"{colors.FILE}{i + 1}{colors.DISABLE}"
-                cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
-                crightword = f"{colors.FWORD}{', '.join(candidates)}{colors.DISABLE}"
-
-                reason = misspelling.reason
-                if reason:
-                    if options.quiet_level & QuietLevels.DISABLED_FIXES:
-                        continue
-                    creason = f"  | {colors.FILE}{reason}{colors.DISABLE}"
-                else:
-                    if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
-                        continue
-                    creason = ""
-
-                # If we get to this point (uncorrected error) we should change
-                # our bad_count and thus return value
-                bad_count += 1
-
-                if (not context_shown) and (context is not None):
+            if options.interactive and lword not in asked_for:
+                if context is not None:
+                    context_shown = True
                     print_context(lines, i, context)
-                if filename != "-":
-                    print(
-                        f"{cfilename}:{cline}: {cwrongword} "
-                        f"==> {crightword}{creason}"
-                    )
-                elif options.stdin_single_line:
-                    print(f"{cline}: {cwrongword} ==> {crightword}{creason}")
-                else:
-                    print(
-                        f"{cline}: {line.strip()}\n\t{cwrongword} "
-                        f"==> {crightword}{creason}"
-                    )
+                fix, candidates = ask_for_word_fix(
+                    lines[i],
+                    issue,
+                    options.interactive,
+                    colors=colors,
+                )
+                asked_for.add(lword)
+
+            if summary and fix:
+                summary.update(lword)
+
+            if word in fixed_words:  # can skip because of re.sub below
+                continue
+
+            if options.write_changes and fix:
+                changed = True
+                lines[i] = re.sub(rf"\b{word}\b", candidates[0], lines[i])
+                fixed_words.add(word)
+                continue
+
+            # otherwise warning was explicitly set by interactive mode
+            if options.interactive & 2 and not fix and not misspelling.reason:
+                continue
+
+            cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
+            cline = f"{colors.FILE}{i + 1}{colors.DISABLE}"
+            cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
+            crightword = f"{colors.FWORD}{', '.join(candidates)}{colors.DISABLE}"
+
+            reason = misspelling.reason
+            if reason:
+                if options.quiet_level & QuietLevels.DISABLED_FIXES:
+                    continue
+                creason = f"  | {colors.FILE}{reason}{colors.DISABLE}"
+            else:
+                if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
+                    continue
+                creason = ""
+
+            # If we get to this point (uncorrected error) we should change
+            # our bad_count and thus return value
+            bad_count += 1
+
+            if (not context_shown) and (context is not None):
+                print_context(lines, i, context)
+            if filename != "-":
+                print(
+                    f"{cfilename}:{cline}: {cwrongword} " f"==> {crightword}{creason}"
+                )
+            elif options.stdin_single_line:
+                print(f"{cline}: {cwrongword} ==> {crightword}{creason}")
+            else:
+                print(
+                    f"{cline}: {line.strip()}\n\t{cwrongword} "
+                    f"==> {crightword}{creason}"
+                )
 
     if changed:
         if filename == "-":
