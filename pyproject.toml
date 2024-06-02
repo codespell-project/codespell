@@ -169,6 +169,6 @@ max-complexity = 45
 [tool.ruff.lint.pylint]
 allow-magic-value-types = ["bytes", "int", "str",]
 max-args = 13
-max-branches = 51
-max-returns = 11
-max-statements = 119
+max-branches = 55
+max-returns = 13
+max-statements = 122

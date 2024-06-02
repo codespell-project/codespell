@@ -1080,6 +1080,9 @@ def main(*args: str) -> int:
         for ifile, cfg_file in enumerate(used_cfg_files, start=1):
             print(f"    {ifile}: {cfg_file}")
 
+    if options.interactive:
+        options.write_changes = True
+
     if options.regex and options.write_changes:
         print(
             "ERROR: --write-changes cannot be used together with --regex",

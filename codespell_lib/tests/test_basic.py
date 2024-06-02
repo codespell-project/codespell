@@ -238,8 +238,10 @@ def test_interactivity(
         assert cs.main(fname) == 0, "empty file"
         fname.write_text("abandonned\n")
         assert cs.main("-i", "-1", fname) == 1, "bad"
+        fname.write_text("abandonned\n")
         with FakeStdin("y\n"):
             assert cs.main("-i", "3", fname) == 1
+        fname.write_text("abandonned\n")
         with FakeStdin("n\n"):
             result = cs.main("-w", "-i", "3", fname, std=True)
             assert isinstance(result, tuple)
