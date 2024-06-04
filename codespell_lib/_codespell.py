@@ -1062,6 +1062,12 @@ def _script_main() -> int:
     return main(*sys.argv[1:])
 
 
+def _usage_error(parser: argparse.ArgumentParser, message: str) -> int:
+    parser.print_usage()
+    print(message, file=sys.stderr)
+    return EX_USAGE
+
+
 def main(*args: str) -> int:
     """Contains flow control"""
     try:
@@ -1081,30 +1087,27 @@ def main(*args: str) -> int:
             print(f"    {ifile}: {cfg_file}")
 
     if options.regex and options.write_changes:
-        print(
+        return _usage_error(
+            parser,
             "ERROR: --write-changes cannot be used together with --regex",
-            file=sys.stderr,
         )
-        parser.print_help()
-        return EX_USAGE
     word_regex = options.regex or word_regex_def
     try:
         word_regex = re.compile(word_regex)
     except re.error as e:
-        print(f'ERROR: invalid --regex "{word_regex}" ({e})', file=sys.stderr)
-        parser.print_help()
-        return EX_USAGE
+        return _usage_error(
+            parser,
+            f'ERROR: invalid --regex "{word_regex}" ({e})',
+        )
 
     if options.ignore_regex:
         try:
             ignore_word_regex = re.compile(options.ignore_regex)
         except re.error as e:
-            print(
+            return _usage_error(
+                parser,
                 f'ERROR: invalid --ignore-regex "{options.ignore_regex}" ({e})',
-                file=sys.stderr,
             )
-            parser.print_help()
-            return EX_USAGE
     else:
         ignore_word_regex = None
 
@@ -1117,24 +1120,20 @@ def main(*args: str) -> int:
         )
         for ignore_words_file in ignore_words_files:
             if not os.path.isfile(ignore_words_file):
-                print(
+                return _usage_error(
+                    parser,
                     f"ERROR: cannot find ignore-words file: {ignore_words_file}",
-                    file=sys.stderr,
                 )
-                parser.print_help()
-                return EX_USAGE
             build_ignore_words(ignore_words_file, ignore_words, ignore_words_cased)
 
     uri_regex = options.uri_regex or uri_regex_def
     try:
         uri_regex = re.compile(uri_regex)
     except re.error as e:
-        print(
+        return _usage_error(
+            parser,
             f'ERROR: invalid --uri-regex "{uri_regex}" ({e})',
-            file=sys.stderr,
         )
-        parser.print_help()
-        return EX_USAGE
 
     uri_ignore_words = set(
         itertools.chain(*parse_ignore_words_option(options.uri_ignore_words_list))
@@ -1155,20 +1154,16 @@ def main(*args: str) -> int:
                         )
                         break
                 else:
-                    print(
+                    return _usage_error(
+                        parser,
                         f"ERROR: Unknown builtin dictionary: {u}",
-                        file=sys.stderr,
                     )
-                    parser.print_help()
-                    return EX_USAGE
         else:
             if not os.path.isfile(dictionary):
-                print(
+                return _usage_error(
+                    parser,
                     f"ERROR: cannot find dictionary file: {dictionary}",
-                    file=sys.stderr,
                 )
-                parser.print_help()
-                return EX_USAGE
             use_dictionaries.append(dictionary)
     misspellings: Dict[str, Misspelling] = {}
     for dictionary in use_dictionaries:
@@ -1182,13 +1177,11 @@ def main(*args: str) -> int:
     context = None
     if options.context is not None:
         if (options.before_context is not None) or (options.after_context is not None):
-            print(
+            return _usage_error(
+                parser,
                 "ERROR: --context/-C cannot be used together with "
                 "--context-before/-B or --context-after/-A",
-                file=sys.stderr,
             )
-            parser.print_help()
-            return EX_USAGE
         context_both = max(0, options.context)
         context = (context_both, context_both)
     elif (options.before_context is not None) or (options.after_context is not None):
@@ -1214,12 +1207,11 @@ def main(*args: str) -> int:
     try:
         glob_match.match("/random/path")  # does not need a real path
     except re.error:
-        print(
+        return _usage_error(
+            parser,
             "ERROR: --skip/-S has been fed an invalid glob, "
             "try escaping special characters",
-            file=sys.stderr,
         )
-        return EX_USAGE
 
     bad_count = 0
     for filename in sorted(options.files):
