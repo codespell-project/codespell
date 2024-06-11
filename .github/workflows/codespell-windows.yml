@@ -26,3 +26,5 @@ jobs:
       - run: codespell --version
       - run: pytest codespell_lib
       - uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
