@@ -721,6 +721,7 @@ accesor->accessor
 accesories->accessories
 accesors->accessors
 accesory->accessory
+accessa->access a
 accessability->accessibility
 accessable->accessible
 accessbile->accessible
@@ -3367,6 +3368,8 @@ alwauys->always
 alway->always
 alwyas->always
 alwys->always
+alyer->layer
+alyers->layers
 alyways->always
 amacing->amazing
 amacingly->amazingly
@@ -4841,6 +4844,7 @@ aproch->approach
 aproched->approached
 aproches->approaches
 aproching->approaching
+aprogram->a program
 aproove->approve
 aprooved->approved
 apropiate->appropriate
@@ -8688,6 +8692,7 @@ bufferes->buffers, buffered,
 bufferin->buffering, buffer in,
 bufferred->buffered
 bufferring->buffering
+buffes->buffers
 buffeur->buffer
 bufffer->buffer
 bufffered->buffered
@@ -13371,6 +13376,7 @@ conceous->conscious
 conceousally->consciously
 conceously->consciously
 conceptification->conceptualization, conceptualisation,
+conceptionally->conceptually
 concequence->consequence
 concequences->consequences
 concered->concerned
@@ -15017,6 +15023,10 @@ contributiongs->contributions
 contributon->contribution, contributor,
 contributons->contributions, contributors,
 contries->countries
+contrieve->contrive
+contrieved->contrived
+contrieves->contrives
+contrieving->contriving
 contrinution->contribution
 contrinutions->contributions
 contritutions->contributions
@@ -15141,6 +15151,8 @@ conventience->convenience
 conventiences->conveniences
 conventient->convenient
 conventiently->conveniently
+conventioal->conventional
+conventioally->conventionally
 convenvient->convenient
 conver->convert, cover, convex, convey, confer,
 converage->coverage, converge,
@@ -22238,6 +22250,7 @@ emable->enable
 emabled->enabled
 emables->enables
 emabling->enabling
+emac->Emacs
 emai->email
 emailin->emailing, email in,
 emailling->emailing
@@ -23012,7 +23025,11 @@ envioronment->environment
 envioronmental->environmental
 envioronments->environments
 envireonment->environment
+envireonmental->environmental
+envireonments->environments
 envirionment->environment
+envirionmental->environmental
+envirionments->environments
 envirnment->environment
 envirnmental->environmental
 envirnments->environments
@@ -23286,6 +23303,10 @@ erorrs->errors
 erors->errors
 erraneous->erroneous
 erraneously->erroneously
+errect->erect
+errected->erected
+errecting->erecting
+errects->erects
 erro->error
 erroneos->erroneous
 erroneosly->erroneously
@@ -24641,6 +24662,8 @@ expanation->explanation, expansion,
 expanations->explanations, expansions,
 expanble->expandable
 expandin->expanding, expand in,
+expandr->expander
+expandrs->expanders
 expaned->expand, expanded, explained,
 expaneded->expanded
 expaneding->expanding
@@ -27690,6 +27713,10 @@ generalyl->generally
 generalyse->generalise
 generaor->generator
 generaors->generators
+generare->generate
+generared->generated
+generares->generates
+generaring->generating
 generat->generate, general,
 generatd->generated
 generater->generator, generated, generates, generate,
@@ -28370,6 +28397,7 @@ guideded->guided
 guidence->guidance
 guidline->guideline
 guidlines->guidelines
+guie->guide, guile, guise,
 Guilia->Giulia
 Guilio->Giulio
 Guiness->Guinness
@@ -29459,6 +29487,7 @@ ignord->ignored
 ignoreing->ignoring
 ignorence->ignorance
 ignorent->ignorant
+ignoret->ignored
 ignorgable->ignorable
 ignorgd->ignored
 ignorge->ignore
@@ -29752,6 +29781,8 @@ implemanting->implementing
 implemants->implements
 implemataion->implementation
 implemataions->implementations
+implemation->implementation
+implemations->implementations
 implemememnt->implement
 implemememntation->implementation
 implemement->implement
@@ -30986,6 +31017,7 @@ inherith->inherit
 inherithed->inherited
 inherithing->inheriting
 inheriths->inherits
+inheritied->inherited
 inheritin->inheriting, inherit in,
 inheritted->inherited
 inheritting->inheriting
@@ -32882,6 +32914,7 @@ intitiatives->initiatives
 intitiator->initiator
 intitiators->initiators
 intity->entity
+intoduction->introduction
 intorduce->introduce
 intorduced->introduced
 intorduces->introduces
@@ -34726,6 +34759,7 @@ longitute->longitude
 longst->longest
 longuer->longer
 longuest->longest
+longwinded->long-winded
 lonley->lonely
 lonly->lonely, only,
 looback->loopback
@@ -35687,6 +35721,7 @@ menue->menu
 menues->menus
 menutitems->menuitems
 meny->menu, many,
+meoization->memoization
 meory->memory, Maori,
 meraj->mirage
 merajes->mirages
@@ -36648,6 +36683,7 @@ montioring->monitoring
 montiors->monitors
 montly->monthly
 Montnana->Montana
+montonic->monotonic
 montor->monitor, motor, mentor,
 montored->monitored, mentored,
 montoring->monitoring, mentoring,
@@ -46669,6 +46705,7 @@ regitrations->registrations
 regitries->registries
 regitry->registry
 regluar->regular
+regluarize->regularize
 regnerate->regenerate
 regnerated->regenerated
 regnerates->regenerates
@@ -50297,6 +50334,7 @@ semgentations->segmentations
 semgented->segmented
 semgenting->segmenting
 semgents->segments
+semicoli->semicolons
 semicolor->semicolon
 semicolumn->semicolon
 semiconducter->semiconductor
@@ -53411,6 +53449,7 @@ stocastic->stochastic
 stoer->store
 stoers->stores
 stomache->stomach
+stompling->stomping
 stompted->stomped
 stong->strong
 stonger->stronger
@@ -56019,6 +56058,7 @@ texured->textured
 texures->textures
 texxt->text
 tey->they
+tge->the
 tghe->the
 tha->than, that, the,
 thair->their, there,
@@ -56253,6 +56293,7 @@ thowards->towards
 thowing->throwing, towing, showing, thawing,
 thown->thrown, town,
 thows->throws, those, tows,
+thpe->type
 thq->the
 thrad->thread
 thraded->threaded, traded,
@@ -56783,6 +56824,8 @@ trancodes->transcodes
 trancoding->transcoding
 trancodings->transcodings
 trandional->traditional
+tranducer->transducer
+tranducers->transducers
 traned->trained
 traner->trainer
 traners->trainers
@@ -59709,6 +59752,7 @@ variabla->variable
 variablas->variables
 variablen->variable
 variablens->variables
+variablesm->variables
 variabls->variables
 varialbe->variable
 varialbes->variables
