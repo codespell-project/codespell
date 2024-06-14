@@ -51,6 +51,8 @@ jobs:
       - run: codespell --version
       - run: make check
       - uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
       # tomli should not be required for the next two steps (and make sure it's not)
       - run: pip uninstall -yq tomli
         if: ${{ matrix.no-toml == 'no-toml' }}
