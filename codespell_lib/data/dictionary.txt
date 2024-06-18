@@ -4604,6 +4604,12 @@ aotomaticall->automatically
 aotomatically->automatically
 aotomation->automation
 aovid->avoid
+aovidable->avoidable
+aovidably->avoidably
+aovoid->avoid
+aovoided->avoided
+aovoiding->avoiding
+aovoids->avoids
 apach->apache
 apapt->adapt
 apaptation->adaptation
@@ -4778,6 +4784,7 @@ appeares->appears
 appearin->appearing, appear in,
 appearning->appearing
 appearrs->appears
+appeasr->appears
 appeciate->appreciate
 appeciated->appreciated
 appeciates->appreciates
@@ -14287,6 +14294,12 @@ confingures->configures
 confinguring->configuring
 confinin->confining
 confiramtion->confirmation
+confirguration->configuration
+confirgurations->configurations
+confirgure->configure
+confirgured->configured
+confirgures->configures
+confirguring->configuring
 confirmacion->confirmation
 confirmaed->confirmed
 confirmas->confirms
@@ -19809,6 +19822,8 @@ developper->developer
 developpers->developers
 developping->developing
 developpment->development
+developpments->developments
+developps->develops
 develp->develop
 develped->developed
 develper->developer
@@ -31232,6 +31247,7 @@ indizies->indices
 indpendent->independent
 indpendently->independently
 indrect->indirect
+indrectly->indirectly
 indroduce->introduce
 indroduced->introduced
 indroduces->introduces
@@ -33116,6 +33132,7 @@ interruptin->interrupting, interrupt in, interruption,
 interruptors->interrupters
 interruptted->interrupted
 interrut->interrupt
+interrutp->interrupt
 interrutps->interrupts
 interscetion->intersection
 intersecct->intersect
@@ -38598,6 +38615,7 @@ non-blockin->non-blocking
 non-bloking->non-blocking
 non-compleeted->non-completed
 non-complient->non-compliant
+non-continuos->non-continuous
 non-corelated->non-correlated
 non-existant->non-existent
 non-exluded->non-excluded
@@ -45889,6 +45907,7 @@ reaaly->really
 reaarange->rearrange
 reaaranges->rearranges
 reaasigned->reassigned
+reacable->reachable, readable,
 reacahable->reachable
 reacahble->reachable
 reaccurring->recurring
@@ -48518,6 +48537,8 @@ requiremenet->requirement
 requiremenets->requirements
 requiremnt->requirement
 requiremnts->requirements
+requiriement->requirement
+requiriements->requirements
 requirin->requiring
 requirment->requirement
 requirmentes->requirements
@@ -49134,6 +49155,13 @@ resutled->resulted
 resutling->resulting
 resutls->results
 resuts->results
+resverv->reserve
+resvervation->reservation
+resvervations->reservations
+resverve->reserve
+resverved->reserved
+resverves->reserves
+resverving->reserving
 resycn->resync
 retalitated->retaliated
 retalitation->retaliation
@@ -51592,6 +51620,7 @@ shouws->shows
 showfer->chauffeur, shower,
 showin->showing, show in, shown,
 showvinism->chauvinism
+shoyld->should
 shpae->shape
 shpaes->shapes
 shpapes->shapes
@@ -51708,6 +51737,7 @@ signall->signal
 signallin->signalling
 signatue->signature
 signatur->signature
+signed-of-by->Signed-off-by
 signes->signs
 signficance->significance
 signficant->significant
@@ -52229,8 +52259,10 @@ sizemologogical->seismological
 sizemologogically->seismologically
 sizemology->seismology
 sizin->sizing
+sizo->size
 sizor->sizer, scissor,
 sizors->sizers, scissors,
+sizos->sizes
 sizre->size
 Skagerak->Skagerrak
 skalar->scalar
@@ -55684,6 +55716,8 @@ syntethics->synthetics
 syntetic->synthetic
 syntetize->synthesize
 syntetized->synthesized
+synthesed->synthesized
+synthesing->synthesizing
 synthesisin->synthesising, synthesis in,
 synthesizin->synthesizing
 synthethic->synthetic
@@ -55886,6 +55920,11 @@ tanslation->translation
 tanslations->translations
 tanslator->translator
 tansmit->transmit
+tansport->transport
+tansportable->transportable
+tansported->transported
+tansporting->transporting
+tansports->transports
 tansverse->transverse
 tarbal->tarball
 tarbals->tarballs
