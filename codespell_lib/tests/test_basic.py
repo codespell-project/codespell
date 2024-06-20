@@ -9,6 +9,7 @@ from io import StringIO
 from pathlib import Path
 from shutil import copyfile
 from typing import Any, Generator, Optional, Tuple, Union
+from unittest import mock
 
 import pytest
 
@@ -237,7 +238,11 @@ def test_interactivity(
     try:
         assert cs.main(fname) == 0, "empty file"
         fname.write_text("abandonned\n")
-        assert cs.main("-i", "-1", fname) == 1, "bad"
+        with mock.patch.object(sys, "argv", ("-i", "-1", fname)):
+            with pytest.raises(SystemExit) as e:
+                cs.main("-i", "-1", fname)
+            assert e.type == SystemExit
+            assert e.value.code != 0
         with FakeStdin("y\n"):
             assert cs.main("-i", "3", fname) == 1
         with FakeStdin("n\n"):

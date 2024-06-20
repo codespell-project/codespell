@@ -501,11 +501,13 @@ def parse_options(
         action="store",
         type=int,
         default=0,
+        choices=range(0, 4),
         help="set interactive mode when writing changes:\n"
         "- 0: no interactivity.\n"
         "- 1: ask for confirmation.\n"
         "- 2: ask user to choose one fix when more than one is available.\n"
         "- 3: both 1 and 2",
+        metavar="MODE",
     )
 
     parser.add_argument(
@@ -514,6 +516,7 @@ def parse_options(
         action="store",
         type=int,
         default=34,
+        choices=range(0, 64),
         help="bitmask that allows suppressing messages:\n"
         "- 0: print all messages.\n"
         "- 1: disable warnings about wrong encoding.\n"
@@ -526,6 +529,7 @@ def parse_options(
         "combined; e.g. use 3 for levels 1+2, 7 for "
         "1+2+4, 23 for 1+2+4+16, etc. "
         "The default mask is %(default)s.",
+        metavar="LEVEL",
     )
 
     parser.add_argument(
