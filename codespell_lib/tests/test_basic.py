@@ -5,6 +5,7 @@ import os.path as op
 import re
 import subprocess
 import sys
+import textwrap
 from io import StringIO
 from pathlib import Path
 from shutil import copyfile
@@ -323,6 +324,28 @@ def test_summary(
     assert "SUMMARY" in stdout
     assert len(stdout.split("\n")) == 7
     assert "abandonned" in stdout.split()[-2]
+
+
+def test_machine_readable(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Test machine-readable output format."""
+    fname = tmp_path / "mrfile.txt"
+    fname.write_text(textwrap.dedent("""\
+        abandonned
+        the word is abandonned
+        the word abandonned is wrong
+        """
+    ))
+    result = cs.main(fname, "--machine-readable", std=True)
+    assert isinstance(result, tuple)
+    code, stdout, stderr = result
+    output_lines = [line for line in stdout.split('\n') if line]
+    assert all([l.startswith('@') for l in output_lines])
+    assert "line 1, col 1, abandonned ==> abandoned" in output_lines[0]
+    assert "line 2, col 13" in output_lines[1]
+    assert "line 3, col 10" in output_lines[2]
 
 
 def test_ignore_dictionary(
