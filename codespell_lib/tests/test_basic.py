@@ -332,17 +332,18 @@ def test_machine_readable(
 ) -> None:
     """Test machine-readable output format."""
     fname = tmp_path / "mrfile.txt"
-    fname.write_text(textwrap.dedent("""\
+    fname.write_text(
+        textwrap.dedent("""\
         abandonned
         the word is abandonned
         the word abandonned is wrong
-        """
-    ))
+        """)
+    )
     result = cs.main(fname, "--machine-readable", std=True)
     assert isinstance(result, tuple)
     code, stdout, stderr = result
-    output_lines = [line for line in stdout.split('\n') if line]
-    assert all([l.startswith('@') for l in output_lines])
+    output_lines = [line for line in stdout.split("\n") if line]
+    assert all([l.startswith("@") for l in output_lines])
     assert "line 1, col 1, abandonned ==> abandoned" in output_lines[0]
     assert "line 2, col 13" in output_lines[1]
     assert "line 3, col 10" in output_lines[2]
