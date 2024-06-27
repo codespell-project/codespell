@@ -36,6 +36,7 @@ from typing import (
     Pattern,
     Sequence,
     Set,
+    TextIO,
     Tuple,
 )
 
@@ -201,11 +202,17 @@ class Summary:
 
 
 class FileOpener:
-    def __init__(self, use_chardet: bool, quiet_level: int) -> None:
+    def __init__(
+        self,
+        use_chardet: bool,
+        quiet_level: int,
+        ignore_multiline_regex: Optional[Pattern[str]],
+    ) -> None:
         self.use_chardet = use_chardet
         if use_chardet:
             self.init_chardet()
         self.quiet_level = quiet_level
+        self.ignore_multiline_regex = ignore_multiline_regex
 
     def init_chardet(self) -> None:
         try:
@@ -247,7 +254,7 @@ class FileOpener:
             )
             raise
         else:
-            lines = f.readlines()
+            lines = self.get_lines(f)
             f.close()
 
         return lines, f.encoding
@@ -262,7 +269,7 @@ class FileOpener:
                 print(f'WARNING: Trying next encoding "{encoding}"', file=sys.stderr)
             with open(filename, encoding=encoding, newline="") as f:
                 try:
-                    lines = f.readlines()
+                    lines = self.get_lines(f)
                 except UnicodeDecodeError:
                     if not self.quiet_level & QuietLevels.ENCODING:
                         print(
@@ -278,6 +285,22 @@ class FileOpener:
             raise RuntimeError(msg)  # pragma: no cover
 
         return lines, encoding
+
+    def get_lines(self, f: TextIO) -> List[str]:
+        if self.ignore_multiline_regex:
+            text = f.read()
+            pos = 0
+            text2 = ""
+            for m in re.finditer(self.ignore_multiline_regex, text):
+                text2 += text[pos : m.start()]
+                # Replace with blank lines so line numbers are unchanged.
+                text2 += "\n" * m.group().count("\n")
+                pos = m.end()
+            text2 += text[pos:]
+            lines = text2.split("\n")
+        else:
+            lines = f.readlines()
+        return lines
 
 
 # -.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-
@@ -410,6 +433,19 @@ def parse_options(
         "ensuring there are boundary non-word chars, "
         'e.g., "\\bmatch\\b". Defaults to '
         "empty/disabled.",
+    )
+    parser.add_argument(
+        "--ignore-multiline-regex",
+        action="store",
+        type=str,
+        help="regular expression that is used to ignore "
+        "text that may span multi-line regions. "
+        "The regex is run with re.DOTALL. For example to "
+        "allow skipping of regions of Python code using "
+        "begin/end comments one could use: "
+        "--ignore-multiline-regex "
+        "'# codespell:ignore-begin *\\n.*# codespell:ignore-end *\\n'. "
+        "Defaults to empty/disabled.",
     )
     parser.add_argument(
         "-I",
@@ -1115,6 +1151,18 @@ def main(*args: str) -> int:
     else:
         ignore_word_regex = None
 
+    if options.ignore_multiline_regex:
+        try:
+            ignore_multiline_regex = re.compile(options.ignore_multiline_regex, re.DOTALL)
+        except re.error as e:
+            return _usage_error(
+                parser,
+                f"ERROR: invalid --ignore-multiline-regex "
+                f'"{options.ignore_multiline_regex}" ({e})',
+            )
+    else:
+        ignore_multiline_regex = None
+
     ignore_words, ignore_words_cased = parse_ignore_words_option(
         options.ignore_words_list
     )
@@ -1203,7 +1251,11 @@ def main(*args: str) -> int:
         for exclude_file in exclude_files:
             build_exclude_hashes(exclude_file, exclude_lines)
 
-    file_opener = FileOpener(options.hard_encoding_detection, options.quiet_level)
+    file_opener = FileOpener(
+        options.hard_encoding_detection,
+        options.quiet_level,
+        ignore_multiline_regex,
+    )
 
     glob_match = GlobMatch(
         flatten_clean_comma_separated_arguments(options.skip) if options.skip else []

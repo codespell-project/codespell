@@ -942,6 +942,40 @@ def test_ignore_regex_option(
     assert cs.main(fname, r"--ignore-regex=\bdonn\b") == 1
 
 
+def test_ignore_multiline_regex_option(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Test ignore regex option functionality."""
+    
+    # Invalid regex.
+    result = cs.main("--ignore-multiline-regex=(", std=True)
+    assert isinstance(result, tuple)
+    code, stdout, _ = result
+    assert code == EX_USAGE
+    assert "usage:" in stdout
+
+    fname = tmp_path / "flag.txt"
+    fname.write_text(
+        """
+        Please see http://example.com/abandonned for info
+        # codespell:ignore-begin
+        '''
+        abandonned
+        abandonned
+        '''
+        # codespell:ignore-end
+        abandonned
+        """
+    )
+    assert cs.main(fname) == 4
+    assert cs.main(
+        fname,
+        "--ignore-multiline-regex",
+        '# codespell:ignore-begin *\\n.*# codespell:ignore-end *\\n',
+    ) == 2
+
+
 def test_uri_regex_option(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
