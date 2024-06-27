@@ -1153,7 +1153,9 @@ def main(*args: str) -> int:
 
     if options.ignore_multiline_regex:
         try:
-            ignore_multiline_regex = re.compile(options.ignore_multiline_regex, re.DOTALL)
+            ignore_multiline_regex = re.compile(
+                options.ignore_multiline_regex, re.DOTALL
+            )
         except re.error as e:
             return _usage_error(
                 parser,

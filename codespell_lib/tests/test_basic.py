@@ -947,7 +947,7 @@ def test_ignore_multiline_regex_option(
     capsys: pytest.CaptureFixture[str],
 ) -> None:
     """Test ignore regex option functionality."""
-    
+
     # Invalid regex.
     result = cs.main("--ignore-multiline-regex=(", std=True)
     assert isinstance(result, tuple)
@@ -969,11 +969,14 @@ def test_ignore_multiline_regex_option(
         """
     )
     assert cs.main(fname) == 4
-    assert cs.main(
-        fname,
-        "--ignore-multiline-regex",
-        '# codespell:ignore-begin *\\n.*# codespell:ignore-end *\\n',
-    ) == 2
+    assert (
+        cs.main(
+            fname,
+            "--ignore-multiline-regex",
+            "# codespell:ignore-begin *\\n.*# codespell:ignore-end *\\n",
+        )
+        == 2
+    )
 
 
 def test_uri_regex_option(
