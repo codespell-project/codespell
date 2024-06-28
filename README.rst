@@ -178,6 +178,23 @@ which is read using Python's
 `configparser <https://docs.python.org/3/library/configparser.html#supported-ini-file-structure>`_.
 For example, comments are possible using ``;`` or ``#`` as the first character.
 
+Values in an INI file entry cannot start with a ``-`` character, so if you need to do this,
+structure your entries like this:
+
+.. code-block:: ini
+
+    [codespell]
+    dictionary = mydict,-
+    ignore-words = bar,-foo
+
+instead of these invalid entries:
+
+.. code-block:: ini
+
+    [codespell]
+    dictionary = -,mydict
+    ignore-words = -foo,bar
+
 Codespell will also check in the current directory for a ``pyproject.toml``
 (or a path can be specified via ``--toml <filename>``) file, and the
 ``[tool.codespell]`` entry will be used, but only if the tomli_ package
