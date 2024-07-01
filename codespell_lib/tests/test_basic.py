@@ -818,7 +818,7 @@ def _helper_test_case_handling_in_fixes(
 def test_case_handling_in_fixes(
     tmp_path: Path, capsys: pytest.CaptureFixture[str]
 ) -> None:
-    """Test that the case of fixes is similar to the mispelled word."""
+    """Test that the case of fixes is similar to the misspelled word."""
     _helper_test_case_handling_in_fixes(tmp_path, capsys, reason=False)
     _helper_test_case_handling_in_fixes(tmp_path, capsys, reason=True)
 
