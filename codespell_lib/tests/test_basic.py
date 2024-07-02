@@ -241,7 +241,7 @@ def test_interactivity(
         with mock.patch.object(sys, "argv", ("-i", "-1", fname)):
             with pytest.raises(SystemExit) as e:
                 cs.main("-i", "-1", fname)
-            assert e.type == SystemExit
+            assert e.type is SystemExit
             assert e.value.code != 0
         with FakeStdin("y\n"):
             assert cs.main("-i", "3", fname) == 1
