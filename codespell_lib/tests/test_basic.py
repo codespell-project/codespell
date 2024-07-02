@@ -70,7 +70,7 @@ def run_codespell(
 ) -> int:
     """Run codespell."""
     args = tuple(str(arg) for arg in args)
-    proc = subprocess.run(
+    proc = subprocess.run(  # noqa: S603
         ["codespell", "--count", *args],  # noqa: S607
         cwd=cwd,
         capture_output=True,
@@ -1344,7 +1344,7 @@ def run_codespell_stdin(
     cwd: Optional[Path] = None,
 ) -> int:
     """Run codespell in stdin mode and return number of lines in output."""
-    proc = subprocess.run(
+    proc = subprocess.run(  # noqa: S603
         ["codespell", *args, "-"],  # noqa: S607
         cwd=cwd,
         input=text,
