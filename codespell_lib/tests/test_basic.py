@@ -70,8 +70,8 @@ def run_codespell(
 ) -> int:
     """Run codespell."""
     args = tuple(str(arg) for arg in args)
-    proc = subprocess.run(
-        ["codespell", "--count", *args],  # noqa: S603, S607
+    proc = subprocess.run(  # noqa: S603
+        ["codespell", "--count", *args],  # noqa: S607
         cwd=cwd,
         capture_output=True,
         encoding="utf-8",
@@ -241,7 +241,7 @@ def test_interactivity(
         with mock.patch.object(sys, "argv", ("-i", "-1", fname)):
             with pytest.raises(SystemExit) as e:
                 cs.main("-i", "-1", fname)
-            assert e.type == SystemExit
+            assert e.type is SystemExit
             assert e.value.code != 0
         with FakeStdin("y\n"):
             assert cs.main("-i", "3", fname) == 1
@@ -1344,8 +1344,8 @@ def run_codespell_stdin(
     cwd: Optional[Path] = None,
 ) -> int:
     """Run codespell in stdin mode and return number of lines in output."""
-    proc = subprocess.run(
-        ["codespell", *args, "-"],  # noqa: S603, S607
+    proc = subprocess.run(  # noqa: S603
+        ["codespell", *args, "-"],  # noqa: S607
         cwd=cwd,
         input=text,
         capture_output=True,
