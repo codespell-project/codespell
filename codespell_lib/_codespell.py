@@ -465,6 +465,13 @@ def parse_options(
         default=False,
         help="print summary of fixes",
     )
+    parser.add_argument(
+        "-m",
+        "--machine-readable",
+        action="store_true",
+        default=False,
+        help="Use alternate output format intended for parsing",
+    )
 
     parser.add_argument(
         "--count",
@@ -1018,6 +1025,15 @@ def parse_file(
 
                 if (not context_shown) and (context is not None):
                     print_context(lines, i, context)
+
+                if options.machine_readable:
+                    mrreason = f" ({reason})" if reason else ""
+                    print(
+                        f"@{filename}: line {i + 1}, col {match.start() + 1}, "
+                        f"{word} ==> {fixword}{mrreason}"
+                    )
+                    continue
+
                 if filename != "-":
                     print(
                         f"{cfilename}:{cline}: {cwrongword} "
