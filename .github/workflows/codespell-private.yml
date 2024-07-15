@@ -14,7 +14,7 @@ jobs:
       REQUIRE_ASPELL: true
       RUFF_OUTPUT_FORMAT: github
     # Make sure we're using the latest aspell dictionary
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     strategy:
       fail-fast: false
@@ -25,6 +25,7 @@ jobs:
           - "3.10"
           - "3.11"
           - "3.12"
+          - "3.13"
         no-toml:
           - ""
         include:
@@ -39,6 +40,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+          allow-prereleases: true
       - run: sudo apt-get install libaspell-dev aspell-en
       - name: Install dependencies
         run: |
