@@ -161,7 +161,8 @@ Using a config file
 
 Command line options can also be specified in a config file.
 
-When running ``codespell``, it will check in the current directory for a file
+When running ``codespell``, it will check in the current directory for an
+`INI file <https://en.wikipedia.org/wiki/INI_file>`_
 named ``setup.cfg`` or ``.codespellrc`` (or a file specified via ``--config``),
 containing an entry named ``[codespell]``. Each command line argument can
 be specified in this file (without the preceding dashes), for example:
@@ -173,13 +174,44 @@ be specified in this file (without the preceding dashes), for example:
     count =
     quiet-level = 3
 
-The ``.codespellrc`` file is an `INI file <https://en.wikipedia.org/wiki/INI_file>`_,
-which is read using Python's
-`configparser <https://docs.python.org/3/library/configparser.html#supported-ini-file-structure>`_.
-For example, comments are possible using ``;`` or ``#`` as the first character.
+Python's
+`configparser <https://docs.python.org/3/library/configparser.html#supported-ini-file-structure>`_
+module defines the exact format of INI config files. For example,
+comments are possible using ``;`` or ``#`` as the first character.
 
-Values in an INI file entry cannot start with a ``-`` character, so if you need to do this,
-structure your entries like this:
+Codespell will also check in the current directory for a ``pyproject.toml``
+file (or a file specified via ``--toml``), and the ``[tool.codespell]``
+entry will be used. For versions of Python prior to 3.11, this requires
+the tomli_ package. For example, here is the TOML equivalent of the
+previous config file:
+
+.. code-block:: toml
+
+    [tool.codespell]
+    skip = '*.po,*.ts,./src/3rdParty,./src/Test'
+    count = true
+    quiet-level = 3
+
+The above INI and TOML files are equivalent to running:
+
+.. code-block:: sh
+
+    codespell --skip "*.po,*.ts,./src/3rdParty,./src/Test" --count --quiet-level 3
+
+If several config files are present, they are read in the following order:
+
+#. ``pyproject.toml`` (only if the ``tomli`` library is available for Python < 3.11)
+#. ``setup.cfg``
+#. ``.codespellrc``
+#. any additional file supplied via ``--config``
+
+If a codespell configuration is supplied in several of these files,
+the configuration from the most recently read file overwrites previously
+specified configurations. Any options specified in the command line will
+*override* options from the config files.
+
+Values in a config file entry cannot start with a ``-`` character, so if
+you need to do this, structure your entries like this:
 
 .. code-block:: ini
 
@@ -194,38 +226,6 @@ instead of these invalid entries:
     [codespell]
     dictionary = -,mydict
     ignore-words = -foo,bar
-
-Codespell will also check in the current directory for a ``pyproject.toml``
-(or a path can be specified via ``--toml <filename>``) file, and the
-``[tool.codespell]`` entry will be used, but only if the tomli_ package
-is installed for versions of Python prior to 3.11. For example:
-
-.. code-block:: toml
-
-    [tool.codespell]
-    skip = '*.po,*.ts,./src/3rdParty,./src/Test'
-    count = true
-    quiet-level = 3
-
-These are both equivalent to running:
-
-.. code-block:: sh
-
-    codespell --quiet-level 3 --count --skip "*.po,*.ts,./src/3rdParty,./src/Test"
-
-If several config files are present, they are read in the following order:
-
-#. ``pyproject.toml`` (only if the ``tomli`` library is available)
-#. ``setup.cfg``
-#. ``.codespellrc``
-#. any additional file supplied via ``--config``
-
-If a codespell configuration is supplied in several of these files,
-the configuration from the most recently read file overwrites previously
-specified configurations.
-
-Any options specified in the command line will *override* options from the
-config files.
 
 .. _tomli: https://pypi.org/project/tomli/
 
