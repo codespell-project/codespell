@@ -3832,6 +3832,7 @@ altitide->altitude
 altitute->altitude
 altnerately->alternately
 altogehter->altogether
+altogher->altogether
 altogheter->altogether
 altough->although
 altought->although
@@ -5471,6 +5472,8 @@ applicaton->application
 applicatons->applications
 applicble->applicable
 applicible->applicable
+applictaion->application
+applictaions->applications
 appliction->application
 applictions->applications
 applide->applied
@@ -14503,7 +14506,7 @@ complets->completes
 complette->complete
 complettly->completely
 complety->completely
-complext->complexity
+complext->complexity, complex,
 complextion->complexion
 complextions->complexions
 compliace->compliance
@@ -14709,6 +14712,8 @@ comverter->converter
 comverters->converters
 comverting->converting
 comverts->converts
+comvolution->convolution
+comvolutions->convolutions
 conact->contact
 conacted->contacted
 conacting->contacting
@@ -19586,6 +19591,8 @@ demagogs->demagogues
 demaind->demand
 demandin->demanding, demand in,
 demaned->demand, demeaned,
+demaond->demand
+demaonds->demands
 demenor->demeanor
 demension->dimension
 demensional->dimensional
@@ -27155,6 +27162,7 @@ extrem->extremum, extreme,
 extremaly->extremely
 extremeley->extremely
 extremelly->extremely
+extremem->extreme
 extrememe->extreme
 extrememely->extremely
 extrememly->extremely
@@ -36870,6 +36878,7 @@ mathods->methods
 matinay->matinee
 matirx->matrix
 matix->matrix
+matrces->matrices
 matreial->material
 matreials->materials
 matresses->mattresses
@@ -37448,6 +37457,7 @@ Microsof->Microsoft
 Microsofot->Microsoft
 Micrsft->Microsoft
 Micrsoft->Microsoft
+middel->middle
 middlware->middleware
 mideval->medieval
 midevil->medieval
@@ -37703,6 +37713,10 @@ mirorred->mirrored
 mirorring->mirroring
 mirorrs->mirrors
 mirors->mirrors, minors,
+mirrir->mirror
+mirrired->mirrored
+mirriring->mirroring
+mirrirs->mirrors
 mirro->mirror
 mirroed->mirrored
 mirrorin->mirroring, mirror in,
@@ -48020,6 +48034,8 @@ reduceable->reducible
 reducin->reducing
 redudancy->redundancy
 redudant->redundant
+redumndancy->redundancy
+redumndant->redundant
 redunancy->redundancy
 redunant->redundant
 redundacy->redundancy
@@ -55894,6 +55910,7 @@ succefull->successful, successfully,
 succefully->successfully
 succefuly->successfully
 succes->success
+succesdsful->successful
 succesful->successful
 succesfull->successful
 succesfullly->successfully
