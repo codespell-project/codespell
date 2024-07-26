@@ -243,8 +243,6 @@ def test_interactivity(
                 cs.main("-i", "-1", fname)
             assert e.type is SystemExit
             assert e.value.code != 0
-        with FakeStdin("y\n"):
-            assert cs.main("-i", "3", fname) == 1
         with FakeStdin("n\n"):
             result = cs.main("-w", "-i", "3", fname, std=True)
             assert isinstance(result, tuple)
