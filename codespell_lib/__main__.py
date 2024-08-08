@@ -6,4 +6,4 @@ if __name__ == "__main__":
     try:
         sys.exit(_script_main())
     except KeyboardInterrupt:
-        pass
+        sys.exit(f"\ncancelling '{sys.argv[0]}'\n")
