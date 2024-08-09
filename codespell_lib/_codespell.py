@@ -1102,8 +1102,9 @@ def _script_main() -> int:
     try:
         return main(*sys.argv[1:])
     except KeyboardInterrupt:
-        sys.stderr.write(f"\ncancelling '{sys.argv[0]}'\n")
-        return 1
+        # User has typed CTRL+C
+        sys.stderr.write(f"\nCancelling '{sys.argv[0]}'\n")
+        return 130
 
 
 def _usage_error(parser: argparse.ArgumentParser, message: str) -> int:
