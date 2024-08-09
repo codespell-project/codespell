@@ -1103,7 +1103,8 @@ def _script_main() -> int:
         return main(*sys.argv[1:])
     except KeyboardInterrupt:
         # User has typed CTRL+C
-        sys.stderr.write(f"\nCancelling '{sys.argv[0]}'\n")
+        sys.stdout.write("\n")
+        sys.stderr.write(f"Cancelling '{sys.argv[0]}'\n")
         return 130
 
 
