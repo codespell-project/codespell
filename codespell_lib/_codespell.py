@@ -227,12 +227,12 @@ class FileOpener:
 
         self.encdetector = UniversalDetector()
 
-    def open(self, filename: str) -> Tuple[List[str], str | None]:
+    def open(self, filename: str) -> Tuple[List[str], Optional[str]]:
         if self.use_chardet:
             return self.open_with_chardet(filename)
         return self.open_with_internal(filename)
 
-    def open_with_chardet(self, filename: str) -> Tuple[List[str], str | None]:
+    def open_with_chardet(self, filename: str) -> Tuple[List[str], Optional[str]]:
         self.encdetector.reset()
         with open(filename, "rb") as fb:
             for line in fb:
