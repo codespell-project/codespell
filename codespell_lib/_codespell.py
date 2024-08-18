@@ -894,8 +894,8 @@ def parse_file(  # noqa: PLR0915
     encoding: Optional[str]
 
     if filename == "-":
-        encoding = "utf-8"
         f = sys.stdin
+        encoding = "utf-8"
         lines = f.readlines()
     else:
         if options.check_filenames:
