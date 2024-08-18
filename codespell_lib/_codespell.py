@@ -264,7 +264,6 @@ class FileOpener:
         return lines, encoding
 
     def open_with_internal(self, filename: str) -> Tuple[List[str], str]:
-        encoding: str
         first_try = True
         for encoding in ("utf-8", "iso-8859-1"):
             if first_try:
