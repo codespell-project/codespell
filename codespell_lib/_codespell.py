@@ -873,7 +873,7 @@ def apply_uri_ignore_words(
     return check_matches
 
 
-def parse_file(
+def parse_file(  # noqa: PLR0915
     filename: str,
     colors: TermColors,
     summary: Optional[Summary],
@@ -891,9 +891,10 @@ def parse_file(
     bad_count = 0
     lines = None
     changed = False
-    encoding: str | None = "utf-8"
+    encoding: Optional[str]
 
     if filename == "-":
+        encoding = "utf-8"
         f = sys.stdin
         lines = f.readlines()
     else:
