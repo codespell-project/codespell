@@ -249,15 +249,12 @@ class FileOpener:
         try:
             with open(filename, encoding=encoding, newline="") as f:
                 lines = self.get_lines(f)
-        except UnicodeDecodeError:
-            error_msg = (
-                f"Failed to decode file {filename} using detected "
-                f"encoding {encoding}."
-            )
+        except LookupError:  # Raised by open() if encoding is unknown
+            error_msg = f"ERROR: Chardet returned unknown encoding for: {filename}."
             print(error_msg, file=sys.stderr)
             raise
-        except LookupError:
-            error_msg = f"Unknown encoding {encoding} detected for file {filename}."
+        except UnicodeDecodeError:  # Raised by self.get_lines() if decoding fails
+            error_msg = f"ERROR: Failed decoding file: {filename}"
             print(error_msg, file=sys.stderr)
             raise
 
