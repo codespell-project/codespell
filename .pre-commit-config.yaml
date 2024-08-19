@@ -1,4 +1,3 @@
----
 files: ^(.*\.(py|json|md|sh|yaml|yml|in|cfg|txt|rst|toml|precommit-toml|wordlist))$
 exclude: ^(\.[^/]*cache/.*)$
 repos:
@@ -63,12 +62,10 @@ repos:
       - id: ruff
       - id: ruff-format
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v3.1.0
+    rev: v4.0.0-alpha.8
     hooks:
       - id: prettier
-        types_or: [yaml, markdown, html, css, scss, javascript, json, toml]
-        additional_dependencies:
-          - prettier-plugin-toml
+        types_or: [yaml, markdown, html, css, scss, javascript, json]
   - repo: https://github.com/codespell-project/codespell
     rev: v2.3.0
     hooks:
@@ -89,3 +86,8 @@ repos:
           - pytest
           - tomli
           - types-chardet
+  - repo: https://github.com/ComPWA/mirrors-taplo
+    rev: "v0.8.1"
+    hooks:
+      - id: taplo
+        entry: env RUST_LOG=warn taplo fmt --option indent_string='    '
