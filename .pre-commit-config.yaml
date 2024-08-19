@@ -90,5 +90,5 @@ repos:
   - repo: https://github.com/ComPWA/mirrors-taplo
     rev: "v0.9.3"
     hooks:
-      - id: taplo
+      - id: taplo-format
         entry: env RUST_LOG=warn taplo fmt --option indent_string='    '
