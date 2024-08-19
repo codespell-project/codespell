@@ -1,3 +1,4 @@
+---
 files: ^(.*\.(py|json|md|sh|yaml|yml|in|cfg|txt|rst|toml|precommit-toml|wordlist))$
 exclude: ^(\.[^/]*cache/.*)$
 repos:
