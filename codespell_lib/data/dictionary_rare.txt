@@ -185,6 +185,7 @@ multistory->multistorey, multi-storey,
 nickle->nickel
 noes->nose, knows, nodes, does,
 nome->gnome
+obsolute->obsolete, absolute,
 ochry->ochery, ochrey,
 oerflow->overflow
 oerflowed->overflowed
@@ -232,6 +233,10 @@ readding->re-adding, reading,
 readds->re-adds, reads,
 ream->stream
 recuse->recurse
+reduct->deduct, reduce, redact,
+reducted->deducted, reduced, redacted,
+reducting->deducting, reducing, redacting,
+reducts->deducts, reduces, redacts,
 refect->reflect
 refected->reflected
 refecting->reflecting
