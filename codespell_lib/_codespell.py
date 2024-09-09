@@ -1099,7 +1099,12 @@ def flatten_clean_comma_separated_arguments(
 
 def _script_main() -> int:
     """Wrap to main() for setuptools."""
-    return main(*sys.argv[1:])
+    try:
+        return main(*sys.argv[1:])
+    except KeyboardInterrupt:
+        # User has typed CTRL+C
+        sys.stdout.write("\n")
+        return 130
 
 
 def _usage_error(parser: argparse.ArgumentParser, message: str) -> int:
