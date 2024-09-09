@@ -18,7 +18,8 @@ clas->class
 cloneable->clonable
 cmo->com
 copyable->copiable
-creat->create, crate,
+crate->create
+creat->create
 dateset->dataset
 datesets->datasets
 define'd->defined
