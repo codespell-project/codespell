@@ -25,7 +25,6 @@ import os
 import re
 import sys
 import textwrap
-from ctypes import wintypes
 from typing import (
     Any,
     Dict,
@@ -39,6 +38,12 @@ from typing import (
     TextIO,
     Tuple,
 )
+
+if sys.platform == "win32":
+    from ctypes import wintypes
+
+    ENABLE_VIRTUAL_TERMINAL_PROCESSING = 0x0004
+    STD_OUTPUT_HANDLE = wintypes.HANDLE(-11)
 
 from ._spellchecker import Misspelling, build_dict
 from ._text_util import fix_case
@@ -137,10 +142,6 @@ EX_OK = 0
 EX_USAGE = 64
 EX_DATAERR = 65
 EX_CONFIG = 78
-
-# Windows specific constants
-ENABLE_VIRTUAL_TERMINAL_PROCESSING = 0x0004
-STD_OUTPUT_HANDLE = wintypes.HANDLE(-11)
 
 # OPTIONS:
 #
