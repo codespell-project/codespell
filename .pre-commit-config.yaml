@@ -58,7 +58,7 @@ repos:
           - -d
           - "{extends: relaxed, rules: {line-length: {max: 90}}}"
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.6.5
+    rev: v0.6.7
     hooks:
       - id: ruff
       - id: ruff-format
