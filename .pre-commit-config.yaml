@@ -29,7 +29,7 @@ repos:
     rev: v4.6.0
     hooks:
       - id: no-commit-to-branch
-        args: [--branch, master]
+        args: [--branch, main]
       - id: check-yaml
         args: [--unsafe]
       - id: debug-statements

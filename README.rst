@@ -364,13 +364,13 @@ In the scenario where the user prefers not to follow the development version of 
 
 .. code-block:: sh
 
-    wget https://raw.githubusercontent.com/codespell-project/codespell/master/codespell_lib/data/dictionary.txt
+    wget https://raw.githubusercontent.com/codespell-project/codespell/main/codespell_lib/data/dictionary.txt
     codespell -D dictionary.txt
 
 The above simply downloads the latest ``dictionary.txt`` file and then by utilizing the ``-D`` flag allows the user to specify the freshly downloaded ``dictionary.txt`` as the custom dictionary instead of the default one.
 
 You can also do the same thing for the other dictionaries listed here:
-    https://github.com/codespell-project/codespell/tree/master/codespell_lib/data
+    https://github.com/codespell-project/codespell/tree/main/codespell_lib/data
 
 License
 -------
