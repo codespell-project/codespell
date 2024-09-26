@@ -217,7 +217,7 @@ def test_permission_error(
     fname.write_text("abandonned\n")
     result = cs.main(fname, std=True)
     assert isinstance(result, tuple)
-    code, _, stderr = result
+    _, _, stderr = result
     assert "WARNING:" not in stderr
     fname.chmod(0o000)
     result = cs.main(fname, std=True)
@@ -772,7 +772,7 @@ def _helper_test_case_handling_in_fixes(
     fname.write_text("early adoptor\n")
     result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
-    code, stdout, _ = result
+    _, stdout, _ = result
     # all suggested fixes must be lowercase too
     assert "adopter, adaptor" in stdout
     # the reason, if any, must not be modified
