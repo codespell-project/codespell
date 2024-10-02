@@ -315,11 +315,11 @@ def test_dictionary_looping(
             reps = [r for r in reps if len(r)]
             this_err_dict[err] = reps
     # 1. check the dict against itself (diagonal)
-    for err in this_err_dict:
+    for err, reps in this_err_dict.items():
         assert word_regex.fullmatch(
             err
         ), f"error {err!r} does not match default word regex '{word_regex_def}'"
-        for r in this_err_dict[err]:
+        for r in reps:
             assert r not in this_err_dict, (
                 f"error {err}: correction {r} is an error itself "
                 f"in the same dictionary file {short_fname}"
@@ -337,12 +337,12 @@ def test_dictionary_looping(
         # 2. check corrections in this dict against other dicts (upper)
         pair = (short_fname, other_fname)
         if pair not in allowed_dups:
-            for err in this_err_dict:
+            for err, reps in this_err_dict.items():
                 assert err not in other_err_dict, (
                     f"error {err!r} in dictionary {short_fname} "
                     f"already exists in dictionary {other_fname}"
                 )
-                for r in this_err_dict[err]:
+                for r in reps:
                     assert r not in other_err_dict, (
                         f"error {err}: correction {r} from dictionary {short_fname} "
                         f"is an error itself in dictionary {other_fname}"

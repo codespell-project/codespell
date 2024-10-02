@@ -217,12 +217,12 @@ def test_permission_error(
     fname.write_text("abandonned\n")
     result = cs.main(fname, std=True)
     assert isinstance(result, tuple)
-    code, _, stderr = result
+    _, _, stderr = result
     assert "WARNING:" not in stderr
     fname.chmod(0o000)
     result = cs.main(fname, std=True)
     assert isinstance(result, tuple)
-    code, _, stderr = result
+    _, _, stderr = result
     assert "WARNING:" in stderr
 
 
@@ -464,7 +464,7 @@ def test_inline_ignores(
     expected_error_count: int,
 ) -> None:
     d = str(tmpdir)
-    with open(op.join(d, "bad.txt"), "w") as f:
+    with open(op.join(d, "bad.txt"), "w", encoding="utf-8") as f:
         f.write(content)
     assert cs.main(d) == expected_error_count
 
@@ -772,7 +772,7 @@ def _helper_test_case_handling_in_fixes(
     fname.write_text("early adoptor\n")
     result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
-    code, stdout, _ = result
+    _, stdout, _ = result
     # all suggested fixes must be lowercase too
     assert "adopter, adaptor" in stdout
     # the reason, if any, must not be modified
@@ -783,7 +783,7 @@ def _helper_test_case_handling_in_fixes(
     fname.write_text("Early Adoptor\n")
     result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
-    code, stdout, _ = result
+    _, stdout, _ = result
     # all suggested fixes must be capitalized too
     assert "Adopter, Adaptor" in stdout
     # the reason, if any, must not be modified
@@ -794,7 +794,7 @@ def _helper_test_case_handling_in_fixes(
     fname.write_text("EARLY ADOPTOR\n")
     result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
-    code, stdout, _ = result
+    _, stdout, _ = result
     # all suggested fixes must be uppercase too
     assert "ADOPTER, ADAPTOR" in stdout
     # the reason, if any, must not be modified
@@ -805,7 +805,7 @@ def _helper_test_case_handling_in_fixes(
     fname.write_text("EaRlY AdOpToR\n")
     result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
-    code, stdout, _ = result
+    _, stdout, _ = result
     # all suggested fixes should be lowercase
     assert "adopter, adaptor" in stdout
     # the reason, if any, must not be modified
@@ -1234,7 +1234,7 @@ def test_quiet_level_32(
     d = tmp_path / "files"
     d.mkdir()
     conf = str(tmp_path / "setup.cfg")
-    with open(conf, "w") as f:
+    with open(conf, "w", encoding="utf-8") as f:
         # It must contain a "codespell" section.
         f.write("[codespell]\n")
     args = ("--config", conf)
@@ -1263,7 +1263,7 @@ def test_ill_formed_ini_config_file(
     d = tmp_path / "files"
     d.mkdir()
     conf = str(tmp_path / "setup.cfg")
-    with open(conf, "w") as f:
+    with open(conf, "w", encoding="utf-8") as f:
         # It should contain but lacks a section.
         f.write("foobar =\n")
     args = ("--config", conf)
