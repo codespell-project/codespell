@@ -464,7 +464,7 @@ def test_inline_ignores(
     expected_error_count: int,
 ) -> None:
     d = str(tmpdir)
-    with open(op.join(d, "bad.txt"), "w") as f:
+    with open(op.join(d, "bad.txt"), "w", encoding="utf-8") as f:
         f.write(content)
     assert cs.main(d) == expected_error_count
 
@@ -1234,7 +1234,7 @@ def test_quiet_level_32(
     d = tmp_path / "files"
     d.mkdir()
     conf = str(tmp_path / "setup.cfg")
-    with open(conf, "w") as f:
+    with open(conf, "w", encoding="utf-8") as f:
         # It must contain a "codespell" section.
         f.write("[codespell]\n")
     args = ("--config", conf)
@@ -1263,7 +1263,7 @@ def test_ill_formed_ini_config_file(
     d = tmp_path / "files"
     d.mkdir()
     conf = str(tmp_path / "setup.cfg")
-    with open(conf, "w") as f:
+    with open(conf, "w", encoding="utf-8") as f:
         # It should contain but lacks a section.
         f.write("foobar =\n")
     args = ("--config", conf)
