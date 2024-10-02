@@ -137,6 +137,8 @@ select = [
 ignore = [
     "ANN101",
     "B904",
+    "PLR0914",
+    "PLR6201",
     "PLW2901",
     "PT004",   # deprecated
     "PT005",   # deprecated
