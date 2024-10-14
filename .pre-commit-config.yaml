@@ -4,7 +4,7 @@ exclude: ^(\.[^/]*cache/.*)$
 repos:
   - repo: https://github.com/executablebooks/mdformat
     # Do this before other tools "fixing" the line endings
-    rev: 0.7.17
+    rev: 0.7.18
     hooks:
       - id: mdformat
         name: Format Markdown
