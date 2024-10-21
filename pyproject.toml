@@ -5,10 +5,8 @@ name = "codespell"
 description = "Fix common misspellings in text files"
 readme = { file = "README.rst", content-type = "text/x-rst" }
 requires-python = ">=3.8"
-license = {text = "GPL-2.0-only"}
-authors = [
-    {name = "Lucas De Marchi", email = "lucas.de.marchi@gmail.com"},
-]
+license = { text = "GPL-2.0-only" }
+authors = [{ name = "Lucas De Marchi", email = "lucas.de.marchi@gmail.com" }]
 classifiers = [
     "Intended Audience :: Developers",
     "License :: OSI Approved",
@@ -42,21 +40,11 @@ dev = [
     "Pygments",
     "ruff",
     "tomli",
-    "twine"
+    "twine",
 ]
-hard-encoding-detection = [
-    "chardet"
-]
-toml = [
-    "tomli; python_version < '3.11'"
-]
-types = [
-    "chardet>=5.1.0",
-    "mypy",
-    "pytest",
-    "pytest-cov",
-    "pytest-dependency",
-]
+hard-encoding-detection = ["chardet"]
+toml = ["tomli; python_version < '3.11'"]
+types = ["chardet>=5.1.0", "mypy", "pytest", "pytest-cov", "pytest-dependency"]
 
 [project.scripts]
 codespell = "codespell_lib:_script_main"
@@ -73,10 +61,7 @@ requires = ["setuptools>=64", "setuptools_scm[toml]>=6.2, != 8.0.0"]
 write_to = "codespell_lib/_version.py"
 
 [tool.setuptools.packages.find]
-exclude = [
-    "dist",
-    "snap",
-]
+exclude = ["dist", "snap"]
 
 [tool.setuptools.package-data]
 codespell_lib = [
@@ -103,7 +88,15 @@ minversion = "6"
 testpaths = ["codespell_lib/tests"]
 log_cli_level = "INFO"
 xfail_strict = true
-addopts = ["--cov=codespell_lib", "-rs", "--strict-config", "--strict-markers", "--cov-report=", "--tb=short", "--junit-xml=junit-results.xml"]
+addopts = [
+    "--cov=codespell_lib",
+    "-rs",
+    "--strict-config",
+    "--strict-markers",
+    "--cov-report=",
+    "--tb=short",
+    "--junit-xml=junit-results.xml",
+]
 filterwarnings = ["error"]
 
 [tool.ruff]
@@ -175,7 +168,7 @@ max-complexity = 45
 "codespell_lib/tests/test_basic.py" = ["ANN401", "N802"]
 
 [tool.ruff.lint.pylint]
-allow-magic-value-types = ["bytes", "int", "str",]
+allow-magic-value-types = ["bytes", "int", "str"]
 max-args = 13
 max-branches = 48
 max-returns = 12
