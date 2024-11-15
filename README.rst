@@ -67,7 +67,7 @@ The ``-I`` flag can be used for a list of certain words to allow that are in the
 
     codespell -L word1,word2,word3,word4
 
-The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it.  See `Ignoring Words`_ for more details.
+The ``-L`` flag can be used to allow certain words that are comma-separated (without spaces).  See `Ignoring Words`_ for more details.
 
 .. code-block:: sh
 
