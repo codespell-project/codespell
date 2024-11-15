@@ -52,7 +52,7 @@ jobs:
       - run: codespell --help
       - run: codespell --version
       - run: make check
-      - uses: codecov/codecov-action@v4
+      - uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
       # tomli should not be required for the next two steps (and make sure it's not)
