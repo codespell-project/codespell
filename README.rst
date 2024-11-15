@@ -119,7 +119,7 @@ You can select the optional dictionaries with the ``--builtin`` option.
 Ignoring words
 --------------
 
-When ignoring false positives, note that spelling errors are *case-insensitive* but words to ignore are *case-sensitive*. For example, the dictionary entry ``wrod`` will also match the typo ``Wrod``, but to ignore it you must pass ``wrod``.
+When ignoring false positives, note that spelling errors are *case-insensitive* but words to ignore are *case-sensitive*. For example, the dictionary entry ``wrod`` will also match the typo ``Wrod``, but to ignore it you must pass ``Wrod``.
 
 The words to ignore can be passed in two ways:
 
