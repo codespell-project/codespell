@@ -53,7 +53,9 @@ from ._version import (  # type: ignore[import-not-found]
     __version__ as VERSION,  # noqa: N812
 )
 
-word_regex_def = r"\w[\w\-'’]*"  # noqa: RUF001
+# We do not care about single character words, and words should not
+# have leading or trailing hyphens or apostrophes.
+word_regex_def = r"\w[\w\-'’]*\w"  # noqa: RUF001
 # While we want to treat characters like ( or " as okay for a starting break,
 # these may occur unescaped in URIs, and so we are more restrictive on the
 # endpoint.  Emails are more restrictive, so the endpoint remains flexible.
