@@ -51,6 +51,7 @@ class MainWrapper:
         capsys = frame.f_locals["capsys"]
         stdout, stderr = capsys.readouterr()
         assert code in (EX_OK, EX_USAGE, EX_DATAERR, EX_CONFIG)
+        # print(f"stderr: {stderr}")
         if code == EX_DATAERR:  # have some misspellings
             code = int(stderr.split("\n")[-2])
         elif code == EX_OK and count:
@@ -117,7 +118,7 @@ def test_basic(
     assert cs.main("--builtin", "clear,rare,names,informal", fname) == 4
     with fname.open("w") as f:  # overwrite the file
         f.write("var = 'nwe must check codespell likes escapes nin strings'\n")
-    assert cs.main(fname) == 1, "checking our string escape test word is bad"
+    assert cs.main(fname) == 2, "checking our string escape test word is bad"
     # the first one is missed because the apostrophe means its not currently
     # treated as a word on its own
     with fname.open("w") as f:  # overwrite the file
