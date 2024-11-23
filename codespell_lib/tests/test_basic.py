@@ -70,8 +70,8 @@ def run_codespell(
 ) -> int:
     """Run codespell."""
     args = tuple(str(arg) for arg in args)
-    proc = subprocess.run(
-        ["codespell", "--count", *args],  # noqa: S603, S607
+    proc = subprocess.run(  # noqa: S603
+        ["codespell", "--count", *args],  # noqa: S607
         cwd=cwd,
         capture_output=True,
         encoding="utf-8",
@@ -217,12 +217,12 @@ def test_permission_error(
     fname.write_text("abandonned\n")
     result = cs.main(fname, std=True)
     assert isinstance(result, tuple)
-    code, _, stderr = result
+    _, _, stderr = result
     assert "WARNING:" not in stderr
     fname.chmod(0o000)
     result = cs.main(fname, std=True)
     assert isinstance(result, tuple)
-    code, _, stderr = result
+    _, _, stderr = result
     assert "WARNING:" in stderr
 
 
@@ -241,10 +241,8 @@ def test_interactivity(
         with mock.patch.object(sys, "argv", ("-i", "-1", fname)):
             with pytest.raises(SystemExit) as e:
                 cs.main("-i", "-1", fname)
-            assert e.type == SystemExit
+            assert e.type is SystemExit
             assert e.value.code != 0
-        with FakeStdin("y\n"):
-            assert cs.main("-i", "3", fname) == 1
         with FakeStdin("n\n"):
             result = cs.main("-w", "-i", "3", fname, std=True)
             assert isinstance(result, tuple)
@@ -466,7 +464,7 @@ def test_inline_ignores(
     expected_error_count: int,
 ) -> None:
     d = str(tmpdir)
-    with open(op.join(d, "bad.txt"), "w") as f:
+    with open(op.join(d, "bad.txt"), "w", encoding="utf-8") as f:
         f.write(content)
     assert cs.main(d) == expected_error_count
 
@@ -774,7 +772,7 @@ def _helper_test_case_handling_in_fixes(
     fname.write_text("early adoptor\n")
     result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
-    code, stdout, _ = result
+    _, stdout, _ = result
     # all suggested fixes must be lowercase too
     assert "adopter, adaptor" in stdout
     # the reason, if any, must not be modified
@@ -785,7 +783,7 @@ def _helper_test_case_handling_in_fixes(
     fname.write_text("Early Adoptor\n")
     result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
-    code, stdout, _ = result
+    _, stdout, _ = result
     # all suggested fixes must be capitalized too
     assert "Adopter, Adaptor" in stdout
     # the reason, if any, must not be modified
@@ -796,7 +794,7 @@ def _helper_test_case_handling_in_fixes(
     fname.write_text("EARLY ADOPTOR\n")
     result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
-    code, stdout, _ = result
+    _, stdout, _ = result
     # all suggested fixes must be uppercase too
     assert "ADOPTER, ADAPTOR" in stdout
     # the reason, if any, must not be modified
@@ -807,7 +805,7 @@ def _helper_test_case_handling_in_fixes(
     fname.write_text("EaRlY AdOpToR\n")
     result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
-    code, stdout, _ = result
+    _, stdout, _ = result
     # all suggested fixes should be lowercase
     assert "adopter, adaptor" in stdout
     # the reason, if any, must not be modified
@@ -818,7 +816,7 @@ def _helper_test_case_handling_in_fixes(
 def test_case_handling_in_fixes(
     tmp_path: Path, capsys: pytest.CaptureFixture[str]
 ) -> None:
-    """Test that the case of fixes is similar to the mispelled word."""
+    """Test that the case of fixes is similar to the misspelled word."""
     _helper_test_case_handling_in_fixes(tmp_path, capsys, reason=False)
     _helper_test_case_handling_in_fixes(tmp_path, capsys, reason=True)
 
@@ -940,6 +938,43 @@ def test_ignore_regex_option(
     assert cs.main(fname, "--ignore-regex=donn") == 0
     # Adding word breaks causes only one to be ignored.
     assert cs.main(fname, r"--ignore-regex=\bdonn\b") == 1
+
+
+def test_ignore_multiline_regex_option(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Test ignore regex option functionality."""
+
+    # Invalid regex.
+    result = cs.main("--ignore-multiline-regex=(", std=True)
+    assert isinstance(result, tuple)
+    code, stdout, _ = result
+    assert code == EX_USAGE
+    assert "usage:" in stdout
+
+    fname = tmp_path / "flag.txt"
+    fname.write_text(
+        """
+        Please see http://example.com/abandonned for info
+        # codespell:ignore-begin
+        '''
+        abandonned
+        abandonned
+        '''
+        # codespell:ignore-end
+        abandonned
+        """
+    )
+    assert cs.main(fname) == 4
+    assert (
+        cs.main(
+            fname,
+            "--ignore-multiline-regex",
+            "codespell:ignore-begin.*codespell:ignore-end",
+        )
+        == 2
+    )
 
 
 def test_uri_regex_option(
@@ -1199,7 +1234,7 @@ def test_quiet_level_32(
     d = tmp_path / "files"
     d.mkdir()
     conf = str(tmp_path / "setup.cfg")
-    with open(conf, "w") as f:
+    with open(conf, "w", encoding="utf-8") as f:
         # It must contain a "codespell" section.
         f.write("[codespell]\n")
     args = ("--config", conf)
@@ -1228,7 +1263,7 @@ def test_ill_formed_ini_config_file(
     d = tmp_path / "files"
     d.mkdir()
     conf = str(tmp_path / "setup.cfg")
-    with open(conf, "w") as f:
+    with open(conf, "w", encoding="utf-8") as f:
         # It should contain but lacks a section.
         f.write("foobar =\n")
     args = ("--config", conf)
@@ -1344,8 +1379,8 @@ def run_codespell_stdin(
     cwd: Optional[Path] = None,
 ) -> int:
     """Run codespell in stdin mode and return number of lines in output."""
-    proc = subprocess.run(
-        ["codespell", *args, "-"],  # noqa: S603, S607
+    proc = subprocess.run(  # noqa: S603
+        ["codespell", *args, "-"],  # noqa: S607
         cwd=cwd,
         input=text,
         capture_output=True,

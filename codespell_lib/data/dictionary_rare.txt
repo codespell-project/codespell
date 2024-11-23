@@ -9,6 +9,7 @@ amination->animation, lamination,
 aminations->animations, laminations,
 aminator->animator, laminator,
 aminators->animators, laminators,
+anc->and
 ans->and
 arithmetics->arithmetic
 attache->attaché, attached, attach,
@@ -68,7 +69,6 @@ covert->convert, cover, covet,
 coverts->converts, covers, covets,
 crasher->crash
 crashers->crashes
-crate->create
 crated->created
 creche->crèche
 crufts->cruft
@@ -92,6 +92,7 @@ discontentment->discontent
 discreet->discrete
 discus->discuss
 discuses->discusses
+disturbative->distributive, disruptive,
 doest->does, doesn't,
 empress->impress
 empresses->impresses
@@ -130,6 +131,7 @@ hep->heap, help,
 heterogenous->heterogeneous
 hided->hidden, hid,
 hims->his, hymns,
+homs->homes, hams, hems,
 hove->have, hover, love,
 impassible->impassable, impossible,
 implementor->implementer
@@ -157,7 +159,6 @@ lien->line
 liens->lines
 lightening->lightning, lighting,
 loafing->loading
-loath->loathe
 lod->load, loud, lode,
 loner->longer
 loos->loose, lose,
@@ -183,6 +184,7 @@ multistory->multistorey, multi-storey,
 nickle->nickel
 noes->nose, knows, nodes, does,
 nome->gnome
+obsolute->obsolete, absolute,
 ochry->ochery, ochrey,
 oerflow->overflow
 oerflowed->overflowed
@@ -226,6 +228,10 @@ readding->re-adding, reading,
 readds->re-adds, reads,
 ream->stream
 recuse->recurse
+reduct->deduct, reduce, redact,
+reducted->deducted, reduced, redacted,
+reducting->deducting, reducing, redacting,
+reducts->deducts, reduces, redacts,
 refect->reflect
 refected->reflected
 refecting->reflecting
@@ -233,8 +239,11 @@ refection->reflection
 refections->reflections
 refective->reflective
 refects->reflects
+regraded->regarded
+regrading->regarding
 remainer->remainder
 remainers->remainders
+repot->report, repost,
 retuned->returned
 retying->retrying
 revered->reversed

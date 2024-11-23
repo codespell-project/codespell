@@ -1,8 +1,12 @@
 alacritty->alacrity
 alloced->allocated
+alst->last
 amin->main, admin, amine,
+ands->and, ants, Andes,
+aout->about, out,
 apoint->appoint
 arange->arrange, a range,
+aso->also, ado, ago,
 assertin->asserting, assert in, assertion,
 atend->attend
 atending->attending
@@ -13,7 +17,8 @@ clas->class
 cloneable->clonable
 cmo->com
 copyable->copiable
-creat->create, crate,
+crate->create
+creat->create
 dateset->dataset
 datesets->datasets
 define'd->defined
@@ -32,6 +37,7 @@ gadjet->gadget
 gadjets->gadgets
 gae->game, Gael, gale,
 hist->heist, his,
+hom->home, whom,
 iam->I am, aim,
 iff->if
 ifset->if set
@@ -43,6 +49,7 @@ keypairs->key pairs
 lateset->latest
 lets->let's
 lite->light
+lowcase->lowercase
 movei->movie
 MSDOS->MS-DOS
 musl->must
