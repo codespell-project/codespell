@@ -323,6 +323,7 @@ organiser->organizer
 organisers->organizers
 organises->organizes
 organising->organizing
+overwriteable->overwritable
 parallelisation->parallelization
 parallelise->parallelize
 parallelised->parallelized
@@ -522,3 +523,4 @@ visualised->visualized
 visualiser->visualizer
 visualises->visualizes
 visualising->visualizing
+writeable->writable
