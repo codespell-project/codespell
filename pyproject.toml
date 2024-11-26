@@ -86,10 +86,10 @@ codespell_lib = [
 ]
 
 # TODO: reintegrate codespell configuration after updating test cases
-#[tool.codespell]
-#builtin = ["clear","rare","informal","usage","code","names"]
-#ignore-words-list = ["uint"]
-#skip=[ "./.*","codespell_lib/data/*","codespell_lib/tests/*"]
+[tool.codespell]
+builtin = ["clear","rare","informal","usage","code","names"]
+ignore-words-list = ["adn,master,uint,wrod"]
+skip=[ "./.*","./codespell_lib/data","./codespell_lib/tests,./example/code.c"]
 
 [tool.mypy]
 pretty = true
