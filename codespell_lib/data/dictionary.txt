@@ -1184,6 +1184,7 @@ accumualtion->accumulation
 accumualtive->accumulative
 accumualtor->accumulator
 accumualtors->accumulators
+accumuate->accumulate
 accumulare->accumulate
 accumulater->accumulator, accumulated, accumulates, accumulate,
 accumulaters->accumulators, accumulates,
@@ -8777,10 +8778,18 @@ avdisories->advisories
 avdisoriy->advisory, advisories,
 avdisoriyes->advisories
 avdisory->advisory
+avearge->average
+avearged->averaged
+avearges->averages
+avearging->averaging
 avengence->a vengeance
 averageed->averaged
 averagin->averaging
 averagine->averaging
+averge->average
+averged->averaged
+averges->averages
+averging->averaging
 averload->overload
 averloaded->overloaded
 averloads->overloads
@@ -10635,6 +10644,7 @@ calcuations->calculations
 calcuator->calculator
 calcuators->calculators
 calculaion->calculation
+calculalate->calculate
 calculat->calculate
 calculataed->calculated
 calculatble->calculatable, calculable,
@@ -13616,6 +13626,7 @@ coloered->colored
 coloering->coloring
 coloers->colors
 coloful->colorful
+colombus->Columbus
 colomn->column
 colomns->columns
 colon-seperated->colon-separated
@@ -14939,6 +14950,8 @@ conceeting->conceiting
 conceets->conceits
 concensors->consensus
 concensus->consensus
+concentartion->concentration
+concentartions->concentrations
 concentate->concentrate
 concentated->concentrated
 concentates->concentrates
@@ -15098,6 +15111,8 @@ condtitions->conditions
 conducter->conductor, conducted,
 conducters->conductors
 conductin->conducting, conduct in, conduction,
+conductuctance->conductance
+conductuctances->conductances
 conductuve->conductive, conducive,
 conecct->connect
 coneccted->connected
@@ -19737,6 +19752,9 @@ deliverin->delivering, deliver in,
 delivermode->deliverymode
 deliverying->delivering
 deliverys->deliveries, delivers,
+dellocate->deallocate
+dellocated->deallocated
+dellocates->deallocates
 delpoy->deploy
 delpoyed->deployed
 delpoying->deploying
@@ -22668,6 +22686,8 @@ divde->divide
 divded->divided
 divdes->divides
 divding->dividing
+diverison->diversion
+diverisons->diversions
 diversed->diverse, diverged,
 divertion->diversion
 divertions->diversions
@@ -23186,6 +23206,7 @@ Dravadian->Dravidian
 draview->drawview
 drawack->drawback
 drawacks->drawbacks
+drawdow->drawdown
 drawed->drew, drawn, had drawn,
 drawin->drawing, draw in, drawn,
 drawm->drawn
@@ -27143,6 +27164,7 @@ exponetial->exponential
 exponetially->exponentially
 exponetiation->exponentiation
 exponets->exponents
+expontential->exponential
 exporation->exploration, expiration,
 expore->explore, expire, export, exposure, expose,
 expored->explored, expired, exported, exposed,
@@ -29968,6 +29990,7 @@ groshuries->groceries
 groshury->grocery
 groth->growth
 groubpy->groupby
+groudwater->groundwater
 groupd->grouped
 groupe->grouped, group,
 groupes->groups, grouped,
@@ -32629,6 +32652,8 @@ inershial->inertial
 inersia->inertia
 inersial->inertial
 inertion->insertion
+inerval->interval
+inervals->intervals
 ines->lines
 inestart->linestart
 inetrrupts->interrupts
@@ -33296,6 +33321,8 @@ initiializes->initializes
 initiializing->initializing
 initiially->initially
 initiials->initials
+initilaize->initialize
+initilaized->initialized
 initilal->initial
 initilalisation->initialisation
 initilalisations->initialisations
@@ -37101,6 +37128,8 @@ maped->mapped
 maping->mapping
 mapings->mappings
 mapp->map
+mappaing->mapping
+mappaings->mappings
 mappble->mappable
 mappeds->mapped
 mappeed->mapped
@@ -38335,6 +38364,7 @@ modellinng->modelling
 modellled->modelled
 modellling->modelling
 modells->models
+moderetely->moderately
 moderm->modern, modem,
 modernination->modernization
 moderninations->modernizations
@@ -42239,6 +42269,8 @@ outisde->outside
 outlinin->outlining
 outllook->outlook
 outloud->out loud
+outlow->outflow
+outlows->outflows
 outoign->outgoing
 outoing->outgoing, outdoing, outing,
 outout->output
@@ -43818,6 +43850,7 @@ perpares->prepares
 perparing->preparing
 perpective->perspective, perceptive,
 perpectives->perspectives
+perpedicular->perpendicular
 perperties->properties
 perpertrated->perpetrated
 perperty->property
@@ -44519,6 +44552,8 @@ polyedral->polyhedral
 polygond->polygons
 polygone->polygon
 polylon->polygon, pylon,
+polymomial->polynomial
+polymomials->polynomials
 polymoprh->polymorph
 polymoprhic->polymorphic
 polymoprhism->polymorphism
@@ -45945,6 +45980,7 @@ processibg->processing
 processig->processing
 processin->processing, process in, procession,
 processinf->processing
+processiong->processing
 processore->processor
 processores->processors
 processpr->processor
@@ -49014,6 +49050,7 @@ rehersal->rehearsal
 rehersing->rehearsing
 rehighlightes->rehighlights, rehighlighted,
 reicarnation->reincarnation
+reidual->residual
 reight->right, eight, freight,
 reigining->reigning
 reignin->reigning, reign in,
@@ -49067,6 +49104,8 @@ reinitailise->reinitialise
 reinitailised->reinitialised
 reinitailize->reinitialize
 reinitalize->reinitialize
+reinitilaize->reinitialize
+reinitilaized->reinitialized
 reinitilize->reinitialize
 reinitilized->reinitialized
 reinstal->reinstall
@@ -55692,6 +55731,7 @@ statustics->statistics
 statuts->status, statutes, statues,
 statutses->statuses, statutes,
 staulk->stalk
+staurated->saturated
 stauration->saturation
 staus->status
 stauts->status
@@ -55719,6 +55759,7 @@ sterio->stereo
 steriods->steroids
 sterotype->stereotype
 sterotypes->stereotypes
+stess->stress
 stetch->stretch, sketch, stitch, stench,
 stetched->stretched, sketched, stitched,
 stetches->stretches, sketches, stitches, stenches,
@@ -58535,6 +58576,7 @@ thereom->theorem
 thererin->therein
 theres->there's
 thereshold->threshold
+theresholding->thresholding
 theresholds->thresholds
 therfore->therefore
 theri->their, there,
