@@ -759,13 +759,20 @@ def ask_for_word_fix(
     colors: TermColors,
 ) -> Tuple[bool, str]:
     wrongword = match.group()
+    match_start = match.start()
+    match_end = match.end()
+    # Detect single quotes, i.e. 'wrongword'->wrongword
+    if wrongword[0] == "'" and wrongword[-1] == "'":
+        wrongword = wrongword[1:-1]
+        match_start += 1
+        match_end -= 1
     if interactivity <= 0:
         return misspelling.fix, fix_case(wrongword, misspelling.data)
 
     line_ui = (
-        f"{line[:match.start()]}"
+        f"{line[:match_start]}"
         f"{colors.WWORD}{wrongword}{colors.DISABLE}"
-        f"{line[match.end():]}"
+        f"{line[match_end:]}"
     )
 
     if misspelling.fix and interactivity & 1:
@@ -980,6 +987,11 @@ def parse_file(
             )
         for match in check_matches:
             word = match.group()
+            match_start = match.start()
+            # Detect single quotes, i.e. 'word'->word
+            if word[0] == "'" and word[-1] == "'":
+                word = word[1:-1]
+                match_start += 1
             if word in ignore_words_cased:
                 continue
             lword = word.lower()
@@ -987,7 +999,7 @@ def parse_file(
                 # Sometimes we find a 'misspelling' which is actually a valid word
                 # preceded by a string escape sequence.  Ignore such cases as
                 # they're usually false alarms; see issue #17 among others.
-                char_before_idx = match.start() - 1
+                char_before_idx = match_start - 1
                 if (
                     char_before_idx >= 0
                     and line[char_before_idx] == "\\"
