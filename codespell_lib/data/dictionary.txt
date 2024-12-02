@@ -1185,6 +1185,9 @@ accumualtive->accumulative
 accumualtor->accumulator
 accumualtors->accumulators
 accumuate->accumulate
+accumuated->accumulated
+accumuates->accumulates
+accumuating->accumulating
 accumulare->accumulate
 accumulater->accumulator, accumulated, accumulates, accumulate,
 accumulaters->accumulators, accumulates,
@@ -8788,8 +8791,8 @@ averagin->averaging
 averagine->averaging
 averge->average, avenge,
 averged->averaged, avenged,
-averges->averages
-averging->averaging
+averges->averages, avenges,
+averging->averaging, avenging,
 averload->overload
 averloaded->overloaded
 averloads->overloads
@@ -10590,6 +10593,9 @@ calcalations->calculations
 calcalator->calculator
 calcalators->calculators
 calcaulte->calculate
+calcaulted->calculated
+calcaultes->calculates
+calcaulting->calculating
 calciulate->calculate
 calciulating->calculating
 calclate->calculate
@@ -10645,6 +10651,9 @@ calcuator->calculator
 calcuators->calculators
 calculaion->calculation
 calculalate->calculate
+calculalated->calculated
+calculalates->calculates
+calculalating->calculating
 calculat->calculate
 calculataed->calculated
 calculatble->calculatable, calculable,
@@ -33323,6 +33332,8 @@ initiially->initially
 initiials->initials
 initilaize->initialize
 initilaized->initialized
+initilaizes->initializes
+initilaizing->initializing
 initilal->initial
 initilalisation->initialisation
 initilalisations->initialisations
@@ -34739,6 +34750,8 @@ intiially->initially
 intiials->initials
 intilaize->initialize
 intilaized->initialized
+intilaizes->initializes
+intilaizing->initializing
 intilisation->initialisation
 intilisations->initialisations
 intilise->initialise
@@ -42270,6 +42283,8 @@ outlinin->outlining
 outllook->outlook
 outloud->out loud
 outlow->outflow, outlaw,
+outlowed->outflowed, outlawed,
+outlowing->outflowing, outlawing,
 outlows->outflows, outlaws,
 outoign->outgoing
 outoing->outgoing, outdoing, outing,
@@ -55731,7 +55746,10 @@ statustics->statistics
 statuts->status, statutes, statues,
 statutses->statuses, statutes,
 staulk->stalk
+staurate->saturate
 staurated->saturated
+staurates->saturates
+staurating->saturating
 stauration->saturation
 staus->status
 stauts->status
@@ -58524,7 +58542,7 @@ thefore->therefore
 thei->their, they,
 theif->thief
 theifs->thieves
-theim->Thiem, them,
+theim->Thiem, them, theism,
 theire->their, they're,
 theis->this, thesis,
 theiv->thief, they've,
@@ -58595,7 +58613,7 @@ theshold->threshold
 thesholds->thresholds
 thess->this, these,
 thest->test
-thet->they, that,
+thet->they, that, theft,
 thether->tether, whether,
 thetraedral->tetrahedral
 thetrahedron->tetrahedron
@@ -59790,7 +59808,7 @@ travesed->traversed
 traveses->traverses
 travesing->traversing
 trawlin->trawling, trawl in,
-trcking->tracking
+trcking->tracking, tricking, trucking,
 tre->tree, the,
 treadet->treated, treaded, threaded,
 treak->treat, tweak,
