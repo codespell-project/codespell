@@ -569,14 +569,51 @@ def test_encoding(
     assert "WARNING: Binary file" in stderr
 
 
-def test_unknown_encoding_chardet(
+def test_chardet_exceptions(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
-    """Test opening a file with unknown encoding using chardet"""
+    """Test encoding handling with chardet exceptions."""
     fname = tmp_path / "tmp"
-    fname.touch()
-    assert cs.main("--hard-encoding-detection", fname) == 0
+    fname.write_bytes("naïve\n".encode())
+    with mock.patch(
+        "chardet.universaldetector.UniversalDetector"
+    ) as mock_detector_class:
+        # Configure the mock to simulate an incorrect encoding detection
+        mock_detector = mock.MagicMock()
+        mock_detector.result = {"encoding": None}
+        mock_detector.done = True
+        mock_detector_class.return_value = mock_detector
+
+        # Simulate chardet not detecting any encoding
+        result = cs.main("-e", fname, std=True, count=False)
+        assert isinstance(result, tuple)
+        code, stdout, stderr = result
+        assert code == 0
+        assert not stdout
+        assert "WARNING: Chardet failed to detect encoding" in stderr
+        assert str(fname) in stderr
+
+        # Simulate chardet falsely detecting utf-8, instead of the correct iso-8859-1
+        mock_detector.result = {"encoding": "utf-8"}  # Simulate wrong encoding detected
+        mock_detector_class.return_value = mock_detector
+        fname.write_bytes(b"Speling error, non-ASCII: h\xe9t\xe9rog\xe9n\xe9it\xe9\n")
+        with pytest.raises(UnicodeDecodeError) as exc_info_unicode:
+            cs.main("-e", fname, std=True, count=False)
+        stderr = capsys.readouterr().err
+        assert "ERROR: Failed decoding file:" in stderr
+        assert str(fname) in stderr
+        assert "utf-8" in str(exc_info_unicode.value)
+
+        # Simulate chardet detecting non-existent encoding
+        mock_detector.result = {"encoding": "UTF-doesnotexist"}
+        mock_detector_class.return_value = mock_detector
+        with pytest.raises(LookupError) as exc_info_lookup:
+            cs.main("-e", fname, std=True, count=False)
+        stderr = capsys.readouterr().err
+        assert "ERROR: Chardet returned unknown encoding" in stderr
+        assert str(fname) in stderr
+        assert "UTF-doesnotexist" in str(exc_info_lookup.value)
 
 
 def test_ignore(
