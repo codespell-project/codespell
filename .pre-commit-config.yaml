@@ -87,3 +87,6 @@ repos:
           - pytest
           - tomli
           - types-chardet
+
+ci:
+  autoupdate_schedule: monthly
