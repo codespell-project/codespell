@@ -217,7 +217,7 @@ you need to do this, structure your entries like this:
 
     [codespell]
     dictionary = mydict,-
-    ignore-words = bar,-foo
+    ignore-words-list = bar,-foo
 
 instead of these invalid entries:
 
@@ -225,7 +225,7 @@ instead of these invalid entries:
 
     [codespell]
     dictionary = -,mydict
-    ignore-words = -foo,bar
+    ignore-words-list = -foo,bar
 
 .. _tomli: https://pypi.org/project/tomli/
 
