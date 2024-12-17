@@ -234,6 +234,7 @@ aboved->above
 abovemtioned->abovementioned
 aboves->above
 abovmentioned->abovementioned
+abpout->about
 abput->about
 abreviate->abbreviate
 abreviated->abbreviated
@@ -764,6 +765,7 @@ accessiiblity->accessibility
 accessile->accessible
 accessin->accessing, access in, accession,
 accessintg->accessing
+accessiores->accessories
 accessisble->accessible
 accessment->assessment
 accessments->assessments
@@ -1413,6 +1415,12 @@ acknolwedgement->acknowledgement
 acknolwedgements->acknowledgements
 acknolwedges->acknowledges
 acknolwedging->acknowledging
+acknowedge->acknowledge
+acknowedged->acknowledged
+acknowedgement->acknowledgement
+acknowedgements->acknowledgements
+acknowedges->acknowledges
+acknowedging->acknowledging
 acknoweldge->acknowledge
 acknoweldged->acknowledged
 acknoweldgement->acknowledgement
@@ -7104,6 +7112,7 @@ assemalate->assimilate
 assemalated->assimilated
 assemalates->assimilates
 assemalating->assimilating
+assembalge->assembladge
 assembe->assemble
 assembed->assembled
 assembeld->assembled
@@ -7120,6 +7129,7 @@ assement->assessment
 assements->assessments
 assemlies->assemblies
 assemly->assembly
+assemmbly->assembly
 assemnly->assembly
 assemple->assemble
 assempling->assembling
@@ -19594,6 +19604,8 @@ degreeees->degrees
 degreees->degrees
 degres->degrees, digress,
 degress->degrees, digress,
+deifinition->definition
+deifinitions->definitions
 deifne->define
 deifned->defined
 deifnes->defines
@@ -23854,9 +23866,14 @@ electriv->electric
 electrnoics->electronics
 electronnegativity->electronegativity
 eleemnt->element
+eleemnts->elements
 eleent->element
+eleents->elements
 elegibility->eligibility, illegibility, legibility,
 elegible->eligible, illegible, legible,
+eleiminate->eliminate
+eleiminated->eliminated
+eleiminates->eliminates
 elelement->element
 elelements->elements
 elelment->element
@@ -23865,6 +23882,7 @@ elelmentary->elementary
 elelments->elements
 elemant->element
 elemantary->elementary
+elemants->elements
 elemement->element
 elemements->elements
 elememt->element
@@ -25252,6 +25270,8 @@ establishs->establishes
 establising->establishing
 establsihed->established
 estbalishment->establishment
+esteblish->establish
+esteblished->established
 estiamate->estimate
 estiamated->estimated
 estiamates->estimates
@@ -27263,6 +27283,7 @@ exptectations->expectations
 exptected->expected
 exptecting->expecting
 exptects->expects
+exptra->extra
 exra->extra
 exract->extract, exact,
 exracted->extracted, exacted,
@@ -27694,6 +27715,7 @@ farmework->framework
 farse->farce
 farses->farces
 farsical->farcical
+farthere->farther
 farward->forward
 farwarded->forwarded
 farwarding->forwarding
@@ -29269,6 +29291,9 @@ furtermore->furthermore
 furtest->furthest
 furthe->further
 furthemore->furthermore
+furthere->further
+furtheremor->furthermore
+furtheremore->furthermore
 furthermor->furthermore
 furtherst->furthest
 furthher->further
@@ -30864,6 +30889,7 @@ horison->horizon
 horisons->horizons
 horisontal->horizontal
 horisontally->horizontally
+horizintal->horizontal
 horizntal->horizontal
 horizonal->horizontal
 horizonally->horizontally
@@ -35142,6 +35168,7 @@ irraditate->irradiate
 irraditated->irradiated
 irraditates->irradiates
 irraditating->irradiating
+irratic->erratic
 irregularties->irregularities
 irregulier->irregular
 irregulierties->irregularities
@@ -35475,6 +35502,7 @@ joineable->joinable
 joinin->joining, join in,
 joinning->joining
 jointin->jointing, joint in,
+jonction->junction
 jont->joint
 jonts->joints
 jornal->journal
@@ -35600,6 +35628,7 @@ kenerl->kernel
 kenerls->kernels
 kenrel->kernel
 kenrels->kernels
+kepp->keep
 kepping->keeping
 kepps->keeps
 kerenl->kernel
@@ -36098,6 +36127,8 @@ legionairs->legionnaires
 legitamate->legitimate
 legitimiately->legitimately
 legitmate->legitimate
+legngth->length
+legngths->lengths
 legnth->length
 legth->length
 legths->lengths
@@ -38790,6 +38821,10 @@ muiltipliers->multipliers
 muiltiplies->multiplies
 muiltiply->multiply
 muiltiplying->multiplying
+mulfunction->malfunction
+mulfunctioned->malfunctioned
+mulfunctioning->malfunctioning
+mulfunctions->malfunctions
 mulicast->multicast
 mulipart->multipart
 muliplayer->multiplayer
@@ -50073,6 +50108,8 @@ repored->reported, reposed,
 repores->reports, reposes,
 reporeted->reported
 reporing->reporting
+reporisaties->repositories
+reporisaty->repository
 reporitories->repositories
 reporitory->repository
 reporsitories->repositories
@@ -62544,7 +62581,8 @@ verisons->versions
 veritcal->vertical
 veritcally->vertically
 veritical->vertical
-verly->very
+verivy->verify
+verly->very, verily,
 vermen->vermin
 vermillion->vermilion
 vermuth->vermouth
@@ -63317,6 +63355,7 @@ weilded->wielded
 weill->will
 weired->weird
 weitght->weight
+weith->weight, with,
 wel->well
 welfair->welfare
 well-reknown->well-renowned, well renown,
@@ -64072,6 +64111,7 @@ ziper->zipper
 zipers->zippers
 ziping->zipping
 zippin->zipping
+zise->size
 zlot->slot
 zombe->zombie
 zombes->zombies
