@@ -23875,6 +23875,7 @@ elegible->eligible, illegible, legible,
 eleiminate->eliminate
 eleiminated->eliminated
 eleiminates->eliminates
+eleiminating->eliminating
 elelement->element
 elelements->elements
 elelment->element
@@ -25273,6 +25274,8 @@ establsihed->established
 estbalishment->establishment
 esteblish->establish
 esteblished->established
+esteblishes->establishes
+esteblishing->establishing
 estiamate->estimate
 estiamated->estimated
 estiamates->estimates
@@ -30891,6 +30894,7 @@ horisons->horizons
 horisontal->horizontal
 horisontally->horizontally
 horizintal->horizontal
+horizintally->horizontally
 horizntal->horizontal
 horizonal->horizontal
 horizonally->horizontally
@@ -35629,7 +35633,7 @@ kenerl->kernel
 kenerls->kernels
 kenrel->kernel
 kenrels->kernels
-kepp->keep
+kepp->keep, kelp,
 kepping->keeping
 kepps->keeps
 kerenl->kernel
@@ -38822,7 +38826,7 @@ muiltipliers->multipliers
 muiltiplies->multiplies
 muiltiply->multiply
 muiltiplying->multiplying
-mulfunction->malfunction
+mulfunction->malfunction, multifunction,
 mulfunctioned->malfunctioned
 mulfunctioning->malfunctioning
 mulfunctions->malfunctions
@@ -62583,7 +62587,7 @@ veritcal->vertical
 veritcally->vertically
 veritical->vertical
 verivy->verify
-verly->very, verily,
+verly->very, verily, overly,
 vermen->vermin
 vermillion->vermilion
 vermuth->vermouth
@@ -63356,7 +63360,7 @@ weilded->wielded
 weill->will
 weired->weird
 weitght->weight
-weith->weight, with,
+weith->weight, weigh, with, width,
 wel->well
 welfair->welfare
 well-reknown->well-renowned, well renown,
