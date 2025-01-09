@@ -87,3 +87,8 @@ repos:
           - pytest
           - tomli
           - types-chardet
+  - repo: https://github.com/ComPWA/mirrors-taplo
+    rev: "v0.9.3"
+    hooks:
+      - id: taplo-format
+        entry: env RUST_LOG=warn taplo fmt --option indent_string='    '
