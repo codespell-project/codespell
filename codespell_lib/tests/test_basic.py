@@ -368,9 +368,7 @@ def test_ignore_words_with_cases(
     """Test case-sensitivity implemented for -I and -L options in #3272."""
     bad_name = tmp_path / "MIS.txt"
     bad_name.write_text(
-        "1 MIS (Management Information System) 1\n"
-        "2 Les Mis (1980 musical) 2\n"
-        "3 mis 3\n"
+        "1 MIS (Management Information System) 1\n2 Les Mis (1980 musical) 2\n3 mis 3\n"
     )
     assert cs.main(bad_name) == 3
     assert cs.main(bad_name, "-f") == 4
