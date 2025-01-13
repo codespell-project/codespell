@@ -136,18 +136,14 @@ select = [
     "YTT",
 ]
 ignore = [
-    "ANN101",
     "B904",
     "PLR0914",
     "PLR6201",
     "PLW2901",
-    "PT004",   # deprecated
-    "PT005",   # deprecated
     "RET505",
     "S404",
     "SIM105",
     "SIM115",
-    "UP027",   # deprecated
     "UP038",   # https://github.com/astral-sh/ruff/issues/7871
     # https://docs.astral.sh/ruff/formatter/#conflicting-lint-rules
     "W191",
@@ -162,8 +158,6 @@ ignore = [
     "Q003",
     "COM812",
     "COM819",
-    "ISC001",
-    "ISC002",
 ]
 
 [tool.ruff.lint.mccabe]
