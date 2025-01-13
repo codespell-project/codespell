@@ -47,7 +47,7 @@ _fnames_in_aspell = [
     for d in _builtin_dictionaries
 ]
 fname_params = pytest.mark.parametrize(
-    "fname, in_aspell, in_dictionary", _fnames_in_aspell
+    ("fname", "in_aspell", "in_dictionary"), _fnames_in_aspell
 )
 
 
