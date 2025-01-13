@@ -144,9 +144,9 @@ def _check_err_rep(
     assert whitespace.search(err) is None, f"error {err!r} has whitespace"
     assert "," not in err, f"error {err!r} has a comma"
     assert len(rep) > 0, f"error {err}: correction {rep!r} must be non-empty"
-    assert not start_whitespace.match(
-        rep
-    ), f"error {err}: correction {rep!r} cannot start with whitespace"
+    assert not start_whitespace.match(rep), (
+        f"error {err}: correction {rep!r} cannot start with whitespace"
+    )
     _check_aspell(err, f"error {err!r}", in_aspell[0], fname, languages[0])
     prefix = f"error {err}: correction {rep!r}"
     for regex, msg in (
@@ -166,9 +166,9 @@ def _check_err_rep(
         assert not regex.search(rep), msg % (prefix,)
     del msg
     if rep.count(","):
-        assert rep.endswith(
-            ","
-        ), f'error {err}: multiple corrections must end with trailing ","'
+        assert rep.endswith(","), (
+            f'error {err}: multiple corrections must end with trailing ","'
+        )
     reps = [r.strip() for r in rep.split(",")]
     reps = [r for r in reps if len(r)]
     for r in reps:
@@ -185,9 +185,9 @@ def _check_err_rep(
     # we could ignore the case, but that would miss things like days of the
     # week which we want to be correct
     reps = [r.lower() for r in reps]
-    assert len(set(reps)) == len(
-        reps
-    ), f'error {err}: corrections "{rep}" are not (lower-case) unique'
+    assert len(set(reps)) == len(reps), (
+        f'error {err}: corrections "{rep}" are not (lower-case) unique'
+    )
 
 
 @pytest.mark.parametrize(
@@ -307,18 +307,18 @@ def test_dictionary_looping(
         for line in fid:
             err, rep = line.split("->")
             err = err.lower()
-            assert (
-                err not in this_err_dict
-            ), f"error {err!r} already exists in {short_fname}"
+            assert err not in this_err_dict, (
+                f"error {err!r} already exists in {short_fname}"
+            )
             rep = rep.rstrip("\n")
             reps = [r.strip() for r in rep.lower().split(",")]
             reps = [r for r in reps if len(r)]
             this_err_dict[err] = reps
     # 1. check the dict against itself (diagonal)
     for err, reps in this_err_dict.items():
-        assert word_regex.fullmatch(
-            err
-        ), f"error {err!r} does not match default word regex '{word_regex_def}'"
+        assert word_regex.fullmatch(err), (
+            f"error {err!r} does not match default word regex '{word_regex_def}'"
+        )
         for r in reps:
             assert r not in this_err_dict, (
                 f"error {err}: correction {r} is an error itself "
