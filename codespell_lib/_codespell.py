@@ -58,8 +58,7 @@ word_regex_def = r"[\w\-'’]+"  # noqa: RUF001
 # these may occur unescaped in URIs, and so we are more restrictive on the
 # endpoint.  Emails are more restrictive, so the endpoint remains flexible.
 uri_regex_def = (
-    "(\\b(?:https?|[ts]?ftp|file|git|smb)://[^\\s]+(?=$|\\s)|"
-    "\\b[\\w.%+-]+@[\\w.-]+\\b)"
+    "(\\b(?:https?|[ts]?ftp|file|git|smb)://[^\\s]+(?=$|\\s)|\\b[\\w.%+-]+@[\\w.-]+\\b)"
 )
 inline_ignore_regex = re.compile(r"[^\w\s]\s?codespell:ignore\b(\s+(?P<words>[\w,]*))?")
 USAGE = """
@@ -763,9 +762,9 @@ def ask_for_word_fix(
         return misspelling.fix, fix_case(wrongword, misspelling.data)
 
     line_ui = (
-        f"{line[:match.start()]}"
+        f"{line[: match.start()]}"
         f"{colors.WWORD}{wrongword}{colors.DISABLE}"
-        f"{line[match.end():]}"
+        f"{line[match.end() :]}"
     )
 
     if misspelling.fix and interactivity & 1:
@@ -1057,8 +1056,7 @@ def parse_file(
                     print_context(lines, i, context)
                 if filename != "-":
                     print(
-                        f"{cfilename}:{cline}: {cwrongword} "
-                        f"==> {crightword}{creason}"
+                        f"{cfilename}:{cline}: {cwrongword} ==> {crightword}{creason}"
                     )
                 elif options.stdin_single_line:
                     print(f"{cline}: {cwrongword} ==> {crightword}{creason}")

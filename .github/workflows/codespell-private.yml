@@ -14,7 +14,7 @@ jobs:
       REQUIRE_ASPELL: true
       RUFF_OUTPUT_FORMAT: github
     # Make sure we're using the latest aspell dictionary
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     timeout-minutes: 10
     strategy:
       fail-fast: false
