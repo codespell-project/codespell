@@ -58,7 +58,7 @@ jobs:
       # tomli should not be required for the next two steps (and make sure it's not)
       - run: pip uninstall -yq tomli
         if: ${{ matrix.no-toml == 'no-toml' }}
-      - run: codespell --check-filenames --skip="./.*,./build/lib/codespell_lib/data/*,./build/lib/codespell_lib/tests/test_basic.py,./codespell_lib/data/*,./codespell_lib/tests/test_basic.py,./example/code.c,./junit-results.xml,*.egg-info/*,*.pyc,*.sig,pyproject-codespell.precommit-toml,README.rst,"
+      - run: codespell --check-filenames --skip="./.*,./build/*,./codespell_lib/data/*,./codespell_lib/tests/test_basic.py,./example/code.c,./junit-results.xml,*.egg-info/*,*.pyc,*.sig,pyproject-codespell.precommit-toml,README.rst,"
       # this file has an error
       - run: "! codespell codespell_lib/tests/test_basic.py"
 
