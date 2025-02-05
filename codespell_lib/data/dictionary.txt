@@ -834,6 +834,7 @@ acciental->accidental
 accientally->accidentally
 accissible->accessible
 acclamied->acclaimed
+accleometer->accelerometer
 acclerate->accelerate
 acclerated->accelerated
 acclerates->accelerates
@@ -7167,6 +7168,7 @@ assesments->assessments
 assessin->assassin, assessing, assess in,
 assessmant->assessment
 assessmants->assessments
+assests->assess, assets,
 assfalt->asphalt
 assfalted->asphalted
 assfalting->asphalting
@@ -10433,6 +10435,9 @@ buyed->bought, buyer,
 buzilla->bugzilla
 bve->be
 bwtween->between
+by-pass->bypass
+by-passed->bypassed
+by-passing->bypassing
 byast->biased
 bycicle->bicycle
 bycicled->bicycled
@@ -17789,6 +17794,7 @@ counry->country, county,
 counsellin->counselling
 counsil->counsel
 counsils->counsels
+counstructor->constructor
 countain->contain
 countainer->container
 countainers->containers
@@ -18092,6 +18098,7 @@ critcially->critically
 critcials->criticals
 criteak->critique
 critera->criteria
+criteras->criteria
 criterea->criteria
 critereon->criterion
 criterias->criteria
@@ -18128,6 +18135,7 @@ critizing->criticizing
 critque->critique
 critqued->critiqued
 critquing->critiquing
+critreria->criteria
 croch->crotch
 crockadile->crocodile
 crockodiles->crocodiles
@@ -31879,6 +31887,9 @@ impplement->implement
 impplementating->implementing
 impplementation->implementation
 impplemented->implemented
+impprove->improve
+impproved->improved
+impprovement->improvement
 imprement->implement, improvement,
 imprementation->implementation
 imprementations->implementations
@@ -41499,10 +41510,11 @@ opemess->openness
 opeming->opening
 opems->opens
 openbrower->openbrowser
-opended->opened
+opend->opened
+opended->opened, open-ended,
 openeing->opening
 openen->opened, opening,
-openend->opened
+openend->opened, open-ended,
 openened->opened
 openening->opening
 openes->opens, openness,
@@ -45153,6 +45165,7 @@ pre-proces->pre-process
 pre-procesing->pre-processing
 pre-realease->pre-release
 pre-registeres->pre-registers
+pre-selected->preselected
 preallocationg->preallocating, preallocation,
 prealocate->preallocate
 prealocated->preallocated
@@ -45527,6 +45540,7 @@ presearves->preserves
 presearving->preserving
 presed->pressed, preset,
 presedential->presidential
+preseleted->preselected
 presenation->presentation
 presenations->presentations
 presenece->presence
@@ -54413,6 +54427,7 @@ snythetically->synthetically
 snythetics->synthetics
 Soalris->Solaris
 socail->social
+socal->social
 socalism->socialism
 socalist->socialist
 socalists->socialists
@@ -60235,7 +60250,8 @@ tryin->trying, try in,
 tryinng->trying
 trys->tries
 tryying->trying
-ttests->tests
+ttempt->attempt, tempt,
+ttests->tests, attests,
 tthank->thank
 tthanks->thanks
 tthat->that
@@ -63227,6 +63243,7 @@ warantee->warranty
 waranties->warranties
 waranty->warranty
 wardobe->wardrobe
+warehosue->warehouse
 waring->warning
 warings->warnings
 warinig->warning
