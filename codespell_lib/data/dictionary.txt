@@ -835,6 +835,7 @@ accientally->accidentally
 accissible->accessible
 acclamied->acclaimed
 accleometer->accelerometer
+accleometers->accelerometers
 acclerate->accelerate
 acclerated->accelerated
 acclerates->accelerates
@@ -10437,6 +10438,7 @@ bve->be
 bwtween->between
 by-pass->bypass
 by-passed->bypassed
+by-passes->bypasses
 by-passing->bypassing
 byast->biased
 bycicle->bicycle
@@ -17795,6 +17797,7 @@ counsellin->counselling
 counsil->counsel
 counsils->counsels
 counstructor->constructor
+counstructors->constructors
 countain->contain
 countainer->container
 countainers->containers
@@ -31894,9 +31897,12 @@ impplement->implement
 impplementating->implementing
 impplementation->implementation
 impplemented->implemented
-impprove->improve
 impproved->improved
+impprove->improve
 impprovement->improvement
+impprovements->improvements
+impproves->improves
+impproving->improving
 imprement->implement, improvement,
 imprementation->implementation
 imprementations->implementations
@@ -45172,7 +45178,10 @@ pre-proces->pre-process
 pre-procesing->pre-processing
 pre-realease->pre-release
 pre-registeres->pre-registers
+pre-select->preselect
 pre-selected->preselected
+pre-selecting->preselecting
+pre-selects->preselects
 preallocationg->preallocating, preallocation,
 prealocate->preallocate
 prealocated->preallocated
@@ -60260,6 +60269,12 @@ tryinng->trying
 trys->tries
 tryying->trying
 ttempt->attempt, tempt,
+ttempted->attempted, tempted,
+ttempting->attempting, tempting,
+ttempts->attempts, tempts,
+ttest->test, attest,
+ttested->tested, attested,
+ttesting->test, attesting,
 ttests->tests, attests,
 tthank->thank
 tthanks->thanks
@@ -63253,6 +63268,7 @@ waranties->warranties
 waranty->warranty
 wardobe->wardrobe
 warehosue->warehouse
+warehosues->warehouses
 waring->warning
 warings->warnings
 warinig->warning
