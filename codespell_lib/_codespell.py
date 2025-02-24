@@ -58,7 +58,7 @@ word_regex_def = r"[\w\-'’]+"  # noqa: RUF001
 # these may occur unescaped in URIs, and so we are more restrictive on the
 # endpoint.  Emails are more restrictive, so the endpoint remains flexible.
 uri_regex_def = (
-    "(\\b(?:https?|[ts]?ftp|file|git|smb)://[^\\s]+(?=$|\\s)|\\b[\\w.%+-]+@[\\w.-]+\\b)"
+    r"(\b(?:https?|[ts]?ftp|file|git|smb)://[^\s]+(?=$|\s)|\b[\w.%+-]+@[\w.-]+\b)"
 )
 inline_ignore_regex = re.compile(r"[^\w\s]\s?codespell:ignore\b(\s+(?P<words>[\w,]*))?")
 USAGE = """
