@@ -3395,6 +3395,7 @@ aligment->alignment
 aligments->alignments
 aligmnet->alignment
 aligmnets->alignments
+alignaed->aligned
 alignament->alignment
 alignaments->alignments
 alignation->alignment
@@ -13437,6 +13438,8 @@ coeffiecient->coefficient
 coeffiecients->coefficients
 coeffient->coefficient
 coeffients->coefficients
+coeffitient->coefficient
+coeffitients->coefficients
 coeficent->coefficient
 coeficents->coefficients
 coeficient->coefficient
@@ -16176,7 +16179,7 @@ constents->constants, consents, contents,
 constext->context
 consting->consisting
 constinually->continually
-constist->consist
+constist->consist, consists,
 constisted->consisted
 constistency->consistency
 constistent->consistent
@@ -17543,6 +17546,11 @@ corretness->correctness
 corretor->corrector
 corretors->correctors
 correts->corrects
+correxpond->correspond
+correxpondance->correspondence
+correxponded->corresponded
+correxponding->corresponding
+correxponds->corresponds
 corridoor->corridor
 corridoors->corridors
 corrispond->correspond
@@ -17858,8 +17866,14 @@ coutermeasures->countermeasures
 couterpart->counterpart
 couters->counters, routers, scouters,
 couting->counting
+coutn->count
+coutndown->countdown
+coutned->counted
 coutner->counter
 coutners->counters
+coutning->counting
+coutnown->countdown
+coutns->counts
 coutries->countries
 coutry->country
 couuld->could
@@ -18723,6 +18737,9 @@ daquiri->daiquiri
 daquiris->daiquiris
 Dardenelles->Dardanelles
 darma->dharma
+darw->draw
+darwn->drawn, Darwin,
+darws->draws
 dasboard->dashboard
 dasboards->dashboards
 dasdot->dashdot
@@ -21673,6 +21690,7 @@ dimensionaility->dimensionality
 dimensionailties->dimensionalities
 dimensionailty->dimensionality
 dimensiones->dimensions
+dimensionned->dimensioned
 dimenson->dimension
 dimensonal->dimensional
 dimensonalities->dimensionalities
@@ -22533,6 +22551,9 @@ disssociating->dissociating
 distace->distance, distaste,
 distaced->distanced
 distaces->distances, distastes,
+distacne->distance
+distacned->distanced
+distacnes->distances
 distancef->distanced, distances, distance,
 distancin->distancing
 distange->distance
@@ -42212,6 +42233,10 @@ osffset->offset
 osffsets->offsets
 osffsetting->offsetting
 osicllations->oscillations
+ossociate->associate
+ossociated->associated
+ossociation->association
+ossociations->associations
 osterage->ostrich
 osterages->ostriches
 ostridge->ostrich
@@ -51264,6 +51289,7 @@ returnin->returning, return in,
 returnn->return
 returnned->returned
 returnning->returning
+returnst->returns
 returs->returns
 retursn->returns
 retutn->return
@@ -56467,6 +56493,8 @@ subscibe->subscribe
 subscibed->subscribed
 subsciber->subscriber
 subscibers->subscribers
+subsciption->subscription
+subsciptions->subscriptions
 subscirbe->subscribe
 subscirbed->subscribed
 subscirber->subscriber
@@ -61254,6 +61282,10 @@ unmaping->unmapping
 unmappend->unmapped
 unmarsalling->unmarshalling
 unmaximice->unmaximize
+unmber->number, umber,
+unmbered->numbered
+unmbering->numbering
+unmbers->numbers
 unmisakable->unmistakable
 unmisakably->unmistakably
 unmistakeably->unmistakably
