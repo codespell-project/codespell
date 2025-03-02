@@ -119,7 +119,10 @@ You can select the optional dictionaries with the ``--builtin`` option.
 Ignoring words
 --------------
 
-When ignoring false positives, note that spelling errors are *case-insensitive* but words to ignore are *case-sensitive*. For example, the dictionary entry ``wrod`` will also match the typo ``Wrod``, but to ignore it you must pass ``wrod`` (to match the case of the dictionary entry).
+When ignoring false positives, note that spelling errors are *case-insensitive*.
+By default, only lowercase words to ignore are *case-insensitive*. For example, the dictionary entry ``wrod`` will also match the typo ``Wrod``, to ignore it you can pass ``wrod``.
+Non-lowercase words to ignore are *case-sensitive*. For example, the dictionary entry ``wrod`` will also match the typo ``Wrod``. To ignore it you must pass ``Wrod``.
+If you want to ignore all the words in *case-sensitive* mode including lowercase words, you can use the ``--ignore-words-case-sensitive`` optional flag.
 
 The words to ignore can be passed in two ways:
 

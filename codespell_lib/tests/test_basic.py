@@ -389,11 +389,48 @@ def test_ignore_words_with_cases(
     assert cs.main("-LMIS,Mis", bad_name) == 1
     assert cs.main("-I", fname, "-f", bad_name) == 1
     assert cs.main("-LMIS,Mis", "-f", bad_name) == 1
+    # Only lowercase words are ignored works in a case-insensitive manner
     fname.write_text("mis")
     assert cs.main("-I", fname, bad_name) == 0
     assert cs.main("-Lmis", bad_name) == 0
     assert cs.main("-I", fname, "-f", bad_name) == 0
     assert cs.main("-Lmis", "-f", bad_name) == 0
+
+
+def test_ignore_words_with_case_sensitive(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Test --ignore-words-case-sensitive for -I and -L options."""
+    bad_name = tmp_path / "MIS.txt"
+    bad_name.write_text(
+        "1 MIS (Management Information System) 1\n2 Les Mis (1980 musical) 2\n3 mis 3\n"
+    )
+    assert cs.main(bad_name) == 3
+    assert cs.main(bad_name, "-f") == 4
+    fname = tmp_path / "ignore.txt"
+
+    fname.write_text("miS")
+    assert cs.main("--ignore-words-case-sensitive", "-I", fname, bad_name) == 3
+    assert cs.main("--ignore-words-case-sensitive", "-LmiS", bad_name) == 3
+    assert cs.main("--ignore-words-case-sensitive", "-I", fname, "-f", bad_name) == 4
+    assert cs.main("--ignore-words-case-sensitive", "-LmiS", "-f", bad_name) == 4
+    # lowercase words are ignored also works in a case-sensitive manner
+    fname.write_text("mis")
+    assert cs.main("--ignore-words-case-sensitive", "-I", fname, bad_name) == 2
+    assert cs.main("--ignore-words-case-sensitive", "-Lmis", bad_name) == 2
+    assert cs.main("--ignore-words-case-sensitive", "-I", fname, "-f", bad_name) == 3
+    assert cs.main("--ignore-words-case-sensitive", "-Lmis", "-f", bad_name) == 3
+    fname.write_text("MIS")
+    assert cs.main("--ignore-words-case-sensitive", "-I", fname, bad_name) == 2
+    assert cs.main("--ignore-words-case-sensitive", "-LMIS", bad_name) == 2
+    assert cs.main("--ignore-words-case-sensitive", "-I", fname, "-f", bad_name) == 2
+    assert cs.main("--ignore-words-case-sensitive", "-LMIS", "-f", bad_name) == 2
+    fname.write_text("MIS\nMis")
+    assert cs.main("--ignore-words-case-sensitive", "-I", fname, bad_name) == 1
+    assert cs.main("--ignore-words-case-sensitive", "-LMIS,Mis", bad_name) == 1
+    assert cs.main("--ignore-words-case-sensitive", "-I", fname, "-f", bad_name) == 1
+    assert cs.main("--ignore-words-case-sensitive", "-LMIS,Mis", "-f", bad_name) == 1
 
 
 def test_ignore_word_list(
