@@ -477,6 +477,13 @@ def parse_options(
         "misspelling in URIs and emails will be ignored.",
     )
     parser.add_argument(
+        "--ignore-words-case-sensitive",
+        action="store_true",
+        default=False,
+        help="all ignore words in the ignore-words arguments in a case-sensitive way. "
+        "By default, lowercase words to ignore are handled in a case-insensitive way.",
+    )
+    parser.add_argument(
         "-r",
         "--regex",
         action="store",
@@ -697,18 +704,25 @@ def parse_options(
 
 
 def process_ignore_words(
-    words: Iterable[str], ignore_words: Set[str], ignore_words_cased: Set[str]
+    words: Iterable[str],
+    ignore_words: Set[str],
+    ignore_words_cased: Set[str],
+    ignore_words_case_sensitive: bool = False,
 ) -> None:
     for word in words:
         word = word.strip()
-        if word == word.lower():
+        if ignore_words_case_sensitive:
+            # all ignore words are handled in a case-sensitive way
+            ignore_words_cased.add(word)
+        elif word == word.lower():
+            # lowercase words to ignore are handled in a case-insensitive way
             ignore_words.add(word)
         else:
             ignore_words_cased.add(word)
 
 
 def parse_ignore_words_option(
-    ignore_words_option: List[str],
+    ignore_words_option: List[str], ignore_words_case_sensitive: bool = False
 ) -> Tuple[Set[str], Set[str]]:
     ignore_words: Set[str] = set()
     ignore_words_cased: Set[str] = set()
@@ -718,6 +732,7 @@ def parse_ignore_words_option(
                 (word.strip() for word in comma_separated_words.split(",")),
                 ignore_words,
                 ignore_words_cased,
+                ignore_words_case_sensitive,
             )
     return (ignore_words, ignore_words_cased)
 
@@ -728,11 +743,17 @@ def build_exclude_hashes(filename: str, exclude_lines: Set[str]) -> None:
 
 
 def build_ignore_words(
-    filename: str, ignore_words: Set[str], ignore_words_cased: Set[str]
+    filename: str,
+    ignore_words: Set[str],
+    ignore_words_cased: Set[str],
+    ignore_word_case_sensitive: bool = False,
 ) -> None:
     with open(filename, encoding="utf-8") as f:
         process_ignore_words(
-            (line.strip() for line in f), ignore_words, ignore_words_cased
+            (line.strip() for line in f),
+            ignore_words,
+            ignore_words_cased,
+            ignore_word_case_sensitive,
         )
 
 
@@ -1173,7 +1194,7 @@ def main(*args: str) -> int:
         ignore_multiline_regex = None
 
     ignore_words, ignore_words_cased = parse_ignore_words_option(
-        options.ignore_words_list
+        options.ignore_words_list, options.ignore_words_case_sensitive
     )
     if options.ignore_words:
         ignore_words_files = flatten_clean_comma_separated_arguments(
@@ -1185,7 +1206,12 @@ def main(*args: str) -> int:
                     parser,
                     f"ERROR: cannot find ignore-words file: {ignore_words_file}",
                 )
-            build_ignore_words(ignore_words_file, ignore_words, ignore_words_cased)
+            build_ignore_words(
+                ignore_words_file,
+                ignore_words,
+                ignore_words_cased,
+                options.ignore_words_case_sensitive,
+            )
 
     uri_regex = options.uri_regex or uri_regex_def
     try:
@@ -1197,7 +1223,11 @@ def main(*args: str) -> int:
         )
 
     uri_ignore_words = set(
-        itertools.chain(*parse_ignore_words_option(options.uri_ignore_words_list))
+        itertools.chain(
+            *parse_ignore_words_option(
+                options.uri_ignore_words_list, options.ignore_words_case_sensitive
+            )
+        )
     )
 
     dictionaries = flatten_clean_comma_separated_arguments(options.dictionary or ["-"])
