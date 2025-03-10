@@ -2727,6 +2727,14 @@ aggreeableness->agreeableness
 aggreeably->agreeably
 aggreecate->aggregate
 aggreed->agreed
+aggreegate->aggregate
+aggreegated->aggregated
+aggreegates->aggregates
+aggreegating->aggregating
+aggreegation->aggregation
+aggreegations->aggregations
+aggreegator->aggregator
+aggreegators->aggregators
 aggreeing->agreeing
 aggreement->agreement
 aggreements->agreements
@@ -9753,6 +9761,7 @@ bluethooth->Bluetooth
 bluetooh->Bluetooth
 bluetoot->Bluetooth
 bluetootn->Bluetooth
+blutooth->Bluetooth
 blured->blurred
 blurr->blur, blurred,
 blutooth->Bluetooth
@@ -13682,6 +13691,7 @@ colorpsace->colorspace
 colorpsaces->colorspaces
 colose->close
 coloum->column
+colouer->colour
 coloumn->column
 coloumns->columns
 coloums->columns
@@ -36255,6 +36265,7 @@ lerans->learns
 lern->learn, lean,
 lerned->learned, learnt, leaned,
 lerning->learning, leaning,
+lesda->leads
 lessson->lesson
 lesssons->lessons
 lesstiff->LessTif
@@ -47930,6 +47941,10 @@ reallocaitions->reallocations
 reallocaiton->reallocation
 reallocaitons->reallocations
 reallocatin->reallocating, reallocation,
+realod->reload
+realoded->reloaded
+realoding->reloading
+realods->reloads
 realsitic->realistic
 realtd->related
 realte->relate
