@@ -11,7 +11,7 @@ permissions: {}
 jobs:
   test:
     env:
-      REQUIRE_ASPELL: true
+      REQUIRE_ASPELL: ${{ startsWith(matrix.os, 'ubuntu') }}
       RUFF_OUTPUT_FORMAT: github
     # Make sure we're using the latest aspell dictionary
     runs-on: ${{ matrix.os }}
