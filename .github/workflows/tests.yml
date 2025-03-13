@@ -34,7 +34,7 @@ jobs:
           - python-version: "3.10"
             kind: "no-toml"
             os: "ubuntu-24.04-arm"
-          - python-vercsion: "3.13"
+          - python-version: "3.13"
             kind: "standard"
             os: "windows-latest"
     name: "${{ matrix.python-version }} ${{ matrix.kind }} ${{ matrix.os }}"
