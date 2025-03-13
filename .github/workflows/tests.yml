@@ -31,7 +31,7 @@ jobs:
         include:
           - python-version: "3.10"
             kind: "no-toml"
-    name: '${{ matrix.python-version }} ${{ matrix.kind }}'
+    name: "${{ matrix.python-version }} ${{ matrix.kind }}"
     steps:
       - uses: actions/checkout@v4
         with:
