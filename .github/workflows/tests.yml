@@ -26,12 +26,12 @@ jobs:
           - "3.11"
           - "3.12"
           - "3.13"
-        no-toml:
-          - ""
+        kind:
+          - "standard"
         include:
           - python-version: "3.10"
-            no-toml: "no-toml"
-    name: ${{ matrix.python-version }} ${{ matrix.no-toml }}
+            kind: "no-toml"
+    name: '${{ matrix.python-version }} ${{ matrix.kind }}'
     steps:
       - uses: actions/checkout@v4
         with:
@@ -43,6 +43,7 @@ jobs:
           allow-prereleases: true
       - run: sudo apt-get install libaspell-dev aspell-en
       - name: Install dependencies
+        shell: bash -e {0}
         run: |
           python --version  # just to check
           pip install --upgrade pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
@@ -57,7 +58,7 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
       # tomli should not be required for the next two steps (and make sure it's not)
       - run: pip uninstall -yq tomli
-        if: ${{ matrix.no-toml == 'no-toml' }}
+        if: ${{ matrix.kind == 'no-toml' }}
       - run: codespell --check-filenames --skip="./.*,./build/*,./codespell_lib/data/*,./codespell_lib/tests/test_basic.py,./example/code.c,./junit-results.xml,*.egg-info/*,*.pyc,*.sig,pyproject-codespell.precommit-toml,README.rst,"
       # this file has an error
       - run: "! codespell codespell_lib/tests/test_basic.py"
