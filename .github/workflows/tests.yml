@@ -73,6 +73,7 @@ jobs:
       - run: codespell --check-filenames --skip="./.*,./build/*,./codespell_lib/data/*,./codespell_lib/tests/test_basic.py,./example/code.c,./junit-results.xml,*.egg-info/*,*.pyc,*.sig,pyproject-codespell.precommit-toml,README.rst,"
       # this file has an error
       - run: "! codespell codespell_lib/tests/test_basic.py"
+        shell: bash -e {0}
 
   make-check-dictionaries:
     runs-on: ubuntu-latest
