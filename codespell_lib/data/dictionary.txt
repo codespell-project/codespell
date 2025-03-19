@@ -10952,6 +10952,11 @@ canabelyze->cannibalize
 canabelyzed->cannibalized
 canabelyzes->cannibalizes
 canabelyzing->cannibalizing
+canacel->cancel
+canaceled->canceled
+canaceling->canceling
+canacelling->cancelling
+canacels->cancels
 canadan->canadian
 canbe->can be
 cancelaltion->cancellation
@@ -11089,6 +11094,8 @@ cantacting->contacting
 cantacts->contacts
 cantain->contain
 cantained->contained
+cantainer->container
+cantainers->containers
 cantaining->containing
 cantains->contains
 cantalope->cantaloupe
@@ -15055,6 +15062,8 @@ concludin->concluding
 concret->concrete, concert,
 concretly->concretely
 concrets->concrete, concerts,
+conctructor->constructor
+conctructors->constructors
 concured->concurred, conquered,
 concurence->concurrence
 concurency->concurrency
@@ -16556,6 +16565,7 @@ continuem->continuum
 continueous->continuous
 continueously->continuously
 continuesly->continuously
+continuim->continuum
 continuin->continuing
 continuos->continuous
 continuosly->continuously
@@ -19609,7 +19619,10 @@ defnitive->definitive
 defnitively->definitively
 defore->before
 defqault->default
-defragmenation->defragmentation
+defrentiate->differentiate
+defrentiated->differentiated
+defrentiates->differentiates
+defrentiating->differentiating
 defualt->default
 defualtdict->defaultdict
 defualts->defaults
@@ -21858,6 +21871,7 @@ directoriei->directories
 directoris->directories
 directort->directory
 directorty->directory
+directoryes->directories
 directorys->directories
 directoty->directory
 directove->directive
@@ -37629,9 +37643,9 @@ mechnisms->mechanisms
 meda->meta, medal, media,
 medacine->medicine
 medadata->metadata
-medai->media
 meddo->meadow
 meddos->meadows
+mede->made, mere, mead, lede, mete,
 medeival->medieval
 medeval->medieval
 medevial->medieval
@@ -40712,6 +40726,7 @@ notifiction->notification
 notifictions->notifications
 notififation->notification
 notififations->notifications
+notifing->notifying
 notifiy->notify
 notifiying->notifying
 notifyable->notifiable
@@ -41799,6 +41814,7 @@ oposed->opposed
 oposite->opposite
 oposition->opposition
 oppen->open
+oppend->opened, append,
 oppened->opened
 oppenent->opponent
 oppenents->opponents
@@ -43070,6 +43086,7 @@ paramterizes->parameterizes
 paramterizing->parameterizing
 paramterless->parameterless
 paramters->parameters
+paramterts->parameters
 paramtrical->parametrical
 parana->piranha
 paraniac->paranoiac
@@ -44310,6 +44327,8 @@ pictureskly->picturesquely
 pictureskness->picturesqueness
 picure->picture, epicure,
 picures->pictures, epicures,
+picutre->picture
+picutres->pictures
 pidgeon->pigeon, pidgin,
 pidgeons->pigeons, pidgins,
 pieceweise->piecewise, piece wise,
@@ -44879,6 +44898,7 @@ porpose->propose, purpose,
 porposed->proposed
 porposes->proposes, purposes,
 porposing->proposing
+porpuse->purpose, porpoise,
 porsalin->porcelain
 porshan->portion
 porshon->portion
@@ -45919,9 +45939,10 @@ priorization->prioritization
 priorizations->prioritizations
 priorize->prioritize
 priorized->prioritized
-priorizes->prioritizes
 priorizin->prioritizing
 priorizing->prioritizing
+priororities->priorities
+priorority->priority
 priort->prior, priory, priors, priori,
 priorties->priorities, prior ties,
 priortisation->prioritisation
@@ -47417,8 +47438,9 @@ quittin->quitting
 quivalence->equivalence
 quivalent->equivalent
 quizes->quizzes
-quizs->quizzes
 quizzs->quizzes
+quntities->quantities
+quntity->quantity
 quoshant->quotient
 quoshants->quotients
 quotaion->quotation
@@ -49442,6 +49464,7 @@ reletive->relative
 reletively->relatively
 relevabt->relevant
 relevane->relevant
+relevante->relevant
 relevants->relevant
 releveant->relevant
 relevence->relevance
@@ -50167,6 +50190,7 @@ replases->replaces, relapses, rephases,
 replasing->replacing, relapsing, rephasing,
 replcace->replace
 replcaced->replaced
+replcae->replace
 replcaof->replicaof
 replenishin->replenishing, replenish in,
 replentish->replenish
@@ -52186,6 +52210,7 @@ scedulers->schedulers
 scedules->schedules
 sceduling->scheduling
 sceen->scene, seen, screen, scheme,
+sceene->scene
 sceens->scenes, screens, schemes,
 sceenshot->screenshot
 sceenshots->screenshots
@@ -54601,6 +54626,7 @@ soltions->solutions
 soltuion->solution
 soltuions->solutions
 soluable->soluble
+soluation->solution
 solum->solemn
 soluton->solution
 solutons->solutions
@@ -57668,6 +57694,7 @@ symetrically->symmetrically
 symetriy->symmetry
 symetry->symmetry
 symettric->symmetric
+symlinc->symlink
 symmeterized->symmetrized
 symmetetric->symmetric
 symmetic->symmetric
@@ -59552,6 +59579,7 @@ transacitons->transactions
 transacrtion->transaction
 transacrtional->transactional
 transacrtions->transactions
+transactino->transaction
 transaction-spacific->transaction-specific
 transactiona->transactions, transactional,
 transactoin->transaction
