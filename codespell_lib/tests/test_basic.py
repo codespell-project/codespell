@@ -207,6 +207,29 @@ def test_bad_glob(
     assert cs.main("--skip", "[[]b-a[]].txt", g) == 0
 
 
+def test_bad_glob_per_file_ignores(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    # disregard invalid globs, properly handle escaped globs
+    g = tmp_path / "glob"
+    g.mkdir()
+    fname = g / "[b-a].txt"
+    fname.write_text("abandonned\n")
+    assert cs.main(g) == 1
+    # bad glob is invalid
+    result = cs.main(g, "--per-file-ignores", "[b-a].txt", "abandonned", std=True)
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    if sys.hexversion < 0x030A05F0:  # Python < 3.10.5 raises re.error
+        assert code == EX_USAGE, "invalid glob"
+        assert "invalid glob" in stderr
+    else:  # Python >= 3.10.5 does not match
+        assert code == 1
+    # properly escaped glob is valid, and matches glob-like file name
+    assert cs.main(g, "--per-file-ignores", "[[]b-a[]].txt", "abandonned") == 0
+
+
 @pytest.mark.skipif(sys.platform != "linux", reason="Only supported on Linux")
 def test_permission_error(
     tmp_path: Path,
