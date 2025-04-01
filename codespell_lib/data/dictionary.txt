@@ -635,6 +635,12 @@ acceleratored->accelerated
 acceleratoring->accelerating
 acceleratrion->acceleration
 acceleread->accelerated
+accelereate->accelerate
+accelereated->accelerated
+accelereates->accelerates
+accelereating->accelerating
+accelereation->acceleration
+accelereations->accelerations
 accelerte->accelerate
 accelertion->acceleration
 accelertor->accelerator
@@ -3982,6 +3988,7 @@ ambigious->ambiguous
 ambigous->ambiguous
 ambiguious->ambiguous
 ambiguitiy->ambiguity
+ambigunous->ambiguous
 ambiguos->ambiguous
 ambiguuous->ambiguous
 ambiguuously->ambiguously
@@ -6755,6 +6762,8 @@ arrants->arrangements
 arraows->arrows
 arrary->array
 arrarys->arrays
+arrauy->array
+arrauys->arrays
 arraye->array
 arrayes->arrays
 arre->are
@@ -9271,6 +9280,7 @@ beeings->beings
 beetween->between
 beetwen->between
 beffer->buffer
+beflow->below
 befoer->before
 befoerhand->beforehand
 befor->before
@@ -11172,6 +11182,11 @@ capbailities->capabilities
 capbaility->capability
 capbale->capable
 capbaly->capably
+capcaitance->capacitance
+capcaities->capacities
+capcaitor->capacitor
+capcaitors->capacitors
+capcaity->capacity
 capcitance->capacitance
 capcities->capacities
 capcitor->capacitor
@@ -15921,6 +15936,8 @@ conntects->connects
 conntent->content
 conntents->contents
 conntroller->controller
+connvertion->conversion
+connvertions->conversions
 cononical->canonical
 cononicalization->canonicalization
 cononicalize->canonicalize
@@ -19845,6 +19862,8 @@ delimma->dilemma
 delimted->delimited
 delimter->delimiter
 delimters->delimiters
+delimtier->delimiter
+delimtiers->delimiters
 delink->unlink
 delivared->delivered
 delivative->derivative
@@ -21609,6 +21628,9 @@ difficultes->difficulties
 difficults->difficult, difficulties,
 difficutl->difficult
 difficutly->difficulty
+diffirence->difference
+diffirences->differences
+diffirent->different
 diffreences->differences
 diffreent->different
 diffreents->different, difference,
@@ -24798,6 +24820,7 @@ entires->entries
 entirey->entirely
 entirity->entirety
 entirly->entirely
+entiry->entry, entirely,
 entite->entire, entity,
 entitee->entity
 entitees->entities
@@ -30569,6 +30592,8 @@ has'nt->hasn't
 hases->hashes
 hashi->hash
 hashin->hashing, hash in,
+hashnap->hashmap
+hashnaps->hashmaps
 hashreference->hash reference
 hashs->hashes
 hashses->hashes
@@ -43777,6 +43802,7 @@ percieving->perceiving
 percise->precise
 percisely->precisely
 percision->precision
+percison->precision
 perenially->perennially
 perentage->percentage, parentage,
 perentages->percentages, parentages,
@@ -49389,6 +49415,7 @@ relaased->released, relapsed,
 relaases->releases, relapses,
 relaasing->releasing, relapsing,
 relaative->relative
+relaction->reaction, relation, redaction, relocation,
 relady->ready
 relaease->release
 relaese->release
@@ -54469,6 +54496,8 @@ slewth->sleuth
 slewthed->sleuthed
 slewthing->sleuthing
 slewths->sleuths
+slibling->sibling
+sliblings->siblings
 slicable->sliceable
 slience->silence
 slienced->silenced
@@ -56727,6 +56756,7 @@ subtitutes->substitutes
 subtituting->substituting
 subtitution->substitution
 subtitutions->substitutions
+subtlely->subtly, subtlety,
 subtractin->subtracting, subtract in, subtraction,
 subtrafuge->subterfuge
 subtrate->substrate
@@ -59923,6 +59953,8 @@ transtitioning->transitioning
 transtitions->transitions
 transtorm->transform
 transtormed->transformed
+transverer->traverser, transverter, transferer,
+transverers->traversers, transverters, transferers,
 transvers->transverse
 transvorm->transform
 transvormation->transformation
@@ -61382,6 +61414,7 @@ unline->unlike
 unloadin->unloading, unload in,
 unloadins->unloading
 unmached->unmatched
+unmacthed->unmatched
 unmainted->unmaintained
 unmanouverable->unmaneuverable, unmanoeuvrable,
 unmaping->unmapping
@@ -61624,8 +61657,10 @@ unserstand->understand
 unserstanding->understanding
 unserstands->understands
 unserstood->understood
+unseted->unset, unseated,
 unseting->unsetting
 unsetset->unset
+unsetted->unset, unseated,
 unsettin->unsetting
 unshfit->unshift
 unshfited->unshifted
