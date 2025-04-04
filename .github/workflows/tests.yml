@@ -11,10 +11,10 @@ permissions: {}
 jobs:
   test:
     env:
-      REQUIRE_ASPELL: true
+      REQUIRE_ASPELL: ${{ startsWith(matrix.os, 'ubuntu') }}
       RUFF_OUTPUT_FORMAT: github
     # Make sure we're using the latest aspell dictionary
-    runs-on: ubuntu-24.04-arm
+    runs-on: ${{ matrix.os }}
     timeout-minutes: 10
     strategy:
       fail-fast: false
@@ -26,12 +26,18 @@ jobs:
           - "3.11"
           - "3.12"
           - "3.13"
-        no-toml:
-          - ""
+        kind:
+          - "standard"
+        os:
+          - "ubuntu-24.04-arm"
         include:
           - python-version: "3.10"
-            no-toml: "no-toml"
-    name: ${{ matrix.python-version }} ${{ matrix.no-toml }}
+            kind: "no-toml"
+            os: "ubuntu-24.04-arm"
+          - python-version: "3.13"
+            kind: "standard"
+            os: "windows-latest"
+    name: "${{ matrix.python-version }} ${{ matrix.kind }} ${{ matrix.os }}"
     steps:
       - uses: actions/checkout@v4
         with:
@@ -42,25 +48,32 @@ jobs:
           python-version: ${{ matrix.python-version }}
           allow-prereleases: true
       - run: sudo apt-get install libaspell-dev aspell-en
+        if: startsWith(matrix.os, 'ubuntu')
       - name: Install dependencies
+        shell: bash -e {0}
         run: |
           python --version  # just to check
           pip install --upgrade pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
           pip install --upgrade "setuptools!=47.2.0" docutils setuptools_scm[toml] twine
-          pip install aspell-python-py3
           pip install -e ".[dev]" # install the codespell dev packages
+      - run: pip install aspell-python-py3
+        if: startsWith(matrix.os, 'ubuntu')
       - run: codespell --help
       - run: codespell --version
       - run: make check
+        if: startsWith(matrix.os, 'ubuntu')
+      - run: pytest codespell_lib
+        if: startsWith(matrix.os, 'windows')
       - uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
       # tomli should not be required for the next two steps (and make sure it's not)
       - run: pip uninstall -yq tomli
-        if: ${{ matrix.no-toml == 'no-toml' }}
+        if: ${{ matrix.kind == 'no-toml' }}
       - run: codespell --check-filenames --skip="./.*,./build/*,./codespell_lib/data/*,./codespell_lib/tests/test_basic.py,./example/code.c,./junit-results.xml,*.egg-info/*,*.pyc,*.sig,pyproject-codespell.precommit-toml,README.rst,"
       # this file has an error
       - run: "! codespell codespell_lib/tests/test_basic.py"
+        shell: bash -e {0}
 
   make-check-dictionaries:
     runs-on: ubuntu-latest
