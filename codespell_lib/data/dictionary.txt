@@ -1671,6 +1671,7 @@ actice->active
 acticely->actively
 acticities->activities
 acticity->activity
+actieve->active
 actine->active
 actitivies->activities
 actiual->actual
@@ -9317,6 +9318,7 @@ beginer->beginner
 beginers->beginners
 begines->begins
 beging->begging, beginning, being,
+beginin->beginning
 begininer->beginner
 begininers->beginners
 begining->beginning
@@ -10927,6 +10929,7 @@ cammander->commander
 cammanders->commanders
 cammanding->commanding
 cammands->commands
+cammond->command
 camoflage->camouflage
 camoflaged->camouflaged
 camoflages->camouflages
@@ -13013,6 +13016,7 @@ claibscale->calibscale
 claime->claim
 claimes->claims
 claimin->claiming, claim in,
+clairity->clarity
 clairvoiant->clairvoyant
 clairvoiantes->clairvoyants
 clairvoiants->clairvoyants
@@ -13024,6 +13028,7 @@ clapse->collapse, clasp, claps, lapse,
 clapsed->collapsed
 clapses->collapses
 clapsing->collapsing
+claraty->clarity
 claravoyant->clairvoyant
 claravoyantes->clairvoyants
 claravoyants->clairvoyants
@@ -13032,6 +13037,8 @@ clared->cleared
 clarety->clarity
 clarifyin->clarifying, clarify in,
 claring->clearing
+claritiy->clarity
+clarrity->clarity
 clases->classes, clashes, cases,
 clasic->classic
 clasical->classical
@@ -13765,6 +13772,7 @@ comamndline->commandline
 comamnds->commands
 comand->command
 comand-line->command-line
+comande->command
 comanded->commanded
 comander->commander, commandeer,
 comanding->commanding
@@ -15351,6 +15359,9 @@ confidantally->confidentially
 confidantals->confidentials
 confidantial->confidential
 confidantially->confidentially
+confidencial->confidential
+confidenciall->confidential
+confidencialy->confidentially
 confidental->confidential
 confidentally->confidentially
 confids->confides
@@ -19590,6 +19601,10 @@ definintion->definition
 definintions->definitions
 definintive->definitive
 definintively->definitively
+definishion->definition
+definishions->definitions
+definision->definition
+definisions->definitions
 definit->definite
 definitelly->definitely
 definitian->definition
@@ -31467,6 +31482,7 @@ ignested->ingested
 ignesting->ingesting
 ignests->ingests
 ignnore->ignore
+ignnored->ignored
 ignoded->ignored
 ignoerd->ignored
 ignonre->ignore
@@ -32128,6 +32144,10 @@ inaccessble->inaccessible
 inaccuraccies->inaccuracies
 inaccuraccy->inaccuracy
 inacessible->inaccessible
+inactice->inactive
+inactieve->inactive
+inactiv->inactive
+inactivly->inactively
 inacurate->inaccurate
 inacurracies->inaccuracies
 inacurrate->inaccurate
@@ -32517,6 +32537,8 @@ incremet->increment
 incremetal->incremental
 incremeted->incremented
 incremeting->incrementing
+incremint->increment
+incremment->increment
 incremnet->increment
 increse->increase
 incresed->increased
@@ -37807,12 +37829,16 @@ memmick->mimic
 memmicked->mimicked
 memmicking->mimicking
 memmics->mimics
+memmories->memories
 memmory->memory
+memmoryes->memories
+memmorys->memories
 memner->member
 memoery->memory
 memomry->memory
 memor->memory
 memorizin->memorizing
+memorys->memories
 memoty->memory
 memove->memmove
 mempry->memory
@@ -38238,6 +38264,7 @@ minimim->minimum
 minimisin->minimising
 minimium->minimum
 minimizin->minimizing
+minimmum->minimum
 minimsation->minimisation
 minimse->minimise
 minimsed->minimised
@@ -40583,6 +40610,10 @@ non-virtural->non-virtual
 non-virutal->non-virtual
 non-virutual->non-virtual
 non-vitrual->non-virtual
+non-volatial->non-volatile
+non-volitable->non-volatile
+non-volitale->non-volatile
+non-volitile->non-volatile
 non-vritual->non-virtual
 non-wirtual->non-virtual
 nonbloking->non-blocking
@@ -46504,6 +46535,7 @@ programatically->programmatically
 programattic->programmatic
 programattically->programmatically
 programd->programmed
+programemd->programmed
 programemer->programmer
 programemers->programmers
 programm->program, programme,
@@ -46847,6 +46879,8 @@ protcols->protocols
 protcool->protocol
 protcools->protocols
 protcted->protected
+proteced->protected
+proteceted->protected
 protecion->protection
 protecte->protected, protect,
 protectin->protecting, protect in, protection,
@@ -50751,6 +50785,7 @@ resestatus->resetstatus
 resetable->resettable
 reseted->reset
 reseting->resetting
+resett->reset
 resetted->reset
 resettin->resetting
 resevation->reservation
@@ -51105,6 +51140,7 @@ resteraunt->restaurant
 resteraunts->restaurants
 restes->reset, rests,
 restesting->retesting
+restet->reset
 restict->restrict
 resticted->restricted
 resticting->restricting
@@ -51126,6 +51162,7 @@ restoreble->restorable
 restoreing->restoring
 restorin->restoring
 restors->restores
+restort->restore, restored,
 restouration->restoration
 restraunt->restraint, restaurant,
 restraunts->restraints, restaurants,
@@ -53864,6 +53901,7 @@ sighths->scythes, sights,
 sigificance->significance
 sigificant->significant
 sigificantly->significantly
+siginals->signals
 siginificance->significance
 siginificant->significant
 siginificantly->significantly
@@ -53929,6 +53967,7 @@ signle->single, signal,
 signles->singles, signals,
 signleton->singleton
 signletons->singletons
+signnals->signals
 signol->signal
 signto->sign to
 signul->signal
@@ -58788,6 +58827,7 @@ tghe->the
 tha->than, that, the,
 thair->their, there,
 thairs->theirs, there's,
+tham->than
 thankfull->thankful, thankfully,
 thankfullly->thankfully
 thankfuly->thankfully
@@ -63261,6 +63301,9 @@ volentiered->volunteered
 volentiering->volunteering
 volentiers->volunteers
 voleyball->volleyball
+volital->volatile
+volitale->volatile
+volitile->volatile
 volontary->voluntary
 volonteer->volunteer
 volonteered->volunteered
