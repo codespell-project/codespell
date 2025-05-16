@@ -207,6 +207,29 @@ def test_bad_glob(
     assert cs.main("--skip", "[[]b-a[]].txt", g) == 0
 
 
+def test_bad_glob_per_file_ignores(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    # disregard invalid globs, properly handle escaped globs
+    g = tmp_path / "glob"
+    g.mkdir()
+    fname = g / "[b-a].txt"
+    fname.write_text("abandonned\n")
+    assert cs.main(g) == 1
+    # bad glob is invalid
+    result = cs.main(g, "--per-file-ignores", "[b-a].txt", "abandonned", std=True)
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    if sys.hexversion < 0x030A05F0:  # Python < 3.10.5 raises re.error
+        assert code == EX_USAGE, "invalid glob"
+        assert "invalid glob" in stderr
+    else:  # Python >= 3.10.5 does not match
+        assert code == 1
+    # properly escaped glob is valid, and matches glob-like file name
+    assert cs.main(g, "--per-file-ignores", "[[]b-a[]].txt", "abandonned") == 0
+
+
 @pytest.mark.skipif(sys.platform != "linux", reason="Only supported on Linux")
 def test_permission_error(
     tmp_path: Path,
@@ -396,6 +419,42 @@ def test_ignore_words_with_cases(
     assert cs.main("-Lmis", "-f", bad_name) == 0
 
 
+def test_per_file_ignores(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Test --per-file-ignores options."""
+    text = "abandonned abondon abilty"
+    bad_file = tmp_path / "bad.txt"
+    bad_file.write_text(text)
+    name = "ignore.txt"
+    fname = tmp_path / name
+    fname.write_text(text)
+    assert cs.main(tmp_path) == 6
+
+    assert cs.main(fname, bad_file, "--per-file-ignores", name, "abondon") == 5
+    assert cs.main(fname, bad_file, "--per-file-ignores", name, "abondon,abilty") == 4
+    # case sensitive
+    assert cs.main(fname, bad_file, "--per-file-ignores", name, "Abilty") == 6
+    assert cs.main(fname, bad_file, "--per-file-ignores", "name.txt", "abilty") == 6
+    # several pair arguments
+    assert (
+        cs.main(
+            fname,
+            bad_file,
+            # pair arguments 1
+            "--per-file-ignores",
+            name,
+            "abondon",
+            # pair arguments 2
+            "--per-file-ignores",
+            name,
+            "abilty",
+        )
+        == 4
+    )
+
+
 def test_ignore_word_list(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
@@ -452,6 +511,23 @@ def test_ignore_word_list(
         (
             "You could also use line based igore (codespell:ignore igare) to igore ",
             2,
+        ),
+        # file-ignore
+        ("abandonned abondon abilty \n # codespell:file-ignore abondon", 2),
+        ("abandonned abondon abilty \n // codespell:file-ignore abondon,abilty", 1),
+        (
+            "abandonned abondon abilty \n /* codespell:file-ignore abandonned,abondon,abilty",  # noqa: E501
+            0,
+        ),
+        # ignore unused ignore
+        ("abandonned abondon abilty \n # codespell:file-ignore nomenklatur", 3),
+        # ignore these as they aren't valid
+        ("abandonned abondon abilty \n # codespell:file-ignore", 3),
+        ("abandonned abondon abilty \n # codespell:file-igore word", 3),
+        # several in the same file
+        (
+            "// codespell:file-ignore abondon \n abandonned abondon abilty \n // codespell:file-ignore abilty",  # noqa: E501
+            1,
         ),
     ],
 )
@@ -1286,15 +1362,17 @@ def test_config_toml(
     (d / "bad.txt").write_text("abandonned donn\n")
     (d / "good.txt").write_text("good")
     (d / "abandonned.txt").write_text("")
+    (d / "per-file.txt").write_text("donn")
 
     # Should fail when checking all files.
     result = cs.main(d, "--check-filenames", count=True, std=True)
     assert isinstance(result, tuple)
     code, stdout, _ = result
     # Code in this case is not exit code, but count of misspellings.
-    assert code == 3
+    assert code == 4
     assert "bad.txt" in stdout
     assert "abandonned.txt" in stdout
+    assert "per-file.txt" in stdout
 
     if kind.startswith("cfg"):
         conffile = tmp_path / "setup.cfg"
@@ -1304,6 +1382,8 @@ def test_config_toml(
 [codespell]
 skip = bad.txt, whatever.txt
 count =
+[codespell.per-file-ignores]
+per-file.txt = donn
 """
         else:
             assert kind == "cfg_multiline"
@@ -1314,6 +1394,8 @@ skip = whatever.txt,
    ,
 
 count =
+[codespell.per-file-ignores]
+per-file.txt = donn
 """
         conffile.write_text(text)
     else:
@@ -1327,6 +1409,8 @@ count =
 skip = 'bad.txt,whatever.txt'
 check-filenames = false
 count = true
+[tool.codespell.per-file-ignores]
+"per-file.txt" = 'donn'
 """
         else:
             assert kind == "toml_list"
@@ -1335,6 +1419,8 @@ count = true
 skip = ['bad.txt', 'whatever.txt']
 check-filenames = false
 count = true
+[tool.codespell.per-file-ignores]
+"per-file.txt" = ['donn']
 """
         tomlfile.write_text(text)
 
@@ -1345,6 +1431,7 @@ count = true
     assert code == 0
     assert "bad.txt" not in stdout
     assert "abandonned.txt" not in stdout
+    assert "per-file.txt" not in stdout
 
     # And both should automatically work if they're in cwd
     cwd = Path.cwd()
@@ -1358,6 +1445,7 @@ count = true
     assert code == 0
     assert "bad.txt" not in stdout
     assert "abandonned.txt" not in stdout
+    assert "per-file.txt" not in stdout
 
 
 @contextlib.contextmanager
