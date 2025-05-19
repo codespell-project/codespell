@@ -156,6 +156,26 @@ Words should be separated by a comma.
        def wrod(wrods) # codespell:ignore
            pass
 
+Per-file ignores
+----------------
+
+To give a finer control, is possible to specified a additional set of words to ignore into a specific file only.
+
+1. ``--per-file-ignores``: A pair of arguments into the command line. The first provide a file, or a glob, and the second a comma-separated list of word to ignore for the given file:
+
+   .. code-block:: sh
+
+       codespell --per-file-ignores "*.ext" word1,word2,word3
+
+2. A comment anywhere in the file, preferably at the top. Words should be separated by a comma:
+
+   .. code-block:: python
+
+        # codespell:file-ignore wrod
+
+       def wrod(wrods)
+           pass
+
 Using a config file
 -------------------
 
@@ -173,6 +193,9 @@ be specified in this file (without the preceding dashes), for example:
     skip = *.po,*.ts,./src/3rdParty,./src/Test
     count =
     quiet-level = 3
+    [codespell.per-file-ignores]
+    *.ext1 = word1,word2,word3
+    *.ext2 = word4
 
 Python's
 `configparser <https://docs.python.org/3/library/configparser.html#supported-ini-file-structure>`_
@@ -191,6 +214,9 @@ previous config file:
     skip = '*.po,*.ts,./src/3rdParty,./src/Test'
     count = true
     quiet-level = 3
+    [tool.codespell.per-file-ignores]
+    "*.ext1" = word1,word2,word3
+    "*.ext2" = word4
 
 The above INI and TOML files are equivalent to running:
 
