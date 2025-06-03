@@ -7965,7 +7965,13 @@ attirbute->attribute
 attirbutes->attributes
 attiribute->attribute
 attitide->attitude
+attitides->attitudes
 attivate->activate
+attivated->activated
+attivates->activates
+attivating->activating
+attivation->activation
+attivations->activations
 attmept->attempt
 attmepted->attempted
 attmepting->attempting
@@ -41006,6 +41012,7 @@ numering->numbering
 numerious->numerous
 numers->numbers
 numher->number
+numhers->numbers
 nummber->number
 nummbers->numbers
 nummeral->numeral
@@ -45013,6 +45020,7 @@ porgressing->progressing
 poriferal->peripheral
 porition->portion
 poritioned->portioned
+poritioning->portioning
 poritions->portions
 porject->project
 porjection->projection
@@ -45038,6 +45046,7 @@ porpose->propose, purpose,
 porposed->proposed
 porposes->proposes, purposes,
 porposing->proposing
+porprties->properties
 porprty->property
 porpuse->purpose, porpoise,
 porsalin->porcelain
@@ -45102,7 +45111,7 @@ posisition->position
 posisitioned->positioned
 posisitioning->positioning
 posisitions->positions
-posisson->poisson
+posisson->Poisson
 posistion->position
 posistioned->positioned
 posistioning->positioning
@@ -46642,6 +46651,7 @@ projctors->projectors
 projcts->projects
 projec->project
 projeciton->projection
+projecitons->projections
 projecs->projects
 projectd->projected
 projecter->projector, projected, project,
