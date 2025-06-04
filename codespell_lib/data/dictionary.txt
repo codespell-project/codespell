@@ -7965,6 +7965,13 @@ attirbute->attribute
 attirbutes->attributes
 attiribute->attribute
 attitide->attitude
+attitides->attitudes
+attivate->activate
+attivated->activated
+attivates->activates
+attivating->activating
+attivation->activation
+attivations->activations
 attmept->attempt
 attmepted->attempted
 attmepting->attempting
@@ -16438,6 +16445,7 @@ containes->contains, container, contained,
 containg->containing
 containging->containing
 containig->containing
+containign->containing
 containin->containing
 containined->contained
 containings->containing
@@ -23992,6 +24000,7 @@ elaspe->elapse
 elasped->elapsed
 elaspes->elapses
 elasping->elapsing
+elatic->elastic
 elction->election
 elctric->electric
 elctrical->electrical
@@ -24866,6 +24875,7 @@ entitiys->entities
 entitlied->entitled
 entitys->entities
 entiy->entity
+entiyt->entity
 entoties->entities
 entoty->entity
 entquire->enquire, inquire,
@@ -26136,6 +26146,7 @@ exculsive->exclusive
 exculsively->exclusively
 exculsivly->exclusively
 excusin->excusing
+excusively->exclusively
 excutable->executable
 excutables->executables
 excute->execute
@@ -31011,6 +31022,7 @@ histroy->history
 histry->history
 hiting->hitting, hiding, hinting, hiring, hating, biting, hiking,
 hitogram->histogram
+hitorical->historical
 hitories->histories
 hitory->history
 hitsingles->hit singles
@@ -35401,6 +35413,7 @@ irrevelant->irrelevant, irreverent,
 irreversable->irreversible
 irritatin->irritating, irritation,
 is'nt->isn't
+is's->it's
 isalha->isalpha
 isconnection->isconnected
 iscrated->iscreated
@@ -40998,6 +41011,8 @@ numerial->numeral, numerical,
 numering->numbering
 numerious->numerous
 numers->numbers
+numher->number
+numhers->numbers
 nummber->number
 nummbers->numbers
 nummeral->numeral
@@ -45003,6 +45018,10 @@ porgressed->progressed
 porgresses->progresses
 porgressing->progressing
 poriferal->peripheral
+porition->portion
+poritioned->portioned
+poritioning->portioning
+poritions->portions
 porject->project
 porjection->projection
 porjects->projects
@@ -45027,6 +45046,8 @@ porpose->propose, purpose,
 porposed->proposed
 porposes->proposes, purposes,
 porposing->proposing
+porprties->properties
+porprty->property
 porpuse->purpose, porpoise,
 porsalin->porcelain
 porshan->portion
@@ -45066,6 +45087,8 @@ posessing->possessing
 posession->possession
 posessions->possessions
 posgresql->PostgreSQL
+posibble->possible
+posibbly->possibly
 posibilities->possibilities
 posibility->possibility
 posibilties->possibilities
@@ -45088,6 +45111,7 @@ posisition->position
 posisitioned->positioned
 posisitioning->positioning
 posisitions->positions
+posisson->Poisson
 posistion->position
 posistioned->positioned
 posistioning->positioning
@@ -46626,6 +46650,8 @@ projctor->projector
 projctors->projectors
 projcts->projects
 projec->project
+projeciton->projection
+projecitons->projections
 projecs->projects
 projectd->projected
 projecter->projector, projected, project,
@@ -50865,6 +50891,7 @@ resintalled->reinstalled
 resintalling->reinstalling
 resintalls->reinstalls
 resistable->resistible
+resistece->resistance
 resistence->resistance
 resistent->resistant
 resitance->resistance
@@ -56147,6 +56174,7 @@ stickness->stickiness
 stickyness->stickiness
 stiffenin->stiffening, stiffen in,
 stiffneing->stiffening
+stifness->stiffness
 stiky->sticky
 stil->still
 stilus->stylus
@@ -59145,6 +59173,8 @@ threhold->threshold
 threholds->thresholds
 threre->there, three,
 threrefore->therefore
+threschold->threshold
+threscholds->thresholds
 threshhold->threshold
 threshholds->thresholds
 threshod->threshold
@@ -62863,6 +62893,7 @@ verical->vertical
 verically->vertically
 verication->verification
 verications->verifications
+veridying->verifying
 verifable->verifiable
 verifcation->verification
 verifcations->verifications
@@ -63778,6 +63809,7 @@ whicg->which
 whichs->which's
 whicht->which
 whick->which, whisk, wick, whack,
+whicth->which
 whih->which
 whihc->which
 whihch->which
