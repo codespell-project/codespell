@@ -1180,12 +1180,13 @@ def main(*args: str) -> int:
             options.ignore_words
         )
         for ignore_words_file in ignore_words_files:
-            if not os.path.isfile(ignore_words_file):
+            try:
+                build_ignore_words(ignore_words_file, ignore_words, ignore_words_cased)
+            except OSError as e:
                 return _usage_error(
                     parser,
-                    f"ERROR: cannot find ignore-words file: {ignore_words_file}",
+                    f"ERROR: cannot read ignore-words-file {e.filename}: {e.strerror}",
                 )
-            build_ignore_words(ignore_words_file, ignore_words, ignore_words_cased)
 
     uri_regex = options.uri_regex or uri_regex_def
     try:
@@ -1258,7 +1259,13 @@ def main(*args: str) -> int:
     if options.exclude_file:
         exclude_files = flatten_clean_comma_separated_arguments(options.exclude_file)
         for exclude_file in exclude_files:
-            build_exclude_hashes(exclude_file, exclude_lines)
+            try:
+                build_exclude_hashes(exclude_file, exclude_lines)
+            except OSError as e:
+                return _usage_error(
+                    parser,
+                    f"ERROR: cannot read exclude-file {e.filename}: {e.strerror}",
+                )
 
     file_opener = FileOpener(
         options.hard_encoding_detection,
