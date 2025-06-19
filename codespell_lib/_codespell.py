@@ -60,7 +60,10 @@ word_regex_def = r"[\w\-'’]+"  # noqa: RUF001
 uri_regex_def = (
     r"(\b(?:https?|[ts]?ftp|file|git|smb)://[^\s]+(?=$|\s)|\b[\w.%+-]+@[\w.-]+\b)"
 )
-inline_ignore_regex = re.compile(r"[^\w\s]\s*codespell:ignore\b(\s+(?P<words>[\w,]*))?")
+codespell_ignore_tag = "codespell:ignore"
+inline_ignore_regex = re.compile(
+    rf"[^\w\s]\s*{codespell_ignore_tag}\b(\s+(?P<words>[\w,]*))?"
+)
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
@@ -950,7 +953,9 @@ def parse_file(
             continue
 
         extra_words_to_ignore = set()
-        match = inline_ignore_regex.search(line)
+        match = (
+            inline_ignore_regex.search(line) if codespell_ignore_tag in line else None
+        )
         if match:
             extra_words_to_ignore = set(
                 filter(None, (match.group("words") or "").split(","))
