@@ -946,7 +946,8 @@ def parse_file(
             return bad_count
 
     for i, line in enumerate(lines):
-        if line.rstrip() in exclude_lines:
+        line = line.rstrip()
+        if not line or line in exclude_lines:
             continue
 
         extra_words_to_ignore = set()
