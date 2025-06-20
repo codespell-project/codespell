@@ -61,6 +61,9 @@ uri_regex_def = (
     r"(\b(?:https?|[ts]?ftp|file|git|smb)://[^\s]+(?=$|\s)|\b[\w.%+-]+@[\w.-]+\b)"
 )
 inline_ignore_regex = re.compile(r"[^\w\s]\s*codespell:ignore\b(\s+(?P<words>[\w,]*))?")
+inside_file_ignore_regex = re.compile(
+    r"[^\w\s]\s*codespell:file-ignore\b(\s+(?P<words>[\w,]*))"
+)
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
@@ -333,7 +336,13 @@ class NewlineHelpFormatter(argparse.HelpFormatter):
 def _toml_to_parseconfig(toml_dict: Dict[str, Any]) -> Dict[str, Any]:
     """Convert a dict read from a TOML file to the parseconfig.read_dict() format."""
     return {
-        k: "" if v is True else ",".join(v) if isinstance(v, list) else v
+        k: ""
+        if v is True
+        else ",".join(v)
+        if isinstance(v, list)
+        else _toml_to_parseconfig(v)
+        if isinstance(v, dict)
+        else v
         for k, v in toml_dict.items()
         if v is not False
     }
@@ -475,6 +484,18 @@ def parse_options(
         "case sensitive based on how they are written in "
         'the dictionary file. If set to "*", all '
         "misspelling in URIs and emails will be ignored.",
+    )
+    parser.add_argument(
+        "--per-file-ignores",
+        action="append",
+        nargs=2,
+        help="Require a pair of arguments. The first argument "
+        "is a file to apply the second argument, a "
+        "comma-separated list of words to be ignored for"
+        "this file only. The first argument accepts globs "
+        "as well. The words in the second argument are case "
+        "sensitive based on how they are written in the "
+        "dictionary file.",
     )
     parser.add_argument(
         "-r",
@@ -660,7 +681,11 @@ def parse_options(
                 with open(toml_file, "rb") as f:
                     data = tomllib.load(f).get("tool", {})
                 if "codespell" in data:
-                    data["codespell"] = _toml_to_parseconfig(data["codespell"])
+                    data_toml = _toml_to_parseconfig(data["codespell"])
+                    for k in list(data_toml.keys()):
+                        if isinstance(data_toml[k], dict):
+                            data[f"codespell.{k}"] = data_toml.pop(k)
+                    data["codespell"] = data_toml
                 config.read_dict(data)
 
     # Collect which config files are going to be used
@@ -673,9 +698,9 @@ def parse_options(
 
     # Use config files
     config.read(used_cfg_files)
+    # Build a "fake" argv list using option name and value.
+    cfg_args = []
     if config.has_section("codespell"):
-        # Build a "fake" argv list using option name and value.
-        cfg_args = []
         for key in config["codespell"]:
             # Add option as arg.
             cfg_args.append(f"--{key}")
@@ -684,6 +709,20 @@ def parse_options(
             if val:
                 cfg_args.append(val)
 
+    # Iter dict arguments
+    for key in ["per-file-ignores"]:
+        section = f"codespell.{key}"
+        if config.has_section(section):
+            for name in config[section]:
+                # If value is blank, skip.
+                val = config[section][name]
+                if val:
+                    # Add option as pair args.
+                    cfg_args.append(f"--{key}")
+                    cfg_args.append(name)
+                    cfg_args.append(val)
+
+    if cfg_args:
         # Parse config file options.
         options = parser.parse_args(cfg_args)
 
@@ -722,6 +761,50 @@ def parse_ignore_words_option(
     return (ignore_words, ignore_words_cased)
 
 
+def parse_per_file_ignores_option(
+    per_file_ignores_option: List[Tuple[str, str]],
+) -> Dict[GlobMatch, Set[str]]:
+    per_file_ignores_cased: Dict[GlobMatch, Set[str]] = {}
+    if per_file_ignores_option:
+        for file, comma_separated_words in per_file_ignores_option:
+            per_file_ignores_cased[GlobMatch([file])] = {
+                word.strip() for word in comma_separated_words.split(",")
+            }
+    return per_file_ignores_cased
+
+
+def parse_dictionary_option(
+    parser: argparse.ArgumentParser,
+    dictionary_option: List[str],
+    builtin_option: str,
+) -> Tuple[int, List[str]]:
+    use_dictionaries = []
+    for dictionary in flatten_clean_comma_separated_arguments(dictionary_option):
+        if dictionary == "-":
+            # figure out which builtin dictionaries to use
+            use = sorted(set(builtin_option.split(",")))
+            for u in use:
+                for builtin in _builtin_dictionaries:
+                    if builtin[0] == u:
+                        use_dictionaries.append(
+                            os.path.join(_data_root, f"dictionary{builtin[2]}.txt")
+                        )
+                        break
+                else:
+                    return _usage_error(
+                        parser,
+                        f"ERROR: Unknown builtin dictionary: {u}",
+                    ), []
+        else:
+            if not os.path.isfile(dictionary):
+                return _usage_error(
+                    parser,
+                    f"ERROR: cannot find dictionary file: {dictionary}",
+                ), []
+            use_dictionaries.append(dictionary)
+    return 0, use_dictionaries
+
+
 def build_exclude_hashes(filename: str, exclude_lines: Set[str]) -> None:
     with open(filename, encoding="utf-8") as f:
         exclude_lines.update(line.rstrip() for line in f)
@@ -734,6 +817,19 @@ def build_ignore_words(
         process_ignore_words(
             (line.strip() for line in f), ignore_words, ignore_words_cased
         )
+
+
+def build_ignore_words_for_file(
+    ignore_words_cased: Set[str],
+    per_file_ignores: Dict[GlobMatch, Set[str]],
+    file_name: str,
+    file_path: str,
+) -> Set[str]:
+    ignore_words_cased_for_file = set(ignore_words_cased)
+    for m, v in per_file_ignores.items():
+        if m.match(file_name) or m.match(file_path):
+            ignore_words_cased_for_file.update(v)
+    return ignore_words_cased_for_file
 
 
 def is_hidden(filename: str, check_hidden: bool) -> bool:
@@ -894,35 +990,16 @@ def parse_file(
         lines = f.readlines()
     else:
         if options.check_filenames:
-            for word in extract_words(filename, word_regex, ignore_word_regex):
-                if word in ignore_words_cased:
-                    continue
-                lword = word.lower()
-                if lword not in misspellings:
-                    continue
-                fix = misspellings[lword].fix
-                fixword = fix_case(word, misspellings[lword].data)
-
-                if summary and fix:
-                    summary.update(lword)
-
-                cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
-                cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
-                crightword = f"{colors.FWORD}{fixword}{colors.DISABLE}"
-
-                reason = misspellings[lword].reason
-                if reason:
-                    if options.quiet_level & QuietLevels.DISABLED_FIXES:
-                        continue
-                    creason = f"  | {colors.FILE}{reason}{colors.DISABLE}"
-                else:
-                    if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
-                        continue
-                    creason = ""
-
-                bad_count += 1
-
-                print(f"{cfilename}: {cwrongword} ==> {crightword}{creason}")
+            bad_count += parse_filename(
+                filename,
+                colors,
+                summary,
+                misspellings,
+                ignore_words_cased,
+                word_regex,
+                ignore_word_regex,
+                options,
+            )
 
         # ignore irregular files
         if not os.path.isfile(filename):
@@ -944,6 +1021,14 @@ def parse_file(
             lines, encoding = file_opener.open(filename)
         except OSError:
             return bad_count
+
+    inside_file_to_ignore: Set[str] = set()
+    for line in lines:
+        match = inside_file_ignore_regex.search(line)
+        if match:
+            inside_file_to_ignore.update(
+                filter(None, (match.group("words") or "").split(","))
+            )
 
     for i, line in enumerate(lines):
         line = line.rstrip()
@@ -983,7 +1068,11 @@ def parse_file(
             if word in ignore_words_cased:
                 continue
             lword = word.lower()
-            if lword in misspellings and lword not in extra_words_to_ignore:
+            if (
+                lword in misspellings
+                and lword not in extra_words_to_ignore
+                and lword not in inside_file_to_ignore
+            ):
                 # Sometimes we find a 'misspelling' which is actually a valid word
                 # preceded by a string escape sequence.  Ignore such cases as
                 # they're usually false alarms; see issue #17 among others.
@@ -1080,6 +1169,44 @@ def parse_file(
                 )
             with open(filename, "w", encoding=encoding, newline="") as f:
                 f.writelines(lines)
+    return bad_count
+
+
+def parse_filename(
+    filename: str,
+    colors: TermColors,
+    summary: Optional[Summary],
+    misspellings: Dict[str, Misspelling],
+    ignore_words_cased: Set[str],
+    word_regex: Pattern[str],
+    ignore_word_regex: Optional[Pattern[str]],
+    options: argparse.Namespace,
+) -> int:
+    bad_count = 0
+    for word in extract_words(filename, word_regex, ignore_word_regex):
+        if word in ignore_words_cased:
+            continue
+        lword = word.lower()
+        if lword not in misspellings:
+            continue
+        fix = misspellings[lword].fix
+        fixword = fix_case(word, misspellings[lword].data)
+        if summary and fix:
+            summary.update(lword)
+        cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
+        cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
+        crightword = f"{colors.FWORD}{fixword}{colors.DISABLE}"
+        reason = misspellings[lword].reason
+        if reason:
+            if options.quiet_level & QuietLevels.DISABLED_FIXES:
+                continue
+            creason = f"  | {colors.FILE}{reason}{colors.DISABLE}"
+        else:
+            if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
+                continue
+            creason = ""
+        bad_count += 1
+        print(f"{cfilename}: {cwrongword} ==> {crightword}{creason}")
     return bad_count
 
 
@@ -1188,6 +1315,17 @@ def main(*args: str) -> int:
                 )
             build_ignore_words(ignore_words_file, ignore_words, ignore_words_cased)
 
+    per_file_ignores = parse_per_file_ignores_option(options.per_file_ignores)
+    try:
+        for match in per_file_ignores:
+            match.match("/random/path")  # does not need a real path
+    except re.error:
+        return _usage_error(
+            parser,
+            "ERROR: --per-file-ignores has been fed an invalid glob, "
+            "try escaping special characters",
+        )
+
     uri_regex = options.uri_regex or uri_regex_def
     try:
         uri_regex = re.compile(uri_regex)
@@ -1201,32 +1339,13 @@ def main(*args: str) -> int:
         itertools.chain(*parse_ignore_words_option(options.uri_ignore_words_list))
     )
 
-    dictionaries = flatten_clean_comma_separated_arguments(options.dictionary or ["-"])
-
-    use_dictionaries = []
-    for dictionary in dictionaries:
-        if dictionary == "-":
-            # figure out which builtin dictionaries to use
-            use = sorted(set(options.builtin.split(",")))
-            for u in use:
-                for builtin in _builtin_dictionaries:
-                    if builtin[0] == u:
-                        use_dictionaries.append(
-                            os.path.join(_data_root, f"dictionary{builtin[2]}.txt")
-                        )
-                        break
-                else:
-                    return _usage_error(
-                        parser,
-                        f"ERROR: Unknown builtin dictionary: {u}",
-                    )
-        else:
-            if not os.path.isfile(dictionary):
-                return _usage_error(
-                    parser,
-                    f"ERROR: cannot find dictionary file: {dictionary}",
-                )
-            use_dictionaries.append(dictionary)
+    error, use_dictionaries = parse_dictionary_option(
+        parser,
+        options.dictionary or ["-"],
+        options.builtin,
+    )
+    if error != 0:
+        return error
     misspellings: Dict[str, Misspelling] = {}
     for dictionary in use_dictionaries:
         build_dict(dictionary, misspellings, ignore_words)
@@ -1306,7 +1425,12 @@ def main(*args: str) -> int:
                         colors,
                         summary,
                         misspellings,
-                        ignore_words_cased,
+                        build_ignore_words_for_file(
+                            ignore_words_cased,
+                            per_file_ignores,
+                            file_,
+                            fname,
+                        ),
                         exclude_lines,
                         file_opener,
                         word_regex,
@@ -1331,7 +1455,12 @@ def main(*args: str) -> int:
                 colors,
                 summary,
                 misspellings,
-                ignore_words_cased,
+                build_ignore_words_for_file(
+                    ignore_words_cased,
+                    per_file_ignores,
+                    os.path.basename(filename),
+                    filename,
+                ),
                 exclude_lines,
                 file_opener,
                 word_regex,
