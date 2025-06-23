@@ -3,7 +3,8 @@ import os
 import os.path as op
 import pathlib
 import re
-from typing import Any, Iterable, Optional
+from collections.abc import Iterable
+from typing import Any, Optional
 
 import pytest
 

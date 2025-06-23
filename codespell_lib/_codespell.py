@@ -25,13 +25,11 @@ import os
 import re
 import sys
 import textwrap
+from collections.abc import Iterable, Sequence
+from re import Match, Pattern
 from typing import (
     Any,
-    Iterable,
-    Match,
     Optional,
-    Pattern,
-    Sequence,
     TextIO,
 )
 

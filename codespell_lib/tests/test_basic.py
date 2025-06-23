@@ -5,10 +5,11 @@ import os.path as op
 import re
 import subprocess
 import sys
+from collections.abc import Generator
 from io import StringIO
 from pathlib import Path
 from shutil import copyfile
-from typing import Any, Generator, Optional, Union
+from typing import Any, Optional, Union
 from unittest import mock
 
 import pytest
