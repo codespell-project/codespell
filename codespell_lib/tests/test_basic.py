@@ -5,10 +5,11 @@ import os.path as op
 import re
 import subprocess
 import sys
+from collections.abc import Generator
 from io import StringIO
 from pathlib import Path
 from shutil import copyfile
-from typing import Any, Generator, Optional, Tuple, Union
+from typing import Any, Optional, Union
 from unittest import mock
 
 import pytest
@@ -39,7 +40,7 @@ class MainWrapper:
         *args: Any,
         count: bool = True,
         std: bool = False,
-    ) -> Union[int, Tuple[int, str, str]]:
+    ) -> Union[int, tuple[int, str, str]]:
         args = tuple(str(arg) for arg in args)
         if count:
             args = ("--count", *args)
@@ -65,7 +66,7 @@ cs = MainWrapper()
 
 
 def run_codespell(
-    args: Tuple[Any, ...] = (),
+    args: tuple[Any, ...] = (),
     cwd: Optional[Path] = None,
 ) -> int:
     """Run codespell."""
@@ -1373,7 +1374,7 @@ def FakeStdin(text: str) -> Generator[None, None, None]:
 
 def run_codespell_stdin(
     text: str,
-    args: Tuple[Any, ...],
+    args: tuple[Any, ...],
     cwd: Optional[Path] = None,
 ) -> int:
     """Run codespell in stdin mode and return number of lines in output."""
@@ -1397,7 +1398,7 @@ def test_stdin(tmp_path: Path) -> None:
     for _ in range(input_file_lines):
         text += "abandonned\n"
     for single_line_per_error in (True, False):
-        args: Tuple[str, ...] = ()
+        args: tuple[str, ...] = ()
         if single_line_per_error:
             args = ("--stdin-single-line",)
         # we expect 'input_file_lines' number of lines with

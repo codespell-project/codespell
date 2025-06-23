@@ -4,14 +4,13 @@
 name = "codespell"
 description = "Fix common misspellings in text files"
 readme = { file = "README.rst", content-type = "text/x-rst" }
-requires-python = ">=3.8"
-license = {text = "GPL-2.0-only"}
+requires-python = ">=3.9"
+license = "GPL-2.0-only"
 authors = [
     {name = "Lucas De Marchi", email = "lucas.de.marchi@gmail.com"},
 ]
 classifiers = [
     "Intended Audience :: Developers",
-    "License :: OSI Approved",
     "Programming Language :: Python",
     "Topic :: Software Development",
     "Operating System :: Microsoft :: Windows",
@@ -21,7 +20,6 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
@@ -67,7 +65,7 @@ repository = "https://github.com/codespell-project/codespell"
 
 [build-system]
 build-backend = "setuptools.build_meta"
-requires = ["setuptools>=64", "setuptools_scm[toml]>=6.2, != 8.0.0"]
+requires = ["setuptools>=77", "setuptools_scm[toml]>=6.2, != 8.0.0"]
 
 [tool.setuptools_scm]
 write_to = "codespell_lib/_version.py"

@@ -25,18 +25,12 @@ import os
 import re
 import sys
 import textwrap
+from collections.abc import Iterable, Sequence
+from re import Match, Pattern
 from typing import (
     Any,
-    Dict,
-    Iterable,
-    List,
-    Match,
     Optional,
-    Pattern,
-    Sequence,
-    Set,
     TextIO,
-    Tuple,
 )
 
 if sys.platform == "win32":
@@ -161,8 +155,8 @@ class QuietLevels:
 
 
 class GlobMatch:
-    def __init__(self, pattern: List[str]) -> None:
-        self.pattern_list: List[str] = pattern
+    def __init__(self, pattern: list[str]) -> None:
+        self.pattern_list: list[str] = pattern
 
     def match(self, filename: str) -> bool:
         return any(fnmatch.fnmatch(filename, p) for p in self.pattern_list)
@@ -184,7 +178,7 @@ class TermColors:
 
 class Summary:
     def __init__(self) -> None:
-        self.summary: Dict[str, int] = {}
+        self.summary: dict[str, int] = {}
 
     def update(self, wrongword: str) -> None:
         if wrongword in self.summary:
@@ -227,12 +221,12 @@ class FileOpener:
 
         self.encdetector = UniversalDetector()
 
-    def open(self, filename: str) -> Tuple[List[str], str]:
+    def open(self, filename: str) -> tuple[list[str], str]:
         if self.use_chardet:
             return self.open_with_chardet(filename)
         return self.open_with_internal(filename)
 
-    def open_with_chardet(self, filename: str) -> Tuple[List[str], str]:
+    def open_with_chardet(self, filename: str) -> tuple[list[str], str]:
         self.encdetector.reset()
         with open(filename, "rb") as fb:
             for line in fb:
@@ -259,7 +253,7 @@ class FileOpener:
 
         return lines, f.encoding
 
-    def open_with_internal(self, filename: str) -> Tuple[List[str], str]:
+    def open_with_internal(self, filename: str) -> tuple[list[str], str]:
         encoding = None
         first_try = True
         for encoding in ("utf-8", "iso-8859-1"):
@@ -286,7 +280,7 @@ class FileOpener:
 
         return lines, encoding
 
-    def get_lines(self, f: TextIO) -> List[str]:
+    def get_lines(self, f: TextIO) -> list[str]:
         if self.ignore_multiline_regex:
             text = f.read()
             pos = 0
@@ -313,7 +307,7 @@ class FileOpener:
 class NewlineHelpFormatter(argparse.HelpFormatter):
     """Help formatter that preserves newlines and deals with lists."""
 
-    def _split_lines(self, text: str, width: int) -> List[str]:
+    def _split_lines(self, text: str, width: int) -> list[str]:
         parts = text.split("\n")
         out = []
         for part in parts:
@@ -330,7 +324,7 @@ class NewlineHelpFormatter(argparse.HelpFormatter):
         return out
 
 
-def _toml_to_parseconfig(toml_dict: Dict[str, Any]) -> Dict[str, Any]:
+def _toml_to_parseconfig(toml_dict: dict[str, Any]) -> dict[str, Any]:
     """Convert a dict read from a TOML file to the parseconfig.read_dict() format."""
     return {
         k: "" if v is True else ",".join(v) if isinstance(v, list) else v
@@ -373,7 +367,7 @@ def _supports_ansi_colors() -> bool:
 
 def parse_options(
     args: Sequence[str],
-) -> Tuple[argparse.Namespace, argparse.ArgumentParser, List[str]]:
+) -> tuple[argparse.Namespace, argparse.ArgumentParser, list[str]]:
     parser = argparse.ArgumentParser(formatter_class=NewlineHelpFormatter)
 
     parser.set_defaults(colors=_supports_ansi_colors())
@@ -697,7 +691,7 @@ def parse_options(
 
 
 def process_ignore_words(
-    words: Iterable[str], ignore_words: Set[str], ignore_words_cased: Set[str]
+    words: Iterable[str], ignore_words: set[str], ignore_words_cased: set[str]
 ) -> None:
     for word in words:
         word = word.strip()
@@ -708,10 +702,10 @@ def process_ignore_words(
 
 
 def parse_ignore_words_option(
-    ignore_words_option: List[str],
-) -> Tuple[Set[str], Set[str]]:
-    ignore_words: Set[str] = set()
-    ignore_words_cased: Set[str] = set()
+    ignore_words_option: list[str],
+) -> tuple[set[str], set[str]]:
+    ignore_words: set[str] = set()
+    ignore_words_cased: set[str] = set()
     if ignore_words_option:
         for comma_separated_words in ignore_words_option:
             process_ignore_words(
@@ -722,13 +716,13 @@ def parse_ignore_words_option(
     return (ignore_words, ignore_words_cased)
 
 
-def build_exclude_hashes(filename: str, exclude_lines: Set[str]) -> None:
+def build_exclude_hashes(filename: str, exclude_lines: set[str]) -> None:
     with open(filename, encoding="utf-8") as f:
         exclude_lines.update(line.rstrip() for line in f)
 
 
 def build_ignore_words(
-    filename: str, ignore_words: Set[str], ignore_words_cased: Set[str]
+    filename: str, ignore_words: set[str], ignore_words_cased: set[str]
 ) -> None:
     with open(filename, encoding="utf-8") as f:
         process_ignore_words(
@@ -756,7 +750,7 @@ def ask_for_word_fix(
     misspelling: Misspelling,
     interactivity: int,
     colors: TermColors,
-) -> Tuple[bool, str]:
+) -> tuple[bool, str]:
     wrongword = match.group()
     if interactivity <= 0:
         return misspelling.fix, fix_case(wrongword, misspelling.data)
@@ -813,9 +807,9 @@ def ask_for_word_fix(
 
 
 def print_context(
-    lines: List[str],
+    lines: list[str],
     index: int,
-    context: Tuple[int, int],
+    context: tuple[int, int],
 ) -> None:
     # context = (context_before, context_after)
     for i in range(index - context[0], index + context[1] + 1):
@@ -836,7 +830,7 @@ def extract_words(
     text: str,
     word_regex: Pattern[str],
     ignore_word_regex: Optional[Pattern[str]],
-) -> List[str]:
+) -> list[str]:
     return word_regex.findall(_ignore_word_sub(text, ignore_word_regex))
 
 
@@ -844,18 +838,18 @@ def extract_words_iter(
     text: str,
     word_regex: Pattern[str],
     ignore_word_regex: Optional[Pattern[str]],
-) -> List[Match[str]]:
+) -> list[Match[str]]:
     return list(word_regex.finditer(_ignore_word_sub(text, ignore_word_regex)))
 
 
 def apply_uri_ignore_words(
-    check_matches: List[Match[str]],
+    check_matches: list[Match[str]],
     line: str,
     word_regex: Pattern[str],
     ignore_word_regex: Optional[Pattern[str]],
     uri_regex: Pattern[str],
-    uri_ignore_words: Set[str],
-) -> List[Match[str]]:
+    uri_ignore_words: set[str],
+) -> list[Match[str]]:
     if not uri_ignore_words:
         return check_matches
     for uri in uri_regex.findall(line):
@@ -873,15 +867,15 @@ def parse_file(
     filename: str,
     colors: TermColors,
     summary: Optional[Summary],
-    misspellings: Dict[str, Misspelling],
-    ignore_words_cased: Set[str],
-    exclude_lines: Set[str],
+    misspellings: dict[str, Misspelling],
+    ignore_words_cased: set[str],
+    exclude_lines: set[str],
     file_opener: FileOpener,
     word_regex: Pattern[str],
     ignore_word_regex: Optional[Pattern[str]],
     uri_regex: Pattern[str],
-    uri_ignore_words: Set[str],
-    context: Optional[Tuple[int, int]],
+    uri_ignore_words: set[str],
+    context: Optional[tuple[int, int]],
     options: argparse.Namespace,
 ) -> int:
     bad_count = 0
@@ -1085,7 +1079,7 @@ def parse_file(
 
 def flatten_clean_comma_separated_arguments(
     arguments: Iterable[str],
-) -> List[str]:
+) -> list[str]:
     """
     >>> flatten_clean_comma_separated_arguments(["a, b ,\n c, d,", "e"])
     ['a', 'b', 'c', 'd', 'e']
@@ -1227,7 +1221,7 @@ def main(*args: str) -> int:
                     f"ERROR: cannot find dictionary file: {dictionary}",
                 )
             use_dictionaries.append(dictionary)
-    misspellings: Dict[str, Misspelling] = {}
+    misspellings: dict[str, Misspelling] = {}
     for dictionary in use_dictionaries:
         build_dict(dictionary, misspellings, ignore_words)
     colors = TermColors()
@@ -1255,7 +1249,7 @@ def main(*args: str) -> int:
             context_after = max(0, options.after_context)
         context = (context_before, context_after)
 
-    exclude_lines: Set[str] = set()
+    exclude_lines: set[str] = set()
     if options.exclude_file:
         exclude_files = flatten_clean_comma_separated_arguments(options.exclude_file)
         for exclude_file in exclude_files:
