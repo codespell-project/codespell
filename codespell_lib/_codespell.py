@@ -227,12 +227,12 @@ class FileOpener:
 
         self.encdetector = UniversalDetector()
 
-    def open(self, filename: str) -> Tuple[List[str], str]:
+    def open(self, filename: str) -> Tuple[List[str], Optional[str]]:
         if self.use_chardet:
             return self.open_with_chardet(filename)
         return self.open_with_internal(filename)
 
-    def open_with_chardet(self, filename: str) -> Tuple[List[str], str]:
+    def open_with_chardet(self, filename: str) -> Tuple[List[str], Optional[str]]:
         self.encdetector.reset()
         with open(filename, "rb") as fb:
             for line in fb:
@@ -241,26 +241,26 @@ class FileOpener:
                     break
         self.encdetector.close()
         encoding = self.encdetector.result["encoding"]
-
-        try:
-            f = open(filename, encoding=encoding, newline="")
-        except UnicodeDecodeError:
-            print(f"ERROR: Could not detect encoding: {filename}", file=sys.stderr)
-            raise
-        except LookupError:
+        if not encoding:
             print(
-                f"ERROR: Don't know how to handle encoding {encoding}: {filename}",
+                f"WARNING: Chardet failed to detect encoding for file {filename}.",
                 file=sys.stderr,
             )
+        try:
+            with open(filename, encoding=encoding, newline="") as f:
+                lines = self.get_lines(f)
+        except LookupError:  # Raised by open() if encoding is unknown
+            error_msg = f"ERROR: Chardet returned unknown encoding for: {filename}."
+            print(error_msg, file=sys.stderr)
             raise
-        else:
-            lines = self.get_lines(f)
-            f.close()
+        except UnicodeDecodeError:  # Raised by self.get_lines() if decoding fails
+            error_msg = f"ERROR: Failed decoding file: {filename}"
+            print(error_msg, file=sys.stderr)
+            raise
 
-        return lines, f.encoding
+        return lines, encoding
 
     def open_with_internal(self, filename: str) -> Tuple[List[str], str]:
-        encoding = None
         first_try = True
         for encoding in ("utf-8", "iso-8859-1"):
             if first_try:
@@ -869,7 +869,7 @@ def apply_uri_ignore_words(
     return check_matches
 
 
-def parse_file(
+def parse_file(  # noqa: PLR0915
     filename: str,
     colors: TermColors,
     summary: Optional[Summary],
@@ -887,6 +887,7 @@ def parse_file(
     bad_count = 0
     lines = None
     changed = False
+    encoding: Optional[str]
 
     if filename == "-":
         f = sys.stdin
