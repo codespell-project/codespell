@@ -39,7 +39,7 @@ check-dist:
 	rm -rf $(TMP)
 
 ruff:
-	pre-commit run --all-files ruff
+	pre-commit run --all-files ruff-check
 
 pytest:
 	@if command -v pytest > /dev/null; then \
