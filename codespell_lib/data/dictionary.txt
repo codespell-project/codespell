@@ -15936,6 +15936,7 @@ conneection->connection
 conneiction->connection
 connektors->connectors
 connet->connect
+connetable->connectable
 connetc->connect
 connetced->connected
 connetcing->connecting
@@ -15943,7 +15944,9 @@ connetcion->connection
 connetcions->connections
 connetcor->connector
 connetcors->connectors
+connetec->connected
 conneted->connected
+connetet->connected
 Conneticut->Connecticut
 conneting->connecting
 connetion->connection
