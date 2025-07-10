@@ -2440,9 +2440,19 @@ adverst->adverts
 advertice->advertise
 adverticed->advertised
 adverticement->advertisement
+adverticements->advertisements
+advertie->advertise
+advertied->advertised
+advertiement->advertisement
+advertiements->advertisements
+advertier->advertiser
+advertiers->advertisers
+adverties->advertises
+advertiing->advertising
 advertis->adverts, advertise,
 advertisiers->advertisers
 advertisiment->advertisement
+advertisiments->advertisements
 advertisin->advertising
 advertisment->advertisement
 advertisments->advertisements
@@ -2468,6 +2478,7 @@ adviced->advised
 advices->advice
 advicing->advising
 advirtisement->advertisement
+advirtisements->advertisements
 adviseable->advisable
 adviseer->adviser
 adviseur->adviser
