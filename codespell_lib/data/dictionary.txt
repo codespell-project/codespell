@@ -13750,13 +13750,15 @@ collumns->columns
 collums->columns
 colmn->column
 colmns->columns
+colmun->column
 colmuned->columned
-coloer->color
-coloeration->coloration
-coloered->colored
-coloering->coloring
-coloers->colors
-coloful->colorful
+colmuns->columns
+coloer->color, colour,
+coloeration->coloration, colouration,
+coloered->colored, coloured,
+coloering->coloring, colouring,
+coloers->colors, colours,
+coloful->colorful, colourful,
 colombus->Columbus
 colomn->column
 colomns->columns
@@ -14857,6 +14859,8 @@ comporessors->compressors
 comporison->comparison
 comporisons->comparisons
 composablity->composability
+composant->component
+composants->components
 composibility->composability
 composiblity->composability
 composiste->composite
@@ -16317,12 +16321,16 @@ constrant->constraint
 constrants->constraints
 constrast->contrast
 constrasts->contrasts
+constrat->contrast, constraint,
+constrated->contrasted, constrained,
 constratin->constraint, constrain,
 constratined->constrained
+constrating->contrasting, constraining,
 constratining->constraining
 constratins->constraints, constrains,
 constratint->constraint
 constratints->constraints
+constrats->contrasts, constraints,
 constraucts->constructs
 constrct->construct, constrict,
 constrcted->constructed, constricted,
@@ -16870,6 +16878,7 @@ conttributes->contributes
 conttributing->contributing
 conttribution->contribution
 conttributions->contributions
+contuguous->contiguous
 contur->contour
 contzains->contains
 conuntry->country
@@ -20326,6 +20335,12 @@ depracated->deprecated
 depracates->deprecates
 depracating->deprecating
 depracation->deprecation
+depreacate->deprecate
+depreacated->deprecated
+depreacates->deprecates
+depreacating->deprecating
+depreacation->deprecation
+depreacations->deprecations
 depreacte->deprecate
 depreacted->deprecated
 depreactes->deprecates
@@ -21980,6 +21995,8 @@ directoy->directory
 directpries->directories
 directpry->directory
 directries->directories
+directrion->direction
+directrions->directions
 directrive->directive
 directrives->directives
 directrly->directly
@@ -23641,6 +23658,8 @@ dupplicates->duplicates
 dupplicating->duplicating
 dupplication->duplication
 dupplications->duplications
+durantion->duration
+durantions->durations
 durationm->duration
 durectories->directories
 durectory->directory
@@ -25494,6 +25513,8 @@ estimater->estimator, estimated, estimates, estimate,
 estimaters->estimators, estimates,
 estimatied->estimated
 estimatin->estimating, estimation,
+estimlator->estimator
+estimlators->estimators
 estiomator->estimator
 estiomators->estimators
 estuwarries->estuaries
@@ -29100,6 +29121,8 @@ frecuently->frequently
 frecuents->frequents
 freecallrelpy->freecallreply
 freedeom->freedom, freedoms,
+freedome->freedom
+freedomes->freedoms
 freedon->freedom
 freedons->freedoms
 freedum->freedom
@@ -32787,6 +32810,10 @@ indepentendly->independently
 indepentent->independent
 indepentently->independently
 indepently->independently
+indepndence->independence
+indepndences->independences
+indepndent->independent
+indepndents->independents
 inderect->indirect
 inderts->inserts
 indes->index
@@ -39771,6 +39798,7 @@ neglibible->negligible
 neglible->negligible
 negligable->negligible
 negligble->negligible
+negligeable->negligible
 negoable->negotiable
 negoate->negotiate
 negoated->negotiated
@@ -39983,6 +40011,7 @@ neice->niece, nice,
 neigbhor->neighbor
 neigbhorhood->neighborhood
 neigbhorhoods->neighborhoods
+neigbhoring->neighboring
 neigbhors->neighbors
 neigbhour->neighbour
 neigbhours->neighbours
@@ -48138,6 +48167,8 @@ realeasing->releasing
 realiability->reliability
 realiable->reliable
 realiably->reliably
+realignement->realignment
+realignements->realignments
 realisin->realising
 realitime->realtime
 realitvely->relatively
@@ -48917,6 +48948,7 @@ redings->readings
 redircet->redirect
 redirectd->redirected
 redirectrion->redirection
+redirectrions->redirections
 redisign->redesign
 redistirbute->redistribute
 redistirbuted->redistributed
@@ -49368,6 +49400,7 @@ regrads->regards, regrades,
 regresion->regression
 regresison->regression
 regressin->regressing, regress in, regression,
+regressos->regressors
 regresssion->regression
 regrigerator->refrigerator
 regsion->region
@@ -63434,9 +63467,10 @@ volounteer->volunteer
 volounteered->volunteered
 volounteering->volunteering
 volounteers->volunteers
-volumn->volume
+volumn->volume, column,
 volumne->volume
-volums->volume
+volumns->volumes, columns,
+volums->volume, volumes,
 volunteerin->volunteering, volunteer in,
 volxel->voxel
 volxels->voxels
