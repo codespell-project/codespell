@@ -13132,7 +13132,7 @@ classifiying->classifying
 classifyin->classifying, classify in,
 classrom->classroom
 classroms->classrooms
-classs->class
+classs->class, classes,
 classses->classes
 classsic->classic
 classsical->classical
@@ -19016,8 +19016,8 @@ deafualts->defaults
 deafult->default
 deafulted->defaulted
 deafults->defaults
-deail->deal
-deailing->dealing
+deail->deal, detail, derail,
+deailing->dealing, detailing, derailing,
 deaktivate->deactivate
 deaktivated->deactivated
 dealed->dealt
@@ -49605,6 +49605,7 @@ relativated->relative, relatively,
 relativly->relatively
 relavant->relevant
 relavent->relevant
+relaxiation->relaxation
 releaase->release
 releaased->released
 releaases->releases
@@ -57474,7 +57475,7 @@ supposedy->supposedly
 supposin->supposing
 supposingly->supposedly
 suppossed->supposed
-suppost->support, suppose, supports,
+suppost->support, suppose, supposed, supports,
 supposted->supposed, supported,
 supposting->supporting, supposing,
 supposts->supports, supposes,
@@ -59725,6 +59726,10 @@ tranalations->translations
 tranasction->transaction
 tranasctional->transactional
 tranasctions->transactions
+trancate->truncate
+trancated->truncated
+trancates->truncates
+trancating->truncating
 tranceiver->transceiver
 tranceivers->transceivers
 trancendent->transcendent
