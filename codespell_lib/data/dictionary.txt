@@ -43870,6 +43870,7 @@ peerowet->pirouette
 peerowetes->pirouettes
 peerowets->pirouettes
 pefect->perfect, prefect, defect,
+pefected->perfected
 pefection->perfection
 pefectly->perfectly
 pefer->prefer
@@ -43980,8 +43981,14 @@ perentage->percentage, parentage,
 perentages->percentages, parentages,
 peresent->present, presents, presence, percent,
 peretrator->perpetrator
+perfact->prefect, perfect,
+perfacted->perfected
+perfaction->perfection
+perfactly->perfectly
 perfec->perfect
 perfecct->perfect
+perfeccted->perfected
+perfecction->perfection
 perfecctly->perfectly
 perfeclty->perfectly
 perfecly->perfectly
@@ -43992,6 +43999,8 @@ perferably->preferably
 perferance->preference
 perferances->preferences
 perferct->perfect
+perfercted->perfected
+perferction->perfection
 perferctly->perfectly
 perferect->perfect
 perferectly->perfectly
@@ -45669,7 +45678,9 @@ preety->pretty
 preexistin->preexisting, preexist in,
 prefacin->prefacing
 prefectches->prefetches
-prefecth->prefetch
+prefected->perfected
+prefecth->prefect, prefetch,
+prefection->perfection
 prefectly->perfectly
 prefence->pretence, presence, preference,
 prefences->preferences
