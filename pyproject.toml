@@ -36,8 +36,6 @@ dev = [
     "pre-commit",
     "pytest",
     "pytest-cov",
-    "pytest-dependency",
-    "Pygments",
     "ruff",
     "tomli",
     "twine"
@@ -53,7 +51,6 @@ types = [
     "mypy",
     "pytest",
     "pytest-cov",
-    "pytest-dependency",
 ]
 
 [project.scripts]
