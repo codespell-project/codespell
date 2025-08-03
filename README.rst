@@ -159,9 +159,9 @@ Words should be separated by a comma.
 Per-file ignores
 ----------------
 
-To give a finer control, is possible to specified a additional set of words to ignore into a specific file only.
+To give a finer control, it is possible to specify an additional set of words to ignore in a specific file.
 
-1. ``--per-file-ignores``: A pair of arguments into the command line. The first provide a file, or a glob, and the second a comma-separated list of word to ignore for the given file:
+1. ``--per-file-ignores``: A pair of arguments in the command line. The first provides a file, or a glob, and the second a comma-separated list of words to ignore for the given file:
 
    .. code-block:: sh
 
