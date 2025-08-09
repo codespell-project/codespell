@@ -2564,6 +2564,8 @@ affilations->affiliations
 affiliato->affiliation
 affiliaton->affiliation
 affiliction->affiliation, affliction,
+affilitation->affiliation
+affilitations->affiliations
 affilliate->affiliate
 affinitied->affinities
 affinitiy->affinity
@@ -44159,6 +44161,8 @@ peridic->periodic
 peridical->periodical
 peridically->periodically
 peridioc->periodic
+peridiocal->periodical
+peridiocally->periodically
 perihperal->peripheral
 perihperals->peripherals
 perilious->perilous
