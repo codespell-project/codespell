@@ -9,7 +9,7 @@ jobs:
     name: Check for spelling errors
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           persist-credentials: false
       - uses: codespell-project/actions-codespell@master

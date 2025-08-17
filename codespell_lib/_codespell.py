@@ -55,9 +55,6 @@ uri_regex_def = (
     r"(\b(?:https?|[ts]?ftp|file|git|smb)://[^\s]+(?=$|\s)|\b[\w.%+-]+@[\w.-]+\b)"
 )
 inline_ignore_regex = re.compile(r"[^\w\s]\s*codespell:ignore\b(\s+(?P<words>[\w,]*))?")
-USAGE = """
-\t%prog [OPTIONS] [file1 file2 ... fileN]
-"""
 
 supported_languages_en = ("en", "en_GB", "en_US", "en_CA", "en_AU")
 supported_languages = supported_languages_en
