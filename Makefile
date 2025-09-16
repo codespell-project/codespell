@@ -1,16 +1,19 @@
-DICTIONARIES := codespell_lib/data/dictionary*.txt codespell_lib/tests/data/*.wordlist
+DICTIONARIES = codespell_lib/data/dictionary*.txt codespell_lib/tests/data/*.wordlist
 
 PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dist pytest pypi ruff clean
 
-all: check-dictionaries codespell.1
+all: codespell_lib/data/dictionary_en_to_en-OX.txt check-dictionaries codespell.1
 
 check: check-dictionaries check-dist pytest ruff
+
+codespell_lib/data/dictionary_en_to_en-OX.txt: codespell_lib/data/dictionary_en-GB_to_en-US.txt
+	./codespell_lib/gen_OX.sh codespell_lib/data/dictionary_en-GB_to_en-US.txt > codespell_lib/data/dictionary_en_to_en-OX.txt
 
 codespell.1: codespell.1.include Makefile
 	PYTHONPATH=. help2man codespell --include codespell.1.include --no-info --output codespell.1
 	sed -i '/\.SS \"Usage/,+2d' codespell.1
 
-check-dictionaries:
+check-dictionaries: ${DICTIONARIES}
 	@for dictionary in ${DICTIONARIES}; do \
 		if grep -E -n "^\s*$$|\s$$|^\s" $$dictionary; then \
 			echo "Dictionary $$dictionary contains leading/trailing whitespace and/or blank lines.  Trim with 'make trim-dictionaries'"; \
