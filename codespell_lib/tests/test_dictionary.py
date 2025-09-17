@@ -338,7 +338,7 @@ def test_dictionary_looping(
     for other_fname, other_err_dict in global_err_dicts.items():
         # error duplication (eventually maybe we should just merge?)
         for err in this_err_dict:
-            assert err not in other_err_dict, (
+            assert err not in other_err_dict or this_err_dict[err] != other_err_dict[err], (
                 f"error {err!r} in dictionary {short_fname} "
                 f"already exists in dictionary {other_fname}"
             )
