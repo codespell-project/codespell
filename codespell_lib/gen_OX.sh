@@ -3,6 +3,8 @@
 SUFFIXES=(
    "ize"
    "izes"
+   "izer"
+   "izable"
    "ized"
    "izing"
    "izement"
@@ -20,11 +22,11 @@ EXCEPT=${EXCEPTIONS[*]}
 PAT2='^\(\('"${EXCEPT// /\\)\\|\\(}"'\)\)'
 (
    grep -e "$PAT1" -e "$PAT2" "$1" | grep -v '^\(colouris\)\|\(favouris\)'
-   for i in e es ed ing ation ations ; do
+   for i in e es ed ing ation ations er able; do
       echo "colouris$i->colouriz$i"
       echo "coloriz$i->colouriz$i"
    done
-   for i in e es ed ing ; do
+   for i in e es ed ing able; do
       echo "favouris$i->favouriz$i"
       echo "favoriz$i->favouriz$i"
    done
