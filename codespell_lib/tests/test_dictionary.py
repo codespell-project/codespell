@@ -292,8 +292,9 @@ allowed_dups = {
     ("dictionary_rare.txt", "dictionary_en-GB_to_en-US.txt"),
     ("dictionary_rare.txt", "dictionary_en_to_en-OX.txt"),
     ("dictionary_rare.txt", "dictionary_usage.txt"),
-    ("dictionary_en_to_en-OX.txt", "dictionary_en-GB_to_en-US.txt"),
     ("dictionary_en-GB_to_en-US.txt", "dictionary_en_to_en-OX.txt"),
+    ("dictionary_en_to_en-OX.txt", "dictionary_en-GB_to_en-US.txt"),
+    ("dictionary_en_to_en-OX.txt", "dictionary_rare.txt"),
 }
 
 
