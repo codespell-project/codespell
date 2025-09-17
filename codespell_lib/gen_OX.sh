@@ -10,16 +10,16 @@ SUFFIXES=(
    "izations"
 )
 SUFF=${SUFFIXES[*]}
-PAT='\(\('"${SUFF// /\\)\\|\\(}"'\)\)$'
+PAT1='\(\('"${SUFF// /\\)\\|\\(}"'\)\)$'
 
 EXCEPTIONS=(
    'defenc'
    'storey'
 )
-EXCEPT='^\(\('"${EXCEPTIONS// /\\)\\|\\(}"'\)\)'
-
+EXCEPT=${EXCEPTIONS[*]}
+PAT2='^\(\('"${EXCEPT// /\\)\\|\\(}"'\)\)'
 (
-   grep -e "$PAT" -e "$EXCEPT" "$1" | grep -v '^\(colouris\)\|\(favouris\)'
+   grep -e "$PAT1" -e "$PAT2" "$1" | grep -v '^\(colouris\)\|\(favouris\)'
    for i in e es ed ing ation ations ; do
       echo "colouris$i->colouriz$i"
       echo "coloriz$i->colouriz$i"
@@ -28,5 +28,5 @@ EXCEPT='^\(\('"${EXCEPTIONS// /\\)\\|\\(}"'\)\)'
       echo "favouris$i->favouriz$i"
       echo "favoriz$i->favouriz$i"
    done
-   grep -v -e "$PAT" -e "$EXCEPT" "$1" | sed 's/^\(.*\)->\(.*\)$/\2->\1/'
+   grep -v -e "$PAT1" -e "$PAT2" "$1" | sed 's/^\(.*\)->\(.*\)$/\2->\1/'
 ) | sort -d

@@ -130,7 +130,7 @@ _builtin_dictionaries = (
         True,
         True,
         ("en_GB", "en_US"),
-        supported_languages_en,
+        None,
     ),
 )
 _builtin_default = "clear,rare"
