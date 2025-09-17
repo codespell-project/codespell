@@ -11,7 +11,13 @@ SUFFIXES=(
 )
 SUFF=${SUFFIXES[*]}
 PAT='\(\('"${SUFF// /\\)\\|\\(}"'\)\)$'
-EXCEPT='^defenc'
+
+EXCEPTIONS=(
+   'defenc'
+   'storey'
+)
+EXCEPT='^\(\('"${EXCEPTIONS// /\\)\\|\\(}"'\)\)'
+
 (
    grep -e "$PAT" -e "$EXCEPT" "$1" | grep -v '^\(colouris\)\|\(favouris\)'
    for i in e es ed ing ation ations ; do
