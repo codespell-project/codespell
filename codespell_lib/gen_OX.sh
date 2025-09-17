@@ -13,12 +13,14 @@ SUFF=${SUFFIXES[*]}
 PAT='\(\('"${SUFF// /\\)\\|\\(}"'\)\)$'
 EXCEPT='^defenc'
 (
-   grep "\($PAT\)\|\($EXCEPT\)" "$1"
+   grep -e "$PAT" -e "$EXCEPT" "$1" | grep -v '^\(colouris\)\|\(favouris\)'
    for i in e es ed ing ation ations ; do
-      for j in col fav ; do
-         echo "${j}oriz$i->${j}ouriz$i"
-         echo "${j}ouris$i->${j}ouriz$i"
-      done
+      echo "colouris$i->colouriz$i"
+      echo "coloriz$i->colouriz$i"
    done
-   grep -v "$PAT" "$1" | sed 's/^\(.*\)->\(.*\)$/\2->\1/'
+   for i in e es ed ing ; do
+      echo "favouris$i->favouriz$i"
+      echo "favoriz$i->favouriz$i"
+   done
+   grep -v -e "$PAT" -e "$EXCEPT" "$1" | sed 's/^\(.*\)->\(.*\)$/\2->\1/'
 ) | sort -d
