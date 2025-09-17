@@ -2,18 +2,20 @@ DICTIONARIES = codespell_lib/data/dictionary*.txt codespell_lib/tests/data/*.wor
 
 PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dist pytest pypi ruff clean
 
-all: codespell_lib/data/dictionary_en_to_en-OX.txt check-dictionaries codespell.1
+GENERATED := codespell_lib/data/dictionary_en_to_en-OX.txt
 
-check: check-dictionaries check-dist pytest ruff
+all: $(GENERATED) check-dictionaries codespell.1
 
-codespell_lib/data/dictionary_en_to_en-OX.txt: codespell_lib/data/dictionary_en-GB_to_en-US.txt ./codespell_lib/gen_OX.sh
+check: $(GENERATED) check-dictionaries check-dist pytest ruff
+
+$(GENERATED): codespell_lib/data/dictionary_en-GB_to_en-US.txt ./codespell_lib/gen_OX.sh
 	./codespell_lib/gen_OX.sh codespell_lib/data/dictionary_en-GB_to_en-US.txt > codespell_lib/data/dictionary_en_to_en-OX.txt
 
 codespell.1: codespell.1.include Makefile
 	PYTHONPATH=. help2man codespell --include codespell.1.include --no-info --output codespell.1
 	sed -i '/\.SS \"Usage/,+2d' codespell.1
 
-check-dictionaries: sort-dictionaries codespell_lib/data/dictionary_en_to_en-OX.txt
+check-dictionaries: $(GENERATED) sort-dictionaries
 	@for dictionary in ${DICTIONARIES}; do \
 		if grep -E -n "^\s*$$|\s$$|^\s" $$dictionary; then \
 			echo "Dictionary $$dictionary contains leading/trailing whitespace and/or blank lines.  Trim with 'make trim-dictionaries'"; \
@@ -27,10 +29,10 @@ check-dictionaries: sort-dictionaries codespell_lib/data/dictionary_en_to_en-OX.
 		exit 1; \
 	fi
 
-sort-dictionaries: codespell_lib/data/dictionary_en_to_en-OX.txt
+sort-dictionaries: $(GENERATED)
 	pre-commit run --all-files file-contents-sorter
 
-trim-dictionaries: codespell_lib/data/dictionary_en_to_en-OX.txt
+trim-dictionaries: $(GENERATED)
 	@for dictionary in ${DICTIONARIES}; do \
 		sed -E -i.bak -e 's/^[[:space:]]+//; s/[[:space:]]+$$//; /^$$/d' $$dictionary && rm $$dictionary.bak; \
 	done
@@ -44,7 +46,7 @@ check-dist:
 ruff:
 	pre-commit run --all-files ruff-check
 
-pytest:
+pytest: $(GENERATED)
 	@if command -v pytest > /dev/null; then \
 		pytest codespell_lib; \
 	else \
