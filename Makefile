@@ -6,7 +6,7 @@ all: codespell_lib/data/dictionary_en_to_en-OX.txt check-dictionaries codespell.
 
 check: check-dictionaries check-dist pytest ruff
 
-codespell_lib/data/dictionary_en_to_en-OX.txt: codespell_lib/data/dictionary_en-GB_to_en-US.txt
+codespell_lib/data/dictionary_en_to_en-OX.txt: codespell_lib/data/dictionary_en-GB_to_en-US.txt ./codespell_lib/gen_OX.sh
 	./codespell_lib/gen_OX.sh codespell_lib/data/dictionary_en-GB_to_en-US.txt > codespell_lib/data/dictionary_en_to_en-OX.txt
 
 codespell.1: codespell.1.include Makefile
