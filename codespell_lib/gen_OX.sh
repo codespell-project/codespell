@@ -31,4 +31,4 @@ PAT2='^\(\('"${EXCEPT// /\\)\\|\\(}"'\)\)'
       echo "favoriz$i->favouriz$i"
    done
    grep -v -e "$PAT1" -e "$PAT2" "$1" | sed 's/^\(.*\)->\(.*\)$/\2->\1/'
-) | sort -d
+) | sort
