@@ -15,7 +15,7 @@ codespell.1: codespell.1.include Makefile
 	PYTHONPATH=. help2man codespell --include codespell.1.include --no-info --output codespell.1
 	sed -i '/\.SS \"Usage/,+2d' codespell.1
 
-check-dictionaries: $(GENERATED) sort-dictionaries
+check-dictionaries: sort-dictionaries
 	@for dictionary in ${DICTIONARIES}; do \
 		if grep -E -n "^\s*$$|\s$$|^\s" $$dictionary; then \
 			echo "Dictionary $$dictionary contains leading/trailing whitespace and/or blank lines.  Trim with 'make trim-dictionaries'"; \
@@ -46,7 +46,7 @@ check-dist:
 ruff:
 	pre-commit run --all-files ruff-check
 
-pytest: $(GENERATED)
+pytest: sort-dictionaries
 	@if command -v pytest > /dev/null; then \
 		pytest codespell_lib; \
 	else \
