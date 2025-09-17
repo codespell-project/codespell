@@ -123,6 +123,15 @@ _builtin_dictionaries = (
         ("en_GB",),
         ("en_US",),
     ),
+    (
+        "en_to_en-OX",
+        "for corrections from en to en-OX",
+        "_en_to_en-OX",
+        True,
+        True,
+        ("en_GB", "en_US"),
+        supported_languages_en,
+    ),
 )
 _builtin_default = "clear,rare"
 
