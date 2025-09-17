@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 SUFFIXES=(
    "ize"
    "izes"
