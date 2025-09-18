@@ -15,14 +15,23 @@ SUFFIXES=(
 SUFF=${SUFFIXES[*]}
 PAT1='\(\('"${SUFF// /\\)\\|\\(}"'\)\)$'
 
+# choose US for these ones
 EXCEPTIONS=(
    'defenc'
-   'storey'
 )
 EXCEPT=${EXCEPTIONS[*]}
 PAT2='^\(\('"${EXCEPT// /\\)\\|\\(}"'\)\)'
+
+# these one should be left out
+IGNORE=(
+   'storey'
+   'practise'
+)
+IGN=${IGNORE[*]}
+PAT3='^\(\('"${IGN// /\\)\\|\\(}"'\)\)'
+
 (
-   grep -e "$PAT1" -e "$PAT2" "$1" | grep -v '^\(colouris\)\|\(favouris\)'
+   grep -e "$PAT1" -e "$PAT2" "$1" | grep -v "$PAT3" | grep -v '^\(colouris\)\|\(favouris\)'
    for i in e es ed ing ation ations er able; do
       echo "colouris$i->colouriz$i"
       echo "coloriz$i->colouriz$i"
@@ -31,5 +40,5 @@ PAT2='^\(\('"${EXCEPT// /\\)\\|\\(}"'\)\)'
       echo "favouris$i->favouriz$i"
       echo "favoriz$i->favouriz$i"
    done
-   grep -v -e "$PAT1" -e "$PAT2" "$1" | sed 's/^\(.*\)->\(.*\)$/\2->\1/'
+   grep -v -e "$PAT1" -e "$PAT2" "$1" | grep -v "$PAT3" | sed 's/^\(.*\)->\(.*\)$/\2->\1/'
 ) | sort
