@@ -21,7 +21,7 @@ PAT1="$(one_of "${SUFFIXES[@]}")$"
 # choose US for these ones
 EXCEPTIONS=(
    'defenc'
-   'focussed'
+   'focuss'
 )
 PAT2="^$(one_of "${EXCEPTIONS[@]}")"
 
