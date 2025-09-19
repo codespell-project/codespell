@@ -29,6 +29,8 @@ PAT2="^$(one_of "${EXCEPTIONS[@]}")"
 IGNORE=(
    'storey'
    'practise'
+   'programme'
+   'licence'
 )
 PAT3="^$(one_of "${IGNORE[@]}")"
 
