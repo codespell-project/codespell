@@ -1,5 +1,9 @@
 #!/bin/bash
 
+one_of() {
+   LIST="$*"
+   echo '\(\('"${LIST// /\\)\\|\\(}"'\)\)'
+}
 
 SUFFIXES=(
    "ize"
@@ -12,23 +16,21 @@ SUFFIXES=(
    "ization"
    "izations"
 )
-SUFF=${SUFFIXES[*]}
-PAT1='\(\('"${SUFF// /\\)\\|\\(}"'\)\)$'
+PAT1="$(one_of "${SUFFIXES[@]}")$"
 
 # choose US for these ones
 EXCEPTIONS=(
    'defenc'
+   'focussed'
 )
-EXCEPT=${EXCEPTIONS[*]}
-PAT2='^\(\('"${EXCEPT// /\\)\\|\\(}"'\)\)'
+PAT2="^$(one_of "${EXCEPTIONS[@]}")"
 
 # these one should be left out
 IGNORE=(
    'storey'
    'practise'
 )
-IGN=${IGNORE[*]}
-PAT3='^\(\('"${IGN// /\\)\\|\\(}"'\)\)'
+PAT3="^$(one_of "${IGNORE[@]}")"
 
 (
    grep -e "$PAT1" -e "$PAT2" "$1" | grep -v "$PAT3" | grep -v '^\(colouris\)\|\(favouris\)'
