@@ -13808,8 +13808,8 @@ colsest->closest, coldest,
 colsing->closing
 colud->could, cloud,
 colum->column
-colume->column
-columes->columns
+colume->column, volume,
+columes->columns, volumes,
 columm->column
 colummn->column
 colummns->columns
@@ -32686,6 +32686,7 @@ incrfemental->incremental
 incriease->increase
 incrieased->increased
 incrieases->increases
+incrieasing->increasing
 incrmenet->increment
 incrmenetd->incremented
 incrmeneted->incremented
@@ -41582,8 +41583,7 @@ offloded->offloaded
 offred->offered
 offsence->offence
 offsense->offense
-offsenses->offenses
-offser->offset
+offser->offer, offset,
 offsers->offers, offsets,
 offsest->offsets, offset,
 offseted->offsetted
@@ -46916,6 +46916,7 @@ propages->propagates
 propagete->propagate
 propageted->propagated
 propagetes->propagates
+propageting->propagating
 propaging->propagating
 propatagion->propagation
 propator->propagator
