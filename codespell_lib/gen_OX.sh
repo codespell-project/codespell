@@ -45,4 +45,4 @@ PAT3="^$(one_of "${IGNORE[@]}")"
       echo "favoriz$i->favouriz$i"
    done
    grep -v -e "$PAT1" -e "$PAT2" "$1" | grep -v "$PAT3" | sed 's/^\(.*\)->\(.*\)$/\2->\1/'
-) | sort
+) | sort -f -t- -k 1b,1
