@@ -62,6 +62,8 @@ jobs:
       - run: codespell --help
       - run: codespell --version
       - run: make check
+        env:
+          PYTHON_GIL: 0
         if: startsWith(matrix.os, 'ubuntu')
       - run: pytest codespell_lib
         if: startsWith(matrix.os, 'windows')
