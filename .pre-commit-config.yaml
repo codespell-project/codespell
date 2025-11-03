@@ -4,7 +4,7 @@ exclude: ^(\.[^/]*cache/.*)$
 repos:
   - repo: https://github.com/executablebooks/mdformat
     # Do this before other tools "fixing" the line endings
-    rev: 0.7.22
+    rev: 1.0.0
     hooks:
       - id: mdformat
         name: Format Markdown
@@ -58,7 +58,7 @@ repos:
           - -d
           - "{extends: relaxed, rules: {line-length: {max: 90}}}"
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.13.3
+    rev: v0.14.3
     hooks:
       - id: ruff-check
       - id: ruff-format
