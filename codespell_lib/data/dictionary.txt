@@ -5220,6 +5220,8 @@ apartmen->apartment
 apartmens->apartments
 apartmet->apartment
 apartmets->apartments
+aparttment->apartment
+aparttments->apartments
 apaul->appall
 apauled->appalled
 apauling->appalling
@@ -8594,6 +8596,9 @@ auto-negoziation->auto-negotiation
 auto-negoziations->auto-negotiations
 auto-realease->auto-release
 auto-realeased->auto-released
+autoated->automated
+autoatic->automatic
+autoatically->automatically
 autochtonous->autochthonous
 autocmplete->autocomplete
 autocmpleted->autocompleted
@@ -32970,6 +32975,9 @@ indivisuals->individuals
 indiviual->individual
 indiviually->individually
 indiviuals->individuals
+indiviudal->individual
+indiviudally->individually
+indiviudals->individuals
 indivual->individual
 indivually->individually
 indivuals->individuals
@@ -36580,6 +36588,7 @@ liason->liaison
 liasons->liaisons
 libararies->libraries
 libarary->library
+libaray->library
 libaries->libraries
 libary->library
 libell->libel
@@ -41466,6 +41475,7 @@ occure->occur, occurred,
 occured->occurred
 occurence->occurrence
 occurences->occurrences
+occureneces->occurrences
 occures->occurs
 occuring->occurring
 occurr->occur
@@ -45833,6 +45843,7 @@ prejudgudices->prejudices
 prejudgudicing->prejudicing
 prejudicin->prejudicing
 preliferation->proliferation
+prelimary->preliminary
 prelimitary->preliminary
 prematurelly->prematurely
 premeire->premiere
@@ -48236,6 +48247,7 @@ reademe->README
 readiable->readable
 readibility->readability
 readible->readable
+readiblity->readability
 readibly->readably
 readig->reading
 readigs->readings
@@ -62594,6 +62606,7 @@ utilties->utilities
 utiltities->utilities
 utiltity->utility
 utilty->utility
+utily->utility
 utilzation->utilization
 utilze->utilize
 utilzed->utilized
@@ -63708,11 +63721,12 @@ vulnerabiliies->vulnerabilities
 vulnerabilility->vulnerability
 vulnerabililties->vulnerabilities
 vulnerabililty->vulnerability
+vulnerabilit->vulnerability, vulnerabilities,
 vulnerabilites->vulnerabilities
-vulnerabiliti->vulnerability
-vulnerabilitie->vulnerability
+vulnerabiliti->vulnerability, vulnerabilities,
+vulnerabilitie->vulnerability, vulnerabilities,
 vulnerabilitiesy->vulnerability, vulnerabilities,
-vulnerabilitis->vulnerabilities
+vulnerabilitis->vulnerabilities, vulnerability,
 vulnerabilitiy->vulnerability
 vulnerabilitu->vulnerability
 vulnerabilityies->vulnerability, vulnerabilities,
