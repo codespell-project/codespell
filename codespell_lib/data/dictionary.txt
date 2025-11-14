@@ -2506,6 +2506,7 @@ aeactivate->deactivate, activate,
 aeorspace->aerospace
 aequidistant->equidistant
 aequivalent->equivalent
+aera->area
 aeriel->aerial
 aeriels->aerials
 aeropsace->aerospace
@@ -4726,6 +4727,9 @@ annays->annoys, any,
 annd->and
 annealin->annealing, anneal in,
 annecessary->unnecessary, a necessary,
+anngle->angle
+anngled->angled
+anngles->angles
 annhilate->annihilate
 annhilated->annihilated
 annhilates->annihilates
@@ -7825,6 +7829,8 @@ atended->attended
 atendee->attendee
 atends->attends
 atention->attention
+aternative->alternative
+aternatives->alternatives
 aternies->attorneys
 aterny->attorney
 atfer->after
@@ -8602,6 +8608,7 @@ auto-negoziation->auto-negotiation
 auto-negoziations->auto-negotiations
 auto-realease->auto-release
 auto-realeased->auto-released
+autoamtic->automatic
 autoated->automated
 autoatic->automatic
 autoatically->automatically
@@ -8890,6 +8897,7 @@ averging->averaging, avenging,
 averload->overload
 averloaded->overloaded
 averloads->overloads
+averrage->average
 avertising->advertising
 avgerage->average
 aviability->availability
@@ -9342,6 +9350,16 @@ beforhand->beforehand
 beforing->before
 befure->before
 befurehand->beforehand
+begen->begin, began,
+begener->beginner
+begeners->beginners
+begenining->beginning
+begeninings->beginnings
+begenner->beginner
+begenners->beginners
+begennesr->beginners
+begenning->beginning
+begennings->beginnings
 beggin->begin, begging,
 begginer->beginner
 begginers->beginners
@@ -9612,6 +9630,7 @@ bettery->better, battery,
 bettr->better, bettor,
 bettter->better
 bettween->between
+betveen->between
 betwean->between
 betwee->between
 betweed->between
@@ -14929,6 +14948,7 @@ compresible->compressible
 compresing->compressing
 compresion->compression
 compresions->compressions
+compresison->compression
 compresor->compressor
 compresors->compressors
 compressable->compressible
@@ -17375,6 +17395,8 @@ corellating->correlating
 corellation->correlation
 corellations->correlations
 corener->corner, coroner,
+corenr->corner, coroner,
+corenrs->corners, coroners,
 coreolis->Coriolis
 corerct->correct
 corerctly->correctly
@@ -28175,6 +28197,8 @@ fewd->few, feud,
 fewg->few, fugue,
 fewsha->fuchsia
 fezent->pheasant
+fhan->than
+fhen->then
 fhurter->further
 fial->fail, final, dial, vial,
 fialed->failed, dialed,
@@ -30121,6 +30145,7 @@ givne->given
 givveing->giving
 givven->given
 givving->giving
+glabal->global
 glamourous->glamorous
 glancin->glancing
 glaobal->global
@@ -36414,6 +36439,7 @@ laysers->layers, lasers,
 lazer->laser
 laziliy->lazily
 lazyness->laziness
+lazzy->lazy
 lcoal->local, coal,
 lcoale->locale
 lcoales->locales
@@ -36575,6 +36601,8 @@ levle->level
 levls->levels
 lew->lieu, hew, sew, dew,
 lewchemia->leukaemia, leukemia,
+lewel->level
+lewels->levels
 lewow->luau
 lewows->luaus
 lewtenant->lieutenant
@@ -36731,6 +36759,7 @@ ligitamassy->legitimacy
 ligitamate->legitimate
 ligitamately->legitimately
 ligth->light
+ligther->lighter
 ligthing->lighting
 ligths->lights
 ligthweight->lightweight
@@ -40477,6 +40506,7 @@ nitched->niched
 nitches->niches
 nitching->niching
 nither->neither
+nithing->nothing
 nitification->notification
 nitifications->notifications
 nives->knives, nieves, nines, dives, fives, hives, wives,
@@ -48274,6 +48304,12 @@ readly->readily, ready,
 readmition->readmission
 readnig->reading
 readning->reading
+readust->readjust
+readusted->readjusted
+readusting->readjusting
+readustment->readjustment
+readustments->readjustments
+readusts->readjusts
 readyness->readiness
 reaeched->reached
 reagrd->regard
@@ -48285,6 +48321,12 @@ reaise->realise, realize, raise,
 reaised->realised, realized, raised,
 reaises->realises, realizes, raises,
 reaising->realising, realizing, raising,
+reajust->readjust
+reajusted->readjusted
+reajusting->readjusting
+reajustment->readjustment
+reajustments->readjustments
+reajusts->readjusts
 reaktivate->reactivate
 reaktivated->reactivated
 realate->relate
@@ -53367,8 +53409,8 @@ separatly->separately
 separato->separator
 separatos->separators
 separatring->separating
-separe->separate
-separed->separated
+separe->separate, spare,
+separed->separated, separate,
 separely->separately
 separes->separates
 separete->separate
@@ -55970,6 +56012,10 @@ spport->support
 spported->supported
 spporting->supporting
 spports->supports
+sprcific->specific
+sprcifically->specifically
+sprcified->specified
+sprcify->specify
 spreaded->spread
 spreadhseet->spreadsheet
 spreadhseets->spreadsheets
@@ -56074,6 +56120,7 @@ srollbars->scrollbars
 srolled->scrolled, strolled,
 srolling->scrolling, strolling,
 srolls->scrolls, strolls,
+srorage->storage
 srouce->source
 srtifact->artifact
 srtifacts->artifacts
@@ -59675,6 +59722,7 @@ toglling->toggling
 togther->together
 togueter->together
 toi->to, toy,
+toipological->topological
 tolarable->tolerable
 tolearnce->tolerance
 tolearnces->tolerances
@@ -62523,6 +62571,7 @@ userspase->userspace
 usesfull->useful
 usespace->userspace
 usetnet->Usenet
+usfull->useful
 usgin->using
 usiability->usability
 usiable->usable
@@ -64704,6 +64753,7 @@ youthinasia->euthanasia
 ypes->types
 yrea->year
 yse->yes, use, NYSE,
+yte->the
 ytou->you
 yuforic->euphoric
 yuforically->euphorically
