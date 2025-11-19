@@ -227,12 +227,14 @@ class FileOpener:
 
         self.encdetector = UniversalDetector()
 
-    def open(self, filename: str) -> tuple[list[str], str]:
+    def open(self, filename: str) -> tuple[list[tuple[bool, int, list[str]]], str]:
         if self.use_chardet:
             return self.open_with_chardet(filename)
         return self.open_with_internal(filename)
 
-    def open_with_chardet(self, filename: str) -> tuple[list[str], str]:
+    def open_with_chardet(
+        self, filename: str
+    ) -> tuple[list[tuple[bool, int, list[str]]], str]:
         self.encdetector.reset()
         with open(filename, "rb") as fb:
             for line in fb:
@@ -259,7 +261,9 @@ class FileOpener:
 
         return lines, f.encoding
 
-    def open_with_internal(self, filename: str) -> tuple[list[str], str]:
+    def open_with_internal(
+        self, filename: str
+    ) -> tuple[list[tuple[bool, int, list[str]]], str]:
         encoding = None
         first_try = True
         for encoding in ("utf-8", "iso-8859-1"):
@@ -286,21 +290,25 @@ class FileOpener:
 
         return lines, encoding
 
-    def get_lines(self, f: TextIO) -> list[str]:
+    def get_lines(self, f: TextIO) -> list[tuple[bool, int, list[str]]]:
+        fragments = []
+        line_number = 0
         if self.ignore_multiline_regex:
             text = f.read()
             pos = 0
-            text2 = ""
             for m in re.finditer(self.ignore_multiline_regex, text):
-                text2 += text[pos : m.start()]
-                # Replace with blank lines so line numbers are unchanged.
-                text2 += "\n" * m.group().count("\n")
+                lines = text[pos : m.start()].splitlines(True)
+                fragments.append((False, line_number, lines))
+                line_number += len(lines)
+                lines = m.group().splitlines(True)
+                fragments.append((True, line_number, lines))
+                line_number += len(lines) - 1
                 pos = m.end()
-            text2 += text[pos:]
-            lines = text2.splitlines(True)
+            lines = text[pos:].splitlines(True)
+            fragments.append((False, line_number, lines))
         else:
-            lines = f.readlines()
-        return lines
+            fragments.append((False, line_number, f.readlines()))
+        return fragments
 
 
 # -.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-
@@ -870,7 +878,7 @@ def apply_uri_ignore_words(
 
 
 def parse_lines(
-    lines: list[str],
+    fragment: tuple[bool, int, list[str]],
     filename: str,
     colors: TermColors,
     summary: Optional[Summary],
@@ -887,10 +895,13 @@ def parse_lines(
     bad_count = 0
     changed = False
 
+    _, fragment_line_number, lines = fragment
+
     for i, line in enumerate(lines):
         line = line.rstrip()
         if not line or line in exclude_lines:
             continue
+        line_number = fragment_line_number + i
 
         extra_words_to_ignore = set()
         match = inline_ignore_regex.search(line)
@@ -977,7 +988,7 @@ def parse_lines(
                     continue
 
                 cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
-                cline = f"{colors.FILE}{i + 1}{colors.DISABLE}"
+                cline = f"{colors.FILE}{line_number + 1}{colors.DISABLE}"
                 cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
                 crightword = f"{colors.FWORD}{fixword}{colors.DISABLE}"
 
@@ -1028,13 +1039,13 @@ def parse_file(
     options: argparse.Namespace,
 ) -> int:
     bad_count = 0
-    lines = None
+    fragments = None
 
     # Read lines.
     if filename == "-":
         f = sys.stdin
         encoding = "utf-8"
-        lines = file_opener.get_lines(f)
+        fragments = file_opener.get_lines(f)
     else:
         if options.check_filenames:
             for word in extract_words(filename, word_regex, ignore_word_regex):
@@ -1084,34 +1095,42 @@ def parse_file(
                 print(f"WARNING: Binary file: {filename}", file=sys.stderr)
             return bad_count
         try:
-            lines, encoding = file_opener.open(filename)
+            fragments, encoding = file_opener.open(filename)
         except OSError:
             return bad_count
 
     # Parse lines.
-    bad_count_update, changed = parse_lines(
-        lines,
-        filename,
-        colors,
-        summary,
-        misspellings,
-        ignore_words_cased,
-        exclude_lines,
-        word_regex,
-        ignore_word_regex,
-        uri_regex,
-        uri_ignore_words,
-        context,
-        options,
-    )
-    bad_count += bad_count_update
+    changed = False
+    for fragment in fragments:
+        ignore, _, _ = fragment
+        if ignore:
+            continue
+
+        bad_count_update, changed_update = parse_lines(
+            fragment,
+            filename,
+            colors,
+            summary,
+            misspellings,
+            ignore_words_cased,
+            exclude_lines,
+            word_regex,
+            ignore_word_regex,
+            uri_regex,
+            uri_ignore_words,
+            context,
+            options,
+        )
+        bad_count += bad_count_update
+        changed = changed or changed_update
 
     # Write out lines, if changed.
     if changed:
         if filename == "-":
             print("---")
-            for line in lines:
-                print(line, end="")
+            for _, _, lines in fragments:
+                for line in lines:
+                    print(line, end="")
         else:
             if not options.quiet_level & QuietLevels.FIXES:
                 print(
@@ -1119,7 +1138,8 @@ def parse_file(
                     file=sys.stderr,
                 )
             with open(filename, "w", encoding=encoding, newline="") as f:
-                f.writelines(lines)
+                for _, _, lines in fragments:
+                    f.writelines(lines)
 
     return bad_count
 

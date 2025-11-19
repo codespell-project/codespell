@@ -994,6 +994,25 @@ def test_ignore_multiline_regex_option(
     )
     assert fname.read_text() == "This\nThis"
 
+    fname.write_text(text)
+    cs.main(
+        fname,
+        "-w",
+        "--ignore-multiline-regex",
+        "codespell:ignore-begin.*codespell:ignore-end",
+    )
+    fixed_text = """
+    Please see http://example.com/abandoned for info
+    # codespell:ignore-begin
+    '''
+    abandonned
+    abandonned
+    '''
+    # codespell:ignore-end
+    abandoned
+    """
+    assert fname.read_text() == fixed_text
+
 
 def test_uri_regex_option(
     tmp_path: Path,
