@@ -891,7 +891,7 @@ def parse_file(
     if filename == "-":
         f = sys.stdin
         encoding = "utf-8"
-        lines = f.readlines()
+        lines = file_opener.get_lines(f)
     else:
         if options.check_filenames:
             for word in extract_words(filename, word_regex, ignore_word_regex):

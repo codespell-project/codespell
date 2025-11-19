@@ -952,19 +952,19 @@ def test_ignore_multiline_regex_option(
     assert code == EX_USAGE
     assert "usage:" in stdout
 
+    text = """
+    Please see http://example.com/abandonned for info
+    # codespell:ignore-begin
+    '''
+    abandonned
+    abandonned
+    '''
+    # codespell:ignore-end
+    abandonned
+    """
+
     fname = tmp_path / "flag.txt"
-    fname.write_text(
-        """
-        Please see http://example.com/abandonned for info
-        # codespell:ignore-begin
-        '''
-        abandonned
-        abandonned
-        '''
-        # codespell:ignore-end
-        abandonned
-        """
-    )
+    fname.write_text(text)
     assert cs.main(fname) == 4
     assert (
         cs.main(
@@ -974,6 +974,16 @@ def test_ignore_multiline_regex_option(
         )
         == 2
     )
+
+    with FakeStdin(text):
+        assert (
+            cs.main(
+                "-",
+                "--ignore-multiline-regex",
+                "codespell:ignore-begin.*codespell:ignore-end",
+            )
+            == 2
+        )
 
 
 def test_uri_regex_option(
