@@ -985,6 +985,15 @@ def test_ignore_multiline_regex_option(
             == 2
         )
 
+    fname.write_text("This\nThsi")
+    cs.main(
+        fname,
+        "-w",
+        "--ignore-multiline-regex",
+        "codespell:ignore-begin.*codespell:ignore-end",
+    )
+    assert fname.read_text() == "This\nThis"
+
 
 def test_uri_regex_option(
     tmp_path: Path,

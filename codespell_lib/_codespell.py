@@ -297,7 +297,7 @@ class FileOpener:
                 text2 += "\n" * m.group().count("\n")
                 pos = m.end()
             text2 += text[pos:]
-            lines = text2.split("\n")
+            lines = text2.splitlines(True)
         else:
             lines = f.readlines()
         return lines
