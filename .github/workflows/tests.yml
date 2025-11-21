@@ -39,7 +39,7 @@ jobs:
             os: "windows-latest"
     name: "${{ matrix.python-version }} ${{ matrix.kind }} ${{ matrix.os }}"
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           persist-credentials: false
       - name: Setup python
@@ -81,7 +81,7 @@ jobs:
     steps:
       - name: Setup Python
         uses: actions/setup-python@v6
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           persist-credentials: false
       - name: Install general dependencies
