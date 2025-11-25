@@ -1429,7 +1429,7 @@ def run_codespell_stdin(
     return output.count("\n")
 
 
-def test_stdin(tmp_path: Path) -> None:
+def test_stdin(tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> None:
     """Test running the codespell executable."""
     input_file_lines = 4
     text = ""
@@ -1444,3 +1444,17 @@ def test_stdin(tmp_path: Path) -> None:
         assert run_codespell_stdin(
             text, args=args, cwd=tmp_path
         ) == input_file_lines * (2 - int(single_line_per_error))
+
+    with FakeStdin("Thsi is a line"):
+        result = cs.main("-", "-w", std=True)
+        assert isinstance(result, tuple)
+        code, stdout, _ = result
+        assert stdout == "---\nThis is a line"
+        assert code == 0
+
+    with FakeStdin("Thsi is a line"):
+        result = cs.main("-", "--stdin-single-line", std=True)
+        assert isinstance(result, tuple)
+        code, stdout, _ = result
+        assert stdout == "1: Thsi ==> This\n"
+        assert code == 1
