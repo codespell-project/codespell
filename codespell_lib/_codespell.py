@@ -882,6 +882,7 @@ def apply_uri_ignore_words(
                         break
     return check_matches
 
+
 def _format_colored_output(
     filename: str,
     colors: TermColors,
@@ -906,6 +907,7 @@ def _format_colored_output(
     cwrongword = f"{colors.WWORD}{wrong}{colors.DISABLE}"
     crightword = f"{colors.FWORD}{right}{colors.DISABLE}"
     return cfilename, cline, cwrongword, crightword
+
 
 def parse_lines(
     fragment: tuple[bool, int, list[str]],
