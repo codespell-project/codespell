@@ -1458,3 +1458,25 @@ def test_stdin(tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> None:
         code, stdout, _ = result
         assert stdout == "1: Thsi ==> This\n"
         assert code == 1
+
+def test_args_from_file(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    fname1 = tmp_path / "tmp1"
+    fname2 = tmp_path / "tmp2"
+    fname3 = tmp_path / "tmp3"
+    fname_list = tmp_path / "tmp_list"
+    fname_list.write_text(f"{fname1} {fname2}\n{fname3}")
+    fname1.write_text("abandonned\ncode")
+    fname2.write_text("exmaple\n")
+    fname3.write_text("abilty\n")
+    print(f'@{fname_list}')
+    result = cs.main(f"@{fname_list}", std=True)
+    assert isinstance(result, tuple)
+    code, stdout, stderr = result
+    print(f"{code=} {stdout=} {stderr=}")
+    assert "tmp1:1: abandonned ==> abandoned\n" in stdout, f"{stdout=}"
+    assert "tmp2:1: exmaple ==> example\n" in stdout, f"{stdout=}"
+    assert "tmp3:1: abilty ==> ability\n" in stdout, f"{stdout=}"
+    assert code == 3, f"{code=}"
