@@ -25,7 +25,7 @@ EXCEPTIONS=(
 )
 PAT2="^$(one_of "${EXCEPTIONS[@]}")"
 
-# these one should be left out
+# these ones should be left out
 IGNORE=(
    'storey'
    'practise'
