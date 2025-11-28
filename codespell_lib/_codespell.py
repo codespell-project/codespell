@@ -23,6 +23,7 @@ import fnmatch
 import itertools
 import os
 import re
+import shlex
 import sys
 import textwrap
 from collections.abc import Iterable, Sequence
@@ -388,7 +389,27 @@ def _supports_ansi_colors() -> bool:
 def parse_options(
     args: Sequence[str],
 ) -> tuple[argparse.Namespace, argparse.ArgumentParser, list[str]]:
-    parser = argparse.ArgumentParser(formatter_class=NewlineHelpFormatter)
+    # Split lines read from `@PATH` using shlex.split(), otherwise default
+    # behaviour is to have one arg per line. See:
+    # https://docs.python.org/3/library/argparse.html#argparse.ArgumentParser.convert_arg_line_to_args
+    class ArgumentParser2(argparse.ArgumentParser):
+        def convert_arg_line_to_args(self, arg_line: str) -> list[str]:
+            if sys.platform == "win32":
+                # On Windows, shlex.split() seems to be messed up by back
+                # slashes. Temporarily changing them to forward slashes seems
+                # to make things work better.
+                arg_line = arg_line.replace("\\", "/")
+                ret = shlex.split(arg_line)
+                ret = [p.replace("/", "\\") for p in ret]
+            else:
+                ret = shlex.split(arg_line)
+            return ret
+
+    parser = ArgumentParser2(
+        formatter_class=NewlineHelpFormatter,
+        fromfile_prefix_chars="@",
+        epilog="Use @PATH to read additional arguments from file PATH.",
+    )
 
     parser.set_defaults(colors=_supports_ansi_colors())
     parser.add_argument("--version", action="version", version=VERSION)
