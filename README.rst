@@ -229,6 +229,13 @@ instead of these invalid entries:
 
 .. _tomli: https://pypi.org/project/tomli/
 
+Reading arguments from file
+---------------------------
+
+Additional arguments can be read from a file with ``@PATH``. Arguments are
+extracted using ``shlex.split()``.
+
+
 pre-commit hook
 ---------------
 
