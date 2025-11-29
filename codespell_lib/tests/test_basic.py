@@ -1459,6 +1459,7 @@ def test_stdin(tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> None:
         assert stdout == "1: Thsi ==> This\n"
         assert code == 1
 
+
 def test_args_from_file(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
@@ -1471,7 +1472,7 @@ def test_args_from_file(
     fname1.write_text("abandonned\ncode")
     fname2.write_text("exmaple\n")
     fname3.write_text("abilty\n")
-    print(f'@{fname_list}')
+    print(f"@{fname_list}")
     result = cs.main(f"@{fname_list}", std=True)
     assert isinstance(result, tuple)
     code, stdout, stderr = result

@@ -389,15 +389,13 @@ def _supports_ansi_colors() -> bool:
 def parse_options(
     args: Sequence[str],
 ) -> tuple[argparse.Namespace, argparse.ArgumentParser, list[str]]:
-
     # Split lines read from `@PATH` using shlex.split(), otherwise default
-    # behaviour is to have one arg per line. See: 
+    # behaviour is to have one arg per line. See:
     # https://docs.python.org/3/library/argparse.html#argparse.ArgumentParser.convert_arg_line_to_args
     class ArgumentParser(argparse.ArgumentParser):
-        def convert_arg_line_to_args(self, arg_line: str
-        ) -> list[str]:
+        def convert_arg_line_to_args(self, arg_line: str) -> list[str]:
             return shlex.split(arg_line)
-    
+
     parser = ArgumentParser(
         formatter_class=NewlineHelpFormatter,
         fromfile_prefix_chars="@",
