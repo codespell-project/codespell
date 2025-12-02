@@ -23016,6 +23016,12 @@ dleayed->delayed
 dleaying->delaying
 dleays->delays
 dloating->floating
+dmaage->damage
+dmaaged->damaged
+dmaages->damages
+dmage->damage
+dmaged->damaged
+dmages->damages
 dnamically->dynamically
 dne->done
 dnymaic->dynamic
@@ -61456,6 +61462,8 @@ undfine->undefine
 undfined->undefined
 undfines->undefines
 undistinghable->indistinguishable
+undmaaged->damaged
+undmaged->damaged
 undocummented->undocumented
 undoed->undo, undone,
 undorder->unorder
