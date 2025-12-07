@@ -169,6 +169,31 @@ def test_basic(
     assert cs.main(tmp_path) == 0
 
 
+def test_write_changes_lists_changes(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Test that -w flag shows list of changes made to file."""
+
+    fname = tmp_path / "misspelled.txt"
+    fname.write_text("This is abandonned\nAnd this is occured\nAlso teh typo\n")
+
+    result = cs.main("-w", fname, std=True)
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    assert code == 0
+
+    assert "FIXED:" in stderr
+
+    # Check that changes are listed with format: filename:line: wrong ==> right
+    assert "misspelled.txt:1: abandonned ==> abandoned" in stderr
+    assert "misspelled.txt:2: occured ==> occurred" in stderr
+    assert "misspelled.txt:3: teh ==> the" in stderr
+
+    corrected = fname.read_text()
+    assert corrected == "This is abandoned\nAnd this is occurred\nAlso the typo\n"
+
+
 def test_default_word_parsing(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],

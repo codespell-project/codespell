@@ -883,6 +883,32 @@ def apply_uri_ignore_words(
     return check_matches
 
 
+def _format_colored_output(
+    filename: str,
+    colors: TermColors,
+    line_num: int,
+    wrong: str,
+    right: str,
+) -> tuple[str, str, str, str]:
+    """Format colored strings for output.
+
+    Args:
+        filename: The filename being processed.
+        colors: TermColors instance for color formatting.
+        line_num: Line number (1-based) where the misspelling was found.
+        wrong: The misspelled word.
+        right: The correct word.
+
+    Returns:
+        Tuple of (filename, line_num, wrong_word, right_word) with color codes.
+    """
+    cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
+    cline = f"{colors.FILE}{line_num}{colors.DISABLE}"
+    cwrongword = f"{colors.WWORD}{wrong}{colors.DISABLE}"
+    crightword = f"{colors.FWORD}{right}{colors.DISABLE}"
+    return cfilename, cline, cwrongword, crightword
+
+
 def parse_lines(
     fragment: tuple[bool, int, list[str]],
     filename: str,
@@ -897,9 +923,10 @@ def parse_lines(
     uri_ignore_words: set[str],
     context: Optional[tuple[int, int]],
     options: argparse.Namespace,
-) -> tuple[int, bool]:
+) -> tuple[int, bool, list[tuple[int, str, str]]]:
     bad_count = 0
     changed = False
+    changes_made: list[tuple[int, str, str]] = []
 
     _, fragment_line_number, lines = fragment
 
@@ -985,6 +1012,7 @@ def parse_lines(
                     changed = True
                     lines[i] = re.sub(rf"\b{word}\b", fixword, lines[i])
                     fixed_words.add(word)
+                    changes_made.append((line_number + 1, word, fixword))
                     continue
 
                 # otherwise warning was explicitly set by interactive mode
@@ -995,10 +1023,9 @@ def parse_lines(
                 ):
                     continue
 
-                cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
-                cline = f"{colors.FILE}{line_number + 1}{colors.DISABLE}"
-                cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
-                crightword = f"{colors.FWORD}{fixword}{colors.DISABLE}"
+                cfilename, cline, cwrongword, crightword = _format_colored_output(
+                    filename, colors, line_number + 1, word, fixword
+                )
 
                 reason = misspellings[lword].reason
                 if reason:
@@ -1028,7 +1055,7 @@ def parse_lines(
                         f"==> {crightword}{creason}"
                     )
 
-    return bad_count, changed
+    return bad_count, changed, changes_made
 
 
 def parse_file(
@@ -1068,9 +1095,9 @@ def parse_file(
                 if summary and fix:
                     summary.update(lword)
 
-                cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
-                cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
-                crightword = f"{colors.FWORD}{fixword}{colors.DISABLE}"
+                cfilename, _, cwrongword, crightword = _format_colored_output(
+                    filename, colors, 0, word, fixword
+                )
 
                 reason = misspellings[lword].reason
                 if reason:
@@ -1109,12 +1136,13 @@ def parse_file(
 
     # Parse lines.
     changed = False
+    changes_made: list[tuple[int, str, str]] = []
     for fragment in fragments:
         ignore, _, _ = fragment
         if ignore:
             continue
 
-        bad_count_update, changed_update = parse_lines(
+        bad_count_update, changed_update, changes_made_update = parse_lines(
             fragment,
             filename,
             colors,
@@ -1131,6 +1159,7 @@ def parse_file(
         )
         bad_count += bad_count_update
         changed = changed or changed_update
+        changes_made.extend(changes_made_update)
 
     # Write out lines, if changed.
     if changed:
@@ -1145,6 +1174,14 @@ def parse_file(
                     f"{colors.FWORD}FIXED:{colors.DISABLE} {filename}",
                     file=sys.stderr,
                 )
+                for line_num, wrong, right in changes_made:
+                    cfilename, cline, cwrongword, crightword = _format_colored_output(
+                        filename, colors, line_num, wrong, right
+                    )
+                    print(
+                        f"  {cfilename}:{cline}: {cwrongword} ==> {crightword}",
+                        file=sys.stderr,
+                    )
             with open(filename, "w", encoding=encoding, newline="") as f:
                 for _, _, lines in fragments:
                     f.writelines(lines)
