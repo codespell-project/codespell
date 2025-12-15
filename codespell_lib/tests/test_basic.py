@@ -1519,7 +1519,7 @@ def test_args_from_file(
     assert "tmp2:1: exmaple ==> example\n" in stdout, f"{stdout=}"
     assert "tmp3:1: abilty ==> ability\n" in stdout, f"{stdout=}"
     assert code, f"{code=}"
-    
+
     # Run same test via cs_.main() so code coverage checks work.
     print("Testing with direct call to cs_.main()")
     r = cs_.main(*args[1:])
