@@ -386,6 +386,20 @@ def _supports_ansi_colors() -> bool:
     return False
 
 
+def _check_positive_int(value: str) -> int:
+    try:
+        i = int(value)
+    except ValueError:
+        # same message as argparse type
+        message = f"invalid {int.__name__} value: {value!r}"
+        raise argparse.ArgumentTypeError(message)
+    if i < 0:
+        # message similar to argparse choices
+        message = f"invalid choice: {value} (choose a positive integer)"
+        raise argparse.ArgumentTypeError(message)
+    return i
+
+
 def parse_options(
     args: Sequence[str],
 ) -> tuple[argparse.Namespace, argparse.ArgumentParser, list[str]]:
@@ -632,21 +646,21 @@ def parse_options(
     parser.add_argument(
         "-A",
         "--after-context",
-        type=int,
+        type=_check_positive_int,
         metavar="LINES",
         help="print LINES of trailing context",
     )
     parser.add_argument(
         "-B",
         "--before-context",
-        type=int,
+        type=_check_positive_int,
         metavar="LINES",
         help="print LINES of leading context",
     )
     parser.add_argument(
         "-C",
         "--context",
-        type=int,
+        type=_check_positive_int,
         metavar="LINES",
         help="print LINES of surrounding context",
     )
