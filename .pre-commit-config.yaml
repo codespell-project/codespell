@@ -50,7 +50,7 @@ repos:
         files: dictionary.*\.txt$|\.wordlist$
         args: [--ignore-case]
   - repo: https://github.com/adrienverge/yamllint.git
-    rev: v1.37.1
+    rev: v1.38.0
     hooks:
       - id: yamllint
         args:
@@ -58,12 +58,12 @@ repos:
           - -d
           - "{extends: relaxed, rules: {line-length: {max: 90}}}"
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.14.10
+    rev: v0.14.14
     hooks:
       - id: ruff-check
       - id: ruff-format
   - repo: https://github.com/rbubley/mirrors-prettier
-    rev: v3.7.4
+    rev: v3.8.1
     hooks:
       - id: prettier
         types_or: [yaml, markdown, html, css, scss, javascript, json]
