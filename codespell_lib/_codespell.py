@@ -24,6 +24,7 @@ import itertools
 import os
 import re
 import shlex
+import subprocess
 import sys
 import textwrap
 from collections.abc import Iterable, Sequence
@@ -655,6 +656,11 @@ def parse_options(
         action="store_true",
         help="output just a single line for each misspelling in stdin mode",
     )
+    parser.add_argument(
+        "--git-only",
+        action="store_true",
+        help="When selected, only check files under git control",
+    )
     parser.add_argument("--config", type=str, help="path to config file.")
     parser.add_argument("--toml", type=str, help="path to a pyproject.toml file.")
     parser.add_argument("files", nargs="*", help="files or directories to check")
@@ -1224,6 +1230,82 @@ def flatten_clean_comma_separated_arguments(
     ]
 
 
+def get_git_tracked_files(
+    root: str, files: Iterable[str], glob_match: GlobMatch, check_hidden: bool
+) -> Iterable[str]:
+    # Flatten the list of files into a single list of arguments for git ls-files
+    file_args = []
+    for filename in files:
+        if os.path.isdir(filename):
+            file_args.append(f"{filename}/**")
+        else:
+            file_args.append(filename)
+
+    # Add the glob patterns to exclude
+    exclude_patterns = [
+        f":(exclude)**/{pattern}" for pattern in glob_match.pattern_list
+    ]
+
+    # Add pattern to exclude hidden files if check_hidden is False
+    if not check_hidden:
+        exclude_patterns.append(":(exclude)**/.*")
+        exclude_patterns.append(":(exclude).*")
+
+    git_executable = "git"  # Could be future option
+
+    try:
+        # ruff: noqa: S603
+        result = subprocess.run(
+            [git_executable, "ls-files", *file_args, *exclude_patterns],
+            cwd=root,
+            capture_output=True,
+            check=True,
+            text=True,
+        )
+        return set(result.stdout.splitlines())
+    except subprocess.CalledProcessError:
+        # If the command fails, assume no files are tracked
+        return set()
+
+
+def build_file_list_with_os_walk(
+    files: Iterable[str], glob_match: GlobMatch, check_hidden: bool
+) -> Iterable[str]:
+    all_files = []
+    for filename in files:
+        # ignore hidden files
+        if is_hidden(filename, check_hidden):
+            continue
+        if os.path.isdir(filename):
+            for root, dirs, dirfiles in os.walk(filename):
+                if glob_match.match(root):  # skip (absolute) directories
+                    dirs.clear()
+                    continue
+                if is_hidden(root, check_hidden):  # dir itself hidden
+                    continue
+                for file_ in dirfiles:
+                    if is_hidden(
+                        file_, check_hidden
+                    ):  # ignore hidden files in directories
+                        continue
+                    if glob_match.match(file_):  # skip files
+                        continue
+                    fname = os.path.join(root, file_)
+                    if glob_match.match(fname):  # skip paths
+                        continue
+                    all_files.append(fname)
+
+                # skip (relative) directories
+                dirs[:] = [
+                    dir_
+                    for dir_ in dirs
+                    if not glob_match.match(dir_) and not is_hidden(dir_, check_hidden)
+                ]
+        elif not glob_match.match(filename) and not is_hidden(filename, check_hidden):
+            all_files.append(filename)
+    return all_files
+
+
 def _script_main() -> int:
     """Wrap to main() for setuptools."""
     try:
@@ -1406,68 +1488,33 @@ def main(*args: str) -> int:
             "try escaping special characters",
         )
 
+    # Build the list of all files based on the git_only option
+    if options.git_only:
+        all_files = get_git_tracked_files(
+            os.getcwd(), options.files, glob_match, options.check_hidden
+        )
+    else:
+        all_files = build_file_list_with_os_walk(
+            options.files, glob_match, options.check_hidden
+        )
+
     bad_count = 0
-    for filename in sorted(options.files):
-        # ignore hidden files
-        if is_hidden(filename, options.check_hidden):
-            continue
-
-        if os.path.isdir(filename):
-            for root, dirs, files in os.walk(filename):
-                if glob_match.match(root):  # skip (absolute) directories
-                    dirs.clear()
-                    continue
-                if is_hidden(root, options.check_hidden):  # dir itself hidden
-                    continue
-                for file_ in sorted(files):
-                    # ignore hidden files in directories
-                    if is_hidden(file_, options.check_hidden):
-                        continue
-                    if glob_match.match(file_):  # skip files
-                        continue
-                    fname = os.path.join(root, file_)
-                    if glob_match.match(fname):  # skip paths
-                        continue
-                    bad_count += parse_file(
-                        fname,
-                        colors,
-                        summary,
-                        misspellings,
-                        ignore_words_cased,
-                        exclude_lines,
-                        file_opener,
-                        word_regex,
-                        ignore_word_regex,
-                        uri_regex,
-                        uri_ignore_words,
-                        context,
-                        options,
-                    )
-
-                # skip (relative) directories
-                dirs[:] = [
-                    dir_
-                    for dir_ in dirs
-                    if not glob_match.match(dir_)
-                    and not is_hidden(dir_, options.check_hidden)
-                ]
-
-        elif not glob_match.match(filename):  # skip files
-            bad_count += parse_file(
-                filename,
-                colors,
-                summary,
-                misspellings,
-                ignore_words_cased,
-                exclude_lines,
-                file_opener,
-                word_regex,
-                ignore_word_regex,
-                uri_regex,
-                uri_ignore_words,
-                context,
-                options,
-            )
+    for filename in sorted(all_files):
+        bad_count += parse_file(
+            filename,
+            colors,
+            summary,
+            misspellings,
+            ignore_words_cased,
+            exclude_lines,
+            file_opener,
+            word_regex,
+            ignore_word_regex,
+            uri_regex,
+            uri_ignore_words,
+            context,
+            options,
+        )
 
     if summary:
         print("\n-------8<-------\nSUMMARY:")
