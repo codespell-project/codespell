@@ -845,6 +845,515 @@ def test_case_handling_in_fixes(
     _helper_test_case_handling_in_fixes(tmp_path, capsys, reason=True)
 
 
+def _helper_test_case_handling_in_fix_case(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+    dict_entry: str,
+    bad_input: str,
+    expected_output: str,
+    reason: bool,
+) -> None:
+    dictionary_name = tmp_path / "dictionary.txt"
+    if reason:
+        dictionary_name.write_text(dict_entry + " reason\n")
+    else:
+        dictionary_name.write_text(dict_entry + "\n")
+
+    # the misspelled word is entirely lowercase
+    fname = tmp_path / "bad.txt"
+    fname.write_text(bad_input + "\n")
+    result = cs.main("-D", dictionary_name, fname, std=True)
+    assert isinstance(result, tuple)
+    code, stdout, _ = result
+    assert code == 1
+    # all suggested fixes must be in expected_output
+    assert expected_output in stdout
+    # the reason, if any, must not be modified
+    if reason:
+        assert "reason" in stdout
+
+
+def test_case_handling_in_fix_case(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Test various case handling in fix_case() function."""
+    # Test typical: Both misspelled and multiple suggested words are coded
+    #      as lower case in dictionary.
+    # Verifying: Capitalize is consistent for all suggested words
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "adoptor->adopter, adaptor,",
+        "early adoptor",
+        "adopter, adaptor",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "adoptor->adopter, adaptor,",
+        "Early Adoptor",
+        "Adopter, Adaptor",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "adoptor->adopter, adaptor,",
+        "EARLY ADOPTOR",
+        "ADOPTER, ADAPTOR",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "adoptor->adopter, adaptor,",
+        "EaRlY AdOpToR",
+        "adopter, adaptor",
+        reason=False,
+    )
+    # Verifying: Capitalize is consistent for all suggested words
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "adoptor->adopter, adaptor,",
+        "early adoptor",
+        "adopter, adaptor",
+        reason=True,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "adoptor->adopter, adaptor,",
+        "Early Adoptor",
+        "Adopter, Adaptor",
+        reason=True,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "adoptor->adopter, adaptor,",
+        "EARLY ADOPTOR",
+        "ADOPTER, ADAPTOR",
+        reason=True,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "adoptor->adopter, adaptor,",
+        "EaRlY AdOpToR",
+        "adopter, adaptor",
+        reason=True,
+    )
+    # Test abbreviation, acronym, initialism: Suggested word coded as
+    #      upper case in dictionary.
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "asscii->ASCII",
+        "asscii",
+        "ASCII",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "asscii->ASCII",
+        "Asscii",
+        "ASCII",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "asscii->ASCII",
+        "AssCii",
+        "ASCII",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "asscii->ASCII",
+        "ASSCII",
+        "ASCII",
+        reason=False,
+    )
+    # Test proper nouns: Misspelled coded as lower case in dictionary.
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "austrailia->Australia",
+        "austrailia",
+        "Australia",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "austrailia->Australia",
+        "Austrailia",
+        "Australia",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "austrailia->Australia",
+        "AustRailia",
+        "Australia",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "austrailia->Australia",
+        "AUSTRAILIA",
+        "AUSTRALIA",
+        reason=False,
+    )
+    # Test proper nouns, brand names: Misspelled coded as capitalize
+    #      in dictionary.
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "Micosoft->Microsoft",
+        "micosoft",
+        "Microsoft",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "Micosoft->Microsoft",
+        "Micosoft",
+        "Microsoft",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "Micosoft->Microsoft",
+        "MicoSoft",
+        "Microsoft",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "Micosoft->Microsoft",
+        "MICOSOFT",
+        "MICROSOFT",
+        reason=False,
+    )
+    # Test typical single: Both misspelled and suggested word both coded
+    #      as lower case in dictionary.
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "pinapple->pineapple",
+        "pinapple",
+        "pineapple",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "pinapple->pineapple",
+        "Pinapple",
+        "Pineapple",
+        reason=False,
+    )
+    # Test typical multiple: Both misspelled and multiple suggested words
+    #      both coded as lower case in dictionary.
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "uspported->supported, unsupported,",
+        "uspported",
+        "supported, unsupported",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "uspported->supported, unsupported,",
+        "Uspported",
+        "Supported, Unsupported",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "uspported->supported, unsupported,",
+        "USPPORTED",
+        "SUPPORTED, UNSUPPORTED",
+        reason=False,
+    )
+    # Test typical multiple & mix: Misspelled coded in lower. Multiple
+    #      suggested words coded as lower & capitalize case in dictionary.
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "skipt->skip, Skype, skipped,",
+        "skipt",
+        "skip, Skype, skipped",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "skipt->skip, Skype, skipped,",
+        "Skipt",
+        "Skip, Skype, Skipped",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "skipt->skip, Skype, skipped,",
+        "SKIPT",
+        "SKIP, SKYPE, SKIPPED",
+        reason=False,
+    )
+    # Test CamelCase basic: Suggested word coded as CamelCase in dictionary.
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "lesstiff->LessTif",
+        "lesstiff",
+        "LessTif",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "lesstiff->LessTif",
+        "lessTiff",
+        "LessTif",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "lesstiff->LessTif",
+        "Lesstiff",
+        "LessTif",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "lesstiff->LessTif",
+        "LessTiff",
+        "LessTif",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "lesstiff->LessTif",
+        "LESSTIFF",
+        "LESSTIF",
+        reason=False,
+    )
+    # Test CamelCase brand names: Suggested word coded as CamelCase
+    #      in dictionary.
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mangodb->MongoDB",
+        "mangodb",
+        "MongoDB",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mangodb->MongoDB",
+        "mangoDb",
+        "MongoDB",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mangodb->MongoDB",
+        "mangoDB",
+        "MongoDB",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mangodb->MongoDB",
+        "Mangodb",
+        "MongoDB",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mangodb->MongoDB",
+        "MangoDb",
+        "MongoDB",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mangodb->MongoDB",
+        "MangoDB",
+        "MongoDB",
+        reason=False,
+    )
+    # Test CamelCase brand names: Suggested word coded as CamelCase
+    #      in dictionary.
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "ebya->eBay",
+        "ebya",
+        "eBay",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "ebya->eBay",
+        "eBya",
+        "eBay",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "ebya->eBay",
+        "Ebya",
+        "eBay",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "ebya->eBay",
+        "EBya",
+        "eBay",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "ebya->eBay",
+        "EBYA",
+        "EBAY",
+        reason=False,
+    )
+    # Special Test CamelCase, brand names: Misspelled is correct spelling
+    #      but incorrect case. Suggested word is coded as CamelCase in
+    #      dictionary. For custom dictionary only.
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mariadb->MariaDB",
+        "mariadb",
+        "MariaDB",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mariadb->MariaDB",
+        "mariaDb",
+        "MariaDB",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mariadb->MariaDB",
+        "mariaDB",
+        "MariaDB",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mariadb->MariaDB",
+        "Mariadb",
+        "MariaDB",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mariadb->MariaDB",
+        "MariaDb",
+        "MariaDB",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mariadb->MariaDB",
+        "MariaDB",
+        "MariaDB",
+        reason=False,
+    )
+    # Special Test CamelCase, brand names: Misspelled is correct spelling
+    #      but incorrect case. Multiple suggested words are coded as CamelCase
+    #      and lower case in dictionary. For custom dictionary only.
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mysql->MySQL, mysql,",
+        "mysql",
+        "MySQL, mysql",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mysql->MySQL, mysql,",
+        "mySql",
+        "MySQL, mysql",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mysql->MySQL, mysql,",
+        "mySQL",
+        "MySQL, mysql",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mysql->MySQL, mysql,",
+        "Mysql",
+        "MySQL, mysql",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mysql->MySQL, mysql,",
+        "MySql",
+        "MySQL, mysql",
+        reason=False,
+    )
+    _helper_test_case_handling_in_fix_case(
+        tmp_path,
+        capsys,
+        "mysql->MySQL, mysql,",
+        "MySQL",
+        "MySQL, mysql",
+        reason=False,
+    )
+
+
 def test_context(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
