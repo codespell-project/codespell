@@ -143,7 +143,6 @@ ignore = [
     "S404",
     "SIM105",
     "SIM115",
-    "UP038",   # https://github.com/astral-sh/ruff/issues/7871
     # https://docs.astral.sh/ruff/formatter/#conflicting-lint-rules
     "W191",
     "E111",
