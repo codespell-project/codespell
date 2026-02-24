@@ -53,7 +53,7 @@ jobs:
         shell: bash -e {0}
         run: |
           python --version  # just to check
-          python -m pip install --upgrade pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
+          python -m pip install --upgrade pip wheel
           pip install --upgrade setuptools docutils setuptools_scm[toml] twine
           pip install -e . --group dev # install the codespell dev packages
       - run: pip install aspell-python-py3
@@ -85,7 +85,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Install general dependencies
-        run: pip install --upgrade pip wheel # upgrade to latest pip find 3.5 wheels; wheel to avoid errors
+        run: pip install --upgrade pip wheel
       - name: Install codespell dependencies
         run: pip install -e . --group dev
       - uses: codespell-project/sort-problem-matcher@v1
