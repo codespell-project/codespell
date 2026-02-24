@@ -89,4 +89,4 @@ repos:
           - types-chardet
 
 ci:
-  autoupdate_schedule: monthly
+  autoupdate_schedule: weekly
