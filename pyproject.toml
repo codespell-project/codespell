@@ -30,6 +30,14 @@ dependencies = []
 dynamic = ["version"]
 
 [project.optional-dependencies]
+hard-encoding-detection = [
+    "chardet"
+]
+toml = [
+    "tomli; python_version < '3.11'"
+]
+
+[dependency-groups]
 dev = [
     "build",
     "chardet",
@@ -41,12 +49,6 @@ dev = [
     "ruff",
     "tomli",
     "twine"
-]
-hard-encoding-detection = [
-    "chardet"
-]
-toml = [
-    "tomli; python_version < '3.11'"
 ]
 types = [
     "chardet>=5.1.0",

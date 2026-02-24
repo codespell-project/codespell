@@ -25,7 +25,7 @@ check-dictionaries: sort-dictionaries
 	@if command -v pytest > /dev/null; then \
 		pytest codespell_lib/tests/test_dictionary.py; \
 	else \
-		echo "Test dependencies not present, install using 'pip install -e \".[dev]\"'"; \
+		echo "Test dependencies not present, install using 'pip install -e . --group dev'"; \
 		exit 1; \
 	fi
 
@@ -50,7 +50,7 @@ pytest: sort-dictionaries
 	@if command -v pytest > /dev/null; then \
 		pytest codespell_lib; \
 	else \
-		echo "Test dependencies not present, install using 'pip install -e \".[dev]\"'"; \
+		echo "Test dependencies not present, install using 'pip install -e . --group dev'"; \
 		exit 1; \
 	fi
 

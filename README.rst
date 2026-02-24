@@ -306,7 +306,7 @@ You can install required dependencies for development by running the following w
 
 .. code-block:: sh
 
-       pip install -e ".[dev]"
+       pip install -e . --group dev
 
 To run tests against the codebase run:
 
