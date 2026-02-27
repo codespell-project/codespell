@@ -525,6 +525,7 @@ def test_exclude_file(
     bad_name.write_bytes(
         (combinations + "5 abandonned 5\n6 abandonned 6").encode("utf-8")
     )
+
     assert cs.main(bad_name) == 18
     fname = tmp_path / "tmp.txt"
     fname.write_bytes(
@@ -543,6 +544,77 @@ def test_exclude_file(
     fname_dummy2.touch()
     assert cs.main("-x", fname_dummy1, "-x", fname, "-x", fname_dummy2, bad_name) == 1
     assert cs.main("-x", f"{fname_dummy1},{fname},{fname_dummy2}", bad_name) == 1
+
+
+def run_git(path: Path, *args: Union[Path, str]) -> None:
+    subprocess.run(  # noqa: S603
+        ["git", "-C", path, *list(args)],  # noqa: S607
+        capture_output=False,
+        check=True,
+        text=True,
+    )
+
+
+def test_git_only_exclude_file(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str], monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.chdir(tmp_path)
+    """Test exclude file functionality."""
+    bad_name = tmp_path / "bad.txt"
+    # check all possible combinations of lines to ignore and ignores
+    combinations = "".join(
+        f"{n} abandonned {n}\n"
+        f"{n} abandonned {n}\r\n"
+        f"{n} abandonned {n} \n"
+        f"{n} abandonned {n} \r\n"
+        for n in range(1, 5)
+    )
+    bad_name.write_bytes(
+        (combinations + "5 abandonned 5\n6 abandonned 6").encode("utf-8")
+    )
+
+    run_git(tmp_path, "init")
+    run_git(tmp_path, "add", bad_name)
+
+    assert cs.main(bad_name) == 18
+    fname = tmp_path / "tmp.txt"
+    fname.write_bytes(
+        b"1 abandonned 1\n"
+        b"2 abandonned 2\r\n"
+        b"3 abandonned 3 \n"
+        b"4 abandonned 4 \r\n"
+        b"6 abandonned 6\n"
+    )
+
+    # Not adding fname to git to exclude it
+
+    # Should have 23 total errors (bad_name + fname)
+    assert cs.main(tmp_path) == 23
+
+    # Before adding to git, should not report on fname, only 18 error in bad.txt
+    assert cs.main("--git-only", tmp_path) == 18
+    run_git(tmp_path, "add", fname)
+    assert cs.main(tmp_path) == 23
+    # After adding to git, should report on fname
+    assert cs.main("--git-only", tmp_path) == 23
+    # After adding to git, should not report on excluded file
+    assert cs.main("--git-only", "-x", fname, tmp_path) == 1
+    # comma-separated list of files
+    fname_dummy1 = tmp_path / "dummy1.txt"
+    fname_dummy1.touch()
+    fname_dummy2 = tmp_path / "dummy2.txt"
+    fname_dummy2.touch()
+    run_git(tmp_path, "add", fname_dummy1, fname_dummy2)
+    assert (
+        cs.main(
+            "--git-only", "-x", fname_dummy1, "-x", fname, "-x", fname_dummy2, bad_name
+        )
+        == 1
+    )
+    assert (
+        cs.main("--git-only", "-x", f"{fname_dummy1},{fname},{fname_dummy2}", bad_name)
+        == 1
+    )
 
 
 def test_encoding(
@@ -660,6 +732,108 @@ def test_check_filename_irregular_file(
     # Irregular file (!isfile())
     os.mkfifo(tmp_path / "abandonned")
     assert cs.main("-f", tmp_path) == 1
+
+
+def test_check_hidden_git(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Test ignoring of hidden files."""
+    monkeypatch.chdir(tmp_path)
+    run_git(tmp_path, "init")
+    # visible file
+    #
+    #         tmp_path
+    #         └── test.txt
+    #
+    fname = tmp_path / "test.txt"
+    fname.write_text("erorr\n")
+    run_git(tmp_path, "add", ".")
+    assert cs.main("--git-only", fname) == 1
+    assert cs.main("--git-only", tmp_path) == 1
+
+    # hidden file
+    #
+    #         tmp_path
+    #         └── .test.txt
+    #
+    hidden_file = tmp_path / ".test.txt"
+    fname.rename(hidden_file)
+    run_git(tmp_path, "add", ".")
+    assert cs.main("--git-only", hidden_file) == 0
+    assert cs.main("--git-only", tmp_path) == 0
+    assert cs.main("--git-only", "--check-hidden", hidden_file) == 1
+    assert cs.main("--git-only", "--check-hidden", tmp_path) == 1
+
+    # hidden file with typo in name
+    #
+    #         tmp_path
+    #         └── .abandonned.txt
+    #
+    typo_file = tmp_path / ".abandonned.txt"
+    hidden_file.rename(typo_file)
+    run_git(tmp_path, "add", ".")
+    assert cs.main("--git-only", typo_file) == 0
+    assert cs.main("--git-only", tmp_path) == 0
+    assert cs.main("--git-only", "--check-hidden", typo_file) == 1
+    assert cs.main("--git-only", "--check-hidden", tmp_path) == 1
+    assert cs.main("--git-only", "--check-hidden", "--check-filenames", typo_file) == 2
+    assert cs.main("--git-only", "--check-hidden", "--check-filenames", tmp_path) == 2
+
+    # hidden directory
+    #
+    #         tmp_path
+    #         ├── .abandonned
+    #         │   ├── .abandonned.txt
+    #         │   └── subdir
+    #         │       └── .abandonned.txt
+    #         └── .abandonned.txt
+    #
+    assert cs.main("--git-only", tmp_path) == 0
+    assert cs.main("--git-only", "--check-hidden", tmp_path) == 1
+    assert cs.main("--git-only", "--check-hidden", "--check-filenames", tmp_path) == 2
+    hidden = tmp_path / ".abandonned"
+    hidden.mkdir()
+    copyfile(typo_file, hidden / typo_file.name)
+    subdir = hidden / "subdir"
+    subdir.mkdir()
+    copyfile(typo_file, subdir / typo_file.name)
+    run_git(tmp_path, "add", ".")
+    assert cs.main("--git-only", tmp_path) == 0
+    assert cs.main("--git-only", "--check-hidden", tmp_path) == 3
+    assert cs.main("--git-only", "--check-hidden", "--check-filenames", tmp_path) == 8
+    # check again with a relative path
+    try:
+        rel = op.relpath(tmp_path)
+    except ValueError:
+        # Windows: path is on mount 'C:', start on mount 'D:'
+        pass
+    else:
+        assert cs.main("--git-only", rel) == 0
+        assert cs.main("--git-only", "--check-hidden", rel) == 3
+        assert cs.main("--git-only", "--check-hidden", "--check-filenames", rel) == 8
+
+    # hidden subdirectory
+    #
+    #         tmp_path
+    #         ├── .abandonned
+    #         │   ├── .abandonned.txt
+    #         │   └── subdir
+    #         │       └── .abandonned.txt
+    #         ├── .abandonned.txt
+    #         └── subdir
+    #             └── .abandonned
+    #                 └── .abandonned.txt
+    subdir = tmp_path / "subdir"
+    subdir.mkdir()
+    hidden = subdir / ".abandonned"
+    hidden.mkdir()
+    copyfile(typo_file, hidden / typo_file.name)
+    run_git(tmp_path, "add", ".")
+    assert cs.main("--git-only", tmp_path) == 0
+    assert cs.main("--git-only", "--check-hidden", tmp_path) == 4
+    assert cs.main("--git-only", "--check-hidden", "--check-filenames", tmp_path) == 11
 
 
 def test_check_hidden(
