@@ -223,7 +223,7 @@ class FileOpener:
 
     def init_chardet(self) -> None:
         try:
-            from chardet.universaldetector import UniversalDetector
+            import chardet
         except ImportError as e:
             msg = (
                 "There's no chardet installed to import from. "
@@ -231,6 +231,10 @@ class FileOpener:
                 "environment variable"
             )
             raise ImportError(msg) from e
+        try:
+            from chardet import UniversalDetector
+        except ImportError:  # chardet < 7
+            from chardet.universaldetector import UniversalDetector
 
         self.encdetector = UniversalDetector()
 
