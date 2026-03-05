@@ -32,6 +32,9 @@ jobs:
           - "ubuntu-24.04-arm"
         include:
           - python-version: "3.10"
+            kind: "old"
+            os: "ubuntu-24.04-arm"
+          - python-version: "3.10"
             kind: "no-toml"
             os: "ubuntu-24.04-arm"
           - python-version: "3.13"
@@ -70,6 +73,8 @@ jobs:
       # tomli should not be required for the next two steps (and make sure it's not)
       - run: pip uninstall -yq tomli
         if: ${{ matrix.kind == 'no-toml' }}
+      - run: pip install "chardet<7"
+        if: ${{ matrix.kind == 'old' }}
       - run: codespell --check-filenames --skip="./.*,./build/*,./codespell_lib/data/*,./codespell_lib/tests/test_basic.py,./example/code.c,./junit-results.xml,*.egg-info/*,*.pyc,*.sig,pyproject-codespell.precommit-toml,README.rst,"
       # this file has an error
       - run: "! codespell codespell_lib/tests/test_basic.py"
