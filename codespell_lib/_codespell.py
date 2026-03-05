@@ -223,14 +223,14 @@ class FileOpener:
 
     def init_chardet(self) -> None:
         try:
-            import chardet
-        except ImportError as e:
+            import chardet  # noqa: F401
+        except ImportError:
             msg = (
                 "There's no chardet installed to import from. "
                 "Please, install it and check your PYTHONPATH "
                 "environment variable"
             )
-            raise ImportError(msg) from e
+            raise ImportError(msg)
         try:
             from chardet import UniversalDetector
         except ImportError:  # chardet < 7
