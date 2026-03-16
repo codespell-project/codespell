@@ -24,6 +24,7 @@ import itertools
 import os
 import re
 import shlex
+import subprocess
 import sys
 import textwrap
 from collections.abc import Iterable, Sequence
@@ -556,6 +557,15 @@ def parse_options(
         "accepts globs as well. E.g.: if you want "
         "codespell to skip .eps and .txt files, "
         'you\'d give "*.eps,*.txt" to this option.',
+    )
+
+    parser.add_argument(
+        "--use-git-ignore",
+        action="store_true",
+        default=False,
+        dest="use_git_ignore",
+        help="respect .gitignore by using 'git ls-files' to identify files to check. "
+        "Only files tracked by git will be checked.",
     )
 
     parser.add_argument(
@@ -1228,6 +1238,56 @@ def flatten_clean_comma_separated_arguments(
     ]
 
 
+def get_git_tracked_files(paths: list[str]) -> list[str]:
+    """Get list of files tracked by git using git ls-files."""
+    try:
+        # If no paths specified, use current directory
+        if not paths:
+            paths = ["."]
+
+        all_files = []
+        for path in paths:
+            # If path is a directory, run git ls-files from within it
+            if os.path.isdir(path):
+                result = subprocess.run(
+                    ["git", "ls-files"],
+                    capture_output=True,
+                    text=True,
+                    check=True,
+                    cwd=path,
+                )
+                # Prepend the path to each file
+                files = [
+                    os.path.join(path, f)
+                    for f in result.stdout.strip().split("\n")
+                    if f
+                ]
+                all_files.extend(files)
+            else:
+                # For specific files, check if they're tracked
+                # Get the directory and filename
+                dirname = os.path.dirname(path) or "."
+                basename = os.path.basename(path)
+                result = subprocess.run(
+                    ["git", "ls-files", "--", basename],
+                    capture_output=True,
+                    text=True,
+                    check=True,
+                    cwd=dirname,
+                )
+                files = result.stdout.strip().split("\n")
+                if files and files[0]:
+                    all_files.append(path)
+    except (subprocess.CalledProcessError, FileNotFoundError) as e:
+        print(
+            f"ERROR: Failed to run 'git ls-files': {e}",
+            file=sys.stderr,
+        )
+        return []
+    else:
+        return all_files
+
+
 def _script_main() -> int:
     """Wrap to main() for setuptools."""
     try:
@@ -1411,52 +1471,21 @@ def main(*args: str) -> int:
         )
 
     bad_count = 0
-    for filename in sorted(options.files):
-        # ignore hidden files
-        if is_hidden(filename, options.check_hidden):
-            continue
 
-        if os.path.isdir(filename):
-            for root, dirs, files in os.walk(filename):
-                if glob_match.match(root):  # skip (absolute) directories
-                    dirs.clear()
-                    continue
-                if is_hidden(root, options.check_hidden):  # dir itself hidden
-                    continue
-                for file_ in sorted(files):
-                    # ignore hidden files in directories
-                    if is_hidden(file_, options.check_hidden):
-                        continue
-                    if glob_match.match(file_):  # skip files
-                        continue
-                    fname = os.path.join(root, file_)
-                    if glob_match.match(fname):  # skip paths
-                        continue
-                    bad_count += parse_file(
-                        fname,
-                        colors,
-                        summary,
-                        misspellings,
-                        ignore_words_cased,
-                        exclude_lines,
-                        file_opener,
-                        word_regex,
-                        ignore_word_regex,
-                        uri_regex,
-                        uri_ignore_words,
-                        context,
-                        options,
-                    )
+    # Use git ls-files if requested
+    if options.use_git_ignore:
+        git_files = get_git_tracked_files(options.files)
+        if not git_files:
+            return EX_OK
 
-                # skip (relative) directories
-                dirs[:] = [
-                    dir_
-                    for dir_ in dirs
-                    if not glob_match.match(dir_)
-                    and not is_hidden(dir_, options.check_hidden)
-                ]
+        for filename in git_files:
+            # Apply skip patterns
+            if glob_match.match(filename):
+                continue
+            # Check if file should be processed (hidden file check)
+            if is_hidden(filename, options.check_hidden):
+                continue
 
-        elif not glob_match.match(filename):  # skip files
             bad_count += parse_file(
                 filename,
                 colors,
@@ -1472,6 +1501,69 @@ def main(*args: str) -> int:
                 context,
                 options,
             )
+    else:
+        # Original directory walking behavior
+        for filename in sorted(options.files):
+            # ignore hidden files
+            if is_hidden(filename, options.check_hidden):
+                continue
+
+            if os.path.isdir(filename):
+                for root, dirs, files in os.walk(filename):
+                    if glob_match.match(root):  # skip (absolute) directories
+                        dirs.clear()
+                        continue
+                    if is_hidden(root, options.check_hidden):  # dir itself hidden
+                        continue
+                    for file_ in sorted(files):
+                        # ignore hidden files in directories
+                        if is_hidden(file_, options.check_hidden):
+                            continue
+                        if glob_match.match(file_):  # skip files
+                            continue
+                        fname = os.path.join(root, file_)
+                        if glob_match.match(fname):  # skip paths
+                            continue
+                        bad_count += parse_file(
+                            fname,
+                            colors,
+                            summary,
+                            misspellings,
+                            ignore_words_cased,
+                            exclude_lines,
+                            file_opener,
+                            word_regex,
+                            ignore_word_regex,
+                            uri_regex,
+                            uri_ignore_words,
+                            context,
+                            options,
+                        )
+
+                    # skip (relative) directories
+                    dirs[:] = [
+                        dir_
+                        for dir_ in dirs
+                        if not glob_match.match(dir_)
+                        and not is_hidden(dir_, options.check_hidden)
+                    ]
+
+            elif not glob_match.match(filename):  # skip files
+                bad_count += parse_file(
+                    filename,
+                    colors,
+                    summary,
+                    misspellings,
+                    ignore_words_cased,
+                    exclude_lines,
+                    file_opener,
+                    word_regex,
+                    ignore_word_regex,
+                    uri_regex,
+                    uri_ignore_words,
+                    context,
+                    options,
+                )
 
     if summary:
         print("\n-------8<-------\nSUMMARY:")
