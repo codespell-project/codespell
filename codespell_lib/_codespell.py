@@ -232,9 +232,11 @@ class FileOpener:
             )
             raise ImportError(msg)
         try:
-            from chardet import UniversalDetector
+            from chardet import UniversalDetector  # type: ignore[import-untyped]
         except ImportError:  # chardet < 7
-            from chardet.universaldetector import UniversalDetector
+            from chardet.universaldetector import (
+                UniversalDetector,  # type: ignore[import-untyped]
+            )
 
         self.encdetector = UniversalDetector()
 
