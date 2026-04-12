@@ -69,7 +69,7 @@ jobs:
         if: startsWith(matrix.os, 'ubuntu')
       - run: pytest codespell_lib
         if: startsWith(matrix.os, 'windows')
-      - uses: codecov/codecov-action@v5
+      - uses: codecov/codecov-action@v6
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
       # tomli should not be required for the next two steps (and make sure it's not)
