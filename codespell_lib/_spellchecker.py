@@ -54,6 +54,9 @@ def build_dict(
     with open(filename, encoding="utf-8") as f:
         translate_tables = [(x, str.maketrans(x, y)) for x, y in alt_chars]
         for line in f:
+            line = line.strip()
+            if not line or line.startswith("#") or "->" not in line:
+                continue
             [key, data] = line.split("->")
             # TODO: For now, convert both to lower.
             #       Someday we can maybe add support for fixing caps.
