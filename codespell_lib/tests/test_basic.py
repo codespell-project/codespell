@@ -1524,3 +1524,35 @@ def test_args_from_file(
     print("Testing with direct call to cs_.main()")
     r = cs_.main(*args[1:])
     print(f"{r=}")
+
+
+def test_dict_comments(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Test dictionary comments and blank lines."""
+    fname = tmp_path / "bad.txt"
+    fname.write_text("abandonned\noccured\n")
+
+    dictionary = tmp_path / "test.txt"
+    dictionary.write_text(
+        "#comment\n"
+        "# comment\n"
+        " #comment\n"
+        "\n"
+        "\r\n"
+        "abandonned->abandoned # inline comment\n"
+        "occured->occurred# invalid inline comment\n"
+        "abil#ity->ability # hash in illegal position\n",
+        encoding="utf-8",
+    )
+
+    # Allow valid inline comments.
+    # Skip entries where '#' is not preceded by whitespace.
+    result = cs.main("-D", dictionary, fname, std=True)
+    assert isinstance(result, tuple)
+    code, stdout, stderr = result
+    assert code == 1
+    assert "abandonned ==> abandoned" in stdout
+    assert "occured ==> occurred" not in stdout
+    assert "missing spaces before #" in stderr

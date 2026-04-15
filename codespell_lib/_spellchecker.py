@@ -15,6 +15,7 @@
 Copyright (C) 2010-2011  Lucas De Marchi <lucas.de.marchi@gmail.com>
 Copyright (C) 2011  ProFUSION embedded systems
 """
+import sys
 
 # Pass all misspellings through this translation table to generate
 # alternative misspellings and fixes.
@@ -54,10 +55,21 @@ def build_dict(
     with open(filename, encoding="utf-8") as f:
         translate_tables = [(x, str.maketrans(x, y)) for x, y in alt_chars]
         for line in f:
-            line = line.strip()
-            if not line or line.startswith("#") or "->" not in line:
+            left, pound, _ = line.partition("#")
+            if pound and left and left[-1] not in (' ', '\t'):
+                print(
+                    f"WARNING: {filename}: missing spaces before #: {line.rstrip()!r}",
+                    file=sys.stderr,
+                )
                 continue
-            [key, data] = line.split("->")
+
+            line = left.strip()
+            if not line:
+                continue
+            try:
+                [key, data] = line.split("->")
+            except ValueError:
+                continue
             # TODO: For now, convert both to lower.
             #       Someday we can maybe add support for fixing caps.
             key = key.lower()
