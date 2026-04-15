@@ -16,8 +16,6 @@ Copyright (C) 2010-2011  Lucas De Marchi <lucas.de.marchi@gmail.com>
 Copyright (C) 2011  ProFUSION embedded systems
 """
 
-import sys
-
 # Pass all misspellings through this translation table to generate
 # alternative misspellings and fixes.
 alt_chars = (("'", "’"),)  # noqa: RUF001
@@ -58,10 +56,7 @@ def build_dict(
         for line in f:
             left, pound, _ = line.partition("#")
             if pound and left and left[-1] not in (" ", "\t"):
-                print(
-                    f"WARNING: {filename}: missing spaces before #: {line.rstrip()!r}",
-                    file=sys.stderr,
-                )
+                print(f"WARNING: {filename}: missing spaces before #: {line.rstrip()!r}")
                 continue
 
             line = left.strip()
