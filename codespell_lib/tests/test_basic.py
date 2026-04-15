@@ -1551,8 +1551,8 @@ def test_dict_comments(
     # Skip entries where '#' is not preceded by whitespace.
     result = cs.main("-D", dictionary, fname, std=True)
     assert isinstance(result, tuple)
-    code, stdout, stderr = result
+    code, stdout, _ = result
     assert code == 1
     assert "abandonned ==> abandoned" in stdout
     assert "occured ==> occurred" not in stdout
-    assert "missing spaces before #" in stderr
+    assert "missing spaces before #" in stdout
