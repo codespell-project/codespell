@@ -63,7 +63,7 @@ def build_dict(
             if not line:
                 continue
             try:
-                [key, data] = line.split("->")
+                key, data = line.split("->")
             except ValueError:
                 continue
             # TODO: For now, convert both to lower.
