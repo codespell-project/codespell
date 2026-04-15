@@ -15,6 +15,7 @@
 Copyright (C) 2010-2011  Lucas De Marchi <lucas.de.marchi@gmail.com>
 Copyright (C) 2011  ProFUSION embedded systems
 """
+
 import sys
 
 # Pass all misspellings through this translation table to generate
@@ -56,7 +57,7 @@ def build_dict(
         translate_tables = [(x, str.maketrans(x, y)) for x, y in alt_chars]
         for line in f:
             left, pound, _ = line.partition("#")
-            if pound and left and left[-1] not in (' ', '\t'):
+            if pound and left and left[-1] not in (" ", "\t"):
                 print(
                     f"WARNING: {filename}: missing spaces before #: {line.rstrip()!r}",
                     file=sys.stderr,
