@@ -293,6 +293,34 @@ applied directly, but should instead be manually inspected. E.g.:
 
        clas->class, clash, disabled because of name clash in c++
 
+Comments in dictionaries
+----------------------------
+
+Dictionary files may contain comments.
+
+1. Pure comment::
+
+       # comment
+        #comment
+
+2. Inline comment must be preceded by whitespace::
+
+       abondon->abandon #comment
+       abondon->abandon # comment
+
+   The ``#`` character is treated as the start of the comment only if it is
+   preceded by whitespace.
+
+3. Invalid comment examples::
+
+       abondon->abandon#comment
+       thenumberone->the#one
+       the#one->thenumberone
+
+   In such cases, the whole line is considered malformed and will be ignored.
+
+4. Blank lines are also ignored.
+
 Development setup
 -----------------
 
