@@ -1555,4 +1555,3 @@ def test_dict_comments(
     assert code == 1
     assert "abandonned ==> abandoned" in stdout
     assert "occured ==> occurred" not in stdout
-    assert "missing spaces before #" in stdout

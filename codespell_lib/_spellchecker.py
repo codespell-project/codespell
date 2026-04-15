@@ -56,9 +56,6 @@ def build_dict(
         for line in f:
             left, pound, _ = line.partition("#")
             if pound and left and left[-1] not in (" ", "\t"):
-                print(
-                    f"WARNING: {filename}: missing spaces before #: {line.rstrip()!r}"
-                )
                 continue
 
             line = left.strip()
