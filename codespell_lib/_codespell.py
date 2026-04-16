@@ -459,6 +459,7 @@ def parse_options(
         metavar="BUILTIN-LIST",
         help="comma-separated list of builtin dictionaries "
         'to include (when "-D -" or no "-D" is passed). '
+        "Use 'all' to include every builtin dictionary. "
         "Current options are:" + builtin_opts + "\n"
         "The default is %(default)r.",
     )
@@ -1339,6 +1340,11 @@ def main(*args: str) -> int:
         if dictionary == "-":
             # figure out which builtin dictionaries to use
             use = sorted(set(options.builtin.split(",")))
+            if "all" in use:
+                use = [u for u in use if u != "all"] + [
+                    builtin[0] for builtin in _builtin_dictionaries
+                ]
+                use = sorted(set(use))
             for u in use:
                 for builtin in _builtin_dictionaries:
                     if builtin[0] == u:

@@ -114,7 +114,9 @@ Want to know if a word you're proposing exists in codespell already? It is possi
     echo "word" | codespell -
     echo "1stword,2ndword" | codespell -
 
-You can select the optional dictionaries with the ``--builtin`` option.
+You can select the optional builtin dictionary with the ``--builtin`` option. Use
+``--builtin=all`` to enable them all. This only works without custom ``-D``
+dictionaries.
 
 Ignoring words
 --------------

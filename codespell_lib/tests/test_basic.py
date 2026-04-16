@@ -16,6 +16,7 @@ import pytest
 
 import codespell_lib as cs_
 from codespell_lib._codespell import (
+    _builtin_dictionaries,
     EX_CONFIG,
     EX_DATAERR,
     EX_OK,
@@ -116,6 +117,11 @@ def test_basic(
         f.write("tim\ngonna\n")
     assert cs.main(fname) == 2, "with a name"
     assert cs.main("--builtin", "clear,rare,names,informal", fname) == 4
+    assert cs.main("--builtin", "all", fname) == cs.main(
+        "--builtin",
+        ",".join(d[0] for d in _builtin_dictionaries),
+        fname,
+    )
     with fname.open("w") as f:  # overwrite the file
         f.write("var = 'nwe must check codespell likes escapes nin strings'\n")
     assert cs.main(fname) == 1, "checking our string escape test word is bad"
