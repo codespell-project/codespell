@@ -1543,7 +1543,9 @@ def test_dict_comments(
         "\r\n"
         "abandonned->abandoned # inline comment\n"
         "occured->occurred# invalid inline comment\n"
-        "abil#ity->ability # hash in illegal position\n",
+        "abil#ity->ability # hash in illegal position\n"
+        "ability->#ability # hash in illegal position\n"
+        "abilityability # no arrow\n",
         encoding="utf-8",
     )
 
