@@ -16,11 +16,11 @@ import pytest
 
 import codespell_lib as cs_
 from codespell_lib._codespell import (
-    _builtin_dictionaries,
     EX_CONFIG,
     EX_DATAERR,
     EX_OK,
     EX_USAGE,
+    _builtin_dictionaries,
     uri_regex_def,
 )
 

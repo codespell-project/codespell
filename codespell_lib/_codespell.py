@@ -1245,6 +1245,27 @@ def _usage_error(parser: argparse.ArgumentParser, message: str) -> int:
     return EX_USAGE
 
 
+def _select_builtin_dictionary(builtin_option: str) -> list[str]:
+    use = sorted(set(builtin_option.split(",")))
+    if "all" in use:
+        use = [u for u in use if u != "all"] + [
+            builtin[0] for builtin in _builtin_dictionaries
+        ]
+        use = sorted(set(use))
+
+    use_dictionaries = []
+    for u in use:
+        for builtin in _builtin_dictionaries:
+            if builtin[0] == u:
+                use_dictionaries.append(
+                    os.path.join(_data_root, f"dictionary{builtin[2]}.txt")
+                )
+                break
+        else:
+            raise KeyError(u)
+    return use_dictionaries
+
+
 def main(*args: str) -> int:
     """Contains flow control"""
     try:
@@ -1338,25 +1359,13 @@ def main(*args: str) -> int:
     use_dictionaries = []
     for dictionary in dictionaries:
         if dictionary == "-":
-            # figure out which builtin dictionaries to use
-            use = sorted(set(options.builtin.split(",")))
-            if "all" in use:
-                use = [u for u in use if u != "all"] + [
-                    builtin[0] for builtin in _builtin_dictionaries
-                ]
-                use = sorted(set(use))
-            for u in use:
-                for builtin in _builtin_dictionaries:
-                    if builtin[0] == u:
-                        use_dictionaries.append(
-                            os.path.join(_data_root, f"dictionary{builtin[2]}.txt")
-                        )
-                        break
-                else:
-                    return _usage_error(
-                        parser,
-                        f"ERROR: Unknown builtin dictionary: {u}",
-                    )
+            try:
+                use_dictionaries.extend(_select_builtin_dictionary(options.builtin))
+            except KeyError as e:
+                return _usage_error(
+                    parser,
+                    f"ERROR: Unknown builtin dictionary: {e.args[0]}",
+                )
         else:
             if not os.path.isfile(dictionary):
                 return _usage_error(
