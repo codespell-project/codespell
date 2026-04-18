@@ -2086,6 +2086,7 @@ adheasives->adhesives
 adheisve->adhesive
 adherance->adherence
 adherin->adhering, cadherin,
+adhesize->adhesive
 adhevise->adhesive
 adiacent->adjacent
 adiditon->addition
@@ -2805,6 +2806,7 @@ aggresively->aggressively
 aggressivley->aggressively
 aggressivly->aggressively
 aggressivo->aggressive, aggression,
+aggressize->aggressive
 aggresssion->aggression
 aggrevate->aggravate
 aggrevated->aggravated
@@ -14942,6 +14944,7 @@ comppliance->compliance
 comprable->comparable
 compre->compare, compère,
 compredded->compressed
+comprehensize->comprehensive
 compres->compress, compares,
 compresed->compressed
 compreser->compressor
@@ -26105,6 +26108,7 @@ exces->excess
 excesed->exceeded
 excesive->excessive
 excesively->excessively
+excessize->excessive
 excesss->excess
 excesv->excessive
 excesvly->excessively
@@ -26247,6 +26251,7 @@ exclusiv->exclusive
 exclusivelly->exclusively
 exclusivly->exclusively
 exclusivs->exclusives
+exclusize->exclusive
 excluslvely->exclusively
 exclusuive->exclusive
 exclusuively->exclusively
@@ -26794,6 +26799,7 @@ expanion->expansion
 expanions->expansions
 expanshion->expansion
 expanshions->expansions
+expansize->expansive
 expanssion->expansion
 exparation->expiration
 expasion->expansion
@@ -26909,6 +26915,7 @@ expencive->expensive
 expendeble->expendable
 expension->expansion, extension,
 expensions->expansions, extensions,
+expensize->expensive
 expepect->expect
 expepected->expected
 expepectedly->expectedly
@@ -27720,6 +27727,7 @@ extensinos->extensions
 extensiones->extensions
 extensiv->extensive
 extensivly->extensively
+extensize->extensive
 extenson->extension
 extensons->extensions
 extenstion->extension
@@ -32262,6 +32270,7 @@ impres->impress
 impresive->impressive
 impressario->impresario
 impressin->impressing, impress in, impression,
+impressize->impressive
 impreve->improve
 impreved->improved
 imprevement->improvement
@@ -32475,6 +32484,7 @@ incluing->including
 inclused->included
 inclusing->including
 inclusinve->inclusive
+inclusize->inclusive
 inclution->inclusion
 inclutions->inclusions
 incmrement->increment
@@ -49136,6 +49146,7 @@ recursivelly->recursively
 recursivion->recursion
 recursivley->recursively
 recursivly->recursively
+recursize->recursive
 recursse->recurse, recurses,
 recurssed->recursed
 recursses->recurses
@@ -51435,6 +51446,7 @@ responsibity->responsibility
 responsiblities->responsibilities
 responsiblity->responsibility
 responsing->responding
+responsize->responsive
 respose->response
 resposes->responses
 resposibilities->responsibilities
@@ -57312,6 +57324,7 @@ successfullness->successfulness
 successfullt->successfully
 successfuly->successfully
 successing->successive, succeeding,
+successize->successive
 successs->success
 successses->successes
 successsful->successful
@@ -62111,6 +62124,7 @@ unresolvabvle->unresolvable
 unresonable->unreasonable
 unresovlable->unresolvable
 unresovled->unresolved
+unresponsize->unresponsive
 unresposive->unresponsive
 unrestrcited->unrestricted
 unrgesiter->unregister
