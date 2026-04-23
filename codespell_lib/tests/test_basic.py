@@ -71,8 +71,8 @@ def run_codespell(
 ) -> int:
     """Run codespell."""
     args = tuple(str(arg) for arg in args)
-    proc = subprocess.run(  # noqa: S603
-        ["codespell", "--count", *args],  # noqa: S607
+    proc = subprocess.run(
+        ["codespell", "--count", *args],
         cwd=cwd,
         capture_output=True,
         encoding="utf-8",
@@ -1441,8 +1441,8 @@ def run_codespell_stdin(
     cwd: Optional[Path] = None,
 ) -> int:
     """Run codespell in stdin mode and return number of lines in output."""
-    proc = subprocess.run(  # noqa: S603
-        ["codespell", *args, "-"],  # noqa: S607
+    proc = subprocess.run(
+        ["codespell", *args, "-"],
         cwd=cwd,
         input=text,
         capture_output=True,
@@ -1503,7 +1503,7 @@ def test_args_from_file(
     print(f"{fname_list=}")
     args = ["codespell", f"@{fname_list}"]
     print(f"Running: {args=}")
-    cp = subprocess.run(  # noqa: S603
+    cp = subprocess.run(
         args,
         check=False,
         text=True,
@@ -1524,3 +1524,75 @@ def test_args_from_file(
     print("Testing with direct call to cs_.main()")
     r = cs_.main(*args[1:])
     print(f"{r=}")
+
+
+def test_use_git_ignore(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Test --use-git-ignore option respects .gitignore."""
+    # Initialize a git repo
+    subprocess.run(["git", "init"], cwd=tmp_path, check=True, capture_output=True)
+    subprocess.run(
+        ["git", "config", "user.email", "test@test.com"],
+        cwd=tmp_path,
+        check=True,
+        capture_output=True,
+    )
+    subprocess.run(
+        ["git", "config", "user.name", "Test User"],
+        cwd=tmp_path,
+        check=True,
+        capture_output=True,
+    )
+    # Disable hooks to avoid any pre-commit issues
+    subprocess.run(
+        ["git", "config", "core.hooksPath", "/dev/null"],
+        cwd=tmp_path,
+        check=True,
+        capture_output=True,
+    )
+
+    # Create files
+    tracked_file = tmp_path / "tracked.txt"
+    ignored_file = tmp_path / "ignored.txt"
+    gitignore = tmp_path / ".gitignore"
+
+    tracked_file.write_text("abandonned\n")
+    ignored_file.write_text("abandonned\n")
+    gitignore.write_text("ignored.txt\n")
+
+    # Add and commit tracked file and .gitignore
+    subprocess.run(
+        ["git", "add", "tracked.txt", ".gitignore"],
+        cwd=tmp_path,
+        check=True,
+        capture_output=True,
+    )
+    result = subprocess.run(
+        ["git", "commit", "-m", "Initial commit", "--no-gpg-sign"],
+        cwd=tmp_path,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        # Print debug info if commit fails
+        print(f"Git commit failed: {result.stderr}")
+        pytest.skip("Git commit failed, possibly due to hooks")
+
+    # Run codespell with --use-git-ignore
+    # Should only check tracked.txt, not ignored.txt
+    cs_result = cs.main(
+        "--use-git-ignore",
+        tmp_path,
+        std=True,
+    )
+    assert isinstance(cs_result, tuple)
+    code, stdout, _stderr = cs_result
+
+    # Should find error in tracked.txt
+    assert "tracked.txt:1: abandonned ==> abandoned" in stdout
+    # Should NOT find error in ignored.txt
+    assert "ignored.txt" not in stdout
+    assert code == 1  # Should have found 1 error
