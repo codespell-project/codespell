@@ -70,10 +70,17 @@ requires = ["setuptools>=77", "setuptools_scm[toml]>=6.2, != 8.0.0"]
 [tool.setuptools_scm]
 write_to = "codespell_lib/_version.py"
 
+[tool.setuptools]
+include-package-data = false
+
 [tool.setuptools.packages.find]
+include = ["codespell_lib", "codespell_lib.*"]
 exclude = [
     "dist",
     "snap",
+    "tools",
+    "example",
+    "codespell_lib.tests*",
 ]
 
 [tool.setuptools.package-data]

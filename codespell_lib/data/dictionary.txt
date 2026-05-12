@@ -1011,6 +1011,8 @@ accoridngly->accordingly
 accoring->according, occurring,
 accoringly->accordingly
 accorndingly->accordingly
+accors->accord, across,
+accorss->accords, across,
 accort->accord
 accortance->accordance
 accorted->accorded
@@ -2084,6 +2086,7 @@ adheasives->adhesives
 adheisve->adhesive
 adherance->adherence
 adherin->adhering, cadherin,
+adhesize->adhesive
 adhevise->adhesive
 adiacent->adjacent
 adiditon->addition
@@ -2803,6 +2806,7 @@ aggresively->aggressively
 aggressivley->aggressively
 aggressivly->aggressively
 aggressivo->aggressive, aggression,
+aggressize->aggressive
 aggresssion->aggression
 aggrevate->aggravate
 aggrevated->aggravated
@@ -8493,7 +8497,11 @@ authorititive->authoritative
 authoritive->authoritative
 authorizeed->authorized
 authorizin->authorizing
+authorozation->authorization
+authorozations->authorizations
 authos->authors, autos,
+authotization->authorization
+authotizations->authorizations
 authro->author
 authroed->authored
 authroing->authoring
@@ -14940,6 +14948,7 @@ comppliance->compliance
 comprable->comparable
 compre->compare, compère,
 compredded->compressed
+comprehensize->comprehensive
 compres->compress, compares,
 compresed->compressed
 compreser->compressor
@@ -25857,6 +25866,13 @@ evrywhere->everywhere
 evyrthing->everything
 ewhwer->where
 ewll->well
+exacavate->excavate
+exacavated->excavated
+exacavates->excavates
+exacavation->excavation
+exacavations->excavations
+exacavator->excavator
+exacavators->excavators
 exaclinic->hexaclinic
 exaclty->exactly
 exacly->exactly
@@ -26096,6 +26112,7 @@ exces->excess
 excesed->exceeded
 excesive->excessive
 excesively->excessively
+excessize->excessive
 excesss->excess
 excesv->excessive
 excesvly->excessively
@@ -26238,6 +26255,7 @@ exclusiv->exclusive
 exclusivelly->exclusively
 exclusivly->exclusively
 exclusivs->exclusives
+exclusize->exclusive
 excluslvely->exclusively
 exclusuive->exclusive
 exclusuively->exclusively
@@ -26785,6 +26803,7 @@ expanion->expansion
 expanions->expansions
 expanshion->expansion
 expanshions->expansions
+expansize->expansive
 expanssion->expansion
 exparation->expiration
 expasion->expansion
@@ -26900,6 +26919,7 @@ expencive->expensive
 expendeble->expendable
 expension->expansion, extension,
 expensions->expansions, extensions,
+expensize->expensive
 expepect->expect
 expepected->expected
 expepectedly->expectedly
@@ -27711,6 +27731,7 @@ extensinos->extensions
 extensiones->extensions
 extensiv->extensive
 extensivly->extensively
+extensize->extensive
 extenson->extension
 extensons->extensions
 extenstion->extension
@@ -29684,6 +29705,8 @@ galllery->gallery
 galllerys->galleries
 galvinized->galvanized
 Gameboy->Game Boy
+gampad->gamepad
+gampads->gamepads
 ganbia->gambia
 ganeral->general
 ganerally->generally
@@ -32251,6 +32274,7 @@ impres->impress
 impresive->impressive
 impressario->impresario
 impressin->impressing, impress in, impression,
+impressize->impressive
 impreve->improve
 impreved->improved
 imprevement->improvement
@@ -32464,6 +32488,7 @@ incluing->including
 inclused->included
 inclusing->including
 inclusinve->inclusive
+inclusize->inclusive
 inclution->inclusion
 inclutions->inclusions
 incmrement->increment
@@ -33175,11 +33200,19 @@ inflatoin->inflation
 inflexable->inflexible
 influece->influence
 influeced->influenced
+influecer->influencer
+influecers->influencers
 influeces->influences
 influecing->influencing
 influencial->influential
 influencin->influencing
 influented->influenced
+influnce->influence
+influnced->influenced
+influncer->influencer
+influncers->influencers
+influnces->influences
+influncing->influencing
 infoemation->information
 infoemational->informational
 infomation->information
@@ -34276,6 +34309,7 @@ installtion->installation
 installtions->installations
 instals->installs
 instanbul->Istanbul
+instanc->instance
 instancd->instance
 instanciate->instantiate
 instanciated->instantiated
@@ -35046,6 +35080,12 @@ interspereses->intersperses
 intersperesing->interspersing
 interspersin->interspersing, interspersion,
 interst->interest
+interstect->intersect
+interstected->intersected
+interstecting->intersecting
+interstection->intersection
+interstections->intersections
+interstects->intersects
 intersted->interested
 intersting->interesting
 intersts->interests
@@ -38101,11 +38141,12 @@ memmorys->memories
 memner->member
 memoery->memory
 memomry->memory
-memor->memory
+memor->memo, memory,
 memorizin->memorizing
 memorys->memories
 memoty->memory
 memove->memmove
+memoy->memo, memory,
 mempry->memory
 memroy->memory
 memwar->memoir
@@ -39109,12 +39150,15 @@ monochromo->monochrome
 monoclinc->monoclinic
 monocrome->monochrome
 monolite->monolithic
+monontonic->monotonic
 monontonicity->monotonicity
 monopace->monospace
 monotir->monitor
 monotired->monitored
 monotiring->monitoring
 monotirs->monitors
+monotonc->monotonic
+monotoncity->monotonicity
 monsday->Monday
 Monserrat->Montserrat
 monstrum->monster
@@ -39135,6 +39179,7 @@ montiors->monitors
 montly->monthly
 Montnana->Montana
 montonic->monotonic
+montonicity->monotonicity
 montor->monitor, motor, mentor,
 montored->monitored, mentored,
 montoring->monitoring, mentoring,
@@ -39199,6 +39244,7 @@ motivaiton->motivation
 motiviated->motivated
 motiviation->motivation
 motononic->monotonic
+motononicity->monotonicity
 motorin->motoring, motor in,
 motoroloa->motorola
 moudle->module
@@ -39401,8 +39447,10 @@ multipied->multiplied
 multipier->multiplier
 multipiers->multipliers
 multipies->multiplies
+multipile->multiple
 multipiler->multiplier
 multipilers->multipliers
+multipiles->multiples, multiplies,
 multipl->multiple, multiply,
 multiplcation->multiplication
 multipled->multiplied
@@ -42903,6 +42951,7 @@ overfow->overflow
 overfowed->overflowed
 overfowing->overflowing
 overfows->overflows
+overheda->overhead
 overhread->overhead
 overidable->overridable
 overiddden->overridden
@@ -49107,6 +49156,7 @@ recursivelly->recursively
 recursivion->recursion
 recursivley->recursively
 recursivly->recursively
+recursize->recursive
 recursse->recurse, recurses,
 recurssed->recursed
 recursses->recurses
@@ -51406,6 +51456,7 @@ responsibity->responsibility
 responsiblities->responsibilities
 responsiblity->responsibility
 responsing->responding
+responsize->responsive
 respose->response
 resposes->responses
 resposibilities->responsibilities
@@ -54495,6 +54546,10 @@ simpifiers->simplifiers
 simpifies->simplifies
 simpify->simplify
 simpifying->simplifying
+simpilfied->simplified
+simpilfies->simplifies
+simpilfy->simplify
+simpilfying->simplifying
 simplcity->simplicity
 simplei->simply
 simpley->simply
@@ -54836,6 +54891,7 @@ sizos->sizes
 sizre->size
 Skagerak->Skagerrak
 skalar->scalar
+skarhoj->SKAARHOJ
 skateing->skating
 skatin->skating, statin,
 skecth->sketch
@@ -57278,6 +57334,7 @@ successfullness->successfulness
 successfullt->successfully
 successfuly->successfully
 successing->successive, succeeding,
+successize->successive
 successs->success
 successses->successes
 successsful->successful
@@ -62077,6 +62134,7 @@ unresolvabvle->unresolvable
 unresonable->unreasonable
 unresovlable->unresolvable
 unresovled->unresolved
+unresponsize->unresponsive
 unresposive->unresponsive
 unrestrcited->unrestricted
 unrgesiter->unregister
@@ -62090,8 +62148,8 @@ unsaging->unstaging
 unsanfe->unsafe
 unsatifactory->unsatisfactory
 unsccessful->unsuccessful
-unscubscribe->subscribe
-unscubscribed->subscribed
+unscubscribe->unsubscribe
+unscubscribed->unsubscribed
 unsearcahble->unsearchable
 unsed->unused, unset, used,
 unseful->useless, useful,
@@ -63714,7 +63772,6 @@ vocabularlies->vocabularies
 vocabularly->vocabulary
 voidin->voiding, void in,
 voif->void
-Voight->Voigt
 volatage->voltage
 volatages->voltages
 volatge->voltage
@@ -63865,6 +63922,7 @@ vulnerabillity->vulnerability
 vulnerabilties->vulnerabilities
 vulnerabilty->vulnerability
 vulnerabily->vulnerably, vulnerability,
+vulnerabities->vulnerabilities
 vulnerablilities->vulnerabilities
 vulnerablility->vulnerability
 vulnerablities->vulnerabilities
