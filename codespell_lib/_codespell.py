@@ -56,8 +56,12 @@ uri_regex_def = (
     r"(\b(?:https?|[ts]?ftp|file|git|smb)://[^\s]+(?=$|\s)|\b[\w.%+-]+@[\w.-]+\b)"
 )
 codespell_ignore_tag = "codespell:ignore"
+codespell_ignore_next_line_tag = "codespell:ignore-next-line"
 inline_ignore_regex = re.compile(
-    rf"[^\w\s]\s*{codespell_ignore_tag}\b(\s+(?P<words>[\w,]*))?"
+    rf"[^\w\s]\s*{codespell_ignore_tag}(?!-)\b(\s+(?P<words>[\w,]*))?"
+)
+ignore_next_line_regex = re.compile(
+    rf"[^\w\s]\s*{codespell_ignore_next_line_tag}\b(\s+(?P<words>[\w,]*))?"
 )
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
@@ -955,13 +959,28 @@ def parse_lines(
 
     _, fragment_line_number, lines = fragment
 
+    next_line_ignore_words: Optional[set[str]] = None
+
     for i, line in enumerate(lines):
         line = line.rstrip()
+        # Apply any ignore-next-line directive carried from the previous line.
+        pending_next_line_ignore = next_line_ignore_words
+        next_line_ignore_words = None
+
+        directive_words: set[str] = set()
+        if codespell_ignore_next_line_tag in line:
+            nl_match = ignore_next_line_regex.search(line)
+            if nl_match:
+                directive_words = set(
+                    filter(None, (nl_match.group("words") or "").split(","))
+                )
+                next_line_ignore_words = directive_words
+
         if not line or line in exclude_lines:
             continue
         line_number = fragment_line_number + i
 
-        extra_words_to_ignore = set()
+        extra_words_to_ignore: set[str] = set()
         match = (
             inline_ignore_regex.search(line) if codespell_ignore_tag in line else None
         )
@@ -971,6 +990,14 @@ def parse_lines(
             )
             if not extra_words_to_ignore:
                 continue
+
+        # Words named in an ignore-next-line directive are ignored on its own line too.
+        extra_words_to_ignore |= directive_words
+
+        if pending_next_line_ignore is not None:
+            if not pending_next_line_ignore:
+                continue
+            extra_words_to_ignore |= pending_next_line_ignore
 
         fixed_words = set()
         asked_for = set()

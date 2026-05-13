@@ -156,6 +156,22 @@ Words should be separated by a comma.
        def wrod(wrods) # codespell:ignore
            pass
 
+3. ignore the following line (useful when a formatter pushes comments to a new line):
+
+   .. code-block:: python
+
+       # codespell:ignore-next-line wrod
+       def wrod():
+           pass
+
+   Use the bare form to ignore every misspelling on the next line:
+
+   .. code-block:: python
+
+       # codespell:ignore-next-line
+       def wrod(wrods):
+           pass
+
 Using a config file
 -------------------
 
