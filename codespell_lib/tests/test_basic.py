@@ -493,6 +493,50 @@ def test_inline_ignores(
     assert cs.main(d) == expected_error_count
 
 
+@pytest.mark.parametrize(
+    ("content", "expected_error_count"),
+    [
+        # wildcard form: ignore all misspellings on the next line
+        ("# codespell:ignore-next-line\nabandonned abondon abilty\n", 0),
+        ("// codespell:ignore-next-line\nabandonned abondon abilty\n", 0),
+        # specific word form: ignore only listed words on the next line
+        (
+            "# codespell:ignore-next-line abondon\nabandonned abondon abilty\n",
+            2,
+        ),
+        (
+            "# codespell:ignore-next-line abondon,abilty\nabandonned abondon abilty\n",
+            1,
+        ),
+        # the directive does not affect the line it is on or subsequent lines
+        (
+            "abandonned  # codespell:ignore-next-line\nabondon\nabilty\n",
+            2,
+        ),
+        # listing an unused ignore word still triggers a skip
+        (
+            "# codespell:ignore-next-line nomenklatur\nabandonned abondon abilty\n",
+            3,
+        ),
+        # invalid directives are not honored
+        ("# codespell:ignore-next-lin\nabandonned\n", 1),
+        ("codespell:ignore-next-line\nabandonned\n", 1),
+        # directive followed by a blank line still consumes the directive
+        ("# codespell:ignore-next-line\n\nabandonned\n", 1),
+    ],
+)
+def test_ignore_next_line(
+    tmpdir: pytest.TempPathFactory,
+    capsys: pytest.CaptureFixture[str],
+    content: str,
+    expected_error_count: int,
+) -> None:
+    d = str(tmpdir)
+    with open(op.join(d, "bad.txt"), "w", encoding="utf-8") as f:
+        f.write(content)
+    assert cs.main(d) == expected_error_count
+
+
 def test_custom_regex(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
