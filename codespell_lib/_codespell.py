@@ -795,7 +795,12 @@ def ask_for_word_fix(
     misspelling: Misspelling,
     interactivity: int,
     colors: TermColors,
+    filename: str,
+    lineno: int,
 ) -> tuple[bool, str]:
+    cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
+    cline = f"{colors.FILE}{lineno}{colors.DISABLE}"
+
     wrongword = match.group()
     if interactivity <= 0:
         return misspelling.fix, fix_case(wrongword, misspelling.data)
@@ -810,7 +815,11 @@ def ask_for_word_fix(
         r = ""
         fixword = fix_case(wrongword, misspelling.data)
         while not r:
-            print(f"{line_ui}\t{wrongword} ==> {fixword} (Y/n) ", end="", flush=True)
+            print(
+                f"{cfilename}:{cline}: {line_ui}\t{wrongword} ==> {fixword} (Y/n) ",
+                end="",
+                flush=True,
+            )
             r = sys.stdin.readline().strip().upper()
             if not r:
                 r = "Y"
@@ -828,7 +837,10 @@ def ask_for_word_fix(
         r = ""
         opt = [w.strip() for w in misspelling.data.split(",")]
         while not r:
-            print(f"{line_ui} Choose an option (blank for none): ", end="")
+            print(
+                f"{cfilename}:{cline}: {line_ui} Choose an option (blank for none): ",
+                end="",
+            )
             for i, o in enumerate(opt):
                 fixword = fix_case(wrongword, o)
                 print(f" {i}) {fixword}", end="")
@@ -1024,6 +1036,8 @@ def parse_lines(
                         misspellings[lword],
                         options.interactive,
                         colors=colors,
+                        filename=filename,
+                        lineno=i + 1,
                     )
                     asked_for.add(lword)
 
@@ -1196,7 +1210,8 @@ def parse_file(
         else:
             if not options.quiet_level & QuietLevels.FIXES:
                 print(
-                    f"{colors.FWORD}FIXED:{colors.DISABLE} {filename}",
+                    f"{colors.FWORD}FIXED:{colors.DISABLE} "
+                    f"{colors.FILE}{filename}{colors.DISABLE}",
                     file=sys.stderr,
                 )
                 for line_num, wrong, right in changes_made:
