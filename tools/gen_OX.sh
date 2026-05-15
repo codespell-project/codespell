@@ -31,6 +31,7 @@ IGNORE=(
    'practise'
    'programme'
    'licence'
+   'metre'
 )
 PAT3="^$(one_of "${IGNORE[@]}")"
 

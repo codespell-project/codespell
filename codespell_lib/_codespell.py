@@ -23,6 +23,7 @@ import fnmatch
 import itertools
 import os
 import re
+import shlex
 import sys
 import textwrap
 from collections.abc import Iterable, Sequence
@@ -54,7 +55,17 @@ word_regex_def = r"[\w\-'’]+"  # noqa: RUF001
 uri_regex_def = (
     r"(\b(?:https?|[ts]?ftp|file|git|smb)://[^\s]+(?=$|\s)|\b[\w.%+-]+@[\w.-]+\b)"
 )
-inline_ignore_regex = re.compile(r"[^\w\s]\s*codespell:ignore\b(\s+(?P<words>[\w,]*))?")
+codespell_ignore_tag = "codespell:ignore"
+codespell_ignore_next_line_tag = "codespell:ignore-next-line"
+inline_ignore_regex = re.compile(
+    rf"[^\w\s]\s*{codespell_ignore_tag}(?!-)\b(\s+(?P<words>[\w,]*))?"
+)
+ignore_next_line_regex = re.compile(
+    rf"[^\w\s]\s*{codespell_ignore_next_line_tag}\b(\s+(?P<words>[\w,]*))?"
+)
+USAGE = """
+\t%prog [OPTIONS] [file1 file2 ... fileN]
+"""
 
 supported_languages_en = ("en", "en_GB", "en_US", "en_CA", "en_AU")
 supported_languages = supported_languages_en
@@ -216,23 +227,29 @@ class FileOpener:
 
     def init_chardet(self) -> None:
         try:
-            from chardet.universaldetector import UniversalDetector
-        except ImportError as e:
+            import chardet  # noqa: F401
+        except ImportError:
             msg = (
                 "There's no chardet installed to import from. "
                 "Please, install it and check your PYTHONPATH "
                 "environment variable"
             )
-            raise ImportError(msg) from e
+            raise ImportError(msg)
+        try:
+            from chardet import UniversalDetector
+        except ImportError:  # chardet < 7
+            from chardet.universaldetector import UniversalDetector
 
         self.encdetector = UniversalDetector()
 
-    def open(self, filename: str) -> tuple[list[str], str]:
+    def open(self, filename: str) -> tuple[list[tuple[bool, int, list[str]]], str]:
         if self.use_chardet:
             return self.open_with_chardet(filename)
         return self.open_with_internal(filename)
 
-    def open_with_chardet(self, filename: str) -> tuple[list[str], str]:
+    def open_with_chardet(
+        self, filename: str
+    ) -> tuple[list[tuple[bool, int, list[str]]], str]:
         self.encdetector.reset()
         with open(filename, "rb") as fb:
             for line in fb:
@@ -259,7 +276,9 @@ class FileOpener:
 
         return lines, f.encoding
 
-    def open_with_internal(self, filename: str) -> tuple[list[str], str]:
+    def open_with_internal(
+        self, filename: str
+    ) -> tuple[list[tuple[bool, int, list[str]]], str]:
         encoding = None
         first_try = True
         for encoding in ("utf-8", "iso-8859-1"):
@@ -286,21 +305,25 @@ class FileOpener:
 
         return lines, encoding
 
-    def get_lines(self, f: TextIO) -> list[str]:
+    def get_lines(self, f: TextIO) -> list[tuple[bool, int, list[str]]]:
+        fragments = []
+        line_number = 0
         if self.ignore_multiline_regex:
             text = f.read()
             pos = 0
-            text2 = ""
             for m in re.finditer(self.ignore_multiline_regex, text):
-                text2 += text[pos : m.start()]
-                # Replace with blank lines so line numbers are unchanged.
-                text2 += "\n" * m.group().count("\n")
+                lines = text[pos : m.start()].splitlines(True)
+                fragments.append((False, line_number, lines))
+                line_number += len(lines)
+                lines = m.group().splitlines(True)
+                fragments.append((True, line_number, lines))
+                line_number += len(lines) - 1
                 pos = m.end()
-            text2 += text[pos:]
-            lines = text2.split("\n")
+            lines = text[pos:].splitlines(True)
+            fragments.append((False, line_number, lines))
         else:
-            lines = f.readlines()
-        return lines
+            fragments.append((False, line_number, f.readlines()))
+        return fragments
 
 
 # -.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-.-:-.-:-.-:-.:-.-:-
@@ -374,7 +397,27 @@ def _supports_ansi_colors() -> bool:
 def parse_options(
     args: Sequence[str],
 ) -> tuple[argparse.Namespace, argparse.ArgumentParser, list[str]]:
-    parser = argparse.ArgumentParser(formatter_class=NewlineHelpFormatter)
+    # Split lines read from `@PATH` using shlex.split(), otherwise default
+    # behaviour is to have one arg per line. See:
+    # https://docs.python.org/3/library/argparse.html#argparse.ArgumentParser.convert_arg_line_to_args
+    class ArgumentParser2(argparse.ArgumentParser):
+        def convert_arg_line_to_args(self, arg_line: str) -> list[str]:
+            if sys.platform == "win32":
+                # On Windows, shlex.split() seems to be messed up by back
+                # slashes. Temporarily changing them to forward slashes seems
+                # to make things work better.
+                arg_line = arg_line.replace("\\", "/")
+                ret = shlex.split(arg_line)
+                ret = [p.replace("/", "\\") for p in ret]
+            else:
+                ret = shlex.split(arg_line)
+            return ret
+
+    parser = ArgumentParser2(
+        formatter_class=NewlineHelpFormatter,
+        fromfile_prefix_chars="@",
+        epilog="Use @PATH to read additional arguments from file PATH.",
+    )
 
     parser.set_defaults(colors=_supports_ansi_colors())
     parser.add_argument("--version", action="version", version=VERSION)
@@ -756,7 +799,12 @@ def ask_for_word_fix(
     misspelling: Misspelling,
     interactivity: int,
     colors: TermColors,
+    filename: str,
+    lineno: int,
 ) -> tuple[bool, str]:
+    cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
+    cline = f"{colors.FILE}{lineno}{colors.DISABLE}"
+
     wrongword = match.group()
     if interactivity <= 0:
         return misspelling.fix, fix_case(wrongword, misspelling.data)
@@ -771,7 +819,11 @@ def ask_for_word_fix(
         r = ""
         fixword = fix_case(wrongword, misspelling.data)
         while not r:
-            print(f"{line_ui}\t{wrongword} ==> {fixword} (Y/n) ", end="", flush=True)
+            print(
+                f"{cfilename}:{cline}: {line_ui}\t{wrongword} ==> {fixword} (Y/n) ",
+                end="",
+                flush=True,
+            )
             r = sys.stdin.readline().strip().upper()
             if not r:
                 r = "Y"
@@ -789,7 +841,10 @@ def ask_for_word_fix(
         r = ""
         opt = [w.strip() for w in misspelling.data.split(",")]
         while not r:
-            print(f"{line_ui} Choose an option (blank for none): ", end="")
+            print(
+                f"{cfilename}:{cline}: {line_ui} Choose an option (blank for none): ",
+                end="",
+            )
             for i, o in enumerate(opt):
                 fixword = fix_case(wrongword, o)
                 print(f" {i}) {fixword}", end="")
@@ -869,95 +924,92 @@ def apply_uri_ignore_words(
     return check_matches
 
 
-def parse_file(
+def _format_colored_output(
+    filename: str,
+    colors: TermColors,
+    line_num: int,
+    wrong: str,
+    right: str,
+) -> tuple[str, str, str, str]:
+    """Format colored strings for output.
+
+    Args:
+        filename: The filename being processed.
+        colors: TermColors instance for color formatting.
+        line_num: Line number (1-based) where the misspelling was found.
+        wrong: The misspelled word.
+        right: The correct word.
+
+    Returns:
+        Tuple of (filename, line_num, wrong_word, right_word) with color codes.
+    """
+    cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
+    cline = f"{colors.FILE}{line_num}{colors.DISABLE}"
+    cwrongword = f"{colors.WWORD}{wrong}{colors.DISABLE}"
+    crightword = f"{colors.FWORD}{right}{colors.DISABLE}"
+    return cfilename, cline, cwrongword, crightword
+
+
+def parse_lines(
+    fragment: tuple[bool, int, list[str]],
     filename: str,
     colors: TermColors,
     summary: Optional[Summary],
     misspellings: dict[str, Misspelling],
     ignore_words_cased: set[str],
     exclude_lines: set[str],
-    file_opener: FileOpener,
     word_regex: Pattern[str],
     ignore_word_regex: Optional[Pattern[str]],
     uri_regex: Pattern[str],
     uri_ignore_words: set[str],
     context: Optional[tuple[int, int]],
     options: argparse.Namespace,
-) -> int:
+) -> tuple[int, bool, list[tuple[int, str, str]]]:
     bad_count = 0
-    lines = None
     changed = False
+    changes_made: list[tuple[int, str, str]] = []
 
-    if filename == "-":
-        f = sys.stdin
-        encoding = "utf-8"
-        lines = f.readlines()
-    else:
-        if options.check_filenames:
-            for word in extract_words(filename, word_regex, ignore_word_regex):
-                if word in ignore_words_cased:
-                    continue
-                lword = word.lower()
-                if lword not in misspellings:
-                    continue
-                fix = misspellings[lword].fix
-                fixword = fix_case(word, misspellings[lword].data)
+    _, fragment_line_number, lines = fragment
 
-                if summary and fix:
-                    summary.update(lword)
-
-                cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
-                cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
-                crightword = f"{colors.FWORD}{fixword}{colors.DISABLE}"
-
-                reason = misspellings[lword].reason
-                if reason:
-                    if options.quiet_level & QuietLevels.DISABLED_FIXES:
-                        continue
-                    creason = f"  | {colors.FILE}{reason}{colors.DISABLE}"
-                else:
-                    if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
-                        continue
-                    creason = ""
-
-                bad_count += 1
-
-                print(f"{cfilename}: {cwrongword} ==> {crightword}{creason}")
-
-        # ignore irregular files
-        if not os.path.isfile(filename):
-            return bad_count
-
-        try:
-            text = is_text_file(filename)
-        except PermissionError as e:
-            print(f"WARNING: {e.strerror}: {filename}", file=sys.stderr)
-            return bad_count
-        except OSError:
-            return bad_count
-
-        if not text:
-            if not options.quiet_level & QuietLevels.BINARY_FILE:
-                print(f"WARNING: Binary file: {filename}", file=sys.stderr)
-            return bad_count
-        try:
-            lines, encoding = file_opener.open(filename)
-        except OSError:
-            return bad_count
+    next_line_ignore_words: Optional[set[str]] = None
 
     for i, line in enumerate(lines):
         line = line.rstrip()
+        # Apply any ignore-next-line directive carried from the previous line.
+        pending_next_line_ignore = next_line_ignore_words
+        next_line_ignore_words = None
+
+        directive_words: set[str] = set()
+        if codespell_ignore_next_line_tag in line:
+            nl_match = ignore_next_line_regex.search(line)
+            if nl_match:
+                directive_words = set(
+                    filter(None, (nl_match.group("words") or "").split(","))
+                )
+                next_line_ignore_words = directive_words
+
         if not line or line in exclude_lines:
             continue
+        line_number = fragment_line_number + i
 
-        extra_words_to_ignore = set()
-        match = inline_ignore_regex.search(line)
+        extra_words_to_ignore: set[str] = set()
+        match = (
+            inline_ignore_regex.search(line) if codespell_ignore_tag in line else None
+        )
         if match:
             extra_words_to_ignore = set(
                 filter(None, (match.group("words") or "").split(","))
             )
             if not extra_words_to_ignore:
                 continue
+
+        # Words named in an ignore-next-line directive are ignored on its own line too.
+        extra_words_to_ignore |= directive_words
+
+        if pending_next_line_ignore is not None:
+            if not pending_next_line_ignore:
+                continue
+            extra_words_to_ignore |= pending_next_line_ignore
 
         fixed_words = set()
         asked_for = set()
@@ -1011,6 +1063,8 @@ def parse_file(
                         misspellings[lword],
                         options.interactive,
                         colors=colors,
+                        filename=filename,
+                        lineno=i + 1,
                     )
                     asked_for.add(lword)
 
@@ -1024,6 +1078,7 @@ def parse_file(
                     changed = True
                     lines[i] = re.sub(rf"\b{word}\b", fixword, lines[i])
                     fixed_words.add(word)
+                    changes_made.append((line_number + 1, word, fixword))
                     continue
 
                 # otherwise warning was explicitly set by interactive mode
@@ -1034,10 +1089,9 @@ def parse_file(
                 ):
                     continue
 
-                cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
-                cline = f"{colors.FILE}{i + 1}{colors.DISABLE}"
-                cwrongword = f"{colors.WWORD}{word}{colors.DISABLE}"
-                crightword = f"{colors.FWORD}{fixword}{colors.DISABLE}"
+                cfilename, cline, cwrongword, crightword = _format_colored_output(
+                    filename, colors, line_number + 1, word, fixword
+                )
 
                 reason = misspellings[lword].reason
                 if reason:
@@ -1067,19 +1121,138 @@ def parse_file(
                         f"==> {crightword}{creason}"
                     )
 
+    return bad_count, changed, changes_made
+
+
+def parse_file(
+    filename: str,
+    colors: TermColors,
+    summary: Optional[Summary],
+    misspellings: dict[str, Misspelling],
+    ignore_words_cased: set[str],
+    exclude_lines: set[str],
+    file_opener: FileOpener,
+    word_regex: Pattern[str],
+    ignore_word_regex: Optional[Pattern[str]],
+    uri_regex: Pattern[str],
+    uri_ignore_words: set[str],
+    context: Optional[tuple[int, int]],
+    options: argparse.Namespace,
+) -> int:
+    bad_count = 0
+    fragments = None
+
+    # Read lines.
+    if filename == "-":
+        f = sys.stdin
+        encoding = "utf-8"
+        fragments = file_opener.get_lines(f)
+    else:
+        if options.check_filenames:
+            for word in extract_words(filename, word_regex, ignore_word_regex):
+                if word in ignore_words_cased:
+                    continue
+                lword = word.lower()
+                if lword not in misspellings:
+                    continue
+                fix = misspellings[lword].fix
+                fixword = fix_case(word, misspellings[lword].data)
+
+                if summary and fix:
+                    summary.update(lword)
+
+                cfilename, _, cwrongword, crightword = _format_colored_output(
+                    filename, colors, 0, word, fixword
+                )
+
+                reason = misspellings[lword].reason
+                if reason:
+                    if options.quiet_level & QuietLevels.DISABLED_FIXES:
+                        continue
+                    creason = f"  | {colors.FILE}{reason}{colors.DISABLE}"
+                else:
+                    if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
+                        continue
+                    creason = ""
+
+                bad_count += 1
+
+                print(f"{cfilename}: {cwrongword} ==> {crightword}{creason}")
+
+        # ignore irregular files
+        if not os.path.isfile(filename):
+            return bad_count
+
+        try:
+            text = is_text_file(filename)
+        except PermissionError as e:
+            print(f"WARNING: {e.strerror}: {filename}", file=sys.stderr)
+            return bad_count
+        except OSError:
+            return bad_count
+
+        if not text:
+            if not options.quiet_level & QuietLevels.BINARY_FILE:
+                print(f"WARNING: Binary file: {filename}", file=sys.stderr)
+            return bad_count
+        try:
+            fragments, encoding = file_opener.open(filename)
+        except OSError:
+            return bad_count
+
+    # Parse lines.
+    changed = False
+    changes_made: list[tuple[int, str, str]] = []
+    for fragment in fragments:
+        ignore, _, _ = fragment
+        if ignore:
+            continue
+
+        bad_count_update, changed_update, changes_made_update = parse_lines(
+            fragment,
+            filename,
+            colors,
+            summary,
+            misspellings,
+            ignore_words_cased,
+            exclude_lines,
+            word_regex,
+            ignore_word_regex,
+            uri_regex,
+            uri_ignore_words,
+            context,
+            options,
+        )
+        bad_count += bad_count_update
+        changed = changed or changed_update
+        changes_made.extend(changes_made_update)
+
+    # Write out lines, if changed.
     if changed:
         if filename == "-":
             print("---")
-            for line in lines:
-                print(line, end="")
+            for _, _, lines in fragments:
+                for line in lines:
+                    print(line, end="")
         else:
             if not options.quiet_level & QuietLevels.FIXES:
                 print(
-                    f"{colors.FWORD}FIXED:{colors.DISABLE} {filename}",
+                    f"{colors.FWORD}FIXED:{colors.DISABLE} "
+                    f"{colors.FILE}{filename}{colors.DISABLE}",
                     file=sys.stderr,
                 )
+                for line_num, wrong, right in changes_made:
+                    cfilename, cline, cwrongword, crightword = _format_colored_output(
+                        filename, colors, line_num, wrong, right
+                    )
+                    print(
+                        f"  {cfilename}:{cline}: {cwrongword} ==> {crightword}",
+                        file=sys.stderr,
+                    )
             with open(filename, "w", encoding=encoding, newline="") as f:
-                f.writelines(lines)
+                for _, _, lines in fragments:
+                    f.writelines(lines)
+
     return bad_count
 
 

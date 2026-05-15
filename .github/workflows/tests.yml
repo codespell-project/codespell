@@ -32,6 +32,9 @@ jobs:
           - "ubuntu-24.04-arm"
         include:
           - python-version: "3.10"
+            kind: "old"
+            os: "ubuntu-24.04-arm"
+          - python-version: "3.10"
             kind: "no-toml"
             os: "ubuntu-24.04-arm"
           - python-version: "3.13"
@@ -39,7 +42,7 @@ jobs:
             os: "windows-latest"
     name: "${{ matrix.python-version }} ${{ matrix.kind }} ${{ matrix.os }}"
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           persist-credentials: false
       - name: Setup python
@@ -58,13 +61,15 @@ jobs:
           pip install -e ".[dev]" # install the codespell dev packages
       - run: pip install aspell-python-py3
         if: startsWith(matrix.os, 'ubuntu')
+      - run: pip install "chardet<7"
+        if: ${{ matrix.kind == 'old' }}
       - run: codespell --help
       - run: codespell --version
       - run: make check
         if: startsWith(matrix.os, 'ubuntu')
       - run: pytest codespell_lib
         if: startsWith(matrix.os, 'windows')
-      - uses: codecov/codecov-action@v5
+      - uses: codecov/codecov-action@v6
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
       # tomli should not be required for the next two steps (and make sure it's not)
@@ -81,7 +86,9 @@ jobs:
     steps:
       - name: Setup Python
         uses: actions/setup-python@v6
-      - uses: actions/checkout@v5
+        with:
+          python-version: 3.x
+      - uses: actions/checkout@v6
         with:
           persist-credentials: false
       - name: Install general dependencies
