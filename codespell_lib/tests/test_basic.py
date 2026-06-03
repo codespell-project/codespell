@@ -502,6 +502,46 @@ def test_inline_ignores(
 @pytest.mark.parametrize(
     ("content", "expected_error_count"),
     [
+        # marker right after the word (optional whitespace) excuses it
+        ("they wrod [sic] it\n", 0),
+        ("they wrod[sic] it\n", 0),
+        ("they wrod  [sic] it\n", 0),
+        # case-insensitive marker
+        ("they wrod [SIC] it\n", 0),
+        # quoted typo followed by the marker (changelog use case)
+        ('correct "wrod" [sic] typo\n', 0),
+        ('correct "wrod"[sic] typo\n', 0),
+        # only the immediately preceding occurrence is excused
+        ("wrod wrod [sic]\n", 1),
+        # a marker elsewhere on the line does not excuse the word
+        ("wrod it [sic] anyway abilty\n", 2),
+        # an intervening word breaks the association
+        ('wrod" abilty [sic]\n', 1),
+        # without a marker the misspelling is still reported
+        ("they wrod it\n", 1),
+        # not a real marker
+        ("they wrod (sic) it\n", 1),
+        ("they wrod [sick] it\n", 1),
+    ],
+)
+def test_ignore_sic(
+    tmpdir: pytest.TempPathFactory,
+    capsys: pytest.CaptureFixture[str],
+    content: str,
+    expected_error_count: int,
+) -> None:
+    d = str(tmpdir)
+    with open(op.join(d, "bad.txt"), "w", encoding="utf-8") as f:
+        f.write(content)
+    # off by default
+    assert cs.main(d) == content.count("wrod") + content.count("abilty")
+    # opt-in
+    assert cs.main("--ignore-sic", d) == expected_error_count
+
+
+@pytest.mark.parametrize(
+    ("content", "expected_error_count"),
+    [
         # wildcard form: ignore all misspellings on the next line
         ("# codespell:ignore-next-line\nabandonned abondon abilty\n", 0),
         ("// codespell:ignore-next-line\nabandonned abondon abilty\n", 0),

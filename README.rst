@@ -172,6 +172,23 @@ Words should be separated by a comma.
        def wrod(wrods):
            pass
 
+Ignoring misspellings marked with "[sic]"
+-----------------------------------------
+
+The ``--ignore-sic`` option tells codespell to skip a misspelling that is
+followed by the editorial ``[sic]`` marker (case-insensitive). Only the single
+occurrence preceding the marker is ignored, so other misspellings on the same
+line are still reported. A closing quote may sit between the word and the
+marker, which is the common case when documenting a corrected typo (for example
+in a changelog):
+
+.. code-block:: text
+
+    correct the "wrod" [sic] typo in a changelog entry
+
+Unlike ``codespell:ignore``, the marker is part of the prose itself and does not
+require naming the word in a tooling comment.
+
 Using a config file
 -------------------
 

@@ -63,6 +63,9 @@ inline_ignore_regex = re.compile(
 ignore_next_line_regex = re.compile(
     rf"[^\w\s]\s*{codespell_ignore_next_line_tag}\b(\s+(?P<words>[\w,]*))?"
 )
+# Editorial "[sic]" marker following a word, allowing an intervening closing
+# quote so a quoted misspelling like `"..." [sic]` is matched.
+sic_regex = re.compile(r"[\"'’”)\s]*\[sic\]", re.IGNORECASE)  # noqa: RUF001
 USAGE = """
 \t%prog [OPTIONS] [file1 file2 ... fileN]
 """
@@ -660,6 +663,13 @@ def parse_options(
         help="print LINES of surrounding context",
     )
     parser.add_argument(
+        "--ignore-sic",
+        action="store_true",
+        default=False,
+        help='ignore a misspelling immediately followed by the editorial "[sic]" '
+        "marker (optionally preceded by a closing quote).",
+    )
+    parser.add_argument(
         "--stdin-single-line",
         action="store_true",
         help="output just a single line for each misspelling in stdin mode",
@@ -1048,6 +1058,11 @@ def parse_lines(
                     and word.startswith(("a", "b", "f", "n", "r", "t", "v"))
                     and lword[1:] not in misspellings
                 ):
+                    continue
+
+                # An "[sic]" marker right after the word flags it as an
+                # intentional/quoted spelling, so leave it alone.
+                if options.ignore_sic and sic_regex.match(line, match.end()):
                     continue
 
                 context_shown = False
