@@ -20,6 +20,7 @@ from codespell_lib._codespell import (
     EX_DATAERR,
     EX_OK,
     EX_USAGE,
+    _builtin_dictionaries,
     uri_regex_def,
 )
 
@@ -116,6 +117,11 @@ def test_basic(
         f.write("tim\ngonna\n")
     assert cs.main(fname) == 2, "with a name"
     assert cs.main("--builtin", "clear,rare,names,informal", fname) == 4
+    assert cs.main("--builtin", "all", fname) == cs.main(
+        "--builtin",
+        ",".join(d[0] for d in _builtin_dictionaries),
+        fname,
+    )
     with fname.open("w") as f:  # overwrite the file
         f.write("var = 'nwe must check codespell likes escapes nin strings'\n")
     assert cs.main(fname) == 1, "checking our string escape test word is bad"
@@ -482,6 +488,90 @@ def test_ignore_word_list(
     ],
 )
 def test_inline_ignores(
+    tmpdir: pytest.TempPathFactory,
+    capsys: pytest.CaptureFixture[str],
+    content: str,
+    expected_error_count: int,
+) -> None:
+    d = str(tmpdir)
+    with open(op.join(d, "bad.txt"), "w", encoding="utf-8") as f:
+        f.write(content)
+    assert cs.main(d) == expected_error_count
+
+
+@pytest.mark.parametrize(
+    ("content", "expected_error_count"),
+    [
+        # marker right after the word (optional whitespace) excuses it
+        ("they wrod [sic] it\n", 0),
+        ("they wrod[sic] it\n", 0),
+        ("they wrod  [sic] it\n", 0),
+        # case-insensitive marker
+        ("they wrod [SIC] it\n", 0),
+        # quoted typo followed by the marker (changelog use case)
+        ('correct "wrod" [sic] typo\n', 0),
+        ('correct "wrod"[sic] typo\n', 0),
+        # only the immediately preceding occurrence is excused
+        ("wrod wrod [sic]\n", 1),
+        # a marker elsewhere on the line does not excuse the word
+        ("wrod it [sic] anyway abilty\n", 2),
+        # an intervening word breaks the association
+        ('wrod" abilty [sic]\n', 1),
+        # without a marker the misspelling is still reported
+        ("they wrod it\n", 1),
+        # not a real marker
+        ("they wrod (sic) it\n", 1),
+        ("they wrod [sick] it\n", 1),
+    ],
+)
+def test_ignore_sic(
+    tmpdir: pytest.TempPathFactory,
+    capsys: pytest.CaptureFixture[str],
+    content: str,
+    expected_error_count: int,
+) -> None:
+    d = str(tmpdir)
+    with open(op.join(d, "bad.txt"), "w", encoding="utf-8") as f:
+        f.write(content)
+    # off by default
+    assert cs.main(d) == content.count("wrod") + content.count("abilty")
+    # opt-in
+    assert cs.main("--ignore-sic", d) == expected_error_count
+
+
+@pytest.mark.parametrize(
+    ("content", "expected_error_count"),
+    [
+        # wildcard form: ignore all misspellings on the next line
+        ("# codespell:ignore-next-line\nabandonned abondon abilty\n", 0),
+        ("// codespell:ignore-next-line\nabandonned abondon abilty\n", 0),
+        # specific word form: ignore only listed words on the next line
+        (
+            "# codespell:ignore-next-line abondon\nabandonned abondon abilty\n",
+            2,
+        ),
+        (
+            "# codespell:ignore-next-line abondon,abilty\nabandonned abondon abilty\n",
+            1,
+        ),
+        # the directive does not affect the line it is on or subsequent lines
+        (
+            "abandonned  # codespell:ignore-next-line\nabondon\nabilty\n",
+            2,
+        ),
+        # listing an unused ignore word still triggers a skip
+        (
+            "# codespell:ignore-next-line nomenklatur\nabandonned abondon abilty\n",
+            3,
+        ),
+        # invalid directives are not honored
+        ("# codespell:ignore-next-lin\nabandonned\n", 1),
+        ("codespell:ignore-next-line\nabandonned\n", 1),
+        # directive followed by a blank line still consumes the directive
+        ("# codespell:ignore-next-line\n\nabandonned\n", 1),
+    ],
+)
+def test_ignore_next_line(
     tmpdir: pytest.TempPathFactory,
     capsys: pytest.CaptureFixture[str],
     content: str,

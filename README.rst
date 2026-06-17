@@ -114,7 +114,7 @@ Want to know if a word you're proposing exists in codespell already? It is possi
     echo "word" | codespell -
     echo "1stword,2ndword" | codespell -
 
-You can select the optional dictionaries with the ``--builtin`` option.
+You can select the optional builtin dictionary with the ``--builtin`` option. Use ``--builtin=all`` to enable them all. This only works without custom ``-D`` dictionaries.
 
 Ignoring words
 --------------
@@ -155,6 +155,39 @@ Words should be separated by a comma.
 
        def wrod(wrods) # codespell:ignore
            pass
+
+3. ignore the following line (useful when a formatter pushes comments to a new line):
+
+   .. code-block:: python
+
+       # codespell:ignore-next-line wrod
+       def wrod():
+           pass
+
+   Use the bare form to ignore every misspelling on the next line:
+
+   .. code-block:: python
+
+       # codespell:ignore-next-line
+       def wrod(wrods):
+           pass
+
+Ignoring misspellings marked with "[sic]"
+-----------------------------------------
+
+The ``--ignore-sic`` option tells codespell to skip a misspelling that is
+followed by the editorial ``[sic]`` marker (case-insensitive). Only the single
+occurrence preceding the marker is ignored, so other misspellings on the same
+line are still reported. A closing quote may sit between the word and the
+marker, which is the common case when documenting a corrected typo (for example
+in a changelog):
+
+.. code-block:: text
+
+    correct the "wrod" [sic] typo in a changelog entry
+
+Unlike ``codespell:ignore``, the marker is part of the prose itself and does not
+require naming the word in a tooling comment.
 
 Using a config file
 -------------------
@@ -334,7 +367,7 @@ You can install required dependencies for development by running the following w
 
 .. code-block:: sh
 
-       pip install -e ".[dev]"
+       pip install -e . --group dev
 
 To run tests against the codebase run:
 
