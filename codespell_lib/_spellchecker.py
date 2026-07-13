@@ -22,16 +22,18 @@ alt_chars = (("'", "’"),)  # noqa: RUF001
 
 
 class Misspelling:
-    def __init__(self, data: str, fix: bool, reason: str) -> None:
+    def __init__(self, data: str, fix: bool, reason: str, source: str = "") -> None:
         self.data = data
         self.fix = fix
         self.reason = reason
+        self.source = source
 
 
 def add_misspelling(
     key: str,
     data: str,
     misspellings: dict[str, Misspelling],
+    source: str = "",
 ) -> None:
     data = data.strip()
 
@@ -43,14 +45,18 @@ def add_misspelling(
         fix = True
         reason = ""
 
-    misspellings[key] = Misspelling(data, fix, reason)
+    misspellings[key] = Misspelling(data, fix, reason, source)
 
 
 def build_dict(
     filename: str,
     misspellings: dict[str, Misspelling],
     ignore_words: set[str],
+    source: str = "",
 ) -> None:
+    # name recorded as the origin of the entries, e.g. the name of a
+    # builtin dictionary; defaults to the dictionary file name
+    source = source or filename
     with open(filename, encoding="utf-8") as f:
         translate_tables = [(x, str.maketrans(x, y)) for x, y in alt_chars]
         for line in f:
@@ -60,11 +66,11 @@ def build_dict(
             key = key.lower()
             data = data.lower()
             if key not in ignore_words:
-                add_misspelling(key, data, misspellings)
+                add_misspelling(key, data, misspellings, source)
             # generate alternative misspellings/fixes
             for x, table in translate_tables:
                 if x in key:
                     alt_key = key.translate(table)
                     alt_data = data.translate(table)
                     if alt_key not in ignore_words:
-                        add_misspelling(alt_key, alt_data, misspellings)
+                        add_misspelling(alt_key, alt_data, misspellings, source)
