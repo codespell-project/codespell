@@ -1428,7 +1428,10 @@ def test_ill_formed_ini_config_file(
     assert "ill-formed config file" in stderr
 
 
-@pytest.mark.parametrize("kind", ["cfg", "cfg_multiline", "toml", "toml_list"])
+@pytest.mark.parametrize(
+    "kind",
+    ["cfg", "cfg_multiline", "toml", "toml_list", "toml_sibling_array"],
+)
 def test_config_toml(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
@@ -1482,13 +1485,23 @@ skip = 'bad.txt,whatever.txt'
 check-filenames = false
 count = true
 """
-        else:
-            assert kind == "toml_list"
+        elif kind == "toml_list":
             text = """\
 [tool.codespell]
 skip = ['bad.txt', 'whatever.txt']
 check-filenames = false
 count = true
+"""
+        else:
+            assert kind == "toml_sibling_array"
+            text = """\
+[tool.codespell]
+skip = 'bad.txt,whatever.txt'
+check-filenames = false
+count = true
+
+[[tool.dynamic-metadata]]
+provider = 'scikit_build_core.metadata.version'
 """
         tomlfile.write_text(text)
 
@@ -1512,6 +1525,22 @@ count = true
     assert code == 0
     assert "bad.txt" not in stdout
     assert "abandonned.txt" not in stdout
+
+
+def test_config_toml_codespell_array(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    if sys.version_info < (3, 11):
+        pytest.importorskip("tomli")
+    tomlfile = tmp_path / "pyproject.toml"
+    tomlfile.write_text("[[tool.codespell]]\nskip = 'bad.txt'\n")
+
+    result = cs.main("--toml", tomlfile, std=True)
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    assert code == EX_CONFIG
+    assert "[tool.codespell] must be a table" in stderr
 
 
 @contextlib.contextmanager

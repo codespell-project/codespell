@@ -712,10 +712,12 @@ def parse_options(
         if tomllib is not None:
             for toml_file in toml_files:
                 with open(toml_file, "rb") as f:
-                    data = tomllib.load(f).get("tool", {})
-                if "codespell" in data:
-                    data["codespell"] = _toml_to_parseconfig(data["codespell"])
-                config.read_dict(data)
+                    data = tomllib.load(f).get("tool", {}).get("codespell")
+                if data is not None:
+                    if not isinstance(data, dict):
+                        msg = f"{toml_file}: [tool.codespell] must be a table"
+                        raise configparser.Error(msg)
+                    config.read_dict({"codespell": _toml_to_parseconfig(data)})
 
     # Collect which config files are going to be used
     used_cfg_files = []
