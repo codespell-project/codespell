@@ -1,7 +1,11 @@
-exclude *.yml *.yaml
+exclude *.yml
 exclude .coveragerc
 exclude .git-blame-ignore-revs
-exclude example example/* snap snap/*
-exclude Makefile
+prune example
+prune snap
+prune .devcontainer
+prune .github
+exclude .gitignore
+exclude .mailmap
 exclude codespell.1.include
 exclude pyproject-codespell.precommit-toml

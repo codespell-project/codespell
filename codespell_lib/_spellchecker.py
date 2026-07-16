@@ -16,11 +16,6 @@ Copyright (C) 2010-2011  Lucas De Marchi <lucas.de.marchi@gmail.com>
 Copyright (C) 2011  ProFUSION embedded systems
 """
 
-from typing import (
-    Dict,
-    Set,
-)
-
 # Pass all misspellings through this translation table to generate
 # alternative misspellings and fixes.
 alt_chars = (("'", "’"),)  # noqa: RUF001
@@ -36,7 +31,7 @@ class Misspelling:
 def add_misspelling(
     key: str,
     data: str,
-    misspellings: Dict[str, Misspelling],
+    misspellings: dict[str, Misspelling],
 ) -> None:
     data = data.strip()
 
@@ -53,8 +48,8 @@ def add_misspelling(
 
 def build_dict(
     filename: str,
-    misspellings: Dict[str, Misspelling],
-    ignore_words: Set[str],
+    misspellings: dict[str, Misspelling],
+    ignore_words: set[str],
 ) -> None:
     with open(filename, encoding="utf-8") as f:
         translate_tables = [(x, str.maketrans(x, y)) for x, y in alt_chars]

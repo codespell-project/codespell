@@ -5,10 +5,11 @@ import os.path as op
 import re
 import subprocess
 import sys
+from collections.abc import Generator
 from io import StringIO
 from pathlib import Path
 from shutil import copyfile
-from typing import Any, Generator, Optional, Tuple, Union
+from typing import Any, Optional, Union
 from unittest import mock
 
 import pytest
@@ -19,6 +20,7 @@ from codespell_lib._codespell import (
     EX_DATAERR,
     EX_OK,
     EX_USAGE,
+    _builtin_dictionaries,
     uri_regex_def,
 )
 
@@ -39,7 +41,7 @@ class MainWrapper:
         *args: Any,
         count: bool = True,
         std: bool = False,
-    ) -> Union[int, Tuple[int, str, str]]:
+    ) -> Union[int, tuple[int, str, str]]:
         args = tuple(str(arg) for arg in args)
         if count:
             args = ("--count", *args)
@@ -65,7 +67,7 @@ cs = MainWrapper()
 
 
 def run_codespell(
-    args: Tuple[Any, ...] = (),
+    args: tuple[Any, ...] = (),
     cwd: Optional[Path] = None,
 ) -> int:
     """Run codespell."""
@@ -115,6 +117,11 @@ def test_basic(
         f.write("tim\ngonna\n")
     assert cs.main(fname) == 2, "with a name"
     assert cs.main("--builtin", "clear,rare,names,informal", fname) == 4
+    assert cs.main("--builtin", "all", fname) == cs.main(
+        "--builtin",
+        ",".join(d[0] for d in _builtin_dictionaries),
+        fname,
+    )
     with fname.open("w") as f:  # overwrite the file
         f.write("var = 'nwe must check codespell likes escapes nin strings'\n")
     assert cs.main(fname) == 1, "checking our string escape test word is bad"
@@ -168,6 +175,31 @@ def test_basic(
     assert cs.main(tmp_path) == 0
 
 
+def test_write_changes_lists_changes(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Test that -w flag shows list of changes made to file."""
+
+    fname = tmp_path / "misspelled.txt"
+    fname.write_text("This is abandonned\nAnd this is occured\nAlso teh typo\n")
+
+    result = cs.main("-w", fname, std=True)
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    assert code == 0
+
+    assert "FIXED:" in stderr
+
+    # Check that changes are listed with format: filename:line: wrong ==> right
+    assert "misspelled.txt:1: abandonned ==> abandoned" in stderr
+    assert "misspelled.txt:2: occured ==> occurred" in stderr
+    assert "misspelled.txt:3: teh ==> the" in stderr
+
+    corrected = fname.read_text()
+    assert corrected == "This is abandoned\nAnd this is occurred\nAlso the typo\n"
+
+
 def test_default_word_parsing(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
@@ -217,12 +249,12 @@ def test_permission_error(
     fname.write_text("abandonned\n")
     result = cs.main(fname, std=True)
     assert isinstance(result, tuple)
-    code, _, stderr = result
+    _, _, stderr = result
     assert "WARNING:" not in stderr
     fname.chmod(0o000)
     result = cs.main(fname, std=True)
     assert isinstance(result, tuple)
-    code, _, stderr = result
+    _, _, stderr = result
     assert "WARNING:" in stderr
 
 
@@ -368,9 +400,7 @@ def test_ignore_words_with_cases(
     """Test case-sensitivity implemented for -I and -L options in #3272."""
     bad_name = tmp_path / "MIS.txt"
     bad_name.write_text(
-        "1 MIS (Management Information System) 1\n"
-        "2 Les Mis (1980 musical) 2\n"
-        "3 mis 3\n"
+        "1 MIS (Management Information System) 1\n2 Les Mis (1980 musical) 2\n3 mis 3\n"
     )
     assert cs.main(bad_name) == 3
     assert cs.main(bad_name, "-f") == 4
@@ -464,7 +494,91 @@ def test_inline_ignores(
     expected_error_count: int,
 ) -> None:
     d = str(tmpdir)
-    with open(op.join(d, "bad.txt"), "w") as f:
+    with open(op.join(d, "bad.txt"), "w", encoding="utf-8") as f:
+        f.write(content)
+    assert cs.main(d) == expected_error_count
+
+
+@pytest.mark.parametrize(
+    ("content", "expected_error_count"),
+    [
+        # marker right after the word (optional whitespace) excuses it
+        ("they wrod [sic] it\n", 0),
+        ("they wrod[sic] it\n", 0),
+        ("they wrod  [sic] it\n", 0),
+        # case-insensitive marker
+        ("they wrod [SIC] it\n", 0),
+        # quoted typo followed by the marker (changelog use case)
+        ('correct "wrod" [sic] typo\n', 0),
+        ('correct "wrod"[sic] typo\n', 0),
+        # only the immediately preceding occurrence is excused
+        ("wrod wrod [sic]\n", 1),
+        # a marker elsewhere on the line does not excuse the word
+        ("wrod it [sic] anyway abilty\n", 2),
+        # an intervening word breaks the association
+        ('wrod" abilty [sic]\n', 1),
+        # without a marker the misspelling is still reported
+        ("they wrod it\n", 1),
+        # not a real marker
+        ("they wrod (sic) it\n", 1),
+        ("they wrod [sick] it\n", 1),
+    ],
+)
+def test_ignore_sic(
+    tmpdir: pytest.TempPathFactory,
+    capsys: pytest.CaptureFixture[str],
+    content: str,
+    expected_error_count: int,
+) -> None:
+    d = str(tmpdir)
+    with open(op.join(d, "bad.txt"), "w", encoding="utf-8") as f:
+        f.write(content)
+    # off by default
+    assert cs.main(d) == content.count("wrod") + content.count("abilty")
+    # opt-in
+    assert cs.main("--ignore-sic", d) == expected_error_count
+
+
+@pytest.mark.parametrize(
+    ("content", "expected_error_count"),
+    [
+        # wildcard form: ignore all misspellings on the next line
+        ("# codespell:ignore-next-line\nabandonned abondon abilty\n", 0),
+        ("// codespell:ignore-next-line\nabandonned abondon abilty\n", 0),
+        # specific word form: ignore only listed words on the next line
+        (
+            "# codespell:ignore-next-line abondon\nabandonned abondon abilty\n",
+            2,
+        ),
+        (
+            "# codespell:ignore-next-line abondon,abilty\nabandonned abondon abilty\n",
+            1,
+        ),
+        # the directive does not affect the line it is on or subsequent lines
+        (
+            "abandonned  # codespell:ignore-next-line\nabondon\nabilty\n",
+            2,
+        ),
+        # listing an unused ignore word still triggers a skip
+        (
+            "# codespell:ignore-next-line nomenklatur\nabandonned abondon abilty\n",
+            3,
+        ),
+        # invalid directives are not honored
+        ("# codespell:ignore-next-lin\nabandonned\n", 1),
+        ("codespell:ignore-next-line\nabandonned\n", 1),
+        # directive followed by a blank line still consumes the directive
+        ("# codespell:ignore-next-line\n\nabandonned\n", 1),
+    ],
+)
+def test_ignore_next_line(
+    tmpdir: pytest.TempPathFactory,
+    capsys: pytest.CaptureFixture[str],
+    content: str,
+    expected_error_count: int,
+) -> None:
+    d = str(tmpdir)
+    with open(op.join(d, "bad.txt"), "w", encoding="utf-8") as f:
         f.write(content)
     assert cs.main(d) == expected_error_count
 
@@ -772,7 +886,7 @@ def _helper_test_case_handling_in_fixes(
     fname.write_text("early adoptor\n")
     result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
-    code, stdout, _ = result
+    _, stdout, _ = result
     # all suggested fixes must be lowercase too
     assert "adopter, adaptor" in stdout
     # the reason, if any, must not be modified
@@ -783,7 +897,7 @@ def _helper_test_case_handling_in_fixes(
     fname.write_text("Early Adoptor\n")
     result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
-    code, stdout, _ = result
+    _, stdout, _ = result
     # all suggested fixes must be capitalized too
     assert "Adopter, Adaptor" in stdout
     # the reason, if any, must not be modified
@@ -794,7 +908,7 @@ def _helper_test_case_handling_in_fixes(
     fname.write_text("EARLY ADOPTOR\n")
     result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
-    code, stdout, _ = result
+    _, stdout, _ = result
     # all suggested fixes must be uppercase too
     assert "ADOPTER, ADAPTOR" in stdout
     # the reason, if any, must not be modified
@@ -805,7 +919,7 @@ def _helper_test_case_handling_in_fixes(
     fname.write_text("EaRlY AdOpToR\n")
     result = cs.main("-D", dictionary_name, fname, std=True)
     assert isinstance(result, tuple)
-    code, stdout, _ = result
+    _, stdout, _ = result
     # all suggested fixes should be lowercase
     assert "adopter, adaptor" in stdout
     # the reason, if any, must not be modified
@@ -953,19 +1067,19 @@ def test_ignore_multiline_regex_option(
     assert code == EX_USAGE
     assert "usage:" in stdout
 
+    text = """
+    Please see http://example.com/abandonned for info
+    # codespell:ignore-begin
+    '''
+    abandonned
+    abandonned
+    '''
+    # codespell:ignore-end
+    abandonned
+    """
+
     fname = tmp_path / "flag.txt"
-    fname.write_text(
-        """
-        Please see http://example.com/abandonned for info
-        # codespell:ignore-begin
-        '''
-        abandonned
-        abandonned
-        '''
-        # codespell:ignore-end
-        abandonned
-        """
-    )
+    fname.write_text(text)
     assert cs.main(fname) == 4
     assert (
         cs.main(
@@ -975,6 +1089,44 @@ def test_ignore_multiline_regex_option(
         )
         == 2
     )
+
+    with FakeStdin(text):
+        assert (
+            cs.main(
+                "-",
+                "--ignore-multiline-regex",
+                "codespell:ignore-begin.*codespell:ignore-end",
+            )
+            == 2
+        )
+
+    fname.write_text("This\nThsi")
+    cs.main(
+        fname,
+        "-w",
+        "--ignore-multiline-regex",
+        "codespell:ignore-begin.*codespell:ignore-end",
+    )
+    assert fname.read_text() == "This\nThis"
+
+    fname.write_text(text)
+    cs.main(
+        fname,
+        "-w",
+        "--ignore-multiline-regex",
+        "codespell:ignore-begin.*codespell:ignore-end",
+    )
+    fixed_text = """
+    Please see http://example.com/abandoned for info
+    # codespell:ignore-begin
+    '''
+    abandonned
+    abandonned
+    '''
+    # codespell:ignore-end
+    abandoned
+    """
+    assert fname.read_text() == fixed_text
 
 
 def test_uri_regex_option(
@@ -1234,7 +1386,7 @@ def test_quiet_level_32(
     d = tmp_path / "files"
     d.mkdir()
     conf = str(tmp_path / "setup.cfg")
-    with open(conf, "w") as f:
+    with open(conf, "w", encoding="utf-8") as f:
         # It must contain a "codespell" section.
         f.write("[codespell]\n")
     args = ("--config", conf)
@@ -1263,7 +1415,7 @@ def test_ill_formed_ini_config_file(
     d = tmp_path / "files"
     d.mkdir()
     conf = str(tmp_path / "setup.cfg")
-    with open(conf, "w") as f:
+    with open(conf, "w", encoding="utf-8") as f:
         # It should contain but lacks a section.
         f.write("foobar =\n")
     args = ("--config", conf)
@@ -1276,7 +1428,10 @@ def test_ill_formed_ini_config_file(
     assert "ill-formed config file" in stderr
 
 
-@pytest.mark.parametrize("kind", ["cfg", "cfg_multiline", "toml", "toml_list"])
+@pytest.mark.parametrize(
+    "kind",
+    ["cfg", "cfg_multiline", "toml", "toml_list", "toml_sibling_array"],
+)
 def test_config_toml(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
@@ -1330,13 +1485,23 @@ skip = 'bad.txt,whatever.txt'
 check-filenames = false
 count = true
 """
-        else:
-            assert kind == "toml_list"
+        elif kind == "toml_list":
             text = """\
 [tool.codespell]
 skip = ['bad.txt', 'whatever.txt']
 check-filenames = false
 count = true
+"""
+        else:
+            assert kind == "toml_sibling_array"
+            text = """\
+[tool.codespell]
+skip = 'bad.txt,whatever.txt'
+check-filenames = false
+count = true
+
+[[tool.dynamic-metadata]]
+provider = 'scikit_build_core.metadata.version'
 """
         tomlfile.write_text(text)
 
@@ -1362,6 +1527,22 @@ count = true
     assert "abandonned.txt" not in stdout
 
 
+def test_config_toml_codespell_array(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    if sys.version_info < (3, 11):
+        pytest.importorskip("tomli")
+    tomlfile = tmp_path / "pyproject.toml"
+    tomlfile.write_text("[[tool.codespell]]\nskip = 'bad.txt'\n")
+
+    result = cs.main("--toml", tomlfile, std=True)
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    assert code == EX_CONFIG
+    assert "[tool.codespell] must be a table" in stderr
+
+
 @contextlib.contextmanager
 def FakeStdin(text: str) -> Generator[None, None, None]:
     oldin = sys.stdin
@@ -1375,7 +1556,7 @@ def FakeStdin(text: str) -> Generator[None, None, None]:
 
 def run_codespell_stdin(
     text: str,
-    args: Tuple[Any, ...],
+    args: tuple[Any, ...],
     cwd: Optional[Path] = None,
 ) -> int:
     """Run codespell in stdin mode and return number of lines in output."""
@@ -1392,14 +1573,14 @@ def run_codespell_stdin(
     return output.count("\n")
 
 
-def test_stdin(tmp_path: Path) -> None:
+def test_stdin(tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> None:
     """Test running the codespell executable."""
     input_file_lines = 4
     text = ""
     for _ in range(input_file_lines):
         text += "abandonned\n"
     for single_line_per_error in (True, False):
-        args: Tuple[str, ...] = ()
+        args: tuple[str, ...] = ()
         if single_line_per_error:
             args = ("--stdin-single-line",)
         # we expect 'input_file_lines' number of lines with
@@ -1407,3 +1588,58 @@ def test_stdin(tmp_path: Path) -> None:
         assert run_codespell_stdin(
             text, args=args, cwd=tmp_path
         ) == input_file_lines * (2 - int(single_line_per_error))
+
+    with FakeStdin("Thsi is a line"):
+        result = cs.main("-", "-w", std=True)
+        assert isinstance(result, tuple)
+        code, stdout, _ = result
+        assert stdout == "---\nThis is a line"
+        assert code == 0
+
+    with FakeStdin("Thsi is a line"):
+        result = cs.main("-", "--stdin-single-line", std=True)
+        assert isinstance(result, tuple)
+        code, stdout, _ = result
+        assert stdout == "1: Thsi ==> This\n"
+        assert code == 1
+
+
+def test_args_from_file(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    import textwrap
+
+    print()
+    fname1 = tmp_path / "tmp1"
+    fname2 = tmp_path / "tmp2"
+    fname3 = tmp_path / "tmp3"
+    fname_list = tmp_path / "tmp_list"
+    fname_list.write_text(f"{fname1} {fname2}\n{fname3}")
+    fname1.write_text("abandonned\ncode")
+    fname2.write_text("exmaple\n")
+    fname3.write_text("abilty\n")
+    print(f"{fname_list=}")
+    args = ["codespell", f"@{fname_list}"]
+    print(f"Running: {args=}")
+    cp = subprocess.run(  # noqa: S603
+        args,
+        check=False,
+        text=True,
+        capture_output=True,
+    )
+    code = cp.returncode
+    stdout = cp.stdout
+    stderr = cp.stderr
+    print(f"{code=}")
+    print(f"stdout:\n{textwrap.indent(stdout, '    ')}")
+    print(f"stderr:\n{textwrap.indent(stderr, '    ')}")
+    assert "tmp1:1: abandonned ==> abandoned\n" in stdout, f"{stdout=}"
+    assert "tmp2:1: exmaple ==> example\n" in stdout, f"{stdout=}"
+    assert "tmp3:1: abilty ==> ability\n" in stdout, f"{stdout=}"
+    assert code, f"{code=}"
+
+    # Run same test via cs_.main() so code coverage checks work.
+    print("Testing with direct call to cs_.main()")
+    r = cs_.main(*args[1:])
+    print(f"{r=}")

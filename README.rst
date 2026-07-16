@@ -20,7 +20,7 @@ Useful links
 Requirements
 ------------
 
-Python 3.8 or above.
+Python 3.9 or above.
 
 Installation
 ------------
@@ -114,12 +114,12 @@ Want to know if a word you're proposing exists in codespell already? It is possi
     echo "word" | codespell -
     echo "1stword,2ndword" | codespell -
 
-You can select the optional dictionaries with the ``--builtin`` option.
+You can select the optional builtin dictionary with the ``--builtin`` option. Use ``--builtin=all`` to enable them all. This only works without custom ``-D`` dictionaries.
 
 Ignoring words
 --------------
 
-When ignoring false positives, note that spelling errors are *case-insensitive* but words to ignore are *case-sensitive*. For example, the dictionary entry ``wrod`` will also match the typo ``Wrod``, but to ignore it you must pass ``wrod``.
+When ignoring false positives, note that spelling errors are *case-insensitive* but words to ignore are *case-sensitive*. For example, the dictionary entry ``wrod`` will also match the typo ``Wrod``, but to ignore it you must pass ``wrod`` (to match the case of the dictionary entry).
 
 The words to ignore can be passed in two ways:
 
@@ -156,12 +156,46 @@ Words should be separated by a comma.
        def wrod(wrods) # codespell:ignore
            pass
 
+3. ignore the following line (useful when a formatter pushes comments to a new line):
+
+   .. code-block:: python
+
+       # codespell:ignore-next-line wrod
+       def wrod():
+           pass
+
+   Use the bare form to ignore every misspelling on the next line:
+
+   .. code-block:: python
+
+       # codespell:ignore-next-line
+       def wrod(wrods):
+           pass
+
+Ignoring misspellings marked with "[sic]"
+-----------------------------------------
+
+The ``--ignore-sic`` option tells codespell to skip a misspelling that is
+followed by the editorial ``[sic]`` marker (case-insensitive). Only the single
+occurrence preceding the marker is ignored, so other misspellings on the same
+line are still reported. A closing quote may sit between the word and the
+marker, which is the common case when documenting a corrected typo (for example
+in a changelog):
+
+.. code-block:: text
+
+    correct the "wrod" [sic] typo in a changelog entry
+
+Unlike ``codespell:ignore``, the marker is part of the prose itself and does not
+require naming the word in a tooling comment.
+
 Using a config file
 -------------------
 
 Command line options can also be specified in a config file.
 
-When running ``codespell``, it will check in the current directory for a file
+When running ``codespell``, it will check in the current directory for an
+`INI file <https://en.wikipedia.org/wiki/INI_file>`_
 named ``setup.cfg`` or ``.codespellrc`` (or a file specified via ``--config``),
 containing an entry named ``[codespell]``. Each command line argument can
 be specified in this file (without the preceding dashes), for example:
@@ -173,32 +207,16 @@ be specified in this file (without the preceding dashes), for example:
     count =
     quiet-level = 3
 
-The ``.codespellrc`` file is an `INI file <https://en.wikipedia.org/wiki/INI_file>`_,
-which is read using Python's
-`configparser <https://docs.python.org/3/library/configparser.html#supported-ini-file-structure>`_.
-For example, comments are possible using ``;`` or ``#`` as the first character.
-
-Values in an INI file entry cannot start with a ``-`` character, so if you need to do this,
-structure your entries like this:
-
-.. code-block:: ini
-
-    [codespell]
-    dictionary = mydict,-
-    ignore-words = bar,-foo
-
-instead of these invalid entries:
-
-.. code-block:: ini
-
-    [codespell]
-    dictionary = -,mydict
-    ignore-words = -foo,bar
+Python's
+`configparser <https://docs.python.org/3/library/configparser.html#supported-ini-file-structure>`_
+module defines the exact format of INI config files. For example,
+comments are possible using ``;`` or ``#`` as the first character.
 
 Codespell will also check in the current directory for a ``pyproject.toml``
-(or a path can be specified via ``--toml <filename>``) file, and the
-``[tool.codespell]`` entry will be used, but only if the tomli_ package
-is installed for versions of Python prior to 3.11. For example:
+file (or a file specified via ``--toml``), and the ``[tool.codespell]``
+entry will be used. For versions of Python prior to 3.11, this requires
+the tomli_ package. For example, here is the TOML equivalent of the
+previous config file:
 
 .. code-block:: toml
 
@@ -207,27 +225,49 @@ is installed for versions of Python prior to 3.11. For example:
     count = true
     quiet-level = 3
 
-These are both equivalent to running:
+The above INI and TOML files are equivalent to running:
 
 .. code-block:: sh
 
-    codespell --quiet-level 3 --count --skip "*.po,*.ts,./src/3rdParty,./src/Test"
+    codespell --skip "*.po,*.ts,./src/3rdParty,./src/Test" --count --quiet-level 3
 
 If several config files are present, they are read in the following order:
 
-#. ``pyproject.toml`` (only if the ``tomli`` library is available)
+#. ``pyproject.toml`` (only if the ``tomli`` library is available for Python < 3.11)
 #. ``setup.cfg``
 #. ``.codespellrc``
 #. any additional file supplied via ``--config``
 
 If a codespell configuration is supplied in several of these files,
 the configuration from the most recently read file overwrites previously
-specified configurations.
+specified configurations. Any options specified in the command line will
+*override* options from the config files.
 
-Any options specified in the command line will *override* options from the
-config files.
+Values in a config file entry cannot start with a ``-`` character, so if
+you need to do this, structure your entries like this:
+
+.. code-block:: ini
+
+    [codespell]
+    dictionary = mydict,-
+    ignore-words-list = bar,-foo
+
+instead of these invalid entries:
+
+.. code-block:: ini
+
+    [codespell]
+    dictionary = -,mydict
+    ignore-words-list = -foo,bar
 
 .. _tomli: https://pypi.org/project/tomli/
+
+Reading arguments from file
+---------------------------
+
+Additional arguments can be read from a file with ``@PATH``. Arguments are
+extracted using ``shlex.split()``.
+
 
 pre-commit hook
 ---------------
@@ -237,7 +277,7 @@ codespell also works with `pre-commit <https://pre-commit.com/>`_, using
 .. code-block:: yaml
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.4
+    rev: v2.4.1
     hooks:
     - id: codespell
 
@@ -246,7 +286,7 @@ If one configures codespell using the `pyproject.toml` file instead use:
 .. code-block:: yaml
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.4
+    rev: v2.4.1
     hooks:
     - id: codespell
       additional_dependencies:
@@ -299,7 +339,7 @@ You can install required dependencies for development by running the following w
 
 .. code-block:: sh
 
-       pip install -e ".[dev]"
+       pip install -e . --group dev
 
 To run tests against the codebase run:
 
@@ -364,13 +404,13 @@ In the scenario where the user prefers not to follow the development version of 
 
 .. code-block:: sh
 
-    wget https://raw.githubusercontent.com/codespell-project/codespell/master/codespell_lib/data/dictionary.txt
+    wget https://raw.githubusercontent.com/codespell-project/codespell/main/codespell_lib/data/dictionary.txt
     codespell -D dictionary.txt
 
 The above simply downloads the latest ``dictionary.txt`` file and then by utilizing the ``-D`` flag allows the user to specify the freshly downloaded ``dictionary.txt`` as the custom dictionary instead of the default one.
 
 You can also do the same thing for the other dictionaries listed here:
-    https://github.com/codespell-project/codespell/tree/master/codespell_lib/data
+    https://github.com/codespell-project/codespell/tree/main/codespell_lib/data
 
 License
 -------

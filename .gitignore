@@ -14,3 +14,4 @@ codespell.egg-info
 codespell_lib/_version.py
 junit-results.xml
 *.egg-info/
+.DS_Store

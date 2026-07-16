@@ -4,14 +4,13 @@
 name = "codespell"
 description = "Fix common misspellings in text files"
 readme = { file = "README.rst", content-type = "text/x-rst" }
-requires-python = ">=3.8"
-license = {text = "GPL-2.0-only"}
+requires-python = ">=3.9"
+license = "GPL-2.0-only"
 authors = [
     {name = "Lucas De Marchi", email = "lucas.de.marchi@gmail.com"},
 ]
 classifiers = [
     "Intended Audience :: Developers",
-    "License :: OSI Approved",
     "Programming Language :: Python",
     "Topic :: Software Development",
     "Operating System :: Microsoft :: Windows",
@@ -21,16 +20,24 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
 ]
 dependencies = []
 dynamic = ["version"]
 
 [project.optional-dependencies]
+hard-encoding-detection = [
+    "chardet"
+]
+toml = [
+    "tomli; python_version < '3.11'"
+]
+
+[dependency-groups]
 dev = [
     "build",
     "chardet",
@@ -42,12 +49,6 @@ dev = [
     "ruff",
     "tomli",
     "twine"
-]
-hard-encoding-detection = [
-    "chardet"
-]
-toml = [
-    "tomli; python_version < '3.11'"
 ]
 types = [
     "chardet>=5.1.0",
@@ -66,15 +67,22 @@ repository = "https://github.com/codespell-project/codespell"
 
 [build-system]
 build-backend = "setuptools.build_meta"
-requires = ["setuptools>=64", "setuptools_scm[toml]>=6.2, != 8.0.0"]
+requires = ["setuptools>=77", "setuptools_scm[toml]>=6.2, != 8.0.0"]
 
 [tool.setuptools_scm]
 write_to = "codespell_lib/_version.py"
 
+[tool.setuptools]
+include-package-data = false
+
 [tool.setuptools.packages.find]
+include = ["codespell_lib", "codespell_lib.*"]
 exclude = [
     "dist",
     "snap",
+    "tools",
+    "example",
+    "codespell_lib.tests*",
 ]
 
 [tool.setuptools.package-data]
@@ -109,29 +117,6 @@ filterwarnings = ["error"]
 line-length = 88
 
 [tool.ruff.lint]
-ignore = [
-    "ANN101",
-    "B904",
-    "PLW2901",
-    "RET505",
-    "SIM105",
-    "SIM115",
-    # https://docs.astral.sh/ruff/formatter/#conflicting-lint-rules
-    "W191",
-    "E111",
-    "E114",
-    "E117",
-    "D206",
-    "D300",
-    "Q000",
-    "Q001",
-    "Q002",
-    "Q003",
-    "COM812",
-    "COM819",
-    "ISC001",
-    "ISC002",
-]
 select = [
     "A",
     "ANN",
@@ -157,6 +142,30 @@ select = [
     "W",
     "YTT",
 ]
+ignore = [
+    "B904",
+    "PLC0415",
+    "PLR0914",
+    "PLR6201",
+    "PLW2901",
+    "RET505",
+    "S404",
+    "SIM105",
+    "SIM115",
+    # https://docs.astral.sh/ruff/formatter/#conflicting-lint-rules
+    "W191",
+    "E111",
+    "E114",
+    "E117",
+    "D206",
+    "D300",
+    "Q000",
+    "Q001",
+    "Q002",
+    "Q003",
+    "COM812",
+    "COM819",
+]
 
 [tool.ruff.lint.mccabe]
 max-complexity = 45
@@ -171,4 +180,4 @@ allow-magic-value-types = ["bytes", "int", "str",]
 max-args = 13
 max-branches = 48
 max-returns = 12
-max-statements = 119
+max-statements = 120
