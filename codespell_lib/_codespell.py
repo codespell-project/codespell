@@ -896,7 +896,9 @@ def _ignore_word_sub(
     ignore_word_regex: Optional[Pattern[str]],
 ) -> str:
     if ignore_word_regex:
-        text = ignore_word_regex.sub(" ", text)
+        # Pad to the match length: callers match against this text but index
+        # back into the original, so the substitution must not move offsets.
+        text = ignore_word_regex.sub(lambda m: " " * (m.end() - m.start()), text)
     return text
 
 

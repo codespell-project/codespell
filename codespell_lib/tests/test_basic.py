@@ -1054,6 +1054,28 @@ def test_ignore_regex_option(
     assert cs.main(fname, r"--ignore-regex=\bdonn\b") == 1
 
 
+def test_ignore_regex_does_not_shift_offsets(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """A non-overlapping --ignore-regex must not affect other checks.
+
+    Matches are found in the ignore-substituted text but indexed against the
+    original line, so the substitution has to preserve offsets.
+    """
+    # The escape-sequence check reads the character before the match.
+    fname = tmp_path / "esc.txt"
+    fname.write_text("var = 'IGNOREME \\nwe are here'\n")
+    assert cs.main(fname) == 0
+    assert cs.main(fname, "--ignore-regex=IGNOREME") == 0
+
+    # The "[sic]" check matches the line from the end of the match.
+    fname = tmp_path / "sic.txt"
+    fname.write_text("IGNOREME padding wrod [sic]\n")
+    assert cs.main(fname, "--ignore-sic") == 0
+    assert cs.main(fname, "--ignore-sic", "--ignore-regex=IGNOREME") == 0
+
+
 def test_ignore_multiline_regex_option(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
