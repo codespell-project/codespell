@@ -310,22 +310,32 @@ class FileOpener:
 
     def get_lines(self, f: TextIO) -> list[tuple[bool, int, list[str]]]:
         fragments = []
-        line_number = 0
         if self.ignore_multiline_regex:
             text = f.read()
             pos = 0
             for m in re.finditer(self.ignore_multiline_regex, text):
-                lines = text[pos : m.start()].splitlines(True)
-                fragments.append((False, line_number, lines))
-                line_number += len(lines)
-                lines = m.group().splitlines(True)
-                fragments.append((True, line_number, lines))
-                line_number += len(lines) - 1
+                # A fragment can start mid-line, so its line number has to come
+                # from its offset rather than from counting the lines before it.
+                fragments.append(
+                    (
+                        False,
+                        text.count("\n", 0, pos),
+                        text[pos : m.start()].splitlines(True),
+                    )
+                )
+                fragments.append(
+                    (
+                        True,
+                        text.count("\n", 0, m.start()),
+                        m.group().splitlines(True),
+                    )
+                )
                 pos = m.end()
-            lines = text[pos:].splitlines(True)
-            fragments.append((False, line_number, lines))
+            fragments.append(
+                (False, text.count("\n", 0, pos), text[pos:].splitlines(True))
+            )
         else:
-            fragments.append((False, line_number, f.readlines()))
+            fragments.append((False, 0, f.readlines()))
         return fragments
 
 

@@ -1054,6 +1054,46 @@ def test_ignore_regex_option(
     assert cs.main(fname, r"--ignore-regex=\bdonn\b") == 1
 
 
+def test_ignore_multiline_regex_line_numbers(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Misspellings after an ignored region keep their real line numbers."""
+    fname = tmp_path / "ml.txt"
+    fname.write_text(
+        "line one is fine\n"
+        "# codespell:ignore-begin\n"
+        "abandonned inside the ignored region\n"
+        "# codespell:ignore-end\n"
+        "line five is fine\n"
+        "here is the abandonned we report\n"
+    )
+
+    # The example from --help: the match ends on a line boundary.
+    result = cs.main(
+        fname,
+        "--ignore-multiline-regex",
+        "# codespell:ignore-begin *\n.*# codespell:ignore-end *\n",
+        std=True,
+    )
+    assert isinstance(result, tuple)
+    code, stdout, _ = result
+    assert code == 1
+    assert f"{fname}:6: abandonned" in stdout
+
+    # A match that starts and ends mid-line.
+    result = cs.main(
+        fname,
+        "--ignore-multiline-regex",
+        "codespell:ignore-begin.*codespell:ignore-end",
+        std=True,
+    )
+    assert isinstance(result, tuple)
+    code, stdout, _ = result
+    assert code == 1
+    assert f"{fname}:6: abandonned" in stdout
+
+
 def test_ignore_multiline_regex_option(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
