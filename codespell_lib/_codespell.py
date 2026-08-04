@@ -284,7 +284,30 @@ class FileOpener:
     ) -> tuple[list[tuple[bool, int, list[str]]], str]:
         encoding = None
         first_try = True
-        for encoding in ("utf-8", "iso-8859-1"):
+        encoding_try_list = ["utf-8", "iso-8859-1"]
+        with open(filename, "rb") as f:
+            encoding_marker = b"-*- coding:"
+            for line_number in range(3):
+                sniff_line = f.readline()
+                if encoding_marker not in sniff_line:
+                    continue
+                sniff_encoding = sniff_line[
+                    sniff_line.find(encoding_marker) + len(encoding_marker) :
+                ]
+                sniff_encoding = sniff_encoding.strip()
+                if sniff_encoding:
+                    sniff_encoding = sniff_encoding[
+                        : sniff_encoding.find(b" ")
+                    ]  # do we need to handle newlines?
+                if sniff_encoding:
+                    sniff_encoding_str = sniff_encoding.decode("us-ascii")
+                    try:
+                        "".encode(sniff_encoding_str)  # Attempt to validate encoding
+                    except LookupError:
+                        sniff_encoding_str = sniff_encoding_str.replace("-", "")
+                    encoding_try_list.insert(0, sniff_encoding_str)
+                    break
+        for encoding in encoding_try_list:
             if first_try:
                 first_try = False
             elif not self.quiet_level & QuietLevels.ENCODING:
