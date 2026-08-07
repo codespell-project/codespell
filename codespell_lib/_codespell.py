@@ -815,6 +815,9 @@ def ask_for_word_fix(
     filename: str,
     lineno: int,
 ) -> tuple[bool, str]:
+    # This function must not mutate `misspelling`: the object is shared by every
+    # match of the word in the run, so a per-occurrence answer would leak into
+    # every later occurrence and file (GH-62).
     cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
     cline = f"{colors.FILE}{lineno}{colors.DISABLE}"
 
@@ -845,9 +848,11 @@ def ask_for_word_fix(
                 r = ""
 
         if r == "N":
-            misspelling.fix = False
+            return False, fixword
 
-    elif (interactivity & 2) and not misspelling.reason:
+        return True, fixword
+
+    elif (interactivity & 2) and not misspelling.fix and not misspelling.reason:
         # if it is not disabled, i.e. it just has more than one possible fix,
         # we ask the user which word to use
 
@@ -874,8 +879,7 @@ def ask_for_word_fix(
                 print("Not a valid option\n")
 
         if r:
-            misspelling.fix = True
-            misspelling.data = r
+            return True, fix_case(wrongword, r)
 
     return misspelling.fix, fix_case(wrongword, misspelling.data)
 
@@ -986,6 +990,11 @@ def parse_lines(
 
     next_line_ignore_words: Optional[set[str]] = None
 
+    # Memory of interactive answers for this fragment: lword -> (fix, fixword).
+    # An answer covers every later match of the word here, so each word is
+    # asked about once per file rather than once per line (GH-62).
+    asked_for: dict[str, tuple[bool, str]] = {}
+
     for i, line in enumerate(lines):
         line = line.rstrip()
         # Apply any ignore-next-line directive carried from the previous line.
@@ -1025,7 +1034,6 @@ def parse_lines(
             extra_words_to_ignore |= pending_next_line_ignore
 
         fixed_words = set()
-        asked_for = set()
 
         # If all URI spelling errors will be ignored, erase any URI before
         # extracting words. Otherwise, apply ignores after extracting words.
@@ -1071,20 +1079,23 @@ def parse_lines(
                 fix = misspellings[lword].fix
                 fixword = fix_case(word, misspellings[lword].data)
 
-                if options.interactive and lword not in asked_for:
-                    if context is not None:
-                        context_shown = True
-                        print_context(lines, i, context)
-                    fix, fixword = ask_for_word_fix(
-                        lines[i],
-                        match,
-                        misspellings[lword],
-                        options.interactive,
-                        colors=colors,
-                        filename=filename,
-                        lineno=i + 1,
-                    )
-                    asked_for.add(lword)
+                if options.interactive:
+                    if lword in asked_for:
+                        fix, fixword = asked_for[lword]
+                    else:
+                        if context is not None:
+                            context_shown = True
+                            print_context(lines, i, context)
+                        fix, fixword = ask_for_word_fix(
+                            lines[i],
+                            match,
+                            misspellings[lword],
+                            options.interactive,
+                            colors=colors,
+                            filename=filename,
+                            lineno=i + 1,
+                        )
+                        asked_for[lword] = (fix, fixword)
 
                 if summary and fix:
                     summary.update(lword)

@@ -1643,3 +1643,75 @@ def test_args_from_file(
     print("Testing with direct call to cs_.main()")
     r = cs_.main(*args[1:])
     print(f"{r=}")
+
+
+def run_codespell_interactive(
+    args: tuple[Any, ...],
+    answers: str,
+    cwd: Optional[Path] = None,
+) -> "subprocess.CompletedProcess[str]":
+    """Run codespell feeding interactive answers on stdin."""
+    args = tuple(str(arg) for arg in args)
+    return subprocess.run(  # noqa: S603
+        ["codespell", *args],  # noqa: S607
+        cwd=cwd,
+        input=answers,
+        capture_output=True,
+        encoding="utf-8",
+        check=False,
+    )
+
+
+def test_interactive_rejection_is_per_file(
+    tmp_path: Path,
+) -> None:
+    """Rejecting a fix answers for one file, not for the whole run (GH-62)."""
+    f1 = tmp_path / "f1.txt"
+    f2 = tmp_path / "f2.txt"
+    f1.write_text("abandonned\n")
+    f2.write_text("abandonned\n")
+    proc = run_codespell_interactive(("-w", "-i", "1", f1, f2), answers="n\ny\n")
+    assert proc.stdout.count("(Y/n)") == 2
+    assert f1.read_text() == "abandonned\n"
+    assert f2.read_text() == "abandoned\n"
+
+
+def test_interactive_same_word_asked_once_per_file(
+    tmp_path: Path,
+) -> None:
+    """Within one file the first answer is reused for later matches."""
+    f = tmp_path / "f.txt"
+    f.write_text("abandonned\nabandonned\n")
+    proc = run_codespell_interactive(("-w", "-i", "1", f), answers="n\n")
+    assert proc.stdout.count("(Y/n)") == 1
+    assert f.read_text() == "abandonned\nabandonned\n"
+
+
+def test_interactive_level_2_no_prompt_for_single_fix(
+    tmp_path: Path,
+) -> None:
+    """Level 2 prompts only when more than one fix is available (as --help says).
+
+    A word with a single candidate used to get an option list where the blank
+    "none" answer still applied the fix (GH-62).
+    """
+    f = tmp_path / "f.txt"
+    f.write_text("abandonned\n")
+    proc = run_codespell_interactive(("-w", "-i", "2", f), answers="\n")
+    assert "Choose an option" not in proc.stdout
+    assert f.read_text() == "abandoned\n"
+
+
+def test_interactive_level_3_rejection_keeps_yn_prompt(
+    tmp_path: Path,
+) -> None:
+    """A rejected word must stay a Y/n question, not degrade to an option list."""
+    f1 = tmp_path / "f1.txt"
+    f2 = tmp_path / "f2.txt"
+    f1.write_text("abandonned\n")
+    f2.write_text("abandonned\n")
+    proc = run_codespell_interactive(("-w", "-i", "3", f1, f2), answers="n\nn\n")
+    assert proc.stdout.count("(Y/n)") == 2
+    assert "Choose an option" not in proc.stdout
+    assert f1.read_text() == "abandonned\n"
+    assert f2.read_text() == "abandonned\n"
