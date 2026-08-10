@@ -23829,7 +23829,12 @@ eanble->enable
 eanbled->enabled
 eanbles->enables
 eanbling->enabling
-earch->search, each,
+earch->search, each, arch,
+earched->searched, arched,
+earcher->searcher, archer,
+earchers->searchers, archers,
+earches->searches, arches,
+earching->searching, arching,
 earier->earlier, easier, eerier,
 eariest->earliest, easiest, eeriest,
 eariler->earlier
@@ -59768,6 +59773,8 @@ timestmping->timestamping
 timestmps->timestamps
 timetamp->timestamp
 timetamps->timestamps
+timezome->timezone
+timezomes->timezones
 timin->timing, timid,
 timmestamp->timestamp
 timmestamps->timestamps
