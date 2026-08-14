@@ -1093,11 +1093,17 @@ def parse_lines(
                     continue
 
                 if options.write_changes and fix:
-                    changed = True
-                    lines[i] = re.sub(rf"\b{word}\b", fixword, lines[i])
-                    fixed_words.add(word)
-                    changes_made.append((line_number + 1, word, fixword))
-                    continue
+                    new_line = re.sub(rf"\b{word}\b", fixword, lines[i])
+                    if new_line != lines[i]:
+                        changed = True
+                        lines[i] = new_line
+                        fixed_words.add(word)
+                        changes_made.append((line_number + 1, word, fixword))
+                        continue
+                    # The word was found in the --ignore-regex substituted text
+                    # but cannot be located in the original line, so no fix can
+                    # be written.  Fall through and report it as a warning
+                    # instead of claiming a fix that did not happen.
 
                 # otherwise warning was explicitly set by interactive mode
                 if (
