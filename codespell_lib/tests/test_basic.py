@@ -216,6 +216,22 @@ def test_default_word_parsing(
     assert cs.main(fname) == 1, "misspelling containing typographic apostrophe U+2019"
 
 
+def test_write_changes_trailing_apostrophe(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """A misspelling ending in an apostrophe must actually be written out."""
+    fname = tmp_path / "trailing_apostrophe"
+
+    fname.write_text("dont' go\n", encoding="utf-8")  # U+0027
+    cs.main("-w", fname, count=False)
+    assert fname.read_text(encoding="utf-8") == "don't go\n"
+
+    fname.write_text("dont’ go\n", encoding="utf-8")  # U+2019  # noqa: RUF001
+    cs.main("-w", fname, count=False)
+    assert fname.read_text(encoding="utf-8") == "don’t go\n"  # noqa: RUF001
+
+
 def test_bad_glob(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],

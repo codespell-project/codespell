@@ -1094,7 +1094,12 @@ def parse_lines(
 
                 if options.write_changes and fix:
                     changed = True
-                    lines[i] = re.sub(rf"\b{word}\b", fixword, lines[i])
+                    # Not \b: the word regex admits a trailing apostrophe, and a
+                    # \b after one can never hold, so the substitution silently
+                    # matched nothing.
+                    lines[i] = re.sub(
+                        rf"(?<!\w){re.escape(word)}(?!\w)", fixword, lines[i]
+                    )
                     fixed_words.add(word)
                     changes_made.append((line_number + 1, word, fixword))
                     continue
