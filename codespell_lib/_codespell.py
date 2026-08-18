@@ -514,6 +514,17 @@ def parse_options(
         "how they are written in the dictionary file.",
     )
     parser.add_argument(
+        "--min-word-length",
+        action="store",
+        type=int,
+        default=0,
+        metavar="LENGTH",
+        help="only check words at least LENGTH characters long, "
+        "e.g., use 4 to not check words of 3 or fewer characters "
+        "(such as short variable names). "
+        "The default is %(default)s (check all words).",
+    )
+    parser.add_argument(
         "--uri-ignore-words-list",
         action="append",
         metavar="WORDS",
@@ -1439,6 +1450,15 @@ def main(*args: str) -> int:
     misspellings: dict[str, Misspelling] = {}
     for dictionary in use_dictionaries:
         build_dict(dictionary, misspellings, ignore_words)
+    if options.min_word_length > 0:
+        # Words shorter than the requested length can never match a
+        # misspelling, so dropping them from the dictionary up front ignores
+        # them everywhere (file contents and --check-filenames alike).
+        misspellings = {
+            key: value
+            for key, value in misspellings.items()
+            if len(key) >= options.min_word_length
+        }
     colors = TermColors()
     if not options.colors:
         colors.disable()
