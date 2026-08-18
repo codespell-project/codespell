@@ -1645,6 +1645,9 @@ def test_args_from_file(
     print(f"{r=}")
 
 
+PROMPT = "(Y/n/a/s)"
+
+
 def run_codespell_interactive(
     args: tuple[Any, ...],
     answers: str,
@@ -1662,29 +1665,107 @@ def run_codespell_interactive(
     )
 
 
-def test_interactive_rejection_is_per_file(
+def test_interactive_rejection_is_per_match(
     tmp_path: Path,
 ) -> None:
-    """Rejecting a fix answers for one file, not for the whole run (GH-62)."""
+    """A y/n answer is about one match, not the rest of the run (GH-62)."""
     f1 = tmp_path / "f1.txt"
     f2 = tmp_path / "f2.txt"
-    f1.write_text("abandonned\n")
+    f1.write_text("abandonned\nabandonned\n")
     f2.write_text("abandonned\n")
-    proc = run_codespell_interactive(("-w", "-i", "1", f1, f2), answers="n\ny\n")
-    assert proc.stdout.count("(Y/n)") == 2
-    assert f1.read_text() == "abandonned\n"
+    proc = run_codespell_interactive(("-w", "-i", "1", f1, f2), answers="n\ny\ny\n")
+    assert proc.stdout.count(PROMPT) == 3
+    assert f1.read_text() == "abandonned\nabandoned\n"
     assert f2.read_text() == "abandoned\n"
 
 
-def test_interactive_same_word_asked_once_per_file(
+def test_interactive_answer_for_whole_file(
     tmp_path: Path,
 ) -> None:
-    """Within one file the first answer is reused for later matches."""
+    """'a' and 's' answer for the rest of the file, and stop at its end."""
+    f1 = tmp_path / "f1.txt"
+    f2 = tmp_path / "f2.txt"
+    f1.write_text("abandonned\nabandonned\n")
+    f2.write_text("abandonned\nabandonned\n")
+    proc = run_codespell_interactive(("-w", "-i", "1", f1, f2), answers="s\na\n")
+    assert proc.stdout.count(PROMPT) == 2
+    assert f1.read_text() == "abandonned\nabandonned\n"
+    assert f2.read_text() == "abandoned\nabandoned\n"
+
+
+def test_interactive_whole_file_answer_spans_fragments(
+    tmp_path: Path,
+) -> None:
+    """An ignored multiline region splits a file but must not re-ask."""
     f = tmp_path / "f.txt"
-    f.write_text("abandonned\nabandonned\n")
-    proc = run_codespell_interactive(("-w", "-i", "1", f), answers="n\n")
-    assert proc.stdout.count("(Y/n)") == 1
-    assert f.read_text() == "abandonned\nabandonned\n"
+    f.write_text("abandonned\nSKIPSTART\nfoo\nSKIPEND\nabandonned\n")
+    proc = run_codespell_interactive(
+        ("-w", "-i", "1", "--ignore-multiline-regex", r"SKIPSTART[\s\S]*?SKIPEND", f),
+        answers="s\n",
+    )
+    assert proc.stdout.count(PROMPT) == 1
+    assert f.read_text() == "abandonned\nSKIPSTART\nfoo\nSKIPEND\nabandonned\n"
+
+
+def test_interactive_answer_keeps_case(
+    tmp_path: Path,
+) -> None:
+    """An answer is cased for each match, not for the one that was asked about."""
+    f = tmp_path / "f.txt"
+    f.write_text("abandonned\nAbandonned\nABANDONNED\n")
+    proc = run_codespell_interactive(("-w", "-i", "1", f), answers="a\n")
+    assert proc.stdout.count(PROMPT) == 1
+    assert f.read_text() == "abandoned\nAbandoned\nABANDONED\n"
+
+
+def test_interactive_invalid_answer_asks_again(
+    tmp_path: Path,
+) -> None:
+    """Anything that is not y/n/a/s re-asks about the same match."""
+    f = tmp_path / "f.txt"
+    f.write_text("abandonned\n")
+    proc = run_codespell_interactive(("-w", "-i", "1", f), answers="x\ny\n")
+    assert proc.stdout.count(PROMPT) == 2
+    assert "Say 'y' or 'n'" in proc.stdout
+    assert f.read_text() == "abandoned\n"
+
+
+@pytest.mark.parametrize(
+    ("level", "text"),
+    [
+        ("1", "abandonned\nabandonned\n"),  # asked with y/n/a/s
+        ("2", "aache\naache\n"),  # asked with a list of fixes
+        ("3", "abandonned\naache\n"),  # both
+    ],
+)
+def test_interactive_no_answer_fixes_nothing(
+    tmp_path: Path,
+    level: str,
+    text: str,
+) -> None:
+    """Running out of answers must not count as accepting the rest."""
+    f = tmp_path / "f.txt"
+    f.write_text(text)
+    proc = run_codespell_interactive(("-w", "-i", level, f), answers="")
+    assert "No answer" in proc.stdout
+    assert f.read_text() == text
+
+
+def test_interactive_level_2_answer_keeps_case(
+    tmp_path: Path,
+) -> None:
+    """The same, for the answer chosen from a list of fixes.
+
+    The list is asked about once per match, and keeps every candidate: choosing
+    one used to narrow the list for every later match (GH-62).
+    """
+    f = tmp_path / "f.txt"
+    f.write_text("aache\nAache\n")
+    proc = run_codespell_interactive(("-w", "-i", "2", f), answers="0\n0\n")
+    assert proc.stdout.count("Choose an option") == 2
+    assert proc.stdout.count("1) ache") == 1
+    assert proc.stdout.count("1) Ache") == 1
+    assert f.read_text() == "cache\nCache\n"
 
 
 def test_interactive_level_2_no_prompt_for_single_fix(
@@ -1711,7 +1792,7 @@ def test_interactive_level_3_rejection_keeps_yn_prompt(
     f1.write_text("abandonned\n")
     f2.write_text("abandonned\n")
     proc = run_codespell_interactive(("-w", "-i", "3", f1, f2), answers="n\nn\n")
-    assert proc.stdout.count("(Y/n)") == 2
+    assert proc.stdout.count(PROMPT) == 2
     assert "Choose an option" not in proc.stdout
     assert f1.read_text() == "abandonned\n"
     assert f2.read_text() == "abandonned\n"
