@@ -43,7 +43,7 @@ dev = [
     "chardet",
     "pre-commit",
     "pytest",
-    "pytest-cov",
+    "pytest-cov>=7",
     "pytest-dependency",
     "Pygments",
     "ruff",
@@ -54,7 +54,7 @@ types = [
     "chardet>=5.1.0",
     "mypy",
     "pytest",
-    "pytest-cov",
+    "pytest-cov>=7",
     "pytest-dependency",
 ]
 

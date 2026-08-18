@@ -837,9 +837,6 @@ def ask_for_word_fix(
     cline = f"{colors.FILE}{lineno}{colors.DISABLE}"
 
     wrongword = match.group()
-    if interactivity <= 0:
-        return misspelling.fix, misspelling.data, False
-
     line_ui = (
         f"{line[: match.start()]}"
         f"{colors.WWORD}{wrongword}{colors.DISABLE}"

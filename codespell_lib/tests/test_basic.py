@@ -1718,6 +1718,18 @@ def test_interactive_answer_keeps_case(
     assert f.read_text() == "abandoned\nAbandoned\nABANDONED\n"
 
 
+def test_interactive_context_is_shown_once(
+    tmp_path: Path,
+) -> None:
+    """-C prints the surrounding lines before asking, and not again after."""
+    f = tmp_path / "f.txt"
+    f.write_text("first line\nabandonned\n")
+    proc = run_codespell_interactive(("-w", "-i", "1", "-C", "1", f), answers="n\n")
+    assert proc.stdout.count(PROMPT) == 1
+    assert proc.stdout.count("first line") == 1
+    assert f.read_text() == "first line\nabandonned\n"
+
+
 def test_interactive_invalid_answer_asks_again(
     tmp_path: Path,
 ) -> None:
