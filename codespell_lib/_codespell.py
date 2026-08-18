@@ -587,7 +587,7 @@ def parse_options(
         choices=range(0, 4),
         help="set interactive mode when writing changes:\n"
         "- 0: no interactivity.\n"
-        "- 1: ask for confirmation.\n"
+        "- 1: ask for confirmation; 'a'/'s' answer for the rest of the file.\n"
         "- 2: ask user to choose one fix when more than one is available.\n"
         "- 3: both 1 and 2",
         metavar="MODE",
@@ -806,6 +806,14 @@ def is_text_file(filename: str) -> bool:
     return b"\x00" not in s
 
 
+def _no_more_input(misspelling: Misspelling) -> tuple[bool, str, bool]:
+    # An unanswered prompt must not count as a "yes": stdin being at EOF means
+    # the answers ran out (or never existed), so leave the word alone and stop
+    # asking about it in this file.
+    print("\nNo answer: leaving the rest of this file alone")
+    return False, misspelling.data, True
+
+
 def ask_for_word_fix(
     line: str,
     match: Match[str],
@@ -814,14 +822,21 @@ def ask_for_word_fix(
     colors: TermColors,
     filename: str,
     lineno: int,
-) -> tuple[bool, str]:
+) -> tuple[bool, str, bool]:
+    """Ask about one match.
+
+    Returns (fix, data, remember), where data is the replacement in dictionary
+    form, uncased, for the caller to case per match, and remember says whether
+    the answer was given for the rest of the file rather than for this match.
+
+    This function must not mutate `misspelling`: the object is shared by every
+    match of the word in the run, so an answer would leak into every later
+    match and file (GH-62).
+    """
     cfilename = f"{colors.FILE}{filename}{colors.DISABLE}"
     cline = f"{colors.FILE}{lineno}{colors.DISABLE}"
 
     wrongword = match.group()
-    if interactivity <= 0:
-        return misspelling.fix, fix_case(wrongword, misspelling.data)
-
     line_ui = (
         f"{line[: match.start()]}"
         f"{colors.WWORD}{wrongword}{colors.DISABLE}"
@@ -833,21 +848,26 @@ def ask_for_word_fix(
         fixword = fix_case(wrongword, misspelling.data)
         while not r:
             print(
-                f"{cfilename}:{cline}: {line_ui}\t{wrongword} ==> {fixword} (Y/n) ",
+                f"{cfilename}:{cline}: {line_ui}\t{wrongword} ==> {fixword} (Y/n/a/s) ",
                 end="",
                 flush=True,
             )
-            r = sys.stdin.readline().strip().upper()
+            answer = sys.stdin.readline()
+            if not answer:
+                return _no_more_input(misspelling)
+            r = answer.strip().upper()
             if not r:
                 r = "Y"
-            if r not in ("Y", "N"):
-                print("Say 'y' or 'n'")
+            if r not in ("Y", "N", "A", "S"):
+                print(
+                    "Say 'y' or 'n' for this one, "
+                    "'a' or 's' for all of them in this file"
+                )
                 r = ""
 
-        if r == "N":
-            misspelling.fix = False
+        return r in ("Y", "A"), misspelling.data, r in ("A", "S")
 
-    elif (interactivity & 2) and not misspelling.reason:
+    elif (interactivity & 2) and not misspelling.fix and not misspelling.reason:
         # if it is not disabled, i.e. it just has more than one possible fix,
         # we ask the user which word to use
 
@@ -863,7 +883,10 @@ def ask_for_word_fix(
                 print(f" {i}) {fixword}", end="")
             print(": ", end="", flush=True)
 
-            n = sys.stdin.readline().strip()
+            answer = sys.stdin.readline()
+            if not answer:
+                return _no_more_input(misspelling)
+            n = answer.strip()
             if not n:
                 break
 
@@ -874,10 +897,9 @@ def ask_for_word_fix(
                 print("Not a valid option\n")
 
         if r:
-            misspelling.fix = True
-            misspelling.data = r
+            return True, r, False
 
-    return misspelling.fix, fix_case(wrongword, misspelling.data)
+    return misspelling.fix, misspelling.data, False
 
 
 def print_context(
@@ -977,6 +999,7 @@ def parse_lines(
     uri_ignore_words: set[str],
     context: Optional[tuple[int, int]],
     options: argparse.Namespace,
+    asked_for: dict[str, tuple[bool, str]],
 ) -> tuple[int, bool, list[tuple[int, str, str]]]:
     bad_count = 0
     changed = False
@@ -1025,7 +1048,6 @@ def parse_lines(
             extra_words_to_ignore |= pending_next_line_ignore
 
         fixed_words = set()
-        asked_for = set()
 
         # If all URI spelling errors will be ignored, erase any URI before
         # extracting words. Otherwise, apply ignores after extracting words.
@@ -1071,20 +1093,26 @@ def parse_lines(
                 fix = misspellings[lword].fix
                 fixword = fix_case(word, misspellings[lword].data)
 
-                if options.interactive and lword not in asked_for:
-                    if context is not None:
-                        context_shown = True
-                        print_context(lines, i, context)
-                    fix, fixword = ask_for_word_fix(
-                        lines[i],
-                        match,
-                        misspellings[lword],
-                        options.interactive,
-                        colors=colors,
-                        filename=filename,
-                        lineno=i + 1,
-                    )
-                    asked_for.add(lword)
+                if options.interactive:
+                    if lword in asked_for:
+                        fix, data = asked_for[lword]
+                    else:
+                        if context is not None:
+                            context_shown = True
+                            print_context(lines, i, context)
+                        fix, data, remember = ask_for_word_fix(
+                            lines[i],
+                            match,
+                            misspellings[lword],
+                            options.interactive,
+                            colors=colors,
+                            filename=filename,
+                            lineno=line_number + 1,
+                        )
+                        if remember:
+                            asked_for[lword] = (fix, data)
+                    # The answer is uncased: case it for this match.
+                    fixword = fix_case(word, data)
 
                 if summary and fix:
                     summary.update(lword)
@@ -1225,6 +1253,9 @@ def parse_file(
     # Parse lines.
     changed = False
     changes_made: list[tuple[int, str, str]] = []
+    # Answers given for the whole file ('a'/'s'): lword -> (fix, uncased fix).
+    # Plain y/n answers are not remembered here: they are about one match.
+    asked_for: dict[str, tuple[bool, str]] = {}
     for fragment in fragments:
         ignore, _, _ = fragment
         if ignore:
@@ -1244,6 +1275,7 @@ def parse_file(
             uri_ignore_words,
             context,
             options,
+            asked_for,
         )
         bad_count += bad_count_update
         changed = changed or changed_update

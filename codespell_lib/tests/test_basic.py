@@ -1671,3 +1671,168 @@ def test_args_from_file(
     print("Testing with direct call to cs_.main()")
     r = cs_.main(*args[1:])
     print(f"{r=}")
+
+
+PROMPT = "(Y/n/a/s)"
+
+
+def run_codespell_interactive(
+    args: tuple[Any, ...],
+    answers: str,
+    cwd: Optional[Path] = None,
+) -> "subprocess.CompletedProcess[str]":
+    """Run codespell feeding interactive answers on stdin."""
+    args = tuple(str(arg) for arg in args)
+    return subprocess.run(  # noqa: S603
+        ["codespell", *args],  # noqa: S607
+        cwd=cwd,
+        input=answers,
+        capture_output=True,
+        encoding="utf-8",
+        check=False,
+    )
+
+
+def test_interactive_rejection_is_per_match(
+    tmp_path: Path,
+) -> None:
+    """A y/n answer is about one match, not the rest of the run (GH-62)."""
+    f1 = tmp_path / "f1.txt"
+    f2 = tmp_path / "f2.txt"
+    f1.write_text("abandonned\nabandonned\n")
+    f2.write_text("abandonned\n")
+    proc = run_codespell_interactive(("-w", "-i", "1", f1, f2), answers="n\ny\ny\n")
+    assert proc.stdout.count(PROMPT) == 3
+    assert f1.read_text() == "abandonned\nabandoned\n"
+    assert f2.read_text() == "abandoned\n"
+
+
+def test_interactive_answer_for_whole_file(
+    tmp_path: Path,
+) -> None:
+    """'a' and 's' answer for the rest of the file, and stop at its end."""
+    f1 = tmp_path / "f1.txt"
+    f2 = tmp_path / "f2.txt"
+    f1.write_text("abandonned\nabandonned\n")
+    f2.write_text("abandonned\nabandonned\n")
+    proc = run_codespell_interactive(("-w", "-i", "1", f1, f2), answers="s\na\n")
+    assert proc.stdout.count(PROMPT) == 2
+    assert f1.read_text() == "abandonned\nabandonned\n"
+    assert f2.read_text() == "abandoned\nabandoned\n"
+
+
+def test_interactive_whole_file_answer_spans_fragments(
+    tmp_path: Path,
+) -> None:
+    """An ignored multiline region splits a file but must not re-ask."""
+    f = tmp_path / "f.txt"
+    f.write_text("abandonned\nSKIPSTART\nfoo\nSKIPEND\nabandonned\n")
+    proc = run_codespell_interactive(
+        ("-w", "-i", "1", "--ignore-multiline-regex", r"SKIPSTART[\s\S]*?SKIPEND", f),
+        answers="s\n",
+    )
+    assert proc.stdout.count(PROMPT) == 1
+    assert f.read_text() == "abandonned\nSKIPSTART\nfoo\nSKIPEND\nabandonned\n"
+
+
+def test_interactive_answer_keeps_case(
+    tmp_path: Path,
+) -> None:
+    """An answer is cased for each match, not for the one that was asked about."""
+    f = tmp_path / "f.txt"
+    f.write_text("abandonned\nAbandonned\nABANDONNED\n")
+    proc = run_codespell_interactive(("-w", "-i", "1", f), answers="a\n")
+    assert proc.stdout.count(PROMPT) == 1
+    assert f.read_text() == "abandoned\nAbandoned\nABANDONED\n"
+
+
+def test_interactive_context_is_shown_once(
+    tmp_path: Path,
+) -> None:
+    """-C prints the surrounding lines before asking, and not again after."""
+    f = tmp_path / "f.txt"
+    f.write_text("first line\nabandonned\n")
+    proc = run_codespell_interactive(("-w", "-i", "1", "-C", "1", f), answers="n\n")
+    assert proc.stdout.count(PROMPT) == 1
+    assert proc.stdout.count("first line") == 1
+    assert f.read_text() == "first line\nabandonned\n"
+
+
+def test_interactive_invalid_answer_asks_again(
+    tmp_path: Path,
+) -> None:
+    """Anything that is not y/n/a/s re-asks about the same match."""
+    f = tmp_path / "f.txt"
+    f.write_text("abandonned\n")
+    proc = run_codespell_interactive(("-w", "-i", "1", f), answers="x\ny\n")
+    assert proc.stdout.count(PROMPT) == 2
+    assert "Say 'y' or 'n'" in proc.stdout
+    assert f.read_text() == "abandoned\n"
+
+
+@pytest.mark.parametrize(
+    ("level", "text"),
+    [
+        ("1", "abandonned\nabandonned\n"),  # asked with y/n/a/s
+        ("2", "aache\naache\n"),  # asked with a list of fixes
+        ("3", "abandonned\naache\n"),  # both
+    ],
+)
+def test_interactive_no_answer_fixes_nothing(
+    tmp_path: Path,
+    level: str,
+    text: str,
+) -> None:
+    """Running out of answers must not count as accepting the rest."""
+    f = tmp_path / "f.txt"
+    f.write_text(text)
+    proc = run_codespell_interactive(("-w", "-i", level, f), answers="")
+    assert "No answer" in proc.stdout
+    assert f.read_text() == text
+
+
+def test_interactive_level_2_answer_keeps_case(
+    tmp_path: Path,
+) -> None:
+    """The same, for the answer chosen from a list of fixes.
+
+    The list is asked about once per match, and keeps every candidate: choosing
+    one used to narrow the list for every later match (GH-62).
+    """
+    f = tmp_path / "f.txt"
+    f.write_text("aache\nAache\n")
+    proc = run_codespell_interactive(("-w", "-i", "2", f), answers="0\n0\n")
+    assert proc.stdout.count("Choose an option") == 2
+    assert proc.stdout.count("1) ache") == 1
+    assert proc.stdout.count("1) Ache") == 1
+    assert f.read_text() == "cache\nCache\n"
+
+
+def test_interactive_level_2_no_prompt_for_single_fix(
+    tmp_path: Path,
+) -> None:
+    """Level 2 prompts only when more than one fix is available (as --help says).
+
+    A word with a single candidate used to get an option list where the blank
+    "none" answer still applied the fix (GH-62).
+    """
+    f = tmp_path / "f.txt"
+    f.write_text("abandonned\n")
+    proc = run_codespell_interactive(("-w", "-i", "2", f), answers="\n")
+    assert "Choose an option" not in proc.stdout
+    assert f.read_text() == "abandoned\n"
+
+
+def test_interactive_level_3_rejection_keeps_yn_prompt(
+    tmp_path: Path,
+) -> None:
+    """A rejected word must stay a Y/n question, not degrade to an option list."""
+    f1 = tmp_path / "f1.txt"
+    f2 = tmp_path / "f2.txt"
+    f1.write_text("abandonned\n")
+    f2.write_text("abandonned\n")
+    proc = run_codespell_interactive(("-w", "-i", "3", f1, f2), answers="n\nn\n")
+    assert proc.stdout.count(PROMPT) == 2
+    assert "Choose an option" not in proc.stdout
+    assert f1.read_text() == "abandonned\n"
+    assert f2.read_text() == "abandonned\n"
