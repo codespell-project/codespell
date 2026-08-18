@@ -1121,11 +1121,15 @@ def parse_lines(
                     continue
 
                 if options.write_changes and fix:
-                    changed = True
-                    lines[i] = re.sub(rf"\b{word}\b", fixword, lines[i])
-                    fixed_words.add(word)
-                    changes_made.append((line_number + 1, word, fixword))
-                    continue
+                    new_line = re.sub(rf"\b{word}\b", fixword, lines[i])
+                    if new_line != lines[i]:
+                        changed = True
+                        lines[i] = new_line
+                        fixed_words.add(word)
+                        changes_made.append((line_number + 1, word, fixword))
+                        continue
+                    # Not found in the original line (e.g. --ignore-regex split
+                    # it out of a larger word), so report it instead (GH-2056).
 
                 # otherwise warning was explicitly set by interactive mode
                 if (

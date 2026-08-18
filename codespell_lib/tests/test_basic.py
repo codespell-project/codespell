@@ -1054,6 +1054,34 @@ def test_ignore_regex_option(
     assert cs.main(fname, r"--ignore-regex=\bdonn\b") == 1
 
 
+def test_ignore_regex_with_write_changes(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Test that -w never claims a fix it did not perform (gh-2056)."""
+    fname = tmp_path / "flag.txt"
+    content = "1nd\n1nd_2nd\n"
+
+    # Without -w, --ignore-regex=_ makes BOTH lines report a misspelling.
+    fname.write_text(content)
+    assert cs.main(fname, "--ignore-regex=_") == 2
+
+    fname.write_text(content)
+    result = cs.main("-w", "--ignore-regex=_", fname, std=True)
+    assert isinstance(result, tuple)
+    code, stdout, stderr = result
+    corrected = fname.read_text()
+
+    # Line 1 really is rewritten.
+    assert corrected == "1st\n1nd_2nd\n"
+    # Line 2 cannot be rewritten (\b1nd\b does not match "1nd_2nd"), so it must
+    # not be listed as fixed, must be reported as a misspelling instead ...
+    assert "flag.txt:2: 1nd ==> 1st" not in stderr
+    assert "flag.txt:2: 1nd ==> 1st" in stdout
+    # ... and must be counted, so that it affects the exit code.
+    assert code == 1
+
+
 def test_ignore_multiline_regex_option(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
