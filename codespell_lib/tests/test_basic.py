@@ -1069,16 +1069,17 @@ def test_ignore_regex_with_write_changes(
     fname.write_text(content)
     result = cs.main("-w", "--ignore-regex=_", fname, std=True)
     assert isinstance(result, tuple)
-    code, _, stderr = result
+    code, stdout, stderr = result
     corrected = fname.read_text()
 
     # Line 1 really is rewritten.
     assert corrected == "1st\n1nd_2nd\n"
-    # Line 2 cannot be rewritten (\b1nd\b does not match "1nd_2nd"),
-    # so codespell must not claim it was fixed ...
+    # Line 2 cannot be rewritten (\b1nd\b does not match "1nd_2nd"), so it must
+    # not be listed as fixed, must be reported as a misspelling instead ...
     assert "flag.txt:2: 1nd ==> 1st" not in stderr
-    # ... and the still-present misspelling must affect the exit code.
-    assert code != 0
+    assert "flag.txt:2: 1nd ==> 1st" in stdout
+    # ... and must be counted, so that it affects the exit code.
+    assert code == 1
 
 
 def test_ignore_multiline_regex_option(

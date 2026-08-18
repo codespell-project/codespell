@@ -1100,10 +1100,8 @@ def parse_lines(
                         fixed_words.add(word)
                         changes_made.append((line_number + 1, word, fixword))
                         continue
-                    # The word was found in the --ignore-regex substituted text
-                    # but cannot be located in the original line, so no fix can
-                    # be written.  Fall through and report it as a warning
-                    # instead of claiming a fix that did not happen.
+                    # Not found in the original line (e.g. --ignore-regex split
+                    # it out of a larger word), so report it instead (GH-2056).
 
                 # otherwise warning was explicitly set by interactive mode
                 if (
