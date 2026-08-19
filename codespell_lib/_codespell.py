@@ -542,6 +542,14 @@ def parse_options(
         "and emails. A default expression is provided.",
     )
     parser.add_argument(
+        "--show-dictionary",
+        action="store_true",
+        default=False,
+        help="print for each typo the dictionary it was found in: "
+        "the name of a builtin dictionary or the path of a custom "
+        "dictionary file given with -D.",
+    )
+    parser.add_argument(
         "-s",
         "--summary",
         action="store_true",
@@ -963,6 +971,17 @@ def _format_colored_output(
     return cfilename, cline, cwrongword, crightword
 
 
+def _format_source(
+    source: str,
+    colors: TermColors,
+    options: argparse.Namespace,
+) -> str:
+    """Format the dictionary a misspelling came from for output."""
+    if not options.show_dictionary:
+        return ""
+    return f"  (from {colors.FILE}{source}{colors.DISABLE})"
+
+
 def parse_lines(
     fragment: tuple[bool, int, list[str]],
     filename: str,
@@ -1124,6 +1143,7 @@ def parse_lines(
                     if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
                         continue
                     creason = ""
+                csource = _format_source(misspellings[lword].source, colors, options)
 
                 # If we get to this point (uncorrected error) we should change
                 # our bad_count and thus return value
@@ -1133,14 +1153,15 @@ def parse_lines(
                     print_context(lines, i, context)
                 if filename != "-":
                     print(
-                        f"{cfilename}:{cline}: {cwrongword} ==> {crightword}{creason}"
+                        f"{cfilename}:{cline}: {cwrongword} ==> "
+                        f"{crightword}{creason}{csource}"
                     )
                 elif options.stdin_single_line:
-                    print(f"{cline}: {cwrongword} ==> {crightword}{creason}")
+                    print(f"{cline}: {cwrongword} ==> {crightword}{creason}{csource}")
                 else:
                     print(
                         f"{cline}: {line.strip()}\n\t{cwrongword} "
-                        f"==> {crightword}{creason}"
+                        f"==> {crightword}{creason}{csource}"
                     )
 
     return bad_count, changed, changes_made
@@ -1196,10 +1217,11 @@ def parse_file(
                     if options.quiet_level & QuietLevels.NON_AUTOMATIC_FIXES:
                         continue
                     creason = ""
+                csource = _format_source(misspellings[lword].source, colors, options)
 
                 bad_count += 1
 
-                print(f"{cfilename}: {cwrongword} ==> {crightword}{creason}")
+                print(f"{cfilename}: {cwrongword} ==> {crightword}{creason}{csource}")
 
         # ignore irregular files
         if not os.path.isfile(filename):
@@ -1308,7 +1330,8 @@ def _usage_error(parser: argparse.ArgumentParser, message: str) -> int:
     return EX_USAGE
 
 
-def _select_builtin_dictionary(builtin_option: str) -> list[str]:
+def _select_builtin_dictionary(builtin_option: str) -> list[tuple[str, str]]:
+    """Return a list of (filename, name) builtin dictionary tuples."""
     use = sorted(set(builtin_option.split(",")))
     if "all" in use:
         use = [u for u in use if u != "all"] + [
@@ -1321,7 +1344,10 @@ def _select_builtin_dictionary(builtin_option: str) -> list[str]:
         for builtin in _builtin_dictionaries:
             if builtin[0] == u:
                 use_dictionaries.append(
-                    os.path.join(_data_root, f"dictionary{builtin[2]}.txt")
+                    (
+                        os.path.join(_data_root, f"dictionary{builtin[2]}.txt"),
+                        builtin[0],
+                    )
                 )
                 break
         else:
@@ -1435,10 +1461,10 @@ def main(*args: str) -> int:
                     parser,
                     f"ERROR: cannot find dictionary file: {dictionary}",
                 )
-            use_dictionaries.append(dictionary)
+            use_dictionaries.append((dictionary, dictionary))
     misspellings: dict[str, Misspelling] = {}
-    for dictionary in use_dictionaries:
-        build_dict(dictionary, misspellings, ignore_words)
+    for dictionary, source in use_dictionaries:
+        build_dict(dictionary, misspellings, ignore_words, source)
     colors = TermColors()
     if not options.colors:
         colors.disable()
