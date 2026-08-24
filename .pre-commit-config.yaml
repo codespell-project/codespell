@@ -58,7 +58,7 @@ repos:
           - -d
           - "{extends: relaxed, rules: {line-length: {max: 90}}}"
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.16.3
+    rev: v0.16.4
     hooks:
       - id: ruff-check
       - id: ruff-format
@@ -75,7 +75,7 @@ repos:
         additional_dependencies:
           - tomli
   - repo: https://github.com/abravalheri/validate-pyproject
-    rev: v0.25
+    rev: '0.26'
     hooks:
       - id: validate-pyproject
   - repo: https://github.com/pre-commit/mirrors-mypy
