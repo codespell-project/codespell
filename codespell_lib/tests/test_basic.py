@@ -1808,6 +1808,43 @@ def test_interactive_level_2_answer_keeps_case(
     assert f.read_text() == "cache\nCache\n"
 
 
+def test_interactive_level_2_answer_for_whole_file(
+    tmp_path: Path,
+) -> None:
+    """A number with a trailing 'a' picks that fix for the rest of the file."""
+    f = tmp_path / "f.txt"
+    f.write_text("aache\nAache\n")
+    proc = run_codespell_interactive(("-w", "-i", "2", f), answers="0a\n")
+    assert proc.stdout.count("Choose an option") == 1
+    assert f.read_text() == "cache\nCache\n"
+
+
+def test_interactive_level_2_skip_whole_file(
+    tmp_path: Path,
+) -> None:
+    """'s' leaves the word alone for the rest of the file."""
+    f1 = tmp_path / "f1.txt"
+    f2 = tmp_path / "f2.txt"
+    f1.write_text("aache\naache\n")
+    f2.write_text("aache\n")
+    proc = run_codespell_interactive(("-w", "-i", "2", f1, f2), answers="s\n0\n")
+    assert proc.stdout.count("Choose an option") == 2
+    assert f1.read_text() == "aache\naache\n"
+    assert f2.read_text() == "cache\n"
+
+
+def test_interactive_level_2_invalid_answer_asks_again(
+    tmp_path: Path,
+) -> None:
+    """A bare 'a' is not a choice: it re-asks rather than picking something."""
+    f = tmp_path / "f.txt"
+    f.write_text("aache\n")
+    proc = run_codespell_interactive(("-w", "-i", "2", f), answers="a\n9\n1\n")
+    assert proc.stdout.count("Choose an option") == 3
+    assert proc.stdout.count("Not a valid option") == 2
+    assert f.read_text() == "ache\n"
+
+
 def test_interactive_level_2_no_prompt_for_single_fix(
     tmp_path: Path,
 ) -> None:

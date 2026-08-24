@@ -588,7 +588,8 @@ def parse_options(
         help="set interactive mode when writing changes:\n"
         "- 0: no interactivity.\n"
         "- 1: ask for confirmation; 'a'/'s' answer for the rest of the file.\n"
-        "- 2: ask user to choose one fix when more than one is available.\n"
+        "- 2: ask user to choose one fix when more than one is available;"
+        " 'Na'/'s' answer for the rest of the file.\n"
         "- 3: both 1 and 2",
         metavar="MODE",
     )
@@ -872,10 +873,12 @@ def ask_for_word_fix(
         # we ask the user which word to use
 
         r = ""
+        remember = False
         opt = [w.strip() for w in misspelling.data.split(",")]
         while not r:
             print(
-                f"{cfilename}:{cline}: {line_ui} Choose an option (blank for none): ",
+                f"{cfilename}:{cline}: {line_ui} Choose an option "
+                "(blank for none, Na for whole file, s to skip): ",
                 end="",
             )
             for i, o in enumerate(opt):
@@ -886,18 +889,21 @@ def ask_for_word_fix(
             answer = sys.stdin.readline()
             if not answer:
                 return _no_more_input(misspelling)
-            n = answer.strip()
+            n = answer.strip().lower()
             if not n:
                 break
+            if n == "s":
+                return False, misspelling.data, True
 
+            remember = n.endswith("a")
             try:
-                i = int(n)
+                i = int(n[:-1] if remember else n)
                 r = opt[i]
             except (ValueError, IndexError):
                 print("Not a valid option\n")
 
         if r:
-            return True, r, False
+            return True, r, remember
 
     return misspelling.fix, misspelling.data, False
 
