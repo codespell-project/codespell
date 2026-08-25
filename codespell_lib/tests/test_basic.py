@@ -774,7 +774,9 @@ def test_check_hidden(
     #
     hidden_file = tmp_path / ".test.txt"
     fname.rename(hidden_file)
-    assert cs.main(hidden_file) == 0
+    # A hidden file named explicitly is checked even without --check-hidden,
+    # but the same file reached by recursing a directory is still skipped.
+    assert cs.main(hidden_file) == 1
     assert cs.main(tmp_path) == 0
     assert cs.main("--check-hidden", hidden_file) == 1
     assert cs.main("--check-hidden", tmp_path) == 1
@@ -786,7 +788,8 @@ def test_check_hidden(
     #
     typo_file = tmp_path / ".abandonned.txt"
     hidden_file.rename(typo_file)
-    assert cs.main(typo_file) == 0
+    assert cs.main(typo_file) == 1
+    assert cs.main("--check-filenames", typo_file) == 2
     assert cs.main(tmp_path) == 0
     assert cs.main("--check-hidden", typo_file) == 1
     assert cs.main("--check-hidden", tmp_path) == 1
@@ -811,6 +814,10 @@ def test_check_hidden(
     subdir = hidden / "subdir"
     subdir.mkdir()
     copyfile(typo_file, subdir / typo_file.name)
+    # An explicitly named hidden directory is still skipped without
+    # --check-hidden, since scanning its contents is a recursive scan.
+    assert cs.main(hidden) == 0
+    assert cs.main("--check-hidden", hidden) == 2
     assert cs.main(tmp_path) == 0
     assert cs.main("--check-hidden", tmp_path) == 3
     assert cs.main("--check-hidden", "--check-filenames", tmp_path) == 8

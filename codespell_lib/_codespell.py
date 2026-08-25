@@ -640,7 +640,11 @@ def parse_options(
         "--check-hidden",
         action="store_true",
         default=False,
-        help='check hidden files and directories (those starting with ".") as well.',
+        help=(
+            'check hidden files and directories (those starting with ".") as '
+            "well. Hidden files named explicitly on the command line are always "
+            "checked."
+        ),
     )
     parser.add_argument(
         "-A",
@@ -1528,8 +1532,10 @@ def main(*args: str) -> int:
 
     bad_count = 0
     for filename in sorted(options.files):
-        # ignore hidden files
-        if is_hidden(filename, options.check_hidden):
+        # A hidden path named explicitly on the command line is checked even
+        # without --check-hidden. Directories still honor --check-hidden so that
+        # recursing into them does not pull in hidden contents unexpectedly.
+        if is_hidden(filename, options.check_hidden) and os.path.isdir(filename):
             continue
 
         if os.path.isdir(filename):
