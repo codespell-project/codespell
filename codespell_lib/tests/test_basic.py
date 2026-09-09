@@ -438,6 +438,69 @@ def test_ignore_word_list(
     assert cs.main("-Labandonned,someword", "-Labilty", tmp_path) == 1
 
 
+def test_report_unused_ignore_words(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Test that --report-unused-ignore-words reports stale ignore words."""
+    bad_name = tmp_path / "bad.txt"
+    bad_name.write_text("abandonned abilty\n")
+    # every ignore word is used, nothing to report
+    result = cs.main("--report-unused-ignore-words", "-Labandonned", bad_name, std=True)
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    assert code == 1
+    assert "Unused ignore words" not in stderr
+    # entries that never suppressed anything are reported, sorted
+    result = cs.main(
+        "--report-unused-ignore-words", "-Lnwe,abandonned,fdindigd", bad_name, std=True
+    )
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    assert code == 1
+    assert "Unused ignore words: fdindigd, nwe" in stderr
+    # a word in the checked files that cannot suppress a misspelling
+    # (not a dictionary entry) is still unused
+    bad_name.write_text("abandonned goodword\n")
+    result = cs.main("--report-unused-ignore-words", "-Lgoodword", bad_name, std=True)
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    assert code == 1
+    assert "Unused ignore words: goodword" in stderr
+    # case sensitive ignore words are tracked as well
+    bad_name.write_text("MIS mis\n")
+    result = cs.main("--report-unused-ignore-words", "-LMIS,Mis", bad_name, std=True)
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    assert code == 1
+    assert "Unused ignore words: Mis" in stderr
+    # ignore words files are supported like --ignore-words-list
+    bad_name.write_text("abandonned abilty\n")
+    fname = tmp_path / "ignore.txt"
+    fname.write_text("abandonned\nfdindigd\n")
+    result = cs.main("--report-unused-ignore-words", "-I", fname, bad_name, std=True)
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    assert code == 1
+    assert "Unused ignore words: fdindigd" in stderr
+    # no report without the option
+    result = cs.main("-Lfdindigd", bad_name, std=True)
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    assert code == 2
+    assert "Unused ignore words" not in stderr
+    # --check-filenames marks ignore words as used, too
+    short_name = tmp_path / "abandonned.txt"
+    short_name.write_text("good contents\n")
+    result = cs.main(
+        "--report-unused-ignore-words", "-f", "-Labandonned", short_name, std=True
+    )
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    assert code == 0
+    assert "Unused ignore words" not in stderr
+
+
 @pytest.mark.parametrize(
     ("content", "expected_error_count"),
     [

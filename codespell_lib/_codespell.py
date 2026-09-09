@@ -215,6 +215,17 @@ class Summary:
         )
 
 
+class IgnoreWordsUsage:
+    """Track which ignore words actually suppress a misspelling."""
+
+    def __init__(self) -> None:
+        # ignore words that match a dictionary entry, i.e. the only ones
+        # that can actually suppress a misspelling
+        self.candidates: set[str] = set()
+        # ignore words that suppressed a misspelling in the checked files
+        self.used: set[str] = set()
+
+
 class FileOpener:
     def __init__(
         self,
@@ -512,6 +523,15 @@ def parse_options(
         help="comma-separated list of words to be ignored "
         "by codespell. Words are case sensitive based on "
         "how they are written in the dictionary file.",
+    )
+    parser.add_argument(
+        "--report-unused-ignore-words",
+        action="store_true",
+        default=False,
+        help="report ignore words from --ignore-words and "
+        "--ignore-words-list that did not match anything in the "
+        "checked files, making it easier to remove stale entries. "
+        "The report is printed to stderr at the end of the run.",
     )
     parser.add_argument(
         "--uri-ignore-words-list",
@@ -998,6 +1018,7 @@ def parse_lines(
     summary: Optional[Summary],
     misspellings: dict[str, Misspelling],
     ignore_words_cased: set[str],
+    ignore_words_usage: Optional[IgnoreWordsUsage],
     exclude_lines: set[str],
     word_regex: Pattern[str],
     ignore_word_regex: Optional[Pattern[str]],
@@ -1074,8 +1095,15 @@ def parse_lines(
         for match in check_matches:
             word = match.group()
             if word in ignore_words_cased:
+                if ignore_words_usage is not None and word.lower() in misspellings:
+                    ignore_words_usage.used.add(word)
                 continue
             lword = word.lower()
+            if (
+                ignore_words_usage is not None
+                and lword in ignore_words_usage.candidates
+            ):
+                ignore_words_usage.used.add(lword)
             if lword in misspellings and lword not in extra_words_to_ignore:
                 # Sometimes we find a 'misspelling' which is actually a valid word
                 # preceded by a string escape sequence.  Ignore such cases as
@@ -1186,6 +1214,7 @@ def parse_file(
     summary: Optional[Summary],
     misspellings: dict[str, Misspelling],
     ignore_words_cased: set[str],
+    ignore_words_usage: Optional[IgnoreWordsUsage],
     exclude_lines: set[str],
     file_opener: FileOpener,
     word_regex: Pattern[str],
@@ -1207,8 +1236,15 @@ def parse_file(
         if options.check_filenames:
             for word in extract_words(filename, word_regex, ignore_word_regex):
                 if word in ignore_words_cased:
+                    if ignore_words_usage is not None and word.lower() in misspellings:
+                        ignore_words_usage.used.add(word)
                     continue
                 lword = word.lower()
+                if (
+                    ignore_words_usage is not None
+                    and lword in ignore_words_usage.candidates
+                ):
+                    ignore_words_usage.used.add(lword)
                 if lword not in misspellings:
                     continue
                 fix = misspellings[lword].fix
@@ -1274,6 +1310,7 @@ def parse_file(
             summary,
             misspellings,
             ignore_words_cased,
+            ignore_words_usage,
             exclude_lines,
             word_regex,
             ignore_word_regex,
@@ -1475,8 +1512,16 @@ def main(*args: str) -> int:
                 )
             use_dictionaries.append(dictionary)
     misspellings: dict[str, Misspelling] = {}
+    ignore_words_usage: Optional[IgnoreWordsUsage] = (
+        IgnoreWordsUsage() if options.report_unused_ignore_words else None
+    )
     for dictionary in use_dictionaries:
-        build_dict(dictionary, misspellings, ignore_words)
+        build_dict(
+            dictionary,
+            misspellings,
+            ignore_words,
+            None if ignore_words_usage is None else ignore_words_usage.candidates,
+        )
     colors = TermColors()
     if not options.colors:
         colors.disable()
@@ -1554,6 +1599,7 @@ def main(*args: str) -> int:
                         summary,
                         misspellings,
                         ignore_words_cased,
+                        ignore_words_usage,
                         exclude_lines,
                         file_opener,
                         word_regex,
@@ -1579,6 +1625,7 @@ def main(*args: str) -> int:
                 summary,
                 misspellings,
                 ignore_words_cased,
+                ignore_words_usage,
                 exclude_lines,
                 file_opener,
                 word_regex,
@@ -1592,6 +1639,15 @@ def main(*args: str) -> int:
     if summary:
         print("\n-------8<-------\nSUMMARY:")
         print(summary)
+    if ignore_words_usage is not None:
+        unused_ignore_words = sorted(
+            (ignore_words | ignore_words_cased) - ignore_words_usage.used
+        )
+        if unused_ignore_words:
+            print(
+                "Unused ignore words: " + ", ".join(unused_ignore_words),
+                file=sys.stderr,
+            )
     if options.count:
         print(bad_count, file=sys.stderr)
     return EX_DATAERR if bad_count else EX_OK
