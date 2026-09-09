@@ -438,6 +438,30 @@ def test_ignore_word_list(
     assert cs.main("-Labandonned,someword", "-Labilty", tmp_path) == 1
 
 
+def test_min_word_length(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Test that --min-word-length ignores short words."""
+    bad_name = tmp_path / "bad.txt"
+    bad_name.write_text("nwe abilty abandonned\n")
+    assert cs.main(bad_name) == 3
+    assert cs.main("--min-word-length", 0, bad_name) == 3, "0 checks all words"
+    assert cs.main("--min-word-length", 3, bad_name) == 3, "'nwe' is 3 chars long"
+    assert cs.main("--min-word-length", 4, bad_name) == 2
+    assert cs.main("--min-word-length", 7, bad_name) == 1
+    assert cs.main("--min-word-length", 11, bad_name) == 0
+    # case-insensitive: the dictionary key length is what matters
+    bad_name.write_text("NWE\n")
+    assert cs.main(bad_name) == 1
+    assert cs.main("--min-word-length", 4, bad_name) == 0
+    # also applies to --check-filenames
+    fname = tmp_path / "nwe.txt"
+    fname.write_text("good contents\n")
+    assert cs.main("-f", fname) == 1
+    assert cs.main("-f", "--min-word-length", 4, fname) == 0
+
+
 @pytest.mark.parametrize(
     ("content", "expected_error_count"),
     [
