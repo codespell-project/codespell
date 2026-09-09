@@ -438,6 +438,53 @@ def test_ignore_word_list(
     assert cs.main("-Labandonned,someword", "-Labilty", tmp_path) == 1
 
 
+def test_show_dictionary(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Test that --show-dictionary reports the dictionary a typo came from."""
+    bad_name = tmp_path / "bad.txt"
+    bad_name.write_text("abandonned\nacapella\n")
+    # no source is printed without the option
+    result = cs.main(bad_name, std=True)
+    assert isinstance(result, tuple)
+    code, stdout, _ = result
+    assert code == 2
+    assert "(from" not in stdout
+    # builtin dictionaries are reported by name
+    result = cs.main("--show-dictionary", bad_name, std=True)
+    assert isinstance(result, tuple)
+    code, stdout, _ = result
+    assert code == 2
+    assert "abandonned ==> abandoned  (from clear)" in stdout
+    assert "acapella ==> a cappella  (from rare)" in stdout
+    # custom dictionaries are reported by their path
+    dictionary = tmp_path / "dict.txt"
+    dictionary.write_text("abandonned->abandoned\n")
+    result = cs.main("--show-dictionary", "-D", dictionary, bad_name, std=True)
+    assert isinstance(result, tuple)
+    code, stdout, _ = result
+    assert code == 1
+    assert f"abandonned ==> abandoned  (from {dictionary})" in stdout
+    # the last dictionary defining an entry wins
+    result = cs.main(
+        "--show-dictionary", "-D", "-", "-D", dictionary, bad_name, std=True
+    )
+    assert isinstance(result, tuple)
+    code, stdout, _ = result
+    assert code == 2
+    assert f"abandonned ==> abandoned  (from {dictionary})" in stdout
+    assert "acapella ==> a cappella  (from rare)" in stdout
+    # --check-filenames reports the source as well
+    fname = tmp_path / "abandonned.txt"
+    fname.write_text("good contents\n")
+    result = cs.main("--show-dictionary", "-f", fname, std=True)
+    assert isinstance(result, tuple)
+    code, stdout, _ = result
+    assert code == 1
+    assert "abandonned ==> abandoned  (from clear)" in stdout
+
+
 @pytest.mark.parametrize(
     ("content", "expected_error_count"),
     [
