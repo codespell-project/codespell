@@ -9732,6 +9732,7 @@ bisines->business
 bisiness->business
 bisnes->business
 bisness->business
+bisshift->bitshift
 bistream->bitstream
 bisunes->business
 bisuness->business
@@ -11013,6 +11014,12 @@ cammander->commander
 cammanders->commanders
 cammanding->commanding
 cammands->commands
+cammnad->command
+cammnaded->commanded
+cammnader->commander
+cammnaders->commanders
+cammnading->commanding
+cammnads->commands
 cammond->command
 camoflage->camouflage
 camoflaged->camouflaged
@@ -23829,7 +23836,12 @@ eanble->enable
 eanbled->enabled
 eanbles->enables
 eanbling->enabling
-earch->search, each,
+earch->search, each, arch,
+earched->searched, arched,
+earcher->searcher, archer,
+earchers->searchers, archers,
+earches->searches, arches,
+earching->searching, arching,
 earier->earlier, easier, eerier,
 eariest->earliest, easiest, eeriest,
 eariler->earlier
@@ -25799,6 +25811,12 @@ everage->average
 everaged->averaged
 everbody->everybody
 everithing->everything
+evernt->event
+everntful->eventful
+evernts->events
+everntual->eventual
+everntuality->eventuality
+everntually->eventually
 everone->everyone
 everthing->everything
 evertyhign->everything
@@ -28400,6 +28418,7 @@ filtersing->filtering
 filterss->filters
 filtype->filetype
 filtypes->filetypes
+filw->file
 fime->fixme, time,
 fimiliar->familiar
 fimilies->families
@@ -31870,6 +31889,10 @@ imformed->informed
 imforming->informing
 imforms->informs
 imgage->image
+imiate->imitate
+imiated->imitated
+imiates->imitates
+imiating->imitating
 imidiate->immediate
 imidiately->immediately
 imigrant->immigrant, emigrant,
@@ -33501,6 +33524,7 @@ inintializes->initializes
 inintializing->initializing
 inintially->initially
 inintials->initials
+inisde->inside
 inisial->initial
 inisialisation->initialisation
 inisialisations->initialisations
@@ -37900,6 +37924,7 @@ mcroscopes->microscopes
 mcroscopic->microscopic
 mcroscopies->microscopies
 mcroscopy->microscopy
+mcuh->much
 mdification->modification
 mdifications->modifications
 mdified->modified
@@ -46533,6 +46558,7 @@ probabilies->probabilities
 probabilisitic->probabilistic
 probabilit->probability
 probabilites->probabilities
+probabilitise->probabilities
 probabilstic->probabilistic
 probabilties->probabilities
 probabilty->probability
@@ -58834,6 +58860,7 @@ tecnology->technology
 tedeous->tedious
 teetotler->teetotaler
 teetotlers->teetotalers
+teext->text
 tefine->define
 teh->the
 tehnical->technical
@@ -59764,6 +59791,8 @@ timestmping->timestamping
 timestmps->timestamps
 timetamp->timestamp
 timetamps->timestamps
+timezome->timezone
+timezomes->timezones
 timin->timing, timid,
 timmestamp->timestamp
 timmestamps->timestamps
@@ -61669,6 +61698,7 @@ unessecarrily->unnecessarily
 unessecarry->unnecessary
 unessecary->unnecessary
 unevaluted->unevaluated
+uneverntful->uneventful
 unexcected->unexpected
 unexcectedly->unexpectedly
 unexceptionnal->unexceptional
@@ -62862,6 +62892,8 @@ vaalue->value
 vaalued->valued
 vaalues->values
 vaaluing->valuing
+vacabularies->vocabularies
+vacabulary->vocabulary
 vaccinatin->vaccinating, vaccination,
 vaccum->vacuum
 vaccume->vacuum
@@ -63843,6 +63875,8 @@ volxel->voxel
 volxels->voxels
 vonfig->config
 vor->for
+votlage->voltage
+votlages->voltages
 vould->would
 vowin->vowing, vow in, no-win,
 voxes->voxels, voxel,
