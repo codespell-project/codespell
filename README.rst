@@ -292,6 +292,12 @@ If one configures codespell using the `pyproject.toml` file instead use:
       additional_dependencies:
         - tomli
 
+Using with MegaLinter
+---------------------
+
+codespell is embedded in `MegaLinter <https://megalinter.io>`_, a linters aggregator for CI:
+see its `codespell page <https://megalinter.io/latest/descriptors/spell_codespell/>`_ for how to enable and configure it there.
+
 Dictionary format
 -----------------
 
