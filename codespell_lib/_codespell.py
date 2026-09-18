@@ -24,7 +24,9 @@ import itertools
 import os
 import re
 import shlex
+import stat
 import sys
+import tempfile
 import textwrap
 from collections.abc import Iterable, Sequence
 from re import Match, Pattern
@@ -1309,11 +1311,38 @@ def parse_file(
                         f"  {cfilename}:{cline}: {cwrongword} ==> {crightword}",
                         file=sys.stderr,
                     )
-            with open(filename, "w", encoding=encoding, newline="") as f:
-                for _, _, lines in fragments:
-                    f.writelines(lines)
+            _write_file_atomically(filename, encoding, fragments)
 
     return bad_count
+
+
+def _write_file_atomically(
+    filename: str,
+    encoding: str,
+    fragments: Iterable[tuple[Any, Any, list[str]]],
+) -> None:
+    """Replace *filename* with a same-directory tempfile so a failed write
+    cannot leave the original file truncated to zero bytes.
+    """
+    directory = os.path.dirname(os.path.abspath(filename))
+    try:
+        original_mode = stat.S_IMODE(os.stat(filename).st_mode)
+    except OSError:
+        original_mode = None
+    fd, tmp_path = tempfile.mkstemp(prefix=".codespell-", suffix=".tmp", dir=directory)
+    try:
+        with os.fdopen(fd, "w", encoding=encoding, newline="") as tmp:
+            for _, _, lines in fragments:
+                tmp.writelines(lines)
+        if original_mode is not None:
+            os.chmod(tmp_path, original_mode)
+        os.replace(tmp_path, filename)
+    except Exception:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
+        raise
 
 
 def flatten_clean_comma_separated_arguments(
