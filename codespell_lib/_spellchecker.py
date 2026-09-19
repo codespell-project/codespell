@@ -55,10 +55,9 @@ def build_dict(
         translate_tables = [(x, str.maketrans(x, y)) for x, y in alt_chars]
         for line in f:
             [key, data] = line.split("->")
-            # TODO: For now, convert both to lower.
-            #       Someday we can maybe add support for fixing caps.
+            # Only convert key to lower case.
+            # Do not modify data to lower case. Leave it as per dictionary.
             key = key.lower()
-            data = data.lower()
             if key not in ignore_words:
                 add_misspelling(key, data, misspellings)
             # generate alternative misspellings/fixes
