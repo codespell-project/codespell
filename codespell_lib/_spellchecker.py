@@ -16,6 +16,8 @@ Copyright (C) 2010-2011  Lucas De Marchi <lucas.de.marchi@gmail.com>
 Copyright (C) 2011  ProFUSION embedded systems
 """
 
+from typing import Optional
+
 # Pass all misspellings through this translation table to generate
 # alternative misspellings and fixes.
 alt_chars = (("'", "’"),)  # noqa: RUF001
@@ -50,6 +52,7 @@ def build_dict(
     filename: str,
     misspellings: dict[str, Misspelling],
     ignore_words: set[str],
+    skipped_ignore_words: Optional[set[str]] = None,
 ) -> None:
     with open(filename, encoding="utf-8") as f:
         translate_tables = [(x, str.maketrans(x, y)) for x, y in alt_chars]
@@ -61,6 +64,8 @@ def build_dict(
             data = data.lower()
             if key not in ignore_words:
                 add_misspelling(key, data, misspellings)
+            elif skipped_ignore_words is not None:
+                skipped_ignore_words.add(key)
             # generate alternative misspellings/fixes
             for x, table in translate_tables:
                 if x in key:
@@ -68,3 +73,5 @@ def build_dict(
                     alt_data = data.translate(table)
                     if alt_key not in ignore_words:
                         add_misspelling(alt_key, alt_data, misspellings)
+                    elif skipped_ignore_words is not None:
+                        skipped_ignore_words.add(alt_key)
