@@ -3,6 +3,7 @@ import inspect
 import os
 import os.path as op
 import re
+import stat
 import subprocess
 import sys
 from collections.abc import Generator
@@ -173,6 +174,55 @@ def test_basic(
     # empty directory
     (tmp_path / "empty").mkdir()
     assert cs.main(tmp_path) == 0
+
+
+def test_write_changes_keeps_original_if_replace_fails(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """An interrupted --write-changes must not empty the original file."""
+    fname = tmp_path / "a.txt"
+    original = "this file has an abandonned word\n"
+    fname.write_text(original)
+
+    def fail_replace(src: str, dst: str) -> None:
+        raise InterruptedError
+
+    monkeypatch.setattr(os, "replace", fail_replace)
+    with pytest.raises(InterruptedError):
+        cs.main("-q", "16", "-w", fname)
+    assert fname.read_text() == original
+    assert list(tmp_path.glob(".codespell-*.tmp")) == []
+
+
+@pytest.mark.skipif(sys.platform == "win32", reason="POSIX permission bits")
+def test_write_changes_preserves_file_mode(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Atomic --write-changes must not reset the original file mode."""
+    fname = tmp_path / "a.txt"
+    fname.write_text("this file has an abandonned word\n")
+    fname.chmod(0o640)
+    assert cs.main("-q", "16", "-w", fname) == 0
+    assert fname.read_text() == "this file has an abandoned word\n"
+    assert stat.S_IMODE(fname.stat().st_mode) == 0o640
+
+
+@pytest.mark.skipif(sys.platform == "win32", reason="symlinks need privileges")
+def test_write_changes_follows_symlink(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Atomic --write-changes must update a symlink's target, not the link."""
+    target = tmp_path / "real.txt"
+    target.write_text("this file has an abandonned word\n")
+    link = tmp_path / "link.txt"
+    link.symlink_to(target.name)
+    assert cs.main("-q", "16", "-w", link) == 0
+    assert link.is_symlink()
+    assert target.read_text() == "this file has an abandoned word\n"
 
 
 def test_write_changes_lists_changes(
