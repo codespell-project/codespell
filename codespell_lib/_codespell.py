@@ -1324,7 +1324,9 @@ def _write_file_atomically(
     """Replace *filename* with a same-directory tempfile so a failed write
     cannot leave the original file truncated to zero bytes.
     """
-    directory = os.path.dirname(os.path.abspath(filename))
+    # Resolve symlinks so we replace the target, not the link itself
+    filename = os.path.realpath(filename)
+    directory = os.path.dirname(filename)
     try:
         original_mode = stat.S_IMODE(os.stat(filename).st_mode)
     except OSError:

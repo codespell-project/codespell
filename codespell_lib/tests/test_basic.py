@@ -210,6 +210,21 @@ def test_write_changes_preserves_file_mode(
     assert stat.S_IMODE(fname.stat().st_mode) == 0o640
 
 
+@pytest.mark.skipif(sys.platform == "win32", reason="symlinks need privileges")
+def test_write_changes_follows_symlink(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Atomic --write-changes must update a symlink's target, not the link."""
+    target = tmp_path / "real.txt"
+    target.write_text("this file has an abandonned word\n")
+    link = tmp_path / "link.txt"
+    link.symlink_to(target.name)
+    assert cs.main("-q", "16", "-w", link) == 0
+    assert link.is_symlink()
+    assert target.read_text() == "this file has an abandoned word\n"
+
+
 def test_write_changes_lists_changes(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
