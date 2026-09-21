@@ -493,7 +493,7 @@ def parse_options(
         "allow skipping of regions of Python code using "
         "begin/end comments one could use: "
         "--ignore-multiline-regex "
-        "'# codespell:ignore-begin *\\n.*# codespell:ignore-end *\\n'. "
+        "'# codespell:ignore-begin *\\n.*?# codespell:ignore-end *\\n'. "
         "Defaults to empty/disabled.",
     )
     parser.add_argument(

@@ -1206,6 +1206,21 @@ def test_ignore_multiline_regex_option(
     """
     assert fname.read_text() == fixed_text
 
+    # The documented example uses a non-greedy match so a typo between two
+    # ignore regions is still reported (a greedy .* would swallow it).
+    two_blocks = """
+    # codespell:ignore-begin
+    abandonned
+    # codespell:ignore-end
+    abandonned
+    # codespell:ignore-begin
+    abandonned
+    # codespell:ignore-end
+    """
+    fname.write_text(two_blocks)
+    documented = r"# codespell:ignore-begin *\n.*?# codespell:ignore-end *\n"
+    assert cs.main(fname, "--ignore-multiline-regex", documented) == 1
+
 
 def test_uri_regex_option(
     tmp_path: Path,
