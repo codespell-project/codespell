@@ -249,7 +249,16 @@ class FileOpener:
 
     def open(self, filename: str) -> tuple[list[tuple[bool, int, list[str]]], str]:
         if self.use_chardet:
-            return self.open_with_chardet(filename)
+            try:
+                return self.open_with_chardet(filename)
+            except (UnicodeDecodeError, LookupError):
+                encoding = getattr(self, "detected_encoding", None)
+                if not self.quiet_level & QuietLevels.ENCODING:
+                    print(
+                        f'WARNING: Cannot decode file using encoding "{encoding}": '
+                        f"{filename}",
+                        file=sys.stderr,
+                    )
         return self.open_with_internal(filename)
 
     def open_with_chardet(
@@ -263,23 +272,13 @@ class FileOpener:
                     break
         self.encdetector.close()
         encoding = self.encdetector.result["encoding"]
+        self.detected_encoding = encoding
+        if not encoding:
+            raise LookupError(encoding)
 
-        try:
-            f = open(filename, encoding=encoding, newline="")
-        except UnicodeDecodeError:
-            print(f"ERROR: Could not detect encoding: {filename}", file=sys.stderr)
-            raise
-        except LookupError:
-            print(
-                f"ERROR: Don't know how to handle encoding {encoding}: {filename}",
-                file=sys.stderr,
-            )
-            raise
-        else:
+        with open(filename, encoding=encoding, newline="") as f:
             lines = self.get_lines(f)
-            f.close()
-
-        return lines, f.encoding
+            return lines, f.encoding
 
     def open_with_internal(
         self, filename: str
