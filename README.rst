@@ -240,7 +240,9 @@ If several config files are present, they are read in the following order:
 
 If a codespell configuration is supplied in several of these files,
 the configuration from the most recently read file overwrites previously
-specified configurations. Any options specified in the command line will
+specified configurations. A warning is printed when both ``pyproject.toml``
+and ``.codespellrc`` contain codespell settings, since only the latter is
+used. Any options specified in the command line will
 *override* options from the config files.
 
 Values in a config file entry cannot start with a ``-`` character, so if

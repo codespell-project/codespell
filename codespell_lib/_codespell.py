@@ -692,6 +692,7 @@ def parse_options(
 
     # Read toml before other config files.
     toml_files = []
+    used_toml_files = []
     tomllib_raise_error = False
     if os.path.isfile("pyproject.toml"):
         toml_files.append("pyproject.toml")
@@ -721,17 +722,20 @@ def parse_options(
                         msg = f"{toml_file}: [tool.codespell] must be a table"
                         raise configparser.Error(msg)
                     config.read_dict({"codespell": _toml_to_parseconfig(data)})
+                    if toml_file not in used_toml_files:
+                        used_toml_files.append(toml_file)
 
     # Collect which config files are going to be used
-    used_cfg_files = []
+    used_ini_files = []
     for cfg_file in cfg_files:
         _cfg = configparser.ConfigParser()
         _cfg.read(cfg_file)
         if _cfg.has_section("codespell"):
-            used_cfg_files.append(cfg_file)
+            used_ini_files.append(cfg_file)
 
-    # Use config files
-    config.read(used_cfg_files)
+    # Use INI config files (TOML was already applied above)
+    config.read(used_ini_files)
+    used_cfg_files = used_toml_files + used_ini_files
     if config.has_section("codespell"):
         # Build a "fake" argv list using option name and value.
         cfg_args = []
@@ -1411,6 +1415,13 @@ def main(*args: str) -> int:
 
     # Report used config files
     if not options.quiet_level & QuietLevels.CONFIG_FILES:
+        used_basenames = {os.path.basename(cfg_file) for cfg_file in used_cfg_files}
+        if "pyproject.toml" in used_basenames and ".codespellrc" in used_basenames:
+            print(
+                "WARNING: both pyproject.toml and .codespellrc contain "
+                "codespell settings; .codespellrc takes precedence",
+                file=sys.stderr,
+            )
         if len(used_cfg_files) > 0:
             print("Used config files:")
         for ifile, cfg_file in enumerate(used_cfg_files, start=1):
