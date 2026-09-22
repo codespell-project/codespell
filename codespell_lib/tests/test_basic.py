@@ -1621,6 +1621,46 @@ def test_config_toml_codespell_array(
     assert "[tool.codespell] must be a table" in stderr
 
 
+def test_warn_both_pyproject_and_codespellrc(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    if sys.version_info < (3, 11):
+        pytest.importorskip("tomli")
+    (tmp_path / "pyproject.toml").write_text("[tool.codespell]\nquiet-level = 2\n")
+    (tmp_path / ".codespellrc").write_text("[codespell]\nquiet-level = 2\n")
+    (tmp_path / "ok.txt").write_text("ok\n")
+
+    warning = (
+        "WARNING: both pyproject.toml and .codespellrc contain "
+        "codespell settings; .codespellrc takes precedence"
+    )
+    cwd = Path.cwd()
+    try:
+        os.chdir(tmp_path)
+        result = cs.main(std=True)
+    finally:
+        os.chdir(cwd)
+    assert isinstance(result, tuple)
+    code, stdout, stderr = result
+    assert code == 0
+    assert warning in stderr
+    assert "Used config files:" in stdout
+    assert "pyproject.toml" in stdout
+    assert ".codespellrc" in stdout
+
+    try:
+        os.chdir(tmp_path)
+        result = cs.main("--quiet-level=32", std=True)
+    finally:
+        os.chdir(cwd)
+    assert isinstance(result, tuple)
+    code, stdout, stderr = result
+    assert code == 0
+    assert warning not in stderr
+    assert "Used config files:" not in stdout
+
+
 @contextlib.contextmanager
 def FakeStdin(text: str) -> Generator[None, None, None]:
     oldin = sys.stdin
