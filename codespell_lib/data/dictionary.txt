@@ -9732,6 +9732,7 @@ bisines->business
 bisiness->business
 bisnes->business
 bisness->business
+bisshift->bitshift
 bistream->bitstream
 bisunes->business
 bisuness->business
@@ -11013,6 +11014,12 @@ cammander->commander
 cammanders->commanders
 cammanding->commanding
 cammands->commands
+cammnad->command
+cammnaded->commanded
+cammnader->commander
+cammnaders->commanders
+cammnading->commanding
+cammnads->commands
 cammond->command
 camoflage->camouflage
 camoflaged->camouflaged
@@ -19019,6 +19026,8 @@ daugthers->daughters
 daybue->debut
 dbeian->Debian
 DCHP->DHCP
+dcitionaries->dictionaries
+dcitionary->dictionary
 dcok->dock
 dcoked->docked
 dcoker->docker
@@ -23829,7 +23838,12 @@ eanble->enable
 eanbled->enabled
 eanbles->enables
 eanbling->enabling
-earch->search, each,
+earch->search, each, arch,
+earched->searched, arched,
+earcher->searcher, archer,
+earchers->searchers, archers,
+earches->searches, arches,
+earching->searching, arching,
 earier->earlier, easier, eerier,
 eariest->earliest, easiest, eeriest,
 eariler->earlier
@@ -28407,6 +28421,7 @@ filtersing->filtering
 filterss->filters
 filtype->filetype
 filtypes->filetypes
+filw->file
 fime->fixme, time,
 fimiliar->familiar
 fimilies->families
@@ -29377,6 +29392,8 @@ froozen->frozen
 frop->drop
 fropm->from
 frops->drops
+frorm->from, form,
+frorms->forms
 frowarded->forwarded
 frowarding->forwarding
 frowards->forwards
@@ -31877,6 +31894,10 @@ imformed->informed
 imforming->informing
 imforms->informs
 imgage->image
+imiate->imitate
+imiated->imitated
+imiates->imitates
+imiating->imitating
 imidiate->immediate
 imidiately->immediately
 imigrant->immigrant, emigrant,
@@ -32892,6 +32913,7 @@ indefinitiley->indefinitely
 indefinitively->indefinitely
 indefinitly->indefinitely
 indefintly->indefinitely
+indegrity->integrity
 indempotent->idempotent
 indendation->indentation
 indended->intended, indented,
@@ -33508,6 +33530,7 @@ inintializes->initializes
 inintializing->initializing
 inintially->initially
 inintials->initials
+inisde->inside
 inisial->initial
 inisialisation->initialisation
 inisialisations->initialisations
@@ -35344,6 +35367,7 @@ intitiators->initiators
 intity->entity
 intoduction->introduction
 intoloerance->intolerance
+intop->into, in top,
 intorduce->introduce
 intorduced->introduced
 intorduces->introduces
@@ -37907,6 +37931,7 @@ mcroscopes->microscopes
 mcroscopic->microscopic
 mcroscopies->microscopies
 mcroscopy->microscopy
+mcuh->much
 mdification->modification
 mdifications->modifications
 mdified->modified
@@ -38884,6 +38909,8 @@ miticates->mitigates
 miticating->mitigating
 miticator->mitigator
 mitigatin->mitigating, mitigation,
+mitigitaion->mitigation
+mitigitaions->mitigations
 mittigate->mitigate
 miximum->maximum
 mixted->mixed
@@ -45635,6 +45662,7 @@ potrayed->portrayed
 poulations->populations
 pount->point, pound,
 pounts->points
+pouplar->popular
 poupular->popular
 poverful->powerful
 poweful->powerful
@@ -46540,6 +46568,7 @@ probabilies->probabilities
 probabilisitic->probabilistic
 probabilit->probability
 probabilites->probabilities
+probabilitise->probabilities
 probabilstic->probabilistic
 probabilties->probabilities
 probabilty->probability
@@ -50082,6 +50111,7 @@ relpaces->replaces
 relpacing->replacing
 relpy->reply
 reltive->relative
+relus->rules, resus, rebus,
 relvance->relevance
 relvancy->relevancy
 relvant->relevant
@@ -52284,6 +52314,7 @@ rotats->rotates, rotate,
 rouding->rounding
 roughtly->roughly
 rougly->roughly
+rouhgly->roughly
 rouine->routine
 rouines->routines
 round-robbin->round-robin
@@ -52322,6 +52353,9 @@ rovider->provider
 roviders->providers
 rovides->provides
 roviding->providing
+roward->reward, coward, toward, reword,
+rowards->rewards, cowards, towards, rewords,
+rpesent->present, represent,
 rplace->replace
 rqeuest->request, quest,
 rqeuested->requested
@@ -58841,6 +58875,7 @@ tecnology->technology
 tedeous->tedious
 teetotler->teetotaler
 teetotlers->teetotalers
+teext->text
 tefine->define
 teh->the
 tehnical->technical
@@ -59769,6 +59804,8 @@ timestmping->timestamping
 timestmps->timestamps
 timetamp->timestamp
 timetamps->timestamps
+timezome->timezone
+timezomes->timezones
 timin->timing, timid,
 timmestamp->timestamp
 timmestamps->timestamps
@@ -59839,6 +59876,8 @@ todya->today
 toein->toeing, toe in, toxin,
 toekn->token
 toekns->tokens
+toelrance->tolerance
+toelrances->tolerances
 toether->together, tether,
 togather->together, to gather,
 togehter->together
@@ -60285,6 +60324,7 @@ transfering->transferring
 transferrable->transferable
 transferrd->transferred
 transferrin->transferring
+transferrred->transferred
 transfert->transfer, transferred,
 transfmrom->transform
 transfmromation->transformation
@@ -60998,6 +61038,7 @@ tryin->trying, try in,
 tryinng->trying
 trys->tries
 tryying->trying
+tsks->tasks
 ttempt->attempt, tempt,
 ttempted->attempted, tempted,
 ttempting->attempting, tempting,
@@ -62868,6 +62909,8 @@ vaalue->value
 vaalued->valued
 vaalues->values
 vaaluing->valuing
+vacabularies->vocabularies
+vacabulary->vocabulary
 vaccinatin->vaccinating, vaccination,
 vaccum->vacuum
 vaccume->vacuum
@@ -63237,6 +63280,7 @@ vectore->vector
 vectores->vectors
 vectorin->vectoring, vector in,
 vectorss->vectors
+vectro->vector
 vectror->vector
 vectrors->vectors
 vecvtor->vector
@@ -63849,6 +63893,8 @@ volxel->voxel
 volxels->voxels
 vonfig->config
 vor->for
+votlage->voltage
+votlages->voltages
 vould->would
 vowin->vowing, vow in, no-win,
 voxes->voxels, voxel,
