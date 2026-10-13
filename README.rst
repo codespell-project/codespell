@@ -59,6 +59,12 @@ The ``-w`` flag will actually implement the changes recommended by codespell. Ru
 
 .. code-block:: sh
 
+    codespell -w --exit-non-zero-on-fix
+
+By default, ``-w`` exits with status 0 when every misspelling it finds was fixed. The ``--exit-non-zero-on-fix`` flag makes codespell exit with a non-zero status whenever it writes changes, which is useful in CI so that a run that modified files is reported as a failure.
+
+.. code-block:: sh
+
     codespell -I FILE, --ignore-words=FILE
 
 The ``-I`` flag can be used for a list of certain words to allow that are in the codespell dictionaries. The format of the file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said list of allowed words. See `Ignoring Words`_ for more details.

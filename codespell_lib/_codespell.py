@@ -449,6 +449,14 @@ def parse_options(
         default=False,
         help="write changes in place if possible",
     )
+    parser.add_argument(
+        "--exit-non-zero-on-fix",
+        action="store_true",
+        default=False,
+        help="exit with a non-zero status if any changes were written, "
+        "even if every misspelling was fixed. Has no effect without "
+        "-w/--write-changes or -i/--interactive.",
+    )
 
     parser.add_argument(
         "-D",
@@ -1200,7 +1208,7 @@ def parse_file(
     uri_ignore_words: set[str],
     context: Optional[tuple[int, int]],
     options: argparse.Namespace,
-) -> int:
+) -> tuple[int, bool]:
     bad_count = 0
     fragments = None
 
@@ -1243,24 +1251,24 @@ def parse_file(
 
         # ignore irregular files
         if not os.path.isfile(filename):
-            return bad_count
+            return bad_count, False
 
         try:
             text = is_text_file(filename)
         except PermissionError as e:
             print(f"WARNING: {e.strerror}: {filename}", file=sys.stderr)
-            return bad_count
+            return bad_count, False
         except OSError:
-            return bad_count
+            return bad_count, False
 
         if not text:
             if not options.quiet_level & QuietLevels.BINARY_FILE:
                 print(f"WARNING: Binary file: {filename}", file=sys.stderr)
-            return bad_count
+            return bad_count, False
         try:
             fragments, encoding = file_opener.open(filename)
         except OSError:
-            return bad_count
+            return bad_count, False
 
     # Parse lines.
     changed = False
@@ -1317,7 +1325,7 @@ def parse_file(
                     )
             _write_file_atomically(filename, encoding, fragments)
 
-    return bad_count
+    return bad_count, changed
 
 
 def _write_file_atomically(
@@ -1569,6 +1577,7 @@ def main(*args: str) -> int:
         )
 
     bad_count = 0
+    any_changed = False
     for filename in sorted(options.files):
         # ignore hidden files
         if is_hidden(filename, options.check_hidden):
@@ -1590,7 +1599,7 @@ def main(*args: str) -> int:
                     fname = os.path.join(root, file_)
                     if glob_match.match(fname):  # skip paths
                         continue
-                    bad_count += parse_file(
+                    bad_count_update, changed = parse_file(
                         fname,
                         colors,
                         summary,
@@ -1605,6 +1614,8 @@ def main(*args: str) -> int:
                         context,
                         options,
                     )
+                    bad_count += bad_count_update
+                    any_changed = any_changed or changed
 
                 # skip (relative) directories
                 dirs[:] = [
@@ -1615,7 +1626,7 @@ def main(*args: str) -> int:
                 ]
 
         elif not glob_match.match(filename):  # skip files
-            bad_count += parse_file(
+            bad_count_update, changed = parse_file(
                 filename,
                 colors,
                 summary,
@@ -1630,10 +1641,13 @@ def main(*args: str) -> int:
                 context,
                 options,
             )
+            bad_count += bad_count_update
+            any_changed = any_changed or changed
 
     if summary:
         print("\n-------8<-------\nSUMMARY:")
         print(summary)
     if options.count:
         print(bad_count, file=sys.stderr)
-    return EX_DATAERR if bad_count else EX_OK
+    failed = bad_count or (any_changed and options.exit_non_zero_on_fix)
+    return EX_DATAERR if failed else EX_OK

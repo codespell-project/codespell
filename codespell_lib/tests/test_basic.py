@@ -249,6 +249,14 @@ def test_write_changes_lists_changes(
     corrected = fname.read_text()
     assert corrected == "This is abandoned\nAnd this is occurred\nAlso the typo\n"
 
+    # --exit-non-zero-on-fix fails only when changes were written
+    fname.write_text("abandonned\n")
+    assert cs_.main("-w", str(fname)) == EX_OK
+    fname.write_text("abandonned\n")
+    assert cs_.main("-w", "--exit-non-zero-on-fix", str(fname)) == EX_DATAERR
+    assert fname.read_text() == "abandoned\n"
+    assert cs_.main("-w", "--exit-non-zero-on-fix", str(fname)) == EX_OK
+
 
 def test_default_word_parsing(
     tmp_path: Path,
