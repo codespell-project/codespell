@@ -67,13 +67,13 @@ By default, ``-w`` exits with status 0 when every misspelling it finds was fixed
 
     codespell -I FILE, --ignore-words=FILE
 
-The ``-I`` flag can be used for a list of certain words to allow that are in the codespell dictionaries. The format of the file is one word per line. Invoke using: ``codespell -I path/to/file.txt`` to execute codespell referencing said list of allowed words. See `Ignoring Words`_ for more details.
+Ignore words listed in ``FILE``, one word per line. See `Ignoring Words`_ for more details.
 
 .. code-block:: sh
 
-    codespell -L word1,word2,word3,word4
+    codespell -L LIST, --ignore-words-list=LIST
 
-The ``-L`` flag can be used to allow certain words that are comma-separated placed immediately after it.  See `Ignoring Words`_ for more details.
+Ignore words from the comma-separated ``LIST``. See `Ignoring Words`_ for more details.
 
 .. code-block:: sh
 
@@ -83,9 +83,9 @@ Ignore whole lines that match those in ``FILE``.  The lines in ``FILE`` should m
 
 .. code-block:: sh
 
-    codespell -S, --skip=
+    codespell -S LIST, --skip=LIST
 
-Comma-separated list of files to skip. It accepts globs as well.  Examples:
+Skip files from the comma-separated ``LIST``. Globs are also supported.  Examples:
 
 * to skip .eps & .txt files, invoke ``codespell --skip="*.eps,*.txt"``
 
@@ -129,13 +129,13 @@ When ignoring false positives, note that spelling errors are *case-insensitive* 
 
 The words to ignore can be passed in two ways:
 
-1. ``-I``: A file with a word per line to ignore:
+1. ``-I``, ``--ignore-words``: A file with a word per line to ignore:
 
    .. code-block:: sh
 
        codespell -I FILE, --ignore-words=FILE
 
-2. ``-L``: A comma separated list of words to ignore on the command line:
+2. ``-L``, ``--ignore-words-list``: A comma-separated list of words to ignore on the command line:
 
    .. code-block:: sh
 
@@ -212,6 +212,7 @@ be specified in this file (without the preceding dashes), for example:
     skip = *.po,*.ts,./src/3rdParty,./src/Test
     count =
     quiet-level = 3
+    ignore-words-list = creat,clos
 
 Python's
 `configparser <https://docs.python.org/3/library/configparser.html#supported-ini-file-structure>`_
@@ -230,12 +231,14 @@ previous config file:
     skip = '*.po,*.ts,./src/3rdParty,./src/Test'
     count = true
     quiet-level = 3
+    ignore-words-list = 'creat,clos'
 
 The above INI and TOML files are equivalent to running:
 
 .. code-block:: sh
 
-    codespell --skip "*.po,*.ts,./src/3rdParty,./src/Test" --count --quiet-level 3
+    codespell --skip "*.po,*.ts,./src/3rdParty,./src/Test" --count --quiet-level 3 \
+              --ignore-words-list creat,clos
 
 If several config files are present, they are read in the following order:
 
