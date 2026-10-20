@@ -15218,8 +15218,6 @@ conciders->considers
 concieted->conceited
 concieve->conceive
 concieved->conceived
-consise->concise
-consisely->concisely
 concious->conscious
 conciously->consciously
 conciousness->consciousness
@@ -16243,6 +16241,8 @@ consiousness->consciousness
 consire->conspire, consider,
 consired->conspired, considered,
 consisant->consistent
+consise->concise
+consisely->concisely
 consisent->consistent
 consisently->consistently
 consisntency->consistency
@@ -30442,11 +30442,11 @@ greatful->grateful
 greatfull->grateful, gratefully,
 greatfully->gratefully
 greather->greater
+greenwhich->greenwich
+greenwitch->greenwich
 greif->grief
 grephic->graphic
 grestest->greatest
-greenwitch->greenwich
-greenwhich->greenwich
 greysacles->greyscales
 gridles->griddles
 grigorian->Gregorian
