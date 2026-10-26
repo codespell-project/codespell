@@ -258,6 +258,33 @@ def test_write_changes_lists_changes(
     assert cs_.main("-w", "--exit-non-zero-on-fix", str(fname)) == EX_OK
 
 
+def test_write_changes_skips_disabled_automatic_fix(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """A reason after the last comma disables --write-changes (gh-1791)."""
+    dictionary = tmp_path / "dictionary.txt"
+    dictionary.write_text("clas->class, disabled because of name clash in c++\n")
+    fname = tmp_path / "code.txt"
+    fname.write_text("clas Foo;\n")
+
+    result = cs.main("-D", str(dictionary), fname, std=True)
+    assert isinstance(result, tuple)
+    code, stdout, _ = result
+    assert code == 1
+    assert "clas ==> class" in stdout
+    assert "disabled because of name clash in c++" in stdout
+    assert fname.read_text(encoding="utf-8") == "clas Foo;\n"
+
+    result = cs.main("-w", "-D", str(dictionary), fname, std=True)
+    assert isinstance(result, tuple)
+    code, stdout, stderr = result
+    assert code == 1
+    assert "FIXED:" not in stderr
+    assert "clas ==> class" in stdout
+    assert fname.read_text(encoding="utf-8") == "clas Foo;\n"
+
+
 def test_default_word_parsing(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
