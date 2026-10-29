@@ -1492,6 +1492,26 @@ def test_quiet_level_32(
     assert "Used config files:" in stdout
     assert "setup.cfg" in stdout
 
+    # Names are the same as the numbers, on the command line and in a
+    # config file (GH-2526).
+    result = cs.main(str(d), *args, "--quiet-level=config-files", std=True)
+    assert isinstance(result, tuple)
+    code, stdout, _ = result
+    assert code == 0
+    assert "Used config files:" not in stdout
+    result = cs.main(str(d), *args, "--quiet-level=encoding,binary-file", std=True)
+    assert isinstance(result, tuple)
+    code, stdout, _ = result
+    assert code == 0
+    assert "Used config files:" in stdout
+    with open(conf, "a", encoding="utf-8") as f:
+        f.write("quiet-level = config-files\n")
+    result = cs.main(str(d), *args, std=True)
+    assert isinstance(result, tuple)
+    code, stdout, _ = result
+    assert code == 0
+    assert "Used config files:" not in stdout
+
 
 def test_ill_formed_ini_config_file(
     tmp_path: Path,
@@ -1958,16 +1978,43 @@ def test_interactive_level_2_no_prompt_for_single_fix(
     assert f.read_text() == "abandoned\n"
 
 
+@pytest.mark.parametrize("level", ["3", "ask,choose"])
 def test_interactive_level_3_rejection_keeps_yn_prompt(
     tmp_path: Path,
+    level: str,
 ) -> None:
     """A rejected word must stay a Y/n question, not degrade to an option list."""
     f1 = tmp_path / "f1.txt"
     f2 = tmp_path / "f2.txt"
     f1.write_text("abandonned\n")
     f2.write_text("abandonned\n")
-    proc = run_codespell_interactive(("-w", "-i", "3", f1, f2), answers="n\nn\n")
+    proc = run_codespell_interactive(("-w", "-i", level, f1, f2), answers="n\nn\n")
     assert proc.stdout.count(PROMPT) == 2
     assert "Choose an option" not in proc.stdout
     assert f1.read_text() == "abandonned\n"
     assert f2.read_text() == "abandonned\n"
+
+
+@pytest.mark.parametrize(
+    ("option", "value", "choices"),
+    [
+        ("-i", "4", "0-3"),
+        ("-i", "ask,confirm", "ask, choose"),
+        ("-q", "64", "0-63"),
+        ("-q", "binary", "encoding, binary-file"),
+    ],
+)
+def test_bitmask_option_invalid_value(
+    tmp_path: Path,
+    option: str,
+    value: str,
+    choices: str,
+) -> None:
+    """A number out of range or an unknown name is rejected (GH-2526)."""
+    f = tmp_path / "f.txt"
+    f.write_text("abandonned\n")
+    proc = run_codespell_interactive((option, value, f), answers="")
+    assert proc.returncode == 2
+    assert "invalid choice" in proc.stderr
+    assert choices in proc.stderr
+    assert f.read_text() == "abandonned\n"

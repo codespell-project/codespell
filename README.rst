@@ -107,6 +107,13 @@ Display them without terminal colors and with a quiet level of 3.
 
 Run interactive mode level 3 and write changes to file.
 
+.. code-block:: sh
+
+    codespell -i ask,choose -q encoding,binary-file
+
+The ``-i`` and ``-q`` bitmasks can also be given as comma-separated names;
+this is the same as ``-i 3 -q 3``. See ``codespell --help`` for the names.
+
 We ship a collection of dictionaries that are an improved version of the one available
 `on Wikipedia <https://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/For_machines>`_
 after applying them in projects like Linux Kernel, EFL, oFono among others.

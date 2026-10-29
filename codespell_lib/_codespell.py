@@ -28,7 +28,7 @@ import stat
 import sys
 import tempfile
 import textwrap
-from collections.abc import Iterable, Sequence
+from collections.abc import Callable, Iterable, Sequence
 from re import Match, Pattern
 from typing import (
     Any,
@@ -174,6 +174,44 @@ class QuietLevels:
     NON_AUTOMATIC_FIXES = 8
     FIXES = 16
     CONFIG_FILES = 32
+
+
+_INTERACTIVE_NAMES = {"ask": 1, "choose": 2}
+_QUIET_LEVEL_NAMES = {
+    "encoding": QuietLevels.ENCODING,
+    "binary-file": QuietLevels.BINARY_FILE,
+    "disabled-fixes": QuietLevels.DISABLED_FIXES,
+    "non-automatic-fixes": QuietLevels.NON_AUTOMATIC_FIXES,
+    "fixes": QuietLevels.FIXES,
+    "config-files": QuietLevels.CONFIG_FILES,
+}
+
+
+def _bitmask(names: dict[str, int]) -> Callable[[str], int]:
+    """Return an argparse type for a bitmask option.
+
+    The value is either the number as before (``3``) or a comma-separated
+    list of names (``ask,choose``) that are ORed together (GH-2526).
+    """
+    all_bits = sum(names.values())
+
+    def parse(value: str) -> int:
+        if value.isdigit():
+            level = int(value)
+            if level > all_bits:
+                msg = f"invalid choice: {value} (choose from 0-{all_bits})"
+                raise argparse.ArgumentTypeError(msg)
+            return level
+        level = 0
+        for name in value.split(","):
+            try:
+                level |= names[name.strip()]
+            except KeyError:
+                msg = f"invalid choice: {name!r} (choose from {', '.join(names)})"
+                raise argparse.ArgumentTypeError(msg) from None
+        return level
+
+    return parse
 
 
 class GlobMatch:
@@ -592,15 +630,15 @@ def parse_options(
         "-i",
         "--interactive",
         action="store",
-        type=int,
+        type=_bitmask(_INTERACTIVE_NAMES),
         default=0,
-        choices=range(0, 4),
-        help="set interactive mode when writing changes:\n"
+        help="set interactive mode when writing changes, as a number "
+        "or as a comma-separated list of names:\n"
         "- 0: no interactivity.\n"
-        "- 1: ask for confirmation; 'a'/'s' answer for the rest of the file.\n"
-        "- 2: ask user to choose one fix when more than one is available;"
+        "- 1 or ask: ask for confirmation; 'a'/'s' answer for the rest of the file.\n"
+        "- 2 or choose: ask user to choose one fix when more than one is available;"
         " 'Na'/'s' answer for the rest of the file.\n"
-        "- 3: both 1 and 2",
+        "- 3 or ask,choose: both 1 and 2",
         metavar="MODE",
     )
 
@@ -608,19 +646,19 @@ def parse_options(
         "-q",
         "--quiet-level",
         action="store",
-        type=int,
+        type=_bitmask(_QUIET_LEVEL_NAMES),
         default=34,
-        choices=range(0, 64),
-        help="bitmask that allows suppressing messages:\n"
+        help="bitmask that allows suppressing messages, as a number "
+        "or as a comma-separated list of names:\n"
         "- 0: print all messages.\n"
-        "- 1: disable warnings about wrong encoding.\n"
-        "- 2: disable warnings about binary files.\n"
-        "- 4: omit warnings about automatic fixes that were disabled in the dictionary.\n"  # noqa: E501
-        "- 8: don't print anything for non-automatic fixes.\n"
-        "- 16: don't print the list of fixed files.\n"
-        "- 32: don't print configuration files.\n"
+        "- 1 or encoding: disable warnings about wrong encoding.\n"
+        "- 2 or binary-file: disable warnings about binary files.\n"
+        "- 4 or disabled-fixes: omit warnings about automatic fixes that were disabled in the dictionary.\n"  # noqa: E501
+        "- 8 or non-automatic-fixes: don't print anything for non-automatic fixes.\n"
+        "- 16 or fixes: don't print the list of fixed files.\n"
+        "- 32 or config-files: don't print configuration files.\n"
         "As usual with bitmasks, these levels can be "
-        "combined; e.g. use 3 for levels 1+2, 7 for "
+        "combined; e.g. use 3 or encoding,binary-file for levels 1+2, 7 for "
         "1+2+4, 23 for 1+2+4+16, etc. "
         "The default mask is %(default)s.",
         metavar="LEVEL",
