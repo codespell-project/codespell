@@ -2559,6 +2559,10 @@ affectin->affecting, affect in, affection,
 affectionatley->affectionately
 affectionnate->affectionate
 affekt->affect, effect,
+affet->affect
+affeted->affected
+affeting->affecting
+affets->affects
 affiars->affairs
 afficianado->aficionado
 afficianados->aficionados
@@ -7816,6 +7820,11 @@ ataching->attaching
 atachment->attachment
 atachments->attachments
 atack->attack
+atacked->attacked
+atacker->attacker
+atackers->attackers
+atacking->attacking
+atacks->attacks
 atain->attain
 atalog->catalog
 atalogs->catalogs
@@ -7933,6 +7942,18 @@ attackin->attacking, attack in,
 attacs->attacks
 attacthed->attached
 attaindre->attainder, attained,
+attak->attack
+attakc->attack
+attakced->attacked
+attakcer->attacker
+attakcers->attackers
+attakcing->attacking
+attakcs->attacks
+attaked->attacked
+attaker->attacker
+attakers->attackers
+attaking->attacking
+attaks->attacks
 attampt->attempt
 attampted->attempted
 attampting->attempting
@@ -7957,6 +7978,12 @@ attches->attaches
 attching->attaching
 attchment->attachment
 attchments->attachments
+attck->attack
+attcked->attacked
+attcker->attacker
+attckers->attackers
+attcking->attacking
+attcks->attacks
 attement->attempt
 attemented->attempted
 attementing->attempting
@@ -8388,6 +8415,12 @@ authentciating->authenticating
 authentciation->authentication
 authentciator->authenticator
 authentciators->authenticators
+authentiacte->authenticate
+authentiacted->authenticated
+authentiactes->authenticates
+authentiacting->authenticating
+authentiaction->authentication
+authentiactions->authentications
 authenticae->authenticate
 authenticaed->authenticated
 authenticaes->authenticates
@@ -20114,6 +20147,8 @@ demostrates->demonstrates
 demostrating->demonstrating
 demostration->demonstration
 demudulator->demodulator
+denail->denial
+denails->denials
 denegrating->denigrating
 denigratin->denigrating, denigration,
 denila->denial
@@ -21181,6 +21216,8 @@ deteched->detached, detected,
 detecing->detecting
 detecion->detection
 detecions->detections
+deteciton->detection
+detecitons->detections
 detecs->detects, deters, detect,
 detecte->detected, detect, detects,
 detectected->detected
@@ -22327,6 +22364,10 @@ disciplinin->disciplining
 disciplins->disciplines
 disclamer->disclaimer
 disclosin->disclosing
+discloure->disclosure
+discloures->disclosures
+disclousre->disclosure
+disclousres->disclosures
 disconecct->disconnect
 disconeccted->disconnected
 disconeccting->disconnecting
@@ -27576,6 +27617,8 @@ exploititive->exploitative
 explorin->exploring
 explot->exploit, explore,
 explotation->exploitation, exploration,
+explotiation->exploitation
+explotiations->exploitations
 exploting->exploiting, exploring,
 expoed->exposed
 expoent->exponent
@@ -33188,6 +33231,12 @@ ineffiently->inefficiently
 ineficient->inefficient
 inegrate->integrate
 inegrated->integrated
+inejct->inject
+inejcted->injected
+inejcting->injecting
+inejction->injection
+inejctions->injections
+inejcts->injects
 ineqality->inequality
 ineqaulities->inequalities
 ineqaulity->inequality
@@ -34057,6 +34106,14 @@ inizializing->initializing
 inizially->initially
 inizials->initials
 injectin->injecting, inject in, injection,
+injectoin->injection
+injectoins->injections
+injetc->inject
+injetced->injected
+injetcing->injecting
+injetcion->injection
+injetcions->injections
+injetcs->injects
 inlalid->invalid
 inlclude->include
 inlcluded->included
@@ -41586,6 +41643,10 @@ obtaine->obtain, obtained, obtains,
 obtaines->obtains
 obtainig->obtaining
 obtainin->obtaining, obtain in,
+obtaint->obtain
+obtainted->obtained
+obtainting->obtaining
+obtaints->obtains
 obtaion->obtain
 obtaioned->obtained
 obtaions->obtains
@@ -48135,6 +48196,7 @@ randomeness->randomness
 randomisin->randomising
 randomizin->randomizing
 rangeo->range
+ransomeware->ransomware
 raoming->roaming
 raotat->rotate
 raotate->rotate
@@ -50289,6 +50351,7 @@ remoote->remote
 remore->remote, remove,
 remorted->reported
 remot->remote
+remotelly->remotely
 remotly->remotely
 remots->remotes
 removce->remove
@@ -63521,7 +63584,9 @@ versiobed->versioned
 versiobing->versioning
 versiobs->versions
 versioed->versioned
+versioin->version
 versioing->versioning
+versioins->versions
 versiom->version
 versiomed->versioned
 versioming->versioning
@@ -64061,6 +64126,7 @@ vulnerabiliti->vulnerability, vulnerabilities,
 vulnerabilitie->vulnerability, vulnerabilities,
 vulnerabilitiesy->vulnerability, vulnerabilities,
 vulnerabilitis->vulnerabilities, vulnerability,
+vulnerabilitites->vulnerabilities
 vulnerabilitiy->vulnerability
 vulnerabilitu->vulnerability
 vulnerabilityies->vulnerability, vulnerabilities,
@@ -64069,6 +64135,7 @@ vulnerabiliy->vulnerability
 vulnerabillities->vulnerabilities
 vulnerabillity->vulnerability
 vulnerabilties->vulnerabilities
+vulnerabiltiy->vulnerability
 vulnerabilty->vulnerability
 vulnerabily->vulnerably, vulnerability,
 vulnerabities->vulnerabilities
