@@ -136,6 +136,25 @@ def test_basic(
     code, _, stderr = result
     assert code == EX_USAGE  # bad type
     assert "Unknown builtin dictionary" in stderr
+    result = cs.main(
+        fname, "--config", tmp_path / "does-not-exist", std=True
+    )
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    assert code == EX_USAGE
+    assert "cannot find config file" in stderr
+    result = cs.main(fname, "--toml", tmp_path / "does-not-exist", std=True)
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    assert code == EX_USAGE
+    assert "cannot find toml file" in stderr
+    result = cs.main(
+        fname, "--exclude-file", tmp_path / "does-not-exist", std=True
+    )
+    assert isinstance(result, tuple)
+    code, _, stderr = result
+    assert code == EX_USAGE
+    assert "cannot find exclude-file" in stderr
     result = cs.main(fname, "-D", tmp_path / "foo", std=True)
     assert isinstance(result, tuple)
     code, _, stderr = result
