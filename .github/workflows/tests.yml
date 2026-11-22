@@ -57,7 +57,6 @@ jobs:
         run: |
           python --version  # just to check
           python -m pip install --upgrade pip wheel
-          pip install --upgrade setuptools docutils setuptools_scm[toml] twine
           pip install -e . --group dev # install the codespell dev packages
       - run: pip install aspell-python-py3
         if: startsWith(matrix.os, 'ubuntu')

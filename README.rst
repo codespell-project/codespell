@@ -344,11 +344,11 @@ applied directly, but should instead be manually inspected. E.g.:
 Development setup
 -----------------
 
-As suggested in the `Python Packaging User Guide`_, ensure ``pip``, ``setuptools``, and ``wheel`` are up to date before installing from source. Specifically you will need recent versions of ``setuptools`` and ``setuptools_scm``:
+As suggested in the `Python Packaging User Guide`_, ensure ``pip`` and ``wheel`` are up to date before installing from source:
 
 .. code-block:: sh
 
-    pip install --upgrade pip setuptools setuptools_scm wheel
+    pip install --upgrade pip wheel
 
 You can install required dependencies for development by running the following within a checkout of the codespell source:
 

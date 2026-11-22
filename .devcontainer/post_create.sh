@@ -6,8 +6,6 @@ sudo apt-get install -y libaspell-dev
 pip install --upgrade \
     aspell-python-py3 \
     pip \
-    setuptools \
-    setuptools_scm \
     wheel
 pip install -e . --group dev
 

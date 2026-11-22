@@ -1,4 +1,3 @@
-from ._codespell import _script_main, main
-from ._version import __version__  # type: ignore[import-not-found]
+from ._codespell import __version__, _script_main, main
 
 __all__ = ["__version__", "_script_main", "main"]
