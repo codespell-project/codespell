@@ -10,7 +10,7 @@ from collections.abc import Generator
 from io import StringIO
 from pathlib import Path
 from shutil import copyfile
-from typing import Any, Optional
+from typing import Any
 from unittest import mock
 
 import pytest
@@ -69,7 +69,7 @@ cs = MainWrapper()
 
 def run_codespell(
     args: tuple[Any, ...] = (),
-    cwd: Optional[Path] = None,
+    cwd: Path | None = None,
 ) -> int:
     """Run codespell."""
     args = tuple(str(arg) for arg in args)
@@ -1693,7 +1693,7 @@ def FakeStdin(text: str) -> Generator[None, None, None]:
 def run_codespell_stdin(
     text: str,
     args: tuple[Any, ...],
-    cwd: Optional[Path] = None,
+    cwd: Path | None = None,
 ) -> int:
     """Run codespell in stdin mode and return number of lines in output."""
     proc = subprocess.run(  # noqa: S603
@@ -1787,7 +1787,7 @@ PROMPT = "(Y/n/a/s)"
 def run_codespell_interactive(
     args: tuple[Any, ...],
     answers: str,
-    cwd: Optional[Path] = None,
+    cwd: Path | None = None,
 ) -> "subprocess.CompletedProcess[str]":
     """Run codespell feeding interactive answers on stdin."""
     args = tuple(str(arg) for arg in args)

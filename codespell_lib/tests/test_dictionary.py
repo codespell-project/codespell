@@ -4,7 +4,7 @@ import os.path as op
 import pathlib
 import re
 from collections.abc import Iterable
-from typing import Any, Optional
+from typing import Any
 
 import pytest
 
@@ -102,7 +102,7 @@ def test_dictionary_sorting(filename: pathlib.Path) -> None:
 def _check_aspell(
     phrase: str,
     msg: str,
-    in_aspell: Optional[bool],
+    in_aspell: bool | None,
     fname: str,
     languages: Iterable[str],
 ) -> None:
@@ -138,7 +138,7 @@ single_comma = re.compile(r"^[^,]*,\s*$")
 def _check_err_rep(
     err: str,
     rep: str,
-    in_aspell: tuple[Optional[bool], Optional[bool]],
+    in_aspell: tuple[bool | None, bool | None],
     fname: str,
     languages: tuple[Iterable[str], Iterable[str]],
 ) -> None:
@@ -264,8 +264,8 @@ def test_error_checking(err: str, rep: str, match: str) -> None:
 def test_error_checking_in_aspell(
     err: str,
     rep: str,
-    err_aspell: Optional[bool],
-    rep_aspell: Optional[bool],
+    err_aspell: bool | None,
+    rep_aspell: bool | None,
     match: str,
 ) -> None:
     """Test that our error checking works with aspell."""
