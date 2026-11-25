@@ -731,6 +731,11 @@ def parse_options(
     # Load config files and look for ``codespell`` options.
     cfg_files = ["setup.cfg", ".codespellrc"]
     if options.config:
+        if not os.path.isfile(options.config):
+            raise _FileUsageError(
+                parser,
+                f"ERROR: cannot find config file: {options.config}",
+            )
         cfg_files.append(options.config)
     config = configparser.ConfigParser(interpolation=None)
 
@@ -741,6 +746,11 @@ def parse_options(
     if os.path.isfile("pyproject.toml"):
         toml_files.append("pyproject.toml")
     if options.toml:
+        if not os.path.isfile(options.toml):
+            raise _FileUsageError(
+                parser,
+                f"ERROR: cannot find toml file: {options.toml}",
+            )
         toml_files.append(options.toml)
         tomllib_raise_error = True
     if toml_files:
@@ -1419,6 +1429,20 @@ def _script_main() -> int:
         return 130
 
 
+class _FileUsageError(Exception):
+    """A file argument given on the command line cannot be used.
+
+    Raised from ``parse_options``, where the config files are read, so that
+    ``main`` can print the usage and return ``EX_USAGE`` like it does for the
+    other command-line validation errors.
+    """
+
+    def __init__(self, parser: argparse.ArgumentParser, message: str) -> None:
+        self.parser = parser
+        self.message = message
+        super().__init__(message)
+
+
 def _usage_error(parser: argparse.ArgumentParser, message: str) -> int:
     parser.print_usage()
     print(message, file=sys.stderr)
@@ -1450,6 +1474,8 @@ def main(*args: str) -> int:
     """Contains flow control"""
     try:
         options, parser, used_cfg_files = parse_options(args)
+    except _FileUsageError as e:
+        return _usage_error(e.parser, e.message)
     except configparser.Error as e:
         print(
             f"ERROR: ill-formed config file: {e.message}",
@@ -1592,6 +1618,11 @@ def main(*args: str) -> int:
     if options.exclude_file:
         exclude_files = flatten_clean_comma_separated_arguments(options.exclude_file)
         for exclude_file in exclude_files:
+            if not os.path.isfile(exclude_file):
+                return _usage_error(
+                    parser,
+                    f"ERROR: cannot find exclude-file: {exclude_file}",
+                )
             build_exclude_hashes(exclude_file, exclude_lines)
 
     file_opener = FileOpener(
