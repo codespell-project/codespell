@@ -20,7 +20,7 @@ Useful links
 Requirements
 ------------
 
-Python 3.9 or above.
+Python 3.11 or above.
 
 Installation
 ------------
@@ -227,8 +227,7 @@ comments are possible using ``;`` or ``#`` as the first character.
 
 Codespell will also check in the current directory for a ``pyproject.toml``
 file (or a file specified via ``--toml``), and the ``[tool.codespell]``
-entry will be used. For versions of Python prior to 3.11, this requires
-the tomli_ package. For example, here is the TOML equivalent of the
+entry will be used. For example, here is the TOML equivalent of the
 previous config file:
 
 .. code-block:: toml
@@ -246,7 +245,7 @@ The above INI and TOML files are equivalent to running:
 
 If several config files are present, they are read in the following order:
 
-#. ``pyproject.toml`` (only if the ``tomli`` library is available for Python < 3.11)
+#. ``pyproject.toml``
 #. ``setup.cfg``
 #. ``.codespellrc``
 #. any additional file supplied via ``--config``
@@ -275,8 +274,6 @@ instead of these invalid entries:
     dictionary = -,mydict
     ignore-words-list = -foo,bar
 
-.. _tomli: https://pypi.org/project/tomli/
-
 Reading arguments from file
 ---------------------------
 
@@ -304,8 +301,6 @@ If one configures codespell using the `pyproject.toml` file instead use:
     rev: v2.4.3
     hooks:
     - id: codespell
-      additional_dependencies:
-        - tomli
 
 Dictionary format
 -----------------

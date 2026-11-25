@@ -33,7 +33,6 @@ from importlib.metadata import version
 from re import Match, Pattern
 from typing import (
     Any,
-    Optional,
     TextIO,
 )
 
@@ -258,7 +257,7 @@ class FileOpener:
         self,
         use_chardet: bool,
         quiet_level: int,
-        ignore_multiline_regex: Optional[Pattern[str]],
+        ignore_multiline_regex: Pattern[str] | None,
     ) -> None:
         self.use_chardet = use_chardet
         if use_chardet:
@@ -737,37 +736,23 @@ def parse_options(
     # Read toml before other config files.
     toml_files = []
     used_toml_files = []
-    tomllib_raise_error = False
     if os.path.isfile("pyproject.toml"):
         toml_files.append("pyproject.toml")
     if options.toml:
         toml_files.append(options.toml)
-        tomllib_raise_error = True
     if toml_files:
-        if sys.version_info >= (3, 11):
-            import tomllib
-        else:
-            try:
-                import tomli as tomllib  # type: ignore[no-redef]
-            except ImportError as e:
-                if tomllib_raise_error:
-                    msg = (
-                        f"tomllib or tomli are required to read pyproject.toml "
-                        f"but could not be imported, got: {e}"
-                    )
-                    raise ImportError(msg) from None
-                tomllib = None  # type: ignore[assignment]
-        if tomllib is not None:
-            for toml_file in toml_files:
-                with open(toml_file, "rb") as f:
-                    data = tomllib.load(f).get("tool", {}).get("codespell")
-                if data is not None:
-                    if not isinstance(data, dict):
-                        msg = f"{toml_file}: [tool.codespell] must be a table"
-                        raise configparser.Error(msg)
-                    config.read_dict({"codespell": _toml_to_parseconfig(data)})
-                    if toml_file not in used_toml_files:
-                        used_toml_files.append(toml_file)
+        import tomllib
+
+        for toml_file in toml_files:
+            with open(toml_file, "rb") as f:
+                data = tomllib.load(f).get("tool", {}).get("codespell")
+            if data is not None:
+                if not isinstance(data, dict):
+                    msg = f"{toml_file}: [tool.codespell] must be a table"
+                    raise configparser.Error(msg)
+                config.read_dict({"codespell": _toml_to_parseconfig(data)})
+                if toml_file not in used_toml_files:
+                    used_toml_files.append(toml_file)
 
     # Collect which config files are going to be used
     used_ini_files = []
@@ -971,7 +956,7 @@ def print_context(
 
 def _ignore_word_sub(
     text: str,
-    ignore_word_regex: Optional[Pattern[str]],
+    ignore_word_regex: Pattern[str] | None,
 ) -> str:
     if ignore_word_regex:
         text = ignore_word_regex.sub(" ", text)
@@ -981,7 +966,7 @@ def _ignore_word_sub(
 def extract_words(
     text: str,
     word_regex: Pattern[str],
-    ignore_word_regex: Optional[Pattern[str]],
+    ignore_word_regex: Pattern[str] | None,
 ) -> list[str]:
     return word_regex.findall(_ignore_word_sub(text, ignore_word_regex))
 
@@ -989,7 +974,7 @@ def extract_words(
 def extract_words_iter(
     text: str,
     word_regex: Pattern[str],
-    ignore_word_regex: Optional[Pattern[str]],
+    ignore_word_regex: Pattern[str] | None,
 ) -> list[Match[str]]:
     return list(word_regex.finditer(_ignore_word_sub(text, ignore_word_regex)))
 
@@ -998,7 +983,7 @@ def apply_uri_ignore_words(
     check_matches: list[Match[str]],
     line: str,
     word_regex: Pattern[str],
-    ignore_word_regex: Optional[Pattern[str]],
+    ignore_word_regex: Pattern[str] | None,
     uri_regex: Pattern[str],
     uri_ignore_words: set[str],
 ) -> list[Match[str]]:
@@ -1045,15 +1030,15 @@ def parse_lines(
     fragment: tuple[bool, int, list[str]],
     filename: str,
     colors: TermColors,
-    summary: Optional[Summary],
+    summary: Summary | None,
     misspellings: dict[str, Misspelling],
     ignore_words_cased: set[str],
     exclude_lines: set[str],
     word_regex: Pattern[str],
-    ignore_word_regex: Optional[Pattern[str]],
+    ignore_word_regex: Pattern[str] | None,
     uri_regex: Pattern[str],
     uri_ignore_words: set[str],
-    context: Optional[tuple[int, int]],
+    context: tuple[int, int] | None,
     options: argparse.Namespace,
     asked_for: dict[str, tuple[bool, str]],
 ) -> tuple[int, bool, list[tuple[int, str, str]]]:
@@ -1063,7 +1048,7 @@ def parse_lines(
 
     _, fragment_line_number, lines = fragment
 
-    next_line_ignore_words: Optional[set[str]] = None
+    next_line_ignore_words: set[str] | None = None
 
     for i, line in enumerate(lines):
         line = line.rstrip()
@@ -1233,16 +1218,16 @@ def parse_lines(
 def parse_file(
     filename: str,
     colors: TermColors,
-    summary: Optional[Summary],
+    summary: Summary | None,
     misspellings: dict[str, Misspelling],
     ignore_words_cased: set[str],
     exclude_lines: set[str],
     file_opener: FileOpener,
     word_regex: Pattern[str],
-    ignore_word_regex: Optional[Pattern[str]],
+    ignore_word_regex: Pattern[str] | None,
     uri_regex: Pattern[str],
     uri_ignore_words: set[str],
-    context: Optional[tuple[int, int]],
+    context: tuple[int, int] | None,
     options: argparse.Namespace,
 ) -> tuple[int, bool]:
     bad_count = 0

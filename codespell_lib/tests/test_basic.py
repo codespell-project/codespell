@@ -10,7 +10,7 @@ from collections.abc import Generator
 from io import StringIO
 from pathlib import Path
 from shutil import copyfile
-from typing import Any, Optional, Union
+from typing import Any
 from unittest import mock
 
 import pytest
@@ -42,7 +42,7 @@ class MainWrapper:
         *args: Any,
         count: bool = True,
         std: bool = False,
-    ) -> Union[int, tuple[int, str, str]]:
+    ) -> int | tuple[int, str, str]:
         args = tuple(str(arg) for arg in args)
         if count:
             args = ("--count", *args)
@@ -69,7 +69,7 @@ cs = MainWrapper()
 
 def run_codespell(
     args: tuple[Any, ...] = (),
-    cwd: Optional[Path] = None,
+    cwd: Path | None = None,
 ) -> int:
     """Run codespell."""
     args = tuple(str(arg) for arg in args)
@@ -287,12 +287,8 @@ def test_bad_glob(
     # bad glob is invalid
     result = cs.main("--skip", "[b-a].txt", g, std=True)
     assert isinstance(result, tuple)
-    code, _, stderr = result
-    if sys.hexversion < 0x030A05F0:  # Python < 3.10.5 raises re.error
-        assert code == EX_USAGE, "invalid glob"
-        assert "invalid glob" in stderr
-    else:  # Python >= 3.10.5 does not match
-        assert code == 1
+    code, _, _ = result
+    assert code == 1
     # properly escaped glob is valid, and matches glob-like file name
     assert cs.main("--skip", "[[]b-a[]].txt", g) == 0
 
@@ -1580,8 +1576,6 @@ count =
 """
         conffile.write_text(text)
     else:
-        if sys.version_info < (3, 11):
-            pytest.importorskip("tomli")
         tomlfile = tmp_path / "pyproject.toml"
         args = ("--toml", tomlfile)
         if kind == "toml":
@@ -1637,8 +1631,6 @@ def test_config_toml_codespell_array(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
-    if sys.version_info < (3, 11):
-        pytest.importorskip("tomli")
     tomlfile = tmp_path / "pyproject.toml"
     tomlfile.write_text("[[tool.codespell]]\nskip = 'bad.txt'\n")
 
@@ -1653,8 +1645,6 @@ def test_warn_both_pyproject_and_codespellrc(
     tmp_path: Path,
     capsys: pytest.CaptureFixture[str],
 ) -> None:
-    if sys.version_info < (3, 11):
-        pytest.importorskip("tomli")
     (tmp_path / "pyproject.toml").write_text("[tool.codespell]\nquiet-level = 2\n")
     (tmp_path / ".codespellrc").write_text("[codespell]\nquiet-level = 2\n")
     (tmp_path / "ok.txt").write_text("ok\n")
@@ -1703,7 +1693,7 @@ def FakeStdin(text: str) -> Generator[None, None, None]:
 def run_codespell_stdin(
     text: str,
     args: tuple[Any, ...],
-    cwd: Optional[Path] = None,
+    cwd: Path | None = None,
 ) -> int:
     """Run codespell in stdin mode and return number of lines in output."""
     proc = subprocess.run(  # noqa: S603
@@ -1797,7 +1787,7 @@ PROMPT = "(Y/n/a/s)"
 def run_codespell_interactive(
     args: tuple[Any, ...],
     answers: str,
-    cwd: Optional[Path] = None,
+    cwd: Path | None = None,
 ) -> "subprocess.CompletedProcess[str]":
     """Run codespell feeding interactive answers on stdin."""
     args = tuple(str(arg) for arg in args)

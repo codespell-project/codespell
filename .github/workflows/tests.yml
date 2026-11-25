@@ -20,8 +20,6 @@ jobs:
       fail-fast: false
       matrix:
         python-version:
-          - "3.9"
-          - "3.10"
           - "3.11"
           - "3.12"
           - "3.13"
@@ -32,13 +30,10 @@ jobs:
         os:
           - "ubuntu-24.04-arm"
         include:
-          - python-version: "3.10"
+          - python-version: "3.11"
             kind: "old"
             os: "ubuntu-24.04-arm"
-          - python-version: "3.10"
-            kind: "no-toml"
-            os: "ubuntu-24.04-arm"
-          - python-version: "3.13"
+          - python-version: "3.14"
             kind: "standard"
             os: "windows-latest"
     name: "${{ matrix.python-version }} ${{ matrix.kind }} ${{ matrix.os }}"
@@ -72,9 +67,6 @@ jobs:
       - uses: codecov/codecov-action@v7
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-      # tomli should not be required for the next two steps (and make sure it's not)
-      - run: pip uninstall -yq tomli
-        if: ${{ matrix.kind == 'no-toml' }}
       - run: codespell --check-filenames --skip="./.*,./build/*,./codespell_lib/data/*,./codespell_lib/tests/test_basic.py,./example/code.c,./junit-results.xml,*.egg-info/*,*.pyc,*.sig,pyproject-codespell.precommit-toml,README.rst,"
       # this file has an error
       - run: "! codespell codespell_lib/tests/test_basic.py"

@@ -60,7 +60,7 @@ make check               # everything CI checks: dictionaries, build, pytest, ru
 
 ## Project layout
 
-Pure Python (>= 3.9), no runtime dependencies.
+Pure Python (>= 3.11), no runtime dependencies.
 
 - `codespell_lib/_codespell.py`: the CLI (`main()`), option parsing, and
   file checking/fixing.

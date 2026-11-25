@@ -72,10 +72,8 @@ repos:
     hooks:
       - id: codespell
         args: [--toml, pyproject-codespell.precommit-toml]
-        additional_dependencies:
-          - tomli
   - repo: https://github.com/abravalheri/validate-pyproject
-    rev: "v0.27"
+    rev: v0.27
     hooks:
       - id: validate-pyproject
   - repo: https://github.com/pre-commit/mirrors-mypy
@@ -85,7 +83,6 @@ repos:
         args: ["--config-file", "pyproject.toml"]
         additional_dependencies:
           - pytest
-          - tomli
           - types-chardet
 
 ci:
