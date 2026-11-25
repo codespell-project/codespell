@@ -41,9 +41,9 @@ when something actually needs it.
   near-duplicate.
 - **Do not add dependencies** without asking first.
 - **Add to an existing test before writing a new one.** Extend a test in
-  `codespell_lib/tests/test_basic.py` that already sets up what you need,
-  then add a new test function there, and only then consider a new file. A
-  few compact assertions beat a long test that re-creates setup.
+  `tests/test_basic.py` that already sets up what you need, then add a new
+  test function there, and only then consider a new file. A few compact
+  assertions beat a long test that re-creates setup.
 - **For a bug fix, confirm the test fails without the fix and passes with
   it.** A regression test that passes without the fix guards nothing.
 
@@ -52,7 +52,7 @@ when something actually needs it.
 ```bash
 pip install -e . --group dev        # editable install with test/lint deps
 pre-commit install --install-hooks  # ruff, mypy, codespell, file sorting, ...
-pytest codespell_lib/tests/test_basic.py -k write_changes  # CLI tests
+pytest tests/test_basic.py -k write_changes  # CLI tests
 make check-dictionaries  # sort + validate dictionaries (test_dictionary.py)
 pre-commit run --all-files          # all linters, auto-fixing where possible
 make check               # everything CI checks: dictionaries, build, pytest, ruff
@@ -66,10 +66,9 @@ Pure Python (>= 3.9), no runtime dependencies.
   file checking/fixing.
 - `codespell_lib/data/dictionary*.txt`: the misspelling dictionaries, one
   per `--builtin` set.
-- `codespell_lib/tests/test_basic.py`: CLI behavior tests, mostly calling
-  `cs.main(...)` on files in `tmp_path`.
-- `codespell_lib/tests/test_dictionary.py`: dictionary format and
-  consistency checks.
+- `tests/test_basic.py`: CLI behavior tests, mostly calling `cs.main(...)`
+  on files in `tmp_path`.
+- `tests/test_dictionary.py`: dictionary format and consistency checks.
 
 Dictionary entries are `typo->fix`; with more than one fix, end the line
 with a comma so none is applied automatically:

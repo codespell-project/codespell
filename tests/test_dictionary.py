@@ -42,7 +42,7 @@ global_err_dicts: dict[str, dict[str, Any]] = {}
 global_pairs: set[tuple[str, str]] = set()
 
 # Filename, should be seen as errors in aspell or not
-_data_dir = op.join(op.dirname(__file__), "..", "data")
+_data_dir = op.join(op.dirname(__file__), "..", "codespell_lib", "data")
 _fnames_in_aspell = [
     (op.join(_data_dir, f"dictionary{d[2]}.txt"), d[3:5], d[5:7])
     for d in _builtin_dictionaries
@@ -84,8 +84,8 @@ def test_dictionary_formatting(
 @pytest.mark.parametrize(
     "filename",
     [
-        *(root / "data").rglob("dictionary*.txt"),
-        *(root / "tests/data").rglob("*.wordlist"),
+        *(root / "codespell_lib" / "data").rglob("dictionary*.txt"),
+        *(root / "tests" / "data").rglob("*.wordlist"),
     ],
 )
 def test_dictionary_sorting(filename: pathlib.Path) -> None:

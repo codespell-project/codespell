@@ -1,4 +1,4 @@
-DICTIONARIES = codespell_lib/data/dictionary*.txt codespell_lib/tests/data/*.wordlist
+DICTIONARIES = codespell_lib/data/dictionary*.txt tests/data/*.wordlist
 
 PHONY := all check check-dictionaries sort-dictionaries trim-dictionaries check-dist pytest pypi ruff clean
 
@@ -23,7 +23,7 @@ check-dictionaries: sort-dictionaries
 		fi; \
 	done
 	@if command -v pytest > /dev/null; then \
-		pytest codespell_lib/tests/test_dictionary.py; \
+		pytest tests/test_dictionary.py; \
 	else \
 		echo "Test dependencies not present, install using 'pip install -e . --group dev'"; \
 		exit 1; \
