@@ -60,13 +60,17 @@ codespell = "codespell_lib:_script_main"
 homepage = "https://github.com/codespell-project/codespell"
 repository = "https://github.com/codespell-project/codespell"
 
+[tool.flit.module]
+name = "codespell_lib"
+
+[tool.flit.sdist]
+include = [
+]
+
 # flit_scm uses setuptools_scm under the hood to write the version file at
 # build time, so that flit can stamp the version into the package metadata.
 [tool.setuptools_scm]
 write_to = "codespell_lib/_version.py"
-
-[tool.flit.module]
-name = "codespell_lib"
 
 # TODO: reintegrate codespell configuration after updating test cases
 #[tool.codespell]
