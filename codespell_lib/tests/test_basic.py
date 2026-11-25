@@ -21,6 +21,7 @@ from codespell_lib._codespell import (
     EX_DATAERR,
     EX_OK,
     EX_USAGE,
+    FileOpener,
     _builtin_dictionaries,
     uri_regex_def,
 )
@@ -749,6 +750,25 @@ def test_unknown_encoding_chardet(
     fname = tmp_path / "tmp"
     fname.touch()
     assert cs.main("--hard-encoding-detection", fname) == 0
+
+
+def test_chardet_falls_back_when_detected_encoding_fails(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """If chardet picks an encoding that cannot decode the file, try utf-8."""
+    fname = tmp_path / "tmp"
+    fname.write_bytes("na\u00efve\nspeling\n".encode())
+    opener = FileOpener(False, 0, None)
+    opener.use_chardet = True
+
+    opener.encdetector = mock.Mock(done=True, result={"encoding": "ascii"})
+    lines, encoding = opener.open(str(fname))
+    assert encoding == "utf-8"
+    assert any("speling" in "".join(chunk) for _ignored, _lineno, chunk in lines)
+    captured = capsys.readouterr()
+    assert "ascii" in captured.err
+    assert "WARNING" in captured.err
 
 
 def test_ignore(
