@@ -737,37 +737,23 @@ def parse_options(
     # Read toml before other config files.
     toml_files = []
     used_toml_files = []
-    tomllib_raise_error = False
     if os.path.isfile("pyproject.toml"):
         toml_files.append("pyproject.toml")
     if options.toml:
         toml_files.append(options.toml)
-        tomllib_raise_error = True
     if toml_files:
-        if sys.version_info >= (3, 11):
-            import tomllib
-        else:
-            try:
-                import tomli as tomllib  # type: ignore[no-redef]
-            except ImportError as e:
-                if tomllib_raise_error:
-                    msg = (
-                        f"tomllib or tomli are required to read pyproject.toml "
-                        f"but could not be imported, got: {e}"
-                    )
-                    raise ImportError(msg) from None
-                tomllib = None  # type: ignore[assignment]
-        if tomllib is not None:
-            for toml_file in toml_files:
-                with open(toml_file, "rb") as f:
-                    data = tomllib.load(f).get("tool", {}).get("codespell")
-                if data is not None:
-                    if not isinstance(data, dict):
-                        msg = f"{toml_file}: [tool.codespell] must be a table"
-                        raise configparser.Error(msg)
-                    config.read_dict({"codespell": _toml_to_parseconfig(data)})
-                    if toml_file not in used_toml_files:
-                        used_toml_files.append(toml_file)
+        import tomllib
+
+        for toml_file in toml_files:
+            with open(toml_file, "rb") as f:
+                data = tomllib.load(f).get("tool", {}).get("codespell")
+            if data is not None:
+                if not isinstance(data, dict):
+                    msg = f"{toml_file}: [tool.codespell] must be a table"
+                    raise configparser.Error(msg)
+                config.read_dict({"codespell": _toml_to_parseconfig(data)})
+                if toml_file not in used_toml_files:
+                    used_toml_files.append(toml_file)
 
     # Collect which config files are going to be used
     used_ini_files = []

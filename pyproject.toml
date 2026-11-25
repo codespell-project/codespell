@@ -6,7 +6,7 @@ build-backend = "flit_scm:buildapi"
 name = "codespell"
 description = "Fix common misspellings in text files"
 readme = { file = "README.rst", content-type = "text/x-rst" }
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 license = "GPL-2.0-only"
 authors = [
     {name = "Lucas De Marchi", email = "lucas.de.marchi@gmail.com"},
@@ -29,9 +29,6 @@ dynamic = ["version"]
 hard-encoding-detection = [
     "chardet"
 ]
-toml = [
-    "tomli; python_version < '3.11'"
-]
 
 [dependency-groups]
 dev = [
@@ -43,7 +40,6 @@ dev = [
     "pytest-dependency",
     "Pygments",
     "ruff",
-    "tomli"
 ]
 types = [
     "chardet>=5.1.0",
