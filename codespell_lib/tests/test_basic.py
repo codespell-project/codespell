@@ -10,7 +10,7 @@ from collections.abc import Generator
 from io import StringIO
 from pathlib import Path
 from shutil import copyfile
-from typing import Any, Optional, Union
+from typing import Any, Optional
 from unittest import mock
 
 import pytest
@@ -42,7 +42,7 @@ class MainWrapper:
         *args: Any,
         count: bool = True,
         std: bool = False,
-    ) -> Union[int, tuple[int, str, str]]:
+    ) -> int | tuple[int, str, str]:
         args = tuple(str(arg) for arg in args)
         if count:
             args = ("--count", *args)
