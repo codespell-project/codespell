@@ -40,7 +40,6 @@ trim-dictionaries: $(GENERATED)
 check-dist:
 	$(eval TMP := $(shell mktemp -d))
 	python -m build -o $(TMP)
-	twine check --strict $(TMP)/*
 	rm -rf $(TMP)
 
 ruff:

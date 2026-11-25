@@ -1,4 +1,6 @@
-# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+[build-system]
+requires = ["flit_core>=3.11", "flit_scm"]
+build-backend = "flit_scm:buildapi"
 
 [project]
 name = "codespell"
@@ -41,8 +43,7 @@ dev = [
     "pytest-dependency",
     "Pygments",
     "ruff",
-    "tomli",
-    "twine"
+    "tomli"
 ]
 types = [
     "chardet>=5.1.0",
@@ -59,32 +60,13 @@ codespell = "codespell_lib:_script_main"
 homepage = "https://github.com/codespell-project/codespell"
 repository = "https://github.com/codespell-project/codespell"
 
-[build-system]
-build-backend = "setuptools.build_meta"
-requires = ["setuptools>=77", "setuptools_scm[toml]>=6.2, != 8.0.0"]
-
+# flit_scm uses setuptools_scm under the hood to write the version file at
+# build time, so that flit can stamp the version into the package metadata.
 [tool.setuptools_scm]
 write_to = "codespell_lib/_version.py"
 
-[tool.setuptools]
-include-package-data = false
-
-[tool.setuptools.packages.find]
-include = ["codespell_lib", "codespell_lib.*"]
-exclude = [
-    "dist",
-    "snap",
-    "tools",
-    "example",
-    "codespell_lib.tests*",
-]
-
-[tool.setuptools.package-data]
-codespell_lib = [
-    "data/dictionary*.txt",
-    "data/linux-kernel.exclude",
-    "py.typed",
-]
+[tool.flit.module]
+name = "codespell_lib"
 
 # TODO: reintegrate codespell configuration after updating test cases
 #[tool.codespell]
