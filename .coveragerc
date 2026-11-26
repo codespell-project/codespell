@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = codespell_lib
+source = [ codespell_lib, tests ]
 omit = */tests/*
 # Some tests run the codespell entry point in a subprocess; without this their
 # coverage is invisible (pytest-cov 7 dropped its own subprocess support).
