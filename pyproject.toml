@@ -60,19 +60,23 @@ codespell = "codespell_lib:_script_main"
 homepage = "https://github.com/codespell-project/codespell"
 repository = "https://github.com/codespell-project/codespell"
 
+[tool.flit.module]
+name = "codespell_lib"
+
+[tool.flit.sdist]
+include = [
+]
+
 # flit_scm uses setuptools_scm under the hood to write the version file at
 # build time, so that flit can stamp the version into the package metadata.
 [tool.setuptools_scm]
 write_to = "codespell_lib/_version.py"
 
-[tool.flit.module]
-name = "codespell_lib"
-
 # TODO: reintegrate codespell configuration after updating test cases
 #[tool.codespell]
 #builtin = ["clear","rare","informal","usage","code","names"]
 #ignore-words-list = ["uint"]
-#skip=[ "./.*","codespell_lib/data/*","codespell_lib/tests/*"]
+#skip=[ "./.*","codespell_lib/data/*","tests/*"]
 
 [tool.mypy]
 pretty = true
@@ -83,7 +87,7 @@ enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
 
 [tool.pytest.ini_options]
 minversion = "6"
-testpaths = ["codespell_lib/tests"]
+testpaths = ["tests"]
 log_cli_level = "INFO"
 xfail_strict = true
 addopts = ["--cov=codespell_lib", "-rs", "--strict-config", "--strict-markers", "--cov-report=", "--tb=short", "--junit-xml=junit-results.xml"]
@@ -150,8 +154,8 @@ max-complexity = 45
 
 [tool.ruff.lint.per-file-ignores]
 "codespell_lib/_codespell.py" = ["A003"]
-"codespell_lib/tests/test_*" = ["S101"]
-"codespell_lib/tests/test_basic.py" = ["ANN401", "N802"]
+"tests/test_*" = ["S101"]
+"tests/test_basic.py" = ["ANN401", "N802"]
 
 [tool.ruff.lint.pylint]
 allow-magic-value-types = ["bytes", "int", "str",]
